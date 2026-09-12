@@ -1,0 +1,26 @@
+import assert from 'node:assert/strict';
+import {writeFile} from 'node:fs/promises';
+import {prepared,eligible} from '../.cache/checks/src/coach/authored.js';
+if(process.argv.slice(2).join(' ')!=='--mode authored')throw new Error('Only explicit --mode authored is implemented and authorized.');
+const context={visitId:'eval-visit',caseRunId:'eval-case',revision:1,room:'SC.ST',topic:'story-plan',loopMode:'docked',caddyHost:'ST.RACK.BAY',arrangementRevision:1,order:['TILE.FERRY','TILE.PLANT'],puppet:{pip:'left',seed:'right',boats:'separate',lit:false},runId:'eval-run',nextCue:2,runStatus:'paused',certified:false,premiered:false,exposedRefs:['E6.a','E6.b','E7.a','E7.b','E7.c'],availableAccesses:['KIT.NOTE.E6','KIT.NOTE.E7'],observedOutcomeRefs:['OBS.eval.1'],selectedRefs:[],priorHelp:[],introducedFacts:[],explanationRevision:0,theoryRevision:0,observedOutcomes:[{refId:'OBS.eval.1',tile:'TILE.PLANT',from:{pip:'left',seed:'right',boats:'separate',lit:false},to:{pip:'left',seed:'right',boats:'separate',lit:false},result:'unmet'}]};
+let assertions=0;
+function check(actual,expected){assert.deepEqual(actual,expected);assertions++;}
+const s=(moveId,interpretation,refs=[],uncertain=false)=>({moveId,interpretation,refs,uncertain});
+check(eligible(context,s('FULL_PROMISE','goal_incomplete',['E6.a'])),true);
+check(eligible({...context,exposedRefs:[]},s('FULL_PROMISE','goal_incomplete',['E6.a'])),false);
+check(eligible(context,s('BOAT_CAPACITY','capacity',['E7.a'])),true);
+check(eligible({...context,exposedRefs:[]},s('BOAT_CAPACITY','capacity',['E7.a'])),false);
+check(eligible({...context,exposedRefs:['E2.a/frame1','E2.c']},s('CLIP_LIMIT','unsupported_destination',['E2.a/end'])),false);
+check(eligible({...context,exposedRefs:['CT.REMY.CLIP']},s('CLIP_LIMIT','unsupported_destination',['CT.REMY.CLIP'])),true);
+check(eligible({...context,loopMode:'standby'},s('ARRANGEMENT_ONLY','unclear')),false);
+check(eligible(context,s('ARRANGEMENT_ONLY','unclear')),true);
+check(eligible(context,s('CLARIFY','unclear',[],true)),true);
+check(eligible(context,s('CLARIFY','unclear',[],false)),false);
+check(prepared({...context,exposedRefs:[]},{direct:true}).contentIds[0],'CT.DIRECT.RAIL');
+check(prepared({...context,observedOutcomeRefs:[]}).contentIds[0],'CT.HINT.STORY_UNTRIED');
+check(prepared({...context,exposedRefs:[]}).contentIds[0],'CT.HINT.STORY_ATTENTION');
+for(let n=1;n<=3;n++)check(prepared(context,{repeat:n}).level,n);
+check(prepared({...context,puppet:{...context.puppet,pip:'right'}},{repeat:3}).contentIds[0],'CT.HINT.STORY_ATTENTION');
+for(const [loopMode,caddyHost,id] of [['standby','ST.RACK.BAY','SEARCH'],['docked','MD.RACK.STATION','KIT'],['following','MD.RACK.STATION','FOLLOW_KIT'],['following','ACT.PLAYER','DELIVER_BOTH'],['following','ST.RACK.BAY','DELIVER_LOOP'],['docked','ACT.PLAYER','DELIVER_KIT']])check(prepared({...context,topic:'where-loop',loopMode,caddyHost},{direct:true}).contentIds[0],`CT.DIRECT.${id}`);
+await writeFile('evidence/authored-evaluation.json',JSON.stringify({mode:'authored',checkedAt:new Date().toISOString(),assertions,apiCalls:0,scope:'Deterministic eligibility and fallback guards. Synthetic input; no live interpretation accuracy or participant evidence.'},null,2)+'\n');
+console.log(`${assertions} authored eligibility/fallback checks passed; zero API calls.`);

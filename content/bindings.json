@@ -1,0 +1,4653 @@
+{
+  "uiStates": [
+    "UI.HOME.CHECKING",
+    "UI.HOME.EMPTY",
+    "UI.HOME.SAVED",
+    "UI.WORLD.IDLE",
+    "UI.WORLD.MOVING",
+    "UI.WORLD.OPERATING",
+    "UI.WORLD.CHOOSER",
+    "UI.WORLD.BLOCKED",
+    "UI.GUIDE.OPENING",
+    "UI.GOAL",
+    "UI.NAV.OBJECTS",
+    "UI.NAV.MAP",
+    "UI.NOTES.EMPTY",
+    "UI.NOTES.LIST",
+    "UI.SOURCE.TEXT",
+    "UI.SOURCE.POST",
+    "UI.SOURCE.CLIP",
+    "UI.SOURCE.PHOTO",
+    "UI.SOURCE.ZOOM",
+    "UI.SOURCE.WORD",
+    "UI.SOURCE.PICK",
+    "UI.COMPARE.EMPTY",
+    "UI.COMPARE.PARTIAL",
+    "UI.COMPARE.READY",
+    "UI.TIMELINE.EMPTY",
+    "UI.TIMELINE.KNOWN",
+    "UI.IDEA.DRAFT",
+    "UI.IDEA.RECORDED",
+    "UI.LEAD",
+    "UI.TALK.TOPICS",
+    "UI.TALK.REPLY",
+    "UI.PRESENT.SELECT",
+    "UI.PRESENT.REVIEW",
+    "UI.PRESENT.APPROACH",
+    "UI.PLAN.PRIVATE",
+    "UI.PLAN.RECORDED",
+    "UI.PLAN.ADDRESSED",
+    "UI.KIT.CLOSED",
+    "UI.KIT.OPEN",
+    "UI.KIT.CARRIED",
+    "UI.KIT.HANDOFF",
+    "UI.KIT.SEATED",
+    "UI.KIT.VACANT",
+    "UI.SOURCE.TILE",
+    "UI.WORK.NEEDS_KIT",
+    "UI.WORK.NEEDS_LOOP",
+    "UI.WORK.EMPTY",
+    "UI.WORK.READY",
+    "UI.WORK.CERTIFIED",
+    "UI.WORK.SHOW_CHECK",
+    "UI.WORK.MORE",
+    "UI.RAIL.SELECTED",
+    "UI.RAIL.DESTINATIONS",
+    "UI.RUN.STARTING",
+    "UI.RUN.REHEARSAL",
+    "UI.RUN.SHOW",
+    "UI.RUN.UNMET",
+    "UI.RUN.PAUSED",
+    "UI.RUN.TERMINAL",
+    "UI.RUN.FAILED",
+    "UI.STORY.DESCRIBE",
+    "UI.COACH.ENTRY",
+    "UI.COACH.TOPIC",
+    "UI.COACH.PENDING",
+    "UI.COACH.WAITING",
+    "UI.COACH.FALLBACK_OFFER",
+    "UI.COACH.READY_CLOSED",
+    "UI.COACH.RESPONSE",
+    "UI.COACH.CLARIFY",
+    "UI.COACH.DIRECT",
+    "UI.COACH.STALE",
+    "UI.COACH.CANCELED",
+    "UI.PAUSE",
+    "UI.SETTINGS",
+    "UI.SAVE.PENDING",
+    "UI.SAVE.SAVED",
+    "UI.SAVE.SESSION",
+    "UI.RECOVERY.READ",
+    "UI.RECOVERY.VERSION",
+    "UI.RECOVERY.DAMAGED",
+    "UI.RECOVERY.REPLACE",
+    "UI.RECOVERY.RUN",
+    "UI.RESUME.RUN",
+    "UI.RESET.CASE",
+    "UI.RETURN.FOREGROUND",
+    "UI.TOAST.COVERED",
+    "UI.TOAST.REVEALING",
+    "UI.TOAST.REVEALED",
+    "UI.TOAST.MAGNIFIER",
+    "UI.TOAST.REPLAY",
+    "UI.ENDING.CELEBRATION",
+    "UI.ENDING.AFTERMATH",
+    "UI.ENDING.RECAP",
+    "UI.TECH.LOADING",
+    "UI.TECH.CONTENT_ERROR",
+    "UI.TECH.ART_STATUS"
+  ],
+  "transitions": [
+    "T.CLIP.DESCRIBE",
+    "T.CLIP.STEP",
+    "T.COACH.CANCEL",
+    "T.COACH.DIRECT",
+    "T.COACH.DIRECT_CLOSE",
+    "T.COACH.FALLBACK",
+    "T.COACH.OFFER",
+    "T.COACH.OPEN_READY",
+    "T.COACH.THINK",
+    "T.COACH.TOPIC",
+    "T.COACH.WAIT",
+    "T.COMPARE.CHOOSE",
+    "T.COMPARE.RELATE",
+    "T.COMPARE.REMOVE",
+    "T.COMPARE.SAVE",
+    "T.ENDING.AFTER",
+    "T.ENDING.RECAP",
+    "T.ENDING.REOPEN",
+    "T.ENDING.REPLAY",
+    "T.ENDING.RETURN",
+    "T.ENDING.SKIP",
+    "T.GOAL.ACTION",
+    "T.GUIDE.DISMISS",
+    "T.GUIDE.MODEL",
+    "T.GUIDE.PREVIEW",
+    "T.HOME.CHECK",
+    "T.HOME.CONTINUE",
+    "T.HOME.OVER",
+    "T.HOME.SETTINGS",
+    "T.HOME.START",
+    "T.IDEA.CLOSE",
+    "T.IDEA.EDIT",
+    "T.IDEA.HELP",
+    "T.IDEA.LEAD",
+    "T.IDEA.SAVE",
+    "T.KIT.COLLECT",
+    "T.KIT.OPEN",
+    "T.KIT.SEAT",
+    "T.LEAD.SET",
+    "T.NAV.DESCRIBE",
+    "T.NAV.GO",
+    "T.NAV.OBJECT",
+    "T.NOTES.KIT",
+    "T.NOTES.OPEN",
+    "T.NOTES.TAB",
+    "T.PAUSE.HOME",
+    "T.PAUSE.RETURN",
+    "T.PAUSE.SETTINGS",
+    "T.PHOTO.ENLARGE",
+    "T.PICK.CANCEL",
+    "T.PICK.USE",
+    "T.PLAN.DELIVER",
+    "T.PLAN.RECORD",
+    "T.POST.PHOTO",
+    "T.POST.PLAY",
+    "T.PRESENT.DELIVER",
+    "T.PRESENT.REVIEW",
+    "T.PRESENT.SHOW",
+    "T.PRESENT.TRAVEL",
+    "T.RAIL.CANCEL",
+    "T.RAIL.COMMIT",
+    "T.RAIL.DESTINATIONS",
+    "T.RAIL.INSERT",
+    "T.RAIL.MOVE",
+    "T.RAIL.NOOP",
+    "T.RAIL.REPLACE",
+    "T.RAIL.RETURN",
+    "T.RAIL.SWAP",
+    "T.RECOVERY.NEW",
+    "T.RECOVERY.REPLACE",
+    "T.RECOVERY.RETRY",
+    "T.RESET.ACCEPT",
+    "T.RESET.CANCEL",
+    "T.RESUME.OPEN",
+    "T.RUN.BEGIN",
+    "T.RUN.CONTINUE",
+    "T.RUN.CUE",
+    "T.RUN.FINALIZE",
+    "T.RUN.LEAVE",
+    "T.RUN.REHEARSE",
+    "T.RUN.RESTART",
+    "T.RUN.RESTART.REHEARSAL",
+    "T.RUN.RESTART.SHOW",
+    "T.RUN.SHOW",
+    "T.RUN.STOP",
+    "T.RUN.UNMET_CONTINUE",
+    "T.SAVE.ACK",
+    "T.SAVE.FAIL",
+    "T.SAVE.RETRY",
+    "T.SETTINGS.CHANGE",
+    "T.SHOW.CHECK",
+    "T.SOURCE.SELECT",
+    "T.SOURCE.UNZOOM",
+    "T.SOURCE.WORD",
+    "T.SOURCE.WORD.CLOSE",
+    "T.SOURCE.ZOOM",
+    "T.STORY.CLOSE",
+    "T.TALK.ASK",
+    "T.TALK.BACK",
+    "T.TALK.SOURCE",
+    "T.TIMELINE.SOURCE",
+    "T.TIMELINE.VIEW",
+    "T.TOAST.LOOK",
+    "T.TOAST.REPLAY",
+    "T.TOAST.SETTLE",
+    "T.TOAST.START",
+    "T.VISIBILITY.HIDE",
+    "T.VISIBILITY.RETURN",
+    "T.WORK.CLEAR",
+    "T.WORK.EDIT",
+    "T.WORK.MISSING",
+    "T.WORK.RESET",
+    "T.WORLD.ABORT",
+    "T.WORLD.ARRIVE",
+    "T.WORLD.CANCEL",
+    "T.WORLD.CHOOSE",
+    "T.WORLD.COMMIT",
+    "T.WORLD.MOVE",
+    "T.WORLD.RETARGET",
+    "T.WORLD.RETRY",
+    "T.WORLD.TOOL"
+  ],
+  "owners": [
+    "ACC.COACH",
+    "ACC.COMPARE",
+    "ACC.EVIDENCE.E1",
+    "ACC.EVIDENCE.E2",
+    "ACC.EVIDENCE.E3",
+    "ACC.EVIDENCE.E4",
+    "ACC.EVIDENCE.E5",
+    "ACC.EVIDENCE.E6",
+    "ACC.EVIDENCE.E7",
+    "ACC.EVIDENCE.E8",
+    "ACC.GOAL",
+    "ACC.KIT",
+    "ACC.OBJECTS",
+    "ACC.PLAN.SEARCH",
+    "ACC.PLAN.STORY",
+    "ACC.PRESENT",
+    "ACC.STORY.STATE",
+    "ACC.THEORY",
+    "ACC.TIMELINE",
+    "ACC.VENUE",
+    "ACT.ARI",
+    "ACT.JO",
+    "ACT.LOOP",
+    "ACT.PLAYER",
+    "ACT.REMY",
+    "CY.ACCESS.E2",
+    "CY.EXIT.ST",
+    "CY.EXIT.WK",
+    "CY.MODEL.BENCH",
+    "CY.MODEL.BOAT",
+    "CY.NOTICE.BOARD",
+    "CY.PETALS",
+    "CY.SOURCE.E3",
+    "CY.SOURCE.E7",
+    "CY.TABLET.STAND",
+    "KIT.CADDY",
+    "KIT.NOTE.E6",
+    "KIT.NOTE.E7",
+    "LOOP.FOLLOW.PAD",
+    "MD.ACCESS.E8",
+    "MD.EXIT.WK",
+    "MD.PLAIN.WALL",
+    "MD.RACK.STATION",
+    "MD.RECORDING.TABLE",
+    "MD.SOURCE.E5",
+    "MD.SOURCE.E6",
+    "MD.SOURCE.E7",
+    "MODEL.BACKPACK",
+    "MODEL.BROKEN_BRIDGE",
+    "MODEL.GRANDMA",
+    "MODEL.PIP",
+    "MODEL.RIVER",
+    "MODEL.SEED",
+    "PUP.BACKPACK",
+    "PUP.BOATS",
+    "PUP.BROKEN_BRIDGE",
+    "PUP.FLOWER",
+    "PUP.GRANDMA",
+    "PUP.HILL",
+    "PUP.LEFT_BANK",
+    "PUP.PIP",
+    "PUP.RIVER",
+    "PUP.SEED",
+    "SC.CY",
+    "SC.MD",
+    "SC.ST",
+    "SC.WK",
+    "ST.ACCESS.E2",
+    "ST.BOARD",
+    "ST.CONSOLE",
+    "ST.CONTROL.CLEAR",
+    "ST.CONTROL.REHEARSE",
+    "ST.CONTROL.RESET",
+    "ST.CONTROL.SHOW",
+    "ST.CONTROL.STOP",
+    "ST.DOCK",
+    "ST.DOCK.FLAP",
+    "ST.DOCK.PAD",
+    "ST.EXIT.CY",
+    "ST.EXIT.WK",
+    "ST.MODEL",
+    "ST.MODEL.TAB",
+    "ST.PROJECTION",
+    "ST.RACK.BAY",
+    "ST.RAIL",
+    "ST.RAIL.A",
+    "ST.RAIL.B",
+    "ST.RAIL.C",
+    "ST.RAIL.D",
+    "ST.SOURCE.E1",
+    "ST.SOURCE.E4",
+    "ST.SOURCE.E6",
+    "TILE.BLOOM",
+    "TILE.BRIDGE",
+    "TILE.FERRY",
+    "TILE.PLANT",
+    "WK.ACCESS.NAV",
+    "WK.BENCH",
+    "WK.EXIT.CY",
+    "WK.EXIT.MD",
+    "WK.EXIT.ST",
+    "WK.SCENERY",
+    "WK.TOAST",
+    "WK.TOAST.MAGNIFIER",
+    "WK.TOAST.SKIP",
+    "WK.TOAST.START",
+    "WK.WAYFINDING"
+  ],
+  "sourceConditions": [
+    {
+      "id": "CT.TITLE.E1",
+      "condition": "Jo; no event timestamp; E1.a/b/c.",
+      "sourceLine": 75
+    },
+    {
+      "id": "CT.TITLE.E2",
+      "condition": "Remy; recording 9:12, message 9:13, separately labeled; E2.a/b/c and frame subdivisions below.",
+      "sourceLine": 76
+    },
+    {
+      "id": "CT.TITLE.E3",
+      "condition": "Ari; Posted 9:10; E3.a/b only after full access. Before that use Curled notice, not the concealed heading.",
+      "sourceLine": 77
+    },
+    {
+      "id": "CT.TITLE.E4",
+      "condition": "Ari; Posted 9:05; E4.a/b.",
+      "sourceLine": 78
+    },
+    {
+      "id": "CT.TITLE.E5",
+      "condition": "Separate origins: capture slate / Ari’s account / your observation; never unlock one through another.",
+      "sourceLine": 79
+    },
+    {
+      "id": "CT.TITLE.E6",
+      "condition": "Jo; no invented timestamp; E6.a/b across every copy.",
+      "sourceLine": 80
+    },
+    {
+      "id": "CT.TITLE.E7",
+      "condition": "Remy; no invented timestamp; E7.a/b/c across every copy.",
+      "sourceLine": 81
+    },
+    {
+      "id": "CT.TITLE.E8",
+      "condition": "Crew; four local descriptions, not four extra principal records.",
+      "sourceLine": 82
+    },
+    {
+      "id": "CT.META.AUTHOR",
+      "condition": "Only the actual author of a written source; never attach Ari to Jo/Remy's notes.",
+      "sourceLine": 83
+    },
+    {
+      "id": "CT.META.POSTED",
+      "condition": "E3 9:10; E4 9:05; E2 message 9:13.",
+      "sourceLine": 84
+    },
+    {
+      "id": "CT.META.RECORDED",
+      "condition": "E2 recording 9:12, when recording metadata is actually displayed.",
+      "sourceLine": 85
+    },
+    {
+      "id": "CT.META.CAPTURED",
+      "condition": "Only E5.a's capture metadata, not an arrival timestamp.",
+      "sourceLine": 86
+    },
+    {
+      "id": "CT.META.VISIT",
+      "condition": "Direct observation, not an invented clock reading.",
+      "sourceLine": 87
+    },
+    {
+      "id": "CT.META.VENUE",
+      "condition": "NAV references retain public-information provenance.",
+      "sourceLine": 88
+    },
+    {
+      "id": "CT.META.CREW",
+      "condition": "E8 origin.",
+      "sourceLine": 89
+    },
+    {
+      "id": "CT.META.ACCOUNT",
+      "condition": "Delivered account, preserving its speaker; not a new independent written source.",
+      "sourceLine": 90
+    },
+    {
+      "id": "CT.META.OBSERVATION",
+      "condition": "E5.c actually observed state; no fictional author.",
+      "sourceLine": 91
+    },
+    {
+      "id": "CT.SRC.E1",
+      "condition": "E1.a = first two sentences; E1.b = “Our crew made Pip together—you made the backpack!”; E1.c = last two sentences. First flap access or Jo explicitly presenting the brief. Instructions express the assignment, not enforced reading gates.",
+      "sourceLine": 97
+    },
+    {
+      "id": "CT.SRC.E2.A",
+      "condition": "Full accessible clip description only after explicit Describe recording; ordinary frame access uses §2.3.",
+      "sourceLine": 98
+    },
+    {
+      "id": "CT.SRC.E2.B",
+      "condition": "Photograph caption; its only visible notice word is CANCELED. It never becomes the full notice.",
+      "sourceLine": 99
+    },
+    {
+      "id": "CT.SRC.E2.C",
+      "condition": "Remy's posted interpretation; preserve I think. Display on actual post opening or an explicitly delivered Remy account. Hearing the account alone does not acquire the recording/photo package.",
+      "sourceLine": 100
+    },
+    {
+      "id": "CT.SRC.E3",
+      "condition": "E3.a = first two lines; E3.b = last two lines. Full physical notice becomes available at flat-and-secured commit; photograph never supplies it. NPC quotation requires that NPC's allowed knowledge and records only words actually supplied.",
+      "sourceLine": 101
+    },
+    {
+      "id": "CT.SRC.E4",
+      "condition": "E4.a = first two sentences; E4.b = last two. A request/conditional plan, not proof it was carried out.",
+      "sourceLine": 102
+    },
+    {
+      "id": "CT.SRC.E5.A",
+      "condition": "Historical slate only when inspected or explicitly presented by Ari. Does not wake Loop or supply unheard account.",
+      "sourceLine": 103
+    },
+    {
+      "id": "CT.SRC.E5.B",
+      "condition": "Ari's full filming account when delivered. Historical “here” means Media, its delivery location. Reopen with origin Media, not relocated narration.",
+      "sourceLine": 104
+    },
+    {
+      "id": "CT.SRC.E6",
+      "condition": "E6.a = quoted promise “I’ll come to your hill, and we’ll plant this seed together before dark.”; E6.b = final three sentences. Full source retains the attribution preceding the quote. No countdown is introduced.",
+      "sourceLine": 105
+    },
+    {
+      "id": "CT.SRC.E7",
+      "condition": "E7.a = first sentence; E7.b = second; E7.c = last two. Authored puppet-world rules, not a generalized physics/botany lesson.",
+      "sourceLine": 106
+    },
+    {
+      "id": "CT.SRC.E8.FERRY",
+      "condition": "One Boat inspection. No passenger limit or completed crossing animation in this local description.",
+      "sourceLine": 107
+    },
+    {
+      "id": "CT.SRC.E8.BRIDGE",
+      "condition": "Joined Boats inspection. No automatic Pip crossing demonstration.",
+      "sourceLine": 108
+    },
+    {
+      "id": "CT.SRC.E8.PLANT",
+      "condition": "Hill inspection. No automatic successful planting.",
+      "sourceLine": 109
+    },
+    {
+      "id": "CT.SRC.E8.BLOOM",
+      "condition": "Flower inspection. No implied unconditional growth.",
+      "sourceLine": 110
+    },
+    {
+      "id": "CT.MEDIA.RECORDING",
+      "condition": "E2 component tab; label alone supplies no event.",
+      "sourceLine": 118
+    },
+    {
+      "id": "CT.MEDIA.PHOTO",
+      "condition": "E2 component tab; label alone supplies no hidden text.",
+      "sourceLine": 119
+    },
+    {
+      "id": "CT.MEDIA.MESSAGE",
+      "condition": "E2.c grouping.",
+      "sourceLine": 120
+    },
+    {
+      "id": "CT.MEDIA.FRAME1",
+      "condition": "First frame's accessible visual equivalent; E2.a/frame 1 only. No doorway/end fact.",
+      "sourceLine": 121
+    },
+    {
+      "id": "CT.MEDIA.FRAME2",
+      "condition": "Second frame only; no arrival or destination.",
+      "sourceLine": 122
+    },
+    {
+      "id": "CT.MEDIA.FRAME3",
+      "condition": "Third frame only.",
+      "sourceLine": 123
+    },
+    {
+      "id": "CT.MEDIA.END",
+      "condition": "Display at third-frame/end marker, never on the first still or initial accessible name.",
+      "sourceLine": 124
+    },
+    {
+      "id": "CT.MEDIA.PARTIAL",
+      "condition": "Explicit Photo view/enlargement; E2.b. No physical Flatten action here.",
+      "sourceLine": 125
+    },
+    {
+      "id": "CT.MEDIA.FRAME1.LABEL",
+      "condition": "First scrub position; no content preview.",
+      "sourceLine": 126
+    },
+    {
+      "id": "CT.MEDIA.FRAME2.LABEL",
+      "condition": "Second position.",
+      "sourceLine": 127
+    },
+    {
+      "id": "CT.MEDIA.FRAME3.LABEL",
+      "condition": "Third position.",
+      "sourceLine": 128
+    },
+    {
+      "id": "CT.MEDIA.SLATE",
+      "condition": "E5.a, only when acquired.",
+      "sourceLine": 129
+    },
+    {
+      "id": "CT.MEDIA.ARI",
+      "condition": "E5.b, only when actually delivered.",
+      "sourceLine": 130
+    },
+    {
+      "id": "CT.OBS.LOOP.SEEN",
+      "condition": "E5.c historical location observation after actual arrival/description. Does not say Loop remains there.",
+      "sourceLine": 131
+    },
+    {
+      "id": "CT.OBS.LOOP.RESPONSE",
+      "condition": "E5.c response component after wake commit. Seeing standby Loop alone does not supply it.",
+      "sourceLine": 132
+    },
+    {
+      "id": "CT.MEDIA.HISTORICAL",
+      "condition": "Label on historical E5 observation after departure/recovery; exact slate/account remains unchanged.",
+      "sourceLine": 133
+    },
+    {
+      "id": "CT.NAV.ST",
+      "condition": "NAV.ST; WK.ACCESS.NAV / ACC.VENUE.",
+      "sourceLine": 141
+    },
+    {
+      "id": "CT.NAV.CY",
+      "condition": "NAV.CY; same accesses.",
+      "sourceLine": 142
+    },
+    {
+      "id": "CT.NAV.WK",
+      "condition": "NAV.WK; same accesses.",
+      "sourceLine": 143
+    },
+    {
+      "id": "CT.NAV.MEDIA",
+      "condition": "NAV.MEDIA; suitability only, no occupants.",
+      "sourceLine": 144
+    },
+    {
+      "id": "CT.WORD.PREMIERE",
+      "condition": "Definition for premiere.",
+      "sourceLine": 145
+    },
+    {
+      "id": "CT.WORD.REHEARSAL",
+      "condition": "Definition for rehearsal.",
+      "sourceLine": 146
+    },
+    {
+      "id": "CT.WORD.CAPTURED",
+      "condition": "Definition for captured.",
+      "sourceLine": 147
+    },
+    {
+      "id": "CT.WORD.CUE",
+      "condition": "Definition for cue/story tile.",
+      "sourceLine": 148
+    },
+    {
+      "id": "CT.WORD.INTERPRETATION",
+      "condition": "Definition for interpretation.",
+      "sourceLine": 149
+    },
+    {
+      "id": "CT.UI.BACK",
+      "condition": "Restore surviving parent task/child mode.",
+      "sourceLine": 174
+    },
+    {
+      "id": "CT.UI.CLOSE",
+      "condition": "Close current child/root according to 06 C3; never auto-play.",
+      "sourceLine": 175
+    },
+    {
+      "id": "CT.UI.ROOM",
+      "condition": "Unwind supporting tasks to current room.",
+      "sourceLine": 176
+    },
+    {
+      "id": "CT.UI.FESTIVAL",
+      "condition": "Exit Pause; paused run remains paused.",
+      "sourceLine": 177
+    },
+    {
+      "id": "CT.UI.CANCEL",
+      "condition": "Cancel current uncommitted choice, not committed case progress.",
+      "sourceLine": 178
+    },
+    {
+      "id": "CT.UI.DISMISS",
+      "condition": "Remove guidance/optional offer only.",
+      "sourceLine": 179
+    },
+    {
+      "id": "CT.UI.KEEP",
+      "condition": "Close help/save offer and preserve draft/current run.",
+      "sourceLine": 180
+    },
+    {
+      "id": "CT.UI.MENU",
+      "condition": "Open Pause.",
+      "sourceLine": 181
+    },
+    {
+      "id": "CT.UI.GOAL",
+      "condition": "Recover assignment, present opportunity, current question and latest status.",
+      "sourceLine": 182
+    },
+    {
+      "id": "CT.UI.MOVE",
+      "condition": "Named current-room objects and exits.",
+      "sourceLine": 183
+    },
+    {
+      "id": "CT.UI.MAP",
+      "condition": "Public venue view.",
+      "sourceLine": 184
+    },
+    {
+      "id": "CT.UI.NOTES",
+      "condition": "Evidence and optional thinking tools.",
+      "sourceLine": 185
+    },
+    {
+      "id": "CT.UI.HELP",
+      "condition": "Open coaching without sending.",
+      "sourceLine": 186
+    },
+    {
+      "id": "CT.UI.KIT",
+      "condition": "Appropriate physical host/acquired-evidence access.",
+      "sourceLine": 187
+    },
+    {
+      "id": "CT.UI.SETTINGS",
+      "condition": "Current caller preserved.",
+      "sourceLine": 188
+    },
+    {
+      "id": "CT.UI.EDIT",
+      "condition": "Edit the indicated idea/plan/selection; no implicit delivery.",
+      "sourceLine": 189
+    },
+    {
+      "id": "CT.UI.NOTHING",
+      "condition": "Completely empty idea, no details or relationship.",
+      "sourceLine": 190
+    },
+    {
+      "id": "CT.UI.ADD_IDEA",
+      "condition": "Attempted textual explanation record/delivery with no text; not used for evidence-only presentation, comparison or help.",
+      "sourceLine": 191
+    },
+    {
+      "id": "CT.UI.LIMIT",
+      "condition": "Overlimit explicit explanation delivery/coaching send; preserve all draft text. No exploration lock.",
+      "sourceLine": 192
+    },
+    {
+      "id": "CT.UI.LIMIT_RECORD",
+      "condition": "Overlimit Save idea/Record my plan; makes no false claim that a private record is sent to anyone.",
+      "sourceLine": 193
+    },
+    {
+      "id": "CT.UI.COUNT",
+      "condition": "Display from 500 characters onward or whenever overlimit; not announced per keystroke.",
+      "sourceLine": 194
+    },
+    {
+      "id": "CT.UI.DRAFT_KEPT",
+      "condition": "Explicit canceled send/closed draft status when needed; saving status separately conveys durable success/failure.",
+      "sourceLine": 195
+    },
+    {
+      "id": "CT.UI.LATEST",
+      "condition": "Goal's existing recoverable latest-status text, not a new full event-log feature.",
+      "sourceLine": 196
+    },
+    {
+      "id": "CT.START.TITLE",
+      "condition": "Start heading.",
+      "sourceLine": 202
+    },
+    {
+      "id": "CT.START.CASE",
+      "condition": "Case subtitle.",
+      "sourceLine": 203
+    },
+    {
+      "id": "CT.START.CHECK",
+      "condition": "Startup reading; no false empty slot.",
+      "sourceLine": 204
+    },
+    {
+      "id": "CT.START.START",
+      "condition": "Confirmed no run.",
+      "sourceLine": 205
+    },
+    {
+      "id": "CT.START.CONTINUE",
+      "condition": "Valid saved/current session run.",
+      "sourceLine": 206
+    },
+    {
+      "id": "CT.START.LOCATION",
+      "condition": "Valid durable run summary.",
+      "sourceLine": 207
+    },
+    {
+      "id": "CT.START.VISIT",
+      "condition": "Current in-memory progress newer than durable record; same page visit.",
+      "sourceLine": 208
+    },
+    {
+      "id": "CT.START.OVER",
+      "condition": "Opens whole-case confirmation only.",
+      "sourceLine": 209
+    },
+    {
+      "id": "CT.GOAL.ASSIGNMENT",
+      "condition": "Opening and always-recoverable original assignment.",
+      "sourceLine": 210
+    },
+    {
+      "id": "CT.GUIDE.TAB",
+      "condition": "Opening suggestion before model tried; dismissible.",
+      "sourceLine": 211
+    },
+    {
+      "id": "CT.GUIDE.PREVIEW",
+      "condition": "After model commit, before Preview tried; no exit lock.",
+      "sourceLine": 212
+    },
+    {
+      "id": "CT.GOAL.SEARCH",
+      "condition": "Loop not yet observed/recovered; no named hidden destination.",
+      "sourceLine": 213
+    },
+    {
+      "id": "CT.GOAL.RESOURCES",
+      "condition": "Both known resources still need delivery; do not imply they were read.",
+      "sourceLine": 214
+    },
+    {
+      "id": "CT.GOAL.LOOP",
+      "condition": "Kit seated, Loop still missing/following. Known action, not unobserved location.",
+      "sourceLine": 215
+    },
+    {
+      "id": "CT.GOAL.KIT",
+      "condition": "Loop docked, kit not seated.",
+      "sourceLine": 216
+    },
+    {
+      "id": "CT.GOAL.SEAT",
+      "condition": "Carried kit, player in Stage; actual handoff action.",
+      "sourceLine": 217
+    },
+    {
+      "id": "CT.GOAL.DOCK",
+      "condition": "Following Loop, player in Stage.",
+      "sourceLine": 218
+    },
+    {
+      "id": "CT.GOAL.REHEARSE",
+      "condition": "Both delivered, current order not certified.",
+      "sourceLine": 219
+    },
+    {
+      "id": "CT.GOAL.LAUNCH",
+      "condition": "Current arrangement fully certified, first premiere pending.",
+      "sourceLine": 220
+    },
+    {
+      "id": "CT.GOAL.AFTER",
+      "condition": "Historical completion; current qualification is still checked at Show.",
+      "sourceLine": 221
+    },
+    {
+      "id": "CT.GOAL.QUESTION",
+      "condition": "Only after an actual lead selection; separate from physical goal.",
+      "sourceLine": 222
+    },
+    {
+      "id": "CT.WORLD.YOU",
+      "condition": "First avatar guidance. Accessible name: You, the premiere captain.",
+      "sourceLine": 223
+    },
+    {
+      "id": "CT.WORLD.GO",
+      "condition": "Physical door / Map travel; no automatic source operation.",
+      "sourceLine": 224
+    },
+    {
+      "id": "CT.WORLD.GOING",
+      "condition": "Committed movement intent to named target. Floor-only walk has no invented target name; avatar movement supplies feedback.",
+      "sourceLine": 225
+    },
+    {
+      "id": "CT.WORLD.STOP",
+      "condition": "Current walking intent.",
+      "sourceLine": 226
+    },
+    {
+      "id": "CT.WORLD.STOPPED",
+      "condition": "Explicit cancellation; do not announce on every source opening.",
+      "sourceLine": 227
+    },
+    {
+      "id": "CT.WORLD.CHOOSE",
+      "condition": "Overlap chooser heading, followed by actual candidate actions; no default chosen clue.",
+      "sourceLine": 228
+    },
+    {
+      "id": "CT.WORLD.BLOCKED",
+      "condition": "Noninteractive collision.",
+      "sourceLine": 229
+    },
+    {
+      "id": "CT.WORLD.UNREACHABLE",
+      "condition": "No legal approach; current avatar position retained.",
+      "sourceLine": 230
+    },
+    {
+      "id": "CT.WORLD.ARRIVED",
+      "condition": "Room arrival; once, then available description; no source body read automatically.",
+      "sourceLine": 231
+    },
+    {
+      "id": "CT.WORLD.HERE",
+      "condition": "Current room marker in Map.",
+      "sourceLine": 232
+    },
+    {
+      "id": "CT.WORLD.LOCAL_LIST",
+      "condition": "Move to list instructions; current room only.",
+      "sourceLine": 233
+    },
+    {
+      "id": "CT.WORLD.VENUE",
+      "condition": "WK.ACCESS.NAV; actual sign approach.",
+      "sourceLine": 234
+    },
+    {
+      "id": "CT.OBJ.MODEL",
+      "condition": "ST.MODEL/TAB default cue; native control can use same full label, consolidating Pull tab.",
+      "sourceLine": 242
+    },
+    {
+      "id": "CT.OBJ.MODEL_RESULT",
+      "condition": "Model commit only; no projection change.",
+      "sourceLine": 243
+    },
+    {
+      "id": "CT.OBJ.BRIEF_OPEN",
+      "condition": "ST.SOURCE.E1 closed flap.",
+      "sourceLine": 244
+    },
+    {
+      "id": "CT.OBJ.BRIEF_READ",
+      "condition": "E1 physical flap already open.",
+      "sourceLine": 245
+    },
+    {
+      "id": "CT.OBJ.JO_DRAWER",
+      "condition": "ST.SOURCE.E6 shut.",
+      "sourceLine": 246
+    },
+    {
+      "id": "CT.OBJ.JO_NOTE",
+      "condition": "ST.SOURCE.E6 open / MD.SOURCE.E6 / allowed conversation.",
+      "sourceLine": 247
+    },
+    {
+      "id": "CT.OBJ.REQUEST_OPEN",
+      "condition": "ST.SOURCE.E4 folded.",
+      "sourceLine": 248
+    },
+    {
+      "id": "CT.OBJ.REQUEST_READ",
+      "condition": "Same request unfolded.",
+      "sourceLine": 249
+    },
+    {
+      "id": "CT.OBJ.POST",
+      "condition": "ST.ACCESS.E2 / CY.ACCESS.E2; neutral scene label Crew message.",
+      "sourceLine": 250
+    },
+    {
+      "id": "CT.OBJ.MESSAGE_LABEL",
+      "condition": "Unopened Stage board label; no cancellation headline.",
+      "sourceLine": 251
+    },
+    {
+      "id": "CT.OBJ.NOTICE_CURLED",
+      "condition": "Before notice commit.",
+      "sourceLine": 252
+    },
+    {
+      "id": "CT.OBJ.NOTICE_FLATTEN",
+      "condition": "CY.SOURCE.E3 one physical action; same pointer/keyboard meaning.",
+      "sourceLine": 253
+    },
+    {
+      "id": "CT.OBJ.NOTICE_READ",
+      "condition": "Notice already flat/secured.",
+      "sourceLine": 254
+    },
+    {
+      "id": "CT.OBJ.NOTICE_PARTIAL",
+      "condition": "Current curled physical source; not E3.a/b exposure.",
+      "sourceLine": 255
+    },
+    {
+      "id": "CT.OBJ.NOTICE_DONE",
+      "condition": "Secure commit, then exact E3 body.",
+      "sourceLine": 256
+    },
+    {
+      "id": "CT.OBJ.REMY_NOTE",
+      "condition": "CY.SOURCE.E7 / MD.SOURCE.E7 / legitimate Remy presentation.",
+      "sourceLine": 257
+    },
+    {
+      "id": "CT.OBJ.DOCK_OPEN",
+      "condition": "Dock flap closed, no following Loop on Stage.",
+      "sourceLine": 258
+    },
+    {
+      "id": "CT.OBJ.DOCK_EMPTY",
+      "condition": "Already-open empty bay.",
+      "sourceLine": 259
+    },
+    {
+      "id": "CT.OBJ.DOCK_EMPTY_RESULT",
+      "condition": "Dock inspection; no repair issue invented.",
+      "sourceLine": 260
+    },
+    {
+      "id": "CT.OBJ.WAKE",
+      "condition": "ACT.LOOP / LOOP.FOLLOW.PAD while standby and locally present.",
+      "sourceLine": 261
+    },
+    {
+      "id": "CT.OBJ.WAKE_RESULT",
+      "condition": "Wake responsive-pose commit.",
+      "sourceLine": 262
+    },
+    {
+      "id": "CT.OBJ.FOLLOWING",
+      "condition": "Repeated activation/local follower status.",
+      "sourceLine": 263
+    },
+    {
+      "id": "CT.OBJ.DOCK_READY",
+      "condition": "Docked repeat/settled status; projecting state uses run caption instead.",
+      "sourceLine": 264
+    },
+    {
+      "id": "CT.OBJ.SLATE",
+      "condition": "MD.SOURCE.E5.",
+      "sourceLine": 265
+    },
+    {
+      "id": "CT.OBJ.TALK",
+      "condition": "Local actual NPC approach.",
+      "sourceLine": 266
+    },
+    {
+      "id": "CT.OBJ.INSPECT_TILE",
+      "condition": "Existing tile inspection; local description only.",
+      "sourceLine": 267
+    },
+    {
+      "id": "CT.OBJ.PETALS",
+      "condition": "CY.PETALS observed/description, including reduced motion. No mandatory new clue.",
+      "sourceLine": 268
+    },
+    {
+      "id": "CT.SCENE.ST",
+      "condition": "SC.ST; MODEL.* initial illustration can be inspected via model, not recited as E6.",
+      "sourceLine": 278
+    },
+    {
+      "id": "CT.SCENE.ST.EMPTY",
+      "condition": "Both missing at Stage. If only one missing, use its specific status rather than this combined line.",
+      "sourceLine": 279
+    },
+    {
+      "id": "CT.SCENE.ST.KIT",
+      "condition": "Caddy seated; no note/body exposure.",
+      "sourceLine": 280
+    },
+    {
+      "id": "CT.SCENE.ST.LOOP",
+      "condition": "Loop docked/projecting; actual story details through §6.",
+      "sourceLine": 281
+    },
+    {
+      "id": "CT.SCENE.ST.BLANK",
+      "condition": "Missing Loop; independent of kit/rail.",
+      "sourceLine": 282
+    },
+    {
+      "id": "CT.SCENE.CY",
+      "condition": "SC.CY; add notice's actual curled/flat status. No note rule recited.",
+      "sourceLine": 283
+    },
+    {
+      "id": "CT.SCENE.WK",
+      "condition": "SC.WK; covered/revealed gag status belongs to §9; no required detour.",
+      "sourceLine": 284
+    },
+    {
+      "id": "CT.SCENE.MD",
+      "condition": "SC.MD only, after actual arrival; no slate body.",
+      "sourceLine": 285
+    },
+    {
+      "id": "CT.SCENE.MD.LOOP",
+      "condition": "Standby in Media; actual location exposure.",
+      "sourceLine": 286
+    },
+    {
+      "id": "CT.SCENE.MD.NO_LOOP",
+      "condition": "Player previously observed/recovered Loop and it is absent. No claim about current offscreen docking.",
+      "sourceLine": 287
+    },
+    {
+      "id": "CT.SCENE.MD.KIT",
+      "condition": "Not collected; no disclosure that notes were read.",
+      "sourceLine": 288
+    },
+    {
+      "id": "CT.SCENE.MD.NO_KIT",
+      "condition": "Kit collected.",
+      "sourceLine": 289
+    },
+    {
+      "id": "CT.SCENE.FOLLOW",
+      "condition": "Any current room while following; never shown in another room's destination list.",
+      "sourceLine": 290
+    },
+    {
+      "id": "CT.SCENE.CARRIED",
+      "condition": "Current caddy host player.",
+      "sourceLine": 291
+    },
+    {
+      "id": "CT.NOTES.EVIDENCE",
+      "condition": "Notes tab; only available documents/accounts listed.",
+      "sourceLine": 301
+    },
+    {
+      "id": "CT.NOTES.COMPARE",
+      "condition": "Optional two-detail tool.",
+      "sourceLine": 302
+    },
+    {
+      "id": "CT.NOTES.TIMELINE",
+      "condition": "Known times/discovery order.",
+      "sourceLine": 303
+    },
+    {
+      "id": "CT.NOTES.IDEAS",
+      "condition": "Private drafts and records.",
+      "sourceLine": 304
+    },
+    {
+      "id": "CT.NOTES.EMPTY",
+      "condition": "No acquired sources; no eight empty slots.",
+      "sourceLine": 305
+    },
+    {
+      "id": "CT.NOTES.OPEN_SOURCE",
+      "condition": "Acquired source/component; no implication of new physical travel.",
+      "sourceLine": 306
+    },
+    {
+      "id": "CT.NOTES.LOCATION",
+      "condition": "Known physical origin/current portable owner.",
+      "sourceLine": 307
+    },
+    {
+      "id": "CT.NOTES.GO_SOURCE",
+      "condition": "Known actual physical host; initiates travel only, then local action.",
+      "sourceLine": 308
+    },
+    {
+      "id": "CT.SOURCE.ENLARGE",
+      "condition": "Same source/component, no additional hidden content automatically presented.",
+      "sourceLine": 309
+    },
+    {
+      "id": "CT.SOURCE.DEFINITION_CLOSE",
+      "condition": "Return focus to the selected word.",
+      "sourceLine": 310
+    },
+    {
+      "id": "CT.SOURCE.DETAIL",
+      "condition": "Passage selection, no automatic answer.",
+      "sourceLine": 311
+    },
+    {
+      "id": "CT.SOURCE.ADD",
+      "condition": "Open source/passage picker for the chosen empty slot.",
+      "sourceLine": 312
+    },
+    {
+      "id": "CT.SOURCE.CHANGE",
+      "condition": "Replace that slot only after Use this detail.",
+      "sourceLine": 313
+    },
+    {
+      "id": "CT.SOURCE.REMOVE",
+      "condition": "Remove selected reference; retain idea/relationship without fabricating the missing source.",
+      "sourceLine": 314
+    },
+    {
+      "id": "CT.SOURCE.USE",
+      "condition": "Confirm current exact passage selection.",
+      "sourceLine": 315
+    },
+    {
+      "id": "CT.SOURCE.CHOOSE",
+      "condition": "Picker instructions; no default detail.",
+      "sourceLine": 316
+    },
+    {
+      "id": "CT.SOURCE.NONE",
+      "condition": "Use attempted with no selection; Back/Return remains usable.",
+      "sourceLine": 317
+    },
+    {
+      "id": "CT.SOURCE.VENUE",
+      "condition": "Separate picker group with displayed NAV references.",
+      "sourceLine": 318
+    },
+    {
+      "id": "CT.SOURCE.OPEN_VENUE",
+      "condition": "Owned Map child, then return to picker; does not auto-select NAV.MEDIA.",
+      "sourceLine": 319
+    },
+    {
+      "id": "CT.SOURCE.NO_AVAILABLE",
+      "condition": "Empty picker; no hidden source titles. Owned kit link appears separately only when genuinely possessed.",
+      "sourceLine": 320
+    },
+    {
+      "id": "CT.CLIP.PLAY",
+      "condition": "E2 explicit play, current frame/resume policy from 06.",
+      "sourceLine": 321
+    },
+    {
+      "id": "CT.CLIP.PAUSE",
+      "condition": "Holds current frame.",
+      "sourceLine": 322
+    },
+    {
+      "id": "CT.CLIP.PREVIOUS",
+      "condition": "One frame backward; at first frame pair with CT.CLIP.FIRST.",
+      "sourceLine": 323
+    },
+    {
+      "id": "CT.CLIP.NEXT",
+      "condition": "One frame forward; at last pair with CT.CLIP.LAST.",
+      "sourceLine": 324
+    },
+    {
+      "id": "CT.CLIP.FIRST",
+      "condition": "End-limit feedback, no change/exposure of later frames.",
+      "sourceLine": 325
+    },
+    {
+      "id": "CT.CLIP.LAST",
+      "condition": "Only when last frame actually displayed.",
+      "sourceLine": 326
+    },
+    {
+      "id": "CT.CLIP.DESCRIBE",
+      "condition": "Explicitly displays the full CT.SRC.E2.A description.",
+      "sourceLine": 327
+    },
+    {
+      "id": "CT.CLIP.REPLAY",
+      "condition": "Restart E2 from first frame.",
+      "sourceLine": 328
+    },
+    {
+      "id": "CT.CLIP.ENLARGE_PHOTO",
+      "condition": "Same partial photograph.",
+      "sourceLine": 329
+    },
+    {
+      "id": "CT.CLIP.POSITION",
+      "condition": "Accessible name of three-position scrub control; current value is Frame 1/2/3, not a spoiler sentence.",
+      "sourceLine": 330
+    },
+    {
+      "id": "CT.COMPARE.INSTRUCTION",
+      "condition": "Empty/partial comparison.",
+      "sourceLine": 331
+    },
+    {
+      "id": "CT.COMPARE.FIRST",
+      "condition": "Slot label; no hidden source recommendation.",
+      "sourceLine": 332
+    },
+    {
+      "id": "CT.COMPARE.SECOND",
+      "condition": "Slot label.",
+      "sourceLine": 333
+    },
+    {
+      "id": "CT.COMPARE.RELATION",
+      "condition": "Optional relationship group.",
+      "sourceLine": 334
+    },
+    {
+      "id": "CT.COMPARE.SUPPORTS",
+      "condition": "Child-selected relationship, not a verdict.",
+      "sourceLine": 335
+    },
+    {
+      "id": "CT.COMPARE.CONFLICTS",
+      "condition": "Same.",
+      "sourceLine": 336
+    },
+    {
+      "id": "CT.COMPARE.BEFORE",
+      "condition": "Same; selection does not change chronology.",
+      "sourceLine": 337
+    },
+    {
+      "id": "CT.COMPARE.RELATION_HELP",
+      "condition": "Below relationship group; never “correct connection.”",
+      "sourceLine": 338
+    },
+    {
+      "id": "CT.COMPARE.CLEAR_RELATION",
+      "condition": "Optional relationship cleared; selected details/words remain.",
+      "sourceLine": 339
+    },
+    {
+      "id": "CT.TIMELINE.EMPTY",
+      "condition": "No known timed records.",
+      "sourceLine": 340
+    },
+    {
+      "id": "CT.TIMELINE.EVENT",
+      "condition": "Sort known event metadata.",
+      "sourceLine": 341
+    },
+    {
+      "id": "CT.TIMELINE.DISCOVERY",
+      "condition": "Sort actual exposure order, not infer chronology.",
+      "sourceLine": 342
+    },
+    {
+      "id": "CT.TIMELINE.PLAN",
+      "condition": "E4 9:05; source not completed event.",
+      "sourceLine": 343
+    },
+    {
+      "id": "CT.TIMELINE.NOTICE",
+      "condition": "E3 9:10.",
+      "sourceLine": 344
+    },
+    {
+      "id": "CT.TIMELINE.RECORDING",
+      "condition": "E2 9:12 metadata/components actually displayed.",
+      "sourceLine": 345
+    },
+    {
+      "id": "CT.TIMELINE.POST",
+      "condition": "E2.c 9:13; uncertainty retained.",
+      "sourceLine": 346
+    },
+    {
+      "id": "CT.TIMELINE.CAPTURE",
+      "condition": "E5.a 9:18, only after slate.",
+      "sourceLine": 347
+    },
+    {
+      "id": "CT.TIMELINE.ACCOUNT",
+      "condition": "Acquired account, unknown event time uses During your visit for delivery; do not invent a capture timestamp from E5.b alone.",
+      "sourceLine": 348
+    },
+    {
+      "id": "CT.TIMELINE.OBSERVED",
+      "condition": "Direct observation; During your visit.",
+      "sourceLine": 349
+    },
+    {
+      "id": "CT.IDEA.FIELD",
+      "condition": "Optional field label; blank field, no answer placeholder.",
+      "sourceLine": 357
+    },
+    {
+      "id": "CT.IDEA.PRIVATE",
+      "condition": "True private draft only; previously delivered version remains separately historical.",
+      "sourceLine": 358
+    },
+    {
+      "id": "CT.IDEA.SAVE",
+      "condition": "Deliberate record of current text/details/relationship, not NPC delivery.",
+      "sourceLine": 359
+    },
+    {
+      "id": "CT.IDEA.RECORDED",
+      "condition": "Record committed in current visit; saving status separate.",
+      "sourceLine": 360
+    },
+    {
+      "id": "CT.IDEA.EDIT",
+      "condition": "New draft of recorded idea; previous recorded version retained on actual revision.",
+      "sourceLine": 361
+    },
+    {
+      "id": "CT.IDEA.EARLIER",
+      "condition": "Actual previous recorded text only.",
+      "sourceLine": 362
+    },
+    {
+      "id": "CT.IDEA.CURRENT",
+      "condition": "Current recorded version.",
+      "sourceLine": 363
+    },
+    {
+      "id": "CT.IDEA.PAST_PLAN",
+      "condition": "Saved record context differs from current rail; do not relabel it prediction for new order.",
+      "sourceLine": 364
+    },
+    {
+      "id": "CT.LEAD.CHOOSE",
+      "condition": "Authored supported lead list; private unsupported text remains a note.",
+      "sourceLine": 365
+    },
+    {
+      "id": "CT.LEAD.CANCELED",
+      "condition": "Authored search question, not a claim the player believes it.",
+      "sourceLine": 366
+    },
+    {
+      "id": "CT.LEAD.MOVED",
+      "condition": "Same.",
+      "sourceLine": 367
+    },
+    {
+      "id": "CT.LEAD.WHERE",
+      "condition": "Same.",
+      "sourceLine": 368
+    },
+    {
+      "id": "CT.LEAD.PROMISE",
+      "condition": "Story question.",
+      "sourceLine": 369
+    },
+    {
+      "id": "CT.LEAD.FOLLOW",
+      "condition": "Records question and selected already-known destination; no travel until Go.",
+      "sourceLine": 370
+    },
+    {
+      "id": "CT.LEAD.DESTINATION",
+      "condition": "Public room choices without occupants/correctness labels.",
+      "sourceLine": 371
+    },
+    {
+      "id": "CT.PLAN.RECORD",
+      "condition": "In-place crew-plan record, no Jo reply.",
+      "sourceLine": 372
+    },
+    {
+      "id": "CT.PLAN.RECORDED",
+      "condition": "Only while current snapshot undelivered to Jo.",
+      "sourceLine": 373
+    },
+    {
+      "id": "CT.PLAN.DELIVERED",
+      "condition": "Actual delivered snapshot; editing creates a new undelivered version.",
+      "sourceLine": 374
+    },
+    {
+      "id": "CT.PLAN.SEARCH",
+      "condition": "Search context.",
+      "sourceLine": 375
+    },
+    {
+      "id": "CT.PLAN.STORY",
+      "condition": "Current arrangement context; opening settles any cue first.",
+      "sourceLine": 376
+    },
+    {
+      "id": "CT.PLAN.EXPLAIN",
+      "condition": "Explicit addressed flow, actual approach before delivery.",
+      "sourceLine": 377
+    },
+    {
+      "id": "CT.PRESENT.OPEN",
+      "condition": "Choose references, no automatic delivery.",
+      "sourceLine": 378
+    },
+    {
+      "id": "CT.PRESENT.SELECTED",
+      "condition": "Review already displayed selected portions; never unopened entire record.",
+      "sourceLine": 379
+    },
+    {
+      "id": "CT.PRESENT.WHO",
+      "condition": "Recipient chooser.",
+      "sourceLine": 380
+    },
+    {
+      "id": "CT.PRESENT.HERE",
+      "condition": "Current-room NPCs.",
+      "sourceLine": 381
+    },
+    {
+      "id": "CT.PRESENT.MET",
+      "condition": "Known NPC/room only; no unseen Ari-in-Media entry.",
+      "sourceLine": 382
+    },
+    {
+      "id": "CT.PRESENT.NO_RECIPIENT",
+      "condition": "No local/known eligible recipient; no forced trip or invented person.",
+      "sourceLine": 383
+    },
+    {
+      "id": "CT.PRESENT.CHOOSE",
+      "condition": "Empty evidence selection; does not require an explanation.",
+      "sourceLine": 384
+    },
+    {
+      "id": "CT.PRESENT.REVIEW",
+      "condition": "Heading before actual selected details and any separately labeled child idea.",
+      "sourceLine": 385
+    },
+    {
+      "id": "CT.PRESENT.SHOW",
+      "condition": "Local recipient, queue approach and deliver once.",
+      "sourceLine": 386
+    },
+    {
+      "id": "CT.PRESENT.GO",
+      "condition": "Known remote recipient; travels only, retains draft; Show must be selected locally.",
+      "sourceLine": 387
+    },
+    {
+      "id": "CT.PRESENT.GOING",
+      "condition": "Pending actual local approach; cancel/new intent prevents delivery.",
+      "sourceLine": 388
+    },
+    {
+      "id": "CT.PRESENT.DONE",
+      "condition": "At delivery commit only; accompanying reply may add knowledge within §5.",
+      "sourceLine": 389
+    },
+    {
+      "id": "CT.PRESENT.CANCELED",
+      "condition": "Canceled before delivery. If delivery committed, retain DONE/history instead.",
+      "sourceLine": 390
+    },
+    {
+      "id": "CT.JO.MODEL",
+      "condition": "First model commit; retained for recovery, no E1 body exposure.",
+      "sourceLine": 402
+    },
+    {
+      "id": "CT.JO.BORROW",
+      "condition": "Ask about empty dock before Loop returned; no observed destination.",
+      "sourceLine": 403
+    },
+    {
+      "id": "CT.JO.CANCEL_UNKNOWN",
+      "condition": "Cancellation topic with neither relevant E3 passage supplied.",
+      "sourceLine": 404
+    },
+    {
+      "id": "CT.REMY.CLIP",
+      "condition": "Explicit recording-limit topic; supplies Remy's account of the limit, not automatic full-clip exposure.",
+      "sourceLine": 405
+    },
+    {
+      "id": "CT.REMY.CORRECT",
+      "condition": "Both E3 scope and continued-premiere status actually supplied, currently or earlier. Records Remy's correction, not the player's revision.",
+      "sourceLine": 406
+    },
+    {
+      "id": "CT.ARI.INVITE",
+      "condition": "First eligible Media invitation while Loop standby and caddy present; after resources move use actual-progress variants. Unshown invitation remains available only if still factually applicable.",
+      "sourceLine": 407
+    },
+    {
+      "id": "CT.ARI.WAIT",
+      "condition": "Asked why not returned; past account remains valid after pickup.",
+      "sourceLine": 408
+    },
+    {
+      "id": "CT.JO.DOCKED",
+      "condition": "First docking acknowledgment, queued if a reading view is open; no automatic solution.",
+      "sourceLine": 409
+    },
+    {
+      "id": "CT.JO.SEED_HELP",
+      "condition": "Explicit requested story help, actual seed right/Pip left. Relationship assistance; if E6 unread, record introduced promise, not full E6 reading.",
+      "sourceLine": 410
+    },
+    {
+      "id": "CT.REMY.CROSS_HELP",
+      "condition": "Explicit crossing help, not ordinary Talk default. Relationship/means supplied; unread E7 remains unread except introduced facts.",
+      "sourceLine": 411
+    },
+    {
+      "id": "CT.JO.SOLUTION",
+      "condition": "Explicit whole-solution request with both notes available as specified in v3 core bank. For early direct help use §7's unconditional authored direct branch instead of inventing a note gate.",
+      "sourceLine": 412
+    },
+    {
+      "id": "CT.JO.ENDING",
+      "condition": "Completed full premiere, not merely successful rehearsal.",
+      "sourceLine": 413
+    },
+    {
+      "id": "CT.REMY.ENDING",
+      "condition": "Established authored post-premiere reaction; playful line retained for all five arrangements, not a literal tile-use recap/claim every tile ran.",
+      "sourceLine": 414
+    },
+    {
+      "id": "CT.ARI.ENDING",
+      "condition": "Post-premiere reaction; actual Show still checks current arrangement.",
+      "sourceLine": 415
+    },
+    {
+      "id": "CT.NPC.UNSUPPORTED",
+      "condition": "All three, unsupported evidence combination; follow with available topic controls, not a new fact or correction.",
+      "sourceLine": 416
+    },
+    {
+      "id": "CT.TALK.TOPICS",
+      "condition": "Local conversation heading after greeting.",
+      "sourceLine": 424
+    },
+    {
+      "id": "CT.TALK.ROLE",
+      "condition": "Jo → CT.GOAL.ASSIGNMENT then Open Jo’s crew brief. No automatic brief exposure.",
+      "sourceLine": 425
+    },
+    {
+      "id": "CT.TALK.LOOP",
+      "condition": "Jo → BORROW before return; after return actual dock status. Ari → actual progress + account option.",
+      "sourceLine": 426
+    },
+    {
+      "id": "CT.TALK.CANCELED",
+      "condition": "Jo/Remy topic under knowledge matrix below. Ari can answer from firsthand event knowledge.",
+      "sourceLine": 427
+    },
+    {
+      "id": "CT.TALK.CLIP",
+      "condition": "Remy → CT.REMY.CLIP.",
+      "sourceLine": 428
+    },
+    {
+      "id": "CT.TALK.REQUEST",
+      "condition": "Ari → CT.SRC.E4, her own source.",
+      "sourceLine": 429
+    },
+    {
+      "id": "CT.TALK.FILMING",
+      "condition": "Ari → CT.SRC.E5.B with origin Media; historical wording not current resource guidance.",
+      "sourceLine": 430
+    },
+    {
+      "id": "CT.TALK.WAIT",
+      "condition": "Ari → CT.ARI.WAIT.",
+      "sourceLine": 431
+    },
+    {
+      "id": "CT.TALK.SLATE",
+      "condition": "Ari → CT.SRC.E5.A, actual source origin.",
+      "sourceLine": 432
+    },
+    {
+      "id": "CT.TALK.JO_NOTE",
+      "condition": "Jo → CT.SRC.E6.",
+      "sourceLine": 433
+    },
+    {
+      "id": "CT.TALK.REMY_NOTE",
+      "condition": "Remy → CT.SRC.E7.",
+      "sourceLine": 434
+    },
+    {
+      "id": "CT.TALK.NOTES",
+      "condition": "Ari → CT.ARI.NOTES; does not claim authorship.",
+      "sourceLine": 435
+    },
+    {
+      "id": "CT.TALK.MATERIALS",
+      "condition": "Ari → present/moved-kit variant. No permission gate; physical collection remains freely available.",
+      "sourceLine": 436
+    },
+    {
+      "id": "CT.TALK.PLAN",
+      "condition": "Opens addressed review; no implicit AI.",
+      "sourceLine": 437
+    },
+    {
+      "id": "CT.TALK.HELP",
+      "condition": "Explicit coaching flow, §7.",
+      "sourceLine": 438
+    },
+    {
+      "id": "CT.TALK.DIRECT",
+      "condition": "Immediate authored help, §7; no required text.",
+      "sourceLine": 439
+    },
+    {
+      "id": "CT.TALK.AFTER",
+      "condition": "Post-completion payoff in NPC's own room, optional.",
+      "sourceLine": 440
+    },
+    {
+      "id": "CT.REMY.GREETING",
+      "condition": "Default talk; does not display either body.",
+      "sourceLine": 441
+    },
+    {
+      "id": "CT.ARI.NOTES",
+      "condition": "Always after arrival; clip/caddy facts, not note bodies.",
+      "sourceLine": 442
+    },
+    {
+      "id": "CT.ARI.KIT_READY",
+      "condition": "Caddy still in Media.",
+      "sourceLine": 443
+    },
+    {
+      "id": "CT.ARI.KIT_GONE",
+      "condition": "Caddy collected; no claim of reading or later seating.",
+      "sourceLine": 444
+    },
+    {
+      "id": "CT.ARI.FOLLOWING",
+      "condition": "Loop currently following in Media.",
+      "sourceLine": 445
+    },
+    {
+      "id": "CT.ARI.DEPARTED",
+      "condition": "Loop departed and is currently absent from Media; no firsthand claim of remote docking.",
+      "sourceLine": 446
+    },
+    {
+      "id": "CT.ARI.FILMING_AFTER",
+      "condition": "Exact first two sentences of E5.b, delivered when discussing the past move after Loop or kit has left its ready-to-take position. Only this delivered span is exposed; no false current pickup invitation.",
+      "sourceLine": 447
+    },
+    {
+      "id": "CT.ARI.NO_LOOP_FIRST_LINE",
+      "condition": "Current valid greeting if invitation was skipped and Loop no longer standby; no phantom robot.",
+      "sourceLine": 448
+    },
+    {
+      "id": "CT.JO.PLAN_REPLY",
+      "condition": "Arbitrary delivered plan without explicit coaching; acknowledges experiment, not correctness or comprehension.",
+      "sourceLine": 449
+    },
+    {
+      "id": "CT.NPC.PLAN_REPLY",
+      "condition": "Remy/Ari arbitrary delivered idea; no inferred semantic diagnosis.",
+      "sourceLine": 450
+    },
+    {
+      "id": "CT.NPC.DETAILS",
+      "condition": "Generic acknowledgment of exact selected source snippets rendered below; adds no unstated fact.",
+      "sourceLine": 451
+    },
+    {
+      "id": "CT.NPC.SCOPE",
+      "condition": "Only E3.a known/supplied; does not quote status line.",
+      "sourceLine": 452
+    },
+    {
+      "id": "CT.NPC.STATUS",
+      "condition": "Only E3.b supplied; no new named room or completed capture.",
+      "sourceLine": 453
+    },
+    {
+      "id": "CT.JO.NOTICE_FULL",
+      "condition": "Both relevant E3 passages supplied.",
+      "sourceLine": 454
+    },
+    {
+      "id": "CT.REMY.POST_PAST",
+      "condition": "Remy already received both E3 parts; opening/showing old E2.c cannot reset correction. Does not claim player changed their mind.",
+      "sourceLine": 455
+    },
+    {
+      "id": "CT.NPC.PHOTO",
+      "condition": "Jo/Remy acknowledging E2.b, no E3 hidden wording.",
+      "sourceLine": 456
+    },
+    {
+      "id": "CT.NPC.FRAME",
+      "condition": "Jo response to displayed E2 frame; selected frame text stays alongside, no destination.",
+      "sourceLine": 457
+    },
+    {
+      "id": "CT.REMY.REQUEST",
+      "condition": "E4 actually supplied; no completion inferred.",
+      "sourceLine": 458
+    },
+    {
+      "id": "CT.NPC.SLATE",
+      "condition": "E5.a exact capture sentence supplied; historical, not current robot location.",
+      "sourceLine": 459
+    },
+    {
+      "id": "CT.NPC.ACCOUNT",
+      "condition": "Full E5.b supplied; if only a shorter excerpt, use generic details acknowledgment.",
+      "sourceLine": 460
+    },
+    {
+      "id": "CT.NPC.OBSERVATION",
+      "condition": "Actual E5.c location observation supplied, not an unverified child hypothesis.",
+      "sourceLine": 461
+    },
+    {
+      "id": "CT.ARI.EVENT",
+      "condition": "Explicit cancellation question or E2/E3 presentation to Ari; firsthand account, newly delivered facts recorded separately from E3 reading.",
+      "sourceLine": 462
+    },
+    {
+      "id": "CT.KIT.OPEN",
+      "condition": "Closed Media caddy.",
+      "sourceLine": 500
+    },
+    {
+      "id": "CT.KIT.COLLECT",
+      "condition": "Closed/open Media caddy; includes whole kit and both leaflets, no reading prerequisites.",
+      "sourceLine": 501
+    },
+    {
+      "id": "CT.KIT.TITLE",
+      "condition": "Open/carried/seated kit title.",
+      "sourceLine": 502
+    },
+    {
+      "id": "CT.KIT.CONTENTS",
+      "condition": "Physical open/owned kit inventory; no note contents or reading claim.",
+      "sourceLine": 503
+    },
+    {
+      "id": "CT.KIT.HAVE",
+      "condition": "Repeated collection result; opens current legitimate kit access.",
+      "sourceLine": 504
+    },
+    {
+      "id": "CT.KIT.CARRIED",
+      "condition": "Collected/carried state; after seating use seated status for current host.",
+      "sourceLine": 505
+    },
+    {
+      "id": "CT.KIT.OPEN_CURRENT",
+      "condition": "Only if carried; if seated elsewhere offer Go to Stage and acquired evidence.",
+      "sourceLine": 506
+    },
+    {
+      "id": "CT.KIT.HANDOFF",
+      "condition": "Stage, kit carried; actual ST.RACK.BAY handoff.",
+      "sourceLine": 507
+    },
+    {
+      "id": "CT.KIT.SEATED",
+      "condition": "Actual seat commit.",
+      "sourceLine": 508
+    },
+    {
+      "id": "CT.KIT.EMPTY_BAY",
+      "condition": "Uncollected/not seated Stage rack.",
+      "sourceLine": 509
+    },
+    {
+      "id": "CT.KIT.NOTE_JO",
+      "condition": "KIT.NOTE.E6: open caddy, in-hand or actual seated-rack approach.",
+      "sourceLine": 510
+    },
+    {
+      "id": "CT.KIT.NOTE_REMY",
+      "condition": "KIT.NOTE.E7 same. No badge calling it read/understood.",
+      "sourceLine": 511
+    },
+    {
+      "id": "CT.KIT.VACANT",
+      "condition": "Empty Media recess; caddy owner known.",
+      "sourceLine": 512
+    },
+    {
+      "id": "CT.KIT.AT_STAGE",
+      "condition": "Seated-kit access from elsewhere; Go to Stage, plus already acquired source reinspection.",
+      "sourceLine": 513
+    },
+    {
+      "id": "CT.KIT.OWNER_RETURN",
+      "condition": "Focus fallback after a moved originating tile/leaflet; announce only if changed owner would otherwise be unclear. If no kit control survives, use current Move to control and CT.ACCESS.RETURN_OBJECTS.",
+      "sourceLine": 514
+    },
+    {
+      "id": "CT.RAIL.ARRANGE",
+      "condition": "Physical rail approach, with carried-kit handoff first.",
+      "sourceLine": 522
+    },
+    {
+      "id": "CT.RAIL.ARRANGE_MODE",
+      "condition": "Compact presentation mode; pauses active playback without edit.",
+      "sourceLine": 523
+    },
+    {
+      "id": "CT.RAIL.WATCH",
+      "condition": "Same workstation, rehearsal/idle mode; opening alone does not start.",
+      "sourceLine": 524
+    },
+    {
+      "id": "CT.RAIL.WATCH_SHOW",
+      "condition": "Same workstation with retained show mode.",
+      "sourceLine": 525
+    },
+    {
+      "id": "CT.RAIL.TITLE",
+      "condition": "The actual committed order.",
+      "sourceLine": 526
+    },
+    {
+      "id": "CT.RAIL.HELP",
+      "condition": "Non-drag instructions; no recommended tile/order.",
+      "sourceLine": 527
+    },
+    {
+      "id": "CT.RAIL.SELECT",
+      "condition": "Existing rack/rail tile.",
+      "sourceLine": 528
+    },
+    {
+      "id": "CT.RAIL.CHOOSE",
+      "condition": "Pending selection, not committed placement.",
+      "sourceLine": 529
+    },
+    {
+      "id": "CT.RAIL.DESTINATIONS",
+      "condition": "Open named destination list.",
+      "sourceLine": 530
+    },
+    {
+      "id": "CT.RAIL.AT_START",
+      "condition": "Valid start gap; no placeholder answer slots.",
+      "sourceLine": 531
+    },
+    {
+      "id": "CT.RAIL.BEFORE",
+      "condition": "Rack tile → valid gap.",
+      "sourceLine": 532
+    },
+    {
+      "id": "CT.RAIL.AFTER",
+      "condition": "Rack tile → valid gap.",
+      "sourceLine": 533
+    },
+    {
+      "id": "CT.RAIL.REPLACE",
+      "condition": "Rack tile → occupied rail tile; displaced one returns to rack.",
+      "sourceLine": 534
+    },
+    {
+      "id": "CT.RAIL.SWAP",
+      "condition": "Rail tile → another occupied rail tile.",
+      "sourceLine": 535
+    },
+    {
+      "id": "CT.RAIL.MOVE_BEFORE",
+      "condition": "Rail tile → gap after removing its original position.",
+      "sourceLine": 536
+    },
+    {
+      "id": "CT.RAIL.MOVE_AFTER",
+      "condition": "Same, after named tile.",
+      "sourceLine": 537
+    },
+    {
+      "id": "CT.RAIL.MOVE_START",
+      "condition": "Existing rail tile; no duplicate.",
+      "sourceLine": 538
+    },
+    {
+      "id": "CT.RAIL.LEFT",
+      "condition": "Adjacent swap; unavailable at first position.",
+      "sourceLine": 539
+    },
+    {
+      "id": "CT.RAIL.RIGHT",
+      "condition": "Adjacent swap; unavailable at last position.",
+      "sourceLine": 540
+    },
+    {
+      "id": "CT.RAIL.RETURN",
+      "condition": "Rail tile → own storage cell.",
+      "sourceLine": 541
+    },
+    {
+      "id": "CT.RAIL.CANCEL",
+      "condition": "Returns held representation to committed origin; no edit.",
+      "sourceLine": 542
+    },
+    {
+      "id": "CT.RAIL.PLACED",
+      "condition": "Committed insert/move. For empty rail: One Boat is now in position 1.",
+      "sourceLine": 543
+    },
+    {
+      "id": "CT.RAIL.REPLACED",
+      "condition": "Actual replacement; e.g. Joined Boats replaced One Boat. One Boat returned to the rack.",
+      "sourceLine": 544
+    },
+    {
+      "id": "CT.RAIL.SWAPPED",
+      "condition": "Actual swap, both final locations.",
+      "sourceLine": 545
+    },
+    {
+      "id": "CT.RAIL.RETURNED",
+      "condition": "Committed removal.",
+      "sourceLine": 546
+    },
+    {
+      "id": "CT.RAIL.CANCELED",
+      "condition": "No committed edit; paused run/certification retained.",
+      "sourceLine": 547
+    },
+    {
+      "id": "CT.RAIL.INVALID",
+      "condition": "Invalid drop; restore original owner/focus. No grade.",
+      "sourceLine": 548
+    },
+    {
+      "id": "CT.RAIL.SAME",
+      "condition": "No-op final order; retain certification.",
+      "sourceLine": 549
+    },
+    {
+      "id": "CT.RAIL.START_LIMIT",
+      "condition": "Move left at first position.",
+      "sourceLine": 550
+    },
+    {
+      "id": "CT.RAIL.END_LIMIT",
+      "condition": "Move right at final position.",
+      "sourceLine": 551
+    },
+    {
+      "id": "CT.RAIL.POSITION",
+      "condition": "Accessible rail tile name; position from current order.",
+      "sourceLine": 552
+    },
+    {
+      "id": "CT.RAIL.IN_RACK",
+      "condition": "Accessible rack tile name; no answer suggestion.",
+      "sourceLine": 553
+    },
+    {
+      "id": "CT.RAIL.CHANGED",
+      "condition": "Actual edit only, appended once after physical editing feedback. Current puppet state resets; no old Continue.",
+      "sourceLine": 554
+    },
+    {
+      "id": "CT.WORK.MISSING_KIT",
+      "condition": "Missing kit after considering handoff. No note requirement.",
+      "sourceLine": 562
+    },
+    {
+      "id": "CT.WORK.MISSING_LOOP",
+      "condition": "Missing docked Loop; tile editing still allowed if kit seated.",
+      "sourceLine": 563
+    },
+    {
+      "id": "CT.WORK.EMPTY",
+      "condition": "Empty Rehearse attempt, initial puppets if docked; no certification.",
+      "sourceLine": 564
+    },
+    {
+      "id": "CT.WORK.READY",
+      "condition": "Nonempty available order, both resources delivered, idle.",
+      "sourceLine": 565
+    },
+    {
+      "id": "CT.WORK.CERTIFIED",
+      "condition": "Full current rehearsal completed successfully, including trailing harmless cue.",
+      "sourceLine": 566
+    },
+    {
+      "id": "CT.WORK.PREVIEW",
+      "condition": "Show pad before first docking.",
+      "sourceLine": 567
+    },
+    {
+      "id": "CT.WORK.PREVIEW_RESULT",
+      "condition": "Actual Preview response, blank projection; no repair task.",
+      "sourceLine": 568
+    },
+    {
+      "id": "CT.WORK.REHEARSE",
+      "condition": "Start fresh rehearsal, not resume.",
+      "sourceLine": 569
+    },
+    {
+      "id": "CT.WORK.LAUNCH",
+      "condition": "Same Show pad after docking, first premiere; qualification checked.",
+      "sourceLine": 570
+    },
+    {
+      "id": "CT.WORK.REPLAY",
+      "condition": "Same Show pad after historical completion; current qualification still required.",
+      "sourceLine": 571
+    },
+    {
+      "id": "CT.WORK.CHECK",
+      "condition": "Missing current certification; missing physical resources reported first if any.",
+      "sourceLine": 572
+    },
+    {
+      "id": "CT.WORK.MORE",
+      "condition": "Secondary reset/clear menu, not extra case progress.",
+      "sourceLine": 573
+    },
+    {
+      "id": "CT.WORK.RESET",
+      "condition": "Restore initial puppets and idle run, retain order, clear current certification.",
+      "sourceLine": 574
+    },
+    {
+      "id": "CT.WORK.RESET_DESCRIPTION",
+      "condition": "Description associated with Reset rehearsal.",
+      "sourceLine": 575
+    },
+    {
+      "id": "CT.WORK.RESET_RESULT",
+      "condition": "Actual reset; not erased investigation or past premiere.",
+      "sourceLine": 576
+    },
+    {
+      "id": "CT.WORK.CLEAR",
+      "condition": "Reset puppets/run/certification and return every rail tile.",
+      "sourceLine": 577
+    },
+    {
+      "id": "CT.WORK.CLEAR_DESCRIPTION",
+      "condition": "Description associated with Clear rail.",
+      "sourceLine": 578
+    },
+    {
+      "id": "CT.WORK.CLEAR_RESULT",
+      "condition": "Actual clear. Canceling More before choosing it does nothing.",
+      "sourceLine": 579
+    },
+    {
+      "id": "CT.RUN.TITLE",
+      "condition": "Retained actual playback mode.",
+      "sourceLine": 580
+    },
+    {
+      "id": "CT.RUN.STOP",
+      "condition": "Immediate owned playback control, no approach delay.",
+      "sourceLine": 581
+    },
+    {
+      "id": "CT.RUN.BUSY",
+      "condition": "Rehearse/Show attempted while starting/running.",
+      "sourceLine": 582
+    },
+    {
+      "id": "CT.RUN.PAUSED",
+      "condition": "Stable boundary, correct retained mode.",
+      "sourceLine": 583
+    },
+    {
+      "id": "CT.RUN.NEXT",
+      "condition": "Actual next unfinished cue; hidden at terminal. No suggested new tile.",
+      "sourceLine": 584
+    },
+    {
+      "id": "CT.RUN.CURRENT",
+      "condition": "Actual active cue, not proposed next action.",
+      "sourceLine": 585
+    },
+    {
+      "id": "CT.RUN.CONTINUE",
+      "condition": "Saved unchanged run, next unfinished cue.",
+      "sourceLine": 586
+    },
+    {
+      "id": "CT.RUN.RESTART",
+      "condition": "Explicit fresh same-order run in retained mode. A show restart still needs current certification.",
+      "sourceLine": 587
+    },
+    {
+      "id": "CT.RUN.TERMINAL",
+      "condition": "Final cue committed, full-run finalization pending.",
+      "sourceLine": 588
+    },
+    {
+      "id": "CT.RUN.FINALIZE",
+      "condition": "Finalize once, no replay of last cue.",
+      "sourceLine": 589
+    },
+    {
+      "id": "CT.RUN.FINISHED",
+      "condition": "Ended unsuccessful run; append factual current story, not a grade. Successful run uses CERTIFIED.",
+      "sourceLine": 590
+    },
+    {
+      "id": "CT.RUN.HELP_OFFER",
+      "condition": "Small dismissible offer after two unsuccessful runs, or eligible explicit unmet-state offer; no automatic answer.",
+      "sourceLine": 591
+    },
+    {
+      "id": "CT.RUN.OPEN",
+      "condition": "Actual approach on return to Stage; elsewhere Go to Stage first.",
+      "sourceLine": 592
+    },
+    {
+      "id": "CT.RUN.RESUME_NOTE",
+      "condition": "Valid return in Stage; no autoplay.",
+      "sourceLine": 593
+    },
+    {
+      "id": "CT.RUN.AWAY_NOTE",
+      "condition": "Valid run while elsewhere; offer Go to Stage, not remote operation.",
+      "sourceLine": 594
+    },
+    {
+      "id": "CT.CUE.FERRY",
+      "condition": "FERRY from initial left seed/Pip → seed right, Pip left.",
+      "sourceLine": 604
+    },
+    {
+      "id": "CT.CUE.FERRY_EMPTY",
+      "condition": "FERRY when seed already right/planted; boat bobs, no penalty/pause.",
+      "sourceLine": 605
+    },
+    {
+      "id": "CT.CUE.BRIDGE_CARRY",
+      "condition": "BRIDGE with Pip and loose seed left.",
+      "sourceLine": 606
+    },
+    {
+      "id": "CT.CUE.BRIDGE_REUNITE",
+      "condition": "BRIDGE after seed delivered right.",
+      "sourceLine": 607
+    },
+    {
+      "id": "CT.CUE.BRIDGE_SAME",
+      "condition": "Read-only/restored already-right condition; no reverse crossing or new seed.",
+      "sourceLine": 608
+    },
+    {
+      "id": "CT.CUE.HILL_MISSING_PIP",
+      "condition": "PLANT with seed right/Pip left; pause unmet.",
+      "sourceLine": 609
+    },
+    {
+      "id": "CT.CUE.HILL_BOTH_LEFT",
+      "condition": "PLANT with both left; pause unmet, neither plants itself.",
+      "sourceLine": 610
+    },
+    {
+      "id": "CT.CUE.PLANTED",
+      "condition": "Successful PLANT; actual visible relationship, not attribution to prior comprehension.",
+      "sourceLine": 611
+    },
+    {
+      "id": "CT.CUE.TENDING",
+      "condition": "Already planted, if legitimately applicable; not a repeated planting mutation.",
+      "sourceLine": 612
+    },
+    {
+      "id": "CT.CUE.UNPLANTED",
+      "condition": "BLOOM before planting; actual seed remains dark, pause unmet.",
+      "sourceLine": 613
+    },
+    {
+      "id": "CT.CUE.FLOWER",
+      "condition": "Successful BLOOM with planted seed.",
+      "sourceLine": 614
+    },
+    {
+      "id": "CT.CUE.ALREADY_LIT",
+      "condition": "Already lit settled state; no new milestone.",
+      "sourceLine": 615
+    },
+    {
+      "id": "CT.STORY.OPEN",
+      "condition": "ACC.STORY.STATE, no tile action.",
+      "sourceLine": 625
+    },
+    {
+      "id": "CT.STORY.TITLE",
+      "condition": "Read-only heading.",
+      "sourceLine": 626
+    },
+    {
+      "id": "CT.STORY.ENLARGE",
+      "condition": "Both-bank view, not a crop hiding a consequence.",
+      "sourceLine": 627
+    },
+    {
+      "id": "CT.STORY.BANKS",
+      "condition": "Any projected setup with docked Loop. Same location facts as scene.",
+      "sourceLine": 628
+    },
+    {
+      "id": "CT.STORY.PIP_LEFT",
+      "condition": "Pip left.",
+      "sourceLine": 629
+    },
+    {
+      "id": "CT.STORY.PIP_RIGHT",
+      "condition": "Pip right.",
+      "sourceLine": 630
+    },
+    {
+      "id": "CT.STORY.GRANDMA_WAIT",
+      "condition": "Pip left, seed left.",
+      "sourceLine": 631
+    },
+    {
+      "id": "CT.STORY.GRANDMA_SEED",
+      "condition": "Seed delivered right, unplanted, Pip left.",
+      "sourceLine": 632
+    },
+    {
+      "id": "CT.STORY.TOGETHER",
+      "condition": "Pip right; seed state described separately.",
+      "sourceLine": 633
+    },
+    {
+      "id": "CT.STORY.SEED_LEFT",
+      "condition": "Seed left/unplanted.",
+      "sourceLine": 634
+    },
+    {
+      "id": "CT.STORY.SEED_RIGHT",
+      "condition": "Seed right/unplanted, including Pip reunited.",
+      "sourceLine": 635
+    },
+    {
+      "id": "CT.STORY.ROOTED",
+      "condition": "Successful PLANT actually committed.",
+      "sourceLine": 636
+    },
+    {
+      "id": "CT.STORY.BOATS_SEPARATE",
+      "condition": "No BRIDGE.",
+      "sourceLine": 637
+    },
+    {
+      "id": "CT.STORY.BOATS_JOINED",
+      "condition": "BRIDGE committed.",
+      "sourceLine": 638
+    },
+    {
+      "id": "CT.STORY.DARK",
+      "condition": "Planted/unlit. With unplanted seed, its seed entry already says dark; do not invent a flower above loose seed.",
+      "sourceLine": 639
+    },
+    {
+      "id": "CT.STORY.LIT",
+      "condition": "Planted/lit.",
+      "sourceLine": 640
+    },
+    {
+      "id": "CT.HELP.TITLE",
+      "condition": "Entry/live-selected authored response heading.",
+      "sourceLine": 654
+    },
+    {
+      "id": "CT.HELP.FIELD",
+      "condition": "Optional explanation field; no prefilled answer or automatic focus.",
+      "sourceLine": 655
+    },
+    {
+      "id": "CT.HELP.THINK",
+      "condition": "With text, explicit request; without text, topic/attention help.",
+      "sourceLine": 656
+    },
+    {
+      "id": "CT.HELP.DIRECT",
+      "condition": "Immediate authored current answer; cancels pending/held response opportunity.",
+      "sourceLine": 657
+    },
+    {
+      "id": "CT.HELP.TOPIC",
+      "condition": "No text or unclear context; use available lead question labels from §4 or Your story plan.",
+      "sourceLine": 658
+    },
+    {
+      "id": "CT.HELP.PENDING",
+      "condition": "Submitted snapshot accepted; game remains usable.",
+      "sourceLine": 659
+    },
+    {
+      "id": "CT.HELP.WAITING",
+      "condition": "Proposed two-second indicator, not service guarantee.",
+      "sourceLine": 660
+    },
+    {
+      "id": "CT.HELP.OFFER",
+      "condition": "Proposed eight-second offer while request still pending; no hint content yet.",
+      "sourceLine": 661
+    },
+    {
+      "id": "CT.HELP.UNAVAILABLE",
+      "condition": "Service unavailable, timeout resolved as failure, or invalid reply; no error code/model details.",
+      "sourceLine": 662
+    },
+    {
+      "id": "CT.HELP.USE_PREPARED",
+      "condition": "Acceptance owns sole current response; discard late live result.",
+      "sourceLine": 663
+    },
+    {
+      "id": "CT.HELP.PREPARED",
+      "condition": "Authored local fallback/attention help label; not represented as live interpretation.",
+      "sourceLine": 664
+    },
+    {
+      "id": "CT.HELP.RETRY",
+      "condition": "Explicit new request, fresh current context.",
+      "sourceLine": 665
+    },
+    {
+      "id": "CT.HELP.CANCEL",
+      "condition": "Cancel display opportunity; keep draft.",
+      "sourceLine": 666
+    },
+    {
+      "id": "CT.HELP.CANCELED",
+      "condition": "Actual cancel; closed pending view alone is not cancel.",
+      "sourceLine": 667
+    },
+    {
+      "id": "CT.HELP.READY",
+      "condition": "Closed panel, valid held response; no spoiler text or focus theft.",
+      "sourceLine": 668
+    },
+    {
+      "id": "CT.HELP.AVAILABLE",
+      "condition": "Closed panel, fallback offer only; no automatic hint display.",
+      "sourceLine": 669
+    },
+    {
+      "id": "CT.HELP.VIEW_NEW",
+      "condition": "Live reply arrives while focused fallback offer remains; do not replace the button under focus.",
+      "sourceLine": 670
+    },
+    {
+      "id": "CT.HELP.AGAIN",
+      "condition": "New explicit snapshot, not automatic resubmission.",
+      "sourceLine": 671
+    },
+    {
+      "id": "CT.HELP.STALE",
+      "condition": "Relevant context changed; obsolete content never inserted. Closed panel quietly removes old marker.",
+      "sourceLine": 672
+    },
+    {
+      "id": "CT.HELP.THIS_VERSION",
+      "condition": "Return entry/request from current context and current draft.",
+      "sourceLine": 673
+    },
+    {
+      "id": "CT.HELP.EARLIER",
+      "condition": "Previously displayed answer whose context differs; not current advice.",
+      "sourceLine": 674
+    },
+    {
+      "id": "CT.HELP.SUBMITTED",
+      "condition": "Actual submitted snapshot, separate from continuing editable draft.",
+      "sourceLine": 675
+    },
+    {
+      "id": "CT.HELP.NEW_DRAFT",
+      "condition": "Draft revised since submission; never overwritten by response.",
+      "sourceLine": 676
+    },
+    {
+      "id": "CT.HELP.NO_RESUME",
+      "condition": "Reload with acknowledged draft and no resubmitted request.",
+      "sourceLine": 677
+    },
+    {
+      "id": "CT.HELP.CLARIFY_PIP",
+      "condition": "Explicit clarification choice, not interpretation inferred silently.",
+      "sourceLine": 678
+    },
+    {
+      "id": "CT.HELP.CLARIFY_SEED",
+      "condition": "Same.",
+      "sourceLine": 679
+    },
+    {
+      "id": "CT.HELP.CLARIFY_TILE",
+      "condition": "Same; then actual selected/typed tile detail, not a guessed tile.",
+      "sourceLine": 680
+    },
+    {
+      "id": "CT.HINT.NOTICE_CONTEXT",
+      "condition": "Actual E2.b photo or physical curled word displayed, full E3 not exposed; child expresses broad cancellation or explicitly chooses that topic. No hidden E3 quote. | F; 1; attention to displayed partialness.",
+      "sourceLine": 690
+    },
+    {
+      "id": "CT.HINT.NOTICE_SCOPE",
+      "condition": "Relevant E3.a/b displayed; scope claim in supplied explanation. | F; 2; references exposed notice passages.",
+      "sourceLine": 691
+    },
+    {
+      "id": "CT.HINT.CLIP_LIMIT",
+      "condition": "Relevant later frames/end marker or complete E2.a description actually exposed, or Remy's actual limit account with that provenance; never first still alone. | F; 2; refer only to available origin of stopping-point information.",
+      "sourceLine": 692
+    },
+    {
+      "id": "CT.HINT.POSITIVE_SUPPORT",
+      "condition": "Child proposes Media by eliminating another place; no automatic confirmation. Use displayed E4 or NAV.MEDIA only if available. | F; 1, or 2 when an actual known reference is attached.",
+      "sourceLine": 693
+    },
+    {
+      "id": "CT.HINT.TESTABLE_LEAD",
+      "condition": "Explanation actually connects exposed requirements and public venue conditions. If Media already reached, don't label this as a future independent prediction; current help may instead address remaining task. | F; 3; suitability, not occupancy.",
+      "sourceLine": 694
+    },
+    {
+      "id": "CT.HINT.PLAN_VS_RESULT",
+      "condition": "E4 displayed; explanation claims request proves finished recording. No hidden E5 answer. | F; 2; E4.",
+      "sourceLine": 695
+    },
+    {
+      "id": "CT.HINT.FULL_PROMISE",
+      "condition": "E6.a displayed; seed-only completion claim actually supplied. | F; 2; E6.a.",
+      "sourceLine": 696
+    },
+    {
+      "id": "CT.HINT.BOAT_CAPACITY",
+      "condition": "E7.a displayed; child says one boat carries Pip. | F; 2; E7.a.",
+      "sourceLine": 697
+    },
+    {
+      "id": "CT.HINT.TOGETHER",
+      "condition": "Actual unmet planting and E6.a displayed; explanation omits Pip's participation. | F; 2; E6.a + actual Pip position.",
+      "sourceLine": 698
+    },
+    {
+      "id": "CT.HINT.ROOT_CONDITION",
+      "condition": "E7.c displayed; explanation treats loose seed as ready to glow. | F; 2; E7.c/current planted state.",
+      "sourceLine": 699
+    },
+    {
+      "id": "CT.HINT.VALID_DIRECT",
+      "condition": "Child actually states coherent arrival/capacity connection supported by displayed notes or observed outcomes. No fabricated note references if learned through rehearsal. | F; 3; acknowledges/states expressed relationship, not a mastery verdict.",
+      "sourceLine": 700
+    },
+    {
+      "id": "CT.HINT.VALID_EXTRA",
+      "condition": "Coherent seed-ahead or harmless-extra plan, with actual meaning expressed and support from displayed facts/outcomes. | F; 3; no shortest-plan preference.",
+      "sourceLine": 701
+    },
+    {
+      "id": "CT.HINT.ARRANGEMENT_ONLY",
+      "condition": "Bare order, no expressed reasoning, and physical readiness actually satisfied. If resources absent, use corresponding missing-resource operational copy; don't falsely promise playback. | F; 1 operational coaching; no comprehension finding.",
+      "sourceLine": 702
+    },
+    {
+      "id": "CT.HINT.CLARIFY",
+      "condition": "Ambiguous pronoun/entity in story explanation; no diagnosed mistake until clarified. | F; 1; no new clue.",
+      "sourceLine": 703
+    },
+    {
+      "id": "CT.HINT.NARROW_CLAIM",
+      "condition": "Child explicitly distinguishes event scope from unresolved search; E3 relevant text displayed. | F; 1; exact expressed limitation, not fabricated revision.",
+      "sourceLine": 704
+    },
+    {
+      "id": "CT.HINT.UNKNOWN_DETAIL",
+      "condition": "Asks genuinely unrecorded fact such as precise route decision; not used to hide an available authored fact. | F; 1; no new history.",
+      "sourceLine": 705
+    },
+    {
+      "id": "CT.HINT.RETURN_TO_CASE",
+      "condition": "Unrelated topic/instruction override; no state mutation. | F; 1; bounded redirection.",
+      "sourceLine": 706
+    },
+    {
+      "id": "CT.HINT.SEARCH_ATTENTION",
+      "condition": "Level 1; unknown/unselected search explanation, no hidden location.",
+      "sourceLine": 716
+    },
+    {
+      "id": "CT.HINT.STORY_ATTENTION",
+      "condition": "Level 1; projected outcome visible; no assertion of a specific error.",
+      "sourceLine": 717
+    },
+    {
+      "id": "CT.HINT.STORY_UNTRIED",
+      "condition": "Level 1; kit/notes physically accessible; missing playback resources still explained. No tile order.",
+      "sourceLine": 718
+    },
+    {
+      "id": "CT.HINT.PROMISE_ATTENTION",
+      "condition": "Level 1; promise exposed and current result available.",
+      "sourceLine": 719
+    },
+    {
+      "id": "CT.HINT.PROMISE_SOURCE",
+      "condition": "Level 2; E6.a actually exposed, link to that exact passage.",
+      "sourceLine": 720
+    },
+    {
+      "id": "CT.HINT.PROMISE_RELATION",
+      "condition": "Level 3; actual seed right/Pip left and E6.a exposed; adds relationship.",
+      "sourceLine": 721
+    },
+    {
+      "id": "CT.HINT.NOTE_ACCESS",
+      "condition": "Level 1 attention to legitimately available physical/owned note controls; not an invented remote E6/E7 entry.",
+      "sourceLine": 722
+    },
+    {
+      "id": "CT.HINT.SEARCH_CLARIFY",
+      "condition": "Level 1; only when both notice and recording are already known topics. Otherwise use CT.HELP.TOPIC with only the known question choices.",
+      "sourceLine": 723
+    },
+    {
+      "id": "CT.DIRECT.SEARCH",
+      "condition": "Level 4, explicit request, Loop still standby in Media. Introduces destination/occupancy/finished animation, not E3 or every E5 component as read.",
+      "sourceLine": 724
+    },
+    {
+      "id": "CT.DIRECT.KIT",
+      "condition": "Level 4, Loop docked and kit uncollected. Actual resource guidance, not unread note content.",
+      "sourceLine": 725
+    },
+    {
+      "id": "CT.DIRECT.FOLLOW_KIT",
+      "condition": "Level 4, following Loop, kit uncollected.",
+      "sourceLine": 726
+    },
+    {
+      "id": "CT.DIRECT.DELIVER_BOTH",
+      "condition": "Level 4, following Loop and carried kit; no remote auto-handoff.",
+      "sourceLine": 727
+    },
+    {
+      "id": "CT.DIRECT.DELIVER_LOOP",
+      "condition": "Level 4, kit seated/Loop following.",
+      "sourceLine": 728
+    },
+    {
+      "id": "CT.DIRECT.DELIVER_KIT",
+      "condition": "Level 4, Loop docked/kit carried.",
+      "sourceLine": 729
+    },
+    {
+      "id": "CT.DIRECT.RAIL",
+      "condition": "Level 4, explicit story-arrangement answer; works before notes read. Introduces ordering/valid optional Ferry; does not place tiles or mark E6/E7 read.",
+      "sourceLine": 730
+    },
+    {
+      "id": "CT.DIRECT.LAUNCH",
+      "condition": "Explicit goal help, current certification, no historical premiere yet; physical approach still required.",
+      "sourceLine": 731
+    },
+    {
+      "id": "CT.DIRECT.REPLAY",
+      "condition": "Explicit post-completion goal help; changed order still needs rehearsal.",
+      "sourceLine": 732
+    },
+    {
+      "id": "CT.PAUSE.TITLE",
+      "condition": "Menu heading; mode's paused line follows if applicable.",
+      "sourceLine": 748
+    },
+    {
+      "id": "CT.PAUSE.HOME",
+      "condition": "Retain current live visit; no false loss confirmation.",
+      "sourceLine": 749
+    },
+    {
+      "id": "CT.SETTINGS.SOUND",
+      "condition": "Choices On / Off, exact labels.",
+      "sourceLine": 750
+    },
+    {
+      "id": "CT.SETTINGS.MOTION",
+      "condition": "Choices Standard / Reduced.",
+      "sourceLine": 751
+    },
+    {
+      "id": "CT.SETTINGS.TEXT",
+      "condition": "Choices Regular / Larger / Largest (06 100/125/150% planning scale; no child technical percentages required).",
+      "sourceLine": 752
+    },
+    {
+      "id": "CT.SETTINGS.SPACING",
+      "condition": "Choices Standard / Roomier.",
+      "sourceLine": 753
+    },
+    {
+      "id": "CT.SETTINGS.CONTROLS",
+      "condition": "Shows §10.1 exact instructions. No advertised voice/read-aloud feature.",
+      "sourceLine": 754
+    },
+    {
+      "id": "CT.SETTINGS.APPLIED",
+      "condition": "Current-session change; durable saving separately acknowledged. Not repeated on every focus movement.",
+      "sourceLine": 755
+    },
+    {
+      "id": "CT.SETTINGS.UNSAVED",
+      "condition": "Actual preference-save failure; do not falsely claim game progress failed if only preference storage failed.",
+      "sourceLine": 756
+    },
+    {
+      "id": "CT.SAVE.PENDING",
+      "condition": "Pending latest progress revision; passive, not every-keystroke announcement.",
+      "sourceLine": 757
+    },
+    {
+      "id": "CT.SAVE.SAVED",
+      "condition": "Latest corresponding progress/draft acknowledgment, not merely queued save.",
+      "sourceLine": 758
+    },
+    {
+      "id": "CT.SAVE.FAILED",
+      "condition": "Actual durable saving unavailable.",
+      "sourceLine": 759
+    },
+    {
+      "id": "CT.SAVE.DETAIL",
+      "condition": "Details after actual failure, not a generic alarming warning on every action.",
+      "sourceLine": 760
+    },
+    {
+      "id": "CT.SAVE.RETRY",
+      "condition": "Save latest current state; failure retains session.",
+      "sourceLine": 761
+    },
+    {
+      "id": "CT.SAVE.PENDING_DETAIL",
+      "condition": "Menu details while pending; Back to start still retains live state.",
+      "sourceLine": 762
+    },
+    {
+      "id": "CT.SAVE.OLD_MAY_RETURN",
+      "condition": "Confirmed New game accepted but durable replacement failed.",
+      "sourceLine": 763
+    },
+    {
+      "id": "CT.SAVE.RETURNED",
+      "condition": "Valid resume summary; not unsaved changes or uncommitted frame guarantee.",
+      "sourceLine": 764
+    },
+    {
+      "id": "CT.RECOVERY.READ",
+      "condition": "Startup read error or proposed 5-second unresolved UI budget; not an empty-save verdict.",
+      "sourceLine": 770
+    },
+    {
+      "id": "CT.RECOVERY.RETRY",
+      "condition": "Recheck, no overwrite.",
+      "sourceLine": 771
+    },
+    {
+      "id": "CT.RECOVERY.SESSION",
+      "condition": "Fresh session-only case, preserve unknown old record.",
+      "sourceLine": 772
+    },
+    {
+      "id": "CT.RECOVERY.SESSION_DETAIL",
+      "condition": "Description for session-only choice after unknown-read failure.",
+      "sourceLine": 773
+    },
+    {
+      "id": "CT.RECOVERY.VERSION",
+      "condition": "Incompatible content/save; no silent migration.",
+      "sourceLine": 774
+    },
+    {
+      "id": "CT.RECOVERY.DAMAGED",
+      "condition": "Invalid/untrustworthy case save.",
+      "sourceLine": 775
+    },
+    {
+      "id": "CT.RECOVERY.NEW",
+      "condition": "Recovery link opens confirmation; does not itself accept it.",
+      "sourceLine": 776
+    },
+    {
+      "id": "CT.RECOVERY.REPLACE_UNKNOWN",
+      "condition": "Earlier saved record still unknown, current child explicitly retries saving.",
+      "sourceLine": 777
+    },
+    {
+      "id": "CT.RECOVERY.REPLACE_KNOWN",
+      "condition": "Older record confirmed.",
+      "sourceLine": 778
+    },
+    {
+      "id": "CT.RECOVERY.KEEP_UNSAVED",
+      "condition": "Cancel replacement, retain session.",
+      "sourceLine": 779
+    },
+    {
+      "id": "CT.RECOVERY.REPLACE",
+      "condition": "Deliberate latest-state replacement, no duplicate activation.",
+      "sourceLine": 780
+    },
+    {
+      "id": "CT.RECOVERY.RUN",
+      "condition": "Independently valid physical/investigation state, invalid playback. Do not mark show completed.",
+      "sourceLine": 781
+    },
+    {
+      "id": "CT.RECOVERY.REHEARSE",
+      "condition": "Only valid current order and Stage physical approach; otherwise Go to Stage travels first.",
+      "sourceLine": 782
+    },
+    {
+      "id": "CT.RECOVERY.UNCERTAIN_CUE",
+      "condition": "Hard reload with last stable boundary/possibly exposed active cue; no “you haven’t seen this” claim.",
+      "sourceLine": 783
+    },
+    {
+      "id": "CT.RECOVERY.ACTION",
+      "condition": "Canceled pre-commit walk/physical action after recovery; pair with actual surviving action label. No auto-delivery.",
+      "sourceLine": 784
+    },
+    {
+      "id": "CT.RESET.QUESTION",
+      "condition": "Whole-case confirmation heading.",
+      "sourceLine": 785
+    },
+    {
+      "id": "CT.RESET.SCOPE",
+      "condition": "Explicit reset scope; physical Loop/notice/kit reset with case.",
+      "sourceLine": 786
+    },
+    {
+      "id": "CT.RESET.KEEP_PLAYING",
+      "condition": "Safe initial focus when active visit exists.",
+      "sourceLine": 787
+    },
+    {
+      "id": "CT.RESET.KEEP_SAVED",
+      "condition": "Safe choice when Home/recovery caller and no active visit.",
+      "sourceLine": 788
+    },
+    {
+      "id": "CT.RESET.ACCEPT",
+      "condition": "Deliberate acceptance; reset case only.",
+      "sourceLine": 789
+    },
+    {
+      "id": "CT.RETURN.VISIBLE",
+      "condition": "Handled background/foreground interruption; previous task/draft can remain. No autoplay.",
+      "sourceLine": 790
+    },
+    {
+      "id": "CT.RETURN.TILE",
+      "condition": "Compatible reload discarded held tile; only committed acknowledged order restored. If save failed, restore available record without claiming current unsaved arrangement.",
+      "sourceLine": 791
+    },
+    {
+      "id": "CT.RETURN.DRAFT",
+      "condition": "Acknowledged draft actually recovered; absent uncommitted text is not reconstructed.",
+      "sourceLine": 792
+    },
+    {
+      "id": "CT.RETURN.OWNER",
+      "condition": "Valid changed source-access owner resolved; current kit/rack action follows. No lost/duplicated inventory.",
+      "sourceLine": 793
+    },
+    {
+      "id": "CT.TOAST.TITLE",
+      "condition": "Covered/revealed Workshop kiosk.",
+      "sourceLine": 805
+    },
+    {
+      "id": "CT.TOAST.START",
+      "condition": "Actual kiosk approach; optional.",
+      "sourceLine": 806
+    },
+    {
+      "id": "CT.TOAST.SKIP",
+      "condition": "Immediate active-demo control; settle revealed pose.",
+      "sourceLine": 807
+    },
+    {
+      "id": "CT.TOAST.LOOK",
+      "condition": "Only revealed; enlarge toast, no evidence.",
+      "sourceLine": 808
+    },
+    {
+      "id": "CT.TOAST.REPLAY",
+      "condition": "Brief flourish, not full new reward.",
+      "sourceLine": 809
+    },
+    {
+      "id": "CT.TOAST.PUNCHLINE",
+      "condition": "Revealed final pose; repeat does not affect case.",
+      "sourceLine": 810
+    },
+    {
+      "id": "CT.TOAST.COVERED",
+      "condition": "Workshop current scenery description; no hidden contents revealed yet.",
+      "sourceLine": 811
+    },
+    {
+      "id": "CT.TOAST.ARMS",
+      "condition": "First reveal stage; reduced motion omits flashes and presents settled equivalent, no sound dependence.",
+      "sourceLine": 812
+    },
+    {
+      "id": "CT.TOAST.TRAY",
+      "condition": "Actual second reveal stage; not in initial accessible name.",
+      "sourceLine": 813
+    },
+    {
+      "id": "CT.TOAST.MAGNIFIER",
+      "condition": "Third/final reveal; also settled reduced-motion description.",
+      "sourceLine": 814
+    },
+    {
+      "id": "CT.TOAST.ENLARGED",
+      "condition": "Magnifier view. No recipe or hidden quest.",
+      "sourceLine": 815
+    },
+    {
+      "id": "CT.TOAST.FLOURISH",
+      "condition": "Replay, then same revealed state.",
+      "sourceLine": 816
+    },
+    {
+      "id": "CT.ENDING.TITLE",
+      "condition": "Completed-show heading.",
+      "sourceLine": 817
+    },
+    {
+      "id": "CT.ENDING.LIGHT",
+      "condition": "Actual completed Stage result, all five valid arrangements.",
+      "sourceLine": 818
+    },
+    {
+      "id": "CT.ENDING.SKIP",
+      "condition": "Completion already committed, skip decoration only.",
+      "sourceLine": 819
+    },
+    {
+      "id": "CT.ENDING.CONTINUE",
+      "condition": "Advance completed celebration to aftermath, no cue/rehearsal confusion.",
+      "sourceLine": 820
+    },
+    {
+      "id": "CT.ENDING.AFTER",
+      "condition": "Remy then Ari reaction montage in their own room settings.",
+      "sourceLine": 821
+    },
+    {
+      "id": "CT.ENDING.NEXT",
+      "condition": "Advance after readable line; not timed away.",
+      "sourceLine": 822
+    },
+    {
+      "id": "CT.ENDING.SKIP_REACTIONS",
+      "condition": "Go to recap; later View crew reactions remains available.",
+      "sourceLine": 823
+    },
+    {
+      "id": "CT.ENDING.RECAP",
+      "condition": "Recap heading.",
+      "sourceLine": 824
+    },
+    {
+      "id": "CT.ENDING.FACT",
+      "condition": "Historical show completion only; sole summary if no recorded reasoning.",
+      "sourceLine": 825
+    },
+    {
+      "id": "CT.ENDING.RETURN",
+      "condition": "First ending already on Stage; preserve state. Reopened elsewhere uses Return to room.",
+      "sourceLine": 826
+    },
+    {
+      "id": "CT.ENDING.REOPEN",
+      "condition": "Goal/Menu after historical completion; in-place, no teleport/replay.",
+      "sourceLine": 827
+    },
+    {
+      "id": "CT.ENDING.REACTIONS",
+      "condition": "Recap owned child; returns to recap.",
+      "sourceLine": 828
+    },
+    {
+      "id": "CT.ENDING.GO_REPLAY",
+      "condition": "Recap elsewhere, travel only; child explicitly operates Show there.",
+      "sourceLine": 829
+    },
+    {
+      "id": "CT.RECAP.PLAN",
+      "condition": "Actual recorded sentence and actual details, if any. Not a mastery claim.",
+      "sourceLine": 830
+    },
+    {
+      "id": "CT.RECAP.CHANGED",
+      "condition": "Actual two recorded versions with changed text, not inferred from travel or E3 view.",
+      "sourceLine": 831
+    },
+    {
+      "id": "CT.RECAP.BEFORE",
+      "condition": "Exact earlier recorded words, not a fictional wrong answer.",
+      "sourceLine": 832
+    },
+    {
+      "id": "CT.RECAP.AFTER",
+      "condition": "Exact later recorded words.",
+      "sourceLine": 833
+    },
+    {
+      "id": "CT.RECAP.DETAILS",
+      "condition": "Actual referenced passages only; reference choice alone not reasoning.",
+      "sourceLine": 834
+    },
+    {
+      "id": "CT.RECAP.AFTER_RUN",
+      "condition": "Actual recorded explanation follows known relevant rehearsal outcome. Does not claim it came from two texts.",
+      "sourceLine": 835
+    },
+    {
+      "id": "CT.RECAP.HINT_THEN_PLAN",
+      "condition": "Only actual hint display → recorded plan → attempted matching arrangement in that order. No implication that the hint caused learning.",
+      "sourceLine": 836
+    },
+    {
+      "id": "CT.RECAP.RECORDED_IDEA",
+      "condition": "Neutral when timing/outcome exposure is uncertain or no trial followed the plan.",
+      "sourceLine": 837
+    },
+    {
+      "id": "CT.ACCESS.MOVEMENT",
+      "condition": "Opening/Controls; does not force pointer use.",
+      "sourceLine": 851
+    },
+    {
+      "id": "CT.ACCESS.KEYBOARD",
+      "condition": "Controls. World Interact instruction below is input-label agnostic until actual input binding is defined; no invented key.",
+      "sourceLine": 852
+    },
+    {
+      "id": "CT.ACCESS.INTERACT",
+      "condition": "Existing world Interact action; named native controls remain complete route.",
+      "sourceLine": 853
+    },
+    {
+      "id": "CT.ACCESS.TYPING",
+      "condition": "Controls and field-associated help on request; not repeated on every keystroke.",
+      "sourceLine": 854
+    },
+    {
+      "id": "CT.ACCESS.BACK",
+      "condition": "Controls. Workstation selected-tile exception below.",
+      "sourceLine": 855
+    },
+    {
+      "id": "CT.ACCESS.SELECTION",
+      "condition": "Arrange help.",
+      "sourceLine": 856
+    },
+    {
+      "id": "CT.ACCESS.COMPACT",
+      "condition": "Compact/large-text overview; no forced rotation.",
+      "sourceLine": 857
+    },
+    {
+      "id": "CT.ACCESS.WORK",
+      "condition": "Compact workstation, conditional Continue if a valid paused run exists; otherwise Rehearse.",
+      "sourceLine": 858
+    },
+    {
+      "id": "CT.ACCESS.SOURCE",
+      "condition": "Reader help; only the five defined words have definition actions.",
+      "sourceLine": 859
+    },
+    {
+      "id": "CT.ACCESS.FRAMES",
+      "condition": "E2 clip; no frame content embedded.",
+      "sourceLine": 860
+    },
+    {
+      "id": "CT.ACCESS.WORLD_FOCUS",
+      "condition": "Accessible world-input region name; room name and actual description follow.",
+      "sourceLine": 861
+    },
+    {
+      "id": "CT.ACCESS.RETURN_OBJECTS",
+      "condition": "Surviving-owner fallback when original control no longer exists. No automatically restarted walk.",
+      "sourceLine": 862
+    },
+    {
+      "id": "CT.ACCESS.DETAIL_SELECTED",
+      "condition": "Actual deliberate selection; no correctness announcement.",
+      "sourceLine": 863
+    },
+    {
+      "id": "CT.ACCESS.TAB_SELECTED",
+      "condition": "Named currently selected Notes/presentation mode tab only; actions restricted to Evidence, Compare, Timeline, My ideas, Arrange tiles, Watch rehearsal, Watch premiere. Not all CT labels.",
+      "sourceLine": 864
+    },
+    {
+      "id": "CT.TECH.LOADING",
+      "condition": "Validated case assets are loading; no invented save status.",
+      "sourceLine": null
+    },
+    {
+      "id": "CT.TECH.CONTENT_ERROR",
+      "condition": "Core content/geometry validation or load failed; use existing Retry and Back controls.",
+      "sourceLine": null
+    },
+    {
+      "id": "CT.TECH.ART_ERROR",
+      "condition": "Informative art unavailable; actual accessible operation remains.",
+      "sourceLine": null
+    },
+    {
+      "id": "CT.TECH.CANVAS_ERROR",
+      "condition": "Canvas unavailable; no promise of finished visual quality.",
+      "sourceLine": null
+    },
+    {
+      "id": "CT.TECH.PREVIOUS",
+      "condition": "Current head unusable, previous independently valid; UI.RECOVERY.DAMAGED/VERSION adds existing Continue/Back. Continue restores an unsaved visit; saving later uses the existing explicit replacement flow.",
+      "sourceLine": null
+    },
+    {
+      "id": "CT.TILE.LABEL.FERRY",
+      "condition": "TASK11.02 binding repair: exact existing Item 07 section 6.1 tile face/name; introduces no description or outcome.",
+      "sourceLine": null
+    },
+    {
+      "id": "CT.TILE.LABEL.BRIDGE",
+      "condition": "TASK11.02 binding repair: exact existing Item 07 section 6.1 tile face/name; introduces no description or outcome.",
+      "sourceLine": null
+    },
+    {
+      "id": "CT.TILE.LABEL.PLANT",
+      "condition": "TASK11.02 binding repair: exact existing Item 07 section 6.1 tile face/name; introduces no description or outcome.",
+      "sourceLine": null
+    },
+    {
+      "id": "CT.TILE.LABEL.BLOOM",
+      "condition": "TASK11.02 binding repair: exact existing Item 07 section 6.1 tile face/name; introduces no description or outcome.",
+      "sourceLine": null
+    }
+  ],
+  "stateRows": [
+    {
+      "line": 5,
+      "cells": [
+        "Existing interface state",
+        "Canonical content to render",
+        "Variant/boundary"
+      ]
+    },
+    {
+      "line": 6,
+      "cells": [
+        "---",
+        "---",
+        "---"
+      ]
+    },
+    {
+      "line": 7,
+      "cells": [
+        "`UI.HOME.CHECKING`",
+        "CT.START.TITLE, CT.START.CASE, CT.START.CHECK, CT.UI.SETTINGS",
+        "No guessed Start/Continue result."
+      ]
+    },
+    {
+      "line": 8,
+      "cells": [
+        "`UI.HOME.EMPTY`",
+        "CT.START.TITLE, CT.START.CASE, CT.START.START, CT.UI.SETTINGS",
+        "Confirmed no run."
+      ]
+    },
+    {
+      "line": 9,
+      "cells": [
+        "`UI.HOME.SAVED`",
+        "CT.START.CONTINUE, CT.START.LOCATION or CT.START.VISIT, CT.START.OVER, CT.UI.SETTINGS; CT.RUN.PAUSED if applicable",
+        "Current session wins over older durable record."
+      ]
+    },
+    {
+      "line": 10,
+      "cells": [
+        "`UI.WORLD.IDLE`",
+        "Current CT.SCENE entry/suffixes; current CT.GOAL entry; applicable CT.OBJ action and world toolbar",
+        "No new status merely from idling."
+      ]
+    },
+    {
+      "line": 11,
+      "cells": [
+        "`UI.WORLD.MOVING`",
+        "CT.WORLD.GOING, CT.WORLD.STOP",
+        "Floor-only walk needs no invented noun caption."
+      ]
+    },
+    {
+      "line": 12,
+      "cells": [
+        "`UI.WORLD.OPERATING`",
+        "Applicable CT.OBJ/KIT action result from §§3.3/6.1",
+        "Source body only at its readable commit."
+      ]
+    },
+    {
+      "line": 13,
+      "cells": [
+        "`UI.WORLD.CHOOSER`",
+        "CT.WORLD.CHOOSE, actual overlapping action labels, CT.UI.CANCEL",
+        "Border of ST.BOARD offers request and post, no silent choice."
+      ]
+    },
+    {
+      "line": 14,
+      "cells": [
+        "`UI.WORLD.BLOCKED`",
+        "CT.WORLD.BLOCKED or CT.WORLD.UNREACHABLE",
+        "Actual cause, recoverable latest status."
+      ]
+    },
+    {
+      "line": 15,
+      "cells": [
+        "`UI.GUIDE.OPENING`",
+        "CT.GOAL.ASSIGNMENT, CT.GUIDE.TAB then CT.GUIDE.PREVIEW, CT.UI.DISMISS, CT.ACCESS.MOVEMENT",
+        "Only relevant stage suggestion; exits always usable."
+      ]
+    },
+    {
+      "line": 16,
+      "cells": [
+        "`UI.GOAL`",
+        "CT.GOAL.ASSIGNMENT, actual physical goal, CT.GOAL.QUESTION if set, CT.UI.LATEST; CT.ENDING.REOPEN after completion",
+        "Recover goal without introduction replay."
+      ]
+    },
+    {
+      "line": 17,
+      "cells": [
+        "`UI.NAV.OBJECTS`",
+        "CT.UI.MOVE, CT.WORLD.LOCAL_LIST, actual §3.3/§6/§9 local actions and exits",
+        "No PUP movement or remote occupant leak."
+      ]
+    },
+    {
+      "line": 18,
+      "cells": [
+        "`UI.NAV.MAP`",
+        "CT.UI.MAP, CT.WORLD.HERE, CT.NAV.ST/CY/WK/MEDIA on expansion, CT.WORLD.GO",
+        "Public description distinct from current room description."
+      ]
+    },
+    {
+      "line": 19,
+      "cells": [
+        "`UI.NOTES.EMPTY`",
+        "CT.NOTES.EMPTY, Notes tab labels, CT.KIT.OPEN_CURRENT only if carried",
+        "No hidden clue title placeholders."
+      ]
+    },
+    {
+      "line": 20,
+      "cells": [
+        "`UI.NOTES.LIST`",
+        "Notes tabs, acquired CT.TITLE/source components, CT.NOTES.OPEN_SOURCE, CT.NOTES.LOCATION",
+        "No spoiler summaries or whole E5 unlocked from slate."
+      ]
+    },
+    {
+      "line": 21,
+      "cells": [
+        "`UI.SOURCE.TEXT`",
+        "Applicable §2 source body/passage/title/provenance, CT.SOURCE.DETAIL, CT.SOURCE.ENLARGE",
+        "Legitimate available body; exposure of actual displayed spans."
+      ]
+    },
+    {
+      "line": 22,
+      "cells": [
+        "`UI.SOURCE.POST`",
+        "CT.TITLE.E2, CT.MEDIA.FRAME1 on first access, CT.SRC.E2.C, CT.MEDIA.RECORDING/PHOTO/MESSAGE",
+        "Reopening retains actual last component; no full description at initial landing."
+      ]
+    },
+    {
+      "line": 23,
+      "cells": [
+        "`UI.SOURCE.CLIP`",
+        "Selected CT.MEDIA.FRAME1/2/3, CT.MEDIA.END only at end, CT.CLIP controls and CT.META.RECORDED",
+        "Full CT.SRC.E2.A only after Describe recording."
+      ]
+    },
+    {
+      "line": 24,
+      "cells": [
+        "`UI.SOURCE.PHOTO`",
+        "CT.SRC.E2.B, CT.MEDIA.PARTIAL, CT.CLIP.ENLARGE_PHOTO",
+        "Never full E3 or physical Flatten."
+      ]
+    },
+    {
+      "line": 25,
+      "cells": [
+        "`UI.SOURCE.ZOOM`",
+        "Exact current source/component; CT.UI.BACK, CT.ACCESS.SOURCE",
+        "Intentional reuse; no new source text from enlargement."
+      ]
+    },
+    {
+      "line": 26,
+      "cells": [
+        "`UI.SOURCE.WORD`",
+        "Actual selected word + its CT.WORD entry, CT.SOURCE.DEFINITION_CLOSE",
+        "Exactly five vocabulary bindings."
+      ]
+    },
+    {
+      "line": 27,
+      "cells": [
+        "`UI.SOURCE.PICK`",
+        "CT.SOURCE.CHOOSE, acquired title/passage options, CT.SOURCE.VENUE, CT.SOURCE.OPEN_VENUE, CT.SOURCE.USE/NONE, CT.UI.CANCEL",
+        "Empty uses CT.SOURCE.NO_AVAILABLE; NAV.MEDIA selectable after public description display."
+      ]
+    },
+    {
+      "line": 28,
+      "cells": [
+        "`UI.COMPARE.EMPTY`",
+        "CT.COMPARE.INSTRUCTION/FIRST/SECOND, CT.SOURCE.ADD, CT.IDEA.FIELD/SAVE",
+        "Optional relationship/text; no form lock."
+      ]
+    },
+    {
+      "line": 29,
+      "cells": [
+        "`UI.COMPARE.PARTIAL`",
+        "Same base + one actual detail, CT.SOURCE.CHANGE/REMOVE",
+        "Empty remaining slot does not quote another source."
+      ]
+    },
+    {
+      "line": 30,
+      "cells": [
+        "`UI.COMPARE.READY`",
+        "Both actual details, CT.COMPARE.RELATION/SUPPORTS/CONFLICTS/BEFORE/RELATION_HELP/CLEAR_RELATION, CT.IDEA.SAVE",
+        "Child-selected relation, not system verdict."
+      ]
+    },
+    {
+      "line": 31,
+      "cells": [
+        "`UI.TIMELINE.EMPTY`",
+        "CT.TIMELINE.EMPTY, CT.TIMELINE.EVENT/DISCOVERY",
+        "No fabricated history."
+      ]
+    },
+    {
+      "line": 32,
+      "cells": [
+        "`UI.TIMELINE.KNOWN`",
+        "§4.1 applicable timeline labels + actual metadata/source title, CT.NOTES.OPEN_SOURCE",
+        "Intentions distinct from completed events."
+      ]
+    },
+    {
+      "line": 33,
+      "cells": [
+        "`UI.IDEA.DRAFT`",
+        "CT.IDEA.FIELD/PRIVATE/SAVE, CT.UI.ADD_IDEA or CT.UI.NOTHING or CT.UI.LIMIT_RECORD only on applicable attempt",
+        "Never auto-focus or fill answer."
+      ]
+    },
+    {
+      "line": 34,
+      "cells": [
+        "`UI.IDEA.RECORDED`",
+        "CT.IDEA.RECORDED/CURRENT/EDIT, actual text/details; CT.IDEA.EARLIER if actual revision",
+        "Save status separately acknowledged."
+      ]
+    },
+    {
+      "line": 35,
+      "cells": [
+        "`UI.LEAD`",
+        "CT.LEAD.CHOOSE/CANCELED/MOVED/WHERE/PROMISE/DESTINATION/FOLLOW",
+        "Authored questions, not asserted facts; Go separate."
+      ]
+    },
+    {
+      "line": 36,
+      "cells": [
+        "`UI.TALK.TOPICS`",
+        "CT.TALK.TOPICS, eligible greeting and topic labels §5.2",
+        "Actual local approach; appropriate speaker."
+      ]
+    },
+    {
+      "line": 37,
+      "cells": [
+        "`UI.TALK.REPLY`",
+        "Exact selected §5 line or own §2 source; CT.TALK topics / CT.PRESENT.OPEN",
+        "Knowledge matrix/fallback; no automatic model request."
+      ]
+    },
+    {
+      "line": 38,
+      "cells": [
+        "`UI.PRESENT.SELECT`",
+        "CT.PRESENT.WHO/HERE/MET/CHOOSE/SELECTED, actual available details",
+        "No recipient knowledge change yet."
+      ]
+    },
+    {
+      "line": 39,
+      "cells": [
+        "`UI.PRESENT.REVIEW`",
+        "CT.PRESENT.REVIEW, actual details/child words, CT.PRESENT.SHOW or GO, CT.UI.EDIT/CANCEL",
+        "Remote travel only; no offscreen reply."
+      ]
+    },
+    {
+      "line": 40,
+      "cells": [
+        "`UI.PRESENT.APPROACH`",
+        "CT.PRESENT.GOING, CT.UI.CANCEL; DONE only at delivery",
+        "New intent/cancel uses CT.PRESENT.CANCELED only before commit."
+      ]
+    },
+    {
+      "line": 41,
+      "cells": [
+        "`UI.PLAN.PRIVATE`",
+        "CT.PLAN.SEARCH or STORY, CT.IDEA.PRIVATE/FIELD, CT.PLAN.RECORD/EXPLAIN",
+        "Private, no Jo knowledge."
+      ]
+    },
+    {
+      "line": 42,
+      "cells": [
+        "`UI.PLAN.RECORDED`",
+        "CT.PLAN.RECORDED or DELIVERED, actual text/context; CT.IDEA.PAST_PLAN if stale arrangement",
+        "Recorded crew tool does not manufacture NPC reply."
+      ]
+    },
+    {
+      "line": 43,
+      "cells": [
+        "`UI.PLAN.ADDRESSED`",
+        "CT.PLAN.EXPLAIN, CT.PRESENT.REVIEW/SHOW or GO, actual words/refs",
+        "Local approach before delivery; optional no two-source requirement."
+      ]
+    },
+    {
+      "line": 44,
+      "cells": [
+        "`UI.KIT.CLOSED`",
+        "CT.KIT.OPEN/COLLECT",
+        "Both actions available without reading."
+      ]
+    },
+    {
+      "line": 45,
+      "cells": [
+        "`UI.KIT.OPEN`",
+        "CT.KIT.TITLE/CONTENTS/COLLECT; actual tile names/Inspect; CT.KIT.NOTE_JO/REMY",
+        "Bodies only on deliberate inspection."
+      ]
+    },
+    {
+      "line": 46,
+      "cells": [
+        "`UI.KIT.CARRIED`",
+        "CT.KIT.CARRIED, CT.KIT.CONTENTS, note/tile controls, CT.WORLD.GO with Stage",
+        "Only local Stage handoff, no remote rail."
+      ]
+    },
+    {
+      "line": 47,
+      "cells": [
+        "`UI.KIT.HANDOFF`",
+        "CT.KIT.HANDOFF, CT.KIT.SEATED at seat commit",
+        "No doorway auto-seat; cancel uses actual owner."
+      ]
+    },
+    {
+      "line": 48,
+      "cells": [
+        "`UI.KIT.SEATED`",
+        "CT.KIT.SEATED, CT.RAIL.ARRANGE, tile/note controls at actual host",
+        "Elsewhere CT.KIT.AT_STAGE + travel/acquired sources."
+      ]
+    },
+    {
+      "line": 49,
+      "cells": [
+        "`UI.KIT.VACANT`",
+        "CT.KIT.VACANT; OPEN_CURRENT if carried, AT_STAGE if seated",
+        "Fixed Media notes stay accessible."
+      ]
+    },
+    {
+      "line": 50,
+      "cells": [
+        "`UI.SOURCE.TILE`",
+        "Actual tile name + corresponding CT.SRC.E8 entry, CT.UI.BACK",
+        "No puppet solution demo."
+      ]
+    },
+    {
+      "line": 51,
+      "cells": [
+        "`UI.WORK.NEEDS_KIT`",
+        "CT.KIT.EMPTY_BAY, CT.WORK.MISSING_KIT; MISSING_LOOP if both absent",
+        "Preview or Launch follows docking, no source gate."
+      ]
+    },
+    {
+      "line": 52,
+      "cells": [
+        "`UI.WORK.NEEDS_LOOP`",
+        "CT.WORK.MISSING_LOOP, editable order and kit, CT.WORK.PREVIEW",
+        "Missing projection does not forbid planning."
+      ]
+    },
+    {
+      "line": 53,
+      "cells": [
+        "`UI.WORK.EMPTY`",
+        "CT.WORK.EMPTY when attempted, CT.RAIL.HELP, kit/rail controls",
+        "No numbered answer template or recipe."
+      ]
+    },
+    {
+      "line": 54,
+      "cells": [
+        "`UI.WORK.READY`",
+        "CT.WORK.READY, CT.WORK.REHEARSE/LAUNCH, CT.RAIL.ARRANGE",
+        "Both physical resources, current nonempty order."
+      ]
+    },
+    {
+      "line": 55,
+      "cells": [
+        "`UI.WORK.CERTIFIED`",
+        "CT.WORK.CERTIFIED, LAUNCH or REPLAY",
+        "Only full current successful rehearsal."
+      ]
+    },
+    {
+      "line": 56,
+      "cells": [
+        "`UI.WORK.SHOW_CHECK`",
+        "Missing resource messages first, otherwise CT.WORK.CHECK, CT.WORK.REHEARSE",
+        "Same Show pad; no comprehension/AI requirement."
+      ]
+    },
+    {
+      "line": 57,
+      "cells": [
+        "`UI.WORK.MORE`",
+        "CT.WORK.MORE/RESET/RESET_DESCRIPTION/CLEAR/CLEAR_DESCRIPTION, CT.UI.CANCEL",
+        "Opening pauses, choosing actual reset clears eligibility, cancel does not."
+      ]
+    },
+    {
+      "line": 58,
+      "cells": [
+        "`UI.RAIL.SELECTED`",
+        "CT.RAIL.CHOOSE/DESTINATIONS/CANCEL, applicable Inspect/move/swap/return",
+        "Only valid actions for current owner."
+      ]
+    },
+    {
+      "line": 59,
+      "cells": [
+        "`UI.RAIL.DESTINATIONS`",
+        "Applicable CT.RAIL gap/replace/swap/move/return labels",
+        "Result uses exact operation caption, not generic success."
+      ]
+    },
+    {
+      "line": 60,
+      "cells": [
+        "`UI.RUN.STARTING`",
+        "CT.RUN.TITLE, initial story description, CT.RUN.STOP",
+        "Starting duplicate ignored; no extra success caption."
+      ]
+    },
+    {
+      "line": 61,
+      "cells": [
+        "`UI.RUN.REHEARSAL`",
+        "CT.RUN.TITLE/CURRENT/STOP, actual CT.CUE caption, CT.STORY.OPEN",
+        "Successful/no-op cues continue normally."
+      ]
+    },
+    {
+      "line": 62,
+      "cells": [
+        "`UI.RUN.SHOW`",
+        "Same run/cue families in Premiere mode",
+        "Full successful finalization required before ending."
+      ]
+    },
+    {
+      "line": 63,
+      "cells": [
+        "`UI.RUN.UNMET`",
+        "Actual Hill/Flower CT.CUE, CT.RUN.CONTINUE/RESTART, notes/help/Arrange",
+        "No automatic hint or lost tile."
+      ]
+    },
+    {
+      "line": 64,
+      "cells": [
+        "`UI.RUN.PAUSED`",
+        "CT.RUN.PAUSED/NEXT/CONTINUE/RESTART",
+        "Next unfinished tile only; state already settled."
+      ]
+    },
+    {
+      "line": 65,
+      "cells": [
+        "`UI.RUN.TERMINAL`",
+        "CT.RUN.TERMINAL/FINALIZE",
+        "No next-tile label, no duplicated last cue."
+      ]
+    },
+    {
+      "line": 66,
+      "cells": [
+        "`UI.RUN.FAILED`",
+        "CT.RUN.FINISHED + actual CT.STORY composition; optional CT.RUN.HELP_OFFER",
+        "No grade or diagnosis."
+      ]
+    },
+    {
+      "line": 67,
+      "cells": [
+        "`UI.STORY.DESCRIBE`",
+        "CT.STORY.TITLE and composition, CT.STORY.ENLARGE",
+        "Read-only both-bank state; no recipe."
+      ]
+    },
+    {
+      "line": 68,
+      "cells": [
+        "`UI.COACH.ENTRY`",
+        "CT.HELP.TITLE/FIELD/THINK/DIRECT, current question/context",
+        "Opening not sending; optional text."
+      ]
+    },
+    {
+      "line": 69,
+      "cells": [
+        "`UI.COACH.TOPIC`",
+        "CT.HELP.TOPIC and known question/story labels",
+        "Authored attention, not simulated text analysis."
+      ]
+    },
+    {
+      "line": 70,
+      "cells": [
+        "`UI.COACH.PENDING`",
+        "CT.HELP.PENDING/SUBMITTED/CANCEL, CT.UI.KEEP",
+        "New draft remains separately editable."
+      ]
+    },
+    {
+      "line": 71,
+      "cells": [
+        "`UI.COACH.WAITING`",
+        "CT.HELP.WAITING/CANCEL, CT.UI.KEEP",
+        "Two-second design target, nonblocking."
+      ]
+    },
+    {
+      "line": 72,
+      "cells": [
+        "`UI.COACH.FALLBACK_OFFER`",
+        "CT.HELP.OFFER or UNAVAILABLE, USE_PREPARED/CANCEL/RETRY as applicable",
+        "Closed offers only AVAILABLE; live arrival adds VIEW_NEW, not button replacement."
+      ]
+    },
+    {
+      "line": 73,
+      "cells": [
+        "`UI.COACH.READY_CLOSED`",
+        "CT.HELP.READY",
+        "No response text/announcement until deliberate reopening and recheck."
+      ]
+    },
+    {
+      "line": 74,
+      "cells": [
+        "`UI.COACH.RESPONSE`",
+        "CT.HELP.SUBMITTED, exact eligible response, PREPARED if local, AGAIN/DIRECT/KEEP",
+        "Only actually displayed help counts; no overwrite."
+      ]
+    },
+    {
+      "line": 75,
+      "cells": [
+        "`UI.COACH.CLARIFY`",
+        "CT.HINT.CLARIFY or CT.HINT.SEARCH_CLARIFY/CT.HELP.TOPIC; clarification choices",
+        "Meaning not assumed; explicit resubmission."
+      ]
+    },
+    {
+      "line": 76,
+      "cells": [
+        "`UI.COACH.DIRECT`",
+        "Appropriate CT.DIRECT response; explicit-request help label",
+        "Permitted new facts recorded, no whole-source reading flags."
+      ]
+    },
+    {
+      "line": 77,
+      "cells": [
+        "`UI.COACH.STALE`",
+        "CT.HELP.STALE/THIS_VERSION, CT.UI.KEEP",
+        "Closed panel quietly removes old marker."
+      ]
+    },
+    {
+      "line": 78,
+      "cells": [
+        "`UI.COACH.CANCELED`",
+        "CT.HELP.CANCELED, current draft/entry controls",
+        "Late answer ignored."
+      ]
+    },
+    {
+      "line": 79,
+      "cells": [
+        "`UI.PAUSE`",
+        "CT.PAUSE.TITLE, CT.UI.FESTIVAL/SETTINGS, CT.PAUSE.HOME, CT.START.OVER, save state",
+        "Historical recap action only after completion."
+      ]
+    },
+    {
+      "line": 80,
+      "cells": [
+        "`UI.SETTINGS`",
+        "All §8.1 setting label/choice families and CT.SETTINGS.CONTROLS",
+        "Actual applied state, truthful preference saving."
+      ]
+    },
+    {
+      "line": 81,
+      "cells": [
+        "`UI.SAVE.PENDING`",
+        "CT.SAVE.PENDING/PENDING_DETAIL",
+        "Passive current-revision status."
+      ]
+    },
+    {
+      "line": 82,
+      "cells": [
+        "`UI.SAVE.SAVED`",
+        "CT.SAVE.SAVED",
+        "Acknowledged latest revision only."
+      ]
+    },
+    {
+      "line": 83,
+      "cells": [
+        "`UI.SAVE.SESSION`",
+        "CT.SAVE.FAILED/DETAIL/RETRY, CT.UI.KEEP",
+        "Session stays playable; no false cloud promise."
+      ]
+    },
+    {
+      "line": 84,
+      "cells": [
+        "`UI.RECOVERY.READ`",
+        "CT.RECOVERY.READ/RETRY/SESSION/SESSION_DETAIL",
+        "Unknown durable record preserved."
+      ]
+    },
+    {
+      "line": 85,
+      "cells": [
+        "`UI.RECOVERY.VERSION`",
+        "CT.RECOVERY.VERSION/NEW, CT.UI.BACK",
+        "New choice opens confirmation."
+      ]
+    },
+    {
+      "line": 86,
+      "cells": [
+        "`UI.RECOVERY.DAMAGED`",
+        "CT.RECOVERY.DAMAGED/RETRY/NEW, CT.UI.BACK",
+        "No invented partial progress/success."
+      ]
+    },
+    {
+      "line": 87,
+      "cells": [
+        "`UI.RECOVERY.REPLACE`",
+        "CT.RECOVERY.REPLACE_UNKNOWN or REPLACE_KNOWN, KEEP_UNSAVED/REPLACE",
+        "Actual record conflict only."
+      ]
+    },
+    {
+      "line": 88,
+      "cells": [
+        "`UI.RECOVERY.RUN`",
+        "CT.RECOVERY.RUN, ROOM or Go to Stage, REHEARSE only at valid Stage approach",
+        "No recovery teleport or completion."
+      ]
+    },
+    {
+      "line": 89,
+      "cells": [
+        "`UI.RESUME.RUN`",
+        "CT.RUN.RESUME_NOTE or AWAY_NOTE, OPEN; CT.RECOVERY.UNCERTAIN_CUE when applicable",
+        "Actual retained mode, stable cue, exposure uncertainty."
+      ]
+    },
+    {
+      "line": 90,
+      "cells": [
+        "`UI.RESET.CASE`",
+        "CT.RESET.QUESTION/SCOPE/KEEP_PLAYING or KEEP_SAVED/ACCEPT",
+        "Safe cancel first; only actual acceptance resets case."
+      ]
+    },
+    {
+      "line": 91,
+      "cells": [
+        "`UI.RETURN.FOREGROUND`",
+        "CT.RETURN.VISIBLE, CT.UI.FESTIVAL; current task/draft and paused-mode controls",
+        "No auto-walk, playback or help resubmission."
+      ]
+    },
+    {
+      "line": 92,
+      "cells": [
+        "`UI.TOAST.COVERED`",
+        "CT.TOAST.TITLE/COVERED/START",
+        "Optional, no tiny-toast spoiler before reveal."
+      ]
+    },
+    {
+      "line": 93,
+      "cells": [
+        "`UI.TOAST.REVEALING`",
+        "Actual CT.TOAST.ARMS/TRAY/MAGNIFIER stages, SKIP",
+        "Not all captions pre-announced; leave settles final result."
+      ]
+    },
+    {
+      "line": 94,
+      "cells": [
+        "`UI.TOAST.REVEALED`",
+        "CT.TOAST.PUNCHLINE/MAGNIFIER/LOOK/REPLAY",
+        "No clue/reward/required flag."
+      ]
+    },
+    {
+      "line": 95,
+      "cells": [
+        "`UI.TOAST.MAGNIFIER`",
+        "CT.TOAST.ENLARGED, CT.UI.CLOSE/ROOM",
+        "Return to surviving kiosk magnifier."
+      ]
+    },
+    {
+      "line": 96,
+      "cells": [
+        "`UI.TOAST.REPLAY`",
+        "CT.TOAST.FLOURISH then PUNCHLINE",
+        "Same revealed result, no new case state."
+      ]
+    },
+    {
+      "line": 97,
+      "cells": [
+        "`UI.ENDING.CELEBRATION`",
+        "CT.ENDING.TITLE/LIGHT, CT.JO.ENDING, SKIP/CONTINUE",
+        "Historical completion already committed."
+      ]
+    },
+    {
+      "line": 98,
+      "cells": [
+        "`UI.ENDING.AFTERMATH`",
+        "CT.ENDING.AFTER, CT.REMY.ENDING then CT.ARI.ENDING, NEXT/SKIP_REACTIONS",
+        "Editorial own-room scenes; no NPC relocation."
+      ]
+    },
+    {
+      "line": 99,
+      "cells": [
+        "`UI.ENDING.RECAP`",
+        "CT.ENDING.RECAP/FACT, actual conditional CT.RECAP entries, RETURN/REPLAY or GO_REPLAY, REACTIONS",
+        "Reopened recap uses Back/Return to room and preserves current location/order."
+      ]
+    }
+  ],
+  "transitionRows": [
+    {
+      "line": 5,
+      "cells": [
+        "Existing transition(s)",
+        "Content binding and actual result"
+      ]
+    },
+    {
+      "line": 6,
+      "cells": [
+        "---",
+        "---"
+      ]
+    },
+    {
+      "line": 7,
+      "cells": [
+        "`T.HOME.CHECK`",
+        "CT.START.CHECK → actual Start/Continue/recovery result, no invented empty slot."
+      ]
+    },
+    {
+      "line": 8,
+      "cells": [
+        "`T.HOME.START`",
+        "CT.START.START → CT.GOAL.ASSIGNMENT + opening room/guidance."
+      ]
+    },
+    {
+      "line": 9,
+      "cells": [
+        "`T.HOME.CONTINUE`",
+        "CT.START.CONTINUE/LOCATION/VISIT → current room and actual paused-run/draft status."
+      ]
+    },
+    {
+      "line": 10,
+      "cells": [
+        "`T.HOME.SETTINGS`, `T.PAUSE.SETTINGS`",
+        "CT.UI.SETTINGS → settings families, same caller retained."
+      ]
+    },
+    {
+      "line": 11,
+      "cells": [
+        "`T.HOME.OVER`, `T.RECOVERY.NEW`",
+        "CT.START.OVER or CT.RECOVERY.NEW → CT.RESET.QUESTION/SCOPE; no reset yet."
+      ]
+    },
+    {
+      "line": 12,
+      "cells": [
+        "`T.WORLD.MOVE`, `T.WORLD.RETARGET`",
+        "Actual action label → CT.WORLD.GOING for named target; retarget cancels old uncommitted operation."
+      ]
+    },
+    {
+      "line": 13,
+      "cells": [
+        "`T.WORLD.ARRIVE`",
+        "Room crossing CT.WORLD.ARRIVED + actual scene; at object, its operating content. No new arbitrary arrival lore."
+      ]
+    },
+    {
+      "line": 14,
+      "cells": [
+        "`T.WORLD.COMMIT`",
+        "Exact physical result §3.3/§6.1/§9 or actual source heading/body."
+      ]
+    },
+    {
+      "line": 15,
+      "cells": [
+        "`T.WORLD.ABORT`",
+        "Actual pre/post-commit cue/result remains; fresh intent. CT.PRESENT.CANCELED only if delivery never committed."
+      ]
+    },
+    {
+      "line": 16,
+      "cells": [
+        "`T.WORLD.CANCEL`",
+        "CT.WORLD.STOP → CT.WORLD.STOPPED."
+      ]
+    },
+    {
+      "line": 17,
+      "cells": [
+        "`T.WORLD.CHOOSE`",
+        "CT.WORLD.CHOOSE + chosen actual label → movement; Cancel leaves unchanged."
+      ]
+    },
+    {
+      "line": 18,
+      "cells": [
+        "`T.WORLD.RETRY`",
+        "BLOCKED/UNREACHABLE replaced by new actual movement/status."
+      ]
+    },
+    {
+      "line": 19,
+      "cells": [
+        "`T.WORLD.TOOL`",
+        "Chosen toolbar label → its heading; applies pause caption if running."
+      ]
+    },
+    {
+      "line": 20,
+      "cells": [
+        "`T.GUIDE.MODEL`",
+        "CT.OBJ.MODEL_RESULT + CT.JO.MODEL; next suggestion CT.GUIDE.PREVIEW."
+      ]
+    },
+    {
+      "line": 21,
+      "cells": [
+        "`T.GUIDE.PREVIEW`",
+        "CT.WORK.PREVIEW_RESULT; available crew actions, no prescribed hidden destination."
+      ]
+    },
+    {
+      "line": 22,
+      "cells": [
+        "`T.GUIDE.DISMISS`",
+        "CT.UI.DISMISS; no extra line or goal loss."
+      ]
+    },
+    {
+      "line": 23,
+      "cells": [
+        "`T.GOAL.ACTION`",
+        "Current actual goal/action or Map; no automatic hypothesis."
+      ]
+    },
+    {
+      "line": 24,
+      "cells": [
+        "`T.NAV.OBJECT`",
+        "CT.WORLD.LOCAL_LIST/actual action → legal movement."
+      ]
+    },
+    {
+      "line": 25,
+      "cells": [
+        "`T.NAV.DESCRIBE`",
+        "Selected CT.NAV entry, public information only."
+      ]
+    },
+    {
+      "line": 26,
+      "cells": [
+        "`T.NAV.GO`",
+        "CT.WORLD.GO → legal door chain; arrival scene."
+      ]
+    },
+    {
+      "line": 27,
+      "cells": [
+        "`T.NOTES.TAB`",
+        "CT.NOTES tab labels → corresponding heading/content."
+      ]
+    },
+    {
+      "line": 28,
+      "cells": [
+        "`T.NOTES.KIT`",
+        "CT.KIT.OPEN_CURRENT or AT_STAGE → legitimate owner/access, never remote unread seated leaflet."
+      ]
+    },
+    {
+      "line": 29,
+      "cells": [
+        "`T.NOTES.OPEN`, `T.TIMELINE.SOURCE`",
+        "CT.NOTES.OPEN_SOURCE → actual acquired component/title/body."
+      ]
+    },
+    {
+      "line": 30,
+      "cells": [
+        "`T.SOURCE.SELECT`",
+        "CT.SOURCE.DETAIL → exact chosen passage + CT.ACCESS.DETAIL_SELECTED."
+      ]
+    },
+    {
+      "line": 31,
+      "cells": [
+        "`T.SOURCE.ZOOM`, `T.PHOTO.ENLARGE`",
+        "CT.SOURCE.ENLARGE or CT.CLIP.ENLARGE_PHOTO; identical component info."
+      ]
+    },
+    {
+      "line": 32,
+      "cells": [
+        "`T.SOURCE.UNZOOM`",
+        "CT.UI.BACK → same source/component/scroll; no new text."
+      ]
+    },
+    {
+      "line": 33,
+      "cells": [
+        "`T.SOURCE.WORD`",
+        "Selected defined word → its CT.WORD entry."
+      ]
+    },
+    {
+      "line": 34,
+      "cells": [
+        "`T.SOURCE.WORD.CLOSE`",
+        "CT.SOURCE.DEFINITION_CLOSE → same reader word focus."
+      ]
+    },
+    {
+      "line": 35,
+      "cells": [
+        "`T.POST.PLAY`",
+        "CT.CLIP.PLAY → actual frame/recording metadata."
+      ]
+    },
+    {
+      "line": 36,
+      "cells": [
+        "`T.POST.PHOTO`",
+        "CT.MEDIA.PHOTO → CT.SRC.E2.B + CT.MEDIA.PARTIAL."
+      ]
+    },
+    {
+      "line": 37,
+      "cells": [
+        "`T.CLIP.STEP`",
+        "Previous/Next/frame button → only chosen frame, end marker if final."
+      ]
+    },
+    {
+      "line": 38,
+      "cells": [
+        "`T.CLIP.DESCRIBE`",
+        "CT.CLIP.DESCRIBE → CT.SRC.E2.A complete description, explicitly exposed."
+      ]
+    },
+    {
+      "line": 39,
+      "cells": [
+        "`T.PICK.USE`",
+        "CT.SOURCE.USE → actual selected slot/details; no verdict."
+      ]
+    },
+    {
+      "line": 40,
+      "cells": [
+        "`T.PICK.CANCEL`",
+        "CT.UI.CANCEL → prior slot unchanged; no new status necessary."
+      ]
+    },
+    {
+      "line": 41,
+      "cells": [
+        "`T.COMPARE.CHOOSE`",
+        "CT.SOURCE.ADD/CHANGE → CT.SOURCE.CHOOSE."
+      ]
+    },
+    {
+      "line": 42,
+      "cells": [
+        "`T.COMPARE.REMOVE`",
+        "CT.SOURCE.REMOVE → remaining slots + retained idea/relation."
+      ]
+    },
+    {
+      "line": 43,
+      "cells": [
+        "`T.COMPARE.RELATE`",
+        "CT.COMPARE relationship labels; CT.COMPARE.RELATION_HELP explains ownership."
+      ]
+    },
+    {
+      "line": 44,
+      "cells": [
+        "`T.COMPARE.SAVE`, `T.IDEA.SAVE`",
+        "CT.IDEA.SAVE → CT.IDEA.RECORDED or actual empty/limit message."
+      ]
+    },
+    {
+      "line": 45,
+      "cells": [
+        "`T.TIMELINE.VIEW`",
+        "Event times/Discovery order; actual rows reordered, no history change."
+      ]
+    },
+    {
+      "line": 46,
+      "cells": [
+        "`T.IDEA.EDIT`",
+        "CT.IDEA.EDIT → draft/status; old version remains actual history."
+      ]
+    },
+    {
+      "line": 47,
+      "cells": [
+        "`T.IDEA.CLOSE`",
+        "Shared close, draft preserved in session; save status separate."
+      ]
+    },
+    {
+      "line": 48,
+      "cells": [
+        "`T.IDEA.HELP`",
+        "Explicit Help → CT.HELP entry; no silent request."
+      ]
+    },
+    {
+      "line": 49,
+      "cells": [
+        "`T.IDEA.LEAD`",
+        "Lead selection → CT.LEAD.CHOOSE."
+      ]
+    },
+    {
+      "line": 50,
+      "cells": [
+        "`T.LEAD.SET`",
+        "CT.LEAD.FOLLOW → CT.GOAL.QUESTION; Go is separate."
+      ]
+    },
+    {
+      "line": 51,
+      "cells": [
+        "`T.TALK.ASK`",
+        "Actual CT.TALK topic → exact §5 matrix reply."
+      ]
+    },
+    {
+      "line": 52,
+      "cells": [
+        "`T.TALK.BACK`",
+        "CT.UI.BACK → current topic list, no repeated intro."
+      ]
+    },
+    {
+      "line": 53,
+      "cells": [
+        "`T.TALK.SOURCE`",
+        "Own-source request → actual §2 body and origin; source access, not a new author."
+      ]
+    },
+    {
+      "line": 54,
+      "cells": [
+        "`T.PRESENT.REVIEW`",
+        "CT.PRESENT.REVIEW + exact selected refs/words."
+      ]
+    },
+    {
+      "line": 55,
+      "cells": [
+        "`T.PRESENT.SHOW`",
+        "CT.PRESENT.SHOW → CT.PRESENT.GOING; delivery not yet claimed."
+      ]
+    },
+    {
+      "line": 56,
+      "cells": [
+        "`T.PRESENT.TRAVEL`",
+        "CT.PRESENT.GO → actual destination, retain undelivered selection."
+      ]
+    },
+    {
+      "line": 57,
+      "cells": [
+        "`T.PRESENT.DELIVER`, `T.PLAN.DELIVER`",
+        "At actual approach, CT.PRESENT.DONE/CT.PLAN.DELIVERED and appropriate §5 reply; snapshot once."
+      ]
+    },
+    {
+      "line": 58,
+      "cells": [
+        "`T.PLAN.RECORD`",
+        "CT.PLAN.RECORD → CT.PLAN.RECORDED, no Jo reply."
+      ]
+    },
+    {
+      "line": 59,
+      "cells": [
+        "`T.KIT.OPEN`",
+        "CT.KIT.OPEN → CT.KIT.CONTENTS at lid commit."
+      ]
+    },
+    {
+      "line": 60,
+      "cells": [
+        "`T.KIT.COLLECT`",
+        "CT.KIT.COLLECT → carried/HAVE result, no note bodies."
+      ]
+    },
+    {
+      "line": 61,
+      "cells": [
+        "`T.KIT.SEAT`",
+        "CT.KIT.HANDOFF → CT.KIT.SEATED at actual seat; queued work action follows only if current."
+      ]
+    },
+    {
+      "line": 62,
+      "cells": [
+        "`T.WORK.MISSING`",
+        "Actual CT.WORK.MISSING_KIT/LOOP; no source prerequisite."
+      ]
+    },
+    {
+      "line": 63,
+      "cells": [
+        "`T.WORK.EDIT`, `T.RAIL.DESTINATIONS`",
+        "CT.RAIL.ARRANGE/CHOOSE/DESTINATIONS → valid named operations."
+      ]
+    },
+    {
+      "line": 64,
+      "cells": [
+        "`T.RAIL.COMMIT`",
+        "Operation-specific caption below, then CT.RAIL.CHANGED only for actual order change."
+      ]
+    },
+    {
+      "line": 65,
+      "cells": [
+        "`T.RAIL.INSERT`, `T.RAIL.MOVE`",
+        "CT.RAIL gap/move action → CT.RAIL.PLACED + changed caption."
+      ]
+    },
+    {
+      "line": 66,
+      "cells": [
+        "`T.RAIL.REPLACE`",
+        "CT.RAIL.REPLACE → CT.RAIL.REPLACED + changed caption."
+      ]
+    },
+    {
+      "line": 67,
+      "cells": [
+        "`T.RAIL.SWAP`",
+        "CT.RAIL.SWAP → CT.RAIL.SWAPPED + changed caption."
+      ]
+    },
+    {
+      "line": 68,
+      "cells": [
+        "`T.RAIL.RETURN`",
+        "CT.RAIL.RETURN → CT.RAIL.RETURNED + changed caption."
+      ]
+    },
+    {
+      "line": 69,
+      "cells": [
+        "`T.RAIL.NOOP`",
+        "CT.RAIL.SAME/START_LIMIT/END_LIMIT; certification retained, no changed caption."
+      ]
+    },
+    {
+      "line": 70,
+      "cells": [
+        "`T.RAIL.CANCEL`",
+        "CT.RAIL.CANCEL → CT.RAIL.CANCELED, or INVALID on invalid drop; original owner."
+      ]
+    },
+    {
+      "line": 71,
+      "cells": [
+        "`T.RUN.REHEARSE`",
+        "CT.WORK.REHEARSE → missing-resource/empty message or Rehearsal starting."
+      ]
+    },
+    {
+      "line": 72,
+      "cells": [
+        "`T.RUN.SHOW`",
+        "CT.WORK.LAUNCH/REPLAY → eligible Premiere starting; otherwise Show check."
+      ]
+    },
+    {
+      "line": 73,
+      "cells": [
+        "`T.RUN.BEGIN`",
+        "CT.RUN.TITLE and current cue; no success claim."
+      ]
+    },
+    {
+      "line": 74,
+      "cells": [
+        "`T.RUN.CUE`",
+        "Exact §6.4 factual endpoint caption; next/paused/finished result per actual state."
+      ]
+    },
+    {
+      "line": 75,
+      "cells": [
+        "`T.RUN.STOP`, `T.RUN.LEAVE`",
+        "Settle current cue once, CT.RUN.PAUSED or TERMINAL; leave then actual movement."
+      ]
+    },
+    {
+      "line": 76,
+      "cells": [
+        "`T.RUN.CONTINUE`, `T.RUN.UNMET_CONTINUE`",
+        "CT.RUN.CONTINUE → actual next cue; no repair of prior unmet outcome."
+      ]
+    },
+    {
+      "line": 77,
+      "cells": [
+        "`T.RUN.FINALIZE`",
+        "CT.RUN.FINALIZE → FINISHED/CERTIFIED or completed-show ending; no repeated last cue."
+      ]
+    },
+    {
+      "line": 78,
+      "cells": [
+        "`T.RUN.RESTART`, `T.RUN.RESTART.REHEARSAL`, `T.RUN.RESTART.SHOW`",
+        "CT.RUN.RESTART with correct mode; show still requires certification."
+      ]
+    },
+    {
+      "line": 79,
+      "cells": [
+        "`T.SHOW.CHECK`",
+        "Actual prerequisite first, otherwise CT.WORK.CHECK."
+      ]
+    },
+    {
+      "line": 80,
+      "cells": [
+        "`T.WORK.RESET`",
+        "CT.WORK.RESET/description → RESET_RESULT; retain order, remove current certification."
+      ]
+    },
+    {
+      "line": 81,
+      "cells": [
+        "`T.WORK.CLEAR`",
+        "CT.WORK.CLEAR/description → CLEAR_RESULT; historical premiere retained."
+      ]
+    },
+    {
+      "line": 82,
+      "cells": [
+        "`T.STORY.CLOSE`",
+        "Shared Back/Close → paused same caller; no new cue."
+      ]
+    },
+    {
+      "line": 83,
+      "cells": [
+        "`T.COACH.THINK`",
+        "CT.HELP.THINK → PENDING with submitted text or TOPIC without it."
+      ]
+    },
+    {
+      "line": 84,
+      "cells": [
+        "`T.COACH.TOPIC`",
+        "CT.HELP.TOPIC → eligible authored attention/clarification, labeled Prepared hint."
+      ]
+    },
+    {
+      "line": 85,
+      "cells": [
+        "`T.COACH.WAIT`",
+        "CT.HELP.WAITING after proposed two seconds."
+      ]
+    },
+    {
+      "line": 86,
+      "cells": [
+        "`T.COACH.OFFER`",
+        "CT.HELP.OFFER after proposed eight seconds; closed view only AVAILABLE."
+      ]
+    },
+    {
+      "line": 87,
+      "cells": [
+        "`T.COACH.FALLBACK`",
+        "CT.HELP.USE_PREPARED → exact eligible local response; sole reply ownership."
+      ]
+    },
+    {
+      "line": 88,
+      "cells": [
+        "`T.COACH.OPEN_READY`",
+        "READY → recheck, response or STALE; no stale text flashed first."
+      ]
+    },
+    {
+      "line": 89,
+      "cells": [
+        "`T.COACH.DIRECT`",
+        "CT.HELP.DIRECT → appropriate CT.DIRECT exact answer; prior response opportunity canceled."
+      ]
+    },
+    {
+      "line": 90,
+      "cells": [
+        "`T.COACH.DIRECT_CLOSE`",
+        "Shared close → actual source/outcome/assistance history retained; no tile auto-placement."
+      ]
+    },
+    {
+      "line": 91,
+      "cells": [
+        "`T.COACH.CANCEL`",
+        "CT.HELP.CANCEL → CANCELED; late result ignored."
+      ]
+    },
+    {
+      "line": 92,
+      "cells": [
+        "`T.PAUSE.RETURN`",
+        "CT.UI.FESTIVAL → world with run still paused."
+      ]
+    },
+    {
+      "line": 93,
+      "cells": [
+        "`T.PAUSE.HOME`",
+        "CT.PAUSE.HOME → Continue this visit if unsaved; live state retained."
+      ]
+    },
+    {
+      "line": 94,
+      "cells": [
+        "`T.SETTINGS.CHANGE`",
+        "Actual label/choice and APPLIED; save result separately truthful."
+      ]
+    },
+    {
+      "line": 95,
+      "cells": [
+        "`T.SAVE.ACK`",
+        "CT.SAVE.SAVED only latest corresponding acknowledgment."
+      ]
+    },
+    {
+      "line": 96,
+      "cells": [
+        "`T.SAVE.FAIL`",
+        "CT.SAVE.FAILED/DETAIL, no interruption forced."
+      ]
+    },
+    {
+      "line": 97,
+      "cells": [
+        "`T.SAVE.RETRY`",
+        "CT.SAVE.RETRY → PENDING or real replacement decision."
+      ]
+    },
+    {
+      "line": 98,
+      "cells": [
+        "`T.RECOVERY.RETRY`",
+        "CT.RECOVERY.RETRY → startup check, no overwrite."
+      ]
+    },
+    {
+      "line": 99,
+      "cells": [
+        "`T.RECOVERY.REPLACE`",
+        "Actual unknown/known message + Replace saved game → save result; cancel keeps visit."
+      ]
+    },
+    {
+      "line": 100,
+      "cells": [
+        "`T.RESUME.OPEN`",
+        "CT.RUN.OPEN → actual Stage approach and correct-mode paused/terminal controls."
+      ]
+    },
+    {
+      "line": 101,
+      "cells": [
+        "`T.RESET.CANCEL`",
+        "KEEP_PLAYING/KEEP_SAVED → same caller, no case change."
+      ]
+    },
+    {
+      "line": 102,
+      "cells": [
+        "`T.RESET.ACCEPT`",
+        "CT.RESET.ACCEPT → initial assignment; OLD_MAY_RETURN only on actual save failure."
+      ]
+    },
+    {
+      "line": 103,
+      "cells": [
+        "`T.VISIBILITY.HIDE`",
+        "No background announcement; handled event settles/pauses and attempts save."
+      ]
+    },
+    {
+      "line": 104,
+      "cells": [
+        "`T.VISIBILITY.RETURN`",
+        "CT.RETURN.VISIBLE and existing task/mode/draft; no automatic resume."
+      ]
+    },
+    {
+      "line": 105,
+      "cells": [
+        "`T.TOAST.START`",
+        "CT.TOAST.START → actual reveal-stage captions."
+      ]
+    },
+    {
+      "line": 106,
+      "cells": [
+        "`T.TOAST.SETTLE`",
+        "PUNCHLINE + final MAGNIFIER description; reveal committed once."
+      ]
+    },
+    {
+      "line": 107,
+      "cells": [
+        "`T.TOAST.LOOK`",
+        "CT.TOAST.LOOK → ENLARGED."
+      ]
+    },
+    {
+      "line": 108,
+      "cells": [
+        "`T.TOAST.REPLAY`",
+        "CT.TOAST.REPLAY → FLOURISH then same result."
+      ]
+    },
+    {
+      "line": 109,
+      "cells": [
+        "`T.ENDING.AFTER`",
+        "CT.ENDING.CONTINUE → AFTER + exact own-room reactions."
+      ]
+    },
+    {
+      "line": 110,
+      "cells": [
+        "`T.ENDING.SKIP`",
+        "SKIP/actual leave → completed recap or chosen room; no erased completion."
+      ]
+    },
+    {
+      "line": 111,
+      "cells": [
+        "`T.ENDING.RECAP`",
+        "NEXT/end/SKIP_REACTIONS → FACT + only actual conditional recap records."
+      ]
+    },
+    {
+      "line": 112,
+      "cells": [
+        "`T.ENDING.REOPEN`",
+        "CT.ENDING.REOPEN → same factual historical recap in place."
+      ]
+    },
+    {
+      "line": 113,
+      "cells": [
+        "`T.ENDING.RETURN`",
+        "RETURN or shared Back/Return to room according to caller; preserve current location/order."
+      ]
+    },
+    {
+      "line": 114,
+      "cells": [
+        "`T.ENDING.REPLAY`",
+        "REPLAY at actual Stage Show approach, or GO_REPLAY travel only when elsewhere; current check still applies."
+      ]
+    }
+  ]
+}

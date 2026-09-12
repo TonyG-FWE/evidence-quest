@@ -30,6 +30,26 @@
       "id": "CT.TECH.PREVIOUS",
       "text": "An earlier saved visit can be continued. The latest changes may be missing.",
       "condition": "Current head unusable, previous independently valid; UI.RECOVERY.DAMAGED/VERSION adds existing Continue/Back. Continue restores an unsaved visit; saving later uses the existing explicit replacement flow."
+    },
+    {
+      "id": "CT.TILE.LABEL.FERRY",
+      "text": "One Boat",
+      "condition": "TASK11.02 binding repair: exact existing Item 07 section 6.1 tile face/name; introduces no description or outcome."
+    },
+    {
+      "id": "CT.TILE.LABEL.BRIDGE",
+      "text": "Joined Boats",
+      "condition": "TASK11.02 binding repair: exact existing Item 07 section 6.1 tile face/name; introduces no description or outcome."
+    },
+    {
+      "id": "CT.TILE.LABEL.PLANT",
+      "text": "Hill",
+      "condition": "TASK11.02 binding repair: exact existing Item 07 section 6.1 tile face/name; introduces no description or outcome."
+    },
+    {
+      "id": "CT.TILE.LABEL.BLOOM",
+      "text": "Flower",
+      "condition": "TASK11.02 binding repair: exact existing Item 07 section 6.1 tile face/name; introduces no description or outcome."
     }
   ],
   "states": [

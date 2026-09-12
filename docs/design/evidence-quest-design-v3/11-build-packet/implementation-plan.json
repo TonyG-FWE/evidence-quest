@@ -147,7 +147,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Pin/peer mismatch: document exact incompatibility and make smallest compatible patch within chosen stack; never use a proprietary checkout.",
-      "status": "NOT_STARTED",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         3,
         5
@@ -163,6 +163,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/toolchain.json",
+        "result": "Clean installation, strict builds, 33 schema expectations, three contract checks and 23 authored guards pass; private origin verified. Gameplay is not yet implemented.",
+        "updatedAt": "2026-09-12T00:39:32.663Z"
       }
     },
     {
@@ -822,7 +827,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Unknown ID or changed frozen sentence fails the content build; repair transcription at its owning source.",
-      "status": "NOT_STARTED",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         6,
         10
@@ -838,6 +843,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/content-validation.json",
+        "result": "Full canonical transcription and FIX11.CONTENT structure pass. Runtime conditional behavior is tested in dependent tasks.",
+        "updatedAt": "2026-09-12T00:39:32.726Z"
       }
     },
     {
@@ -922,7 +932,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Unreadable labels/focus: repair native definitions; never rasterize clues.",
-      "status": "NOT_STARTED",
+      "status": "IN_PROGRESS",
       "historicalEffortHours": [
         2,
         4
@@ -938,6 +948,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/task-execution.json",
+        "result": "Preparing 32 native definitions and original icons from the approved manifest.",
+        "updatedAt": "2026-09-12T00:39:32.804Z"
       }
     },
     {
@@ -24939,7 +24954,7 @@
       "userZone": "America/New_York (EDT)",
       "judgingEndDate": "2026-09-23"
     },
-    "remainingSeconds": 632753.0,
+    "remainingSeconds": 632753,
     "staffing": "Tony directs Codex for implementation/debugging/integration and AI-assisted assets, personally reviewing decisions/results/tests/demo. No hired illustrator, extra human team or guaranteed parallel agents.",
     "availabilityCeilingHoursPerDay": [
       16,

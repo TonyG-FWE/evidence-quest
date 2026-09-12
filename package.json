@@ -1,0 +1,36 @@
+{
+  "name": "evidence-quest",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=24.21.0 <25" },
+  "scripts": {
+    "build:contracts": "node scripts/build-contracts.mjs",
+    "build:content": "node scripts/build-content.mjs",
+    "validate:content": "node scripts/validate-content.mjs",
+    "check": "npm run build:contracts && tsc -p tsconfig.client.json && tsc -p tsconfig.server.json --noEmit && tsc -p tsconfig.checks.json --noEmit && node scripts/check-schema.mjs",
+    "build:server": "tsc -p tsconfig.server.json",
+    "dev:types": "tsc -p tsconfig.server.json --watch",
+    "dev:api": "node --env-file-if-exists=.env.server.local --watch dist/server/index.js",
+    "dev:web": "vite",
+    "test:contracts": "npm run build:contracts && tsc -p tsconfig.checks.json && node --test .cache/checks/checks/*.test.js",
+    "build": "npm run validate:content && npm run check && npm run build:server && vite build",
+    "start": "node --env-file-if-exists=.env.server.local dist/server/index.js",
+    "test:browser": "playwright test",
+    "eval:coach": "tsc -p tsconfig.checks.json && node evaluation/evaluate.mjs"
+  },
+  "dependencies": {
+    "ajv": "8.18.0",
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.61.0",
+    "@types/node": "24.10.1",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.1",
+    "typescript": "5.9.3",
+    "vite": "8.0.16"
+  }
+}

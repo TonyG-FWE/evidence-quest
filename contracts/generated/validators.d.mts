@@ -1,0 +1,10 @@
+import type { ValidateFunction } from 'ajv';
+import type { AuthoredContent, CaseSnapshot, SaveEnvelope, Preferences, CoachRequest, CoachResponse, Session, ModelProposal } from '../types.js';
+export const validateAuthoredContent: ValidateFunction<AuthoredContent>;
+export const validateCaseSnapshot: ValidateFunction<CaseSnapshot>;
+export const validateSaveEnvelope: ValidateFunction<SaveEnvelope>;
+export const validatePreferences: ValidateFunction<Preferences>;
+export const validateCoachRequest: ValidateFunction<CoachRequest>;
+export const validateCoachResponse: ValidateFunction<CoachResponse>;
+export const validateSession: ValidateFunction<Session>;
+export const validateModelProposal: ValidateFunction<ModelProposal>;

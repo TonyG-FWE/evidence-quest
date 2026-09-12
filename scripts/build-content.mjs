@@ -1,0 +1,68 @@
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import {design,json,hash,readCanonical,rows} from './content-source.mjs';
+import {geometry} from './geometry-source.mjs';
+import {npcSource} from './npc-source.mjs';
+import {validateAuthoredContent} from '../contracts/generated/validators.mjs';
+
+const {entries,registry,source}=await readCanonical();
+const entryMap=new Map(entries.map(e=>[e.id,e]));
+const plan=await json(design+'11-build-packet/implementation-plan.json');
+const manifest=await json(design+'10-asset-production/asset-manifest.json');
+const slotDomain={other:'tile',neighbor:'tile',nextTile:'tile',otherPosition:'position',modeLower:'mode',earlierText:'childText',laterText:'childText'};
+const texts=entries.map(e=>({id:e.id,origin:e.origin,text:e.text,slots:[...new Set([...e.text.matchAll(/\{(\w+)\}/g)].map(m=>m[1]))].map(name=>({name,domain:slotDomain[name]??name})),when:{all:[]},refs:[]}));
+const g=await geometry(plan,manifest,entryMap);
+const body=id=>entryMap.get(id)?.text??(()=>{throw new Error(`Unknown CT ${id}`)})();
+const span=(ct,part)=>{const text=body(ct),n=text.indexOf(part);if(n<0)throw new Error(`Missing exact source span ${ct}: ${part}`);return [Array.from(text.slice(0,n)).length,Array.from(text.slice(0,n+part.length)).length];};
+const sentence=(ct,start,end)=>body(ct).match(/[^.!?]+[.!?](?:’)?/g).slice(start,end).join('').trim();
+const parts=[];
+function part(refId,ctId,opts={}) {const text=opts.text??body(ctId);parts.push({refId,ctId,spans:opts.spans??[span(ctId,text)],medium:opts.medium??'text',provenance:opts.provenance??'written',authorId:opts.authorId??(refId.startsWith('E1')||refId.startsWith('E6')?'ACT.JO':refId.startsWith('E2')||refId.startsWith('E7')?'ACT.REMY':/^E[345]/.test(refId)?'ACT.ARI':null),timeKind:opts.timeKind??'none',storyMinute:opts.storyMinute??null,requiresAll:opts.requiresAll??[]});}
+part('E1.a','CT.SRC.E1',{text:sentence('CT.SRC.E1',0,2)});part('E1.b','CT.SRC.E1',{text:sentence('CT.SRC.E1',2,3)});part('E1.c','CT.SRC.E1',{text:sentence('CT.SRC.E1',3)});
+part('E2.a','CT.SRC.E2.A',{provenance:'recording',timeKind:'recorded',storyMinute:552,requiresAll:['E2.a/frame1','E2.a/frame2','E2.a/frame3','E2.a/end']});
+for(const n of [1,2,3])part(`E2.a/frame${n}`,`CT.MEDIA.FRAME${n}`,{medium:'frame',provenance:'recording',timeKind:'recorded',storyMinute:552});
+part('E2.a/end','CT.MEDIA.END',{medium:'marker',provenance:'recording',timeKind:'recorded',storyMinute:552});
+part('E2.a/description','CT.SRC.E2.A',{provenance:'recording',timeKind:'recorded',storyMinute:552});
+part('E2.b','CT.SRC.E2.B',{medium:'image',provenance:'photo'});part('E2.c','CT.SRC.E2.C',{provenance:'posted-account',timeKind:'posted',storyMinute:553});
+for(const [suffix,start,end] of [['a',0,2],['b',2,4]])part(`E3.${suffix}`,'CT.SRC.E3',{text:body('CT.SRC.E3').split('\n').slice(start,end).join('\n'),timeKind:'posted',storyMinute:550});
+for(const [suffix,start,end] of [['a',0,2],['b',2,4]])part(`E4.${suffix}`,'CT.SRC.E4',{text:sentence('CT.SRC.E4',start,end),timeKind:'posted',storyMinute:545});
+part('E5.a','CT.SRC.E5.A',{timeKind:'captured',storyMinute:558});part('E5.b','CT.SRC.E5.B',{provenance:'spoken-account'});
+for(const [ref,ct]of [['E5.c','CT.OBS.LOOP.SEEN'],['E5.c/seen','CT.OBS.LOOP.SEEN'],['E5.c/response','CT.OBS.LOOP.RESPONSE']])part(ref,ct,{medium:'observation',provenance:'observation',authorId:'ACT.PLAYER',timeKind:'during-visit'});
+part('E6.a','CT.SRC.E6',{text:body('CT.SRC.E6').split('‘')[1].split('’ ')[0]});part('E6.b','CT.SRC.E6',{text:body('CT.SRC.E6').split('’ ')[1]});
+for(const [suffix,start,end] of [['a',0,1],['b',1,2],['c',2,4]])part(`E7.${suffix}`,'CT.SRC.E7',{text:sentence('CT.SRC.E7',start,end)});
+for(const tile of ['FERRY','BRIDGE','PLANT','BLOOM'])part(`E8/TILE.${tile}`,`CT.SRC.E8.${tile}`,{provenance:'tile'});
+for(const room of ['ST','CY','WK','MEDIA'])part(`NAV.${room}`,`CT.NAV.${room}`,{provenance:'venue'});
+part('CT.REMY.CLIP','CT.REMY.CLIP',{provenance:'spoken-account',authorId:'ACT.REMY'});
+part('CT.OBJ.NOTICE_PARTIAL','CT.OBJ.NOTICE_PARTIAL',{medium:'observation',provenance:'observation',authorId:'ACT.PLAYER',timeKind:'during-visit'});
+const sources=['E1','E2','E3','E4','E5','E6','E7','E8','NAV'].map(id=>({id,titleCt:id==='NAV'?'CT.META.VENUE':`CT.TITLE.${id}`,parts:parts.filter(p=>p.refId.startsWith(id+'.')||p.refId.startsWith(id+'/')||id==='E2'&&p.refId==='CT.REMY.CLIP'||id==='E3'&&p.refId==='CT.OBJ.NOTICE_PARTIAL')}));
+const refs=id=>sources.find(s=>s.id===id).parts.map(p=>p.refId).filter(r=>!r.startsWith('CT.'));
+const accesses=[],copies=[];
+for(const obj of g.objects) {
+  let sourceId=obj.id.match(/(?:SOURCE|ACCESS)\.(E\d)/)?.[1]??obj.id.match(/^KIT.NOTE.(E\d)/)?.[1]??(obj.id==='WK.ACCESS.NAV'?'NAV':obj.id.startsWith('TILE.')?'E8':null);
+  if(!sourceId) continue;
+  let grants=refs(sourceId);
+  if(obj.id==='MD.SOURCE.E5')grants=['E5.a'];
+  if(sourceId==='E8')grants=obj.id.startsWith('TILE.')?[`E8/${obj.id}`]:[];
+  const when=obj.id.startsWith('KIT.NOTE.')?{any:[{test:'kit-host',args:['ACT.PLAYER']},{all:[{test:'kit-host',args:['ST.RACK.BAY']},{test:'room',args:['SC.ST']}]},{all:[{test:'kit-host',args:['MD.RACK.STATION']},{test:'room',args:['SC.MD']},{test:'flag',args:['rackOpened','true']}]}]}:obj.id==='CY.SOURCE.E3'?{all:[{test:'room',args:['SC.CY']},{test:'flag',args:['noticeFlat','true']}]}:{test:'room',args:[obj.room]};
+  copies.push({id:obj.id,sourceId,ownerId:obj.parentId??obj.id,availableWhen:when,bodyRefs:grants});
+  accesses.push({id:obj.id,ownerId:obj.id,copyId:obj.id,room:obj.id.startsWith('KIT.NOTE.')?null:obj.room,approachOwnerId:obj.id,actionCt:obj.defaultActionCt??'CT.OBJ.INSPECT_TILE',grants,when});
+}
+const accActions={'ACC.COACH':'CT.HELP.TITLE','ACC.GOAL':'CT.GOAL.QUESTION','ACC.KIT':'CT.KIT.OPEN_CURRENT','ACC.OBJECTS':'CT.UI.MOVE','ACC.PLAN.SEARCH':'CT.PLAN.SEARCH','ACC.PLAN.STORY':'CT.PLAN.STORY','ACC.PRESENT':'CT.PRESENT.OPEN','ACC.STORY.STATE':'CT.ACCESS.WORK','ACC.VENUE':'CT.UI.MAP','ACC.COMPARE':'CT.NOTES.COMPARE','ACC.TIMELINE':'CT.NOTES.TIMELINE','ACC.THEORY':'CT.NOTES.IDEAS'};
+for(const {id}of plan.coverage.owners.filter(o=>o.id.startsWith('ACC.')))accesses.push({id,ownerId:id,copyId:null,room:null,approachOwnerId:null,actionCt:id.startsWith('ACC.EVIDENCE.')?'CT.NOTES.OPEN_SOURCE':accActions[id],grants:[],when:{all:[]}});
+const tiles=[['FERRY','upper-right','seed-ferry'],['BRIDGE','lower-right','joined-crossing'],['PLANT','lower-left','joint-planting'],['BLOOM','upper-left','rooted-light']].map(([id,storageCell,rule])=>({id:`TILE.${id}`,labelCt:`CT.TILE.LABEL.${id}`,descriptionCt:`CT.SRC.E8.${id}`,storageCell,rule}));
+const topics={ROLE:['CT.GOAL.ASSIGNMENT'],LOOP:['CT.JO.BORROW'],CANCELED:['CT.JO.CANCEL_UNKNOWN'],JO_NOTE:['CT.SRC.E6'],REMY_NOTE:['CT.SRC.E7'],CLIP:['CT.REMY.CLIP'],REQUEST:['CT.SRC.E4'],FILMING:['CT.SRC.E5.B'],WAIT:['CT.ARI.WAIT'],SLATE:['CT.SRC.E5.A'],NOTES:['CT.ARI.NOTES'],MATERIALS:['CT.ARI.KIT_READY']};
+const npcBranches=[];
+for(const [actor,keys]of [['JO',['ROLE','LOOP','CANCELED','JO_NOTE']],['REMY',['CANCELED','REMY_NOTE','CLIP']],['ARI',['LOOP','CANCELED','REQUEST','FILMING','WAIT','SLATE','NOTES','MATERIALS']]])for(const topic of keys){const responseCt=topic==='CANCELED'&&actor==='REMY'?['CT.SRC.E2.C']:topic==='CANCELED'&&actor==='ARI'?['CT.ARI.EVENT']:topic==='LOOP'&&actor==='ARI'?['CT.ARI.NO_LOOP_FIRST_LINE']:topics[topic];npcBranches.push({id:`NPC.${actor}.${topic}`,actorId:`ACT.${actor}`,topic:`CT.TALK.${topic}`,receivedAll:[],when:{test:'local-owner',args:[`ACT.${actor}`]},responseCt,grants:[],assistanceLevel:0});}
+const moveTags={NOTICE_CONTEXT:'scope_confusion',NOTICE_SCOPE:'scope_confusion',CLIP_LIMIT:'unsupported_destination',POSITIVE_SUPPORT:'unsupported_destination',TESTABLE_LEAD:'valid_plan',PLAN_VS_RESULT:'unsupported_destination',FULL_PROMISE:'goal_incomplete',BOAT_CAPACITY:'capacity',TOGETHER:'goal_incomplete',ROOT_CONDITION:'prerequisite',VALID_DIRECT:'valid_plan',VALID_EXTRA:'valid_plan',ARRANGEMENT_ONLY:'unclear',CLARIFY:'unclear',NARROW_CLAIM:'valid_plan',UNKNOWN_DETAIL:'unclear',RETURN_TO_CASE:'off_topic'};
+const moveRefs={NOTICE_CONTEXT:['E2.b','CT.OBJ.NOTICE_PARTIAL'],NOTICE_SCOPE:['E3.a','E3.b'],CLIP_LIMIT:['E2.a','E2.a/frame2','E2.a/frame3','E2.a/end','CT.REMY.CLIP'],POSITIVE_SUPPORT:['E4.a','NAV.MEDIA'],TESTABLE_LEAD:['E4.a','NAV.MEDIA'],PLAN_VS_RESULT:['E4.a','E4.b'],FULL_PROMISE:['E6.a'],BOAT_CAPACITY:['E7.a'],TOGETHER:['E6.a'],ROOT_CONDITION:['E7.c'],VALID_DIRECT:['E6.a','E7.a','E7.b','E7.c'],VALID_EXTRA:['E6.a','E7.a','E7.b','E7.c'],NARROW_CLAIM:['E3.a','E3.b']};
+const coachingMoves=Object.entries(moveTags).map(([id,tag])=>({id,contentCt:`CT.HINT.${id}`,tag,requires:{test:'meaning',args:[tag]},referenceOptions:moveRefs[id]??[],introduces:[],level:['TESTABLE_LEAD','VALID_DIRECT','VALID_EXTRA'].includes(id)?3:['NOTICE_SCOPE','CLIP_LIMIT','PLAN_VS_RESULT','FULL_PROMISE','BOAT_CAPACITY','TOGETHER','ROOT_CONDITION'].includes(id)?2:1}));
+const content={contractKind:'AuthoredContent',identity:{caseId:'sparkfest-little-bridge-001',contentVersion:3,contentRevision:1},completeness:'full',...g,sources,copies,accesses,texts,npcBranches:npcSource(),tiles,coachingMoves,assetUses:manifest.bindings.map(b=>b.assetUse)};
+if(!validateAuthoredContent(content))throw new Error(JSON.stringify(validateAuthoredContent.errors,null,2));
+const unknown=[...content.accesses.map(a=>a.actionCt),...content.tiles.map(t=>t.labelCt),...content.rooms.map(r=>r.descriptionCt)].filter(id=>!entryMap.has(id));
+if(unknown.length)throw new Error(`Unknown content references ${JSON.stringify(unknown)}`);
+const tech=await json(design+'09-technical-contracts/technical-copy.json');
+const section=(from,to)=>source.slice(source.indexOf(from),source.indexOf(to));
+const bindings={uiStates:[...registry.uiStates,...tech.states.map(s=>s.id)],transitions:registry.transitions,owners:plan.coverage.owners.map(x=>x.id),sourceConditions:entries.map(e=>({id:e.id,condition:e.condition,sourceLine:e.sourceLine})),stateRows:rows(section('## 11. Complete interface-state','## 12. Action,')),transitionRows:rows(section('### 12.1 All named','### 12.2 Item'))};
+await mkdir('content',{recursive:true});
+await writeFile('content/authored.json',JSON.stringify(content,null,2)+'\n');
+await writeFile('content/bindings.json',JSON.stringify(bindings,null,2)+'\n');
+await writeFile('content/provenance.json',JSON.stringify({identity:content.identity,generatedAt:new Date().toISOString(),compiler:'scripts/build-content.mjs',sourceFiles:await Promise.all(['05-FUNCTIONAL-SCENES-AND-INTERACTIONS.md','07-COMPLETE-CHILD-FACING-CONTENT-AND-REFERENCES.md','09-technical-contracts/contracts.schema.json','09-technical-contracts/REFERENCE-REGISTRY.json','09-technical-contracts/technical-copy.json','10-asset-production/asset-manifest.json'].map(async path=>({path,sha256:hash(await readFile(design+path))})))},null,2)+'\n');
+console.log(JSON.stringify({texts:texts.length,parts:parts.length,owners:bindings.owners.length,objects:g.objects.length,accesses:accesses.length,rooms:g.rooms.length,doors:g.doors.length,states:bindings.uiStates.length,transitions:registry.transitions.length}));
