@@ -41,7 +41,12 @@ export function validCase(c:CaseState):boolean {
  const seq=c.observations.map(o=>o.seq),ids=c.observations.map(o=>o.id);
  if(new Set(seq).size!==seq.length||new Set(ids).size!==ids.length||seq.some((n,i)=>n>c.lastObservationSeq||(i>0&&n<=seq[i-1]!)))return false;
  if(c.observations.some(o=>o.contentIds.some(id=>!texts.has(id)&&!(o.kind.startsWith('reading-')&&readingAvailable(c,id))&&!(o.kind==='word-looked-up'&&wordContext(id)))))return false;
- if(c.experience&&(c.experience.wordContexts.some(id=>!wordContext(id))||c.experience.supports.some(id=>!supportAvailable(c,id))||c.experience.narratorCard&&!readingAvailable(c,c.experience.narratorCard)))return false;
+ if(c.experience&&(c.experience.wordContexts.some(id=>{
+  const context=wordContext(id);if(!context)return true;
+  if(context.ct.startsWith('CT.SRC.'))return !c.exposures.some(e=>e.ctId===context.ct&&e.spans.some(([a,b])=>a<=context.start&&b>=context.end));
+  return context.ct==='CT.ER13.ENDING'&&!readingAvailable(c,'READ.ENDING');
+ })||c.experience.supports.some(id=>!supportAvailable(c,id))||c.experience.narratorCard&&!readingAvailable(c,c.experience.narratorCard)))return false;
+ if(c.observations.some(o=>o.kind==='word-looked-up'&&o.contentIds.some(id=>!c.experience?.wordContexts.includes(id))))return false;
  for(const g of c.grants){
   const access=content.accesses.find(a=>a.id===g.viaAccessId);
   const spoken:Record<string,string[]>={

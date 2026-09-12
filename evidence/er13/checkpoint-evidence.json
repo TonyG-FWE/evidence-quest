@@ -1,5 +1,5 @@
 {
-  "recordedAt": "2026-09-12T05:39:47.343Z",
+  "recordedAt": "2026-09-12T05:52:14.186Z",
   "phase": "ER13_IMPLEMENTATION_CHECKPOINT",
   "experienceAcceptance": "PENDING_REMAINING_ART_AND_FINAL_NATIVE_REVIEW",
   "basis": "Retained reports from successive correction builds; latest results per named check are a union, not one full-suite run on a single final revision.",
@@ -1089,6 +1089,69 @@
           "attempts": 1
         }
       ]
+    },
+    {
+      "file": "evidence/er13/vocabulary-examples-pass.json",
+      "sha256": "22f354778b62cc0b82050727d5636baa3a9fa8411aa3dad4594443869f4ba5e6",
+      "stats": {
+        "startTime": "2026-09-12T05:48:08.106Z",
+        "duration": 18722.377,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "outcomes": [
+        {
+          "file": "er13.spec.ts",
+          "title": "ER13 fresh purpose, optional opening, re-entry, readings and exact word context",
+          "project": "chromium",
+          "status": "passed",
+          "attempts": 1
+        },
+        {
+          "file": "er13.spec.ts",
+          "title": "ER13 still meanings remain bounded to actual source contexts and full notice support is supplied",
+          "project": "chromium",
+          "status": "passed",
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "file": "evidence/er13/vocabulary-save-pass.json",
+      "sha256": "54b722cfd36b24f9744f56b221f8debcffbd99f90b466314c2d8c0cb04ee472c",
+      "stats": {
+        "startTime": "2026-09-12T05:51:03.044Z",
+        "duration": 19798.143,
+        "expected": 3,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "outcomes": [
+        {
+          "file": "er13.spec.ts",
+          "title": "ER13 fresh purpose, optional opening, re-entry, readings and exact word context",
+          "project": "chromium",
+          "status": "passed",
+          "attempts": 1
+        },
+        {
+          "file": "er13.spec.ts",
+          "title": "ER13 still meanings remain bounded to actual source contexts and full notice support is supplied",
+          "project": "chromium",
+          "status": "passed",
+          "attempts": 1
+        },
+        {
+          "file": "er13.spec.ts",
+          "title": "ER13 legacy save is preserved without forced introduction and compact reading stays operable",
+          "project": "chromium",
+          "status": "passed",
+          "attempts": 1
+        }
+      ]
     }
   ],
   "latestOutcomes": [
@@ -1107,8 +1170,8 @@
       "project": "chromium",
       "status": "passed",
       "attempts": 1,
-      "evidence": "evidence/er13/three-engine-pass.json",
-      "runStarted": "2026-09-12T04:58:27.659Z"
+      "evidence": "evidence/er13/vocabulary-save-pass.json",
+      "runStarted": "2026-09-12T05:51:03.044Z"
     },
     {
       "file": "er13.spec.ts",
@@ -1125,8 +1188,8 @@
       "project": "chromium",
       "status": "passed",
       "attempts": 1,
-      "evidence": "evidence/er13/narrator-boundary-first.json",
-      "runStarted": "2026-09-12T05:13:38.936Z"
+      "evidence": "evidence/er13/vocabulary-save-pass.json",
+      "runStarted": "2026-09-12T05:51:03.044Z"
     },
     {
       "file": "er13.spec.ts",
@@ -1143,8 +1206,8 @@
       "project": "chromium",
       "status": "passed",
       "attempts": 1,
-      "evidence": "evidence/er13/panel-recovery-three-engine-pass.json",
-      "runStarted": "2026-09-12T05:27:55.233Z"
+      "evidence": "evidence/er13/vocabulary-save-pass.json",
+      "runStarted": "2026-09-12T05:51:03.044Z"
     },
     {
       "file": "acceptance-boundaries.spec.ts",
@@ -1802,8 +1865,8 @@
     },
     {
       "path": "browser-tests/er13.spec.ts",
-      "bytes": 14154,
-      "sha256": "67f2cf1299585bd8cbb946e09dc6666b404f9898bbe8e70462fdbbd03b941f10"
+      "bytes": 14519,
+      "sha256": "564d7f84881810bf0f003d65c1fcc4a016daacf16650c3de5a9a1941781ab37c"
     },
     {
       "path": "browser-tests/helpers.ts",
@@ -1862,8 +1925,8 @@
     },
     {
       "path": "checks/er13.test.ts",
-      "bytes": 5871,
-      "sha256": "b9f6663f9b1719705a9b29e6dbc0c84d5cd17ea40392ec8df6677357b38c48f6"
+      "bytes": 6066,
+      "sha256": "3a2d2550db77761b6604ee98d4f6643f5213b9dbf70841e5ecaaafb028e3cdce"
     },
     {
       "path": "checks/physical.test.ts",
@@ -2062,8 +2125,8 @@
     },
     {
       "path": "scripts/record-er13-copy.mjs",
-      "bytes": 2394,
-      "sha256": "abe1d467da79f7eba5de9ddac887e1be1774c6114f94999345a30d808850b986"
+      "bytes": 3863,
+      "sha256": "264b6854741b39a86e333492d4a7fd53363f777a40f5558cc1d7f88c0969090b"
     },
     {
       "path": "scripts/record-er13-evidence.mjs",
@@ -2142,8 +2205,8 @@
     },
     {
       "path": "src/core/experience.ts",
-      "bytes": 4661,
-      "sha256": "305f645d4dff94a73f5cf50b773b75671d5e4de4b169b1b8381623f416b4a3c1"
+      "bytes": 4658,
+      "sha256": "77692dc4935a7ae7538abe2879160211603951cc2614cb490975b904c762ae64"
     },
     {
       "path": "src/core/people.ts",
@@ -2187,8 +2250,8 @@
     },
     {
       "path": "src/save/validate.ts",
-      "bytes": 8727,
-      "sha256": "7778e33effcebab646fb9ca6bb42cd577de2667bba3f1d3084232ab48cf2cedd"
+      "bytes": 9126,
+      "sha256": "6be994e434ffc862fd634f3771b13876759fa58215944df88bb7418047c4667b"
     },
     {
       "path": "src/story/engine.ts",

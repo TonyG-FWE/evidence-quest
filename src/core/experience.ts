@@ -17,7 +17,7 @@ export const words={
  PREMIERE:{definition:'The first time a show is performed for an audience.',example:'Our premiere is the first public showing of The Little Bridge.'},
  REHEARSAL:{definition:'A practice before a performance.',example:'In rehearsal, we can try an ending and change it before the audience sees it.'},
  STILL:{definition:'Continuing to be true.',example:'The premiere is still planned.'},
- TOGETHER:{definition:'With each other.',example:'Pip and Grandma will plant the seed together.'},
+ TOGETHER:{definition:'With each other.',example:'My friend and I carried the box together.'},
  FESTIVAL:{definition:'An event where people gather to celebrate and share things.',example:'At our festival, friends share stories and inventions.'},
  PROJECTOR:{definition:'A machine that puts pictures onto a large screen.',example:'Our projector shows the paper characters on the screen.'},
 } as const;
@@ -34,7 +34,7 @@ export function contextsFor(ct:string,text=texts.get(ct)!.text):WordContext[]{
 }
 const contextIndex=new Map(content.texts.flatMap(t=>contextsFor(t.id)).map(c=>[c.id,c]));
 export const wordContext=(id:string)=>contextIndex.get(id);
-export function definition(c:WordContext){return c.word==='STILL'&&['CT.SRC.E4','CT.ER13.STILL_CONTEXT','CT.SCENE.MD','CT.JO.BORROW','CT.ARI.INVITE'].includes(c.ct)?{definition:'Not moving.',example:'The paper petals stay still indoors.'}:c.word==='STILL'&&c.ct!=='CT.SRC.E3'?{definition:'Continuing to be true.',example:'You can still try another ending.'}:words[c.word];}
+export function definition(c:WordContext){return c.word==='STILL'&&['CT.SRC.E4','CT.ER13.STILL_CONTEXT','CT.SCENE.MD','CT.JO.BORROW','CT.ARI.INVITE'].includes(c.ct)?{definition:'Not moving.',example:'The toy car stays still on the table.'}:c.word==='STILL'&&c.ct!=='CT.SRC.E3'?{definition:'Continuing to be true.',example:'You can still try another ending.'}:words[c.word];}
 export function mayEncounter(s:State,c:WordContext){
  const v=s.runtime.view;
  if(c.ct.startsWith('CT.SRC.'))return s.case.exposures.some(e=>e.ctId===c.ct&&e.spans.some(([a,b])=>a<=c.start&&b>=c.end));

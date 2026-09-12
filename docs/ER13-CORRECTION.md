@@ -12,6 +12,8 @@ READ.WELCOME uses the opening. READ.PROMISE uses complete canonical E6 through i
 
 Full-notice interpretation and failed joint-plant interpretation are supplied support, retained separately from source reading. The instructional rationale in the addendum is not evidence that this app improves learning. Child appeal, fluency change and retention require participant work and remain NOT_RUN.
 
+Independent review replaced together and motion-still transfer examples with neutral box-carrying and toy-car sentences, avoiding an unseen planting premise or indoor-location inference. The original exact encountered context is still quoted. Premiere/rehearsal examples explain only public show purpose; E3's event-still example requires its actual displayed source context. Save validation rejects source-word contexts without their matching exposed sentence, ending-word contexts before an observed successful run, and lookup records absent from the encountered-word list. Introduction dialogue and vocabulary support never count as reading E6.
+
 ## Selected-provider adapter
 
 server/coach.ts calls only the OpenAI Responses API with gpt-6-astra, low effort, store=false, no tools, no conversational reuse, and strict nonstreaming selection. It reconstructs eligible displayed source spans from shipped content, rejects impossible source/outcome context, and enforces current eligible moves, 16 KiB assembled input, 256 KiB provider wire response and 8 KiB client envelope.

@@ -42,3 +42,14 @@ Original supporting text is retained in the initial design import. The [dated co
 | CT.OBS.LOOP.SEEN | You saw Loop in Media during your visit. | Loop is here. Our projector can go back to the Stage. |
 | CT.OBS.LOOP.RESPONSE | Loop turned toward you and was ready to follow. | Loop turned toward you and is ready to follow. |
 | CT.TOAST.COVERED | The covered Maximum Toast machine trembles gently in its own bay. | Someone built a very large machine to make a snack. Want to see what it does? |
+
+## Independent vocabulary review correction
+
+Neutral transfer examples prevent an optional word card from introducing an unseen decisive premise. The quoted context remains the exact encountered sentence.
+
+| Control owner | Previous example | Corrected example | Reason |
+|---|---|---|---|
+| src/core/experience.ts words.TOGETHER.example | Pip and Grandma will plant the seed together. | My friend and I carried the box together. | Neutral transfer example does not reveal the joint-planting premise to a player who skipped the opening and has not encountered E6. |
+| src/core/experience.ts definition motion STILL example | The paper petals stay still indoors. | The toy car stays still on the table. | Neutral transfer example does not add an indoor-location conclusion to the displayed movement sentence. |
+
+Premiere/rehearsal examples explain the public show purpose without cancellation or source facts. The premiere-is-still-planned example is restricted to an actually displayed CT.SRC.E3 context; other continuing-still contexts use a neutral retry example. No introduction or word lookup grants E6 reading.

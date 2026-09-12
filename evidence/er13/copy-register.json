@@ -310,6 +310,20 @@
     "src/ui/Experience.tsx",
     "src/core/experience.ts"
   ],
+  "vocabularyReview": [
+    {
+      "owner": "src/core/experience.ts words.TOGETHER.example",
+      "before": "Pip and Grandma will plant the seed together.",
+      "after": "My friend and I carried the box together.",
+      "reason": "Neutral transfer example does not reveal the joint-planting premise to a player who skipped the opening and has not encountered E6."
+    },
+    {
+      "owner": "src/core/experience.ts definition motion STILL example",
+      "before": "The paper petals stay still indoors.",
+      "after": "The toy car stays still on the table.",
+      "reason": "Neutral transfer example does not add an indoor-location conclusion to the displayed movement sentence."
+    }
+  ],
   "audit": [
     "Opening and home",
     "Current mission and story recap",
