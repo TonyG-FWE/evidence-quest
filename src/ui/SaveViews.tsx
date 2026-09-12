@@ -13,7 +13,7 @@ export function SaveStatus({s}:{s:State}){
 }
 export function Home({s}:{s:State}){
  const status=s.runtime.homeStatus,heading=useRef<HTMLHeadingElement>(null);
- const recovery=['read-error','version','damaged','run'].includes(status);
+ const needsRecovery=['read-error','version','damaged','run'].includes(status),recovery=needsRecovery&&s.runtime.view.action!=='recovery-dismissed';
  useEffect(()=>{heading.current?.focus();},[status]);
  const recoveryCt=status==='version'?'CT.RECOVERY.VERSION':status==='damaged'?'CT.RECOVERY.DAMAGED':status==='run'?'CT.RECOVERY.RUN':'CT.RECOVERY.READ';
  return <div className="home"><div className="home-art"/><main>
@@ -23,10 +23,10 @@ export function Home({s}:{s:State}){
    {s.runtime.restorePreservesSlots&&<p>{copy('CT.TECH.PREVIOUS')}</p>}
    {s.runtime.savedCandidate&&<Button className="primary" ct="CT.START.CONTINUE" onClick={()=>saves.restore()}/>}
    <p>{copy('CT.RECOVERY.SESSION_DETAIL')}</p>
-   <div className="actions"><Button ct="CT.RECOVERY.RETRY" onClick={()=>void saves.boot()}/><Button ct="CT.RECOVERY.SESSION" onClick={()=>saves.start(false)}/><Button ct="CT.UI.BACK" onClick={()=>store.send({type:'VIEW',view:{page:'home'}})}/></div>
+   <div className="actions"><Button ct="CT.RECOVERY.RETRY" onClick={()=>void saves.boot()}/><Button ct="CT.RECOVERY.SESSION" onClick={()=>saves.start(false)}/><Button ct="CT.UI.BACK" onClick={()=>store.send({type:'VIEW',view:{page:'home',action:'recovery-dismissed'}})}/></div>
   </>:<>
    <p>{copy('CT.GOAL.ASSIGNMENT')}</p>
-   <div className="actions">{status==='checking'?<p>{copy('CT.START.CHECK')}</p>:s.runtime.hasLiveVisit?<Button className="primary" ct="CT.START.CONTINUE" onClick={()=>store.send({type:'CONTINUE'})}/>:s.runtime.savedCandidate?<Button className="primary" ct="CT.START.CONTINUE" onClick={()=>saves.restore()}/>:<Button className="primary" ct="CT.START.START" onClick={()=>saves.start()}/>}</div>
+   <div className="actions">{status==='checking'?<p>{copy('CT.START.CHECK')}</p>:s.runtime.hasLiveVisit?<Button className="primary" ct="CT.START.CONTINUE" onClick={()=>store.send({type:'CONTINUE'})}/>:needsRecovery?<Button className="primary" ct={s.runtime.savedCandidate?'CT.START.CONTINUE':'CT.START.START'} onClick={()=>store.send({type:'VIEW',view:{page:'home'}})}/>:s.runtime.savedCandidate?<Button className="primary" ct="CT.START.CONTINUE" onClick={()=>saves.restore()}/>:<Button className="primary" ct="CT.START.START" onClick={()=>saves.start()}/>}</div>
   </>}
   <div className="actions"><Button ct="CT.UI.SETTINGS" onClick={()=>store.send({type:'VIEW',view:{page:'settings',previous:{page:'home'}}})}/>{status!=='checking'&&(s.runtime.savedCandidate||s.runtime.hasLiveVisit||recovery)&&<Button ct="CT.START.OVER" onClick={()=>store.send({type:'VIEW',view:{page:'confirm',action:'new-game',previous:{page:'home'}}})}/>}</div>
  </main></div>;

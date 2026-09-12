@@ -11,7 +11,7 @@ export function Reader({state,store}:{state:State;store:Store}){
  const view=state.runtime.view,id=view.sourceId??'E1',access=view.accessId??`ACC.EVIDENCE.${id}`,source=content.sources.find(s=>s.id===id)!;
  const [definition,setDefinition]=useState<string|null>(null),[playing,setPlaying]=useState(false),wordHeading=useRef<HTMLHeadingElement>(null);
  useEffect(()=>{if(definition)wordHeading.current?.focus();},[definition]);
- useEffect(()=>{const pause=()=>{if(document.hidden)setPlaying(false);};document.addEventListener('visibilitychange',pause);window.addEventListener('blur',pause);return()=>{document.removeEventListener('visibilitychange',pause);window.removeEventListener('blur',pause);};},[]);
+ useEffect(()=>{const pause=()=>{setPlaying(false);};document.addEventListener('visibilitychange',pause);window.addEventListener('blur',pause);return()=>{document.removeEventListener('visibilitychange',pause);window.removeEventListener('blur',pause);};},[]);
  useEffect(()=>{
   if(!playing||definition||view.ref&&view.ref!=='frames')return;
   const timer=setTimeout(()=>{if((view.frame??1)>=3)setPlaying(false);else store.send({type:'VIEW',view:{...view,ref:'frames',frame:(view.frame??1)+1}});},1000);

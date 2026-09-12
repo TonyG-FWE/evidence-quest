@@ -11,3 +11,18 @@ This records observed failures and fixes, not an acceptance claim for unfinished
 - The initial compact/source tests used two incorrect test labels (Flatten and secure; Tell crew my plan). The test selectors now use the exact approved labels (Flatten and secure notice; Your search plan). These were test failures, not missing product actions.
 
 Browser evidence remains scoped: synthetic denied reads, quota aborts, incompatible/damaged heads and competing visits establish these local code paths. They do not establish all-device durability, live AI interpretation or child/player evaluation.
+
+## Final connected integration review
+
+- Observation grants are separate from exposure. Loop presence now requires actual rendered visible art or displayed canonical native text; waking Loop records availability until the response is readable. Help is recorded only after its useful text is visible, never on request or a closed-panel arrival.
+- Coaching opportunity identity, relevant revision and display ownership reject stale, canceled, duplicate and late results. A focused prepared-hint offer survives a later candidate. The development adapter is explicitly labeled and removed from production.
+- Reader parents and stable moved-owner focus survive kit handoff and NPC source reading; missing origins fall back to Move to. Tile boundary and canceled/invalid drops retain revision and restore the surviving tile control.
+- Drag replace, swap, return and insertion use one committed owner; their approved operation-specific captions replaced generic feedback. Jo uses current following/docked wording after Loop returns, preserving the earlier borrowed account only while applicable.
+- The compact world has an opaque full-width band; Watch sizes the whole puppet story below it. Native Largest/Roomier controls, heading scroll and keyboard navigation remain usable at 320x568 and 640x360.
+- Toast reveals only after activation, stages its current caption, and disables premature magnification. Reader playback stops on browser blur. Graphics retry reloads failed images.
+- The save queue removes redundant queued snapshots, retires request ownership, preserves unknown/current/previous records, and distinguishes preference failures from acknowledged case saves. An actual Chromium renderer crash restored the acknowledged active-cue boundary with uncertainty.
+- Additional test repairs: the Goal assignment legitimately appears in both caption and Goal panel, so the opening assertion was scoped to the panel. Compact unmet checks must explicitly select Watch rehearsal before measuring that canvas. These are selector/action assumptions, not missing game behavior. Failed run reports are retained.
+
+The final acceptance record maps original FIX11/CHECK11 IDs to the tested first-build scope. Live meaning, participant learning and final-art qualification remain NOT_RUN.
+
+- Cross-browser keyboard harness: Firefox stopped at the last forward-Tab control rather than wrapping to Menu. An isolated native Tab trace confirmed the boundary. The test now uses native Shift+Tab for earlier controls; it does not assign focus or click. Chromium/WebKit had already completed the same route; all three receive the corrected keyboard rerun.

@@ -1,0 +1,198 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "coach-fault.spec.ts"
+    ],
+    "configFile": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\playwright.config.ts",
+    "rootDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/output/playwright/raw",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "output/playwright/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 1,
+    "webServer": {
+      "command": "\"C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe\" node_modules/vite/bin/vite.js",
+      "url": "http://127.0.0.1:4174/",
+      "env": {
+        "PORT": "4174",
+        "EQ_WEB_PORT": "4174",
+        "PUBLIC_ORIGIN": "http://127.0.0.1:4174"
+      },
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "coach-fault.spec.ts",
+      "file": "coach-fault.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "FIX11.COACH.CLOSED/FOCUS synthetic transport holds hidden reply and stable fallback wins once",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2211,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T03:20:17.477Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "66af5d948735353749bf-cfd6e48485540ee5316a",
+          "file": "coach-fault.spec.ts",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "FIX11.COACH.STALE/TIMEOUT synthetic edit, retry, malformed reply and client deadline preserve gameplay",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2328,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T03:20:19.793Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "66af5d948735353749bf-779cbac24782769774f5",
+          "file": "coach-fault.spec.ts",
+          "line": 11,
+          "column": 1
+        },
+        {
+          "title": "FIX11.COACH.TIMEOUT real development admission timer expires at fifteen seconds without opening the panel",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16077,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T03:20:22.128Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "66af5d948735353749bf-4202745ad6c68968cc30",
+          "file": "coach-fault.spec.ts",
+          "line": 16,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-12T03:20:16.507Z",
+    "duration": 22150.212000000003,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

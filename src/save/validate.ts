@@ -5,6 +5,7 @@ import {content, parts, texts} from '../core/content.js';
 import {validExposure, exposed, sourceOf} from '../core/evidence.js';
 import {legal, roomData, distance} from '../physical/navigation.js';
 import {applyTile, initialPuppet, successful} from '../story/engine.js';
+import {eligible} from '../coach/authored.js';
 
 const equal=(a:unknown,b:unknown)=>JSON.stringify(a)===JSON.stringify(b);
 export function validRun(c:CaseState,run:Run):boolean {
@@ -59,7 +60,7 @@ export function validCase(c:CaseState):boolean {
  const records=new Map(c.records.map(r=>[r.id,r]));if(records.size!==c.records.length)return false;
  for(const r of c.records){
   if(r.refs.some(ref=>!exposed(c,ref))||r.seq>c.lastObservationSeq)return false;
-  if(r.previousRecordId){const previous=records.get(r.previousRecordId);if(!previous||previous.seq>=r.seq||previous.topic!==r.topic||previous.kind!==r.kind)return false;}
+  if(r.previousRecordId){const previous=records.get(r.previousRecordId);if(!previous||previous.seq>=r.seq||previous.topic!==r.topic||previous.kind!==r.kind||previous.recipient!==r.recipient)return false;}
   if(['private-idea','crew-plan','coaching-submission'].includes(r.kind)&&r.recipient!==null)return false;
   if(r.kind==='jo-explanation'&&r.recipient!=='ACT.JO')return false;
   if(r.kind==='evidence-delivery'&&r.recipient===null)return false;
@@ -75,6 +76,13 @@ export function validCase(c:CaseState):boolean {
  const runs=[...c.runHistory,...(c.playback?[c.playback]:[])];
  if(c.certificate){const r=runs.find(r=>r.id===c.certificate!.runId);if(!r||r.mode!=='rehearsal'||r.status!=='finalized'||!successful(r.puppet)||r.arrangementRevision!==p.arrangementRevision||c.certificate.arrangementRevision!==p.arrangementRevision||!equal(r.order,p.order))return false;}
  if(c.premiere){const r=runs.find(r=>r.id===c.premiere!.runId);if(!r||r.mode!=='show'||r.status!=='finalized'||!successful(r.puppet)||!equal(r.order,c.premiere.order)||r.finalizedSeq!==c.premiere.completedSeq||r.arrangementRevision!==c.premiere.arrangementRevision)return false;}
+ if(new Set(c.coachingHistory.map(h=>h.requestId)).size!==c.coachingHistory.length)return false;
+ for(const h of c.coachingHistory){
+  if(h.context.caseRunId!==c.caseRunId||h.context.exposedRefs.some(ref=>!exposed(c,ref)))return false;
+  if(h.submittedRecordId){const r=records.get(h.submittedRecordId);if(!r||r.kind!=='coaching-submission')return false;}
+  if(h.selection&&(!eligible(h.context,h.selection)||h.origin!=='live-selection'||!equal(h.contentIds,[content.coachingMoves.find(move=>move.id===h.selection!.moveId)?.contentCt])))return false;
+  if(h.displayedSeq!==null){const o=c.observations.find(o=>o.seq===h.displayedSeq);if(!o||o.kind!=='help-displayed'||o.requestId!==h.requestId||o.origin!==h.origin||!equal(o.contentIds,h.contentIds)||o.recordId!==h.submittedRecordId)return false;}
+ }
  return true;
 }
 

@@ -6,7 +6,7 @@ const source='docs/design/evidence-quest-design-v3/09-technical-contracts/contra
 const schema=JSON.parse(await readFile(source,'utf8'));
 await mkdir('contracts/generated',{recursive:true});
 await copyFile(source,'contracts/contracts.schema.json');
-const ajv=new Ajv2020({strict:true,allErrors:true,coerceTypes:false,useDefaults:false,removeAdditional:false,code:{source:true,esm:true,lines:true}});
+const ajv=new Ajv2020({strict:true,allErrors:true,inlineRefs:false,coerceTypes:false,useDefaults:false,removeAdditional:false,code:{source:true,esm:true,lines:true}});
 ajv.addSchema(schema);
 const roots=['AuthoredContent','CaseSnapshot','SaveEnvelope','Preferences','CoachRequest','CoachResponse','Session','ModelProposal'];
 const exports={};

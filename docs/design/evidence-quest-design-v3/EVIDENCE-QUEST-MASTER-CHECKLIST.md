@@ -154,12 +154,12 @@ These items are complete as narrative/system design. Later usability or implemen
 
 These are part of the overall project checklist, not work required to finish every design item before any code can exist.
 
-- [ ] **13 — Connected gameplay implementation.** Build the entire agreed opening→investigation→recovery→rehearsal→premiere loop in one isolated project. Use defined temporary assets where planned. Verify actual browser behavior and both routes; do not stop at an isolated opening.
+- [x] **13 — Connected gameplay implementation.** Build the entire agreed opening→investigation→recovery→rehearsal→premiere loop in one isolated project. Use defined temporary assets where planned. Verify actual browser behavior and both routes; do not stop at an isolated opening.
 - [ ] **14 — Asset production, live AI, and hardening.** Produce/replace assets according to the manifest, integrate the real coaching service and fallback, complete accessible operation, saving, interruptions, and expressive feedback. These can overlap safely after their dependencies are defined.
 - [ ] **15 — Evaluation and targeted revision.** Distinguish deterministic/runtime checks, browser walkthroughs, first-time usability observations, child playtesting, and learning evidence. Test what actually exists; do not claim unperformed validation. Feed material findings back into the relevant design entries.
 - [ ] **16 — Final demonstration and submission preparation.** Record functioning gameplay, verify the educational/AI claims, complete disclosures and asset provenance, recheck official requirements and access, and prepare the final materials. Publish/submit only within the user’s authorization.
 
-## Current next-step boundary
+## Item 12 historical next-step boundary
 
 **Item 12 is complete as a documented review. The exact next item is 13 — Connected gameplay implementation.**
 
@@ -169,3 +169,9 @@ The earlier 190–314 and 69–114/68–112-hour ranges remain historical unmeas
 
 Item 12 changed only dedicated Evidence Quest documentation/checks. Source design/art and Items 13–16 completion statuses remain intact. No game directory, assets, dependencies, server, paid model, live child input, deployment or submission was created.
 
+
+## Implementation execution update — September 12, 2026
+
+The subsequent user instruction authorized Item 13 and a new private GitHub repository in the current dedicated Evidence Quest workspace. **Item 13 / M11.CONNECTED / TASK11.01–16 is complete for its first-build scope**, with actual connected-browser, source/save/access and authored-coaching evidence. See the project-root BUILD-STATUS.md and evidence/first-connected-acceptance.md. The prior Item 12 passages above describe the historical review boundary.
+
+Items 14–16 remain unchecked. The next existing numbered task is TASK11.17. Rich final illustration, real coaching integration/live qualification, participant/learning evaluation and release/submission remain later work. Temporary graphics and scripted transport are not passed off as that evidence.

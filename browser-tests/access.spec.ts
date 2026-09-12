@@ -12,7 +12,7 @@ test('TASK11.08 first recording frame and photo stay separate; canceled notice r
 test('TASK11.07 compact Largest Roomier native navigation and typing retain world position',async({page})=>{
  await page.setViewportSize({width:320,height:568});await start(page);await page.getByRole('button',{name:'Menu',exact:true}).click();await page.getByRole('button',{name:'Settings',exact:true}).click();
  await page.getByLabel('Text size',{exact:true}).selectOption('largest');await page.getByLabel('Text spacing',{exact:true}).selectOption('roomier');await page.getByLabel('Motion',{exact:true}).selectOption('reduced');await page.getByLabel('Sound',{exact:true}).selectOption('off');
- await page.keyboard.press('Escape');await page.keyboard.press('Escape');await expect(page.getByTestId('world')).toBeFocused();
+ await page.keyboard.press('Escape');await page.keyboard.press('Escape');await expect(page.getByRole('button',{name:'Menu',exact:true})).toBeFocused();
  await go(page,'ST.EXIT.WK','Workshop');await page.getByRole('button',{name:'Goal',exact:true}).click();await page.getByRole('button',{name:'Your search plan',exact:true}).click();
  const before=(await saved(page)).payload.physical.avatar;await page.getByRole('textbox').fill('wasd is my own wording.');await page.keyboard.press('ArrowLeft');const after=await saved(page);expect(after.payload.physical.avatar).toEqual(before);expect(after.payload.drafts.find(d=>d.id==='search-plan')?.text).toBe('wasd is my own wording.');
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:'output/playwright/compact-largest-plan.png',fullPage:true});

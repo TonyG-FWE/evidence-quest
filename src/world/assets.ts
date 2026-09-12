@@ -4,6 +4,7 @@ export {manifest};
 export class Assets {
  private images=new Map<string,HTMLImageElement>();private failed=new Set<string>();
  constructor(private changed:()=>void,private fail:()=>void){}
+ retry(){for(const url of this.failed)this.images.delete(url);this.failed.clear();this.changed();}
  image(id:string,variant='base',density=1){
   const entry=manifest.exports.find(e=>e.assetId===id&&e.variantId===id+'/'+variant&&e.density===density)??manifest.exports.find(e=>e.assetId===id&&e.density===1);
   if(!entry||this.failed.has(entry.url))return null;

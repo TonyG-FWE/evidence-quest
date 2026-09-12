@@ -19,6 +19,25 @@ function harness(order:Order=[],ready=true){
  const send=(command:Command,id?:string)=>{const r=reduce(s,{id:id??randomUUID(),ids:Array.from({length:32},randomUUID),visitId:s.session.visitId,caseId:s.case.caseRunId,command});s=r.state;effects.push(...r.effects);return s;};
  return {send,get:()=>s,effects};
 }
+
+test('FIX11.CUE_RACE all six interruptions and callback orderings preserve exactly one endpoint in rehearsal and show',()=>{
+ const events:Command[]=[{type:'PAUSE_RUN',reason:'user'},{type:'TARGET',target:'KIT.NOTE.E6'},{type:'VIEW',view:{page:'help',topic:'story'}},{type:'SELECT_TILE',tile:'TILE.BRIDGE'},{type:'TARGET',target:'ST.EXIT.WK'},{type:'BACKGROUND'}];
+ for(const mode of ['rehearsal','show'] as const)for(const event of events)for(const timing of ['before','after','twice']){
+  const h=harness(['TILE.BRIDGE','TILE.PLANT','TILE.BLOOM']);
+  if(mode==='show'){h.send({type:'RUN',mode:'rehearsal'});const id=h.get().case.playback!.id;for(let n=0;n<3;n++){h.send({type:'START_CUE',runId:id});const cue=h.get().case.playback!.activeCue!;h.send({type:'CUE_READY',runId:id,cueId:cue.id});}h.send({type:'FINALIZE_RUN',runId:id});assert(h.get().case.certificate);}
+  h.send({type:'RUN',mode});const run=h.get().case.playback!,cue=run.activeCue!,callback:Command={type:'CUE_READY',runId:run.id,cueId:cue.id};
+  if(timing==='before')h.send(callback);h.send(event);h.send(callback);if(timing==='twice')h.send(callback);
+  const result=h.get().case.playback!;assert.equal(result.nextCue,1,`${mode}/${event.type}/${timing}`);assert.equal(result.status,'paused');assert.equal(result.mode,mode);assert.deepEqual(result.puppet,{pip:'right',seed:'right',boats:'joined',lit:false});assert.equal(h.get().case.observations.filter(o=>o.kind==='cue-outcome'&&o.runId===run.id&&o.cueIndex===0).length,1);assert.equal(h.get().case.premiere,null);assert(validCase(h.get().case));
+ }
+});
+test('FIX11.TERMINAL trailing harmless Ferry is consumed once; terminal pause cannot certify or premiere early',()=>{
+ const h=harness(['TILE.BRIDGE','TILE.PLANT','TILE.BLOOM','TILE.FERRY']);
+ for(const mode of ['rehearsal','show'] as const){h.send({type:'RUN',mode});const id=h.get().case.playback!.id;for(let n=0;n<4;n++){h.send({type:'START_CUE',runId:id});const cue=h.get().case.playback!.activeCue!;h.send({type:'CUE_READY',runId:id,cueId:cue.id});}
+  h.send({type:'PAUSE_RUN',reason:'user'});h.send({type:'FINALIZE_RUN',runId:id});assert.equal(h.get().case.playback!.status,'paused');if(mode==='rehearsal')assert.equal(h.get().case.certificate,null);else assert.equal(h.get().case.premiere,null);
+  h.send({type:'CONTINUE_RUN'});h.send({type:'FINALIZE_RUN',runId:id});h.send({type:'FINALIZE_RUN',runId:id});assert.equal(h.get().case.observations.filter(o=>o.runId===id&&o.kind==='cue-outcome').length,4);assert.equal(h.get().case.observations.filter(o=>o.runId===id&&o.kind==='run-finalized').length,1);assert(validCase(h.get().case));
+ }
+ assert(h.get().case.premiere);
+});
 test('fresh constructor is closed-schema valid and immutable; React snapshots retain identity until a command',()=>{
  const s=initialState(randomUUID(),randomUUID());assert(validateCaseSnapshot({contractKind:'CaseSnapshot',identity:IDENTITY,state:s.case}),JSON.stringify(validateCaseSnapshot.errors));assert(validateSession(s.session),JSON.stringify(validateSession.errors));assert.throws(()=>{s.case.physical.avatar[0]=99;});
  const store=new Store(s);assert.equal(store.getSnapshot(),store.getSnapshot());let notifications=0;store.subscribe(()=>notifications++);store.send({type:'FOCUS',owner:'world'});assert.equal(notifications,1);assert.equal(s.session.inputOwner,'home');

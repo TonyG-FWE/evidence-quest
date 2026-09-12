@@ -1,11 +1,11 @@
 import type { CaseState, Observation, Order, Point, Run } from '../../contracts/types.js';
 import type { Command, Effect, Envelope } from './commands.js';
 import { freeze, initialState, type State, type View } from './state.js';
-import { content, parts } from './content.js';
+import { content, parts, tileName } from './content.js';
 import { available, exposed, exposedRefs, mergeSpans, sourceOf, validExposure } from './evidence.js';
 import { advancePath, approaches, clearSegment, distance, findPath, legal, ownerRoom, pathLength, pathToOwner, roomData } from '../physical/navigation.js';
 import { applyTile, initialPuppet, newRun, successful } from '../story/engine.js';
-import { prepared } from '../coach/authored.js';
+import {startHelp,coachingTime,receive,choose,display,cancelHelp,reconcile} from '../coach/lifecycle.js';
 import { deliver, help, queueDelivery, record, talk } from './people.js';
 
 export interface Mutation {s:State;e:Envelope;effects:Effect[];caseChanged:boolean;contextChanged:boolean;nextId:number;}
@@ -54,14 +54,14 @@ function startCue(m:Mutation,runId:string){
 const ready=(c:CaseState)=>c.physical.caddyHost==='ST.RACK.BAY'&&['docked','projecting'].includes(c.physical.loop.mode);
 export const atWork=(c:CaseState)=>c.physical.room==='SC.ST'&&[[78,58],[100,58]].some(p=>distance(c.physical.avatar,p as Point)<=2);
 export function target(m:Mutation,id:string,action='default'){
- const s=m.s;if(s.runtime.intent?.target===id&&s.runtime.intent.action===action)return;
+ const s=m.s,returnView=['kit','work','talk','notes'].includes(m.s.runtime.view.page)?structuredClone(m.s.runtime.view):undefined;if(s.runtime.intent?.target===id&&s.runtime.intent.action===action)return;
  if(['ST.CONTROL.SHOW','ST.CONTROL.REHEARSE'].includes(id)&&s.case.playback?.status==='running'){caption(m,['CT.RUN.BUSY']);setView(m,{page:'work'});return;}
  pause(m,'inspection');cancelIntent(m);
  let path=pathToOwner(s.case,id);
  const door=content.doors.find(d=>d.id===id);
  if(door&&path)path=[...path,door.threshold];
  if(!path){caption(m,['CT.WORLD.UNREACHABLE']);setView(m,{page:'world'});return;}
- setView(m,{page:'world'});s.runtime.intent={id:m.e.id,target:id,action,path,stage:'approaching'};
+ setView(m,{page:'world'});s.runtime.intent={id:m.e.id,target:id,action,path,stage:'approaching',...(returnView?{returnView}:{})};
  s.session.pendingAction={id:m.e.id,targetId:id,stage:'approaching',commitRule:'rollback-before-endpoint'};
  s.session.taskState='UI.WORLD.MOVING';
  if(pathLength(s.case.physical.avatar,path)<.1)arrive(m);
@@ -80,8 +80,9 @@ function arrive(m:Mutation){
  m.effects.push({kind:'timer',ms:m.s.preferences.motion==='reduced'&&ms!==800?120:ms,command:{type:'ACTION_READY',actionId:intent.id}});
 }
 export function source(m:Mutation,sourceId:string,accessId:string,refs?:string[]){
+ const previous=['talk','work','kit','notes'].includes(m.s.runtime.view.page)?structuredClone(m.s.runtime.view):undefined;
  const access=content.accesses.find(a=>a.id===accessId),allowed=refs??access?.grants??[];grant(m,allowed,accessId);
- setView(m,{page:'reader',sourceId,accessId,...(sourceId==='E2'?{frame:1}:{})});
+ setView(m,{page:'reader',sourceId,accessId,...(sourceId==='E2'?{frame:1}:{}),...(previous?{previous}:{})});
  m.s.case.readerResume={sourceId,componentRef:allowed[0]??sourceId,accessId,scrollFraction:0,selectedRefs:[],frame:sourceId==='E2'?1:null};touch(m,false);
 }
 function physical(m:Mutation){
@@ -96,8 +97,7 @@ function physical(m:Mutation){
   for(const a of actors)if(!c.encounteredActors.includes(a.id as 'ACT.JO'))c.encounteredActors.push(a.id as 'ACT.JO');
   observe(m,'physical-commit',{actionId:i.id,origin:'world'});setView(m,{page:'world'});
   if(p.room==='SC.MD'&&p.loop.room==='SC.MD'&&p.loop.mode==='standby'){
-   grant(m,['E5.c','E5.c/seen'],'SC.MD');const part=parts.get('E5.c/seen')!;
-   addExposure(m,{refId:'E5.c/seen',ctId:part.ctId,spans:part.spans,visualComplete:true,viaAccessId:'SC.MD'});
+   grant(m,['E5.c','E5.c/seen'],'SC.MD');
    caption(m,['CT.OBS.LOOP.SEEN']);
   }return;
  }
@@ -120,7 +120,7 @@ function physical(m:Mutation){
  else if(id==='ACT.LOOP'||id==='LOOP.FOLLOW.PAD'){
   if(p.loop.mode==='standby'){
    p.loop.mode='following';p.loop.feet=[68,45];s.runtime.loopHistory=[[...p.avatar]];
-   grant(m,['E5.c/response'],'ACT.LOOP');const part=parts.get('E5.c/response')!;addExposure(m,{refId:part.refId,ctId:part.ctId,spans:part.spans,visualComplete:true,viaAccessId:'ACT.LOOP'});caption(m,['CT.OBJ.WAKE_RESULT','CT.OBS.LOOP.RESPONSE']);
+   grant(m,['E5.c/response'],'ACT.LOOP');caption(m,['CT.OBJ.WAKE_RESULT','CT.OBS.LOOP.RESPONSE']);
   }else caption(m,['CT.OBJ.FOLLOWING']);
  }
  else if(id.startsWith('ST.DOCK')){
@@ -140,10 +140,11 @@ function physical(m:Mutation){
  }
  else if(['ACT.JO','ACT.REMY','ACT.ARI'].includes(id)){
   if(i.delivery){deliver(m,i.delivery);return;}
-  setView(m,{page:'talk',actor:id as 'ACT.JO',dialogue:[id==='ACT.JO'?(!p.objects.modelTabTried?'CT.GOAL.ASSIGNMENT':p.loop.mode==='standby'?'CT.JO.BORROW':'CT.JO.DOCKED'):id==='ACT.REMY'?'CT.REMY.GREETING':p.loop.mode==='standby'&&p.caddyHost==='MD.RACK.STATION'?'CT.ARI.INVITE':'CT.ARI.NO_LOOP_FIRST_LINE']});
+  setView(m,{page:'talk',actor:id as 'ACT.JO',dialogue:[id==='ACT.JO'?(!p.objects.modelTabTried?'CT.GOAL.ASSIGNMENT':p.loop.mode==='standby'?'CT.JO.BORROW':p.loop.mode==='following'?'CT.OBJ.FOLLOWING':'CT.OBJ.DOCK_READY'):id==='ACT.REMY'?'CT.REMY.GREETING':p.loop.mode==='standby'&&p.caddyHost==='MD.RACK.STATION'?'CT.ARI.INVITE':'CT.ARI.NO_LOOP_FIRST_LINE']});
  }
  else if(id==='WK.TOAST'||id==='WK.TOAST.START'||id==='WK.TOAST.MAGNIFIER')setView(m,{page:'toast',action:id.endsWith('MAGNIFIER')?'magnifier':p.objects.toastRevealed?'revealed':'covered'});
  else if(id==='WK.WAYFINDING')source(m,'NAV','WK.ACCESS.NAV');
+ if(s.runtime.view.page==='reader'&&i.returnView)s.runtime.view.previous=i.returnView;
  observe(m,'physical-commit',{actionId:i.id,origin:'world'});
 }
 function addExposure(m:Mutation,e:Parameters<typeof validExposure>[1]){
@@ -198,7 +199,7 @@ function edit(m:Mutation,cmd:Extract<Command,{type:'EDIT_RAIL'}>){
  const old=[...p.order],order=[...old],current=order.indexOf(h.tile);let index=cmd.index;
  if(cmd.operation==='return'){if(current>=0)order.splice(current,1);}
  else if(cmd.operation==='swap'||cmd.operation==='left'||cmd.operation==='right'){
-  if(cmd.operation!=='swap'){index=current+(cmd.operation==='left'?-1:1);if(index<0||index>=order.length){caption(m,[cmd.operation==='left'?'CT.RAIL.START_LIMIT':'CT.RAIL.END_LIMIT']);return;}}
+  if(cmd.operation!=='swap'){index=current+(cmd.operation==='left'?-1:1);if(index<0||index>=order.length){s.session.heldTile=null;caption(m,[cmd.operation==='left'?'CT.RAIL.START_LIMIT':'CT.RAIL.END_LIMIT']);return;}}
   if(current<0||!order[index])return;[order[current],order[index]]=[order[index]!,order[current]!];
  }
  else if(cmd.operation==='replace'){if(!order[index])return;if(current>=0)return;order[index]=h.tile;}
@@ -211,12 +212,14 @@ function edit(m:Mutation,cmd:Extract<Command,{type:'EDIT_RAIL'}>){
  if(order.length>4||new Set(order).size!==order.length)return;
  s.session.heldTile=null;
  if(JSON.stringify(old)===JSON.stringify(order)){caption(m,['CT.RAIL.SAME'],{tile:content.texts.find(t=>t.id===`CT.TILE.LABEL.${h.tile.slice(5)}`)!.text});return;}
- pause(m,'inspection');if(s.case.playback)s.case.runHistory.push(structuredClone(s.case.playback));s.case.playback=null;s.case.certificate=null;p.order=order;p.arrangementRevision++;p.loop.mode=p.loop.mode==='projecting'?'docked':p.loop.mode;caption(m,['CT.RAIL.CHANGED']);touch(m);
+ pause(m,'inspection');if(s.case.playback)s.case.runHistory.push(structuredClone(s.case.playback));s.case.playback=null;s.case.certificate=null;p.order=order;p.arrangementRevision++;p.loop.mode=p.loop.mode==='projecting'?'docked':p.loop.mode;
+ const other=old[index],slots={tile:tileName(h.tile),position:order.indexOf(h.tile)+1,other:other?tileName(other):'',otherPosition:other?order.indexOf(other)+1:0};
+ caption(m,[cmd.operation==='replace'?'CT.RAIL.REPLACED':['swap','left','right'].includes(cmd.operation)?'CT.RAIL.SWAPPED':cmd.operation==='return'?'CT.RAIL.RETURNED':'CT.RAIL.PLACED','CT.RAIL.CHANGED'],slots);touch(m);
 }
 export function reduce(previous:State,e:Envelope):{state:State;effects:Effect[]}{
  if(e.command.type!=='NEW_GAME'&&(e.visitId!==previous.session.visitId||e.caseId!==previous.case.caseRunId||previous.runtime.lastHandled.includes(e.id)))return {state:previous,effects:[]};
  if(e.command.type==='NEW_GAME'){
-  const next=structuredClone(initialState(e.command.caseId,e.command.visitId));next.preferences=structuredClone(previous.preferences);next.runtime.homeStatus='empty';next.runtime.hasLiveVisit=true;next.runtime.view={page:'world'};next.case.encounteredActors=['ACT.JO'];next.session.inputOwner='world';next.session.taskState=null;next.session.saving.mode=e.command.save===false?'unknown-record':'normal';next.runtime.caption=['CT.GOAL.ASSIGNMENT'];return {state:freeze(next),effects:[{kind:'save'}]};
+  const next=structuredClone(initialState(e.command.caseId,e.command.visitId));next.preferences=structuredClone(previous.preferences);next.runtime.coachTransport=previous.runtime.coachTransport;next.runtime.homeStatus='empty';next.runtime.hasLiveVisit=true;next.runtime.view={page:'world'};next.case.encounteredActors=['ACT.JO'];next.session.inputOwner='world';next.session.taskState=null;next.session.saving.mode=e.command.save===false?'unknown-record':'normal';next.runtime.caption=['CT.GOAL.ASSIGNMENT'];return {state:freeze(next),effects:[{kind:'save'}]};
  }
  const m:Mutation={s:structuredClone(previous),e,effects:[],caseChanged:false,contextChanged:false,nextId:0},s=m.s,c=s.case,p=c.physical,cmd=e.command;
  switch(cmd.type){
@@ -237,7 +240,7 @@ export function reduce(previous:State,e:Envelope):{state:State;effects:Effect[]}
   setView(m,s.runtime.homeStatus==='run'?{page:'recovery',action:'run'}:resume&&available(s.case,resume.componentRef)?{page:'reader',sourceId:resume.sourceId,accessId:`ACC.EVIDENCE.${resume.sourceId}`,ref:resume.componentRef,...(resume.frame?{frame:resume.frame}:{})}:{page:'world'});
   caption(m,[r&&r.status!=='finalized'?'CT.RECOVERY.UNCERTAIN_CUE':'CT.SAVE.RETURNED']);break;
  }
- case 'VIEW':pause(m,'inspection');cancelIntent(m);setView(m,cmd.view);if(cmd.view.page==='map')grant(m,['NAV.ST','NAV.CY','NAV.WK','NAV.MEDIA'],'ACC.VENUE');break;
+ case 'VIEW':{pause(m,'inspection');cancelIntent(m);let view=cmd.view;if(view.page==='help'){const topic=s.runtime.helpOpportunity?(s.runtime.helpOpportunity.context.topic==='story-plan'?'story':'search'):s.runtime.view.topic;if(view.topic!==undefined&&topic!==undefined&&view.topic!==topic)m.contextChanged=true;if(view.topic===undefined&&topic!==undefined)view={...view,topic};}setView(m,view);if(view.page==='map')grant(m,['NAV.ST','NAV.CY','NAV.WK','NAV.MEDIA'],'ACC.VENUE');break;}
  case 'FOCUS':s.session.inputOwner=cmd.owner;if(cmd.owner!=='world')s.session.heldKeys=[];break;
  case 'KEYS':if(s.session.inputOwner==='world'){cancelIntent(m);s.session.heldKeys=cmd.keys;}break;
  case 'TARGET':target(m,cmd.target,cmd.action);break;
@@ -259,7 +262,7 @@ export function reduce(previous:State,e:Envelope):{state:State;effects:Effect[]}
  case 'DRAFT':{const d=c.drafts.find(d=>d.id===cmd.id);if(d&&(d.text!==cmd.text||cmd.refs&&JSON.stringify(d.selectedRefs)!==JSON.stringify(cmd.refs))){d.text=cmd.text;if(cmd.refs)d.selectedRefs=cmd.refs.filter(r=>exposed(c,r)).slice(0,2);d.revision++;touch(m);}break;}
  case 'SELECT_TILE':if(p.caddyHost==='ST.RACK.BAY'&&atWork(c)){pause(m,'inspection');const index=p.order.indexOf(cmd.tile);s.session.heldTile={tile:cmd.tile,origin:index<0?'caddy':'rail',originIndex:index<0?null:index,arrangementRevision:p.arrangementRevision};}break;
  case 'EDIT_RAIL':edit(m,cmd);break;
- case 'CANCEL_TILE':s.session.heldTile=null;break;
+ case 'CANCEL_TILE':if(s.session.heldTile){s.session.heldTile=null;caption(m,[cmd.invalid?'CT.RAIL.INVALID':'CT.RAIL.CANCELED']);}break;
  case 'PRESENTATION':if(cmd.mode==='arrange')pause(m,'inspection');s.session.presentation=cmd.mode;break;
  case 'RUN':run(m,cmd.mode);break;
  case 'START_CUE':startCue(m,cmd.runId);break;
@@ -291,6 +294,7 @@ export function reduce(previous:State,e:Envelope):{state:State;effects:Effect[]}
  case 'SAVE_BEGIN':s.runtime.pendingSaveToken=cmd.token;s.session.saving.writeInFlight=true;s.session.saving.requestedRevision=cmd.revision;break;
  case 'SAVE_ACK':if(cmd.token===s.runtime.pendingSaveToken&&cmd.caseId===c.caseRunId&&cmd.visitId===s.session.visitId){s.runtime.pendingSaveToken=null;s.session.saving.writeInFlight=false;s.session.saving.acknowledgedRevision=cmd.revision;s.session.saving.knownSlotRevision=cmd.slotRevision;}break;
  case 'SAVE_FAILED':if(cmd.token===s.runtime.pendingSaveToken){s.runtime.pendingSaveToken=null;s.session.saving.writeInFlight=false;s.session.saving.mode=cmd.mode;}break;
+ case 'ART_RETRY':s.runtime.artFailure=false;break;
  case 'ART_FAILED':s.runtime.artFailure=true;break;
  case 'CANVAS_FAILED':s.runtime.canvasFailure=true;break;
  case 'DISMISS_GUIDE':c.guidance[cmd.guide]=true;touch(m,false);break;
@@ -302,10 +306,19 @@ export function reduce(previous:State,e:Envelope):{state:State;effects:Effect[]}
  case 'PRESENT':queueDelivery(m,{actor:cmd.actor,refs:cmd.refs,text:'',topic:'search',plan:false});break;
  case 'DELIVER_PLAN':{const d=c.drafts.find(d=>d.id===cmd.topic+'-plan')!;if(!d.text.trim()||Array.from(d.text).length>600){caption(m,[d.text.trim()?'CT.UI.LIMIT':'CT.UI.ADD_IDEA']);break;}queueDelivery(m,{actor:'ACT.JO',refs:[...d.selectedRefs],text:d.text,topic:cmd.topic,plan:true});break;}
  case 'RECORD_PLAN':{const d=c.drafts.find(d=>d.id===cmd.topic+'-plan')!;if(record(m,'crew-plan',cmd.topic,d.text,d.selectedRefs,null)){setView(m,{page:'plan',topic:cmd.topic,action:'recorded'});caption(m,['CT.PLAN.RECORDED']);}break;}
- case 'HELP':pause(m,'inspection');help(m,cmd.direct,cmd.noteHelp);break;
+ case 'HELP':pause(m,'inspection');startHelp(m,cmd.direct,cmd.noteHelp);break;
+ case 'COACH_TIME':coachingTime(m,cmd.requestId,cmd.ms);break;
+ case 'COACH_RECEIVE':receive(m,cmd.requestId,cmd.response);break;
+ case 'COACH_CHOOSE':choose(m,cmd.choice);break;
+ case 'COACH_DISPLAY':display(m,cmd.requestId);break;
+ case 'COACH_CANCEL':cancelHelp(m);break;
+ case 'COACH_FOCUS':s.session.coach.fallbackFocused=cmd.focused;break;
+ case 'NPC_HELP_DISPLAY':{const h=s.runtime.npcHelp;if(h&&h.id===cmd.id&&!h.displayed&&s.runtime.view.page==='talk'&&s.runtime.view.actor===h.actor&&s.runtime.view.dialogue?.includes(h.ct)){h.displayed=true;observe(m,'help-displayed',{contentIds:[h.ct],origin:'npc',assistanceLevel:3});}break;}
+ case 'COACH_DEVELOPMENT':s.runtime.coachTransport='development';break;
  }
  if(m.caseChanged){s.case.revision++;s.session.saving.currentRevision=s.case.revision;m.effects.push({kind:'save',draft:cmd.type==='DRAFT'||cmd.type==='TICK'||cmd.type==='SOURCE_POSITION'});}
- if(m.contextChanged){s.runtime.contextRevision++;if(['pending','waiting','offered','ready'].includes(s.session.coach.status))s.session.coach.status='stale';}
+ if(m.contextChanged)s.runtime.contextRevision++;
+ reconcile(m);
  s.runtime.lastHandled=[...s.runtime.lastHandled,e.id].slice(-128);
  return {state:freeze(s),effects:m.effects};
 }
