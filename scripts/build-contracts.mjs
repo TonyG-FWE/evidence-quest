@@ -22,6 +22,13 @@ for(const specifier of new Set([...generated.matchAll(/require\("([^\"]+)"\)/g)]
   if(!specifier.startsWith('ajv/dist/runtime/'))throw new Error(`Review unexpected validator runtime: ${specifier}`);
   const name=`ajvRuntime${imports.length}`;
   imports.push(`import ${name} from '${specifier}.js';`);
+  // Node exposes Ajv's CJS {default: fn}; a browser bundler may unwrap it to
+  // fn. Normalize only the generated .default function reference, keeping the
+  // same upstream Unicode-length implementation in both environments.
+  if(generated.includes(`require("${specifier}").default`)){
+    imports.push(`const ${name}Function = typeof ${name} === 'function' ? ${name} : ${name}.default;`);
+    generated=generated.replaceAll(`require("${specifier}").default`,`${name}Function`);
+  }
   generated=generated.replaceAll(`require("${specifier}")`,name);
 }
 await writeFile('contracts/generated/validators.mjs',imports.join('\n')+'\n'+generated+'\n');

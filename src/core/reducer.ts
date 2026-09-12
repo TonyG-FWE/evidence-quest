@@ -86,7 +86,7 @@ function arrive(m:Mutation){
   if(candidates[0]){p.loop.feet=[...candidates[0]];touch(m,false);}
  }
  intent.stage='operating';m.s.session.pendingAction!.stage='operating';m.s.session.taskState='UI.WORLD.OPERATING';m.s.runtime.operationElapsedMs=0;
- const id=intent.target,ms=intent.action==='flatten'?800:id.startsWith('ST.MODEL')?600:id.startsWith('ST.DOCK')?(p.loop.mode==='following'?13/15*1000+500:450):id==='ST.RACK.BAY'&&p.caddyHost==='ACT.PLAYER'?350:intent.action==='collect'?350:id==='ACT.LOOP'||id==='LOOP.FOLLOW.PAD'?500:id.includes('SOURCE.')||id.startsWith('KIT.')||id==='MD.ACCESS.E8'?450:200;
+ const id=intent.target,ms=intent.action==='flatten'?800:id.startsWith('ST.MODEL')?600:id.startsWith('ST.DOCK')?(p.loop.mode==='following'?13/15*1000+500:450):id==='ST.RACK.BAY'&&p.caddyHost==='ACT.PLAYER'?350:intent.action==='collect'?350:id==='ACT.LOOP'||id==='LOOP.FOLLOW.PAD'?500:id.includes('SOURCE.')||id.startsWith('KIT.')||id==='MD.ACCESS.E8'?450:['ACT.JO','ACT.REMY','ACT.ARI'].includes(id)?400:200;
  if(id.startsWith('ST.MODEL')){setView(m,{page:'model'});caption(m,[]);}
  m.effects.push({kind:'timer',ms:m.s.preferences.motion==='reduced'&&ms!==800?120:ms,command:{type:'ACTION_READY',actionId:intent.id}});
 }
@@ -98,6 +98,7 @@ export function source(m:Mutation,sourceId:string,accessId:string,refs?:string[]
 }
 function physical(m:Mutation){
  const i=m.s.runtime.intent;if(!i)return;const id=i.target,action=i.action,s=m.s,c=s.case,p=c.physical;
+ s.runtime.lastOperation={target:id,action,endedAt:s.runtime.clockMs,delivery:!!i.delivery};
  cancelIntent(m);
  const door=content.doors.find(d=>d.id===id);
  if(door){
@@ -189,6 +190,7 @@ function tick(m:Mutation,ms:number){
    else for(const a of [0,1] as const){const axis:Point=[...p.avatar];axis[a]=next[a];if(clearSegment(room,p.avatar,axis))p.avatar=axis;}
   }
   if(distance(prev,p.avatar)>.001){
+   s.runtime.lastAvatarMoveMs=s.runtime.clockMs;
    p.facing=Math.abs(p.avatar[0]-prev[0])>Math.abs(p.avatar[1]-prev[1])?(p.avatar[0]>prev[0]?'right':'left'):p.avatar[1]>prev[1]?'down':'up';
    s.runtime.loopHistory.push([...p.avatar]);s.runtime.loopHistory=s.runtime.loopHistory.slice(-150);touch(m,false);
   }
@@ -196,7 +198,7 @@ function tick(m:Mutation,ms:number){
    p.loop.room=p.room;let behind:Point|null=null,total=0,last=p.avatar;
    for(const point of [...s.runtime.loopHistory].reverse()){total+=distance(last,point);last=point;if(total>=7){behind=point;break;}}
    if(!behind&&distance(p.avatar,p.loop.feet)>8)behind=p.avatar;
-   if(behind&&distance(p.loop.feet,behind)>.1){const route=findPath(room,p.loop.feet,behind);if(route){p.loop.feet=advancePath(p.loop.feet,route,units*1.2).position;touch(m,false);}}
+   if(behind&&distance(p.loop.feet,behind)>.1){const route=findPath(room,p.loop.feet,behind);if(route){const before=[...p.loop.feet];p.loop.feet=advancePath(p.loop.feet,route,units*1.2).position;const dx=p.loop.feet[0]-before[0]!,dy=p.loop.feet[1]-before[1]!;if(Math.hypot(dx,dy)>.001){s.runtime.lastLoopMoveMs=s.runtime.clockMs;s.runtime.loopFacing=Math.abs(dx)>Math.abs(dy)?dx>0?'right':'left':dy>0?'down':'up';}touch(m,false);}}
   }
  }
 }
@@ -237,7 +239,12 @@ export function reduce(previous:State,e:Envelope):{state:State;effects:Effect[]}
   const next=structuredClone(initialState(e.command.caseId,e.command.visitId));next.preferences=structuredClone(previous.preferences);next.runtime.coachTransport=previous.runtime.coachTransport;next.runtime.homeStatus='empty';next.runtime.hasLiveVisit=true;next.runtime.view={page:'intro',frame:0};next.case.encounteredActors=['ACT.JO'];next.session.inputOwner='task';next.session.taskState='UI.INTRO';next.session.saving.mode=e.command.save===false?'unknown-record':'normal';next.runtime.caption=['CT.GOAL.ASSIGNMENT'];return {state:freeze(next),effects:[{kind:'save'}]};
  }
  const m:Mutation={s:structuredClone(previous),e,effects:[],caseChanged:false,contextChanged:false,nextId:0},s=m.s,c=s.case,p=c.physical,cmd=e.command;
+ // A deliberate task action may acknowledge the passive return notice.
+ // Save, focus, exposure and timer callbacks never dismiss it or resume play.
+ if(['VIEW','TARGET','WALK','GO','DRAFT','SELECT_TILE','EDIT_RAIL','PRESENTATION','RUN','CONTINUE_RUN','RESTART_RUN','HELP','INTRO','READING','WORD_LOOKUP','ACK_FOREGROUND'].includes(cmd.type))s.runtime.foregroundNotice=false;
  switch(cmd.type){
+ case 'FOREGROUND':if(s.runtime.backgrounded&&s.runtime.hasLiveVisit){s.runtime.backgrounded=false;s.runtime.foregroundNotice=true;}break;
+ case 'ACK_FOREGROUND':break;
  case 'CONTINUE':setView(m,{page:'world'});break;
  case 'BOOT_CHECK':s.runtime.bootGeneration=cmd.generation;s.runtime.homeStatus='checking';break;
  case 'BOOT':if(cmd.generation===s.runtime.bootGeneration&&!s.runtime.hasLiveVisit){s.runtime.homeStatus=cmd.status;s.runtime.savedCandidate=cmd.candidate;s.runtime.restorePreservesSlots=cmd.preserve??false;s.session.saving.knownSlotRevision=cmd.slotRevision??null;}break;
@@ -278,7 +285,7 @@ export function reduce(previous:State,e:Envelope):{state:State;effects:Effect[]}
  case 'WORD_LOOKUP':if(c.experience?.wordContexts.includes(cmd.id))observe(m,'word-looked-up',{contentIds:[cmd.id]});break;
  case 'SUPPORT_SEEN':{const ex=c.experience??=newExperience(true);if(supportAvailable(c,cmd.id)&&!ex.supports.includes(cmd.id)){ex.supports.push(cmd.id);observe(m,'supplied-support',{contentIds:[cmd.id],origin:'npc',assistanceLevel:2});}break;}
  case 'COACH_CONFIG':if(s.runtime.coachTransport!=='development')s.runtime.coachTransport=cmd.live?'live':'authored';break;
- case 'KEYS':if(s.session.inputOwner==='world'){cancelIntent(m);s.session.heldKeys=cmd.keys;}break;
+ case 'KEYS':if(s.session.inputOwner==='world'){if(cmd.keys.length)s.runtime.foregroundNotice=false;cancelIntent(m);s.session.heldKeys=cmd.keys;}break;
  case 'TARGET':target(m,cmd.target,cmd.action);break;
  case 'WALK':{
   if(!['world','work'].includes(s.runtime.view.page))break;
@@ -316,7 +323,7 @@ export function reduce(previous:State,e:Envelope):{state:State;effects:Effect[]}
   const r=c.playback;if(!r||r.id!==cmd.runId||r.status!=='running'||r.activeCue||r.nextCue!==r.order.length)break;
   r.status='finalized';p.loop.mode='docked';const success=successful(r.puppet);r.finalizedSeq=observe(m,'run-finalized',{runId:r.id,outcome:success?'success':'unsuccessful',puppet:{...r.puppet},origin:'world'});
   if(success&&r.mode==='rehearsal'){c.certificate={runId:r.id,arrangementRevision:r.arrangementRevision};caption(m,[c.premiere?'CT.ER13.REPLAY_READY':'CT.WORK.CERTIFIED']);}
-  else if(success&&r.mode==='show'){if(!c.premiere)c.premiere={runId:r.id,arrangementRevision:r.arrangementRevision,order:[...r.order],completedSeq:r.finalizedSeq};setView(m,{page:'ending',action:'celebration'});caption(m,['CT.JO.ENDING']);}
+  else if(success&&r.mode==='show'){if(!c.premiere)c.premiere={runId:r.id,arrangementRevision:r.arrangementRevision,order:[...r.order],completedSeq:r.finalizedSeq};setView(m,{page:'ending',action:'celebration'});s.runtime.celebrateStartedAt=s.runtime.clockMs;caption(m,['CT.JO.ENDING']);}
   else caption(m,['CT.WORK.CHECK']);break;
  }
  case 'PAUSE_RUN':pause(m,cmd.reason);break;
@@ -340,7 +347,7 @@ export function reduce(previous:State,e:Envelope):{state:State;effects:Effect[]}
  case 'ART_FAILED':s.runtime.artFailure=true;break;
  case 'CANVAS_FAILED':s.runtime.canvasFailure=true;break;
  case 'DISMISS_GUIDE':c.guidance[cmd.guide]=true;touch(m,false);break;
- case 'BACKGROUND':pause(m,'background');cancelIntent(m);s.session.heldKeys=[];if(s.runtime.toastElapsed!==null){s.runtime.toastElapsed=null;setView(m,{page:'toast',action:'revealed'});caption(m,['CT.TOAST.PUNCHLINE']);}break;
+ case 'BACKGROUND':if(s.runtime.hasLiveVisit){s.runtime.backgrounded=true;s.runtime.foregroundNotice=false;}pause(m,'background');cancelIntent(m);s.session.heldKeys=[];if(s.runtime.toastElapsed!==null){s.runtime.toastElapsed=null;setView(m,{page:'toast',action:'revealed'});caption(m,['CT.TOAST.PUNCHLINE']);}break;
  case 'TOAST_START':if(p.room==='SC.WK'&&s.runtime.view.page==='toast'&&s.runtime.toastElapsed===null){const was=p.objects.toastRevealed;p.objects.toastRevealed=true;setView(m,{page:'toast',action:e.id});s.runtime.toastElapsed=0;s.runtime.toastReplay=was;caption(m,[was?'CT.TOAST.FLOURISH':'CT.TOAST.ARMS']);observe(m,'physical-commit',{actionId:e.id,origin:'world'});m.effects.push({kind:'timer',ms:s.preferences.motion==='reduced'?300:was?2000:7000,command:{type:'TOAST_DONE',actionId:e.id}});}break;
  case 'TOAST_DONE':if(s.runtime.view.page==='toast'&&s.runtime.view.action===cmd.actionId){s.runtime.toastElapsed=null;setView(m,{page:'toast',action:'revealed'});caption(m,['CT.TOAST.PUNCHLINE']);}break;
  // Native dialogue/records and request lifecycle are attached by their dependent tasks.

@@ -18,7 +18,7 @@ const mime:Record<string,string>={'.html':'text/html; charset=utf-8','.js':'text
 const server=createServer(async(req,res)=>{
   res.setHeader('X-Content-Type-Options','nosniff');
   res.setHeader('Referrer-Policy','no-referrer');
-  res.setHeader('Content-Security-Policy',"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'");
+  res.setHeader('Content-Security-Policy',"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'");
   const json=(status:number,data:unknown)=>{res.writeHead(status,{'Content-Type':'application/json','Cache-Control':'no-store'});res.end(JSON.stringify(data));};
   try{
     if(req.headers.host!==`${host}:${port}` && req.headers.host!==`localhost:${port}`) {json(400,{error:'Invalid host'});return;}
@@ -39,8 +39,14 @@ const server=createServer(async(req,res)=>{
     if(!candidate.startsWith(staticRoot+sep)){json(403,{error:'Path not allowed'});return;}
     const info=await stat(candidate);
     if(!info.isFile()){json(404,{error:'Not found'});return;}
-    const bytes=await readFile(candidate);
-    res.writeHead(200,{'Content-Type':mime[extname(candidate)]??'application/octet-stream','Cache-Control':path.startsWith('/assets/')?'public, max-age=31536000, immutable':'no-cache'});
+    let encoding:string|undefined,bytes:Buffer|undefined;
+    const accepts=req.headers['accept-encoding']??'';
+    for(const [token,suffix]of [['br','.br'],['gzip','.gz']] as const){
+      if(!new RegExp(`(?:^|,)\\s*${token}(?:\\s*(?:,|$)|;\\s*q=(?!0(?:\\.0*)?\\s*(?:,|$)))`).test(accepts))continue;
+      try{bytes=await readFile(candidate+suffix);encoding=token;break;}catch(error){if((error as NodeJS.ErrnoException).code!=='ENOENT')throw error;}
+    }
+    bytes??=await readFile(candidate);
+    res.writeHead(200,{'Content-Type':mime[extname(candidate)]??'application/octet-stream','Content-Length':bytes.length,'Vary':'Accept-Encoding',...(encoding?{'Content-Encoding':encoding}:{}),'Cache-Control':path.startsWith('/assets/')||path.startsWith('/art/runtime/')?'public, max-age=31536000, immutable':'no-cache'});
     res.end(req.method==='HEAD'?undefined:bytes);
   }catch(error){json((error as NodeJS.ErrnoException).code==='ENOENT'?404:500,{error:'Resource unavailable'});}
 });

@@ -1,0 +1,141 @@
+[WebServer] (node:50376) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 12 tests using 3 workers
+
+(node:40916) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:52708) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:47612) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chromium] › browser-tests\acceptance-boundaries.spec.ts:6:67 › FIX11.ACCESS/UNMET 320x568 whole unmet story, note inspection and native revision (13.7s)
+  ok  2 [chromium] › browser-tests\watch-position.spec.ts:9:1 › ER13 Watch start, unmet and completion keep the full consequence visible without moving keyboard focus (14.5s)
+(node:46016) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   3 [chromium] › browser-tests\compact.spec.ts:19:1 › FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest (20.3s)
+(node:52052) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  4 [chromium] › browser-tests\acceptance-boundaries.spec.ts:6:67 › FIX11.ACCESS/UNMET 640x360 whole unmet story, note inspection and native revision (12.8s)
+(node:15308) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  5 [firefox] › browser-tests\acceptance-boundaries.spec.ts:6:67 › FIX11.ACCESS/UNMET 320x568 whole unmet story, note inspection and native revision (17.2s)
+  ok  7 [firefox] › browser-tests\watch-position.spec.ts:9:1 › ER13 Watch start, unmet and completion keep the full consequence visible without moving keyboard focus (16.1s)
+(node:15840) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   6 [firefox] › browser-tests\compact.spec.ts:19:1 › FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest (23.2s)
+(node:52408) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  8 [firefox] › browser-tests\acceptance-boundaries.spec.ts:6:67 › FIX11.ACCESS/UNMET 640x360 whole unmet story, note inspection and native revision (15.7s)
+(node:48644) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 11 [webkit] › browser-tests\watch-position.spec.ts:9:1 › ER13 Watch start, unmet and completion keep the full consequence visible without moving keyboard focus (16.3s)
+  ok  9 [webkit] › browser-tests\acceptance-boundaries.spec.ts:6:67 › FIX11.ACCESS/UNMET 320x568 whole unmet story, note inspection and native revision (21.2s)
+  x  10 [webkit] › browser-tests\compact.spec.ts:19:1 › FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest (22.7s)
+  ok 12 [webkit] › browser-tests\acceptance-boundaries.spec.ts:6:67 › FIX11.ACCESS/UNMET 640x360 whole unmet story, note inspection and native revision (19.3s)
+
+
+  1) [chromium] › browser-tests\compact.spec.ts:19:1 › FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+    Call Log:
+    - Timeout 15000ms exceeded while waiting on the predicate
+
+      20 |  await page.setViewportSize({width:640,height:360});await workstation(page);await settings(page,false);await page.getByRole('button',{name:'Move to…',exact:true}).tap();await page.locator('[data-owner="ST.RAIL"]').tap();await expect(button(page,'CT.RAIL.ARRANGE_MODE')).toBeVisible();
+      21 |  for(const [tile,after]of [['BRIDGE',null],['PLANT','Joined Boats'],['BLOOM','Hill']] as const){await page.locator(`[data-tile="TILE.${tile}"]`).tap();await page.getByRole('button',{name:after?`Insert after ${after}`:'Place at the start',exact:true}).tap();}
+    > 22 |  await button(page,'CT.WORK.REHEARSE').tap();await expect(button(page,'CT.WORK.LAUNCH')).toBeVisible();await expect.poll(async()=>{const box=(await page.getByTestId('whole-story').boundingBox())!,dock=(await page.locator('.world-dock').boundingBox())!,caption=(await page.locator('.narrated-show .local-feedback').boundingBox())!;return box.height<=240&&box.y>=dock.y+dock.height-1&&box.y+box.height<=361&&caption.y+caption.height<=361;}).toBe(true);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+      23 |  await page.screenshot({path:'output/playwright/compact-touch-whole-story.png',fullPage:false});await button(page,'CT.WORK.LAUNCH').tap();await expect(page.getByRole('heading',{name:copy('CT.ENDING.TITLE'),exact:true})).toBeVisible();expect((await saved(page)).payload.premiere).not.toBeNull();
+      24 | });
+      25 |
+        at C:\Users\TonyGuillaro\OneDrive - Summit Gov Solutions\Documents\ChatGPT\Evidence quest\browser-tests\compact.spec.ts:22:440
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\watch-final-raw\compact-FIX11-ACCESS-touch-6818d--visible-at-640x360-Largest-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\watch-final-raw\compact-FIX11-ACCESS-touch-6818d--visible-at-640x360-Largest-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    output\playwright\watch-final-raw\compact-FIX11-ACCESS-touch-6818d--visible-at-640x360-Largest-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace output\playwright\watch-final-raw\compact-FIX11-ACCESS-touch-6818d--visible-at-640x360-Largest-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [firefox] › browser-tests\compact.spec.ts:19:1 › FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+    Call Log:
+    - Timeout 15000ms exceeded while waiting on the predicate
+
+      20 |  await page.setViewportSize({width:640,height:360});await workstation(page);await settings(page,false);await page.getByRole('button',{name:'Move to…',exact:true}).tap();await page.locator('[data-owner="ST.RAIL"]').tap();await expect(button(page,'CT.RAIL.ARRANGE_MODE')).toBeVisible();
+      21 |  for(const [tile,after]of [['BRIDGE',null],['PLANT','Joined Boats'],['BLOOM','Hill']] as const){await page.locator(`[data-tile="TILE.${tile}"]`).tap();await page.getByRole('button',{name:after?`Insert after ${after}`:'Place at the start',exact:true}).tap();}
+    > 22 |  await button(page,'CT.WORK.REHEARSE').tap();await expect(button(page,'CT.WORK.LAUNCH')).toBeVisible();await expect.poll(async()=>{const box=(await page.getByTestId('whole-story').boundingBox())!,dock=(await page.locator('.world-dock').boundingBox())!,caption=(await page.locator('.narrated-show .local-feedback').boundingBox())!;return box.height<=240&&box.y>=dock.y+dock.height-1&&box.y+box.height<=361&&caption.y+caption.height<=361;}).toBe(true);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+      23 |  await page.screenshot({path:'output/playwright/compact-touch-whole-story.png',fullPage:false});await button(page,'CT.WORK.LAUNCH').tap();await expect(page.getByRole('heading',{name:copy('CT.ENDING.TITLE'),exact:true})).toBeVisible();expect((await saved(page)).payload.premiere).not.toBeNull();
+      24 | });
+      25 |
+        at C:\Users\TonyGuillaro\OneDrive - Summit Gov Solutions\Documents\ChatGPT\Evidence quest\browser-tests\compact.spec.ts:22:440
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\watch-final-raw\compact-FIX11-ACCESS-touch-6818d--visible-at-640x360-Largest-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\watch-final-raw\compact-FIX11-ACCESS-touch-6818d--visible-at-640x360-Largest-firefox\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    output\playwright\watch-final-raw\compact-FIX11-ACCESS-touch-6818d--visible-at-640x360-Largest-firefox\trace.zip
+    Usage:
+
+        npx playwright show-trace output\playwright\watch-final-raw\compact-FIX11-ACCESS-touch-6818d--visible-at-640x360-Largest-firefox\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [webkit] › browser-tests\compact.spec.ts:19:1 › FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+    Call Log:
+    - Timeout 15000ms exceeded while waiting on the predicate
+
+      20 |  await page.setViewportSize({width:640,height:360});await workstation(page);await settings(page,false);await page.getByRole('button',{name:'Move to…',exact:true}).tap();await page.locator('[data-owner="ST.RAIL"]').tap();await expect(button(page,'CT.RAIL.ARRANGE_MODE')).toBeVisible();
+      21 |  for(const [tile,after]of [['BRIDGE',null],['PLANT','Joined Boats'],['BLOOM','Hill']] as const){await page.locator(`[data-tile="TILE.${tile}"]`).tap();await page.getByRole('button',{name:after?`Insert after ${after}`:'Place at the start',exact:true}).tap();}
+    > 22 |  await button(page,'CT.WORK.REHEARSE').tap();await expect(button(page,'CT.WORK.LAUNCH')).toBeVisible();await expect.poll(async()=>{const box=(await page.getByTestId('whole-story').boundingBox())!,dock=(await page.locator('.world-dock').boundingBox())!,caption=(await page.locator('.narrated-show .local-feedback').boundingBox())!;return box.height<=240&&box.y>=dock.y+dock.height-1&&box.y+box.height<=361&&caption.y+caption.height<=361;}).toBe(true);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+         |                                                                                                                                                                                                                                                                                                                                                                                                                                                        ^
+      23 |  await page.screenshot({path:'output/playwright/compact-touch-whole-story.png',fullPage:false});await button(page,'CT.WORK.LAUNCH').tap();await expect(page.getByRole('heading',{name:copy('CT.ENDING.TITLE'),exact:true})).toBeVisible();expect((await saved(page)).payload.premiere).not.toBeNull();
+      24 | });
+      25 |
+        at C:\Users\TonyGuillaro\OneDrive - Summit Gov Solutions\Documents\ChatGPT\Evidence quest\browser-tests\compact.spec.ts:22:440
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\watch-final-raw\compact-FIX11-ACCESS-touch-6818d--visible-at-640x360-Largest-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\watch-final-raw\compact-FIX11-ACCESS-touch-6818d--visible-at-640x360-Largest-webkit\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    output\playwright\watch-final-raw\compact-FIX11-ACCESS-touch-6818d--visible-at-640x360-Largest-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace output\playwright\watch-final-raw\compact-FIX11-ACCESS-touch-6818d--visible-at-640x360-Largest-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    [chromium] › browser-tests\compact.spec.ts:19:1 › FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest 
+    [firefox] › browser-tests\compact.spec.ts:19:1 › FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest 
+    [webkit] › browser-tests\compact.spec.ts:19:1 › FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest 
+  9 passed (1.5m)

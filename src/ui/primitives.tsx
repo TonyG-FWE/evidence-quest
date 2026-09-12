@@ -10,5 +10,9 @@ export const iconPaths={
 } as const;
 export const effects={shadow:{alpha:.24,width:.9,height:.18,offset:[.3,.4]},foreground:{clipHeight:2},focus:{width:3,color:'#224FC4',routeWidth:2},storyLight:{alpha:.24,durationMs:600}} as const;
 export function Icon({name}:{name:keyof typeof iconPaths}){return <svg viewBox="0 0 24 24" aria-hidden="true" className="icon"><path d={iconPaths[name]} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" vectorEffect="non-scaling-stroke"/></svg>;}
-export function Button({ct,slots,icon,children,...props}:ButtonHTMLAttributes<HTMLButtonElement>&{ct?:string;slots?:Record<string,string|number>;icon?:keyof typeof iconPaths;children?:ReactNode}){return <button type="button" {...props}>{icon&&<Icon name={icon}/>}<span>{ct?copy(ct,slots):children}</span></button>;}
+export function Button({ct,slots,icon,children,...props}:ButtonHTMLAttributes<HTMLButtonElement>&{ct?:string;slots?:Record<string,string|number>;icon?:keyof typeof iconPaths;children?:ReactNode}){return <button type="button" {...props} onClick={event=>{
+ // WebKit may leave a clicked button unfocused. Record its real invocation
+ // point before opening a task so Back/Escape can restore the same control.
+ event.currentTarget.focus({preventScroll:true});props.onClick?.(event);
+}}>{icon&&<Icon name={icon}/>}<span>{ct?copy(ct,slots):children}</span></button>;}
 export function Paper({children,label}:{children:ReactNode;label?:string}){return <section className="paper" aria-label={label}>{children}</section>;}

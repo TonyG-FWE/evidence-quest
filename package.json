@@ -16,7 +16,8 @@
     "dev:api": "node --env-file-if-exists=.env.server.local --watch dist/server/index.js",
     "dev:web": "vite",
     "test:contracts": "npm run build:contracts && tsc -p tsconfig.checks.json && node scripts/prepare-checks.mjs && node --test .cache/checks/checks/*.test.js",
-    "build": "npm run validate:content && npm run check && npm run build:server && vite build",
+    "build:art": "node scripts/export-production-art.mjs",
+    "build": "npm run build:art && npm run validate:content && npm run check && npm run build:server && vite build && node scripts/prepare-client.mjs",
     "start": "node --env-file-if-exists=.env.server.local dist/server/index.js",
     "test:browser": "node scripts/test-browser.mjs",
     "eval:coach": "tsc -p tsconfig.checks.json && node scripts/prepare-checks.mjs && node evaluation/evaluate.mjs"
@@ -27,12 +28,14 @@
     "react-dom": "19.2.7"
   },
   "devDependencies": {
+    "@jsquash/webp": "1.5.0",
     "@playwright/test": "1.61.0",
     "@types/node": "24.10.1",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "@vitejs/plugin-react": "6.0.1",
+    "@vitejs/plugin-react": "5.2.0",
+    "pngjs": "7.0.0",
     "typescript": "5.9.3",
-    "vite": "8.0.16"
+    "vite": "7.3.6"
   }
 }

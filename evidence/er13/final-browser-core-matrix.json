@@ -1,0 +1,23 @@
+{
+  "at": "2026-09-12T10:48:55.695Z",
+  "candidate": "App-Br7waghk.js",
+  "status": "INTERRUPTED_FOR_REPAIR_NOT_A_COMPLETE_SUITE",
+  "log": "evidence/er13/core-matrix-before-final-repairs.txt",
+  "sha256": "ba3ac8fc87599a4f43e3c6be6966b08a9ad67d8e80caed7b90eca0314d961285",
+  "confirmedFailures": [
+    {
+      "row": 42,
+      "reason": "Retired master image URL cannot inject production asset failure"
+    },
+    {
+      "row": 65,
+      "reason": "Invalid tile drag produced no new feedback"
+    },
+    {
+      "row": 110,
+      "reason": "Same retired image URL in Firefox"
+    }
+  ],
+  "interruptedRow": 122,
+  "note": "The wrapper copied an older results.json after its child stopped; that stale copy is replaced by this explicit interruption record. Do not count remaining tests or the interruption as a completed candidate suite."
+}

@@ -1,0 +1,707 @@
+{
+  "checkedAt": "2026-09-12T10:23:15.513Z",
+  "environment": "Automated browser on this Windows host; loopback cold context, not constrained-network or physical-device measurement",
+  "usableMs": 776,
+  "coldBytes": 1347391,
+  "cold": {
+    "resources": [
+      {
+        "url": "/assets/index-B4tGJcqT.js",
+        "encodedBytes": 57187,
+        "transferBytes": 57487,
+        "durationMs": 3.2000000029802322
+      },
+      {
+        "url": "/assets/index-D7U2vX1x.css",
+        "encodedBytes": 1042,
+        "transferBytes": 1342,
+        "durationMs": 2.1000000089406967
+      },
+      {
+        "url": "/assets/App-Br7waghk.js",
+        "encodedBytes": 146931,
+        "transferBytes": 147231,
+        "durationMs": 5.199999988079071
+      },
+      {
+        "url": "/assets/App-DhOwL0CT.css",
+        "encodedBytes": 4391,
+        "transferBytes": 4691,
+        "durationMs": 2
+      },
+      {
+        "url": "/api/config",
+        "encodedBytes": 144,
+        "transferBytes": 444,
+        "durationMs": 1.5
+      },
+      {
+        "url": "/art/runtime/6e7710e923b57646c006a0ea.webp",
+        "encodedBytes": 513704,
+        "transferBytes": 514004,
+        "durationMs": 4.399999991059303
+      },
+      {
+        "url": "/art/runtime/fbdbada95f20805dc7481080.webp",
+        "encodedBytes": 51008,
+        "transferBytes": 51308,
+        "durationMs": 4
+      },
+      {
+        "url": "/art/runtime/52ff9390c4cd1586d81379e4.webp",
+        "encodedBytes": 55904,
+        "transferBytes": 56204,
+        "durationMs": 4.700000002980232
+      },
+      {
+        "url": "/art/runtime/ee717210e31d289b1f18a8fa.webp",
+        "encodedBytes": 51344,
+        "transferBytes": 51644,
+        "durationMs": 5.600000008940697
+      },
+      {
+        "url": "/art/runtime/8d0d39604e164acbb04f8567.webp",
+        "encodedBytes": 20482,
+        "transferBytes": 20782,
+        "durationMs": 5.700000002980232
+      },
+      {
+        "url": "/art/runtime/c9c1a89dd124e976dbef2332.webp",
+        "encodedBytes": 18382,
+        "transferBytes": 18682,
+        "durationMs": 5.399999991059303
+      },
+      {
+        "url": "/art/runtime/144bdab511eaf0942d1acb28.webp",
+        "encodedBytes": 63068,
+        "transferBytes": 63368,
+        "durationMs": 5.300000011920929
+      },
+      {
+        "url": "/art/runtime/a764b06fb7b6731fd241ee2e.webp",
+        "encodedBytes": 19494,
+        "transferBytes": 19794,
+        "durationMs": 4.399999991059303
+      },
+      {
+        "url": "/art/runtime/c863209859945f0b4edd9fce.webp",
+        "encodedBytes": 31654,
+        "transferBytes": 31954,
+        "durationMs": 5.5
+      },
+      {
+        "url": "/art/runtime/e77619400e9d1ad1efc8c137.webp",
+        "encodedBytes": 83262,
+        "transferBytes": 83562,
+        "durationMs": 6.299999997019768
+      },
+      {
+        "url": "/art/runtime/b7dcd47e688e11fdb2772212.webp",
+        "encodedBytes": 3894,
+        "transferBytes": 4194,
+        "durationMs": 6.0999999940395355
+      },
+      {
+        "url": "/art/runtime/1c039634bcc6a957ee0b9ec9.webp",
+        "encodedBytes": 8730,
+        "transferBytes": 9030,
+        "durationMs": 7.5999999940395355
+      },
+      {
+        "url": "/art/runtime/f56688078ca06147bc65ca2b.webp",
+        "encodedBytes": 4412,
+        "transferBytes": 4712,
+        "durationMs": 7.799999997019768
+      },
+      {
+        "url": "/art/runtime/36d49706dceeb677af5ef18e.webp",
+        "encodedBytes": 17662,
+        "transferBytes": 17962,
+        "durationMs": 7.799999997019768
+      },
+      {
+        "url": "/art/runtime/8306cfc4fffc1ff5058eaf5d.webp",
+        "encodedBytes": 5272,
+        "transferBytes": 5572,
+        "durationMs": 8
+      },
+      {
+        "url": "/art/runtime/6fe0b156023aede6356a1063.webp",
+        "encodedBytes": 11952,
+        "transferBytes": 12252,
+        "durationMs": 8.799999997019768
+      },
+      {
+        "url": "/art/runtime/37f49e896f371c4e212265e4.webp",
+        "encodedBytes": 11080,
+        "transferBytes": 11380,
+        "durationMs": 8.799999997019768
+      },
+      {
+        "url": "/art/runtime/8ff08d2daf54b78ac1cdeb5a.webp",
+        "encodedBytes": 33584,
+        "transferBytes": 33884,
+        "durationMs": 11.5
+      },
+      {
+        "url": "/art/runtime/9084bd424517427956b36c8b.webp",
+        "encodedBytes": 45474,
+        "transferBytes": 45774,
+        "durationMs": 11.599999994039536
+      },
+      {
+        "url": "/art/runtime/ae6ca396772773d2d43f8ab0.webp",
+        "encodedBytes": 41962,
+        "transferBytes": 42262,
+        "durationMs": 11.599999994039536
+      },
+      {
+        "url": "/art/runtime/284836e569a1dc4918906e11.webp",
+        "encodedBytes": 2832,
+        "transferBytes": 3132,
+        "durationMs": 11.299999997019768
+      },
+      {
+        "url": "/art/runtime/0a00d83e289589747b29737d.webp",
+        "encodedBytes": 4180,
+        "transferBytes": 4480,
+        "durationMs": 11.900000005960464
+      },
+      {
+        "url": "/art/runtime/3a06b2576cf37c29e20bf2c9.webp",
+        "encodedBytes": 2960,
+        "transferBytes": 3260,
+        "durationMs": 11.5
+      },
+      {
+        "url": "/art/runtime/b73db10c12d56cfb06d2ac9f.webp",
+        "encodedBytes": 1294,
+        "transferBytes": 1594,
+        "durationMs": 13.700000002980232
+      },
+      {
+        "url": "/art/runtime/1f3ade0a4f65eee03c7d6d91.webp",
+        "encodedBytes": 4310,
+        "transferBytes": 4610,
+        "durationMs": 13.900000005960464
+      },
+      {
+        "url": "/art/runtime/dbc0e60515f2c8feab2963bb.webp",
+        "encodedBytes": 12272,
+        "transferBytes": 12572,
+        "durationMs": 13.899999991059303
+      },
+      {
+        "url": "/art/runtime/4f868e00407dd959527ddb82.webp",
+        "encodedBytes": 17524,
+        "transferBytes": 17824,
+        "durationMs": 14
+      }
+    ],
+    "canvas": [
+      {
+        "width": 642,
+        "height": 428,
+        "rgbaBytes": 1099104,
+        "poolReservedEstimate": 4272960,
+        "poolPeakEstimate": 4272960,
+        "evictions": 0
+      }
+    ],
+    "viewport": {
+      "width": 1405,
+      "height": 790,
+      "dpr": 1
+    }
+  },
+  "tour": {
+    "resources": [
+      {
+        "url": "/assets/index-B4tGJcqT.js",
+        "encodedBytes": 57187,
+        "transferBytes": 57487,
+        "durationMs": 3.2000000029802322
+      },
+      {
+        "url": "/assets/index-D7U2vX1x.css",
+        "encodedBytes": 1042,
+        "transferBytes": 1342,
+        "durationMs": 2.1000000089406967
+      },
+      {
+        "url": "/assets/App-Br7waghk.js",
+        "encodedBytes": 146931,
+        "transferBytes": 147231,
+        "durationMs": 5.199999988079071
+      },
+      {
+        "url": "/assets/App-DhOwL0CT.css",
+        "encodedBytes": 4391,
+        "transferBytes": 4691,
+        "durationMs": 2
+      },
+      {
+        "url": "/api/config",
+        "encodedBytes": 144,
+        "transferBytes": 444,
+        "durationMs": 1.5
+      },
+      {
+        "url": "/art/runtime/6e7710e923b57646c006a0ea.webp",
+        "encodedBytes": 513704,
+        "transferBytes": 514004,
+        "durationMs": 4.399999991059303
+      },
+      {
+        "url": "/art/runtime/fbdbada95f20805dc7481080.webp",
+        "encodedBytes": 51008,
+        "transferBytes": 51308,
+        "durationMs": 4
+      },
+      {
+        "url": "/art/runtime/52ff9390c4cd1586d81379e4.webp",
+        "encodedBytes": 55904,
+        "transferBytes": 56204,
+        "durationMs": 4.700000002980232
+      },
+      {
+        "url": "/art/runtime/ee717210e31d289b1f18a8fa.webp",
+        "encodedBytes": 51344,
+        "transferBytes": 51644,
+        "durationMs": 5.600000008940697
+      },
+      {
+        "url": "/art/runtime/8d0d39604e164acbb04f8567.webp",
+        "encodedBytes": 20482,
+        "transferBytes": 20782,
+        "durationMs": 5.700000002980232
+      },
+      {
+        "url": "/art/runtime/c9c1a89dd124e976dbef2332.webp",
+        "encodedBytes": 18382,
+        "transferBytes": 18682,
+        "durationMs": 5.399999991059303
+      },
+      {
+        "url": "/art/runtime/144bdab511eaf0942d1acb28.webp",
+        "encodedBytes": 63068,
+        "transferBytes": 63368,
+        "durationMs": 5.300000011920929
+      },
+      {
+        "url": "/art/runtime/a764b06fb7b6731fd241ee2e.webp",
+        "encodedBytes": 19494,
+        "transferBytes": 19794,
+        "durationMs": 4.399999991059303
+      },
+      {
+        "url": "/art/runtime/c863209859945f0b4edd9fce.webp",
+        "encodedBytes": 31654,
+        "transferBytes": 31954,
+        "durationMs": 5.5
+      },
+      {
+        "url": "/art/runtime/e77619400e9d1ad1efc8c137.webp",
+        "encodedBytes": 83262,
+        "transferBytes": 83562,
+        "durationMs": 6.299999997019768
+      },
+      {
+        "url": "/art/runtime/b7dcd47e688e11fdb2772212.webp",
+        "encodedBytes": 3894,
+        "transferBytes": 4194,
+        "durationMs": 6.0999999940395355
+      },
+      {
+        "url": "/art/runtime/1c039634bcc6a957ee0b9ec9.webp",
+        "encodedBytes": 8730,
+        "transferBytes": 9030,
+        "durationMs": 7.5999999940395355
+      },
+      {
+        "url": "/art/runtime/f56688078ca06147bc65ca2b.webp",
+        "encodedBytes": 4412,
+        "transferBytes": 4712,
+        "durationMs": 7.799999997019768
+      },
+      {
+        "url": "/art/runtime/36d49706dceeb677af5ef18e.webp",
+        "encodedBytes": 17662,
+        "transferBytes": 17962,
+        "durationMs": 7.799999997019768
+      },
+      {
+        "url": "/art/runtime/8306cfc4fffc1ff5058eaf5d.webp",
+        "encodedBytes": 5272,
+        "transferBytes": 5572,
+        "durationMs": 8
+      },
+      {
+        "url": "/art/runtime/6fe0b156023aede6356a1063.webp",
+        "encodedBytes": 11952,
+        "transferBytes": 12252,
+        "durationMs": 8.799999997019768
+      },
+      {
+        "url": "/art/runtime/37f49e896f371c4e212265e4.webp",
+        "encodedBytes": 11080,
+        "transferBytes": 11380,
+        "durationMs": 8.799999997019768
+      },
+      {
+        "url": "/art/runtime/8ff08d2daf54b78ac1cdeb5a.webp",
+        "encodedBytes": 33584,
+        "transferBytes": 33884,
+        "durationMs": 11.5
+      },
+      {
+        "url": "/art/runtime/9084bd424517427956b36c8b.webp",
+        "encodedBytes": 45474,
+        "transferBytes": 45774,
+        "durationMs": 11.599999994039536
+      },
+      {
+        "url": "/art/runtime/ae6ca396772773d2d43f8ab0.webp",
+        "encodedBytes": 41962,
+        "transferBytes": 42262,
+        "durationMs": 11.599999994039536
+      },
+      {
+        "url": "/art/runtime/284836e569a1dc4918906e11.webp",
+        "encodedBytes": 2832,
+        "transferBytes": 3132,
+        "durationMs": 11.299999997019768
+      },
+      {
+        "url": "/art/runtime/0a00d83e289589747b29737d.webp",
+        "encodedBytes": 4180,
+        "transferBytes": 4480,
+        "durationMs": 11.900000005960464
+      },
+      {
+        "url": "/art/runtime/3a06b2576cf37c29e20bf2c9.webp",
+        "encodedBytes": 2960,
+        "transferBytes": 3260,
+        "durationMs": 11.5
+      },
+      {
+        "url": "/art/runtime/b73db10c12d56cfb06d2ac9f.webp",
+        "encodedBytes": 1294,
+        "transferBytes": 1594,
+        "durationMs": 13.700000002980232
+      },
+      {
+        "url": "/art/runtime/1f3ade0a4f65eee03c7d6d91.webp",
+        "encodedBytes": 4310,
+        "transferBytes": 4610,
+        "durationMs": 13.900000005960464
+      },
+      {
+        "url": "/art/runtime/dbc0e60515f2c8feab2963bb.webp",
+        "encodedBytes": 12272,
+        "transferBytes": 12572,
+        "durationMs": 13.899999991059303
+      },
+      {
+        "url": "/art/runtime/4f868e00407dd959527ddb82.webp",
+        "encodedBytes": 17524,
+        "transferBytes": 17824,
+        "durationMs": 14
+      },
+      {
+        "url": "/art/runtime/145ecad0d356a550dd40a0c2.webp",
+        "encodedBytes": 14554,
+        "transferBytes": 14854,
+        "durationMs": 3
+      },
+      {
+        "url": "/art/runtime/6fcf68c87b39397701bafe30.webp",
+        "encodedBytes": 14496,
+        "transferBytes": 14796,
+        "durationMs": 2.7999999970197678
+      },
+      {
+        "url": "/art/runtime/36c1713585dee6dd3cc87e30.webp",
+        "encodedBytes": 12286,
+        "transferBytes": 12586,
+        "durationMs": 2.9000000059604645
+      },
+      {
+        "url": "/art/runtime/1f908e1db9210b19b52fd191.webp",
+        "encodedBytes": 11706,
+        "transferBytes": 12006,
+        "durationMs": 2.9000000059604645
+      },
+      {
+        "url": "/art/runtime/ec257032bf398152d74d4c4f.webp",
+        "encodedBytes": 15108,
+        "transferBytes": 15408,
+        "durationMs": 5
+      },
+      {
+        "url": "/art/runtime/73110632fae09d24b4eae2d4.webp",
+        "encodedBytes": 13904,
+        "transferBytes": 14204,
+        "durationMs": 5.0999999940395355
+      },
+      {
+        "url": "/art/runtime/d8b9a0fae603d8a876ecafb3.webp",
+        "encodedBytes": 15022,
+        "transferBytes": 15322,
+        "durationMs": 5.299999997019768
+      },
+      {
+        "url": "/art/runtime/66eecdf41be2d2c193173c00.webp",
+        "encodedBytes": 13636,
+        "transferBytes": 13936,
+        "durationMs": 5
+      },
+      {
+        "url": "/art/runtime/295e69e3893eb50900273f6e.webp",
+        "encodedBytes": 10650,
+        "transferBytes": 10950,
+        "durationMs": 2.699999988079071
+      },
+      {
+        "url": "/art/runtime/5dec82f5322f7f299b2ac54f.webp",
+        "encodedBytes": 13328,
+        "transferBytes": 13628,
+        "durationMs": 2.7999999970197678
+      },
+      {
+        "url": "/art/runtime/49f7576071886fa3eb273d45.webp",
+        "encodedBytes": 611574,
+        "transferBytes": 611874,
+        "durationMs": 22.19999998807907
+      },
+      {
+        "url": "/art/runtime/deb4278d529a58db78f400d5.webp",
+        "encodedBytes": 36934,
+        "transferBytes": 37234,
+        "durationMs": 5.200000002980232
+      },
+      {
+        "url": "/art/runtime/87bf53a378926c3095982215.webp",
+        "encodedBytes": 16018,
+        "transferBytes": 16318,
+        "durationMs": 6.4000000059604645
+      },
+      {
+        "url": "/art/runtime/fd1d1098365deb90293e77aa.webp",
+        "encodedBytes": 111614,
+        "transferBytes": 111914,
+        "durationMs": 7.600000008940697
+      },
+      {
+        "url": "/art/runtime/a64ba16df8b15fec96de46a9.webp",
+        "encodedBytes": 10330,
+        "transferBytes": 10630,
+        "durationMs": 9.299999997019768
+      },
+      {
+        "url": "/art/runtime/19c9f35f988e5ce1b628cbed.webp",
+        "encodedBytes": 40120,
+        "transferBytes": 40420,
+        "durationMs": 9.5
+      },
+      {
+        "url": "/art/runtime/0f07ae10cc75dca46ad6d436.webp",
+        "encodedBytes": 2394,
+        "transferBytes": 2694,
+        "durationMs": 9.299999997019768
+      },
+      {
+        "url": "/art/runtime/77f08526b1857272dc5e56a3.webp",
+        "encodedBytes": 6388,
+        "transferBytes": 6688,
+        "durationMs": 9.5
+      },
+      {
+        "url": "/art/runtime/4c30944e4dd4b53117ec2193.webp",
+        "encodedBytes": 16776,
+        "transferBytes": 17076,
+        "durationMs": 10.400000005960464
+      },
+      {
+        "url": "/art/runtime/f4cfe9379e14f687aded9e70.webp",
+        "encodedBytes": 10784,
+        "transferBytes": 11084,
+        "durationMs": 10.699999988079071
+      },
+      {
+        "url": "/art/runtime/a37c6050bff1dc8f4b885432.webp",
+        "encodedBytes": 13188,
+        "transferBytes": 13488,
+        "durationMs": 5.299999997019768
+      },
+      {
+        "url": "/art/runtime/984daaeb7456da0d7df89abc.webp",
+        "encodedBytes": 537902,
+        "transferBytes": 538202,
+        "durationMs": 26.299999997019768
+      },
+      {
+        "url": "/art/runtime/ce92d198c8d0b7bc11a7148a.webp",
+        "encodedBytes": 47132,
+        "transferBytes": 47432,
+        "durationMs": 5.799999997019768
+      },
+      {
+        "url": "/art/runtime/7f0218bd29e1c3648a5e2973.webp",
+        "encodedBytes": 68002,
+        "transferBytes": 68302,
+        "durationMs": 5.5999999940395355
+      },
+      {
+        "url": "/art/runtime/a4c76a667fcbd803b2938767.webp",
+        "encodedBytes": 42010,
+        "transferBytes": 42310,
+        "durationMs": 5.299999997019768
+      },
+      {
+        "url": "/art/runtime/b04401b87336e645ed17ac76.webp",
+        "encodedBytes": 5654,
+        "transferBytes": 5954,
+        "durationMs": 5.399999991059303
+      },
+      {
+        "url": "/art/runtime/9b1335d79c517c354d6f7f3e.webp",
+        "encodedBytes": 11576,
+        "transferBytes": 11876,
+        "durationMs": 3
+      },
+      {
+        "url": "/art/runtime/02757a99ef6313f5f00a93b0.webp",
+        "encodedBytes": 11752,
+        "transferBytes": 12052,
+        "durationMs": 3.0999999940395355
+      },
+      {
+        "url": "/art/runtime/3f553e2473be100ee3933813.webp",
+        "encodedBytes": 11768,
+        "transferBytes": 12068,
+        "durationMs": 3.0999999940395355
+      },
+      {
+        "url": "/art/runtime/864c97d9c14f244d775200d4.webp",
+        "encodedBytes": 11806,
+        "transferBytes": 12106,
+        "durationMs": 3.2000000029802322
+      },
+      {
+        "url": "/art/runtime/5e7d4051ae4b10fd9b7cd90f.webp",
+        "encodedBytes": 12998,
+        "transferBytes": 13298,
+        "durationMs": 1.5
+      },
+      {
+        "url": "/art/runtime/e2fc62cd31b3a9130193b401.webp",
+        "encodedBytes": 503448,
+        "transferBytes": 503748,
+        "durationMs": 6.200000002980232
+      },
+      {
+        "url": "/art/runtime/4bc0c5ef74d2b1243a14e7a0.webp",
+        "encodedBytes": 64554,
+        "transferBytes": 64854,
+        "durationMs": 3.0999999940395355
+      },
+      {
+        "url": "/art/runtime/1891302f888c1bbff2fd0d2a.webp",
+        "encodedBytes": 75144,
+        "transferBytes": 75444,
+        "durationMs": 4.5
+      },
+      {
+        "url": "/art/runtime/3ded131be42085250517317e.webp",
+        "encodedBytes": 22294,
+        "transferBytes": 22594,
+        "durationMs": 5.200000002980232
+      },
+      {
+        "url": "/art/runtime/b9b89036420d993e18de722a.webp",
+        "encodedBytes": 8288,
+        "transferBytes": 8588,
+        "durationMs": 5.700000002980232
+      },
+      {
+        "url": "/art/runtime/b884e97417d21511bdfd3d00.webp",
+        "encodedBytes": 9750,
+        "transferBytes": 10050,
+        "durationMs": 6
+      },
+      {
+        "url": "/art/runtime/1a569491b5422ec963f6ae2e.webp",
+        "encodedBytes": 16542,
+        "transferBytes": 16842,
+        "durationMs": 6
+      },
+      {
+        "url": "/art/runtime/03a6d15ff04b1f25e9ec7d4e.webp",
+        "encodedBytes": 20828,
+        "transferBytes": 21128,
+        "durationMs": 6.799999997019768
+      },
+      {
+        "url": "/art/runtime/865c24af4127ddb71a5f5c78.webp",
+        "encodedBytes": 12478,
+        "transferBytes": 12778,
+        "durationMs": 4.200000002980232
+      },
+      {
+        "url": "/art/runtime/2a01a284aa1be0347cdbbdd4.webp",
+        "encodedBytes": 12454,
+        "transferBytes": 12754,
+        "durationMs": 4.299999997019768
+      },
+      {
+        "url": "/art/runtime/59a0c70adfaf9261ded1c6e1.webp",
+        "encodedBytes": 13122,
+        "transferBytes": 13422,
+        "durationMs": 3.9000000059604645
+      },
+      {
+        "url": "/art/runtime/ea6211d12dda7f024883c656.webp",
+        "encodedBytes": 12516,
+        "transferBytes": 12816,
+        "durationMs": 4.299999997019768
+      },
+      {
+        "url": "/art/runtime/950afe92ba170443c4fb1628.webp",
+        "encodedBytes": 13630,
+        "transferBytes": 13930,
+        "durationMs": 2
+      },
+      {
+        "url": "/art/runtime/fd2445994287e53f209a4c77.webp",
+        "encodedBytes": 14078,
+        "transferBytes": 14378,
+        "durationMs": 1.7999999970197678
+      }
+    ],
+    "canvas": [
+      {
+        "width": 642,
+        "height": 428,
+        "rgbaBytes": 1099104,
+        "poolReservedEstimate": 15587272,
+        "poolPeakEstimate": 15587272,
+        "evictions": 0
+      }
+    ],
+    "viewport": {
+      "width": 1405,
+      "height": 790,
+      "dpr": 1
+    }
+  },
+  "requestedImageRgbaUpperSum": 16290660,
+  "cadence": {
+    "samples": 121,
+    "medianMs": 16.699999999999818,
+    "p95Ms": 16.700000000000273,
+    "over33ms": 0
+  },
+  "scope": "Canvas pool counters reserve estimated decoded RGBA only. SVG/CSS images and browser decoder/GPU overhead are outside that pool. Distinct requested-image RGBA sum is an accounting upper sum, not measured resident GPU memory.",
+  "errors": []
+}

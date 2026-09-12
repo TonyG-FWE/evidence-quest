@@ -3,7 +3,7 @@ import type {State} from '../core/state.js';
 import {store,saves} from '../controller.js';
 import {copy} from '../core/content.js';
 import {Button} from './primitives.js';
-import {assetUrl} from '../world/assets.js';
+import {HomeBackdrop} from './HomeBackdrop.js';
 import {Sprite} from './Sprite.js';
 
 export function SaveStatus({s}:{s:State}){
@@ -18,7 +18,7 @@ export function Home({s}:{s:State}){
  const needsRecovery=['read-error','version','damaged','run'].includes(status),recovery=needsRecovery&&s.runtime.view.action!=='recovery-dismissed';
  useEffect(()=>{heading.current?.focus();},[status]);
  const recoveryCt=status==='version'?'CT.RECOVERY.VERSION':status==='damaged'?'CT.RECOVERY.DAMAGED':status==='run'?'CT.RECOVERY.RUN':'CT.RECOVERY.READ';
- return <div className="home"><div className="home-art" aria-label="Our SparkFest story crew and paper characters" role="img" style={{backgroundImage:`url('${assetUrl('ASSET.ENV.ST.BACKPLATE')}')`}}>
+ return <div className="home"><div className="home-art" aria-label="Our SparkFest story crew and paper characters" role="img"><HomeBackdrop/>
   <div className="home-banner"><small>Made by our crew</small><strong>The Little Bridge</strong></div>
   <div className="home-cast" aria-hidden="true"><Sprite id="ASSET.ACT.REMY" variant="home" className="home-remy"/><Sprite id="ASSET.ACT.JO" variant="talk" className="home-jo"/><Sprite id="ASSET.ACT.ARI" variant="home" className="home-ari"/></div>
   <div className="home-paper-stage" aria-hidden="true"><Sprite id="ASSET.PUP.PIP" variant="waiting"/><span>Our paper story</span><Sprite id="ASSET.PUP.GRANDMA" variant="waiting"/></div>

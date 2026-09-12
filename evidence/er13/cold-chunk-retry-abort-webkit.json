@@ -1,0 +1,21 @@
+{
+  "mode": "abort",
+  "denied": [
+    "http://127.0.0.1:4174/assets/App-BzEahbjQ.js"
+  ],
+  "network": [
+    {
+      "url": "http://127.0.0.1:4174/assets/App-BzEahbjQ.js?eq-retry=cee16a01-ac1f-4528-9036-84c09371282a",
+      "status": 200
+    }
+  ],
+  "failures": [
+    {
+      "url": "http://127.0.0.1:4174/assets/App-BzEahbjQ.js",
+      "error": "Blocked by Web Inspector"
+    }
+  ],
+  "headingObserved": "The festival couldn’t be opened. Try loading it again.",
+  "recovered": true,
+  "saveSlotsUnchanged": true
+}

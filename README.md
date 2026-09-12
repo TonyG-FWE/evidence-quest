@@ -2,7 +2,7 @@
 
 A four-room SparkFest adventure about bringing Loop back and premiering **The Little Bridge**. The player investigates physical sources, retrieves the projector and story kit, rehearses a paper story and launches the crew's premiere.
 
-This private project is implementing the **ER13 experience and literacy correction** to Item 13. It adds a child-controlled story opening, purposeful reading with a local English voice, contextual vocabulary, optional narrator cards and individually replaceable illustrations. See BUILD-STATUS.md for acceptance and remaining dependencies; the earlier first-build checks are historical.
+This private project implements Item 13, TASK11.17 and the **ER13 experience and literacy correction**. It includes a child-controlled story opening, purposeful reading with a local English voice, contextual vocabulary, optional narrator cards and individually replaceable illustrations. See BUILD-STATUS.md for acceptance and remaining dependencies; the earlier first-build checks are historical.
 
 - [Build status and exact next dependency](BUILD-STATUS.md)
 - [ER13 implementation and provider prerequisites](docs/ER13-CORRECTION.md)
@@ -37,12 +37,12 @@ The built same-origin server defaults to `http://127.0.0.1:8787`. Set `PORT` and
 
 The case includes freely chosen correct-first, cancellation and Media-first investigations; independent Loop/kit recovery; readable physical and portable sources; voluntary plans and evidence delivery; native and drag tile operations; unsuccessful consequences, revision, all five valid plans, rehearsal and premiere; Maximum Toast; and factual recap. No clue quota, required explanation or AI approval gates progress.
 
-For browser setup after a clean clone, set `PLAYWRIGHT_BROWSERS_PATH` to `.cache/browsers` and run `.\scripts\npm.cmd exec playwright install chromium firefox webkit`. Default browser checks run the built authored game. Set `EQ_ALL_BROWSERS=1` to include Firefox/WebKit. Development-only lifecycle checks use `EQ_TEST_DEV=1` and `.\scripts\npm.cmd run test:browser -- coach-fault.spec.ts`; they visibly say that responses are scripted. Unset these environment variables when returning to the normal built test run. No test makes a model call.
+For browser setup after a clean clone, set `PLAYWRIGHT_BROWSERS_PATH` to `.cache/browsers` and run `.\scripts\npm.cmd exec playwright install chromium firefox webkit`. Default browser checks run the built authored game. Set `EQ_ALL_BROWSERS=1` to include Firefox/WebKit. Development-only lifecycle checks use `EQ_TEST_DEV=1` and `.\scripts\npm.cmd run test:browser -- coach-fault.spec.ts`; they visibly say that responses are scripted. Unset these environment variables when returning to the normal built test run. No browser test makes a model call.
 
 Browser evidence includes the three fresh routes, all five plans, compact keyboard/touch, native Canvas-failure play, actual IndexedDB recovery/conflict, and one actual Chromium renderer crash. Injected faults and synthetic READY boundary presets are labeled. These checks do not establish live interpretation, participant learning, final illustration qualification or every-device durability.
 
 Saves use this browser origin's IndexedDB. Progress is acknowledged only on transaction completion. Failed, unknown or conflicting records stay intact until explicit replacement; gameplay can continue in memory. Preferences are stored separately from case resets.
 
-Temporary artwork consists of 58 separately replaceable assets and 246 PNG density/variant exports. The current white Jo and approved cast are retained. Illustrated overrides are recorded in content/illustrated-assets.json and replace accepted assets independently; unmodified flat equivalents remain temporary. Only the seven named comparison/timeline/general My ideas states defer beyond this first build; search and story plans are included.
+The 52 accepted source images are preserved unchanged. The production manifest binds 267 lossless WebP/PNG pairs at two source-bounded densities; loading, cache ownership and native image fallback are explicit. Comparison, known-time timeline, private ideas and lead selection are implemented. See [production qualification](docs/PRODUCTION-QUALIFICATION.md) for measured outcomes and the remaining WebKit DPR2 cadence gap. TASK11.19 live evaluation is halted after one authorized provider request returned exhausted credit (1/75 attempts used); authored play remains the default.
 
 No open-source license is granted by this repository. Deployment and public publication are outside the current authorization.

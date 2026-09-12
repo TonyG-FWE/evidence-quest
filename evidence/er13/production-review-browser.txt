@@ -1,0 +1,90 @@
+
+> evidence-quest@0.1.0 test:browser
+> node scripts/test-browser.mjs production.spec.ts
+
+[WebServer] (node:46864) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 9 tests using 1 worker
+
+(node:41560) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium] › browser-tests\production.spec.ts:9:1 › production cold Stage transfer, scene tour, image-cache estimates and frame cadence (25.6s)
+  ok 2 [chromium] › browser-tests\production.spec.ts:22:1 › production SVG image failure is visible and online recovery reloads the actual frame (587ms)
+  ok 3 [chromium] › browser-tests\production.spec.ts:28:1 › production compressed text and immutable images retain authored-only config (43ms)
+  ok 4 [chromium] › browser-tests\production.spec.ts:33:1 › production E2 frozen curled photo remains separate from secured E3 and enlarged tile stays operable (18.5s)
+  ok 5 [chromium] › browser-tests\production.spec.ts:38:1 › production native rail animation preserves focus and exact committed tile order (2.8s)
+  x  6 [chromium] › browser-tests\production.spec.ts:42:36 › production DPR2 lossless WebP room transfers and bounded image residency (23.3s)
+(node:42192) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  7 [chromium] › browser-tests\production.spec.ts:42:36 › production DPR2 PNG fallback room transfers and bounded image residency (24.4s)
+(node:52716) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 8 [chromium] › browser-tests\production.spec.ts:59:1 › production known Loop mission survives kit-only travel and controls stay outside the scene (21.9s)
+  ok 9 [chromium] › browser-tests\production.spec.ts:66:1 › production source enlargement opens its heading and Back above the retained reading position (3.8s)
+
+
+  1) [chromium] › browser-tests\production.spec.ts:42:36 › production DPR2 lossless WebP room transfers and bounded image residency 
+
+    Error: expect(received).toBeLessThanOrEqual(expected)
+
+    Expected: <= 4194304
+    Received:    4197648
+
+      51 |  const byUrl=new Map(frames.flatMap(f=>[[f.url,f.rgbaBytes],...(f.fallbackUrl?[[f.fallbackUrl,f.rgbaBytes]]:[])] as [string,number][])),rgbaUpperSum=unique.reduce((sum,r)=>sum+(r.encodedBytes?byUrl.get(r.url)??0:0),0);
+      52 |  const actualVisits=visits.map((visit,index)=>{const before=index?visits[index-1]!.metrics.resources.length:0,added=visit.metrics.resources.slice(before);return {room:visit.room,encodedBytes:added.reduce((sum,r)=>sum+r.encodedBytes,0),artEncodedBytes:added.filter(r=>r.url.startsWith('/art/runtime/')).reduce((sum,r)=>sum+r.encodedBytes,0),canvas:visit.metrics.canvas};});
+    > 53 |  expect(coldBytes).toBeLessThanOrEqual(4*1024*1024);expect(usableMs).toBeLessThan(5000);expect(actualVisits.slice(1).every(v=>v.artEncodedBytes<=3*1024*1024)).toBe(true);
+         |                    ^
+      54 |  expect(all.canvas.every(c=>c.poolPeakEstimate<=48*1024*1024)).toBe(true);expect(rgbaUpperSum).toBeLessThan(192*1024*1024);expect(unique.filter(r=>r.url.startsWith('/temp/assets/'))).toEqual([]);expect(errors).toEqual([]);
+      55 |  await mkdir('evidence/er13/performance',{recursive:true});await writeFile(`evidence/er13/performance/${info.project.name}-dpr2-${fallback?'png':'webp'}.json`,JSON.stringify({checkedAt:new Date().toISOString(),environment:'Automated browser, this Windows host, loopback, fresh context and DPR2 emulation; no physical mobile device or GPU measurement',fallback,usableMs,coldBytes,codeBytes:unique.filter(r=>/\.(js|css)$/.test(r.url)).reduce((sum,r)=>sum+r.encodedBytes,0),actualVisits,distinctRequestedRgbaUpperSum:rgbaUpperSum,all,errors},null,2)+'\n');
+      56 |  await context.close();
+        at C:\Users\TonyGuillaro\OneDrive - Summit Gov Solutions\Documents\ChatGPT\Evidence quest\browser-tests\production.spec.ts:53:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\raw\production-production-DPR2-d27e8-and-bounded-image-residency-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\raw\production-production-DPR2-d27e8-and-bounded-image-residency-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    output\playwright\raw\production-production-DPR2-d27e8-and-bounded-image-residency-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace output\playwright\raw\production-production-DPR2-d27e8-and-bounded-image-residency-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › browser-tests\production.spec.ts:42:36 › production DPR2 PNG fallback room transfers and bounded image residency 
+
+    Error: expect(received).toBeLessThanOrEqual(expected)
+
+    Expected: <= 4194304
+    Received:    5995417
+
+      51 |  const byUrl=new Map(frames.flatMap(f=>[[f.url,f.rgbaBytes],...(f.fallbackUrl?[[f.fallbackUrl,f.rgbaBytes]]:[])] as [string,number][])),rgbaUpperSum=unique.reduce((sum,r)=>sum+(r.encodedBytes?byUrl.get(r.url)??0:0),0);
+      52 |  const actualVisits=visits.map((visit,index)=>{const before=index?visits[index-1]!.metrics.resources.length:0,added=visit.metrics.resources.slice(before);return {room:visit.room,encodedBytes:added.reduce((sum,r)=>sum+r.encodedBytes,0),artEncodedBytes:added.filter(r=>r.url.startsWith('/art/runtime/')).reduce((sum,r)=>sum+r.encodedBytes,0),canvas:visit.metrics.canvas};});
+    > 53 |  expect(coldBytes).toBeLessThanOrEqual(4*1024*1024);expect(usableMs).toBeLessThan(5000);expect(actualVisits.slice(1).every(v=>v.artEncodedBytes<=3*1024*1024)).toBe(true);
+         |                    ^
+      54 |  expect(all.canvas.every(c=>c.poolPeakEstimate<=48*1024*1024)).toBe(true);expect(rgbaUpperSum).toBeLessThan(192*1024*1024);expect(unique.filter(r=>r.url.startsWith('/temp/assets/'))).toEqual([]);expect(errors).toEqual([]);
+      55 |  await mkdir('evidence/er13/performance',{recursive:true});await writeFile(`evidence/er13/performance/${info.project.name}-dpr2-${fallback?'png':'webp'}.json`,JSON.stringify({checkedAt:new Date().toISOString(),environment:'Automated browser, this Windows host, loopback, fresh context and DPR2 emulation; no physical mobile device or GPU measurement',fallback,usableMs,coldBytes,codeBytes:unique.filter(r=>/\.(js|css)$/.test(r.url)).reduce((sum,r)=>sum+r.encodedBytes,0),actualVisits,distinctRequestedRgbaUpperSum:rgbaUpperSum,all,errors},null,2)+'\n');
+      56 |  await context.close();
+        at C:\Users\TonyGuillaro\OneDrive - Summit Gov Solutions\Documents\ChatGPT\Evidence quest\browser-tests\production.spec.ts:53:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\raw\production-production-DPR2-2c684-and-bounded-image-residency-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\raw\production-production-DPR2-2c684-and-bounded-image-residency-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    output\playwright\raw\production-production-DPR2-2c684-and-bounded-image-residency-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace output\playwright\raw\production-production-DPR2-2c684-and-bounded-image-residency-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2 failed
+    [chromium] › browser-tests\production.spec.ts:42:36 › production DPR2 lossless WebP room transfers and bounded image residency 
+    [chromium] › browser-tests\production.spec.ts:42:36 › production DPR2 PNG fallback room transfers and bounded image residency 
+  7 passed (2.2m)

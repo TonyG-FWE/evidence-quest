@@ -1,5 +1,7 @@
 import ajvRuntime0 from 'ajv/dist/runtime/ucs2length.js';
-import ajvRuntime1 from 'ajv/dist/runtime/equal.js';
+const ajvRuntime0Function = typeof ajvRuntime0 === 'function' ? ajvRuntime0 : ajvRuntime0.default;
+import ajvRuntime2 from 'ajv/dist/runtime/equal.js';
+const ajvRuntime2Function = typeof ajvRuntime2 === 'function' ? ajvRuntime2 : ajvRuntime2.default;
 "use strict";
 export const validateAuthoredContent = validate52;
 const schema19 = {"$id":"urn:evidence-quest:AuthoredContent","$ref":"https://evidence-quest.invalid/contracts/v1#/$defs/AuthoredContent"};
@@ -357,7 +359,7 @@ return errors === 0;
 }
 validate60.evaluated = {"items":true,"dynamicProps":false,"dynamicItems":false};
 
-const func2 = ajvRuntime0.default;
+const func2 = ajvRuntime0Function;
 const pattern3 = new RegExp("^[A-Za-z0-9][A-Za-z0-9._:/-]*$", "u");
 
 function validate57(data, {instancePath="", parentData, parentDataProperty, rootData=data, dynamicAnchors={}}={}){
@@ -13737,7 +13739,7 @@ return errors === 0;
 validate160.evaluated = {"props":true,"dynamicProps":false,"dynamicItems":false};
 
 const schema61 = {"type":"object","properties":{"version":{"const":1},"introBeat":{"type":"integer","minimum":0,"maximum":4},"introDismissed":{"type":"boolean"},"legacyOffer":{"type":"boolean"},"npcIntroductions":{"type":"array","items":{"enum":["ACT.JO","ACT.REMY","ACT.ARI"]},"maxItems":512,"uniqueItems":true},"narratorCard":{"anyOf":[{"enum":["READ.WELCOME","READ.PROMISE","READ.ENDING"]},{"type":"null"}]},"narratorPauses":{"type":"boolean"},"phrases":{"type":"boolean"},"wordContexts":{"type":"array","items":{"type":"string","maxLength":160},"maxItems":512,"uniqueItems":true},"supports":{"type":"array","items":{"type":"string","maxLength":160},"maxItems":512,"uniqueItems":true}},"required":["version","introBeat","introDismissed","legacyOffer","npcIntroductions","narratorCard","narratorPauses","phrases","wordContexts","supports"],"additionalProperties":false};
-const func0 = ajvRuntime1.default;
+const func0 = ajvRuntime2Function;
 
 function validate163(data, {instancePath="", parentData, parentDataProperty, rootData=data, dynamicAnchors={}}={}){
 let vErrors = null;

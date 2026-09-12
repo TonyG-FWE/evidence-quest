@@ -47,6 +47,8 @@ export const additions={
  'CT.ER13.HANDOFF_LOOP':'Bring Loop to its dock. The story kit is on the desk.',
  'CT.ER13.HANDOFF_KIT':'Set the story kit on the desk. Loop is in its dock.',
  'CT.ER13.KIT_THEN_LOOP':'Set the story kit on the desk. Then find Loop and bring it back.',
+ 'CT.ER13.KIT_THEN_KNOWN_LOOP':'Set the story kit on the desk. Then return to the Media room and wake Loop.',
+ 'CT.ER13.RETURN_TO_LOOP':'Return to the Media room and wake Loop so our projector can come back to the Stage.',
  'CT.ER13.LOOP_THEN_KIT':'Bring Loop to its dock. Then collect the story kit.',
  'CT.ER13.RETURN_LOOP':'Bring Loop back to the Stage. The story kit is on the desk.',
  'CT.ER13.WAKE':'Wake Loop so our projector can come back to the Stage.',

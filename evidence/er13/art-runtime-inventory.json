@@ -1,9 +1,14 @@
 {
-  "checkedAt": "2026-09-12T07:15:01.187Z",
-  "bindingCount": 96,
-  "independentFiles": 37,
-  "totalFileBytes": 51346354,
+  "checkedAt": "2026-09-12T09:39:17.454Z",
+  "bindingCount": 180,
+  "independentFiles": 52,
+  "totalFileBytes": 71963514,
   "files": [
+    {
+      "url": "/art/er13/ari-action-poses-v1-alpha.png",
+      "bytes": 1044452,
+      "sha256": "f87761809f8a632435a4241b98b75b0e94296a195214788314331ea6b9ec4a71"
+    },
     {
       "url": "/art/er13/ari-poses-v1.png",
       "bytes": 1025572,
@@ -25,9 +30,19 @@
       "sha256": "ce6738dff33124edcf2bdf3e119e5cf4e9edb85f61de8940456c2e34df54e691"
     },
     {
+      "url": "/art/er13/four-story-tiles-v1.png",
+      "bytes": 1997202,
+      "sha256": "7299e51a2cd927b3566d3789c00422326e9fb9c8a5da8dcb777eaf2b513cb04e"
+    },
+    {
       "url": "/art/er13/grandma-poses-v1.png",
       "bytes": 1454686,
       "sha256": "23eba9c9f15c82c3566206da92c1c6401e78172f825faafd976bd6c21e0f17a8"
+    },
+    {
+      "url": "/art/er13/jo-action-poses-v1-alpha.png",
+      "bytes": 1070767,
+      "sha256": "8fc9d69c22f490ddf3af47686c128ebd66c05eedb1fe65d0e7d6c7cd9608fefd"
     },
     {
       "url": "/art/er13/jo-poses-v1.png",
@@ -40,6 +55,16 @@
       "sha256": "7aff93a39780987a546b2fe32ae44681e45e3c5ab7b1f9256113a032eda4ee0a"
     },
     {
+      "url": "/art/er13/loop-rolling-directions-v1.png",
+      "bytes": 1750452,
+      "sha256": "a163c2932c6a68d0452144320e445d047a788ba34de72eb30988208de15ce105"
+    },
+    {
+      "url": "/art/er13/loop-state-poses-v1.png",
+      "bytes": 1353583,
+      "sha256": "668985a54255d66145a1867c80918a8b7ef2b90fb4d0cea86b1ee97e74e92add"
+    },
+    {
       "url": "/art/er13/media-backplate-v1.png",
       "bytes": 1842841,
       "sha256": "23b739d71cec7673d7402d2103aec3d73780a3a852031d775e48ce704c7bc96c"
@@ -48,6 +73,16 @@
       "url": "/art/er13/media-kit-rack-fresh-v1.png",
       "bytes": 1972981,
       "sha256": "b158b4b00651161330112ae6effad818501c9af7e11bc9745c6ca481450999ac"
+    },
+    {
+      "url": "/art/er13/notice-states-v1.png",
+      "bytes": 1560138,
+      "sha256": "40550f1531b3f82e1681c52a4a6910d65c1f9728df36024113f526ee685cd463"
+    },
+    {
+      "url": "/art/er13/paper-bridge-parts-v1.png",
+      "bytes": 1974628,
+      "sha256": "4a09cd2b6b2f15499153ce2130051a543164b597f786dff12a29bab8e67f2d33"
     },
     {
       "url": "/art/er13/paper-materials-v1.png",
@@ -65,14 +100,44 @@
       "sha256": "04c4adbb47d72d61dac6dd3ea1d1c5cd75b972cba73d602d23e5967262a12121"
     },
     {
+      "url": "/art/er13/player-carry-poses-v1-alpha.png",
+      "bytes": 859926,
+      "sha256": "c90f5182b771f34218dc6e4cd293fb4e782b05fa99a1e89469cdc397fcdb8cd3"
+    },
+    {
       "url": "/art/er13/player-front-v2.png",
       "bytes": 859723,
       "sha256": "66f0f86ab7edf05c3f71f62b716a73f5aeabb3f3e57d96a10f9365b062753122"
     },
     {
+      "url": "/art/er13/player-front-walk-v3-alpha.png",
+      "bytes": 873134,
+      "sha256": "6b23ddb53a034019e9b9ca544354cd683f2a849e20d28e03acea1d2bdfc40962"
+    },
+    {
+      "url": "/art/er13/player-idle-directions-v1-alpha.png",
+      "bytes": 918297,
+      "sha256": "702443c5c0789287273e12ee9478cf5a4adcf063704200843362d91c4761d673"
+    },
+    {
+      "url": "/art/er13/player-left-walk-v3-alpha.png",
+      "bytes": 1005959,
+      "sha256": "a5e93a3474f03bea677d77ae4d295680af2d417739ebb6e5a7757f321cff3324"
+    },
+    {
+      "url": "/art/er13/player-reach-poses-v1-alpha.png",
+      "bytes": 991884,
+      "sha256": "2738aacc5f591ca01a75b3aeee7a7ed743d9914641938a03664459c4308cd069"
+    },
+    {
       "url": "/art/er13/player-right-v2.png",
       "bytes": 917945,
       "sha256": "262ce6f0129bef61f0fe354657414cd1a1662b053570d61564eece237f981517"
+    },
+    {
+      "url": "/art/er13/remy-action-poses-v1-alpha2.png",
+      "bytes": 1134380,
+      "sha256": "be0e8c80b8b19629cb4c5d7465f20b1977ffada97769f4eed492295b61d0bd02"
     },
     {
       "url": "/art/er13/remy-poses-v2.png",
@@ -133,6 +198,16 @@
       "url": "/art/er13/single-wk-bench-cutout-v2.png",
       "bytes": 1499278,
       "sha256": "2070a56ab45f11a40b2c24701de56cc1a8d2323d6f3fafd37ac87ee70b4df5f9"
+    },
+    {
+      "url": "/art/er13/small-interactions-v1.png",
+      "bytes": 1813209,
+      "sha256": "dd92b74815f7c851806d41758cb7829a5c18aec962b54d08d7456d19565ac470"
+    },
+    {
+      "url": "/art/er13/source-carrier-parts-v1.png",
+      "bytes": 2269149,
+      "sha256": "ef0452b58e9e84bf8f618684782b7b0ead0e3d6a204713df2b5b56179c0492ed"
     },
     {
       "url": "/art/er13/stage-backplate-v1.png",

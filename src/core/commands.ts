@@ -1,6 +1,7 @@
 import type { CaseState, Comparison, Draft, Exposure, Order, Point, Preferences, Run, CoachRequest } from '../../contracts/types.js';
 import type { View } from './state.js';
 export type Command =
+ |{type:'FOREGROUND'}|{type:'ACK_FOREGROUND'}
  |{type:'INTRO';action:'next'|'skip'|'open'|'dismiss-legacy'}
  |{type:'READING';id:string;action:'model-played'|'practice'|'self-report'|'card'|'phrases'|'pauses'}
  |{type:'WORD_SEEN';id:string}|{type:'WORD_LOOKUP';id:string}|{type:'SUPPORT_SEEN';id:string}|{type:'COACH_CONFIG';live:boolean}

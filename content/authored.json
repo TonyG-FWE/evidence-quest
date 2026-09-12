@@ -10405,6 +10405,26 @@
       "refs": []
     },
     {
+      "id": "CT.ER13.KIT_THEN_KNOWN_LOOP",
+      "origin": "N",
+      "text": "Set the story kit on the desk. Then return to the Media room and wake Loop.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.RETURN_TO_LOOP",
+      "origin": "N",
+      "text": "Return to the Media room and wake Loop so our projector can come back to the Stage.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
       "id": "CT.ER13.LOOP_THEN_KIT",
       "origin": "N",
       "text": "Bring Loop to its dock. Then collect the story kit.",

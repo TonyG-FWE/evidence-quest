@@ -1,0 +1,56 @@
+
+> evidence-quest@0.1.0 test:contracts
+> npm run build:contracts && tsc -p tsconfig.checks.json && node scripts/prepare-checks.mjs && node --test .cache/checks/checks/*.test.js
+
+
+> evidence-quest@0.1.0 build:contracts
+> node scripts/build-contracts.mjs
+
+Generated 48 schema-linked types and 8 standalone validators.
+✔ authored and direct help count only native display; empty drafts make no request and no invented reading (21.4737ms)
+✔ closed replies stay held; focused fallback survives arrival and wins once over duplicate/late selection (5.9085ms)
+✔ relevant edits tombstone requests; save/focus/settings/movement do not; malformed/timeout fall back (3.6115ms)
+✔ valid current live proposal is still undisplayed until native acknowledgment and rejects hidden source references (2.6288ms)
+✔ schema-linked fixed identity, tuple and puppet types retain selected contracts (0.9271ms)
+✔ E2 source slices cannot turn the first frame or photo into later recording/notice facts (4.9722ms)
+✔ all physical copies share exact canonical E6/E7 and no collection grants their reading (1.6887ms)
+✔ ER13 opening is skippable, persists beats, and adds no source or puzzle outcomes; legacy restore preserves case (8.6952ms)
+✔ ER13 reading and vocabulary records do not imply source reading, fluency, or gameplay success (3.0456ms)
+✔ ER13 live provider uses canonical displayed sources, strict eligible projection, and bounded real fetch path (24.9012ms)
+✔ T.VISIBILITY.RETURN preserves the open private draft, ignores duplicate return and never records a learning outcome (7.0142ms)
+✔ T.VISIBILITY.HIDE/RETURN settles one active cue, preserves mode, and requires explicit Continue after acknowledgment (3.0397ms)
+✔ TASK11.20 image cache shares in-flight decodes, never evicts an active owner, and bounds inactive retained pixels (21.8683ms)
+✔ TASK11.20 high-density images retire after their last owner and canceled old callbacks cannot resurrect a decode (14.2195ms)
+✔ TASK11.20 failed image loads can be retried without an unbounded request loop (30.8459ms)
+✔ TASK11.06 follower follows legal paths, yields at approaches, shares doors once, and remote owners cannot act (103.0064ms)
+✔ TASK11.20 exact-size raster surfaces protect both active renderers and release on resize or source revision (1.2126ms)
+✔ TASK11.20 rejected, incomplete and failed raster allocations cannot retain uncounted surfaces (0.3272ms)
+✔ FIX11.TOOLS empty, text-only and excess Unicode drafts remain private; only actual revisions gain a prior snapshot (15.7396ms)
+✔ FIX11.TOOLS owned comparison slots accept one or same-source details; relationships never change source chronology (23.3566ms)
+✔ FIX11.TOOLS timeline records only displayed metadata; request, notice, recording and post remain different events (8.2718ms)
+✔ FIX11.TOOLS Follow is a private question; explicit Go walks public doors, can stop, and resumes no closed reader (23.1349ms)
+✔ ER13 Stage mission describes each remaining physical handoff without a tile solution (0.8774ms)
+✔ ER13 remembered Loop goal requires the actual visual exposure, not venue knowledge or a visit (25.2346ms)
+✔ FIX11.CUE_RACE all six interruptions and callback orderings preserve exactly one endpoint in rehearsal and show (53.3833ms)
+✔ FIX11.TERMINAL trailing harmless Ferry is consumed once; terminal pause cannot certify or premiere early (4.1972ms)
+✔ fresh constructor is closed-schema valid and immutable; React snapshots retain identity until a command (4.3201ms)
+✔ serialized effect callbacks can dispatch without clobbering an earlier snapshot (0.5254ms)
+✔ transport callbacks allocate a fresh receipt even when given the entire parent envelope (20.9665ms)
+✔ all 65 authored arrangements pass actual run/cue/finalization handlers and captions (72.4287ms)
+✔ interruption settles an active cue once, terminal resume finalizes without replay; edits preserve historical premiere (4.149ms)
+✔ save acknowledgment belongs to its captured case, visit and token; it cannot acknowledge newer edits (0.7991ms)
+✔ all authored approach anchors are reachable without sweeping through any expanded obstacle (0.8742ms)
+✔ retargeting and canceled notice operations cannot commit; fixed movement stays on legal floor (14.1967ms)
+✔ save decoder rejects unknown identities, oversized, malformed, impossible physical and source facts without selective salvage (12.2404ms)
+✔ only a damaged pending playback is salvageable; a damaged historical premiere is not fabricated (1.1617ms)
+✔ disk restoration retires old visit, marks uncertainty, pauses at committed cue boundary without replaying (3.442ms)
+✔ TASK11.20 encoded responses share native/Canvas ownership, bound bytes, and retire only unowned responses (2.13ms)
+✔ TASK11.20 encoded failed responses require retry and canceled old fetches cannot return a revoked URL (0.7768ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 424.8731

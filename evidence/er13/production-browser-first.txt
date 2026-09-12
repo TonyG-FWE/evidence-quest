@@ -1,0 +1,19 @@
+
+> evidence-quest@0.1.0 test:browser
+> node scripts/test-browser.mjs --grep production
+
+[WebServer] (node:18512) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 1 worker
+
+(node:48728) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium] › browser-tests\er13-http.spec.ts:8:1 › ER13 production HTTP client sends only a requested draft and displays a validated synthetic selection (1.1s)
+  ok 2 [chromium] › browser-tests\production.spec.ts:9:1 › production cold Stage transfer, scene tour, image-cache estimates and frame cadence (25.4s)
+  ok 3 [chromium] › browser-tests\production.spec.ts:22:1 › production SVG image failure is visible and online recovery reloads the actual frame (464ms)
+  ok 4 [chromium] › browser-tests\production.spec.ts:28:1 › production compressed text and immutable images retain authored-only config (55ms)
+  ok 5 [chromium] › browser-tests\production.spec.ts:33:1 › production E2 frozen curled photo remains separate from secured E3 and enlarged tile stays operable (18.6s)
+  ok 6 [chromium] › browser-tests\production.spec.ts:38:1 › production native rail animation preserves focus and exact committed tile order (3.0s)
+
+  6 passed (50.5s)

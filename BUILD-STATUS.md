@@ -1,8 +1,8 @@
 # Evidence Quest build status
 
-## Active correction — ER13, completed TASK11.17, continuing final production (2026-09-12)
+## Current checkpoint — ER13 and production qualification (2026-09-12)
 
-The user-approved correction and parent-relayed §8 authorize completing existing TASK11.17 alongside ER13. The historical first-build stop below is superseded. Continue on codex/first-connected in the dedicated Evidence Quest workspace. [Current authority](docs/design/evidence-quest-design-v3/13-EXPERIENCE-AND-LITERACY-CORRECTION.md), SHA-256 e916f7125edd9fe6ab5b60611b45f8f28c37a58383b75cdf23a65e3dad094880. The previous authority and checkpoint remain in Git; [append-only scope verification](evidence/er13/correction-authority-update.json).
+The user-approved correction and parent-relayed §8 authorize completing existing TASK11.17 alongside ER13. The historical first-build stop below is superseded. Continue on codex/first-connected in the dedicated Evidence Quest workspace. [Current authority](docs/design/evidence-quest-design-v3/13-EXPERIENCE-AND-LITERACY-CORRECTION.md), SHA-256 c8f22de816b7220de46a74357c1905de8259ceb9e83bc465514588a732cc291f; later paid-evaluation authorization is §9. The previous authority and checkpoint remain in Git; [append-only scope verification](evidence/er13/correction-authority-update.json).
 
 | ID | Work | Status | Evidence / next action |
 |---|---|---|---|
@@ -10,18 +10,27 @@ The user-approved correction and parent-relayed §8 authorize completing existin
 | ER13.02 | Mission, recap and physical routes | IMPLEMENTED_NATIVE_REVIEWED | Both recovery orders; Stage goals name remaining desk/dock handoffs. Room entry restores the full-room top view. Native closed-reader → travel → reload retained the current room and paused premiere. |
 | ER13.03 | Reading, local speech and narrator cards | IMPLEMENTED_NATIVE_REVIEWED | Three bounded cards, phrases, requested rereading and optional cue pauses; earned ending reading after the completed story. Actual local English speech observed; [voice evidence](evidence/er13/native-speech.json). |
 | ER13.04 | Contextual vocabulary | IMPLEMENTED_NATIVE_REVIEWED | Actual sentence encounter guards, two meanings of still, neutral box/toy-car/library transfer examples. Lookups remain assistance rather than mastery. |
-| ER13.05 | Supporting copy and source fidelity | IMPLEMENTED_NATIVE_REVIEWED | 584 CT entries; every original CT.SRC body and all 35 refs retained. Full E3 omits the old curled description and automatic interpretation. Grouped provenance, two-detail guidance, corrected Toast joke and factual replay wording. [Register](docs/ER13-COPY-REGISTER.md). |
-| ER13.06 | Accepted art and readable motion | DELIVERED_ART_INTEGRATED; ORIGINAL_ART_PARTIAL | All 36 accepted sources plus Stage: 37 PNGs, 96 bindings, 51346354 source bytes. Native planting/flower, caddy and one-slice Toast reviewed. Required original slots/export/clip gaps remain explicit in [the reconciliation](docs/ER13-REMAINING-SCOPE.md). |
-| ER13.07 | Play, regression and recovery | CORRECTION_CHECKS_PASS; FINAL_MATRIX_PENDING | 29 contracts pass, including all 65 orders/five successes and 36 cue races. 24 connected regression checks pass. All 21 TASK11.17 checks and Watch/Toast/rehearsal-after-premiere checks pass across three engines. [Machine ledger](evidence/er13/checkpoint-evidence.json): latest-results union 108/108; successive builds, not one full-suite run. |
-| ER13.08 | Selected-provider coaching | IMPLEMENTED_LOCAL_ONLY | Real Responses adapter and same-origin transport locally verified through synthetic provider responses. No key/config; paid adult evaluation requires explicit authorization and account/model access. Zero live calls. [Prerequisites](docs/ER13-CORRECTION.md). |
+| ER13.05 | Supporting copy and source fidelity | IMPLEMENTED_NATIVE_REVIEWED | 586 CT entries; every original CT.SRC body and all 35 refs retained. Full E3 omits the old curled description and automatic interpretation. Grouped provenance, two-detail guidance, corrected Toast joke and factual replay wording. [Register](docs/ER13-COPY-REGISTER.md). |
+| ER13.06 | Accepted art and readable motion | INTEGRATED_NATIVE_REVIEWED; PERFORMANCE_GAP | 52 unchanged originals, 139 canonical bindings and 267 exact lossless WebP+PNG pairs verified at two source-bounded densities. Native planting/flower, caddy, one-slice Toast and final saved premiere/earned reading reviewed. All 28 original clips have endpoint, interruption and reduced-motion mappings. WebKit DPR2 cadence remains open. |
+| ER13.07 | Play, regression and recovery | FUNCTIONAL_PASS; CADENCE_FAILURES_RECORDED | Final candidate: 39/39 contracts and 63/63 affected browser checks pass. Contracts include all 65 orders/five successes, 36 cue races and foreground pause/draft retention. The isolated format matrix is 13 pass/2 cadence failures. [Machine ledger](evidence/er13/checkpoint-evidence.json): 246 latest named checks across successive builds, with 242 pass, 2 planned skips and 2 failures; not one final full-suite run. |
+| ER13.08 | Selected-provider coaching | BLOCKED_PROVIDER_CREDIT | Exactly one authorized synthetic/adult provider attempt returned HTTP 429, insufficient_quota / credit_balance_exhausted, after 2291 ms. No model selection was returned. Durable ledger records 1/75 attempts used, 74 remaining; no automatic retry or cap reset. [Attempt](evidence/er13/live-evaluation/attempt-001.json). |
 | TASK11.17 | Comparison, timeline and theory tools | COMPLETE | Dependency TASK11.16 complete. Existing seven states and eleven transitions implemented; exact FIX11.TOOLS passes all three engines and independent native tool review passes. [Acceptance](evidence/er13/task17-acceptance.json). |
-| TASK11.18 | Real coaching service integration | COMPLETE_LOCAL_SYNTHETIC | Native fetch adapter and same-origin transport checks pass. Authored public default; .19 live interpretation remains NOT_RUN. |
-| TASK11.20 / ART02–07 | Remaining original art, clips, exports and runtime performance | IN_PROGRESS | [Exact required art handoff](docs/REQUIRED-ART-HANDOFF.md) supplied to parent; builder continues measured density/cache/performance and clip implementation. Accepted-source delivery alone does not close these tasks. |
-| TASK11.21 | Complete browser/access/recovery qualification | PARTIAL_DEPENDENCY_OPEN | Extensive existing regression evidence retained; final candidate matrix depends on .20. Hardware gaps remain explicit. |
+| TASK11.18 | Real coaching service integration | COMPLETE_LOCAL_SYNTHETIC | Native fetch adapter and same-origin transport checks pass. Authored player default. TASK11.19 made one actual provider request but returned no model output because credit was exhausted. |
+| TASK11.19 | Exact selected-provider live evaluation | AUTHORIZED; BLOCKED_PROVIDER_CREDIT | All 27 canonical fixture contexts and durable cap/restart guards passed preflight. The parent submitted the same bounded command through normal approval with direct user authorization; it was approved and made one actual attempt. Provider project funding is required before a coordinated, cap-preserving resume. No further call is underway. |
+| TASK11.ART02–06 | Original production art | INTEGRATED_NATIVE_REVIEWED | Required cast, rooms, props, puppet pieces, tiles and source compositions are connected to their original owners. All accepted original files remain byte-identical. [Reconciliation](docs/ER13-REMAINING-SCOPE.md). |
+| TASK11.ART07 | Clip/export qualification | EXPORT_AND_NATIVE_PASS_PERFORMANCE_OPEN | Exact pixels, native composition and 28-clip review are recorded. The measured cadence gap prevents complete performance acceptance. |
+| TASK11.20 | Final-art runtime performance | IMPLEMENTED_PERFORMANCE_GAP | Final isolated matrix: 13 pass/2 fail. WebKit DPR2 active p95 is 51 ms WebP and 52 ms PNG against the unchanged 33.34 ms limit. Every recorded transfer, code, startup, input, memory, consumer and error criterion otherwise passes. [Qualification](docs/PRODUCTION-QUALIFICATION.md). |
+| TASK11.21 | Complete browser/access/recovery qualification | PARTIAL_RECORDED_FAILURES | Final affected browser checks pass 63/63 across Chromium, Firefox and WebKit. TASK11.20 remains an open dependency. Physical foreground, touch and all-device screen-reader qualification remain NOT_RUN. |
 
-Current next task: protect this reviewed correction with an ordinary commit/push, then continue the user-authorized intended game through existing ART02–07 / TASK11.20 and .21. Parent produces the specifically listed missing original pieces; builder owns remaining runtime clips, measured exports, density-aware loading/cache eviction and final browser qualification. No new story/features, deployment, public publication, paid calls or participant evaluation. Optional ART08 foley remains omitted; ART09 effects remain partial. [Exact original-task boundaries and concrete gaps](evidence/er13/original-plan-reconciliation.json).
+Current next task: qualify the remaining Windows WebKit DPR2 active cadence under the unchanged source-detail and 33.34 ms target. TASK11.20 depends on TASK11.16 and ART07; TASK11.21 depends on TASK11.17, TASK11.18 and TASK11.20. Separately, TASK11.19 awaits provider funding and an explicit, coordinated resume that preserves the 75-attempt cap. No retry or ledger reset is authorized by this checkpoint.
 
-Latest verified private checkpoint before this work: e1422d6d3480017f188ff402b31ee661f169a593. Current code/tests/art/evidence are ready for the next ordinary checkpoint. The independent parent's 4176 save, native review's 4175 save and user's 4173 save are preserved. [Native parent observations](evidence/er13/parent-native-review.md) and browser assertions are separate from participant appeal or learning evidence, which are NOT_RUN. TASK11.19 remains blocked on explicit paid-evaluation authorization and server-only account configuration; it does not block independent art/runtime work.
+ER13.06–08 remain open exactly for these recorded gaps. The parent-approved ordinary checkpoint ends this implementation pass; it does not waive qualification or authorize additional runtime changes or provider calls. The final [31-file parent import](evidence/er13/parent-final-review-import.json) verifies all bytes and preserves the preceding master/review snapshots.
+
+Final candidate App-BzEahbjQ.js / App-CvfCOyJg.css is built and inspected. The 63 affected browser checks, 39 contracts, 5 codec/ledger checks and 52-source/267-pair pixel verification pass. The 15-case format matrix retains its two failures. Across all 12 numerical measurements, maximum raw input is 20.9 ms, initial body transfer 4,700,187 bytes, current conservative memory 81,671,594 bytes and global memory 162,217,072 bytes. Exact static surfaces are bounded at 24 MiB, encoded responses at 8 MiB and decoded Canvas sources at 48 MiB; native consumers, live buffers and response-copy allowance are included separately. These are loopback/DPR-emulation measurements and an active RAF timing proxy, not physical display FPS or measured total GPU memory. [Final evidence and limits](docs/PRODUCTION-QUALIFICATION.md).
+
+All earlier failed candidates and diagnostics remain retained. The original Store publication behavior remains intact after an unsuccessful presentation-snapshot experiment was removed. Optional ART08 foley is omitted and ART09 effects remain partial. Deployment, public publication, child-live activation and participant/learning evaluation are outside this checkpoint.
+
+Previous verified private checkpoint: 589f7f32b42c611b03f190dddb66332c716bfc05. The final implementation/evidence checkpoint is being recorded on the same codex/first-connected branch; [Git verification](evidence/er13/checkpoint-git.json) records the verified remote identity and ref. [Play locally](http://127.0.0.1:4173/). The parent's 4176, builder's 4175 and user's 4173 saves remain at their original origins. Final previews serve the current build with authored coaching and child-live disabled; [restart/ownership evidence](evidence/er13/final-preview-restart.json). [Native parent observations](docs/design/evidence-quest-design-v3/13-experience-correction/PARENT-NATIVE-REVIEW.md) remain separate from browser fixtures and participant evidence.
 
 ## Historical first connected build record
 
@@ -29,7 +38,7 @@ Updated 2026-09-12T03:28:55.692Z. Item 13 / M11.CONNECTED is **COMPLETE for its 
 
 Read this file first on every continuation. Task definitions and dependencies come only from [implementation-plan.json](docs/design/evidence-quest-design-v3/11-build-packet/implementation-plan.json). TASK11.00 is documented complete. This execution is authorized for TASK11.01–16 and normal pushes to a new private TonyG-FWE repository.
 
-## Workspace and setup evidence
+### Historical workspace and setup evidence
 
 - Current dedicated game workspace: C:\Users\TonyGuillaro\OneDrive - Summit Gov Solutions\Documents\ChatGPT\Evidence quest
 - Historical proposed path in the startup packet is superseded by the user's current dedicated workspace boundary. The folder was verified empty except for an unborn Git repository, with no remote and no commits; no nested repository is created.
@@ -40,7 +49,7 @@ Read this file first on every continuation. Task definitions and dependencies co
 - Git author is repository-local Tony Guillaro / `217523024+TonyG-FWE@users.noreply.github.com`, using the verified GitHub account ID. Global test identity and credentials are unchanged.
 - Workspace-local Node 24.21.0 / npm 11.19.0 installed from official archive; SHA-256 `158f7685b44de51f6c0df1d153526cbcd3e1bc739a8dfc607721cef75de9e541` verified. All approved package pins and selected exact type packages were verified against the official npm registry. Clean install, lockfile review and zero-vulnerability audit passed. Use `scripts/npm.cmd` on this host to bypass its broken default npm wrapper and select the prescribed runtime.
 
-## Task progress
+### Historical task progress
 
 | ID | Existing task | Status | Dependencies | Result / evidence |
 |---|---|---|---|---|
@@ -62,7 +71,7 @@ Read this file first on every continuation. Task definitions and dependencies co
 | TASK11.15 | Authored help and coaching lifecycle | COMPLETE | TASK11.09, TASK11.12, TASK11.14 | Authored/direct native assistance and three labeled development lifecycle tests pass, including real admission timeout. Twenty-three eligibility guards and ownership tests pass; no live model call. [Evidence](evidence/coach-fault-final.json). |
 | TASK11.16 | First connected browser milestone | COMPLETE | TASK11.13, TASK11.14, TASK11.15 | 39 production Chromium, 16 Firefox/WebKit and 3 labeled development coaching checks pass across recorded runs. All 65 production-handler orders pass. Actual playable preview inspected; exact first-build and NOT_RUN boundaries recorded. [Evidence](evidence/first-connected-acceptance.md). |
 
-## Verification and boundaries
+### Historical verification and boundaries
 
 **No unresolved blocker remains within TASK11.01–16.** [Acceptance ledger](evidence/first-connected-acceptance.md) maps all 104 required fixture IDs and all 74 original check IDs with their applicable results and remaining qualification boundaries. Its machine record contains exact source/test hashes and per-test outcomes. Superseded test-selector/navigation assumptions and earlier product failures remain visible in the retained reports and [repair record](evidence/integration-repairs.md).
 
@@ -72,10 +81,10 @@ Read this file first on every continuation. Task definitions and dependencies co
 - Q00/Q01 temporary assets are separately replaceable. Current white Jo and the approved rich Item 08 visual target remain required. The seven comparison/timeline/general My ideas states defer to TASK11.17; search/story plans, lead selection and evidence presentation are included.
 - Final art/audio, meaningful live interpretation, child-live eligibility, participant/learning evaluation, deployment, demonstration/submission and public publication remain **NOT_RUN**. Source/client bundles are about 195 KB as static gzip equivalents; Vite still reports its generic 500 KB raw-chunk warning. This is not final-art runtime-performance qualification. Browser faults and one actual renderer crash do not establish all-device durability.
 
-## Current next dependency
+### Historical next dependency at first-build completion
 
 No remaining work within the authorized first connected milestone. **TASK11.17 — Comparison, timeline and theory tools** is the next existing numbered task; TASK11.18 and the named final-art tasks are separate later work. Their statuses remain NOT_STARTED. Do not infer authorization for live calls, final-art production or release from this completion.
 
-## Calibration
+### Historical calibration
 
 Human active minutes and a trustworthy whole-milestone elapsed total remain unknown. Host UTC task events, temporary preparation intervals, browser durations and repair evidence are recorded in [calibration.json](evidence/calibration.json) and [measured-schedule.md](evidence/measured-schedule.md). Overlapping intervals are not summed. Comparable automated route timings calibrate browser execution only, not final-art or future live/evaluation work.

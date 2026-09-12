@@ -1,0 +1,35 @@
+{
+  "recordedAt": "2026-09-12T13:47:57.585Z",
+  "method": "Read actual Git index blobs through cat-file --batch; compare all recorded source/report/metric fingerprints and the exact parent import. Compare configured credential in memory only across every indexed non-binary file, including JSONL, HTML, config and SVG.",
+  "indexedFiles": 1894,
+  "indexedTextFiles": 784,
+  "expectedHashes": 206,
+  "verifiedHashes": 203,
+  "mismatches": [
+    {
+      "path": "content/temp-assets.json",
+      "expected": "881e00bd53ed89f43dcd375d0a3c448ddf7729787c7782ee38adba4e013d8541",
+      "indexed": "93ec8f84a0947147815c72c8c7a725863cca0d7a5bc5dfc3db9025ee9bc57d02",
+      "workingTree": "881e00bd53ed89f43dcd375d0a3c448ddf7729787c7782ee38adba4e013d8541",
+      "lineEndingOnly": true
+    },
+    {
+      "path": "scripts/record-calibration.mjs",
+      "expected": "72f22c5d50355e94ec8bf408b7d8d3d8ffebba8918c3271c04072777a44c7e61",
+      "indexed": "4a0233dafd384481429d21b4aec4437c9e517c9673a9fb08fe1f8dbdcabebf65",
+      "workingTree": "72f22c5d50355e94ec8bf408b7d8d3d8ffebba8918c3271c04072777a44c7e61",
+      "lineEndingOnly": true
+    },
+    {
+      "path": "src/ui/app.css",
+      "expected": "8c518dc7c2847326c054a4e75ebb3fe2bac26c5eed9090be0d293a84e7f64180",
+      "indexed": "8154b43227e6d0856379cc1c24ef9c8ad49cab56bbb91652a0dfb47547e23653",
+      "workingTree": "8c518dc7c2847326c054a4e75ebb3fe2bac26c5eed9090be0d293a84e7f64180",
+      "lineEndingOnly": true
+    }
+  ],
+  "configuredCredentialMatches": [],
+  "boundedCredentialPatternMatches": [],
+  "serverKeyIgnored": true,
+  "serverKeyTracked": false
+}

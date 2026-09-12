@@ -21,7 +21,7 @@ for(const asset of record.assets){
    if(pose.pose==='idle')manifest[asset.assetId+'/home']=entry;
    if(pose.pose==='explain')manifest[asset.assetId+'/talk']=entry;
   }
-  if(asset.assetId==='ASSET.ACT.PLAYER'){
+  if(asset.assetId==='ASSET.ACT.PLAYER'&&/^(right|front|back)\d+$/.test(asset.frames[0].pose)){
    const direction=asset.frames[0].pose.replace(/\d+$/,'');
    const poses=asset.frames.map(p=>{const [x,y,w,h]=p.sourceRect;return {rect:[x,y,x+w,y+h],anchor:p.feetInCrop};});
    for(const facing of direction==='right'?['right','left']:[direction]){
@@ -30,12 +30,28 @@ for(const asset of record.assets){
     for(const action of ['walk','carry'])manifest[asset.assetId+'/'+action+'-'+facing]={...entry,frames:poses};
    }
   }
-  if(asset.assetId==='ASSET.ACT.LOOP'){
+  if(asset.assetId==='ASSET.ACT.PLAYER'&&/^walk-(front|left)-contact/.test(asset.frames[0].pose)){
+   const direction=asset.frames[0].pose.split('-')[1];
+   const poses=asset.frames.map(p=>{const [x,y,w,h]=p.sourceRect;return {rect:[x,y,x+w,y+h],anchor:p.feetInCrop};});
+   manifest[asset.assetId+'/walk-'+direction]={...base,contentRectPixels:poses[0].rect,anchor:poses[0].anchor,frames:poses};
+   manifest[asset.assetId+'/idle-'+direction]={...base,contentRectPixels:poses[0].rect,anchor:poses[0].anchor};
+  }
+  if(asset.assetId==='ASSET.ACT.LOOP'&&asset.frames.some(frame=>frame.pose==='awake')){
    const entry=manifest[asset.assetId+'/awake'];
    for(const variant of ['standby','following','docked','projecting','rolling-left','rolling-right','rolling-front','rolling-back'])manifest[asset.assetId+'/'+variant]={...entry,mirror:variant==='rolling-right'};
   }
+  if(asset.assetId==='ASSET.ACT.LOOP'&&asset.frames[0].pose.startsWith('rolling-'))for(const direction of ['front','back','left','right']){
+   const poses=asset.frames.filter(pose=>pose.pose.startsWith('rolling-'+direction+'-')).map(p=>{const [x,y,w,h]=p.sourceRect;return {rect:[x,y,x+w,y+h],anchor:p.feetInCrop};});
+   if(poses.length!==2)throw Error('Expected the accepted Loop direction pair');
+   manifest[asset.assetId+'/rolling-'+direction]={...base,contentRectPixels:poses[0].rect,anchor:poses[0].anchor,frames:poses};
+  }
  }else manifest[asset.assetId+'/base']=base;
 }
+const bind=(source,targets)=>{const entry=manifest[source];if(!entry)return;for(const target of targets)manifest[target]={...entry};};
+for(const [pose,targets]of Object.entries({door:['ASSET.ENV.DOOR/side','ASSET.ENV.DOOR/north','ASSET.ENV.DOOR/south'],'model-tab':['ASSET.PROP.MODEL.TAB/rest','ASSET.PROP.MODEL.TAB/pulled'],'brief-down':['ASSET.PROP.BRIEF.FLAP/down'],'brief-lifted':['ASSET.PROP.BRIEF.FLAP/lifted'],'drawer-closed':['ASSET.PROP.NOTE.DRAWER/closed'],'drawer-open':['ASSET.PROP.NOTE.DRAWER/open'],'dock-flap-closed':['ASSET.PROP.DOCK.FLAP/closed'],'dock-flap-open':['ASSET.PROP.DOCK.FLAP/open']}))bind('ER13.ATLAS.SMALL_INTERACTIONS/'+pose,targets);
+for(const [pose,targets]of Object.entries({device:['ASSET.PROP.DEVICE/idle','ASSET.PROP.DEVICE/selected','ASSET.PROP.DEVICE/base'],slate:['ASSET.PROP.SLATE/base'],'petal-flat':['ASSET.PROP.PETAL/flat'],'petal-bent':['ASSET.PROP.PETAL/bent'],'clip-latched':['ASSET.PROP.NOTICE.CLIP/latched','ASSET.PROP.NOTICE.CLIP/base'],'clip-released':['ASSET.PROP.NOTICE.CLIP/released']}))bind('ER13.ATLAS.SOURCE_CARRIERS/'+pose,targets);
+for(const tile of ['BLOOM','FERRY','PLANT','BRIDGE'])bind('ER13.ATLAS.STORY_TILES/TILE.'+tile,['ASSET.TILE.'+tile+'/base']);
+for(const [pose,target]of Object.entries({'broken-left':'ASSET.PUP.BROKEN_BRIDGE/left','broken-right':'ASSET.PUP.BROKEN_BRIDGE/right','boat-connector':'ASSET.PUP.JOIN/base'}))bind('ER13.ATLAS.BRIDGE_PARTS/'+pose,[target]);
 if(manifest['ASSET.PROP.CADDY/leaflet']){
  manifest['ASSET.PROP.LEAFLET/sheet']=manifest['ASSET.PROP.CADDY/leaflet'];
  manifest['ASSET.PROP.REQUEST/unfolded']=manifest['ASSET.PROP.CADDY/leaflet'];

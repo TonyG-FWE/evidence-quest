@@ -1,0 +1,58 @@
+[WebServer] (node:51144) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 9 tests using 3 workers
+
+(node:52708) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41852) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:53276) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] 7:47:04 AM [vite] http proxy error: /api/config
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:8787
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)
+[WebServer] 7:47:04 AM [vite] http proxy error: /api/config
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:8787
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)
+[WebServer] 7:47:04 AM [vite] http proxy error: /api/config
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:8787
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)
+  ok 1 [chromium] › browser-tests\coach-fault.spec.ts:5:1 › FIX11.COACH.CLOSED/FOCUS synthetic transport holds hidden reply and stable fallback wins once (12.8s)
+  ok 3 [firefox] › browser-tests\coach-fault.spec.ts:5:1 › FIX11.COACH.CLOSED/FOCUS synthetic transport holds hidden reply and stable fallback wins once (12.4s)
+[WebServer] 7:47:07 AM [vite] http proxy error: /api/config
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:8787
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)
+  ok 2 [webkit] › browser-tests\coach-fault.spec.ts:5:1 › FIX11.COACH.CLOSED/FOCUS synthetic transport holds hidden reply and stable fallback wins once (13.8s)
+[WebServer] 7:47:08 AM [vite] http proxy error: /api/config
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:8787
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)
+[WebServer] 7:47:09 AM [vite] http proxy error: /api/config
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:8787
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)
+[WebServer] 7:47:10 AM [vite] http proxy error: /api/config
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:8787
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)
+  ok 4 [chromium] › browser-tests\coach-fault.spec.ts:11:1 › FIX11.COACH.STALE/TIMEOUT synthetic edit, retry, malformed reply and client deadline preserve gameplay (3.5s)
+[WebServer] 7:47:11 AM [vite] http proxy error: /api/config
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:8787
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)
+[WebServer] 7:47:11 AM [vite] http proxy error: /api/config
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:8787
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)
+  ok 5 [firefox] › browser-tests\coach-fault.spec.ts:11:1 › FIX11.COACH.STALE/TIMEOUT synthetic edit, retry, malformed reply and client deadline preserve gameplay (5.0s)
+[WebServer] 7:47:12 AM [vite] http proxy error: /api/config
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:8787
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)
+[WebServer] 7:47:13 AM [vite] http proxy error: /api/config
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:8787
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)
+  ok 6 [webkit] › browser-tests\coach-fault.spec.ts:11:1 › FIX11.COACH.STALE/TIMEOUT synthetic edit, retry, malformed reply and client deadline preserve gameplay (5.2s)
+[WebServer] 7:47:14 AM [vite] http proxy error: /api/config
+[WebServer] Error: connect ECONNREFUSED 127.0.0.1:8787
+[WebServer]     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:2021:16)
+  ok 7 [chromium] › browser-tests\coach-fault.spec.ts:16:1 › FIX11.COACH.TIMEOUT real development admission timer expires at fifteen seconds without opening the panel (16.6s)
+  ok 8 [firefox] › browser-tests\coach-fault.spec.ts:16:1 › FIX11.COACH.TIMEOUT real development admission timer expires at fifteen seconds without opening the panel (17.2s)
+  ok 9 [webkit] › browser-tests\coach-fault.spec.ts:16:1 › FIX11.COACH.TIMEOUT real development admission timer expires at fifteen seconds without opening the panel (17.5s)
+
+  9 passed (38.2s)

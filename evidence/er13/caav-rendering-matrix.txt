@@ -1,0 +1,64 @@
+[WebServer] (node:54236) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 39 tests using 3 workers
+
+(node:51416) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:412) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:54080) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  2 [chromium] › browser-tests\production.spec.ts:22:1 › production SVG image failure is visible and online recovery reloads the actual frame (901ms)
+  ok  1 [chromium] › browser-tests\compact.spec.ts:19:1 › FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest (8.6s)
+  ok  5 [chromium] › browser-tests\rendering-final.spec.ts:2:1 › TASK11.20 Home uses its actual cover density and a decoded PNG backdrop when WebP fails (2.8s)
+  ok  6 [chromium] › browser-tests\rendering-final.spec.ts:7:1 › TASK11.20 cold failed opaque room retains light wood and explicit Retry replaces incomplete scenery (1.3s)
+  ok  3 [chromium] › browser-tests\acceptance-boundaries.spec.ts:6:67 › FIX11.ACCESS/UNMET 320x568 whole unmet story, note inspection and native revision (13.8s)
+  ok  4 [chromium] › browser-tests\production.spec.ts:33:1 › production E2 frozen curled photo remains separate from secured E3 and enlarged tile stays operable (19.2s)
+  ok  7 [chromium] › browser-tests\rendering-final.spec.ts:10:1 › TASK11.20 live projection retains static ownership, resize invalidates exact surfaces and Stop preserves the cue (9.6s)
+  ok  9 [chromium] › browser-tests\production.spec.ts:38:1 › production native rail animation preserves focus and exact committed tile order (3.2s)
+  ok 10 [chromium] › browser-tests\resilience.spec.ts:22:1 › FIX11.ART_FAILURE missing artwork can retry; failed application chunk has native retry (1.5s)
+  ok 12 [chromium] › browser-tests\resilience.spec.ts:29:1 › FIX11.ART_FAILURE HTTP503 recovers only after explicit Retry and keeps saved bytes (1.6s)
+(node:26224) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  8 [chromium] › browser-tests\acceptance-boundaries.spec.ts:6:67 › FIX11.ACCESS/UNMET 640x360 whole unmet story, note inspection and native revision (14.0s)
+  ok 14 [chromium] › browser-tests\acceptance-boundaries.spec.ts:20:1 › FIX11.ART_FAILURE all Canvas contexts denied still supports a complete native rehearsal and premiere (7.9s)
+(node:41068) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 11 [chromium] › browser-tests\watch-position.spec.ts:9:1 › ER13 Watch start, unmet and completion keep the full consequence visible without moving keyboard focus (13.7s)
+(node:1944) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 16 [firefox] › browser-tests\production.spec.ts:22:1 › production SVG image failure is visible and online recovery reloads the actual frame (2.8s)
+  ok 13 [firefox] › browser-tests\acceptance-boundaries.spec.ts:6:67 › FIX11.ACCESS/UNMET 320x568 whole unmet story, note inspection and native revision (18.3s)
+  ok 15 [firefox] › browser-tests\compact.spec.ts:19:1 › FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest (11.8s)
+  ok 19 [firefox] › browser-tests\rendering-final.spec.ts:2:1 › TASK11.20 Home uses its actual cover density and a decoded PNG backdrop when WebP fails (2.3s)
+  ok 20 [firefox] › browser-tests\rendering-final.spec.ts:7:1 › TASK11.20 cold failed opaque room retains light wood and explicit Retry replaces incomplete scenery (1.6s)
+  ok 17 [firefox] › browser-tests\production.spec.ts:33:1 › production E2 frozen curled photo remains separate from secured E3 and enlarged tile stays operable (20.1s)
+  ok 18 [firefox] › browser-tests\acceptance-boundaries.spec.ts:6:67 › FIX11.ACCESS/UNMET 640x360 whole unmet story, note inspection and native revision (17.1s)
+  ok 21 [firefox] › browser-tests\rendering-final.spec.ts:10:1 › TASK11.20 live projection retains static ownership, resize invalidates exact surfaces and Stop preserves the cue (10.7s)
+  ok 24 [firefox] › browser-tests\resilience.spec.ts:22:1 › FIX11.ART_FAILURE missing artwork can retry; failed application chunk has native retry (3.3s)
+  ok 22 [firefox] › browser-tests\production.spec.ts:38:1 › production native rail animation preserves focus and exact committed tile order (4.6s)
+  ok 25 [firefox] › browser-tests\resilience.spec.ts:29:1 › FIX11.ART_FAILURE HTTP503 recovers only after explicit Retry and keeps saved bytes (3.0s)
+(node:2940) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 23 [firefox] › browser-tests\acceptance-boundaries.spec.ts:20:1 › FIX11.ART_FAILURE all Canvas contexts denied still supports a complete native rehearsal and premiere (10.4s)
+(node:50228) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 26 [firefox] › browser-tests\watch-position.spec.ts:9:1 › ER13 Watch start, unmet and completion keep the full consequence visible without moving keyboard focus (16.4s)
+(node:34188) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 29 [webkit] › browser-tests\production.spec.ts:22:1 › production SVG image failure is visible and online recovery reloads the actual frame (1.3s)
+  ok 28 [webkit] › browser-tests\compact.spec.ts:19:1 › FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest (12.1s)
+  ok 31 [webkit] › browser-tests\rendering-final.spec.ts:2:1 › TASK11.20 Home uses its actual cover density and a decoded PNG backdrop when WebP fails (3.8s)
+  ok 32 [webkit] › browser-tests\rendering-final.spec.ts:7:1 › TASK11.20 cold failed opaque room retains light wood and explicit Retry replaces incomplete scenery (2.1s)
+  ok 27 [webkit] › browser-tests\acceptance-boundaries.spec.ts:6:67 › FIX11.ACCESS/UNMET 320x568 whole unmet story, note inspection and native revision (22.0s)
+  ok 33 [webkit] › browser-tests\rendering-final.spec.ts:10:1 › TASK11.20 live projection retains static ownership, resize invalidates exact surfaces and Stop preserves the cue (14.2s)
+  ok 30 [webkit] › browser-tests\production.spec.ts:33:1 › production E2 frozen curled photo remains separate from secured E3 and enlarged tile stays operable (21.2s)
+  ok 35 [webkit] › browser-tests\resilience.spec.ts:22:1 › FIX11.ART_FAILURE missing artwork can retry; failed application chunk has native retry (2.9s)
+  ok 37 [webkit] › browser-tests\resilience.spec.ts:29:1 › FIX11.ART_FAILURE HTTP503 recovers only after explicit Retry and keeps saved bytes (2.5s)
+  ok 36 [webkit] › browser-tests\production.spec.ts:38:1 › production native rail animation preserves focus and exact committed tile order (5.7s)
+  ok 34 [webkit] › browser-tests\acceptance-boundaries.spec.ts:6:67 › FIX11.ACCESS/UNMET 640x360 whole unmet story, note inspection and native revision (21.9s)
+  ok 39 [webkit] › browser-tests\acceptance-boundaries.spec.ts:20:1 › FIX11.ART_FAILURE all Canvas contexts denied still supports a complete native rehearsal and premiere (11.3s)
+  ok 38 [webkit] › browser-tests\watch-position.spec.ts:9:1 › ER13 Watch start, unmet and completion keep the full consequence visible without moving keyboard focus (16.2s)
+
+  39 passed (2.2m)

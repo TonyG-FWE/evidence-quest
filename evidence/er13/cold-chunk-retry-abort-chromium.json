@@ -1,0 +1,21 @@
+{
+  "mode": "abort",
+  "denied": [
+    "http://127.0.0.1:4174/assets/App-BzEahbjQ.js"
+  ],
+  "network": [
+    {
+      "url": "http://127.0.0.1:4174/assets/App-BzEahbjQ.js?eq-retry=c765c9fb-0bd2-4f6e-9185-34462372cfe6",
+      "status": 200
+    }
+  ],
+  "failures": [
+    {
+      "url": "http://127.0.0.1:4174/assets/App-BzEahbjQ.js",
+      "error": "net::ERR_FAILED"
+    }
+  ],
+  "headingObserved": "The festival couldn’t be opened. Try loading it again.",
+  "recovered": true,
+  "saveSlotsUnchanged": true
+}

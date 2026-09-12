@@ -68,3 +68,10 @@ test('ER13 Stage mission describes each remaining physical handoff without a til
  c.physical.caddyHost='ST.RACK.BAY';assert.equal(goal(c),'CT.ER13.HANDOFF_LOOP');c.physical.caddyHost='MD.RACK.STATION';assert.equal(goal(c),'CT.ER13.LOOP_THEN_KIT');
  c.physical.caddyHost='ACT.PLAYER';c.physical.loop.mode='docked';assert.equal(goal(c),'CT.ER13.HANDOFF_KIT');c.physical.caddyHost='ST.RACK.BAY';assert.equal(goal(c),'CT.GOAL.REHEARSE');
 });
+
+test('ER13 remembered Loop goal requires the actual visual exposure, not venue knowledge or a visit',()=>{
+ const h=game();h.send({type:'VIEW',view:{page:'map'}});h.expose('NAV.MEDIA');assert.equal(goal(h.get().case),'CT.GOAL.SEARCH');
+ h.target('ST.EXIT.WK');h.target('WK.EXIT.MD');h.target('MD.EXIT.WK');assert.equal(goal(h.get().case),'CT.GOAL.SEARCH');
+ h.target('WK.EXIT.MD');const part=parts.get('E5.c/seen')!;h.send({type:'EXPOSE',exposure:{refId:part.refId,ctId:part.ctId,spans:part.spans,visualComplete:true,viaAccessId:'SC.MD'}});h.target('MD.EXIT.WK');assert.equal(goal(h.get().case),'CT.ER13.RETURN_TO_LOOP');
+ const c=structuredClone(h.get().case);c.physical.room='SC.ST';c.physical.caddyHost='ACT.PLAYER';assert.equal(goal(c),'CT.ER13.KIT_THEN_KNOWN_LOOP');
+});

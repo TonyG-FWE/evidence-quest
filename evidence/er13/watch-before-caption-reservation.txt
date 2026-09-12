@@ -1,0 +1,35 @@
+[WebServer] (node:24268) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 12 tests using 3 workers
+
+(node:12300) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:50532) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:47028) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chromium] › browser-tests\compact.spec.ts:19:1 › FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest (8.3s)
+(node:38612) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  3 [chromium] › browser-tests\acceptance-boundaries.spec.ts:6:67 › FIX11.ACCESS/UNMET 320x568 whole unmet story, note inspection and native revision (13.7s)
+  ok  2 [chromium] › browser-tests\watch-position.spec.ts:9:1 › ER13 Watch start, unmet and completion keep the full consequence visible without moving keyboard focus (14.1s)
+(node:47720) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  6 [firefox] › browser-tests\compact.spec.ts:19:1 › FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest (10.9s)
+  ok  5 [chromium] › browser-tests\acceptance-boundaries.spec.ts:6:67 › FIX11.ACCESS/UNMET 640x360 whole unmet story, note inspection and native revision (13.5s)
+  ok  4 [firefox] › browser-tests\acceptance-boundaries.spec.ts:6:67 › FIX11.ACCESS/UNMET 320x568 whole unmet story, note inspection and native revision (18.1s)
+(node:36924) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  7 [firefox] › browser-tests\watch-position.spec.ts:9:1 › ER13 Watch start, unmet and completion keep the full consequence visible without moving keyboard focus (15.6s)
+(node:23632) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  8 [firefox] › browser-tests\acceptance-boundaries.spec.ts:6:67 › FIX11.ACCESS/UNMET 640x360 whole unmet story, note inspection and native revision (16.6s)
+(node:21604) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  9 [webkit] › browser-tests\acceptance-boundaries.spec.ts:6:67 › FIX11.ACCESS/UNMET 320x568 whole unmet story, note inspection and native revision (21.1s)
+  ok 10 [webkit] › browser-tests\compact.spec.ts:19:1 › FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest (11.6s)
+  ok 11 [webkit] › browser-tests\watch-position.spec.ts:9:1 › ER13 Watch start, unmet and completion keep the full consequence visible without moving keyboard focus (16.0s)
+  ok 12 [webkit] › browser-tests\acceptance-boundaries.spec.ts:6:67 › FIX11.ACCESS/UNMET 640x360 whole unmet story, note inspection and native revision (20.2s)
+
+  12 passed (1.2m)

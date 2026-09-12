@@ -22,6 +22,7 @@ store.subscribe(()=>{const view=store.getSnapshot().runtime.view;if(view.page!==
 let previous=performance.now();
 function frame(now:number){const elapsed=now-previous;previous=now;const s=store.getSnapshot();if(!document.hidden&&(s.runtime.toastElapsed!==null||s.runtime.intent||s.session.heldKeys.length||s.case.playback?.status==='running'||s.case.physical.loop.mode==='following'))store.send({type:'TICK',ms:elapsed});requestAnimationFrame(frame);}
 requestAnimationFrame(frame);
-document.addEventListener('visibilitychange',()=>{if(document.hidden){store.send({type:'BACKGROUND'});saves.flush();}previous=performance.now();});
+document.addEventListener('visibilitychange',()=>{if(document.hidden){store.send({type:'BACKGROUND'});saves.flush();}else store.send({type:'FOREGROUND'});previous=performance.now();});
 window.addEventListener('blur',()=>store.send({type:'BACKGROUND'}));
+window.addEventListener('focus',()=>{if(!document.hidden)store.send({type:'FOREGROUND'});previous=performance.now();});
 window.addEventListener('pagehide',()=>{store.send({type:'BACKGROUND'});saves.flush();});

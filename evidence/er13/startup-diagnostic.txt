@@ -1,0 +1,55 @@
+
+> evidence-quest@0.1.0 test:browser
+> node scripts/test-browser.mjs startup-diagnostic.spec.ts
+
+[WebServer] (node:31060) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 1 test using 1 worker
+
+(node:51460) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [chromium] › browser-tests\startup-diagnostic.spec.ts:2:1 › production startup diagnostic (3.2s)
+
+
+  1) [chromium] › browser-tests\startup-diagnostic.spec.ts:2:1 › production startup diagnostic ─────
+
+    Error: Evidence Quest client module failed TypeError: O is not a function
+        at Ge (http://127.0.0.1:4174/assets/App-cbJ576fH.js:1:177845)
+        at ot (http://127.0.0.1:4174/assets/App-cbJ576fH.js:1:288406)
+        at Zt (http://127.0.0.1:4174/assets/App-cbJ576fH.js:1:296126)
+        at http://127.0.0.1:4174/assets/App-cbJ576fH.js:1:532453
+    expect(locator).toBeVisible() failed
+
+    Locator: getByRole('button', { name: 'Join the crew', exact: true })
+    Expected: visible
+    Timeout: 3000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" with timeout 3000ms
+      - waiting for getByRole('button', { name: 'Join the crew', exact: true })
+
+        at Ge (http://127.0.0.1:4174/assets/App-cbJ576fH.js:1:177845)
+        at ot (http://127.0.0.1:4174/assets/App-cbJ576fH.js:1:288406)
+        at Zt (http://127.0.0.1:4174/assets/App-cbJ576fH.js:1:296126)
+        at http://127.0.0.1:4174/assets/App-cbJ576fH.js:1:532453
+        at C:\Users\TonyGuillaro\OneDrive - Summit Gov Solutions\Documents\ChatGPT\Evidence quest\browser-tests\startup-diagnostic.spec.ts:4:137
+        at C:\Users\TonyGuillaro\OneDrive - Summit Gov Solutions\Documents\ChatGPT\Evidence quest\browser-tests\startup-diagnostic.spec.ts:4:2
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\raw\startup-diagnostic-production-startup-diagnostic-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\raw\startup-diagnostic-production-startup-diagnostic-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    output\playwright\raw\startup-diagnostic-production-startup-diagnostic-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace output\playwright\raw\startup-diagnostic-production-startup-diagnostic-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  1 failed
+    [chromium] › browser-tests\startup-diagnostic.spec.ts:2:1 › production startup diagnostic ──────

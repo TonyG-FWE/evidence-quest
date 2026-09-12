@@ -1,5 +1,7 @@
 # Required original-art slots
 
+All slots below are now delivered and integrated. This historical request preserves original IDs and bounds. Current [export verification](../evidence/er13/production-art-verification.json) and [remaining qualification](ER13-REMAINING-SCOPE.md) supersede its old delivery status.
+
 Exact remaining original ART02–07 slots for parent production; continue existing workspace. Not a new gameplay design. Full variant descriptions, original master dimensions, attachment anchors and every physical binding are in [the exact production record](../evidence/er13/required-art-handoff.json). Do not divide delivered atlases into equal cells without explicit rectangles.
 
 | Asset ID | Required variants / original cel counts | Aspect, anchor and logical bounds |

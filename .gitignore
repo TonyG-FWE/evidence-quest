@@ -17,3 +17,8 @@ Thumbs.db
 .DS_Store
 __pycache__/
 *.pyc
+
+output/playwright/*-raw/
+output/playwright/input-diagnostic/
+evidence/er13/preview-*-stdout.txt
+evidence/er13/preview-*-stderr.txt

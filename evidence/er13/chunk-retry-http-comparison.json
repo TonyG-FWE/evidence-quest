@@ -1,0 +1,52 @@
+[
+  {
+    "mode": "http",
+    "events": [
+      {
+        "request": "http://127.0.0.1:4177/assets/App-DJ8u0fG2.js"
+      },
+      {
+        "request": "http://127.0.0.1:4177/assets/App-BUgh_hdR.css"
+      },
+      {
+        "response": "http://127.0.0.1:4177/assets/App-DJ8u0fG2.js",
+        "status": 503
+      },
+      {
+        "response": "http://127.0.0.1:4177/assets/App-BUgh_hdR.css",
+        "status": 200
+      },
+      {
+        "request": "http://127.0.0.1:4177/assets/App-BUgh_hdR.css"
+      },
+      {
+        "response": "http://127.0.0.1:4177/assets/App-BUgh_hdR.css",
+        "status": 200
+      }
+    ],
+    "retryBody": "The festival couldn’t be opened. Try loading it again.\nRetry"
+  },
+  {
+    "mode": "inspector",
+    "events": [
+      {
+        "request": "http://127.0.0.1:4177/assets/App-DJ8u0fG2.js"
+      },
+      {
+        "request": "http://127.0.0.1:4177/assets/App-BUgh_hdR.css"
+      },
+      {
+        "response": "http://127.0.0.1:4177/assets/App-BUgh_hdR.css",
+        "status": 200
+      },
+      {
+        "request": "http://127.0.0.1:4177/assets/App-BUgh_hdR.css"
+      },
+      {
+        "response": "http://127.0.0.1:4177/assets/App-BUgh_hdR.css",
+        "status": 200
+      }
+    ],
+    "retryBody": "The festival couldn’t be opened. Try loading it again.\nRetry"
+  }
+]

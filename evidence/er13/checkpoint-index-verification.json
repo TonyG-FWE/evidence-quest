@@ -1,0 +1,13 @@
+{
+  "recordedAt": "2026-09-12T13:50:38.197Z",
+  "method": "Read actual Git index blobs through cat-file --batch; compare all recorded source/report/metric fingerprints and the exact parent import. Compare configured credential in memory only across every indexed non-binary file, including JSONL, HTML, config and SVG.",
+  "indexedFiles": 1898,
+  "indexedTextFiles": 788,
+  "expectedHashes": 206,
+  "verifiedHashes": 206,
+  "mismatches": [],
+  "configuredCredentialMatches": [],
+  "boundedCredentialPatternMatches": [],
+  "serverKeyIgnored": true,
+  "serverKeyTracked": false
+}

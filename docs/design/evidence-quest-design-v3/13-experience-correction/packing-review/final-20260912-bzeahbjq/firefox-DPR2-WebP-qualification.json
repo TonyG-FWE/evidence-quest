@@ -1,0 +1,5679 @@
+{
+  "at": "2026-09-12T13:09:29.796Z",
+  "authority": {
+    "path": "docs/design/evidence-quest-design-v3/13-EXPERIENCE-AND-LITERACY-CORRECTION.md",
+    "sha256": "c8f22de816b7220de46a74357c1905de8259ceb9e83bc465514588a732cc291f"
+  },
+  "density": 2,
+  "format": "WebP",
+  "usableMs": 1288,
+  "coldBytes": 3587132,
+  "codeBytes": 213758,
+  "transferLimits": {
+    "initial": 4194304,
+    "room": 3145728
+  },
+  "transfers": [
+    {
+      "room": "SC.ST",
+      "encodedBytes": 3587132,
+      "artEncodedBytes": 3373198,
+      "reportedNetworkBytes": 3601232
+    },
+    {
+      "room": "SC.CY",
+      "encodedBytes": 2901640,
+      "artEncodedBytes": 2901640,
+      "reportedNetworkBytes": 2908840
+    },
+    {
+      "room": "SC.ST",
+      "encodedBytes": 0,
+      "artEncodedBytes": 0,
+      "reportedNetworkBytes": 0
+    },
+    {
+      "room": "SC.WK",
+      "encodedBytes": 1931908,
+      "artEncodedBytes": 1931908,
+      "reportedNetworkBytes": 1934008
+    },
+    {
+      "room": "SC.MD",
+      "encodedBytes": 2208098,
+      "artEncodedBytes": 2208098,
+      "reportedNetworkBytes": 2160954
+    },
+    {
+      "room": "SC.WK",
+      "encodedBytes": 248578,
+      "artEncodedBytes": 248578,
+      "reportedNetworkBytes": 103764
+    },
+    {
+      "room": "SC.ST",
+      "encodedBytes": 0,
+      "artEncodedBytes": 0,
+      "reportedNetworkBytes": 0
+    }
+  ],
+  "inputPixelMs": 11,
+  "inputTiming": {
+    "pixelMs": 11,
+    "baselineReadbackMs": 4,
+    "frames": [
+      {
+        "eventToRafMs": 10,
+        "readbackMs": 1,
+        "changed": true
+      }
+    ]
+  },
+  "activeCadence": {
+    "frames": [
+      0.1799999999998363,
+      16.360000000000127,
+      16.980000000000018,
+      13.38000000000011,
+      19.980000000000018,
+      16.40000000000009,
+      17,
+      13.379999999999654,
+      19.940000000000055,
+      16.440000000000055,
+      16.980000000000018,
+      13.360000000000127,
+      18.199999999999818,
+      18.18000000000029,
+      16.9399999999996,
+      13.420000000000073,
+      18.18000000000029,
+      18.2199999999998,
+      16.90000000000009,
+      16.659999999999854,
+      16.720000000000255,
+      16.460000000000036,
+      16.879999999999654,
+      13.5,
+      18.16000000000031,
+      18.2199999999998,
+      16.860000000000127,
+      13.5,
+      18.139999999999873,
+      18.26000000000022,
+      16.81999999999971,
+      16.68000000000029,
+      15.099999999999909,
+      18.179999999999836,
+      16.820000000000164,
+      13.480000000000018,
+      18.23999999999978,
+      18.16000000000031,
+      16.799999999999727,
+      13.579999999999927,
+      18.18000000000029,
+      18.199999999999818,
+      16.7199999999998,
+      13.620000000000346,
+      18.159999999999854,
+      18.2199999999998,
+      16.740000000000236,
+      13.639999999999873,
+      18.18000000000029,
+      18.179999999999836,
+      16.759999999999764,
+      13.640000000000327,
+      18.139999999999873,
+      18.179999999999836,
+      16.68000000000029,
+      13.679999999999836,
+      18.220000000000255,
+      18.159999999999854,
+      16.73999999999978,
+      17.640000000000327,
+      14.259999999999764,
+      18.079999999999927,
+      16.740000000000236,
+      13.659999999999854,
+      18.179999999999836,
+      18.18000000000029,
+      16.639999999999873,
+      13.740000000000236,
+      18.2199999999998,
+      18.059999999999945,
+      16.700000000000273,
+      13.779999999999745,
+      18.200000000000273,
+      18.079999999999927,
+      16.659999999999854,
+      13.800000000000182,
+      18.199999999999818,
+      18.11999999999989,
+      16.61999999999989,
+      13.800000000000182,
+      18.199999999999818,
+      18.04000000000042,
+      16.659999999999854,
+      13.860000000000127,
+      18.199999999999818,
+      17.980000000000018,
+      16.699999999999818,
+      13.860000000000127,
+      18.179999999999836,
+      18,
+      16.68000000000029,
+      13.88000000000011,
+      18.2199999999998,
+      17.940000000000055,
+      16.659999999999854,
+      16.720000000000255,
+      15.399999999999636,
+      17.940000000000055,
+      16.68000000000029,
+      13.920000000000073,
+      18.2199999999998,
+      17.90000000000009,
+      16.659999999999854,
+      13.980000000000018,
+      18.199999999999818,
+      17.880000000000564,
+      16.73999999999978,
+      13.9399999999996,
+      18.18000000000029,
+      17.899999999999636,
+      16.640000000000327,
+      14,
+      18.199999999999818,
+      17.840000000000146,
+      16.659999999999854,
+      14.0600000000004,
+      18.199999999999818,
+      17.840000000000146,
+      16.659999999999854,
+      14.0600000000004,
+      18.199999999999818
+    ],
+    "startedAt": 2360,
+    "endedAt": 4368,
+    "startLabel": "The river separates the starting bank on the left from Grandma’s hill on the right. The old footbridge is broken. Pip is on the left bank, wearing the backpack you made. Grandma waits on the hill across the river. The loose seed is on the left bank. It is dark. The little boats are separate.",
+    "endLabel": "The river separates the starting bank on the left from Grandma’s hill on the right. The old footbridge is broken. Pip is on Grandma’s hill, wearing the backpack you made. Pip and Grandma are together on the hill. The seed is on the hill with Grandma. It is still loose and dark. The joined boats stretch across the river.",
+    "changedStoryPixels": true,
+    "canvases": 2
+  },
+  "cadence": {
+    "samples": 121,
+    "medianMs": 16.820000000000164,
+    "p95Ms": 18.2199999999998,
+    "over33ms": 0
+  },
+  "memory": {
+    "allRequestedRgba": 54867728,
+    "maxCurrent": 77775808,
+    "maxNative": 364800,
+    "maxBacking": 11004288,
+    "maxRaster": 12647116,
+    "maxEncoded": 8382922,
+    "globalConservative": 162217072,
+    "currentLimit": 100663296,
+    "globalLimit": 201326592
+  },
+  "snapshots": [
+    {
+      "resources": [
+        {
+          "url": "/assets/index-CNmoZ-9P.js",
+          "encodedBytes": 57532,
+          "transferBytes": 57832,
+          "durationMs": 17
+        },
+        {
+          "url": "/assets/index-D7U2vX1x.css",
+          "encodedBytes": 1042,
+          "transferBytes": 1342,
+          "durationMs": 18
+        },
+        {
+          "url": "/favicon.ico",
+          "encodedBytes": 32,
+          "transferBytes": 332,
+          "durationMs": 174
+        },
+        {
+          "url": "/assets/App-BzEahbjQ.js",
+          "encodedBytes": 150641,
+          "transferBytes": 150941,
+          "durationMs": 14
+        },
+        {
+          "url": "/assets/App-CvfCOyJg.css",
+          "encodedBytes": 4543,
+          "transferBytes": 4843,
+          "durationMs": 15
+        },
+        {
+          "url": "/api/config",
+          "encodedBytes": 144,
+          "transferBytes": 444,
+          "durationMs": 57
+        },
+        {
+          "url": "/art/runtime/fbdbada95f20805dc7481080.webp",
+          "encodedBytes": 51008,
+          "transferBytes": 51308,
+          "durationMs": 40
+        },
+        {
+          "url": "/art/runtime/52ff9390c4cd1586d81379e4.webp",
+          "encodedBytes": 55904,
+          "transferBytes": 56204,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/ee717210e31d289b1f18a8fa.webp",
+          "encodedBytes": 51344,
+          "transferBytes": 51644,
+          "durationMs": 42
+        },
+        {
+          "url": "/art/runtime/5236eb83877343905b37043e.webp",
+          "encodedBytes": 1280088,
+          "transferBytes": 1280388,
+          "durationMs": 44
+        },
+        {
+          "url": "/art/runtime/07048b9f7fe30aeb42aa37c9.webp",
+          "encodedBytes": 69622,
+          "transferBytes": 69922,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/f4fe130b2a0429ae9416ee33.webp",
+          "encodedBytes": 61094,
+          "transferBytes": 61394,
+          "durationMs": 43
+        },
+        {
+          "url": "/art/runtime/1d1ee86f05052f73ceb34023.webp",
+          "encodedBytes": 243700,
+          "transferBytes": 244000,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/4146f22a4ed5621c2d79683d.webp",
+          "encodedBytes": 70546,
+          "transferBytes": 70846,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/2be933ad2350bda7c55d02e9.webp",
+          "encodedBytes": 120432,
+          "transferBytes": 120732,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/2387c2868ca1ccc2a206b7b5.webp",
+          "encodedBytes": 14096,
+          "transferBytes": 14396,
+          "durationMs": 9
+        },
+        {
+          "url": "/art/runtime/682d0e0eba401f4f708aeb98.webp",
+          "encodedBytes": 33572,
+          "transferBytes": 33872,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/1762cebafb4cb92d8e6705d3.webp",
+          "encodedBytes": 15720,
+          "transferBytes": 16020,
+          "durationMs": 12
+        },
+        {
+          "url": "/art/runtime/a9fba8e5b6900a5994905a54.webp",
+          "encodedBytes": 313300,
+          "transferBytes": 313600,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/cd1874ddd8944a8dfdab97cb.webp",
+          "encodedBytes": 19596,
+          "transferBytes": 19896,
+          "durationMs": 12
+        },
+        {
+          "url": "/art/runtime/5fee5be1403cf1c714c8b9ce.webp",
+          "encodedBytes": 63978,
+          "transferBytes": 64278,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/8e1384d8e9f9ae46f7eb04c3.webp",
+          "encodedBytes": 46388,
+          "transferBytes": 46688,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/780240c12e0600652987d150.webp",
+          "encodedBytes": 36210,
+          "transferBytes": 36510,
+          "durationMs": 18
+        },
+        {
+          "url": "/art/runtime/1be59efb6f7bd575b278cd5b.webp",
+          "encodedBytes": 143392,
+          "transferBytes": 143692,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/9084bd424517427956b36c8b.webp",
+          "encodedBytes": 45474,
+          "transferBytes": 45774,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/ae6ca396772773d2d43f8ab0.webp",
+          "encodedBytes": 41962,
+          "transferBytes": 42262,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/39e76eccca4ccf92d0595a96.webp",
+          "encodedBytes": 177266,
+          "transferBytes": 177566,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/284836e569a1dc4918906e11.webp",
+          "encodedBytes": 2832,
+          "transferBytes": 3132,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/3a06b2576cf37c29e20bf2c9.webp",
+          "encodedBytes": 2960,
+          "transferBytes": 3260,
+          "durationMs": 31
+        },
+        {
+          "url": "/art/runtime/0a00d83e289589747b29737d.webp",
+          "encodedBytes": 4180,
+          "transferBytes": 4480,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/1f3ade0a4f65eee03c7d6d91.webp",
+          "encodedBytes": 4310,
+          "transferBytes": 4610,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/8d0d39604e164acbb04f8567.webp",
+          "encodedBytes": 20482,
+          "transferBytes": 20782,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/c9c1a89dd124e976dbef2332.webp",
+          "encodedBytes": 18382,
+          "transferBytes": 18682,
+          "durationMs": 34
+        },
+        {
+          "url": "/art/runtime/b73db10c12d56cfb06d2ac9f.webp",
+          "encodedBytes": 1294,
+          "transferBytes": 1594,
+          "durationMs": 35
+        },
+        {
+          "url": "/art/runtime/368ad626ae1f6a0a513e8318.webp",
+          "encodedBytes": 54074,
+          "transferBytes": 54374,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/90de0cfb12f1991f707bad2b.webp",
+          "encodedBytes": 36068,
+          "transferBytes": 36368,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/144bdab511eaf0942d1acb28.webp",
+          "encodedBytes": 63068,
+          "transferBytes": 63368,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/a764b06fb7b6731fd241ee2e.webp",
+          "encodedBytes": 19494,
+          "transferBytes": 19794,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/c863209859945f0b4edd9fce.webp",
+          "encodedBytes": 31654,
+          "transferBytes": 31954,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/e77619400e9d1ad1efc8c137.webp",
+          "encodedBytes": 83262,
+          "transferBytes": 83562,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/b7dcd47e688e11fdb2772212.webp",
+          "encodedBytes": 3894,
+          "transferBytes": 4194,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/1c039634bcc6a957ee0b9ec9.webp",
+          "encodedBytes": 8730,
+          "transferBytes": 9030,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/f56688078ca06147bc65ca2b.webp",
+          "encodedBytes": 4412,
+          "transferBytes": 4712,
+          "durationMs": 12
+        },
+        {
+          "url": "/art/runtime/36d49706dceeb677af5ef18e.webp",
+          "encodedBytes": 17662,
+          "transferBytes": 17962,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/6fe0b156023aede6356a1063.webp",
+          "encodedBytes": 11952,
+          "transferBytes": 12252,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/4f868e00407dd959527ddb82.webp",
+          "encodedBytes": 17524,
+          "transferBytes": 17824,
+          "durationMs": 17
+        },
+        {
+          "url": "/art/runtime/dbc0e60515f2c8feab2963bb.webp",
+          "encodedBytes": 12272,
+          "transferBytes": 12572,
+          "durationMs": 19
+        }
+      ],
+      "canvases": [
+        {
+          "width": 1917,
+          "height": 1278,
+          "backingRgba": 9799704,
+          "poolReserved": 13934000,
+          "poolPeak": 13934000,
+          "rasterReserved": 9812488,
+          "rasterPeak": 10035688
+        }
+      ],
+      "consumers": [],
+      "encodedReserved": 3373198,
+      "encodedPeak": 3373198,
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 2
+      },
+      "unknownImages": [],
+      "nativeConsumerRgba": 0,
+      "poolReserved": 13934000,
+      "rasterReserved": 9812488,
+      "rasterPeak": 10035688,
+      "backingRgba": 9799704,
+      "reserveBytes": 16777216,
+      "currentConservativeBytes": 66869508
+    },
+    {
+      "resources": [
+        {
+          "url": "/assets/index-CNmoZ-9P.js",
+          "encodedBytes": 57532,
+          "transferBytes": 57832,
+          "durationMs": 17
+        },
+        {
+          "url": "/assets/index-D7U2vX1x.css",
+          "encodedBytes": 1042,
+          "transferBytes": 1342,
+          "durationMs": 18
+        },
+        {
+          "url": "/favicon.ico",
+          "encodedBytes": 32,
+          "transferBytes": 332,
+          "durationMs": 174
+        },
+        {
+          "url": "/assets/App-BzEahbjQ.js",
+          "encodedBytes": 150641,
+          "transferBytes": 150941,
+          "durationMs": 14
+        },
+        {
+          "url": "/assets/App-CvfCOyJg.css",
+          "encodedBytes": 4543,
+          "transferBytes": 4843,
+          "durationMs": 15
+        },
+        {
+          "url": "/api/config",
+          "encodedBytes": 144,
+          "transferBytes": 444,
+          "durationMs": 57
+        },
+        {
+          "url": "/art/runtime/fbdbada95f20805dc7481080.webp",
+          "encodedBytes": 51008,
+          "transferBytes": 51308,
+          "durationMs": 40
+        },
+        {
+          "url": "/art/runtime/52ff9390c4cd1586d81379e4.webp",
+          "encodedBytes": 55904,
+          "transferBytes": 56204,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/ee717210e31d289b1f18a8fa.webp",
+          "encodedBytes": 51344,
+          "transferBytes": 51644,
+          "durationMs": 42
+        },
+        {
+          "url": "/art/runtime/5236eb83877343905b37043e.webp",
+          "encodedBytes": 1280088,
+          "transferBytes": 1280388,
+          "durationMs": 44
+        },
+        {
+          "url": "/art/runtime/07048b9f7fe30aeb42aa37c9.webp",
+          "encodedBytes": 69622,
+          "transferBytes": 69922,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/f4fe130b2a0429ae9416ee33.webp",
+          "encodedBytes": 61094,
+          "transferBytes": 61394,
+          "durationMs": 43
+        },
+        {
+          "url": "/art/runtime/1d1ee86f05052f73ceb34023.webp",
+          "encodedBytes": 243700,
+          "transferBytes": 244000,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/4146f22a4ed5621c2d79683d.webp",
+          "encodedBytes": 70546,
+          "transferBytes": 70846,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/2be933ad2350bda7c55d02e9.webp",
+          "encodedBytes": 120432,
+          "transferBytes": 120732,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/2387c2868ca1ccc2a206b7b5.webp",
+          "encodedBytes": 14096,
+          "transferBytes": 14396,
+          "durationMs": 9
+        },
+        {
+          "url": "/art/runtime/682d0e0eba401f4f708aeb98.webp",
+          "encodedBytes": 33572,
+          "transferBytes": 33872,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/1762cebafb4cb92d8e6705d3.webp",
+          "encodedBytes": 15720,
+          "transferBytes": 16020,
+          "durationMs": 12
+        },
+        {
+          "url": "/art/runtime/a9fba8e5b6900a5994905a54.webp",
+          "encodedBytes": 313300,
+          "transferBytes": 313600,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/cd1874ddd8944a8dfdab97cb.webp",
+          "encodedBytes": 19596,
+          "transferBytes": 19896,
+          "durationMs": 12
+        },
+        {
+          "url": "/art/runtime/5fee5be1403cf1c714c8b9ce.webp",
+          "encodedBytes": 63978,
+          "transferBytes": 64278,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/8e1384d8e9f9ae46f7eb04c3.webp",
+          "encodedBytes": 46388,
+          "transferBytes": 46688,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/780240c12e0600652987d150.webp",
+          "encodedBytes": 36210,
+          "transferBytes": 36510,
+          "durationMs": 18
+        },
+        {
+          "url": "/art/runtime/1be59efb6f7bd575b278cd5b.webp",
+          "encodedBytes": 143392,
+          "transferBytes": 143692,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/9084bd424517427956b36c8b.webp",
+          "encodedBytes": 45474,
+          "transferBytes": 45774,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/ae6ca396772773d2d43f8ab0.webp",
+          "encodedBytes": 41962,
+          "transferBytes": 42262,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/39e76eccca4ccf92d0595a96.webp",
+          "encodedBytes": 177266,
+          "transferBytes": 177566,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/284836e569a1dc4918906e11.webp",
+          "encodedBytes": 2832,
+          "transferBytes": 3132,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/3a06b2576cf37c29e20bf2c9.webp",
+          "encodedBytes": 2960,
+          "transferBytes": 3260,
+          "durationMs": 31
+        },
+        {
+          "url": "/art/runtime/0a00d83e289589747b29737d.webp",
+          "encodedBytes": 4180,
+          "transferBytes": 4480,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/1f3ade0a4f65eee03c7d6d91.webp",
+          "encodedBytes": 4310,
+          "transferBytes": 4610,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/8d0d39604e164acbb04f8567.webp",
+          "encodedBytes": 20482,
+          "transferBytes": 20782,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/c9c1a89dd124e976dbef2332.webp",
+          "encodedBytes": 18382,
+          "transferBytes": 18682,
+          "durationMs": 34
+        },
+        {
+          "url": "/art/runtime/b73db10c12d56cfb06d2ac9f.webp",
+          "encodedBytes": 1294,
+          "transferBytes": 1594,
+          "durationMs": 35
+        },
+        {
+          "url": "/art/runtime/368ad626ae1f6a0a513e8318.webp",
+          "encodedBytes": 54074,
+          "transferBytes": 54374,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/90de0cfb12f1991f707bad2b.webp",
+          "encodedBytes": 36068,
+          "transferBytes": 36368,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/144bdab511eaf0942d1acb28.webp",
+          "encodedBytes": 63068,
+          "transferBytes": 63368,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/a764b06fb7b6731fd241ee2e.webp",
+          "encodedBytes": 19494,
+          "transferBytes": 19794,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/c863209859945f0b4edd9fce.webp",
+          "encodedBytes": 31654,
+          "transferBytes": 31954,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/e77619400e9d1ad1efc8c137.webp",
+          "encodedBytes": 83262,
+          "transferBytes": 83562,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/b7dcd47e688e11fdb2772212.webp",
+          "encodedBytes": 3894,
+          "transferBytes": 4194,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/1c039634bcc6a957ee0b9ec9.webp",
+          "encodedBytes": 8730,
+          "transferBytes": 9030,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/f56688078ca06147bc65ca2b.webp",
+          "encodedBytes": 4412,
+          "transferBytes": 4712,
+          "durationMs": 12
+        },
+        {
+          "url": "/art/runtime/36d49706dceeb677af5ef18e.webp",
+          "encodedBytes": 17662,
+          "transferBytes": 17962,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/6fe0b156023aede6356a1063.webp",
+          "encodedBytes": 11952,
+          "transferBytes": 12252,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/4f868e00407dd959527ddb82.webp",
+          "encodedBytes": 17524,
+          "transferBytes": 17824,
+          "durationMs": 17
+        },
+        {
+          "url": "/art/runtime/dbc0e60515f2c8feab2963bb.webp",
+          "encodedBytes": 12272,
+          "transferBytes": 12572,
+          "durationMs": 19
+        },
+        {
+          "url": "/art/runtime/38b19cdc9b51a12719e5434b.webp",
+          "encodedBytes": 43700,
+          "transferBytes": 44000,
+          "durationMs": 3
+        },
+        {
+          "url": "/art/runtime/40ec08e7ed908e11a60ea099.webp",
+          "encodedBytes": 36810,
+          "transferBytes": 37110,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/27720ace89a8edcd8b28ec68.webp",
+          "encodedBytes": 43402,
+          "transferBytes": 43702,
+          "durationMs": 3
+        },
+        {
+          "url": "/art/runtime/6effac3d7433cb43877d5397.webp",
+          "encodedBytes": 33850,
+          "transferBytes": 34150,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/defaa58a4acb8fb853fd3a5e.webp",
+          "encodedBytes": 37030,
+          "transferBytes": 37330,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/7a74d758a4bc6f658ad5137f.webp",
+          "encodedBytes": 36282,
+          "transferBytes": 36582,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/3c762bd2f8c4eed49aab9f55.webp",
+          "encodedBytes": 36124,
+          "transferBytes": 36424,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/6fc7eea1cf74960d283a56e9.webp",
+          "encodedBytes": 36278,
+          "transferBytes": 36578,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/39fcdbefe53b2deb35210133.webp",
+          "encodedBytes": 45688,
+          "transferBytes": 45988,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/85936a9b002e38a0cb1b0f38.webp",
+          "encodedBytes": 41772,
+          "transferBytes": 42072,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/b470ef5ff06b6346bb74e93c.webp",
+          "encodedBytes": 45684,
+          "transferBytes": 45984,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/785f3086110c0191859c6cb1.webp",
+          "encodedBytes": 41546,
+          "transferBytes": 41846,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/f4dcbc073ff0595177bd7651.webp",
+          "encodedBytes": 31244,
+          "transferBytes": 31544,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/98247550bf3ed039e1c4253c.webp",
+          "encodedBytes": 39884,
+          "transferBytes": 40184,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/cec963d882da71ced80a1f4e.webp",
+          "encodedBytes": 124898,
+          "transferBytes": 125198,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/2e5fc30a4f34c80fb73fa767.webp",
+          "encodedBytes": 1451596,
+          "transferBytes": 1451896,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/f2db597379f35b1d25501ac4.webp",
+          "encodedBytes": 54322,
+          "transferBytes": 54622,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/7d1f2b5b710529a3a3dffa2b.webp",
+          "encodedBytes": 454958,
+          "transferBytes": 455258,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/7e84e119599275ef5d74cbad.webp",
+          "encodedBytes": 157382,
+          "transferBytes": 157682,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/1e7c8668a20a989d9b0829df.webp",
+          "encodedBytes": 38208,
+          "transferBytes": 38508,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/1ae18f854e1c1815a7d5bfdd.webp",
+          "encodedBytes": 6870,
+          "transferBytes": 7170,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/c0ff55a6d9fac7f40acc1e26.webp",
+          "encodedBytes": 19722,
+          "transferBytes": 20022,
+          "durationMs": 15
+        },
+        {
+          "url": "/art/runtime/e7419996d653299fd8985eff.webp",
+          "encodedBytes": 12414,
+          "transferBytes": 12714,
+          "durationMs": 19
+        },
+        {
+          "url": "/art/runtime/ab23c5ad58827e284b584aac.webp",
+          "encodedBytes": 31976,
+          "transferBytes": 32276,
+          "durationMs": 23
+        }
+      ],
+      "canvases": [
+        {
+          "width": 1917,
+          "height": 1278,
+          "backingRgba": 9799704,
+          "poolReserved": 12424664,
+          "poolPeak": 24692504,
+          "rasterReserved": 0,
+          "rasterPeak": 10035688
+        }
+      ],
+      "consumers": [],
+      "encodedReserved": 6274838,
+      "encodedPeak": 6274838,
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 2
+      },
+      "unknownImages": [],
+      "nativeConsumerRgba": 0,
+      "poolReserved": 12424664,
+      "rasterReserved": 0,
+      "rasterPeak": 10035688,
+      "backingRgba": 9799704,
+      "reserveBytes": 16777216,
+      "currentConservativeBytes": 61350964
+    },
+    {
+      "resources": [
+        {
+          "url": "/assets/index-CNmoZ-9P.js",
+          "encodedBytes": 57532,
+          "transferBytes": 57832,
+          "durationMs": 17
+        },
+        {
+          "url": "/assets/index-D7U2vX1x.css",
+          "encodedBytes": 1042,
+          "transferBytes": 1342,
+          "durationMs": 18
+        },
+        {
+          "url": "/favicon.ico",
+          "encodedBytes": 32,
+          "transferBytes": 332,
+          "durationMs": 174
+        },
+        {
+          "url": "/assets/App-BzEahbjQ.js",
+          "encodedBytes": 150641,
+          "transferBytes": 150941,
+          "durationMs": 14
+        },
+        {
+          "url": "/assets/App-CvfCOyJg.css",
+          "encodedBytes": 4543,
+          "transferBytes": 4843,
+          "durationMs": 15
+        },
+        {
+          "url": "/api/config",
+          "encodedBytes": 144,
+          "transferBytes": 444,
+          "durationMs": 57
+        },
+        {
+          "url": "/art/runtime/fbdbada95f20805dc7481080.webp",
+          "encodedBytes": 51008,
+          "transferBytes": 51308,
+          "durationMs": 40
+        },
+        {
+          "url": "/art/runtime/52ff9390c4cd1586d81379e4.webp",
+          "encodedBytes": 55904,
+          "transferBytes": 56204,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/ee717210e31d289b1f18a8fa.webp",
+          "encodedBytes": 51344,
+          "transferBytes": 51644,
+          "durationMs": 42
+        },
+        {
+          "url": "/art/runtime/5236eb83877343905b37043e.webp",
+          "encodedBytes": 1280088,
+          "transferBytes": 1280388,
+          "durationMs": 44
+        },
+        {
+          "url": "/art/runtime/07048b9f7fe30aeb42aa37c9.webp",
+          "encodedBytes": 69622,
+          "transferBytes": 69922,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/f4fe130b2a0429ae9416ee33.webp",
+          "encodedBytes": 61094,
+          "transferBytes": 61394,
+          "durationMs": 43
+        },
+        {
+          "url": "/art/runtime/1d1ee86f05052f73ceb34023.webp",
+          "encodedBytes": 243700,
+          "transferBytes": 244000,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/4146f22a4ed5621c2d79683d.webp",
+          "encodedBytes": 70546,
+          "transferBytes": 70846,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/2be933ad2350bda7c55d02e9.webp",
+          "encodedBytes": 120432,
+          "transferBytes": 120732,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/2387c2868ca1ccc2a206b7b5.webp",
+          "encodedBytes": 14096,
+          "transferBytes": 14396,
+          "durationMs": 9
+        },
+        {
+          "url": "/art/runtime/682d0e0eba401f4f708aeb98.webp",
+          "encodedBytes": 33572,
+          "transferBytes": 33872,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/1762cebafb4cb92d8e6705d3.webp",
+          "encodedBytes": 15720,
+          "transferBytes": 16020,
+          "durationMs": 12
+        },
+        {
+          "url": "/art/runtime/a9fba8e5b6900a5994905a54.webp",
+          "encodedBytes": 313300,
+          "transferBytes": 313600,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/cd1874ddd8944a8dfdab97cb.webp",
+          "encodedBytes": 19596,
+          "transferBytes": 19896,
+          "durationMs": 12
+        },
+        {
+          "url": "/art/runtime/5fee5be1403cf1c714c8b9ce.webp",
+          "encodedBytes": 63978,
+          "transferBytes": 64278,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/8e1384d8e9f9ae46f7eb04c3.webp",
+          "encodedBytes": 46388,
+          "transferBytes": 46688,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/780240c12e0600652987d150.webp",
+          "encodedBytes": 36210,
+          "transferBytes": 36510,
+          "durationMs": 18
+        },
+        {
+          "url": "/art/runtime/1be59efb6f7bd575b278cd5b.webp",
+          "encodedBytes": 143392,
+          "transferBytes": 143692,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/9084bd424517427956b36c8b.webp",
+          "encodedBytes": 45474,
+          "transferBytes": 45774,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/ae6ca396772773d2d43f8ab0.webp",
+          "encodedBytes": 41962,
+          "transferBytes": 42262,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/39e76eccca4ccf92d0595a96.webp",
+          "encodedBytes": 177266,
+          "transferBytes": 177566,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/284836e569a1dc4918906e11.webp",
+          "encodedBytes": 2832,
+          "transferBytes": 3132,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/3a06b2576cf37c29e20bf2c9.webp",
+          "encodedBytes": 2960,
+          "transferBytes": 3260,
+          "durationMs": 31
+        },
+        {
+          "url": "/art/runtime/0a00d83e289589747b29737d.webp",
+          "encodedBytes": 4180,
+          "transferBytes": 4480,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/1f3ade0a4f65eee03c7d6d91.webp",
+          "encodedBytes": 4310,
+          "transferBytes": 4610,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/8d0d39604e164acbb04f8567.webp",
+          "encodedBytes": 20482,
+          "transferBytes": 20782,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/c9c1a89dd124e976dbef2332.webp",
+          "encodedBytes": 18382,
+          "transferBytes": 18682,
+          "durationMs": 34
+        },
+        {
+          "url": "/art/runtime/b73db10c12d56cfb06d2ac9f.webp",
+          "encodedBytes": 1294,
+          "transferBytes": 1594,
+          "durationMs": 35
+        },
+        {
+          "url": "/art/runtime/368ad626ae1f6a0a513e8318.webp",
+          "encodedBytes": 54074,
+          "transferBytes": 54374,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/90de0cfb12f1991f707bad2b.webp",
+          "encodedBytes": 36068,
+          "transferBytes": 36368,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/144bdab511eaf0942d1acb28.webp",
+          "encodedBytes": 63068,
+          "transferBytes": 63368,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/a764b06fb7b6731fd241ee2e.webp",
+          "encodedBytes": 19494,
+          "transferBytes": 19794,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/c863209859945f0b4edd9fce.webp",
+          "encodedBytes": 31654,
+          "transferBytes": 31954,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/e77619400e9d1ad1efc8c137.webp",
+          "encodedBytes": 83262,
+          "transferBytes": 83562,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/b7dcd47e688e11fdb2772212.webp",
+          "encodedBytes": 3894,
+          "transferBytes": 4194,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/1c039634bcc6a957ee0b9ec9.webp",
+          "encodedBytes": 8730,
+          "transferBytes": 9030,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/f56688078ca06147bc65ca2b.webp",
+          "encodedBytes": 4412,
+          "transferBytes": 4712,
+          "durationMs": 12
+        },
+        {
+          "url": "/art/runtime/36d49706dceeb677af5ef18e.webp",
+          "encodedBytes": 17662,
+          "transferBytes": 17962,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/6fe0b156023aede6356a1063.webp",
+          "encodedBytes": 11952,
+          "transferBytes": 12252,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/4f868e00407dd959527ddb82.webp",
+          "encodedBytes": 17524,
+          "transferBytes": 17824,
+          "durationMs": 17
+        },
+        {
+          "url": "/art/runtime/dbc0e60515f2c8feab2963bb.webp",
+          "encodedBytes": 12272,
+          "transferBytes": 12572,
+          "durationMs": 19
+        },
+        {
+          "url": "/art/runtime/38b19cdc9b51a12719e5434b.webp",
+          "encodedBytes": 43700,
+          "transferBytes": 44000,
+          "durationMs": 3
+        },
+        {
+          "url": "/art/runtime/40ec08e7ed908e11a60ea099.webp",
+          "encodedBytes": 36810,
+          "transferBytes": 37110,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/27720ace89a8edcd8b28ec68.webp",
+          "encodedBytes": 43402,
+          "transferBytes": 43702,
+          "durationMs": 3
+        },
+        {
+          "url": "/art/runtime/6effac3d7433cb43877d5397.webp",
+          "encodedBytes": 33850,
+          "transferBytes": 34150,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/defaa58a4acb8fb853fd3a5e.webp",
+          "encodedBytes": 37030,
+          "transferBytes": 37330,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/7a74d758a4bc6f658ad5137f.webp",
+          "encodedBytes": 36282,
+          "transferBytes": 36582,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/3c762bd2f8c4eed49aab9f55.webp",
+          "encodedBytes": 36124,
+          "transferBytes": 36424,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/6fc7eea1cf74960d283a56e9.webp",
+          "encodedBytes": 36278,
+          "transferBytes": 36578,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/39fcdbefe53b2deb35210133.webp",
+          "encodedBytes": 45688,
+          "transferBytes": 45988,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/85936a9b002e38a0cb1b0f38.webp",
+          "encodedBytes": 41772,
+          "transferBytes": 42072,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/b470ef5ff06b6346bb74e93c.webp",
+          "encodedBytes": 45684,
+          "transferBytes": 45984,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/785f3086110c0191859c6cb1.webp",
+          "encodedBytes": 41546,
+          "transferBytes": 41846,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/f4dcbc073ff0595177bd7651.webp",
+          "encodedBytes": 31244,
+          "transferBytes": 31544,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/98247550bf3ed039e1c4253c.webp",
+          "encodedBytes": 39884,
+          "transferBytes": 40184,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/cec963d882da71ced80a1f4e.webp",
+          "encodedBytes": 124898,
+          "transferBytes": 125198,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/2e5fc30a4f34c80fb73fa767.webp",
+          "encodedBytes": 1451596,
+          "transferBytes": 1451896,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/f2db597379f35b1d25501ac4.webp",
+          "encodedBytes": 54322,
+          "transferBytes": 54622,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/7d1f2b5b710529a3a3dffa2b.webp",
+          "encodedBytes": 454958,
+          "transferBytes": 455258,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/7e84e119599275ef5d74cbad.webp",
+          "encodedBytes": 157382,
+          "transferBytes": 157682,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/1e7c8668a20a989d9b0829df.webp",
+          "encodedBytes": 38208,
+          "transferBytes": 38508,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/1ae18f854e1c1815a7d5bfdd.webp",
+          "encodedBytes": 6870,
+          "transferBytes": 7170,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/c0ff55a6d9fac7f40acc1e26.webp",
+          "encodedBytes": 19722,
+          "transferBytes": 20022,
+          "durationMs": 15
+        },
+        {
+          "url": "/art/runtime/e7419996d653299fd8985eff.webp",
+          "encodedBytes": 12414,
+          "transferBytes": 12714,
+          "durationMs": 19
+        },
+        {
+          "url": "/art/runtime/ab23c5ad58827e284b584aac.webp",
+          "encodedBytes": 31976,
+          "transferBytes": 32276,
+          "durationMs": 23
+        }
+      ],
+      "canvases": [
+        {
+          "width": 1917,
+          "height": 1278,
+          "backingRgba": 9799704,
+          "poolReserved": 13928024,
+          "poolPeak": 24692504,
+          "rasterReserved": 9812488,
+          "rasterPeak": 10035688
+        }
+      ],
+      "consumers": [],
+      "encodedReserved": 6274838,
+      "encodedPeak": 6274838,
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 2
+      },
+      "unknownImages": [],
+      "nativeConsumerRgba": 0,
+      "poolReserved": 13928024,
+      "rasterReserved": 9812488,
+      "rasterPeak": 10035688,
+      "backingRgba": 9799704,
+      "reserveBytes": 16777216,
+      "currentConservativeBytes": 72666812
+    },
+    {
+      "resources": [
+        {
+          "url": "/assets/index-CNmoZ-9P.js",
+          "encodedBytes": 57532,
+          "transferBytes": 57832,
+          "durationMs": 17
+        },
+        {
+          "url": "/assets/index-D7U2vX1x.css",
+          "encodedBytes": 1042,
+          "transferBytes": 1342,
+          "durationMs": 18
+        },
+        {
+          "url": "/favicon.ico",
+          "encodedBytes": 32,
+          "transferBytes": 332,
+          "durationMs": 174
+        },
+        {
+          "url": "/assets/App-BzEahbjQ.js",
+          "encodedBytes": 150641,
+          "transferBytes": 150941,
+          "durationMs": 14
+        },
+        {
+          "url": "/assets/App-CvfCOyJg.css",
+          "encodedBytes": 4543,
+          "transferBytes": 4843,
+          "durationMs": 15
+        },
+        {
+          "url": "/api/config",
+          "encodedBytes": 144,
+          "transferBytes": 444,
+          "durationMs": 57
+        },
+        {
+          "url": "/art/runtime/fbdbada95f20805dc7481080.webp",
+          "encodedBytes": 51008,
+          "transferBytes": 51308,
+          "durationMs": 40
+        },
+        {
+          "url": "/art/runtime/52ff9390c4cd1586d81379e4.webp",
+          "encodedBytes": 55904,
+          "transferBytes": 56204,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/ee717210e31d289b1f18a8fa.webp",
+          "encodedBytes": 51344,
+          "transferBytes": 51644,
+          "durationMs": 42
+        },
+        {
+          "url": "/art/runtime/5236eb83877343905b37043e.webp",
+          "encodedBytes": 1280088,
+          "transferBytes": 1280388,
+          "durationMs": 44
+        },
+        {
+          "url": "/art/runtime/07048b9f7fe30aeb42aa37c9.webp",
+          "encodedBytes": 69622,
+          "transferBytes": 69922,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/f4fe130b2a0429ae9416ee33.webp",
+          "encodedBytes": 61094,
+          "transferBytes": 61394,
+          "durationMs": 43
+        },
+        {
+          "url": "/art/runtime/1d1ee86f05052f73ceb34023.webp",
+          "encodedBytes": 243700,
+          "transferBytes": 244000,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/4146f22a4ed5621c2d79683d.webp",
+          "encodedBytes": 70546,
+          "transferBytes": 70846,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/2be933ad2350bda7c55d02e9.webp",
+          "encodedBytes": 120432,
+          "transferBytes": 120732,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/2387c2868ca1ccc2a206b7b5.webp",
+          "encodedBytes": 14096,
+          "transferBytes": 14396,
+          "durationMs": 9
+        },
+        {
+          "url": "/art/runtime/682d0e0eba401f4f708aeb98.webp",
+          "encodedBytes": 33572,
+          "transferBytes": 33872,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/1762cebafb4cb92d8e6705d3.webp",
+          "encodedBytes": 15720,
+          "transferBytes": 16020,
+          "durationMs": 12
+        },
+        {
+          "url": "/art/runtime/a9fba8e5b6900a5994905a54.webp",
+          "encodedBytes": 313300,
+          "transferBytes": 313600,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/cd1874ddd8944a8dfdab97cb.webp",
+          "encodedBytes": 19596,
+          "transferBytes": 19896,
+          "durationMs": 12
+        },
+        {
+          "url": "/art/runtime/5fee5be1403cf1c714c8b9ce.webp",
+          "encodedBytes": 63978,
+          "transferBytes": 64278,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/8e1384d8e9f9ae46f7eb04c3.webp",
+          "encodedBytes": 46388,
+          "transferBytes": 46688,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/780240c12e0600652987d150.webp",
+          "encodedBytes": 36210,
+          "transferBytes": 36510,
+          "durationMs": 18
+        },
+        {
+          "url": "/art/runtime/1be59efb6f7bd575b278cd5b.webp",
+          "encodedBytes": 143392,
+          "transferBytes": 143692,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/9084bd424517427956b36c8b.webp",
+          "encodedBytes": 45474,
+          "transferBytes": 45774,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/ae6ca396772773d2d43f8ab0.webp",
+          "encodedBytes": 41962,
+          "transferBytes": 42262,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/39e76eccca4ccf92d0595a96.webp",
+          "encodedBytes": 177266,
+          "transferBytes": 177566,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/284836e569a1dc4918906e11.webp",
+          "encodedBytes": 2832,
+          "transferBytes": 3132,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/3a06b2576cf37c29e20bf2c9.webp",
+          "encodedBytes": 2960,
+          "transferBytes": 3260,
+          "durationMs": 31
+        },
+        {
+          "url": "/art/runtime/0a00d83e289589747b29737d.webp",
+          "encodedBytes": 4180,
+          "transferBytes": 4480,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/1f3ade0a4f65eee03c7d6d91.webp",
+          "encodedBytes": 4310,
+          "transferBytes": 4610,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/8d0d39604e164acbb04f8567.webp",
+          "encodedBytes": 20482,
+          "transferBytes": 20782,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/c9c1a89dd124e976dbef2332.webp",
+          "encodedBytes": 18382,
+          "transferBytes": 18682,
+          "durationMs": 34
+        },
+        {
+          "url": "/art/runtime/b73db10c12d56cfb06d2ac9f.webp",
+          "encodedBytes": 1294,
+          "transferBytes": 1594,
+          "durationMs": 35
+        },
+        {
+          "url": "/art/runtime/368ad626ae1f6a0a513e8318.webp",
+          "encodedBytes": 54074,
+          "transferBytes": 54374,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/90de0cfb12f1991f707bad2b.webp",
+          "encodedBytes": 36068,
+          "transferBytes": 36368,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/144bdab511eaf0942d1acb28.webp",
+          "encodedBytes": 63068,
+          "transferBytes": 63368,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/a764b06fb7b6731fd241ee2e.webp",
+          "encodedBytes": 19494,
+          "transferBytes": 19794,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/c863209859945f0b4edd9fce.webp",
+          "encodedBytes": 31654,
+          "transferBytes": 31954,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/e77619400e9d1ad1efc8c137.webp",
+          "encodedBytes": 83262,
+          "transferBytes": 83562,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/b7dcd47e688e11fdb2772212.webp",
+          "encodedBytes": 3894,
+          "transferBytes": 4194,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/1c039634bcc6a957ee0b9ec9.webp",
+          "encodedBytes": 8730,
+          "transferBytes": 9030,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/f56688078ca06147bc65ca2b.webp",
+          "encodedBytes": 4412,
+          "transferBytes": 4712,
+          "durationMs": 12
+        },
+        {
+          "url": "/art/runtime/36d49706dceeb677af5ef18e.webp",
+          "encodedBytes": 17662,
+          "transferBytes": 17962,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/6fe0b156023aede6356a1063.webp",
+          "encodedBytes": 11952,
+          "transferBytes": 12252,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/4f868e00407dd959527ddb82.webp",
+          "encodedBytes": 17524,
+          "transferBytes": 17824,
+          "durationMs": 17
+        },
+        {
+          "url": "/art/runtime/dbc0e60515f2c8feab2963bb.webp",
+          "encodedBytes": 12272,
+          "transferBytes": 12572,
+          "durationMs": 19
+        },
+        {
+          "url": "/art/runtime/38b19cdc9b51a12719e5434b.webp",
+          "encodedBytes": 43700,
+          "transferBytes": 44000,
+          "durationMs": 3
+        },
+        {
+          "url": "/art/runtime/40ec08e7ed908e11a60ea099.webp",
+          "encodedBytes": 36810,
+          "transferBytes": 37110,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/27720ace89a8edcd8b28ec68.webp",
+          "encodedBytes": 43402,
+          "transferBytes": 43702,
+          "durationMs": 3
+        },
+        {
+          "url": "/art/runtime/6effac3d7433cb43877d5397.webp",
+          "encodedBytes": 33850,
+          "transferBytes": 34150,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/defaa58a4acb8fb853fd3a5e.webp",
+          "encodedBytes": 37030,
+          "transferBytes": 37330,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/7a74d758a4bc6f658ad5137f.webp",
+          "encodedBytes": 36282,
+          "transferBytes": 36582,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/3c762bd2f8c4eed49aab9f55.webp",
+          "encodedBytes": 36124,
+          "transferBytes": 36424,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/6fc7eea1cf74960d283a56e9.webp",
+          "encodedBytes": 36278,
+          "transferBytes": 36578,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/39fcdbefe53b2deb35210133.webp",
+          "encodedBytes": 45688,
+          "transferBytes": 45988,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/85936a9b002e38a0cb1b0f38.webp",
+          "encodedBytes": 41772,
+          "transferBytes": 42072,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/b470ef5ff06b6346bb74e93c.webp",
+          "encodedBytes": 45684,
+          "transferBytes": 45984,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/785f3086110c0191859c6cb1.webp",
+          "encodedBytes": 41546,
+          "transferBytes": 41846,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/f4dcbc073ff0595177bd7651.webp",
+          "encodedBytes": 31244,
+          "transferBytes": 31544,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/98247550bf3ed039e1c4253c.webp",
+          "encodedBytes": 39884,
+          "transferBytes": 40184,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/cec963d882da71ced80a1f4e.webp",
+          "encodedBytes": 124898,
+          "transferBytes": 125198,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/2e5fc30a4f34c80fb73fa767.webp",
+          "encodedBytes": 1451596,
+          "transferBytes": 1451896,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/f2db597379f35b1d25501ac4.webp",
+          "encodedBytes": 54322,
+          "transferBytes": 54622,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/7d1f2b5b710529a3a3dffa2b.webp",
+          "encodedBytes": 454958,
+          "transferBytes": 455258,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/7e84e119599275ef5d74cbad.webp",
+          "encodedBytes": 157382,
+          "transferBytes": 157682,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/1e7c8668a20a989d9b0829df.webp",
+          "encodedBytes": 38208,
+          "transferBytes": 38508,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/1ae18f854e1c1815a7d5bfdd.webp",
+          "encodedBytes": 6870,
+          "transferBytes": 7170,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/c0ff55a6d9fac7f40acc1e26.webp",
+          "encodedBytes": 19722,
+          "transferBytes": 20022,
+          "durationMs": 15
+        },
+        {
+          "url": "/art/runtime/e7419996d653299fd8985eff.webp",
+          "encodedBytes": 12414,
+          "transferBytes": 12714,
+          "durationMs": 19
+        },
+        {
+          "url": "/art/runtime/ab23c5ad58827e284b584aac.webp",
+          "encodedBytes": 31976,
+          "transferBytes": 32276,
+          "durationMs": 23
+        },
+        {
+          "url": "/art/runtime/1b071f538995195d64687596.webp",
+          "encodedBytes": 39662,
+          "transferBytes": 39962,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/a7c7d7cac9e3a747986836a4.webp",
+          "encodedBytes": 1290536,
+          "transferBytes": 1290836,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/2f32f751f7ad14331913c059.webp",
+          "encodedBytes": 54356,
+          "transferBytes": 54656,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/cf92f66d50cbb1c8a4437cf5.webp",
+          "encodedBytes": 161278,
+          "transferBytes": 161578,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/38b7d4bf7e27876b3e9dffdf.webp",
+          "encodedBytes": 227122,
+          "transferBytes": 227422,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/3ca8e7430dc16a790492719f.webp",
+          "encodedBytes": 143340,
+          "transferBytes": 143640,
+          "durationMs": 9
+        },
+        {
+          "url": "/art/runtime/2027aaa95e8a6e2a1ca75cc9.webp",
+          "encodedBytes": 15614,
+          "transferBytes": 15914,
+          "durationMs": 11
+        }
+      ],
+      "canvases": [
+        {
+          "width": 2016,
+          "height": 1344,
+          "backingRgba": 10838016,
+          "poolReserved": 12070712,
+          "poolPeak": 24692504,
+          "rasterReserved": 0,
+          "rasterPeak": 10035688
+        }
+      ],
+      "consumers": [],
+      "encodedReserved": 8206746,
+      "encodedPeak": 8206746,
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 2
+      },
+      "unknownImages": [],
+      "nativeConsumerRgba": 0,
+      "poolReserved": 12070712,
+      "rasterReserved": 0,
+      "rasterPeak": 10035688,
+      "backingRgba": 10838016,
+      "reserveBytes": 16777216,
+      "currentConservativeBytes": 66937452
+    },
+    {
+      "resources": [
+        {
+          "url": "/assets/index-CNmoZ-9P.js",
+          "encodedBytes": 57532,
+          "transferBytes": 57832,
+          "durationMs": 17
+        },
+        {
+          "url": "/assets/index-D7U2vX1x.css",
+          "encodedBytes": 1042,
+          "transferBytes": 1342,
+          "durationMs": 18
+        },
+        {
+          "url": "/favicon.ico",
+          "encodedBytes": 32,
+          "transferBytes": 332,
+          "durationMs": 174
+        },
+        {
+          "url": "/assets/App-BzEahbjQ.js",
+          "encodedBytes": 150641,
+          "transferBytes": 150941,
+          "durationMs": 14
+        },
+        {
+          "url": "/assets/App-CvfCOyJg.css",
+          "encodedBytes": 4543,
+          "transferBytes": 4843,
+          "durationMs": 15
+        },
+        {
+          "url": "/api/config",
+          "encodedBytes": 144,
+          "transferBytes": 444,
+          "durationMs": 57
+        },
+        {
+          "url": "/art/runtime/fbdbada95f20805dc7481080.webp",
+          "encodedBytes": 51008,
+          "transferBytes": 51308,
+          "durationMs": 40
+        },
+        {
+          "url": "/art/runtime/52ff9390c4cd1586d81379e4.webp",
+          "encodedBytes": 55904,
+          "transferBytes": 56204,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/ee717210e31d289b1f18a8fa.webp",
+          "encodedBytes": 51344,
+          "transferBytes": 51644,
+          "durationMs": 42
+        },
+        {
+          "url": "/art/runtime/5236eb83877343905b37043e.webp",
+          "encodedBytes": 1280088,
+          "transferBytes": 1280388,
+          "durationMs": 44
+        },
+        {
+          "url": "/art/runtime/07048b9f7fe30aeb42aa37c9.webp",
+          "encodedBytes": 69622,
+          "transferBytes": 69922,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/f4fe130b2a0429ae9416ee33.webp",
+          "encodedBytes": 61094,
+          "transferBytes": 61394,
+          "durationMs": 43
+        },
+        {
+          "url": "/art/runtime/1d1ee86f05052f73ceb34023.webp",
+          "encodedBytes": 243700,
+          "transferBytes": 244000,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/4146f22a4ed5621c2d79683d.webp",
+          "encodedBytes": 70546,
+          "transferBytes": 70846,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/2be933ad2350bda7c55d02e9.webp",
+          "encodedBytes": 120432,
+          "transferBytes": 120732,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/2387c2868ca1ccc2a206b7b5.webp",
+          "encodedBytes": 14096,
+          "transferBytes": 14396,
+          "durationMs": 9
+        },
+        {
+          "url": "/art/runtime/682d0e0eba401f4f708aeb98.webp",
+          "encodedBytes": 33572,
+          "transferBytes": 33872,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/1762cebafb4cb92d8e6705d3.webp",
+          "encodedBytes": 15720,
+          "transferBytes": 16020,
+          "durationMs": 12
+        },
+        {
+          "url": "/art/runtime/a9fba8e5b6900a5994905a54.webp",
+          "encodedBytes": 313300,
+          "transferBytes": 313600,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/cd1874ddd8944a8dfdab97cb.webp",
+          "encodedBytes": 19596,
+          "transferBytes": 19896,
+          "durationMs": 12
+        },
+        {
+          "url": "/art/runtime/5fee5be1403cf1c714c8b9ce.webp",
+          "encodedBytes": 63978,
+          "transferBytes": 64278,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/8e1384d8e9f9ae46f7eb04c3.webp",
+          "encodedBytes": 46388,
+          "transferBytes": 46688,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/780240c12e0600652987d150.webp",
+          "encodedBytes": 36210,
+          "transferBytes": 36510,
+          "durationMs": 18
+        },
+        {
+          "url": "/art/runtime/1be59efb6f7bd575b278cd5b.webp",
+          "encodedBytes": 143392,
+          "transferBytes": 143692,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/9084bd424517427956b36c8b.webp",
+          "encodedBytes": 45474,
+          "transferBytes": 45774,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/ae6ca396772773d2d43f8ab0.webp",
+          "encodedBytes": 41962,
+          "transferBytes": 42262,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/39e76eccca4ccf92d0595a96.webp",
+          "encodedBytes": 177266,
+          "transferBytes": 177566,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/284836e569a1dc4918906e11.webp",
+          "encodedBytes": 2832,
+          "transferBytes": 3132,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/3a06b2576cf37c29e20bf2c9.webp",
+          "encodedBytes": 2960,
+          "transferBytes": 3260,
+          "durationMs": 31
+        },
+        {
+          "url": "/art/runtime/0a00d83e289589747b29737d.webp",
+          "encodedBytes": 4180,
+          "transferBytes": 4480,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/1f3ade0a4f65eee03c7d6d91.webp",
+          "encodedBytes": 4310,
+          "transferBytes": 4610,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/8d0d39604e164acbb04f8567.webp",
+          "encodedBytes": 20482,
+          "transferBytes": 20782,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/c9c1a89dd124e976dbef2332.webp",
+          "encodedBytes": 18382,
+          "transferBytes": 18682,
+          "durationMs": 34
+        },
+        {
+          "url": "/art/runtime/b73db10c12d56cfb06d2ac9f.webp",
+          "encodedBytes": 1294,
+          "transferBytes": 1594,
+          "durationMs": 35
+        },
+        {
+          "url": "/art/runtime/368ad626ae1f6a0a513e8318.webp",
+          "encodedBytes": 54074,
+          "transferBytes": 54374,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/90de0cfb12f1991f707bad2b.webp",
+          "encodedBytes": 36068,
+          "transferBytes": 36368,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/144bdab511eaf0942d1acb28.webp",
+          "encodedBytes": 63068,
+          "transferBytes": 63368,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/a764b06fb7b6731fd241ee2e.webp",
+          "encodedBytes": 19494,
+          "transferBytes": 19794,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/c863209859945f0b4edd9fce.webp",
+          "encodedBytes": 31654,
+          "transferBytes": 31954,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/e77619400e9d1ad1efc8c137.webp",
+          "encodedBytes": 83262,
+          "transferBytes": 83562,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/b7dcd47e688e11fdb2772212.webp",
+          "encodedBytes": 3894,
+          "transferBytes": 4194,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/1c039634bcc6a957ee0b9ec9.webp",
+          "encodedBytes": 8730,
+          "transferBytes": 9030,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/f56688078ca06147bc65ca2b.webp",
+          "encodedBytes": 4412,
+          "transferBytes": 4712,
+          "durationMs": 12
+        },
+        {
+          "url": "/art/runtime/36d49706dceeb677af5ef18e.webp",
+          "encodedBytes": 17662,
+          "transferBytes": 17962,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/6fe0b156023aede6356a1063.webp",
+          "encodedBytes": 11952,
+          "transferBytes": 12252,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/4f868e00407dd959527ddb82.webp",
+          "encodedBytes": 17524,
+          "transferBytes": 17824,
+          "durationMs": 17
+        },
+        {
+          "url": "/art/runtime/dbc0e60515f2c8feab2963bb.webp",
+          "encodedBytes": 12272,
+          "transferBytes": 12572,
+          "durationMs": 19
+        },
+        {
+          "url": "/art/runtime/38b19cdc9b51a12719e5434b.webp",
+          "encodedBytes": 43700,
+          "transferBytes": 44000,
+          "durationMs": 3
+        },
+        {
+          "url": "/art/runtime/40ec08e7ed908e11a60ea099.webp",
+          "encodedBytes": 36810,
+          "transferBytes": 37110,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/27720ace89a8edcd8b28ec68.webp",
+          "encodedBytes": 43402,
+          "transferBytes": 43702,
+          "durationMs": 3
+        },
+        {
+          "url": "/art/runtime/6effac3d7433cb43877d5397.webp",
+          "encodedBytes": 33850,
+          "transferBytes": 34150,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/defaa58a4acb8fb853fd3a5e.webp",
+          "encodedBytes": 37030,
+          "transferBytes": 37330,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/7a74d758a4bc6f658ad5137f.webp",
+          "encodedBytes": 36282,
+          "transferBytes": 36582,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/3c762bd2f8c4eed49aab9f55.webp",
+          "encodedBytes": 36124,
+          "transferBytes": 36424,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/6fc7eea1cf74960d283a56e9.webp",
+          "encodedBytes": 36278,
+          "transferBytes": 36578,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/39fcdbefe53b2deb35210133.webp",
+          "encodedBytes": 45688,
+          "transferBytes": 45988,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/85936a9b002e38a0cb1b0f38.webp",
+          "encodedBytes": 41772,
+          "transferBytes": 42072,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/b470ef5ff06b6346bb74e93c.webp",
+          "encodedBytes": 45684,
+          "transferBytes": 45984,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/785f3086110c0191859c6cb1.webp",
+          "encodedBytes": 41546,
+          "transferBytes": 41846,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/f4dcbc073ff0595177bd7651.webp",
+          "encodedBytes": 31244,
+          "transferBytes": 31544,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/98247550bf3ed039e1c4253c.webp",
+          "encodedBytes": 39884,
+          "transferBytes": 40184,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/cec963d882da71ced80a1f4e.webp",
+          "encodedBytes": 124898,
+          "transferBytes": 125198,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/2e5fc30a4f34c80fb73fa767.webp",
+          "encodedBytes": 1451596,
+          "transferBytes": 1451896,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/f2db597379f35b1d25501ac4.webp",
+          "encodedBytes": 54322,
+          "transferBytes": 54622,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/7d1f2b5b710529a3a3dffa2b.webp",
+          "encodedBytes": 454958,
+          "transferBytes": 455258,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/7e84e119599275ef5d74cbad.webp",
+          "encodedBytes": 157382,
+          "transferBytes": 157682,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/1e7c8668a20a989d9b0829df.webp",
+          "encodedBytes": 38208,
+          "transferBytes": 38508,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/1ae18f854e1c1815a7d5bfdd.webp",
+          "encodedBytes": 6870,
+          "transferBytes": 7170,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/c0ff55a6d9fac7f40acc1e26.webp",
+          "encodedBytes": 19722,
+          "transferBytes": 20022,
+          "durationMs": 15
+        },
+        {
+          "url": "/art/runtime/e7419996d653299fd8985eff.webp",
+          "encodedBytes": 12414,
+          "transferBytes": 12714,
+          "durationMs": 19
+        },
+        {
+          "url": "/art/runtime/ab23c5ad58827e284b584aac.webp",
+          "encodedBytes": 31976,
+          "transferBytes": 32276,
+          "durationMs": 23
+        },
+        {
+          "url": "/art/runtime/1b071f538995195d64687596.webp",
+          "encodedBytes": 39662,
+          "transferBytes": 39962,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/a7c7d7cac9e3a747986836a4.webp",
+          "encodedBytes": 1290536,
+          "transferBytes": 1290836,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/2f32f751f7ad14331913c059.webp",
+          "encodedBytes": 54356,
+          "transferBytes": 54656,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/cf92f66d50cbb1c8a4437cf5.webp",
+          "encodedBytes": 161278,
+          "transferBytes": 161578,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/38b7d4bf7e27876b3e9dffdf.webp",
+          "encodedBytes": 227122,
+          "transferBytes": 227422,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/3ca8e7430dc16a790492719f.webp",
+          "encodedBytes": 143340,
+          "transferBytes": 143640,
+          "durationMs": 9
+        },
+        {
+          "url": "/art/runtime/2027aaa95e8a6e2a1ca75cc9.webp",
+          "encodedBytes": 15614,
+          "transferBytes": 15914,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/37eef4107fe16f6985497a22.webp",
+          "encodedBytes": 32452,
+          "transferBytes": 32752,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/a08aa8a5b54a0b07766ad713.webp",
+          "encodedBytes": 33326,
+          "transferBytes": 33626,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/e7fc940eacbd5d27c0711f9c.webp",
+          "encodedBytes": 32896,
+          "transferBytes": 33196,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/5704912547a060718d76efcf.webp",
+          "encodedBytes": 33708,
+          "transferBytes": 34008,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/31c431c15a28c07ff3f8a917.webp",
+          "encodedBytes": 39280,
+          "transferBytes": 39580,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/543a81b283af51a0c1324bea.webp",
+          "encodedBytes": 220320,
+          "transferBytes": 220620,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/dbfb40cd95d353cfda475987.webp",
+          "encodedBytes": 300614,
+          "transferBytes": 300914,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/089fa8477ec552543ca1659f.webp",
+          "encodedBytes": 79852,
+          "transferBytes": 80152,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/f8d8dffc4cf73eff4ddb1989.webp",
+          "encodedBytes": 1239002,
+          "transferBytes": 1239302,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/455fe2dfbd023db3d9c5f16d.webp",
+          "encodedBytes": 27640,
+          "transferBytes": 27940,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/a64ba16df8b15fec96de46a9.webp",
+          "encodedBytes": 10330,
+          "transferBytes": 10630,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/63e06f53f82493b0897953d5.webp",
+          "encodedBytes": 27832,
+          "transferBytes": 28132,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/ee717210e31d289b1f18a8fa.webp",
+          "encodedBytes": 51344,
+          "transferBytes": 0,
+          "durationMs": 15
+        },
+        {
+          "url": "/art/runtime/f50cc8ad005a31df7a2ed421.webp",
+          "encodedBytes": 71214,
+          "transferBytes": 71514,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/b9b89036420d993e18de722a.webp",
+          "encodedBytes": 8288,
+          "transferBytes": 8588,
+          "durationMs": 13
+        }
+      ],
+      "canvases": [
+        {
+          "width": 1917,
+          "height": 1278,
+          "backingRgba": 9799704,
+          "poolReserved": 12548368,
+          "poolPeak": 24692504,
+          "rasterReserved": 0,
+          "rasterPeak": 10035688
+        }
+      ],
+      "consumers": [],
+      "encodedReserved": 7917752,
+      "encodedPeak": 8382922,
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 2
+      },
+      "unknownImages": [],
+      "nativeConsumerRgba": 0,
+      "poolReserved": 12548368,
+      "rasterReserved": 0,
+      "rasterPeak": 10035688,
+      "backingRgba": 9799704,
+      "reserveBytes": 16777216,
+      "currentConservativeBytes": 64760496
+    },
+    {
+      "resources": [
+        {
+          "url": "/assets/index-CNmoZ-9P.js",
+          "encodedBytes": 57532,
+          "transferBytes": 57832,
+          "durationMs": 17
+        },
+        {
+          "url": "/assets/index-D7U2vX1x.css",
+          "encodedBytes": 1042,
+          "transferBytes": 1342,
+          "durationMs": 18
+        },
+        {
+          "url": "/favicon.ico",
+          "encodedBytes": 32,
+          "transferBytes": 332,
+          "durationMs": 174
+        },
+        {
+          "url": "/assets/App-BzEahbjQ.js",
+          "encodedBytes": 150641,
+          "transferBytes": 150941,
+          "durationMs": 14
+        },
+        {
+          "url": "/assets/App-CvfCOyJg.css",
+          "encodedBytes": 4543,
+          "transferBytes": 4843,
+          "durationMs": 15
+        },
+        {
+          "url": "/api/config",
+          "encodedBytes": 144,
+          "transferBytes": 444,
+          "durationMs": 57
+        },
+        {
+          "url": "/art/runtime/fbdbada95f20805dc7481080.webp",
+          "encodedBytes": 51008,
+          "transferBytes": 51308,
+          "durationMs": 40
+        },
+        {
+          "url": "/art/runtime/52ff9390c4cd1586d81379e4.webp",
+          "encodedBytes": 55904,
+          "transferBytes": 56204,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/ee717210e31d289b1f18a8fa.webp",
+          "encodedBytes": 51344,
+          "transferBytes": 51644,
+          "durationMs": 42
+        },
+        {
+          "url": "/art/runtime/5236eb83877343905b37043e.webp",
+          "encodedBytes": 1280088,
+          "transferBytes": 1280388,
+          "durationMs": 44
+        },
+        {
+          "url": "/art/runtime/07048b9f7fe30aeb42aa37c9.webp",
+          "encodedBytes": 69622,
+          "transferBytes": 69922,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/f4fe130b2a0429ae9416ee33.webp",
+          "encodedBytes": 61094,
+          "transferBytes": 61394,
+          "durationMs": 43
+        },
+        {
+          "url": "/art/runtime/1d1ee86f05052f73ceb34023.webp",
+          "encodedBytes": 243700,
+          "transferBytes": 244000,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/4146f22a4ed5621c2d79683d.webp",
+          "encodedBytes": 70546,
+          "transferBytes": 70846,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/2be933ad2350bda7c55d02e9.webp",
+          "encodedBytes": 120432,
+          "transferBytes": 120732,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/2387c2868ca1ccc2a206b7b5.webp",
+          "encodedBytes": 14096,
+          "transferBytes": 14396,
+          "durationMs": 9
+        },
+        {
+          "url": "/art/runtime/682d0e0eba401f4f708aeb98.webp",
+          "encodedBytes": 33572,
+          "transferBytes": 33872,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/1762cebafb4cb92d8e6705d3.webp",
+          "encodedBytes": 15720,
+          "transferBytes": 16020,
+          "durationMs": 12
+        },
+        {
+          "url": "/art/runtime/a9fba8e5b6900a5994905a54.webp",
+          "encodedBytes": 313300,
+          "transferBytes": 313600,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/cd1874ddd8944a8dfdab97cb.webp",
+          "encodedBytes": 19596,
+          "transferBytes": 19896,
+          "durationMs": 12
+        },
+        {
+          "url": "/art/runtime/5fee5be1403cf1c714c8b9ce.webp",
+          "encodedBytes": 63978,
+          "transferBytes": 64278,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/8e1384d8e9f9ae46f7eb04c3.webp",
+          "encodedBytes": 46388,
+          "transferBytes": 46688,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/780240c12e0600652987d150.webp",
+          "encodedBytes": 36210,
+          "transferBytes": 36510,
+          "durationMs": 18
+        },
+        {
+          "url": "/art/runtime/1be59efb6f7bd575b278cd5b.webp",
+          "encodedBytes": 143392,
+          "transferBytes": 143692,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/9084bd424517427956b36c8b.webp",
+          "encodedBytes": 45474,
+          "transferBytes": 45774,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/ae6ca396772773d2d43f8ab0.webp",
+          "encodedBytes": 41962,
+          "transferBytes": 42262,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/39e76eccca4ccf92d0595a96.webp",
+          "encodedBytes": 177266,
+          "transferBytes": 177566,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/284836e569a1dc4918906e11.webp",
+          "encodedBytes": 2832,
+          "transferBytes": 3132,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/3a06b2576cf37c29e20bf2c9.webp",
+          "encodedBytes": 2960,
+          "transferBytes": 3260,
+          "durationMs": 31
+        },
+        {
+          "url": "/art/runtime/0a00d83e289589747b29737d.webp",
+          "encodedBytes": 4180,
+          "transferBytes": 4480,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/1f3ade0a4f65eee03c7d6d91.webp",
+          "encodedBytes": 4310,
+          "transferBytes": 4610,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/8d0d39604e164acbb04f8567.webp",
+          "encodedBytes": 20482,
+          "transferBytes": 20782,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/c9c1a89dd124e976dbef2332.webp",
+          "encodedBytes": 18382,
+          "transferBytes": 18682,
+          "durationMs": 34
+        },
+        {
+          "url": "/art/runtime/b73db10c12d56cfb06d2ac9f.webp",
+          "encodedBytes": 1294,
+          "transferBytes": 1594,
+          "durationMs": 35
+        },
+        {
+          "url": "/art/runtime/368ad626ae1f6a0a513e8318.webp",
+          "encodedBytes": 54074,
+          "transferBytes": 54374,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/90de0cfb12f1991f707bad2b.webp",
+          "encodedBytes": 36068,
+          "transferBytes": 36368,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/144bdab511eaf0942d1acb28.webp",
+          "encodedBytes": 63068,
+          "transferBytes": 63368,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/a764b06fb7b6731fd241ee2e.webp",
+          "encodedBytes": 19494,
+          "transferBytes": 19794,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/c863209859945f0b4edd9fce.webp",
+          "encodedBytes": 31654,
+          "transferBytes": 31954,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/e77619400e9d1ad1efc8c137.webp",
+          "encodedBytes": 83262,
+          "transferBytes": 83562,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/b7dcd47e688e11fdb2772212.webp",
+          "encodedBytes": 3894,
+          "transferBytes": 4194,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/1c039634bcc6a957ee0b9ec9.webp",
+          "encodedBytes": 8730,
+          "transferBytes": 9030,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/f56688078ca06147bc65ca2b.webp",
+          "encodedBytes": 4412,
+          "transferBytes": 4712,
+          "durationMs": 12
+        },
+        {
+          "url": "/art/runtime/36d49706dceeb677af5ef18e.webp",
+          "encodedBytes": 17662,
+          "transferBytes": 17962,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/6fe0b156023aede6356a1063.webp",
+          "encodedBytes": 11952,
+          "transferBytes": 12252,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/4f868e00407dd959527ddb82.webp",
+          "encodedBytes": 17524,
+          "transferBytes": 17824,
+          "durationMs": 17
+        },
+        {
+          "url": "/art/runtime/dbc0e60515f2c8feab2963bb.webp",
+          "encodedBytes": 12272,
+          "transferBytes": 12572,
+          "durationMs": 19
+        },
+        {
+          "url": "/art/runtime/38b19cdc9b51a12719e5434b.webp",
+          "encodedBytes": 43700,
+          "transferBytes": 44000,
+          "durationMs": 3
+        },
+        {
+          "url": "/art/runtime/40ec08e7ed908e11a60ea099.webp",
+          "encodedBytes": 36810,
+          "transferBytes": 37110,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/27720ace89a8edcd8b28ec68.webp",
+          "encodedBytes": 43402,
+          "transferBytes": 43702,
+          "durationMs": 3
+        },
+        {
+          "url": "/art/runtime/6effac3d7433cb43877d5397.webp",
+          "encodedBytes": 33850,
+          "transferBytes": 34150,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/defaa58a4acb8fb853fd3a5e.webp",
+          "encodedBytes": 37030,
+          "transferBytes": 37330,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/7a74d758a4bc6f658ad5137f.webp",
+          "encodedBytes": 36282,
+          "transferBytes": 36582,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/3c762bd2f8c4eed49aab9f55.webp",
+          "encodedBytes": 36124,
+          "transferBytes": 36424,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/6fc7eea1cf74960d283a56e9.webp",
+          "encodedBytes": 36278,
+          "transferBytes": 36578,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/39fcdbefe53b2deb35210133.webp",
+          "encodedBytes": 45688,
+          "transferBytes": 45988,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/85936a9b002e38a0cb1b0f38.webp",
+          "encodedBytes": 41772,
+          "transferBytes": 42072,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/b470ef5ff06b6346bb74e93c.webp",
+          "encodedBytes": 45684,
+          "transferBytes": 45984,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/785f3086110c0191859c6cb1.webp",
+          "encodedBytes": 41546,
+          "transferBytes": 41846,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/f4dcbc073ff0595177bd7651.webp",
+          "encodedBytes": 31244,
+          "transferBytes": 31544,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/98247550bf3ed039e1c4253c.webp",
+          "encodedBytes": 39884,
+          "transferBytes": 40184,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/cec963d882da71ced80a1f4e.webp",
+          "encodedBytes": 124898,
+          "transferBytes": 125198,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/2e5fc30a4f34c80fb73fa767.webp",
+          "encodedBytes": 1451596,
+          "transferBytes": 1451896,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/f2db597379f35b1d25501ac4.webp",
+          "encodedBytes": 54322,
+          "transferBytes": 54622,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/7d1f2b5b710529a3a3dffa2b.webp",
+          "encodedBytes": 454958,
+          "transferBytes": 455258,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/7e84e119599275ef5d74cbad.webp",
+          "encodedBytes": 157382,
+          "transferBytes": 157682,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/1e7c8668a20a989d9b0829df.webp",
+          "encodedBytes": 38208,
+          "transferBytes": 38508,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/1ae18f854e1c1815a7d5bfdd.webp",
+          "encodedBytes": 6870,
+          "transferBytes": 7170,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/c0ff55a6d9fac7f40acc1e26.webp",
+          "encodedBytes": 19722,
+          "transferBytes": 20022,
+          "durationMs": 15
+        },
+        {
+          "url": "/art/runtime/e7419996d653299fd8985eff.webp",
+          "encodedBytes": 12414,
+          "transferBytes": 12714,
+          "durationMs": 19
+        },
+        {
+          "url": "/art/runtime/ab23c5ad58827e284b584aac.webp",
+          "encodedBytes": 31976,
+          "transferBytes": 32276,
+          "durationMs": 23
+        },
+        {
+          "url": "/art/runtime/1b071f538995195d64687596.webp",
+          "encodedBytes": 39662,
+          "transferBytes": 39962,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/a7c7d7cac9e3a747986836a4.webp",
+          "encodedBytes": 1290536,
+          "transferBytes": 1290836,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/2f32f751f7ad14331913c059.webp",
+          "encodedBytes": 54356,
+          "transferBytes": 54656,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/cf92f66d50cbb1c8a4437cf5.webp",
+          "encodedBytes": 161278,
+          "transferBytes": 161578,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/38b7d4bf7e27876b3e9dffdf.webp",
+          "encodedBytes": 227122,
+          "transferBytes": 227422,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/3ca8e7430dc16a790492719f.webp",
+          "encodedBytes": 143340,
+          "transferBytes": 143640,
+          "durationMs": 9
+        },
+        {
+          "url": "/art/runtime/2027aaa95e8a6e2a1ca75cc9.webp",
+          "encodedBytes": 15614,
+          "transferBytes": 15914,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/37eef4107fe16f6985497a22.webp",
+          "encodedBytes": 32452,
+          "transferBytes": 32752,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/a08aa8a5b54a0b07766ad713.webp",
+          "encodedBytes": 33326,
+          "transferBytes": 33626,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/e7fc940eacbd5d27c0711f9c.webp",
+          "encodedBytes": 32896,
+          "transferBytes": 33196,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/5704912547a060718d76efcf.webp",
+          "encodedBytes": 33708,
+          "transferBytes": 34008,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/31c431c15a28c07ff3f8a917.webp",
+          "encodedBytes": 39280,
+          "transferBytes": 39580,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/543a81b283af51a0c1324bea.webp",
+          "encodedBytes": 220320,
+          "transferBytes": 220620,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/dbfb40cd95d353cfda475987.webp",
+          "encodedBytes": 300614,
+          "transferBytes": 300914,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/089fa8477ec552543ca1659f.webp",
+          "encodedBytes": 79852,
+          "transferBytes": 80152,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/f8d8dffc4cf73eff4ddb1989.webp",
+          "encodedBytes": 1239002,
+          "transferBytes": 1239302,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/455fe2dfbd023db3d9c5f16d.webp",
+          "encodedBytes": 27640,
+          "transferBytes": 27940,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/a64ba16df8b15fec96de46a9.webp",
+          "encodedBytes": 10330,
+          "transferBytes": 10630,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/63e06f53f82493b0897953d5.webp",
+          "encodedBytes": 27832,
+          "transferBytes": 28132,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/ee717210e31d289b1f18a8fa.webp",
+          "encodedBytes": 51344,
+          "transferBytes": 0,
+          "durationMs": 15
+        },
+        {
+          "url": "/art/runtime/f50cc8ad005a31df7a2ed421.webp",
+          "encodedBytes": 71214,
+          "transferBytes": 71514,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/b9b89036420d993e18de722a.webp",
+          "encodedBytes": 8288,
+          "transferBytes": 8588,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/03a6d15ff04b1f25e9ec7d4e.webp",
+          "encodedBytes": 20828,
+          "transferBytes": 21128,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/defaa58a4acb8fb853fd3a5e.webp",
+          "encodedBytes": 37030,
+          "transferBytes": 0,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/7a74d758a4bc6f658ad5137f.webp",
+          "encodedBytes": 36282,
+          "transferBytes": 0,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/3c762bd2f8c4eed49aab9f55.webp",
+          "encodedBytes": 36124,
+          "transferBytes": 0,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/6fc7eea1cf74960d283a56e9.webp",
+          "encodedBytes": 36278,
+          "transferBytes": 0,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/13d436f1dc3eba72881af0d5.webp",
+          "encodedBytes": 40180,
+          "transferBytes": 40480,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/eb145ddf4f9029f610048055.webp",
+          "encodedBytes": 41856,
+          "transferBytes": 42156,
+          "durationMs": 4
+        }
+      ],
+      "canvases": [
+        {
+          "width": 2016,
+          "height": 1344,
+          "backingRgba": 10838016,
+          "poolReserved": 12218352,
+          "poolPeak": 24692504,
+          "rasterReserved": 0,
+          "rasterPeak": 10035688
+        }
+      ],
+      "consumers": [],
+      "encodedReserved": 8166330,
+      "encodedPeak": 8382922,
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 2
+      },
+      "unknownImages": [],
+      "nativeConsumerRgba": 0,
+      "poolReserved": 12218352,
+      "rasterReserved": 0,
+      "rasterPeak": 10035688,
+      "backingRgba": 10838016,
+      "reserveBytes": 16777216,
+      "currentConservativeBytes": 67004260
+    },
+    {
+      "resources": [
+        {
+          "url": "/assets/index-CNmoZ-9P.js",
+          "encodedBytes": 57532,
+          "transferBytes": 57832,
+          "durationMs": 17
+        },
+        {
+          "url": "/assets/index-D7U2vX1x.css",
+          "encodedBytes": 1042,
+          "transferBytes": 1342,
+          "durationMs": 18
+        },
+        {
+          "url": "/favicon.ico",
+          "encodedBytes": 32,
+          "transferBytes": 332,
+          "durationMs": 174
+        },
+        {
+          "url": "/assets/App-BzEahbjQ.js",
+          "encodedBytes": 150641,
+          "transferBytes": 150941,
+          "durationMs": 14
+        },
+        {
+          "url": "/assets/App-CvfCOyJg.css",
+          "encodedBytes": 4543,
+          "transferBytes": 4843,
+          "durationMs": 15
+        },
+        {
+          "url": "/api/config",
+          "encodedBytes": 144,
+          "transferBytes": 444,
+          "durationMs": 57
+        },
+        {
+          "url": "/art/runtime/fbdbada95f20805dc7481080.webp",
+          "encodedBytes": 51008,
+          "transferBytes": 51308,
+          "durationMs": 40
+        },
+        {
+          "url": "/art/runtime/52ff9390c4cd1586d81379e4.webp",
+          "encodedBytes": 55904,
+          "transferBytes": 56204,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/ee717210e31d289b1f18a8fa.webp",
+          "encodedBytes": 51344,
+          "transferBytes": 51644,
+          "durationMs": 42
+        },
+        {
+          "url": "/art/runtime/5236eb83877343905b37043e.webp",
+          "encodedBytes": 1280088,
+          "transferBytes": 1280388,
+          "durationMs": 44
+        },
+        {
+          "url": "/art/runtime/07048b9f7fe30aeb42aa37c9.webp",
+          "encodedBytes": 69622,
+          "transferBytes": 69922,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/f4fe130b2a0429ae9416ee33.webp",
+          "encodedBytes": 61094,
+          "transferBytes": 61394,
+          "durationMs": 43
+        },
+        {
+          "url": "/art/runtime/1d1ee86f05052f73ceb34023.webp",
+          "encodedBytes": 243700,
+          "transferBytes": 244000,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/4146f22a4ed5621c2d79683d.webp",
+          "encodedBytes": 70546,
+          "transferBytes": 70846,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/2be933ad2350bda7c55d02e9.webp",
+          "encodedBytes": 120432,
+          "transferBytes": 120732,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/2387c2868ca1ccc2a206b7b5.webp",
+          "encodedBytes": 14096,
+          "transferBytes": 14396,
+          "durationMs": 9
+        },
+        {
+          "url": "/art/runtime/682d0e0eba401f4f708aeb98.webp",
+          "encodedBytes": 33572,
+          "transferBytes": 33872,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/1762cebafb4cb92d8e6705d3.webp",
+          "encodedBytes": 15720,
+          "transferBytes": 16020,
+          "durationMs": 12
+        },
+        {
+          "url": "/art/runtime/a9fba8e5b6900a5994905a54.webp",
+          "encodedBytes": 313300,
+          "transferBytes": 313600,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/cd1874ddd8944a8dfdab97cb.webp",
+          "encodedBytes": 19596,
+          "transferBytes": 19896,
+          "durationMs": 12
+        },
+        {
+          "url": "/art/runtime/5fee5be1403cf1c714c8b9ce.webp",
+          "encodedBytes": 63978,
+          "transferBytes": 64278,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/8e1384d8e9f9ae46f7eb04c3.webp",
+          "encodedBytes": 46388,
+          "transferBytes": 46688,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/780240c12e0600652987d150.webp",
+          "encodedBytes": 36210,
+          "transferBytes": 36510,
+          "durationMs": 18
+        },
+        {
+          "url": "/art/runtime/1be59efb6f7bd575b278cd5b.webp",
+          "encodedBytes": 143392,
+          "transferBytes": 143692,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/9084bd424517427956b36c8b.webp",
+          "encodedBytes": 45474,
+          "transferBytes": 45774,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/ae6ca396772773d2d43f8ab0.webp",
+          "encodedBytes": 41962,
+          "transferBytes": 42262,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/39e76eccca4ccf92d0595a96.webp",
+          "encodedBytes": 177266,
+          "transferBytes": 177566,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/284836e569a1dc4918906e11.webp",
+          "encodedBytes": 2832,
+          "transferBytes": 3132,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/3a06b2576cf37c29e20bf2c9.webp",
+          "encodedBytes": 2960,
+          "transferBytes": 3260,
+          "durationMs": 31
+        },
+        {
+          "url": "/art/runtime/0a00d83e289589747b29737d.webp",
+          "encodedBytes": 4180,
+          "transferBytes": 4480,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/1f3ade0a4f65eee03c7d6d91.webp",
+          "encodedBytes": 4310,
+          "transferBytes": 4610,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/8d0d39604e164acbb04f8567.webp",
+          "encodedBytes": 20482,
+          "transferBytes": 20782,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/c9c1a89dd124e976dbef2332.webp",
+          "encodedBytes": 18382,
+          "transferBytes": 18682,
+          "durationMs": 34
+        },
+        {
+          "url": "/art/runtime/b73db10c12d56cfb06d2ac9f.webp",
+          "encodedBytes": 1294,
+          "transferBytes": 1594,
+          "durationMs": 35
+        },
+        {
+          "url": "/art/runtime/368ad626ae1f6a0a513e8318.webp",
+          "encodedBytes": 54074,
+          "transferBytes": 54374,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/90de0cfb12f1991f707bad2b.webp",
+          "encodedBytes": 36068,
+          "transferBytes": 36368,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/144bdab511eaf0942d1acb28.webp",
+          "encodedBytes": 63068,
+          "transferBytes": 63368,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/a764b06fb7b6731fd241ee2e.webp",
+          "encodedBytes": 19494,
+          "transferBytes": 19794,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/c863209859945f0b4edd9fce.webp",
+          "encodedBytes": 31654,
+          "transferBytes": 31954,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/e77619400e9d1ad1efc8c137.webp",
+          "encodedBytes": 83262,
+          "transferBytes": 83562,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/b7dcd47e688e11fdb2772212.webp",
+          "encodedBytes": 3894,
+          "transferBytes": 4194,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/1c039634bcc6a957ee0b9ec9.webp",
+          "encodedBytes": 8730,
+          "transferBytes": 9030,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/f56688078ca06147bc65ca2b.webp",
+          "encodedBytes": 4412,
+          "transferBytes": 4712,
+          "durationMs": 12
+        },
+        {
+          "url": "/art/runtime/36d49706dceeb677af5ef18e.webp",
+          "encodedBytes": 17662,
+          "transferBytes": 17962,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/6fe0b156023aede6356a1063.webp",
+          "encodedBytes": 11952,
+          "transferBytes": 12252,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/4f868e00407dd959527ddb82.webp",
+          "encodedBytes": 17524,
+          "transferBytes": 17824,
+          "durationMs": 17
+        },
+        {
+          "url": "/art/runtime/dbc0e60515f2c8feab2963bb.webp",
+          "encodedBytes": 12272,
+          "transferBytes": 12572,
+          "durationMs": 19
+        },
+        {
+          "url": "/art/runtime/38b19cdc9b51a12719e5434b.webp",
+          "encodedBytes": 43700,
+          "transferBytes": 44000,
+          "durationMs": 3
+        },
+        {
+          "url": "/art/runtime/40ec08e7ed908e11a60ea099.webp",
+          "encodedBytes": 36810,
+          "transferBytes": 37110,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/27720ace89a8edcd8b28ec68.webp",
+          "encodedBytes": 43402,
+          "transferBytes": 43702,
+          "durationMs": 3
+        },
+        {
+          "url": "/art/runtime/6effac3d7433cb43877d5397.webp",
+          "encodedBytes": 33850,
+          "transferBytes": 34150,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/defaa58a4acb8fb853fd3a5e.webp",
+          "encodedBytes": 37030,
+          "transferBytes": 37330,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/7a74d758a4bc6f658ad5137f.webp",
+          "encodedBytes": 36282,
+          "transferBytes": 36582,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/3c762bd2f8c4eed49aab9f55.webp",
+          "encodedBytes": 36124,
+          "transferBytes": 36424,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/6fc7eea1cf74960d283a56e9.webp",
+          "encodedBytes": 36278,
+          "transferBytes": 36578,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/39fcdbefe53b2deb35210133.webp",
+          "encodedBytes": 45688,
+          "transferBytes": 45988,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/85936a9b002e38a0cb1b0f38.webp",
+          "encodedBytes": 41772,
+          "transferBytes": 42072,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/b470ef5ff06b6346bb74e93c.webp",
+          "encodedBytes": 45684,
+          "transferBytes": 45984,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/785f3086110c0191859c6cb1.webp",
+          "encodedBytes": 41546,
+          "transferBytes": 41846,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/f4dcbc073ff0595177bd7651.webp",
+          "encodedBytes": 31244,
+          "transferBytes": 31544,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/98247550bf3ed039e1c4253c.webp",
+          "encodedBytes": 39884,
+          "transferBytes": 40184,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/cec963d882da71ced80a1f4e.webp",
+          "encodedBytes": 124898,
+          "transferBytes": 125198,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/2e5fc30a4f34c80fb73fa767.webp",
+          "encodedBytes": 1451596,
+          "transferBytes": 1451896,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/f2db597379f35b1d25501ac4.webp",
+          "encodedBytes": 54322,
+          "transferBytes": 54622,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/7d1f2b5b710529a3a3dffa2b.webp",
+          "encodedBytes": 454958,
+          "transferBytes": 455258,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/7e84e119599275ef5d74cbad.webp",
+          "encodedBytes": 157382,
+          "transferBytes": 157682,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/1e7c8668a20a989d9b0829df.webp",
+          "encodedBytes": 38208,
+          "transferBytes": 38508,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/1ae18f854e1c1815a7d5bfdd.webp",
+          "encodedBytes": 6870,
+          "transferBytes": 7170,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/c0ff55a6d9fac7f40acc1e26.webp",
+          "encodedBytes": 19722,
+          "transferBytes": 20022,
+          "durationMs": 15
+        },
+        {
+          "url": "/art/runtime/e7419996d653299fd8985eff.webp",
+          "encodedBytes": 12414,
+          "transferBytes": 12714,
+          "durationMs": 19
+        },
+        {
+          "url": "/art/runtime/ab23c5ad58827e284b584aac.webp",
+          "encodedBytes": 31976,
+          "transferBytes": 32276,
+          "durationMs": 23
+        },
+        {
+          "url": "/art/runtime/1b071f538995195d64687596.webp",
+          "encodedBytes": 39662,
+          "transferBytes": 39962,
+          "durationMs": 8
+        },
+        {
+          "url": "/art/runtime/a7c7d7cac9e3a747986836a4.webp",
+          "encodedBytes": 1290536,
+          "transferBytes": 1290836,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/2f32f751f7ad14331913c059.webp",
+          "encodedBytes": 54356,
+          "transferBytes": 54656,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/cf92f66d50cbb1c8a4437cf5.webp",
+          "encodedBytes": 161278,
+          "transferBytes": 161578,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/38b7d4bf7e27876b3e9dffdf.webp",
+          "encodedBytes": 227122,
+          "transferBytes": 227422,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/3ca8e7430dc16a790492719f.webp",
+          "encodedBytes": 143340,
+          "transferBytes": 143640,
+          "durationMs": 9
+        },
+        {
+          "url": "/art/runtime/2027aaa95e8a6e2a1ca75cc9.webp",
+          "encodedBytes": 15614,
+          "transferBytes": 15914,
+          "durationMs": 11
+        },
+        {
+          "url": "/art/runtime/37eef4107fe16f6985497a22.webp",
+          "encodedBytes": 32452,
+          "transferBytes": 32752,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/a08aa8a5b54a0b07766ad713.webp",
+          "encodedBytes": 33326,
+          "transferBytes": 33626,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/e7fc940eacbd5d27c0711f9c.webp",
+          "encodedBytes": 32896,
+          "transferBytes": 33196,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/5704912547a060718d76efcf.webp",
+          "encodedBytes": 33708,
+          "transferBytes": 34008,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/31c431c15a28c07ff3f8a917.webp",
+          "encodedBytes": 39280,
+          "transferBytes": 39580,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/543a81b283af51a0c1324bea.webp",
+          "encodedBytes": 220320,
+          "transferBytes": 220620,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/dbfb40cd95d353cfda475987.webp",
+          "encodedBytes": 300614,
+          "transferBytes": 300914,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/089fa8477ec552543ca1659f.webp",
+          "encodedBytes": 79852,
+          "transferBytes": 80152,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/f8d8dffc4cf73eff4ddb1989.webp",
+          "encodedBytes": 1239002,
+          "transferBytes": 1239302,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/455fe2dfbd023db3d9c5f16d.webp",
+          "encodedBytes": 27640,
+          "transferBytes": 27940,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/a64ba16df8b15fec96de46a9.webp",
+          "encodedBytes": 10330,
+          "transferBytes": 10630,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/63e06f53f82493b0897953d5.webp",
+          "encodedBytes": 27832,
+          "transferBytes": 28132,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/ee717210e31d289b1f18a8fa.webp",
+          "encodedBytes": 51344,
+          "transferBytes": 0,
+          "durationMs": 15
+        },
+        {
+          "url": "/art/runtime/f50cc8ad005a31df7a2ed421.webp",
+          "encodedBytes": 71214,
+          "transferBytes": 71514,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/b9b89036420d993e18de722a.webp",
+          "encodedBytes": 8288,
+          "transferBytes": 8588,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/03a6d15ff04b1f25e9ec7d4e.webp",
+          "encodedBytes": 20828,
+          "transferBytes": 21128,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/defaa58a4acb8fb853fd3a5e.webp",
+          "encodedBytes": 37030,
+          "transferBytes": 0,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/7a74d758a4bc6f658ad5137f.webp",
+          "encodedBytes": 36282,
+          "transferBytes": 0,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/3c762bd2f8c4eed49aab9f55.webp",
+          "encodedBytes": 36124,
+          "transferBytes": 0,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/6fc7eea1cf74960d283a56e9.webp",
+          "encodedBytes": 36278,
+          "transferBytes": 0,
+          "durationMs": 7
+        },
+        {
+          "url": "/art/runtime/13d436f1dc3eba72881af0d5.webp",
+          "encodedBytes": 40180,
+          "transferBytes": 40480,
+          "durationMs": 6
+        },
+        {
+          "url": "/art/runtime/eb145ddf4f9029f610048055.webp",
+          "encodedBytes": 41856,
+          "transferBytes": 42156,
+          "durationMs": 4
+        }
+      ],
+      "canvases": [
+        {
+          "width": 1917,
+          "height": 1278,
+          "backingRgba": 9799704,
+          "poolReserved": 14068368,
+          "poolPeak": 24692504,
+          "rasterReserved": 9812488,
+          "rasterPeak": 11084976
+        }
+      ],
+      "consumers": [],
+      "encodedReserved": 8166330,
+      "encodedPeak": 8382922,
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 2
+      },
+      "unknownImages": [],
+      "nativeConsumerRgba": 0,
+      "poolReserved": 14068368,
+      "rasterReserved": 9812488,
+      "rasterPeak": 11084976,
+      "backingRgba": 9799704,
+      "reserveBytes": 16777216,
+      "currentConservativeBytes": 76590140
+    },
+    {
+      "resources": [
+        {
+          "url": "/assets/index-CNmoZ-9P.js",
+          "encodedBytes": 57532,
+          "transferBytes": 0,
+          "durationMs": 16
+        },
+        {
+          "url": "/assets/index-D7U2vX1x.css",
+          "encodedBytes": 1042,
+          "transferBytes": 0,
+          "durationMs": 17
+        },
+        {
+          "url": "/favicon.ico",
+          "encodedBytes": 32,
+          "transferBytes": 0,
+          "durationMs": 147
+        },
+        {
+          "url": "/assets/App-CvfCOyJg.css",
+          "encodedBytes": 4543,
+          "transferBytes": 0,
+          "durationMs": 10
+        },
+        {
+          "url": "/assets/App-BzEahbjQ.js",
+          "encodedBytes": 150641,
+          "transferBytes": 0,
+          "durationMs": 9
+        },
+        {
+          "url": "/api/config",
+          "encodedBytes": 144,
+          "transferBytes": 444,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/5236eb83877343905b37043e.webp",
+          "encodedBytes": 1280088,
+          "transferBytes": 0,
+          "durationMs": 27
+        },
+        {
+          "url": "/art/runtime/fbdbada95f20805dc7481080.webp",
+          "encodedBytes": 51008,
+          "transferBytes": 0,
+          "durationMs": 27
+        },
+        {
+          "url": "/art/runtime/52ff9390c4cd1586d81379e4.webp",
+          "encodedBytes": 55904,
+          "transferBytes": 0,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/ee717210e31d289b1f18a8fa.webp",
+          "encodedBytes": 51344,
+          "transferBytes": 0,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/07048b9f7fe30aeb42aa37c9.webp",
+          "encodedBytes": 69622,
+          "transferBytes": 0,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/f4fe130b2a0429ae9416ee33.webp",
+          "encodedBytes": 61094,
+          "transferBytes": 0,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/8d0d39604e164acbb04f8567.webp",
+          "encodedBytes": 20482,
+          "transferBytes": 0,
+          "durationMs": 19
+        },
+        {
+          "url": "/art/runtime/d4f77426628db36c2593abe6.webp",
+          "encodedBytes": 21830,
+          "transferBytes": 22130,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/1e3f386e3fe766c290e163c3.webp",
+          "encodedBytes": 20002,
+          "transferBytes": 20302,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/6cf8746cdbf738d62d541dfd.webp",
+          "encodedBytes": 24102,
+          "transferBytes": 24402,
+          "durationMs": 15
+        },
+        {
+          "url": "/art/runtime/c9c1a89dd124e976dbef2332.webp",
+          "encodedBytes": 18382,
+          "transferBytes": 0,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/2f47afe6af63f1a6f4b7bbf3.webp",
+          "encodedBytes": 20100,
+          "transferBytes": 20400,
+          "durationMs": 18
+        },
+        {
+          "url": "/art/runtime/baa37d0d47a407491dd58864.webp",
+          "encodedBytes": 18650,
+          "transferBytes": 18950,
+          "durationMs": 20
+        },
+        {
+          "url": "/art/runtime/63a688ad467b8cbd4da29e9a.webp",
+          "encodedBytes": 22158,
+          "transferBytes": 22458,
+          "durationMs": 23
+        },
+        {
+          "url": "/art/runtime/1f3ade0a4f65eee03c7d6d91.webp",
+          "encodedBytes": 4310,
+          "transferBytes": 0,
+          "durationMs": 54
+        },
+        {
+          "url": "/art/runtime/0a00d83e289589747b29737d.webp",
+          "encodedBytes": 4180,
+          "transferBytes": 0,
+          "durationMs": 54
+        },
+        {
+          "url": "/art/runtime/8ff08d2daf54b78ac1cdeb5a.webp",
+          "encodedBytes": 33584,
+          "transferBytes": 33884,
+          "durationMs": 22
+        },
+        {
+          "url": "/art/runtime/9084bd424517427956b36c8b.webp",
+          "encodedBytes": 45474,
+          "transferBytes": 0,
+          "durationMs": 56
+        },
+        {
+          "url": "/art/runtime/ae6ca396772773d2d43f8ab0.webp",
+          "encodedBytes": 41962,
+          "transferBytes": 0,
+          "durationMs": 58
+        },
+        {
+          "url": "/art/runtime/6a0bc4cfa29c5d61afb8cc2c.webp",
+          "encodedBytes": 3228,
+          "transferBytes": 3528,
+          "durationMs": 25
+        },
+        {
+          "url": "/art/runtime/b73db10c12d56cfb06d2ac9f.webp",
+          "encodedBytes": 1294,
+          "transferBytes": 0,
+          "durationMs": 65
+        },
+        {
+          "url": "/art/runtime/6e5be9f3a1b882a66ddc6c9e.webp",
+          "encodedBytes": 17680,
+          "transferBytes": 17980,
+          "durationMs": 32
+        },
+        {
+          "url": "/art/runtime/e90f50a160f4336b715620cc.webp",
+          "encodedBytes": 12926,
+          "transferBytes": 13226,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/284836e569a1dc4918906e11.webp",
+          "encodedBytes": 2832,
+          "transferBytes": 0,
+          "durationMs": 74
+        },
+        {
+          "url": "/art/runtime/09693189291d580975220a0c.webp",
+          "encodedBytes": 6532,
+          "transferBytes": 6832,
+          "durationMs": 37
+        },
+        {
+          "url": "/art/runtime/3a06b2576cf37c29e20bf2c9.webp",
+          "encodedBytes": 2960,
+          "transferBytes": 0,
+          "durationMs": 75
+        },
+        {
+          "url": "/art/runtime/ed94a4357338c73e6265d930.webp",
+          "encodedBytes": 74748,
+          "transferBytes": 75048,
+          "durationMs": 40
+        },
+        {
+          "url": "/art/runtime/40d6291457bd6107681a491a.webp",
+          "encodedBytes": 68890,
+          "transferBytes": 69190,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/2695fb7d55fcf28671dd227f.webp",
+          "encodedBytes": 81380,
+          "transferBytes": 81680,
+          "durationMs": 42
+        },
+        {
+          "url": "/art/runtime/70af9f7f9a8165fa320c309b.webp",
+          "encodedBytes": 66004,
+          "transferBytes": 66304,
+          "durationMs": 43
+        },
+        {
+          "url": "/art/runtime/06fbf5b17ac314e645d31116.webp",
+          "encodedBytes": 62564,
+          "transferBytes": 62864,
+          "durationMs": 45
+        },
+        {
+          "url": "/art/runtime/83b4c48b17c2983d4c6875b2.webp",
+          "encodedBytes": 73428,
+          "transferBytes": 73728,
+          "durationMs": 46
+        },
+        {
+          "url": "/art/runtime/9342e370f4415ac86fe6ba46.webp",
+          "encodedBytes": 12932,
+          "transferBytes": 13232,
+          "durationMs": 47
+        },
+        {
+          "url": "/art/runtime/e7419996d653299fd8985eff.webp",
+          "encodedBytes": 12414,
+          "transferBytes": 12714,
+          "durationMs": 47
+        },
+        {
+          "url": "/art/runtime/1be59efb6f7bd575b278cd5b.webp",
+          "encodedBytes": 143392,
+          "transferBytes": 0,
+          "durationMs": 86
+        },
+        {
+          "url": "/art/runtime/2afd6bde728e1134a5d8bb83.webp",
+          "encodedBytes": 10216,
+          "transferBytes": 10516,
+          "durationMs": 56
+        },
+        {
+          "url": "/art/runtime/39e76eccca4ccf92d0595a96.webp",
+          "encodedBytes": 177266,
+          "transferBytes": 0,
+          "durationMs": 87
+        },
+        {
+          "url": "/art/runtime/f7d8c4e0681229d76485d058.webp",
+          "encodedBytes": 3822,
+          "transferBytes": 4122,
+          "durationMs": 57
+        },
+        {
+          "url": "/art/runtime/4ac9977477b7e19f90729a92.webp",
+          "encodedBytes": 163330,
+          "transferBytes": 163630,
+          "durationMs": 55
+        },
+        {
+          "url": "/art/runtime/6311722aa97acdda6bc97070.webp",
+          "encodedBytes": 53940,
+          "transferBytes": 54240,
+          "durationMs": 57
+        },
+        {
+          "url": "/art/runtime/1edfb39d91a07f12e03acc53.webp",
+          "encodedBytes": 39854,
+          "transferBytes": 40154,
+          "durationMs": 58
+        },
+        {
+          "url": "/art/runtime/951c2f2441a0bbdd57f2af89.webp",
+          "encodedBytes": 10230,
+          "transferBytes": 10530,
+          "durationMs": 58
+        },
+        {
+          "url": "/art/runtime/47afa38e40e6368ef1e88baa.webp",
+          "encodedBytes": 10602,
+          "transferBytes": 10902,
+          "durationMs": 60
+        },
+        {
+          "url": "/art/runtime/0e9ce614d204d4f0b45ec54a.webp",
+          "encodedBytes": 26900,
+          "transferBytes": 27200,
+          "durationMs": 61
+        },
+        {
+          "url": "/art/runtime/1d1ee86f05052f73ceb34023.webp",
+          "encodedBytes": 243700,
+          "transferBytes": 0,
+          "durationMs": 94
+        },
+        {
+          "url": "/art/runtime/4146f22a4ed5621c2d79683d.webp",
+          "encodedBytes": 70546,
+          "transferBytes": 0,
+          "durationMs": 95
+        },
+        {
+          "url": "/art/runtime/2be933ad2350bda7c55d02e9.webp",
+          "encodedBytes": 120432,
+          "transferBytes": 0,
+          "durationMs": 95
+        },
+        {
+          "url": "/art/runtime/2387c2868ca1ccc2a206b7b5.webp",
+          "encodedBytes": 14096,
+          "transferBytes": 0,
+          "durationMs": 97
+        },
+        {
+          "url": "/art/runtime/682d0e0eba401f4f708aeb98.webp",
+          "encodedBytes": 33572,
+          "transferBytes": 0,
+          "durationMs": 98
+        },
+        {
+          "url": "/art/runtime/a9fba8e5b6900a5994905a54.webp",
+          "encodedBytes": 313300,
+          "transferBytes": 0,
+          "durationMs": 96
+        },
+        {
+          "url": "/art/runtime/1762cebafb4cb92d8e6705d3.webp",
+          "encodedBytes": 15720,
+          "transferBytes": 0,
+          "durationMs": 98
+        },
+        {
+          "url": "/art/runtime/cd1874ddd8944a8dfdab97cb.webp",
+          "encodedBytes": 19596,
+          "transferBytes": 0,
+          "durationMs": 98
+        },
+        {
+          "url": "/art/runtime/5fee5be1403cf1c714c8b9ce.webp",
+          "encodedBytes": 63978,
+          "transferBytes": 0,
+          "durationMs": 99
+        },
+        {
+          "url": "/art/runtime/5115de167fc55b8e5a7ffff7.webp",
+          "encodedBytes": 41510,
+          "transferBytes": 41810,
+          "durationMs": 65
+        },
+        {
+          "url": "/art/runtime/780240c12e0600652987d150.webp",
+          "encodedBytes": 36210,
+          "transferBytes": 0,
+          "durationMs": 99
+        },
+        {
+          "url": "/art/runtime/93d14cfd8af59b4fdeb29221.webp",
+          "encodedBytes": 28254,
+          "transferBytes": 28554,
+          "durationMs": 68
+        },
+        {
+          "url": "/art/runtime/368ad626ae1f6a0a513e8318.webp",
+          "encodedBytes": 54074,
+          "transferBytes": 0,
+          "durationMs": 89
+        },
+        {
+          "url": "/art/runtime/90de0cfb12f1991f707bad2b.webp",
+          "encodedBytes": 36068,
+          "transferBytes": 0,
+          "durationMs": 89
+        },
+        {
+          "url": "/art/runtime/7d27eff837a85cad0b08a9f5.webp",
+          "encodedBytes": 87942,
+          "transferBytes": 88242,
+          "durationMs": 72
+        },
+        {
+          "url": "/art/runtime/c38233616684d657ea0f004e.webp",
+          "encodedBytes": 31854,
+          "transferBytes": 32154,
+          "durationMs": 71
+        },
+        {
+          "url": "/art/runtime/298cfbe9ff0f206ab546e09a.webp",
+          "encodedBytes": 29444,
+          "transferBytes": 29744,
+          "durationMs": 73
+        },
+        {
+          "url": "/art/runtime/7f0f398ba4c10f64eeae886a.webp",
+          "encodedBytes": 29848,
+          "transferBytes": 30148,
+          "durationMs": 74
+        },
+        {
+          "url": "/art/runtime/7acec308f61dad623dca0e34.webp",
+          "encodedBytes": 29190,
+          "transferBytes": 29490,
+          "durationMs": 73
+        },
+        {
+          "url": "/art/runtime/7f7c028988ce6f9eb98aba92.webp",
+          "encodedBytes": 25522,
+          "transferBytes": 25822,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/31c431c15a28c07ff3f8a917.webp",
+          "encodedBytes": 39280,
+          "transferBytes": 39580,
+          "durationMs": 5
+        }
+      ],
+      "canvases": [
+        {
+          "width": 1728,
+          "height": 1152,
+          "backingRgba": 7962624,
+          "poolReserved": 17730996,
+          "poolPeak": 18235660,
+          "rasterReserved": 9421164,
+          "rasterPeak": 11829028
+        }
+      ],
+      "consumers": [
+        "/art/runtime/7acec308f61dad623dca0e34.webp",
+        "/art/runtime/7f0f398ba4c10f64eeae886a.webp",
+        "/art/runtime/c38233616684d657ea0f004e.webp",
+        "/art/runtime/298cfbe9ff0f206ab546e09a.webp"
+      ],
+      "encodedReserved": 4367776,
+      "encodedPeak": 4367776,
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 2
+      },
+      "unknownImages": [],
+      "nativeConsumerRgba": 364800,
+      "poolReserved": 17730996,
+      "rasterReserved": 9421164,
+      "rasterPeak": 11829028,
+      "backingRgba": 7962624,
+      "reserveBytes": 16777216,
+      "currentConservativeBytes": 68954976
+    },
+    {
+      "resources": [
+        {
+          "url": "/assets/index-CNmoZ-9P.js",
+          "encodedBytes": 57532,
+          "transferBytes": 0,
+          "durationMs": 16
+        },
+        {
+          "url": "/assets/index-D7U2vX1x.css",
+          "encodedBytes": 1042,
+          "transferBytes": 0,
+          "durationMs": 17
+        },
+        {
+          "url": "/favicon.ico",
+          "encodedBytes": 32,
+          "transferBytes": 0,
+          "durationMs": 147
+        },
+        {
+          "url": "/assets/App-CvfCOyJg.css",
+          "encodedBytes": 4543,
+          "transferBytes": 0,
+          "durationMs": 10
+        },
+        {
+          "url": "/assets/App-BzEahbjQ.js",
+          "encodedBytes": 150641,
+          "transferBytes": 0,
+          "durationMs": 9
+        },
+        {
+          "url": "/api/config",
+          "encodedBytes": 144,
+          "transferBytes": 444,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/5236eb83877343905b37043e.webp",
+          "encodedBytes": 1280088,
+          "transferBytes": 0,
+          "durationMs": 27
+        },
+        {
+          "url": "/art/runtime/fbdbada95f20805dc7481080.webp",
+          "encodedBytes": 51008,
+          "transferBytes": 0,
+          "durationMs": 27
+        },
+        {
+          "url": "/art/runtime/52ff9390c4cd1586d81379e4.webp",
+          "encodedBytes": 55904,
+          "transferBytes": 0,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/ee717210e31d289b1f18a8fa.webp",
+          "encodedBytes": 51344,
+          "transferBytes": 0,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/07048b9f7fe30aeb42aa37c9.webp",
+          "encodedBytes": 69622,
+          "transferBytes": 0,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/f4fe130b2a0429ae9416ee33.webp",
+          "encodedBytes": 61094,
+          "transferBytes": 0,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/8d0d39604e164acbb04f8567.webp",
+          "encodedBytes": 20482,
+          "transferBytes": 0,
+          "durationMs": 19
+        },
+        {
+          "url": "/art/runtime/d4f77426628db36c2593abe6.webp",
+          "encodedBytes": 21830,
+          "transferBytes": 22130,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/1e3f386e3fe766c290e163c3.webp",
+          "encodedBytes": 20002,
+          "transferBytes": 20302,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/6cf8746cdbf738d62d541dfd.webp",
+          "encodedBytes": 24102,
+          "transferBytes": 24402,
+          "durationMs": 15
+        },
+        {
+          "url": "/art/runtime/c9c1a89dd124e976dbef2332.webp",
+          "encodedBytes": 18382,
+          "transferBytes": 0,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/2f47afe6af63f1a6f4b7bbf3.webp",
+          "encodedBytes": 20100,
+          "transferBytes": 20400,
+          "durationMs": 18
+        },
+        {
+          "url": "/art/runtime/baa37d0d47a407491dd58864.webp",
+          "encodedBytes": 18650,
+          "transferBytes": 18950,
+          "durationMs": 20
+        },
+        {
+          "url": "/art/runtime/63a688ad467b8cbd4da29e9a.webp",
+          "encodedBytes": 22158,
+          "transferBytes": 22458,
+          "durationMs": 23
+        },
+        {
+          "url": "/art/runtime/1f3ade0a4f65eee03c7d6d91.webp",
+          "encodedBytes": 4310,
+          "transferBytes": 0,
+          "durationMs": 54
+        },
+        {
+          "url": "/art/runtime/0a00d83e289589747b29737d.webp",
+          "encodedBytes": 4180,
+          "transferBytes": 0,
+          "durationMs": 54
+        },
+        {
+          "url": "/art/runtime/8ff08d2daf54b78ac1cdeb5a.webp",
+          "encodedBytes": 33584,
+          "transferBytes": 33884,
+          "durationMs": 22
+        },
+        {
+          "url": "/art/runtime/9084bd424517427956b36c8b.webp",
+          "encodedBytes": 45474,
+          "transferBytes": 0,
+          "durationMs": 56
+        },
+        {
+          "url": "/art/runtime/ae6ca396772773d2d43f8ab0.webp",
+          "encodedBytes": 41962,
+          "transferBytes": 0,
+          "durationMs": 58
+        },
+        {
+          "url": "/art/runtime/6a0bc4cfa29c5d61afb8cc2c.webp",
+          "encodedBytes": 3228,
+          "transferBytes": 3528,
+          "durationMs": 25
+        },
+        {
+          "url": "/art/runtime/b73db10c12d56cfb06d2ac9f.webp",
+          "encodedBytes": 1294,
+          "transferBytes": 0,
+          "durationMs": 65
+        },
+        {
+          "url": "/art/runtime/6e5be9f3a1b882a66ddc6c9e.webp",
+          "encodedBytes": 17680,
+          "transferBytes": 17980,
+          "durationMs": 32
+        },
+        {
+          "url": "/art/runtime/e90f50a160f4336b715620cc.webp",
+          "encodedBytes": 12926,
+          "transferBytes": 13226,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/284836e569a1dc4918906e11.webp",
+          "encodedBytes": 2832,
+          "transferBytes": 0,
+          "durationMs": 74
+        },
+        {
+          "url": "/art/runtime/09693189291d580975220a0c.webp",
+          "encodedBytes": 6532,
+          "transferBytes": 6832,
+          "durationMs": 37
+        },
+        {
+          "url": "/art/runtime/3a06b2576cf37c29e20bf2c9.webp",
+          "encodedBytes": 2960,
+          "transferBytes": 0,
+          "durationMs": 75
+        },
+        {
+          "url": "/art/runtime/ed94a4357338c73e6265d930.webp",
+          "encodedBytes": 74748,
+          "transferBytes": 75048,
+          "durationMs": 40
+        },
+        {
+          "url": "/art/runtime/40d6291457bd6107681a491a.webp",
+          "encodedBytes": 68890,
+          "transferBytes": 69190,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/2695fb7d55fcf28671dd227f.webp",
+          "encodedBytes": 81380,
+          "transferBytes": 81680,
+          "durationMs": 42
+        },
+        {
+          "url": "/art/runtime/70af9f7f9a8165fa320c309b.webp",
+          "encodedBytes": 66004,
+          "transferBytes": 66304,
+          "durationMs": 43
+        },
+        {
+          "url": "/art/runtime/06fbf5b17ac314e645d31116.webp",
+          "encodedBytes": 62564,
+          "transferBytes": 62864,
+          "durationMs": 45
+        },
+        {
+          "url": "/art/runtime/83b4c48b17c2983d4c6875b2.webp",
+          "encodedBytes": 73428,
+          "transferBytes": 73728,
+          "durationMs": 46
+        },
+        {
+          "url": "/art/runtime/9342e370f4415ac86fe6ba46.webp",
+          "encodedBytes": 12932,
+          "transferBytes": 13232,
+          "durationMs": 47
+        },
+        {
+          "url": "/art/runtime/e7419996d653299fd8985eff.webp",
+          "encodedBytes": 12414,
+          "transferBytes": 12714,
+          "durationMs": 47
+        },
+        {
+          "url": "/art/runtime/1be59efb6f7bd575b278cd5b.webp",
+          "encodedBytes": 143392,
+          "transferBytes": 0,
+          "durationMs": 86
+        },
+        {
+          "url": "/art/runtime/2afd6bde728e1134a5d8bb83.webp",
+          "encodedBytes": 10216,
+          "transferBytes": 10516,
+          "durationMs": 56
+        },
+        {
+          "url": "/art/runtime/39e76eccca4ccf92d0595a96.webp",
+          "encodedBytes": 177266,
+          "transferBytes": 0,
+          "durationMs": 87
+        },
+        {
+          "url": "/art/runtime/f7d8c4e0681229d76485d058.webp",
+          "encodedBytes": 3822,
+          "transferBytes": 4122,
+          "durationMs": 57
+        },
+        {
+          "url": "/art/runtime/4ac9977477b7e19f90729a92.webp",
+          "encodedBytes": 163330,
+          "transferBytes": 163630,
+          "durationMs": 55
+        },
+        {
+          "url": "/art/runtime/6311722aa97acdda6bc97070.webp",
+          "encodedBytes": 53940,
+          "transferBytes": 54240,
+          "durationMs": 57
+        },
+        {
+          "url": "/art/runtime/1edfb39d91a07f12e03acc53.webp",
+          "encodedBytes": 39854,
+          "transferBytes": 40154,
+          "durationMs": 58
+        },
+        {
+          "url": "/art/runtime/951c2f2441a0bbdd57f2af89.webp",
+          "encodedBytes": 10230,
+          "transferBytes": 10530,
+          "durationMs": 58
+        },
+        {
+          "url": "/art/runtime/47afa38e40e6368ef1e88baa.webp",
+          "encodedBytes": 10602,
+          "transferBytes": 10902,
+          "durationMs": 60
+        },
+        {
+          "url": "/art/runtime/0e9ce614d204d4f0b45ec54a.webp",
+          "encodedBytes": 26900,
+          "transferBytes": 27200,
+          "durationMs": 61
+        },
+        {
+          "url": "/art/runtime/1d1ee86f05052f73ceb34023.webp",
+          "encodedBytes": 243700,
+          "transferBytes": 0,
+          "durationMs": 94
+        },
+        {
+          "url": "/art/runtime/4146f22a4ed5621c2d79683d.webp",
+          "encodedBytes": 70546,
+          "transferBytes": 0,
+          "durationMs": 95
+        },
+        {
+          "url": "/art/runtime/2be933ad2350bda7c55d02e9.webp",
+          "encodedBytes": 120432,
+          "transferBytes": 0,
+          "durationMs": 95
+        },
+        {
+          "url": "/art/runtime/2387c2868ca1ccc2a206b7b5.webp",
+          "encodedBytes": 14096,
+          "transferBytes": 0,
+          "durationMs": 97
+        },
+        {
+          "url": "/art/runtime/682d0e0eba401f4f708aeb98.webp",
+          "encodedBytes": 33572,
+          "transferBytes": 0,
+          "durationMs": 98
+        },
+        {
+          "url": "/art/runtime/a9fba8e5b6900a5994905a54.webp",
+          "encodedBytes": 313300,
+          "transferBytes": 0,
+          "durationMs": 96
+        },
+        {
+          "url": "/art/runtime/1762cebafb4cb92d8e6705d3.webp",
+          "encodedBytes": 15720,
+          "transferBytes": 0,
+          "durationMs": 98
+        },
+        {
+          "url": "/art/runtime/cd1874ddd8944a8dfdab97cb.webp",
+          "encodedBytes": 19596,
+          "transferBytes": 0,
+          "durationMs": 98
+        },
+        {
+          "url": "/art/runtime/5fee5be1403cf1c714c8b9ce.webp",
+          "encodedBytes": 63978,
+          "transferBytes": 0,
+          "durationMs": 99
+        },
+        {
+          "url": "/art/runtime/5115de167fc55b8e5a7ffff7.webp",
+          "encodedBytes": 41510,
+          "transferBytes": 41810,
+          "durationMs": 65
+        },
+        {
+          "url": "/art/runtime/780240c12e0600652987d150.webp",
+          "encodedBytes": 36210,
+          "transferBytes": 0,
+          "durationMs": 99
+        },
+        {
+          "url": "/art/runtime/93d14cfd8af59b4fdeb29221.webp",
+          "encodedBytes": 28254,
+          "transferBytes": 28554,
+          "durationMs": 68
+        },
+        {
+          "url": "/art/runtime/368ad626ae1f6a0a513e8318.webp",
+          "encodedBytes": 54074,
+          "transferBytes": 0,
+          "durationMs": 89
+        },
+        {
+          "url": "/art/runtime/90de0cfb12f1991f707bad2b.webp",
+          "encodedBytes": 36068,
+          "transferBytes": 0,
+          "durationMs": 89
+        },
+        {
+          "url": "/art/runtime/7d27eff837a85cad0b08a9f5.webp",
+          "encodedBytes": 87942,
+          "transferBytes": 88242,
+          "durationMs": 72
+        },
+        {
+          "url": "/art/runtime/c38233616684d657ea0f004e.webp",
+          "encodedBytes": 31854,
+          "transferBytes": 32154,
+          "durationMs": 71
+        },
+        {
+          "url": "/art/runtime/298cfbe9ff0f206ab546e09a.webp",
+          "encodedBytes": 29444,
+          "transferBytes": 29744,
+          "durationMs": 73
+        },
+        {
+          "url": "/art/runtime/7f0f398ba4c10f64eeae886a.webp",
+          "encodedBytes": 29848,
+          "transferBytes": 30148,
+          "durationMs": 74
+        },
+        {
+          "url": "/art/runtime/7acec308f61dad623dca0e34.webp",
+          "encodedBytes": 29190,
+          "transferBytes": 29490,
+          "durationMs": 73
+        },
+        {
+          "url": "/art/runtime/7f7c028988ce6f9eb98aba92.webp",
+          "encodedBytes": 25522,
+          "transferBytes": 25822,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/31c431c15a28c07ff3f8a917.webp",
+          "encodedBytes": 39280,
+          "transferBytes": 39580,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/81b1b99e4949c2e7438ea4f5.webp",
+          "encodedBytes": 28896,
+          "transferBytes": 29196,
+          "durationMs": 6
+        }
+      ],
+      "canvases": [
+        {
+          "width": 1728,
+          "height": 1152,
+          "backingRgba": 7962624,
+          "poolReserved": 17730996,
+          "poolPeak": 18235660,
+          "rasterReserved": 12465676,
+          "rasterPeak": 12647116
+        },
+        {
+          "width": 1068,
+          "height": 712,
+          "backingRgba": 3041664,
+          "poolReserved": 0,
+          "poolPeak": 0,
+          "rasterReserved": 12465676,
+          "rasterPeak": 12647116
+        }
+      ],
+      "consumers": [],
+      "encodedReserved": 4396672,
+      "encodedPeak": 4396672,
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 2
+      },
+      "unknownImages": [],
+      "nativeConsumerRgba": 0,
+      "poolReserved": 17730996,
+      "rasterReserved": 12465676,
+      "rasterPeak": 12647116,
+      "backingRgba": 11004288,
+      "reserveBytes": 16777216,
+      "currentConservativeBytes": 77775808
+    },
+    {
+      "resources": [
+        {
+          "url": "/assets/index-CNmoZ-9P.js",
+          "encodedBytes": 57532,
+          "transferBytes": 0,
+          "durationMs": 16
+        },
+        {
+          "url": "/assets/index-D7U2vX1x.css",
+          "encodedBytes": 1042,
+          "transferBytes": 0,
+          "durationMs": 17
+        },
+        {
+          "url": "/favicon.ico",
+          "encodedBytes": 32,
+          "transferBytes": 0,
+          "durationMs": 147
+        },
+        {
+          "url": "/assets/App-CvfCOyJg.css",
+          "encodedBytes": 4543,
+          "transferBytes": 0,
+          "durationMs": 10
+        },
+        {
+          "url": "/assets/App-BzEahbjQ.js",
+          "encodedBytes": 150641,
+          "transferBytes": 0,
+          "durationMs": 9
+        },
+        {
+          "url": "/api/config",
+          "encodedBytes": 144,
+          "transferBytes": 444,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/5236eb83877343905b37043e.webp",
+          "encodedBytes": 1280088,
+          "transferBytes": 0,
+          "durationMs": 27
+        },
+        {
+          "url": "/art/runtime/fbdbada95f20805dc7481080.webp",
+          "encodedBytes": 51008,
+          "transferBytes": 0,
+          "durationMs": 27
+        },
+        {
+          "url": "/art/runtime/52ff9390c4cd1586d81379e4.webp",
+          "encodedBytes": 55904,
+          "transferBytes": 0,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/ee717210e31d289b1f18a8fa.webp",
+          "encodedBytes": 51344,
+          "transferBytes": 0,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/07048b9f7fe30aeb42aa37c9.webp",
+          "encodedBytes": 69622,
+          "transferBytes": 0,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/f4fe130b2a0429ae9416ee33.webp",
+          "encodedBytes": 61094,
+          "transferBytes": 0,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/8d0d39604e164acbb04f8567.webp",
+          "encodedBytes": 20482,
+          "transferBytes": 0,
+          "durationMs": 19
+        },
+        {
+          "url": "/art/runtime/d4f77426628db36c2593abe6.webp",
+          "encodedBytes": 21830,
+          "transferBytes": 22130,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/1e3f386e3fe766c290e163c3.webp",
+          "encodedBytes": 20002,
+          "transferBytes": 20302,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/6cf8746cdbf738d62d541dfd.webp",
+          "encodedBytes": 24102,
+          "transferBytes": 24402,
+          "durationMs": 15
+        },
+        {
+          "url": "/art/runtime/c9c1a89dd124e976dbef2332.webp",
+          "encodedBytes": 18382,
+          "transferBytes": 0,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/2f47afe6af63f1a6f4b7bbf3.webp",
+          "encodedBytes": 20100,
+          "transferBytes": 20400,
+          "durationMs": 18
+        },
+        {
+          "url": "/art/runtime/baa37d0d47a407491dd58864.webp",
+          "encodedBytes": 18650,
+          "transferBytes": 18950,
+          "durationMs": 20
+        },
+        {
+          "url": "/art/runtime/63a688ad467b8cbd4da29e9a.webp",
+          "encodedBytes": 22158,
+          "transferBytes": 22458,
+          "durationMs": 23
+        },
+        {
+          "url": "/art/runtime/1f3ade0a4f65eee03c7d6d91.webp",
+          "encodedBytes": 4310,
+          "transferBytes": 0,
+          "durationMs": 54
+        },
+        {
+          "url": "/art/runtime/0a00d83e289589747b29737d.webp",
+          "encodedBytes": 4180,
+          "transferBytes": 0,
+          "durationMs": 54
+        },
+        {
+          "url": "/art/runtime/8ff08d2daf54b78ac1cdeb5a.webp",
+          "encodedBytes": 33584,
+          "transferBytes": 33884,
+          "durationMs": 22
+        },
+        {
+          "url": "/art/runtime/9084bd424517427956b36c8b.webp",
+          "encodedBytes": 45474,
+          "transferBytes": 0,
+          "durationMs": 56
+        },
+        {
+          "url": "/art/runtime/ae6ca396772773d2d43f8ab0.webp",
+          "encodedBytes": 41962,
+          "transferBytes": 0,
+          "durationMs": 58
+        },
+        {
+          "url": "/art/runtime/6a0bc4cfa29c5d61afb8cc2c.webp",
+          "encodedBytes": 3228,
+          "transferBytes": 3528,
+          "durationMs": 25
+        },
+        {
+          "url": "/art/runtime/b73db10c12d56cfb06d2ac9f.webp",
+          "encodedBytes": 1294,
+          "transferBytes": 0,
+          "durationMs": 65
+        },
+        {
+          "url": "/art/runtime/6e5be9f3a1b882a66ddc6c9e.webp",
+          "encodedBytes": 17680,
+          "transferBytes": 17980,
+          "durationMs": 32
+        },
+        {
+          "url": "/art/runtime/e90f50a160f4336b715620cc.webp",
+          "encodedBytes": 12926,
+          "transferBytes": 13226,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/284836e569a1dc4918906e11.webp",
+          "encodedBytes": 2832,
+          "transferBytes": 0,
+          "durationMs": 74
+        },
+        {
+          "url": "/art/runtime/09693189291d580975220a0c.webp",
+          "encodedBytes": 6532,
+          "transferBytes": 6832,
+          "durationMs": 37
+        },
+        {
+          "url": "/art/runtime/3a06b2576cf37c29e20bf2c9.webp",
+          "encodedBytes": 2960,
+          "transferBytes": 0,
+          "durationMs": 75
+        },
+        {
+          "url": "/art/runtime/ed94a4357338c73e6265d930.webp",
+          "encodedBytes": 74748,
+          "transferBytes": 75048,
+          "durationMs": 40
+        },
+        {
+          "url": "/art/runtime/40d6291457bd6107681a491a.webp",
+          "encodedBytes": 68890,
+          "transferBytes": 69190,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/2695fb7d55fcf28671dd227f.webp",
+          "encodedBytes": 81380,
+          "transferBytes": 81680,
+          "durationMs": 42
+        },
+        {
+          "url": "/art/runtime/70af9f7f9a8165fa320c309b.webp",
+          "encodedBytes": 66004,
+          "transferBytes": 66304,
+          "durationMs": 43
+        },
+        {
+          "url": "/art/runtime/06fbf5b17ac314e645d31116.webp",
+          "encodedBytes": 62564,
+          "transferBytes": 62864,
+          "durationMs": 45
+        },
+        {
+          "url": "/art/runtime/83b4c48b17c2983d4c6875b2.webp",
+          "encodedBytes": 73428,
+          "transferBytes": 73728,
+          "durationMs": 46
+        },
+        {
+          "url": "/art/runtime/9342e370f4415ac86fe6ba46.webp",
+          "encodedBytes": 12932,
+          "transferBytes": 13232,
+          "durationMs": 47
+        },
+        {
+          "url": "/art/runtime/e7419996d653299fd8985eff.webp",
+          "encodedBytes": 12414,
+          "transferBytes": 12714,
+          "durationMs": 47
+        },
+        {
+          "url": "/art/runtime/1be59efb6f7bd575b278cd5b.webp",
+          "encodedBytes": 143392,
+          "transferBytes": 0,
+          "durationMs": 86
+        },
+        {
+          "url": "/art/runtime/2afd6bde728e1134a5d8bb83.webp",
+          "encodedBytes": 10216,
+          "transferBytes": 10516,
+          "durationMs": 56
+        },
+        {
+          "url": "/art/runtime/39e76eccca4ccf92d0595a96.webp",
+          "encodedBytes": 177266,
+          "transferBytes": 0,
+          "durationMs": 87
+        },
+        {
+          "url": "/art/runtime/f7d8c4e0681229d76485d058.webp",
+          "encodedBytes": 3822,
+          "transferBytes": 4122,
+          "durationMs": 57
+        },
+        {
+          "url": "/art/runtime/4ac9977477b7e19f90729a92.webp",
+          "encodedBytes": 163330,
+          "transferBytes": 163630,
+          "durationMs": 55
+        },
+        {
+          "url": "/art/runtime/6311722aa97acdda6bc97070.webp",
+          "encodedBytes": 53940,
+          "transferBytes": 54240,
+          "durationMs": 57
+        },
+        {
+          "url": "/art/runtime/1edfb39d91a07f12e03acc53.webp",
+          "encodedBytes": 39854,
+          "transferBytes": 40154,
+          "durationMs": 58
+        },
+        {
+          "url": "/art/runtime/951c2f2441a0bbdd57f2af89.webp",
+          "encodedBytes": 10230,
+          "transferBytes": 10530,
+          "durationMs": 58
+        },
+        {
+          "url": "/art/runtime/47afa38e40e6368ef1e88baa.webp",
+          "encodedBytes": 10602,
+          "transferBytes": 10902,
+          "durationMs": 60
+        },
+        {
+          "url": "/art/runtime/0e9ce614d204d4f0b45ec54a.webp",
+          "encodedBytes": 26900,
+          "transferBytes": 27200,
+          "durationMs": 61
+        },
+        {
+          "url": "/art/runtime/1d1ee86f05052f73ceb34023.webp",
+          "encodedBytes": 243700,
+          "transferBytes": 0,
+          "durationMs": 94
+        },
+        {
+          "url": "/art/runtime/4146f22a4ed5621c2d79683d.webp",
+          "encodedBytes": 70546,
+          "transferBytes": 0,
+          "durationMs": 95
+        },
+        {
+          "url": "/art/runtime/2be933ad2350bda7c55d02e9.webp",
+          "encodedBytes": 120432,
+          "transferBytes": 0,
+          "durationMs": 95
+        },
+        {
+          "url": "/art/runtime/2387c2868ca1ccc2a206b7b5.webp",
+          "encodedBytes": 14096,
+          "transferBytes": 0,
+          "durationMs": 97
+        },
+        {
+          "url": "/art/runtime/682d0e0eba401f4f708aeb98.webp",
+          "encodedBytes": 33572,
+          "transferBytes": 0,
+          "durationMs": 98
+        },
+        {
+          "url": "/art/runtime/a9fba8e5b6900a5994905a54.webp",
+          "encodedBytes": 313300,
+          "transferBytes": 0,
+          "durationMs": 96
+        },
+        {
+          "url": "/art/runtime/1762cebafb4cb92d8e6705d3.webp",
+          "encodedBytes": 15720,
+          "transferBytes": 0,
+          "durationMs": 98
+        },
+        {
+          "url": "/art/runtime/cd1874ddd8944a8dfdab97cb.webp",
+          "encodedBytes": 19596,
+          "transferBytes": 0,
+          "durationMs": 98
+        },
+        {
+          "url": "/art/runtime/5fee5be1403cf1c714c8b9ce.webp",
+          "encodedBytes": 63978,
+          "transferBytes": 0,
+          "durationMs": 99
+        },
+        {
+          "url": "/art/runtime/5115de167fc55b8e5a7ffff7.webp",
+          "encodedBytes": 41510,
+          "transferBytes": 41810,
+          "durationMs": 65
+        },
+        {
+          "url": "/art/runtime/780240c12e0600652987d150.webp",
+          "encodedBytes": 36210,
+          "transferBytes": 0,
+          "durationMs": 99
+        },
+        {
+          "url": "/art/runtime/93d14cfd8af59b4fdeb29221.webp",
+          "encodedBytes": 28254,
+          "transferBytes": 28554,
+          "durationMs": 68
+        },
+        {
+          "url": "/art/runtime/368ad626ae1f6a0a513e8318.webp",
+          "encodedBytes": 54074,
+          "transferBytes": 0,
+          "durationMs": 89
+        },
+        {
+          "url": "/art/runtime/90de0cfb12f1991f707bad2b.webp",
+          "encodedBytes": 36068,
+          "transferBytes": 0,
+          "durationMs": 89
+        },
+        {
+          "url": "/art/runtime/7d27eff837a85cad0b08a9f5.webp",
+          "encodedBytes": 87942,
+          "transferBytes": 88242,
+          "durationMs": 72
+        },
+        {
+          "url": "/art/runtime/c38233616684d657ea0f004e.webp",
+          "encodedBytes": 31854,
+          "transferBytes": 32154,
+          "durationMs": 71
+        },
+        {
+          "url": "/art/runtime/298cfbe9ff0f206ab546e09a.webp",
+          "encodedBytes": 29444,
+          "transferBytes": 29744,
+          "durationMs": 73
+        },
+        {
+          "url": "/art/runtime/7f0f398ba4c10f64eeae886a.webp",
+          "encodedBytes": 29848,
+          "transferBytes": 30148,
+          "durationMs": 74
+        },
+        {
+          "url": "/art/runtime/7acec308f61dad623dca0e34.webp",
+          "encodedBytes": 29190,
+          "transferBytes": 29490,
+          "durationMs": 73
+        },
+        {
+          "url": "/art/runtime/7f7c028988ce6f9eb98aba92.webp",
+          "encodedBytes": 25522,
+          "transferBytes": 25822,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/31c431c15a28c07ff3f8a917.webp",
+          "encodedBytes": 39280,
+          "transferBytes": 39580,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/81b1b99e4949c2e7438ea4f5.webp",
+          "encodedBytes": 28896,
+          "transferBytes": 29196,
+          "durationMs": 6
+        }
+      ],
+      "canvases": [
+        {
+          "width": 1728,
+          "height": 1152,
+          "backingRgba": 7962624,
+          "poolReserved": 17730996,
+          "poolPeak": 18235660,
+          "rasterReserved": 12465676,
+          "rasterPeak": 12647116
+        },
+        {
+          "width": 1068,
+          "height": 712,
+          "backingRgba": 3041664,
+          "poolReserved": 0,
+          "poolPeak": 0,
+          "rasterReserved": 12465676,
+          "rasterPeak": 12647116
+        }
+      ],
+      "consumers": [],
+      "encodedReserved": 4396672,
+      "encodedPeak": 4396672,
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 2
+      },
+      "unknownImages": [],
+      "nativeConsumerRgba": 0,
+      "poolReserved": 17730996,
+      "rasterReserved": 12465676,
+      "rasterPeak": 12647116,
+      "backingRgba": 11004288,
+      "reserveBytes": 16777216,
+      "currentConservativeBytes": 77775808
+    },
+    {
+      "resources": [
+        {
+          "url": "/assets/index-CNmoZ-9P.js",
+          "encodedBytes": 57532,
+          "transferBytes": 0,
+          "durationMs": 16
+        },
+        {
+          "url": "/assets/index-D7U2vX1x.css",
+          "encodedBytes": 1042,
+          "transferBytes": 0,
+          "durationMs": 17
+        },
+        {
+          "url": "/favicon.ico",
+          "encodedBytes": 32,
+          "transferBytes": 0,
+          "durationMs": 147
+        },
+        {
+          "url": "/assets/App-CvfCOyJg.css",
+          "encodedBytes": 4543,
+          "transferBytes": 0,
+          "durationMs": 10
+        },
+        {
+          "url": "/assets/App-BzEahbjQ.js",
+          "encodedBytes": 150641,
+          "transferBytes": 0,
+          "durationMs": 9
+        },
+        {
+          "url": "/api/config",
+          "encodedBytes": 144,
+          "transferBytes": 444,
+          "durationMs": 30
+        },
+        {
+          "url": "/art/runtime/5236eb83877343905b37043e.webp",
+          "encodedBytes": 1280088,
+          "transferBytes": 0,
+          "durationMs": 27
+        },
+        {
+          "url": "/art/runtime/fbdbada95f20805dc7481080.webp",
+          "encodedBytes": 51008,
+          "transferBytes": 0,
+          "durationMs": 27
+        },
+        {
+          "url": "/art/runtime/52ff9390c4cd1586d81379e4.webp",
+          "encodedBytes": 55904,
+          "transferBytes": 0,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/ee717210e31d289b1f18a8fa.webp",
+          "encodedBytes": 51344,
+          "transferBytes": 0,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/07048b9f7fe30aeb42aa37c9.webp",
+          "encodedBytes": 69622,
+          "transferBytes": 0,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/f4fe130b2a0429ae9416ee33.webp",
+          "encodedBytes": 61094,
+          "transferBytes": 0,
+          "durationMs": 28
+        },
+        {
+          "url": "/art/runtime/8d0d39604e164acbb04f8567.webp",
+          "encodedBytes": 20482,
+          "transferBytes": 0,
+          "durationMs": 19
+        },
+        {
+          "url": "/art/runtime/d4f77426628db36c2593abe6.webp",
+          "encodedBytes": 21830,
+          "transferBytes": 22130,
+          "durationMs": 10
+        },
+        {
+          "url": "/art/runtime/1e3f386e3fe766c290e163c3.webp",
+          "encodedBytes": 20002,
+          "transferBytes": 20302,
+          "durationMs": 13
+        },
+        {
+          "url": "/art/runtime/6cf8746cdbf738d62d541dfd.webp",
+          "encodedBytes": 24102,
+          "transferBytes": 24402,
+          "durationMs": 15
+        },
+        {
+          "url": "/art/runtime/c9c1a89dd124e976dbef2332.webp",
+          "encodedBytes": 18382,
+          "transferBytes": 0,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/2f47afe6af63f1a6f4b7bbf3.webp",
+          "encodedBytes": 20100,
+          "transferBytes": 20400,
+          "durationMs": 18
+        },
+        {
+          "url": "/art/runtime/baa37d0d47a407491dd58864.webp",
+          "encodedBytes": 18650,
+          "transferBytes": 18950,
+          "durationMs": 20
+        },
+        {
+          "url": "/art/runtime/63a688ad467b8cbd4da29e9a.webp",
+          "encodedBytes": 22158,
+          "transferBytes": 22458,
+          "durationMs": 23
+        },
+        {
+          "url": "/art/runtime/1f3ade0a4f65eee03c7d6d91.webp",
+          "encodedBytes": 4310,
+          "transferBytes": 0,
+          "durationMs": 54
+        },
+        {
+          "url": "/art/runtime/0a00d83e289589747b29737d.webp",
+          "encodedBytes": 4180,
+          "transferBytes": 0,
+          "durationMs": 54
+        },
+        {
+          "url": "/art/runtime/8ff08d2daf54b78ac1cdeb5a.webp",
+          "encodedBytes": 33584,
+          "transferBytes": 33884,
+          "durationMs": 22
+        },
+        {
+          "url": "/art/runtime/9084bd424517427956b36c8b.webp",
+          "encodedBytes": 45474,
+          "transferBytes": 0,
+          "durationMs": 56
+        },
+        {
+          "url": "/art/runtime/ae6ca396772773d2d43f8ab0.webp",
+          "encodedBytes": 41962,
+          "transferBytes": 0,
+          "durationMs": 58
+        },
+        {
+          "url": "/art/runtime/6a0bc4cfa29c5d61afb8cc2c.webp",
+          "encodedBytes": 3228,
+          "transferBytes": 3528,
+          "durationMs": 25
+        },
+        {
+          "url": "/art/runtime/b73db10c12d56cfb06d2ac9f.webp",
+          "encodedBytes": 1294,
+          "transferBytes": 0,
+          "durationMs": 65
+        },
+        {
+          "url": "/art/runtime/6e5be9f3a1b882a66ddc6c9e.webp",
+          "encodedBytes": 17680,
+          "transferBytes": 17980,
+          "durationMs": 32
+        },
+        {
+          "url": "/art/runtime/e90f50a160f4336b715620cc.webp",
+          "encodedBytes": 12926,
+          "transferBytes": 13226,
+          "durationMs": 33
+        },
+        {
+          "url": "/art/runtime/284836e569a1dc4918906e11.webp",
+          "encodedBytes": 2832,
+          "transferBytes": 0,
+          "durationMs": 74
+        },
+        {
+          "url": "/art/runtime/09693189291d580975220a0c.webp",
+          "encodedBytes": 6532,
+          "transferBytes": 6832,
+          "durationMs": 37
+        },
+        {
+          "url": "/art/runtime/3a06b2576cf37c29e20bf2c9.webp",
+          "encodedBytes": 2960,
+          "transferBytes": 0,
+          "durationMs": 75
+        },
+        {
+          "url": "/art/runtime/ed94a4357338c73e6265d930.webp",
+          "encodedBytes": 74748,
+          "transferBytes": 75048,
+          "durationMs": 40
+        },
+        {
+          "url": "/art/runtime/40d6291457bd6107681a491a.webp",
+          "encodedBytes": 68890,
+          "transferBytes": 69190,
+          "durationMs": 41
+        },
+        {
+          "url": "/art/runtime/2695fb7d55fcf28671dd227f.webp",
+          "encodedBytes": 81380,
+          "transferBytes": 81680,
+          "durationMs": 42
+        },
+        {
+          "url": "/art/runtime/70af9f7f9a8165fa320c309b.webp",
+          "encodedBytes": 66004,
+          "transferBytes": 66304,
+          "durationMs": 43
+        },
+        {
+          "url": "/art/runtime/06fbf5b17ac314e645d31116.webp",
+          "encodedBytes": 62564,
+          "transferBytes": 62864,
+          "durationMs": 45
+        },
+        {
+          "url": "/art/runtime/83b4c48b17c2983d4c6875b2.webp",
+          "encodedBytes": 73428,
+          "transferBytes": 73728,
+          "durationMs": 46
+        },
+        {
+          "url": "/art/runtime/9342e370f4415ac86fe6ba46.webp",
+          "encodedBytes": 12932,
+          "transferBytes": 13232,
+          "durationMs": 47
+        },
+        {
+          "url": "/art/runtime/e7419996d653299fd8985eff.webp",
+          "encodedBytes": 12414,
+          "transferBytes": 12714,
+          "durationMs": 47
+        },
+        {
+          "url": "/art/runtime/1be59efb6f7bd575b278cd5b.webp",
+          "encodedBytes": 143392,
+          "transferBytes": 0,
+          "durationMs": 86
+        },
+        {
+          "url": "/art/runtime/2afd6bde728e1134a5d8bb83.webp",
+          "encodedBytes": 10216,
+          "transferBytes": 10516,
+          "durationMs": 56
+        },
+        {
+          "url": "/art/runtime/39e76eccca4ccf92d0595a96.webp",
+          "encodedBytes": 177266,
+          "transferBytes": 0,
+          "durationMs": 87
+        },
+        {
+          "url": "/art/runtime/f7d8c4e0681229d76485d058.webp",
+          "encodedBytes": 3822,
+          "transferBytes": 4122,
+          "durationMs": 57
+        },
+        {
+          "url": "/art/runtime/4ac9977477b7e19f90729a92.webp",
+          "encodedBytes": 163330,
+          "transferBytes": 163630,
+          "durationMs": 55
+        },
+        {
+          "url": "/art/runtime/6311722aa97acdda6bc97070.webp",
+          "encodedBytes": 53940,
+          "transferBytes": 54240,
+          "durationMs": 57
+        },
+        {
+          "url": "/art/runtime/1edfb39d91a07f12e03acc53.webp",
+          "encodedBytes": 39854,
+          "transferBytes": 40154,
+          "durationMs": 58
+        },
+        {
+          "url": "/art/runtime/951c2f2441a0bbdd57f2af89.webp",
+          "encodedBytes": 10230,
+          "transferBytes": 10530,
+          "durationMs": 58
+        },
+        {
+          "url": "/art/runtime/47afa38e40e6368ef1e88baa.webp",
+          "encodedBytes": 10602,
+          "transferBytes": 10902,
+          "durationMs": 60
+        },
+        {
+          "url": "/art/runtime/0e9ce614d204d4f0b45ec54a.webp",
+          "encodedBytes": 26900,
+          "transferBytes": 27200,
+          "durationMs": 61
+        },
+        {
+          "url": "/art/runtime/1d1ee86f05052f73ceb34023.webp",
+          "encodedBytes": 243700,
+          "transferBytes": 0,
+          "durationMs": 94
+        },
+        {
+          "url": "/art/runtime/4146f22a4ed5621c2d79683d.webp",
+          "encodedBytes": 70546,
+          "transferBytes": 0,
+          "durationMs": 95
+        },
+        {
+          "url": "/art/runtime/2be933ad2350bda7c55d02e9.webp",
+          "encodedBytes": 120432,
+          "transferBytes": 0,
+          "durationMs": 95
+        },
+        {
+          "url": "/art/runtime/2387c2868ca1ccc2a206b7b5.webp",
+          "encodedBytes": 14096,
+          "transferBytes": 0,
+          "durationMs": 97
+        },
+        {
+          "url": "/art/runtime/682d0e0eba401f4f708aeb98.webp",
+          "encodedBytes": 33572,
+          "transferBytes": 0,
+          "durationMs": 98
+        },
+        {
+          "url": "/art/runtime/a9fba8e5b6900a5994905a54.webp",
+          "encodedBytes": 313300,
+          "transferBytes": 0,
+          "durationMs": 96
+        },
+        {
+          "url": "/art/runtime/1762cebafb4cb92d8e6705d3.webp",
+          "encodedBytes": 15720,
+          "transferBytes": 0,
+          "durationMs": 98
+        },
+        {
+          "url": "/art/runtime/cd1874ddd8944a8dfdab97cb.webp",
+          "encodedBytes": 19596,
+          "transferBytes": 0,
+          "durationMs": 98
+        },
+        {
+          "url": "/art/runtime/5fee5be1403cf1c714c8b9ce.webp",
+          "encodedBytes": 63978,
+          "transferBytes": 0,
+          "durationMs": 99
+        },
+        {
+          "url": "/art/runtime/5115de167fc55b8e5a7ffff7.webp",
+          "encodedBytes": 41510,
+          "transferBytes": 41810,
+          "durationMs": 65
+        },
+        {
+          "url": "/art/runtime/780240c12e0600652987d150.webp",
+          "encodedBytes": 36210,
+          "transferBytes": 0,
+          "durationMs": 99
+        },
+        {
+          "url": "/art/runtime/93d14cfd8af59b4fdeb29221.webp",
+          "encodedBytes": 28254,
+          "transferBytes": 28554,
+          "durationMs": 68
+        },
+        {
+          "url": "/art/runtime/368ad626ae1f6a0a513e8318.webp",
+          "encodedBytes": 54074,
+          "transferBytes": 0,
+          "durationMs": 89
+        },
+        {
+          "url": "/art/runtime/90de0cfb12f1991f707bad2b.webp",
+          "encodedBytes": 36068,
+          "transferBytes": 0,
+          "durationMs": 89
+        },
+        {
+          "url": "/art/runtime/7d27eff837a85cad0b08a9f5.webp",
+          "encodedBytes": 87942,
+          "transferBytes": 88242,
+          "durationMs": 72
+        },
+        {
+          "url": "/art/runtime/c38233616684d657ea0f004e.webp",
+          "encodedBytes": 31854,
+          "transferBytes": 32154,
+          "durationMs": 71
+        },
+        {
+          "url": "/art/runtime/298cfbe9ff0f206ab546e09a.webp",
+          "encodedBytes": 29444,
+          "transferBytes": 29744,
+          "durationMs": 73
+        },
+        {
+          "url": "/art/runtime/7f0f398ba4c10f64eeae886a.webp",
+          "encodedBytes": 29848,
+          "transferBytes": 30148,
+          "durationMs": 74
+        },
+        {
+          "url": "/art/runtime/7acec308f61dad623dca0e34.webp",
+          "encodedBytes": 29190,
+          "transferBytes": 29490,
+          "durationMs": 73
+        },
+        {
+          "url": "/art/runtime/7f7c028988ce6f9eb98aba92.webp",
+          "encodedBytes": 25522,
+          "transferBytes": 25822,
+          "durationMs": 4
+        },
+        {
+          "url": "/art/runtime/31c431c15a28c07ff3f8a917.webp",
+          "encodedBytes": 39280,
+          "transferBytes": 39580,
+          "durationMs": 5
+        },
+        {
+          "url": "/art/runtime/81b1b99e4949c2e7438ea4f5.webp",
+          "encodedBytes": 28896,
+          "transferBytes": 29196,
+          "durationMs": 6
+        }
+      ],
+      "canvases": [
+        {
+          "width": 1728,
+          "height": 1152,
+          "backingRgba": 7962624,
+          "poolReserved": 17730996,
+          "poolPeak": 18235660,
+          "rasterReserved": 12465676,
+          "rasterPeak": 12647116
+        },
+        {
+          "width": 1068,
+          "height": 712,
+          "backingRgba": 3041664,
+          "poolReserved": 0,
+          "poolPeak": 0,
+          "rasterReserved": 12465676,
+          "rasterPeak": 12647116
+        }
+      ],
+      "consumers": [],
+      "encodedReserved": 4396672,
+      "encodedPeak": 4396672,
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "dpr": 2
+      },
+      "unknownImages": [],
+      "nativeConsumerRgba": 0,
+      "poolReserved": 17730996,
+      "rasterReserved": 12465676,
+      "rasterPeak": 12647116,
+      "backingRgba": 11004288,
+      "reserveBytes": 16777216,
+      "currentConservativeBytes": 77775808
+    }
+  ],
+  "errors": [],
+  "scope": "Automated Windows/loopback/DPR emulation, not physical hardware or internet measurement. RAF cadence is sampled during an actual running rehearsal with two Canvases, changed story pixels and changed committed description; it is a scheduling proxy, not measured physical display FPS. Image dimensions, decoded pool reservations, exact offscreen raster bytes, encoded response bytes plus an equal transfer-copy allowance, all native consumers and explicit buffer/reserve arithmetic are conservative estimates, not measured total browser/GPU memory. PNG interception disables normal browser caching. Existing all-variant allocation failures remain in production-art-verification.json."
+}

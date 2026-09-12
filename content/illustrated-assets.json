@@ -558,22 +558,21 @@
     ]
   },
   "ASSET.ACT.PLAYER/idle-right": {
-    "url": "/art/er13/player-right-v2.png",
-    "frameWidth": 2172,
-    "frameHeight": 724,
+    "url": "/art/er13/player-idle-directions-v1-alpha.png",
+    "frameWidth": 2089,
+    "frameHeight": 753,
     "columns": 1,
     "contentRectPixels": [
-      685,
-      22,
-      957,
-      698
+      1623,
+      15,
+      1846,
+      731
     ],
-    "referenceHeight": 671,
+    "referenceHeight": 714,
     "anchor": [
-      139.5,
-      676
-    ],
-    "mirror": false
+      131,
+      716
+    ]
   },
   "ASSET.ACT.PLAYER/walk-right": {
     "url": "/art/er13/player-right-v2.png",
@@ -644,225 +643,121 @@
     ]
   },
   "ASSET.ACT.PLAYER/carry-right": {
-    "url": "/art/er13/player-right-v2.png",
+    "url": "/art/er13/player-carry-poses-v1-alpha.png",
     "frameWidth": 2172,
     "frameHeight": 724,
     "columns": 1,
     "contentRectPixels": [
-      685,
-      22,
-      957,
-      698
+      1210,
+      16,
+      1459,
+      711
     ],
-    "referenceHeight": 671,
+    "referenceHeight": 689,
     "anchor": [
-      139.5,
-      676
-    ],
-    "mirror": false,
-    "frames": [
-      {
-        "rect": [
-          107,
-          22,
-          533,
-          693
-        ],
-        "anchor": [
-          215,
-          671
-        ]
-      },
-      {
-        "rect": [
-          685,
-          22,
-          957,
-          698
-        ],
-        "anchor": [
-          139.5,
-          676
-        ]
-      },
-      {
-        "rect": [
-          1128,
-          23,
-          1551,
-          695
-        ],
-        "anchor": [
-          217,
-          672
-        ]
-      },
-      {
-        "rect": [
-          1711,
-          21,
-          1969,
-          698
-        ],
-        "anchor": [
-          140,
-          677
-        ]
-      }
+      112.5,
+      695
     ]
   },
   "ASSET.ACT.PLAYER/idle-left": {
-    "url": "/art/er13/player-right-v2.png",
-    "frameWidth": 2172,
-    "frameHeight": 724,
+    "url": "/art/er13/player-idle-directions-v1-alpha.png",
+    "frameWidth": 2089,
+    "frameHeight": 753,
     "columns": 1,
     "contentRectPixels": [
-      685,
-      22,
-      957,
-      698
+      1126,
+      17,
+      1350,
+      730
     ],
-    "referenceHeight": 671,
+    "referenceHeight": 714,
     "anchor": [
-      139.5,
-      676
-    ],
-    "mirror": true
+      92.5,
+      713
+    ]
   },
   "ASSET.ACT.PLAYER/walk-left": {
-    "url": "/art/er13/player-right-v2.png",
+    "url": "/art/er13/player-left-walk-v3-alpha.png",
     "frameWidth": 2172,
     "frameHeight": 724,
     "columns": 1,
     "contentRectPixels": [
-      685,
-      22,
-      957,
-      698
+      104,
+      20,
+      507,
+      694
     ],
-    "referenceHeight": 671,
+    "referenceHeight": 674,
     "anchor": [
-      139.5,
-      676
+      198.5,
+      674
     ],
-    "mirror": true,
     "frames": [
       {
         "rect": [
-          107,
-          22,
-          533,
-          693
+          104,
+          20,
+          507,
+          694
         ],
         "anchor": [
-          215,
-          671
+          198.5,
+          674
         ]
       },
       {
         "rect": [
-          685,
-          22,
-          957,
+          665,
+          20,
+          998,
+          694
+        ],
+        "anchor": [
+          172,
+          674
+        ]
+      },
+      {
+        "rect": [
+          1142,
+          20,
+          1554,
           698
         ],
         "anchor": [
-          139.5,
-          676
+          224.5,
+          678
         ]
       },
       {
         "rect": [
-          1128,
-          23,
-          1551,
-          695
+          1729,
+          20,
+          2039,
+          705
         ],
         "anchor": [
-          217,
-          672
-        ]
-      },
-      {
-        "rect": [
-          1711,
-          21,
-          1969,
-          698
-        ],
-        "anchor": [
-          140,
-          677
+          160,
+          685
         ]
       }
     ]
   },
   "ASSET.ACT.PLAYER/carry-left": {
-    "url": "/art/er13/player-right-v2.png",
+    "url": "/art/er13/player-carry-poses-v1-alpha.png",
     "frameWidth": 2172,
     "frameHeight": 724,
     "columns": 1,
     "contentRectPixels": [
-      685,
-      22,
-      957,
-      698
+      1650,
+      17,
+      1906,
+      711
     ],
-    "referenceHeight": 671,
+    "referenceHeight": 689,
     "anchor": [
-      139.5,
-      676
-    ],
-    "mirror": true,
-    "frames": [
-      {
-        "rect": [
-          107,
-          22,
-          533,
-          693
-        ],
-        "anchor": [
-          215,
-          671
-        ]
-      },
-      {
-        "rect": [
-          685,
-          22,
-          957,
-          698
-        ],
-        "anchor": [
-          139.5,
-          676
-        ]
-      },
-      {
-        "rect": [
-          1128,
-          23,
-          1551,
-          695
-        ],
-        "anchor": [
-          217,
-          672
-        ]
-      },
-      {
-        "rect": [
-          1711,
-          21,
-          1969,
-          698
-        ],
-        "anchor": [
-          140,
-          677
-        ]
-      }
+      140.5,
+      694
     ]
   },
   "ASSET.ACT.PLAYER/front0": {
@@ -934,157 +829,104 @@
     ]
   },
   "ASSET.ACT.PLAYER/idle-front": {
-    "url": "/art/er13/player-front-v2.png",
-    "frameWidth": 2172,
-    "frameHeight": 724,
+    "url": "/art/er13/player-idle-directions-v1-alpha.png",
+    "frameWidth": 2089,
+    "frameHeight": 753,
     "columns": 1,
     "contentRectPixels": [
-      743,
-      22,
-      975,
-      702
+      226,
+      16,
+      465,
+      730
     ],
-    "referenceHeight": 681,
+    "referenceHeight": 714,
     "anchor": [
-      126.5,
-      680
-    ],
-    "mirror": false
+      119,
+      714
+    ]
   },
   "ASSET.ACT.PLAYER/walk-front": {
-    "url": "/art/er13/player-front-v2.png",
+    "url": "/art/er13/player-front-walk-v3-alpha.png",
     "frameWidth": 2172,
     "frameHeight": 724,
     "columns": 1,
     "contentRectPixels": [
-      743,
+      256,
       22,
-      975,
-      702
+      499,
+      700
     ],
-    "referenceHeight": 681,
+    "referenceHeight": 678,
     "anchor": [
-      126.5,
-      680
+      130.5,
+      678
     ],
-    "mirror": false,
     "frames": [
       {
         "rect": [
-          260,
-          23,
-          502,
-          704
-        ],
-        "anchor": [
-          135,
-          681
-        ]
-      },
-      {
-        "rect": [
-          743,
+          256,
           22,
-          975,
-          702
+          499,
+          700
         ],
         "anchor": [
-          126.5,
-          680
+          130.5,
+          678
         ]
       },
       {
         "rect": [
-          1210,
+          732,
           22,
-          1431,
-          701
+          965,
+          697
         ],
         "anchor": [
-          132,
-          679
+          97,
+          675
         ]
       },
       {
         "rect": [
-          1684,
-          23,
-          1914,
-          703
+          1200,
+          22,
+          1445,
+          699
         ],
         "anchor": [
-          123,
-          680
+          107,
+          677
+        ]
+      },
+      {
+        "rect": [
+          1682,
+          22,
+          1915,
+          697
+        ],
+        "anchor": [
+          97,
+          675
         ]
       }
     ]
   },
   "ASSET.ACT.PLAYER/carry-front": {
-    "url": "/art/er13/player-front-v2.png",
+    "url": "/art/er13/player-carry-poses-v1-alpha.png",
     "frameWidth": 2172,
     "frameHeight": 724,
     "columns": 1,
     "contentRectPixels": [
-      743,
-      22,
-      975,
-      702
+      240,
+      19,
+      480,
+      708
     ],
-    "referenceHeight": 681,
+    "referenceHeight": 689,
     "anchor": [
-      126.5,
-      680
-    ],
-    "mirror": false,
-    "frames": [
-      {
-        "rect": [
-          260,
-          23,
-          502,
-          704
-        ],
-        "anchor": [
-          135,
-          681
-        ]
-      },
-      {
-        "rect": [
-          743,
-          22,
-          975,
-          702
-        ],
-        "anchor": [
-          126.5,
-          680
-        ]
-      },
-      {
-        "rect": [
-          1210,
-          22,
-          1431,
-          701
-        ],
-        "anchor": [
-          132,
-          679
-        ]
-      },
-      {
-        "rect": [
-          1684,
-          23,
-          1914,
-          703
-        ],
-        "anchor": [
-          123,
-          680
-        ]
-      }
+      122.5,
+      689
     ]
   },
   "ASSET.ACT.PLAYER/back0": {
@@ -1156,22 +998,21 @@
     ]
   },
   "ASSET.ACT.PLAYER/idle-back": {
-    "url": "/art/er13/player-back-v2.png",
-    "frameWidth": 2172,
-    "frameHeight": 724,
+    "url": "/art/er13/player-idle-directions-v1-alpha.png",
+    "frameWidth": 2089,
+    "frameHeight": 753,
     "columns": 1,
     "contentRectPixels": [
-      690,
-      15,
-      944,
-      707
+      693,
+      16,
+      932,
+      726
     ],
-    "referenceHeight": 693,
+    "referenceHeight": 714,
     "anchor": [
-      141,
-      692
-    ],
-    "mirror": false
+      118.5,
+      710
+    ]
   },
   "ASSET.ACT.PLAYER/walk-back": {
     "url": "/art/er13/player-back-v2.png",
@@ -1242,71 +1083,20 @@
     ]
   },
   "ASSET.ACT.PLAYER/carry-back": {
-    "url": "/art/er13/player-back-v2.png",
+    "url": "/art/er13/player-carry-poses-v1-alpha.png",
     "frameWidth": 2172,
     "frameHeight": 724,
     "columns": 1,
     "contentRectPixels": [
-      690,
-      15,
-      944,
-      707
+      721,
+      17,
+      964,
+      706
     ],
-    "referenceHeight": 693,
+    "referenceHeight": 689,
     "anchor": [
-      141,
-      692
-    ],
-    "mirror": false,
-    "frames": [
-      {
-        "rect": [
-          178,
-          16,
-          441,
-          709
-        ],
-        "anchor": [
-          163,
-          693
-        ]
-      },
-      {
-        "rect": [
-          690,
-          15,
-          944,
-          707
-        ],
-        "anchor": [
-          141,
-          692
-        ]
-      },
-      {
-        "rect": [
-          1201,
-          15,
-          1464,
-          710
-        ],
-        "anchor": [
-          156.5,
-          695
-        ]
-      },
-      {
-        "rect": [
-          1717,
-          15,
-          1992,
-          709
-        ],
-        "anchor": [
-          94.5,
-          694
-        ]
-      }
+      119,
+      689
     ]
   },
   "ASSET.ACT.LOOP/awake": {
@@ -1327,22 +1117,21 @@
     ]
   },
   "ASSET.ACT.LOOP/standby": {
-    "url": "/art/er13/loop-awake-v1.png",
-    "frameWidth": 1145,
-    "frameHeight": 1374,
+    "url": "/art/er13/loop-state-poses-v1.png",
+    "frameWidth": 2135,
+    "frameHeight": 737,
     "columns": 1,
     "contentRectPixels": [
-      101,
-      60,
-      1015,
-      1358
+      46,
+      50,
+      517,
+      707
     ],
-    "referenceHeight": 1298,
+    "referenceHeight": 657,
     "anchor": [
-      470,
-      1298
-    ],
-    "mirror": false
+      240,
+      657
+    ]
   },
   "ASSET.ACT.LOOP/following": {
     "url": "/art/er13/loop-awake-v1.png",
@@ -1363,112 +1152,210 @@
     "mirror": false
   },
   "ASSET.ACT.LOOP/docked": {
-    "url": "/art/er13/loop-awake-v1.png",
-    "frameWidth": 1145,
-    "frameHeight": 1374,
+    "url": "/art/er13/loop-state-poses-v1.png",
+    "frameWidth": 2135,
+    "frameHeight": 737,
     "columns": 1,
     "contentRectPixels": [
-      101,
-      60,
-      1015,
-      1358
+      1090,
+      49,
+      1561,
+      707
     ],
-    "referenceHeight": 1298,
+    "referenceHeight": 657,
     "anchor": [
-      470,
-      1298
-    ],
-    "mirror": false
+      238.5,
+      658
+    ]
   },
   "ASSET.ACT.LOOP/projecting": {
-    "url": "/art/er13/loop-awake-v1.png",
-    "frameWidth": 1145,
-    "frameHeight": 1374,
+    "url": "/art/er13/loop-state-poses-v1.png",
+    "frameWidth": 2135,
+    "frameHeight": 737,
     "columns": 1,
     "contentRectPixels": [
-      101,
-      60,
-      1015,
-      1358
+      1612,
+      49,
+      2085,
+      707
     ],
-    "referenceHeight": 1298,
+    "referenceHeight": 657,
     "anchor": [
-      470,
-      1298
-    ],
-    "mirror": false
+      239,
+      658
+    ]
   },
   "ASSET.ACT.LOOP/rolling-left": {
-    "url": "/art/er13/loop-awake-v1.png",
-    "frameWidth": 1145,
-    "frameHeight": 1374,
+    "url": "/art/er13/loop-rolling-directions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
     "columns": 1,
     "contentRectPixels": [
-      101,
-      60,
-      1015,
-      1358
+      49,
+      548,
+      335,
+      955
     ],
-    "referenceHeight": 1298,
+    "referenceHeight": 407,
     "anchor": [
-      470,
-      1298
+      151.5,
+      407
     ],
-    "mirror": false
+    "frames": [
+      {
+        "rect": [
+          49,
+          548,
+          335,
+          955
+        ],
+        "anchor": [
+          151.5,
+          407
+        ]
+      },
+      {
+        "rect": [
+          431,
+          548,
+          719,
+          955
+        ],
+        "anchor": [
+          152,
+          407
+        ]
+      }
+    ]
   },
   "ASSET.ACT.LOOP/rolling-right": {
-    "url": "/art/er13/loop-awake-v1.png",
-    "frameWidth": 1145,
-    "frameHeight": 1374,
+    "url": "/art/er13/loop-rolling-directions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
     "columns": 1,
     "contentRectPixels": [
-      101,
-      60,
-      1015,
-      1358
+      816,
+      548,
+      1103,
+      954
     ],
-    "referenceHeight": 1298,
+    "referenceHeight": 407,
     "anchor": [
-      470,
-      1298
+      135.5,
+      406
     ],
-    "mirror": true
+    "frames": [
+      {
+        "rect": [
+          816,
+          548,
+          1103,
+          954
+        ],
+        "anchor": [
+          135.5,
+          406
+        ]
+      },
+      {
+        "rect": [
+          1201,
+          548,
+          1485,
+          954
+        ],
+        "anchor": [
+          135,
+          406
+        ]
+      }
+    ]
   },
   "ASSET.ACT.LOOP/rolling-front": {
-    "url": "/art/er13/loop-awake-v1.png",
-    "frameWidth": 1145,
-    "frameHeight": 1374,
+    "url": "/art/er13/loop-rolling-directions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
     "columns": 1,
     "contentRectPixels": [
-      101,
-      60,
-      1015,
-      1358
+      34,
+      64,
+      338,
+      471
     ],
-    "referenceHeight": 1298,
+    "referenceHeight": 407,
     "anchor": [
-      470,
-      1298
+      156.5,
+      407
     ],
-    "mirror": false
+    "frames": [
+      {
+        "rect": [
+          34,
+          64,
+          338,
+          471
+        ],
+        "anchor": [
+          156.5,
+          407
+        ]
+      },
+      {
+        "rect": [
+          420,
+          63,
+          723,
+          471
+        ],
+        "anchor": [
+          155.5,
+          408
+        ]
+      }
+    ]
   },
   "ASSET.ACT.LOOP/rolling-back": {
-    "url": "/art/er13/loop-awake-v1.png",
-    "frameWidth": 1145,
-    "frameHeight": 1374,
+    "url": "/art/er13/loop-rolling-directions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
     "columns": 1,
     "contentRectPixels": [
-      101,
-      60,
-      1015,
-      1358
+      812,
+      63,
+      1115,
+      470
     ],
-    "referenceHeight": 1298,
+    "referenceHeight": 407,
     "anchor": [
-      470,
-      1298
+      147.5,
+      407
     ],
-    "mirror": false
+    "frames": [
+      {
+        "rect": [
+          812,
+          63,
+          1115,
+          470
+        ],
+        "anchor": [
+          147.5,
+          407
+        ]
+      },
+      {
+        "rect": [
+          1196,
+          63,
+          1500,
+          471
+        ],
+        "anchor": [
+          148.5,
+          408
+        ]
+      }
+    ]
   },
   "ASSET.PROP.ST.MODEL.CABINET/base": {
     "url": "/art/er13/stage-model-cabinet-v2.png",
@@ -1996,6 +1883,1383 @@
     "anchor": [
       309.5,
       1417
+    ]
+  },
+  "ASSET.ACT.JO/face-left": {
+    "url": "/art/er13/jo-action-poses-v1-alpha.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      145,
+      13,
+      482,
+      713
+    ],
+    "referenceHeight": 700,
+    "anchor": [
+      149.5,
+      700
+    ]
+  },
+  "ASSET.ACT.JO/face-right": {
+    "url": "/art/er13/jo-action-poses-v1-alpha.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      673,
+      7,
+      997,
+      714
+    ],
+    "referenceHeight": 700,
+    "anchor": [
+      178.5,
+      707
+    ]
+  },
+  "ASSET.ACT.JO/receive": {
+    "url": "/art/er13/jo-action-poses-v1-alpha.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1180,
+      10,
+      1578,
+      714
+    ],
+    "referenceHeight": 700,
+    "anchor": [
+      170,
+      704
+    ]
+  },
+  "ASSET.ACT.JO/acknowledge": {
+    "url": "/art/er13/jo-action-poses-v1-alpha.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1704,
+      19,
+      1970,
+      713
+    ],
+    "referenceHeight": 700,
+    "anchor": [
+      122.5,
+      694
+    ]
+  },
+  "ASSET.ACT.ARI/face-left": {
+    "url": "/art/er13/ari-action-poses-v1-alpha.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      136,
+      22,
+      419,
+      705
+    ],
+    "referenceHeight": 683,
+    "anchor": [
+      139.5,
+      683
+    ]
+  },
+  "ASSET.ACT.ARI/face-right": {
+    "url": "/art/er13/ari-action-poses-v1-alpha.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      699,
+      22,
+      979,
+      705
+    ],
+    "referenceHeight": 683,
+    "anchor": [
+      142,
+      683
+    ]
+  },
+  "ASSET.ACT.ARI/receive": {
+    "url": "/art/er13/ari-action-poses-v1-alpha.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1145,
+      22,
+      1519,
+      705
+    ],
+    "referenceHeight": 683,
+    "anchor": [
+      226,
+      683
+    ]
+  },
+  "ASSET.ACT.ARI/acknowledge": {
+    "url": "/art/er13/ari-action-poses-v1-alpha.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1763,
+      19,
+      2028,
+      706
+    ],
+    "referenceHeight": 683,
+    "anchor": [
+      132.5,
+      687
+    ]
+  },
+  "ASSET.ACT.PLAYER/reach-front": {
+    "url": "/art/er13/player-reach-poses-v1-alpha.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      185,
+      19,
+      462,
+      712
+    ],
+    "referenceHeight": 693,
+    "anchor": [
+      147.5,
+      693
+    ]
+  },
+  "ASSET.ACT.PLAYER/reach-back": {
+    "url": "/art/er13/player-reach-poses-v1-alpha.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      653,
+      19,
+      972,
+      708
+    ],
+    "referenceHeight": 693,
+    "anchor": [
+      121,
+      689
+    ]
+  },
+  "ASSET.ACT.PLAYER/reach-left": {
+    "url": "/art/er13/player-reach-poses-v1-alpha.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1144,
+      19,
+      1445,
+      712
+    ],
+    "referenceHeight": 693,
+    "anchor": [
+      180.5,
+      693
+    ]
+  },
+  "ASSET.ACT.PLAYER/reach-right": {
+    "url": "/art/er13/player-reach-poses-v1-alpha.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1700,
+      16,
+      2013,
+      712
+    ],
+    "referenceHeight": 693,
+    "anchor": [
+      120.5,
+      696
+    ]
+  },
+  "ASSET.ACT.PLAYER/walk-front-contact-left": {
+    "url": "/art/er13/player-front-walk-v3-alpha.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      256,
+      22,
+      499,
+      700
+    ],
+    "referenceHeight": 678,
+    "anchor": [
+      130.5,
+      678
+    ]
+  },
+  "ASSET.ACT.PLAYER/walk-front-passing-right": {
+    "url": "/art/er13/player-front-walk-v3-alpha.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      732,
+      22,
+      965,
+      697
+    ],
+    "referenceHeight": 678,
+    "anchor": [
+      97,
+      675
+    ]
+  },
+  "ASSET.ACT.PLAYER/walk-front-contact-right": {
+    "url": "/art/er13/player-front-walk-v3-alpha.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1200,
+      22,
+      1445,
+      699
+    ],
+    "referenceHeight": 678,
+    "anchor": [
+      107,
+      677
+    ]
+  },
+  "ASSET.ACT.PLAYER/walk-front-passing-left": {
+    "url": "/art/er13/player-front-walk-v3-alpha.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1682,
+      22,
+      1915,
+      697
+    ],
+    "referenceHeight": 678,
+    "anchor": [
+      97,
+      675
+    ]
+  },
+  "ER13.ATLAS.SMALL_INTERACTIONS/door": {
+    "url": "/art/er13/small-interactions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      34,
+      64,
+      351,
+      481
+    ],
+    "anchor": [
+      158.5,
+      417
+    ]
+  },
+  "ER13.ATLAS.SMALL_INTERACTIONS/model-tab": {
+    "url": "/art/er13/small-interactions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      414,
+      261,
+      747,
+      355
+    ],
+    "anchor": [
+      166.5,
+      94
+    ]
+  },
+  "ER13.ATLAS.SMALL_INTERACTIONS/brief-down": {
+    "url": "/art/er13/small-interactions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      809,
+      143,
+      1086,
+      466
+    ],
+    "anchor": [
+      138.5,
+      323
+    ]
+  },
+  "ER13.ATLAS.SMALL_INTERACTIONS/brief-lifted": {
+    "url": "/art/er13/small-interactions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      1168,
+      114,
+      1508,
+      304
+    ],
+    "anchor": [
+      170,
+      190
+    ]
+  },
+  "ER13.ATLAS.SMALL_INTERACTIONS/drawer-closed": {
+    "url": "/art/er13/small-interactions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      30,
+      650,
+      356,
+      843
+    ],
+    "anchor": [
+      163,
+      193
+    ]
+  },
+  "ER13.ATLAS.SMALL_INTERACTIONS/drawer-open": {
+    "url": "/art/er13/small-interactions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      408,
+      609,
+      743,
+      871
+    ],
+    "anchor": [
+      167.5,
+      262
+    ]
+  },
+  "ER13.ATLAS.SMALL_INTERACTIONS/dock-flap-closed": {
+    "url": "/art/er13/small-interactions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      791,
+      629,
+      1119,
+      830
+    ],
+    "anchor": [
+      164,
+      201
+    ]
+  },
+  "ER13.ATLAS.SMALL_INTERACTIONS/dock-flap-open": {
+    "url": "/art/er13/small-interactions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      1160,
+      630,
+      1522,
+      834
+    ],
+    "anchor": [
+      181,
+      204
+    ]
+  },
+  "ER13.ATLAS.SOURCE_CARRIERS/device": {
+    "url": "/art/er13/source-carrier-parts-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      72,
+      42,
+      410,
+      497
+    ],
+    "anchor": [
+      169,
+      455
+    ]
+  },
+  "ER13.ATLAS.SOURCE_CARRIERS/slate": {
+    "url": "/art/er13/source-carrier-parts-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      499,
+      61,
+      1108,
+      493
+    ],
+    "anchor": [
+      304.5,
+      432
+    ]
+  },
+  "ER13.ATLAS.SOURCE_CARRIERS/petal-flat": {
+    "url": "/art/er13/source-carrier-parts-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      1190,
+      60,
+      1468,
+      496
+    ],
+    "anchor": [
+      139,
+      436
+    ]
+  },
+  "ER13.ATLAS.SOURCE_CARRIERS/petal-bent": {
+    "url": "/art/er13/source-carrier-parts-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      78,
+      548,
+      475,
+      954
+    ],
+    "anchor": [
+      198.5,
+      406
+    ]
+  },
+  "ER13.ATLAS.SOURCE_CARRIERS/clip-latched": {
+    "url": "/art/er13/source-carrier-parts-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      622,
+      563,
+      946,
+      920
+    ],
+    "anchor": [
+      162,
+      357
+    ]
+  },
+  "ER13.ATLAS.SOURCE_CARRIERS/clip-released": {
+    "url": "/art/er13/source-carrier-parts-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      1113,
+      536,
+      1464,
+      958
+    ],
+    "anchor": [
+      175.5,
+      422
+    ]
+  },
+  "ASSET.PROP.NOTICE/curled": {
+    "url": "/art/er13/notice-states-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      72,
+      166,
+      751,
+      554
+    ],
+    "anchor": [
+      339.5,
+      388
+    ]
+  },
+  "ASSET.PROP.NOTICE/moving": {
+    "url": "/art/er13/notice-states-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      872,
+      25,
+      1345,
+      665
+    ],
+    "anchor": [
+      236.5,
+      640
+    ]
+  },
+  "ASSET.PROP.NOTICE/flat": {
+    "url": "/art/er13/notice-states-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1492,
+      26,
+      2091,
+      676
+    ],
+    "anchor": [
+      299.5,
+      650
+    ]
+  },
+  "ER13.ATLAS.STORY_TILES/TILE.BLOOM": {
+    "url": "/art/er13/four-story-tiles-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      39,
+      117,
+      513,
+      586
+    ],
+    "anchor": [
+      237,
+      469
+    ]
+  },
+  "ER13.ATLAS.STORY_TILES/TILE.FERRY": {
+    "url": "/art/er13/four-story-tiles-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      580,
+      117,
+      1054,
+      585
+    ],
+    "anchor": [
+      237,
+      468
+    ]
+  },
+  "ER13.ATLAS.STORY_TILES/TILE.PLANT": {
+    "url": "/art/er13/four-story-tiles-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1121,
+      117,
+      1595,
+      586
+    ],
+    "anchor": [
+      237,
+      469
+    ]
+  },
+  "ER13.ATLAS.STORY_TILES/TILE.BRIDGE": {
+    "url": "/art/er13/four-story-tiles-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1661,
+      115,
+      2137,
+      585
+    ],
+    "anchor": [
+      238,
+      470
+    ]
+  },
+  "ASSET.ACT.REMY/face-left": {
+    "url": "/art/er13/remy-action-poses-v1-alpha2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      130,
+      11,
+      465,
+      711
+    ],
+    "referenceHeight": 700,
+    "anchor": [
+      167.5,
+      700
+    ]
+  },
+  "ASSET.ACT.REMY/face-right": {
+    "url": "/art/er13/remy-action-poses-v1-alpha2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      660,
+      10,
+      978,
+      711
+    ],
+    "referenceHeight": 700,
+    "anchor": [
+      164.5,
+      701
+    ]
+  },
+  "ASSET.ACT.REMY/receive": {
+    "url": "/art/er13/remy-action-poses-v1-alpha2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1141,
+      10,
+      1531,
+      711
+    ],
+    "referenceHeight": 700,
+    "anchor": [
+      242,
+      701
+    ]
+  },
+  "ASSET.ACT.REMY/acknowledge": {
+    "url": "/art/er13/remy-action-poses-v1-alpha2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1738,
+      11,
+      2029,
+      711
+    ],
+    "referenceHeight": 700,
+    "anchor": [
+      145.5,
+      700
+    ]
+  },
+  "ASSET.ACT.LOOP/rolling-front-1": {
+    "url": "/art/er13/loop-rolling-directions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      34,
+      64,
+      338,
+      471
+    ],
+    "referenceHeight": 407,
+    "anchor": [
+      156.5,
+      407
+    ]
+  },
+  "ASSET.ACT.LOOP/rolling-front-2": {
+    "url": "/art/er13/loop-rolling-directions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      420,
+      63,
+      723,
+      471
+    ],
+    "referenceHeight": 407,
+    "anchor": [
+      155.5,
+      408
+    ]
+  },
+  "ASSET.ACT.LOOP/rolling-back-1": {
+    "url": "/art/er13/loop-rolling-directions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      812,
+      63,
+      1115,
+      470
+    ],
+    "referenceHeight": 407,
+    "anchor": [
+      147.5,
+      407
+    ]
+  },
+  "ASSET.ACT.LOOP/rolling-back-2": {
+    "url": "/art/er13/loop-rolling-directions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      1196,
+      63,
+      1500,
+      471
+    ],
+    "referenceHeight": 407,
+    "anchor": [
+      148.5,
+      408
+    ]
+  },
+  "ASSET.ACT.LOOP/rolling-left-1": {
+    "url": "/art/er13/loop-rolling-directions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      49,
+      548,
+      335,
+      955
+    ],
+    "referenceHeight": 407,
+    "anchor": [
+      151.5,
+      407
+    ]
+  },
+  "ASSET.ACT.LOOP/rolling-left-2": {
+    "url": "/art/er13/loop-rolling-directions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      431,
+      548,
+      719,
+      955
+    ],
+    "referenceHeight": 407,
+    "anchor": [
+      152,
+      407
+    ]
+  },
+  "ASSET.ACT.LOOP/rolling-right-1": {
+    "url": "/art/er13/loop-rolling-directions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      816,
+      548,
+      1103,
+      954
+    ],
+    "referenceHeight": 407,
+    "anchor": [
+      135.5,
+      406
+    ]
+  },
+  "ASSET.ACT.LOOP/rolling-right-2": {
+    "url": "/art/er13/loop-rolling-directions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      1201,
+      548,
+      1485,
+      954
+    ],
+    "referenceHeight": 407,
+    "anchor": [
+      135,
+      406
+    ]
+  },
+  "ASSET.ACT.LOOP/responsive": {
+    "url": "/art/er13/loop-state-poses-v1.png",
+    "frameWidth": 2135,
+    "frameHeight": 737,
+    "columns": 1,
+    "contentRectPixels": [
+      569,
+      49,
+      1039,
+      707
+    ],
+    "referenceHeight": 657,
+    "anchor": [
+      239,
+      658
+    ]
+  },
+  "ER13.ATLAS.BRIDGE_PARTS/broken-left": {
+    "url": "/art/er13/paper-bridge-parts-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      353,
+      134,
+      1183,
+      355
+    ],
+    "anchor": [
+      415,
+      221
+    ]
+  },
+  "ER13.ATLAS.BRIDGE_PARTS/broken-right": {
+    "url": "/art/er13/paper-bridge-parts-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      394,
+      486,
+      1164,
+      704
+    ],
+    "anchor": [
+      385,
+      218
+    ]
+  },
+  "ER13.ATLAS.BRIDGE_PARTS/boat-connector": {
+    "url": "/art/er13/paper-bridge-parts-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      36,
+      811,
+      1499,
+      881
+    ],
+    "anchor": [
+      731.5,
+      70
+    ]
+  },
+  "ASSET.ENV.DOOR/side": {
+    "url": "/art/er13/small-interactions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      34,
+      64,
+      351,
+      481
+    ],
+    "anchor": [
+      158.5,
+      417
+    ]
+  },
+  "ASSET.ENV.DOOR/north": {
+    "url": "/art/er13/small-interactions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      34,
+      64,
+      351,
+      481
+    ],
+    "anchor": [
+      158.5,
+      417
+    ]
+  },
+  "ASSET.ENV.DOOR/south": {
+    "url": "/art/er13/small-interactions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      34,
+      64,
+      351,
+      481
+    ],
+    "anchor": [
+      158.5,
+      417
+    ]
+  },
+  "ASSET.PROP.MODEL.TAB/rest": {
+    "url": "/art/er13/small-interactions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      414,
+      261,
+      747,
+      355
+    ],
+    "anchor": [
+      166.5,
+      94
+    ]
+  },
+  "ASSET.PROP.MODEL.TAB/pulled": {
+    "url": "/art/er13/small-interactions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      414,
+      261,
+      747,
+      355
+    ],
+    "anchor": [
+      166.5,
+      94
+    ]
+  },
+  "ASSET.PROP.BRIEF.FLAP/down": {
+    "url": "/art/er13/small-interactions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      809,
+      143,
+      1086,
+      466
+    ],
+    "anchor": [
+      138.5,
+      323
+    ]
+  },
+  "ASSET.PROP.BRIEF.FLAP/lifted": {
+    "url": "/art/er13/small-interactions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      1168,
+      114,
+      1508,
+      304
+    ],
+    "anchor": [
+      170,
+      190
+    ]
+  },
+  "ASSET.PROP.NOTE.DRAWER/closed": {
+    "url": "/art/er13/small-interactions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      30,
+      650,
+      356,
+      843
+    ],
+    "anchor": [
+      163,
+      193
+    ]
+  },
+  "ASSET.PROP.NOTE.DRAWER/open": {
+    "url": "/art/er13/small-interactions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      408,
+      609,
+      743,
+      871
+    ],
+    "anchor": [
+      167.5,
+      262
+    ]
+  },
+  "ASSET.PROP.DOCK.FLAP/closed": {
+    "url": "/art/er13/small-interactions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      791,
+      629,
+      1119,
+      830
+    ],
+    "anchor": [
+      164,
+      201
+    ]
+  },
+  "ASSET.PROP.DOCK.FLAP/open": {
+    "url": "/art/er13/small-interactions-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      1160,
+      630,
+      1522,
+      834
+    ],
+    "anchor": [
+      181,
+      204
+    ]
+  },
+  "ASSET.PROP.DEVICE/idle": {
+    "url": "/art/er13/source-carrier-parts-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      72,
+      42,
+      410,
+      497
+    ],
+    "anchor": [
+      169,
+      455
+    ]
+  },
+  "ASSET.PROP.DEVICE/selected": {
+    "url": "/art/er13/source-carrier-parts-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      72,
+      42,
+      410,
+      497
+    ],
+    "anchor": [
+      169,
+      455
+    ]
+  },
+  "ASSET.PROP.DEVICE/base": {
+    "url": "/art/er13/source-carrier-parts-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      72,
+      42,
+      410,
+      497
+    ],
+    "anchor": [
+      169,
+      455
+    ]
+  },
+  "ASSET.PROP.SLATE/base": {
+    "url": "/art/er13/source-carrier-parts-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      499,
+      61,
+      1108,
+      493
+    ],
+    "anchor": [
+      304.5,
+      432
+    ]
+  },
+  "ASSET.PROP.PETAL/flat": {
+    "url": "/art/er13/source-carrier-parts-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      1190,
+      60,
+      1468,
+      496
+    ],
+    "anchor": [
+      139,
+      436
+    ]
+  },
+  "ASSET.PROP.PETAL/bent": {
+    "url": "/art/er13/source-carrier-parts-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      78,
+      548,
+      475,
+      954
+    ],
+    "anchor": [
+      198.5,
+      406
+    ]
+  },
+  "ASSET.PROP.NOTICE.CLIP/latched": {
+    "url": "/art/er13/source-carrier-parts-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      622,
+      563,
+      946,
+      920
+    ],
+    "anchor": [
+      162,
+      357
+    ]
+  },
+  "ASSET.PROP.NOTICE.CLIP/base": {
+    "url": "/art/er13/source-carrier-parts-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      622,
+      563,
+      946,
+      920
+    ],
+    "anchor": [
+      162,
+      357
+    ]
+  },
+  "ASSET.PROP.NOTICE.CLIP/released": {
+    "url": "/art/er13/source-carrier-parts-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      1113,
+      536,
+      1464,
+      958
+    ],
+    "anchor": [
+      175.5,
+      422
+    ]
+  },
+  "ASSET.TILE.BLOOM/base": {
+    "url": "/art/er13/four-story-tiles-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      39,
+      117,
+      513,
+      586
+    ],
+    "anchor": [
+      237,
+      469
+    ]
+  },
+  "ASSET.TILE.FERRY/base": {
+    "url": "/art/er13/four-story-tiles-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      580,
+      117,
+      1054,
+      585
+    ],
+    "anchor": [
+      237,
+      468
+    ]
+  },
+  "ASSET.TILE.PLANT/base": {
+    "url": "/art/er13/four-story-tiles-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1121,
+      117,
+      1595,
+      586
+    ],
+    "anchor": [
+      237,
+      469
+    ]
+  },
+  "ASSET.TILE.BRIDGE/base": {
+    "url": "/art/er13/four-story-tiles-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1661,
+      115,
+      2137,
+      585
+    ],
+    "anchor": [
+      238,
+      470
+    ]
+  },
+  "ASSET.PUP.BROKEN_BRIDGE/left": {
+    "url": "/art/er13/paper-bridge-parts-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      353,
+      134,
+      1183,
+      355
+    ],
+    "anchor": [
+      415,
+      221
+    ]
+  },
+  "ASSET.PUP.BROKEN_BRIDGE/right": {
+    "url": "/art/er13/paper-bridge-parts-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      394,
+      486,
+      1164,
+      704
+    ],
+    "anchor": [
+      385,
+      218
+    ]
+  },
+  "ASSET.PUP.JOIN/base": {
+    "url": "/art/er13/paper-bridge-parts-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      36,
+      811,
+      1499,
+      881
+    ],
+    "anchor": [
+      731.5,
+      70
+    ]
+  },
+  "ASSET.ACT.PLAYER/walk-left-contact-near": {
+    "url": "/art/er13/player-left-walk-v3-alpha.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      104,
+      20,
+      507,
+      694
+    ],
+    "referenceHeight": 674,
+    "anchor": [
+      198.5,
+      674
+    ]
+  },
+  "ASSET.ACT.PLAYER/walk-left-passing-near": {
+    "url": "/art/er13/player-left-walk-v3-alpha.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      665,
+      20,
+      998,
+      694
+    ],
+    "referenceHeight": 674,
+    "anchor": [
+      172,
+      674
+    ]
+  },
+  "ASSET.ACT.PLAYER/walk-left-contact-far": {
+    "url": "/art/er13/player-left-walk-v3-alpha.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1142,
+      20,
+      1554,
+      698
+    ],
+    "referenceHeight": 674,
+    "anchor": [
+      224.5,
+      678
+    ]
+  },
+  "ASSET.ACT.PLAYER/walk-left-passing-far": {
+    "url": "/art/er13/player-left-walk-v3-alpha.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1729,
+      20,
+      2039,
+      705
+    ],
+    "referenceHeight": 674,
+    "anchor": [
+      160,
+      685
     ]
   }
 }

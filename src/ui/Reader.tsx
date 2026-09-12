@@ -6,8 +6,9 @@ import {content,copy,parts} from '../core/content.js';
 import {available,permittedSpans} from '../core/evidence.js';
 import {Passage} from './Passage.js';
 import {Button} from './primitives.js';
-import {assetUrl} from '../world/assets.js';
 import {RecordingFrame} from './RecordingFrame.js';
+import {NoticePhoto} from './NoticePhoto.js';
+import {Sprite} from './Sprite.js';
 import {SourceMetadata,historical} from './Reasoning.js';
 import {provenance} from '../core/reasoning.js';
 import {openWord,showReading} from './Experience.js';
@@ -44,7 +45,7 @@ export function Reader({state,store}:{state:State;store:Store}){
   {view.action!=='enlarge'&&<Button ct="CT.SOURCE.ENLARGE" onClick={()=>{setPlaying(false);store.send({type:'VIEW',view:{...view,action:'enlarge',previous:view}});}}/>}
   {isFile?<>
    <div className="actions"><Button ct="CT.MEDIA.RECORDING" onClick={()=>change('frames',1)}/><Button ct="CT.MEDIA.PHOTO" onClick={()=>change('E2.b')}/><Button ct="CT.MEDIA.MESSAGE" onClick={()=>change('E2.c')}/><Button ct="CT.CLIP.DESCRIBE" onClick={()=>change('E2.a/description')}/></div>
-   {view.ref==='E2.b'?<><div className="source-image photo"><img src={assetUrl('ASSET.SOURCE.E2.PHOTO')} alt=""/><strong>CANCELED</strong></div>{display('E2.b')}</>:view.ref==='E2.a/description'?<><SourceMetadata refId="E2.a/description"/>{display('E2.a/description')}</>:view.ref==='E2.c'?<><SourceMetadata refId="E2.c"/>{display('E2.c')}</>:<>
+   {view.ref==='E2.b'?<><NoticePhoto/>{display('E2.b')}</>:view.ref==='E2.a/description'?<><SourceMetadata refId="E2.a/description"/>{display('E2.a/description')}</>:view.ref==='E2.c'?<><SourceMetadata refId="E2.c"/>{display('E2.c')}</>:<>
     <SourceMetadata refId={`E2.a/frame${view.frame??1}`}/><RecordingFrame frame={view.frame??1}/>{display(`E2.a/frame${view.frame??1}`)}
     {(view.frame??1)===3&&display('E2.a/end')}
     <div className="actions"><Button ct="CT.CLIP.PREVIOUS" disabled={(view.frame??1)===1} onClick={()=>change('frames',(view.frame??1)-1)}/><Button ct="CT.CLIP.NEXT" disabled={(view.frame??1)===3} onClick={()=>change('frames',(view.frame??1)+1)}/></div>
@@ -54,7 +55,7 @@ export function Reader({state,store}:{state:State;store:Store}){
   </>:<>
    {['E3','E4'].includes(id)&&<SourceMetadata refId={granted[0]!.refId}/>}
    {id==='E5'&&available(state.case,'E5.a')&&<SourceMetadata refId="E5.a"/>}
-   {id==='E8'&&granted.map(p=><img key={p.refId} className="tile-inspection" src={assetUrl('ASSET.'+p.refId.slice(3))} alt=""/>)}
+   {id==='E8'&&granted.map(p=><Sprite key={p.refId} className="tile-inspection" id={'ASSET.'+p.refId.slice(3)}/>)}
    {[...new Set(granted.map(p=>p.ctId))].map(ct=>{
     const group=granted.filter(p=>p.ctId===ct),length=Array.from(copy(ct)).length;let range:Span|undefined;
     if(group.length===1&&group[0]!.refId==='E5.b'&&permittedSpans(state.case,'E5.b')[0]![1]<length)range=permittedSpans(state.case,'E5.b')[0]!;
