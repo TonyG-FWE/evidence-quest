@@ -7,6 +7,8 @@ import {available,permittedSpans} from '../core/evidence.js';
 import {Passage} from './Passage.js';
 import {Button} from './primitives.js';
 import {assetUrl} from '../world/assets.js';
+import {openWord,showReading,Support} from './Experience.js';
+import type {WordContext} from '../core/experience.js';
 export function Reader({state,store}:{state:State;store:Store}){
  const view=state.runtime.view,id=view.sourceId??'E1',access=view.accessId??`ACC.EVIDENCE.${id}`,source=content.sources.find(s=>s.id===id)!;
  const [definition,setDefinition]=useState<string|null>(null),[playing,setPlaying]=useState(false),wordHeading=useRef<HTMLHeadingElement>(null);
@@ -26,13 +28,14 @@ export function Reader({state,store}:{state:State;store:Store}){
   const remember=()=>store.send({type:'SOURCE_POSITION',sourceId:id,componentRef:component,frame:id==='E2'?view.frame??1:null,scrollFraction:panel.scrollTop/Math.max(1,panel.scrollHeight-panel.clientHeight)});
   remember();panel.addEventListener('scroll',remember);return()=>panel.removeEventListener('scroll',remember);
  },[id,component,view.frame,store]);
- const define=(word:string)=>{setPlaying(false);setDefinition(word);};
+ const define=(word:string,context?:WordContext)=>{setPlaying(false);if(context)openWord(state,context);else setDefinition(word);};
  const display=(ref:string)=>{const p=parts.get(ref)!;return <Passage key={ref} ct={p.ctId} refs={[ref]} access={access} store={store} onWord={define}/>;};
  const change=(ref?:string,frame?:number)=>{setPlaying(false);store.send({type:'VIEW',view:{...view,...(ref?{ref}:{}),...(frame?{frame}:{})}});};
  const isFile=id==='E2'&&available(state.case,'E2.a/frame1');
  if(definition)return <article className="definition"><h2 ref={wordHeading} tabIndex={-1}>{definition.toLowerCase()}</h2><p>{copy(`CT.WORD.${definition}`)}</p><Button ct="CT.SOURCE.DEFINITION_CLOSE" onClick={()=>{const word=definition;setDefinition(null);requestAnimationFrame(()=>document.querySelector<HTMLButtonElement>(`[data-word="${word}"]`)?.focus());}}/></article>;
  return <article className="reader">
   <h2 tabIndex={-1} data-focus-heading>{copy(source.titleCt)}</h2>
+  {id==='E6'&&available(state.case,'E6.a')&&<Button onClick={()=>showReading(state,'READ.PROMISE')}>Read with the crew</Button>}
   {view.action!=='enlarge'&&<Button ct="CT.SOURCE.ENLARGE" onClick={()=>{setPlaying(false);store.send({type:'VIEW',view:{...view,action:'enlarge',previous:view}});}}/>}
   {isFile?<>
    <div className="actions"><Button ct="CT.MEDIA.RECORDING" onClick={()=>change('frames',1)}/><Button ct="CT.MEDIA.PHOTO" onClick={()=>change('E2.b')}/><Button ct="CT.MEDIA.MESSAGE" onClick={()=>change('E2.c')}/><Button ct="CT.CLIP.DESCRIBE" onClick={()=>change('E2.a/description')}/></div>
@@ -52,6 +55,6 @@ export function Reader({state,store}:{state:State;store:Store}){
     return <Passage key={ct} ct={ct} refs={group.map(p=>p.refId)} access={access} store={store} onWord={define} {...(range?{range}:{})}/>;
    })}
   </>}
-  <p className="muted">{copy('CT.ACCESS.SOURCE')}</p>
+  {id==='E3'&&<Support s={state} id="CT.ER13.SCOPE"/>}<p className="muted">{copy('CT.ACCESS.SOURCE')}</p>
  </article>;
 }

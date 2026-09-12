@@ -2,9 +2,11 @@
 
 A four-room SparkFest adventure about bringing Loop back and premiering **The Little Bridge**. The player investigates physical sources, retrieves the projector and story kit, rehearses a paper story and launches the crew's premiere.
 
-This private project contains **Item 13 / M11.CONNECTED**, with individual temporary graphics and authored help. See the build status for the recorded acceptance result. The approved rich illustrated finish and live interpretation qualification remain later milestones.
+This private project is implementing the **ER13 experience and literacy correction** to Item 13. It adds a child-controlled story opening, purposeful reading with a local English voice, contextual vocabulary, optional narrator cards and individually replaceable illustrations. See BUILD-STATUS.md for acceptance and remaining dependencies; the earlier first-build checks are historical.
 
 - [Build status and exact next dependency](BUILD-STATUS.md)
+- [ER13 implementation and provider prerequisites](docs/ER13-CORRECTION.md)
+- [Dated supporting-copy register](docs/ER13-COPY-REGISTER.md)
 - [Startup authorization](docs/BUILD-START.md)
 - [Authoritative design entry point](docs/design/evidence-quest-design-v3/11-FINAL-CODEX-BUILD-PACKET-AND-REVISED-SCHEDULE.md)
 - [Master checklist](docs/design/evidence-quest-design-v3/EVIDENCE-QUEST-MASTER-CHECKLIST.md)
@@ -41,6 +43,6 @@ Browser evidence includes the three fresh routes, all five plans, compact keyboa
 
 Saves use this browser origin's IndexedDB. Progress is acknowledged only on transaction completion. Failed, unknown or conflicting records stay intact until explicit replacement; gameplay can continue in memory. Preferences are stored separately from case resets.
 
-Temporary artwork consists of 58 separately replaceable assets and 246 PNG density/variant exports. The current white Jo and approved cast are retained. These flat temporary equivalents do not replace the approved illustrated finish. Only the seven named comparison/timeline/general My ideas states defer beyond this first build; search and story plans are included.
+Temporary artwork consists of 58 separately replaceable assets and 246 PNG density/variant exports. The current white Jo and approved cast are retained. Illustrated overrides are recorded in content/illustrated-assets.json and replace accepted assets independently; unmodified flat equivalents remain temporary. Only the seven named comparison/timeline/general My ideas states defer beyond this first build; search and story plans are included.
 
 No open-source license is granted by this repository. Deployment and public publication are outside the current authorization.

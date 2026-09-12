@@ -1583,7 +1583,12 @@
             "help-selected",
             "help-displayed",
             "possible-outcome",
-            "history-uncertain"
+            "history-uncertain",
+            "reading-model-played",
+            "reading-practice-requested",
+            "reading-self-reported",
+            "word-looked-up",
+            "supplied-support"
           ]
         },
         "refs": {
@@ -2464,6 +2469,9 @@
             ],
             "additionalProperties": false
           }
+        },
+        "experience": {
+          "$ref": "#/$defs/Experience"
         }
       },
       "required": [
@@ -3471,6 +3479,88 @@
       "items": false,
       "minItems": 2,
       "maxItems": 2
+    },
+    "Experience": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "const": 1
+        },
+        "introBeat": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "introDismissed": {
+          "type": "boolean"
+        },
+        "legacyOffer": {
+          "type": "boolean"
+        },
+        "npcIntroductions": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "ACT.JO",
+              "ACT.REMY",
+              "ACT.ARI"
+            ]
+          },
+          "maxItems": 512,
+          "uniqueItems": true
+        },
+        "narratorCard": {
+          "anyOf": [
+            {
+              "enum": [
+                "READ.WELCOME",
+                "READ.PROMISE",
+                "READ.ENDING"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "narratorPauses": {
+          "type": "boolean"
+        },
+        "phrases": {
+          "type": "boolean"
+        },
+        "wordContexts": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 160
+          },
+          "maxItems": 512,
+          "uniqueItems": true
+        },
+        "supports": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 160
+          },
+          "maxItems": 512,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "version",
+        "introBeat",
+        "introDismissed",
+        "legacyOffer",
+        "npcIntroductions",
+        "narratorCard",
+        "narratorPauses",
+        "phrases",
+        "wordContexts",
+        "supports"
+      ],
+      "additionalProperties": false
     }
   }
 }

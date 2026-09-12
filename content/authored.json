@@ -3180,7 +3180,7 @@
           "spans": [
             [
               0,
-              40
+              53
             ]
           ],
           "medium": "observation",
@@ -3196,7 +3196,7 @@
           "spans": [
             [
               0,
-              40
+              53
             ]
           ],
           "medium": "observation",
@@ -3212,7 +3212,7 @@
           "spans": [
             [
               0,
-              47
+              46
             ]
           ],
           "medium": "observation",
@@ -4553,7 +4553,7 @@
     {
       "id": "CT.TITLE.E5",
       "origin": "C",
-      "text": "Ari’s capture slate and Loop",
+      "text": "Ari's recording notes and Loop",
       "slots": [],
       "when": {
         "all": []
@@ -4953,7 +4953,7 @@
     {
       "id": "CT.MEDIA.SLATE",
       "origin": "C",
-      "text": "Capture slate",
+      "text": "Recording notes",
       "slots": [],
       "when": {
         "all": []
@@ -4973,7 +4973,7 @@
     {
       "id": "CT.OBS.LOOP.SEEN",
       "origin": "C",
-      "text": "You saw Loop in Media during your visit.",
+      "text": "Loop is here. Our projector can go back to the Stage.",
       "slots": [],
       "when": {
         "all": []
@@ -4983,7 +4983,7 @@
     {
       "id": "CT.OBS.LOOP.RESPONSE",
       "origin": "N",
-      "text": "Loop turned toward you and was ready to follow.",
+      "text": "Loop turned toward you and is ready to follow.",
       "slots": [],
       "when": {
         "all": []
@@ -5338,7 +5338,7 @@
     {
       "id": "CT.START.CASE",
       "origin": "F",
-      "text": "Launch Day: Where’s Loop?",
+      "text": "Our story needs an ending.",
       "slots": [],
       "when": {
         "all": []
@@ -5358,7 +5358,7 @@
     {
       "id": "CT.START.START",
       "origin": "C",
-      "text": "Start",
+      "text": "Join the crew",
       "slots": [],
       "when": {
         "all": []
@@ -5418,7 +5418,7 @@
     {
       "id": "CT.GOAL.ASSIGNMENT",
       "origin": "C",
-      "text": "You’re the premiere captain. Bring Loop back and premiere The Little Bridge.",
+      "text": "You're running the show with our crew. Find Loop so we can put on The Little Bridge.",
       "slots": [],
       "when": {
         "all": []
@@ -5438,7 +5438,7 @@
     {
       "id": "CT.GUIDE.PREVIEW",
       "origin": "C",
-      "text": "Try Preview at the rehearsal desk.",
+      "text": "Try the big screen at the Stage desk.",
       "slots": [],
       "when": {
         "all": []
@@ -5448,7 +5448,7 @@
     {
       "id": "CT.GOAL.SEARCH",
       "origin": "C",
-      "text": "Look around or ask the crew about Loop.",
+      "text": "Find Loop so our crew can put on The Little Bridge.",
       "slots": [],
       "when": {
         "all": []
@@ -5478,7 +5478,7 @@
     {
       "id": "CT.GOAL.KIT",
       "origin": "N",
-      "text": "Bring the story kit to the rehearsal desk.",
+      "text": "Bring the story kit to the Stage desk.",
       "slots": [],
       "when": {
         "all": []
@@ -5508,7 +5508,7 @@
     {
       "id": "CT.GOAL.REHEARSE",
       "origin": "C",
-      "text": "Try your story tiles in rehearsal.",
+      "text": "The screen works and the story tiles are ready. Now help Pip keep the promise in Jo's story.",
       "slots": [],
       "when": {
         "all": []
@@ -5518,7 +5518,7 @@
     {
       "id": "CT.GOAL.LAUNCH",
       "origin": "C",
-      "text": "Launch your premiere.",
+      "text": "Your ending works. You're ready to put on the show.",
       "slots": [],
       "when": {
         "all": []
@@ -5528,7 +5528,7 @@
     {
       "id": "CT.GOAL.AFTER",
       "origin": "C",
-      "text": "Replay or try another arrangement.",
+      "text": "You brought Loop back, finished Pip's journey, and put on your crew's first show.",
       "slots": [],
       "when": {
         "all": []
@@ -5698,7 +5698,7 @@
     {
       "id": "CT.OBJ.MODEL_RESULT",
       "origin": "F",
-      "text": "Pip reaches the river. The footbridge folds down.",
+      "text": "Pip reaches the river, but the broken bridge stops him. Grandma is waiting across the water.",
       "slots": [],
       "when": {
         "all": []
@@ -5878,7 +5878,7 @@
     {
       "id": "CT.OBJ.WAKE",
       "origin": "F",
-      "text": "Wake Loop and follow me",
+      "text": "Wake Loop",
       "slots": [],
       "when": {
         "all": []
@@ -5888,7 +5888,7 @@
     {
       "id": "CT.OBJ.WAKE_RESULT",
       "origin": "F",
-      "text": "Loop is ready to follow you.",
+      "text": "Loop is awake and ready to follow you.",
       "slots": [],
       "when": {
         "all": []
@@ -5918,7 +5918,7 @@
     {
       "id": "CT.OBJ.SLATE",
       "origin": "F",
-      "text": "Read capture slate",
+      "text": "Read recording notes",
       "slots": [],
       "when": {
         "all": []
@@ -6038,7 +6038,7 @@
     {
       "id": "CT.SCENE.MD",
       "origin": "N",
-      "text": "Media. Ari is beside the recording table. Paper petals lie still in front of a plain wall. The capture slate is on the table. Jo’s and Remy’s mounted notes are beside the story-kit space. Workshop is through the bottom exit.",
+      "text": "Media room. Ari is beside the recording table. Paper petals lie still in front of a plain wall. The recording notes are on the table. Jo’s and Remy’s mounted notes are beside the space for the story kit. Workshop is through the bottom exit.",
       "slots": [],
       "when": {
         "all": []
@@ -6078,7 +6078,7 @@
     {
       "id": "CT.SCENE.MD.NO_KIT",
       "origin": "N",
-      "text": "The story-kit space is empty. Both mounted notes are still here.",
+      "text": "The space for the story kit is empty. Both mounted notes are still here.",
       "slots": [],
       "when": {
         "all": []
@@ -6973,7 +6973,7 @@
     {
       "id": "CT.JO.MODEL",
       "origin": "F",
-      "text": "You made Pip’s backpack. Today, you’re running our premiere. Let’s get your little traveler onto the big stage.",
+      "text": "Let’s try our paper story on the big screen.",
       "slots": [],
       "when": {
         "all": []
@@ -7033,7 +7033,7 @@
     {
       "id": "CT.ARI.WAIT",
       "origin": "F",
-      "text": "I was finishing the recording and keeping the materials together for you. You’re our premiere captain.",
+      "text": "I was finishing the recording and keeping the materials together for you. You're running the show with our crew.",
       "slots": [],
       "when": {
         "all": []
@@ -7203,7 +7203,7 @@
     {
       "id": "CT.TALK.SLATE",
       "origin": "N",
-      "text": "Can I see the capture slate?",
+      "text": "Can I see the recording notes?",
       "slots": [],
       "when": {
         "all": []
@@ -7703,7 +7703,7 @@
     {
       "id": "CT.RAIL.TITLE",
       "origin": "C",
-      "text": "Your arrangement",
+      "text": "Plan our story",
       "slots": [],
       "when": {
         "all": []
@@ -7713,7 +7713,7 @@
     {
       "id": "CT.RAIL.HELP",
       "origin": "N",
-      "text": "Choose a tile, then choose where to put it. You can also drag tiles.",
+      "text": "Place the story tiles in the order you want Loop to play them. Choose a tile, then choose where it goes. You can also drag tiles.",
       "slots": [],
       "when": {
         "all": []
@@ -8087,7 +8087,7 @@
     {
       "id": "CT.RAIL.CHANGED",
       "origin": "F",
-      "text": "Your arrangement changed. Rehearse this version.",
+      "text": "Your tile order changed. Try this ending in rehearsal.",
       "slots": [],
       "when": {
         "all": []
@@ -8097,7 +8097,7 @@
     {
       "id": "CT.WORK.MISSING_KIT",
       "origin": "F",
-      "text": "Collect the story tiles for this rail.",
+      "text": "Bring the story kit to the Stage desk so you can plan the ending.",
       "slots": [],
       "when": {
         "all": []
@@ -8137,7 +8137,7 @@
     {
       "id": "CT.WORK.CERTIFIED",
       "origin": "C",
-      "text": "This arrangement is ready for the premiere.",
+      "text": "Pip reached Grandma, and they planted the seed together. Your ending works. You're ready to put on the show.",
       "slots": [],
       "when": {
         "all": []
@@ -8147,7 +8147,7 @@
     {
       "id": "CT.WORK.PREVIEW",
       "origin": "F",
-      "text": "Preview",
+      "text": "Try the big screen",
       "slots": [],
       "when": {
         "all": []
@@ -8157,7 +8157,7 @@
     {
       "id": "CT.WORK.PREVIEW_RESULT",
       "origin": "F",
-      "text": "Loop isn’t in the dock yet.",
+      "text": "Loop isn't in the dock. Ari borrowed it to record the last scene. Let's find them and bring our equipment back. Then you can try an ending for Pip.",
       "slots": [],
       "when": {
         "all": []
@@ -8167,7 +8167,7 @@
     {
       "id": "CT.WORK.REHEARSE",
       "origin": "F",
-      "text": "Rehearse",
+      "text": "Try this ending",
       "slots": [],
       "when": {
         "all": []
@@ -8177,7 +8177,7 @@
     {
       "id": "CT.WORK.LAUNCH",
       "origin": "F",
-      "text": "Launch",
+      "text": "Start premiere",
       "slots": [],
       "when": {
         "all": []
@@ -8197,7 +8197,7 @@
     {
       "id": "CT.WORK.CHECK",
       "origin": "F",
-      "text": "Try this arrangement in rehearsal first.",
+      "text": "Try your ending before you put on the show.",
       "slots": [],
       "when": {
         "all": []
@@ -8477,7 +8477,7 @@
     {
       "id": "CT.CUE.FERRY",
       "origin": "F",
-      "text": "The seed crossed. Pip is still on the other bank.",
+      "text": "The seed reached Grandma. Pip is still across the river.",
       "slots": [],
       "when": {
         "all": []
@@ -8487,7 +8487,7 @@
     {
       "id": "CT.CUE.FERRY_EMPTY",
       "origin": "F",
-      "text": "No loose seed on this bank.",
+      "text": "There's no seed here for the boat to carry. The story continues.",
       "slots": [],
       "when": {
         "all": []
@@ -9347,7 +9347,7 @@
     {
       "id": "CT.DIRECT.LAUNCH",
       "origin": "N",
-      "text": "This arrangement finished rehearsal successfully. Use Launch to show it on the Stage.",
+      "text": "Your ending worked in practice. Choose Start premiere to put on the show.",
       "slots": [],
       "when": {
         "all": []
@@ -9647,7 +9647,7 @@
     {
       "id": "CT.RECOVERY.RUN",
       "origin": "C",
-      "text": "This playback couldn’t be continued.",
+      "text": "This story could not be continued from where it stopped.",
       "slots": [],
       "when": {
         "all": []
@@ -9837,7 +9837,7 @@
     {
       "id": "CT.TOAST.COVERED",
       "origin": "N",
-      "text": "The covered Maximum Toast machine trembles gently in its own bay.",
+      "text": "Someone built a very large machine to make a snack. Want to see what it does?",
       "slots": [],
       "when": {
         "all": []
@@ -10187,7 +10187,7 @@
     {
       "id": "CT.ACCESS.WORK",
       "origin": "N",
-      "text": "Arrange tiles and Watch use the same story. Switching views pauses playback; use Continue when you want it to run again.",
+      "text": "Arrange tiles and Watch use the same story. Switching views pauses the paper story; use Continue when you want it to run again.",
       "slots": [],
       "when": {
         "all": []
@@ -10348,6 +10348,186 @@
       "id": "CT.TILE.LABEL.BLOOM",
       "origin": "N",
       "text": "Flower",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.WAKE",
+      "origin": "N",
+      "text": "Wake Loop so our projector can come back to the Stage.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.HOME",
+      "origin": "N",
+      "text": "Join your friends at SparkFest. Find Loop, bring your paper story to life, and put on The Little Bridge.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.SIGN",
+      "origin": "N",
+      "text": "SparkFest — stories and inventions made by us",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.PROGRAM",
+      "origin": "N",
+      "text": "Today's show: The Little Bridge",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.INTRO0",
+      "origin": "N",
+      "text": "There you are! Welcome to SparkFest. It's our festival of stories and inventions. Today, visitors are coming to see the story we made together.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.INTRO1",
+      "origin": "N",
+      "text": "This is Pip, our paper traveler. That's the red backpack you helped make. Our show is called The Little Bridge.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.INTRO2",
+      "origin": "N",
+      "text": "Pip promised to visit Grandma and plant a seed with her. But the river washed their bridge away. We still need to make the ending work.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.INTRO3",
+      "origin": "N",
+      "text": "You're running the show with us. Loop, our rolling projector, makes these paper characters move on the big screen.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.REMY",
+      "origin": "N",
+      "text": "I'm Remy. I made the little boats for our show. I was filming behind the scenes when I saw Loop leave.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.ARI",
+      "origin": "N",
+      "text": "You found us! I'm Ari. I record the moving paper scenes for our show.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.SCOPE",
+      "origin": "N",
+      "text": "The outdoor practice was canceled. The first public show is still planned.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.PROMISE_SUPPORT",
+      "origin": "N",
+      "text": "Pip promised to plant with Grandma. They are still on opposite banks.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.WELCOME",
+      "origin": "N",
+      "text": "Welcome to SparkFest! Today, our crew is putting on The Little Bridge. We made the paper characters together. Now we need to bring their story to life on the big screen.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.ENDING",
+      "origin": "N",
+      "text": "Pip crossed the river to reach Grandma. Together, they planted the seed in the hill's soil. A lantern-flower opened, and its warm light shone across the water.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.PREMIERE_CONTEXT",
+      "origin": "N",
+      "text": "Our premiere is the first public showing of The Little Bridge.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.REHEARSAL_CONTEXT",
+      "origin": "N",
+      "text": "In rehearsal, we can try an ending and change it before the audience sees it.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.STILL_CONTEXT",
+      "origin": "N",
+      "text": "The paper petals stay still indoors.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.TOGETHER_CONTEXT",
+      "origin": "N",
+      "text": "Pip and Grandma will plant the seed together.",
       "slots": [],
       "when": {
         "all": []

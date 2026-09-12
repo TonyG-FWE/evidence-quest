@@ -1,3 +1,4 @@
+import {roles} from '../core/experience.js';
 import {useEffect,useRef} from 'react';
 import type {Point} from '../../contracts/types.js';
 import {content,copy,parts} from '../core/content.js';
@@ -49,8 +50,12 @@ export function World({state,store}:{state:State;store:Store}){
     if(children.length>1)store.send({type:'VIEW',view:{page:'objects',selected:children.map(h=>h.id)}});else if(children[0])store.send({type:'TARGET',target:children[0].id});else store.send({type:'WALK',point});
    }}/>
   {content.doors.filter(d=>d.room===state.case.physical.room).map(d=>{const side=d.id==='WK.EXIT.MD'?'north':d.id==='MD.EXIT.WK'?'south':d.threshold[0]<60?'left':'right';return <button key={d.id} type="button" className={`door-label ${side}`} aria-label={copy('CT.WORLD.GO',{room:roomName(d.destinationRoom)})} onClick={()=>store.send({type:'TARGET',target:d.id})}>{side==='left'?'←':side==='right'?'→':side==='north'?'↑':'↓'} {roomName(d.destinationRoom)}</button>;})}
+  {state.case.physical.room==='SC.ST'&&<div className="world-program">{copy('CT.ER13.SIGN')}<small>{copy('CT.ER13.PROGRAM')}</small></div>}
+  {content.actors.filter(a=>a.id!=='ACT.PLAYER'&&a.id!=='ACT.LOOP'&&a.room===state.case.physical.room).map(a=><div key={a.id} className="world-cast-label" style={{left:(a.feet[0]/120*100-4)+'%',top:(a.feet[1]/80*100+2)+'%'}}>{ownerLabel(state.case,a.id)}<small>{roles[a.id]}</small></div>)}
+  {state.case.physical.loop.room===state.case.physical.room&&state.case.encounteredActors.includes('ACT.LOOP')&&<div className="world-cast-label" style={{left:(state.case.physical.loop.feet[0]/120*100-4)+'%',top:(state.case.physical.loop.feet[1]/80*100+2)+'%'}}>Loop<small>rolling projector</small></div>}
+  {state.runtime.view.page==='intro'&&state.runtime.view.frame===1&&<div className="world-model-emphasis"/>}
   {state.case.physical.room==='SC.CY'&&<span className="notice-word" aria-hidden="true">CANCELED</span>}
   {state.runtime.canvasFailure?<p className="render-error">{copy('CT.TECH.CANVAS_ERROR')}</p>:state.runtime.artFailure?<div className="render-error"><p>{copy('CT.TECH.ART_ERROR')}</p><Button ct="CT.RECOVERY.RETRY" onClick={()=>{store.send({type:'ART_RETRY'});assets.current?.retry();}}/></div>:null}
-  {state.runtime.view.page==='world'&&nearby.length>0&&<div className="nearby"><Button data-focus-owner={nearby.length===1?nearby[0]!.id:undefined} onClick={interact}>{nearby.length===1?ownerLabel(state.case,nearby[0]!.id):copy('CT.WORLD.CHOOSE')}</Button></div>}
+  {state.runtime.view.page==='world'&&!state.runtime.intent&&nearby.length>0&&<div className="nearby"><Button data-focus-owner={nearby.length===1?nearby[0]!.id:undefined} onClick={interact}>{nearby.length===1?ownerLabel(state.case,nearby[0]!.id):`Use something nearby: ${nearby.slice(0,2).map(o=>ownerLabel(state.case,o.id)).join(' or ')}`}</Button></div>}
  </div></div>;
 }

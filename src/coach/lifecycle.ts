@@ -38,8 +38,8 @@ export function startHelp(m:Mutation,direct=false,noteHelp=false){
  m.s.session.coach={request:validateCoachRequest(request)?request:null,status:'pending',winner:null,heldResponse:null,fallbackFocused:false,deadlineElapsedMs:0};
  m.s.runtime.helpSubmission=submitted?.id??null;m.s.runtime.helpPresentation=null;
  setView(m,{page:'help',topic:context.topic==='story-plan'?'story':'search'});
- // This milestone has no live service. Only a separately installed development adapter can request a transport.
- if(!direct&&draft.text.trim()&&m.s.runtime.coachTransport==='development'&&validateCoachRequest(request)&&new TextEncoder().encode(JSON.stringify(request)).length<=32768){
+ // A server-advertised live adapter and the isolated development adapter share this lifecycle.
+ if(!direct&&draft.text.trim()&&m.s.runtime.coachTransport!=='authored'&&validateCoachRequest(request)&&new TextEncoder().encode(JSON.stringify(request)).length<=32768){
   m.effects.push({kind:'coach-send',request});
   for(const ms of [2000,8000,20000])m.effects.push({kind:'timer',ms,command:{type:'COACH_TIME',requestId,ms}});
  }else present(m,answer,direct?'authored-direct':'authored-topic');

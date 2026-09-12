@@ -4,14 +4,16 @@ import {Assets} from '../world/assets.js';
 import {paintStory} from '../world/paint.js';
 import {initialPuppet,storyDescription} from '../story/engine.js';
 import {copy} from '../core/content.js';
-export function StoryCanvas({s}:{s:State}){
+export function StoryCanvas({s,model=false}:{s:State;model?:boolean}){
  const canvas=useRef<HTMLCanvasElement>(null),latest=useRef(s);latest.current=s;
  const paint=useRef<()=>void>(()=>{});
  useEffect(()=>{
   const el=canvas.current;let ctx:CanvasRenderingContext2D|null;try{ctx=el?.getContext('2d')??null;}catch{ctx=null;}if(!el||!ctx)return;
-  const draw=()=>{const state=latest.current,box=el.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2),width=Math.ceil(box.width*dpr),height=Math.ceil(box.height*dpr);if(el.width!==width)el.width=width;if(el.height!==height)el.height=height;ctx!.setTransform(el.width/100,0,0,el.height/100,0,0);const r=state.case.playback;paintStory(ctx!,assets,r?.puppet??initialPuppet(),[0,0,100,100],r?.activeCue&&state.preferences.motion!=='reduced'?{cue:r.activeCue,elapsed:state.runtime.cueElapsedMs}:undefined);};
+  const draw=()=>{const state=latest.current,box=el.getBoundingClientRect(),dpr=Math.min(devicePixelRatio||1,2),width=Math.ceil(box.width*dpr),height=Math.ceil(box.height*dpr);if(el.width!==width)el.width=width;if(el.height!==height)el.height=height;ctx!.setTransform(el.width/100,0,0,el.height/100,0,0);const r=state.case.playback;
+   const modelProgress=state.runtime.intent?.target.startsWith('ST.MODEL')&&state.runtime.intent.stage==='operating'&&state.preferences.motion!=='reduced'?state.runtime.operationElapsedMs:state.case.physical.objects.modelTabTried?600:0;
+   paintStory(ctx!,assets,model?initialPuppet():r?.puppet??initialPuppet(),[0,0,100,100],!model&&r?.activeCue&&state.preferences.motion!=='reduced'?{cue:r.activeCue,elapsed:state.runtime.cueElapsedMs}:undefined,model?modelProgress:undefined);};
   paint.current=draw;const assets=new Assets(draw,()=>{}),resize=new ResizeObserver(draw);resize.observe(el);draw();return()=>resize.disconnect();
- },[]);
+ },[model]);
  useEffect(()=>paint.current(),[s]);
- return <canvas ref={canvas} className="whole-story" role="img" aria-label={storyDescription(s.case.playback?.puppet??initialPuppet()).map(id=>copy(id)).join(' ')} data-testid="whole-story"/>;
+ return <canvas ref={canvas} className="whole-story" role="img" aria-label={model?(s.case.physical.objects.modelTabTried?copy('CT.OBJ.MODEL_RESULT'):'Pip and the seed are on one bank. Grandma waits across the river. The bridge is broken.'):storyDescription(s.case.playback?.puppet??initialPuppet()).map(id=>copy(id)).join(' ')} data-testid={model?'paper-model':'whole-story'}/>;
 }

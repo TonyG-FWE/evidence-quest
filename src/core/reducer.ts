@@ -7,6 +7,7 @@ import { advancePath, approaches, clearSegment, distance, findPath, legal, owner
 import { applyTile, initialPuppet, newRun, successful } from '../story/engine.js';
 import {startHelp,coachingTime,receive,choose,display,cancelHelp,reconcile} from '../coach/lifecycle.js';
 import { deliver, help, queueDelivery, record, talk } from './people.js';
+import {newExperience,readingAvailable,wordContext,mayEncounter,supportAvailable} from './experience.js';
 
 export interface Mutation {s:State;e:Envelope;effects:Effect[];caseChanged:boolean;contextChanged:boolean;nextId:number;}
 export function allocate(m:Mutation):string{const id=m.e.ids[m.nextId++];if(!id)throw new Error('Command identity pool exhausted');return id;}
@@ -40,8 +41,9 @@ export function settleCue(m:Mutation,reason:Run['pauseReason']=null){
   const seq=observe(m,'cue-outcome',{runId:run.id,cueIndex:cue.index,actionId:cue.id,outcome:cue.result,puppet:{...cue.to},contentIds:[ct],origin:'world'});
   run.cueResultIds.push(m.s.case.observations.find(o=>o.seq===seq)!.id);caption(m,[ct]);
   if(cue.result==='unmet')reason??='unmet';
+  if(m.s.case.experience?.narratorPauses)reason??='user';
  }
- if(reason){run.status='paused';run.pauseReason=reason;c.physical.loop.mode='docked';m.s.session.presentation='arrange';touch(m);}
+ if(reason){run.status='paused';run.pauseReason=reason;c.physical.loop.mode='docked';if(!(m.s.session.presentation==='watch'&&(reason==='unmet'||reason==='user'&&m.s.case.experience?.narratorPauses)))m.s.session.presentation='arrange';touch(m);}
 }
 function pause(m:Mutation,reason:Exclude<Run['pauseReason'],null>){if(m.s.case.playback?.status==='running')settleCue(m,reason);}
 function startCue(m:Mutation,runId:string){
@@ -77,6 +79,7 @@ function arrive(m:Mutation){
  }
  intent.stage='operating';m.s.session.pendingAction!.stage='operating';m.s.session.taskState='UI.WORLD.OPERATING';m.s.runtime.operationElapsedMs=0;
  const id=intent.target,ms=intent.action==='flatten'?800:id.startsWith('ST.MODEL')?600:id.startsWith('ST.DOCK')?(p.loop.mode==='following'?13/15*1000+500:450):id==='ST.RACK.BAY'&&p.caddyHost==='ACT.PLAYER'?350:intent.action==='collect'?350:id==='ACT.LOOP'||id==='LOOP.FOLLOW.PAD'?500:id.includes('SOURCE.')||id.startsWith('KIT.')||id==='MD.ACCESS.E8'?450:200;
+ if(id.startsWith('ST.MODEL')){setView(m,{page:'model'});caption(m,[]);}
  m.effects.push({kind:'timer',ms:m.s.preferences.motion==='reduced'&&ms!==800?120:ms,command:{type:'ACTION_READY',actionId:intent.id}});
 }
 export function source(m:Mutation,sourceId:string,accessId:string,refs?:string[]){
@@ -95,14 +98,14 @@ function physical(m:Mutation){
   s.runtime.loopHistory=[[...p.avatar]];if(!c.visitedRooms.includes(p.room))c.visitedRooms.push(p.room);
   const actors=content.actors.filter(a=>a.room===p.room&&a.id!=='ACT.PLAYER'&&(a.id!=='ACT.LOOP'||p.loop.mode==='standby'));
   for(const a of actors)if(!c.encounteredActors.includes(a.id as 'ACT.JO'))c.encounteredActors.push(a.id as 'ACT.JO');
-  observe(m,'physical-commit',{actionId:i.id,origin:'world'});setView(m,{page:'world'});
+  observe(m,'physical-commit',{actionId:i.id,origin:'world'});setView(m,{page:'world'});caption(m,[]);
   if(p.room==='SC.MD'&&p.loop.room==='SC.MD'&&p.loop.mode==='standby'){
    grant(m,['E5.c','E5.c/seen'],'SC.MD');
    caption(m,['CT.OBS.LOOP.SEEN']);
   }return;
  }
  c.worldReturn={ownerId:id,actionCtId:content.objects.find(o=>o.id===id)?.defaultActionCt??null};
- if(id==='ST.MODEL'||id==='ST.MODEL.TAB'){p.objects.modelTabTried=true;caption(m,['CT.OBJ.MODEL_RESULT','CT.JO.MODEL']);}
+ if(id==='ST.MODEL'||id==='ST.MODEL.TAB'){p.objects.modelTabTried=true;setView(m,{page:'model'});caption(m,['CT.OBJ.MODEL_RESULT','CT.JO.MODEL']);}
  else if(id==='ST.SOURCE.E1'){p.objects.briefOpen=true;source(m,'E1',id);}
  else if(id==='ST.SOURCE.E6'){p.objects.storyNoteOpen=true;source(m,'E6',id);}
  else if(id==='ST.SOURCE.E4'){p.objects.filmingRequestOpen=true;source(m,'E4',id);}
@@ -140,7 +143,9 @@ function physical(m:Mutation){
  }
  else if(['ACT.JO','ACT.REMY','ACT.ARI'].includes(id)){
   if(i.delivery){deliver(m,i.delivery);return;}
-  setView(m,{page:'talk',actor:id as 'ACT.JO',dialogue:[id==='ACT.JO'?(!p.objects.modelTabTried?'CT.GOAL.ASSIGNMENT':p.loop.mode==='standby'?'CT.JO.BORROW':p.loop.mode==='following'?'CT.OBJ.FOLLOWING':'CT.OBJ.DOCK_READY'):id==='ACT.REMY'?'CT.REMY.GREETING':p.loop.mode==='standby'&&p.caddyHost==='MD.RACK.STATION'?'CT.ARI.INVITE':'CT.ARI.NO_LOOP_FIRST_LINE']});
+  const ex=c.experience??=newExperience(true),first=!ex.npcIntroductions.includes(id as 'ACT.JO');
+  if(first){ex.npcIntroductions.push(id as 'ACT.JO');touch(m,false);}
+  setView(m,{page:'talk',actor:id as 'ACT.JO',dialogue:[...(first&&id!=='ACT.JO'?[id==='ACT.REMY'?'CT.ER13.REMY':'CT.ER13.ARI']:[]),id==='ACT.JO'?(!p.objects.modelTabTried?'CT.GOAL.ASSIGNMENT':p.loop.mode==='standby'?'CT.JO.BORROW':p.loop.mode==='following'?'CT.OBJ.FOLLOWING':'CT.OBJ.DOCK_READY'):id==='ACT.REMY'?'CT.REMY.GREETING':p.loop.mode==='standby'&&p.caddyHost==='MD.RACK.STATION'?'CT.ARI.INVITE':'CT.ARI.NO_LOOP_FIRST_LINE']});
  }
  else if(id==='WK.TOAST'||id==='WK.TOAST.START'||id==='WK.TOAST.MAGNIFIER')setView(m,{page:'toast',action:id.endsWith('MAGNIFIER')?'magnifier':p.objects.toastRevealed?'revealed':'covered'});
  else if(id==='WK.WAYFINDING')source(m,'NAV','WK.ACCESS.NAV');
@@ -192,7 +197,7 @@ function run(m:Mutation,mode:Run['mode'],restart=false){
  if(mode==='show'&&c.certificate?.arrangementRevision!==c.physical.arrangementRevision)return;
  pause(m,'user');if(c.playback)c.runHistory.push(structuredClone(c.playback));
  if(mode==='rehearsal')c.certificate=null;
- c.playback=newRun(allocate(m),mode,c.physical.order,c.physical.arrangementRevision,c.lastObservationSeq+1);c.physical.loop.mode='projecting';m.s.session.presentation='watch';setView(m,{page:'work'});m.s.session.presentation='watch';touch(m);startCue(m,c.playback.id);
+ c.playback=newRun(allocate(m),mode,c.physical.order,c.physical.arrangementRevision,c.lastObservationSeq+1);c.physical.loop.mode='projecting';m.s.session.presentation='watch';setView(m,{page:'work'});m.s.session.presentation='watch';caption(m,[]);touch(m);startCue(m,c.playback.id);
 }
 function edit(m:Mutation,cmd:Extract<Command,{type:'EDIT_RAIL'}>){
  const s=m.s,p=s.case.physical,h=s.session.heldTile;if(!h||!atWork(s.case)||p.caddyHost!=='ST.RACK.BAY'||h.arrangementRevision!==p.arrangementRevision)return;
@@ -219,7 +224,7 @@ function edit(m:Mutation,cmd:Extract<Command,{type:'EDIT_RAIL'}>){
 export function reduce(previous:State,e:Envelope):{state:State;effects:Effect[]}{
  if(e.command.type!=='NEW_GAME'&&(e.visitId!==previous.session.visitId||e.caseId!==previous.case.caseRunId||previous.runtime.lastHandled.includes(e.id)))return {state:previous,effects:[]};
  if(e.command.type==='NEW_GAME'){
-  const next=structuredClone(initialState(e.command.caseId,e.command.visitId));next.preferences=structuredClone(previous.preferences);next.runtime.coachTransport=previous.runtime.coachTransport;next.runtime.homeStatus='empty';next.runtime.hasLiveVisit=true;next.runtime.view={page:'world'};next.case.encounteredActors=['ACT.JO'];next.session.inputOwner='world';next.session.taskState=null;next.session.saving.mode=e.command.save===false?'unknown-record':'normal';next.runtime.caption=['CT.GOAL.ASSIGNMENT'];return {state:freeze(next),effects:[{kind:'save'}]};
+  const next=structuredClone(initialState(e.command.caseId,e.command.visitId));next.preferences=structuredClone(previous.preferences);next.runtime.coachTransport=previous.runtime.coachTransport;next.runtime.homeStatus='empty';next.runtime.hasLiveVisit=true;next.runtime.view={page:'intro',frame:0};next.case.encounteredActors=['ACT.JO'];next.session.inputOwner='task';next.session.taskState='UI.INTRO';next.session.saving.mode=e.command.save===false?'unknown-record':'normal';next.runtime.caption=['CT.GOAL.ASSIGNMENT'];return {state:freeze(next),effects:[{kind:'save'}]};
  }
  const m:Mutation={s:structuredClone(previous),e,effects:[],caseChanged:false,contextChanged:false,nextId:0},s=m.s,c=s.case,p=c.physical,cmd=e.command;
  switch(cmd.type){
@@ -229,6 +234,7 @@ export function reduce(previous:State,e:Envelope):{state:State;effects:Effect[]}
  case 'RESTORE':{
   if(!s.runtime.savedCandidate||s.runtime.hasLiveVisit)break;
   s.case=structuredClone(s.runtime.savedCandidate);s.session.visitId=cmd.visitId;s.runtime.hasLiveVisit=true;
+  if(!s.case.experience){s.case.experience=newExperience(true);touch(m,false);}
   s.runtime.loopHistory=[[...s.case.physical.avatar]];s.case.historyUncertain=true;
   s.session.saving.mode=s.runtime.restorePreservesSlots?'conflict':'normal';
   s.session.saving.currentRevision=s.case.revision;s.session.saving.acknowledgedRevision=s.runtime.restorePreservesSlots?null:s.case.revision;
@@ -242,6 +248,26 @@ export function reduce(previous:State,e:Envelope):{state:State;effects:Effect[]}
  }
  case 'VIEW':{pause(m,'inspection');cancelIntent(m);let view=cmd.view;if(view.page==='help'){const topic=s.runtime.helpOpportunity?(s.runtime.helpOpportunity.context.topic==='story-plan'?'story':'search'):s.runtime.view.topic;if(view.topic!==undefined&&topic!==undefined&&view.topic!==topic)m.contextChanged=true;if(view.topic===undefined&&topic!==undefined)view={...view,topic};}setView(m,view);if(view.page==='map')grant(m,['NAV.ST','NAV.CY','NAV.WK','NAV.MEDIA'],'ACC.VENUE');break;}
  case 'FOCUS':s.session.inputOwner=cmd.owner;if(cmd.owner!=='world')s.session.heldKeys=[];break;
+ case 'INTRO':{
+  const ex=c.experience??=newExperience(true);
+  if(cmd.action==='open'){pause(m,'inspection');cancelIntent(m);setView(m,{page:'intro',frame:Math.min(3,ex.introBeat)});}
+  else if(cmd.action==='next'&&s.runtime.view.page==='intro'){ex.introBeat=Math.min(4,(s.runtime.view.frame??0)+1);setView(m,ex.introBeat===4?{page:'world'}:{page:'intro',frame:ex.introBeat});}
+  else if(cmd.action==='skip'){ex.introDismissed=true;setView(m,{page:'world'});}
+  ex.legacyOffer=false;touch(m,false);break;
+ }
+ case 'READING':{
+  if(!readingAvailable(c,cmd.id))break;
+  const ex=c.experience??=newExperience(true);
+  if(cmd.action==='phrases')ex.phrases=!ex.phrases;
+  else if(cmd.action==='pauses')ex.narratorPauses=!ex.narratorPauses;
+  else if(cmd.action==='card')ex.narratorCard=cmd.id;
+  else if(s.runtime.view.page==='reading'&&s.runtime.view.sourceId===cmd.id)observe(m,cmd.action==='model-played'?'reading-model-played':cmd.action==='practice'?'reading-practice-requested':'reading-self-reported',{contentIds:[cmd.id]});
+  touch(m,false);break;
+ }
+ case 'WORD_SEEN':{const context=wordContext(cmd.id),ex=c.experience??=newExperience(true);if(context&&mayEncounter(s,context)&&!ex.wordContexts.includes(cmd.id)){ex.wordContexts.push(cmd.id);touch(m,false);}break;}
+ case 'WORD_LOOKUP':if(c.experience?.wordContexts.includes(cmd.id))observe(m,'word-looked-up',{contentIds:[cmd.id]});break;
+ case 'SUPPORT_SEEN':{const ex=c.experience??=newExperience(true);if(supportAvailable(c,cmd.id)&&!ex.supports.includes(cmd.id)){ex.supports.push(cmd.id);observe(m,'supplied-support',{contentIds:[cmd.id],origin:'npc',assistanceLevel:2});}break;}
+ case 'COACH_CONFIG':if(s.runtime.coachTransport!=='development')s.runtime.coachTransport=cmd.live?'live':'authored';break;
  case 'KEYS':if(s.session.inputOwner==='world'){cancelIntent(m);s.session.heldKeys=cmd.keys;}break;
  case 'TARGET':target(m,cmd.target,cmd.action);break;
  case 'WALK':{

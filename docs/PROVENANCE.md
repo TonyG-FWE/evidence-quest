@@ -11,3 +11,13 @@ Runtime packages are React/react-dom 19.2.7 and Ajv 8.18.0; development/build pa
 Node 24.21.0 came from the official Windows x64 distribution and was SHA-256 checked; see `SETUP-DECISIONS.md`. Its installation and caches remain local and ignored. The source repository grants no new public license to the game or supplied design.
 
 Browser fixtures use authored mode with zero model calls. The explicit development transport returns scripted selections solely to test lifecycle failures; it has a visible development label and is excluded from the production bundle. Synthetic READY saves and injected storage/artwork failures are labeled in test source and evidence. No synthetic trial is participant evidence or a live interpretation result.
+
+## ER13 correction provenance — 2026-09-12
+
+The dated experience addendum is preserved separately with its imported hash in BUILD-STATUS.md. Supporting-copy overrides and new CT entries are generated from scripts/er13-copy.mjs; docs/ER13-COPY-REGISTER.md maps the changes to the original committed text. Original CT.SRC bodies and reference IDs are unchanged.
+
+The parent design task supplied independently generated and explicitly accepted art. Cumulative delivery records in evidence/er13/art-delivery-batch1.json and art-delivery-batch2.json retain supplied image prompts (null where not supplied), source paths, exact rectangles, alpha metadata and SHA-256 values. scripts/import-er13-art.mjs verifies every copied byte before adding a runtime override. The native renderer preserves sprite aspect and supplied feet anchors. Player left-facing frames mirror the accepted right-facing frames; carry uses the walking frames plus an independently owned caddy. One accepted awake Loop drawing currently serves its runtime states with separate lens and wheel overlays; this is not an accepted multi-pose Loop atlas. Other unchanged placeholders remain visibly temporary and are not final-art acceptance.
+
+The Stage model, screen and characters are independently composed live from actual state. The larger model view is the same physically approached, non-solving model operation. Artwork contains no readable source clues. The Stage cabinet inset and board placement were adjusted visually to fit the supplied furniture; physical hit areas, approach points and room obstacles are unchanged. Critical text remains native text.
+
+Requested reading uses a device-local English SpeechSynthesis voice, without microphone or cloud speech. Native utterance-start evidence is in evidence/er13/native-speech.json. Provider adapter checks use synthetic injected responses and a synthetic browser HTTP route; no paid model calls or participant assessment occurred.

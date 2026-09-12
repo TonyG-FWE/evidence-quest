@@ -1,5 +1,26 @@
 # Evidence Quest build status
 
+## Active correction — ER13 (2026-09-12)
+
+The user rejected the first build experience. The dated [experience and literacy addendum](docs/design/evidence-quest-design-v3/13-EXPERIENCE-AND-LITERACY-CORRECTION.md) now authorizes narrative, literacy, art integration and selected-provider correction on codex/first-connected. Imported SHA-256: 2475eb13f589d478dcd97eccd903cbcadf2b7f1308de94f5cd90535955d88f7f. Original design files and first-build evidence below remain historical.
+
+| ID | Work | Status | Evidence / next action |
+|---|---|---|---|
+| ER13.01 | Opening, world, cast and purpose | IMPLEMENTED_REVIEWING | Skippable Jo opening, accepted illustrated portraits and home composition; physical model now has a live large view and visible consequence. |
+| ER13.02 | Mission, recap and independent routes | IMPLEMENTED_REVIEWING | Current-state mission and encountered cast; both recovery orders still pass. Native equipment return and seed-only revision observed; unmet pauses retain the visible consequence. |
+| ER13.03 | Reading, browser speech and narrator cards | IMPLEMENTED_REVIEWING | Three bounded cards, phrases, requested rereading and optional cue pauses; actual local English speech start observed in native browser. [Voice](evidence/er13/native-speech.json). |
+| ER13.04 | Contextual vocabulary | IMPLEMENTED_REVIEWING | Actual sentences and encounter guards; still meanings tested separately. Lookups are assistance, not mastery. |
+| ER13.05 | Reachable copy and dated change register | IMPLEMENTED_REVIEWING | [Dated register](docs/ER13-COPY-REGISTER.md), 575 CT entries and unchanged original CT.SRC bodies. |
+| ER13.06 | Rich individual art and readable motion | IN_PROGRESS | Accepted Stage plus 15-asset cumulative delivery integrated with explicit crops/feet and device aspect, player walking frames, one Loop drawing with native state overlays and three Stage fixtures. Remaining fixture/story prop/Toast art awaits accepted parent delivery. |
+| ER13.07 | Actual play, regression and recovery | IN_PROGRESS | 24 contracts pass. 38/44 initial Chromium, then all 12 focused corrections pass; original reports retained. All 27 three-engine opening/literacy/connected/compact checks pass, plus 3 HTTP/model/narrator and 3 development lifecycle checks. Nine further three-engine panel/reading checks and five seed-only/compact/focus/drag checks pass. [Review ledger](evidence/er13/review-ledger.md). |
+| ER13.08 | Selected-provider coaching path and status | IMPLEMENTED_LOCAL_ONLY | Real Responses adapter and client HTTP transport tested through injected provider responses. No server key/config exists; paid adult evaluation needs explicit authorization and selected-model account access. [Prerequisites](docs/ER13-CORRECTION.md). Zero live calls. |
+
+Current next task: finish accepted art integration and ER13.07 actual visual/motion review; retain explicit gaps until demonstrated. Live interpretation and child appeal/learning/retention are NOT_RUN. No deployment, submission or public publication.
+
+Latest review repairs: lower world controls restore a visible new panel heading and return action; clipped narrator words count only when displayed; automatic unmet planting keeps the large split-bank view and adjacent caption. The growing flower's visual bounds were widened to keep it above the kneeling puppets. All original collision/approach geometry, source bodies and five valid solutions remain preserved. Code and evidence are checkpointed on the existing private branch; completion of the full visual target is still pending.
+
+## Historical first connected build record
+
 Updated 2026-09-12T03:28:55.692Z. Item 13 / M11.CONNECTED is **COMPLETE for its authorized first-build scope**.
 
 Read this file first on every continuation. Task definitions and dependencies come only from [implementation-plan.json](docs/design/evidence-quest-design-v3/11-build-packet/implementation-plan.json). TASK11.00 is documented complete. This execution is authorized for TASK11.01–16 and normal pushes to a new private TonyG-FWE repository.

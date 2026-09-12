@@ -1,6 +1,9 @@
 import type { CaseState, Draft, Exposure, Order, Point, Preferences, Run, CoachRequest } from '../../contracts/types.js';
 import type { View } from './state.js';
 export type Command =
+ |{type:'INTRO';action:'next'|'skip'|'open'|'dismiss-legacy'}
+ |{type:'READING';id:string;action:'model-played'|'practice'|'self-report'|'card'|'phrases'|'pauses'}
+ |{type:'WORD_SEEN';id:string}|{type:'WORD_LOOKUP';id:string}|{type:'SUPPORT_SEEN';id:string}|{type:'COACH_CONFIG';live:boolean}
  |{type:'NEW_GAME';caseId:string;visitId:string;save?:boolean}|{type:'CONTINUE'}
  |{type:'BOOT_CHECK';generation:string}|{type:'BOOT';generation:string;status:'empty'|'saved'|'read-error'|'version'|'damaged'|'run';candidate:CaseState|null;preserve?:boolean;slotRevision?:number}
  |{type:'RESTORE';visitId:string}|{type:'SAVE_MODE';mode:'normal'|'unavailable'|'unknown-record'|'conflict'}|{type:'PREF_RESULT';revision:number;failed:boolean}

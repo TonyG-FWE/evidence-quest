@@ -4,8 +4,22 @@
     "contentVersion": 3,
     "contentRevision": 1
   },
-  "generatedAt": "2026-09-12T01:53:43.788Z",
+  "generatedAt": "2026-09-12T04:57:31.946Z",
   "compiler": "scripts/build-content.mjs",
+  "addendumFiles": [
+    {
+      "path": "scripts/er13-copy.mjs",
+      "sha256": "2dc707458f30380caa065349a264d955582b578007220fadc42e505309482ac7"
+    },
+    {
+      "path": "scripts/er13-schema.mjs",
+      "sha256": "54ea2e36381616b5e2810909bc71ad6c3c70063daffce73dfc382342db8a3238"
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3/13-EXPERIENCE-AND-LITERACY-CORRECTION.md",
+      "sha256": "2475eb13f589d478dcd97eccd903cbcadf2b7f1308de94f5cd90535955d88f7f"
+    }
+  ],
   "sourceFiles": [
     {
       "path": "05-FUNCTIONAL-SCENES-AND-INTERACTIONS.md",

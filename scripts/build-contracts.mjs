@@ -1,11 +1,12 @@
 import {readFile,writeFile,mkdir,copyFile} from 'node:fs/promises';
 import Ajv2020 from 'ajv/dist/2020.js';
 import standaloneCode from 'ajv/dist/standalone/index.js';
+import {extendExperience} from './er13-schema.mjs';
 
 const source='docs/design/evidence-quest-design-v3/09-technical-contracts/contracts.schema.json';
-const schema=JSON.parse(await readFile(source,'utf8'));
+const schema=extendExperience(JSON.parse(await readFile(source,'utf8')));
 await mkdir('contracts/generated',{recursive:true});
-await copyFile(source,'contracts/contracts.schema.json');
+await writeFile('contracts/contracts.schema.json',JSON.stringify(schema,null,2)+'\n');
 const ajv=new Ajv2020({strict:true,allErrors:true,inlineRefs:false,coerceTypes:false,useDefaults:false,removeAdditional:false,code:{source:true,esm:true,lines:true}});
 ajv.addSchema(schema);
 const roots=['AuthoredContent','CaseSnapshot','SaveEnvelope','Preferences','CoachRequest','CoachResponse','Session','ModelProposal'];

@@ -1,0 +1,174 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "browser-tests/er13.spec.ts",
+      "--grep",
+      "clipped narrator"
+    ],
+    "configFile": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\playwright.config.ts",
+    "rootDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/output/playwright/raw",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "output/playwright/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 1,
+    "webServer": {
+      "command": "\"C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe\" dist/server/index.js",
+      "url": "http://127.0.0.1:4174/healthz",
+      "env": {
+        "PORT": "4174",
+        "EQ_WEB_PORT": "4174",
+        "PUBLIC_ORIGIN": "http://127.0.0.1:4174"
+      },
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "er13.spec.ts",
+      "file": "er13.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "ER13 clipped narrator words become source exposure only after their own card is scrolled",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 11611,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m202\u001b[39m\nReceived:   \u001b[31m202\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m202\u001b[39m\nReceived:   \u001b[31m202\u001b[39m\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\er13.spec.ts:49:19",
+                    "location": {
+                      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\er13.spec.ts",
+                      "column": 19,
+                      "line": 49
+                    },
+                    "snippet": "  47 |  const preset=await saved(page);preset.payload.exposures=[];preset.payload.experience!.wordContexts=[];await injectSlots(page,{current:JSON.stringify(preset)});await page.reload();await page.getByRole('button',{name:'Continue',exact:true}).click();await target(page,'ST.RAIL');await settled(page);await page.getByRole('button',{name:'Watch rehearsal',exact:true}).click();\n  48 |  const card=page.locator('.narrator-card .source-words');await card.scrollIntoViewIfNeeded();let state=(await saved(page)).payload;const extent=()=>Math.max(0,...state.exposures.filter(e=>e.ctId==='CT.SRC.E6').flatMap(e=>e.spans.map(s=>s[1])));\n> 49 |  expect(extent()).toBeLessThan(Array.from(copy('CT.SRC.E6')).length);\n     |                   ^\n  50 |  await card.evaluate(el=>{el.scrollTop=el.scrollHeight;});await expect.poll(async()=>{state=(await saved(page)).payload;return extent();}).toBe(Array.from(copy('CT.SRC.E6')).length);\n  51 | });\n  52 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\er13.spec.ts",
+                        "column": 19,
+                        "line": 49
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m202\u001b[39m\nReceived:   \u001b[31m202\u001b[39m\n\n  47 |  const preset=await saved(page);preset.payload.exposures=[];preset.payload.experience!.wordContexts=[];await injectSlots(page,{current:JSON.stringify(preset)});await page.reload();await page.getByRole('button',{name:'Continue',exact:true}).click();await target(page,'ST.RAIL');await settled(page);await page.getByRole('button',{name:'Watch rehearsal',exact:true}).click();\n  48 |  const card=page.locator('.narrator-card .source-words');await card.scrollIntoViewIfNeeded();let state=(await saved(page)).payload;const extent=()=>Math.max(0,...state.exposures.filter(e=>e.ctId==='CT.SRC.E6').flatMap(e=>e.spans.map(s=>s[1])));\n> 49 |  expect(extent()).toBeLessThan(Array.from(copy('CT.SRC.E6')).length);\n     |                   ^\n  50 |  await card.evaluate(el=>{el.scrollTop=el.scrollHeight;});await expect.poll(async()=>{state=(await saved(page)).payload;return extent();}).toBe(Array.from(copy('CT.SRC.E6')).length);\n  51 | });\n  52 |\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\er13.spec.ts:49:19"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T05:16:37.227Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\er13-ER13-clipped-narrator-d3621--their-own-card-is-scrolled-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\er13-ER13-clipped-narrator-d3621--their-own-card-is-scrolled-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\er13-ER13-clipped-narrator-d3621--their-own-card-is-scrolled-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\er13.spec.ts",
+                    "column": 19,
+                    "line": 49
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d84d1a3c2dfabe2f9454-2e7886e702e9f081e0f9",
+          "file": "er13.spec.ts",
+          "line": 43,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-12T05:16:36.340Z",
+    "duration": 13793.313999999998,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

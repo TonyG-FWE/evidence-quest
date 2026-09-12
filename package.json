@@ -3,13 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=24.21.0 <25" },
+  "engines": {
+    "node": ">=24.21.0 <25"
+  },
   "scripts": {
     "build:contracts": "node scripts/build-contracts.mjs",
     "build:content": "node scripts/build-content.mjs",
     "validate:content": "node scripts/validate-content.mjs",
     "check": "npm run build:contracts && tsc -p tsconfig.client.json && tsc -p tsconfig.server.json --noEmit && tsc -p tsconfig.checks.json --noEmit && node scripts/check-schema.mjs && node scripts/check-ui-copy.mjs",
-    "build:server": "tsc -p tsconfig.server.json",
+    "build:server": "tsc -p tsconfig.server.json && node scripts/prepare-server.mjs",
     "dev:types": "tsc -p tsconfig.server.json --watch",
     "dev:api": "node --env-file-if-exists=.env.server.local --watch dist/server/index.js",
     "dev:web": "vite",

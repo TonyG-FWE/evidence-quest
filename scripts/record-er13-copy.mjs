@@ -1,0 +1,12 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {execFileSync} from 'node:child_process';
+import {overrides,additions} from './er13-copy.mjs';
+const original=JSON.parse(execFileSync('git',['show','3df39da:content/authored.json'],{encoding:'utf8'}));
+const before=new Map(original.texts.map(t=>[t.id,t.text]));
+const changes=Object.entries(overrides).map(([id,text])=>({id,before:before.get(id),after:text,authority:'ER13.05 supporting copy correction'}));
+const current=JSON.parse(await readFile('content/authored.json','utf8'));
+for(const entry of original.texts.filter(t=>t.id.startsWith('CT.SRC.')))if(current.texts.find(t=>t.id===entry.id)?.text!==entry.text)throw Error('Changed original source '+entry.id);
+const audit=['Opening and home','Current mission and story recap','Room labels and descriptions','Native object names and recording notes','Character introductions and requested accounts','Sources and optional word contexts','Rail and physical outcomes','Rehearsal and premiere controls','Prepared help, recovery and source return','Optional Maximum Toast explanation','Reading and factual ending recap'];
+await writeFile('evidence/er13/copy-register.json',JSON.stringify({date:'2026-09-12',authority:'docs/design/evidence-quest-design-v3/13-EXPERIENCE-AND-LITERACY-CORRECTION.md',originalSnapshot:'3df39da0ac396942c11d570c5d24c67d96e42a27',overrides:changes,added:Object.entries(additions).map(([id,text])=>({id,text})),newUIOwners:['src/ui/Experience.tsx','src/core/experience.ts'],audit,sourceBodies:'All CT.SRC.* bytes unchanged; no source-reference IDs added or removed.'},null,2)+'\n');
+const escape=s=>s.replaceAll('|','\\|').replaceAll('\n','<br>');
+await writeFile('docs/ER13-COPY-REGISTER.md','# ER13 supporting-copy correction — 2026-09-12\n\nOriginal supporting text is retained in the initial design import. The [dated correction](design/evidence-quest-design-v3/13-EXPERIENCE-AND-LITERACY-CORRECTION.md) authorizes the following changes. Source bodies are unchanged. New CT entries and all reviewed surfaces are listed in [the machine-readable register](../evidence/er13/copy-register.json). Reading, vocabulary and associated control text live in src/ui/Experience.tsx and src/core/experience.ts.\n\n| CT ID | Previous text | Corrected text |\n|---|---|---|\n'+changes.map(c=>`| ${c.id} | ${escape(c.before)} | ${escape(c.after)} |`).join('\n')+'\n');

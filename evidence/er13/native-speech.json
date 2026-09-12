@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-09-12T04:39:52.876Z",
+  "browser": "Codex in-app browser",
+  "origin": "http://127.0.0.1:4175",
+  "passage": "READ.WELCOME",
+  "mechanism": "User-triggered browser SpeechSynthesis, localService English voice only",
+  "observed": [
+    "Listen changed to Stop listening",
+    "Starting the voice was shown before onstart",
+    "Listening to this passage was observed after waiting for the exact visible text",
+    "Ended normally and returned to Listen"
+  ],
+  "modelStart": "OBSERVED",
+  "microphone": "NOT_USED",
+  "cloudAudio": "NOT_USED",
+  "humanProsodyRating": "NOT_RUN",
+  "childFluency": "NOT_RUN"
+}

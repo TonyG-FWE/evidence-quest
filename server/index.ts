@@ -2,12 +2,17 @@ import { createServer } from 'node:http';
 import { readFile, stat } from 'node:fs/promises';
 import { resolve, extname, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import {CoachService,MODEL} from './coach.js';
 
 const root=resolve(fileURLToPath(new URL('../../',import.meta.url)));
 const staticRoot=resolve(root,'dist/client');
 const host=process.env['HOST']??'127.0.0.1';
 const port=Number(process.env['PORT']??8787);
-if((process.env['COACH_MODE']??'authored')!=='authored') throw new Error('This connected build is authorized for authored operation only.');
+const mode=process.env['COACH_MODE']??'authored';
+if(!['authored','adult-evaluation'].includes(mode))throw Error('Live child operation requires a separately reviewed activation; use authored or loopback adult-evaluation.');
+if(mode==='adult-evaluation'&&!['127.0.0.1','localhost','::1'].includes(host))throw Error('Adult evaluation must bind loopback.');
+if(process.env['OPENAI_MODEL']&&process.env['OPENAI_MODEL']!==MODEL)throw Error('Unevaluated model override.');
+const coach=new CoachService(process.env['OPENAI_API_KEY'],mode==='adult-evaluation');
 const allowedOrigins=new Set([`http://${host}:${port}`, process.env['PUBLIC_ORIGIN']??'http://127.0.0.1:5173']);
 const mime:Record<string,string>={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.png':'image/png','.webp':'image/webp','.svg':'image/svg+xml','.woff2':'font/woff2'};
 const server=createServer(async(req,res)=>{
@@ -18,14 +23,16 @@ const server=createServer(async(req,res)=>{
   try{
     if(req.headers.host!==`${host}:${port}` && req.headers.host!==`localhost:${port}`) {json(400,{error:'Invalid host'});return;}
     const path=new URL(req.url??'/',`http://${host}:${port}`).pathname;
-    if(path==='/healthz'){json(200,{status:'ok',mode:'authored'});return;}
-    if(path==='/api/config' && req.method==='GET') {json(200,{caseId:'sparkfest-little-bridge-001',contentVersion:3,contentRevision:1,coachContractVersion:1,mode:'authored',liveAvailable:false});return;}
+    if(path==='/healthz'){json(200,{status:'ok',mode});return;}
+    if(path==='/api/config' && req.method==='GET') {json(200,{caseId:'sparkfest-little-bridge-001',contentVersion:3,contentRevision:1,coachContractVersion:1,mode,liveAvailable:coach.available});return;}
     if(path==='/api/coach') {
       if(req.method!=='POST') {json(405,{error:'Method not allowed'});return;}
       if(!req.headers.origin || !allowedOrigins.has(req.headers.origin) || !req.headers['content-type']?.startsWith('application/json')) {json(403,{error:'Request not allowed'});return;}
-      let size=0;
-      for await(const chunk of req){size+=Buffer.byteLength(chunk);if(size>32768){json(413,{error:'Request too large'});return;}}
-      json(503,{status:'unavailable',mode:'authored'});return;
+      let size=0;const chunks:Buffer[]=[];
+      for await(const chunk of req){size+=Buffer.byteLength(chunk);if(size>32768){json(413,{error:'Request too large'});return;}chunks.push(Buffer.from(chunk));}
+      let value:unknown;try{value=JSON.parse(Buffer.concat(chunks).toString('utf8'));}catch{json(400,{error:'Invalid request'});return;}
+      const cancel=new AbortController();res.on('close',()=>{if(!res.writableEnded)cancel.abort();});
+      const result=await coach.handle(value,cancel.signal);json(result?200:400,result??{error:'Invalid request'});return;
     }
     if(req.method!=='GET' && req.method!=='HEAD'){json(405,{error:'Method not allowed'});return;}
     const candidate=resolve(staticRoot,'.'+decodeURIComponent(path==='/'?'/index.html':path));
@@ -38,4 +45,4 @@ const server=createServer(async(req,res)=>{
   }catch(error){json((error as NodeJS.ErrnoException).code==='ENOENT'?404:500,{error:'Resource unavailable'});}
 });
 server.on('error',error=>{console.error(error.message);process.exitCode=1;});
-server.listen(port,host,()=>console.log(`Evidence Quest authored server http://${host}:${port}`));
+server.listen(port,host,()=>console.log(`Evidence Quest ${mode} server http://${host}:${port}`));

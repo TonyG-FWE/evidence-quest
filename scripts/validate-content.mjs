@@ -52,6 +52,6 @@ if(process.argv[1]?.endsWith('validate-content.mjs')){
   const {cases}=await json(design+'09-technical-contracts/examples.json');
   const fragment=cases.find(c=>c.id==='canonical-note-copy-fragment');
   await assert.rejects(()=>validateFull(fragment.payload),/example-fragment/);
-  await writeFile('evidence/content-validation.json',JSON.stringify({checkedAt:new Date().toISOString(),contentSha256:hash(await readFile('content/authored.json')),checks:['schema','all canonical words','code-point span bounds','complete refs/owners','legal geometry anchors','reciprocal doors','manifest bindings','fragment rejection'],counts,limits:'This transcription/structure check does not establish runtime behavior or full conditional/NPC branch coverage.'},null,2)+'\n');
+  await writeFile(counts.texts>557?'evidence/er13/content-validation.json':'evidence/content-validation.json',JSON.stringify({checkedAt:new Date().toISOString(),contentSha256:hash(await readFile('content/authored.json')),checks:['schema','all canonical words','code-point span bounds','complete refs/owners','legal geometry anchors','reciprocal doors','manifest bindings','fragment rejection'],counts,limits:'This transcription/structure check does not establish runtime behavior or full conditional/NPC branch coverage.'},null,2)+'\n');
   console.log(JSON.stringify(counts));
 }

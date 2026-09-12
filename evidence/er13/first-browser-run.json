@@ -1,0 +1,391 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "er13.spec.ts",
+      "connected.spec.ts"
+    ],
+    "configFile": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\playwright.config.ts",
+    "rootDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/output/playwright/raw",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "output/playwright/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 1,
+    "webServer": {
+      "command": "\"C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe\" dist/server/index.js",
+      "url": "http://127.0.0.1:4174/healthz",
+      "env": {
+        "PORT": "4174",
+        "EQ_WEB_PORT": "4174",
+        "PUBLIC_ORIGIN": "http://127.0.0.1:4174"
+      },
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "connected.spec.ts",
+      "file": "connected.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TASK11.16 media-first complete case, notes stay unread through collection, real rehearsal and premiere",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 50307,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T04:36:10.771Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b8dfe90c693c2730a610-fa6a990a6b50c4c3b289",
+          "file": "connected.spec.ts",
+          "line": 5,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "er13.spec.ts",
+      "file": "er13.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "ER13 fresh purpose, optional opening, re-entry, readings and exact word context",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 15905,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /Our story so farFind Loop/ })\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /Our story so farFind Loop/ })\u001b[22m\n\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\er13.spec.ts:6:142",
+                    "location": {
+                      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\er13.spec.ts",
+                      "column": 142,
+                      "line": 6
+                    },
+                    "snippet": "  4 |  await page.goto('/');await expect(page.getByRole('heading',{name:'Our story needs an ending.'})).toBeVisible();await page.getByRole('button',{name:'Join the crew',exact:true}).click();\n  5 |  await expect(page.getByRole('heading',{name:'Jo story writer'})).toBeVisible();await expect(page.getByText(/There you are! Welcome to SparkFest/)).toBeVisible();await page.getByRole('button',{name:'Next',exact:true}).click();await expect(page.getByAltText('The red backpack you helped make')).toBeVisible();\n> 6 |  await page.getByRole('button',{name:'Keep exploring',exact:true}).click();await page.getByRole('button',{name:/Our story so farFind Loop/}).click();await expect(page.getByRole('heading',{name:'Our story so far',exact:true})).toBeVisible();await expect(page.locator('[data-task]')).not.toContainText('Indoor recording room');\n    |                                                                                                                                              ^\n  7 |  await page.getByRole('button',{name:'Meet the crew',exact:true}).click();await expect(page.getByText(/This is Pip, our paper traveler/)).toBeVisible();await page.getByRole('button',{name:'Keep exploring',exact:true}).click();await page.getByRole('button',{name:'Read with the crew',exact:true}).click();\n  8 |  await expect(page.getByRole('heading',{name:'Welcome to our show',exact:true})).toBeVisible();await expect(page.getByRole('button',{name:\"Pip's promise\",exact:true})).toHaveCount(0);await expect(page.getByRole('button',{name:'Our ending',exact:true})).toHaveCount(0);\n  9 |  await page.getByRole('button',{name:'Show reading phrases',exact:true}).click();await page.getByRole('button',{name:'My turn',exact:true}).click();await expect(page.getByText(/Read it aloud when you’re ready/)).toBeVisible();await page.getByRole('button',{name:'I finished my turn',exact:true}).click();await page.getByRole('button',{name:'Try it again',exact:true}).click();await expect(page.getByText('This time, let your voice welcome the audience to our show.')).toBeVisible();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\er13.spec.ts",
+                        "column": 142,
+                        "line": 6
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /Our story so farFind Loop/ })\u001b[22m\n\n\n  4 |  await page.goto('/');await expect(page.getByRole('heading',{name:'Our story needs an ending.'})).toBeVisible();await page.getByRole('button',{name:'Join the crew',exact:true}).click();\n  5 |  await expect(page.getByRole('heading',{name:'Jo story writer'})).toBeVisible();await expect(page.getByText(/There you are! Welcome to SparkFest/)).toBeVisible();await page.getByRole('button',{name:'Next',exact:true}).click();await expect(page.getByAltText('The red backpack you helped make')).toBeVisible();\n> 6 |  await page.getByRole('button',{name:'Keep exploring',exact:true}).click();await page.getByRole('button',{name:/Our story so farFind Loop/}).click();await expect(page.getByRole('heading',{name:'Our story so far',exact:true})).toBeVisible();await expect(page.locator('[data-task]')).not.toContainText('Indoor recording room');\n    |                                                                                                                                              ^\n  7 |  await page.getByRole('button',{name:'Meet the crew',exact:true}).click();await expect(page.getByText(/This is Pip, our paper traveler/)).toBeVisible();await page.getByRole('button',{name:'Keep exploring',exact:true}).click();await page.getByRole('button',{name:'Read with the crew',exact:true}).click();\n  8 |  await expect(page.getByRole('heading',{name:'Welcome to our show',exact:true})).toBeVisible();await expect(page.getByRole('button',{name:\"Pip's promise\",exact:true})).toHaveCount(0);await expect(page.getByRole('button',{name:'Our ending',exact:true})).toHaveCount(0);\n  9 |  await page.getByRole('button',{name:'Show reading phrases',exact:true}).click();await page.getByRole('button',{name:'My turn',exact:true}).click();await expect(page.getByText(/Read it aloud when you’re ready/)).toBeVisible();await page.getByRole('button',{name:'I finished my turn',exact:true}).click();await page.getByRole('button',{name:'Try it again',exact:true}).click();await expect(page.getByText('This time, let your voice welcome the audience to our show.')).toBeVisible();\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\er13.spec.ts:6:142"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T04:37:01.191Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\er13-ER13-fresh-purpose-op-2f294-ings-and-exact-word-context-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\er13-ER13-fresh-purpose-op-2f294-ings-and-exact-word-context-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\er13-ER13-fresh-purpose-op-2f294-ings-and-exact-word-context-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\er13.spec.ts",
+                    "column": 142,
+                    "line": 6
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d84d1a3c2dfabe2f9454-a82ba53aacc1ddf02637",
+          "file": "er13.spec.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "ER13 actual browser voice is used or its local English limitation is truthful",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1454,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T04:37:17.719Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d84d1a3c2dfabe2f9454-349d86ec38ca5f3b8d4a",
+          "file": "er13.spec.ts",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "ER13 still meanings remain bounded to actual source contexts and full notice support is supplied",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 28969,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Hold the notice flat', exact: true })\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Hold the notice flat', exact: true })\u001b[22m\n\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\er13.spec.ts:21:249",
+                    "location": {
+                      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\er13.spec.ts",
+                      "column": 249,
+                      "line": 21
+                    },
+                    "snippet": "  19 | test('ER13 still meanings remain bounded to actual source contexts and full notice support is supplied',async({page})=>{\n  20 |  test.setTimeout(120000);await start(page);await target(page,'ST.SOURCE.E4');await settled(page);await page.locator('[data-word=STILL]').click();await expect(page.getByText('Not moving.',{exact:true})).toBeVisible();await expect(page.locator('.word-card blockquote')).toHaveText('I need a plain wall and paper petals that stay still.');await page.getByRole('button',{name:'Return to the passage',exact:true}).click();\n> 21 |  await target(page,'ST.EXIT.CY');await settled(page);await target(page,'CY.SOURCE.E3');await settled(page);expect((await saved(page)).payload.experience?.supports).toEqual([]);await page.getByRole('button',{name:'Hold the notice flat',exact:true}).click();await settled(page);await page.locator('[data-word=STILL]').click();await expect(page.getByText('Continuing to be true.',{exact:true})).toBeVisible();await page.getByRole('button',{name:'Return to the passage',exact:true}).click();await page.locator('.crew-support').scrollIntoViewIfNeeded();await expect(page.getByText('The outdoor practice was canceled. The first public show is still planned.',{exact:true})).toBeVisible();await expect.poll(async()=>(await saved(page)).payload.experience?.supports).toContain('CT.ER13.SCOPE');\n     |                                                                                                                                                                                                                                                         ^\n  22 |  expect((await saved(page)).payload.observations.some(o=>o.kind==='supplied-support')).toBe(true);\n  23 | });\n  24 | test('ER13 narrator card pauses actual cues once and stays optional for the whole show',async({page})=>{"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\er13.spec.ts",
+                        "column": 249,
+                        "line": 21
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Hold the notice flat', exact: true })\u001b[22m\n\n\n  19 | test('ER13 still meanings remain bounded to actual source contexts and full notice support is supplied',async({page})=>{\n  20 |  test.setTimeout(120000);await start(page);await target(page,'ST.SOURCE.E4');await settled(page);await page.locator('[data-word=STILL]').click();await expect(page.getByText('Not moving.',{exact:true})).toBeVisible();await expect(page.locator('.word-card blockquote')).toHaveText('I need a plain wall and paper petals that stay still.');await page.getByRole('button',{name:'Return to the passage',exact:true}).click();\n> 21 |  await target(page,'ST.EXIT.CY');await settled(page);await target(page,'CY.SOURCE.E3');await settled(page);expect((await saved(page)).payload.experience?.supports).toEqual([]);await page.getByRole('button',{name:'Hold the notice flat',exact:true}).click();await settled(page);await page.locator('[data-word=STILL]').click();await expect(page.getByText('Continuing to be true.',{exact:true})).toBeVisible();await page.getByRole('button',{name:'Return to the passage',exact:true}).click();await page.locator('.crew-support').scrollIntoViewIfNeeded();await expect(page.getByText('The outdoor practice was canceled. The first public show is still planned.',{exact:true})).toBeVisible();await expect.poll(async()=>(await saved(page)).payload.experience?.supports).toContain('CT.ER13.SCOPE');\n     |                                                                                                                                                                                                                                                         ^\n  22 |  expect((await saved(page)).payload.observations.some(o=>o.kind==='supplied-support')).toBe(true);\n  23 | });\n  24 | test('ER13 narrator card pauses actual cues once and stays optional for the whole show',async({page})=>{\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\er13.spec.ts:21:249"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T04:37:19.271Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\er13-ER13-still-meanings-r-a605f--notice-support-is-supplied-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\er13-ER13-still-meanings-r-a605f--notice-support-is-supplied-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\er13-ER13-still-meanings-r-a605f--notice-support-is-supplied-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\er13.spec.ts",
+                    "column": 249,
+                    "line": 21
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d84d1a3c2dfabe2f9454-afd6ffed021479182827",
+          "file": "er13.spec.ts",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "ER13 narrator card pauses actual cues once and stays optional for the whole show",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 21955,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T04:37:49.037Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d84d1a3c2dfabe2f9454-e172e02cb8ca25176df2",
+          "file": "er13.spec.ts",
+          "line": 24,
+          "column": 1
+        },
+        {
+          "title": "ER13 legacy save is preserved without forced introduction and compact reading stays operable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1148,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T04:38:11.094Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d84d1a3c2dfabe2f9454-ca1ba0aec8c59250a562",
+          "file": "er13.spec.ts",
+          "line": 28,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-12T04:36:09.267Z",
+    "duration": 123454.728,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

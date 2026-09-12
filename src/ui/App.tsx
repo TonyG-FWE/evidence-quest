@@ -18,6 +18,8 @@ import {Ending} from './Ending.js';
 import {RoomDescription} from './RoomDescription.js';
 import {Passage} from './Passage.js';
 import {goal,localOwners,ownerLabel,roomName} from './labels.js';
+import {Intro,Recap,Reading,Words,CrewText,Portrait,NarratorCard,Support,showReading} from './Experience.js';
+import {roles,roomPurposes} from '../core/experience.js';
 import './app.css';
 const send=store.send;
 let invoker:HTMLElement|null=null;
@@ -47,9 +49,9 @@ function Work({s}:{s:State}){
  const previousHeld=useRef<string|null>(null);useEffect(()=>{if(previousHeld.current&&!h)document.querySelector<HTMLButtonElement>(`[data-tile="${previousHeld.current}"]`)?.focus({preventScroll:true});previousHeld.current=h?.tile??null;},[h]);
  const choose=(tile:Order[number])=>send({type:'SELECT_TILE',tile});
  const place=(index:number)=>send({type:'EDIT_RAIL',operation:'insert',index});
- return <><Heading ct="CT.RAIL.TITLE"/>
+ return <>{s.session.presentation!=='watch'&&<div className="caption local-feedback" role="status"><Captions s={s}/></div>}<Heading ct="CT.RAIL.TITLE"/><CrewText ct="CT.ER13.REHEARSAL_CONTEXT" s={s}/>
   <div className="actions"><Button ct="CT.RAIL.ARRANGE_MODE" aria-pressed={s.session.presentation==='arrange'} onClick={()=>send({type:'PRESENTATION',mode:'arrange'})}/><Button ct={r?.mode==='show'?'CT.RAIL.WATCH_SHOW':'CT.RAIL.WATCH'} aria-pressed={s.session.presentation==='watch'} onClick={()=>send({type:'PRESENTATION',mode:'watch'})}/></div>
-  {s.session.presentation==='watch'?<>{['docked','projecting'].includes(p.loop.mode)?<StoryCanvas s={s}/>:<p>{copy('CT.WORK.MISSING_LOOP')}</p>}</>:<>
+  {s.session.presentation==='watch'?<>{['docked','projecting'].includes(p.loop.mode)?<div className="narrated-show"><StoryCanvas s={s}/><div className="caption local-feedback" role="status"><Captions s={s}/></div><NarratorCard s={s}/></div>:<p>{copy('CT.WORK.MISSING_LOOP')}</p>}</>:<><NarratorCard s={s}/>
   {p.caddyHost!=='ST.RACK.BAY'?<><p>{copy('CT.WORK.MISSING_KIT')}</p>{p.caddyHost==='ACT.PLAYER'&&<Button ct="CT.KIT.HANDOFF" onClick={()=>send({type:'TARGET',target:'ST.RACK.BAY'})}/>}</>:<>
    {!['docked','projecting'].includes(p.loop.mode)&&<p>{copy('CT.WORK.MISSING_LOOP')}</p>}
    <p>{copy('CT.RAIL.HELP')}</p>
@@ -67,6 +69,8 @@ function Work({s}:{s:State}){
    <div className="actions"><Button data-focus-owner="KIT.NOTE.E6" ct="CT.KIT.NOTE_JO" onClick={()=>send({type:'TARGET',target:'KIT.NOTE.E6'})}/><Button data-focus-owner="KIT.NOTE.E7" ct="CT.KIT.NOTE_REMY" onClick={()=>send({type:'TARGET',target:'KIT.NOTE.E7'})}/></div>
   </>}
   </>}
+  {r?.status==='paused'&&r.nextCue>0&&r.order[r.nextCue-1]==='TILE.PLANT'&&r.puppet.pip==='left'&&<Support s={s} id="CT.ER13.PROMISE_SUPPORT"/>}
+  {c.certificate&&<><p>Put on our first show.</p><CrewText ct="CT.ER13.PREMIERE_CONTEXT" s={s}/></>}
   {r&&<div className="run-status" aria-live="polite"><p>{copy(r.status==='paused'?(r.nextCue===r.order.length?'CT.RUN.TERMINAL':'CT.RUN.PAUSED'):r.status==='finalized'?'CT.RUN.FINISHED':'CT.RUN.TITLE',{mode,modeLower})}</p>{r.activeCue&&<p>{copy('CT.RUN.CURRENT',{tile:tileName(r.activeCue.tile)})}</p>}{r.status==='paused'&&r.order[r.nextCue]&&<p>{copy('CT.RUN.NEXT',{nextTile:tileName(r.order[r.nextCue]!)})}</p>}</div>}
   <div className="actions">
    {r?.status==='running'?<Button className="sun" ct="CT.RUN.STOP" icon="STOP" onClick={()=>send({type:'PAUSE_RUN',reason:'user'})}/>:r?.status==='paused'?<Button className="primary" ct={r.nextCue===r.order.length?'CT.RUN.FINALIZE':'CT.RUN.CONTINUE'} slots={{modeLower}} onClick={()=>send({type:'CONTINUE_RUN'})}/>:<Button className="primary" ct="CT.WORK.REHEARSE" icon="PLAY" onClick={()=>send({type:'RUN',mode:'rehearsal'})}/>}
@@ -79,12 +83,13 @@ function Work({s}:{s:State}){
 }
 function Talk({s}:{s:State}){
  const v=s.runtime.view,actor=v.actor!,isJo=actor==='ACT.JO',isRemy=actor==='ACT.REMY',topics=isJo?['ROLE','LOOP','CANCELED','JO_NOTE','HELP','DIRECT']:isRemy?['CANCELED','REMY_NOTE','CLIP','HELP']:['LOOP','CANCELED','REQUEST','FILMING','WAIT','SLATE','NOTES','MATERIALS'];
- return <><h2 tabIndex={-1} data-focus-heading>{ownerLabel(s.case,actor)}</h2>
+ return <><div className="speaker"><Portrait actor={actor}/><h2 tabIndex={-1} data-focus-heading>{ownerLabel(s.case,actor)}<small>{roles[actor]}</small></h2></div>
   {v.dialogue?.map((ct,i)=>{
    const canonical=ct==='CT.ARI.FILMING_AFTER'?'CT.SRC.E5.B':ct,refs=[...parts.values()].filter(p=>p.ctId===canonical&&available(s.case,p.refId)).map(p=>p.refId);
    const access=s.case.grants.find(g=>g.refs.some(r=>refs.includes(r))&&(ct!=='CT.ARI.FILMING_AFTER'||g.viaAccessId==='NPC.ARI.FILMING_AFTER'))?.viaAccessId;
-   return s.runtime.npcHelp?.ct===ct?<VisibleHelp key={s.runtime.npcHelp.id} ids={[ct]} onVisible={()=>send({type:'NPC_HELP_DISPLAY',id:s.runtime.npcHelp!.id})}/>:refs.length&&access?<Passage key={i} ct={canonical} refs={refs} access={access} store={store} {...(ct==='CT.ARI.FILMING_AFTER'?{range:[0,Array.from(copy(ct)).length] as [number,number]}:{})}/>:<p key={i}>{copy(ct)}</p>;
+   return s.runtime.npcHelp?.ct===ct?<VisibleHelp key={s.runtime.npcHelp.id} ids={[ct]} onVisible={()=>send({type:'NPC_HELP_DISPLAY',id:s.runtime.npcHelp!.id})}/>:refs.length&&access?<Passage key={i} ct={canonical} refs={refs} access={access} store={store} {...(ct==='CT.ARI.FILMING_AFTER'?{range:[0,Array.from(copy(ct)).length] as [number,number]}:{})}/>:<CrewText key={i} ct={ct} s={s}/>;
   })}
+  {v.dialogue?.includes('CT.SRC.E6')&&<Button onClick={()=>showReading(s,'READ.PROMISE')}>Read with the crew</Button>}
   {v.selected?.map(r=><blockquote key={r}>{displayedText(s.case,r)}</blockquote>)}
   <div className="stack">{topics.map(t=><Button key={t} ct={`CT.TALK.${t}`} onClick={()=>send({type:'TALK',topic:`CT.TALK.${t}`})}/>)}</div>
   <div className="actions"><Button ct="CT.PRESENT.OPEN" onClick={()=>open({page:'present',actor,selected:[]})}/>{isJo&&<Button ct="CT.PLAN.STORY" onClick={()=>open({page:'plan',topic:'story'})}/>}</div>
@@ -93,11 +98,15 @@ function Talk({s}:{s:State}){
 function Panel({s}:{s:State}){
  const v=s.runtime.view,c=s.case,p=c.physical;
  switch(v.page){
+ case 'intro':return <Intro s={s}/>;
+ case 'recap':return <Recap s={s}/>;
+ case 'reading':return <Reading s={s}/>;
+ case 'words':return <Words s={s}/>;
  case 'objects':return <><Heading ct="CT.UI.MOVE"/><RoomDescription s={s}/><p>{copy('CT.WORLD.LOCAL_LIST',{room:roomName(p.room)})}</p><div className="stack">{localOwners(c).filter(o=>!v.selected||v.selected.includes(o.id)).map(o=><Button data-owner={o.id} key={o.id} onClick={()=>send({type:'TARGET',target:o.id})}>{ownerLabel(c,o.id)}</Button>)}</div></>;
  case 'map':return <><Heading ct="CT.UI.MAP"/>{content.rooms.map(room=><section className="venue" key={room.id}><h3>{roomName(room.id)}</h3><Passage ct={`CT.NAV.${room.id==='SC.MD'?'MEDIA':room.id.slice(3)}`} refs={[`NAV.${room.id==='SC.MD'?'MEDIA':room.id.slice(3)}`]} access="ACC.VENUE" store={store}/>{content.doors.filter(d=>d.room===p.room&&d.destinationRoom===room.id).map(d=><Button key={d.id} ct="CT.WORLD.GO" slots={{room:roomName(room.id)}} onClick={()=>send({type:'TARGET',target:d.id})}/>)}</section>)}</>;
  case 'reader':return <Reader state={s} store={store}/>;
  case 'notice':return <><Heading ct="CT.OBJ.NOTICE_CURLED"/><Passage ct="CT.OBJ.NOTICE_PARTIAL" refs={['CT.OBJ.NOTICE_PARTIAL']} access="CY.SOURCE.E3" store={store}/><Button className="primary" ct="CT.OBJ.NOTICE_FLATTEN" onClick={()=>send({type:'TARGET',target:'CY.SOURCE.E3',action:'flatten'})}/></>;
- case 'notes':{const ids=[...new Set(c.grants.map(g=>g.sourceId))];return <><Heading ct="CT.UI.NOTES"/>{!ids.length?<p>{copy('CT.NOTES.EMPTY')}</p>:<div className="stack">{ids.map(id=><Button key={id} onClick={()=>open({page:'reader',sourceId:id,accessId:`ACC.EVIDENCE.${id}`,previous:v})}>{copy(content.sources.find(s=>s.id===id)!.titleCt)}</Button>)}</div>}<div className="actions"><Button ct="CT.PRESENT.OPEN" onClick={()=>open({page:'present',selected:[]})}/><Button ct="CT.PLAN.SEARCH" onClick={()=>open({page:'plan',topic:'search'})}/></div></>;}
+ case 'notes':{const ids=[...new Set(c.grants.map(g=>g.sourceId))];return <><Heading ct="CT.UI.NOTES"/><Button onClick={()=>open({page:'words',previous:v})}>Words from our story</Button>{!ids.length?<p>{copy('CT.NOTES.EMPTY')}</p>:<div className="stack">{ids.map(id=><Button key={id} onClick={()=>open({page:'reader',sourceId:id,accessId:`ACC.EVIDENCE.${id}`,previous:v})}>{copy(content.sources.find(s=>s.id===id)!.titleCt)}</Button>)}</div>}<div className="actions"><Button ct="CT.PRESENT.OPEN" onClick={()=>open({page:'present',selected:[]})}/><Button ct="CT.PLAN.SEARCH" onClick={()=>open({page:'plan',topic:'search'})}/></div></>;}
  case 'kit':return <Kit s={s}/>;
  case 'work':return <Work s={s}/>;
  case 'story':return <><Heading ct="CT.STORY.TITLE"/>{p.loop.mode==='standby'||p.loop.mode==='following'?<p>{copy('CT.WORK.MISSING_LOOP')}</p>:<><StoryCanvas s={s}/><Lines ids={storyDescription(c.playback?.puppet??initialPuppet())}/></>}</>;
@@ -106,13 +115,14 @@ function Panel({s}:{s:State}){
  case 'present':{const draft:Draft={id:'private',text:'',revision:0,selectedRefs:v.selected??[]},actors=c.encounteredActors.filter(a=>a!=='ACT.LOOP') as Array<'ACT.JO'|'ACT.REMY'|'ACT.ARI'>;return <><Heading ct="CT.PRESENT.OPEN"/><Details s={s} draft={draft} onChange={refs=>open({...v,selected:refs})}/><p>{copy('CT.PRESENT.WHO')}</p><div className="stack">{actors.filter(a=>ownerRoom(c,a)===p.room).map(actor=><Button key={actor} ct="CT.PRESENT.SHOW" slots={{person:ownerLabel(c,actor)}} disabled={!draft.selectedRefs.length} onClick={()=>send({type:'PRESENT',actor,refs:draft.selectedRefs})}/>)}</div>{!actors.some(a=>ownerRoom(c,a)===p.room)&&<p>{copy('CT.PRESENT.NO_RECIPIENT')}</p>}<p>{copy('CT.PRESENT.MET')}</p>{actors.filter(a=>ownerRoom(c,a)!==p.room).map(a=><p key={a}>{ownerLabel(c,a)} · {roomName(ownerRoom(c,a)!)}</p>)}</>;}
  case 'lead':return <><Heading ct="CT.LEAD.CHOOSE"/><div className="stack">{([['where-loop','WHERE'],['cancellation','CANCELED'],['recording','MOVED'],['story-plan','PROMISE']] as const).map(([lead,key])=><Button key={lead} ct={`CT.LEAD.${key}`} aria-pressed={c.selectedLead===lead} onClick={()=>send({type:'LEAD',lead})}/>)}</div><Button ct="CT.PLAN.SEARCH" onClick={()=>open({page:'plan',topic:'search'})}/></>;
  case 'help':{const topic=v.topic??(c.selectedLead==='story-plan'?'story':'search'),d=c.drafts.find(d=>d.id===`coach-${topic}`)!;return <Help s={s} store={store} open={open} details={<Details s={s} draft={d} onChange={refs=>send({type:'DRAFT',id:d.id,text:d.text,refs})}/>}/>;}
- case 'goal':return <><Heading ct="CT.UI.GOAL"/><Lines ids={['CT.GOAL.ASSIGNMENT',goal(c)]}/><div className="actions"><Button ct="CT.LEAD.CHOOSE" onClick={()=>open({page:'lead'})}/><Button ct="CT.PLAN.SEARCH" onClick={()=>open({page:'plan',topic:'search'})}/>{c.premiere&&<Button ct="CT.ENDING.REOPEN" onClick={()=>open({page:'ending',action:'recap'})}/>}</div></>;
+ case 'goal':return <><Heading ct="CT.UI.GOAL"/><p>{copy(goal(c))}</p><Button onClick={()=>open({page:'recap',previous:v})}>Our story so far</Button><div className="actions"><Button ct="CT.LEAD.CHOOSE" onClick={()=>open({page:'lead'})}/><Button ct="CT.PLAN.SEARCH" onClick={()=>open({page:'plan',topic:'search'})}/>{c.premiere&&<Button ct="CT.ENDING.REOPEN" onClick={()=>open({page:'ending',action:'recap'})}/>}</div></>;
  case 'settings':return <><Heading ct="CT.UI.SETTINGS"/>{Object.entries({sound:['on','off'],motion:['standard','reduced'],text:['regular','larger','largest'],spacing:['standard','roomier']}).map(([key,values])=><label key={key} className="setting">{copy(`CT.SETTINGS.${key.toUpperCase()}`)}<select aria-label={copy(`CT.SETTINGS.${key.toUpperCase()}`)} value={s.preferences[key as 'sound']} onChange={e=>send({type:'PREF',key:key as 'sound',value:e.target.value})}>{values.map(value=><option key={value} value={value}>{value.slice(0,1).toUpperCase()+value.slice(1)}</option>)}</select></label>)}{s.runtime.preferenceFailed&&<p>{copy('CT.SETTINGS.UNSAVED')}</p>}<Lines ids={['CT.ACCESS.KEYBOARD','CT.ACCESS.TYPING','CT.ACCESS.BACK','CT.ACCESS.SELECTION']}/></>;
  case 'pause':return <><Heading ct="CT.PAUSE.TITLE"/><div className="stack"><Button ct="CT.UI.FESTIVAL" onClick={()=>open({page:'world'})}/><Button ct="CT.UI.SETTINGS" onClick={()=>open({page:'settings',previous:v})}/><Button ct="CT.PAUSE.HOME" onClick={()=>open({page:'home'})}/><Button ct="CT.START.OVER" onClick={()=>open({page:'confirm',action:'new-game',previous:v})}/></div></>;
  case 'confirm':return v.action==='replace'?<><Heading ct="CT.RECOVERY.REPLACE"/><p>{copy(s.session.saving.mode==='conflict'?'CT.RECOVERY.REPLACE_KNOWN':'CT.RECOVERY.REPLACE_UNKNOWN')}</p><div className="actions"><Button data-safe-focus ct="CT.RECOVERY.KEEP_UNSAVED" onClick={()=>open({page:'world'})}/><Button ct="CT.RECOVERY.REPLACE" onClick={()=>saves.replace()}/></div></>:v.action==='more'?<><Heading ct="CT.WORK.MORE"/><div className="stack"><Button ct="CT.WORK.RESET" onClick={()=>open({...v,action:'reset'})}/><Button ct="CT.WORK.CLEAR" onClick={()=>open({...v,action:'clear'})}/></div></>:<><Heading ct={v.action==='reset'?'CT.WORK.RESET':v.action==='clear'?'CT.WORK.CLEAR':'CT.START.OVER'}/>{v.action==='new-game'&&<p>{copy('CT.RESET.SCOPE')}</p>}{v.action!=='new-game'&&<p>{copy(v.action==='reset'?'CT.WORK.RESET_DESCRIPTION':'CT.WORK.CLEAR_DESCRIPTION')}</p>}<div className="actions"><Button data-safe-focus ct="CT.UI.CANCEL" onClick={()=>open(v.previous??{page:'world'})}/><Button ct={v.action==='reset'?'CT.WORK.RESET':v.action==='clear'?'CT.WORK.CLEAR':'CT.RECOVERY.NEW'} onClick={()=>{if(v.action==='new-game')void saves.reset();else{send({type:v.action==='reset'?'RESET_RUN':'CLEAR_RAIL'});open({page:'work'});}}}/></div></>;
- case 'toast':return <><Heading ct="CT.TOAST.TITLE"/>{v.action==='magnifier'?<><div className="magnifier"><img src={assetUrl('ASSET.PROP.TOAST.PIECE')} alt=""/></div><p>{copy('CT.TOAST.ENLARGED')}</p></>:<p>{copy(s.runtime.toastElapsed!==null?(s.runtime.toastReplay?'CT.TOAST.FLOURISH':s.runtime.toastElapsed<3000?'CT.TOAST.ARMS':s.runtime.toastElapsed<5000?'CT.TOAST.TRAY':'CT.TOAST.MAGNIFIER'):p.objects.toastRevealed?'CT.TOAST.PUNCHLINE':'CT.TOAST.COVERED')}</p>}<div className="actions"><Button disabled={s.runtime.toastElapsed!==null} ct={p.objects.toastRevealed?'CT.TOAST.REPLAY':'CT.TOAST.START'} onClick={()=>send({type:'TOAST_START'})}/>{p.objects.toastRevealed&&<><Button disabled={s.runtime.toastElapsed!==null} ct="CT.TOAST.LOOK" onClick={()=>open({page:'toast',action:'magnifier'})}/><Button ct="CT.TOAST.SKIP" onClick={()=>open({page:'toast',action:'revealed'})}/></>}</div></>;
+ case 'toast':return <><Heading ct="CT.TOAST.TITLE"/><p>Maximum Toast — an invention demonstration.</p>{v.action==='magnifier'?<><div className="magnifier"><img src={assetUrl('ASSET.PROP.TOAST.PIECE')} alt=""/></div><p>{copy('CT.TOAST.ENLARGED')}</p></>:<p>{copy(s.runtime.toastElapsed!==null?(s.runtime.toastReplay?'CT.TOAST.FLOURISH':s.runtime.toastElapsed<3000?'CT.TOAST.ARMS':s.runtime.toastElapsed<5000?'CT.TOAST.TRAY':'CT.TOAST.MAGNIFIER'):p.objects.toastRevealed?'CT.TOAST.PUNCHLINE':'CT.TOAST.COVERED')}</p>}<div className="actions"><Button disabled={s.runtime.toastElapsed!==null} ct={p.objects.toastRevealed?'CT.TOAST.REPLAY':'CT.TOAST.START'} onClick={()=>send({type:'TOAST_START'})}/>{p.objects.toastRevealed&&<><Button disabled={s.runtime.toastElapsed!==null} ct="CT.TOAST.LOOK" onClick={()=>open({page:'toast',action:'magnifier'})}/><Button ct="CT.TOAST.SKIP" onClick={()=>open({page:'toast',action:'revealed'})}/></>}</div></>;
  case 'ending':return <Ending s={s} open={open}/>;
  case 'recovery':return <><Heading ct="CT.RECOVERY.RUN"/><Button ct="CT.UI.ROOM" onClick={()=>open({page:'world'})}/></>;
+ case 'model':return <article className="model-view"><h2 data-focus-heading tabIndex={-1}>Our paper model</h2><p>Pip’s journey starts here.</p><StoryCanvas s={s} model/><div className="caption local-feedback" role="status"><Captions s={s}/></div>{s.case.physical.objects.modelTabTried&&!s.runtime.intent&&<div className="actions"><Button onClick={()=>send({type:'TARGET',target:'ST.MODEL.TAB'})}>Pull the tab again</Button><Button className="primary" onClick={()=>send({type:'TARGET',target:'ST.CONTROL.SHOW'})}>Try the big screen</Button></div>}</article>;
  case 'world':case 'home':return null;
  }
 }
@@ -121,22 +131,34 @@ export function App(){
  useEffect(()=>{const root=document.documentElement;root.style.setProperty('--text',s.preferences.text==='largest'?'36px':s.preferences.text==='larger'?'30px':'24px');root.style.setProperty('--leading',s.preferences.spacing==='roomier'?'1.875':'1.5');root.dataset.motion=s.preferences.motion;},[s.preferences]);
  const lastPage=useRef(v.page),lastRoom=useRef(p.room);const viewKey=[v.page,v.sourceId,v.actor,v.action].join('|');
  useEffect(()=>{let target:HTMLElement|null=null;
-  if(v.page==='world'){if(!s.runtime.intent&&s.runtime.hasLiveVisit&&lastPage.current!=='home'&&lastRoom.current===p.room){target=invoker?.isConnected?invoker:document.querySelector<HTMLElement>(`[data-focus-owner="${s.case.worldReturn.ownerId}"]`)??document.querySelector<HTMLElement>('[data-focus-owner="ACC.OBJECTS"]');invoker=null;}target??=document.querySelector<HTMLCanvasElement>('[data-testid=world]');}
+  if(v.page==='world'){if(!s.runtime.intent&&s.runtime.hasLiveVisit&&lastPage.current!=='home'&&lastPage.current!=='intro'&&lastRoom.current===p.room){target=invoker?.isConnected?invoker:document.querySelector<HTMLElement>(`[data-focus-owner="${s.case.worldReturn.ownerId}"]`)??document.querySelector<HTMLElement>('[data-focus-owner="ACC.OBJECTS"]');invoker=null;}target??=document.querySelector<HTMLCanvasElement>('[data-testid=world]');}
   else if((v.page==='work'||v.page==='kit')&&lastPage.current==='reader')target=task.current?.querySelector<HTMLElement>(`[data-tile="${s.case.worldReturn.ownerId}"],[data-focus-owner="${s.case.worldReturn.ownerId}"]`)??null;
-  target??=task.current?.querySelector<HTMLElement>('[data-safe-focus]')??task.current?.querySelector<HTMLElement>('[data-focus-heading]')??null;target?.focus({preventScroll:true});if(task.current&&lastPage.current!=='reader')task.current.scrollTop=0;if(v.page!=='world'&&matchMedia('(max-width:900px), (max-height:600px)').matches)target?.scrollIntoView({block:'start'});lastPage.current=v.page;lastRoom.current=p.room;
+  const returningToOwner=target!==null&&v.page!=='world';
+  target??=task.current?.querySelector<HTMLElement>('[data-safe-focus]')??task.current?.querySelector<HTMLElement>('[data-focus-heading]')??null;
+  target?.focus({preventScroll:true});
+  // A lower world control may have scrolled the document before opening a panel.
+  // Reader owns its saved passage position; a surviving tile/note owns its return focus.
+  if(task.current&&v.page!=='reader'&&!returningToOwner)task.current.scrollTop=0;
+  if(v.page!=='world'){
+   if(matchMedia('(max-width:900px), (max-height:600px)').matches)target?.scrollIntoView({block:'start'});
+   else {window.scrollTo({top:0,left:0});if(returningToOwner)target?.scrollIntoView({block:'nearest'});}
+  }
+  lastPage.current=v.page;lastRoom.current=p.room;
  },[viewKey,p.room]);
  useEffect(()=>{const escape=(e:KeyboardEvent)=>{if(e.key!=='Escape')return;e.preventDefault();const state=store.getSnapshot();if(state.session.heldTile)send({type:'CANCEL_TILE'});else if(state.runtime.intent)send({type:'STOP_WALK'});else open(state.runtime.view.page==='world'?{page:'pause'}:state.runtime.view.previous??{page:'world'});};document.addEventListener('keydown',escape);return ()=>document.removeEventListener('keydown',escape);},[]);
  if(v.page==='home')return <Home s={s}/>;
  return <div className="game">
   <header className="game-header"><a href="#" onClick={e=>{e.preventDefault();open({page:'pause'});}}>{copy('CT.START.TITLE')}</a><strong>{roomName(p.room)}</strong><Button ct="CT.UI.MENU" onClick={()=>open({page:'pause'})}/></header>
   <div className={`game-layout ${v.page==='world'?'world-only':''} ${v.action==='enlarge'?'enlarged':''}`}>
-   <section className="world-column"><World state={s} store={store}/><div className="world-tools"><nav aria-label="Room tools"><Button data-focus-owner="ACC.OBJECTS" ct="CT.UI.MOVE" icon="MAP" onClick={()=>open({page:'objects'})}/><Button ct="CT.UI.MAP" onClick={()=>open({page:'map'})}/><Button ct="CT.UI.NOTES" icon="NOTES" onClick={()=>open({page:'notes'})}/><Button ct="CT.UI.GOAL" onClick={()=>open({page:'goal'})}/><Button ct={['offered','expired'].includes(s.session.coach.status)?'CT.HELP.AVAILABLE':s.session.coach.status==='ready'?'CT.HELP.READY':'CT.UI.HELP'} icon="HELP" onClick={()=>open({page:'help'})}/>{p.caddyHost==='ACT.PLAYER'&&<Button data-focus-owner="KIT.CADDY" ct="CT.UI.KIT" onClick={()=>open({page:'kit'})}/>}</nav>
+   <section className="world-column"><World state={s} store={store}/><div className="world-tools"><Button className="mission-control" onClick={()=>open({page:'recap'})}><small>Our story so far</small>{copy(goal(s.case))}</Button>{!['model','work'].includes(v.page)&&<div className="caption" role="status"><Captions s={s}/></div>}<nav aria-label="Room tools"><Button data-focus-owner="ACC.OBJECTS" ct="CT.UI.MOVE" icon="MAP" onClick={()=>open({page:'objects'})}/><Button ct="CT.UI.MAP" onClick={()=>open({page:'map'})}/><Button ct="CT.UI.NOTES" icon="NOTES" onClick={()=>open({page:'notes'})}/><Button ct="CT.UI.GOAL" onClick={()=>open({page:'goal'})}/><Button ct={['offered','expired'].includes(s.session.coach.status)?'CT.HELP.AVAILABLE':s.session.coach.status==='ready'?'CT.HELP.READY':'CT.UI.HELP'} icon="HELP" onClick={()=>open({page:'help'})}/>{p.caddyHost==='ACT.PLAYER'&&<Button data-focus-owner="KIT.CADDY" ct="CT.UI.KIT" onClick={()=>open({page:'kit'})}/>}</nav>
     {s.runtime.intent&&<div className="actions"><Button ct="CT.WORLD.STOP" icon="STOP" onClick={()=>send({type:'STOP_WALK'})}/></div>}
-    <div className="caption" role="status"><Captions s={s}/></div>
+    {p.room==='SC.ST'&&<div className="program-card"><Button onClick={()=>showReading(s)}>Read with the crew</Button></div>}
+    <p className="room-purpose">{roomPurposes[p.room]}</p>
+    {s.case.experience?.legacyOffer&&<aside className="guidance"><Button onClick={()=>open({page:'recap'})}>Meet the crew / Our story so far</Button><Button onClick={()=>send({type:'INTRO',action:'dismiss-legacy'})}>Keep exploring</Button></aside>}
     {!s.case.guidance.openingDismissed&&p.room==='SC.ST'&&!p.objects.previewTried&&p.loop.mode==='standby'&&p.caddyHost==='MD.RACK.STATION'&&<aside className="guidance"><p>{copy(p.objects.modelTabTried?'CT.GUIDE.PREVIEW':'CT.GUIDE.TAB')}</p><Button ct="CT.UI.DISMISS" onClick={()=>send({type:'DISMISS_GUIDE',guide:'openingDismissed'})}/></aside>}
     <SaveStatus s={s}/><p id="movement-help" className={s.case.guidance.movementDismissed?'sr-only':'movement-help'}>{copy('CT.ACCESS.MOVEMENT')}</p>{!s.case.guidance.movementDismissed&&<Button ct="CT.UI.DISMISS" onClick={()=>send({type:'DISMISS_GUIDE',guide:'movementDismissed'})}/>}
    </div></section>
-   {v.page!=='world'&&<section ref={task} className="task-panel native-sheet" data-task aria-label="Task controls"><div className="task-close"><Button ct={v.previous?'CT.UI.BACK':'CT.UI.ROOM'} icon="BACK" onClick={()=>open(v.previous??{page:'world'})}/></div><Panel s={s}/></section>}
+   {v.page!=='world'&&<section ref={task} className="task-panel native-sheet" data-task aria-label="Task controls"><div className="task-close"><Button {...(['reading','words'].includes(v.page)?{}:{ct:v.previous?'CT.UI.BACK':'CT.UI.ROOM'})} icon="BACK" onClick={()=>open(v.previous??{page:'world'})}>{['reading','words'].includes(v.page)?'Return to story':undefined}</Button></div><Panel s={s}/></section>}
   </div>
  </div>;
 }

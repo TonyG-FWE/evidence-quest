@@ -1,0 +1,1521 @@
+{
+  "ASSET.ENV.ST.BACKPLATE/base": {
+    "url": "/art/er13/stage-backplate-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ]
+  },
+  "ASSET.ACT.JO/idle": {
+    "url": "/art/er13/jo-poses-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      229,
+      13,
+      506,
+      709
+    ],
+    "referenceHeight": 696,
+    "anchor": [
+      135.5,
+      696
+    ]
+  },
+  "ASSET.ACT.JO/home": {
+    "url": "/art/er13/jo-poses-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      229,
+      13,
+      506,
+      709
+    ],
+    "referenceHeight": 696,
+    "anchor": [
+      135.5,
+      696
+    ]
+  },
+  "ASSET.ACT.JO/explain": {
+    "url": "/art/er13/jo-poses-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      620,
+      11,
+      1000,
+      709
+    ],
+    "referenceHeight": 696,
+    "anchor": [
+      239,
+      698
+    ]
+  },
+  "ASSET.ACT.JO/talk": {
+    "url": "/art/er13/jo-poses-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      620,
+      11,
+      1000,
+      709
+    ],
+    "referenceHeight": 696,
+    "anchor": [
+      239,
+      698
+    ]
+  },
+  "ASSET.ACT.JO/thoughtful": {
+    "url": "/art/er13/jo-poses-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1181,
+      24,
+      1447,
+      708
+    ],
+    "referenceHeight": 696,
+    "anchor": [
+      133,
+      684
+    ]
+  },
+  "ASSET.ACT.JO/celebrate": {
+    "url": "/art/er13/jo-poses-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1587,
+      11,
+      1956,
+      708
+    ],
+    "referenceHeight": 696,
+    "anchor": [
+      150,
+      697
+    ]
+  },
+  "ASSET.ACT.ARI/idle": {
+    "url": "/art/er13/ari-poses-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      183,
+      23,
+      468,
+      705
+    ],
+    "referenceHeight": 682,
+    "anchor": [
+      142,
+      682
+    ]
+  },
+  "ASSET.ACT.ARI/home": {
+    "url": "/art/er13/ari-poses-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      183,
+      23,
+      468,
+      705
+    ],
+    "referenceHeight": 682,
+    "anchor": [
+      142,
+      682
+    ]
+  },
+  "ASSET.ACT.ARI/explain": {
+    "url": "/art/er13/ari-poses-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      634,
+      23,
+      1006,
+      703
+    ],
+    "referenceHeight": 682,
+    "anchor": [
+      209,
+      680
+    ]
+  },
+  "ASSET.ACT.ARI/talk": {
+    "url": "/art/er13/ari-poses-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      634,
+      23,
+      1006,
+      703
+    ],
+    "referenceHeight": 682,
+    "anchor": [
+      209,
+      680
+    ]
+  },
+  "ASSET.ACT.ARI/thoughtful": {
+    "url": "/art/er13/ari-poses-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1203,
+      34,
+      1483,
+      706
+    ],
+    "referenceHeight": 682,
+    "anchor": [
+      140,
+      672
+    ]
+  },
+  "ASSET.ACT.ARI/celebrate": {
+    "url": "/art/er13/ari-poses-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1687,
+      17,
+      2050,
+      704
+    ],
+    "referenceHeight": 682,
+    "anchor": [
+      154.5,
+      687
+    ]
+  },
+  "ASSET.ACT.REMY/idle": {
+    "url": "/art/er13/remy-poses-v2.png",
+    "frameWidth": 2170,
+    "frameHeight": 725,
+    "columns": 1,
+    "contentRectPixels": [
+      196,
+      14,
+      462,
+      713
+    ],
+    "referenceHeight": 699,
+    "anchor": [
+      133,
+      699
+    ]
+  },
+  "ASSET.ACT.REMY/home": {
+    "url": "/art/er13/remy-poses-v2.png",
+    "frameWidth": 2170,
+    "frameHeight": 725,
+    "columns": 1,
+    "contentRectPixels": [
+      196,
+      14,
+      462,
+      713
+    ],
+    "referenceHeight": 699,
+    "anchor": [
+      133,
+      699
+    ]
+  },
+  "ASSET.ACT.REMY/explain": {
+    "url": "/art/er13/remy-poses-v2.png",
+    "frameWidth": 2170,
+    "frameHeight": 725,
+    "columns": 1,
+    "contentRectPixels": [
+      629,
+      17,
+      1000,
+      714
+    ],
+    "referenceHeight": 699,
+    "anchor": [
+      235.5,
+      697
+    ]
+  },
+  "ASSET.ACT.REMY/talk": {
+    "url": "/art/er13/remy-poses-v2.png",
+    "frameWidth": 2170,
+    "frameHeight": 725,
+    "columns": 1,
+    "contentRectPixels": [
+      629,
+      17,
+      1000,
+      714
+    ],
+    "referenceHeight": 699,
+    "anchor": [
+      235.5,
+      697
+    ]
+  },
+  "ASSET.ACT.REMY/thoughtful": {
+    "url": "/art/er13/remy-poses-v2.png",
+    "frameWidth": 2170,
+    "frameHeight": 725,
+    "columns": 1,
+    "contentRectPixels": [
+      1233,
+      15,
+      1501,
+      714
+    ],
+    "referenceHeight": 699,
+    "anchor": [
+      134,
+      699
+    ]
+  },
+  "ASSET.ACT.REMY/celebrate": {
+    "url": "/art/er13/remy-poses-v2.png",
+    "frameWidth": 2170,
+    "frameHeight": 725,
+    "columns": 1,
+    "contentRectPixels": [
+      1694,
+      19,
+      2089,
+      713
+    ],
+    "referenceHeight": 699,
+    "anchor": [
+      152.5,
+      694
+    ]
+  },
+  "ASSET.PUP.PIP/waiting": {
+    "url": "/art/er13/pip-poses-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      73,
+      76,
+      404,
+      660
+    ],
+    "referenceHeight": 584,
+    "anchor": [
+      158.5,
+      584
+    ]
+  },
+  "ASSET.PUP.PIP/crossing": {
+    "url": "/art/er13/pip-poses-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      616,
+      77,
+      964,
+      658
+    ],
+    "referenceHeight": 584,
+    "anchor": [
+      172,
+      581
+    ]
+  },
+  "ASSET.PUP.PIP/planting": {
+    "url": "/art/er13/pip-poses-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1124,
+      187,
+      1564,
+      652
+    ],
+    "referenceHeight": 584,
+    "anchor": [
+      197.5,
+      465
+    ]
+  },
+  "ASSET.PUP.PIP/arrived": {
+    "url": "/art/er13/pip-poses-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1660,
+      54,
+      2099,
+      660
+    ],
+    "referenceHeight": 584,
+    "anchor": [
+      225,
+      606
+    ]
+  },
+  "ASSET.PUP.GRANDMA/waiting": {
+    "url": "/art/er13/grandma-poses-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      103,
+      30,
+      417,
+      679
+    ],
+    "referenceHeight": 649,
+    "anchor": [
+      142,
+      649
+    ]
+  },
+  "ASSET.PUP.GRANDMA/receiving": {
+    "url": "/art/er13/grandma-poses-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      535,
+      35,
+      977,
+      675
+    ],
+    "referenceHeight": 649,
+    "anchor": [
+      293,
+      640
+    ]
+  },
+  "ASSET.PUP.GRANDMA/planting": {
+    "url": "/art/er13/grandma-poses-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1080,
+      147,
+      1538,
+      667
+    ],
+    "referenceHeight": 649,
+    "anchor": [
+      305,
+      520
+    ]
+  },
+  "ASSET.PUP.GRANDMA/together": {
+    "url": "/art/er13/grandma-poses-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1652,
+      29,
+      2110,
+      678
+    ],
+    "referenceHeight": 649,
+    "anchor": [
+      203.5,
+      649
+    ]
+  },
+  "ASSET.ENV.CY.BACKPLATE/base": {
+    "url": "/art/er13/courtyard-backplate-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ]
+  },
+  "ASSET.ENV.WK.BACKPLATE/base": {
+    "url": "/art/er13/workshop-backplate-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ]
+  },
+  "ASSET.ENV.MD.BACKPLATE/base": {
+    "url": "/art/er13/media-backplate-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      0,
+      0,
+      1536,
+      1024
+    ]
+  },
+  "ASSET.ACT.PLAYER/right0": {
+    "url": "/art/er13/player-right-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      107,
+      22,
+      533,
+      693
+    ],
+    "referenceHeight": 671,
+    "anchor": [
+      215,
+      671
+    ]
+  },
+  "ASSET.ACT.PLAYER/right1": {
+    "url": "/art/er13/player-right-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      685,
+      22,
+      957,
+      698
+    ],
+    "referenceHeight": 671,
+    "anchor": [
+      139.5,
+      676
+    ]
+  },
+  "ASSET.ACT.PLAYER/right2": {
+    "url": "/art/er13/player-right-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1128,
+      23,
+      1551,
+      695
+    ],
+    "referenceHeight": 671,
+    "anchor": [
+      217,
+      672
+    ]
+  },
+  "ASSET.ACT.PLAYER/right3": {
+    "url": "/art/er13/player-right-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1711,
+      21,
+      1969,
+      698
+    ],
+    "referenceHeight": 671,
+    "anchor": [
+      140,
+      677
+    ]
+  },
+  "ASSET.ACT.PLAYER/idle-right": {
+    "url": "/art/er13/player-right-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      685,
+      22,
+      957,
+      698
+    ],
+    "referenceHeight": 671,
+    "anchor": [
+      139.5,
+      676
+    ],
+    "mirror": false
+  },
+  "ASSET.ACT.PLAYER/walk-right": {
+    "url": "/art/er13/player-right-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      685,
+      22,
+      957,
+      698
+    ],
+    "referenceHeight": 671,
+    "anchor": [
+      139.5,
+      676
+    ],
+    "mirror": false,
+    "frames": [
+      {
+        "rect": [
+          107,
+          22,
+          533,
+          693
+        ],
+        "anchor": [
+          215,
+          671
+        ]
+      },
+      {
+        "rect": [
+          685,
+          22,
+          957,
+          698
+        ],
+        "anchor": [
+          139.5,
+          676
+        ]
+      },
+      {
+        "rect": [
+          1128,
+          23,
+          1551,
+          695
+        ],
+        "anchor": [
+          217,
+          672
+        ]
+      },
+      {
+        "rect": [
+          1711,
+          21,
+          1969,
+          698
+        ],
+        "anchor": [
+          140,
+          677
+        ]
+      }
+    ]
+  },
+  "ASSET.ACT.PLAYER/carry-right": {
+    "url": "/art/er13/player-right-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      685,
+      22,
+      957,
+      698
+    ],
+    "referenceHeight": 671,
+    "anchor": [
+      139.5,
+      676
+    ],
+    "mirror": false,
+    "frames": [
+      {
+        "rect": [
+          107,
+          22,
+          533,
+          693
+        ],
+        "anchor": [
+          215,
+          671
+        ]
+      },
+      {
+        "rect": [
+          685,
+          22,
+          957,
+          698
+        ],
+        "anchor": [
+          139.5,
+          676
+        ]
+      },
+      {
+        "rect": [
+          1128,
+          23,
+          1551,
+          695
+        ],
+        "anchor": [
+          217,
+          672
+        ]
+      },
+      {
+        "rect": [
+          1711,
+          21,
+          1969,
+          698
+        ],
+        "anchor": [
+          140,
+          677
+        ]
+      }
+    ]
+  },
+  "ASSET.ACT.PLAYER/idle-left": {
+    "url": "/art/er13/player-right-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      685,
+      22,
+      957,
+      698
+    ],
+    "referenceHeight": 671,
+    "anchor": [
+      139.5,
+      676
+    ],
+    "mirror": true
+  },
+  "ASSET.ACT.PLAYER/walk-left": {
+    "url": "/art/er13/player-right-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      685,
+      22,
+      957,
+      698
+    ],
+    "referenceHeight": 671,
+    "anchor": [
+      139.5,
+      676
+    ],
+    "mirror": true,
+    "frames": [
+      {
+        "rect": [
+          107,
+          22,
+          533,
+          693
+        ],
+        "anchor": [
+          215,
+          671
+        ]
+      },
+      {
+        "rect": [
+          685,
+          22,
+          957,
+          698
+        ],
+        "anchor": [
+          139.5,
+          676
+        ]
+      },
+      {
+        "rect": [
+          1128,
+          23,
+          1551,
+          695
+        ],
+        "anchor": [
+          217,
+          672
+        ]
+      },
+      {
+        "rect": [
+          1711,
+          21,
+          1969,
+          698
+        ],
+        "anchor": [
+          140,
+          677
+        ]
+      }
+    ]
+  },
+  "ASSET.ACT.PLAYER/carry-left": {
+    "url": "/art/er13/player-right-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      685,
+      22,
+      957,
+      698
+    ],
+    "referenceHeight": 671,
+    "anchor": [
+      139.5,
+      676
+    ],
+    "mirror": true,
+    "frames": [
+      {
+        "rect": [
+          107,
+          22,
+          533,
+          693
+        ],
+        "anchor": [
+          215,
+          671
+        ]
+      },
+      {
+        "rect": [
+          685,
+          22,
+          957,
+          698
+        ],
+        "anchor": [
+          139.5,
+          676
+        ]
+      },
+      {
+        "rect": [
+          1128,
+          23,
+          1551,
+          695
+        ],
+        "anchor": [
+          217,
+          672
+        ]
+      },
+      {
+        "rect": [
+          1711,
+          21,
+          1969,
+          698
+        ],
+        "anchor": [
+          140,
+          677
+        ]
+      }
+    ]
+  },
+  "ASSET.ACT.PLAYER/front0": {
+    "url": "/art/er13/player-front-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      260,
+      23,
+      502,
+      704
+    ],
+    "referenceHeight": 681,
+    "anchor": [
+      135,
+      681
+    ]
+  },
+  "ASSET.ACT.PLAYER/front1": {
+    "url": "/art/er13/player-front-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      743,
+      22,
+      975,
+      702
+    ],
+    "referenceHeight": 681,
+    "anchor": [
+      126.5,
+      680
+    ]
+  },
+  "ASSET.ACT.PLAYER/front2": {
+    "url": "/art/er13/player-front-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1210,
+      22,
+      1431,
+      701
+    ],
+    "referenceHeight": 681,
+    "anchor": [
+      132,
+      679
+    ]
+  },
+  "ASSET.ACT.PLAYER/front3": {
+    "url": "/art/er13/player-front-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1684,
+      23,
+      1914,
+      703
+    ],
+    "referenceHeight": 681,
+    "anchor": [
+      123,
+      680
+    ]
+  },
+  "ASSET.ACT.PLAYER/idle-front": {
+    "url": "/art/er13/player-front-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      743,
+      22,
+      975,
+      702
+    ],
+    "referenceHeight": 681,
+    "anchor": [
+      126.5,
+      680
+    ],
+    "mirror": false
+  },
+  "ASSET.ACT.PLAYER/walk-front": {
+    "url": "/art/er13/player-front-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      743,
+      22,
+      975,
+      702
+    ],
+    "referenceHeight": 681,
+    "anchor": [
+      126.5,
+      680
+    ],
+    "mirror": false,
+    "frames": [
+      {
+        "rect": [
+          260,
+          23,
+          502,
+          704
+        ],
+        "anchor": [
+          135,
+          681
+        ]
+      },
+      {
+        "rect": [
+          743,
+          22,
+          975,
+          702
+        ],
+        "anchor": [
+          126.5,
+          680
+        ]
+      },
+      {
+        "rect": [
+          1210,
+          22,
+          1431,
+          701
+        ],
+        "anchor": [
+          132,
+          679
+        ]
+      },
+      {
+        "rect": [
+          1684,
+          23,
+          1914,
+          703
+        ],
+        "anchor": [
+          123,
+          680
+        ]
+      }
+    ]
+  },
+  "ASSET.ACT.PLAYER/carry-front": {
+    "url": "/art/er13/player-front-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      743,
+      22,
+      975,
+      702
+    ],
+    "referenceHeight": 681,
+    "anchor": [
+      126.5,
+      680
+    ],
+    "mirror": false,
+    "frames": [
+      {
+        "rect": [
+          260,
+          23,
+          502,
+          704
+        ],
+        "anchor": [
+          135,
+          681
+        ]
+      },
+      {
+        "rect": [
+          743,
+          22,
+          975,
+          702
+        ],
+        "anchor": [
+          126.5,
+          680
+        ]
+      },
+      {
+        "rect": [
+          1210,
+          22,
+          1431,
+          701
+        ],
+        "anchor": [
+          132,
+          679
+        ]
+      },
+      {
+        "rect": [
+          1684,
+          23,
+          1914,
+          703
+        ],
+        "anchor": [
+          123,
+          680
+        ]
+      }
+    ]
+  },
+  "ASSET.ACT.PLAYER/back0": {
+    "url": "/art/er13/player-back-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      178,
+      16,
+      441,
+      709
+    ],
+    "referenceHeight": 693,
+    "anchor": [
+      163,
+      693
+    ]
+  },
+  "ASSET.ACT.PLAYER/back1": {
+    "url": "/art/er13/player-back-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      690,
+      15,
+      944,
+      707
+    ],
+    "referenceHeight": 693,
+    "anchor": [
+      141,
+      692
+    ]
+  },
+  "ASSET.ACT.PLAYER/back2": {
+    "url": "/art/er13/player-back-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1201,
+      15,
+      1464,
+      710
+    ],
+    "referenceHeight": 693,
+    "anchor": [
+      156.5,
+      695
+    ]
+  },
+  "ASSET.ACT.PLAYER/back3": {
+    "url": "/art/er13/player-back-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1717,
+      15,
+      1992,
+      709
+    ],
+    "referenceHeight": 693,
+    "anchor": [
+      94.5,
+      694
+    ]
+  },
+  "ASSET.ACT.PLAYER/idle-back": {
+    "url": "/art/er13/player-back-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      690,
+      15,
+      944,
+      707
+    ],
+    "referenceHeight": 693,
+    "anchor": [
+      141,
+      692
+    ],
+    "mirror": false
+  },
+  "ASSET.ACT.PLAYER/walk-back": {
+    "url": "/art/er13/player-back-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      690,
+      15,
+      944,
+      707
+    ],
+    "referenceHeight": 693,
+    "anchor": [
+      141,
+      692
+    ],
+    "mirror": false,
+    "frames": [
+      {
+        "rect": [
+          178,
+          16,
+          441,
+          709
+        ],
+        "anchor": [
+          163,
+          693
+        ]
+      },
+      {
+        "rect": [
+          690,
+          15,
+          944,
+          707
+        ],
+        "anchor": [
+          141,
+          692
+        ]
+      },
+      {
+        "rect": [
+          1201,
+          15,
+          1464,
+          710
+        ],
+        "anchor": [
+          156.5,
+          695
+        ]
+      },
+      {
+        "rect": [
+          1717,
+          15,
+          1992,
+          709
+        ],
+        "anchor": [
+          94.5,
+          694
+        ]
+      }
+    ]
+  },
+  "ASSET.ACT.PLAYER/carry-back": {
+    "url": "/art/er13/player-back-v2.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      690,
+      15,
+      944,
+      707
+    ],
+    "referenceHeight": 693,
+    "anchor": [
+      141,
+      692
+    ],
+    "mirror": false,
+    "frames": [
+      {
+        "rect": [
+          178,
+          16,
+          441,
+          709
+        ],
+        "anchor": [
+          163,
+          693
+        ]
+      },
+      {
+        "rect": [
+          690,
+          15,
+          944,
+          707
+        ],
+        "anchor": [
+          141,
+          692
+        ]
+      },
+      {
+        "rect": [
+          1201,
+          15,
+          1464,
+          710
+        ],
+        "anchor": [
+          156.5,
+          695
+        ]
+      },
+      {
+        "rect": [
+          1717,
+          15,
+          1992,
+          709
+        ],
+        "anchor": [
+          94.5,
+          694
+        ]
+      }
+    ]
+  },
+  "ASSET.ACT.LOOP/awake": {
+    "url": "/art/er13/loop-awake-v1.png",
+    "frameWidth": 1145,
+    "frameHeight": 1374,
+    "columns": 1,
+    "contentRectPixels": [
+      101,
+      60,
+      1015,
+      1358
+    ],
+    "referenceHeight": 1298,
+    "anchor": [
+      470,
+      1298
+    ]
+  },
+  "ASSET.ACT.LOOP/standby": {
+    "url": "/art/er13/loop-awake-v1.png",
+    "frameWidth": 1145,
+    "frameHeight": 1374,
+    "columns": 1,
+    "contentRectPixels": [
+      101,
+      60,
+      1015,
+      1358
+    ],
+    "referenceHeight": 1298,
+    "anchor": [
+      470,
+      1298
+    ],
+    "mirror": false
+  },
+  "ASSET.ACT.LOOP/following": {
+    "url": "/art/er13/loop-awake-v1.png",
+    "frameWidth": 1145,
+    "frameHeight": 1374,
+    "columns": 1,
+    "contentRectPixels": [
+      101,
+      60,
+      1015,
+      1358
+    ],
+    "referenceHeight": 1298,
+    "anchor": [
+      470,
+      1298
+    ],
+    "mirror": false
+  },
+  "ASSET.ACT.LOOP/docked": {
+    "url": "/art/er13/loop-awake-v1.png",
+    "frameWidth": 1145,
+    "frameHeight": 1374,
+    "columns": 1,
+    "contentRectPixels": [
+      101,
+      60,
+      1015,
+      1358
+    ],
+    "referenceHeight": 1298,
+    "anchor": [
+      470,
+      1298
+    ],
+    "mirror": false
+  },
+  "ASSET.ACT.LOOP/projecting": {
+    "url": "/art/er13/loop-awake-v1.png",
+    "frameWidth": 1145,
+    "frameHeight": 1374,
+    "columns": 1,
+    "contentRectPixels": [
+      101,
+      60,
+      1015,
+      1358
+    ],
+    "referenceHeight": 1298,
+    "anchor": [
+      470,
+      1298
+    ],
+    "mirror": false
+  },
+  "ASSET.ACT.LOOP/rolling-left": {
+    "url": "/art/er13/loop-awake-v1.png",
+    "frameWidth": 1145,
+    "frameHeight": 1374,
+    "columns": 1,
+    "contentRectPixels": [
+      101,
+      60,
+      1015,
+      1358
+    ],
+    "referenceHeight": 1298,
+    "anchor": [
+      470,
+      1298
+    ],
+    "mirror": false
+  },
+  "ASSET.ACT.LOOP/rolling-right": {
+    "url": "/art/er13/loop-awake-v1.png",
+    "frameWidth": 1145,
+    "frameHeight": 1374,
+    "columns": 1,
+    "contentRectPixels": [
+      101,
+      60,
+      1015,
+      1358
+    ],
+    "referenceHeight": 1298,
+    "anchor": [
+      470,
+      1298
+    ],
+    "mirror": true
+  },
+  "ASSET.ACT.LOOP/rolling-front": {
+    "url": "/art/er13/loop-awake-v1.png",
+    "frameWidth": 1145,
+    "frameHeight": 1374,
+    "columns": 1,
+    "contentRectPixels": [
+      101,
+      60,
+      1015,
+      1358
+    ],
+    "referenceHeight": 1298,
+    "anchor": [
+      470,
+      1298
+    ],
+    "mirror": false
+  },
+  "ASSET.ACT.LOOP/rolling-back": {
+    "url": "/art/er13/loop-awake-v1.png",
+    "frameWidth": 1145,
+    "frameHeight": 1374,
+    "columns": 1,
+    "contentRectPixels": [
+      101,
+      60,
+      1015,
+      1358
+    ],
+    "referenceHeight": 1298,
+    "anchor": [
+      470,
+      1298
+    ],
+    "mirror": false
+  },
+  "ASSET.PROP.ST.MODEL.CABINET/base": {
+    "url": "/art/er13/stage-model-cabinet-v2.png",
+    "frameWidth": 1224,
+    "frameHeight": 1285,
+    "columns": 1,
+    "contentRectPixels": [
+      72,
+      94,
+      1153,
+      1162
+    ],
+    "anchor": [
+      541,
+      1068
+    ]
+  },
+  "ASSET.PROP.ST.BOARD/base": {
+    "url": "/art/er13/stage-board-v2.png",
+    "frameWidth": 1672,
+    "frameHeight": 941,
+    "columns": 1,
+    "contentRectPixels": [
+      173,
+      138,
+      1499,
+      802
+    ],
+    "anchor": [
+      662.5,
+      664
+    ]
+  },
+  "ASSET.PROP.ST.CONSOLE/base": {
+    "url": "/art/er13/stage-console-v2.png",
+    "frameWidth": 2097,
+    "frameHeight": 750,
+    "columns": 1,
+    "contentRectPixels": [
+      69,
+      199,
+      2033,
+      539
+    ],
+    "anchor": [
+      979.5,
+      340
+    ]
+  }
+}

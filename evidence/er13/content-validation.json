@@ -1,0 +1,28 @@
+{
+  "checkedAt": "2026-09-12T05:38:40.755Z",
+  "contentSha256": "04a971e36b71aa8e8140adf4b80a1c0e1b76cc99f51670e2291f2eede3e93e14",
+  "checks": [
+    "schema",
+    "all canonical words",
+    "code-point span bounds",
+    "complete refs/owners",
+    "legal geometry anchors",
+    "reciprocal doors",
+    "manifest bindings",
+    "fragment rejection"
+  ],
+  "counts": {
+    "texts": 575,
+    "originalTexts": 553,
+    "existingTileLabelsBound": 4,
+    "sourceRefs": 35,
+    "owners": 107,
+    "legalApproaches": 61,
+    "rooms": 4,
+    "doors": 8,
+    "states": 96,
+    "transitions": 121,
+    "assetUses": 157
+  },
+  "limits": "This transcription/structure check does not establish runtime behavior or full conditional/NPC branch coverage."
+}

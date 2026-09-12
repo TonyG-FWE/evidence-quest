@@ -20,5 +20,5 @@ test('TASK11.07 compact Largest Roomier native navigation and typing retain worl
 test('TASK11.07 injected Canvas failure keeps named controls usable',async({page})=>{
  await page.addInitScript(()=>{HTMLCanvasElement.prototype.getContext=(()=>null) as typeof HTMLCanvasElement.prototype.getContext;});await start(page);
  await expect(page.getByText('This browser couldn’t draw the scene. You can use the room’s named controls and descriptions.')).toBeVisible();
- await go(page,'ST.EXIT.WK','Workshop');await go(page,'WK.EXIT.MD','Media');await target(page,'MD.ACCESS.E8');await settled(page);await expect(page.getByRole('button',{name:'Collect story tiles',exact:true})).toBeVisible();
+ await go(page,'ST.EXIT.WK','Workshop');await go(page,'WK.EXIT.MD','Media room');await target(page,'MD.ACCESS.E8');await settled(page);await expect(page.getByRole('button',{name:'Collect story tiles',exact:true})).toBeVisible();
 });

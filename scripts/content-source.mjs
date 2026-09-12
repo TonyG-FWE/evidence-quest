@@ -1,5 +1,6 @@
 import {readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
+import {corrected} from './er13-copy.mjs';
 export const design='docs/design/evidence-quest-design-v3/';
 export const json=async path=>JSON.parse(await readFile(path,'utf8'));
 export const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
@@ -29,5 +30,5 @@ export async function readCanonical() {
   const missing=expected.filter(id=>!found.has(id));
   const extra=[...found.keys()].filter(id=>!expected.includes(id));
   if(missing.length||extra.length) throw new Error(`Canonical catalog mismatch ${JSON.stringify({missing,extra})}`);
-  return {entries:[...found.values()],registry,source};
+  return {entries:corrected([...found.values()]),registry,source};
 }
