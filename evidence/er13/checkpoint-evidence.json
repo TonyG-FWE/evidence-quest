@@ -1,5 +1,5 @@
 {
-  "recordedAt": "2026-09-12T05:52:14.186Z",
+  "recordedAt": "2026-09-12T06:33:46.618Z",
   "phase": "ER13_IMPLEMENTATION_CHECKPOINT",
   "experienceAcceptance": "PENDING_REMAINING_ART_AND_FINAL_NATIVE_REVIEW",
   "basis": "Retained reports from successive correction builds; latest results per named check are a union, not one full-suite run on a single final revision.",
@@ -1152,6 +1152,83 @@
           "attempts": 1
         }
       ]
+    },
+    {
+      "file": "evidence/er13/art-batch3-model-story-pass.json",
+      "sha256": "32c7d3a2d11101605a8deebb567bfa75e7dc848aae8c4532d55fdf1082f8f6e1",
+      "stats": {
+        "startTime": "2026-09-12T06:07:15.265Z",
+        "duration": 26903.04,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "outcomes": [
+        {
+          "file": "er13.spec.ts",
+          "title": "ER13 physical model gives a readable consequence and reachable big-screen action at laptop size",
+          "project": "chromium",
+          "status": "passed",
+          "attempts": 1
+        },
+        {
+          "file": "er13.spec.ts",
+          "title": "ER13 seed-only pause keeps the whole consequence visible and permits a revised premiere",
+          "project": "chromium",
+          "status": "passed",
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "file": "evidence/er13/art-batch4-toast-pass.json",
+      "sha256": "bfee76d9d5b9ba33b2d1aa5581701c3b14f38824b4b760adc009dfd24e56aade",
+      "stats": {
+        "startTime": "2026-09-12T06:26:30.987Z",
+        "duration": 19032.352,
+        "expected": 1,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "outcomes": [
+        {
+          "file": "sources-payoff.spec.ts",
+          "title": "TASK11.13 Maximum Toast can be ignored, canceled, revealed, interrupted, magnified and replayed",
+          "project": "chromium",
+          "status": "passed",
+          "attempts": 1
+        }
+      ]
+    },
+    {
+      "file": "evidence/er13/art-batch4-model-story-pass.json",
+      "sha256": "273c409cd21578034e99244433da603ab6dfb0763a18d7a69605ab7f6b0e443a",
+      "stats": {
+        "startTime": "2026-09-12T06:31:55.654Z",
+        "duration": 26902.343,
+        "expected": 2,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "outcomes": [
+        {
+          "file": "er13.spec.ts",
+          "title": "ER13 physical model gives a readable consequence and reachable big-screen action at laptop size",
+          "project": "chromium",
+          "status": "passed",
+          "attempts": 1
+        },
+        {
+          "file": "er13.spec.ts",
+          "title": "ER13 seed-only pause keeps the whole consequence visible and permits a revised premiere",
+          "project": "chromium",
+          "status": "passed",
+          "attempts": 1
+        }
+      ]
     }
   ],
   "latestOutcomes": [
@@ -1458,8 +1535,8 @@
       "project": "chromium",
       "status": "passed",
       "attempts": 1,
-      "evidence": "evidence/er13/full-regression-first.json",
-      "runStarted": "2026-09-12T04:40:09.328Z"
+      "evidence": "evidence/er13/art-batch4-toast-pass.json",
+      "runStarted": "2026-09-12T06:26:30.987Z"
     },
     {
       "file": "sources-payoff.spec.ts",
@@ -1611,8 +1688,8 @@
       "project": "chromium",
       "status": "passed",
       "attempts": 1,
-      "evidence": "evidence/er13/http-model-narrator-pass.json",
-      "runStarted": "2026-09-12T05:07:19.194Z"
+      "evidence": "evidence/er13/art-batch4-model-story-pass.json",
+      "runStarted": "2026-09-12T06:31:55.654Z"
     },
     {
       "file": "er13.spec.ts",
@@ -1818,8 +1895,8 @@
       "project": "chromium",
       "status": "passed",
       "attempts": 1,
-      "evidence": "evidence/er13/seed-and-focus-pass.json",
-      "runStarted": "2026-09-12T05:33:45.744Z"
+      "evidence": "evidence/er13/art-batch4-model-story-pass.json",
+      "runStarted": "2026-09-12T06:31:55.654Z"
     }
   ],
   "latestSummary": {
@@ -1960,8 +2037,8 @@
     },
     {
       "path": "content/illustrated-assets.json",
-      "bytes": 24947,
-      "sha256": "3922279dc41b4645b14c1985b27b1a5b0b89d083df3137435c207df63572f692"
+      "bytes": 28967,
+      "sha256": "64f2685c5cfceda0cf174ab8f13ab0383ae6ae594909444c47e9fe6c93f99d25"
     },
     {
       "path": "content/native-assets.json",
@@ -2075,8 +2152,8 @@
     },
     {
       "path": "scripts/import-er13-art.mjs",
-      "bytes": 2778,
-      "sha256": "59daa3e3e28194e721246daffec3af7e1741c656a30eab28f7013eec53ace10d"
+      "bytes": 3705,
+      "sha256": "bd44ea86f3728d6355dfa9efc1d126bc4d62f486c89a5980d65e52889464b059"
     },
     {
       "path": "scripts/measure-temporary-budget.mjs",
@@ -2335,13 +2412,13 @@
     },
     {
       "path": "src/world/assets.ts",
-      "bytes": 3230,
-      "sha256": "084531de7df04873c6dbb3600aeb0f71045d7195670954f9741307f0d542df60"
+      "bytes": 3220,
+      "sha256": "ebab2afef9aa08d51343d54935eb67041445dc9cd3dafc6745945d76a672732f"
     },
     {
       "path": "src/world/paint.ts",
-      "bytes": 12577,
-      "sha256": "51508d761f3fdb898cbb17bd206c4328e5f35813aa501658d47207f7c7376474"
+      "bytes": 15128,
+      "sha256": "69ae4e6b05e7cf8ac18acb49581d7209590c688a4d96017127511b58142139ba"
     },
     {
       "path": "tsconfig.base.json",

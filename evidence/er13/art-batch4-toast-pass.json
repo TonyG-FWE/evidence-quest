@@ -4,9 +4,9 @@
       "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe",
       "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\node_modules\\@playwright\\test\\cli.js",
       "test",
-      "browser-tests/er13.spec.ts",
+      "browser-tests/sources-payoff.spec.ts",
       "--grep",
-      "physical model|seed-only pause"
+      "Maximum Toast"
     ],
     "configFile": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\playwright.config.ts",
     "rootDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
@@ -80,13 +80,13 @@
   },
   "suites": [
     {
-      "title": "er13.spec.ts",
-      "file": "er13.spec.ts",
+      "title": "sources-payoff.spec.ts",
+      "file": "sources-payoff.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "ER13 physical model gives a readable consequence and reachable big-screen action at laptop size",
+          "title": "TASK11.13 Maximum Toast can be ignored, canceled, revealed, interrupted, magnified and replayed",
           "ok": true,
           "tags": [],
           "tests": [
@@ -101,12 +101,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 8363,
+                  "duration": 17548,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-09-12T06:31:56.547Z",
+                  "startTime": "2026-09-12T06:26:31.868Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -114,43 +114,9 @@
               "status": "expected"
             }
           ],
-          "id": "d84d1a3c2dfabe2f9454-5c878bacc85cfd05a158",
-          "file": "er13.spec.ts",
-          "line": 35,
-          "column": 1
-        },
-        {
-          "title": "ER13 seed-only pause keeps the whole consequence visible and permits a revised premiere",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 17149,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-09-12T06:32:05.005Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "d84d1a3c2dfabe2f9454-3920a69d69a7f09d44d8",
-          "file": "er13.spec.ts",
-          "line": 61,
+          "id": "6f5ed2f13cdb27721426-dfa14b2556a1d4133743",
+          "file": "sources-payoff.spec.ts",
+          "line": 17,
           "column": 1
         }
       ]
@@ -158,9 +124,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-09-12T06:31:55.654Z",
-    "duration": 26902.343,
-    "expected": 2,
+    "startTime": "2026-09-12T06:26:30.987Z",
+    "duration": 19032.352,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

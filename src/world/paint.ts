@@ -21,7 +21,16 @@ export function paintStory(ctx:CanvasRenderingContext2D,a:Assets,committed:Puppe
  ctx.save();ctx.beginPath();ctx.rect(area[0],area[1],area[2]-area[0],area[3]-area[1]);ctx.clip();
  ctx.translate(area[0],area[1]);ctx.scale((area[2]-area[0])/100,(area[3]-area[1])/100);ctx.fillStyle='#DCECEF';ctx.fillRect(0,0,100,100);
  const draw=(id:string,r:Rect,v='base')=>['PIP','GRANDMA','BACKPACK','SEED','FLOWER','ROOTS','BOAT','BROKEN_BRIDGE'].includes(id)?a.drawContained(ctx,'ASSET.PUP.'+id,r,v):a.draw(ctx,'ASSET.PUP.'+id,r,v);
- draw('LEFT_BANK',[0,56,35,100]);draw('RIVER',[35,59,65,100]);draw('HILL',[65,38,100,100]);
+ a.draw(ctx,'ER13.MATERIAL.PAPER',[0,0,100,100],'sky');
+ // Material is clipped to the exact original paper-cut vertices and bounds.
+ const paper=(id:string,rect:Rect,material:string,points:Point[])=>{
+  draw(id,rect);ctx.save();ctx.beginPath();
+  points.forEach(([x,y],i)=>{const px=rect[0]+x/100*(rect[2]-rect[0]),py=rect[1]+y/100*(rect[3]-rect[1]);if(i)ctx.lineTo(px,py);else ctx.moveTo(px,py);});
+  ctx.closePath();ctx.clip();a.draw(ctx,'ER13.MATERIAL.PAPER',rect,material);ctx.restore();
+ };
+ paper('LEFT_BANK',[0,56,35,100],'grass',[[0,20],[26,3],[57,12],[100,18],[100,100],[0,100]]);
+ paper('RIVER',[35,59,65,100],'river',[[0,8],[35,13],[65,3],[100,8],[100,100],[0,100]]);
+ paper('HILL',[65,38,100,100],'grass',[[0,50],[32,22],[59,4],[100,0],[100,100],[0,100]]);
  draw('BROKEN_BRIDGE',[29.5,68,38.5,76],'left');draw('BROKEN_BRIDGE',[61.5,68,70.5,76],'right');
  if(cue?.tile==='TILE.FERRY'&&cue.result==='changed'){
   const t=progress(150,950),boatX=29+58*t,boatY=81-15*t;
@@ -37,9 +46,40 @@ export function paintStory(ctx:CanvasRenderingContext2D,a:Assets,committed:Puppe
  draw('BACKPACK',[bagX-4*aspect,bagY-7,bagX+4*aspect,bagY+4]);
  a.drawContained(ctx,'ASSET.PUP.PIP',translate([-8,-28,8,0],pip),cue?.tile==='TILE.BRIDGE'&&cue.result==='changed'?'crossing':p.pip==='left'?'waiting':planting?'planting':'arrived',0,pip);
  a.drawContained(ctx,'ASSET.PUP.GRANDMA',[81,37,96,65],planting?'planting':p.pip==='right'?'together':p.seed==='right'?'receiving':'waiting',0,[88,65]);
- if(p.seed==='soil')draw('ROOTS',[77.5,64,88.5,76]);else draw('SEED',[seedX-2.5,seedY-3.5,seedX+2.5,seedY+3.5]);
+ if(p.seed==='soil'){
+  if(illustration('ASSET.PUP.ROOTS')){ctx.fillStyle='#805839';ctx.beginPath();ctx.ellipse(83,66,4,.9,0,0,Math.PI*2);ctx.fill();}
+  draw('ROOTS',[77.5,66,88.5,78]);
+ }else draw('SEED',[seedX-2.5,seedY-3.5,seedX+2.5,seedY+3.5]);
  if(p.lit){const glow=ctx.createRadialGradient(83,22,1,83,22,80);glow.addColorStop(0,'#F3C65C3D');glow.addColorStop(1,'#F3C65C00');ctx.fillStyle=glow;ctx.fillRect(0,0,100,100);}
  ctx.restore();
+}
+function paintToast(ctx:CanvasRenderingContext2D,s:State,a:Assets){
+ const elapsed=s.runtime.toastElapsed,revealed=s.case.physical.objects.toastRevealed;
+ const animated=elapsed!==null&&s.preferences.motion!=='reduced',first=animated&&!s.runtime.toastReplay;
+ const progress=(from:number,to:number)=>Math.max(0,Math.min(1,((elapsed??to)-from)/(to-from)));
+ const lift=!revealed?0:first?progress(200,2800):1;
+ const flourish=animated&&s.runtime.toastReplay?Math.sin(progress(0,2000)*Math.PI*2)*.6:0;
+ const draw=(part:string,rect:Rect)=>a.drawContained(ctx,'ASSET.PROP.TOAST.'+part,rect);
+ // The accepted body includes its own table. The cover and mechanisms remain separate.
+ draw('BODY',[80,9,110,46]);
+ if(animated)for(const [index,color]of ['#ffcf57','#51df94','#ff947c'].entries()){
+  ctx.save();ctx.globalAlpha=.2+.4*(1+Math.sin(elapsed/300-index*1.5))/2;ctx.fillStyle=color;ctx.shadowColor=color;ctx.shadowBlur=1.5;
+  ctx.beginPath();ctx.arc(91.2+index*3.8,32.7,.8,0,Math.PI*2);ctx.fill();ctx.restore();
+ }
+ if(revealed&&(!first||elapsed>=3000)){
+  draw('TRAY',[85.5,26.2,104.5,30.8]);
+  draw('PIECE',[94,26.5,96,28]);
+ }
+ draw('LID',[81.5,11-12*lift+flourish,108.5,29-12*lift+flourish]);
+ for(const mirror of [false,true]){
+  ctx.save();if(mirror){ctx.translate(190,0);ctx.scale(-1,1);}
+  const height=9+11*lift-flourish;
+  a.drawContained(ctx,'ASSET.PROP.TOAST.ARM',[80,35-height,96,35],'base',0,[82,35]);ctx.restore();
+ }
+ if(revealed&&(!first||elapsed>=5000)){
+  const lower=first?progress(5000,7000):1;
+  draw('GLASS',[92,9+10*lower,103,22+10*lower]);
+ }
 }
 export function paintWorld(ctx:CanvasRenderingContext2D,s:State,a:Assets){
  const p=s.case.physical,room=p.room;
@@ -47,6 +87,7 @@ export function paintWorld(ctx:CanvasRenderingContext2D,s:State,a:Assets){
  const all=manifest.bindings.filter(b=>b.coordinateSpace==='room'&&b.assetUse.manifestAssetId&&ownerRoom(s.case,b.assetUse.ownerId)===room&&!/^(ACT|KIT|TILE|PUP|MODEL)\./.test(b.assetUse.ownerId)&&!b.assetUse.ownerId.startsWith('ST.RAIL.')&&(b.assetUse.role!=='background'||b.assetUse.manifestAssetId==='ASSET.ENV.DOOR'));
  for(const b of all){
   const id=b.assetUse.manifestAssetId!,owner=b.assetUse.ownerId;if(!manifest.assets.some(x=>x.id===id))continue;
+  if(id.startsWith('ASSET.PROP.TOAST.')&&illustration('ASSET.PROP.TOAST.BODY'))continue;
   if(owner==='WK.ACCESS.NAV')continue; // The readable face belongs to the one sign frame.
   if(id==='ASSET.PROP.PETAL'){
    const r=b.assetUse.logicalBounds as Rect;
@@ -74,6 +115,7 @@ export function paintWorld(ctx:CanvasRenderingContext2D,s:State,a:Assets){
   else if(illustration(id,variant))a.drawContained(ctx,id,b.assetUse.logicalBounds as Rect,variant);
   else a.draw(ctx,id,b.assetUse.logicalBounds as Rect,variant);
  }
+ if(room==='SC.WK'&&illustration('ASSET.PROP.TOAST.BODY'))paintToast(ctx,s,a);
  if(room==='SC.ST'){
   // A separate physical screen is required when the painted room has an empty wall.
   ctx.save();ctx.shadowColor='#51351f44';ctx.shadowBlur=1.5;ctx.shadowOffsetY=.6;

@@ -12,7 +12,7 @@ export class Assets {
  image(id:string,variant='base',density=1){
   const original=manifest.exports.find(e=>e.assetId===id&&e.variantId===id+'/'+variant&&e.density===density)??manifest.exports.find(e=>e.assetId===id&&e.density===1);
   const replacement=replacements[id+'/'+variant];
-  const entry=original&&replacement?{...original,...replacement,density:1}:original;
+  const entry=replacement?{...original,...replacement,density:1}:original;
   if(!entry||this.failed.has(entry.url))return null;
   let image=this.images.get(entry.url);
   if(!image){image=new Image();this.images.set(entry.url,image);image.onload=this.changed;image.onerror=()=>{this.failed.add(entry.url);this.fail();};image.src=entry.url;}

@@ -4,7 +4,7 @@
       "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe",
       "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\node_modules\\@playwright\\test\\cli.js",
       "test",
-      "browser-tests/er13.spec.ts",
+      "er13.spec.ts",
       "--grep",
       "physical model|seed-only pause"
     ],
@@ -101,12 +101,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 8363,
+                  "duration": 8207,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-09-12T06:31:56.547Z",
+                  "startTime": "2026-09-12T06:07:16.088Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -135,12 +135,12 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 17149,
+                  "duration": 17286,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-09-12T06:32:05.005Z",
+                  "startTime": "2026-09-12T06:07:24.398Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -158,8 +158,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-09-12T06:31:55.654Z",
-    "duration": 26902.343,
+    "startTime": "2026-09-12T06:07:15.265Z",
+    "duration": 26903.04,
     "expected": 2,
     "skipped": 0,
     "unexpected": 0,

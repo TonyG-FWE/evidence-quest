@@ -1,0 +1,1507 @@
+{
+  "status": "ACCEPTED_FOR_INTEGRATION; native scene review still required",
+  "assets": [
+    {
+      "name": "jo-poses-v1",
+      "key": "eq_art_jo_atlas",
+      "assetId": "ASSET.ACT.JO",
+      "columns": 4,
+      "rows": 1,
+      "poses": [
+        "idle",
+        "explain",
+        "thoughtful",
+        "celebrate"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-a6709f9a-7092-4ddb-adef-f9a136a807c7.png",
+      "prompt": null,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "frames": [
+        {
+          "pose": "idle",
+          "sourceRect": [
+            229,
+            13,
+            277,
+            696
+          ],
+          "feetInSource": [
+            364.5,
+            709
+          ],
+          "feetInCrop": [
+            135.5,
+            696
+          ]
+        },
+        {
+          "pose": "explain",
+          "sourceRect": [
+            620,
+            11,
+            380,
+            698
+          ],
+          "feetInSource": [
+            859,
+            709
+          ],
+          "feetInCrop": [
+            239,
+            698
+          ]
+        },
+        {
+          "pose": "thoughtful",
+          "sourceRect": [
+            1181,
+            24,
+            266,
+            684
+          ],
+          "feetInSource": [
+            1314,
+            708
+          ],
+          "feetInCrop": [
+            133,
+            684
+          ]
+        },
+        {
+          "pose": "celebrate",
+          "sourceRect": [
+            1587,
+            11,
+            369,
+            697
+          ],
+          "feetInSource": [
+            1737,
+            708
+          ],
+          "feetInCrop": [
+            150,
+            697
+          ]
+        }
+      ],
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\jo-poses-v1.png",
+      "sha256": "776ad18264662f6bd4860d0ba0c8c486d052fdb08dd9de43fd495f9ea33c5aa5",
+      "referenceStandingHeightPixels": 696,
+      "grid": "explicit rectangles; not uniform grid"
+    },
+    {
+      "name": "ari-poses-v1",
+      "key": "eq_art_ari_atlas",
+      "assetId": "ASSET.ACT.ARI",
+      "columns": 4,
+      "rows": 1,
+      "poses": [
+        "idle",
+        "explain",
+        "thoughtful",
+        "celebrate"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-76bb9a97-581c-4ded-996f-71c883936998.png",
+      "prompt": null,
+      "width": 2172,
+      "height": 724,
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "frames": [
+        {
+          "pose": "idle",
+          "sourceRect": [
+            183,
+            23,
+            285,
+            682
+          ],
+          "feetInSource": [
+            325,
+            705
+          ],
+          "feetInCrop": [
+            142,
+            682
+          ]
+        },
+        {
+          "pose": "explain",
+          "sourceRect": [
+            634,
+            23,
+            372,
+            680
+          ],
+          "feetInSource": [
+            843,
+            703
+          ],
+          "feetInCrop": [
+            209,
+            680
+          ]
+        },
+        {
+          "pose": "thoughtful",
+          "sourceRect": [
+            1203,
+            34,
+            280,
+            672
+          ],
+          "feetInSource": [
+            1343,
+            706
+          ],
+          "feetInCrop": [
+            140,
+            672
+          ]
+        },
+        {
+          "pose": "celebrate",
+          "sourceRect": [
+            1687,
+            17,
+            363,
+            687
+          ],
+          "feetInSource": [
+            1841.5,
+            704
+          ],
+          "feetInCrop": [
+            154.5,
+            687
+          ]
+        }
+      ],
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\ari-poses-v1.png",
+      "sha256": "3f55f68ceb5dd45558fe2075c973fe9ac1c8e4617d4055b73299afdede64ce4f",
+      "referenceStandingHeightPixels": 682,
+      "grid": "explicit rectangles; not uniform grid"
+    },
+    {
+      "name": "remy-poses-v2",
+      "key": "eq_art_remy_alpha_v2",
+      "assetId": "ASSET.ACT.REMY",
+      "columns": 4,
+      "rows": 1,
+      "poses": [
+        "idle",
+        "explain",
+        "thoughtful",
+        "celebrate"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-10fef640-eefe-483d-a7dd-10c2c87bdc72.png",
+      "prompt": "Use case: background-extraction. Remove the entire backdrop and isolate all four Remy figures in a transparent PNG. Preserve the exact four characters, positions, scale, colors and 2172x724 canvas. Deliver an RGBA PNG with alpha=0 everywhere outside the character silhouettes, including gaps between arms and body. This is an actual game asset cutout. No change to the character drawings.",
+      "width": 2170,
+      "height": 725,
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "frames": [
+        {
+          "pose": "idle",
+          "sourceRect": [
+            196,
+            14,
+            266,
+            699
+          ],
+          "feetInSource": [
+            329,
+            713
+          ],
+          "feetInCrop": [
+            133,
+            699
+          ]
+        },
+        {
+          "pose": "explain",
+          "sourceRect": [
+            629,
+            17,
+            371,
+            697
+          ],
+          "feetInSource": [
+            864.5,
+            714
+          ],
+          "feetInCrop": [
+            235.5,
+            697
+          ]
+        },
+        {
+          "pose": "thoughtful",
+          "sourceRect": [
+            1233,
+            15,
+            268,
+            699
+          ],
+          "feetInSource": [
+            1367,
+            714
+          ],
+          "feetInCrop": [
+            134,
+            699
+          ]
+        },
+        {
+          "pose": "celebrate",
+          "sourceRect": [
+            1694,
+            19,
+            395,
+            694
+          ],
+          "feetInSource": [
+            1846.5,
+            713
+          ],
+          "feetInCrop": [
+            152.5,
+            694
+          ]
+        }
+      ],
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\remy-poses-v2.png",
+      "sha256": "06dd4fb59d3961a1a83c59b9e6507596a1e7be4abdf864a6fdeaf59138816b97",
+      "referenceStandingHeightPixels": 699,
+      "grid": "explicit rectangles; not uniform grid"
+    },
+    {
+      "name": "pip-poses-v1",
+      "key": "eq_art_pip_atlas",
+      "assetId": "ASSET.PUP.PIP",
+      "columns": 4,
+      "rows": 1,
+      "poses": [
+        "waiting",
+        "crossing",
+        "planting",
+        "arrived"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-9279d922-1ea8-4f40-8537-54f36441a08a.png",
+      "prompt": "Use case: identity-preserve. Actual transparent PNG production animation cutouts for PIP, the paper puppet child second from the right in the reference, NOT the flesh-and-blood boy at the left. Paper-cut character with warm brown kraft-paper face, angular black layered paper hair, round eyes, blush cheeks, teal paper tunic, navy paper trousers, teal paper shoes and obvious handmade torn/folded paper texture. Omit the red backpack entirely because it will be a separate attached game layer. ONE wide 3:1 sheet, four equally spaced full-body poses: 1 waiting, slightly facing right, 2 rightward walking with alternating leg step, 3 kneeling and reaching both hands down to plant, 4 upright happy arrival with arms slightly open. Same character scale and ground baseline. Each full silhouette separated by wide transparent gaps. No scenery, soil, boat, seed or shadow. Rich textured papercraft quality exactly matching the reference puppet, no smooth human skin or geometric placeholder. Output transparent RGBA PNG cutouts.",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "frames": [
+        {
+          "pose": "waiting",
+          "sourceRect": [
+            73,
+            76,
+            331,
+            584
+          ],
+          "feetInSource": [
+            231.5,
+            660
+          ],
+          "feetInCrop": [
+            158.5,
+            584
+          ]
+        },
+        {
+          "pose": "crossing",
+          "sourceRect": [
+            616,
+            77,
+            348,
+            581
+          ],
+          "feetInSource": [
+            788,
+            658
+          ],
+          "feetInCrop": [
+            172,
+            581
+          ]
+        },
+        {
+          "pose": "planting",
+          "sourceRect": [
+            1124,
+            187,
+            440,
+            465
+          ],
+          "feetInSource": [
+            1321.5,
+            652
+          ],
+          "feetInCrop": [
+            197.5,
+            465
+          ]
+        },
+        {
+          "pose": "arrived",
+          "sourceRect": [
+            1660,
+            54,
+            439,
+            606
+          ],
+          "feetInSource": [
+            1885,
+            660
+          ],
+          "feetInCrop": [
+            225,
+            606
+          ]
+        }
+      ],
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\pip-poses-v1.png",
+      "sha256": "db99b2243a8ab537f08a343b2d453a425bfb5f0803fb266c55886b8ef44c9ef2",
+      "referenceStandingHeightPixels": 584,
+      "grid": "explicit rectangles; not uniform grid"
+    },
+    {
+      "name": "grandma-poses-v1",
+      "key": "eq_art_grandma_atlas",
+      "assetId": "ASSET.PUP.GRANDMA",
+      "columns": 4,
+      "rows": 1,
+      "poses": [
+        "waiting",
+        "receiving",
+        "planting",
+        "together"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-d2fa743c-0264-4e23-a542-58fd3dac73d0.png",
+      "prompt": "Use case: identity-preserve. Actual transparent PNG production animation cutouts for GRANDMA, the far-right handmade paper puppet in the reference. Brown kraft-paper face, white scalloped paper hair, warm smile, coral paper cardigan with cream center, purple paper skirt, teal paper shoes, layered fiber and paper-cut texture. ONE wide 3:1 sprite sheet with four equally spaced full-body poses and same scale/ground baseline: 1 waiting and looking left, 2 reaching gently left to receive a seed, 3 bending/kneeling and reaching hands down to plant together, 4 smiling celebration with one arm raised. Do not include the seed, another character, soil or scenery: these are separate game layers. Rich warm papercraft shading and delicate cut edges, consistent identity. Transparent RGBA PNG cutouts, clear gaps, no background or labels.",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGBA",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "frames": [
+        {
+          "pose": "waiting",
+          "sourceRect": [
+            103,
+            30,
+            314,
+            649
+          ],
+          "feetInSource": [
+            245,
+            679
+          ],
+          "feetInCrop": [
+            142,
+            649
+          ]
+        },
+        {
+          "pose": "receiving",
+          "sourceRect": [
+            535,
+            35,
+            442,
+            640
+          ],
+          "feetInSource": [
+            828,
+            675
+          ],
+          "feetInCrop": [
+            293,
+            640
+          ]
+        },
+        {
+          "pose": "planting",
+          "sourceRect": [
+            1080,
+            147,
+            458,
+            520
+          ],
+          "feetInSource": [
+            1385,
+            667
+          ],
+          "feetInCrop": [
+            305,
+            520
+          ]
+        },
+        {
+          "pose": "together",
+          "sourceRect": [
+            1652,
+            29,
+            458,
+            649
+          ],
+          "feetInSource": [
+            1855.5,
+            678
+          ],
+          "feetInCrop": [
+            203.5,
+            649
+          ]
+        }
+      ],
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\grandma-poses-v1.png",
+      "sha256": "23eba9c9f15c82c3566206da92c1c6401e78172f825faafd976bd6c21e0f17a8",
+      "referenceStandingHeightPixels": 649,
+      "grid": "explicit rectangles; not uniform grid"
+    },
+    {
+      "name": "courtyard-backplate-v1",
+      "key": "eq_art_cy_bg",
+      "assetId": "ASSET.ENV.CY.BACKPLATE",
+      "columns": 1,
+      "rows": 1,
+      "poses": [
+        "base"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-492451ec-45d8-4c62-8dbc-5f22c71512ff.png",
+      "prompt": "Use case: precise-object-edit. Edit the provided reference into ONE empty environment backplate for the actual 2D game, preserving the 3:2 composition, fixed straight-on slightly elevated camera, warm sunlight, sophisticated painterly wood grain and natural material texture. REMOVE ALL people, robots, furniture, machines, notes, screens, movable objects, signs, UI, text and exit-marker panels. Paint clean matching room surfaces where removed. The lower roughly two thirds is open walkable wooden floor. No placeholder shapes, no new objects, no embedded source information. Keep the environmental mood and fine visual quality, not a simplified vector facsimile. Opaque full-bleed bitmap, 1536x1024 or higher 3:2. This is an environment layer; runtime supplies every independent prop and actor. Courtyard: preserve open blue sky and lush green treetops above the low cream parapet, deck boards, realistic dappled sunshine, plants at far corners. Remove hanging orange paper ornaments because moving paper props will be separate. Keep a subtle bunting cord if present but no notice or lettering. Preserve the parapet/deck junction about one-third down.",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\courtyard-backplate-v1.png",
+      "sha256": "69924b81614e0ae2dd77faffd370d22284560bcc0d2777b6d7bf174f843bffc1",
+      "sourceRect": [
+        0,
+        0,
+        1536,
+        1024
+      ]
+    },
+    {
+      "name": "workshop-backplate-v1",
+      "key": "eq_art_wk_bg",
+      "assetId": "ASSET.ENV.WK.BACKPLATE",
+      "columns": 1,
+      "rows": 1,
+      "poses": [
+        "base"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-c821b432-3a5d-40b9-9a99-a42c4bc6aa52.png",
+      "prompt": "Use case: precise-object-edit. Edit the provided reference into ONE empty environment backplate for the actual 2D game, preserving the 3:2 composition, fixed straight-on slightly elevated camera, warm sunlight, sophisticated painterly wood grain and natural material texture. REMOVE ALL people, robots, furniture, machines, notes, screens, movable objects, signs, UI, text and exit-marker panels. Paint clean matching room surfaces where removed. The lower roughly two thirds is open walkable wooden floor. No placeholder shapes, no new objects, no embedded source information. Keep the environmental mood and fine visual quality, not a simplified vector facsimile. Opaque full-bleed bitmap, 1536x1024 or higher 3:2. This is an environment layer; runtime supplies every independent prop and actor. Workshop: retain the warm wooden workshop walls/floor, hanging plants, high shelves of noninteractive craft supplies, and tasteful colorful bunting only at the top edge. Remove the central doorway too and replace it with a continuous matching warm wall: the doorway is a separate asset. No workbench, no paper landscape, no toaster machine, no poster letters, no foreground crates. Keep shadows coherent.",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\workshop-backplate-v1.png",
+      "sha256": "ae969f6cf52eb634ec7e0562bd2b3498f8372c09d5cca7c29276c238a6f4284f",
+      "sourceRect": [
+        0,
+        0,
+        1536,
+        1024
+      ]
+    },
+    {
+      "name": "media-backplate-v1",
+      "key": "eq_art_md_bg",
+      "assetId": "ASSET.ENV.MD.BACKPLATE",
+      "columns": 1,
+      "rows": 1,
+      "poses": [
+        "base"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-b7b3902a-8399-46b8-aa18-b93398e10f4f.png",
+      "prompt": "Use case: precise-object-edit. Edit the provided reference into ONE empty environment backplate for the actual 2D game, preserving the 3:2 composition, fixed straight-on slightly elevated camera, warm sunlight, sophisticated painterly wood grain and natural material texture. REMOVE ALL people, robots, furniture, machines, notes, screens, movable objects, signs, UI, text and exit-marker panels. Paint clean matching room surfaces where removed. The lower roughly two thirds is open walkable wooden floor. No placeholder shapes, no new objects, no embedded source information. Keep the environmental mood and fine visual quality, not a simplified vector facsimile. Opaque full-bleed bitmap, 1536x1024 or higher 3:2. This is an environment layer; runtime supplies every independent prop and actor. Media room: preserve the left window and upper-left trailing plant, broad EMPTY PLAIN cream wall for filming, wooden lower wall/floor and sunny light from left. Remove the big wall frame, recording table, stand, notes, caddy and all exit panels. The plain wall must really be plain. No extra scenery or animation result.",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\media-backplate-v1.png",
+      "sha256": "23b739d71cec7673d7402d2103aec3d73780a3a852031d775e48ce704c7bc96c",
+      "sourceRect": [
+        0,
+        0,
+        1536,
+        1024
+      ]
+    },
+    {
+      "name": "player-right-v2",
+      "key": "eq_art_player_right_alpha",
+      "assetId": "ASSET.ACT.PLAYER",
+      "columns": 4,
+      "rows": 1,
+      "poses": [
+        "right0",
+        "right1",
+        "right2",
+        "right3"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-08ee3e92-17bb-45fb-9d9f-fce5ea64b784.png",
+      "prompt": "Use case: background-extraction. Remove the entire backdrop and isolate all four child figures in a transparent PNG. Preserve the exact figures, positions, scale, and colors. Deliver an RGBA PNG with alpha=0 everywhere outside the character silhouettes, including gaps between arms, legs and body. This is an actual game asset cutout. No change to the character drawings.",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGBA",
+      "frames": [
+        {
+          "pose": "right0",
+          "sourceRect": [
+            107,
+            22,
+            426,
+            671
+          ],
+          "feetInSource": [
+            322,
+            693
+          ],
+          "feetInCrop": [
+            215,
+            671
+          ]
+        },
+        {
+          "pose": "right1",
+          "sourceRect": [
+            685,
+            22,
+            272,
+            676
+          ],
+          "feetInSource": [
+            824.5,
+            698
+          ],
+          "feetInCrop": [
+            139.5,
+            676
+          ]
+        },
+        {
+          "pose": "right2",
+          "sourceRect": [
+            1128,
+            23,
+            423,
+            672
+          ],
+          "feetInSource": [
+            1345,
+            695
+          ],
+          "feetInCrop": [
+            217,
+            672
+          ]
+        },
+        {
+          "pose": "right3",
+          "sourceRect": [
+            1711,
+            21,
+            258,
+            677
+          ],
+          "feetInSource": [
+            1851,
+            698
+          ],
+          "feetInCrop": [
+            140,
+            677
+          ]
+        }
+      ],
+      "referenceStandingHeightPixels": 671,
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "grid": "use explicit source rectangles",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\player-right-v2.png",
+      "sha256": "262ce6f0129bef61f0fe354657414cd1a1662b053570d61564eece237f981517"
+    },
+    {
+      "name": "player-front-v2",
+      "key": "eq_art_player_front_alpha",
+      "assetId": "ASSET.ACT.PLAYER",
+      "columns": 4,
+      "rows": 1,
+      "poses": [
+        "front0",
+        "front1",
+        "front2",
+        "front3"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-9d77eca7-00fc-4c7d-88fa-f9f310bceb76.png",
+      "prompt": "Use case: background-extraction. Remove the entire backdrop and isolate all four child figures in a transparent PNG. Preserve the exact figures, positions, scale, and colors. Deliver an RGBA PNG with alpha=0 everywhere outside the character silhouettes, including gaps between arms, legs and body. This is an actual game asset cutout. No change to the character drawings.",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGBA",
+      "frames": [
+        {
+          "pose": "front0",
+          "sourceRect": [
+            260,
+            23,
+            242,
+            681
+          ],
+          "feetInSource": [
+            395,
+            704
+          ],
+          "feetInCrop": [
+            135,
+            681
+          ]
+        },
+        {
+          "pose": "front1",
+          "sourceRect": [
+            743,
+            22,
+            232,
+            680
+          ],
+          "feetInSource": [
+            869.5,
+            702
+          ],
+          "feetInCrop": [
+            126.5,
+            680
+          ]
+        },
+        {
+          "pose": "front2",
+          "sourceRect": [
+            1210,
+            22,
+            221,
+            679
+          ],
+          "feetInSource": [
+            1342,
+            701
+          ],
+          "feetInCrop": [
+            132,
+            679
+          ]
+        },
+        {
+          "pose": "front3",
+          "sourceRect": [
+            1684,
+            23,
+            230,
+            680
+          ],
+          "feetInSource": [
+            1807,
+            703
+          ],
+          "feetInCrop": [
+            123,
+            680
+          ]
+        }
+      ],
+      "referenceStandingHeightPixels": 681,
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "grid": "use explicit source rectangles",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\player-front-v2.png",
+      "sha256": "66f0f86ab7edf05c3f71f62b716a73f5aeabb3f3e57d96a10f9365b062753122"
+    },
+    {
+      "name": "player-back-v2",
+      "key": "eq_art_player_back_alpha",
+      "assetId": "ASSET.ACT.PLAYER",
+      "columns": 4,
+      "rows": 1,
+      "poses": [
+        "back0",
+        "back1",
+        "back2",
+        "back3"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-6f5a160a-0b81-4e7b-b242-074734635f45.png",
+      "prompt": "Use case: background-extraction. Remove the entire backdrop and isolate all four child figures in a transparent PNG. Preserve the exact figures, positions, scale, and colors. Deliver an RGBA PNG with alpha=0 everywhere outside the character silhouettes, including gaps between arms, legs and body. This is an actual game asset cutout. No change to the character drawings.",
+      "width": 2172,
+      "height": 724,
+      "mode": "RGBA",
+      "frames": [
+        {
+          "pose": "back0",
+          "sourceRect": [
+            178,
+            16,
+            263,
+            693
+          ],
+          "feetInSource": [
+            341,
+            709
+          ],
+          "feetInCrop": [
+            163,
+            693
+          ]
+        },
+        {
+          "pose": "back1",
+          "sourceRect": [
+            690,
+            15,
+            254,
+            692
+          ],
+          "feetInSource": [
+            831,
+            707
+          ],
+          "feetInCrop": [
+            141,
+            692
+          ]
+        },
+        {
+          "pose": "back2",
+          "sourceRect": [
+            1201,
+            15,
+            263,
+            695
+          ],
+          "feetInSource": [
+            1357.5,
+            710
+          ],
+          "feetInCrop": [
+            156.5,
+            695
+          ]
+        },
+        {
+          "pose": "back3",
+          "sourceRect": [
+            1717,
+            15,
+            275,
+            694
+          ],
+          "feetInSource": [
+            1811.5,
+            709
+          ],
+          "feetInCrop": [
+            94.5,
+            694
+          ]
+        }
+      ],
+      "referenceStandingHeightPixels": 693,
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "grid": "use explicit source rectangles",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\player-back-v2.png",
+      "sha256": "04c4adbb47d72d61dac6dd3ea1d1c5cd75b972cba73d602d23e5967262a12121"
+    },
+    {
+      "name": "loop-awake-v1",
+      "key": "eq_art_loop_single",
+      "assetId": "ASSET.ACT.LOOP",
+      "columns": 1,
+      "rows": 1,
+      "poses": [
+        "awake"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-190542b8-e0f6-4e7e-9b43-0be333cb17fd.png",
+      "prompt": "Use case: background-extraction. Extract ONLY the awake robot at the TOP CENTER of this image, as one isolated full robot. Delete the entire background and all other robots. Keep this exact cream and teal projector robot, its blue glass lens, coral side button, handle and two wheels. Do not redraw the robot into a new style. The robot should occupy one transparent PNG by itself. Deliver true RGBA alpha transparency outside the silhouette and through the hole inside the handle. No colored haze, no drop shadow, no backdrop, no room, no pattern. One robot only.",
+      "width": 1145,
+      "height": 1374,
+      "mode": "RGBA",
+      "frames": [
+        {
+          "pose": "awake",
+          "sourceRect": [
+            101,
+            60,
+            914,
+            1298
+          ],
+          "feetInSource": [
+            571,
+            1358
+          ],
+          "feetInCrop": [
+            470,
+            1298
+          ]
+        }
+      ],
+      "referenceStandingHeightPixels": 1298,
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "grid": "use explicit source rectangles",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\loop-awake-v1.png",
+      "sha256": "7aff93a39780987a546b2fe32ae44681e45e3c5ab7b1f9256113a032eda4ee0a"
+    },
+    {
+      "name": "stage-model-cabinet-v2",
+      "key": "eq_art_model_cabinet_alpha",
+      "assetId": "ASSET.PROP.ST.MODEL.CABINET",
+      "columns": 1,
+      "rows": 1,
+      "poses": [
+        "base"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-8406b8a4-c618-489a-b886-37e8c3bf744f.png",
+      "prompt": "Use case: background-extraction. Remove the entire checkerboard backdrop and isolate the single piece of furniture in a transparent PNG. Preserve the exact furniture silhouette, scale, materials, colors, edge bevels and shading. Deliver an RGBA PNG with alpha=0 everywhere outside the furniture silhouette, including the gaps under or between legs. This is an actual game asset cutout. No change to the furniture drawing. Do not fill a background.",
+      "width": 1224,
+      "height": 1285,
+      "mode": "RGBA",
+      "frames": [
+        {
+          "pose": "base",
+          "sourceRect": [
+            72,
+            94,
+            1081,
+            1068
+          ],
+          "feetInSource": [
+            613,
+            1162
+          ],
+          "feetInCrop": [
+            541,
+            1068
+          ]
+        }
+      ],
+      "referenceStandingHeightPixels": 1068,
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "grid": "use explicit source rectangles",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\stage-model-cabinet-v2.png",
+      "sha256": "43590abd211849f8dd520d3163ab666384d2555f6c44a64bdf3f16e009fb6612"
+    },
+    {
+      "name": "stage-board-v2",
+      "key": "eq_art_stage_board_alpha",
+      "assetId": "ASSET.PROP.ST.BOARD",
+      "columns": 1,
+      "rows": 1,
+      "poses": [
+        "base"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-57b0f302-547b-4006-bcd7-b22c5eff00e2.png",
+      "prompt": "Use case: background-extraction. Remove the entire checkerboard backdrop and isolate the single piece of furniture in a transparent PNG. Preserve the exact furniture silhouette, scale, materials, colors, edge bevels and shading. Deliver an RGBA PNG with alpha=0 everywhere outside the furniture silhouette, including the gaps under or between legs. This is an actual game asset cutout. No change to the furniture drawing. Do not fill a background.",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "frames": [
+        {
+          "pose": "base",
+          "sourceRect": [
+            173,
+            138,
+            1326,
+            664
+          ],
+          "feetInSource": [
+            835.5,
+            802
+          ],
+          "feetInCrop": [
+            662.5,
+            664
+          ]
+        }
+      ],
+      "referenceStandingHeightPixels": 664,
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "grid": "use explicit source rectangles",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\stage-board-v2.png",
+      "sha256": "0d341b894832ca9cb11fdeac01c3420dbb7df9324e88f256342b23b4bfdd4c43"
+    },
+    {
+      "name": "stage-console-v2",
+      "key": "eq_art_stage_console_alpha",
+      "assetId": "ASSET.PROP.ST.CONSOLE",
+      "columns": 1,
+      "rows": 1,
+      "poses": [
+        "base"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-9805c0cb-e093-4898-8e37-35111d76bdde.png",
+      "prompt": "Use case: background-extraction. Remove the entire checkerboard backdrop and isolate the single piece of furniture in a transparent PNG. Preserve the exact furniture silhouette, scale, materials, colors, edge bevels and shading. Deliver an RGBA PNG with alpha=0 everywhere outside the furniture silhouette, including the gaps under or between legs. This is an actual game asset cutout. No change to the furniture drawing. Do not fill a background.",
+      "width": 2097,
+      "height": 750,
+      "mode": "RGBA",
+      "frames": [
+        {
+          "pose": "base",
+          "sourceRect": [
+            69,
+            199,
+            1964,
+            340
+          ],
+          "feetInSource": [
+            1048.5,
+            539
+          ],
+          "feetInCrop": [
+            979.5,
+            340
+          ]
+        }
+      ],
+      "referenceStandingHeightPixels": 340,
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "grid": "use explicit source rectangles",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\stage-console-v2.png",
+      "sha256": "fae3a9564f51e9ec8dbd883e725e32f467806fa4814d931d85f03d6ee3be42ad"
+    },
+    {
+      "name": "single-story-backpack-v1",
+      "key": "eq_art_single_story_backpack",
+      "assetId": "ASSET.PUP.BACKPACK",
+      "columns": 1,
+      "rows": 1,
+      "poses": [
+        "base"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-7422b913-65d0-4473-9b00-90d727c73453.png",
+      "prompt": "Use case: background-extraction. Extract ONLY the red paper backpack at TOP LEFT from this image. Delete all other objects and the entire background. Keep that exact single object's colors, texture, full silhouette and proportions. Center it by itself on a tightly framed transparent PNG with a small margin. The file must have actual RGBA transparency outside the object and through any open holes. No haze, shadow backdrop, checkerboard, colored fill, or new objects. One isolated game sprite only.",
+      "width": 1275,
+      "height": 1233,
+      "mode": "RGBA",
+      "frames": [
+        {
+          "pose": "base",
+          "sourceRect": [
+            122,
+            41,
+            1016,
+            1173
+          ],
+          "feetInSource": [
+            639.5,
+            1214
+          ],
+          "feetInCrop": [
+            517.5,
+            1173
+          ]
+        }
+      ],
+      "referenceStandingHeightPixels": 1173,
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "grid": "use explicit source rectangles",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\single-story-backpack-v1.png",
+      "sha256": "d43eec1d5737696701777bbe86f68fa351fc8a8f1f0b0ab51f295479d73322d2"
+    },
+    {
+      "name": "single-story-boat-v1",
+      "key": "eq_art_single_story_boat",
+      "assetId": "ASSET.PUP.BOAT",
+      "columns": 1,
+      "rows": 1,
+      "poses": [
+        "base"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-97f0e0aa-6f04-46c9-8efc-d7b7ba765119.png",
+      "prompt": "Use case: background-extraction. Extract ONLY the orange paper boat at TOP MIDDLE from this image. Delete all other objects and the entire background. Keep that exact single object's colors, texture, full silhouette and proportions. Center it by itself on a tightly framed transparent PNG with a small margin. The file must have actual RGBA transparency outside the object and through any open holes. No haze, shadow backdrop, checkerboard, colored fill, or new objects. One isolated game sprite only.",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGBA",
+      "frames": [
+        {
+          "pose": "base",
+          "sourceRect": [
+            105,
+            106,
+            1565,
+            692
+          ],
+          "feetInSource": [
+            880,
+            798
+          ],
+          "feetInCrop": [
+            775,
+            692
+          ]
+        }
+      ],
+      "referenceStandingHeightPixels": 692,
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "grid": "use explicit source rectangles",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\single-story-boat-v1.png",
+      "sha256": "ae24aefc48edebfbf3e19bcb6e3460b24589f162aae58cfb164d71d404c8bbd9"
+    },
+    {
+      "name": "single-toast-tray-v1",
+      "key": "eq_art_single_toast_tray",
+      "assetId": "ASSET.PROP.TOAST.TRAY",
+      "columns": 1,
+      "rows": 1,
+      "poses": [
+        "base"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-f58a0d76-de34-40f8-8d5b-10b15e22a050.png",
+      "prompt": "Use case: background-extraction. Extract ONLY the oval serving tray at TOP RIGHT from this image. Delete all other objects and the entire background. Keep that exact single object's colors, texture, full silhouette and proportions. Center it by itself on a tightly framed transparent PNG with a small margin. The file must have actual RGBA transparency outside the object and through any open holes. No haze, shadow backdrop, checkerboard, colored fill, or new objects. One isolated game sprite only.",
+      "width": 2003,
+      "height": 785,
+      "mode": "RGBA",
+      "frames": [
+        {
+          "pose": "base",
+          "sourceRect": [
+            78,
+            118,
+            1845,
+            542
+          ],
+          "feetInSource": [
+            999,
+            660
+          ],
+          "feetInCrop": [
+            921,
+            542
+          ]
+        }
+      ],
+      "referenceStandingHeightPixels": 542,
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "grid": "use explicit source rectangles",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\single-toast-tray-v1.png",
+      "sha256": "7920296ecd173acee29d7f618008209bac8b8db62deb23319ef15a4895dde1a5"
+    },
+    {
+      "name": "stage-dock-alpha3-v1",
+      "key": "eq_art_stage_dock_alpha3",
+      "assetId": "ASSET.PROP.ST.DOCK.BODY",
+      "columns": 1,
+      "rows": 1,
+      "poses": [
+        "base"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-19a89466-6e72-457a-b905-22a31d6e6885.png",
+      "prompt": "Use case: background-extraction. Extract ONLY the teal docking cabinet with its cream pedestal from this image. Remove the entire checkerboard background. Preserve the exact objects, positions, scale, colors and shaded interiors. Output true RGBA PNG: alpha zero in every empty area outside the object silhouettes and in open holes between legs or handles. Do not put a new background behind them. No haze, no painted pattern, no additions. Keep the complete objects without clipping.",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "frames": [
+        {
+          "pose": "base",
+          "sourceRect": [
+            133,
+            152,
+            986,
+            914
+          ],
+          "feetInSource": [
+            625.5,
+            1066
+          ],
+          "feetInCrop": [
+            492.5,
+            914
+          ]
+        }
+      ],
+      "referenceStandingHeightPixels": 914,
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "grid": "use explicit source rectangles",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\stage-dock-alpha3-v1.png",
+      "sha256": "c45c37d7ff5b4bc2a919961b3d07dcf266f564866c653a9a6cd1763447c244e2"
+    },
+    {
+      "name": "paper-materials-v1",
+      "key": "eq_art_paper_textures",
+      "assetId": "ER13.MATERIAL.PAPER",
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-6686686e-7ce0-4817-9f46-6491d80ceacf.png",
+      "prompt": "Create a production MATERIAL TEXTURE ATLAS for the warm handmade paper theater in this reference. Exactly three horizontal equal-height full-width bands, no margins or seams except their straight boundaries. TOP THIRD: beautiful pale sky blue handmade watercolor paper, very subtle fibers and soft variations, no clouds, no marks. MIDDLE THIRD: lively soft meadow green handmade construction paper with subtly layered fibers and gentle watercolor variation, no plants, no shapes. BOTTOM THIRD: blue turquoise river-colored handmade paper with gentle white horizontal ripples and beautiful soft water shading, no boats or shoreline. The three rectangular swatches fill the image completely. Premium illustrated game texture quality, matte, no shine, no photoreal grass, no text, no letters, no borders, no labels, no objects. This is opaque material to fill existing game scenery shapes, not a screenshot. Wide 3:2 canvas.",
+      "frames": [
+        {
+          "pose": "sky",
+          "sourceRect": [
+            0,
+            0,
+            1536,
+            337
+          ]
+        },
+        {
+          "pose": "grass",
+          "sourceRect": [
+            0,
+            341,
+            1536,
+            336
+          ]
+        },
+        {
+          "pose": "river",
+          "sourceRect": [
+            0,
+            684,
+            1536,
+            340
+          ]
+        }
+      ],
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGB",
+      "status": "ACCEPTED_OPAQUE_MATERIAL",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\paper-materials-v1.png",
+      "sha256": "669dad05ca0d222ce0914dab61e92f63f302b4a7028ecfd4de9fc0a1280dec7a"
+    },
+    {
+      "name": "single-story-roots-cutout-v2",
+      "key": "eq_art_single_story_roots_cutout",
+      "assetId": "ASSET.PUP.ROOTS",
+      "columns": 1,
+      "rows": 1,
+      "poses": [
+        "base"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-2f2af132-11a4-4241-8cd6-806fc3dbe313.png",
+      "prompt": "Remove the background. Make all space outside the object fully transparent. Keep the object exactly as it is. Return a transparent PNG.",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "frames": [
+        {
+          "pose": "base",
+          "sourceRect": [
+            17,
+            57,
+            1200,
+            1136
+          ],
+          "feetInSource": [
+            668,
+            1193
+          ],
+          "feetInCrop": [
+            651,
+            1136
+          ]
+        }
+      ],
+      "referenceStandingHeightPixels": 1136,
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "grid": "use explicit source rectangles",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\single-story-roots-cutout-v2.png",
+      "sha256": "473e0b487d385074a557cfd87c877d5c56aa89e7ae76e2eb799310f4dd838727"
+    },
+    {
+      "name": "single-toast-body-cutout-v2",
+      "key": "eq_art_single_toast_body_cutout",
+      "assetId": "ASSET.PROP.TOAST.BODY",
+      "columns": 1,
+      "rows": 1,
+      "poses": [
+        "base"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-896b6403-e372-4e20-bae7-7333c70bb16c.png",
+      "prompt": "Remove the background. Make all space outside the object fully transparent. Keep the object exactly as it is. Return a transparent PNG.",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "frames": [
+        {
+          "pose": "base",
+          "sourceRect": [
+            86,
+            35,
+            1364,
+            950
+          ],
+          "feetInSource": [
+            768,
+            985
+          ],
+          "feetInCrop": [
+            682,
+            950
+          ]
+        }
+      ],
+      "referenceStandingHeightPixels": 950,
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "grid": "use explicit source rectangles",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\single-toast-body-cutout-v2.png",
+      "sha256": "c3cca7d42d8ac91f54f13726d910157435cd68db014dde07bce7d82f74c903d0"
+    },
+    {
+      "name": "single-toast-lid-cutout-v2",
+      "key": "eq_art_single_toast_lid_cutout",
+      "assetId": "ASSET.PROP.TOAST.LID",
+      "columns": 1,
+      "rows": 1,
+      "poses": [
+        "base"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-2809dd30-a909-48d7-a0d7-c69d669404e8.png",
+      "prompt": "Remove the background. Make all space outside the object fully transparent. Keep the object exactly as it is. Return a transparent PNG.",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "frames": [
+        {
+          "pose": "base",
+          "sourceRect": [
+            15,
+            82,
+            1506,
+            848
+          ],
+          "feetInSource": [
+            765.5,
+            930
+          ],
+          "feetInCrop": [
+            750.5,
+            848
+          ]
+        }
+      ],
+      "referenceStandingHeightPixels": 848,
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "grid": "use explicit source rectangles",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\single-toast-lid-cutout-v2.png",
+      "sha256": "9e0385e0fba345fc053054aeaa2262c8205bc5d8744f05e04afb3f8bda2e344a"
+    },
+    {
+      "name": "single-toast-arm-cutout-v2",
+      "key": "eq_art_single_toast_arm_cutout",
+      "assetId": "ASSET.PROP.TOAST.ARM",
+      "columns": 1,
+      "rows": 1,
+      "poses": [
+        "base"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-a4281428-bdfe-4b6b-91b5-53fbbd7b5dd6.png",
+      "prompt": "Remove the background. Make all space outside the object fully transparent. Keep the object exactly as it is. Return a transparent PNG.",
+      "width": 1278,
+      "height": 1230,
+      "mode": "RGBA",
+      "frames": [
+        {
+          "pose": "base",
+          "sourceRect": [
+            193,
+            52,
+            985,
+            1153
+          ],
+          "feetInSource": [
+            467.5,
+            1205
+          ],
+          "feetInCrop": [
+            274.5,
+            1153
+          ]
+        }
+      ],
+      "referenceStandingHeightPixels": 1153,
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "grid": "use explicit source rectangles",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\single-toast-arm-cutout-v2.png",
+      "sha256": "98060b536c02b03ead120fef3196294aa08b0f583d091e70e4ad579df9d17c7e"
+    },
+    {
+      "name": "single-cy-bench-cutout-v2",
+      "key": "eq_art_single_cy_bench_cutout",
+      "assetId": "ASSET.PROP.CY.BENCH",
+      "columns": 1,
+      "rows": 1,
+      "poses": [
+        "base"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-5042782f-5bd5-4346-85dc-95f11ff02912.png",
+      "prompt": "Remove the background. Make all space outside the object fully transparent. Keep the object exactly as it is. Return a transparent PNG.",
+      "width": 1774,
+      "height": 887,
+      "mode": "RGBA",
+      "frames": [
+        {
+          "pose": "base",
+          "sourceRect": [
+            70,
+            159,
+            1635,
+            608
+          ],
+          "feetInSource": [
+            888,
+            767
+          ],
+          "feetInCrop": [
+            818,
+            608
+          ]
+        }
+      ],
+      "referenceStandingHeightPixels": 608,
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "grid": "use explicit source rectangles",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\single-cy-bench-cutout-v2.png",
+      "sha256": "4c522e4696d8b52d056d372a512d3d1f630ee551c3f518e1e64ef4b1d59d204e"
+    },
+    {
+      "name": "single-cy-board-cutout-v2",
+      "key": "eq_art_single_cy_board_cutout",
+      "assetId": "ASSET.PROP.CY.BOARD",
+      "columns": 1,
+      "rows": 1,
+      "poses": [
+        "base"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-867869e8-c032-48ba-ae39-97140e51d0fa.png",
+      "prompt": "Remove the background. Make all space outside the object fully transparent. Keep the object exactly as it is. Return a transparent PNG.",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "frames": [
+        {
+          "pose": "base",
+          "sourceRect": [
+            116,
+            135,
+            1022,
+            952
+          ],
+          "feetInSource": [
+            627,
+            1087
+          ],
+          "feetInCrop": [
+            511,
+            952
+          ]
+        }
+      ],
+      "referenceStandingHeightPixels": 952,
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "grid": "use explicit source rectangles",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\single-cy-board-cutout-v2.png",
+      "sha256": "1eeb9f5b6e02ef9ab975afc9a927da24d4d8c7d1c44743ad9501d06399b7c0ab"
+    },
+    {
+      "name": "single-wk-bench-cutout-v2",
+      "key": "eq_art_single_wk_bench_cutout",
+      "assetId": "ASSET.PROP.WK.BENCH",
+      "columns": 1,
+      "rows": 1,
+      "poses": [
+        "base"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-7608655c-a868-4eb1-9fc0-4ce100bddce0.png",
+      "prompt": "Remove the background. Make all space outside the object fully transparent. Keep the object exactly as it is. Return a transparent PNG.",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "frames": [
+        {
+          "pose": "base",
+          "sourceRect": [
+            29,
+            156,
+            1479,
+            771
+          ],
+          "feetInSource": [
+            768.5,
+            927
+          ],
+          "feetInCrop": [
+            739.5,
+            771
+          ]
+        }
+      ],
+      "referenceStandingHeightPixels": 771,
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "grid": "use explicit source rectangles",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\single-wk-bench-cutout-v2.png",
+      "sha256": "2070a56ab45f11a40b2c24701de56cc1a8d2323d6f3fafd37ac87ee70b4df5f9"
+    },
+    {
+      "name": "single-md-table-cutout-v2",
+      "key": "eq_art_single_md_table_cutout",
+      "assetId": "ASSET.PROP.MD.TABLE",
+      "columns": 1,
+      "rows": 1,
+      "poses": [
+        "base"
+      ],
+      "path": "C:\\Users\\TonyGuillaro\\.codex\\generated_images\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\exec-fe4067de-1bfc-42ae-a253-74a01119c277.png",
+      "prompt": "Remove the background. Make all space outside the object fully transparent. Keep the object exactly as it is. Return a transparent PNG.",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "frames": [
+        {
+          "pose": "base",
+          "sourceRect": [
+            76,
+            146,
+            1384,
+            729
+          ],
+          "feetInSource": [
+            769,
+            875
+          ],
+          "feetInCrop": [
+            693,
+            729
+          ]
+        }
+      ],
+      "referenceStandingHeightPixels": 729,
+      "status": "ACCEPTED_FOR_INTEGRATION",
+      "grid": "use explicit source rectangles",
+      "deliveryPath": "C:\\Users\\TonyGuillaro\\.codex\\visualizations\\2026\\09\\10\\01a08d56-ee56-7cf0-9dc1-7bbca5d71ac1\\evidence-quest-design-v3\\13-experience-correction\\art\\single-md-table-cutout-v2.png",
+      "sha256": "76225232cc78009a6f32a2a7660f5157323332a87d646d015116db7c7de8af4f"
+    }
+  ]
+}

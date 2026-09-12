@@ -1,72 +1,153 @@
 {
-  "checkedAt": "2026-09-12T05:14:29.005Z",
-  "bindingCount": 66,
-  "independentFiles": 16,
-  "totalFileBytes": 20623066,
+  "checkedAt": "2026-09-12T06:22:10.071Z",
+  "bindingCount": 81,
+  "independentFiles": 29,
+  "totalFileBytes": 38732552,
   "files": [
     {
-      "url": "/art/er13/stage-backplate-v1.png",
-      "bytes": 1884119
-    },
-    {
-      "url": "/art/er13/jo-poses-v1.png",
-      "bytes": 1054237
-    },
-    {
       "url": "/art/er13/ari-poses-v1.png",
-      "bytes": 1025572
-    },
-    {
-      "url": "/art/er13/remy-poses-v2.png",
-      "bytes": 1054139
-    },
-    {
-      "url": "/art/er13/pip-poses-v1.png",
-      "bytes": 1325433
-    },
-    {
-      "url": "/art/er13/grandma-poses-v1.png",
-      "bytes": 1454686
+      "bytes": 1025572,
+      "sha256": "3f55f68ceb5dd45558fe2075c973fe9ac1c8e4617d4055b73299afdede64ce4f"
     },
     {
       "url": "/art/er13/courtyard-backplate-v1.png",
-      "bytes": 2025911
+      "bytes": 2025911,
+      "sha256": "69924b81614e0ae2dd77faffd370d22284560bcc0d2777b6d7bf174f843bffc1"
     },
     {
-      "url": "/art/er13/workshop-backplate-v1.png",
-      "bytes": 1866467
+      "url": "/art/er13/grandma-poses-v1.png",
+      "bytes": 1454686,
+      "sha256": "23eba9c9f15c82c3566206da92c1c6401e78172f825faafd976bd6c21e0f17a8"
     },
     {
-      "url": "/art/er13/media-backplate-v1.png",
-      "bytes": 1842841
-    },
-    {
-      "url": "/art/er13/player-right-v2.png",
-      "bytes": 917945
-    },
-    {
-      "url": "/art/er13/player-front-v2.png",
-      "bytes": 859723
-    },
-    {
-      "url": "/art/er13/player-back-v2.png",
-      "bytes": 854182
+      "url": "/art/er13/jo-poses-v1.png",
+      "bytes": 1054237,
+      "sha256": "776ad18264662f6bd4860d0ba0c8c486d052fdb08dd9de43fd495f9ea33c5aa5"
     },
     {
       "url": "/art/er13/loop-awake-v1.png",
-      "bytes": 1058410
+      "bytes": 1058410,
+      "sha256": "7aff93a39780987a546b2fe32ae44681e45e3c5ab7b1f9256113a032eda4ee0a"
     },
     {
-      "url": "/art/er13/stage-model-cabinet-v2.png",
-      "bytes": 1276546
+      "url": "/art/er13/media-backplate-v1.png",
+      "bytes": 1842841,
+      "sha256": "23b739d71cec7673d7402d2103aec3d73780a3a852031d775e48ce704c7bc96c"
+    },
+    {
+      "url": "/art/er13/paper-materials-v1.png",
+      "bytes": 2953810,
+      "sha256": "669dad05ca0d222ce0914dab61e92f63f302b4a7028ecfd4de9fc0a1280dec7a"
+    },
+    {
+      "url": "/art/er13/pip-poses-v1.png",
+      "bytes": 1325433,
+      "sha256": "db99b2243a8ab537f08a343b2d453a425bfb5f0803fb266c55886b8ef44c9ef2"
+    },
+    {
+      "url": "/art/er13/player-back-v2.png",
+      "bytes": 854182,
+      "sha256": "04c4adbb47d72d61dac6dd3ea1d1c5cd75b972cba73d602d23e5967262a12121"
+    },
+    {
+      "url": "/art/er13/player-front-v2.png",
+      "bytes": 859723,
+      "sha256": "66f0f86ab7edf05c3f71f62b716a73f5aeabb3f3e57d96a10f9365b062753122"
+    },
+    {
+      "url": "/art/er13/player-right-v2.png",
+      "bytes": 917945,
+      "sha256": "262ce6f0129bef61f0fe354657414cd1a1662b053570d61564eece237f981517"
+    },
+    {
+      "url": "/art/er13/remy-poses-v2.png",
+      "bytes": 1054139,
+      "sha256": "06dd4fb59d3961a1a83c59b9e6507596a1e7be4abdf864a6fdeaf59138816b97"
+    },
+    {
+      "url": "/art/er13/single-cy-bench-cutout-v2.png",
+      "bytes": 761201,
+      "sha256": "4c522e4696d8b52d056d372a512d3d1f630ee551c3f518e1e64ef4b1d59d204e"
+    },
+    {
+      "url": "/art/er13/single-cy-board-cutout-v2.png",
+      "bytes": 1505191,
+      "sha256": "1eeb9f5b6e02ef9ab975afc9a927da24d4d8c7d1c44743ad9501d06399b7c0ab"
+    },
+    {
+      "url": "/art/er13/single-md-table-cutout-v2.png",
+      "bytes": 1284436,
+      "sha256": "76225232cc78009a6f32a2a7660f5157323332a87d646d015116db7c7de8af4f"
+    },
+    {
+      "url": "/art/er13/single-story-backpack-v1.png",
+      "bytes": 1616910,
+      "sha256": "d43eec1d5737696701777bbe86f68fa351fc8a8f1f0b0ab51f295479d73322d2"
+    },
+    {
+      "url": "/art/er13/single-story-boat-v1.png",
+      "bytes": 1296392,
+      "sha256": "ae24aefc48edebfbf3e19bcb6e3460b24589f162aae58cfb164d71d404c8bbd9"
+    },
+    {
+      "url": "/art/er13/single-story-roots-cutout-v2.png",
+      "bytes": 970081,
+      "sha256": "473e0b487d385074a557cfd87c877d5c56aa89e7ae76e2eb799310f4dd838727"
+    },
+    {
+      "url": "/art/er13/single-toast-arm-cutout-v2.png",
+      "bytes": 700152,
+      "sha256": "98060b536c02b03ead120fef3196294aa08b0f583d091e70e4ad579df9d17c7e"
+    },
+    {
+      "url": "/art/er13/single-toast-body-cutout-v2.png",
+      "bytes": 1424487,
+      "sha256": "c3cca7d42d8ac91f54f13726d910157435cd68db014dde07bce7d82f74c903d0"
+    },
+    {
+      "url": "/art/er13/single-toast-lid-cutout-v2.png",
+      "bytes": 1641155,
+      "sha256": "9e0385e0fba345fc053054aeaa2262c8205bc5d8744f05e04afb3f8bda2e344a"
+    },
+    {
+      "url": "/art/er13/single-toast-tray-v1.png",
+      "bytes": 1183925,
+      "sha256": "7920296ecd173acee29d7f618008209bac8b8db62deb23319ef15a4895dde1a5"
+    },
+    {
+      "url": "/art/er13/single-wk-bench-cutout-v2.png",
+      "bytes": 1499278,
+      "sha256": "2070a56ab45f11a40b2c24701de56cc1a8d2323d6f3fafd37ac87ee70b4df5f9"
+    },
+    {
+      "url": "/art/er13/stage-backplate-v1.png",
+      "bytes": 1884119,
+      "sha256": "cfa20e792a36344d8faa65998097360f3f2f0f602e48473abfb06455c22488c0"
     },
     {
       "url": "/art/er13/stage-board-v2.png",
-      "bytes": 1240328
+      "bytes": 1240328,
+      "sha256": "0d341b894832ca9cb11fdeac01c3420dbb7df9324e88f256342b23b4bfdd4c43"
     },
     {
       "url": "/art/er13/stage-console-v2.png",
-      "bytes": 882527
+      "bytes": 882527,
+      "sha256": "fae3a9564f51e9ec8dbd883e725e32f467806fa4814d931d85f03d6ee3be42ad"
+    },
+    {
+      "url": "/art/er13/stage-dock-alpha3-v1.png",
+      "bytes": 1272468,
+      "sha256": "c45c37d7ff5b4bc2a919961b3d07dcf266f564866c653a9a6cd1763447c244e2"
+    },
+    {
+      "url": "/art/er13/stage-model-cabinet-v2.png",
+      "bytes": 1276546,
+      "sha256": "43590abd211849f8dd520d3163ab666384d2555f6c44a64bdf3f16e009fb6612"
+    },
+    {
+      "url": "/art/er13/workshop-backplate-v1.png",
+      "bytes": 1866467,
+      "sha256": "ae969f6cf52eb634ec7e0562bd2b3498f8372c09d5cca7c29276c238a6f4284f"
     }
   ],
   "quality": "Accepted for integration. Runtime review is separate; no final-art performance qualification."
