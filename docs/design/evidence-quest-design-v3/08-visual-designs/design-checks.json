@@ -1,0 +1,93 @@
+{
+  "artifacts": 110,
+  "svg_designs": 105,
+  "illustrated_quality_references": 5,
+  "state_count": 93,
+  "transition_count": 121,
+  "contrast": [
+    [
+      "ink",
+      "paper",
+      12.51,
+      "body and paper sources"
+    ],
+    [
+      "ink",
+      "white",
+      13.03,
+      "control labels"
+    ],
+    [
+      "white",
+      "teal",
+      6.79,
+      "primary action"
+    ],
+    [
+      "muted",
+      "white",
+      7.06,
+      "metadata"
+    ],
+    [
+      "focus",
+      "paper",
+      6.7,
+      "focus outside edge"
+    ],
+    [
+      "ink",
+      "gold",
+      8.17,
+      "selected control"
+    ],
+    [
+      "line",
+      "white",
+      4.48,
+      "control/source boundaries"
+    ]
+  ],
+  "button_fit_failures": [],
+  "missing_files": [],
+  "source_checks": [
+    {
+      "artifact": "V08-READ-E4",
+      "ct": "CT.SRC.E4",
+      "pass": true
+    },
+    {
+      "artifact": "V08-READ-E3",
+      "ct": "CT.SRC.E3",
+      "pass": true
+    },
+    {
+      "artifact": "V08-READ-E6",
+      "ct": "CT.SRC.E6",
+      "pass": true
+    },
+    {
+      "artifact": "V08-READ-E7",
+      "ct": "CT.SRC.E7",
+      "pass": true
+    },
+    {
+      "artifact": "V08-E2-FIRST",
+      "ct": "CT.SRC.E2.C",
+      "pass": true
+    },
+    {
+      "artifact": "V08-E2-FULL",
+      "ct": "CT.SRC.E2.A",
+      "pass": true
+    },
+    {
+      "artifact": "V08-COMPACT-SOURCE-FULL",
+      "ct": "CT.SRC.E7",
+      "pass": true
+    }
+  ],
+  "e2_first_excludes_end": true,
+  "photo_excludes_full_notice": true,
+  "no_gameplay_scripts": true
+}

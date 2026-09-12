@@ -1,0 +1,122 @@
+{
+  "packetVersion": 1,
+  "executedAtUtc": "2026-09-11T20:35:13.504361+00:00",
+  "scope": "Actual local document/reference/graph/fixture arithmetic and preservation checks only.",
+  "engine": "Python stdlib custom checker; no claim of production-schema/runtime validation of newly defined fixtures.",
+  "passed": true,
+  "checkGroups": 14,
+  "results": [
+    {
+      "id": "structure-ids-dag-fixtures-coverage-queue-time-arithmetic",
+      "passed": true,
+      "detail": "Custom structural/reference/semantic fixture checks passed; no application was executed."
+    },
+    {
+      "id": "preexisting-file-integrity",
+      "passed": true,
+      "detail": {
+        "checked": 280,
+        "changed": [
+          "EVIDENCE-QUEST-MASTER-CHECKLIST.md"
+        ],
+        "missing": []
+      }
+    },
+    {
+      "id": "items01-through10-preserved",
+      "passed": true,
+      "detail": "Compared unchanged completed foundation sections."
+    },
+    {
+      "id": "items12-through16-preserved",
+      "passed": true,
+      "detail": "No readiness/later completion altered."
+    },
+    {
+      "id": "no-game-or-assets-created",
+      "passed": true,
+      "detail": "Proposed isolated implementation directory absent; unchanged manifest exports remain false. No setup/install/game/model/deploy command used."
+    },
+    {
+      "id": "handoff-local-links",
+      "passed": true,
+      "detail": "All current local Markdown destinations exist; future directory shown as code, not a file link."
+    },
+    {
+      "id": "derived-crosswalk-and-schedule-current",
+      "passed": true,
+      "detail": "Readable views match authoritative plan inputs and this generator."
+    },
+    {
+      "id": "negative-control-duplicate-task",
+      "passed": true,
+      "detail": "Deliberately bad in-memory copy rejected; stored files unchanged."
+    },
+    {
+      "id": "negative-control-cycle",
+      "passed": true,
+      "detail": "Deliberately bad in-memory copy rejected; stored files unchanged."
+    },
+    {
+      "id": "negative-control-unknown-fixture",
+      "passed": true,
+      "detail": "Deliberately bad in-memory copy rejected; stored files unchanged."
+    },
+    {
+      "id": "negative-control-missing-required-order",
+      "passed": true,
+      "detail": "Deliberately bad in-memory copy rejected; stored files unchanged."
+    },
+    {
+      "id": "negative-control-wrong-endpoint-caption",
+      "passed": true,
+      "detail": "Deliberately bad in-memory copy rejected; stored files unchanged."
+    },
+    {
+      "id": "seven-item11-subitems-complete",
+      "passed": true,
+      "detail": "Exactly seven Item11 boxes; this is document completion only."
+    },
+    {
+      "id": "next-step12-not-readiness",
+      "passed": true,
+      "detail": "Next pointer12; readiness unchanged."
+    }
+  ],
+  "counts": {
+    "tasks": 35,
+    "requirements": 74,
+    "checks": 74,
+    "scenarioFixtures": 72,
+    "arrangementFixtures": 65,
+    "successfulOrders": 5,
+    "coverage": {
+      "owners": 107,
+      "states": 96,
+      "transitions": 121,
+      "content": 553,
+      "sourceRefs": 35,
+      "introducedFacts": 5,
+      "assets": 96,
+      "contracts": 8
+    },
+    "protectedInputFiles": 280
+  },
+  "notRun": [
+    "Game scaffolding/implementation",
+    "Dependency installation/Ajv runtime compilation",
+    "Production asset manufacture/export qualification",
+    "Browser/native keyboard/touch/screen-reader walkthroughs",
+    "Actual IndexedDB fault/concurrency transactions",
+    "Runtime performance/font measurements",
+    "Paid/live model interpretation",
+    "Live child input/data eligibility",
+    "Participant/child usability and learning effects",
+    "Hosting/publication/submission"
+  ],
+  "hashes": {
+    "implementation-plan.json": "0fff7373fc3651754ea2adf2f7e42c7b4058cab9b55f5f30e7a4c0b1b9251a4f",
+    "acceptance-fixtures.json": "6a447e63fcfff34ebedb9973cbf7efdd95a76096114b20353d745e06bfecbd49",
+    "source-snapshot.json": "8cfb39e4807d68244f4f12c6f5a3ccda1b8d5c10ea62c8515597a018ed960cbf"
+  }
+}

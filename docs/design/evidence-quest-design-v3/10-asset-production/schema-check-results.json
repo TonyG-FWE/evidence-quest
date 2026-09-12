@@ -1,0 +1,53 @@
+{
+  "scope": "Schema and contract checks, including deliberately invalid document fixtures; no gameplay tests.",
+  "engine": "PowerShell 7.6.5 Test-Json",
+  "executedAt": "2026-09-11T19:06:04.6837613Z",
+  "passed": true,
+  "results": [
+    {
+      "id": "manifest-schema",
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "errors": []
+    },
+    {
+      "id": "missing-asset-id",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "bad-content-reference",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "bad-anchor",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "zero-frames",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "unexpected-field",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "id": "original-Item09-AssetUse",
+      "checked": 157,
+      "expected": true,
+      "actual": true,
+      "passed": true,
+      "failures": []
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+* text=auto
+docs/design/** -text
+docs/BUILD-START.md -text
+*.png binary
+*.webp binary
+*.jpg binary
+*.zip binary
