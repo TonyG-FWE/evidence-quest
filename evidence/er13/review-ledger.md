@@ -31,6 +31,10 @@ The [machine ledger](checkpoint-evidence.json) retains report hashes, named outc
 
 The actual in-app review uses its own loopback origin on port 4175. The user's earlier 4173 save and the independent parent's 4176 save were preserved. Browser fixtures use separate task-owned processes/origins. Synthetic READY saves, injected storage faults, scripted development replies and injected provider HTTP responses are developer checks, not participant sessions or live model evidence.
 
+The preserved native case proceeded from the revised successful rehearsal through the actual [premiere start](native-premiere-start.jpg) to the [completed premiere](native-premiere-complete.jpg). The ending opened with a visible heading, factual crew outcome and optional ending narration. Opening that narration offered Welcome and Our ending, without offering the unread Pip's promise source. No source quota, recorded prediction or paid coach was needed to finish.
+
+Ordinary private push of code checkpoint 47346ceff376f171aff2c627c562ccf030432ca9 was verified against the remote ref. The imported addendum retains its exact hash; its original blank final line and the raw build reporter's trailing space are preserved. Application/source whitespace checks pass.
+
 Real local voice start/end is recorded in [native-speech.json](native-speech.json). No microphone, recording, pronunciation rating or hidden accuracy score was used. Correct arrangements, source exposure, support, word lookups, practice requests and self-reports remain separate facts.
 
 No deployment, public publication, submission, force push or TASK11.17 expansion was performed. Continue ordinary checkpoints on the existing private codex/first-connected branch.

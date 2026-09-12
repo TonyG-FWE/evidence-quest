@@ -19,6 +19,8 @@ Current next task: finish accepted art integration and ER13.07 actual visual/mot
 
 Latest review repairs: lower world controls restore a visible new panel heading and return action; clipped narrator words count only when displayed; automatic unmet planting keeps the large split-bank view and adjacent caption. The growing flower's visual bounds were widened to keep it above the kneeling puppets. All original collision/approach geometry, source bodies and five valid solutions remain preserved. Code and evidence are checkpointed on the existing private branch; completion of the full visual target is still pending.
 
+Private checkpoint `47346ceff376f171aff2c627c562ccf030432ca9` was pushed and matches the remote branch. [Git evidence](evidence/er13/git-checkpoint.json). The native saved Media-first route completed equipment return, an unsuccessful seed-only rehearsal, a revised successful rehearsal, and the premiere; [completed premiere](evidence/er13/native-premiere-complete.jpg). The earned ending reading became available while the unread promise note remained unavailable. These are developer observations, not child comprehension or learning evidence.
+
 ## Historical first connected build record
 
 Updated 2026-09-12T03:28:55.692Z. Item 13 / M11.CONNECTED is **COMPLETE for its authorized first-build scope**.
