@@ -1,0 +1,2141 @@
+{
+  "date": "2026-09-12",
+  "scope": "Exact remaining original ART02–07 slots for parent production; continue existing workspace. Not a new gameplay design.",
+  "requests": [
+    {
+      "assetId": "ASSET.ACT.PLAYER",
+      "name": "Player child",
+      "variants": [
+        {
+          "key": "reach-front",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "One extended-hand endpoint; interpolate arm/body from idle, separate held paper/tile/caddy at attachment.",
+          "visibleWhen": "At object's physical approach performing inspect/open/present/collect/handoff toward front",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "reach-back",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "One extended-hand endpoint; interpolate arm/body from idle, separate held paper/tile/caddy at attachment.",
+          "visibleWhen": "At object's physical approach performing inspect/open/present/collect/handoff toward back",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "reach-left",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "One extended-hand endpoint; interpolate arm/body from idle, separate held paper/tile/caddy at attachment.",
+          "visibleWhen": "At object's physical approach performing inspect/open/present/collect/handoff toward left",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "reach-right",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "One extended-hand endpoint; interpolate arm/body from idle, separate held paper/tile/caddy at attachment.",
+          "visibleWhen": "At object's physical approach performing inspect/open/present/collect/handoff toward right",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "carry-front",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "One both-hands support pose; gait uses restrained translation and walk legs clipped below waist, no extra caddy.",
+          "visibleWhen": "KIT.CADDY.host=player, stopped or walking toward front",
+          "currentAcceptedReplacement": true
+        },
+        {
+          "key": "carry-back",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "One both-hands support pose; gait uses restrained translation and walk legs clipped below waist, no extra caddy.",
+          "visibleWhen": "KIT.CADDY.host=player, stopped or walking toward back",
+          "currentAcceptedReplacement": true
+        },
+        {
+          "key": "carry-left",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "One both-hands support pose; gait uses restrained translation and walk legs clipped below waist, no extra caddy.",
+          "visibleWhen": "KIT.CADDY.host=player, stopped or walking toward left",
+          "currentAcceptedReplacement": true
+        },
+        {
+          "key": "carry-right",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "One both-hands support pose; gait uses restrained translation and walk legs clipped below waist, no extra caddy.",
+          "visibleWhen": "KIT.CADDY.host=player, stopped or walking toward right",
+          "currentAcceptedReplacement": true
+        }
+      ],
+      "productionBrief": "Age11 medium-brown skin, short rounded dark curls, mustard open overshirt, teal T, cobalt trousers, coral sneakers. 4 facing families; keep facial features, seams and upper-left lighting. No full-sprite mirroring because pocket/button/handed props change. The child's backpack contribution is visible on miniature/projected Pip; no extra permanent carried backpack object.",
+      "originalMasterPixels": [
+        160,
+        304
+      ],
+      "geometry": {
+        "coordinateSpace": "room",
+        "contentPixels": [
+          72,
+          144
+        ],
+        "paddingBasePixels": 4,
+        "contentRectPixels": [
+          4,
+          4,
+          76,
+          148
+        ],
+        "anchor": [
+          0.5,
+          0.9736842105263158
+        ],
+        "logicalSize": [
+          6,
+          12
+        ],
+        "attachmentAnchors": {
+          "rightHand": [
+            0.78,
+            0.55
+          ],
+          "leftHand": [
+            0.22,
+            0.55
+          ],
+          "carriedCaddy": [
+            0.5,
+            0.66
+          ],
+          "backpackPresentation": [
+            0.8,
+            0.52
+          ]
+        },
+        "layer": "owner-relative; Item 05 ground sort or supporting DOM layer"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.ACT.PLAYER.base",
+          "coordinateSpace": "actor-local",
+          "assetUse": {
+            "slot": "ACT.PLAYER.base",
+            "ownerId": "ACT.PLAYER",
+            "role": "actor",
+            "logicalBounds": [
+              -3,
+              -12,
+              3,
+              0
+            ],
+            "anchor": [
+              0.5,
+              0.9736842105263158
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.ACT.PLAYER"
+          }
+        }
+      ],
+      "notes": "Current crew/Pip/Grandma identity and actual feet must remain stable. Reuse a supplied pose only when it expresses the action; frame aliases alone do not satisfy it. Player carry needs independent caddy overlap/attachment, never a baked caddy. Loop has one actual owner."
+    },
+    {
+      "assetId": "ASSET.ACT.JO",
+      "name": "Jo",
+      "variants": [
+        {
+          "key": "face-left",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same identity and home feet; no full-sprite mirroring.",
+          "visibleWhen": "Turn toward approached child on that side",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "face-right",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same identity and home feet; no full-sprite mirroring.",
+          "visibleWhen": "Turn toward approached child on that side",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "receive",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Attentive receiving hand; do not pre-acknowledge unseen content.",
+          "visibleWhen": "Evidence actually delivered at approach",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "acknowledge",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same identity and home feet; no full-sprite mirroring.",
+          "visibleWhen": "Current authored acknowledge response",
+          "currentAcceptedReplacement": false
+        }
+      ],
+      "productionBrief": "White girl, fair skin, dark-brown hair in two buns, coral T-shirt, teal overalls, cream shoes. Friendly expressive face. Home facing model. Do not restore original dark skin in functional historical references.",
+      "originalMasterPixels": [
+        208,
+        352
+      ],
+      "geometry": {
+        "coordinateSpace": "room",
+        "contentPixels": [
+          96,
+          168
+        ],
+        "paddingBasePixels": 4,
+        "contentRectPixels": [
+          4,
+          4,
+          100,
+          172
+        ],
+        "anchor": [
+          0.5,
+          0.9090909090909091
+        ],
+        "logicalSize": [
+          8,
+          14
+        ],
+        "attachmentAnchors": {
+          "presentationHand": [
+            0.22,
+            0.57
+          ]
+        },
+        "layer": "owner-relative; Item 05 ground sort or supporting DOM layer"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.ACT.JO.base",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "ACT.JO.base",
+            "ownerId": "ACT.JO",
+            "role": "actor",
+            "logicalBounds": [
+              33,
+              35,
+              41,
+              49
+            ],
+            "anchor": [
+              0.5,
+              0.9090909090909091
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.ACT.JO"
+          }
+        }
+      ],
+      "notes": "Current crew/Pip/Grandma identity and actual feet must remain stable. Reuse a supplied pose only when it expresses the action; frame aliases alone do not satisfy it. Player carry needs independent caddy overlap/attachment, never a baked caddy. Loop has one actual owner."
+    },
+    {
+      "assetId": "ASSET.ACT.REMY",
+      "name": "Remy",
+      "variants": [
+        {
+          "key": "face-left",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same identity and home feet; no full-sprite mirroring.",
+          "visibleWhen": "Turn toward approached child on that side",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "face-right",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same identity and home feet; no full-sprite mirroring.",
+          "visibleWhen": "Turn toward approached child on that side",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "receive",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Attentive receiving hand; do not pre-acknowledge unseen content.",
+          "visibleWhen": "Evidence actually delivered at approach",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "acknowledge",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same identity and home feet; no full-sprite mirroring.",
+          "visibleWhen": "Current authored acknowledge response",
+          "currentAcceptedReplacement": false
+        }
+      ],
+      "productionBrief": "Fair-skinned red-haired child, purple hoodie, navy shorts, striped socks, blue high-tops, charcoal tablet. Home facing Courtyard model; neutral uncertain expression for initial interpretation, attentive receiving, warm acknowledgment. Tablet remains crew prop, not new player inventory.",
+      "originalMasterPixels": [
+        208,
+        352
+      ],
+      "geometry": {
+        "coordinateSpace": "room",
+        "contentPixels": [
+          96,
+          168
+        ],
+        "paddingBasePixels": 4,
+        "contentRectPixels": [
+          4,
+          4,
+          100,
+          172
+        ],
+        "anchor": [
+          0.5,
+          0.9090909090909091
+        ],
+        "logicalSize": [
+          8,
+          14
+        ],
+        "attachmentAnchors": {
+          "presentationHand": [
+            0.22,
+            0.57
+          ]
+        },
+        "layer": "owner-relative; Item 05 ground sort or supporting DOM layer"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.ACT.REMY.base",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "ACT.REMY.base",
+            "ownerId": "ACT.REMY",
+            "role": "actor",
+            "logicalBounds": [
+              60,
+              35,
+              68,
+              49
+            ],
+            "anchor": [
+              0.5,
+              0.9090909090909091
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.ACT.REMY"
+          }
+        }
+      ],
+      "notes": "Current crew/Pip/Grandma identity and actual feet must remain stable. Reuse a supplied pose only when it expresses the action; frame aliases alone do not satisfy it. Player carry needs independent caddy overlap/attachment, never a baked caddy. Loop has one actual owner."
+    },
+    {
+      "assetId": "ASSET.ACT.ARI",
+      "name": "Ari",
+      "variants": [
+        {
+          "key": "face-left",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same identity and home feet; no full-sprite mirroring.",
+          "visibleWhen": "Turn toward approached child on that side",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "face-right",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same identity and home feet; no full-sprite mirroring.",
+          "visibleWhen": "Turn toward approached child on that side",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "receive",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Attentive receiving hand; do not pre-acknowledge unseen content.",
+          "visibleWhen": "Evidence actually delivered at approach",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "acknowledge",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same identity and home feet; no full-sprite mirroring.",
+          "visibleWhen": "Current authored acknowledge response",
+          "currentAcceptedReplacement": false
+        }
+      ],
+      "productionBrief": "Warm medium skin, straight dark chin-length bob, blue short-sleeve shirt with coral collar, mustard cargo trousers, cream shoes. Home facing Media filming work; open palm helpful greeting and proud closing smile.",
+      "originalMasterPixels": [
+        208,
+        352
+      ],
+      "geometry": {
+        "coordinateSpace": "room",
+        "contentPixels": [
+          96,
+          168
+        ],
+        "paddingBasePixels": 4,
+        "contentRectPixels": [
+          4,
+          4,
+          100,
+          172
+        ],
+        "anchor": [
+          0.5,
+          0.9090909090909091
+        ],
+        "logicalSize": [
+          8,
+          14
+        ],
+        "attachmentAnchors": {
+          "presentationHand": [
+            0.22,
+            0.57
+          ]
+        },
+        "layer": "owner-relative; Item 05 ground sort or supporting DOM layer"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.ACT.ARI.base",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "ACT.ARI.base",
+            "ownerId": "ACT.ARI",
+            "role": "actor",
+            "logicalBounds": [
+              35,
+              39,
+              43,
+              53
+            ],
+            "anchor": [
+              0.5,
+              0.9090909090909091
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.ACT.ARI"
+          }
+        }
+      ],
+      "notes": "Current crew/Pip/Grandma identity and actual feet must remain stable. Reuse a supplied pose only when it expresses the action; frame aliases alone do not satisfy it. Player carry needs independent caddy overlap/attachment, never a baked caddy. Loop has one actual owner."
+    },
+    {
+      "assetId": "ASSET.ACT.LOOP",
+      "name": "Loop, one portable projector",
+      "variants": [
+        {
+          "key": "rolling-front",
+          "frames": 2,
+          "frameRate": 6,
+          "physicalMeaning": "Two roller positions; same body/lens, no extra robot. Direction changes face and side view, not ownership.",
+          "visibleWhen": "Following or docking along actual route toward front",
+          "currentAcceptedReplacement": true
+        },
+        {
+          "key": "rolling-back",
+          "frames": 2,
+          "frameRate": 6,
+          "physicalMeaning": "Two roller positions; same body/lens, no extra robot. Direction changes face and side view, not ownership.",
+          "visibleWhen": "Following or docking along actual route toward back",
+          "currentAcceptedReplacement": true
+        },
+        {
+          "key": "rolling-left",
+          "frames": 2,
+          "frameRate": 6,
+          "physicalMeaning": "Two roller positions; same body/lens, no extra robot. Direction changes face and side view, not ownership.",
+          "visibleWhen": "Following or docking along actual route toward left",
+          "currentAcceptedReplacement": true
+        },
+        {
+          "key": "rolling-right",
+          "frames": 2,
+          "frameRate": 6,
+          "physicalMeaning": "Two roller positions; same body/lens, no extra robot. Direction changes face and side view, not ownership.",
+          "visibleWhen": "Following or docking along actual route toward right",
+          "currentAcceptedReplacement": true
+        },
+        {
+          "key": "standby",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Cream upper shell, teal lower body and handle, navy lens, coral side button, four small roller feet; illuminated lens is cosmetic with caption/state equivalent.",
+          "visibleWhen": "ACT.LOOP in Media before wake commit",
+          "currentAcceptedReplacement": true
+        },
+        {
+          "key": "responsive",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Cream upper shell, teal lower body and handle, navy lens, coral side button, four small roller feet; illuminated lens is cosmetic with caption/state equivalent.",
+          "visibleWhen": "Wake responsive endpoint or following while stopped",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "docked",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Cream upper shell, teal lower body and handle, navy lens, coral side button, four small roller feet; illuminated lens is cosmetic with caption/state equivalent.",
+          "visibleWhen": "Seated contact committed, playback stopped",
+          "currentAcceptedReplacement": true
+        },
+        {
+          "key": "projecting",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Cream upper shell, teal lower body and handle, navy lens, coral side button, four small roller feet; illuminated lens is cosmetic with caption/state equivalent.",
+          "visibleWhen": "Seated docked Loop during actual rehearsal/premiere playback",
+          "currentAcceptedReplacement": true
+        }
+      ],
+      "productionBrief": "Reconstruct separate alpha views from current cast; lens highlights upper-left, shell depth and teal handle remain. One actor through standby/following/docked/projecting. Follow-pad effect native, no repair display or face emoticon answer. Dock travel not replaced by a baked clip.",
+      "originalMasterPixels": [
+        160,
+        208
+      ],
+      "geometry": {
+        "coordinateSpace": "room",
+        "contentPixels": [
+          72,
+          96
+        ],
+        "paddingBasePixels": 4,
+        "contentRectPixels": [
+          4,
+          4,
+          76,
+          100
+        ],
+        "anchor": [
+          0.5,
+          0.8461538461538461
+        ],
+        "logicalSize": [
+          6,
+          8
+        ],
+        "attachmentAnchors": {
+          "lens": [
+            0.55,
+            0.42
+          ],
+          "followPad": [
+            0.32,
+            0.28
+          ],
+          "feet": [
+            0.5,
+            0.875
+          ]
+        },
+        "layer": "owner-relative; Item 05 ground sort or supporting DOM layer"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.ACT.LOOP.base",
+          "coordinateSpace": "actor-local",
+          "assetUse": {
+            "slot": "ACT.LOOP.base",
+            "ownerId": "ACT.LOOP",
+            "role": "actor",
+            "logicalBounds": [
+              -3,
+              -7,
+              3,
+              1
+            ],
+            "anchor": [
+              0.5,
+              0.8461538461538461
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.ACT.LOOP"
+          }
+        }
+      ],
+      "notes": "Current crew/Pip/Grandma identity and actual feet must remain stable. Reuse a supplied pose only when it expresses the action; frame aliases alone do not satisfy it. Player carry needs independent caddy overlap/attachment, never a baked caddy. Loop has one actual owner."
+    },
+    {
+      "assetId": "ASSET.ENV.DOOR",
+      "name": "Shared open doorway trim",
+      "variants": [
+        {
+          "key": "side",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Any side exit; reflected trim allowed, native arrow separately oriented.",
+          "visibleWhen": "Any side exit; reflected trim allowed, native arrow separately oriented.",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "north",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "WK.EXIT.MD; recompose upright trim to [55,20,69,33], do not rotate wood grain.",
+          "visibleWhen": "WK.EXIT.MD; recompose upright trim to [55,20,69,33], do not rotate wood grain.",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "south",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "MD.EXIT.WK; recompose [55,72,69,80].",
+          "visibleWhen": "MD.EXIT.WK; recompose [55,72,69,80].",
+          "currentAcceptedReplacement": false
+        }
+      ],
+      "productionBrief": "Unblocked warm timber/teal threshold trim; stretch edge strips with fixed corners to exact door V. No lock, next-clue glow, unseen occupant or baked label.",
+      "originalMasterPixels": [
+        208,
+        400
+      ],
+      "geometry": {
+        "coordinateSpace": "room",
+        "contentPixels": [
+          96,
+          192
+        ],
+        "paddingBasePixels": 4,
+        "contentRectPixels": [
+          4,
+          4,
+          100,
+          196
+        ],
+        "anchor": [
+          0.5,
+          0.98
+        ],
+        "logicalSize": [
+          8,
+          16
+        ],
+        "attachmentAnchors": {},
+        "layer": "owner-relative; Item 05 ground sort or supporting DOM layer"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.ST.EXIT.CY.base",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "ST.EXIT.CY.base",
+            "ownerId": "ST.EXIT.CY",
+            "role": "background",
+            "logicalBounds": [
+              0,
+              54,
+              8,
+              70
+            ],
+            "anchor": [
+              0.5,
+              0.98
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.ENV.DOOR"
+          }
+        },
+        {
+          "id": "BIND.ST.EXIT.WK.base",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "ST.EXIT.WK.base",
+            "ownerId": "ST.EXIT.WK",
+            "role": "background",
+            "logicalBounds": [
+              112,
+              54,
+              120,
+              70
+            ],
+            "anchor": [
+              0.5,
+              0.98
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.ENV.DOOR"
+          }
+        },
+        {
+          "id": "BIND.CY.EXIT.ST.base",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "CY.EXIT.ST.base",
+            "ownerId": "CY.EXIT.ST",
+            "role": "background",
+            "logicalBounds": [
+              0,
+              54,
+              8,
+              70
+            ],
+            "anchor": [
+              0.5,
+              0.98
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.ENV.DOOR"
+          }
+        },
+        {
+          "id": "BIND.CY.EXIT.WK.base",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "CY.EXIT.WK.base",
+            "ownerId": "CY.EXIT.WK",
+            "role": "background",
+            "logicalBounds": [
+              112,
+              54,
+              120,
+              70
+            ],
+            "anchor": [
+              0.5,
+              0.98
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.ENV.DOOR"
+          }
+        },
+        {
+          "id": "BIND.WK.EXIT.ST.base",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "WK.EXIT.ST.base",
+            "ownerId": "WK.EXIT.ST",
+            "role": "background",
+            "logicalBounds": [
+              0,
+              54,
+              8,
+              70
+            ],
+            "anchor": [
+              0.5,
+              0.98
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.ENV.DOOR"
+          }
+        },
+        {
+          "id": "BIND.WK.EXIT.CY.base",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "WK.EXIT.CY.base",
+            "ownerId": "WK.EXIT.CY",
+            "role": "background",
+            "logicalBounds": [
+              112,
+              54,
+              120,
+              70
+            ],
+            "anchor": [
+              0.5,
+              0.98
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.ENV.DOOR"
+          }
+        },
+        {
+          "id": "BIND.WK.EXIT.MD.base",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "WK.EXIT.MD.base",
+            "ownerId": "WK.EXIT.MD",
+            "role": "background",
+            "logicalBounds": [
+              55,
+              20,
+              69,
+              33
+            ],
+            "anchor": [
+              0.5,
+              0.98
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.ENV.DOOR"
+          }
+        },
+        {
+          "id": "BIND.MD.EXIT.WK.base",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "MD.EXIT.WK.base",
+            "ownerId": "MD.EXIT.WK",
+            "role": "background",
+            "logicalBounds": [
+              55,
+              72,
+              69,
+              80
+            ],
+            "anchor": [
+              0.5,
+              0.98
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.ENV.DOOR"
+          }
+        }
+      ],
+      "notes": "Keep readable writing blank for native CT text; same physical owner and approach bounds."
+    },
+    {
+      "assetId": "ASSET.PROP.MODEL.TAB",
+      "name": "Story-model pull tab",
+      "variants": [
+        {
+          "key": "rest",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same artwork identity and production brief; this variant changes only the stated pose/physical state.",
+          "visibleWhen": "modelTried=false or start of repeated model action",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "pulled",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same artwork identity and production brief; this variant changes only the stated pose/physical state.",
+          "visibleWhen": "modelTried=true at folded bridge endpoint",
+          "currentAcceptedReplacement": false
+        }
+      ],
+      "productionBrief": "Thick coral/cream paper tab inside [16,36,24,40]; slide within reserved V, no arrow showing puzzle answer.",
+      "originalMasterPixels": [
+        208,
+        112
+      ],
+      "geometry": {
+        "coordinateSpace": "room",
+        "contentPixels": [
+          96,
+          48
+        ],
+        "paddingBasePixels": 4,
+        "contentRectPixels": [
+          4,
+          4,
+          100,
+          52
+        ],
+        "anchor": [
+          0.5,
+          0.9285714285714286
+        ],
+        "logicalSize": [
+          8,
+          4
+        ],
+        "attachmentAnchors": {},
+        "layer": "owner-relative; Item 05 ground sort or supporting DOM layer"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.ST.MODEL.TAB.base",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "ST.MODEL.TAB.base",
+            "ownerId": "ST.MODEL.TAB",
+            "role": "prop",
+            "logicalBounds": [
+              16,
+              36,
+              24,
+              40
+            ],
+            "anchor": [
+              0.5,
+              0.9285714285714286
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.PROP.MODEL.TAB"
+          }
+        }
+      ],
+      "notes": "Keep readable writing blank for native CT text; same physical owner and approach bounds."
+    },
+    {
+      "assetId": "ASSET.PROP.BRIEF.FLAP",
+      "name": "Crew brief lift flap",
+      "variants": [
+        {
+          "key": "down",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same artwork identity and production brief; this variant changes only the stated pose/physical state.",
+          "visibleWhen": "brief not yet lifted",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "lifted",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same artwork identity and production brief; this variant changes only the stated pose/physical state.",
+          "visibleWhen": "brief lift committed",
+          "currentAcceptedReplacement": false
+        }
+      ],
+      "productionBrief": "Cream paper flap clipped beside model at [8,24,15,33]; lifted state reveals native E1 only after commit.",
+      "originalMasterPixels": [
+        184,
+        232
+      ],
+      "geometry": {
+        "coordinateSpace": "room",
+        "contentPixels": [
+          84,
+          108
+        ],
+        "paddingBasePixels": 4,
+        "contentRectPixels": [
+          4,
+          4,
+          88,
+          112
+        ],
+        "anchor": [
+          0.5,
+          0.9655172413793104
+        ],
+        "logicalSize": [
+          7,
+          9
+        ],
+        "attachmentAnchors": {},
+        "layer": "owner-relative; Item 05 ground sort or supporting DOM layer"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.ST.SOURCE.E1.base",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "ST.SOURCE.E1.base",
+            "ownerId": "ST.SOURCE.E1",
+            "role": "prop",
+            "logicalBounds": [
+              8,
+              24,
+              15,
+              33
+            ],
+            "anchor": [
+              0.5,
+              0.9655172413793104
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.PROP.BRIEF.FLAP"
+          }
+        }
+      ],
+      "notes": "Keep readable writing blank for native CT text; same physical owner and approach bounds."
+    },
+    {
+      "assetId": "ASSET.PROP.NOTE.DRAWER",
+      "name": "Jo note drawer front",
+      "variants": [
+        {
+          "key": "closed",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same artwork identity and production brief; this variant changes only the stated pose/physical state.",
+          "visibleWhen": "Owner's closed stable state",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "open",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same artwork identity and production brief; this variant changes only the stated pose/physical state.",
+          "visibleWhen": "Owner's open stable state after physical commit",
+          "currentAcceptedReplacement": false
+        }
+      ],
+      "productionBrief": "Wood face and teal handle [25,35,31,39]; open face moves within model V, never grows collider. Blank note emerges; E6 body in reader.",
+      "originalMasterPixels": [
+        160,
+        112
+      ],
+      "geometry": {
+        "coordinateSpace": "room",
+        "contentPixels": [
+          72,
+          48
+        ],
+        "paddingBasePixels": 4,
+        "contentRectPixels": [
+          4,
+          4,
+          76,
+          52
+        ],
+        "anchor": [
+          0.5,
+          0.9285714285714286
+        ],
+        "logicalSize": [
+          6,
+          4
+        ],
+        "attachmentAnchors": {},
+        "layer": "owner-relative; Item 05 ground sort or supporting DOM layer"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.ST.SOURCE.E6.base",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "ST.SOURCE.E6.base",
+            "ownerId": "ST.SOURCE.E6",
+            "role": "prop",
+            "logicalBounds": [
+              25,
+              35,
+              31,
+              39
+            ],
+            "anchor": [
+              0.5,
+              0.9285714285714286
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.PROP.NOTE.DRAWER"
+          }
+        }
+      ],
+      "notes": "Keep readable writing blank for native CT text; same physical owner and approach bounds."
+    },
+    {
+      "assetId": "ASSET.PROP.DEVICE",
+      "name": "Teal shared-post device",
+      "variants": [
+        {
+          "key": "idle",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same artwork identity and production brief; this variant changes only the stated pose/physical state.",
+          "visibleWhen": "Owner present; no source content preview",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "selected",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same artwork identity and production brief; this variant changes only the stated pose/physical state.",
+          "visibleWhen": "Same owner selected; shape is not a revealed source",
+          "currentAcceptedReplacement": false
+        }
+      ],
+      "productionBrief": "Rounded teal message screen. Blank cream inset for generic native post icon, no E2 scene thumbnail or message until opened. Fit Stage [55,27,62,36] and Courtyard [49,24,57,35]. Remy's hand tablet need not become extra access.",
+      "originalMasterPixels": [
+        208,
+        280
+      ],
+      "geometry": {
+        "coordinateSpace": "room",
+        "contentPixels": [
+          96,
+          132
+        ],
+        "paddingBasePixels": 4,
+        "contentRectPixels": [
+          4,
+          4,
+          100,
+          136
+        ],
+        "anchor": [
+          0.5,
+          0.9714285714285714
+        ],
+        "logicalSize": [
+          8,
+          11
+        ],
+        "attachmentAnchors": {},
+        "layer": "owner-relative; Item 05 ground sort or supporting DOM layer"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.ST.ACCESS.E2.base",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "ST.ACCESS.E2.base",
+            "ownerId": "ST.ACCESS.E2",
+            "role": "prop",
+            "logicalBounds": [
+              55,
+              27,
+              62,
+              36
+            ],
+            "anchor": [
+              0.5,
+              0.9714285714285714
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.PROP.DEVICE"
+          }
+        },
+        {
+          "id": "BIND.CY.ACCESS.E2.base",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "CY.ACCESS.E2.base",
+            "ownerId": "CY.ACCESS.E2",
+            "role": "prop",
+            "logicalBounds": [
+              49,
+              24,
+              57,
+              35
+            ],
+            "anchor": [
+              0.5,
+              0.9714285714285714
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.PROP.DEVICE"
+          }
+        }
+      ],
+      "notes": "Keep readable writing blank for native CT text; same physical owner and approach bounds."
+    },
+    {
+      "assetId": "ASSET.PROP.DOCK.FLAP",
+      "name": "Dock access flap",
+      "variants": [
+        {
+          "key": "closed",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same artwork identity and production brief; this variant changes only the stated pose/physical state.",
+          "visibleWhen": "Owner's closed stable state",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "open",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same artwork identity and production brief; this variant changes only the stated pose/physical state.",
+          "visibleWhen": "Owner's open stable state after physical commit",
+          "currentAcceptedReplacement": false
+        }
+      ],
+      "productionBrief": "Teal flap [70,34,80,40] folds entirely inside dock V. Empty open tray still visibly empty. Robot, pad and beam separate.",
+      "originalMasterPixels": [
+        256,
+        160
+      ],
+      "geometry": {
+        "coordinateSpace": "room",
+        "contentPixels": [
+          120,
+          72
+        ],
+        "paddingBasePixels": 4,
+        "contentRectPixels": [
+          4,
+          4,
+          124,
+          76
+        ],
+        "anchor": [
+          0.5,
+          0.95
+        ],
+        "logicalSize": [
+          10,
+          6
+        ],
+        "attachmentAnchors": {},
+        "layer": "owner-relative; Item 05 ground sort or supporting DOM layer"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.ST.DOCK.FLAP.base",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "ST.DOCK.FLAP.base",
+            "ownerId": "ST.DOCK.FLAP",
+            "role": "prop",
+            "logicalBounds": [
+              70,
+              34,
+              80,
+              40
+            ],
+            "anchor": [
+              0.5,
+              0.95
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.PROP.DOCK.FLAP"
+          }
+        }
+      ],
+      "notes": "Keep readable writing blank for native CT text; same physical owner and approach bounds."
+    },
+    {
+      "assetId": "ASSET.PROP.NOTICE",
+      "name": "Courtyard notice sheet",
+      "variants": [
+        {
+          "key": "curled",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same artwork identity and production brief; this variant changes only the stated pose/physical state.",
+          "visibleWhen": "noticeFlat=false",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "moving",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same artwork identity and production brief; this variant changes only the stated pose/physical state.",
+          "visibleWhen": "Flatten in progress, full E3 still withheld",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "flat",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same artwork identity and production brief; this variant changes only the stated pose/physical state.",
+          "visibleWhen": "noticeFlat=true after secure commit",
+          "currentAcceptedReplacement": false
+        }
+      ],
+      "productionBrief": "Curled top and bottom conceal all except canonical CANCELED word. Moving is blank reverse/edge, not readable full page. Flat paper at [84,17,104,38] only when secured. Text comes from CT.OBJ.NOTICE_PARTIAL or CT.SRC.E3, never hidden lettering.",
+      "originalMasterPixels": [
+        496,
+        520
+      ],
+      "geometry": {
+        "coordinateSpace": "room",
+        "contentPixels": [
+          240,
+          252
+        ],
+        "paddingBasePixels": 4,
+        "contentRectPixels": [
+          4,
+          4,
+          244,
+          256
+        ],
+        "anchor": [
+          0.5,
+          0.9846153846153847
+        ],
+        "logicalSize": [
+          20,
+          21
+        ],
+        "attachmentAnchors": {},
+        "layer": "owner-relative; Item 05 ground sort or supporting DOM layer"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.CY.SOURCE.E3.base",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "CY.SOURCE.E3.base",
+            "ownerId": "CY.SOURCE.E3",
+            "role": "prop",
+            "logicalBounds": [
+              84,
+              17,
+              104,
+              38
+            ],
+            "anchor": [
+              0.5,
+              0.9846153846153847
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.PROP.NOTICE"
+          }
+        }
+      ],
+      "notes": "Keep readable writing blank for native CT text; same physical owner and approach bounds."
+    },
+    {
+      "assetId": "ASSET.PROP.NOTICE.CLIP",
+      "name": "Notice bottom clip",
+      "variants": [
+        {
+          "key": "latched",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same artwork identity and production brief; this variant changes only the stated pose/physical state.",
+          "visibleWhen": "notice stable curled or flat with clip secured",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "released",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same artwork identity and production brief; this variant changes only the stated pose/physical state.",
+          "visibleWhen": "Flatten operation only before commit",
+          "currentAcceptedReplacement": false
+        }
+      ],
+      "productionBrief": "Small brass bottom clip centered [94,38], release then resecure during flatten; never an additional precision puzzle.",
+      "originalMasterPixels": [
+        112,
+        88
+      ],
+      "geometry": {
+        "coordinateSpace": "room",
+        "contentPixels": [
+          48,
+          36
+        ],
+        "paddingBasePixels": 4,
+        "contentRectPixels": [
+          4,
+          4,
+          52,
+          40
+        ],
+        "anchor": [
+          0.5,
+          0.9090909090909091
+        ],
+        "logicalSize": [
+          4,
+          3
+        ],
+        "attachmentAnchors": {},
+        "layer": "owner-relative; Item 05 ground sort or supporting DOM layer"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.CY.SOURCE.E3.clip",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "CY.SOURCE.E3.clip",
+            "ownerId": "CY.SOURCE.E3",
+            "role": "prop",
+            "logicalBounds": [
+              92,
+              36.5,
+              96,
+              39.5
+            ],
+            "anchor": [
+              0.5,
+              0.9090909090909091
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.PROP.NOTICE.CLIP"
+          }
+        }
+      ],
+      "notes": "Keep readable writing blank for native CT text; same physical owner and approach bounds."
+    },
+    {
+      "assetId": "ASSET.PROP.SLATE",
+      "name": "Capture-slate carrier",
+      "variants": [
+        {
+          "key": "base",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same artwork identity and production brief; this variant changes only the stated pose/physical state.",
+          "visibleWhen": "Owner present in its current eligible state",
+          "currentAcceptedReplacement": false
+        }
+      ],
+      "productionBrief": "Teal framed cream slate [44,29,57,38]; recorded 9:18 info only as native E5.a after actual inspection. Slate stays historical after Loop leaves.",
+      "originalMasterPixels": [
+        328,
+        232
+      ],
+      "geometry": {
+        "coordinateSpace": "room",
+        "contentPixels": [
+          156,
+          108
+        ],
+        "paddingBasePixels": 4,
+        "contentRectPixels": [
+          4,
+          4,
+          160,
+          112
+        ],
+        "anchor": [
+          0.5,
+          0.9655172413793104
+        ],
+        "logicalSize": [
+          13,
+          9
+        ],
+        "attachmentAnchors": {},
+        "layer": "owner-relative; Item 05 ground sort or supporting DOM layer"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.MD.SOURCE.E5.base",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "MD.SOURCE.E5.base",
+            "ownerId": "MD.SOURCE.E5",
+            "role": "prop",
+            "logicalBounds": [
+              44,
+              29,
+              57,
+              38
+            ],
+            "anchor": [
+              0.5,
+              0.9655172413793104
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.PROP.SLATE"
+          }
+        }
+      ],
+      "notes": "Keep readable writing blank for native CT text; same physical owner and approach bounds."
+    },
+    {
+      "assetId": "ASSET.PROP.PETAL",
+      "name": "Paper petal element",
+      "variants": [
+        {
+          "key": "flat",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same artwork identity and production brief; this variant changes only the stated pose/physical state.",
+          "visibleWhen": "Stationary paper-material instance",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "bent",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same artwork identity and production brief; this variant changes only the stated pose/physical state.",
+          "visibleWhen": "Courtyard wind or Workshop folded paper",
+          "currentAcceptedReplacement": false
+        }
+      ],
+      "productionBrief": "Cream/coral folded paper petal, visible cut edges and warm paper grain. Six instances Courtyard in [14,12,42,27]; four in Workshop [14,12,38,30]; three lying flat on Media table [25,22,39,28]. No hidden location text.",
+      "originalMasterPixels": [
+        160,
+        208
+      ],
+      "geometry": {
+        "coordinateSpace": "room",
+        "contentPixels": [
+          72,
+          96
+        ],
+        "paddingBasePixels": 4,
+        "contentRectPixels": [
+          4,
+          4,
+          76,
+          100
+        ],
+        "anchor": [
+          0.5,
+          0.9615384615384616
+        ],
+        "logicalSize": [
+          6,
+          8
+        ],
+        "attachmentAnchors": {},
+        "layer": "owner-relative; Item 05 ground sort or supporting DOM layer"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.CY.PETALS.base",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "CY.PETALS.base",
+            "ownerId": "CY.PETALS",
+            "role": "prop",
+            "logicalBounds": [
+              14,
+              12,
+              42,
+              27
+            ],
+            "anchor": [
+              0.5,
+              0.9615384615384616
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.PROP.PETAL"
+          }
+        },
+        {
+          "id": "BIND.WK.SCENERY.base",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "WK.SCENERY.base",
+            "ownerId": "WK.SCENERY",
+            "role": "prop",
+            "logicalBounds": [
+              14,
+              12,
+              38,
+              30
+            ],
+            "anchor": [
+              0.5,
+              0.9615384615384616
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.PROP.PETAL"
+          }
+        },
+        {
+          "id": "BIND.MD.RECORDING.TABLE.petals",
+          "coordinateSpace": "room",
+          "assetUse": {
+            "slot": "MD.RECORDING.TABLE.petals",
+            "ownerId": "MD.RECORDING.TABLE",
+            "role": "prop",
+            "logicalBounds": [
+              25,
+              22,
+              39,
+              28
+            ],
+            "anchor": [
+              0.5,
+              0.9615384615384616
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.PROP.PETAL"
+          }
+        }
+      ],
+      "notes": "Keep readable writing blank for native CT text; same physical owner and approach bounds."
+    },
+    {
+      "assetId": "ASSET.PUP.BROKEN_BRIDGE",
+      "name": "Torn footbridge ends",
+      "variants": [
+        {
+          "key": "left",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same artwork identity and production brief; this variant changes only the stated pose/physical state.",
+          "visibleWhen": "Derived from actual unchanged torn end side; separate model folding pose state; MODEL copies use initial obstacle only",
+          "currentAcceptedReplacement": false
+        },
+        {
+          "key": "right",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same artwork identity and production brief; this variant changes only the stated pose/physical state.",
+          "visibleWhen": "Derived from actual unchanged torn end side; separate model folding pose state; MODEL copies use initial obstacle only",
+          "currentAcceptedReplacement": false
+        }
+      ],
+      "productionBrief": "Two torn brown paper ends centered [34,72] and [66,72], each local 9x8; disconnected even after joined boats arrive. Model version folds the left end, never silently joins.",
+      "originalMasterPixels": [
+        176,
+        76
+      ],
+      "geometry": {
+        "coordinateSpace": "projection-100",
+        "contentPixels": [
+          80,
+          30
+        ],
+        "paddingBasePixels": 4,
+        "contentRectPixels": [
+          4,
+          4,
+          84,
+          34
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "logicalSize": null,
+        "attachmentAnchors": {},
+        "layer": "bounded projection, or separately transformed MODEL child; never room ground"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.PUP.BROKEN_BRIDGE.base",
+          "coordinateSpace": "puppet-local",
+          "assetUse": {
+            "slot": "PUP.BROKEN_BRIDGE.base",
+            "ownerId": "PUP.BROKEN_BRIDGE",
+            "role": "puppet",
+            "logicalBounds": [
+              -4.5,
+              -4,
+              4.5,
+              4
+            ],
+            "anchor": [
+              0.5,
+              0.5
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.PUP.BROKEN_BRIDGE"
+          }
+        },
+        {
+          "id": "BIND.PUP.BROKEN_BRIDGE.part1",
+          "coordinateSpace": "puppet-local",
+          "assetUse": {
+            "slot": "PUP.BROKEN_BRIDGE.part1",
+            "ownerId": "PUP.BROKEN_BRIDGE",
+            "role": "puppet",
+            "logicalBounds": [
+              -4.5,
+              -4,
+              4.5,
+              4
+            ],
+            "anchor": [
+              0.5,
+              0.5
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.PUP.BROKEN_BRIDGE"
+          }
+        },
+        {
+          "id": "BIND.MODEL.BROKEN_BRIDGE.base",
+          "coordinateSpace": "model-100",
+          "assetUse": {
+            "slot": "MODEL.BROKEN_BRIDGE.base",
+            "ownerId": "MODEL.BROKEN_BRIDGE",
+            "role": "prop",
+            "logicalBounds": [
+              29.5,
+              68,
+              38.5,
+              76
+            ],
+            "anchor": [
+              0.5,
+              0.5
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.PUP.BROKEN_BRIDGE"
+          }
+        }
+      ],
+      "notes": "Keep readable writing blank for native CT text; same physical owner and approach bounds."
+    },
+    {
+      "assetId": "ASSET.PUP.JOIN",
+      "name": "Joined-boats deck strip",
+      "variants": [
+        {
+          "key": "base",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Same artwork identity and production brief; this variant changes only the stated pose/physical state.",
+          "visibleWhen": "Derived from actual BRIDGE committed state; MODEL copies use initial obstacle only",
+          "currentAcceptedReplacement": false
+        }
+      ],
+      "productionBrief": "Narrow neutral paper connector spanning local[34,69,67,77] together with two boats after BRIDGE; visible continuous walkway, distinct from torn footbridge ends.",
+      "originalMasterPixels": [
+        624,
+        64
+      ],
+      "geometry": {
+        "coordinateSpace": "projection-100",
+        "contentPixels": [
+          304,
+          24
+        ],
+        "paddingBasePixels": 4,
+        "contentRectPixels": [
+          4,
+          4,
+          308,
+          28
+        ],
+        "anchor": [
+          0.5,
+          0.5
+        ],
+        "logicalSize": null,
+        "attachmentAnchors": {},
+        "layer": "bounded projection, or separately transformed MODEL child; never room ground"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.PUP.BOATS.part2",
+          "coordinateSpace": "puppet-local",
+          "assetUse": {
+            "slot": "PUP.BOATS.part2",
+            "ownerId": "PUP.BOATS",
+            "role": "puppet",
+            "logicalBounds": [
+              -16.5,
+              -4,
+              16.5,
+              4
+            ],
+            "anchor": [
+              0.5,
+              0.5
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.PUP.JOIN"
+          }
+        }
+      ],
+      "notes": "Keep readable writing blank for native CT text; same physical owner and approach bounds."
+    },
+    {
+      "assetId": "ASSET.TILE.FERRY",
+      "name": "One Boat physical tile face",
+      "variants": [
+        {
+          "key": "base",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Owner visible in its current eligible state.",
+          "visibleWhen": "Owner visible in its current eligible state.",
+          "currentAcceptedReplacement": false
+        }
+      ],
+      "productionBrief": "Cream thick paper tile and teal bevel. Single coral folded boat with cream inside; no seed or person. Stored upper-right in unnumbered 2x2 caddy; same face inspected, selected, inserted, replaced, swapped or returned. Native focus/held outline and actual location labels separate. Render at72px base in rail;144px face supports reader,2x288px supports inspection.",
+      "originalMasterPixels": [
+        304,
+        304
+      ],
+      "geometry": {
+        "coordinateSpace": "room",
+        "contentPixels": [
+          144,
+          144
+        ],
+        "paddingBasePixels": 4,
+        "contentRectPixels": [
+          4,
+          4,
+          148,
+          148
+        ],
+        "anchor": [
+          0.5,
+          0.9736842105263158
+        ],
+        "logicalSize": [
+          6,
+          6
+        ],
+        "attachmentAnchors": {},
+        "layer": "owner-relative; Item 05 ground sort or supporting DOM layer"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.TILE.FERRY.rack",
+          "coordinateSpace": "caddy-local",
+          "assetUse": {
+            "slot": "TILE.FERRY.rack",
+            "ownerId": "TILE.FERRY",
+            "role": "prop",
+            "logicalBounds": [
+              6.5,
+              0.25,
+              11.5,
+              3.25
+            ],
+            "anchor": [
+              0.5,
+              0.9736842105263158
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.TILE.FERRY"
+          }
+        },
+        {
+          "id": "BIND.TILE.FERRY.rail",
+          "coordinateSpace": "tile-local",
+          "assetUse": {
+            "slot": "TILE.FERRY.rail",
+            "ownerId": "TILE.FERRY",
+            "role": "prop",
+            "logicalBounds": [
+              -3,
+              -3,
+              3,
+              3
+            ],
+            "anchor": [
+              0.5,
+              0.9736842105263158
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.TILE.FERRY"
+          }
+        }
+      ],
+      "notes": "All four equal visual status; native text labels remain outside artwork. No implied preferred order."
+    },
+    {
+      "assetId": "ASSET.TILE.BRIDGE",
+      "name": "Joined Boats physical tile face",
+      "variants": [
+        {
+          "key": "base",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Owner visible in its current eligible state.",
+          "visibleWhen": "Owner visible in its current eligible state.",
+          "currentAcceptedReplacement": false
+        }
+      ],
+      "productionBrief": "Cream thick paper tile and teal bevel. Two joined coral boats with clear joining edge; no Pip crossing diagram. Stored lower-right in unnumbered 2x2 caddy; same face inspected, selected, inserted, replaced, swapped or returned. Native focus/held outline and actual location labels separate. Render at72px base in rail;144px face supports reader,2x288px supports inspection.",
+      "originalMasterPixels": [
+        304,
+        304
+      ],
+      "geometry": {
+        "coordinateSpace": "room",
+        "contentPixels": [
+          144,
+          144
+        ],
+        "paddingBasePixels": 4,
+        "contentRectPixels": [
+          4,
+          4,
+          148,
+          148
+        ],
+        "anchor": [
+          0.5,
+          0.9736842105263158
+        ],
+        "logicalSize": [
+          6,
+          6
+        ],
+        "attachmentAnchors": {},
+        "layer": "owner-relative; Item 05 ground sort or supporting DOM layer"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.TILE.BRIDGE.rack",
+          "coordinateSpace": "caddy-local",
+          "assetUse": {
+            "slot": "TILE.BRIDGE.rack",
+            "ownerId": "TILE.BRIDGE",
+            "role": "prop",
+            "logicalBounds": [
+              6.5,
+              3.75,
+              11.5,
+              6.75
+            ],
+            "anchor": [
+              0.5,
+              0.9736842105263158
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.TILE.BRIDGE"
+          }
+        },
+        {
+          "id": "BIND.TILE.BRIDGE.rail",
+          "coordinateSpace": "tile-local",
+          "assetUse": {
+            "slot": "TILE.BRIDGE.rail",
+            "ownerId": "TILE.BRIDGE",
+            "role": "prop",
+            "logicalBounds": [
+              -3,
+              -3,
+              3,
+              3
+            ],
+            "anchor": [
+              0.5,
+              0.9736842105263158
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.TILE.BRIDGE"
+          }
+        }
+      ],
+      "notes": "All four equal visual status; native text labels remain outside artwork. No implied preferred order."
+    },
+    {
+      "assetId": "ASSET.TILE.PLANT",
+      "name": "Hill physical tile face",
+      "variants": [
+        {
+          "key": "base",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Owner visible in its current eligible state.",
+          "visibleWhen": "Owner visible in its current eligible state.",
+          "currentAcceptedReplacement": false
+        }
+      ],
+      "productionBrief": "Cream thick paper tile and teal bevel. Green hill silhouette, no planted seed or instructions. Stored lower-left in unnumbered 2x2 caddy; same face inspected, selected, inserted, replaced, swapped or returned. Native focus/held outline and actual location labels separate. Render at72px base in rail;144px face supports reader,2x288px supports inspection.",
+      "originalMasterPixels": [
+        304,
+        304
+      ],
+      "geometry": {
+        "coordinateSpace": "room",
+        "contentPixels": [
+          144,
+          144
+        ],
+        "paddingBasePixels": 4,
+        "contentRectPixels": [
+          4,
+          4,
+          148,
+          148
+        ],
+        "anchor": [
+          0.5,
+          0.9736842105263158
+        ],
+        "logicalSize": [
+          6,
+          6
+        ],
+        "attachmentAnchors": {},
+        "layer": "owner-relative; Item 05 ground sort or supporting DOM layer"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.TILE.PLANT.rack",
+          "coordinateSpace": "caddy-local",
+          "assetUse": {
+            "slot": "TILE.PLANT.rack",
+            "ownerId": "TILE.PLANT",
+            "role": "prop",
+            "logicalBounds": [
+              0.5,
+              3.75,
+              5.5,
+              6.75
+            ],
+            "anchor": [
+              0.5,
+              0.9736842105263158
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.TILE.PLANT"
+          }
+        },
+        {
+          "id": "BIND.TILE.PLANT.rail",
+          "coordinateSpace": "tile-local",
+          "assetUse": {
+            "slot": "TILE.PLANT.rail",
+            "ownerId": "TILE.PLANT",
+            "role": "prop",
+            "logicalBounds": [
+              -3,
+              -3,
+              3,
+              3
+            ],
+            "anchor": [
+              0.5,
+              0.9736842105263158
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.TILE.PLANT"
+          }
+        }
+      ],
+      "notes": "All four equal visual status; native text labels remain outside artwork. No implied preferred order."
+    },
+    {
+      "assetId": "ASSET.TILE.BLOOM",
+      "name": "Flower physical tile face",
+      "variants": [
+        {
+          "key": "base",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Owner visible in its current eligible state.",
+          "visibleWhen": "Owner visible in its current eligible state.",
+          "currentAcceptedReplacement": false
+        }
+      ],
+      "productionBrief": "Cream thick paper tile and teal bevel. Warm flower silhouette, no arrow from Hill or answer numbering. Stored upper-left in unnumbered 2x2 caddy; same face inspected, selected, inserted, replaced, swapped or returned. Native focus/held outline and actual location labels separate. Render at72px base in rail;144px face supports reader,2x288px supports inspection.",
+      "originalMasterPixels": [
+        304,
+        304
+      ],
+      "geometry": {
+        "coordinateSpace": "room",
+        "contentPixels": [
+          144,
+          144
+        ],
+        "paddingBasePixels": 4,
+        "contentRectPixels": [
+          4,
+          4,
+          148,
+          148
+        ],
+        "anchor": [
+          0.5,
+          0.9736842105263158
+        ],
+        "logicalSize": [
+          6,
+          6
+        ],
+        "attachmentAnchors": {},
+        "layer": "owner-relative; Item 05 ground sort or supporting DOM layer"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.TILE.BLOOM.rack",
+          "coordinateSpace": "caddy-local",
+          "assetUse": {
+            "slot": "TILE.BLOOM.rack",
+            "ownerId": "TILE.BLOOM",
+            "role": "prop",
+            "logicalBounds": [
+              0.5,
+              0.25,
+              5.5,
+              3.25
+            ],
+            "anchor": [
+              0.5,
+              0.9736842105263158
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.TILE.BLOOM"
+          }
+        },
+        {
+          "id": "BIND.TILE.BLOOM.rail",
+          "coordinateSpace": "tile-local",
+          "assetUse": {
+            "slot": "TILE.BLOOM.rail",
+            "ownerId": "TILE.BLOOM",
+            "role": "prop",
+            "logicalBounds": [
+              -3,
+              -3,
+              3,
+              3
+            ],
+            "anchor": [
+              0.5,
+              0.9736842105263158
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.TILE.BLOOM"
+          }
+        }
+      ],
+      "notes": "All four equal visual status; native text labels remain outside artwork. No implied preferred order."
+    },
+    {
+      "assetId": "ASSET.SOURCE.E2.PHOTO",
+      "name": "Frozen partial notice photograph",
+      "variants": [
+        {
+          "key": "base",
+          "frames": 1,
+          "frameRate": 0,
+          "physicalMeaning": "Owner visible in its current eligible state.",
+          "visibleWhen": "Owner visible in its current eligible state.",
+          "currentAcceptedReplacement": false
+        }
+      ],
+      "productionBrief": "Square cropped historical curled notice paper and timber. Visible window contains only native exact CANCELED from CT.OBJ.NOTICE_PARTIAL. No full notice hidden underneath and never update after physical flatten. CT.SRC.E2.B caption separate.",
+      "originalMasterPixels": [
+        1440,
+        1440
+      ],
+      "geometry": {
+        "coordinateSpace": "room",
+        "contentPixels": [
+          720,
+          720
+        ],
+        "paddingBasePixels": 0,
+        "contentRectPixels": [
+          0,
+          0,
+          720,
+          720
+        ],
+        "anchor": [
+          0.5,
+          1
+        ],
+        "logicalSize": null,
+        "attachmentAnchors": {},
+        "layer": "owner-relative; Item 05 ground sort or supporting DOM layer"
+      },
+      "physicalBindings": [
+        {
+          "id": "BIND.E2.photo",
+          "coordinateSpace": "source-pixels",
+          "assetUse": {
+            "slot": "E2.photo",
+            "ownerId": "E2",
+            "role": "ui",
+            "logicalBounds": [
+              0,
+              0,
+              720,
+              720
+            ],
+            "anchor": [
+              0.5,
+              1
+            ],
+            "critical": true,
+            "manifestAssetId": "ASSET.SOURCE.E2.PHOTO"
+          }
+        }
+      ],
+      "notes": "Only the same frozen partial notice word CANCELED appears as native text; no full notice or background destination clue."
+    }
+  ],
+  "alreadyAcceptedReuse": [
+    "All four backplates, crew home/talk/celebrate and four Pip/Grandma poses are accepted. Builder will wire unused celebration/appropriate existing poses into actual states.",
+    "Player four-frame right/front/back walk sheets are accepted. Left currently mirrors right under the ER13 delivery instruction.",
+    "Caddy open/closed atlas includes its lid and two pockets; no separate caddy/lid/pocket generation requested.",
+    "Accepted Toast body/lid/arm/tray/tiny slice/glass are complete; use existing controller choreography.",
+    "Existing request envelope/leaflet, stands/furniture, seed/roots/flower/bud/backpack/boats and material crops are accepted.",
+    "E2 three frames can keep their current composed accepted Loop/native wood geometry if expressly accepted as the final format; first/second coordinates and empty third-frame crop are already authoritative. No extra frozen scene generation requested unless this native form is rejected."
+  ],
+  "exportWork": "Builder will produce measured base/2x derivatives from genuine source detail and implement loading/cache budgets. Original received1536px room sources cannot supply newly invented2880px detail; record this limitation or supply higher-detail originals if original density target is mandatory."
+}

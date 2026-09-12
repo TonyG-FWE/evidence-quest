@@ -14,7 +14,9 @@ for(const asset of record.assets){
  const poseScaled=asset.assetId.startsWith('ASSET.ACT.')||['ASSET.PUP.PIP','ASSET.PUP.GRANDMA'].includes(asset.assetId);
  const base={url:'/art/er13/'+filename,frameWidth:asset.width,frameHeight:asset.height,columns:1,contentRectPixels:[0,0,asset.width,asset.height],referenceHeight:poseScaled?asset.referenceStandingHeightPixels:undefined};
  if(asset.frames){
-  for(const pose of asset.frames){const [x,y,w,h]=pose.sourceRect;if(![x,y,w,h].every(Number.isFinite)||x<0||y<0||w<=0||h<=0||x+w>asset.width||y+h>asset.height)throw Error('Invalid accepted crop '+asset.name);const entry={...base,contentRectPixels:[x,y,x+w,y+h],anchor:pose.feetInCrop};
+  for(const pose of asset.frames){const [x,y,w,h]=pose.sourceRect;if(![x,y,w,h].every(Number.isFinite)||x<0||y<0||w<=0||h<=0||x+w>asset.width||y+h>asset.height)throw Error('Invalid accepted crop '+asset.name);
+   const anchor=asset.assetId==='ASSET.PUP.ROOTS'?[w/2,0]:poseScaled||['ASSET.PUP.FLOWER','ASSET.PROP.TOAST.ARM'].includes(asset.assetId)?pose.feetInCrop:[w/2,h];
+   const entry={...base,contentRectPixels:[x,y,x+w,y+h],anchor};
    manifest[asset.assetId+'/'+pose.pose]=entry;
    if(pose.pose==='idle')manifest[asset.assetId+'/home']=entry;
    if(pose.pose==='explain')manifest[asset.assetId+'/talk']=entry;
@@ -33,6 +35,15 @@ for(const asset of record.assets){
    for(const variant of ['standby','following','docked','projecting','rolling-left','rolling-right','rolling-front','rolling-back'])manifest[asset.assetId+'/'+variant]={...entry,mirror:variant==='rolling-right'};
   }
  }else manifest[asset.assetId+'/base']=base;
+}
+if(manifest['ASSET.PROP.CADDY/leaflet']){
+ manifest['ASSET.PROP.LEAFLET/sheet']=manifest['ASSET.PROP.CADDY/leaflet'];
+ manifest['ASSET.PROP.REQUEST/unfolded']=manifest['ASSET.PROP.CADDY/leaflet'];
+ manifest['ASSET.PROP.REQUEST/folded']=manifest['ASSET.PROP.CADDY/envelope'];
+}
+if(manifest['ASSET.PROP.CY.STAND/base']){
+ const sign=JSON.parse(await readFile('content/temp-assets.json','utf8')).bindings.find(b=>b.assetUse.ownerId==='WK.WAYFINDING').assetUse.manifestAssetId;
+ manifest[sign+'/base']=manifest['ASSET.PROP.CY.STAND/base'];
 }
 await writeFile('content/illustrated-assets.json',JSON.stringify(manifest,null,2)+'\n');
 await writeFile('evidence/er13/art-delivery-batch'+batch+'.json',JSON.stringify(record,null,2)+'\n');

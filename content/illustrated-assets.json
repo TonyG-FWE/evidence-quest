@@ -1482,7 +1482,7 @@
       1162
     ],
     "anchor": [
-      541,
+      540.5,
       1068
     ]
   },
@@ -1498,7 +1498,7 @@
       802
     ],
     "anchor": [
-      662.5,
+      663,
       664
     ]
   },
@@ -1514,7 +1514,7 @@
       539
     ],
     "anchor": [
-      979.5,
+      982,
       340
     ]
   },
@@ -1530,7 +1530,7 @@
       1214
     ],
     "anchor": [
-      517.5,
+      508,
       1173
     ]
   },
@@ -1546,7 +1546,7 @@
       798
     ],
     "anchor": [
-      775,
+      782.5,
       692
     ]
   },
@@ -1562,7 +1562,7 @@
       660
     ],
     "anchor": [
-      921,
+      922.5,
       542
     ]
   },
@@ -1578,7 +1578,7 @@
       1066
     ],
     "anchor": [
-      492.5,
+      493,
       914
     ]
   },
@@ -1592,6 +1592,10 @@
       0,
       1536,
       337
+    ],
+    "anchor": [
+      768,
+      337
     ]
   },
   "ER13.MATERIAL.PAPER/grass": {
@@ -1604,6 +1608,10 @@
       341,
       1536,
       677
+    ],
+    "anchor": [
+      768,
+      336
     ]
   },
   "ER13.MATERIAL.PAPER/river": {
@@ -1616,6 +1624,10 @@
       684,
       1536,
       1024
+    ],
+    "anchor": [
+      768,
+      340
     ]
   },
   "ASSET.PUP.ROOTS/base": {
@@ -1630,8 +1642,8 @@
       1193
     ],
     "anchor": [
-      651,
-      1136
+      600,
+      0
     ]
   },
   "ASSET.PROP.TOAST.BODY/base": {
@@ -1662,7 +1674,7 @@
       930
     ],
     "anchor": [
-      750.5,
+      753,
       848
     ]
   },
@@ -1694,7 +1706,7 @@
       767
     ],
     "anchor": [
-      818,
+      817.5,
       608
     ]
   },
@@ -1742,8 +1754,248 @@
       875
     ],
     "anchor": [
-      693,
+      692,
       729
+    ]
+  },
+  "ASSET.PUP.SEED/base": {
+    "url": "/art/er13/story-seed-fresh-v1.png",
+    "frameWidth": 1394,
+    "frameHeight": 1128,
+    "columns": 1,
+    "contentRectPixels": [
+      369,
+      195,
+      1103,
+      897
+    ],
+    "anchor": [
+      367,
+      702
+    ]
+  },
+  "ASSET.PUP.FLOWER/open": {
+    "url": "/art/er13/story-flower-fresh-v1.png",
+    "frameWidth": 1024,
+    "frameHeight": 1536,
+    "columns": 1,
+    "contentRectPixels": [
+      58,
+      16,
+      1004,
+      1511
+    ],
+    "anchor": [
+      370,
+      1495
+    ]
+  },
+  "ASSET.PUP.FLOWER/bud": {
+    "url": "/art/er13/story-bud-fresh-v1.png",
+    "frameWidth": 1024,
+    "frameHeight": 1536,
+    "columns": 1,
+    "contentRectPixels": [
+      128,
+      75,
+      902,
+      1465
+    ],
+    "anchor": [
+      436.5,
+      1390
+    ]
+  },
+  "ASSET.PROP.TOAST.PIECE/base": {
+    "url": "/art/er13/toast-piece-fresh-v1.png",
+    "frameWidth": 1374,
+    "frameHeight": 1145,
+    "columns": 1,
+    "contentRectPixels": [
+      69,
+      109,
+      1317,
+      1073
+    ],
+    "anchor": [
+      624,
+      964
+    ]
+  },
+  "ASSET.PROP.TOAST.GLASS/base": {
+    "url": "/art/er13/toast-glass-fresh-v1.png",
+    "frameWidth": 1304,
+    "frameHeight": 1206,
+    "columns": 1,
+    "contentRectPixels": [
+      133,
+      96,
+      1189,
+      1107
+    ],
+    "anchor": [
+      528,
+      1011
+    ]
+  },
+  "ASSET.PROP.CADDY/open": {
+    "url": "/art/er13/caddy-fresh-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      25,
+      108,
+      555,
+      569
+    ],
+    "anchor": [
+      265,
+      461
+    ]
+  },
+  "ASSET.PROP.CADDY/closed": {
+    "url": "/art/er13/caddy-fresh-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      600,
+      170,
+      1122,
+      524
+    ],
+    "anchor": [
+      261,
+      354
+    ]
+  },
+  "ASSET.PROP.CADDY/leaflet": {
+    "url": "/art/er13/caddy-fresh-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1186,
+      181,
+      1675,
+      527
+    ],
+    "anchor": [
+      244.5,
+      346
+    ]
+  },
+  "ASSET.PROP.CADDY/envelope": {
+    "url": "/art/er13/caddy-fresh-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1755,
+      248,
+      2131,
+      492
+    ],
+    "anchor": [
+      188,
+      244
+    ]
+  },
+  "ASSET.PROP.CY.STAND/base": {
+    "url": "/art/er13/courtyard-tablet-stand-fresh-v1.png",
+    "frameWidth": 1024,
+    "frameHeight": 1536,
+    "columns": 1,
+    "contentRectPixels": [
+      205,
+      50,
+      824,
+      1467
+    ],
+    "anchor": [
+      309.5,
+      1417
+    ]
+  },
+  "ASSET.PROP.MD.RACK/base": {
+    "url": "/art/er13/media-kit-rack-fresh-v1.png",
+    "frameWidth": 1536,
+    "frameHeight": 1024,
+    "columns": 1,
+    "contentRectPixels": [
+      71,
+      129,
+      1465,
+      895
+    ],
+    "anchor": [
+      697,
+      766
+    ]
+  },
+  "ASSET.PROP.LEAFLET/sheet": {
+    "url": "/art/er13/caddy-fresh-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1186,
+      181,
+      1675,
+      527
+    ],
+    "anchor": [
+      244.5,
+      346
+    ]
+  },
+  "ASSET.PROP.REQUEST/unfolded": {
+    "url": "/art/er13/caddy-fresh-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1186,
+      181,
+      1675,
+      527
+    ],
+    "anchor": [
+      244.5,
+      346
+    ]
+  },
+  "ASSET.PROP.REQUEST/folded": {
+    "url": "/art/er13/caddy-fresh-v1.png",
+    "frameWidth": 2172,
+    "frameHeight": 724,
+    "columns": 1,
+    "contentRectPixels": [
+      1755,
+      248,
+      2131,
+      492
+    ],
+    "anchor": [
+      188,
+      244
+    ]
+  },
+  "ASSET.PROP.WK.SIGN/base": {
+    "url": "/art/er13/courtyard-tablet-stand-fresh-v1.png",
+    "frameWidth": 1024,
+    "frameHeight": 1536,
+    "columns": 1,
+    "contentRectPixels": [
+      205,
+      50,
+      824,
+      1467
+    ],
+    "anchor": [
+      309.5,
+      1417
     ]
   }
 }

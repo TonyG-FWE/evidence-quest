@@ -1,0 +1,141 @@
+
+> evidence-quest@0.1.0 test:browser
+> node scripts/test-browser.mjs watch-position.spec.ts
+
+[WebServer] (node:8628) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 3 tests using 1 worker
+
+(node:49188) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  1 [chromium] › browser-tests\watch-position.spec.ts:8:1 › ER13 Watch start, unmet and completion keep the full consequence visible without moving keyboard focus (30.2s)
+(node:47236) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  2 [firefox] › browser-tests\watch-position.spec.ts:8:1 › ER13 Watch start, unmet and completion keep the full consequence visible without moving keyboard focus (31.8s)
+(node:16192) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  3 [webkit] › browser-tests\watch-position.spec.ts:8:1 › ER13 Watch start, unmet and completion keep the full consequence visible without moving keyboard focus (31.3s)
+
+
+  1) [chromium] › browser-tests\watch-position.spec.ts:8:1 › ER13 Watch start, unmet and completion keep the full consequence visible without moving keyboard focus 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('.narrated-show .caption')
+    Expected substring: "lights"
+    Received string:    "Pip reached Grandma, and they planted the seed together. Your ending works. You're ready to put on the show."
+    Timeout: 15000ms
+
+    Call log:
+      - Expect "toContainText" with timeout 15000ms
+      - waiting for locator('.narrated-show .caption')
+        33 × locator resolved to <div role="status" class="caption local-feedback">…</div>
+           - unexpected value "Pip reached Grandma, and they planted the seed together. Your ending works. You're ready to put on the show."
+
+
+      12 |  await page.getByRole('button',{name:'Arrange tiles',exact:true}).click();await page.locator('[data-tile="TILE.BRIDGE"]').click();await page.getByRole('button',{name:'Insert after One Boat',exact:true}).click();await page.getByRole('button',{name:'Try this ending',exact:true}).click();
+      13 |  await expect(page.getByRole('button',{name:'Start premiere',exact:true})).toBeVisible();await visibleConsequence(page);await expect(page.getByRole('button',{name:'Try this ending',exact:true})).toBeFocused();
+    > 14 |  await expect(page.locator('.narrated-show .caption')).toContainText('lights');await page.screenshot({path:'evidence/er13/watch-completion-position.png',fullPage:false});
+         |                                                        ^
+      15 |  await page.getByRole('button',{name:'Your story plan',exact:true}).click();await page.getByRole('textbox').fill('I can describe the ending.');await expect(page.getByRole('textbox')).toBeFocused();await expect(page.getByRole('textbox')).toHaveValue('I can describe the ending.');
+      16 | });
+      17 |
+        at C:\Users\TonyGuillaro\OneDrive - Summit Gov Solutions\Documents\ChatGPT\Evidence quest\browser-tests\watch-position.spec.ts:14:56
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\raw\watch-position-ER13-Watch--26943-thout-moving-keyboard-focus-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\raw\watch-position-ER13-Watch--26943-thout-moving-keyboard-focus-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    output\playwright\raw\watch-position-ER13-Watch--26943-thout-moving-keyboard-focus-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace output\playwright\raw\watch-position-ER13-Watch--26943-thout-moving-keyboard-focus-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [firefox] › browser-tests\watch-position.spec.ts:8:1 › ER13 Watch start, unmet and completion keep the full consequence visible without moving keyboard focus 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('.narrated-show .caption')
+    Expected substring: "lights"
+    Received string:    "Pip reached Grandma, and they planted the seed together. Your ending works. You're ready to put on the show."
+    Timeout: 15000ms
+
+    Call log:
+      - Expect "toContainText" with timeout 15000ms
+      - waiting for locator('.narrated-show .caption')
+        33 × locator resolved to <div role="status" class="caption local-feedback">…</div>
+           - unexpected value "Pip reached Grandma, and they planted the seed together. Your ending works. You're ready to put on the show."
+
+
+      12 |  await page.getByRole('button',{name:'Arrange tiles',exact:true}).click();await page.locator('[data-tile="TILE.BRIDGE"]').click();await page.getByRole('button',{name:'Insert after One Boat',exact:true}).click();await page.getByRole('button',{name:'Try this ending',exact:true}).click();
+      13 |  await expect(page.getByRole('button',{name:'Start premiere',exact:true})).toBeVisible();await visibleConsequence(page);await expect(page.getByRole('button',{name:'Try this ending',exact:true})).toBeFocused();
+    > 14 |  await expect(page.locator('.narrated-show .caption')).toContainText('lights');await page.screenshot({path:'evidence/er13/watch-completion-position.png',fullPage:false});
+         |                                                        ^
+      15 |  await page.getByRole('button',{name:'Your story plan',exact:true}).click();await page.getByRole('textbox').fill('I can describe the ending.');await expect(page.getByRole('textbox')).toBeFocused();await expect(page.getByRole('textbox')).toHaveValue('I can describe the ending.');
+      16 | });
+      17 |
+        at C:\Users\TonyGuillaro\OneDrive - Summit Gov Solutions\Documents\ChatGPT\Evidence quest\browser-tests\watch-position.spec.ts:14:56
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\raw\watch-position-ER13-Watch--26943-thout-moving-keyboard-focus-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\raw\watch-position-ER13-Watch--26943-thout-moving-keyboard-focus-firefox\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    output\playwright\raw\watch-position-ER13-Watch--26943-thout-moving-keyboard-focus-firefox\trace.zip
+    Usage:
+
+        npx playwright show-trace output\playwright\raw\watch-position-ER13-Watch--26943-thout-moving-keyboard-focus-firefox\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [webkit] › browser-tests\watch-position.spec.ts:8:1 › ER13 Watch start, unmet and completion keep the full consequence visible without moving keyboard focus 
+
+    Error: expect(locator).toBeFocused() failed
+
+    Locator:  getByRole('button', { name: 'Try this ending', exact: true })
+    Expected: focused
+    Received: inactive
+    Timeout:  15000ms
+
+    Call log:
+      - Expect "toBeFocused" with timeout 15000ms
+      - waiting for getByRole('button', { name: 'Try this ending', exact: true })
+        33 × locator resolved to <button type="button" class="primary">…</button>
+           - unexpected value "inactive"
+
+
+      11 |  await expect.poll(async()=>(await saved(page)).payload.playback?.pauseReason).toBe('unmet');await visibleConsequence(page);
+      12 |  await page.getByRole('button',{name:'Arrange tiles',exact:true}).click();await page.locator('[data-tile="TILE.BRIDGE"]').click();await page.getByRole('button',{name:'Insert after One Boat',exact:true}).click();await page.getByRole('button',{name:'Try this ending',exact:true}).click();
+    > 13 |  await expect(page.getByRole('button',{name:'Start premiere',exact:true})).toBeVisible();await visibleConsequence(page);await expect(page.getByRole('button',{name:'Try this ending',exact:true})).toBeFocused();
+         |                                                                                                                                                                                                    ^
+      14 |  await expect(page.locator('.narrated-show .caption')).toContainText('lights');await page.screenshot({path:'evidence/er13/watch-completion-position.png',fullPage:false});
+      15 |  await page.getByRole('button',{name:'Your story plan',exact:true}).click();await page.getByRole('textbox').fill('I can describe the ending.');await expect(page.getByRole('textbox')).toBeFocused();await expect(page.getByRole('textbox')).toHaveValue('I can describe the ending.');
+      16 | });
+        at C:\Users\TonyGuillaro\OneDrive - Summit Gov Solutions\Documents\ChatGPT\Evidence quest\browser-tests\watch-position.spec.ts:13:196
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\raw\watch-position-ER13-Watch--26943-thout-moving-keyboard-focus-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\raw\watch-position-ER13-Watch--26943-thout-moving-keyboard-focus-webkit\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    output\playwright\raw\watch-position-ER13-Watch--26943-thout-moving-keyboard-focus-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace output\playwright\raw\watch-position-ER13-Watch--26943-thout-moving-keyboard-focus-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    [chromium] › browser-tests\watch-position.spec.ts:8:1 › ER13 Watch start, unmet and completion keep the full consequence visible without moving keyboard focus 
+    [firefox] › browser-tests\watch-position.spec.ts:8:1 › ER13 Watch start, unmet and completion keep the full consequence visible without moving keyboard focus 
+    [webkit] › browser-tests\watch-position.spec.ts:8:1 › ER13 Watch start, unmet and completion keep the full consequence visible without moving keyboard focus 

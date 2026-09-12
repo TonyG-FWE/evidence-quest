@@ -2,7 +2,8 @@ import type {CaseState, Run, SaveEnvelope} from '../../contracts/types.js';
 import {validateCaseSnapshot, validateSaveEnvelope} from '../../contracts/generated/validators.mjs';
 import {IDENTITY} from '../core/state.js';
 import {content, parts, texts} from '../core/content.js';
-import {validExposure, exposed, sourceOf} from '../core/evidence.js';
+import {validExposure, exposed, sourceOf,available} from '../core/evidence.js';
+import {comparisonRefs,knownRooms,metadata} from '../core/reasoning.js';
 import {legal, roomData, distance} from '../physical/navigation.js';
 import {applyTile, initialPuppet, successful} from '../story/engine.js';
 import {eligible} from '../coach/authored.js';
@@ -66,12 +67,26 @@ export function validCase(c:CaseState):boolean {
  if(c.drafts.some(d=>d.selectedRefs.some(r=>!exposed(c,r))))return false;
  const records=new Map(c.records.map(r=>[r.id,r]));if(records.size!==c.records.length)return false;
  for(const r of c.records){
-  if(r.refs.some(ref=>!exposed(c,ref))||r.seq>c.lastObservationSeq)return false;
+  if(r.refs.some(ref=>!exposed(c,ref))||r.seq>c.lastObservationSeq||Array.from(r.text).length>600)return false;
   if(r.previousRecordId){const previous=records.get(r.previousRecordId);if(!previous||previous.seq>=r.seq||previous.topic!==r.topic||previous.kind!==r.kind||previous.recipient!==r.recipient)return false;}
   if(['private-idea','crew-plan','coaching-submission'].includes(r.kind)&&r.recipient!==null)return false;
   if(r.kind==='jo-explanation'&&r.recipient!=='ACT.JO')return false;
   if(r.kind==='evidence-delivery'&&r.recipient===null)return false;
  }
+ if(new Set(c.comparisons.map(row=>row.id)).size!==c.comparisons.length||c.comparisons.filter(row=>row.recordedSeq===null).length>1)return false;
+ for(const row of c.comparisons){
+  if(comparisonRefs(row).some(ref=>!exposed(c,ref)))return false;
+  if(row.recordedSeq!==null){const r=records.get(row.id);if(!r||r.kind!=='private-idea'||r.seq!==row.recordedSeq||r.text!==row.note||!equal(r.refs,comparisonRefs(row)))return false;}
+ }
+ if(c.reasoning){
+  const {privateRevisionOf,comparisonRevisionOf,leadDestination}=c.reasoning;
+  for(const [id,comparison]of [[privateRevisionOf,false],[comparisonRevisionOf,true]] as const)if(id){const r=records.get(id);if(!r||r.kind!=='private-idea'||c.comparisons.some(row=>row.id===id&&row.recordedSeq!==null)!==comparison)return false;}
+  if(leadDestination&&(!c.selectedLead||!knownRooms(c).some(room=>room.id===leadDestination)))return false;
+ }
+ for(const o of c.observations)if(o.kind==='source-displayed'&&o.contentIds.some(id=>['CT.META.POSTED','CT.META.RECORDED','CT.META.CAPTURED'].includes(id))){
+  if(o.origin!=='access'||o.refs.length!==1||o.contentIds.length!==1||!available(c,o.refs[0]!)||metadata(o.refs[0]!)?.ct!==o.contentIds[0])return false;
+ }
+ if(c.readerResume&&(!available(c,c.readerResume.componentRef)||sourceOf(c.readerResume.componentRef)!==c.readerResume.sourceId))return false;
  for(const n of c.npcReceived){const delivered=n.deliveryRecordIds.map(id=>records.get(id));
   if(delivered.some(r=>!r||r.recipient!==n.actorId||!['evidence-delivery','jo-explanation'].includes(r.kind)))return false;
   if(n.refs.some(ref=>!delivered.some(r=>r?.refs.includes(ref))))return false;

@@ -39,8 +39,16 @@ export const overrides={
  'CT.OBS.LOOP.SEEN':'Loop is here. Our projector can go back to the Stage.',
  'CT.OBS.LOOP.RESPONSE':'Loop turned toward you and is ready to follow.',
  'CT.TOAST.COVERED':'Someone built a very large machine to make a snack. Want to see what it does?',
+ 'CT.TOAST.PUNCHLINE':'One tiny slice. Maximum effort.',
 };
 export const additions={
+ 'CT.SOURCE.LIMIT':'Choose up to two details. To choose a different one, uncheck a selected detail.',
+ 'CT.ER13.HANDOFF_BOTH':'Set the story kit on the desk, and bring Loop to its dock.',
+ 'CT.ER13.HANDOFF_LOOP':'Bring Loop to its dock. The story kit is on the desk.',
+ 'CT.ER13.HANDOFF_KIT':'Set the story kit on the desk. Loop is in its dock.',
+ 'CT.ER13.KIT_THEN_LOOP':'Set the story kit on the desk. Then find Loop and bring it back.',
+ 'CT.ER13.LOOP_THEN_KIT':'Bring Loop to its dock. Then collect the story kit.',
+ 'CT.ER13.RETURN_LOOP':'Bring Loop back to the Stage. The story kit is on the desk.',
  'CT.ER13.WAKE':'Wake Loop so our projector can come back to the Stage.',
  'CT.ER13.HOME':'Join your friends at SparkFest. Find Loop, bring your paper story to life, and put on The Little Bridge.',
  'CT.ER13.SIGN':'SparkFest — stories and inventions made by us',
@@ -56,7 +64,9 @@ export const additions={
  'CT.ER13.WELCOME':'Welcome to SparkFest! Today, our crew is putting on The Little Bridge. We made the paper characters together. Now we need to bring their story to life on the big screen.',
  'CT.ER13.ENDING':"Pip crossed the river to reach Grandma. Together, they planted the seed in the hill's soil. A lantern-flower opened, and its warm light shone across the water.",
  'CT.ER13.PREMIERE_CONTEXT':'Our premiere is the first public showing of The Little Bridge.',
- 'CT.ER13.REHEARSAL_CONTEXT':'In rehearsal, we can try an ending and change it before the audience sees it.',
+ 'CT.ER13.REHEARSAL_CONTEXT':'In rehearsal, we can try an ending and change it before a show.',
+ 'CT.ER13.REPLAY_CONTEXT':'Our first show is complete. We can put this ending on the big screen again.',
+ 'CT.ER13.REPLAY_READY':"Pip reached Grandma, and they planted the seed together. Your ending works. You're ready to replay the show.",
  'CT.ER13.STILL_CONTEXT':'The paper petals stay still indoors.',
  'CT.ER13.TOGETHER_CONTEXT':'Pip and Grandma will plant the seed together.',
 };

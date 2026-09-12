@@ -1,4 +1,4 @@
-import type { CaseState, Draft, Exposure, Order, Point, Preferences, Run, CoachRequest } from '../../contracts/types.js';
+import type { CaseState, Comparison, Draft, Exposure, Order, Point, Preferences, Run, CoachRequest } from '../../contracts/types.js';
 import type { View } from './state.js';
 export type Command =
  |{type:'INTRO';action:'next'|'skip'|'open'|'dismiss-legacy'}
@@ -9,9 +9,12 @@ export type Command =
  |{type:'RESTORE';visitId:string}|{type:'SAVE_MODE';mode:'normal'|'unavailable'|'unknown-record'|'conflict'}|{type:'PREF_RESULT';revision:number;failed:boolean}
  |{type:'VIEW';view:View}|{type:'FOCUS';owner:'home'|'world'|'task'|'text'|'picker'|'confirmation'}|{type:'KEYS';keys:Array<'up'|'down'|'left'|'right'>}
  |{type:'TARGET';target:string;action?:string}|{type:'WALK';point:Point}|{type:'TICK';ms:number}|{type:'ACTION_READY';actionId:string}|{type:'STOP_WALK'}
+ |{type:'GO';destination:CaseState['physical']['room']}
  |{type:'EXPOSE';exposure:Pick<Exposure,'refId'|'ctId'|'spans'|'visualComplete'|'viaAccessId'>}
  |{type:'SOURCE_POSITION';sourceId:string;componentRef:string;frame:number|null;scrollFraction:number}
- |{type:'DRAFT';id:Draft['id'];text:string;refs?:string[]}|{type:'RECORD_PLAN';topic:'search'|'story';addressed?:boolean}|{type:'LEAD';lead:CaseState['selectedLead']}
+ |{type:'DRAFT';id:Draft['id'];text:string;refs?:string[]}|{type:'RECORD_PLAN';topic:'search'|'story';addressed?:boolean}|{type:'LEAD';lead:CaseState['selectedLead'];destination?:CaseState['physical']['room']|null}
+ |{type:'COMPARISON';slot?:'leftRef'|'rightRef';ref?:string|null;relationship?:Comparison['relationship'];note?:string}
+ |{type:'SAVE_IDEA';comparison?:boolean}|{type:'EDIT_IDEA';id:string}|{type:'IDEA_HELP';comparison?:boolean}|{type:'METADATA_SEEN';ref:string}
  |{type:'TALK';topic:string}|{type:'PRESENT';actor:'ACT.JO'|'ACT.REMY'|'ACT.ARI';refs:string[]}|{type:'DELIVER_PLAN';topic:'search'|'story'}
  |{type:'SELECT_TILE';tile:Order[number]}|{type:'EDIT_RAIL';operation:'insert'|'replace'|'swap'|'return'|'before'|'after'|'left'|'right';index:number}|{type:'CANCEL_TILE';invalid?:boolean}
  |{type:'PRESENTATION';mode:'arrange'|'watch'}

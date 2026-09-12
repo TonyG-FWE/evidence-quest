@@ -1,0 +1,37 @@
+
+> evidence-quest@0.1.0 test:browser
+> node scripts/test-browser.mjs reasoning.spec.ts connected.spec.ts sources-payoff.spec.ts save.spec.ts compact.spec.ts er13.spec.ts
+
+[WebServer] (node:41392) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 24 tests using 1 worker
+
+(node:49652) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chromium] › browser-tests\compact.spec.ts:13:1 › FIX11.ACCESS fresh 320x568 Largest Roomier reduced-motion sound-off case entirely through Tab and Enter (42.1s)
+  ok  2 [chromium] › browser-tests\compact.spec.ts:19:1 › FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest (8.4s)
+  ok  3 [chromium] › browser-tests\connected.spec.ts:5:1 › TASK11.16 media-first complete case, notes stay unread through collection, real rehearsal and premiere (50.5s)
+  ok  4 [chromium] › browser-tests\er13.spec.ts:4:1 › ER13 fresh purpose, optional opening, re-entry, readings and exact word context (1.8s)
+  ok  5 [chromium] › browser-tests\er13.spec.ts:14:1 › ER13 actual browser voice is used or its local English limitation is truthful (1.5s)
+  ok  6 [chromium] › browser-tests\er13.spec.ts:20:1 › ER13 still meanings remain bounded and secured notice has no stale description or unrequested interpretation (15.1s)
+  ok  7 [chromium] › browser-tests\er13.spec.ts:27:1 › ER13 narrator card pauses actual cues once and stays optional for the whole show (21.7s)
+  ok  8 [chromium] › browser-tests\er13.spec.ts:31:1 › ER13 legacy save is preserved without forced introduction and compact reading stays operable (1.6s)
+  ok  9 [chromium] › browser-tests\er13.spec.ts:37:1 › ER13 physical model gives a readable consequence and reachable big-screen action at laptop size (8.0s)
+  ok 10 [chromium] › browser-tests\er13.spec.ts:45:1 › ER13 clipped narrator words become source exposure only after their own card is scrolled (11.0s)
+  ok 11 [chromium] › browser-tests\er13.spec.ts:55:1 › ER13 lower world reading control restores a visible panel heading and return action (8.5s)
+  ok 12 [chromium] › browser-tests\er13.spec.ts:63:1 › ER13 seed-only pause keeps the whole consequence visible and permits a revised premiere (16.6s)
+  ok 13 [chromium] › browser-tests\reasoning.spec.ts:12:1 › TASK11.17 empty and text-only ideas retain drafts, actual revisions and private ownership across reload (2.2s)
+  ok 14 [chromium] › browser-tests\reasoning.spec.ts:19:1 › TASK11.17 explicit passage replacement, source groups, cancellation and same-source comparison preserve facts (6.2s)
+  ok 15 [chromium] › browser-tests\reasoning.spec.ts:27:1 › TASK11.17 metadata chronology and lead selection do not turn a plan into completion or move before Go (14.4s)
+  ok 16 [chromium] › browser-tests\reasoning.spec.ts:33:1 › ER13 closing a source and vocabulary before traveling restores the world, not a stale source reader (12.7s)
+  ok 17 [chromium] › browser-tests\reasoning.spec.ts:39:2 › compact tools › TASK11.17 compact keyboard and touch keep private drafts optional and both comparison slots reachable (1.2s)
+  ok 18 [chromium] › browser-tests\save.spec.ts:4:1 › TASK11.14 actual IndexedDB acknowledgement, reload and separated preferences (8.5s)
+  ok 19 [chromium] › browser-tests\save.spec.ts:15:1 › TASK11.14 damaged current offers previous explicitly and preserves both slots (8.7s)
+  ok 20 [chromium] › browser-tests\save.spec.ts:27:1 › TASK11.14 second visit wins CAS, older visit remains playable and replacement rechecks head (8.9s)
+  ok 21 [chromium] › browser-tests\sources-payoff.spec.ts:6:1 › TASK11.08 recording controls expose only displayed components; vocabulary and enlargement return safely (11.7s)
+  ok 22 [chromium] › browser-tests\sources-payoff.spec.ts:12:1 › TASK11.09 Ari full account before recovery and limited after recovery; source origin remains explicit (19.6s)
+  ok 23 [chromium] › browser-tests\sources-payoff.spec.ts:17:1 › TASK11.13 Maximum Toast can be ignored, canceled, revealed, interrupted, magnified and replayed (17.0s)
+  ok 24 [chromium] › browser-tests\sources-payoff.spec.ts:23:1 › TASK11.09/13 actual addressed explanation, recorded revision and own-room aftermath (19.7s)
+
+  24 passed (5.3m)

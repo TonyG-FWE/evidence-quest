@@ -2472,6 +2472,9 @@
         },
         "experience": {
           "$ref": "#/$defs/Experience"
+        },
+        "reasoning": {
+          "$ref": "#/$defs/Reasoning"
         }
       },
       "required": [
@@ -3559,6 +3562,56 @@
         "phrases",
         "wordContexts",
         "supports"
+      ],
+      "additionalProperties": false
+    },
+    "Reasoning": {
+      "type": "object",
+      "properties": {
+        "privateRevisionOf": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+              "maxLength": 36
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "comparisonRevisionOf": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$",
+              "maxLength": 36
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "leadDestination": {
+          "anyOf": [
+            {
+              "enum": [
+                "SC.ST",
+                "SC.CY",
+                "SC.WK",
+                "SC.MD"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "privateRevisionOf",
+        "comparisonRevisionOf",
+        "leadDestination"
       ],
       "additionalProperties": false
     }

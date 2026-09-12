@@ -29,7 +29,7 @@ test('TASK11.14 second visit wins CAS, older visit remains playable and replacem
  await go(page,'ST.EXIT.WK','Workshop');await expect(page.getByTestId('save-status')).toContainText('Progress can’t be saved');
  expect(JSON.parse((await readSlots(page)).current as string).payload.physical.room).toBe('SC.ST');
  await page.getByRole('button',{name:'Try saving again'}).click();await second.getByRole('button',{name:'Goal',exact:true}).click();await second.getByRole('button',{name:'Choose a question to follow.',exact:true}).click();
- await second.getByRole('button',{name:'Where should I check?',exact:true}).click();await saved(second);
+ await second.getByRole('button',{name:'Where should I check?',exact:true}).click();await second.getByRole('button',{name:'Follow this lead',exact:true}).click();await saved(second);
  await page.getByRole('button',{name:'Replace saved game',exact:true}).click();await expect(page.getByTestId('save-status')).toContainText('Progress can’t be saved');
  expect(JSON.parse((await readSlots(page)).current as string).payload.selectedLead).toBe('where-loop');await second.close();
 });

@@ -1,0 +1,1193 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "reasoning.spec.ts",
+      "sources-payoff.spec.ts",
+      "-g",
+      "TASK11.17|FIX11.TOOLS|closing a source|recording controls|Ari full account"
+    ],
+    "configFile": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\playwright.config.ts",
+    "rootDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/output/playwright/raw",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/output/playwright/raw",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/output/playwright/raw",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "output/playwright/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 1,
+    "webServer": {
+      "command": "\"C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe\" dist/server/index.js",
+      "url": "http://127.0.0.1:4174/healthz",
+      "env": {
+        "PORT": "4174",
+        "EQ_WEB_PORT": "4174",
+        "PUBLIC_ORIGIN": "http://127.0.0.1:4174"
+      },
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "reasoning.spec.ts",
+      "file": "reasoning.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TASK11.17 empty and text-only ideas retain drafts, actual revisions and private ownership across reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2863,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:06:56.878Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "af8ccfa76b50f8052b96-cc7650e69045a6d337f9",
+          "file": "reasoning.spec.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "TASK11.17 explicit passage replacement, source groups, cancellation and same-source comparison preserve facts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6229,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:06:59.857Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "af8ccfa76b50f8052b96-f9f96a13de098974c498",
+          "file": "reasoning.spec.ts",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "TASK11.17 metadata chronology and lead selection do not turn a plan into completion or move before Go",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14730,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:07:06.094Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "af8ccfa76b50f8052b96-2e4ec97e2b2d258e037c",
+          "file": "reasoning.spec.ts",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "ER13 closing a source and vocabulary before traveling restores the world, not a stale source reader",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12818,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:07:20.834Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "af8ccfa76b50f8052b96-6edd4458f101902fbfc0",
+          "file": "reasoning.spec.ts",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "FIX11.TOOLS E4 and public venue comparison, all relations, acquired post and capture, optional theory and lead",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18520,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:07:33.664Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "af8ccfa76b50f8052b96-ea34bd0637089bdf95d7",
+          "file": "reasoning.spec.ts",
+          "line": 37,
+          "column": 1
+        },
+        {
+          "title": "TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 17501,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('textbox')\nExpected: \u001b[32m\"I want to find out what happened.\"\u001b[39m\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('textbox')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('textbox')\nExpected: \u001b[32m\"I want to find out what happened.\"\u001b[39m\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('textbox')\u001b[22m\n\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\reasoning.spec.ts:51:42",
+                    "location": {
+                      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\reasoning.spec.ts",
+                      "column": 42,
+                      "line": 51
+                    },
+                    "snippet": "  49 | test('TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character',async({page})=>{\n  50 |  await start(page);await tab(page,'CT.NOTES.IDEAS');await page.getByRole('textbox').fill('I want to find out what happened.');let c=(await saved(page)).payload;expect(c.coachingHistory).toEqual([]);expect(c.records).toEqual([]);await button(page,'CT.HELP.THINK').click();\n> 51 |  await expect(page.getByRole('textbox')).toHaveValue('I want to find out what happened.');c=(await saved(page)).payload;expect(c.records.find(row=>row.kind==='coaching-submission')?.text).toBe('I want to find out what happened.');expect(c.npcReceived).toEqual([]);expect(c.drafts.find(row=>row.id==='private')?.text).toBe('I want to find out what happened.');expect(c.records.some(row=>row.kind==='private-idea')).toBe(false);await closePanel(page);await tab(page,'CT.NOTES.IDEAS');await expect(page.getByRole('textbox')).toHaveValue('I want to find out what happened.');\n     |                                          ^\n  52 | });\n  53 | test.describe('compact tools',()=>{\n  54 |  test.use({hasTouch:true});"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\reasoning.spec.ts",
+                        "column": 42,
+                        "line": 51
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('textbox')\nExpected: \u001b[32m\"I want to find out what happened.\"\u001b[39m\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('textbox')\u001b[22m\n\n\n  49 | test('TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character',async({page})=>{\n  50 |  await start(page);await tab(page,'CT.NOTES.IDEAS');await page.getByRole('textbox').fill('I want to find out what happened.');let c=(await saved(page)).payload;expect(c.coachingHistory).toEqual([]);expect(c.records).toEqual([]);await button(page,'CT.HELP.THINK').click();\n> 51 |  await expect(page.getByRole('textbox')).toHaveValue('I want to find out what happened.');c=(await saved(page)).payload;expect(c.records.find(row=>row.kind==='coaching-submission')?.text).toBe('I want to find out what happened.');expect(c.npcReceived).toEqual([]);expect(c.drafts.find(row=>row.id==='private')?.text).toBe('I want to find out what happened.');expect(c.records.some(row=>row.kind==='private-idea')).toBe(false);await closePanel(page);await tab(page,'CT.NOTES.IDEAS');await expect(page.getByRole('textbox')).toHaveValue('I want to find out what happened.');\n     |                                          ^\n  52 | });\n  53 | test.describe('compact tools',()=>{\n  54 |  test.use({hasTouch:true});\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\reasoning.spec.ts:51:42"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:07:52.192Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\reasoning-TASK11-17-Help-r-9f9e5--delivers-it-to-a-character-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\reasoning-TASK11-17-Help-r-9f9e5--delivers-it-to-a-character-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\reasoning-TASK11-17-Help-r-9f9e5--delivers-it-to-a-character-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\reasoning.spec.ts",
+                    "column": 42,
+                    "line": 51
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "af8ccfa76b50f8052b96-ec91d8a8bcdccfd99fc1",
+          "file": "reasoning.spec.ts",
+          "line": 49,
+          "column": 1
+        },
+        {
+          "title": "TASK11.17 empty and text-only ideas retain drafts, actual revisions and private ownership across reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4189,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:08:45.319Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "af8ccfa76b50f8052b96-ea627ffd9f71e6b1f0d3",
+          "file": "reasoning.spec.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "TASK11.17 explicit passage replacement, source groups, cancellation and same-source comparison preserve facts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7795,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:08:49.956Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "af8ccfa76b50f8052b96-da4eee774e2d6a42ef52",
+          "file": "reasoning.spec.ts",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "TASK11.17 metadata chronology and lead selection do not turn a plan into completion or move before Go",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14857,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:08:57.763Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "af8ccfa76b50f8052b96-373ac4143ad4d8d0e57a",
+          "file": "reasoning.spec.ts",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "ER13 closing a source and vocabulary before traveling restores the world, not a stale source reader",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13808,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:09:12.630Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "af8ccfa76b50f8052b96-639c3baede78e625932f",
+          "file": "reasoning.spec.ts",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "FIX11.TOOLS E4 and public venue comparison, all relations, acquired post and capture, optional theory and lead",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 20161,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:09:26.447Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "af8ccfa76b50f8052b96-ccf0682fbed7f310a5a3",
+          "file": "reasoning.spec.ts",
+          "line": 37,
+          "column": 1
+        },
+        {
+          "title": "TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 18674,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('textbox')\nExpected: \u001b[32m\"I want to find out what happened.\"\u001b[39m\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('textbox')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('textbox')\nExpected: \u001b[32m\"I want to find out what happened.\"\u001b[39m\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('textbox')\u001b[22m\n\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\reasoning.spec.ts:51:42",
+                    "location": {
+                      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\reasoning.spec.ts",
+                      "column": 42,
+                      "line": 51
+                    },
+                    "snippet": "  49 | test('TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character',async({page})=>{\n  50 |  await start(page);await tab(page,'CT.NOTES.IDEAS');await page.getByRole('textbox').fill('I want to find out what happened.');let c=(await saved(page)).payload;expect(c.coachingHistory).toEqual([]);expect(c.records).toEqual([]);await button(page,'CT.HELP.THINK').click();\n> 51 |  await expect(page.getByRole('textbox')).toHaveValue('I want to find out what happened.');c=(await saved(page)).payload;expect(c.records.find(row=>row.kind==='coaching-submission')?.text).toBe('I want to find out what happened.');expect(c.npcReceived).toEqual([]);expect(c.drafts.find(row=>row.id==='private')?.text).toBe('I want to find out what happened.');expect(c.records.some(row=>row.kind==='private-idea')).toBe(false);await closePanel(page);await tab(page,'CT.NOTES.IDEAS');await expect(page.getByRole('textbox')).toHaveValue('I want to find out what happened.');\n     |                                          ^\n  52 | });\n  53 | test.describe('compact tools',()=>{\n  54 |  test.use({hasTouch:true});"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\reasoning.spec.ts",
+                        "column": 42,
+                        "line": 51
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('textbox')\nExpected: \u001b[32m\"I want to find out what happened.\"\u001b[39m\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('textbox')\u001b[22m\n\n\n  49 | test('TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character',async({page})=>{\n  50 |  await start(page);await tab(page,'CT.NOTES.IDEAS');await page.getByRole('textbox').fill('I want to find out what happened.');let c=(await saved(page)).payload;expect(c.coachingHistory).toEqual([]);expect(c.records).toEqual([]);await button(page,'CT.HELP.THINK').click();\n> 51 |  await expect(page.getByRole('textbox')).toHaveValue('I want to find out what happened.');c=(await saved(page)).payload;expect(c.records.find(row=>row.kind==='coaching-submission')?.text).toBe('I want to find out what happened.');expect(c.npcReceived).toEqual([]);expect(c.drafts.find(row=>row.id==='private')?.text).toBe('I want to find out what happened.');expect(c.records.some(row=>row.kind==='private-idea')).toBe(false);await closePanel(page);await tab(page,'CT.NOTES.IDEAS');await expect(page.getByRole('textbox')).toHaveValue('I want to find out what happened.');\n     |                                          ^\n  52 | });\n  53 | test.describe('compact tools',()=>{\n  54 |  test.use({hasTouch:true});\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\reasoning.spec.ts:51:42"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:09:46.618Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\reasoning-TASK11-17-Help-r-9f9e5--delivers-it-to-a-character-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\reasoning-TASK11-17-Help-r-9f9e5--delivers-it-to-a-character-firefox\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\reasoning-TASK11-17-Help-r-9f9e5--delivers-it-to-a-character-firefox\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\reasoning.spec.ts",
+                    "column": 42,
+                    "line": 51
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "af8ccfa76b50f8052b96-cf8654d320684647b8b1",
+          "file": "reasoning.spec.ts",
+          "line": 49,
+          "column": 1
+        },
+        {
+          "title": "TASK11.17 empty and text-only ideas retain drafts, actual revisions and private ownership across reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4552,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:10:45.438Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "af8ccfa76b50f8052b96-73c0dbfbd99f7f7ed034",
+          "file": "reasoning.spec.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "TASK11.17 explicit passage replacement, source groups, cancellation and same-source comparison preserve facts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10954,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:10:50.059Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "af8ccfa76b50f8052b96-63dba3ee9f0ab2132c6c",
+          "file": "reasoning.spec.ts",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "TASK11.17 metadata chronology and lead selection do not turn a plan into completion or move before Go",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17678,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:11:01.029Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "af8ccfa76b50f8052b96-f6c4e7e47e367130c7a2",
+          "file": "reasoning.spec.ts",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "ER13 closing a source and vocabulary before traveling restores the world, not a stale source reader",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15636,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:11:18.729Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "af8ccfa76b50f8052b96-6ad1f8b75e9e0acb2376",
+          "file": "reasoning.spec.ts",
+          "line": 33,
+          "column": 1
+        },
+        {
+          "title": "FIX11.TOOLS E4 and public venue comparison, all relations, acquired post and capture, optional theory and lead",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 150000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 26373,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:11:34.392Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "af8ccfa76b50f8052b96-68d8d299ccc39adce8b2",
+          "file": "reasoning.spec.ts",
+          "line": 37,
+          "column": 1
+        },
+        {
+          "title": "TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 19213,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('textbox')\nExpected: \u001b[32m\"I want to find out what happened.\"\u001b[39m\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('textbox')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('textbox')\nExpected: \u001b[32m\"I want to find out what happened.\"\u001b[39m\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('textbox')\u001b[22m\n\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\reasoning.spec.ts:51:42",
+                    "location": {
+                      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\reasoning.spec.ts",
+                      "column": 42,
+                      "line": 51
+                    },
+                    "snippet": "  49 | test('TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character',async({page})=>{\n  50 |  await start(page);await tab(page,'CT.NOTES.IDEAS');await page.getByRole('textbox').fill('I want to find out what happened.');let c=(await saved(page)).payload;expect(c.coachingHistory).toEqual([]);expect(c.records).toEqual([]);await button(page,'CT.HELP.THINK').click();\n> 51 |  await expect(page.getByRole('textbox')).toHaveValue('I want to find out what happened.');c=(await saved(page)).payload;expect(c.records.find(row=>row.kind==='coaching-submission')?.text).toBe('I want to find out what happened.');expect(c.npcReceived).toEqual([]);expect(c.drafts.find(row=>row.id==='private')?.text).toBe('I want to find out what happened.');expect(c.records.some(row=>row.kind==='private-idea')).toBe(false);await closePanel(page);await tab(page,'CT.NOTES.IDEAS');await expect(page.getByRole('textbox')).toHaveValue('I want to find out what happened.');\n     |                                          ^\n  52 | });\n  53 | test.describe('compact tools',()=>{\n  54 |  test.use({hasTouch:true});"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\reasoning.spec.ts",
+                        "column": 42,
+                        "line": 51
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveValue\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('textbox')\nExpected: \u001b[32m\"I want to find out what happened.\"\u001b[39m\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toHaveValue\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('textbox')\u001b[22m\n\n\n  49 | test('TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character',async({page})=>{\n  50 |  await start(page);await tab(page,'CT.NOTES.IDEAS');await page.getByRole('textbox').fill('I want to find out what happened.');let c=(await saved(page)).payload;expect(c.coachingHistory).toEqual([]);expect(c.records).toEqual([]);await button(page,'CT.HELP.THINK').click();\n> 51 |  await expect(page.getByRole('textbox')).toHaveValue('I want to find out what happened.');c=(await saved(page)).payload;expect(c.records.find(row=>row.kind==='coaching-submission')?.text).toBe('I want to find out what happened.');expect(c.npcReceived).toEqual([]);expect(c.drafts.find(row=>row.id==='private')?.text).toBe('I want to find out what happened.');expect(c.records.some(row=>row.kind==='private-idea')).toBe(false);await closePanel(page);await tab(page,'CT.NOTES.IDEAS');await expect(page.getByRole('textbox')).toHaveValue('I want to find out what happened.');\n     |                                          ^\n  52 | });\n  53 | test.describe('compact tools',()=>{\n  54 |  test.use({hasTouch:true});\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\reasoning.spec.ts:51:42"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:12:00.788Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\reasoning-TASK11-17-Help-r-9f9e5--delivers-it-to-a-character-webkit\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\reasoning-TASK11-17-Help-r-9f9e5--delivers-it-to-a-character-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\reasoning-TASK11-17-Help-r-9f9e5--delivers-it-to-a-character-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\reasoning.spec.ts",
+                    "column": 42,
+                    "line": 51
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "af8ccfa76b50f8052b96-a92b5cd1388ff08e30b9",
+          "file": "reasoning.spec.ts",
+          "line": 49,
+          "column": 1
+        }
+      ],
+      "suites": [
+        {
+          "title": "compact tools",
+          "file": "reasoning.spec.ts",
+          "line": 53,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TASK11.17 compact keyboard and touch keep private drafts optional and both comparison slots reachable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1468,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-12T08:08:11.005Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "af8ccfa76b50f8052b96-dddf97769ac9ed86bce9",
+              "file": "reasoning.spec.ts",
+              "line": 55,
+              "column": 2
+            },
+            {
+              "title": "TASK11.17 compact keyboard and touch keep private drafts optional and both comparison slots reachable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2295,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-12T08:10:07.986Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "af8ccfa76b50f8052b96-ed05b22f1f5c96f378fc",
+              "file": "reasoning.spec.ts",
+              "line": 55,
+              "column": 2
+            },
+            {
+              "title": "TASK11.17 compact keyboard and touch keep private drafts optional and both comparison slots reachable",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2274,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-12T08:12:21.627Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "af8ccfa76b50f8052b96-65417402f1b53d44594a",
+              "file": "reasoning.spec.ts",
+              "line": 55,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "sources-payoff.spec.ts",
+      "file": "sources-payoff.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TASK11.08 recording controls expose only displayed components; vocabulary and enlargement return safely",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12221,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:08:12.572Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6f5ed2f13cdb27721426-85371e320ce45025bdff",
+          "file": "sources-payoff.spec.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "TASK11.09 Ari full account before recovery and limited after recovery; source origin remains explicit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 20030,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:08:24.803Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6f5ed2f13cdb27721426-b9863560335c692a1701",
+          "file": "sources-payoff.spec.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "TASK11.08 recording controls expose only displayed components; vocabulary and enlargement return safely",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13291,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:10:10.738Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6f5ed2f13cdb27721426-a2f54d8a48f1c36d3721",
+          "file": "sources-payoff.spec.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "TASK11.09 Ari full account before recovery and limited after recovery; source origin remains explicit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 20366,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:10:24.040Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6f5ed2f13cdb27721426-3ae5fbf76551af4414cd",
+          "file": "sources-payoff.spec.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "TASK11.08 recording controls expose only displayed components; vocabulary and enlargement return safely",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14855,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:12:23.980Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6f5ed2f13cdb27721426-1f532369eb3f8c6ed304",
+          "file": "sources-payoff.spec.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "TASK11.09 Ari full account before recovery and limited after recovery; source origin remains explicit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 23090,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T08:12:38.847Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6f5ed2f13cdb27721426-5312373ea33f7279fc95",
+          "file": "sources-payoff.spec.ts",
+          "line": 12,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-12T08:06:55.692Z",
+    "duration": 366695.241,
+    "expected": 24,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

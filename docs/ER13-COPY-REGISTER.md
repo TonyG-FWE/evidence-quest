@@ -42,6 +42,7 @@ Original supporting text is retained in the initial design import. The [dated co
 | CT.OBS.LOOP.SEEN | You saw Loop in Media during your visit. | Loop is here. Our projector can go back to the Stage. |
 | CT.OBS.LOOP.RESPONSE | Loop turned toward you and was ready to follow. | Loop turned toward you and is ready to follow. |
 | CT.TOAST.COVERED | The covered Maximum Toast machine trembles gently in its own bay. | Someone built a very large machine to make a snack. Want to see what it does? |
+| CT.TOAST.PUNCHLINE | One toast. Maximum effort. | One tiny slice. Maximum effort. |
 
 ## Independent vocabulary review correction
 
@@ -51,5 +52,10 @@ Neutral transfer examples prevent an optional word card from introducing an unse
 |---|---|---|---|
 | src/core/experience.ts words.TOGETHER.example | Pip and Grandma will plant the seed together. | My friend and I carried the box together. | Neutral transfer example does not reveal the joint-planting premise to a player who skipped the opening and has not encountered E6. |
 | src/core/experience.ts definition motion STILL example | The paper petals stay still indoors. | The toy car stays still on the table. | Neutral transfer example does not add an indoor-location conclusion to the displayed movement sentence. |
+| src/core/experience.ts words.STILL.example | The premiere is still planned. | It’s getting late, but the library is still open. | A neutral transfer example practices continuing-to-be-true beyond repeating the displayed E3 sentence. |
 
-Premiere/rehearsal examples explain the public show purpose without cancellation or source facts. The premiere-is-still-planned example is restricted to an actually displayed CT.SRC.E3 context; other continuing-still contexts use a neutral retry example. No introduction or word lookup grants E6 reading.
+Premiere/rehearsal examples explain the public show purpose without cancellation or source facts. The library example transfers E3 continuing-still to a neutral setting; other continuing-still contexts use a neutral retry example. No introduction or word lookup grants E6 reading.
+
+Independent source review also removed the stale curled-notice observation and automatic CT.ER13.SCOPE interpretation from the secured E3 reader. The exact source body is unchanged. Optional conversations and requested help retain their existing knowledge/ownership boundaries.
+
+TASK11.17 groups selected passages by source/component, preserves acquired authorship/timestamps, and labels historical observations as earlier views. CT.SOURCE.LIMIT explains the existing two-detail cap and how to replace a choice. Stage goal copy names the physical desk/dock handoffs still needed. CT.TOAST.PUNCHLINE now reads One tiny slice. Maximum effort. None of these supporting-copy changes adds a source fact.

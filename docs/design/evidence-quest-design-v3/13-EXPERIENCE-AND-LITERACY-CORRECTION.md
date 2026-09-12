@@ -205,3 +205,12 @@ Acceptance must include actual browser observation with no explanatory narration
 
 Deliver the playable local correction and a short evidence-backed report. Do not end with another design packet or a promise to implement later. If an external credential or output-generation service blocks one part, finish all independent authorized work and state the specific remaining dependency.
 
+## 8. Native review corrections — September 12, 2026
+
+The user's direction to finish the intended game includes existing TASK11.17, which was still deferred in the historical first-build record: optional source comparison/relationships, known-time timeline, private general ideas/revisions and lead selection. Implement the established Items 06/07/09 contracts. This restores planned comprehension support; it does not add another puzzle or require written work to progress.
+
+Native review found that the secured E3 reader printed a previously observed curled-state description and automatically appended Jo's interpretation. Remove that stale physical claim from the full current source view and keep interpretation in requested conversation/help. Exact decisive E3 source text remains unchanged. Historical observations may remain in evidence, explicitly labeled with their source and earlier context. Group evidence-selection passages by source/component with available authorship/time so the child knows what they are using.
+
+Use neutral vocabulary transfer examples when the example is not itself a displayed source: together = “My friend and I carried the box together.”; motion-still = “The toy car stays still on the table.”; continuing-still = “It’s getting late, but the library is still open.” Preserve the exact encountered source sentence separately. These examples must not reveal an unread promise or puzzle solution.
+
+The source artwork delivery is complete in `13-experience-correction/accepted-art-delivery.json` (36 sources plus the separate Stage background). Integration and native visual acceptance remain separate. See `13-experience-correction/ACCEPTED-ART-DELIVERY.md` for source-rectangle, transparency, pose and state-composition rules. The current runtime review is ongoing; none of these findings establish child appeal or measured learning.

@@ -20,6 +20,8 @@ import {Passage} from './Passage.js';
 import {goal,localOwners,ownerLabel,roomName} from './labels.js';
 import {Intro,Recap,Reading,Words,CrewText,Portrait,NarratorCard,Support,showReading} from './Experience.js';
 import {roles,roomPurposes} from '../core/experience.js';
+import {Compare,Ideas,Timeline,Picker,Lead,NotesTabs,ExposedDetails} from './Reasoning.js';
+import {questionIds} from '../core/reasoning.js';
 import './app.css';
 const send=store.send;
 let invoker:HTMLElement|null=null;
@@ -28,11 +30,7 @@ function Lines({ids,slots={}}:{ids:string[];slots?:Record<string,string|number>}
 function Captions({s}:{s:State}){return <>{s.runtime.caption.map((ct,index)=>{const refs=[...parts.values()].filter(p=>p.ctId===ct&&available(s.case,p.refId)).map(p=>p.refId),access=s.case.grants.find(g=>g.refs.some(r=>refs.includes(r)))?.viaAccessId;return refs.length&&access?<Passage key={`${ct}-${index}`} ct={ct} refs={refs} access={access} store={store}/>:<p key={`${ct}-${index}`}>{copy(ct,s.runtime.captionSlots)}</p>;})}</>;}
 function Heading({ct}:{ct:string}){return <h2 tabIndex={-1} data-focus-heading>{copy(ct)}</h2>;}
 function Details({s,draft,onChange}:{s:State;draft:Draft;onChange:(refs:string[])=>void}){
- const refs=exposedRefs(s.case).filter(r=>!r.includes('/description')&&r!=='E2.a'&&r!=='E5.c');
- return <fieldset className="details"><legend>{copy('CT.SOURCE.DETAIL')}</legend><Button ct="CT.SOURCE.OPEN_VENUE" onClick={()=>open({page:'map',previous:s.runtime.view})}/>{refs.length===0?<p>{copy('CT.SOURCE.NO_AVAILABLE')}</p>:refs.map(r=>{
-  const checked=draft.selectedRefs.includes(r),text=displayedText(s.case,r);
-  return <label key={r}><input data-ref={r} type="checkbox" checked={checked} disabled={!checked&&draft.selectedRefs.length>=2} onChange={()=>onChange(checked?draft.selectedRefs.filter(x=>x!==r):[...draft.selectedRefs,r])}/><span>{text||copy(parts.get(r)!.ctId)}</span></label>;
- })}</fieldset>;
+ return <ExposedDetails s={s} draft={draft} onChange={onChange} open={open}/>;
 }
 function Kit({s}:{s:State}){
  const p=s.case.physical;const local=ownerRoom(s.case,'KIT.CADDY')===p.room;
@@ -45,7 +43,15 @@ function Kit({s}:{s:State}){
 }
 function Work({s}:{s:State}){
  const c=s.case,p=c.physical,r=c.playback,h=s.session.heldTile,mode=r?.mode==='show'?'Premiere':'Rehearsal',modeLower=mode.toLowerCase();
- useEffect(()=>{if(s.session.presentation==='watch')document.querySelector<HTMLElement>('[data-testid="whole-story"]')?.scrollIntoView({block:'start'});},[s.session.presentation,r?.id]);
+ useEffect(()=>{
+  if(s.session.presentation!=='watch')return;
+  const frame=requestAnimationFrame(()=>{
+   const state=store.getSnapshot();
+   if(state.runtime.view.page!=='work'||state.session.presentation!=='watch'||document.activeElement?.matches('textarea,input,select,[contenteditable=true]'))return;
+   document.querySelector<HTMLElement>('[data-testid="whole-story"]')?.scrollIntoView({block:'start'});
+  });
+  return()=>cancelAnimationFrame(frame);
+ },[s.session.presentation,r?.id,r?.status,r?.pauseReason]);
  const previousHeld=useRef<string|null>(null);useEffect(()=>{if(previousHeld.current&&!h)document.querySelector<HTMLButtonElement>(`[data-tile="${previousHeld.current}"]`)?.focus({preventScroll:true});previousHeld.current=h?.tile??null;},[h]);
  const choose=(tile:Order[number])=>send({type:'SELECT_TILE',tile});
  const place=(index:number)=>send({type:'EDIT_RAIL',operation:'insert',index});
@@ -70,7 +76,7 @@ function Work({s}:{s:State}){
   </>}
   </>}
   {r?.status==='paused'&&r.nextCue>0&&r.order[r.nextCue-1]==='TILE.PLANT'&&r.puppet.pip==='left'&&<Support s={s} id="CT.ER13.PROMISE_SUPPORT"/>}
-  {c.certificate&&<><p>Put on our first show.</p><CrewText ct="CT.ER13.PREMIERE_CONTEXT" s={s}/></>}
+  {c.certificate&&<><p>{c.premiere?'Replay our show.':'Put on our first show.'}</p><CrewText ct={c.premiere?'CT.ER13.REPLAY_CONTEXT':'CT.ER13.PREMIERE_CONTEXT'} s={s}/></>}
   {r&&<div className="run-status" aria-live="polite"><p>{copy(r.status==='paused'?(r.nextCue===r.order.length?'CT.RUN.TERMINAL':'CT.RUN.PAUSED'):r.status==='finalized'?'CT.RUN.FINISHED':'CT.RUN.TITLE',{mode,modeLower})}</p>{r.activeCue&&<p>{copy('CT.RUN.CURRENT',{tile:tileName(r.activeCue.tile)})}</p>}{r.status==='paused'&&r.order[r.nextCue]&&<p>{copy('CT.RUN.NEXT',{nextTile:tileName(r.order[r.nextCue]!)})}</p>}</div>}
   <div className="actions">
    {r?.status==='running'?<Button className="sun" ct="CT.RUN.STOP" icon="STOP" onClick={()=>send({type:'PAUSE_RUN',reason:'user'})}/>:r?.status==='paused'?<Button className="primary" ct={r.nextCue===r.order.length?'CT.RUN.FINALIZE':'CT.RUN.CONTINUE'} slots={{modeLower}} onClick={()=>send({type:'CONTINUE_RUN'})}/>:<Button className="primary" ct="CT.WORK.REHEARSE" icon="PLAY" onClick={()=>send({type:'RUN',mode:'rehearsal'})}/>}
@@ -102,20 +108,24 @@ function Panel({s}:{s:State}){
  case 'recap':return <Recap s={s}/>;
  case 'reading':return <Reading s={s}/>;
  case 'words':return <Words s={s}/>;
+ case 'compare':return <Compare s={s} open={open}/>;
+ case 'timeline':return <Timeline s={s} open={open}/>;
+ case 'idea':return <Ideas s={s} open={open}/>;
+ case 'picker':return <Picker s={s} open={open}/>;
  case 'objects':return <><Heading ct="CT.UI.MOVE"/><RoomDescription s={s}/><p>{copy('CT.WORLD.LOCAL_LIST',{room:roomName(p.room)})}</p><div className="stack">{localOwners(c).filter(o=>!v.selected||v.selected.includes(o.id)).map(o=><Button data-owner={o.id} key={o.id} onClick={()=>send({type:'TARGET',target:o.id})}>{ownerLabel(c,o.id)}</Button>)}</div></>;
- case 'map':return <><Heading ct="CT.UI.MAP"/>{content.rooms.map(room=><section className="venue" key={room.id}><h3>{roomName(room.id)}</h3><Passage ct={`CT.NAV.${room.id==='SC.MD'?'MEDIA':room.id.slice(3)}`} refs={[`NAV.${room.id==='SC.MD'?'MEDIA':room.id.slice(3)}`]} access="ACC.VENUE" store={store}/>{content.doors.filter(d=>d.room===p.room&&d.destinationRoom===room.id).map(d=><Button key={d.id} ct="CT.WORLD.GO" slots={{room:roomName(room.id)}} onClick={()=>send({type:'TARGET',target:d.id})}/>)}</section>)}</>;
+ case 'map':return <><Heading ct="CT.UI.MAP"/>{content.rooms.map(room=><section className={c.reasoning?.leadDestination===room.id?'venue chosen-destination':'venue'} aria-current={c.reasoning?.leadDestination===room.id?'location':undefined} key={room.id}><h3>{roomName(room.id)}</h3><Passage ct={`CT.NAV.${room.id==='SC.MD'?'MEDIA':room.id.slice(3)}`} refs={[`NAV.${room.id==='SC.MD'?'MEDIA':room.id.slice(3)}`]} access="ACC.VENUE" store={store}/><Button ct="CT.WORLD.GO" slots={{room:roomName(room.id)}} disabled={room.id===p.room} onClick={()=>send({type:'GO',destination:room.id})}/></section>)}</>;
  case 'reader':return <Reader state={s} store={store}/>;
  case 'notice':return <><Heading ct="CT.OBJ.NOTICE_CURLED"/><Passage ct="CT.OBJ.NOTICE_PARTIAL" refs={['CT.OBJ.NOTICE_PARTIAL']} access="CY.SOURCE.E3" store={store}/><Button className="primary" ct="CT.OBJ.NOTICE_FLATTEN" onClick={()=>send({type:'TARGET',target:'CY.SOURCE.E3',action:'flatten'})}/></>;
- case 'notes':{const ids=[...new Set(c.grants.map(g=>g.sourceId))];return <><Heading ct="CT.UI.NOTES"/><Button onClick={()=>open({page:'words',previous:v})}>Words from our story</Button>{!ids.length?<p>{copy('CT.NOTES.EMPTY')}</p>:<div className="stack">{ids.map(id=><Button key={id} onClick={()=>open({page:'reader',sourceId:id,accessId:`ACC.EVIDENCE.${id}`,previous:v})}>{copy(content.sources.find(s=>s.id===id)!.titleCt)}</Button>)}</div>}<div className="actions"><Button ct="CT.PRESENT.OPEN" onClick={()=>open({page:'present',selected:[]})}/><Button ct="CT.PLAN.SEARCH" onClick={()=>open({page:'plan',topic:'search'})}/></div></>;}
+ case 'notes':{const ids=[...new Set(c.grants.map(g=>g.sourceId))];return <><Heading ct="CT.UI.NOTES"/><NotesTabs s={s} open={open}/><Button onClick={()=>open({page:'words',previous:v})}>Words from our story</Button>{!ids.length?<p>{copy('CT.NOTES.EMPTY')}</p>:<div className="stack">{ids.map(id=><Button key={id} onClick={()=>open({page:'reader',sourceId:id,accessId:`ACC.EVIDENCE.${id}`,previous:v})}>{copy(content.sources.find(s=>s.id===id)!.titleCt)}</Button>)}</div>}<div className="actions"><Button ct="CT.PRESENT.OPEN" onClick={()=>open({page:'present',selected:[]})}/><Button ct="CT.PLAN.SEARCH" onClick={()=>open({page:'plan',topic:'search'})}/></div></>;}
  case 'kit':return <Kit s={s}/>;
  case 'work':return <Work s={s}/>;
  case 'story':return <><Heading ct="CT.STORY.TITLE"/>{p.loop.mode==='standby'||p.loop.mode==='following'?<p>{copy('CT.WORK.MISSING_LOOP')}</p>:<><StoryCanvas s={s}/><Lines ids={storyDescription(c.playback?.puppet??initialPuppet())}/></>}</>;
  case 'talk':return <Talk s={s}/>;
  case 'plan':{const topic=v.topic??'search',d=c.drafts.find(d=>d.id===`${topic}-plan`)!;return <><Heading ct={topic==='story'?'CT.PLAN.STORY':'CT.PLAN.SEARCH'}/><label className="stack">{copy('CT.HELP.FIELD')}<textarea aria-label={copy(topic==='story'?'CT.PLAN.STORY':'CT.PLAN.SEARCH')} value={d.text} onFocus={()=>send({type:'FOCUS',owner:'text'})} onChange={e=>send({type:'DRAFT',id:d.id,text:e.target.value})}/></label>{Array.from(d.text).length>=500&&<p>{copy('CT.UI.COUNT',{count:Array.from(d.text).length})}</p>}<Details s={s} draft={d} onChange={refs=>send({type:'DRAFT',id:d.id,text:d.text,refs})}/><div className="actions"><Button ct="CT.PLAN.RECORD" onClick={()=>send({type:'RECORD_PLAN',topic})}/>{topic==='story'&&<Button ct="CT.PLAN.EXPLAIN" onClick={()=>send({type:'DELIVER_PLAN',topic})}/>}</div>{v.action==='recorded'&&<p>{copy('CT.PLAN.RECORDED')}</p>}</>;}
  case 'present':{const draft:Draft={id:'private',text:'',revision:0,selectedRefs:v.selected??[]},actors=c.encounteredActors.filter(a=>a!=='ACT.LOOP') as Array<'ACT.JO'|'ACT.REMY'|'ACT.ARI'>;return <><Heading ct="CT.PRESENT.OPEN"/><Details s={s} draft={draft} onChange={refs=>open({...v,selected:refs})}/><p>{copy('CT.PRESENT.WHO')}</p><div className="stack">{actors.filter(a=>ownerRoom(c,a)===p.room).map(actor=><Button key={actor} ct="CT.PRESENT.SHOW" slots={{person:ownerLabel(c,actor)}} disabled={!draft.selectedRefs.length} onClick={()=>send({type:'PRESENT',actor,refs:draft.selectedRefs})}/>)}</div>{!actors.some(a=>ownerRoom(c,a)===p.room)&&<p>{copy('CT.PRESENT.NO_RECIPIENT')}</p>}<p>{copy('CT.PRESENT.MET')}</p>{actors.filter(a=>ownerRoom(c,a)!==p.room).map(a=><p key={a}>{ownerLabel(c,a)} · {roomName(ownerRoom(c,a)!)}</p>)}</>;}
- case 'lead':return <><Heading ct="CT.LEAD.CHOOSE"/><div className="stack">{([['where-loop','WHERE'],['cancellation','CANCELED'],['recording','MOVED'],['story-plan','PROMISE']] as const).map(([lead,key])=><Button key={lead} ct={`CT.LEAD.${key}`} aria-pressed={c.selectedLead===lead} onClick={()=>send({type:'LEAD',lead})}/>)}</div><Button ct="CT.PLAN.SEARCH" onClick={()=>open({page:'plan',topic:'search'})}/></>;
+ case 'lead':return <Lead s={s} open={open}/>;
  case 'help':{const topic=v.topic??(c.selectedLead==='story-plan'?'story':'search'),d=c.drafts.find(d=>d.id===`coach-${topic}`)!;return <Help s={s} store={store} open={open} details={<Details s={s} draft={d} onChange={refs=>send({type:'DRAFT',id:d.id,text:d.text,refs})}/>}/>;}
- case 'goal':return <><Heading ct="CT.UI.GOAL"/><p>{copy(goal(c))}</p><Button onClick={()=>open({page:'recap',previous:v})}>Our story so far</Button><div className="actions"><Button ct="CT.LEAD.CHOOSE" onClick={()=>open({page:'lead'})}/><Button ct="CT.PLAN.SEARCH" onClick={()=>open({page:'plan',topic:'search'})}/>{c.premiere&&<Button ct="CT.ENDING.REOPEN" onClick={()=>open({page:'ending',action:'recap'})}/>}</div></>;
+ case 'goal':return <><Heading ct="CT.UI.GOAL"/><p>{copy(goal(c))}</p>{c.selectedLead&&<p>{copy('CT.GOAL.QUESTION',{question:copy(questionIds[c.selectedLead])})}</p>}{c.reasoning?.leadDestination&&<Button ct="CT.WORLD.GO" slots={{room:roomName(c.reasoning.leadDestination)}} disabled={c.reasoning.leadDestination===p.room} onClick={()=>send({type:'GO',destination:c.reasoning!.leadDestination!})}/>}<Button onClick={()=>open({page:'recap',previous:v})}>Our story so far</Button><div className="actions"><Button ct="CT.LEAD.CHOOSE" onClick={()=>open({page:'lead'})}/><Button ct="CT.PLAN.SEARCH" onClick={()=>open({page:'plan',topic:'search'})}/>{c.premiere&&<Button ct="CT.ENDING.REOPEN" onClick={()=>open({page:'ending',action:'recap'})}/>}</div></>;
  case 'settings':return <><Heading ct="CT.UI.SETTINGS"/>{Object.entries({sound:['on','off'],motion:['standard','reduced'],text:['regular','larger','largest'],spacing:['standard','roomier']}).map(([key,values])=><label key={key} className="setting">{copy(`CT.SETTINGS.${key.toUpperCase()}`)}<select aria-label={copy(`CT.SETTINGS.${key.toUpperCase()}`)} value={s.preferences[key as 'sound']} onChange={e=>send({type:'PREF',key:key as 'sound',value:e.target.value})}>{values.map(value=><option key={value} value={value}>{value.slice(0,1).toUpperCase()+value.slice(1)}</option>)}</select></label>)}{s.runtime.preferenceFailed&&<p>{copy('CT.SETTINGS.UNSAVED')}</p>}<Lines ids={['CT.ACCESS.KEYBOARD','CT.ACCESS.TYPING','CT.ACCESS.BACK','CT.ACCESS.SELECTION']}/></>;
  case 'pause':return <><Heading ct="CT.PAUSE.TITLE"/><div className="stack"><Button ct="CT.UI.FESTIVAL" onClick={()=>open({page:'world'})}/><Button ct="CT.UI.SETTINGS" onClick={()=>open({page:'settings',previous:v})}/><Button ct="CT.PAUSE.HOME" onClick={()=>open({page:'home'})}/><Button ct="CT.START.OVER" onClick={()=>open({page:'confirm',action:'new-game',previous:v})}/></div></>;
  case 'confirm':return v.action==='replace'?<><Heading ct="CT.RECOVERY.REPLACE"/><p>{copy(s.session.saving.mode==='conflict'?'CT.RECOVERY.REPLACE_KNOWN':'CT.RECOVERY.REPLACE_UNKNOWN')}</p><div className="actions"><Button data-safe-focus ct="CT.RECOVERY.KEEP_UNSAVED" onClick={()=>open({page:'world'})}/><Button ct="CT.RECOVERY.REPLACE" onClick={()=>saves.replace()}/></div></>:v.action==='more'?<><Heading ct="CT.WORK.MORE"/><div className="stack"><Button ct="CT.WORK.RESET" onClick={()=>open({...v,action:'reset'})}/><Button ct="CT.WORK.CLEAR" onClick={()=>open({...v,action:'clear'})}/></div></>:<><Heading ct={v.action==='reset'?'CT.WORK.RESET':v.action==='clear'?'CT.WORK.CLEAR':'CT.START.OVER'}/>{v.action==='new-game'&&<p>{copy('CT.RESET.SCOPE')}</p>}{v.action!=='new-game'&&<p>{copy(v.action==='reset'?'CT.WORK.RESET_DESCRIPTION':'CT.WORK.CLEAR_DESCRIPTION')}</p>}<div className="actions"><Button data-safe-focus ct="CT.UI.CANCEL" onClick={()=>open(v.previous??{page:'world'})}/><Button ct={v.action==='reset'?'CT.WORK.RESET':v.action==='clear'?'CT.WORK.CLEAR':'CT.RECOVERY.NEW'} onClick={()=>{if(v.action==='new-game')void saves.reset();else{send({type:v.action==='reset'?'RESET_RUN':'CLEAR_RAIL'});open({page:'work'});}}}/></div></>;
@@ -129,16 +139,18 @@ function Panel({s}:{s:State}){
 export function App(){
  const s=useSyncExternalStore(store.subscribe,store.getSnapshot),v=s.runtime.view,task=useRef<HTMLElement>(null),p=s.case.physical;
  useEffect(()=>{const root=document.documentElement;root.style.setProperty('--text',s.preferences.text==='largest'?'36px':s.preferences.text==='larger'?'30px':'24px');root.style.setProperty('--leading',s.preferences.spacing==='roomier'?'1.875':'1.5');root.dataset.motion=s.preferences.motion;},[s.preferences]);
- const lastPage=useRef(v.page),lastRoom=useRef(p.room);const viewKey=[v.page,v.sourceId,v.actor,v.action].join('|');
+ const lastPage=useRef(v.page),lastRoom=useRef(p.room);const viewKey=[v.page,v.sourceId,v.actor,v.action,v.page==='idea'?v.ref:''].join('|');
  useEffect(()=>{let target:HTMLElement|null=null;
   if(v.page==='world'){if(!s.runtime.intent&&s.runtime.hasLiveVisit&&lastPage.current!=='home'&&lastPage.current!=='intro'&&lastRoom.current===p.room){target=invoker?.isConnected?invoker:document.querySelector<HTMLElement>(`[data-focus-owner="${s.case.worldReturn.ownerId}"]`)??document.querySelector<HTMLElement>('[data-focus-owner="ACC.OBJECTS"]');invoker=null;}target??=document.querySelector<HTMLCanvasElement>('[data-testid=world]');}
   else if((v.page==='work'||v.page==='kit')&&lastPage.current==='reader')target=task.current?.querySelector<HTMLElement>(`[data-tile="${s.case.worldReturn.ownerId}"],[data-focus-owner="${s.case.worldReturn.ownerId}"]`)??null;
+  else if(v.focusSlot&&['picker','reader','map'].includes(lastPage.current))target=task.current?.querySelector<HTMLElement>(`[data-focus-slot="${v.focusSlot}"]`)??null;
   const returningToOwner=target!==null&&v.page!=='world';
   target??=task.current?.querySelector<HTMLElement>('[data-safe-focus]')??task.current?.querySelector<HTMLElement>('[data-focus-heading]')??null;
   target?.focus({preventScroll:true});
   // A lower world control may have scrolled the document before opening a panel.
   // Reader owns its saved passage position; a surviving tile/note owns its return focus.
   if(task.current&&v.page!=='reader'&&!returningToOwner)task.current.scrollTop=0;
+  if(v.page==='world')window.scrollTo({top:0,left:0});
   if(v.page!=='world'){
    if(matchMedia('(max-width:900px), (max-height:600px)').matches)target?.scrollIntoView({block:'start'});
    else {window.scrollTo({top:0,left:0});if(returningToOwner)target?.scrollIntoView({block:'nearest'});}
@@ -149,7 +161,7 @@ export function App(){
  if(v.page==='home')return <Home s={s}/>;
  return <div className="game">
   <header className="game-header"><a href="#" onClick={e=>{e.preventDefault();open({page:'pause'});}}>{copy('CT.START.TITLE')}</a><strong>{roomName(p.room)}</strong><Button ct="CT.UI.MENU" onClick={()=>open({page:'pause'})}/></header>
-  <div className={`game-layout ${v.page==='world'?'world-only':''} ${v.action==='enlarge'?'enlarged':''}`}>
+  <div className={`game-layout ${v.page==='world'?'world-only':''} ${v.action==='enlarge'?'enlarged':''} ${v.page==='compare'?'comparing':''}`}>
    <section className="world-column"><World state={s} store={store}/><div className="world-tools"><Button className="mission-control" onClick={()=>open({page:'recap'})}><small>Our story so far</small>{copy(goal(s.case))}</Button>{!['model','work'].includes(v.page)&&<div className="caption" role="status"><Captions s={s}/></div>}<nav aria-label="Room tools"><Button data-focus-owner="ACC.OBJECTS" ct="CT.UI.MOVE" icon="MAP" onClick={()=>open({page:'objects'})}/><Button ct="CT.UI.MAP" onClick={()=>open({page:'map'})}/><Button ct="CT.UI.NOTES" icon="NOTES" onClick={()=>open({page:'notes'})}/><Button ct="CT.UI.GOAL" onClick={()=>open({page:'goal'})}/><Button ct={['offered','expired'].includes(s.session.coach.status)?'CT.HELP.AVAILABLE':s.session.coach.status==='ready'?'CT.HELP.READY':'CT.UI.HELP'} icon="HELP" onClick={()=>open({page:'help'})}/>{p.caddyHost==='ACT.PLAYER'&&<Button data-focus-owner="KIT.CADDY" ct="CT.UI.KIT" onClick={()=>open({page:'kit'})}/>}</nav>
     {s.runtime.intent&&<div className="actions"><Button ct="CT.WORLD.STOP" icon="STOP" onClick={()=>send({type:'STOP_WALK'})}/></div>}
     {p.room==='SC.ST'&&<div className="program-card"><Button onClick={()=>showReading(s)}>Read with the crew</Button></div>}

@@ -1,0 +1,166 @@
+
+> evidence-quest@0.1.0 test:browser
+> node scripts/test-browser.mjs reasoning.spec.ts sources-payoff.spec.ts -g TASK11.17|FIX11.TOOLS|closing a source|recording controls|Ari full account
+
+[WebServer] (node:50508) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 27 tests using 1 worker
+
+(node:34660) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chromium] › browser-tests\reasoning.spec.ts:12:1 › TASK11.17 empty and text-only ideas retain drafts, actual revisions and private ownership across reload (2.9s)
+  ok  2 [chromium] › browser-tests\reasoning.spec.ts:19:1 › TASK11.17 explicit passage replacement, source groups, cancellation and same-source comparison preserve facts (6.2s)
+  ok  3 [chromium] › browser-tests\reasoning.spec.ts:27:1 › TASK11.17 metadata chronology and lead selection do not turn a plan into completion or move before Go (14.7s)
+  ok  4 [chromium] › browser-tests\reasoning.spec.ts:33:1 › ER13 closing a source and vocabulary before traveling restores the world, not a stale source reader (12.8s)
+  ok  5 [chromium] › browser-tests\reasoning.spec.ts:37:1 › FIX11.TOOLS E4 and public venue comparison, all relations, acquired post and capture, optional theory and lead (18.5s)
+  x   6 [chromium] › browser-tests\reasoning.spec.ts:49:1 › TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character (17.5s)
+(node:28956) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  7 [chromium] › browser-tests\reasoning.spec.ts:55:2 › compact tools › TASK11.17 compact keyboard and touch keep private drafts optional and both comparison slots reachable (1.5s)
+  ok  8 [chromium] › browser-tests\sources-payoff.spec.ts:6:1 › TASK11.08 recording controls expose only displayed components; vocabulary and enlargement return safely (12.2s)
+  ok  9 [chromium] › browser-tests\sources-payoff.spec.ts:12:1 › TASK11.09 Ari full account before recovery and limited after recovery; source origin remains explicit (20.0s)
+(node:51512) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 10 [firefox] › browser-tests\reasoning.spec.ts:12:1 › TASK11.17 empty and text-only ideas retain drafts, actual revisions and private ownership across reload (4.2s)
+  ok 11 [firefox] › browser-tests\reasoning.spec.ts:19:1 › TASK11.17 explicit passage replacement, source groups, cancellation and same-source comparison preserve facts (7.8s)
+  ok 12 [firefox] › browser-tests\reasoning.spec.ts:27:1 › TASK11.17 metadata chronology and lead selection do not turn a plan into completion or move before Go (14.9s)
+  ok 13 [firefox] › browser-tests\reasoning.spec.ts:33:1 › ER13 closing a source and vocabulary before traveling restores the world, not a stale source reader (13.8s)
+  ok 14 [firefox] › browser-tests\reasoning.spec.ts:37:1 › FIX11.TOOLS E4 and public venue comparison, all relations, acquired post and capture, optional theory and lead (20.2s)
+  x  15 [firefox] › browser-tests\reasoning.spec.ts:49:1 › TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character (18.7s)
+(node:36812) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 16 [firefox] › browser-tests\reasoning.spec.ts:55:2 › compact tools › TASK11.17 compact keyboard and touch keep private drafts optional and both comparison slots reachable (2.3s)
+  ok 17 [firefox] › browser-tests\sources-payoff.spec.ts:6:1 › TASK11.08 recording controls expose only displayed components; vocabulary and enlargement return safely (13.3s)
+  ok 18 [firefox] › browser-tests\sources-payoff.spec.ts:12:1 › TASK11.09 Ari full account before recovery and limited after recovery; source origin remains explicit (20.4s)
+(node:50240) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 19 [webkit] › browser-tests\reasoning.spec.ts:12:1 › TASK11.17 empty and text-only ideas retain drafts, actual revisions and private ownership across reload (4.6s)
+  ok 20 [webkit] › browser-tests\reasoning.spec.ts:19:1 › TASK11.17 explicit passage replacement, source groups, cancellation and same-source comparison preserve facts (11.0s)
+  ok 21 [webkit] › browser-tests\reasoning.spec.ts:27:1 › TASK11.17 metadata chronology and lead selection do not turn a plan into completion or move before Go (17.7s)
+  ok 22 [webkit] › browser-tests\reasoning.spec.ts:33:1 › ER13 closing a source and vocabulary before traveling restores the world, not a stale source reader (15.6s)
+  ok 23 [webkit] › browser-tests\reasoning.spec.ts:37:1 › FIX11.TOOLS E4 and public venue comparison, all relations, acquired post and capture, optional theory and lead (26.4s)
+  x  24 [webkit] › browser-tests\reasoning.spec.ts:49:1 › TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character (19.2s)
+(node:42388) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 25 [webkit] › browser-tests\reasoning.spec.ts:55:2 › compact tools › TASK11.17 compact keyboard and touch keep private drafts optional and both comparison slots reachable (2.3s)
+  ok 26 [webkit] › browser-tests\sources-payoff.spec.ts:6:1 › TASK11.08 recording controls expose only displayed components; vocabulary and enlargement return safely (14.9s)
+  ok 27 [webkit] › browser-tests\sources-payoff.spec.ts:12:1 › TASK11.09 Ari full account before recovery and limited after recovery; source origin remains explicit (23.1s)
+
+
+  1) [chromium] › browser-tests\reasoning.spec.ts:49:1 › TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character 
+
+    Error: expect(locator).toHaveValue(expected) failed
+
+    Locator: getByRole('textbox')
+    Expected: "I want to find out what happened."
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toHaveValue" with timeout 15000ms
+      - waiting for getByRole('textbox')
+
+
+      49 | test('TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character',async({page})=>{
+      50 |  await start(page);await tab(page,'CT.NOTES.IDEAS');await page.getByRole('textbox').fill('I want to find out what happened.');let c=(await saved(page)).payload;expect(c.coachingHistory).toEqual([]);expect(c.records).toEqual([]);await button(page,'CT.HELP.THINK').click();
+    > 51 |  await expect(page.getByRole('textbox')).toHaveValue('I want to find out what happened.');c=(await saved(page)).payload;expect(c.records.find(row=>row.kind==='coaching-submission')?.text).toBe('I want to find out what happened.');expect(c.npcReceived).toEqual([]);expect(c.drafts.find(row=>row.id==='private')?.text).toBe('I want to find out what happened.');expect(c.records.some(row=>row.kind==='private-idea')).toBe(false);await closePanel(page);await tab(page,'CT.NOTES.IDEAS');await expect(page.getByRole('textbox')).toHaveValue('I want to find out what happened.');
+         |                                          ^
+      52 | });
+      53 | test.describe('compact tools',()=>{
+      54 |  test.use({hasTouch:true});
+        at C:\Users\TonyGuillaro\OneDrive - Summit Gov Solutions\Documents\ChatGPT\Evidence quest\browser-tests\reasoning.spec.ts:51:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\raw\reasoning-TASK11-17-Help-r-9f9e5--delivers-it-to-a-character-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\raw\reasoning-TASK11-17-Help-r-9f9e5--delivers-it-to-a-character-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    output\playwright\raw\reasoning-TASK11-17-Help-r-9f9e5--delivers-it-to-a-character-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace output\playwright\raw\reasoning-TASK11-17-Help-r-9f9e5--delivers-it-to-a-character-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [firefox] › browser-tests\reasoning.spec.ts:49:1 › TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character 
+
+    Error: expect(locator).toHaveValue(expected) failed
+
+    Locator: getByRole('textbox')
+    Expected: "I want to find out what happened."
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toHaveValue" with timeout 15000ms
+      - waiting for getByRole('textbox')
+
+
+      49 | test('TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character',async({page})=>{
+      50 |  await start(page);await tab(page,'CT.NOTES.IDEAS');await page.getByRole('textbox').fill('I want to find out what happened.');let c=(await saved(page)).payload;expect(c.coachingHistory).toEqual([]);expect(c.records).toEqual([]);await button(page,'CT.HELP.THINK').click();
+    > 51 |  await expect(page.getByRole('textbox')).toHaveValue('I want to find out what happened.');c=(await saved(page)).payload;expect(c.records.find(row=>row.kind==='coaching-submission')?.text).toBe('I want to find out what happened.');expect(c.npcReceived).toEqual([]);expect(c.drafts.find(row=>row.id==='private')?.text).toBe('I want to find out what happened.');expect(c.records.some(row=>row.kind==='private-idea')).toBe(false);await closePanel(page);await tab(page,'CT.NOTES.IDEAS');await expect(page.getByRole('textbox')).toHaveValue('I want to find out what happened.');
+         |                                          ^
+      52 | });
+      53 | test.describe('compact tools',()=>{
+      54 |  test.use({hasTouch:true});
+        at C:\Users\TonyGuillaro\OneDrive - Summit Gov Solutions\Documents\ChatGPT\Evidence quest\browser-tests\reasoning.spec.ts:51:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\raw\reasoning-TASK11-17-Help-r-9f9e5--delivers-it-to-a-character-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\raw\reasoning-TASK11-17-Help-r-9f9e5--delivers-it-to-a-character-firefox\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    output\playwright\raw\reasoning-TASK11-17-Help-r-9f9e5--delivers-it-to-a-character-firefox\trace.zip
+    Usage:
+
+        npx playwright show-trace output\playwright\raw\reasoning-TASK11-17-Help-r-9f9e5--delivers-it-to-a-character-firefox\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [webkit] › browser-tests\reasoning.spec.ts:49:1 › TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character 
+
+    Error: expect(locator).toHaveValue(expected) failed
+
+    Locator: getByRole('textbox')
+    Expected: "I want to find out what happened."
+    Timeout: 15000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toHaveValue" with timeout 15000ms
+      - waiting for getByRole('textbox')
+
+
+      49 | test('TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character',async({page})=>{
+      50 |  await start(page);await tab(page,'CT.NOTES.IDEAS');await page.getByRole('textbox').fill('I want to find out what happened.');let c=(await saved(page)).payload;expect(c.coachingHistory).toEqual([]);expect(c.records).toEqual([]);await button(page,'CT.HELP.THINK').click();
+    > 51 |  await expect(page.getByRole('textbox')).toHaveValue('I want to find out what happened.');c=(await saved(page)).payload;expect(c.records.find(row=>row.kind==='coaching-submission')?.text).toBe('I want to find out what happened.');expect(c.npcReceived).toEqual([]);expect(c.drafts.find(row=>row.id==='private')?.text).toBe('I want to find out what happened.');expect(c.records.some(row=>row.kind==='private-idea')).toBe(false);await closePanel(page);await tab(page,'CT.NOTES.IDEAS');await expect(page.getByRole('textbox')).toHaveValue('I want to find out what happened.');
+         |                                          ^
+      52 | });
+      53 | test.describe('compact tools',()=>{
+      54 |  test.use({hasTouch:true});
+        at C:\Users\TonyGuillaro\OneDrive - Summit Gov Solutions\Documents\ChatGPT\Evidence quest\browser-tests\reasoning.spec.ts:51:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\raw\reasoning-TASK11-17-Help-r-9f9e5--delivers-it-to-a-character-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\raw\reasoning-TASK11-17-Help-r-9f9e5--delivers-it-to-a-character-webkit\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    output\playwright\raw\reasoning-TASK11-17-Help-r-9f9e5--delivers-it-to-a-character-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace output\playwright\raw\reasoning-TASK11-17-Help-r-9f9e5--delivers-it-to-a-character-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3 failed
+    [chromium] › browser-tests\reasoning.spec.ts:49:1 › TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character 
+    [firefox] › browser-tests\reasoning.spec.ts:49:1 › TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character 
+    [webkit] › browser-tests\reasoning.spec.ts:49:1 › TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character 
+  24 passed (6.1m)

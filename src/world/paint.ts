@@ -39,7 +39,7 @@ export function paintStory(ctx:CanvasRenderingContext2D,a:Assets,committed:Puppe
   const t=progress(0,400);draw('BOAT',[36-t,82-10*t,49+t,96-12*t]);draw('BOAT',[51-t,82-10*t,64+t,96-12*t]);
  }else if(p.boats==='joined'){draw('BOAT',[35,72,50,84]);draw('BOAT',[50,72,65,84]);draw('JOIN',[34,69,67,77]);}
  else{draw('BOAT',[36,82,49,96]);draw('BOAT',[51,82,64,96]);}
- if(p.seed==='soil'){const grow=cue?.tile==='TILE.BLOOM'&&cue.result==='changed'?progress(0,950):1;draw('FLOWER',[66,66-50*grow,100,66],p.lit?'open':'bud');}
+ if(p.seed==='soil'){const grow=cue?.tile==='TILE.BLOOM'&&cue.result==='changed'?.3+.7*progress(0,950):p.lit?1:.3;a.drawContained(ctx,'ASSET.PUP.FLOWER',[66,66-50*grow,100,66],p.lit?'open':'bud',0,[83,66]);}
  const pip:Point=[pipX,pipY],planting=cue?.tile==='TILE.PLANT'&&cue.result==='changed'||p.seed==='soil';
  // Size the attached backpack in the same device coordinate system as Pip.
  const tx=ctx.getTransform(),aspect=Math.hypot(tx.c,tx.d)/Math.hypot(tx.a,tx.b),bagX=pipX+5*aspect,bagY=pipY-(planting?9:13);
@@ -48,7 +48,7 @@ export function paintStory(ctx:CanvasRenderingContext2D,a:Assets,committed:Puppe
  a.drawContained(ctx,'ASSET.PUP.GRANDMA',[81,37,96,65],planting?'planting':p.pip==='right'?'together':p.seed==='right'?'receiving':'waiting',0,[88,65]);
  if(p.seed==='soil'){
   if(illustration('ASSET.PUP.ROOTS')){ctx.fillStyle='#805839';ctx.beginPath();ctx.ellipse(83,66,4,.9,0,0,Math.PI*2);ctx.fill();}
-  draw('ROOTS',[77.5,66,88.5,78]);
+  if(illustration('ASSET.PUP.ROOTS'))a.drawContained(ctx,'ASSET.PUP.ROOTS',[77.5,66,88.5,78],'base',0,[83,66]);else draw('ROOTS',[77.5,66,88.5,78]);
  }else draw('SEED',[seedX-2.5,seedY-3.5,seedX+2.5,seedY+3.5]);
  if(p.lit){const glow=ctx.createRadialGradient(83,22,1,83,22,80);glow.addColorStop(0,'#F3C65C3D');glow.addColorStop(1,'#F3C65C00');ctx.fillStyle=glow;ctx.fillRect(0,0,100,100);}
  ctx.restore();
@@ -78,7 +78,11 @@ function paintToast(ctx:CanvasRenderingContext2D,s:State,a:Assets){
  }
  if(revealed&&(!first||elapsed>=5000)){
   const lower=first?progress(5000,7000):1;
-  draw('GLASS',[92,9+10*lower,103,22+10*lower]);
+  const rect:Rect=[91,11+10*lower,102,24+10*lower],height=11*1011/1056;
+  const lens:Point=[91+11*.354,rect[3]-height+height*.36];
+  // Keep the accepted rim/handle; its painted blue center must not hide the snack.
+  ctx.save();ctx.beginPath();ctx.rect(80,-5,35,55);ctx.moveTo(lens[0]+2.65,lens[1]);ctx.arc(...lens,2.65,0,Math.PI*2);ctx.clip('evenodd');draw('GLASS',rect);ctx.restore();
+  ctx.save();ctx.beginPath();ctx.arc(...lens,2.65,0,Math.PI*2);ctx.clip();ctx.globalAlpha=.14;draw('GLASS',rect);ctx.restore();
  }
 }
 export function paintWorld(ctx:CanvasRenderingContext2D,s:State,a:Assets){
@@ -89,6 +93,7 @@ export function paintWorld(ctx:CanvasRenderingContext2D,s:State,a:Assets){
   const id=b.assetUse.manifestAssetId!,owner=b.assetUse.ownerId;if(!manifest.assets.some(x=>x.id===id))continue;
   if(id.startsWith('ASSET.PROP.TOAST.')&&illustration('ASSET.PROP.TOAST.BODY'))continue;
   if(owner==='WK.ACCESS.NAV')continue; // The readable face belongs to the one sign frame.
+  if(owner==='CY.ACCESS.E2'&&illustration('ASSET.PROP.CY.STAND'))continue; // The accepted stand includes its tablet.
   if(id==='ASSET.PROP.PETAL'){
    const r=b.assetUse.logicalBounds as Rect;
    const centers:Point[]=room==='SC.CY'?[[.1,.25],[.25,.6],[.4,.2],[.55,.65],[.72,.25],[.9,.65]].map(q=>[r[0]+q[0]!*(r[2]-r[0]),r[1]+q[1]!*(r[3]-r[1])] as Point):room==='SC.WK'?[[17,23],[23,20],[29,25],[35,21]]:[[28,25],[32,25],[36,25]];
@@ -152,12 +157,23 @@ export function paintWorld(ctx:CanvasRenderingContext2D,s:State,a:Assets){
  if(hostRoom===room){
   const origin:Point=p.caddyHost==='MD.RACK.STATION'?[96,32]:p.caddyHost==='ST.RACK.BAY'?[50,68]:[p.avatar[0]-6,p.avatar[1]-7.58];
   const open=p.objects.rackOpened,lidH=p.caddyHost==='MD.RACK.STATION'?5:2;
-  a.draw(ctx,'ASSET.PROP.CADDY.BODY',translate([0,0,12,7],origin));
-  if(open){
+  if(illustration('ASSET.PROP.CADDY',open?'open':'closed')){
+   a.drawContained(ctx,'ASSET.PROP.CADDY',translate([0,open?-lidH:0,12,7],origin),open?'open':'closed');
+   if(open){
+    // The accepted open case already contains the lid and two blank note pockets.
+    const w=Math.min(12,(7+lidH)*530/461),h=w*461/530,left=(12-w)/2,top=7-h;
+    for(const [index,tile]of ['BLOOM','FERRY','PLANT','BRIDGE'].entries())if(!p.order.includes(`TILE.${tile}` as typeof p.order[number])){
+     const x=left+w*(.17+index*.21),y=top+h*(.655-index*.018);a.draw(ctx,'ASSET.TILE.'+tile,translate([x-w*.075,y-h*.07,x+w*.075,y+h*.07],origin));
+    }
+   }
+  }else{
+   a.draw(ctx,'ASSET.PROP.CADDY.BODY',translate([0,0,12,7],origin));
+   if(open){
    a.draw(ctx,'ASSET.PROP.CADDY.LID',translate([0,-lidH,12,0],origin),'open');
    for(const [index,tile]of ['BLOOM','FERRY','PLANT','BRIDGE'].entries())if(!p.order.includes(`TILE.${tile}` as typeof p.order[number])){const x=index%2*6+.5,y=Math.floor(index/2)*3.5+.25;a.draw(ctx,'ASSET.TILE.'+tile,translate([x,y,x+5,y+3],origin));}
    a.draw(ctx,'ASSET.PROP.LEAFLET',translate([.5,-lidH,5.5,0],origin),'pocket');a.draw(ctx,'ASSET.PROP.LEAFLET',translate([6.5,-lidH,11.5,0],origin),'pocket');
-  }else a.draw(ctx,'ASSET.PROP.CADDY.LID',translate([0,0,12,7],origin),'closed');
+   }else a.draw(ctx,'ASSET.PROP.CADDY.LID',translate([0,0,12,7],origin),'closed');
+  }
  }
  if(s.runtime.intent?.stage==='approaching'){ctx.strokeStyle='#224FC4';ctx.lineWidth=.2;ctx.setLineDash([.5,.5]);ctx.beginPath();ctx.moveTo(...p.avatar);for(const point of s.runtime.intent.path)ctx.lineTo(...point);ctx.stroke();ctx.setLineDash([]);}
 }

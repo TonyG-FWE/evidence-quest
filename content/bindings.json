@@ -3116,6 +3116,41 @@
       "sourceLine": null
     },
     {
+      "id": "CT.SOURCE.LIMIT",
+      "condition": "ER13 experience correction; view and encounter bounded",
+      "sourceLine": null
+    },
+    {
+      "id": "CT.ER13.HANDOFF_BOTH",
+      "condition": "ER13 experience correction; view and encounter bounded",
+      "sourceLine": null
+    },
+    {
+      "id": "CT.ER13.HANDOFF_LOOP",
+      "condition": "ER13 experience correction; view and encounter bounded",
+      "sourceLine": null
+    },
+    {
+      "id": "CT.ER13.HANDOFF_KIT",
+      "condition": "ER13 experience correction; view and encounter bounded",
+      "sourceLine": null
+    },
+    {
+      "id": "CT.ER13.KIT_THEN_LOOP",
+      "condition": "ER13 experience correction; view and encounter bounded",
+      "sourceLine": null
+    },
+    {
+      "id": "CT.ER13.LOOP_THEN_KIT",
+      "condition": "ER13 experience correction; view and encounter bounded",
+      "sourceLine": null
+    },
+    {
+      "id": "CT.ER13.RETURN_LOOP",
+      "condition": "ER13 experience correction; view and encounter bounded",
+      "sourceLine": null
+    },
+    {
       "id": "CT.ER13.WAKE",
       "condition": "ER13 experience correction; view and encounter bounded",
       "sourceLine": null
@@ -3192,6 +3227,16 @@
     },
     {
       "id": "CT.ER13.REHEARSAL_CONTEXT",
+      "condition": "ER13 experience correction; view and encounter bounded",
+      "sourceLine": null
+    },
+    {
+      "id": "CT.ER13.REPLAY_CONTEXT",
+      "condition": "ER13 experience correction; view and encounter bounded",
+      "sourceLine": null
+    },
+    {
+      "id": "CT.ER13.REPLAY_READY",
       "condition": "ER13 experience correction; view and encounter bounded",
       "sourceLine": null
     },

@@ -9827,7 +9827,7 @@
     {
       "id": "CT.TOAST.PUNCHLINE",
       "origin": "F",
-      "text": "One toast. Maximum effort.",
+      "text": "One tiny slice. Maximum effort.",
       "slots": [],
       "when": {
         "all": []
@@ -10355,6 +10355,76 @@
       "refs": []
     },
     {
+      "id": "CT.SOURCE.LIMIT",
+      "origin": "N",
+      "text": "Choose up to two details. To choose a different one, uncheck a selected detail.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.HANDOFF_BOTH",
+      "origin": "N",
+      "text": "Set the story kit on the desk, and bring Loop to its dock.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.HANDOFF_LOOP",
+      "origin": "N",
+      "text": "Bring Loop to its dock. The story kit is on the desk.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.HANDOFF_KIT",
+      "origin": "N",
+      "text": "Set the story kit on the desk. Loop is in its dock.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.KIT_THEN_LOOP",
+      "origin": "N",
+      "text": "Set the story kit on the desk. Then find Loop and bring it back.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.LOOP_THEN_KIT",
+      "origin": "N",
+      "text": "Bring Loop to its dock. Then collect the story kit.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.RETURN_LOOP",
+      "origin": "N",
+      "text": "Bring Loop back to the Stage. The story kit is on the desk.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
       "id": "CT.ER13.WAKE",
       "origin": "N",
       "text": "Wake Loop so our projector can come back to the Stage.",
@@ -10507,7 +10577,27 @@
     {
       "id": "CT.ER13.REHEARSAL_CONTEXT",
       "origin": "N",
-      "text": "In rehearsal, we can try an ending and change it before the audience sees it.",
+      "text": "In rehearsal, we can try an ending and change it before a show.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.REPLAY_CONTEXT",
+      "origin": "N",
+      "text": "Our first show is complete. We can put this ending on the big screen again.",
+      "slots": [],
+      "when": {
+        "all": []
+      },
+      "refs": []
+    },
+    {
+      "id": "CT.ER13.REPLAY_READY",
+      "origin": "N",
+      "text": "Pip reached Grandma, and they planted the seed together. Your ending works. You're ready to replay the show.",
       "slots": [],
       "when": {
         "all": []

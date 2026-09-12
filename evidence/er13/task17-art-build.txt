@@ -1,0 +1,42 @@
+
+> evidence-quest@0.1.0 build
+> npm run validate:content && npm run check && npm run build:server && vite build
+
+
+> evidence-quest@0.1.0 validate:content
+> node scripts/validate-content.mjs
+
+{"texts":581,"originalTexts":553,"existingTileLabelsBound":4,"sourceRefs":35,"owners":107,"legalApproaches":61,"rooms":4,"doors":8,"states":96,"transitions":121,"assetUses":157}
+
+> evidence-quest@0.1.0 check
+> npm run build:contracts && tsc -p tsconfig.client.json && tsc -p tsconfig.server.json --noEmit && tsc -p tsconfig.checks.json --noEmit && node scripts/check-schema.mjs && node scripts/check-ui-copy.mjs
+
+
+> evidence-quest@0.1.0 build:contracts
+> node scripts/build-contracts.mjs
+
+Generated 48 schema-linked types and 8 standalone validators.
+33 supplied schema expectations verified. Semantic checks are separate.
+All static client CT references and literal template parameters resolve.
+
+> evidence-quest@0.1.0 build:server
+> tsc -p tsconfig.server.json && node scripts/prepare-server.mjs
+
+vite v8.0.16 building client environment for production...
+[2K
+transforming...✓ 59 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/client/index.html                     0.46 kB │ gzip:   0.30 kB
+dist/client/.vite/license.md               5.65 kB
+dist/client/assets/index-BYTNacNa.css      2.68 kB │ gzip:   1.14 kB
+dist/client/assets/App-B6tLMOkB.css       15.54 kB │ gzip:   4.24 kB
+dist/client/assets/index-wj4spxyR.js     193.10 kB │ gzip:  61.22 kB
+dist/client/assets/App-Cz_ft4yl.js     1,076.87 kB │ gzip: 152.78 kB
+
+✓ built in 468ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.

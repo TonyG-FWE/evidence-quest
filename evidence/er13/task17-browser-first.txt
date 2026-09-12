@@ -1,0 +1,18 @@
+
+> evidence-quest@0.1.0 test:browser
+> node scripts/test-browser.mjs reasoning.spec.ts
+
+[WebServer] (node:46644) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 5 tests using 1 worker
+
+(node:16532) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium] › browser-tests\reasoning.spec.ts:12:1 › TASK11.17 empty and text-only ideas retain drafts, actual revisions and private ownership across reload (2.7s)
+  ok 2 [chromium] › browser-tests\reasoning.spec.ts:19:1 › TASK11.17 explicit passage replacement, source groups, cancellation and same-source comparison preserve facts (6.7s)
+  ok 3 [chromium] › browser-tests\reasoning.spec.ts:27:1 › TASK11.17 metadata chronology and lead selection do not turn a plan into completion or move before Go (14.5s)
+  ok 4 [chromium] › browser-tests\reasoning.spec.ts:33:1 › ER13 closing a source and vocabulary before traveling restores the world, not a stale source reader (12.9s)
+  ok 5 [chromium] › browser-tests\reasoning.spec.ts:39:2 › compact tools › TASK11.17 compact keyboard and touch keep private drafts optional and both comparison slots reachable (1.4s)
+
+  5 passed (40.3s)

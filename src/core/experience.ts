@@ -16,7 +16,7 @@ export const roomPurposes:Record<string,string>={'SC.ST':"Our crew's performance
 export const words={
  PREMIERE:{definition:'The first time a show is performed for an audience.',example:'Our premiere is the first public showing of The Little Bridge.'},
  REHEARSAL:{definition:'A practice before a performance.',example:'In rehearsal, we can try an ending and change it before the audience sees it.'},
- STILL:{definition:'Continuing to be true.',example:'The premiere is still planned.'},
+ STILL:{definition:'Continuing to be true.',example:'It’s getting late, but the library is still open.'},
  TOGETHER:{definition:'With each other.',example:'My friend and I carried the box together.'},
  FESTIVAL:{definition:'An event where people gather to celebrate and share things.',example:'At our festival, friends share stories and inventions.'},
  PROJECTOR:{definition:'A machine that puts pictures onto a large screen.',example:'Our projector shows the paper characters on the screen.'},

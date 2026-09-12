@@ -1,0 +1,46 @@
+
+> evidence-quest@0.1.0 test:contracts
+> npm run build:contracts && tsc -p tsconfig.checks.json && node scripts/prepare-checks.mjs && node --test .cache/checks/checks/*.test.js
+
+
+> evidence-quest@0.1.0 build:contracts
+> node scripts/build-contracts.mjs
+
+Generated 48 schema-linked types and 8 standalone validators.
+✔ authored and direct help count only native display; empty drafts make no request and no invented reading (20.961ms)
+✔ closed replies stay held; focused fallback survives arrival and wins once over duplicate/late selection (4.473ms)
+✔ relevant edits tombstone requests; save/focus/settings/movement do not; malformed/timeout fall back (2.5545ms)
+✔ valid current live proposal is still undisplayed until native acknowledgment and rejects hidden source references (1.9578ms)
+✔ schema-linked fixed identity, tuple and puppet types retain selected contracts (0.6639ms)
+✔ E2 source slices cannot turn the first frame or photo into later recording/notice facts (3.8018ms)
+✔ all physical copies share exact canonical E6/E7 and no collection grants their reading (2.4331ms)
+✔ ER13 opening is skippable, persists beats, and adds no source or puzzle outcomes; legacy restore preserves case (14.4222ms)
+✔ ER13 reading and vocabulary records do not imply source reading, fluency, or gameplay success (2.5313ms)
+✔ ER13 live provider uses canonical displayed sources, strict eligible projection, and bounded real fetch path (23.2581ms)
+✔ TASK11.06 follower follows legal paths, yields at approaches, shares doors once, and remote owners cannot act (71.557ms)
+✔ FIX11.TOOLS empty, text-only and excess Unicode drafts remain private; only actual revisions gain a prior snapshot (13.1713ms)
+✔ FIX11.TOOLS owned comparison slots accept one or same-source details; relationships never change source chronology (17.797ms)
+✔ FIX11.TOOLS timeline records only displayed metadata; request, notice, recording and post remain different events (6.9908ms)
+✔ FIX11.TOOLS Follow is a private question; explicit Go walks public doors, can stop, and resumes no closed reader (19.5296ms)
+✔ ER13 Stage mission describes each remaining physical handoff without a tile solution (0.765ms)
+✔ FIX11.CUE_RACE all six interruptions and callback orderings preserve exactly one endpoint in rehearsal and show (41.3861ms)
+✔ FIX11.TERMINAL trailing harmless Ferry is consumed once; terminal pause cannot certify or premiere early (3.1791ms)
+✔ fresh constructor is closed-schema valid and immutable; React snapshots retain identity until a command (2.927ms)
+✔ serialized effect callbacks can dispatch without clobbering an earlier snapshot (0.4024ms)
+✔ transport callbacks allocate a fresh receipt even when given the entire parent envelope (13.5208ms)
+✔ all 65 authored arrangements pass actual run/cue/finalization handlers and captions (50.5732ms)
+✔ interruption settles an active cue once, terminal resume finalizes without replay; edits preserve historical premiere (2.4561ms)
+✔ save acknowledgment belongs to its captured case, visit and token; it cannot acknowledge newer edits (0.4525ms)
+✔ all authored approach anchors are reachable without sweeping through any expanded obstacle (0.5303ms)
+✔ retargeting and canceled notice operations cannot commit; fixed movement stays on legal floor (7.6933ms)
+✔ save decoder rejects unknown identities, oversized, malformed, impossible physical and source facts without selective salvage (10.7729ms)
+✔ only a damaged pending playback is salvageable; a damaged historical premiere is not fabricated (0.9866ms)
+✔ disk restoration retires old visit, marks uncertainty, pauses at committed cue boundary without replaying (2.3809ms)
+ℹ tests 29
+ℹ suites 0
+ℹ pass 29
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 342.5426

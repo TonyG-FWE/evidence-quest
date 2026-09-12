@@ -14,4 +14,12 @@ export function ownerLabel(c:CaseState,id:string):string{
 export function localOwners(c:CaseState){
  return content.objects.filter(o=>ownerRoom(c,o.id)===c.physical.room&&(o.defaultActionCt||o.kind==='door')&&o.id!=='ACT.PLAYER'&&!o.id.startsWith('TILE.')&&!o.id.startsWith('KIT.NOTE.')&&!['LOOP.FOLLOW.PAD','ST.DOCK.FLAP','ST.DOCK.PAD','WK.TOAST.START','WK.TOAST.SKIP','WK.TOAST.MAGNIFIER','WK.ACCESS.NAV','ST.CONTROL.RESET','ST.CONTROL.CLEAR','ST.CONTROL.STOP'].includes(o.id)&&!(o.id==='KIT.CADDY'&&c.physical.caddyHost==='MD.RACK.STATION')&&!(o.id==='MD.ACCESS.E8'&&c.physical.caddyHost!=='MD.RACK.STATION')&&!(o.id==='ACT.LOOP'&&c.physical.loop.mode==='docked'));
 }
-export function goal(c:CaseState){const p=c.physical;return c.premiere?'CT.GOAL.AFTER':c.certificate?'CT.GOAL.LAUNCH':p.loop.mode==='standby'&&p.room==='SC.MD'?'CT.ER13.WAKE':p.loop.mode==='standby'&&p.caddyHost!=='ST.RACK.BAY'?'CT.GOAL.SEARCH':p.caddyHost==='ST.RACK.BAY'&&p.loop.mode==='standby'?'CT.GOAL.LOOP':p.loop.mode==='following'?'CT.GOAL.RESOURCES':p.caddyHost!=='ST.RACK.BAY'?'CT.GOAL.KIT':'CT.GOAL.REHEARSE';}
+export function goal(c:CaseState){
+ const p=c.physical;
+ if(c.premiere)return 'CT.GOAL.AFTER';if(c.certificate)return 'CT.GOAL.LAUNCH';
+ if(p.room==='SC.ST'){
+  if(p.loop.mode==='following')return p.caddyHost==='ACT.PLAYER'?'CT.ER13.HANDOFF_BOTH':p.caddyHost==='ST.RACK.BAY'?'CT.ER13.HANDOFF_LOOP':'CT.ER13.LOOP_THEN_KIT';
+  if(p.caddyHost==='ACT.PLAYER')return p.loop.mode==='standby'?'CT.ER13.KIT_THEN_LOOP':'CT.ER13.HANDOFF_KIT';
+ }
+ return p.loop.mode==='standby'&&p.room==='SC.MD'?'CT.ER13.WAKE':p.loop.mode==='standby'&&p.caddyHost!=='ST.RACK.BAY'?'CT.GOAL.SEARCH':p.caddyHost==='ST.RACK.BAY'&&p.loop.mode==='standby'?'CT.GOAL.LOOP':p.loop.mode==='following'?(p.caddyHost==='ST.RACK.BAY'?'CT.ER13.RETURN_LOOP':'CT.GOAL.RESOURCES'):p.caddyHost!=='ST.RACK.BAY'?'CT.GOAL.KIT':'CT.GOAL.REHEARSE';
+}
