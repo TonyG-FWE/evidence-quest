@@ -4,15 +4,19 @@ import {content} from '../core/content.js';
 import {ownerRoom} from '../physical/navigation.js';
 import {initialPuppet} from '../story/engine.js';
 import {Assets,manifest,illustration} from './assets.js';
+import {actorHome,carryGeometry,consoleLift,mountedBounds,projectionBounds} from '../physical/presentation.js';
+import {actorDrawRect,actorContentBounds,overlaps} from './actor-geometry.js';
 function translate(rect:Rect,point:Point):Rect{return [rect[0]+point[0],rect[1]+point[1],rect[2]+point[0],rect[3]+point[1]];}
 export function projectionFrameKey(s:State):string|null{
  const p=s.case.physical,r=s.runtime;
- // At the stationary Stage workstation, only the projected cue moves between
- // committed case changes. No actor reaches into the projection rectangle.
+ // Reuse requires actual scaled content to clear the changing screen region.
  if(p.room!=='SC.ST'||p.loop.mode!=='projecting'||s.case.playback?.status!=='running'||r.view.page!=='work'||r.intent||s.session.heldKeys.length||r.artFailure||r.canvasFailure||r.clockMs-(r.lastAvatarMoveMs??-1000)<110||r.clockMs-(r.lastLoopMoveMs??-1000)<110||r.lastOperation&&r.clockMs-r.lastOperation.endedAt<600)return null;
+ const people=content.actors.filter(a=>a.room==='SC.ST'&&a.id!=='ACT.PLAYER'&&a.id!=='ACT.LOOP').map(a=>actorContentBounds(a.id,actorHome(a.id),'home'));
+ people.push(actorContentBounds('ACT.PLAYER',p.avatar,'idle-front'),actorContentBounds('ACT.LOOP',p.loop.feet,'projecting'));
+ if(people.some(rect=>overlaps(rect,projectionBounds,.5)))return null;
  return [s.case.caseRunId,s.case.revision,s.preferences.revision].join(':');
 }
-export function paintProjection(ctx:CanvasRenderingContext2D,s:State,a:Assets){paintStory(ctx,a,s.case.playback?.puppet??initialPuppet(),[38,2,114,25],s.case.playback?.activeCue&&s.preferences.motion!=='reduced'?{cue:s.case.playback.activeCue,elapsed:s.runtime.cueElapsedMs}:undefined);}
+export function paintProjection(ctx:CanvasRenderingContext2D,s:State,a:Assets){paintStory(ctx,a,s.case.playback?.puppet??initialPuppet(),projectionBounds,s.case.playback?.activeCue&&s.preferences.motion!=='reduced'?{cue:s.case.playback.activeCue,elapsed:s.runtime.cueElapsedMs}:undefined);}
 export function paintStory(ctx:CanvasRenderingContext2D,a:Assets,committed:Puppet,area:Rect,animation?:{cue:Cue;elapsed:number},modelProgress?:number){
  const p={...committed},cue=animation?.cue,ms=animation?.elapsed??0,progress=(from:number,to:number)=>Math.max(0,Math.min(1,(ms-from)/(to-from)));
  let pipX=p.pip==='left'?23:77,pipY=p.pip==='left'?70:66,seedX=p.seed==='left'?29:87,seedY=p.seed==='left'?74:59;
@@ -109,6 +113,7 @@ export function paintWorld(ctx:CanvasRenderingContext2D,s:State,a:Assets){
  const all=manifest.bindings.filter(b=>b.coordinateSpace==='room'&&b.assetUse.manifestAssetId&&ownerRoom(s.case,b.assetUse.ownerId)===room&&!/^(ACT|KIT|TILE|PUP|MODEL)\./.test(b.assetUse.ownerId)&&!b.assetUse.ownerId.startsWith('ST.RAIL.')&&(b.assetUse.role!=='background'||b.assetUse.manifestAssetId==='ASSET.ENV.DOOR'));
  for(const b of all){
   const id=b.assetUse.manifestAssetId!,owner=b.assetUse.ownerId;if(!manifest.assets.some(x=>x.id===id))continue;
+  if(owner==='ST.CONSOLE'||owner==='ST.RACK.BAY'||owner.startsWith('ST.CONTROL.')||owner==='MD.EXIT.WK')continue;
   if(id.startsWith('ASSET.PROP.TOAST.')&&illustration('ASSET.PROP.TOAST.BODY'))continue;
   if(owner==='WK.ACCESS.NAV')continue; // The readable face belongs to the one sign frame.
   if(owner==='CY.ACCESS.E2'&&illustration('ASSET.PROP.CY.STAND'))continue; // The accepted stand includes its tablet.
@@ -134,7 +139,7 @@ export function paintWorld(ctx:CanvasRenderingContext2D,s:State,a:Assets){
   if(id==='ASSET.PROP.LEAFLET')variant='sheet';
   if(id==='ASSET.PROP.DEVICE')variant=operation?.target.endsWith('ACCESS.E2')?'selected':'idle';
   if(id==='ASSET.PROP.PETAL')variant=room==='SC.MD'?'flat':'bent';
-  const bounds=(id==='ASSET.PROP.REQUEST'&&room==='SC.ST'&&illustration('ASSET.PROP.ST.BOARD')?[46.7,28,53.4,35.8]:b.assetUse.logicalBounds) as Rect;
+  const bounds=mountedBounds(owner,(id==='ASSET.PROP.REQUEST'&&room==='SC.ST'&&illustration('ASSET.PROP.ST.BOARD')?[46.7,28,53.4,35.8]:b.assetUse.logicalBounds) as Rect);
   const morph=id==='ASSET.PROP.BRIEF.FLAP'&&operation?.target==='ST.SOURCE.E1'?['down','lifted']:id==='ASSET.PROP.NOTE.DRAWER'&&operation?.target==='ST.SOURCE.E6'?['closed','open']:id==='ASSET.PROP.REQUEST'&&operation?.target==='ST.SOURCE.E4'?['folded','unfolded']:id==='ASSET.PROP.DOCK.FLAP'&&operation?.target.startsWith('ST.DOCK')?['closed','open']:null;
   if(morph){
    const t=progress();ctx.save();ctx.globalAlpha=1-t;a.drawContained(ctx,id,bounds,morph[0]);ctx.globalAlpha=t;
@@ -151,20 +156,17 @@ export function paintWorld(ctx:CanvasRenderingContext2D,s:State,a:Assets){
   if(id==='ASSET.PROP.ST.BOARD'&&illustration(id))a.drawContained(ctx,id,[44,24,66,38]);
   else if(id==='ASSET.PROP.REQUEST'&&room==='SC.ST'&&illustration('ASSET.PROP.ST.BOARD'))a.draw(ctx,id,[46.7,28,53.4,35.8],variant);
   else if(id==='ASSET.PROP.DEVICE'&&room==='SC.ST'&&illustration('ASSET.PROP.ST.BOARD'))a.draw(ctx,id,[55,28,62.5,36],variant);
-  else if(illustration(id,variant))a.drawContained(ctx,id,b.assetUse.logicalBounds as Rect,variant);
-  else a.draw(ctx,id,b.assetUse.logicalBounds as Rect,variant);
+  else if(illustration(id,variant))a.drawContained(ctx,id,bounds,variant);
+  else a.draw(ctx,id,bounds,variant);
  }
  if(room==='SC.WK'&&illustration('ASSET.PROP.TOAST.BODY'))paintToast(ctx,s,a);
  if(room==='SC.ST'){
   // A separate physical screen is required when the painted room has an empty wall.
   ctx.save();ctx.shadowColor='#51351f44';ctx.shadowBlur=1.5;ctx.shadowOffsetY=.6;
-  ctx.fillStyle='#5e4635';ctx.fillRect(37.5,1.5,77,24);ctx.shadowBlur=0;ctx.shadowOffsetY=0;
-  const fabric=ctx.createLinearGradient(0,2,0,25);fabric.addColorStop(0,'#fff6df');fabric.addColorStop(1,'#ded1b8');ctx.fillStyle=fabric;ctx.fillRect(38,2,76,23);ctx.strokeStyle='#b7a68b';ctx.lineWidth=.15;ctx.strokeRect(38.4,2.4,75.2,22.2);ctx.restore();
+  ctx.fillStyle='#5e4635';ctx.fillRect(37.5,1.5,77,23);ctx.shadowBlur=0;ctx.shadowOffsetY=0;
+  const fabric=ctx.createLinearGradient(0,2,0,24);fabric.addColorStop(0,'#fff6df');fabric.addColorStop(1,'#ded1b8');ctx.fillStyle=fabric;ctx.fillRect(38,2,76,22);ctx.strokeStyle='#b7a68b';ctx.lineWidth=.15;ctx.strokeRect(38.4,2.4,75.2,21.2);ctx.restore();
   const model=s.runtime.intent?.target.startsWith('ST.MODEL')&&s.runtime.intent.stage==='operating'?s.runtime.operationElapsedMs:p.objects.modelTabTried?600:0;
   paintStory(ctx,a,initialPuppet(),illustration('ASSET.PROP.ST.MODEL.CABINET')?[10.8,19.5,29.5,31.1]:[10,18,31,35],undefined,model);
-  ctx.strokeStyle='#14646B';ctx.lineWidth=.3;ctx.strokeRect(49,67,14,8);ctx.strokeRect(64,67,29,8);
-  for(const [index,tile]of p.order.entries())a.draw(ctx,'ASSET.'+tile,[64+index*7,68,70+index*7,74]);
-  for(const [x,color]of [[95,'#F3C65C'],[100,'#E9725C']] as const){ctx.fillStyle=color;ctx.fillRect(x,67,4,4);ctx.strokeStyle='#18324B';ctx.strokeRect(x,67,4,4);}
  }
  };
  // Stage scenery changes only with these committed objects/tiles. During a
@@ -172,13 +174,12 @@ export function paintWorld(ctx:CanvasRenderingContext2D,s:State,a:Assets){
  // remain outside this layer, at their original source and device resolution.
  if(room==='SC.ST'&&!operation)a.layer(ctx,'stage-scenery',[0,0,120,80],scenery,JSON.stringify([p.objects,p.order]));else scenery(ctx);
  if(room==='SC.ST'){
-  if(p.loop.mode==='projecting'){ctx.save();const beam=ctx.createLinearGradient(76,35,76,2);beam.addColorStop(0,'#ffe8a438');beam.addColorStop(1,'#fff6dc0a');ctx.fillStyle=beam;ctx.beginPath();ctx.moveTo(76,33);ctx.lineTo(38,2);ctx.lineTo(114,25);ctx.closePath();ctx.fill();ctx.restore();}
+  if(p.loop.mode==='projecting'){ctx.save();const beam=ctx.createLinearGradient(76,35,76,2);beam.addColorStop(0,'#ffe8a438');beam.addColorStop(1,'#fff6dc0a');ctx.fillStyle=beam;ctx.beginPath();ctx.moveTo(76,31.5);ctx.lineTo(38,2);ctx.lineTo(114,24);ctx.closePath();ctx.fill();ctx.restore();}
   if(['docked','projecting'].includes(p.loop.mode))paintProjection(ctx,s,a);
  }
  const drawActor=(id:string,feet:Point,variant='home')=>{
   const b=manifest.bindings.find(b=>b.assetUse.ownerId===id&&b.assetUse.role==='actor');if(!b)return;
-  const home=content.actors.find(actor=>actor.id===id)!.feet;
-  const rect=translate(b.assetUse.logicalBounds as Rect,b.coordinateSpace==='room'?[feet[0]-home[0],feet[1]-home[1]]:feet);ctx.fillStyle='#18324B26';ctx.beginPath();ctx.ellipse(feet[0],feet[1],(rect[2]-rect[0])*.45,(rect[3]-rect[1])*.09,0,0,Math.PI*2);ctx.fill();
+  const rect=actorDrawRect(id,feet),ink=actorContentBounds(id,feet,variant);ctx.fillStyle='#18324B26';ctx.beginPath();ctx.ellipse(feet[0],feet[1],(ink[2]-ink[0])*.45,id==='ACT.LOOP'?.55:.7,0,0,Math.PI*2);ctx.fill();
   const asset='ASSET.'+id;const variants=manifest.assets.find(a=>a.id===asset)?.variants;const frames=illustration(asset,variant)?illustration(asset,variant)!.frames?.length??1:variants?.find(v=>v.key===variant)?.frames??1;
   const moving=s.runtime.clockMs-(id==='ACT.LOOP'?s.runtime.lastLoopMoveMs??-1000:s.runtime.lastAvatarMoveMs??-1000)<110,frame=moving&&animate?Math.floor(s.runtime.clockMs/(id==='ACT.LOOP'?167:125))%frames:0;
   if(id==='ACT.PLAYER'&&variant.startsWith('carry-')&&moving&&animate){
@@ -191,17 +192,17 @@ export function paintWorld(ctx:CanvasRenderingContext2D,s:State,a:Assets){
   else if(['ACT.JO','ACT.REMY','ACT.ARI'].includes(id)&&operation?.target===id&&animate){const t=progress(150);ctx.save();ctx.globalAlpha=1-t;a.drawContained(ctx,asset,rect,'home',0,feet);ctx.globalAlpha=t;a.drawContained(ctx,asset,rect,variant,0,feet);ctx.restore();}
   else a.drawContained(ctx,asset,rect,variant,frame,feet);
  };
- const entries=content.actors.filter(actor=>actor.id!=='ACT.PLAYER'&&actor.id!=='ACT.LOOP'&&actor.room===room).map(actor=>{const recent=s.runtime.lastOperation,since=recent?s.runtime.clockMs-recent.endedAt:Infinity,receiving=operation?.target===actor.id&&!!operation.delivery||recent?.target===actor.id&&recent.delivery&&since<200,acknowledging=recent?.target===actor.id&&recent.delivery&&since>=200&&since<600;return {id:actor.id,feet:actor.feet,variant:receiving?'receive':acknowledging?'acknowledge':s.runtime.view.actor===actor.id?'talk':operation?.target===actor.id?`face-${p.avatar[0]<actor.feet[0]?'left':'right'}`:'home'};});
+ const entries=content.actors.filter(actor=>actor.id!=='ACT.PLAYER'&&actor.id!=='ACT.LOOP'&&actor.room===room).map(actor=>{const recent=s.runtime.lastOperation,since=recent?s.runtime.clockMs-recent.endedAt:Infinity,receiving=operation?.target===actor.id&&!!operation.delivery||recent?.target===actor.id&&recent.delivery&&since<200,acknowledging=recent?.target===actor.id&&recent.delivery&&since>=200&&since<600;return {id:actor.id,feet:actorHome(actor.id),variant:receiving?'receive':acknowledging?'acknowledge':s.runtime.view.actor===actor.id?'talk':operation?.target===actor.id?`face-${p.avatar[0]<actorHome(actor.id)[0]?'left':'right'}`:'home'};});
  if(p.loop.room===room){const docking=operation?.target.startsWith('ST.DOCK')&&p.loop.mode==='following',waking=['ACT.LOOP','LOOP.FOLLOW.PAD'].includes(operation?.target??''),t=Math.min(1,elapsed/(13/15*1000)),direction=s.runtime.loopFacing??p.facing;entries.push({id:'ACT.LOOP',feet:docking&&animate?[76,48-13*t]:p.loop.feet,variant:waking&&elapsed>=250?'responsive':p.loop.mode==='following'?docking?'rolling-back':`rolling-${direction==='up'?'back':direction==='down'?'front':direction}`:p.loop.mode});}
  const facing=p.facing==='up'?'back':p.facing==='down'?'front':p.facing;
  entries.push({id:'ACT.PLAYER',feet:p.avatar,variant:`${p.caddyHost==='ACT.PLAYER'?'carry':operation?'reach':s.runtime.clockMs-(s.runtime.lastAvatarMoveMs??-1000)<110?'walk':'idle'}-${facing}`});
  const hostRoom=p.caddyHost==='MD.RACK.STATION'?'SC.MD':p.caddyHost==='ST.RACK.BAY'?'SC.ST':room;
  const held=p.caddyHost==='ACT.PLAYER',transferring=operation?.action==='collect'||operation?.target==='ST.RACK.BAY'&&held;
- const handX=p.avatar[0]+(facing==='left'?-1.7:facing==='right'?1.7:0),heldRect:Rect=[handX-2.35,p.avatar[1]-8.6,handX+2.35,p.avatar[1]-5.9];
+ const {handX,rect:heldRect,noteHand}=carryGeometry(p.avatar,facing),lift=consoleLift();
  const drawCaddy=()=>{if(hostRoom!==room)return;
-  const origin:Point=p.caddyHost==='MD.RACK.STATION'?[96,32]:[50,68];
+  const origin:Point=p.caddyHost==='MD.RACK.STATION'?[96,32]:[50,68-lift];
   let closedRect:Rect=held?heldRect:translate([0,0,12,7],origin);
-  if(transferring){const to:Rect=operation?.action==='collect'?heldRect:[50,68,62,75],t=progress(200);closedRect=closedRect.map((n,i)=>n+(to[i]!-n)*t) as Rect;}
+  if(transferring){const to:Rect=operation?.action==='collect'?heldRect:[50,68-lift,62,75-lift],t=progress(200);closedRect=closedRect.map((n,i)=>n+(to[i]!-n)*t) as Rect;}
   // The open inspection case stays at its workstation. The carried prop is a
   // closed hand-sized case; logical ownership and the generous hit area stay unchanged.
   const portable=held||transferring,open=p.objects.rackOpened&&!portable,lidH=p.caddyHost==='MD.RACK.STATION'?5:2;
@@ -224,13 +225,37 @@ export function paintWorld(ctx:CanvasRenderingContext2D,s:State,a:Assets){
    a.draw(ctx,'ASSET.PROP.LEAFLET',translate([.5,-lidH,5.5,0],origin),'pocket');a.draw(ctx,'ASSET.PROP.LEAFLET',translate([6.5,-lidH,11.5,0],origin),'pocket');
    }else a.draw(ctx,'ASSET.PROP.CADDY.LID',translate([0,0,12,7],origin),'closed');
   }
-  if(operation?.target.startsWith('KIT.NOTE.')){const t=progress(),x=held?handX:origin[0]+(operation.target.endsWith('E6')?3:9),y=held?heldRect[1]:origin[1]-lidH+2,hand:Point=[p.avatar[0],p.avatar[1]-8],point:Point=[x+(hand[0]-x)*t,y+(hand[1]-y)*t];a.drawContained(ctx,'ASSET.PROP.LEAFLET',translate([-2,-3,2,0],point),'sheet');}
+  if(operation?.target.startsWith('KIT.NOTE.')){const t=progress(),x=held?handX:origin[0]+(operation.target.endsWith('E6')?3:9),y=held?heldRect[1]:origin[1]-lidH+2,point:Point=[x+(noteHand[0]-x)*t,y+(noteHand[1]-y)*t];a.drawContained(ctx,'ASSET.PROP.LEAFLET',translate([-2.5,-5,2.5,0],point),'sheet');}
  };
  for(const entry of entries.sort((a,b)=>a.feet[1]-b.feet[1])){
   if(entry.id==='ACT.PLAYER'&&held&&facing==='back')drawCaddy();
   const celebration=(s.runtime.clockMs-(s.runtime.celebrateStartedAt??-1000))/800,celebrating=entry.id==='ACT.JO'&&s.runtime.view.page==='ending'&&s.runtime.view.action==='celebration'&&celebration<1;
   ctx.save();if(celebrating&&animate)ctx.translate(0,-.6*Math.sin(celebration*Math.PI));drawActor(entry.id,entry.feet,celebrating?'celebrate':entry.variant);ctx.restore();
   if(entry.id==='ACT.PLAYER'&&held&&facing!=='back')drawCaddy();
+ }
+ if(room==='SC.ST'){
+  const furniture=(ctx:CanvasRenderingContext2D)=>{
+   // Retain the accepted panel without distortion. Its own illustrated wooden
+   // supports supply the raised legs, with rounded end caps left unextended.
+   const legs=[{source:[.03258,.856,.0774,1] as Rect,dest:[49.89,66.2,52.49,76] as Rect},{source:[.92057,.856,.96487,1] as Rect,dest:[101.39,66.2,103.96,76] as Rect}];
+   for(const leg of legs){const [x,y,r,b]=leg.dest,[sl,st,sr,sb]=leg.source;a.drawRegion(ctx,'ASSET.PROP.ST.CONSOLE',[sl,st,sr,sb-.065],[x,y,r,b-.65]);a.drawRegion(ctx,'ASSET.PROP.ST.CONSOLE',[sl,sb-.065,sr,sb],[x,b-.65,r,b]);}
+   a.drawContained(ctx,'ASSET.PROP.ST.CONSOLE',[48,66-lift,106,76-lift]);
+   for(const [index,tile]of p.order.entries())a.draw(ctx,'ASSET.'+tile,[64+index*7,68-lift,70+index*7,74-lift]);
+   for(const [x,color]of [[95,'#F3C65C'],[100,'#E9725C']] as const){ctx.fillStyle=color;ctx.fillRect(x,67-lift,4,4);ctx.strokeStyle='#18324B';ctx.strokeRect(x,67-lift,4,4);}
+  };
+  a.layer(ctx,'stage-console-raised',[48,58,106,76],furniture,JSON.stringify(p.order));
+ }
+ if(room==='SC.MD'){
+  const frame=mountedBounds('MD.EXIT.WK',[55,72,69,80]),loop=entries.find(e=>e.id==='ACT.LOOP'),ink=loop&&actorContentBounds(loop.id,loop.feet,loop.variant);
+  const drawFrame=()=>a.drawNineSlice(ctx,'ASSET.ENV.DOOR',frame,'south');
+  if(ink&&overlaps(frame,ink)){
+   // A foreground cutaway keeps Loop's observed body and wake response legible.
+   // Only wood directly in front of Loop recedes; the frame keeps its scale,
+   // original detail and full opacity everywhere else.
+   const cutaway=()=>ctx.roundRect(ink[0]-1,ink[1]-1,ink[2]-ink[0]+2,ink[3]-ink[1]+2,1);
+   ctx.save();ctx.beginPath();ctx.rect(...[frame[0],frame[1],frame[2]-frame[0],frame[3]-frame[1]] as [number,number,number,number]);cutaway();ctx.clip('evenodd');drawFrame();ctx.restore();
+   ctx.save();ctx.beginPath();cutaway();ctx.clip();ctx.globalAlpha=.12;drawFrame();ctx.restore();
+  }else drawFrame();
  }
  if(!held)drawCaddy();
  if(s.runtime.intent?.stage==='approaching'){ctx.strokeStyle='#224FC4';ctx.lineWidth=.2;ctx.setLineDash([.5,.5]);ctx.beginPath();ctx.moveTo(...p.avatar);for(const point of s.runtime.intent.path)ctx.lineTo(...point);ctx.stroke();ctx.setLineDash([]);}

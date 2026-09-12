@@ -1,0 +1,11 @@
+
+> evidence-quest@0.1.0 check
+> npm run build:contracts && tsc -p tsconfig.client.json && tsc -p tsconfig.server.json --noEmit && tsc -p tsconfig.checks.json --noEmit && node scripts/check-schema.mjs && node scripts/check-ui-copy.mjs
+
+
+> evidence-quest@0.1.0 build:contracts
+> node scripts/build-contracts.mjs
+
+Generated 48 schema-linked types and 8 standalone validators.
+33 supplied schema expectations verified. Semantic checks are separate.
+All static client CT references and literal template parameters resolve.

@@ -1,0 +1,32 @@
+{
+  "authority": "SCENE-SCALE-CORRECTION-20260912.md",
+  "actors": {
+    "ACT.PLAYER": { "height": 23 },
+    "ACT.JO": { "height": 25, "home": [37, 52] },
+    "ACT.REMY": { "height": 24 },
+    "ACT.ARI": { "height": 25 },
+    "ACT.LOOP": { "height": 10 }
+  },
+  "doors": {
+    "ST.EXIT.CY": [0, 31, 14, 64],
+    "ST.EXIT.WK": [106, 31, 120, 64],
+    "CY.EXIT.ST": [0, 31, 14, 64],
+    "CY.EXIT.WK": [106, 31, 120, 64],
+    "WK.EXIT.ST": [0, 31, 14, 64],
+    "WK.EXIT.CY": [106, 31, 120, 64],
+    "WK.EXIT.MD": [53, 0, 71, 33],
+    "MD.EXIT.WK": [53, 39, 71, 80]
+  },
+  "media": { "kitStop": [114, 44], "loopWakeStops": [[56, 49], [80, 49]] },
+  "stage": {
+    "projection": [38, 2, 114, 24],
+    "consoleLift": 8,
+    "console": [48, 58, 106, 76],
+    "leftStop": [44, 70],
+    "rightStop": [110, 70],
+    "legacyWorkStops": [[78, 58], [100, 58]],
+    "raisedConsoleAvailable": true
+  },
+  "follower": { "trail": 8, "yieldDistance": 8, "yieldRadius": 9, "downscreenOffset": 9 },
+  "exportPixelsPerUnit": 12
+}

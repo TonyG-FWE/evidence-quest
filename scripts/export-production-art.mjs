@@ -4,6 +4,7 @@ import {createHash} from 'node:crypto';
 
 const digest=bytes=>createHash('sha256').update(bytes).digest('hex');
 const originals=JSON.parse(await readFile('content/illustrated-assets.json','utf8'));
+const sceneScale=JSON.parse(await readFile('content/scene-scale.json','utf8'));
 const specification=JSON.parse(await readFile('docs/design/evidence-quest-design-v3/10-asset-production/asset-manifest.json','utf8'));
 const byId=new Map(specification.assets.map(asset=>[asset.id,asset]));
 const directory='public/art/runtime';await mkdir(directory,{recursive:true});
@@ -17,7 +18,8 @@ for(const [key,original] of Object.entries(originals)){
  if(!sourceFiles.has(original.url)){const bytes=await readFile('public'+original.url);sourceFiles.set(original.url,{bytes,sha256:digest(bytes),metadata:decodePng(bytes)});}
  const source=sourceFiles.get(original.url),reference=original.referenceHeight;
  // Paper characters are also read at the new, enlarged Watch size.
- const target=backplate?[960,640]:['ASSET.PUP.PIP','ASSET.PUP.GRANDMA'].includes(id)?[240,160]:id==='ER13.MATERIAL.PAPER'?[384,384]:id==='ASSET.PROP.CADDY'?[144,126]:asset?.geometry.contentPixels??[256,256];
+ const actorScale=sceneScale.actors[id.replace(/^ASSET\./,'')];
+ const target=actorScale?[actorScale.height*sceneScale.exportPixelsPerUnit,actorScale.height*sceneScale.exportPixelsPerUnit]:id==='ASSET.ENV.DOOR'?[216,444]:backplate?[960,640]:['ASSET.PUP.PIP','ASSET.PUP.GRANDMA'].includes(id)?[240,160]:id==='ER13.MATERIAL.PAPER'?[384,384]:id==='ASSET.PROP.CADDY'?[144,126]:asset?.geometry.contentPixels??[256,256];
  generated[key]={group:asset?.loadGroup??(id==='ER13.MATERIAL.PAPER'?'puppet':'shared'),sourceUrl:original.url,sourceSha256:source.sha256,levels:{}};
  for(const density of [1,2]){
   const frames=[];

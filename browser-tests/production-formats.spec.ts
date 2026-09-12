@@ -10,8 +10,9 @@ import {copy} from '../src/core/content.js';
 // substitute a raised threshold for the original failed comparison.
 const authorityPath='docs/design/evidence-quest-design-v3/13-EXPERIENCE-AND-LITERACY-CORRECTION.md';
 const authoritySha='c8f22de816b7220de46a74357c1905de8259ceb9e83bc465514588a732cc291f';
+const performanceDir=(process.env['EQ_EVIDENCE_DIR']??'evidence/er13')+'/performance';
 for(const density of [1,2])for(const png of [false,true])test(`TASK11.20 section10 DPR${density} ${png?'PNG':'WebP'} transfer, consumers, buffers and visible input`,async({browser},info)=>{
- test.setTimeout(180000);expect(createHash('sha256').update(await readFile(authorityPath)).digest('hex')).toBe(authoritySha);
+ test.setTimeout(180000);expect(createHash('sha256').update(await readFile(authorityPath)).digest('hex')).toBe(authoritySha);await mkdir(performanceDir,{recursive:true});
  const context=await browser.newContext({baseURL:info.project.use.baseURL,viewport:{width:1440,height:1000},deviceScaleFactor:density}),page=await context.newPage();
  if(png)await page.route('**/art/runtime/*.webp',route=>route.abort());
  const errors:string[]=[];page.on('pageerror',error=>errors.push(error.message));const begin=Date.now();await start(page);await page.waitForLoadState('networkidle');const usableMs=Date.now()-begin;
@@ -42,15 +43,15 @@ for(const density of [1,2])for(const png of [false,true])test(`TASK11.20 section
   const tick=(now:number)=>{frames.push(now-previous);previous=now;if(now<end)requestAnimationFrame(tick);else{const endedAt=performance.now(),after=ctx.getImageData(x,y,w,h).data;resolve({frames,startedAt,endedAt,startLabel,endLabel:canvas.getAttribute('aria-label'),changedStoryPixels:after.some((n,i)=>n!==before[i]),canvases:document.querySelectorAll('canvas').length});}};requestAnimationFrame(tick);
  }));
  await expect(watch.getByRole('button',{name:'Stop',exact:true})).toBeVisible();expect(activeCadence.changedStoryPixels).toBe(true);expect(activeCadence.endLabel).not.toBe(activeCadence.startLabel);expect(activeCadence.canvases).toBe(2);const activeEnd=await measuredScene(watch),cadence=activeCadence.frames;
- await watch.screenshot({path:`evidence/er13/performance/${info.project.name}-DPR${density}-${png?'PNG':'WebP'}-active.png`,fullPage:false});
+ await watch.screenshot({path:`${performanceDir}/${info.project.name}-DPR${density}-${png?'PNG':'WebP'}-active.png`,fullPage:false});
  await expect(watch.getByRole('button',{name:'Start premiere',exact:true})).toBeVisible();await watch.waitForLoadState('networkidle');const wholeStory=await measuredScene(watch);
- await watch.screenshot({path:`evidence/er13/performance/${info.project.name}-DPR${density}-${png?'PNG':'WebP'}-watch.png`,fullPage:false});await watchContext.close();
+ await watch.screenshot({path:`${performanceDir}/${info.project.name}-DPR${density}-${png?'PNG':'WebP'}-watch.png`,fullPage:false});await watchContext.close();
  const snapshots=[...visits.map(v=>v.snapshot),rack,activeStart,activeEnd,wholeStory],allRequestedRgba=totalImages(snapshots),maxCurrent=Math.max(...snapshots.map(s=>s.currentConservativeBytes)),maxNative=Math.max(...snapshots.map(s=>s.nativeConsumerRgba)),maxBacking=Math.max(...snapshots.map(s=>s.backingRgba));
  // Conservatively retain all distinct requested images from both visits, allow
  // separate native decodes, four backing/compositor buffers and32MiB reserve.
  const maxRaster=Math.max(...snapshots.map(s=>s.rasterPeak)),maxEncoded=Math.max(...snapshots.map(s=>s.encodedPeak)),globalConservative=allRequestedRgba+maxNative+maxRaster+2*maxEncoded+4*maxBacking+32*1024*1024,sorted=cadence.slice().sort((a,b)=>a-b);
  const report={at:new Date().toISOString(),authority:{path:authorityPath,sha256:authoritySha},density,format:png?'PNG':'WebP',usableMs,coldBytes,codeBytes,transferLimits,transfers,inputPixelMs,inputTiming,activeCadence,cadence:{samples:cadence.length,medianMs:sorted[Math.floor(sorted.length*.5)],p95Ms:sorted[Math.floor(sorted.length*.95)],over33ms:cadence.filter(n=>n>33.34).length},memory:{allRequestedRgba,maxCurrent,maxNative,maxBacking,maxRaster,maxEncoded,globalConservative,currentLimit:96*1024*1024,globalLimit:192*1024*1024},snapshots,errors,scope:'Automated Windows/loopback/DPR emulation, not physical hardware or internet measurement. RAF cadence is sampled during an actual running rehearsal with two Canvases, changed story pixels and changed committed description; it is a scheduling proxy, not measured physical display FPS. Image dimensions, decoded pool reservations, exact offscreen raster bytes, encoded response bytes plus an equal transfer-copy allowance, all native consumers and explicit buffer/reserve arithmetic are conservative estimates, not measured total browser/GPU memory. PNG interception disables normal browser caching. Existing all-variant allocation failures remain in production-art-verification.json.'};
- await mkdir('evidence/er13/performance',{recursive:true});await writeFile(`evidence/er13/performance/${info.project.name}-DPR${density}-${png?'PNG':'WebP'}-qualification.json`,JSON.stringify(report,null,2)+'\n');
+ await writeFile(`${performanceDir}/${info.project.name}-DPR${density}-${png?'PNG':'WebP'}-qualification.json`,JSON.stringify(report,null,2)+'\n');
  expect(coldBytes).toBeLessThanOrEqual(transferLimits.initial);expect(codeBytes).toBeLessThanOrEqual(1024*1024);expect(transfers.slice(1).every(t=>t.artEncodedBytes<=transferLimits.room)).toBe(true);expect(usableMs).toBeLessThan(5000);expect(inputPixelMs).toBeLessThan(100);expect(report.cadence.p95Ms!).toBeLessThanOrEqual(33.34);expect(maxCurrent).toBeLessThanOrEqual(96*1024*1024);expect(globalConservative).toBeLessThanOrEqual(192*1024*1024);expect(snapshots.flatMap(s=>s.unknownImages)).toEqual([]);expect(errors).toEqual([]);
 });
 

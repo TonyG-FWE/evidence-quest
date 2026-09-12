@@ -1,6 +1,30 @@
 # Evidence Quest build status
 
-## Current checkpoint — ER13 and production qualification (2026-09-12)
+## Current scene-scale checkpoint (2026-09-12)
+
+The user-directed four-room scale and Stage-outline correction is **COMPLETE within its bounded visual scope** under ER13.06–07 / TASK11.ART02–07 / TASK11.20–21. [Dated authority](docs/design/evidence-quest-design-v3/13-experience-correction/SCENE-SCALE-CORRECTION-20260912.md); [initial import receipt](evidence/scale-20260912/authority-import.json). Baseline is private commit e1fbfda4d74a6e6250287954afdcc463657fdb92. Broader qualification remains open for the explicit current gaps below.
+
+Implemented: shared human heights 23/25/24/25, Loop 10; source-bounded derivatives; enlarged doorframes; corresponding actor/carry/door/console targets; spaced NPC approaches; raised Stage panel with supports composed from the accepted console's own artwork; side operating stops and preserved legacy saved stops; actual-content projection guard. The two unconditional Stage outlines are removed. Native feedback also led to Media kit side access, visible side wake/down-screen following, and a localized foreground-frame cutaway over Loop. Canonical sources, ground obstacles, door identities/arrivals and dock terminal remain unchanged. New generated console attempts were rejected for opaque backgrounds and are not imported. [Actual model and repair record](docs/SCENE-SCALE-CORRECTION.md).
+
+Final candidate: **App-qKKSVzYI.js / App-CvfCOyJg.css**; [frozen client hashes](evidence/scale-20260912/final-client.json). Strict checks and 43 contracts pass; 52 original hashes and 267 exact RGBA pairs pass. The post-resize functional matrix passes 21/21, and the final affected Media subset passes 6/6 across Chromium/Firefox/WebKit at 1469×1105 and 320×568 Largest/Roomier. Candidate boundaries and the prior repaired WebKit resize failure remain explicit in the [qualification ledger](evidence/scale-20260912/qualification.json). Independent [native review](docs/design/evidence-quest-design-v3/13-experience-correction/NATIVE-SCENE-SCALE-REVIEW-20260912.md) passes the final four-room/kit/wake/follow/dock/side-control correction.
+
+| Existing IDs | Current outcome | Remaining work |
+|---|---|---|
+| ER13.06 / TASK11.ART02–07 | BOUNDED_SCALE_NATIVE_PASS; ORIGINAL_DETAIL_PRESERVED | Broader performance qualification remains open. |
+| ER13.07 | CONTRACT_AND_AFFECTED_BROWSER_PASS | 43 contracts; 21 functional plus 6 final Media checks. No participant/learning claim. |
+| TASK11.20 | MEASURED_TRANSFER_AND_CADENCE_GAPS | Format matrix 9 pass / 6 fail. All DPR2 cases exceed startup and incremental-room transfer limits. WebKit DPR2 p95 48 ms WebP / 49 ms PNG exceeds 33.34 ms. |
+| TASK11.21 | FUNCTIONAL_PASS_WITH_OPEN_DEPENDENCY | TASK11.20 remains open; physical foreground/touch/all-device screen-reader qualification remains NOT_RUN. |
+| TASK11.19 / ER13.08 | BLOCKED_PROVIDER_CREDIT | Exactly 1/75 prior attempts used, 74 remain. This correction made zero provider requests. |
+
+Final DPR2 startup: WebP 4,203,498 bytes (Firefox 4,203,530) versus 4,194,304; PNG 5,440,663 versus 5,242,880. Largest incremental room art: WebP 4,079,308 versus 3,145,728; PNG 5,989,334 versus 4,456,448. Every measured code/start/input/memory/known-consumer/error criterion otherwise passes. All original limits and source-detail targets remain. [Detailed results and limitations](docs/SCENE-SCALE-CORRECTION.md).
+
+Final parent packet: [35-file verified import](evidence/scale-20260912/parent-import.json), including the updated master/scope, native review and 30 attributed JPEGs. Receipt SHA-256 `ff2fc9c24899f37d97c74b594e70df3bebccb3a80ac17fad4639d3b31f93b7c0`. Earlier master/scope snapshots remain under the dated import history.
+
+**Next task:** TASK11.20 high-density transfer and WebKit cadence qualification, preserving current artwork detail and unchanged limits; TASK11.21 depends on it. Separately TASK11.19 awaits funded, explicitly coordinated cap-preserving resumption. This bounded checkpoint does not start that additional work. Ordinary private Git checkpoint verification follows below when recorded.
+
+Original 4173/4175/4176 saves are preserved; parent owns fresh-review 4177. After qualification, parent refreshed the user's 4175 Home and used Continue to restore the existing completed Stage case; no reset or extra gameplay action occurred. The UI open request returned queued, so no app-window foreground proof is claimed. No provider call, deployment or public publication occurred in this correction. Concurrent `docs/game-review/` drafts belong to a separate user-owned review task and are preserved outside this checkpoint.
+
+## Historical ER13 production checkpoint (2026-09-12)
 
 The user-approved correction and parent-relayed §8 authorize completing existing TASK11.17 alongside ER13. The historical first-build stop below is superseded. Continue on codex/first-connected in the dedicated Evidence Quest workspace. [Current authority](docs/design/evidence-quest-design-v3/13-EXPERIENCE-AND-LITERACY-CORRECTION.md), SHA-256 c8f22de816b7220de46a74357c1905de8259ceb9e83bc465514588a732cc291f; later paid-evaluation authorization is §9. The previous authority and checkpoint remain in Git; [append-only scope verification](evidence/er13/correction-authority-update.json).
 

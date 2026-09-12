@@ -10,13 +10,16 @@ import {Button} from '../ui/primitives.js';
 import {Assets,artCacheStats} from './assets.js';
 import {paintWorld,paintProjection,projectionFrameKey} from './paint.js';
 import {roomName,localOwners,ownerLabel} from '../ui/labels.js';
+import {actorHome,carryGeometry,consoleLift,mountedBounds} from '../physical/presentation.js';
+import {actorContentBounds} from './actor-geometry.js';
+import {observeResize} from '../ui/resize.js';
 export function World({state,store}:{state:State;store:Store}){
  const canvas=useRef<HTMLCanvasElement>(null);
  const dock=useRef<HTMLDivElement>(null);
  useLayoutEffect(()=>{
   const el=dock.current;if(!el)return;
-  const measure=()=>document.documentElement.style.setProperty('--compact-dock-height',`${el.getBoundingClientRect().height}px`);
-  const observer=new ResizeObserver(measure);observer.observe(el);measure();return()=>observer.disconnect();
+  const measure=()=>{const style=document.documentElement.style,height=`${el.getBoundingClientRect().height}px`;if(style.getPropertyValue('--compact-dock-height')!==height)style.setProperty('--compact-dock-height',height);};
+  const observer=observeResize([el],measure);measure();return()=>observer.disconnect();
  },[]);
  const paint=useRef<()=>void>(()=>{});
  const assetFrame=useRef<number|null>(null);
@@ -32,7 +35,7 @@ export function World({state,store}:{state:State;store:Store}){
     const part=parts.get('E5.c/seen')!;store.send({type:'EXPOSE',exposure:{refId:part.refId,ctId:part.ctId,spans:part.spans,visualComplete:true,viaAccessId:'SC.MD'}});
    }assets.current!.end();const cache=artCacheStats();for(const [key,value]of Object.entries({artBytes:cache.reservedBytes,artPeakBytes:cache.peakBytes,artEvictions:cache.evictions,rasterBytes:cache.raster.reservedBytes,rasterPeakBytes:cache.raster.peakBytes})){const text=String(value);if(el.dataset[key]!==text)el.dataset[key]=text;}
   };
-  const resize=new ResizeObserver(()=>paint.current());resize.observe(el);paint.current();return ()=>{resize.disconnect();if(assetFrame.current!==null)cancelAnimationFrame(assetFrame.current);assetFrame.current=null;assets.current?.dispose();};
+  const resize=observeResize([el],()=>paint.current());paint.current();return ()=>{resize.disconnect();if(assetFrame.current!==null)cancelAnimationFrame(assetFrame.current);assetFrame.current=null;assets.current?.dispose();};
  },[store]);
  // Canvas is an imperative visual consumer of this committed React state.
  // Draw before the browser paints, rather than one passive-effect phase later.
@@ -55,9 +58,10 @@ export function World({state,store}:{state:State;store:Store}){
     if(!['world','work'].includes(state.runtime.view.page))return;e.currentTarget.focus();const box=e.currentTarget.getBoundingClientRect();const point:Point=[(e.clientX-box.left)/box.width*120,(e.clientY-box.top)/box.height*80];
     const allowed=localOwners(state.case).map(o=>o.id);const hits=content.objects.filter(o=>{
      if(!allowed.includes(o.id)||ownerRoom(state.case,o.id)!==state.case.physical.room)return false;
-     let hit=o.hit;const p=state.case.physical;
-     if(o.id==='ACT.LOOP'){const actor=content.actors.find(a=>a.id===o.id)!,dx=p.loop.feet[0]-actor.feet[0],dy=p.loop.feet[1]-actor.feet[1];hit=[hit[0]+dx,hit[1]+dy,hit[2]+dx,hit[3]+dy];}
-     if(o.id==='KIT.CADDY')hit=p.caddyHost==='ACT.PLAYER'?[p.avatar[0]-6,p.avatar[1]-7.58,p.avatar[0]+6,p.avatar[1]-.58]:p.caddyHost==='ST.RACK.BAY'?[50,66,62,75]:hit;
+     let hit=mountedBounds(o.id,o.hit);const p=state.case.physical;
+     if(['ACT.JO','ACT.REMY','ACT.ARI'].includes(o.id))hit=actorContentBounds(o.id,actorHome(o.id),state.runtime.view.actor===o.id?'talk':'home');
+     if(o.id==='ACT.LOOP')hit=actorContentBounds(o.id,p.loop.feet,p.loop.mode==='following'?`rolling-${state.runtime.loopFacing==='up'?'back':state.runtime.loopFacing==='down'?'front':state.runtime.loopFacing??'front'}`:p.loop.mode);
+     if(o.id==='KIT.CADDY')hit=p.caddyHost==='ACT.PLAYER'?carryGeometry(p.avatar,p.facing).rect:p.caddyHost==='ST.RACK.BAY'?[50,66-consoleLift(),62,75-consoleLift()]:hit;
      const dx=Math.max(0,(48/box.width*120-(hit[2]-hit[0]))/2),dy=Math.max(0,(48/box.height*80-(hit[3]-hit[1]))/2);
      return point[0]>=hit[0]-dx&&point[0]<=hit[2]+dx&&point[1]>=hit[1]-dy&&point[1]<=hit[3]+dy;
     });

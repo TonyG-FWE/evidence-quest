@@ -1,0 +1,46 @@
+
+> evidence-quest@0.1.0 test:browser
+> node scripts/test-browser.mjs scene-scale.spec.ts rendering-final.spec.ts compact.spec.ts --workers=3
+
+[WebServer] (node:53312) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 21 tests using 3 workers
+
+(node:51448) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:52968) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:52836) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  2 [chromium] › browser-tests\rendering-final.spec.ts:4:1 › TASK11.20 Home uses its actual cover density and a decoded PNG backdrop when WebP fails (3.1s)
+  ok  4 [chromium] › browser-tests\rendering-final.spec.ts:9:1 › TASK11.20 cold failed opaque room retains light wood and explicit Retry replaces incomplete scenery (1.4s)
+  ok  5 [chromium] › browser-tests\rendering-final.spec.ts:12:1 › TASK11.20 live projection retains static ownership, resize invalidates exact surfaces and Stop preserves the cue (14.3s)
+(node:50788) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  3 [chromium] › browser-tests\compact.spec.ts:13:1 › FIX11.ACCESS fresh 320x568 Largest Roomier reduced-motion sound-off case entirely through Tab and Enter (1.0m)
+  ok  7 [chromium] › browser-tests\compact.spec.ts:19:1 › FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest (13.5s)
+(node:17320) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  8 [firefox] › browser-tests\rendering-final.spec.ts:4:1 › TASK11.20 Home uses its actual cover density and a decoded PNG backdrop when WebP fails (4.8s)
+  ok  9 [firefox] › browser-tests\rendering-final.spec.ts:9:1 › TASK11.20 cold failed opaque room retains light wood and explicit Retry replaces incomplete scenery (1.9s)
+  ok  6 [firefox] › browser-tests\compact.spec.ts:13:1 › FIX11.ACCESS fresh 320x568 Largest Roomier reduced-motion sound-off case entirely through Tab and Enter (1.1m)
+  ok  1 [chromium] › browser-tests\scene-scale.spec.ts:10:35 › ER13.06 scale 1469x1105 connected rooms, actual head targets, carried kit and side console (1.5m)
+  ok 10 [firefox] › browser-tests\rendering-final.spec.ts:12:1 › TASK11.20 live projection retains static ownership, resize invalidates exact surfaces and Stop preserves the cue (14.4s)
+  ok 11 [firefox] › browser-tests\compact.spec.ts:19:1 › FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest (13.2s)
+(node:34940) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 14 [webkit] › browser-tests\compact.spec.ts:13:1 › FIX11.ACCESS fresh 320x568 Largest Roomier reduced-motion sound-off case entirely through Tab and Enter (1.0m)
+  ok 12 [chromium] › browser-tests\scene-scale.spec.ts:10:35 › ER13.06 scale compact connected rooms, actual head targets, carried kit and side console (1.4m)
+(node:52860) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 16 [webkit] › browser-tests\rendering-final.spec.ts:4:1 › TASK11.20 Home uses its actual cover density and a decoded PNG backdrop when WebP fails (3.5s)
+  ok 17 [webkit] › browser-tests\rendering-final.spec.ts:9:1 › TASK11.20 cold failed opaque room retains light wood and explicit Retry replaces incomplete scenery (1.9s)
+  ok 15 [webkit] › browser-tests\compact.spec.ts:19:1 › FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest (15.7s)
+  ok 13 [firefox] › browser-tests\scene-scale.spec.ts:10:35 › ER13.06 scale 1469x1105 connected rooms, actual head targets, carried kit and side console (1.5m)
+  ok 18 [webkit] › browser-tests\rendering-final.spec.ts:12:1 › TASK11.20 live projection retains static ownership, resize invalidates exact surfaces and Stop preserves the cue (20.7s)
+  ok 20 [firefox] › browser-tests\scene-scale.spec.ts:10:35 › ER13.06 scale compact connected rooms, actual head targets, carried kit and side console (1.4m)
+  ok 19 [webkit] › browser-tests\scene-scale.spec.ts:10:35 › ER13.06 scale 1469x1105 connected rooms, actual head targets, carried kit and side console (1.6m)
+  ok 21 [webkit] › browser-tests\scene-scale.spec.ts:10:35 › ER13.06 scale compact connected rooms, actual head targets, carried kit and side console (1.5m)
+
+  21 passed (6.3m)

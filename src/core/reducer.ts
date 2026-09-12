@@ -9,6 +9,7 @@ import {startHelp,coachingTime,receive,choose,display,cancelHelp,reconcile} from
 import { deliver, help, queueDelivery, record, talk } from './people.js';
 import {newExperience,readingAvailable,wordContext,mayEncounter,supportAvailable} from './experience.js';
 import {changeComparison,comparisonDraft,comparisonRefs,saveIdea,editIdea,recordMetadata,reasoning,knownRooms,questionIds,timeline,nextDoor} from './reasoning.js';
+import {sceneScale,workStops,interactionFacing} from '../physical/presentation.js';
 
 export interface Mutation {s:State;e:Envelope;effects:Effect[];caseChanged:boolean;contextChanged:boolean;nextId:number;}
 export function allocate(m:Mutation):string{const id=m.e.ids[m.nextId++];if(!id)throw new Error('Command identity pool exhausted');return id;}
@@ -62,7 +63,7 @@ function startCue(m:Mutation,runId:string){
  m.effects.push({kind:'timer',ms:m.s.preferences.motion==='reduced'?300:out.result==='unmet'?800:tile==='TILE.BRIDGE'?1400:1200,command:{type:'CUE_READY',runId:r.id,cueId:id}});
 }
 const ready=(c:CaseState)=>c.physical.caddyHost==='ST.RACK.BAY'&&['docked','projecting'].includes(c.physical.loop.mode);
-export const atWork=(c:CaseState)=>c.physical.room==='SC.ST'&&[[78,58],[100,58]].some(p=>distance(c.physical.avatar,p as Point)<=2);
+export const atWork=(c:CaseState)=>c.physical.room==='SC.ST'&&workStops().some(p=>distance(c.physical.avatar,p)<=2);
 export function target(m:Mutation,id:string,action='default',destination?:CaseState['physical']['room']){
  const s=m.s,returnView=['kit','work','talk','notes'].includes(m.s.runtime.view.page)?structuredClone(m.s.runtime.view):undefined;if(s.runtime.intent?.target===id&&s.runtime.intent.action===action)return;
  if(['ST.CONTROL.SHOW','ST.CONTROL.REHEARSE'].includes(id)&&s.case.playback?.status==='running'){caption(m,['CT.RUN.BUSY']);setView(m,{page:'work'});return;}
@@ -80,9 +81,10 @@ function arrive(m:Mutation){
  const intent=m.s.runtime.intent;if(!intent)return;
  if(intent.action==='go'){caption(m,[]);cancelIntent(m);return;}
  const p=m.s.case.physical;
- if(p.loop.mode==='following'&&distance(p.loop.feet,p.avatar)<5){
-  const candidates=[...m.s.runtime.loopHistory].reverse().filter(q=>distance(q,p.avatar)>=5&&legal(roomData(p.room),q));
-  if(!candidates.length)for(let i=0;i<16;i++){const a=i*Math.PI/8,q:Point=[p.avatar[0]+7*Math.cos(a),p.avatar[1]+7*Math.sin(a)];if(legal(roomData(p.room),q))candidates.push(q);}
+ const towardTarget=interactionFacing(m.s.case,intent.target);if(towardTarget){p.facing=towardTarget;touch(m,false);}
+ if(p.loop.mode==='following'&&distance(p.loop.feet,p.avatar)<sceneScale.follower.yieldDistance){
+  const candidates=[...m.s.runtime.loopHistory].reverse().filter(q=>distance(q,p.avatar)>=sceneScale.follower.yieldDistance&&legal(roomData(p.room),q));
+  if(!candidates.length)for(let i=0;i<16;i++){const a=i*Math.PI/8,q:Point=[p.avatar[0]+sceneScale.follower.yieldRadius*Math.cos(a),p.avatar[1]+sceneScale.follower.yieldRadius*Math.sin(a)];if(legal(roomData(p.room),q))candidates.push(q);}
   if(candidates[0]){p.loop.feet=[...candidates[0]];touch(m,false);}
  }
  intent.stage='operating';m.s.session.pendingAction!.stage='operating';m.s.session.taskState='UI.WORLD.OPERATING';m.s.runtime.operationElapsedMs=0;
@@ -192,12 +194,19 @@ function tick(m:Mutation,ms:number){
   if(distance(prev,p.avatar)>.001){
    s.runtime.lastAvatarMoveMs=s.runtime.clockMs;
    p.facing=Math.abs(p.avatar[0]-prev[0])>Math.abs(p.avatar[1]-prev[1])?(p.avatar[0]>prev[0]?'right':'left'):p.avatar[1]>prev[1]?'down':'up';
+   if(s.runtime.intent?.stage==='operating')p.facing=interactionFacing(s.case,s.runtime.intent.target)??p.facing;
    s.runtime.loopHistory.push([...p.avatar]);s.runtime.loopHistory=s.runtime.loopHistory.slice(-150);touch(m,false);
   }
   if(p.loop.mode==='following'){
    p.loop.room=p.room;let behind:Point|null=null,total=0,last=p.avatar;
-   for(const point of [...s.runtime.loopHistory].reverse()){total+=distance(last,point);last=point;if(total>=7){behind=point;break;}}
-   if(!behind&&distance(p.avatar,p.loop.feet)>8)behind=p.avatar;
+   for(const point of [...s.runtime.loopHistory].reverse()){total+=distance(last,point);last=point;if(total>=sceneScale.follower.trail){behind=point;break;}}
+   if(!behind&&distance(p.avatar,p.loop.feet)>sceneScale.follower.trail)behind=p.avatar;
+   // A small follower directly uphill is hidden inside the child's silhouette.
+   // Use a legal side of the actual trail; every step still traverses a path.
+   if(behind&&p.facing==='down'){
+    const sides:Point[]=[[-sceneScale.follower.downscreenOffset,0],[sceneScale.follower.downscreenOffset,0]].map(([dx,dy])=>[behind![0]+dx!,behind![1]+dy!]);
+    const visible=sides.filter(q=>legal(room,q)).sort((a,b)=>distance(a,p.loop.feet)-distance(b,p.loop.feet)).find(q=>findPath(room,p.loop.feet,q));if(visible)behind=visible;
+   }
    if(behind&&distance(p.loop.feet,behind)>.1){const route=findPath(room,p.loop.feet,behind);if(route){const before=[...p.loop.feet];p.loop.feet=advancePath(p.loop.feet,route,units*1.2).position;const dx=p.loop.feet[0]-before[0]!,dy=p.loop.feet[1]-before[1]!;if(Math.hypot(dx,dy)>.001){s.runtime.lastLoopMoveMs=s.runtime.clockMs;s.runtime.loopFacing=Math.abs(dx)>Math.abs(dy)?dx>0?'right':'left':dy>0?'down':'up';}touch(m,false);}}
   }
  }

@@ -102,6 +102,14 @@ export class Assets {
   const destX=[rect[0],rect[0]+corner/sx,rect[2]-corner/sx,rect[2]],destY=[rect[1],rect[1]+corner/sy,rect[3]-corner/sy,rect[3]];
   for(let y=0;y<3;y++)for(let x=0;x<3;x++)ctx.drawImage(item.image,sourceX[x]!,sourceY[y]!,sourceX[x+1]!-sourceX[x]!,sourceY[y+1]!-sourceY[y]!,destX[x]!,destY[y]!,destX[x+1]!-destX[x]!,destY[y+1]!-destY[y]!);
  }
+ drawRegion(ctx:CanvasRenderingContext2D,id:string,region:Rect,rect:Rect,variant='base'){
+  const frame=productionFrame(id,variant);if(!frame)return;
+  const t=ctx.getTransform(),cw=frame.contentRectPixels[2]-frame.contentRectPixels[0],ch=frame.contentRectPixels[3]-frame.contentRectPixels[1];
+  const scale=Math.max((rect[2]-rect[0])*Math.hypot(t.a,t.b)/(cw*(region[2]-region[0])),(rect[3]-rect[1])*Math.hypot(t.c,t.d)/(ch*(region[3]-region[1])));
+  const item=this.image(id,variant,scale>1.05?2:1);if(!item)return;
+  const [l,top,r,b]=item.entry.contentRectPixels as Rect,w=r-l,h=b-top;
+  ctx.drawImage(item.image,l+w*region[0],top+h*region[1],w*(region[2]-region[0]),h*(region[3]-region[1]),rect[0],rect[1],rect[2]-rect[0],rect[3]-rect[1]);
+ }
  drawContained(ctx:CanvasRenderingContext2D,id:string,rect:Rect,variant='base',frame=0,feet?:Point){
   const item=this.image(id,variant,this.density(ctx,id,variant,rect,true),frame);if(!item)return;
   const {image,entry:e,sourceFrame}=item,info=item.modern?e:replacements[id+'/'+variant],cell=!item.modern?replacements[id+'/'+variant]?.frames?.[frame%replacements[id+'/'+variant]!.frames!.length]:undefined;

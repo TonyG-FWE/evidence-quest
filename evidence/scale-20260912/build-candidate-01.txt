@@ -1,0 +1,48 @@
+
+> evidence-quest@0.1.0 build
+> npm run build:art && npm run validate:content && npm run check && npm run build:server && vite build && node scripts/prepare-client.mjs
+
+
+> evidence-quest@0.1.0 build:art
+> node scripts/export-production-art.mjs
+
+{"bindings":139,"pngs":267,"groups":[{"group":"room-ST","levels":{"1":{"uniqueFrames":22,"encodedBytes":1125006,"rgbaBytes":5071688,"transferCapBytes":1572864},"2":{"uniqueFrames":22,"encodedBytes":3438882,"rgbaBytes":16750412,"transferCapBytes":2883584}}},{"group":"room-CY","levels":{"1":{"uniqueFrames":17,"encodedBytes":1271054,"rgbaBytes":5177172,"transferCapBytes":1572864},"2":{"uniqueFrames":17,"encodedBytes":3850210,"rgbaBytes":17169500,"transferCapBytes":2883584}}},{"group":"room-WK","levels":{"1":{"uniqueFrames":9,"encodedBytes":764164,"rgbaBytes":3575072,"transferCapBytes":1572864},"2":{"uniqueFrames":9,"encodedBytes":2046472,"rgbaBytes":10760256,"transferCapBytes":2883584}}},{"group":"room-MD","levels":{"1":{"uniqueFrames":12,"encodedBytes":1022452,"rgbaBytes":4793120,"transferCapBytes":1572864},"2":{"uniqueFrames":12,"encodedBytes":3038764,"rgbaBytes":15634544,"transferCapBytes":2883584}}},{"group":"shared","levels":{"1":{"uniqueFrames":54,"encodedBytes":1430324,"rgbaBytes":5594604,"transferCapBytes":786432},"2":{"uniqueFrames":54,"encodedBytes":4734642,"rgbaBytes":21904668,"transferCapBytes":1572864}}},{"group":"puppet","levels":{"1":{"uniqueFrames":20,"encodedBytes":342668,"rgbaBytes":1173088,"transferCapBytes":393216},"2":{"uniqueFrames":20,"encodedBytes":1222628,"rgbaBytes":4698804,"transferCapBytes":786432}}},{"group":"e2-on-demand","levels":{"1":{"uniqueFrames":0,"encodedBytes":0,"rgbaBytes":0,"transferCapBytes":1048576},"2":{"uniqueFrames":0,"encodedBytes":0,"rgbaBytes":0,"transferCapBytes":2097152}}},{"group":"native","levels":{"1":{"uniqueFrames":0,"encodedBytes":0,"rgbaBytes":0,"transferCapBytes":0},"2":{"uniqueFrames":0,"encodedBytes":0,"rgbaBytes":0,"transferCapBytes":0}}},{"group":"audio-on-demand","levels":{"1":{"uniqueFrames":0,"encodedBytes":0,"rgbaBytes":0,"transferCapBytes":65536},"2":{"uniqueFrames":0,"encodedBytes":0,"rgbaBytes":0,"transferCapBytes":65536}}}]}
+
+> evidence-quest@0.1.0 validate:content
+> node scripts/validate-content.mjs
+
+{"texts":586,"originalTexts":553,"existingTileLabelsBound":4,"sourceRefs":35,"owners":107,"legalApproaches":61,"rooms":4,"doors":8,"states":96,"transitions":121,"assetUses":157}
+
+> evidence-quest@0.1.0 check
+> npm run build:contracts && tsc -p tsconfig.client.json && tsc -p tsconfig.server.json --noEmit && tsc -p tsconfig.checks.json --noEmit && node scripts/check-schema.mjs && node scripts/check-ui-copy.mjs
+
+
+> evidence-quest@0.1.0 build:contracts
+> node scripts/build-contracts.mjs
+
+Generated 48 schema-linked types and 8 standalone validators.
+33 supplied schema expectations verified. Semantic checks are separate.
+All static client CT references and literal template parameters resolve.
+
+> evidence-quest@0.1.0 build:server
+> tsc -p tsconfig.server.json && node scripts/prepare-server.mjs
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 88 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/client/index.html                     0.46 kB │ gzip:   0.30 kB
+dist/client/.vite/manifest.json            0.47 kB │ gzip:   0.23 kB
+dist/client/.vite/license.md               5.65 kB
+dist/client/assets/index-D7U2vX1x.css      2.70 kB │ gzip:   1.18 kB
+dist/client/assets/App-CvfCOyJg.css       18.66 kB │ gzip:   4.86 kB
+dist/client/assets/index-QoUi6Yto.js     196.35 kB │ gzip:  62.09 kB
+dist/client/assets/App-DKXrn439.js     1,166.68 kB │ gzip: 185.99 kB
+✓ built in 2.51s
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+Prepared Brotli/gzip variants for text assets. Original image sources are unchanged.

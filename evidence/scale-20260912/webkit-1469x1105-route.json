@@ -1,0 +1,572 @@
+{
+  "at": "2026-09-12T17:54:46.825Z",
+  "viewport": {
+    "width": 1469,
+    "height": 1105
+  },
+  "visits": [
+    {
+      "name": "stage",
+      "physical": {
+        "room": "SC.ST",
+        "avatar": [
+          20,
+          50
+        ],
+        "facing": "up",
+        "loop": {
+          "room": "SC.MD",
+          "feet": [
+            68,
+            45
+          ],
+          "mode": "standby"
+        },
+        "objects": {
+          "modelTabTried": false,
+          "briefOpen": false,
+          "storyNoteOpen": false,
+          "filmingRequestOpen": false,
+          "noticeFlat": false,
+          "dockFlapOpen": false,
+          "rackOpened": false,
+          "previewTried": false,
+          "toastRevealed": false
+        },
+        "caddyHost": "MD.RACK.STATION",
+        "order": [],
+        "arrangementRevision": 0
+      }
+    },
+    {
+      "name": "jo-approach",
+      "physical": {
+        "room": "SC.ST",
+        "avatar": [
+          24,
+          52
+        ],
+        "facing": "right",
+        "loop": {
+          "room": "SC.MD",
+          "feet": [
+            68,
+            45
+          ],
+          "mode": "standby"
+        },
+        "objects": {
+          "modelTabTried": false,
+          "briefOpen": false,
+          "storyNoteOpen": false,
+          "filmingRequestOpen": false,
+          "noticeFlat": false,
+          "dockFlapOpen": false,
+          "rackOpened": false,
+          "previewTried": false,
+          "toastRevealed": false
+        },
+        "caddyHost": "MD.RACK.STATION",
+        "order": [],
+        "arrangementRevision": 0
+      }
+    },
+    {
+      "name": "model-approach",
+      "physical": {
+        "room": "SC.ST",
+        "avatar": [
+          20,
+          48
+        ],
+        "facing": "up",
+        "loop": {
+          "room": "SC.MD",
+          "feet": [
+            68,
+            45
+          ],
+          "mode": "standby"
+        },
+        "objects": {
+          "modelTabTried": true,
+          "briefOpen": false,
+          "storyNoteOpen": false,
+          "filmingRequestOpen": false,
+          "noticeFlat": false,
+          "dockFlapOpen": false,
+          "rackOpened": false,
+          "previewTried": false,
+          "toastRevealed": false
+        },
+        "caddyHost": "MD.RACK.STATION",
+        "order": [],
+        "arrangementRevision": 0
+      }
+    },
+    {
+      "name": "courtyard",
+      "physical": {
+        "room": "SC.CY",
+        "avatar": [
+          12,
+          62
+        ],
+        "facing": "right",
+        "loop": {
+          "room": "SC.MD",
+          "feet": [
+            68,
+            45
+          ],
+          "mode": "standby"
+        },
+        "objects": {
+          "modelTabTried": true,
+          "briefOpen": false,
+          "storyNoteOpen": false,
+          "filmingRequestOpen": false,
+          "noticeFlat": false,
+          "dockFlapOpen": false,
+          "rackOpened": false,
+          "previewTried": false,
+          "toastRevealed": false
+        },
+        "caddyHost": "MD.RACK.STATION",
+        "order": [],
+        "arrangementRevision": 0
+      }
+    },
+    {
+      "name": "remy-approach",
+      "physical": {
+        "room": "SC.CY",
+        "avatar": [
+          51,
+          48
+        ],
+        "facing": "right",
+        "loop": {
+          "room": "SC.MD",
+          "feet": [
+            68,
+            45
+          ],
+          "mode": "standby"
+        },
+        "objects": {
+          "modelTabTried": true,
+          "briefOpen": false,
+          "storyNoteOpen": false,
+          "filmingRequestOpen": false,
+          "noticeFlat": false,
+          "dockFlapOpen": false,
+          "rackOpened": false,
+          "previewTried": false,
+          "toastRevealed": false
+        },
+        "caddyHost": "MD.RACK.STATION",
+        "order": [],
+        "arrangementRevision": 0
+      }
+    },
+    {
+      "name": "courtyard-bench",
+      "physical": {
+        "room": "SC.CY",
+        "avatar": [
+          24,
+          48
+        ],
+        "facing": "left",
+        "loop": {
+          "room": "SC.MD",
+          "feet": [
+            68,
+            45
+          ],
+          "mode": "standby"
+        },
+        "objects": {
+          "modelTabTried": true,
+          "briefOpen": false,
+          "storyNoteOpen": false,
+          "filmingRequestOpen": false,
+          "noticeFlat": false,
+          "dockFlapOpen": false,
+          "rackOpened": false,
+          "previewTried": false,
+          "toastRevealed": false
+        },
+        "caddyHost": "MD.RACK.STATION",
+        "order": [],
+        "arrangementRevision": 0
+      }
+    },
+    {
+      "name": "workshop",
+      "physical": {
+        "room": "SC.WK",
+        "avatar": [
+          108,
+          62
+        ],
+        "facing": "left",
+        "loop": {
+          "room": "SC.MD",
+          "feet": [
+            68,
+            45
+          ],
+          "mode": "standby"
+        },
+        "objects": {
+          "modelTabTried": true,
+          "briefOpen": false,
+          "storyNoteOpen": false,
+          "filmingRequestOpen": false,
+          "noticeFlat": false,
+          "dockFlapOpen": false,
+          "rackOpened": false,
+          "previewTried": false,
+          "toastRevealed": false
+        },
+        "caddyHost": "MD.RACK.STATION",
+        "order": [],
+        "arrangementRevision": 0
+      }
+    },
+    {
+      "name": "workshop-bench",
+      "physical": {
+        "room": "SC.WK",
+        "avatar": [
+          25,
+          47.93814432989691
+        ],
+        "facing": "left",
+        "loop": {
+          "room": "SC.MD",
+          "feet": [
+            68,
+            45
+          ],
+          "mode": "standby"
+        },
+        "objects": {
+          "modelTabTried": true,
+          "briefOpen": false,
+          "storyNoteOpen": false,
+          "filmingRequestOpen": false,
+          "noticeFlat": false,
+          "dockFlapOpen": false,
+          "rackOpened": false,
+          "previewTried": false,
+          "toastRevealed": false
+        },
+        "caddyHost": "MD.RACK.STATION",
+        "order": [],
+        "arrangementRevision": 0
+      }
+    },
+    {
+      "name": "media",
+      "physical": {
+        "room": "SC.MD",
+        "avatar": [
+          62,
+          66
+        ],
+        "facing": "up",
+        "loop": {
+          "room": "SC.MD",
+          "feet": [
+            68,
+            45
+          ],
+          "mode": "standby"
+        },
+        "objects": {
+          "modelTabTried": true,
+          "briefOpen": false,
+          "storyNoteOpen": false,
+          "filmingRequestOpen": false,
+          "noticeFlat": false,
+          "dockFlapOpen": false,
+          "rackOpened": false,
+          "previewTried": false,
+          "toastRevealed": false
+        },
+        "caddyHost": "MD.RACK.STATION",
+        "order": [],
+        "arrangementRevision": 0
+      }
+    },
+    {
+      "name": "ari-approach",
+      "physical": {
+        "room": "SC.MD",
+        "avatar": [
+          52,
+          52
+        ],
+        "facing": "up",
+        "loop": {
+          "room": "SC.MD",
+          "feet": [
+            68,
+            45
+          ],
+          "mode": "standby"
+        },
+        "objects": {
+          "modelTabTried": true,
+          "briefOpen": false,
+          "storyNoteOpen": false,
+          "filmingRequestOpen": false,
+          "noticeFlat": false,
+          "dockFlapOpen": false,
+          "rackOpened": false,
+          "previewTried": false,
+          "toastRevealed": false
+        },
+        "caddyHost": "MD.RACK.STATION",
+        "order": [],
+        "arrangementRevision": 0
+      }
+    },
+    {
+      "name": "media-rack",
+      "physical": {
+        "room": "SC.MD",
+        "avatar": [
+          114,
+          44
+        ],
+        "facing": "left",
+        "loop": {
+          "room": "SC.MD",
+          "feet": [
+            68,
+            45
+          ],
+          "mode": "standby"
+        },
+        "objects": {
+          "modelTabTried": true,
+          "briefOpen": false,
+          "storyNoteOpen": false,
+          "filmingRequestOpen": false,
+          "noticeFlat": false,
+          "dockFlapOpen": false,
+          "rackOpened": true,
+          "previewTried": false,
+          "toastRevealed": false
+        },
+        "caddyHost": "MD.RACK.STATION",
+        "order": [],
+        "arrangementRevision": 0
+      }
+    },
+    {
+      "name": "carrying-with-loop",
+      "physical": {
+        "room": "SC.MD",
+        "avatar": [
+          68,
+          54
+        ],
+        "facing": "left",
+        "loop": {
+          "room": "SC.MD",
+          "feet": [
+            68,
+            46.13400000000001
+          ],
+          "mode": "following"
+        },
+        "objects": {
+          "modelTabTried": true,
+          "briefOpen": false,
+          "storyNoteOpen": false,
+          "filmingRequestOpen": false,
+          "noticeFlat": false,
+          "dockFlapOpen": false,
+          "rackOpened": true,
+          "previewTried": false,
+          "toastRevealed": false
+        },
+        "caddyHost": "ACT.PLAYER",
+        "order": [],
+        "arrangementRevision": 0
+      }
+    },
+    {
+      "name": "carrying-workshop",
+      "physical": {
+        "room": "SC.WK",
+        "avatar": [
+          62,
+          42
+        ],
+        "facing": "down",
+        "loop": {
+          "room": "SC.WK",
+          "feet": [
+            70,
+            42
+          ],
+          "mode": "following"
+        },
+        "objects": {
+          "modelTabTried": true,
+          "briefOpen": false,
+          "storyNoteOpen": false,
+          "filmingRequestOpen": false,
+          "noticeFlat": false,
+          "dockFlapOpen": false,
+          "rackOpened": true,
+          "previewTried": false,
+          "toastRevealed": false
+        },
+        "caddyHost": "ACT.PLAYER",
+        "order": [],
+        "arrangementRevision": 0
+      }
+    },
+    {
+      "name": "carrying-courtyard",
+      "physical": {
+        "room": "SC.CY",
+        "avatar": [
+          108,
+          62
+        ],
+        "facing": "left",
+        "loop": {
+          "room": "SC.CY",
+          "feet": [
+            108,
+            70
+          ],
+          "mode": "following"
+        },
+        "objects": {
+          "modelTabTried": true,
+          "briefOpen": false,
+          "storyNoteOpen": false,
+          "filmingRequestOpen": false,
+          "noticeFlat": false,
+          "dockFlapOpen": false,
+          "rackOpened": true,
+          "previewTried": false,
+          "toastRevealed": false
+        },
+        "caddyHost": "ACT.PLAYER",
+        "order": [],
+        "arrangementRevision": 0
+      }
+    },
+    {
+      "name": "carrying-stage",
+      "physical": {
+        "room": "SC.ST",
+        "avatar": [
+          12,
+          62
+        ],
+        "facing": "right",
+        "loop": {
+          "room": "SC.ST",
+          "feet": [
+            12,
+            70
+          ],
+          "mode": "following"
+        },
+        "objects": {
+          "modelTabTried": true,
+          "briefOpen": false,
+          "storyNoteOpen": false,
+          "filmingRequestOpen": false,
+          "noticeFlat": false,
+          "dockFlapOpen": false,
+          "rackOpened": true,
+          "previewTried": false,
+          "toastRevealed": false
+        },
+        "caddyHost": "ACT.PLAYER",
+        "order": [],
+        "arrangementRevision": 0
+      }
+    },
+    {
+      "name": "console-left",
+      "physical": {
+        "room": "SC.ST",
+        "avatar": [
+          44,
+          70
+        ],
+        "facing": "right",
+        "loop": {
+          "room": "SC.ST",
+          "feet": [
+            76,
+            35
+          ],
+          "mode": "docked"
+        },
+        "objects": {
+          "modelTabTried": true,
+          "briefOpen": false,
+          "storyNoteOpen": false,
+          "filmingRequestOpen": false,
+          "noticeFlat": false,
+          "dockFlapOpen": true,
+          "rackOpened": true,
+          "previewTried": false,
+          "toastRevealed": false
+        },
+        "caddyHost": "ST.RACK.BAY",
+        "order": [],
+        "arrangementRevision": 0
+      }
+    },
+    {
+      "name": "console-right",
+      "physical": {
+        "room": "SC.ST",
+        "avatar": [
+          110,
+          70
+        ],
+        "facing": "left",
+        "loop": {
+          "room": "SC.ST",
+          "feet": [
+            76,
+            35
+          ],
+          "mode": "docked"
+        },
+        "objects": {
+          "modelTabTried": true,
+          "briefOpen": false,
+          "storyNoteOpen": false,
+          "filmingRequestOpen": false,
+          "noticeFlat": false,
+          "dockFlapOpen": true,
+          "rackOpened": true,
+          "previewTried": false,
+          "toastRevealed": false
+        },
+        "caddyHost": "ST.RACK.BAY",
+        "order": [],
+        "arrangementRevision": 0
+      }
+    }
+  ],
+  "errors": [],
+  "scope": "Fresh automated browser route and captures; separate from independent native visual acceptance."
+}

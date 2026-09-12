@@ -1,0 +1,256 @@
+
+> evidence-quest@0.1.0 test:browser
+> node scripts/test-browser.mjs --config playwright.production.config.ts --workers=1
+
+[WebServer] (node:12924) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 15 tests using 1 worker
+
+(node:8788) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chromium] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR1 WebP transfer, consumers, buffers and visible input (34.4s)
+  ok  2 [chromium] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR1 PNG transfer, consumers, buffers and visible input (34.9s)
+  x   3 [chromium] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR2 WebP transfer, consumers, buffers and visible input (37.2s)
+(node:13152) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   4 [chromium] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR2 PNG transfer, consumers, buffers and visible input (37.6s)
+(node:48324) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  5 [chromium] › browser-tests\production-formats.spec.ts:58:1 › TASK11.20 all production Stage encodings fail visibly and retry the actual images (901ms)
+(node:53372) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  6 [firefox] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR1 WebP transfer, consumers, buffers and visible input (35.0s)
+  ok  7 [firefox] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR1 PNG transfer, consumers, buffers and visible input (35.2s)
+  x   8 [firefox] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR2 WebP transfer, consumers, buffers and visible input (37.4s)
+(node:42456) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   9 [firefox] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR2 PNG transfer, consumers, buffers and visible input (39.4s)
+(node:18148) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 10 [firefox] › browser-tests\production-formats.spec.ts:58:1 › TASK11.20 all production Stage encodings fail visibly and retry the actual images (1.8s)
+(node:54440) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 11 [webkit] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR1 WebP transfer, consumers, buffers and visible input (36.7s)
+  ok 12 [webkit] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR1 PNG transfer, consumers, buffers and visible input (37.2s)
+  x  13 [webkit] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR2 WebP transfer, consumers, buffers and visible input (41.5s)
+(node:52768) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x  14 [webkit] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR2 PNG transfer, consumers, buffers and visible input (45.0s)
+(node:43404) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 15 [webkit] › browser-tests\production-formats.spec.ts:58:1 › TASK11.20 all production Stage encodings fail visibly and retry the actual images (1.6s)
+
+
+  1) [chromium] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR2 WebP transfer, consumers, buffers and visible input 
+
+    Error: expect(received).toBeLessThanOrEqual(expected)
+
+    Expected: <= 4194304
+    Received:    4203498
+
+      53 |  const report={at:new Date().toISOString(),authority:{path:authorityPath,sha256:authoritySha},density,format:png?'PNG':'WebP',usableMs,coldBytes,codeBytes,transferLimits,transfers,inputPixelMs,inputTiming,activeCadence,cadence:{samples:cadence.length,medianMs:sorted[Math.floor(sorted.length*.5)],p95Ms:sorted[Math.floor(sorted.length*.95)],over33ms:cadence.filter(n=>n>33.34).length},memory:{allRequestedRgba,maxCurrent,maxNative,maxBacking,maxRaster,maxEncoded,globalConservative,currentLimit:96*1024*1024,globalLimit:192*1024*1024},snapshots,errors,scope:'Automated Windows/loopback/DPR emulation, not physical hardware or internet measurement. RAF cadence is sampled during an actual running rehearsal with two Canvases, changed story pixels and changed committed description; it is a scheduling proxy, not measured physical display FPS. Image dimensions, decoded pool reservations, exact offscreen raster bytes, encoded response bytes plus an equal transfer-copy allowance, all native consumers and explicit buffer/reserve arithmetic are conservative estimates, not measured total browser/GPU memory. PNG interception disables normal browser caching. Existing all-variant allocation failures remain in production-art-verification.json.'};
+      54 |  await writeFile(`${performanceDir}/${info.project.name}-DPR${density}-${png?'PNG':'WebP'}-qualification.json`,JSON.stringify(report,null,2)+'\n');
+    > 55 |  expect(coldBytes).toBeLessThanOrEqual(transferLimits.initial);expect(codeBytes).toBeLessThanOrEqual(1024*1024);expect(transfers.slice(1).every(t=>t.artEncodedBytes<=transferLimits.room)).toBe(true);expect(usableMs).toBeLessThan(5000);expect(inputPixelMs).toBeLessThan(100);expect(report.cadence.p95Ms!).toBeLessThanOrEqual(33.34);expect(maxCurrent).toBeLessThanOrEqual(96*1024*1024);expect(globalConservative).toBeLessThanOrEqual(192*1024*1024);expect(snapshots.flatMap(s=>s.unknownImages)).toEqual([]);expect(errors).toEqual([]);
+         |                    ^
+      56 | });
+      57 |
+      58 | test('TASK11.20 all production Stage encodings fail visibly and retry the actual images',async({page})=>{
+        at C:\Users\TonyGuillaro\OneDrive - Summit Gov Solutions\Documents\ChatGPT\Evidence quest\browser-tests\production-formats.spec.ts:55:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\production-raw\production-formats-TASK11--67184-s-buffers-and-visible-input-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\production-raw\production-formats-TASK11--67184-s-buffers-and-visible-input-chromium\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\production-raw\production-formats-TASK11--67184-s-buffers-and-visible-input-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    output\playwright\production-raw\production-formats-TASK11--67184-s-buffers-and-visible-input-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace output\playwright\production-raw\production-formats-TASK11--67184-s-buffers-and-visible-input-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [chromium] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR2 PNG transfer, consumers, buffers and visible input 
+
+    Error: expect(received).toBeLessThanOrEqual(expected)
+
+    Expected: <= 5242880
+    Received:    5440663
+
+      53 |  const report={at:new Date().toISOString(),authority:{path:authorityPath,sha256:authoritySha},density,format:png?'PNG':'WebP',usableMs,coldBytes,codeBytes,transferLimits,transfers,inputPixelMs,inputTiming,activeCadence,cadence:{samples:cadence.length,medianMs:sorted[Math.floor(sorted.length*.5)],p95Ms:sorted[Math.floor(sorted.length*.95)],over33ms:cadence.filter(n=>n>33.34).length},memory:{allRequestedRgba,maxCurrent,maxNative,maxBacking,maxRaster,maxEncoded,globalConservative,currentLimit:96*1024*1024,globalLimit:192*1024*1024},snapshots,errors,scope:'Automated Windows/loopback/DPR emulation, not physical hardware or internet measurement. RAF cadence is sampled during an actual running rehearsal with two Canvases, changed story pixels and changed committed description; it is a scheduling proxy, not measured physical display FPS. Image dimensions, decoded pool reservations, exact offscreen raster bytes, encoded response bytes plus an equal transfer-copy allowance, all native consumers and explicit buffer/reserve arithmetic are conservative estimates, not measured total browser/GPU memory. PNG interception disables normal browser caching. Existing all-variant allocation failures remain in production-art-verification.json.'};
+      54 |  await writeFile(`${performanceDir}/${info.project.name}-DPR${density}-${png?'PNG':'WebP'}-qualification.json`,JSON.stringify(report,null,2)+'\n');
+    > 55 |  expect(coldBytes).toBeLessThanOrEqual(transferLimits.initial);expect(codeBytes).toBeLessThanOrEqual(1024*1024);expect(transfers.slice(1).every(t=>t.artEncodedBytes<=transferLimits.room)).toBe(true);expect(usableMs).toBeLessThan(5000);expect(inputPixelMs).toBeLessThan(100);expect(report.cadence.p95Ms!).toBeLessThanOrEqual(33.34);expect(maxCurrent).toBeLessThanOrEqual(96*1024*1024);expect(globalConservative).toBeLessThanOrEqual(192*1024*1024);expect(snapshots.flatMap(s=>s.unknownImages)).toEqual([]);expect(errors).toEqual([]);
+         |                    ^
+      56 | });
+      57 |
+      58 | test('TASK11.20 all production Stage encodings fail visibly and retry the actual images',async({page})=>{
+        at C:\Users\TonyGuillaro\OneDrive - Summit Gov Solutions\Documents\ChatGPT\Evidence quest\browser-tests\production-formats.spec.ts:55:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\production-raw\production-formats-TASK11--4976a-s-buffers-and-visible-input-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\production-raw\production-formats-TASK11--4976a-s-buffers-and-visible-input-chromium\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\production-raw\production-formats-TASK11--4976a-s-buffers-and-visible-input-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    output\playwright\production-raw\production-formats-TASK11--4976a-s-buffers-and-visible-input-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace output\playwright\production-raw\production-formats-TASK11--4976a-s-buffers-and-visible-input-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [firefox] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR2 WebP transfer, consumers, buffers and visible input 
+
+    Error: expect(received).toBeLessThanOrEqual(expected)
+
+    Expected: <= 4194304
+    Received:    4203530
+
+      53 |  const report={at:new Date().toISOString(),authority:{path:authorityPath,sha256:authoritySha},density,format:png?'PNG':'WebP',usableMs,coldBytes,codeBytes,transferLimits,transfers,inputPixelMs,inputTiming,activeCadence,cadence:{samples:cadence.length,medianMs:sorted[Math.floor(sorted.length*.5)],p95Ms:sorted[Math.floor(sorted.length*.95)],over33ms:cadence.filter(n=>n>33.34).length},memory:{allRequestedRgba,maxCurrent,maxNative,maxBacking,maxRaster,maxEncoded,globalConservative,currentLimit:96*1024*1024,globalLimit:192*1024*1024},snapshots,errors,scope:'Automated Windows/loopback/DPR emulation, not physical hardware or internet measurement. RAF cadence is sampled during an actual running rehearsal with two Canvases, changed story pixels and changed committed description; it is a scheduling proxy, not measured physical display FPS. Image dimensions, decoded pool reservations, exact offscreen raster bytes, encoded response bytes plus an equal transfer-copy allowance, all native consumers and explicit buffer/reserve arithmetic are conservative estimates, not measured total browser/GPU memory. PNG interception disables normal browser caching. Existing all-variant allocation failures remain in production-art-verification.json.'};
+      54 |  await writeFile(`${performanceDir}/${info.project.name}-DPR${density}-${png?'PNG':'WebP'}-qualification.json`,JSON.stringify(report,null,2)+'\n');
+    > 55 |  expect(coldBytes).toBeLessThanOrEqual(transferLimits.initial);expect(codeBytes).toBeLessThanOrEqual(1024*1024);expect(transfers.slice(1).every(t=>t.artEncodedBytes<=transferLimits.room)).toBe(true);expect(usableMs).toBeLessThan(5000);expect(inputPixelMs).toBeLessThan(100);expect(report.cadence.p95Ms!).toBeLessThanOrEqual(33.34);expect(maxCurrent).toBeLessThanOrEqual(96*1024*1024);expect(globalConservative).toBeLessThanOrEqual(192*1024*1024);expect(snapshots.flatMap(s=>s.unknownImages)).toEqual([]);expect(errors).toEqual([]);
+         |                    ^
+      56 | });
+      57 |
+      58 | test('TASK11.20 all production Stage encodings fail visibly and retry the actual images',async({page})=>{
+        at C:\Users\TonyGuillaro\OneDrive - Summit Gov Solutions\Documents\ChatGPT\Evidence quest\browser-tests\production-formats.spec.ts:55:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\production-raw\production-formats-TASK11--67184-s-buffers-and-visible-input-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\production-raw\production-formats-TASK11--67184-s-buffers-and-visible-input-firefox\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\production-raw\production-formats-TASK11--67184-s-buffers-and-visible-input-firefox\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    output\playwright\production-raw\production-formats-TASK11--67184-s-buffers-and-visible-input-firefox\trace.zip
+    Usage:
+
+        npx playwright show-trace output\playwright\production-raw\production-formats-TASK11--67184-s-buffers-and-visible-input-firefox\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [firefox] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR2 PNG transfer, consumers, buffers and visible input 
+
+    Error: expect(received).toBeLessThanOrEqual(expected)
+
+    Expected: <= 5242880
+    Received:    5440663
+
+      53 |  const report={at:new Date().toISOString(),authority:{path:authorityPath,sha256:authoritySha},density,format:png?'PNG':'WebP',usableMs,coldBytes,codeBytes,transferLimits,transfers,inputPixelMs,inputTiming,activeCadence,cadence:{samples:cadence.length,medianMs:sorted[Math.floor(sorted.length*.5)],p95Ms:sorted[Math.floor(sorted.length*.95)],over33ms:cadence.filter(n=>n>33.34).length},memory:{allRequestedRgba,maxCurrent,maxNative,maxBacking,maxRaster,maxEncoded,globalConservative,currentLimit:96*1024*1024,globalLimit:192*1024*1024},snapshots,errors,scope:'Automated Windows/loopback/DPR emulation, not physical hardware or internet measurement. RAF cadence is sampled during an actual running rehearsal with two Canvases, changed story pixels and changed committed description; it is a scheduling proxy, not measured physical display FPS. Image dimensions, decoded pool reservations, exact offscreen raster bytes, encoded response bytes plus an equal transfer-copy allowance, all native consumers and explicit buffer/reserve arithmetic are conservative estimates, not measured total browser/GPU memory. PNG interception disables normal browser caching. Existing all-variant allocation failures remain in production-art-verification.json.'};
+      54 |  await writeFile(`${performanceDir}/${info.project.name}-DPR${density}-${png?'PNG':'WebP'}-qualification.json`,JSON.stringify(report,null,2)+'\n');
+    > 55 |  expect(coldBytes).toBeLessThanOrEqual(transferLimits.initial);expect(codeBytes).toBeLessThanOrEqual(1024*1024);expect(transfers.slice(1).every(t=>t.artEncodedBytes<=transferLimits.room)).toBe(true);expect(usableMs).toBeLessThan(5000);expect(inputPixelMs).toBeLessThan(100);expect(report.cadence.p95Ms!).toBeLessThanOrEqual(33.34);expect(maxCurrent).toBeLessThanOrEqual(96*1024*1024);expect(globalConservative).toBeLessThanOrEqual(192*1024*1024);expect(snapshots.flatMap(s=>s.unknownImages)).toEqual([]);expect(errors).toEqual([]);
+         |                    ^
+      56 | });
+      57 |
+      58 | test('TASK11.20 all production Stage encodings fail visibly and retry the actual images',async({page})=>{
+        at C:\Users\TonyGuillaro\OneDrive - Summit Gov Solutions\Documents\ChatGPT\Evidence quest\browser-tests\production-formats.spec.ts:55:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\production-raw\production-formats-TASK11--4976a-s-buffers-and-visible-input-firefox\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\production-raw\production-formats-TASK11--4976a-s-buffers-and-visible-input-firefox\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\production-raw\production-formats-TASK11--4976a-s-buffers-and-visible-input-firefox\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    output\playwright\production-raw\production-formats-TASK11--4976a-s-buffers-and-visible-input-firefox\trace.zip
+    Usage:
+
+        npx playwright show-trace output\playwright\production-raw\production-formats-TASK11--4976a-s-buffers-and-visible-input-firefox\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [webkit] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR2 WebP transfer, consumers, buffers and visible input 
+
+    Error: expect(received).toBeLessThanOrEqual(expected)
+
+    Expected: <= 4194304
+    Received:    4203498
+
+      53 |  const report={at:new Date().toISOString(),authority:{path:authorityPath,sha256:authoritySha},density,format:png?'PNG':'WebP',usableMs,coldBytes,codeBytes,transferLimits,transfers,inputPixelMs,inputTiming,activeCadence,cadence:{samples:cadence.length,medianMs:sorted[Math.floor(sorted.length*.5)],p95Ms:sorted[Math.floor(sorted.length*.95)],over33ms:cadence.filter(n=>n>33.34).length},memory:{allRequestedRgba,maxCurrent,maxNative,maxBacking,maxRaster,maxEncoded,globalConservative,currentLimit:96*1024*1024,globalLimit:192*1024*1024},snapshots,errors,scope:'Automated Windows/loopback/DPR emulation, not physical hardware or internet measurement. RAF cadence is sampled during an actual running rehearsal with two Canvases, changed story pixels and changed committed description; it is a scheduling proxy, not measured physical display FPS. Image dimensions, decoded pool reservations, exact offscreen raster bytes, encoded response bytes plus an equal transfer-copy allowance, all native consumers and explicit buffer/reserve arithmetic are conservative estimates, not measured total browser/GPU memory. PNG interception disables normal browser caching. Existing all-variant allocation failures remain in production-art-verification.json.'};
+      54 |  await writeFile(`${performanceDir}/${info.project.name}-DPR${density}-${png?'PNG':'WebP'}-qualification.json`,JSON.stringify(report,null,2)+'\n');
+    > 55 |  expect(coldBytes).toBeLessThanOrEqual(transferLimits.initial);expect(codeBytes).toBeLessThanOrEqual(1024*1024);expect(transfers.slice(1).every(t=>t.artEncodedBytes<=transferLimits.room)).toBe(true);expect(usableMs).toBeLessThan(5000);expect(inputPixelMs).toBeLessThan(100);expect(report.cadence.p95Ms!).toBeLessThanOrEqual(33.34);expect(maxCurrent).toBeLessThanOrEqual(96*1024*1024);expect(globalConservative).toBeLessThanOrEqual(192*1024*1024);expect(snapshots.flatMap(s=>s.unknownImages)).toEqual([]);expect(errors).toEqual([]);
+         |                    ^
+      56 | });
+      57 |
+      58 | test('TASK11.20 all production Stage encodings fail visibly and retry the actual images',async({page})=>{
+        at C:\Users\TonyGuillaro\OneDrive - Summit Gov Solutions\Documents\ChatGPT\Evidence quest\browser-tests\production-formats.spec.ts:55:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\production-raw\production-formats-TASK11--67184-s-buffers-and-visible-input-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\production-raw\production-formats-TASK11--67184-s-buffers-and-visible-input-webkit\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\production-raw\production-formats-TASK11--67184-s-buffers-and-visible-input-webkit\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    output\playwright\production-raw\production-formats-TASK11--67184-s-buffers-and-visible-input-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace output\playwright\production-raw\production-formats-TASK11--67184-s-buffers-and-visible-input-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [webkit] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR2 PNG transfer, consumers, buffers and visible input 
+
+    Error: expect(received).toBeLessThanOrEqual(expected)
+
+    Expected: <= 5242880
+    Received:    5440663
+
+      53 |  const report={at:new Date().toISOString(),authority:{path:authorityPath,sha256:authoritySha},density,format:png?'PNG':'WebP',usableMs,coldBytes,codeBytes,transferLimits,transfers,inputPixelMs,inputTiming,activeCadence,cadence:{samples:cadence.length,medianMs:sorted[Math.floor(sorted.length*.5)],p95Ms:sorted[Math.floor(sorted.length*.95)],over33ms:cadence.filter(n=>n>33.34).length},memory:{allRequestedRgba,maxCurrent,maxNative,maxBacking,maxRaster,maxEncoded,globalConservative,currentLimit:96*1024*1024,globalLimit:192*1024*1024},snapshots,errors,scope:'Automated Windows/loopback/DPR emulation, not physical hardware or internet measurement. RAF cadence is sampled during an actual running rehearsal with two Canvases, changed story pixels and changed committed description; it is a scheduling proxy, not measured physical display FPS. Image dimensions, decoded pool reservations, exact offscreen raster bytes, encoded response bytes plus an equal transfer-copy allowance, all native consumers and explicit buffer/reserve arithmetic are conservative estimates, not measured total browser/GPU memory. PNG interception disables normal browser caching. Existing all-variant allocation failures remain in production-art-verification.json.'};
+      54 |  await writeFile(`${performanceDir}/${info.project.name}-DPR${density}-${png?'PNG':'WebP'}-qualification.json`,JSON.stringify(report,null,2)+'\n');
+    > 55 |  expect(coldBytes).toBeLessThanOrEqual(transferLimits.initial);expect(codeBytes).toBeLessThanOrEqual(1024*1024);expect(transfers.slice(1).every(t=>t.artEncodedBytes<=transferLimits.room)).toBe(true);expect(usableMs).toBeLessThan(5000);expect(inputPixelMs).toBeLessThan(100);expect(report.cadence.p95Ms!).toBeLessThanOrEqual(33.34);expect(maxCurrent).toBeLessThanOrEqual(96*1024*1024);expect(globalConservative).toBeLessThanOrEqual(192*1024*1024);expect(snapshots.flatMap(s=>s.unknownImages)).toEqual([]);expect(errors).toEqual([]);
+         |                    ^
+      56 | });
+      57 |
+      58 | test('TASK11.20 all production Stage encodings fail visibly and retry the actual images',async({page})=>{
+        at C:\Users\TonyGuillaro\OneDrive - Summit Gov Solutions\Documents\ChatGPT\Evidence quest\browser-tests\production-formats.spec.ts:55:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\production-raw\production-formats-TASK11--4976a-s-buffers-and-visible-input-webkit\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    output\playwright\production-raw\production-formats-TASK11--4976a-s-buffers-and-visible-input-webkit\test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: output\playwright\production-raw\production-formats-TASK11--4976a-s-buffers-and-visible-input-webkit\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    output\playwright\production-raw\production-formats-TASK11--4976a-s-buffers-and-visible-input-webkit\trace.zip
+    Usage:
+
+        npx playwright show-trace output\playwright\production-raw\production-formats-TASK11--4976a-s-buffers-and-visible-input-webkit\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6 failed
+    [chromium] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR2 WebP transfer, consumers, buffers and visible input 
+    [chromium] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR2 PNG transfer, consumers, buffers and visible input 
+    [firefox] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR2 WebP transfer, consumers, buffers and visible input 
+    [firefox] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR2 PNG transfer, consumers, buffers and visible input 
+    [webkit] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR2 WebP transfer, consumers, buffers and visible input 
+    [webkit] › browser-tests\production-formats.spec.ts:14:58 › TASK11.20 section10 DPR2 PNG transfer, consumers, buffers and visible input 
+  9 passed (7.9m)

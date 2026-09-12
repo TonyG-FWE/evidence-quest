@@ -8,6 +8,7 @@ import {legal, roomData, distance} from '../physical/navigation.js';
 import {applyTile, initialPuppet, successful} from '../story/engine.js';
 import {eligible} from '../coach/authored.js';
 import {readingAvailable,wordContext,supportAvailable} from '../core/experience.js';
+import {workStops} from '../physical/presentation.js';
 
 const equal=(a:unknown,b:unknown)=>JSON.stringify(a)===JSON.stringify(b);
 export function validRun(c:CaseState,run:Run):boolean {
@@ -93,7 +94,7 @@ export function validCase(c:CaseState):boolean {
  }
  if(c.runHistory.some(r=>!validRun(c,r)))return false;
  if(c.playback){const r=c.playback;if(!validRun(c,r)||!equal(r.order,p.order)||r.arrangementRevision!==p.arrangementRevision)return false;
-  if(r.status==='running'&&(loop.mode!=='projecting'||p.room!=='SC.ST'||p.caddyHost!=='ST.RACK.BAY'||![[78,58],[100,58]].some(a=>distance(p.avatar,a as [number,number])<=2)))return false;
+  if(r.status==='running'&&(loop.mode!=='projecting'||p.room!=='SC.ST'||p.caddyHost!=='ST.RACK.BAY'||!workStops().some(a=>distance(p.avatar,a)<=2)))return false;
  }else if(loop.mode==='projecting')return false;
  const runs=[...c.runHistory,...(c.playback?[c.playback]:[])];
  if(c.certificate){const r=runs.find(r=>r.id===c.certificate!.runId);if(!r||r.mode!=='rehearsal'||r.status!=='finalized'||!successful(r.puppet)||r.arrangementRevision!==p.arrangementRevision||c.certificate.arrangementRevision!==p.arrangementRevision||!equal(r.order,p.order))return false;}

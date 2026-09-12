@@ -21,5 +21,5 @@ const groups=report.groups.map(group=>({...group,levels:Object.fromEntries([1,2]
  return [level,{...current,pngFallbackBytes:pngBytes,webpFitsOriginalAllocation:current.encodedBytes<=current.transferCapBytes,pngFitsOriginalAllocation:pngBytes<=current.transferCapBytes}];
 }))}));
 const data={recordedAt:new Date().toISOString(),sourceCount:inventory.files.length,sourceBytes:inventory.files.reduce((n,f)=>n+f.bytes,0),sourceHashesUnchanged:true,exportReportSha256:hash(reportBytes),derivativeCount:checks.length,rgbaEquality:'Every WebP decoded byte equals its paired PNG including transparent RGB and alpha; exact crops and no enlargement.',groups,checks};
-await writeFile('evidence/er13/production-art-verification.json',JSON.stringify(data,null,2)+'\n');
+await writeFile((process.env.EQ_EVIDENCE_DIR??'evidence/er13')+'/production-art-verification.json',JSON.stringify(data,null,2)+'\n');
 console.log(JSON.stringify({sourceCount:data.sourceCount,derivatives:checks.length,groups}));

@@ -1,0 +1,1344 @@
+{
+  "recordedAt": "2026-09-12T18:33:01.883Z",
+  "baseline": "e1fbfda4d74a6e6250287954afdcc463657fdb92",
+  "candidate": {
+    "recordedAt": "2026-09-12T18:12:45.1649597Z",
+    "candidate": "App-qKKSVzYI.js",
+    "files": [
+      {
+        "name": "client-entry.json",
+        "sha256": "b5eef3a37468d6b3695bd6ba48faaac4bf9d51f8e6f42cb5a9953ae63ab0ec80",
+        "bytes": 75
+      },
+      {
+        "name": "App-CvfCOyJg.css",
+        "sha256": "0e968f90c15700b38c0a0bbc3379546041046e29c2db3ba1c048a009b4be488c",
+        "bytes": 18659
+      },
+      {
+        "name": "App-qKKSVzYI.js",
+        "sha256": "5e69605922980d5a2d9be130de69a9f743e1514ce8755d0a35e443185ce44dc2",
+        "bytes": 1168318
+      },
+      {
+        "name": "index-CLYjw1lO.js",
+        "sha256": "c4261adf03d696ba41c606c05d37db337008d70adb723845b73128b3ec1a1618",
+        "bytes": 196347
+      },
+      {
+        "name": "index-D7U2vX1x.css",
+        "sha256": "e57e791c5fdcecf3f5546f1bf865fe6b4277f670cc02656b51feb159a1f5601d",
+        "bytes": 2698
+      }
+    ],
+    "scope": "Frozen final client before isolated performance; full build-final-02 then only Media foreground cutaway; strict check-final-cutaway passes"
+  },
+  "authority": {
+    "path": "docs/design/evidence-quest-design-v3/13-experience-correction/SCENE-SCALE-CORRECTION-20260912.md",
+    "sha256": "7e172d207749ef7be1eb8913cb26b18ee91e93bbde97fa67e9c8fc21e71a4dc7",
+    "bytes": 9418
+  },
+  "tasks": {
+    "ER13.06": "Scene-scale correction implemented; native record separate; measured performance gaps below",
+    "ER13.07": "43 contracts, 21 functional and 6 affected final Media checks pass",
+    "TASK11.ART02-07": "52 accepted originals unchanged;267 lossless pairs; same source-detail target",
+    "TASK11.19": "Halted at1/75,74 remain; zero provider calls in this correction",
+    "TASK11.20": "Measured against unchanged limits; failures remain open",
+    "TASK11.21": "Functional/access/recovery checks pass within recorded scope; TASK11.20 dependency remains open"
+  },
+  "canonical": [
+    {
+      "path": "content/authored.json",
+      "sha256": "daf34f38e82398bf37406c645080135af0a0d42effba59c0ec6cc517829d998b",
+      "bytes": 297394,
+      "baselineSemanticEquality": true
+    },
+    {
+      "path": "content/temp-assets.json",
+      "sha256": "93ec8f84a0947147815c72c8c7a725863cca0d7a5bc5dfc3db9025ee9bc57d02",
+      "bytes": 454741,
+      "baselineSemanticEquality": true
+    },
+    {
+      "path": "content/illustrated-assets.json",
+      "sha256": "7d8f43fc02811c570705b2f1238ca60b7d79b57e1332e82c78a2ebb03cddd17b",
+      "bytes": 56321,
+      "baselineSemanticEquality": true
+    }
+  ],
+  "artVerification": {
+    "path": "evidence/scale-20260912/production-art-verification.json",
+    "sha256": "2c129e7168a0b03db7b77c24341fcafcaf12bffaae100045c2ca6c588b016bb0",
+    "bytes": 110458
+  },
+  "reports": [
+    {
+      "path": "evidence/scale-20260912/browser-route-final-01.json",
+      "sha256": "2789f88bb78ca92385fa5fe1fb0593e57590869645b5ce9a10e6f435c851dfdd",
+      "bytes": 16779,
+      "stats": {
+        "startTime": "2026-09-12T17:47:54.029Z",
+        "duration": 505078.981,
+        "expected": 5,
+        "skipped": 0,
+        "unexpected": 1,
+        "flaky": 0
+      },
+      "tests": [
+        {
+          "title": "ER13.06 scale 1469x1105 connected rooms, actual head targets, carried kit and side console",
+          "project": "chromium",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T17:47:54.955Z",
+              "duration": 80823,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "ER13.06 scale compact connected rooms, actual head targets, carried kit and side console",
+          "project": "chromium",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T17:49:15.876Z",
+              "duration": 76823,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "ER13.06 scale 1469x1105 connected rooms, actual head targets, carried kit and side console",
+          "project": "firefox",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T17:50:33.440Z",
+              "duration": 81688,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "ER13.06 scale compact connected rooms, actual head targets, carried kit and side console",
+          "project": "firefox",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T17:51:55.586Z",
+              "duration": 81228,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "ER13.06 scale 1469x1105 connected rooms, actual head targets, carried kit and side console",
+          "project": "webkit",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T17:53:17.687Z",
+              "duration": 89225,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "ER13.06 scale compact connected rooms, actual head targets, carried kit and side console",
+          "project": "webkit",
+          "status": "unexpected",
+          "results": [
+            {
+              "status": "failed",
+              "startTime": "2026-09-12T17:54:46.988Z",
+              "duration": 90791,
+              "error": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  - 1\u001b[39m\n\u001b[31m+ Received  + 3\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   \"ResizeObserver loop completed with undelivered notifications.\",\u001b[39m\n\u001b[31m+ ]\u001b[39m"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "evidence/scale-20260912/browser-final-02.json",
+      "sha256": "bf3695257f9b67fb6eed1164da908c173e58c85875ee6309d9f251205db9a7ec",
+      "bytes": 27720,
+      "stats": {
+        "startTime": "2026-09-12T18:01:09.587Z",
+        "duration": 376267.01800000004,
+        "expected": 21,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "tests": [
+        {
+          "title": "FIX11.ACCESS fresh 320x568 Largest Roomier reduced-motion sound-off case entirely through Tab and Enter",
+          "project": "chromium",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:01:10.840Z",
+              "duration": 62348,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest",
+          "project": "chromium",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:02:13.344Z",
+              "duration": 13523,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "FIX11.ACCESS fresh 320x568 Largest Roomier reduced-motion sound-off case entirely through Tab and Enter",
+          "project": "firefox",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:01:36.626Z",
+              "duration": 64891,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest",
+          "project": "firefox",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:02:42.194Z",
+              "duration": 13175,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "FIX11.ACCESS fresh 320x568 Largest Roomier reduced-motion sound-off case entirely through Tab and Enter",
+          "project": "webkit",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:02:59.490Z",
+              "duration": 61180,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest",
+          "project": "webkit",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:04:00.759Z",
+              "duration": 15738,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 Home uses its actual cover density and a decoded PNG backdrop when WebP fails",
+          "project": "chromium",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:01:10.823Z",
+              "duration": 3137,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 cold failed opaque room retains light wood and explicit Retry replaces incomplete scenery",
+          "project": "chromium",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:01:14.097Z",
+              "duration": 1416,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 live projection retains static ownership, resize invalidates exact surfaces and Stop preserves the cue",
+          "project": "chromium",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:01:15.526Z",
+              "duration": 14290,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 Home uses its actual cover density and a decoded PNG backdrop when WebP fails",
+          "project": "firefox",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:02:29.195Z",
+              "duration": 4828,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 cold failed opaque room retains light wood and explicit Retry replaces incomplete scenery",
+          "project": "firefox",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:02:35.011Z",
+              "duration": 1933,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 live projection retains static ownership, resize invalidates exact surfaces and Stop preserves the cue",
+          "project": "firefox",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:02:36.965Z",
+              "duration": 14434,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 Home uses its actual cover density and a decoded PNG backdrop when WebP fails",
+          "project": "webkit",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:04:07.896Z",
+              "duration": 3533,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 cold failed opaque room retains light wood and explicit Retry replaces incomplete scenery",
+          "project": "webkit",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:04:11.523Z",
+              "duration": 1934,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 live projection retains static ownership, resize invalidates exact surfaces and Stop preserves the cue",
+          "project": "webkit",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:04:13.471Z",
+              "duration": 20699,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "ER13.06 scale 1469x1105 connected rooms, actual head targets, carried kit and side console",
+          "project": "chromium",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:01:10.810Z",
+              "duration": 92456,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "ER13.06 scale compact connected rooms, actual head targets, carried kit and side console",
+          "project": "chromium",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:02:43.418Z",
+              "duration": 83115,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "ER13.06 scale 1469x1105 connected rooms, actual head targets, carried kit and side console",
+          "project": "firefox",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:02:51.461Z",
+              "duration": 90589,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "ER13.06 scale compact connected rooms, actual head targets, carried kit and side console",
+          "project": "firefox",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:04:22.084Z",
+              "duration": 86629,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "ER13.06 scale 1469x1105 connected rooms, actual head targets, carried kit and side console",
+          "project": "webkit",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:04:16.636Z",
+              "duration": 97011,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "ER13.06 scale compact connected rooms, actual head targets, carried kit and side console",
+          "project": "webkit",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:05:53.696Z",
+              "duration": 91615,
+              "error": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "evidence/scale-20260912/browser-media-final.json",
+      "sha256": "54e567e8d4b34fe33fa8e032f6567eb673a72538c5c02db53fb0c246dc67950d",
+      "bytes": 10760,
+      "stats": {
+        "startTime": "2026-09-12T18:10:23.713Z",
+        "duration": 58107.657,
+        "expected": 6,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "tests": [
+        {
+          "title": "ER13.06 foreground cutaway and mounted/wake/follow visibility 1469x1105",
+          "project": "chromium",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:10:24.399Z",
+              "duration": 26323,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "ER13.06 foreground cutaway and mounted/wake/follow visibility 320 Largest",
+          "project": "chromium",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:10:50.852Z",
+              "duration": 25440,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "ER13.06 foreground cutaway and mounted/wake/follow visibility 1469x1105",
+          "project": "firefox",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:10:24.398Z",
+              "duration": 28516,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "ER13.06 foreground cutaway and mounted/wake/follow visibility 320 Largest",
+          "project": "firefox",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:10:53.702Z",
+              "duration": 26653,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "ER13.06 foreground cutaway and mounted/wake/follow visibility 1469x1105",
+          "project": "webkit",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:10:24.398Z",
+              "duration": 28477,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "ER13.06 foreground cutaway and mounted/wake/follow visibility 320 Largest",
+          "project": "webkit",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:10:52.955Z",
+              "duration": 28375,
+              "error": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "evidence/scale-20260912/final-formats-matrix.json",
+      "sha256": "4c046f707349fe4bee4b654b02e7e674b6fc6bee2c1083dff2ef98d26c734522",
+      "bytes": 68353,
+      "stats": {
+        "startTime": "2026-09-12T18:12:34.815Z",
+        "duration": 473772.012,
+        "expected": 9,
+        "skipped": 0,
+        "unexpected": 6,
+        "flaky": 0
+      },
+      "tests": [
+        {
+          "title": "TASK11.20 section10 DPR1 WebP transfer, consumers, buffers and visible input",
+          "project": "chromium",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:12:35.460Z",
+              "duration": 34378,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 section10 DPR1 PNG transfer, consumers, buffers and visible input",
+          "project": "chromium",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:13:09.941Z",
+              "duration": 34947,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 section10 DPR2 WebP transfer, consumers, buffers and visible input",
+          "project": "chromium",
+          "status": "unexpected",
+          "results": [
+            {
+              "status": "failed",
+              "startTime": "2026-09-12T18:13:44.903Z",
+              "duration": 37156,
+              "error": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m4194304\u001b[39m\nReceived:    \u001b[31m4203498\u001b[39m"
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 section10 DPR2 PNG transfer, consumers, buffers and visible input",
+          "project": "chromium",
+          "status": "unexpected",
+          "results": [
+            {
+              "status": "failed",
+              "startTime": "2026-09-12T18:14:24.800Z",
+              "duration": 37643,
+              "error": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m5242880\u001b[39m\nReceived:    \u001b[31m5440663\u001b[39m"
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 all production Stage encodings fail visibly and retry the actual images",
+          "project": "chromium",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:15:05.005Z",
+              "duration": 901,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 section10 DPR1 WebP transfer, consumers, buffers and visible input",
+          "project": "firefox",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:15:06.437Z",
+              "duration": 34963,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 section10 DPR1 PNG transfer, consumers, buffers and visible input",
+          "project": "firefox",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:15:42.018Z",
+              "duration": 35181,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 section10 DPR2 WebP transfer, consumers, buffers and visible input",
+          "project": "firefox",
+          "status": "unexpected",
+          "results": [
+            {
+              "status": "failed",
+              "startTime": "2026-09-12T18:16:17.221Z",
+              "duration": 37404,
+              "error": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m4194304\u001b[39m\nReceived:    \u001b[31m4203530\u001b[39m"
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 section10 DPR2 PNG transfer, consumers, buffers and visible input",
+          "project": "firefox",
+          "status": "unexpected",
+          "results": [
+            {
+              "status": "failed",
+              "startTime": "2026-09-12T18:16:56.905Z",
+              "duration": 39431,
+              "error": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m5242880\u001b[39m\nReceived:    \u001b[31m5440663\u001b[39m"
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 all production Stage encodings fail visibly and retry the actual images",
+          "project": "firefox",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:17:39.297Z",
+              "duration": 1773,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 section10 DPR1 WebP transfer, consumers, buffers and visible input",
+          "project": "webkit",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:17:42.201Z",
+              "duration": 36687,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 section10 DPR1 PNG transfer, consumers, buffers and visible input",
+          "project": "webkit",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:18:18.949Z",
+              "duration": 37161,
+              "error": null
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 section10 DPR2 WebP transfer, consumers, buffers and visible input",
+          "project": "webkit",
+          "status": "unexpected",
+          "results": [
+            {
+              "status": "failed",
+              "startTime": "2026-09-12T18:18:56.123Z",
+              "duration": 41458,
+              "error": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m4194304\u001b[39m\nReceived:    \u001b[31m4203498\u001b[39m"
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 section10 DPR2 PNG transfer, consumers, buffers and visible input",
+          "project": "webkit",
+          "status": "unexpected",
+          "results": [
+            {
+              "status": "failed",
+              "startTime": "2026-09-12T18:19:39.058Z",
+              "duration": 45046,
+              "error": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m5242880\u001b[39m\nReceived:    \u001b[31m5440663\u001b[39m"
+            }
+          ]
+        },
+        {
+          "title": "TASK11.20 all production Stage encodings fail visibly and retry the actual images",
+          "project": "webkit",
+          "status": "expected",
+          "results": [
+            {
+              "status": "passed",
+              "startTime": "2026-09-12T18:20:26.281Z",
+              "duration": 1619,
+              "error": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "routeBuilds": [
+    {
+      "path": "evidence/scale-20260912/final/chromium-1469x1105-route.json",
+      "sha256": "f467acee6c8be99e24a101826a329381269843cdae513ba62ff4043e5d0af0be",
+      "bytes": 14937,
+      "viewport": {
+        "width": 1469,
+        "height": 1105
+      },
+      "bundles": [
+        "/assets/App-CVVqWtYR.js"
+      ],
+      "errors": []
+    },
+    {
+      "path": "evidence/scale-20260912/final/chromium-compact-route.json",
+      "sha256": "4bcb627352c034c515280b438127e28600ee490511d8bf918b176935f8e2f463",
+      "bytes": 14978,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "bundles": [
+        "/assets/App-CVVqWtYR.js"
+      ],
+      "errors": []
+    },
+    {
+      "path": "evidence/scale-20260912/final/firefox-1469x1105-route.json",
+      "sha256": "c9ad48c731ac5b021d682eed0ac392a9d9d6c415623fe5a69c5d9bcb18ee6b4b",
+      "bytes": 14978,
+      "viewport": {
+        "width": 1469,
+        "height": 1105
+      },
+      "bundles": [
+        "/assets/App-CVVqWtYR.js"
+      ],
+      "errors": []
+    },
+    {
+      "path": "evidence/scale-20260912/final/firefox-compact-route.json",
+      "sha256": "912fd3ee563d31913b60afeec9c316c59955f0880baa6cc1d4b5b6b0147d6923",
+      "bytes": 14977,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "bundles": [
+        "/assets/App-CVVqWtYR.js"
+      ],
+      "errors": []
+    },
+    {
+      "path": "evidence/scale-20260912/final/webkit-1469x1105-route.json",
+      "sha256": "bf29927fd783f7c5048a32c66995ad72e9d202ae3bae181e4d6150d1347345aa",
+      "bytes": 14962,
+      "viewport": {
+        "width": 1469,
+        "height": 1105
+      },
+      "bundles": [
+        "/assets/App-CVVqWtYR.js"
+      ],
+      "errors": []
+    },
+    {
+      "path": "evidence/scale-20260912/final/webkit-compact-route.json",
+      "sha256": "bf4e6627cccd92abce5cae2077f210255d79d30de3d815380c1aeaf32754dad9",
+      "bytes": 14980,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "bundles": [
+        "/assets/App-CVVqWtYR.js"
+      ],
+      "errors": []
+    },
+    {
+      "path": "evidence/scale-20260912/media-final/chromium-1469x1105.json",
+      "sha256": "d201a16708e4e80ebbbef2deb7b86ce93a0dfff6ccde8fa0b0717054a5f68780",
+      "bytes": 2031,
+      "viewport": {
+        "width": 1469,
+        "height": 1105
+      },
+      "bundles": [
+        "/assets/App-qKKSVzYI.js"
+      ],
+      "errors": []
+    },
+    {
+      "path": "evidence/scale-20260912/media-final/chromium-compact.json",
+      "sha256": "5b5b17544124e910f8b85fdfb93963985ea31ada21004e2999b8f779342345c3",
+      "bytes": 2059,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "bundles": [
+        "/assets/App-qKKSVzYI.js"
+      ],
+      "errors": []
+    },
+    {
+      "path": "evidence/scale-20260912/media-final/firefox-1469x1105.json",
+      "sha256": "1ff7cb1b6cdb3caf253caf6cf5fe6a21f6c4177ed48add47259e2a2fcbf4c20b",
+      "bytes": 2061,
+      "viewport": {
+        "width": 1469,
+        "height": 1105
+      },
+      "bundles": [
+        "/assets/App-qKKSVzYI.js"
+      ],
+      "errors": []
+    },
+    {
+      "path": "evidence/scale-20260912/media-final/firefox-compact.json",
+      "sha256": "c36e41f3fe59caac39d98f7d28044cc69b876453071b1da1150b04770d4a22c3",
+      "bytes": 2061,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "bundles": [
+        "/assets/App-qKKSVzYI.js"
+      ],
+      "errors": []
+    },
+    {
+      "path": "evidence/scale-20260912/media-final/webkit-1469x1105.json",
+      "sha256": "c08fdd291f5067f6314128cab27413b0811d8f56c239787936d087359d83deb7",
+      "bytes": 2062,
+      "viewport": {
+        "width": 1469,
+        "height": 1105
+      },
+      "bundles": [
+        "/assets/App-qKKSVzYI.js"
+      ],
+      "errors": []
+    },
+    {
+      "path": "evidence/scale-20260912/media-final/webkit-compact.json",
+      "sha256": "978aec6f07aba466cf9c45003e4192e9f3c49951d4acb82973f47451bb583ca3",
+      "bytes": 2060,
+      "viewport": {
+        "width": 320,
+        "height": 568
+      },
+      "bundles": [
+        "/assets/App-qKKSVzYI.js"
+      ],
+      "errors": []
+    }
+  ],
+  "measurements": [
+    {
+      "path": "evidence/scale-20260912/performance/chromium-DPR1-PNG-qualification.json",
+      "sha256": "83331bb06f0210c58766f2e3eaeb40997d2fccf3cd7a017c247bd84c12e59d38",
+      "bytes": 287969,
+      "engine": "chromium",
+      "density": 1,
+      "format": "PNG",
+      "checks": {
+        "initialTransfer": true,
+        "roomTransfers": true,
+        "code": true,
+        "start": true,
+        "input": true,
+        "cadence": true,
+        "currentMemory": true,
+        "globalMemory": true,
+        "knownConsumers": true,
+        "errors": true
+      },
+      "initialBytes": 5173095,
+      "initialLimit": 5242880,
+      "initialOverage": 0,
+      "roomLimit": 4456448,
+      "maxRoomArtBytes": 1996434,
+      "inputMs": 12.5,
+      "p95Ms": 16.700000000000728,
+      "codeBytes": 216002,
+      "usableMs": 1064,
+      "currentMemory": 60473546,
+      "globalMemory": 97599700,
+      "bundles": [
+        "/assets/App-qKKSVzYI.js"
+      ]
+    },
+    {
+      "path": "evidence/scale-20260912/performance/chromium-DPR1-WebP-qualification.json",
+      "sha256": "61be20e16cd0d58152b0d367d5f2e777513a97c3ce95701b85cb79297f7e2cd8",
+      "bytes": 158421,
+      "engine": "chromium",
+      "density": 1,
+      "format": "WebP",
+      "checks": {
+        "initialTransfer": true,
+        "roomTransfers": true,
+        "code": true,
+        "start": true,
+        "input": true,
+        "cadence": true,
+        "currentMemory": true,
+        "globalMemory": true,
+        "knownConsumers": true,
+        "errors": true
+      },
+      "initialBytes": 3638968,
+      "initialLimit": 4194304,
+      "initialOverage": 0,
+      "roomLimit": 3145728,
+      "maxRoomArtBytes": 1413124,
+      "inputMs": 19.30000001192093,
+      "p95Ms": 16.700000000000728,
+      "codeBytes": 216002,
+      "usableMs": 1003,
+      "currentMemory": 58329720,
+      "globalMemory": 94561264,
+      "bundles": [
+        "/assets/App-qKKSVzYI.js"
+      ]
+    },
+    {
+      "path": "evidence/scale-20260912/performance/chromium-DPR2-PNG-qualification.json",
+      "sha256": "a4a7250d51be03994f112bf4e4a9632b74940277d76c9c1127c1372a44a17f49",
+      "bytes": 360992,
+      "engine": "chromium",
+      "density": 2,
+      "format": "PNG",
+      "checks": {
+        "initialTransfer": false,
+        "roomTransfers": false,
+        "code": true,
+        "start": true,
+        "input": true,
+        "cadence": true,
+        "currentMemory": true,
+        "globalMemory": true,
+        "knownConsumers": true,
+        "errors": true
+      },
+      "initialBytes": 5440663,
+      "initialLimit": 5242880,
+      "initialOverage": 197783,
+      "roomLimit": 4456448,
+      "maxRoomArtBytes": 5989334,
+      "inputMs": 12.399999976158142,
+      "p95Ms": 16.700000000000728,
+      "codeBytes": 216002,
+      "usableMs": 1221,
+      "currentMemory": 86851128,
+      "globalMemory": 172805296,
+      "bundles": [
+        "/assets/App-qKKSVzYI.js"
+      ]
+    },
+    {
+      "path": "evidence/scale-20260912/performance/chromium-DPR2-WebP-qualification.json",
+      "sha256": "24ed15de5c310487a726052f7f5b607ff9e6244d1c8190e78788e2633d8f8a2c",
+      "bytes": 186250,
+      "engine": "chromium",
+      "density": 2,
+      "format": "WebP",
+      "checks": {
+        "initialTransfer": false,
+        "roomTransfers": false,
+        "code": true,
+        "start": true,
+        "input": true,
+        "cadence": true,
+        "currentMemory": true,
+        "globalMemory": true,
+        "knownConsumers": true,
+        "errors": true
+      },
+      "initialBytes": 4203498,
+      "initialLimit": 4194304,
+      "initialOverage": 9194,
+      "roomLimit": 3145728,
+      "maxRoomArtBytes": 4079308,
+      "inputMs": 15,
+      "p95Ms": 16.700000000000728,
+      "codeBytes": 216002,
+      "usableMs": 1156,
+      "currentMemory": 82441124,
+      "globalMemory": 174527600,
+      "bundles": [
+        "/assets/App-qKKSVzYI.js"
+      ]
+    },
+    {
+      "path": "evidence/scale-20260912/performance/firefox-DPR1-PNG-qualification.json",
+      "sha256": "0d1a5f28b5a63185844839628e8f6bf7adac51af873ac747752da2ffa16a027c",
+      "bytes": 270161,
+      "engine": "firefox",
+      "density": 1,
+      "format": "PNG",
+      "checks": {
+        "initialTransfer": true,
+        "roomTransfers": true,
+        "code": true,
+        "start": true,
+        "input": true,
+        "cadence": true,
+        "currentMemory": true,
+        "globalMemory": true,
+        "knownConsumers": true,
+        "errors": true
+      },
+      "initialBytes": 5173095,
+      "initialLimit": 5242880,
+      "initialOverage": 0,
+      "roomLimit": 4456448,
+      "maxRoomArtBytes": 1996434,
+      "inputMs": 13,
+      "p95Ms": 18.200000000000728,
+      "codeBytes": 216002,
+      "usableMs": 1170,
+      "currentMemory": 60450942,
+      "globalMemory": 97946556,
+      "bundles": [
+        "/assets/App-qKKSVzYI.js"
+      ]
+    },
+    {
+      "path": "evidence/scale-20260912/performance/firefox-DPR1-WebP-qualification.json",
+      "sha256": "00760aba64e343f51c3fe685036ed046d080183082964837b4d4d38d72da65d3",
+      "bytes": 150895,
+      "engine": "firefox",
+      "density": 1,
+      "format": "WebP",
+      "checks": {
+        "initialTransfer": true,
+        "roomTransfers": true,
+        "code": true,
+        "start": true,
+        "input": true,
+        "cadence": true,
+        "currentMemory": true,
+        "globalMemory": true,
+        "knownConsumers": true,
+        "errors": true
+      },
+      "initialBytes": 3639000,
+      "initialLimit": 4194304,
+      "initialOverage": 0,
+      "roomLimit": 3145728,
+      "maxRoomArtBytes": 1413124,
+      "inputMs": 9,
+      "p95Ms": 18.220000000000255,
+      "codeBytes": 216002,
+      "usableMs": 1495,
+      "currentMemory": 58363516,
+      "globalMemory": 94816920,
+      "bundles": [
+        "/assets/App-qKKSVzYI.js"
+      ]
+    },
+    {
+      "path": "evidence/scale-20260912/performance/firefox-DPR2-PNG-qualification.json",
+      "sha256": "b9967daf809b49432d30b889efc277570d2d9298aecea2ffa9ecd86068c8d6f0",
+      "bytes": 337411,
+      "engine": "firefox",
+      "density": 2,
+      "format": "PNG",
+      "checks": {
+        "initialTransfer": false,
+        "roomTransfers": false,
+        "code": true,
+        "start": true,
+        "input": true,
+        "cadence": true,
+        "currentMemory": true,
+        "globalMemory": true,
+        "knownConsumers": true,
+        "errors": true
+      },
+      "initialBytes": 5440663,
+      "initialLimit": 5242880,
+      "initialOverage": 197783,
+      "roomLimit": 4456448,
+      "maxRoomArtBytes": 5989334,
+      "inputMs": 13,
+      "p95Ms": 18.220000000000255,
+      "codeBytes": 216002,
+      "usableMs": 1675,
+      "currentMemory": 87580968,
+      "globalMemory": 173698944,
+      "bundles": [
+        "/assets/App-qKKSVzYI.js"
+      ]
+    },
+    {
+      "path": "evidence/scale-20260912/performance/firefox-DPR2-WebP-qualification.json",
+      "sha256": "1248acb4701946ddcfdf3769c38b7b5be2953f9a54ae152dea51e2770bf88628",
+      "bytes": 176276,
+      "engine": "firefox",
+      "density": 2,
+      "format": "WebP",
+      "checks": {
+        "initialTransfer": false,
+        "roomTransfers": false,
+        "code": true,
+        "start": true,
+        "input": true,
+        "cadence": true,
+        "currentMemory": true,
+        "globalMemory": true,
+        "knownConsumers": true,
+        "errors": true
+      },
+      "initialBytes": 4203530,
+      "initialLimit": 4194304,
+      "initialOverage": 9226,
+      "roomLimit": 3145728,
+      "maxRoomArtBytes": 4079308,
+      "inputMs": 21,
+      "p95Ms": 18.220000000000255,
+      "codeBytes": 216002,
+      "usableMs": 1465,
+      "currentMemory": 82978452,
+      "globalMemory": 175421248,
+      "bundles": [
+        "/assets/App-qKKSVzYI.js"
+      ]
+    },
+    {
+      "path": "evidence/scale-20260912/performance/webkit-DPR1-PNG-qualification.json",
+      "sha256": "0f7e7d43e4cc8ac623f868b83b33534e65b5746c1e0e959054fd4f8524c78b66",
+      "bytes": 146634,
+      "engine": "webkit",
+      "density": 1,
+      "format": "PNG",
+      "checks": {
+        "initialTransfer": true,
+        "roomTransfers": true,
+        "code": true,
+        "start": true,
+        "input": true,
+        "cadence": true,
+        "currentMemory": true,
+        "globalMemory": true,
+        "knownConsumers": true,
+        "errors": true
+      },
+      "initialBytes": 5173095,
+      "initialLimit": 5242880,
+      "initialOverage": 0,
+      "roomLimit": 4456448,
+      "maxRoomArtBytes": 1996434,
+      "inputMs": 11,
+      "p95Ms": 21,
+      "codeBytes": 216002,
+      "usableMs": 1418,
+      "currentMemory": 60417146,
+      "globalMemory": 97846812,
+      "bundles": [
+        "/assets/App-qKKSVzYI.js"
+      ]
+    },
+    {
+      "path": "evidence/scale-20260912/performance/webkit-DPR1-WebP-qualification.json",
+      "sha256": "7a4f34547b6e3180185acd2082cfadc3a24d6870cea3dbaaebc7385551446c32",
+      "bytes": 147416,
+      "engine": "webkit",
+      "density": 1,
+      "format": "WebP",
+      "checks": {
+        "initialTransfer": true,
+        "roomTransfers": true,
+        "code": true,
+        "start": true,
+        "input": true,
+        "cadence": true,
+        "currentMemory": true,
+        "globalMemory": true,
+        "knownConsumers": true,
+        "errors": true
+      },
+      "initialBytes": 3638968,
+      "initialLimit": 4194304,
+      "initialOverage": 0,
+      "roomLimit": 3145728,
+      "maxRoomArtBytes": 1413124,
+      "inputMs": 11,
+      "p95Ms": 17,
+      "codeBytes": 216002,
+      "usableMs": 1252,
+      "currentMemory": 58329720,
+      "globalMemory": 94808376,
+      "bundles": [
+        "/assets/App-qKKSVzYI.js"
+      ]
+    },
+    {
+      "path": "evidence/scale-20260912/performance/webkit-DPR2-PNG-qualification.json",
+      "sha256": "1694d491fe47a1c40c4133eeab9074cedbe28465abfb453694869b13cf45daa7",
+      "bytes": 178678,
+      "engine": "webkit",
+      "density": 2,
+      "format": "PNG",
+      "checks": {
+        "initialTransfer": false,
+        "roomTransfers": false,
+        "code": true,
+        "start": true,
+        "input": true,
+        "cadence": false,
+        "currentMemory": true,
+        "globalMemory": true,
+        "knownConsumers": true,
+        "errors": true
+      },
+      "initialBytes": 5440663,
+      "initialLimit": 5242880,
+      "initialOverage": 197783,
+      "roomLimit": 4456448,
+      "maxRoomArtBytes": 5989334,
+      "inputMs": 15,
+      "p95Ms": 49,
+      "codeBytes": 216002,
+      "usableMs": 1722,
+      "currentMemory": 90306880,
+      "globalMemory": 173646296,
+      "bundles": [
+        "/assets/App-qKKSVzYI.js"
+      ]
+    },
+    {
+      "path": "evidence/scale-20260912/performance/webkit-DPR2-WebP-qualification.json",
+      "sha256": "25b43602729615c3b13723aab4b29b3e0084815c32a009b77024b485f54f7102",
+      "bytes": 172262,
+      "engine": "webkit",
+      "density": 2,
+      "format": "WebP",
+      "checks": {
+        "initialTransfer": false,
+        "roomTransfers": false,
+        "code": true,
+        "start": true,
+        "input": true,
+        "cadence": false,
+        "currentMemory": true,
+        "globalMemory": true,
+        "knownConsumers": true,
+        "errors": true
+      },
+      "initialBytes": 4203498,
+      "initialLimit": 4194304,
+      "initialOverage": 9194,
+      "roomLimit": 3145728,
+      "maxRoomArtBytes": 4079308,
+      "inputMs": 17,
+      "p95Ms": 48,
+      "codeBytes": 216002,
+      "usableMs": 1557,
+      "currentMemory": 82945724,
+      "globalMemory": 175371500,
+      "bundles": [
+        "/assets/App-qKKSVzYI.js"
+      ]
+    }
+  ],
+  "scope": "21 functional checks qualify the post-resize geometry across immediately successive candidates; per-route bundle identities are retained. Six final Media checks and all12 performance measurements are attributed to the frozen final candidate. RAF scheduling is a proxy, not physical display FPS; memory arithmetic is conservative accounting, not measured total GPU memory. No participant or learning-outcome evaluation.",
+  "next": "TASK11.20 transfer/cadence qualification without lowering accepted detail or raising limits; TASK11.21 depends on that. TASK11.19 independently awaits funded, explicitly coordinated cap-preserving resume.",
+  "native": {
+    "status": "PASS for bounded final scale/outline correction; separate parent in-app browser review",
+    "import": {
+      "path": "evidence/scale-20260912/parent-import.json",
+      "sha256": "87f72c63cdcefa657b210f2aeee34c003969a7c937407bce1c2b388797a4cf5b",
+      "bytes": 17260
+    },
+    "review": {
+      "path": "docs/design/evidence-quest-design-v3/13-experience-correction/NATIVE-SCENE-SCALE-REVIEW-20260912.md",
+      "sha256": "e7ce50d97df06900ae7112c2e92d36d7c6ed3133a6fd8b8dd0309e3f5f248f61",
+      "bytes": 6756
+    },
+    "verifiedFiles": 35
+  }
+}

@@ -10,6 +10,7 @@ import {initialPuppet,storyDescription} from '../story/engine.js';
 import {World} from '../world/World.js';
 import {assetUrl} from '../world/assets.js';
 import {Button} from './primitives.js';
+import {observeResize} from './resize.js';
 import {Reader} from './Reader.js';
 import {Sprite} from './Sprite.js';
 import {Help,VisibleHelp} from './Help.js';
@@ -56,8 +57,8 @@ function Work({s}:{s:State}){
  useLayoutEffect(()=>{
   if(s.session.presentation!=='watch'||!matchMedia('(max-width:900px), (max-height:600px)').matches)return;
   const show=document.querySelector<HTMLElement>('.narrated-show'),caption=show?.querySelector<HTMLElement>('.local-feedback');if(!show||!caption)return;
-  const measure=()=>{show.style.setProperty('--watch-caption-height',`${caption.getBoundingClientRect().height}px`);requestAnimationFrame(positionWatchedStory);};
-  const observer=new ResizeObserver(measure);observer.observe(caption);measure();return()=>observer.disconnect();
+  const measure=()=>{const height=`${caption.getBoundingClientRect().height}px`;if(show.style.getPropertyValue('--watch-caption-height')!==height)show.style.setProperty('--watch-caption-height',height);requestAnimationFrame(positionWatchedStory);};
+  const observer=observeResize([caption],measure);measure();return()=>observer.disconnect();
  },[s.session.presentation]);
  const tileLayout=useRef<{order:string;boxes:Map<string,DOMRect>}>({order:p.order.join(),boxes:new Map()});
  useLayoutEffect(()=>{
@@ -164,8 +165,8 @@ export function App(){
  const s=useSyncExternalStore(store.subscribe,store.getSnapshot),v=s.runtime.view,task=useRef<HTMLElement>(null),p=s.case.physical;
  useEffect(()=>{const root=document.documentElement;root.style.setProperty('--text',s.preferences.text==='largest'?'36px':s.preferences.text==='larger'?'30px':'24px');root.style.setProperty('--leading',s.preferences.spacing==='roomier'?'1.875':'1.5');root.dataset.motion=s.preferences.motion;},[s.preferences.text,s.preferences.spacing,s.preferences.motion]);
  useLayoutEffect(()=>{if(v.page!=='world')return;const elements=['.game-header','.world-mission','.world-identities','.world-controls','.world-tools nav','.foreground-notice'].map(selector=>document.querySelector<HTMLElement>(selector)).filter((el):el is HTMLElement=>!!el);
-  const measure=()=>{const reserved=elements.reduce((sum,el)=>sum+el.getBoundingClientRect().height,0)+48;document.documentElement.style.setProperty('--world-overview-height',Math.max(240,innerHeight-reserved)+'px');};
-  const observer=new ResizeObserver(measure);for(const element of elements)observer.observe(element);window.addEventListener('resize',measure);measure();return()=>{observer.disconnect();window.removeEventListener('resize',measure);};
+  const measure=()=>{const reserved=elements.reduce((sum,el)=>sum+el.getBoundingClientRect().height,0)+48,style=document.documentElement.style,height=Math.max(240,innerHeight-reserved)+'px';if(style.getPropertyValue('--world-overview-height')!==height)style.setProperty('--world-overview-height',height);};
+  const observer=observeResize(elements,measure);window.addEventListener('resize',observer.schedule);measure();return()=>{observer.disconnect();window.removeEventListener('resize',observer.schedule);};
  },[v.page,p.room,s.runtime.foregroundNotice]);
  const lastPage=useRef(v.page),lastRoom=useRef(p.room);const viewKey=[v.page,v.sourceId,v.actor,v.action,v.page==='idea'?v.ref:''].join('|');
  useEffect(()=>{let target:HTMLElement|null=null;

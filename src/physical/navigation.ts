@@ -1,5 +1,6 @@
 import type { CaseState, Point, Rect, Room } from '../../contracts/types.js';
 import { content, objects } from '../core/content.js';
+import {presentedApproaches} from './presentation.js';
 export const distance=(a:Point,b:Point)=>Math.hypot(a[0]-b[0],a[1]-b[1]);
 export const roomData=(id:Room['id'])=>content.rooms.find(r=>r.id===id)!;
 export const expanded=(r:Rect):Rect=>[r[0]-2,r[1]-2,r[2]+2,r[3]+2];
@@ -40,6 +41,7 @@ export function ownerRoom(c:CaseState,id:string):Room['id']|null{
   return objects.get(id)?.room??null;
 }
 export function approaches(c:CaseState,id:string):Point[]{
+  const presented=presentedApproaches(c,id);if(presented)return presented;
   if((id.startsWith('KIT.')||id.startsWith('TILE.'))&&c.physical.caddyHost==='ACT.PLAYER')return [[...c.physical.avatar]];
   if((id.startsWith('KIT.')||id.startsWith('TILE.'))&&c.physical.caddyHost==='ST.RACK.BAY')return [[78,58]];
   if(id==='ST.RACK.BAY'&&c.physical.caddyHost==='ACT.PLAYER')return [[55,58]];

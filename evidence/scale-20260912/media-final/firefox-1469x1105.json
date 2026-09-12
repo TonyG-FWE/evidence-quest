@@ -1,0 +1,107 @@
+{
+  "at": "2026-09-12T18:10:53.413Z",
+  "viewport": {
+    "width": 1469,
+    "height": 1105
+  },
+  "bundles": [
+    "/assets/App-qKKSVzYI.js"
+  ],
+  "lens": [
+    2,
+    22,
+    46,
+    255
+  ],
+  "mounted": {
+    "room": "SC.MD",
+    "avatar": [
+      114,
+      44
+    ],
+    "facing": "left",
+    "loop": {
+      "room": "SC.MD",
+      "feet": [
+        68,
+        45
+      ],
+      "mode": "standby"
+    },
+    "objects": {
+      "modelTabTried": false,
+      "briefOpen": false,
+      "storyNoteOpen": false,
+      "filmingRequestOpen": false,
+      "noticeFlat": false,
+      "dockFlapOpen": false,
+      "rackOpened": true,
+      "previewTried": false,
+      "toastRevealed": false
+    },
+    "caddyHost": "MD.RACK.STATION",
+    "order": [],
+    "arrangementRevision": 0
+  },
+  "awake": {
+    "room": "SC.MD",
+    "avatar": [
+      80,
+      49
+    ],
+    "facing": "left",
+    "loop": {
+      "room": "SC.MD",
+      "feet": [
+        72.50814303233601,
+        46.502714344112015
+      ],
+      "mode": "following"
+    },
+    "objects": {
+      "modelTabTried": false,
+      "briefOpen": false,
+      "storyNoteOpen": false,
+      "filmingRequestOpen": false,
+      "noticeFlat": false,
+      "dockFlapOpen": false,
+      "rackOpened": true,
+      "previewTried": false,
+      "toastRevealed": false
+    },
+    "caddyHost": "ACT.PLAYER",
+    "order": [],
+    "arrangementRevision": 0
+  },
+  "following": {
+    "room": "SC.MD",
+    "avatar": [
+      79.95698990360384,
+      64.9462381998698
+    ],
+    "facing": "down",
+    "loop": {
+      "room": "SC.MD",
+      "feet": [
+        70.97876533938631,
+        56.87287136305356
+      ],
+      "mode": "following"
+    },
+    "objects": {
+      "modelTabTried": false,
+      "briefOpen": false,
+      "storyNoteOpen": false,
+      "filmingRequestOpen": false,
+      "noticeFlat": false,
+      "dockFlapOpen": false,
+      "rackOpened": true,
+      "previewTried": false,
+      "toastRevealed": false
+    },
+    "caddyHost": "ACT.PLAYER",
+    "order": [],
+    "arrangementRevision": 0
+  },
+  "errors": []
+}
