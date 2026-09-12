@@ -8,6 +8,7 @@ const log=JSON.parse(await readFile(file,'utf8').catch(()=>'{"events":[],"humanA
 log.events.push({at:new Date().toISOString(),id,status,evidence,description:description.join(' ')});
 await writeFile(file,JSON.stringify(log,null,2)+'\n');
 task.status=status;task.execution={evidence,result:description.join(' '),updatedAt:log.events.at(-1).at};
+p.schedule.forecast.milestones['M11.CONNECTED'].status=p.tasks.filter(t=>/^TASK11\.(0[1-9]|1[0-6])$/.test(t.id)).every(t=>t.status==='COMPLETE')?'COMPLETE':'IN_PROGRESS';
 await writeFile(planPath,JSON.stringify(p,null,2)+'\n');
 let md=await readFile('BUILD-STATUS.md','utf8');
 const lines=md.split('\n');

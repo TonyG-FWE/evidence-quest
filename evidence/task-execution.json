@@ -20,6 +20,132 @@
       "status": "IN_PROGRESS",
       "evidence": "evidence/task-execution.json",
       "description": "Preparing 32 native definitions and original icons from the approved manifest."
+    },
+    {
+      "at": "2026-09-12T00:41:17.714Z",
+      "id": "TASK11.03",
+      "status": "COMPLETE",
+      "evidence": "evidence/native-assets.json",
+      "description": "32 native asset definitions, 13 original icons, palette, focus and 48px control tokens prepared; browser behavior remains TASK11.07/16."
+    },
+    {
+      "at": "2026-09-12T00:41:17.804Z",
+      "id": "TASK11.04",
+      "status": "IN_PROGRESS",
+      "evidence": "evidence/task-execution.json",
+      "description": "Generating each of 58 original temporary raster components and all specified pose endpoints."
+    },
+    {
+      "at": "2026-09-12T00:45:50.022Z",
+      "id": "TASK11.04",
+      "status": "COMPLETE",
+      "evidence": "evidence/temp-assets.json",
+      "description": "58 original temporary raster assets; 123 variants and 246 PNG exports, exact dimensions/anchors and per-density budgets checked. Contact sheet inspected; composition is tested in TASK11.06/16."
+    },
+    {
+      "at": "2026-09-12T00:45:50.114Z",
+      "id": "TASK11.05",
+      "status": "IN_PROGRESS",
+      "evidence": "evidence/task-execution.json",
+      "description": "Implementing immutable state, explicit receipts, serialized effects and stale-callback protection."
+    },
+    {
+      "at": "2026-09-12T00:58:58.824Z",
+      "id": "TASK11.05",
+      "status": "COMPLETE",
+      "evidence": "evidence/runtime-tests.txt",
+      "description": "10 contract suites pass, including all 65 orders through real handlers, cue/terminal idempotence, immutable snapshots, reentrant effects and matching save acknowledgments. Storage transport remains TASK11.14."
+    },
+    {
+      "at": "2026-09-12T00:58:58.911Z",
+      "id": "TASK11.06",
+      "status": "IN_PROGRESS",
+      "evidence": "evidence/runtime-tests.txt",
+      "description": "All 61 approach anchors pass legal path checks. Building Canvas composition and native movement controls for connected verification."
+    },
+    {
+      "at": "2026-09-12T01:43:44.153Z",
+      "id": "TASK11.06",
+      "status": "IN_PROGRESS",
+      "evidence": "output/playwright/results.json",
+      "description": "Fresh native four-room route passed. Temporary composition repairs and follower/physical acceptance remain in progress."
+    },
+    {
+      "at": "2026-09-12T02:01:04.265Z",
+      "id": "TASK11.06",
+      "status": "COMPLETE",
+      "evidence": "evidence/runtime-tests.txt",
+      "description": "All 61 approaches, legal follower routes, approach clearance, remote-owner rejection and retarget cancellation pass; four-room browser route and full Media-first recovery/premiere passed."
+    },
+    {
+      "at": "2026-09-12T02:01:04.331Z",
+      "id": "TASK11.07",
+      "status": "IN_PROGRESS",
+      "evidence": "evidence/connected-media-first-pass.json",
+      "description": "Native shell, controls, save views and full first-case browser route work. Compact Arrange/Watch, complete focus and artwork-failure checks remain."
+    },
+    {
+      "at": "2026-09-12T02:01:04.402Z",
+      "id": "TASK11.08",
+      "status": "IN_PROGRESS",
+      "evidence": "evidence/connected-media-first-pass.json",
+      "description": "Canonical source readers, measured visible spans, recording controls, enlargement and definitions implemented. Component-boundary and cancellation browser checks remain."
+    },
+    {
+      "at": "2026-09-12T02:01:04.467Z",
+      "id": "TASK11.09",
+      "status": "IN_PROGRESS",
+      "evidence": "evidence/runtime-tests.txt",
+      "description": "Local character branches, evidence delivery and voluntary plan recording implemented. Dedicated branch and delivery browser acceptance remains."
+    },
+    {
+      "at": "2026-09-12T02:01:04.542Z",
+      "id": "TASK11.10",
+      "status": "IN_PROGRESS",
+      "evidence": "evidence/connected-media-first-pass.json",
+      "description": "Media-first kit collection, unread notes, Loop following, Stage handoff, docking and portable first reading passed. Separate kit-first and Loop-first return routes remain."
+    },
+    {
+      "at": "2026-09-12T02:01:04.610Z",
+      "id": "TASK11.11",
+      "status": "IN_PROGRESS",
+      "evidence": "evidence/connected-media-first-pass.json",
+      "description": "Unique rail and native select/place passed in complete browser case. All drag, adjacent-move and compact cases remain."
+    },
+    {
+      "at": "2026-09-12T02:01:04.666Z",
+      "id": "TASK11.12",
+      "status": "IN_PROGRESS",
+      "evidence": "evidence/runtime-tests.txt",
+      "description": "All 65 orders and core interruption/finalization handlers pass; one full browser rehearsal/show passed. Remaining browser plans and both-mode interruption checks remain."
+    },
+    {
+      "at": "2026-09-12T02:01:04.729Z",
+      "id": "TASK11.13",
+      "status": "IN_PROGRESS",
+      "evidence": "evidence/connected-media-first-pass.json",
+      "description": "Actual complete-show premiere and coral-backpack ending passed. Staged Toast, own-room reactions and factual record recap need completion."
+    },
+    {
+      "at": "2026-09-12T02:01:04.794Z",
+      "id": "TASK11.14",
+      "status": "IN_PROGRESS",
+      "evidence": "evidence/save-browser-faults-pass.json",
+      "description": "Seven browser storage checks pass: acknowledgments, reload/preferences, previous recovery, conflict, denied read, quota/retry, incompatible/reset and late-read generation. Remaining cue-reload/draft/failure boundaries pending."
+    },
+    {
+      "at": "2026-09-12T02:14:27.928Z",
+      "id": "TASK11.07",
+      "status": "IN_PROGRESS",
+      "evidence": "evidence/access-browser-pass.json",
+      "description": "Native shell, compact Largest/Roomier typing isolation and Canvas-failure navigation pass. Remaining full compact show, keyboard/touch and return-owner coverage are explicit next checks."
+    },
+    {
+      "at": "2026-09-12T02:14:27.997Z",
+      "id": "TASK11.08",
+      "status": "IN_PROGRESS",
+      "evidence": "evidence/access-browser-pass.json",
+      "description": "Browser first-frame/photo isolation and canceled 800ms notice operation pass. Exact source readers, frames, zoom and vocabulary exist; full playback/selection/reopening checks remain."
     }
   ],
   "humanAttentionMinutes": null

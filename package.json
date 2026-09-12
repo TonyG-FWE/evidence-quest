@@ -8,16 +8,16 @@
     "build:contracts": "node scripts/build-contracts.mjs",
     "build:content": "node scripts/build-content.mjs",
     "validate:content": "node scripts/validate-content.mjs",
-    "check": "npm run build:contracts && tsc -p tsconfig.client.json && tsc -p tsconfig.server.json --noEmit && tsc -p tsconfig.checks.json --noEmit && node scripts/check-schema.mjs",
+    "check": "npm run build:contracts && tsc -p tsconfig.client.json && tsc -p tsconfig.server.json --noEmit && tsc -p tsconfig.checks.json --noEmit && node scripts/check-schema.mjs && node scripts/check-ui-copy.mjs",
     "build:server": "tsc -p tsconfig.server.json",
     "dev:types": "tsc -p tsconfig.server.json --watch",
     "dev:api": "node --env-file-if-exists=.env.server.local --watch dist/server/index.js",
     "dev:web": "vite",
-    "test:contracts": "npm run build:contracts && tsc -p tsconfig.checks.json && node --test .cache/checks/checks/*.test.js",
+    "test:contracts": "npm run build:contracts && tsc -p tsconfig.checks.json && node scripts/prepare-checks.mjs && node --test .cache/checks/checks/*.test.js",
     "build": "npm run validate:content && npm run check && npm run build:server && vite build",
     "start": "node --env-file-if-exists=.env.server.local dist/server/index.js",
-    "test:browser": "playwright test",
-    "eval:coach": "tsc -p tsconfig.checks.json && node evaluation/evaluate.mjs"
+    "test:browser": "node scripts/test-browser.mjs",
+    "eval:coach": "tsc -p tsconfig.checks.json && node scripts/prepare-checks.mjs && node evaluation/evaluate.mjs"
   },
   "dependencies": {
     "ajv": "8.18.0",

@@ -1,0 +1,32 @@
+
+> evidence-quest@0.1.0 test:contracts
+> npm run build:contracts && tsc -p tsconfig.checks.json && node scripts/prepare-checks.mjs && node --test .cache/checks/checks/*.test.js
+
+
+> evidence-quest@0.1.0 build:contracts
+> node scripts/build-contracts.mjs
+
+Generated 46 schema-linked types and 8 standalone validators.
+✔ schema-linked fixed identity, tuple and puppet types retain selected contracts (0.5929ms)
+✔ E2 source slices cannot turn the first frame or photo into later recording/notice facts (2.8066ms)
+✔ all physical copies share exact canonical E6/E7 and no collection grants their reading (1.4099ms)
+✔ TASK11.06 follower follows legal paths, yields at approaches, shares doors once, and remote owners cannot act (76.8553ms)
+✔ fresh constructor is closed-schema valid and immutable; React snapshots retain identity until a command (10.3657ms)
+✔ serialized effect callbacks can dispatch without clobbering an earlier snapshot (0.7793ms)
+✔ transport callbacks allocate a fresh receipt even when given the entire parent envelope (18.8812ms)
+✔ all 65 authored arrangements pass actual run/cue/finalization handlers and captions (58.1287ms)
+✔ interruption settles an active cue once, terminal resume finalizes without replay; edits preserve historical premiere (2.3545ms)
+✔ save acknowledgment belongs to its captured case, visit and token; it cannot acknowledge newer edits (0.4827ms)
+✔ all authored approach anchors are reachable without sweeping through any expanded obstacle (1.1212ms)
+✔ retargeting and canceled notice operations cannot commit; fixed movement stays on legal floor (7.6748ms)
+✔ save decoder rejects unknown identities, oversized, malformed, impossible physical and source facts without selective salvage (10.5404ms)
+✔ only a damaged pending playback is salvageable; a damaged historical premiere is not fabricated (0.7415ms)
+✔ disk restoration retires old visit, marks uncertainty, pauses at committed cue boundary without replaying (2.6762ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 315.1341

@@ -1,0 +1,306 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "save.spec.ts"
+    ],
+    "configFile": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\playwright.config.ts",
+    "rootDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/output/playwright/raw",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "output/playwright/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 1,
+    "webServer": {
+      "command": "\"C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe\" dist/server/index.js",
+      "url": "http://127.0.0.1:4174/healthz",
+      "env": {
+        "PORT": "4174",
+        "PUBLIC_ORIGIN": "http://127.0.0.1:4174"
+      },
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "save.spec.ts",
+      "file": "save.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TASK11.14 actual IndexedDB acknowledgement, reload and separated preferences",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 60325,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\save.spec.ts",
+                        "column": 46,
+                        "line": 8
+                      },
+                      "message": "Error: locator.selectOption: Test timeout of 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('Sound', { exact: true })\u001b[22m\n\n\n   6 |  await go(page,'ST.EXIT.WK','Workshop');const moved=await saved(page);expect(moved.payload.physical.room).toBe('SC.WK');expect(moved.slotRevision).toBeGreaterThan(initial.slotRevision);\n   7 |  await page.getByRole('button',{name:'Menu',exact:true}).click();await page.getByRole('button',{name:'Settings',exact:true}).click();\n>  8 |  await page.getByLabel('Sound',{exact:true}).selectOption('off');await page.getByLabel('Text size',{exact:true}).selectOption('largest');\n     |                                              ^\n   9 |  await expect.poll(async()=>JSON.parse((await readSlots(page)).preferences as string).text).toBe('largest');\n  10 |  await page.reload();await page.getByRole('button',{name:'Continue',exact:true}).click();await expect(page.locator('.game-header strong')).toHaveText('Workshop');\n  11 |  const restored=await saved(page);expect(restored.payload.historyUncertain).toBe(true);expect(restored.payload.caseRunId).toBe(initial.payload.caseRunId);\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\save.spec.ts:8:46"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T01:40:14.704Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\save-TASK11-14-actual-Inde-c93eb-d-and-separated-preferences-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\save-TASK11-14-actual-Inde-c93eb-d-and-separated-preferences-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\save-TASK11-14-actual-Inde-c93eb-d-and-separated-preferences-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "67a2c4c4ea80bd146eba-45eec9a0fb9490297455",
+          "file": "save.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "TASK11.14 damaged current offers previous explicitly and preserves both slots",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8372,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"{\\\"contractKind\\\":\\\"SaveEnvelope\\\",\\\"saveFormatVersion\\\":1,\\\"identity\\\":{\\\"caseId\\\":\\\"sparkfest-little-bridge-001\\\",\\\"contentVersion\\\":3,\\\"contentRevision\\\":1},\\\"appBuild\\\":\\\"0.1.0-connected\\\",\\\"slotRevision\\\":1,\\\"writerVisitId\\\":\\\"\u001b[7mcc90975f-2393-422d-9f83-00f55bc44f7d\u001b[27m\\\",\\\"writtenAt\\\":\\\"2026-09-12T01:41:\u001b[7m16.153\u001b[27mZ\\\",\\\"payload\\\":{\\\"caseRunId\\\":\\\"2691ca07-87e0-4fc5-86c3-9b8b245dd878\\\",\\\"revision\\\":\u001b[7m0\u001b[27m,\\\"lastObservationSeq\\\":\u001b[7m0\u001b[27m,\\\"physical\\\":{\\\"room\\\":\\\"SC.ST\\\",\\\"avatar\\\":[20,50],\\\"facing\\\":\\\"up\\\",\\\"loop\\\":{\\\"room\\\":\\\"SC.MD\\\",\\\"feet\\\":[68,45],\\\"mode\\\":\\\"standby\\\"},\\\"objects\\\":{\\\"modelTabTried\\\":false,\\\"briefOpen\\\":false,\\\"storyNoteOpen\\\":false,\\\"filmingRequestOpen\\\":false,\\\"noticeFlat\\\":false,\\\"dockFlapOpen\\\":false,\\\"rackOpened\\\":false,\\\"previewTried\\\":false,\\\"toastRevealed\\\":false},\\\"caddyHost\\\":\\\"MD.RACK.STATION\\\",\\\"order\\\":[],\\\"arrangementRevision\\\":0},\\\"grants\\\":[],\\\"exposures\\\":[],\\\"selectedLead\\\":null,\\\"comparisons\\\":[],\\\"drafts\\\":[{\\\"id\\\":\\\"private\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"search-plan\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"story-plan\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"coach-search\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"coach-story\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0}],\\\"records\\\":[],\\\"npcReceived\\\":[],\\\"playback\\\":null,\\\"runHistory\\\":[],\\\"certificate\\\":null,\\\"premiere\\\":null,\\\"observations\\\":[],\\\"readerResume\\\":null,\\\"worldReturn\\\":{\\\"ownerId\\\":\\\"ACC.OBJECTS\\\",\\\"actionCtId\\\":null},\\\"historyUncertain\\\":\u001b[7mfals\u001b[27me,\\\"guidance\\\":{\\\"openingDismissed\\\":false,\\\"movementDismissed\\\":false,\\\"ariInvitationDismissed\\\":false},\\\"visitedRooms\\\":[\\\"SC.ST\\\"],\\\"encounteredActors\\\":[\\\"ACT.JO\\\"],\\\"coachingHistory\\\":[]}}\"\u001b[39m\nReceived: \u001b[31m\"{\\\"contractKind\\\":\\\"SaveEnvelope\\\",\\\"saveFormatVersion\\\":1,\\\"identity\\\":{\\\"caseId\\\":\\\"sparkfest-little-bridge-001\\\",\\\"contentVersion\\\":3,\\\"contentRevision\\\":1},\\\"appBuild\\\":\\\"0.1.0-connected\\\",\\\"slotRevision\\\":1,\\\"writerVisitId\\\":\\\"\u001b[7m25e4df07-946e-469a-b35e-9de6b6c47282\u001b[27m\\\",\\\"writtenAt\\\":\\\"2026-09-12T01:41:\u001b[7m23.785\u001b[27mZ\\\",\\\"payload\\\":{\\\"caseRunId\\\":\\\"2691ca07-87e0-4fc5-86c3-9b8b245dd878\\\",\\\"revision\\\":\u001b[7m1\u001b[27m,\\\"lastObservationSeq\\\":\u001b[7m1\u001b[27m,\\\"physical\\\":{\\\"room\\\":\\\"SC.ST\\\",\\\"avatar\\\":[20,50],\\\"facing\\\":\\\"up\\\",\\\"loop\\\":{\\\"room\\\":\\\"SC.MD\\\",\\\"feet\\\":[68,45],\\\"mode\\\":\\\"standby\\\"},\\\"objects\\\":{\\\"modelTabTried\\\":false,\\\"briefOpen\\\":false,\\\"storyNoteOpen\\\":false,\\\"filmingRequestOpen\\\":false,\\\"noticeFlat\\\":false,\\\"dockFlapOpen\\\":false,\\\"rackOpened\\\":false,\\\"previewTried\\\":false,\\\"toastRevealed\\\":false},\\\"caddyHost\\\":\\\"MD.RACK.STATION\\\",\\\"order\\\":[],\\\"arrangementRevision\\\":0},\\\"grants\\\":[],\\\"exposures\\\":[],\\\"selectedLead\\\":null,\\\"comparisons\\\":[],\\\"drafts\\\":[{\\\"id\\\":\\\"private\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"search-plan\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"story-plan\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"coach-search\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"coach-story\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0}],\\\"records\\\":[],\\\"npcReceived\\\":[],\\\"playback\\\":null,\\\"runHistory\\\":[],\\\"certificate\\\":null,\\\"premiere\\\":null,\\\"observations\\\":[\u001b[7m{\\\"id\\\":\\\"dc75cc45-119f-40c0-a961-255498f79b82\\\",\\\"seq\\\":1,\\\"visitId\\\":\\\"25e4df07-946e-469a-b35e-9de6b6c47282\\\",\\\"kind\\\":\\\"history-uncertain\\\",\\\"refs\\\":[],\\\"contentIds\\\":[],\\\"actionId\\\":null,\\\"runId\\\":null,\\\"cueIndex\\\":null,\\\"recordId\\\":null,\\\"requestId\\\":null,\\\"outcome\\\":null,\\\"puppet\\\":null,\\\"assistanceLevel\\\":null,\\\"origin\\\":\\\"recovery\\\",\\\"interpretation\\\":null,\\\"uncertain\\\":true}\u001b[27m],\\\"readerResume\\\":null,\\\"worldReturn\\\":{\\\"ownerId\\\":\\\"ACC.OBJECTS\\\",\\\"actionCtId\\\":null},\\\"historyUncertain\\\":\u001b[7mtru\u001b[27me,\\\"guidance\\\":{\\\"openingDismissed\\\":false,\\\"movementDismissed\\\":false,\\\"ariInvitationDismissed\\\":false},\\\"visitedRooms\\\":[\\\"SC.ST\\\"],\\\"encounteredActors\\\":[\\\"ACT.JO\\\"],\\\"coachingHistory\\\":[]}}\"\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"{\\\"contractKind\\\":\\\"SaveEnvelope\\\",\\\"saveFormatVersion\\\":1,\\\"identity\\\":{\\\"caseId\\\":\\\"sparkfest-little-bridge-001\\\",\\\"contentVersion\\\":3,\\\"contentRevision\\\":1},\\\"appBuild\\\":\\\"0.1.0-connected\\\",\\\"slotRevision\\\":1,\\\"writerVisitId\\\":\\\"\u001b[7mcc90975f-2393-422d-9f83-00f55bc44f7d\u001b[27m\\\",\\\"writtenAt\\\":\\\"2026-09-12T01:41:\u001b[7m16.153\u001b[27mZ\\\",\\\"payload\\\":{\\\"caseRunId\\\":\\\"2691ca07-87e0-4fc5-86c3-9b8b245dd878\\\",\\\"revision\\\":\u001b[7m0\u001b[27m,\\\"lastObservationSeq\\\":\u001b[7m0\u001b[27m,\\\"physical\\\":{\\\"room\\\":\\\"SC.ST\\\",\\\"avatar\\\":[20,50],\\\"facing\\\":\\\"up\\\",\\\"loop\\\":{\\\"room\\\":\\\"SC.MD\\\",\\\"feet\\\":[68,45],\\\"mode\\\":\\\"standby\\\"},\\\"objects\\\":{\\\"modelTabTried\\\":false,\\\"briefOpen\\\":false,\\\"storyNoteOpen\\\":false,\\\"filmingRequestOpen\\\":false,\\\"noticeFlat\\\":false,\\\"dockFlapOpen\\\":false,\\\"rackOpened\\\":false,\\\"previewTried\\\":false,\\\"toastRevealed\\\":false},\\\"caddyHost\\\":\\\"MD.RACK.STATION\\\",\\\"order\\\":[],\\\"arrangementRevision\\\":0},\\\"grants\\\":[],\\\"exposures\\\":[],\\\"selectedLead\\\":null,\\\"comparisons\\\":[],\\\"drafts\\\":[{\\\"id\\\":\\\"private\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"search-plan\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"story-plan\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"coach-search\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"coach-story\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0}],\\\"records\\\":[],\\\"npcReceived\\\":[],\\\"playback\\\":null,\\\"runHistory\\\":[],\\\"certificate\\\":null,\\\"premiere\\\":null,\\\"observations\\\":[],\\\"readerResume\\\":null,\\\"worldReturn\\\":{\\\"ownerId\\\":\\\"ACC.OBJECTS\\\",\\\"actionCtId\\\":null},\\\"historyUncertain\\\":\u001b[7mfals\u001b[27me,\\\"guidance\\\":{\\\"openingDismissed\\\":false,\\\"movementDismissed\\\":false,\\\"ariInvitationDismissed\\\":false},\\\"visitedRooms\\\":[\\\"SC.ST\\\"],\\\"encounteredActors\\\":[\\\"ACT.JO\\\"],\\\"coachingHistory\\\":[]}}\"\u001b[39m\nReceived: \u001b[31m\"{\\\"contractKind\\\":\\\"SaveEnvelope\\\",\\\"saveFormatVersion\\\":1,\\\"identity\\\":{\\\"caseId\\\":\\\"sparkfest-little-bridge-001\\\",\\\"contentVersion\\\":3,\\\"contentRevision\\\":1},\\\"appBuild\\\":\\\"0.1.0-connected\\\",\\\"slotRevision\\\":1,\\\"writerVisitId\\\":\\\"\u001b[7m25e4df07-946e-469a-b35e-9de6b6c47282\u001b[27m\\\",\\\"writtenAt\\\":\\\"2026-09-12T01:41:\u001b[7m23.785\u001b[27mZ\\\",\\\"payload\\\":{\\\"caseRunId\\\":\\\"2691ca07-87e0-4fc5-86c3-9b8b245dd878\\\",\\\"revision\\\":\u001b[7m1\u001b[27m,\\\"lastObservationSeq\\\":\u001b[7m1\u001b[27m,\\\"physical\\\":{\\\"room\\\":\\\"SC.ST\\\",\\\"avatar\\\":[20,50],\\\"facing\\\":\\\"up\\\",\\\"loop\\\":{\\\"room\\\":\\\"SC.MD\\\",\\\"feet\\\":[68,45],\\\"mode\\\":\\\"standby\\\"},\\\"objects\\\":{\\\"modelTabTried\\\":false,\\\"briefOpen\\\":false,\\\"storyNoteOpen\\\":false,\\\"filmingRequestOpen\\\":false,\\\"noticeFlat\\\":false,\\\"dockFlapOpen\\\":false,\\\"rackOpened\\\":false,\\\"previewTried\\\":false,\\\"toastRevealed\\\":false},\\\"caddyHost\\\":\\\"MD.RACK.STATION\\\",\\\"order\\\":[],\\\"arrangementRevision\\\":0},\\\"grants\\\":[],\\\"exposures\\\":[],\\\"selectedLead\\\":null,\\\"comparisons\\\":[],\\\"drafts\\\":[{\\\"id\\\":\\\"private\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"search-plan\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"story-plan\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"coach-search\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"coach-story\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0}],\\\"records\\\":[],\\\"npcReceived\\\":[],\\\"playback\\\":null,\\\"runHistory\\\":[],\\\"certificate\\\":null,\\\"premiere\\\":null,\\\"observations\\\":[\u001b[7m{\\\"id\\\":\\\"dc75cc45-119f-40c0-a961-255498f79b82\\\",\\\"seq\\\":1,\\\"visitId\\\":\\\"25e4df07-946e-469a-b35e-9de6b6c47282\\\",\\\"kind\\\":\\\"history-uncertain\\\",\\\"refs\\\":[],\\\"contentIds\\\":[],\\\"actionId\\\":null,\\\"runId\\\":null,\\\"cueIndex\\\":null,\\\"recordId\\\":null,\\\"requestId\\\":null,\\\"outcome\\\":null,\\\"puppet\\\":null,\\\"assistanceLevel\\\":null,\\\"origin\\\":\\\"recovery\\\",\\\"interpretation\\\":null,\\\"uncertain\\\":true}\u001b[27m],\\\"readerResume\\\":null,\\\"worldReturn\\\":{\\\"ownerId\\\":\\\"ACC.OBJECTS\\\",\\\"actionCtId\\\":null},\\\"historyUncertain\\\":\u001b[7mtru\u001b[27me,\\\"guidance\\\":{\\\"openingDismissed\\\":false,\\\"movementDismissed\\\":false,\\\"ariInvitationDismissed\\\":false},\\\"visitedRooms\\\":[\\\"SC.ST\\\"],\\\"encounteredActors\\\":[\\\"ACT.JO\\\"],\\\"coachingHistory\\\":[]}}\"\u001b[39m\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\save.spec.ts:24:43",
+                    "location": {
+                      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\save.spec.ts",
+                      "column": 43,
+                      "line": 24
+                    },
+                    "snippet": "  22 |  await page.getByRole('button',{name:'Try saving again'}).click();await expect(page.getByRole('button',{name:'Keep this visit unsaved'})).toBeFocused();\n  23 |  await page.getByRole('button',{name:'Replace saved game',exact:true}).click();await saved(page);\n> 24 |  expect((await readSlots(page)).previous).toBe(previous);\n     |                                           ^\n  25 | });\n  26 |\n  27 | test('TASK11.14 second visit wins CAS, older visit remains playable and replacement rechecks head',async({page,context})=>{"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\save.spec.ts",
+                        "column": 43,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"{\\\"contractKind\\\":\\\"SaveEnvelope\\\",\\\"saveFormatVersion\\\":1,\\\"identity\\\":{\\\"caseId\\\":\\\"sparkfest-little-bridge-001\\\",\\\"contentVersion\\\":3,\\\"contentRevision\\\":1},\\\"appBuild\\\":\\\"0.1.0-connected\\\",\\\"slotRevision\\\":1,\\\"writerVisitId\\\":\\\"\u001b[7mcc90975f-2393-422d-9f83-00f55bc44f7d\u001b[27m\\\",\\\"writtenAt\\\":\\\"2026-09-12T01:41:\u001b[7m16.153\u001b[27mZ\\\",\\\"payload\\\":{\\\"caseRunId\\\":\\\"2691ca07-87e0-4fc5-86c3-9b8b245dd878\\\",\\\"revision\\\":\u001b[7m0\u001b[27m,\\\"lastObservationSeq\\\":\u001b[7m0\u001b[27m,\\\"physical\\\":{\\\"room\\\":\\\"SC.ST\\\",\\\"avatar\\\":[20,50],\\\"facing\\\":\\\"up\\\",\\\"loop\\\":{\\\"room\\\":\\\"SC.MD\\\",\\\"feet\\\":[68,45],\\\"mode\\\":\\\"standby\\\"},\\\"objects\\\":{\\\"modelTabTried\\\":false,\\\"briefOpen\\\":false,\\\"storyNoteOpen\\\":false,\\\"filmingRequestOpen\\\":false,\\\"noticeFlat\\\":false,\\\"dockFlapOpen\\\":false,\\\"rackOpened\\\":false,\\\"previewTried\\\":false,\\\"toastRevealed\\\":false},\\\"caddyHost\\\":\\\"MD.RACK.STATION\\\",\\\"order\\\":[],\\\"arrangementRevision\\\":0},\\\"grants\\\":[],\\\"exposures\\\":[],\\\"selectedLead\\\":null,\\\"comparisons\\\":[],\\\"drafts\\\":[{\\\"id\\\":\\\"private\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"search-plan\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"story-plan\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"coach-search\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"coach-story\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0}],\\\"records\\\":[],\\\"npcReceived\\\":[],\\\"playback\\\":null,\\\"runHistory\\\":[],\\\"certificate\\\":null,\\\"premiere\\\":null,\\\"observations\\\":[],\\\"readerResume\\\":null,\\\"worldReturn\\\":{\\\"ownerId\\\":\\\"ACC.OBJECTS\\\",\\\"actionCtId\\\":null},\\\"historyUncertain\\\":\u001b[7mfals\u001b[27me,\\\"guidance\\\":{\\\"openingDismissed\\\":false,\\\"movementDismissed\\\":false,\\\"ariInvitationDismissed\\\":false},\\\"visitedRooms\\\":[\\\"SC.ST\\\"],\\\"encounteredActors\\\":[\\\"ACT.JO\\\"],\\\"coachingHistory\\\":[]}}\"\u001b[39m\nReceived: \u001b[31m\"{\\\"contractKind\\\":\\\"SaveEnvelope\\\",\\\"saveFormatVersion\\\":1,\\\"identity\\\":{\\\"caseId\\\":\\\"sparkfest-little-bridge-001\\\",\\\"contentVersion\\\":3,\\\"contentRevision\\\":1},\\\"appBuild\\\":\\\"0.1.0-connected\\\",\\\"slotRevision\\\":1,\\\"writerVisitId\\\":\\\"\u001b[7m25e4df07-946e-469a-b35e-9de6b6c47282\u001b[27m\\\",\\\"writtenAt\\\":\\\"2026-09-12T01:41:\u001b[7m23.785\u001b[27mZ\\\",\\\"payload\\\":{\\\"caseRunId\\\":\\\"2691ca07-87e0-4fc5-86c3-9b8b245dd878\\\",\\\"revision\\\":\u001b[7m1\u001b[27m,\\\"lastObservationSeq\\\":\u001b[7m1\u001b[27m,\\\"physical\\\":{\\\"room\\\":\\\"SC.ST\\\",\\\"avatar\\\":[20,50],\\\"facing\\\":\\\"up\\\",\\\"loop\\\":{\\\"room\\\":\\\"SC.MD\\\",\\\"feet\\\":[68,45],\\\"mode\\\":\\\"standby\\\"},\\\"objects\\\":{\\\"modelTabTried\\\":false,\\\"briefOpen\\\":false,\\\"storyNoteOpen\\\":false,\\\"filmingRequestOpen\\\":false,\\\"noticeFlat\\\":false,\\\"dockFlapOpen\\\":false,\\\"rackOpened\\\":false,\\\"previewTried\\\":false,\\\"toastRevealed\\\":false},\\\"caddyHost\\\":\\\"MD.RACK.STATION\\\",\\\"order\\\":[],\\\"arrangementRevision\\\":0},\\\"grants\\\":[],\\\"exposures\\\":[],\\\"selectedLead\\\":null,\\\"comparisons\\\":[],\\\"drafts\\\":[{\\\"id\\\":\\\"private\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"search-plan\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"story-plan\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"coach-search\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0},{\\\"id\\\":\\\"coach-story\\\",\\\"text\\\":\\\"\\\",\\\"selectedRefs\\\":[],\\\"revision\\\":0}],\\\"records\\\":[],\\\"npcReceived\\\":[],\\\"playback\\\":null,\\\"runHistory\\\":[],\\\"certificate\\\":null,\\\"premiere\\\":null,\\\"observations\\\":[\u001b[7m{\\\"id\\\":\\\"dc75cc45-119f-40c0-a961-255498f79b82\\\",\\\"seq\\\":1,\\\"visitId\\\":\\\"25e4df07-946e-469a-b35e-9de6b6c47282\\\",\\\"kind\\\":\\\"history-uncertain\\\",\\\"refs\\\":[],\\\"contentIds\\\":[],\\\"actionId\\\":null,\\\"runId\\\":null,\\\"cueIndex\\\":null,\\\"recordId\\\":null,\\\"requestId\\\":null,\\\"outcome\\\":null,\\\"puppet\\\":null,\\\"assistanceLevel\\\":null,\\\"origin\\\":\\\"recovery\\\",\\\"interpretation\\\":null,\\\"uncertain\\\":true}\u001b[27m],\\\"readerResume\\\":null,\\\"worldReturn\\\":{\\\"ownerId\\\":\\\"ACC.OBJECTS\\\",\\\"actionCtId\\\":null},\\\"historyUncertain\\\":\u001b[7mtru\u001b[27me,\\\"guidance\\\":{\\\"openingDismissed\\\":false,\\\"movementDismissed\\\":false,\\\"ariInvitationDismissed\\\":false},\\\"visitedRooms\\\":[\\\"SC.ST\\\"],\\\"encounteredActors\\\":[\\\"ACT.JO\\\"],\\\"coachingHistory\\\":[]}}\"\u001b[39m\n\n  22 |  await page.getByRole('button',{name:'Try saving again'}).click();await expect(page.getByRole('button',{name:'Keep this visit unsaved'})).toBeFocused();\n  23 |  await page.getByRole('button',{name:'Replace saved game',exact:true}).click();await saved(page);\n> 24 |  expect((await readSlots(page)).previous).toBe(previous);\n     |                                           ^\n  25 | });\n  26 |\n  27 | test('TASK11.14 second visit wins CAS, older visit remains playable and replacement rechecks head',async({page,context})=>{\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\save.spec.ts:24:43"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T01:41:15.787Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\save-TASK11-14-damaged-cur-18ce4-ly-and-preserves-both-slots-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\save-TASK11-14-damaged-cur-18ce4-ly-and-preserves-both-slots-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\save-TASK11-14-damaged-cur-18ce4-ly-and-preserves-both-slots-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\save.spec.ts",
+                    "column": 43,
+                    "line": 24
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "67a2c4c4ea80bd146eba-10e10a104c1e7f137aa0",
+          "file": "save.spec.ts",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "TASK11.14 second visit wins CAS, older visit remains playable and replacement rechecks head",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 60445,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\save.spec.ts",
+                        "column": 200,
+                        "line": 31
+                      },
+                      "message": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Choose a lead', exact: true })\u001b[22m\n\n\n  29 |  await go(page,'ST.EXIT.WK','Workshop');await expect(page.getByTestId('save-status')).toContainText('Progress can’t be saved');\n  30 |  expect(JSON.parse((await readSlots(page)).current as string).payload.physical.room).toBe('SC.ST');\n> 31 |  await page.getByRole('button',{name:'Try saving again'}).click();await second.getByRole('button',{name:'Goal',exact:true}).click();await second.getByRole('button',{name:'Choose a lead',exact:true}).click();\n     |                                                                                                                                                                                                        ^\n  32 |  await second.getByRole('button',{name:'Where is Loop?',exact:true}).click();await saved(second);\n  33 |  await page.getByRole('button',{name:'Replace saved game',exact:true}).click();await expect(page.getByTestId('save-status')).toContainText('Progress can’t be saved');\n  34 |  expect(JSON.parse((await readSlots(page)).current as string).payload.selectedLead).toBe('where-loop');await second.close();\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\save.spec.ts:31:200"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T01:41:24.932Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\save-TASK11-14-second-visi-78508-d-replacement-rechecks-head-chromium\\test-failed-2.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\save-TASK11-14-second-visi-78508-d-replacement-rechecks-head-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\save-TASK11-14-second-visi-78508-d-replacement-rechecks-head-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\save-TASK11-14-second-visi-78508-d-replacement-rechecks-head-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "67a2c4c4ea80bd146eba-343c1573bfb3bd0ae399",
+          "file": "save.spec.ts",
+          "line": 27,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-12T01:40:14.104Z",
+    "duration": 132041.185,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

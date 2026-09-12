@@ -932,7 +932,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Unreadable labels/focus: repair native definitions; never rasterize clues.",
-      "status": "IN_PROGRESS",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         2,
         4
@@ -950,9 +950,9 @@
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
       },
       "execution": {
-        "evidence": "evidence/task-execution.json",
-        "result": "Preparing 32 native definitions and original icons from the approved manifest.",
-        "updatedAt": "2026-09-12T00:39:32.804Z"
+        "evidence": "evidence/native-assets.json",
+        "result": "32 native asset definitions, 13 original icons, palette, focus and 48px control tokens prepared; browser behavior remains TASK11.07/16.",
+        "updatedAt": "2026-09-12T00:41:17.714Z"
       }
     },
     {
@@ -1059,7 +1059,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Missing endpoint/owner: create the specified component; a flattened room painting cannot substitute.",
-      "status": "NOT_STARTED",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         6,
         10
@@ -1075,6 +1075,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/temp-assets.json",
+        "result": "58 original temporary raster assets; 123 variants and 246 PNG exports, exact dimensions/anchors and per-density budgets checked. Contact sheet inspected; composition is tested in TASK11.06/16.",
+        "updatedAt": "2026-09-12T00:45:50.022Z"
       }
     },
     {
@@ -1151,7 +1156,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Duplicate mutation or lost revision: repair command owner; replay recorded synthetic event order before continuing.",
-      "status": "NOT_STARTED",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         4,
         7
@@ -1167,6 +1172,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/runtime-tests.txt",
+        "result": "10 contract suites pass, including all 65 orders through real handlers, cue/terminal idempotence, immutable snapshots, reentrant effects and matching save acknowledgments. Storage transport remains TASK11.14.",
+        "updatedAt": "2026-09-12T00:58:58.824Z"
       }
     },
     {
@@ -1299,7 +1309,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Unreachable anchor or duplicate follower: repair path/ownership against05, not room geometry.",
-      "status": "NOT_STARTED",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         6,
         10
@@ -1315,6 +1325,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/runtime-tests.txt",
+        "result": "All 61 approaches, legal follower routes, approach clearance, remote-owner rejection and retarget cancellation pass; four-room browser route and full Media-first recovery/premiere passed.",
+        "updatedAt": "2026-09-12T02:01:04.265Z"
       }
     },
     {
@@ -1490,7 +1505,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Focus trap, clipped source or hidden world consequence: repair before connected review.",
-      "status": "NOT_STARTED",
+      "status": "IN_PROGRESS",
       "historicalEffortHours": [
         5,
         8
@@ -1506,6 +1521,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/access-browser-pass.json",
+        "result": "Native shell, compact Largest/Roomier typing isolation and Canvas-failure navigation pass. Remaining full compact show, keyboard/touch and return-owner coverage are explicit next checks.",
+        "updatedAt": "2026-09-12T02:14:27.928Z"
       }
     },
     {
@@ -1778,7 +1798,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Premature text/name/preview exposure: fail route acceptance and repair source slicing.",
-      "status": "NOT_STARTED",
+      "status": "IN_PROGRESS",
       "historicalEffortHours": [
         4,
         7
@@ -1794,6 +1814,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/access-browser-pass.json",
+        "result": "Browser first-frame/photo isolation and canceled 800ms notice operation pass. Exact source readers, frames, zoom and vocabulary exist; full playback/selection/reopening checks remain.",
+        "updatedAt": "2026-09-12T02:14:27.997Z"
       }
     },
     {
@@ -2002,7 +2027,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Invented NPC knowledge or automatic diagnosis: use exact selected-source branch or canonical neutral reply.",
-      "status": "NOT_STARTED",
+      "status": "IN_PROGRESS",
       "historicalEffortHours": [
         4,
         6
@@ -2018,6 +2043,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/runtime-tests.txt",
+        "result": "Local character branches, evidence delivery and voluntary plan recording implemented. Dedicated branch and delivery browser acceptance remains.",
+        "updatedAt": "2026-09-12T02:01:04.467Z"
       }
     },
     {
@@ -2162,7 +2192,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Lost note/remote handoff/duplicate item: repair ownership transition, then repeat both recovery orders.",
-      "status": "NOT_STARTED",
+      "status": "IN_PROGRESS",
       "historicalEffortHours": [
         4,
         6
@@ -2178,6 +2208,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/connected-media-first-pass.json",
+        "result": "Media-first kit collection, unread notes, Loop following, Stage handoff, docking and portable first reading passed. Separate kit-first and Loop-first return routes remain.",
+        "updatedAt": "2026-09-12T02:01:04.542Z"
       }
     },
     {
@@ -2306,7 +2341,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Wrong gap index/canceled edit: correct atomic order operation and rerun exact operation sequence fixture.",
-      "status": "NOT_STARTED",
+      "status": "IN_PROGRESS",
       "historicalEffortHours": [
         3,
         5
@@ -2322,6 +2357,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/connected-media-first-pass.json",
+        "result": "Unique rail and native select/place passed in complete browser case. All drag, adjacent-move and compact cases remain.",
+        "updatedAt": "2026-09-12T02:01:04.610Z"
       }
     },
     {
@@ -2587,7 +2627,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Wrong endpoint/pause/certificate: compare per-cue expected states, fix pure rules or coordinator independently.",
-      "status": "NOT_STARTED",
+      "status": "IN_PROGRESS",
       "historicalEffortHours": [
         5,
         8
@@ -2603,6 +2643,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/runtime-tests.txt",
+        "result": "All 65 orders and core interruption/finalization handlers pass; one full browser rehearsal/show passed. Remaining browser plans and both-mode interruption checks remain.",
+        "updatedAt": "2026-09-12T02:01:04.666Z"
       }
     },
     {
@@ -2762,7 +2807,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "False ending/history or gag gate: repair finalization/recap condition and rerun silent and interrupted paths.",
-      "status": "NOT_STARTED",
+      "status": "IN_PROGRESS",
       "historicalEffortHours": [
         3,
         5
@@ -2778,6 +2823,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/connected-media-first-pass.json",
+        "result": "Actual complete-show premiere and coral-backpack ending passed. Staged Toast, own-room reactions and factual record recap need completion.",
+        "updatedAt": "2026-09-12T02:01:04.729Z"
       }
     },
     {
@@ -2959,7 +3009,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Fault test loses progress or removes uncertainty: repair read/write generations and transaction boundary; never claim close-time guarantee.",
-      "status": "NOT_STARTED",
+      "status": "IN_PROGRESS",
       "historicalEffortHours": [
         5,
         8
@@ -2975,6 +3025,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/save-browser-faults-pass.json",
+        "result": "Seven browser storage checks pass: acknowledgments, reload/preferences, previous recovery, conflict, denied read, quota/retry, incompatible/reset and late-read generation. Remaining cue-reload/draft/failure boundaries pending.",
+        "updatedAt": "2026-09-12T02:01:04.794Z"
       }
     },
     {
@@ -25146,7 +25201,54 @@
           "TASK11.16"
         ],
         "measure": "During the existing authorized tasks record task start/end; Codex iteration duration/count; Tony hands-on minutes; waits; acceptance failures/rework; actual disjoint overlap. First setup and complete content check calibrate configuration/transcription only. Q00/Q01 calibrate temporary work only. Store/world integration calibrates connected mechanics; TASK11.16 calibrates browser/recovery repair. Reforecast after 01–02, 04–06 and 16; preserve evidence and uncertainty for unsampled families.",
-        "recordAt": "In the authorized game review evidence, keyed to TASK11/FIX11 IDs; update only this plan schedule after observing results, then regenerate the schedule view."
+        "recordAt": "In the authorized game review evidence, keyed to TASK11/FIX11 IDs; update only this plan schedule after observing results, then regenerate the schedule view.",
+        "observations": [
+          {
+            "kind": "observed-integration-interval",
+            "tasks": [
+              "TASK11.06",
+              "TASK11.07",
+              "TASK11.08",
+              "TASK11.14"
+            ],
+            "start": "2026-09-12T01:43:44.153Z",
+            "end": "2026-09-12T02:01:04.816Z",
+            "seconds": 1040.663,
+            "basis": "Two host UTC tool/task-event boundaries. Includes implementation, browser waits and repairs; not the whole task duration.",
+            "humanAttentionMinutes": null,
+            "disjointOverlapSeconds": null
+          },
+          {
+            "kind": "successful-browser-route",
+            "tasks": [
+              "TASK11.10",
+              "TASK11.12",
+              "TASK11.13",
+              "TASK11.16"
+            ],
+            "seconds": 49.9,
+            "evidence": "evidence/connected-media-first-pass.json",
+            "basis": "Actual Playwright test duration: fresh Media-first through full rehearsal and premiere, including physical travel. Inspection and repair excluded."
+          },
+          {
+            "kind": "successful-storage-browser-suite",
+            "tasks": [
+              "TASK11.14"
+            ],
+            "seconds": 25.4,
+            "evidence": "evidence/save-browser-three-pass.json",
+            "basis": "Three actual browser tests, including real IndexedDB; no all-device durability claim."
+          },
+          {
+            "kind": "successful-storage-fault-suite",
+            "tasks": [
+              "TASK11.14"
+            ],
+            "seconds": 30.6,
+            "evidence": "evidence/save-browser-faults-pass.json",
+            "basis": "Four actual browser tests with labeled injected faults. Included in integration work, not added to the interval above."
+          }
+        ]
       },
       {
         "id": "CAL12.ART",
@@ -25180,8 +25282,8 @@
     "milestoneFailurePolicy": "Any essential-state/focus/source/save failure holds the connected milestone; any required temporary art or unreadable consequence holds illustrated candidate; missing/incorrect live evidence holds the intended AI demo; unready final materials at internal cutoff trigger an explicit changed plan, never a fictional submission.",
     "feasibility": "UNDETERMINED. Product/package readiness is separable from deadline forecast. The previous infeasibility conclusion was unsupported by measured AI-led throughput; neither feasibility nor infeasibility is established now.",
     "forecast": {
-      "status": "UNCALIBRATED",
-      "confidence": "No calibrated numerical confidence or finish dates.",
+      "status": "PARTIALLY_MEASURED",
+      "confidence": "Successful full-route browser execution is measured at about 50 seconds; storage suites at 25–31 seconds. Integration repair remains variable, and required branches are still unverified. No whole-milestone completion time or final-art throughput is inferred.",
       "firstConnectedElapsedHours": null,
       "remainingRequiredElapsedHours": null,
       "criticalPathElapsedHours": null,
@@ -25192,7 +25294,7 @@
           "remainingElapsedHours": null
         },
         "M11.CONNECTED": {
-          "status": "NOT_STARTED",
+          "status": "IN_PROGRESS",
           "forecastFinish": null,
           "remainingElapsedHours": null
         },
@@ -25216,6 +25318,11 @@
           "forecastFinish": null,
           "remainingElapsedHours": null
         }
+      },
+      "comparableBrowserRun": {
+        "lowerSeconds": 45,
+        "upperSeconds": 65,
+        "basis": "Provisional execution-only allowance for a similarly sized connected route; excludes implementation, repair, review and added detours."
       }
     }
   },
