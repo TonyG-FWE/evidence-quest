@@ -1,0 +1,271 @@
+{
+  "at": "2026-09-15T05:59:11.446Z",
+  "status": "PASS_BOUNDED_GROUP_3",
+  "baseline": {
+    "branch": "codex/first-connected",
+    "head": "63af7a2261553c2639842a458b54dde38311e3f7",
+    "commit": "Local uncommitted changes; previous dirty work retained"
+  },
+  "scope": "River materials, physical repair/collapse/recovery, actual steered seed transport and first garden context/time agreement. Groups4-8 remain open.",
+  "checks": {
+    "installation": "Group2 npm ci PASS; exact unchanged lockfile retained",
+    "content": "14 sources,69 components,1080 exact word occurrences PASS",
+    "typeSchema": "PASS",
+    "serverBuild": "PASS",
+    "fullBuild": "PASS",
+    "contracts": {
+      "passed": 78,
+      "failed": 0
+    },
+    "authoredCoach": {
+      "passed": 23,
+      "providerCalls": 0
+    },
+    "browser": {
+      "uniqueCases": 16,
+      "latestResultPerCase": [
+        {
+          "file": "garden-chapter.spec.ts",
+          "title": "Complete Garden chapter: later Mara tells; Sol prepared ending",
+          "project": "chromium",
+          "result": "passed",
+          "evidence": "browser-initial.json"
+        },
+        {
+          "file": "garden-chapter.spec.ts",
+          "title": "Complete Garden chapter: later Pip reads; Sol develops draft",
+          "project": "chromium",
+          "result": "passed",
+          "evidence": "browser-initial.json"
+        },
+        {
+          "file": "garden-chapter.spec.ts",
+          "title": "Complete Garden chapter: usual time; Sol keeps draft and Pip delivers Grandma’s story",
+          "project": "chromium",
+          "result": "passed",
+          "evidence": "browser-initial.json"
+        },
+        {
+          "file": "garden-chapter.spec.ts",
+          "title": "Loose bridge: Pip attempts it, visible collapse, safe return and rebuild",
+          "project": "chromium",
+          "result": "passed",
+          "evidence": "browser-initial.json"
+        },
+        {
+          "file": "garden-chapter.spec.ts",
+          "title": "Temporary reading practice starts with mic off and unavailable feedback is honest",
+          "project": "chromium",
+          "result": "passed",
+          "evidence": "browser-initial.json"
+        },
+        {
+          "file": "garden-interaction.spec.ts",
+          "title": "G2 ordinary keyboard route: nested letter, Help and backpack preserve focus and return context",
+          "project": "chromium",
+          "result": "passed",
+          "evidence": "browser-initial.json"
+        },
+        {
+          "file": "garden-interaction.spec.ts",
+          "title": "G2 ordinary world route: invalid plan, exact rehearsal, nested help and prepared return",
+          "project": "chromium",
+          "result": "passed",
+          "evidence": "browser-initial.json"
+        },
+        {
+          "file": "garden-river.spec.ts",
+          "title": "G3 ordinary controls: named placement, actual far-held collapse, reload, recovery and first garden context",
+          "project": "chromium",
+          "result": "passed",
+          "evidence": "browser-final.json"
+        },
+        {
+          "file": "garden-river.spec.ts",
+          "title": "G3 ordinary boat controls: loaded cargo, wrong dock, pause/reload, player steering and explicit receipt",
+          "project": "chromium",
+          "result": "passed",
+          "evidence": "browser-compact.json"
+        },
+        {
+          "file": "garden.spec.ts",
+          "title": "carried-seed route: real placement, reading, page/report, return and legacy-save isolation",
+          "project": "chromium",
+          "result": "passed",
+          "evidence": "browser-initial.json"
+        },
+        {
+          "file": "garden.spec.ts",
+          "title": "seed first: separate boat trip, fixed bridge pieces, real drag, wide gap and full report",
+          "project": "chromium",
+          "result": "passed",
+          "evidence": "browser-final.json"
+        },
+        {
+          "file": "garden.spec.ts",
+          "title": "version-1 upgrade archives the exact save and keeps the bridge fixed during a boat trip",
+          "project": "chromium",
+          "result": "passed",
+          "evidence": "browser-final.json"
+        },
+        {
+          "file": "garden.spec.ts",
+          "title": "keyboard construction, reading focus, largest text and compact layouts",
+          "project": "chromium",
+          "result": "passed",
+          "evidence": "browser-final.json"
+        },
+        {
+          "file": "garden.spec.ts",
+          "title": "damaged-current recovery preserves previous save; archive preserves original state",
+          "project": "chromium",
+          "result": "passed",
+          "evidence": "browser-initial.json"
+        },
+        {
+          "file": "garden.spec.ts",
+          "title": "two windows reject stale saves and archive, then load the actual latest progress",
+          "project": "chromium",
+          "result": "passed",
+          "evidence": "browser-initial.json"
+        },
+        {
+          "file": "garden.spec.ts",
+          "title": "WebGL context-loss recovery and measured rendering retain actual save",
+          "project": "chromium",
+          "result": "passed",
+          "evidence": "browser-initial.json"
+        }
+      ],
+      "meaning": "Dated candidate runs plus targeted corrections; not a final full-suite run"
+    },
+    "independentReview": "evidence/group-3-review-20260915/final-review.json",
+    "protectedInputs": {
+      "compared": 460,
+      "changed": 0
+    },
+    "originalAuditRows": 169
+  },
+  "limits": [
+    "Current owner-rejected complete-game acceptance remains open until all later groups are built and reviewed.",
+    "Initial affected browser run had14 passes and2 obsolete-step failures; both retained and corrected.",
+    "Native review is adult agent exercise, not child usability or measured learning.",
+    "Current physical-device/performance and live AI qualification not supplied by these checks.",
+    "TASK11.19 remains halted at exactly1/75; no retry or ledger reset.",
+    "User4192 was not reset or used for test injection; authored QA4195 and automated4196 are separate."
+  ],
+  "hashes": [
+    {
+      "path": "src/garden/model.ts",
+      "sha256": "21ab651fb38edc08eb77d6161e06d1ef2bb06958275937b7c4773284dd577d2c"
+    },
+    {
+      "path": "src/garden/river.ts",
+      "sha256": "94ef9e24dd10631b799a521283ddd4a504815249ed419975878653e03f0a6db0"
+    },
+    {
+      "path": "src/garden/persistence.ts",
+      "sha256": "9fee35c9d6b15f144fa2a0db24239fd56f3839d1a4495f624a10f23f521b3c67"
+    },
+    {
+      "path": "src/garden/content.ts",
+      "sha256": "9f70d1d297e59669e7bb1879c6d482a9fc6483507645ac1a17d33f04d5ccdac5"
+    },
+    {
+      "path": "src/garden/chapter.ts",
+      "sha256": "94a785a9cf7d9ff32f60d1290b4a36e67ea5a4a29d18a2bf12e3615bcfaf56e5"
+    },
+    {
+      "path": "src/garden/GardenApp.tsx",
+      "sha256": "7f751a1b41df5a95431d80a1f4ea2a2b02716f114f08d53f0c661dc16e3223df"
+    },
+    {
+      "path": "src/garden/GardenScene.tsx",
+      "sha256": "039e10a310c21ebd0fed58d12e94874cf37f03116cf38f48bdee5ef7a2e6a374"
+    },
+    {
+      "path": "src/garden/BoatControls.tsx",
+      "sha256": "a93e30ba9a0be417eb24a984326b904251a747cf852aa54337aeb8b49bd085d5"
+    },
+    {
+      "path": "src/garden/ChapterPanels.tsx",
+      "sha256": "18f471833c245217d96d3de9be6cb66c6106bee4705c7872b1464a09342f701d"
+    },
+    {
+      "path": "src/garden/interaction.ts",
+      "sha256": "cfc50a76e99d058c0cfaa695d3d488d5dc169290507cc96c3449224299297511"
+    },
+    {
+      "path": "src/garden/garden.css",
+      "sha256": "e3aa137c842c9196a56f879f4c3f5a522fcd4f51654d04037cc6bd353965203b"
+    },
+    {
+      "path": "scripts/validate-garden.mjs",
+      "sha256": "234c4341baf7d26d6c78706eddb01d11648aff71704ebdb4649269695dfc086c"
+    },
+    {
+      "path": "checks/garden-river.test.ts",
+      "sha256": "3bb0ce3f8d1f27ea796a58001d92e2a050fd2073322c1ffc54f85d9c479cb72e"
+    },
+    {
+      "path": "checks/garden.test.ts",
+      "sha256": "6be5c3fc79585fedad9ab79c91ea4ef8160d7cf3509f1a7c182b560d999c273d"
+    },
+    {
+      "path": "checks/garden-chapter.test.ts",
+      "sha256": "a10b71b86795277aa6b59a40a490573e3f84f8897458d10a361836fb6f94d728"
+    },
+    {
+      "path": "checks/garden-interaction.test.ts",
+      "sha256": "6e7dd9e73421e1a62c430d6618d032690daae8f35c1ef879509e233e9218b060"
+    },
+    {
+      "path": "browser-tests/garden-river.spec.ts",
+      "sha256": "ac8a2fe2665065dd1739d09bce48c4b33c9a53e90534d91daf5183ff2f7498fc"
+    },
+    {
+      "path": "browser-tests/garden.spec.ts",
+      "sha256": "784996bec2a29f26a5c2ca6a0d3f38415ee2974e000d529c1b674183ad82fa4a"
+    },
+    {
+      "path": "browser-tests/garden-chapter.spec.ts",
+      "sha256": "0511caba855ce3c1d3fe5dac2a6b62ec03f33ebc4c3ec11d9947a70bc8a94274"
+    },
+    {
+      "path": "browser-tests/garden-interaction.spec.ts",
+      "sha256": "5dee09d1a4ffa6015f1902da5a95ed77ed47d72c189ddb6aa4addf86f6aadd2f"
+    },
+    {
+      "path": "evidence/group-3-review-20260915/final-review.json",
+      "sha256": "0d241958beb0e56ae381f490cfc8b5c7aa6257de696e6731f56ed0e5b161f38c"
+    },
+    {
+      "path": "dist/client/assets/serialized-AKKBhD_x.js",
+      "sha256": "0cc190023b6a43708287682ef43eef52866a533144bca37c153373ee915ab6a4"
+    },
+    {
+      "path": "dist/client/assets/index-BNaEA7PI.js",
+      "sha256": "d494e8080e29d027131c9ac53f93658b28ac44bbaae81a7706e7f7976bf0b4f3"
+    },
+    {
+      "path": "dist/client/assets/index-D7U2vX1x.css",
+      "sha256": "e57e791c5fdcecf3f5546f1bf865fe6b4277f670cc02656b51feb159a1f5601d"
+    },
+    {
+      "path": "dist/client/assets/GardenApp-B-PC_riq.js",
+      "sha256": "9e44d528f2532064d5a41b47cfda09d32094977ac5cb889ae93ee5efe8656918"
+    },
+    {
+      "path": "dist/client/assets/GardenApp-D2xtYYJf.css",
+      "sha256": "f88e5d14362d5cf8b34a20015c80d1a4f11a5e0c9d3cc1102d5d21ff8468b602"
+    },
+    {
+      "path": "dist/client/assets/App-vaVl8yuj.js",
+      "sha256": "6760c9f2cd4850414d449f23143e740e7c84d935b2ae23595be52bb380bb387a"
+    },
+    {
+      "path": "dist/client/assets/App-CvfCOyJg.css",
+      "sha256": "0e968f90c15700b38c0a0bbc3379546041046e29c2db3ba1c048a009b4be488c"
+    }
+  ]
+}

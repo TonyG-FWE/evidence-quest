@@ -1,0 +1,17 @@
+{
+  "exitCode": 0,
+  "report": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\group-8-integration-20260915\\browser-input-guards-scoped.json",
+  "arguments": [
+    "node_modules/@playwright/test/cli.js",
+    "test",
+    "garden-bakery.spec.ts",
+    "garden-interaction.spec.ts",
+    "garden-chapter.spec.ts",
+    "--project=chromium",
+    "--grep",
+    "Bakery:|G2 ordinary|Complete Garden chapter: later Mara tells; Sol developed$"
+  ],
+  "at": "2026-09-15T18:28:38.9034254Z",
+  "artifacts": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\group-8-integration-20260915\\browser-input-guards-scoped-artifacts",
+  "chromiumChannel": "chromium"
+}

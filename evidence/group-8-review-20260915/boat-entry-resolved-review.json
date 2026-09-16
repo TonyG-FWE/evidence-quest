@@ -1,0 +1,207 @@
+{
+  "at": "2026-09-15T20:29:09.612Z",
+  "result": "PASS_BOUNDED_BOAT_AND_INITIAL_SERVICE_VISUAL_REVIEW",
+  "id": "G8-V01",
+  "candidate": {
+    "garden": "assets/GardenApp-D-NRNTbz.js",
+    "css": [
+      "assets/GardenApp-Cowp-FIg.css"
+    ],
+    "entry": "assets/index-sMxSaulA.js"
+  },
+  "scope": "Independent visual inspection of actual decoded source frames, current exact source/bounds review and their passing ordinary or explicitly labeled prior-save browser cases. Boat geometry and final-arrival framing are unchanged between DQ and the final candidate. Current initial-service frames demonstrate the final compact framing correction. Original failure images and complete recordings remain preserved.",
+  "findings": [
+    {
+      "id": "G8-V01",
+      "status": "RESOLVED_WITHIN_RECORDED_LOCAL_SCOPE",
+      "before": "evidence/group-8-review-20260915/boat-entry-visual-review.json",
+      "correction": "Four approach coordinates keep the unchanged full boat inside the existing water throughout its translation. The separate operator, passengers, mooring and disembarkation remain."
+    },
+    {
+      "id": "G8-V02",
+      "status": "RESOLVED_WITHIN_RECORDED_LOCAL_SCOPE",
+      "before": "evidence/group-8-integration-20260915/source-frames/service-compact-final/2.png",
+      "correction": "Active initial dock service uses the existing dock camera and hides the competing travel objective. The full scene remains visible at320×568."
+    }
+  ],
+  "frames": [
+    {
+      "path": "evidence/group-8-integration-20260915/source-frames/chapter-final/65-8.png",
+      "edition": {
+        "garden": "assets/GardenApp-DQxss6LK.js",
+        "css": [
+          "assets/GardenApp-Cowp-FIg.css"
+        ],
+        "entry": "assets/index-Bk4gdjda.js"
+      },
+      "scope": "Ordinary full later/prepared chapter, desktop1440×1000.",
+      "observed": "Whole passenger boat, operator and both passengers are on the visible river while approaching; Mara and the dock are fully visible.",
+      "sha256": "8f36d03683634891b43c410f28be32697d150caf22dbf94af81fb48a8b1eb1d7"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/source-frames/chapter-final/70.png",
+      "edition": {
+        "garden": "assets/GardenApp-DQxss6LK.js",
+        "css": [
+          "assets/GardenApp-Cowp-FIg.css"
+        ],
+        "entry": "assets/index-Bk4gdjda.js"
+      },
+      "scope": "Same ordinary desktop route.",
+      "observed": "Whole hull is alongside the dock; operator/passengers remain aboard, and Mara is still on the dock.",
+      "sha256": "9737c3ad93a33ffb6abd436845e24167da28646bcdc80783b398aae40c87d9ee"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/source-frames/boat-compact-final/3.png",
+      "edition": {
+        "garden": "assets/GardenApp-DQxss6LK.js",
+        "css": [
+          "assets/GardenApp-Cowp-FIg.css"
+        ],
+        "entry": "assets/index-Bk4gdjda.js"
+      },
+      "scope": "Explicit authentic prior-save gathering fixture at320×568.",
+      "observed": "Moored boat and its cast are visible above the distinct Help the last passengers ashore control.",
+      "sha256": "ae6b5c3b2527def168a258f1e8b45ab4df4e87873c821229dc69da86d636cbe7"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/source-frames/boat-compact-final/4.png",
+      "edition": {
+        "garden": "assets/GardenApp-DQxss6LK.js",
+        "css": [
+          "assets/GardenApp-Cowp-FIg.css"
+        ],
+        "entry": "assets/index-Bk4gdjda.js"
+      },
+      "scope": "Same compact fixture.",
+      "observed": "The boat and Mara remain visible during the passenger action; the control reflects the active step.",
+      "sha256": "f504d0d60963830baf7891b3f4b9bece94c0b67aade9c66ee80035c309edf92c"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/source-frames/boat-compact-final/6.png",
+      "edition": {
+        "garden": "assets/GardenApp-DQxss6LK.js",
+        "css": [
+          "assets/GardenApp-Cowp-FIg.css"
+        ],
+        "entry": "assets/index-Bk4gdjda.js"
+      },
+      "scope": "Same compact fixture.",
+      "observed": "Passengers are visibly ashore; the operator remains at the moored boat and Mara remains at the dock.",
+      "sha256": "d7676c40c76ac1d15d7adb07c2e20ef1ebcb47b7778f1a02895d7bdd82dd30bd"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/source-frames/service-compact-corrected/2.png",
+      "edition": {
+        "garden": "assets/GardenApp-D-NRNTbz.js",
+        "css": [
+          "assets/GardenApp-Cowp-FIg.css"
+        ],
+        "entry": "assets/index-sMxSaulA.js"
+      },
+      "scope": "Ordinary G4 initial-service route at320×568.",
+      "observed": "The dock camera shows Pip, Mara, the separate operator and passenger boat in the river. The previous travel-goal obstruction is gone.",
+      "sha256": "10cbefd8195161ffeabb8d0c8c5cdf670961c105db6ec987b5c31f455cf9c42f"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/source-frames/service-compact-corrected/4.png",
+      "edition": {
+        "garden": "assets/GardenApp-D-NRNTbz.js",
+        "css": [
+          "assets/GardenApp-Cowp-FIg.css"
+        ],
+        "entry": "assets/index-sMxSaulA.js"
+      },
+      "scope": "Same current compact initial-service route.",
+      "observed": "Disembarkation is visible at the dock while the distinct operator remains aboard. The scene and service description remain unobstructed.",
+      "sha256": "7b31936dcd73e8996c14207ae1b55894c7d0555620c1f269d6bdf2b0b37aa875"
+    }
+  ],
+  "videos": [
+    {
+      "path": "evidence/group-8-integration-20260915/browser-final-boat-artifacts/garden-chapter-Complete-Ga-ae42f-ter-Mara-tells-Sol-prepared-chromium/video.webm",
+      "sha256": "38bb6ce8f6ade77eb3d18f6258259b96683e87596bca3a440ddf7c753bf77cc5"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-boat-compact-artifacts/garden-gathering-Gathering-b5395-d-exact-chosen-contribution-chromium/video.webm",
+      "sha256": "d9428bd127011dfcbe8fe9feddaca68e811d9b93abf4e68b50d4167ef6d928d4"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-service-compact-artifacts/garden-mara-G4-ordinary-ea-c4629--and-same-present-day-facts-chromium/video.webm",
+      "sha256": "add79bdf5eeb1c5ed7565ef9de1a2b4cac12441a8094466d7d4e3732641c5de6"
+    }
+  ],
+  "sourceReviews": [
+    {
+      "path": "evidence/group-8-review-20260915/boat-source-review.json",
+      "sha256": "2110ac306b9858219eab2ff4142d7736395a0e6e92966826644f907f1a9f49d2"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/final-view-source-review.json",
+      "sha256": "517b451dfcd0e959405d674951542390085d98bdea4e4440ef2034caa714560a"
+    }
+  ],
+  "references": [
+    {
+      "path": "evidence/group-8-review-20260915/boat-entry-visual-review.json",
+      "sha256": "348f5e8d8b15e81369e3e9085ef314b0f5c69be3e4732113e6dc5f334ce6c284"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/source-frames/service-compact-final/2.png",
+      "sha256": "7cd7567dd9b16a311c9446e9adba60acd115ef6a7553ff524456804626917c6e"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/boat-bounds.json",
+      "sha256": "80187e89d170049ee903d361aada41e96175028ea901c86e4338abd99c3a72c9"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/film-sources-final.json",
+      "sha256": "d44b946b16ee189d93a30331ee0bba5897bdb8e97080ce11d91db3004d2040a7"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/boat-compact-frames.log",
+      "sha256": "2161f31231962722958f6847e681581a97b3e56b74245161d3ffd8bb8a257b30"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/service-framing-frames.log",
+      "sha256": "e80f22269bf71c964dbfdf6821b5f6892357cb5a6f41c6f373b43d3f6d3acfb3"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-final-boat.json",
+      "sha256": "95192289985ecd2346bfc18d5f4ffded81219b06ba563774266186551caae787"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-boat-compact.json",
+      "sha256": "7f600a5553996f9e3a18dff6141d085140748091a21293b636fd0110d0ee54ed"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-service-final.json",
+      "sha256": "d94d6002c05077c9522cb2cb40a3807bd33b45d449e12f347e8554d10abf9e7c"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-service-compact.json",
+      "sha256": "74ce2634f89d22feb7ba134c7a621111902f736044d4ea07226aa70a8fa67491"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-final-boat-candidate.json",
+      "sha256": "6e6a5ebc0f8df79a6cf77cbff4f8b95c7b6defe3b62c7610611a10d035b0b565"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-boat-compact-candidate.json",
+      "sha256": "6e6a5ebc0f8df79a6cf77cbff4f8b95c7b6defe3b62c7610611a10d035b0b565"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-service-final-candidate.json",
+      "sha256": "9968d3799848f9b32cec794970810b0405bfc00a2ebe4c528fb7a5f4aae66150"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-service-compact-candidate.json",
+      "sha256": "9968d3799848f9b32cec794970810b0405bfc00a2ebe4c528fb7a5f4aae66150"
+    }
+  ],
+  "limits": [
+    "Frame observations establish the visible sampled poses and framing; full movement and acknowledged event order are separately exercised in the retained complete recordings and real-handler checks.",
+    "The compact final-arrival recording is an authentic prior-save fixture, not a fresh native journey. Current initial service is ordinary browser play.",
+    "This resolves the recorded local staging defects. It does not establish final illustrated-art acceptance, all-device qualification, measured physical FPS or owner acceptance."
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "keyboard-range-investigation.spec.ts"
+    ],
+    "configFile": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\playwright.config.ts",
+    "rootDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/output/playwright/raw",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/group-5-bakery-20260915/keyboard-range-investigation.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 1,
+    "webServer": {
+      "command": "\"C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe\" dist/server/index.js",
+      "url": "http://127.0.0.1:4196/healthz",
+      "env": {
+        "PORT": "4196",
+        "EQ_WEB_PORT": "4196",
+        "PUBLIC_ORIGIN": "http://127.0.0.1:4196"
+      },
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "keyboard-range-investigation.spec.ts",
+      "file": "keyboard-range-investigation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Investigate native readonly and editable textarea keyboard ranges",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 421,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-15T07:48:07.789Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "keyboard-range-comparison",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJmaWVsZCI6ICJyZWFkb25seSIsCiAgICAia2V5IjogIkNvbnRyb2wrSG9tZSIsCiAgICAiYWN0aXZlIjogInJlYWRvbmx5IiwKICAgICJzdGFydCI6IDExLAogICAgImVuZCI6IDExCiAgfSwKICB7CiAgICAiZmllbGQiOiAicmVhZG9ubHkiLAogICAgImtleSI6ICJTaGlmdCtBcnJvd1JpZ2h0IiwKICAgICJhY3RpdmUiOiAicmVhZG9ubHkiLAogICAgInN0YXJ0IjogMTEsCiAgICAiZW5kIjogMTEKICB9LAogIHsKICAgICJmaWVsZCI6ICJyZWFkb25seSIsCiAgICAia2V5IjogIlNoaWZ0K0Fycm93UmlnaHQiLAogICAgImFjdGl2ZSI6ICJyZWFkb25seSIsCiAgICAic3RhcnQiOiAxMSwKICAgICJlbmQiOiAxMQogIH0sCiAgewogICAgImZpZWxkIjogInJlYWRvbmx5IiwKICAgICJrZXkiOiAiQ29udHJvbCtTaGlmdCtBcnJvd1JpZ2h0IiwKICAgICJhY3RpdmUiOiAicmVhZG9ubHkiLAogICAgInN0YXJ0IjogMTEsCiAgICAiZW5kIjogMTEKICB9LAogIHsKICAgICJmaWVsZCI6ICJlZGl0YWJsZSIsCiAgICAia2V5IjogIkNvbnRyb2wrSG9tZSIsCiAgICAiYWN0aXZlIjogImVkaXRhYmxlIiwKICAgICJzdGFydCI6IDAsCiAgICAiZW5kIjogMAogIH0sCiAgewogICAgImZpZWxkIjogImVkaXRhYmxlIiwKICAgICJrZXkiOiAiU2hpZnQrQXJyb3dSaWdodCIsCiAgICAiYWN0aXZlIjogImVkaXRhYmxlIiwKICAgICJzdGFydCI6IDAsCiAgICAiZW5kIjogMQogIH0sCiAgewogICAgImZpZWxkIjogImVkaXRhYmxlIiwKICAgICJrZXkiOiAiU2hpZnQrQXJyb3dSaWdodCIsCiAgICAiYWN0aXZlIjogImVkaXRhYmxlIiwKICAgICJzdGFydCI6IDAsCiAgICAiZW5kIjogMgogIH0sCiAgewogICAgImZpZWxkIjogImVkaXRhYmxlIiwKICAgICJrZXkiOiAiQ29udHJvbCtTaGlmdCtBcnJvd1JpZ2h0IiwKICAgICJhY3RpdmUiOiAiZWRpdGFibGUiLAogICAgInN0YXJ0IjogMCwKICAgICJlbmQiOiA1CiAgfQpd"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "68b5a1d010cc366f648f-69480d60a2093d5ec8b0",
+          "file": "keyboard-range-investigation.spec.ts",
+          "line": 2,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-15T07:48:06.945Z",
+    "duration": 1728.3039999999999,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

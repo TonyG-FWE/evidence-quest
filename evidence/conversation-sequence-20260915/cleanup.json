@@ -1,0 +1,37 @@
+{
+  "at": "2026-09-16T02:04:14.410Z",
+  "rootQa": {
+    "port": 4199,
+    "session": 62054,
+    "tabClosed": true,
+    "serverStoppedByCtrlC": true
+  },
+  "peerQa": {
+    "at": "2026-09-16T02:03:08.9726762Z",
+    "reviewPort": 4198,
+    "serverSession": 88467,
+    "controlCExitCode": 1,
+    "ownedTabClosed": true,
+    "remainingListeners": 0,
+    "userOriginsAccessed": [],
+    "savesReset": [],
+    "note": "Stopped only the server session started by this reviewer and closed only its browser tab. User previews4192/4200 remain owned by the implementation task."
+  },
+  "automatedRuns": {
+    "completed": true,
+    "ports": [
+      4195,
+      4196
+    ],
+    "earlierOwnedStalledProcessStopped": 30712
+  },
+  "userPreviews": {
+    "ports": [
+      4192,
+      4200
+    ],
+    "stopped": false,
+    "saveReset": false,
+    "deliveryEvidence": "evidence/conversation-sequence-20260915/delivered.json"
+  }
+}

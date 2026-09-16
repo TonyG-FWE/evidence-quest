@@ -1,0 +1,161 @@
+{
+  "at": "2026-09-15T19:58:53.338Z",
+  "result": "PASS_NARROW_POINTER_ORIGIN_SOURCE_AND_HANDLER_REVIEW",
+  "scope": "Independent exact comparison of eight pointer-origin handlers in two view files. Each command now receives the actual invoking button rather than relying on browser pointer-focus defaults. Focus restoration, activity return frames, story/source/state/save logic, browser assertions and scheduling are unchanged. The independent real-handler route outcomes remain identical.",
+  "candidate": {
+    "garden": "assets/GardenApp-BtHEwcHT.js",
+    "css": [
+      "assets/GardenApp-Cowp-FIg.css"
+    ],
+    "entry": "assets/index-BkBZbY5u.js"
+  },
+  "candidateReceipt": {
+    "path": "evidence/group-8-integration-20260915/candidate-pointer-origin.json",
+    "sha256": "3a54da530d3b08101dbaf7d789a5f6fce1b5c199545b0dea9523b9ce2c859a1e"
+  },
+  "priorCandidate": {
+    "path": "evidence/group-8-integration-20260915/candidate-speech-guard.json",
+    "sha256": "c69986156a803f220c79be168171b88df5f0cd64e5739abf93dbf465cbd752b9",
+    "game": {
+      "garden": "assets/GardenApp-1bAXtgqf.js",
+      "css": [
+        "assets/GardenApp-Cowp-FIg.css"
+      ],
+      "entry": "assets/index-uNrKvF1N.js"
+    }
+  },
+  "priorReview": {
+    "path": "evidence/group-8-review-20260915/speech-source-review.json",
+    "sha256": "c3c676e7b79e18a1266eb2534f84d5eae11a6b4a9a61aaa3776f64f94137d78b"
+  },
+  "changes": [
+    {
+      "path": "src/garden/ChapterPanels.tsx",
+      "beforeSha256": "6eb93c2dd637918a1f153104c980e4253ccd04ef3f925d13cf6e049ecea4854b",
+      "afterSha256": "29f883bf061a29ae9e2ef9650370e7917060c33438656ba6debc86a7c65b5181"
+    },
+    {
+      "path": "src/garden/GardenApp.tsx",
+      "beforeSha256": "6e99fbb15f52f77bd12917aa941220e75df65df4785d60b07d2288354ac08de5",
+      "afterSha256": "f75cfeb59e5e89ec46cfda334f6c19afbb0201c1284d5ab70bda6f7a69c92fdd"
+    }
+  ],
+  "handlers": [
+    {
+      "file": "src/garden/GardenApp.tsx",
+      "command": "type:'INSPECT_LANTERN',lantern:id"
+    },
+    {
+      "file": "src/garden/GardenApp.tsx",
+      "command": "type:'STORY',event:{kind:'SHARE_MARA'}"
+    },
+    {
+      "file": "src/garden/ChapterPanels.tsx",
+      "command": "type:'INSPECT_LANTERN',lantern:card.id"
+    },
+    {
+      "file": "src/garden/ChapterPanels.tsx",
+      "command": "type:'REHEARSE',contribution:{text:f.solDraft.text,scene,revision:f.solDraft.revision,origin:'child'}"
+    },
+    {
+      "file": "src/garden/ChapterPanels.tsx",
+      "command": "type:'REHEARSE',contribution:{text:preparedEndings[v],scene:v,revision:f.solDraft.revision,origin:'prepared'}"
+    },
+    {
+      "file": "src/garden/ChapterPanels.tsx",
+      "command": "type:'PREVIEW_PLAN',time,reader"
+    },
+    {
+      "file": "src/garden/ChapterPanels.tsx",
+      "command": "type:'START_PRESENTATION',mode:'watch'"
+    },
+    {
+      "file": "src/garden/ChapterPanels.tsx",
+      "command": "type:'START_PRESENTATION',mode:'narrate'"
+    }
+  ],
+  "matrix": {
+    "path": "evidence/group-8-review-20260915/routes-pointer-origin-node24.json",
+    "sha256": "4805d10b3dcc6667d91d05cee5f84d6b1802a086c31c798ee7833189398da0ac",
+    "routes": 45,
+    "assertions": 649,
+    "sameOutcomes": true
+  },
+  "commands": {
+    "contracts": 93,
+    "authored": 23,
+    "providerCalls": 0,
+    "build": "PASS"
+  },
+  "priorFailures": {
+    "path": "evidence/group-8-integration-20260915/browser-cross-speech.json",
+    "sha256": "43f42d209f9c6c4519487991d0e5dd2338cd36dff7888fb718edc8c812e83661",
+    "cases": [
+      {
+        "browser": "webkit",
+        "title": "Finale: authentic prior-save fixture, actual memory placement, lantern source return, compact show and replay recovery",
+        "status": "failed",
+        "errors": [
+          {
+            "location": {
+              "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-finale.spec.ts",
+              "column": 364,
+              "line": 12
+            },
+            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: 'Pip’s promise · Pip', exact: true })\nExpected: focused\nReceived: inactive\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Pip’s promise · Pip', exact: true })\u001b[22m\n\u001b[2m    32 × locator resolved to <button>Pip’s promise · Pip</button>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n\n  10 |  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('/garden');await expect(page.locator('.g-save')).toHaveText('Saved in this browser');\n  11 |  await page.evaluate(async record=>new Promise<void>(resolve=>{const r=indexedDB.open('evidence-quest-garden-adventure-v1');r.onsuccess=()=>{const db=r.result,t=db.transaction('slots','readwrite');t.objectStore('slots').put(record,'current');t.oncomplete=()=>{db.close();resolve();};};}),fixture.envelope);await page.reload();const before=await saved(page);\n> 12 |  await page.locator('.garden-access>summary').click();await page.getByText('Inspect a particular flower',{exact:true}).click();await button(page,'Pip’s promise · Pip').click();await expect(page.locator('[data-lantern=\"pip\"]')).toContainText('Grandma has shared her story');await button(page,'Back to Pip').click();await expect(button(page,'Pip’s promise · Pip')).toBeFocused();await page.locator('.garden-access>summary').click();await button(page,'Talk to Grandma E').click();await button(page,'Continue the gathering').click();await button(page,'Sharing our stories').click();await page.locator('.g-reader-tools').getByRole('button',{name:'Help',exact:true}).click();await button(page,'Back to the gathering').click();await expect(button(page,'Sharing our stories')).toHaveAttribute('aria-pressed','true');expect(await page.locator('.garden-reader .g-story-stage').count()).toBe(0);await button(page,'Keep this moment').click();await expect(page.locator('.garden-scene')).toHaveAttribute('data-action-kind','keepMemory');await page.screenshot({path:info.outputPath('pip-places-actual-memory.png')});await button(page,'Hear Grandma and Mara finish their conversation').click();await page.screenshot({path:info.outputPath('actual-closing-speakers.png')});await playSpeakingTurn(page);await button(page,'Finish the chapter').click();\n     |                                                                                                                                                                                                                                                                                                                                                                            ^\n  13 |  await button(page,'Read the garden’s stories').click();await expect(page.locator('.g-lantern-library article')).toHaveCount(6);await expect(page.locator('.g-lantern-library canvas')).toHaveCount(0);await button(page,'Open A Small Repair').click();await expect(page.locator('.garden-reader')).toContainText(before.gathering.solPerformed.text);await expect(page.locator('.garden-reader')).toContainText('The ending Sol shared');await button(page,'Back to the lantern stories').click();await button(page,'Inspect A Small Repair').click();await expect(page.locator('[data-world-activity=\"lantern-inspect\"]')).toContainText(before.gathering.solPerformed.text);await expect(page.locator('[data-world-activity=\"lantern-inspect\"]')).toContainText('Your suggested ending');await button(page,'Read A Small Repair with help').click();await expect(page.locator('.garden-reader')).toContainText('The ending Sol shared');await expect(page.locator('.garden-reader')).toContainText(before.gathering.solPerformed.text);await button(page,'Back to this lantern').click();await expect(page.locator('[data-lantern=\"sol\"]')).toBeVisible();await button(page,'Back to the lantern stories').click();await button(page,'Back to Loop').click();\n  14 |  await button(page,'Narrate the ending').click();await expect(page.locator('.garden-reader')).toHaveCount(0);await expect(page.locator('[data-stage-scene=\"planting\"]')).toBeVisible();await page.setViewportSize({width:320,height:568});await page.screenshot({path:info.outputPath('compact-loop-world.png')});for(const name of ['Hear this part','Read or practise this part with help','Pause · Back to studio']){const rect=await button(page,name).boundingBox();expect(rect?.width).toBeGreaterThan(240);expect(rect?.height).toBeGreaterThanOrEqual(48);}const picture=await page.locator('.garden-world-activity>.g-story-stage').boundingBox();expect(picture?.height).toBeGreaterThanOrEqual(200);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await button(page,'Read or practise this part with help').click();await expect(page.locator('.g-reader-context')).toContainText('Loop is waiting at this picture');await button(page,'kept').click();await expect(page.getByRole('complementary',{name:'Word help: kept'})).toContainText('Did what he had said he would do.');await button(page,'Close word help').click();await button(page,'Practise this part with listening feedback').click();await expect(page.locator('.g-mic-off')).toContainText('Your microphone is off');await page.locator('.g-practice-overlay').getByRole('button',{name:'Back to the story',exact:true}).click();await button(page,'Back to Loop’s picture show').click();await expect(page.locator('[data-presentation-page=\"0\"]')).toBeVisible();await page.setViewportSize({width:1440,height:1000});\n  15 |  for(let i=0;i<3;i++)await button(page,'Next picture').click();await button(page,'Finish narration').click();await button(page,'Watch the ending').click();await expect(page.locator('[data-presentation-page=\"0\"]')).toBeVisible();for(let i=0;i<3;i++)await button(page,'Next picture').click();await button(page,'Pause · Back to studio').click();await expect.poll(async()=>(await saved(page)).story.presentation.inProgress).toBe(true);await page.reload();await button(page,'Watch your ending').click();await button(page,'Narrate the ending').click();await expect(page.locator('[data-presentation-page=\"3\"]')).toBeVisible();await page.screenshot({path:info.outputPath('replay-restores-picture-four.png')});await button(page,'Finish narration').click();const end=await saved(page);for(const key of ['seed','river','sections','page','mara','bakery','pip'])expect(end[key]).toEqual(before[key]);expect(end.story.records.pip).toBe('gathering');expect(end.story.solEnding).toEqual(before.story.solEnding);expect(end.story.presentation).toMatchObject({page:3,finished:true,inProgress:false});expect(errors).toEqual([]);await info.attach('finale-result',{body:JSON.stringify(end,null,2),contentType:'application/json'});\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-finale.spec.ts:12:364"
+          }
+        ]
+      },
+      {
+        "browser": "webkit",
+        "title": "G2 ordinary world route: invalid plan, exact rehearsal, nested help and prepared return",
+        "status": "failed",
+        "errors": [
+          {
+            "location": {
+              "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-interaction.spec.ts",
+              "column": 88,
+              "line": 44
+            },
+            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('button', { name: 'Preview the gathering', exact: true })\nExpected: focused\nReceived: inactive\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Preview the gathering', exact: true })\u001b[22m\n\u001b[2m    32 × locator resolved to <button class=\"g-secondary\">Preview the gathering</button>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n\n  42 |  await button('Talk to Grandma E').click();await button('Plan the gathering with Grandma').click();await button('Mara tells her story').click();await button('Preview the gathering').click();\n  43 |  await expect(page.locator('[data-world-activity=\"plan-preview\"]')).toBeVisible();await expect(page.locator('[data-stage-scene=\"gather-waiting\"]')).toBeVisible();await expect(page.getByRole('img',{name:'Pip, Sol and Grandma wait. Mara is still working, so nobody is telling her story.'})).toBeVisible();await expect(button('Use this plan')).toBeDisabled();await page.screenshot({path:info.outputPath('invalid-plan-waiting.png')});\n> 44 |  await button('Change the plan').click();await expect(button('Preview the gathering')).toBeFocused();await closeAll();\n     |                                                                                        ^\n  45 |  await playBakery(page);await button('Talk to Sol').click();await button('Let’s finish the ending together.').click();\n  46 |  const words='My repair kept the flour dry. Rina baked the bread she had promised.';\n  47 |  await page.getByLabel('Your ending for Sol’s story',{exact:true}).fill(words);await button('Try my ending').click();await expect(page.locator('.garden-reader')).toHaveCount(0);\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-interaction.spec.ts:44:88"
+          }
+        ]
+      }
+    ]
+  },
+  "references": [
+    {
+      "path": "evidence/group-8-integration-20260915/before-pointer-origin/GardenApp.tsx",
+      "sha256": "6e99fbb15f52f77bd12917aa941220e75df65df4785d60b07d2288354ac08de5"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/before-pointer-origin/ChapterPanels.tsx",
+      "sha256": "6eb93c2dd637918a1f153104c980e4253ccd04ef3f925d13cf6e049ecea4854b"
+    },
+    {
+      "path": "src/garden/focus.ts",
+      "sha256": "257caac77a8de22a2c35f7a9272d90fc13797c134eb81960849e449f952b8367"
+    },
+    {
+      "path": "src/garden/interaction.ts",
+      "sha256": "18b308d1b5c2236a12b3677704edda61b2bf37e9fe768c25f71c525baf0beff9"
+    },
+    {
+      "path": "src/garden/model.ts",
+      "sha256": "00d7acec80e08e58c7e5c774907ee17dc8975e9c69420b9947370c1fd2afe218"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/contracts-pointer-origin.log",
+      "sha256": "3144be77452c88d3618a01d1a60ea9322d8a9cf647ebcfc14251f064d4518d84"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/authored-pointer-origin.log",
+      "sha256": "25483957bcbd3e70fe1add0004c4b2d35bb352e3edc08679a69ea986bd860413"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/build-pointer-origin-corrected.log",
+      "sha256": "7a46491f6394252fc3b1e05c685865ac05df65b2df357c6af5ae1a48f2733e71"
+    }
+  ],
+  "pending": "Current cross-browser and Chromium results, native supplement, film and final169-row reconciliation are recorded separately. Earlier editions retain their actual run identities."
+}

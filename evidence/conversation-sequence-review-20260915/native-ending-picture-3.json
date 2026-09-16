@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-16T01:42:53.805Z",
+  "name": "native-ending-picture-3",
+  "snapshot": "- main:\n  - link \"Garden Adventure\":\n    - /url: /garden\n    - text: Evidence Quest\n    - generic: THE GARDEN ADVENTURE\n  - navigation \"Game tools\":\n    - button \"Backpack\":\n      - generic: Backpack\n    - button \"Help\":\n      - generic: Help\n    - button \"Pause\":\n      - generic: Pause\n  - status:\n    - strong: What’s happening\n    - paragraph: Loop shows the chapter you completed. Continue at your own pace.\n  - region \"The ending of Pip’s adventure\":\n    - generic: LOOP’S PICTURE SHOW\n    - heading \"The ending of Pip’s adventure\" [active] [level=2]\n    - paragraph: Picture 3 of 4 · Watch and read at your own pace. You can listen to any part.\n    - img \"Rina brings Sol a loaf of bread at his workshop to thank him.\"\n    - paragraph: Sol read his story with the ending he and Pip had prepared.\n    - paragraph: Your suggested ending, shared by Sol. The picture follows the event you chose; your words have not been checked against his account.\n    - paragraph: Later, Rina brought a loaf to my workshop to thank me for repairing the roof.\n    - button \"Previous picture\"\n    - button \"Next picture\"\n    - button \"Hear this part\"\n    - button \"Read or practise this part with help\"\n    - button \"Pause · Back to studio\"",
+  "dom": {
+    "active": "The ending of Pip’s adventure",
+    "flow": [],
+    "url": "http://localhost:4198/garden",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "visible": "Evidence Quest\nTHE GARDEN ADVENTURE\nSaved in this browser\nBackpack\nHelp\nPause\nWhat’s happening\n\nLoop shows the chapter you completed. Continue at your own pace.\n\nLOOP’S PICTURE SHOW\nThe ending of Pip’s adventure\n\nPicture 3 of 4 · Watch and read at your own pace. You can listen to any part.\n\nSol read his story with the ending he and Pip had prepared.\n\nYour suggested ending, shared by Sol. The picture follows the event you chose; your words have not been checked against his account.\n\nLater, Rina brought a loaf to my workshop to thank me for repairing the roof.\n\nPrevious picture\nNext picture\nHear this part\nRead or practise this part with help\nPause · Back to studio"
+  }
+}

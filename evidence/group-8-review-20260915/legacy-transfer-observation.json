@@ -1,0 +1,176 @@
+{
+  "at": "2026-09-15T18:51:56.665Z",
+  "status": "RECORDED_OPEN_LEGACY_DPR2_QUALIFICATION",
+  "scope": "Exact current original-four-room DPR2 transfer failures recorded while the final regression is still running. The source metrics are retained byte for byte before any later restoration of generated evidence. This is not a claim that the final report or Garden performance passed.",
+  "candidate": {
+    "garden": "assets/GardenApp-DMDJo1eK.js",
+    "css": [
+      "assets/GardenApp-Cowp-FIg.css"
+    ],
+    "entry": "assets/index-QL65HRqF.js"
+  },
+  "candidateReceipt": {
+    "path": "evidence/group-8-integration-20260915/candidate-final-controls.json",
+    "sha256": "7e098550344a329215bda4a776907489db411b38c990cf706cc77058891f4f86"
+  },
+  "test": {
+    "path": "browser-tests/production.spec.ts",
+    "sha256": "46da3087b3b0d6904253d0dd63f6b398f6b82c50f69691958886e6598eafd221"
+  },
+  "observed": [
+    {
+      "format": "webp",
+      "checkedAt": "2026-09-15T18:50:04.807Z",
+      "sourceAtObservation": "evidence/er13/performance/chromium-dpr2-webp.json",
+      "exactRetainedCopy": {
+        "path": "evidence/group-8-review-20260915/legacy-dpr2-webp-current.json",
+        "sha256": "4b89a38cad98a03f83c076ef0062a191de5d31c9a3561e2a985b13b40be8d771"
+      },
+      "cold": {
+        "encodedBytes": 4203826,
+        "limitBytes": 4194304,
+        "excessBytes": 9522
+      },
+      "roomFailures": [
+        {
+          "visit": 1,
+          "room": "SC.CY",
+          "artEncodedBytes": 3600426,
+          "limitBytes": 3145728,
+          "excessBytes": 454698
+        },
+        {
+          "visit": 6,
+          "room": "SC.ST",
+          "artEncodedBytes": 3438310,
+          "limitBytes": 3145728,
+          "excessBytes": 292582
+        }
+      ],
+      "usableMs": 985,
+      "usableLimitMs": 5000,
+      "distinctRequestedRgbaUpperSum": 61997288,
+      "distinctRequestedRgbaLimit": 201326592,
+      "canvasPoolPeaks": [
+        {
+          "room": "SC.ST",
+          "bytes": [
+            15467304
+          ]
+        },
+        {
+          "room": "SC.CY",
+          "bytes": [
+            27269824
+          ]
+        },
+        {
+          "room": "SC.ST",
+          "bytes": [
+            27269824
+          ]
+        },
+        {
+          "room": "SC.WK",
+          "bytes": [
+            27269824
+          ]
+        },
+        {
+          "room": "SC.MD",
+          "bytes": [
+            27269824
+          ]
+        },
+        {
+          "room": "SC.WK",
+          "bytes": [
+            27269824
+          ]
+        },
+        {
+          "room": "SC.ST",
+          "bytes": [
+            27269824
+          ]
+        }
+      ],
+      "canvasPoolLimit": 50331648,
+      "pageErrors": []
+    },
+    {
+      "format": "png",
+      "checkedAt": "2026-09-15T18:50:38.836Z",
+      "sourceAtObservation": "evidence/er13/performance/chromium-dpr2-png.json",
+      "exactRetainedCopy": {
+        "path": "evidence/group-8-review-20260915/legacy-dpr2-png-current.json",
+        "sha256": "bdeb38a1b722bc98591f2dee0c988eb9e1f35d12fd5456d44b75af1abfb24055"
+      },
+      "cold": {
+        "encodedBytes": 5440991,
+        "limitBytes": 5242880,
+        "excessBytes": 198111
+      },
+      "roomFailures": [
+        {
+          "visit": 1,
+          "room": "SC.CY",
+          "artEncodedBytes": 5325020,
+          "limitBytes": 4456448,
+          "excessBytes": 868572
+        }
+      ],
+      "usableMs": 1523,
+      "usableLimitMs": 5000,
+      "distinctRequestedRgbaUpperSum": 60456168,
+      "distinctRequestedRgbaLimit": 201326592,
+      "canvasPoolPeaks": [
+        {
+          "room": "SC.ST",
+          "bytes": [
+            15467304
+          ]
+        },
+        {
+          "room": "SC.CY",
+          "bytes": [
+            25655104
+          ]
+        },
+        {
+          "room": "SC.ST",
+          "bytes": [
+            25655104
+          ]
+        },
+        {
+          "room": "SC.WK",
+          "bytes": [
+            25655104
+          ]
+        },
+        {
+          "room": "SC.MD",
+          "bytes": [
+            25655104
+          ]
+        },
+        {
+          "room": "SC.WK",
+          "bytes": [
+            25655104
+          ]
+        },
+        {
+          "room": "SC.ST",
+          "bytes": [
+            25655104
+          ]
+        }
+      ],
+      "canvasPoolLimit": 50331648,
+      "pageErrors": []
+    }
+  ],
+  "limits": "Existing format allocations, image quality and resource limits are unchanged. Final complete browser reports and their actual assertion errors must be reconciled separately."
+}

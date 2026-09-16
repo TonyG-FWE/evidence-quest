@@ -1,0 +1,148 @@
+{
+  "at": "2026-09-16T06:22:56.357Z",
+  "candidate": "final.json",
+  "candidateSha256": "bfd9b70614c26c3e6f01989c8e6d95c5ed136dd5115366fba65ed683368a738f",
+  "status": "PASS",
+  "rows": [
+    {
+      "port": 4192,
+      "health": {
+        "status": "ok",
+        "mode": "authored"
+      },
+      "entryMatches": true,
+      "assets": [
+        {
+          "path": "assets/serialized-AKKBhD_x.js",
+          "status": 200,
+          "sha256": "0cc190023b6a43708287682ef43eef52866a533144bca37c153373ee915ab6a4",
+          "matches": true
+        },
+        {
+          "path": "assets/index-CUWL0TQ9.js",
+          "status": 200,
+          "sha256": "853f6119f76ca4e48dc7e5e28ed25c35fc67ee47ea38d0d33e8a0a28a8a7b57e",
+          "matches": true
+        },
+        {
+          "path": "assets/index-D7U2vX1x.css",
+          "status": 200,
+          "sha256": "e57e791c5fdcecf3f5546f1bf865fe6b4277f670cc02656b51feb159a1f5601d",
+          "matches": true
+        },
+        {
+          "path": "assets/GardenApp-D998TaqI.js",
+          "status": 200,
+          "sha256": "249811c58b0e079dc16c377c223cdab381de9a52c78c468e7e1fa0d5a7af1a9e",
+          "matches": true
+        },
+        {
+          "path": "assets/GardenApp-No73V5Xs.css",
+          "status": 200,
+          "sha256": "60b9cb39e119979f2ea793092d38e431a283de2901be24f0d019080c9928ee0a",
+          "matches": true
+        },
+        {
+          "path": "assets/App-Bn99NIWB.js",
+          "status": 200,
+          "sha256": "85c656556c1589f566917e5737c143d33fff846b2d9f8bd389625662c859c6d5",
+          "matches": true
+        },
+        {
+          "path": "assets/App-CvfCOyJg.css",
+          "status": 200,
+          "sha256": "0e968f90c15700b38c0a0bbc3379546041046e29c2db3ba1c048a009b4be488c",
+          "matches": true
+        },
+        {
+          "path": "art/sparkfest/story-studio-original.png",
+          "status": 200,
+          "sha256": "5078ba1105350e500cdad1939cac951e456d4e58b9edfe77c52ca96f1ff526ba",
+          "matches": true
+        },
+        {
+          "path": "art/sparkfest/inventions-original.png",
+          "status": 200,
+          "sha256": "4bd15addcb0e6d9b3888683762faf664770d79ccc501b830c9170e946a1e5b96",
+          "matches": true
+        },
+        {
+          "path": "art/er13/loop-awake-v1.png",
+          "status": 200,
+          "sha256": "7aff93a39780987a546b2fe32ae44681e45e3c5ab7b1f9256113a032eda4ee0a",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "port": 4200,
+      "health": {
+        "status": "ok",
+        "mode": "authored"
+      },
+      "entryMatches": true,
+      "assets": [
+        {
+          "path": "assets/serialized-AKKBhD_x.js",
+          "status": 200,
+          "sha256": "0cc190023b6a43708287682ef43eef52866a533144bca37c153373ee915ab6a4",
+          "matches": true
+        },
+        {
+          "path": "assets/index-CUWL0TQ9.js",
+          "status": 200,
+          "sha256": "853f6119f76ca4e48dc7e5e28ed25c35fc67ee47ea38d0d33e8a0a28a8a7b57e",
+          "matches": true
+        },
+        {
+          "path": "assets/index-D7U2vX1x.css",
+          "status": 200,
+          "sha256": "e57e791c5fdcecf3f5546f1bf865fe6b4277f670cc02656b51feb159a1f5601d",
+          "matches": true
+        },
+        {
+          "path": "assets/GardenApp-D998TaqI.js",
+          "status": 200,
+          "sha256": "249811c58b0e079dc16c377c223cdab381de9a52c78c468e7e1fa0d5a7af1a9e",
+          "matches": true
+        },
+        {
+          "path": "assets/GardenApp-No73V5Xs.css",
+          "status": 200,
+          "sha256": "60b9cb39e119979f2ea793092d38e431a283de2901be24f0d019080c9928ee0a",
+          "matches": true
+        },
+        {
+          "path": "assets/App-Bn99NIWB.js",
+          "status": 200,
+          "sha256": "85c656556c1589f566917e5737c143d33fff846b2d9f8bd389625662c859c6d5",
+          "matches": true
+        },
+        {
+          "path": "assets/App-CvfCOyJg.css",
+          "status": 200,
+          "sha256": "0e968f90c15700b38c0a0bbc3379546041046e29c2db3ba1c048a009b4be488c",
+          "matches": true
+        },
+        {
+          "path": "art/sparkfest/story-studio-original.png",
+          "status": 200,
+          "sha256": "5078ba1105350e500cdad1939cac951e456d4e58b9edfe77c52ca96f1ff526ba",
+          "matches": true
+        },
+        {
+          "path": "art/sparkfest/inventions-original.png",
+          "status": 200,
+          "sha256": "4bd15addcb0e6d9b3888683762faf664770d79ccc501b830c9170e946a1e5b96",
+          "matches": true
+        },
+        {
+          "path": "art/er13/loop-awake-v1.png",
+          "status": 200,
+          "sha256": "7aff93a39780987a546b2fe32ae44681e45e3c5ab7b1f9256113a032eda4ee0a",
+          "matches": true
+        }
+      ]
+    }
+  ]
+}

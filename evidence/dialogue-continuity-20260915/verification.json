@@ -1,0 +1,932 @@
+{
+  "at": "2026-09-15T23:29:54.655Z",
+  "status": "PASS_BOUNDED_DIALOGUE_CONTINUITY",
+  "candidate": {
+    "path": "evidence/dialogue-continuity-20260915/candidate-compact.json",
+    "sha256": "efdc1a4f5b84e700df052e91cc983a9b85b10cfe232074a52c3beb3c013f1101",
+    "garden": "assets/GardenApp-C_gM6ax5.js",
+    "css": [
+      "assets/GardenApp-8QVIon31.css"
+    ],
+    "entry": "assets/index-B9c9DSp7.js"
+  },
+  "browser": {
+    "counts": {
+      "chromium": 32,
+      "firefox": 3,
+      "webkit": 3
+    },
+    "total": 38,
+    "endings": 9,
+    "cases": [
+      {
+        "project": "chromium",
+        "file": "garden-continuity.spec.ts",
+        "title": "Continuity: passengers first, attributed dialogue in order, resume, accessible choices and read-only source returns",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-compact.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-continuity.spec.ts",
+        "title": "Continuity: Grandma first, report without a page, spontaneous later agreement and nearby rereading",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-compact.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-bakery.spec.ts",
+        "title": "Bakery: connected repair, wrong placement, compact recovery, baking, accompanied thanks and exact draft excerpt",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-corrected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-chapter.spec.ts",
+        "title": "Complete Garden chapter: later Mara tells; Sol prepared",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-corrected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-chapter.spec.ts",
+        "title": "Complete Garden chapter: later Mara tells; Sol developed",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-chapter.spec.ts",
+        "title": "Complete Garden chapter: later Mara tells; Sol draft",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-chapter.spec.ts",
+        "title": "Complete Garden chapter: later Pip reads; Sol prepared",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-corrected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-chapter.spec.ts",
+        "title": "Complete Garden chapter: later Pip reads; Sol developed",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-chapter.spec.ts",
+        "title": "Complete Garden chapter: later Pip reads; Sol draft",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-chapter.spec.ts",
+        "title": "Complete Garden chapter: usual time; Pip delivers Grandma’s story; Sol prepared",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-corrected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-chapter.spec.ts",
+        "title": "Complete Garden chapter: usual time; Pip delivers Grandma’s story; Sol developed",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-chapter.spec.ts",
+        "title": "Complete Garden chapter: usual time; Pip delivers Grandma’s story; Sol draft",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-chapter.spec.ts",
+        "title": "Loose bridge: Pip attempts it, visible collapse, safe return and rebuild",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-chapter.spec.ts",
+        "title": "Temporary reading practice starts with mic off and unavailable feedback is honest",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-finale.spec.ts",
+        "title": "Finale: authentic prior-save fixture, actual memory placement, lantern source return, compact show and replay recovery",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-gathering.spec.ts",
+        "title": "Gathering: authentic prior-save fixture, arrival recovery, compact world telling and exact chosen contribution",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-interaction.spec.ts",
+        "title": "G2 ordinary keyboard route: nested letter, Help and backpack preserve focus and return context",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-interaction.spec.ts",
+        "title": "G2 ordinary world route: invalid plan, exact rehearsal, nested help and prepared return",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-literacy.spec.ts",
+        "title": "Synthetic microphone device: local capture, replay, explicit feedback, discard and leave cleanup",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-literacy.spec.ts",
+        "title": "Late synthetic meaning feedback cannot replace an edited answer; compact reading controls remain reachable",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-mara.spec.ts",
+        "title": "G4 ordinary early telling: actual duty, no source shortcut, compact repair, pause/reload and same present-day facts",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-corrected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-river.spec.ts",
+        "title": "G3 ordinary controls: named placement, actual far-held collapse, reload, recovery and first garden context",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-corrected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-river.spec.ts",
+        "title": "G3 ordinary boat controls: loaded cargo, wrong dock, pause/reload, player steering and explicit receipt",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-word-jobs.spec.ts",
+        "title": "Actual draft word view: local unavailable help, synthetic spelling suggestion, selected-occurrence edit and undo",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-corrected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden.spec.ts",
+        "title": "carried-seed route: real placement, reading, page/report, return and legacy-save isolation",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden.spec.ts",
+        "title": "seed first: separate boat trip, fixed bridge pieces, real drag, wide gap and full report",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden.spec.ts",
+        "title": "version-1 upgrade archives the exact save and keeps the bridge fixed during a boat trip",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden.spec.ts",
+        "title": "keyboard construction, reading focus, largest text and compact layouts",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden.spec.ts",
+        "title": "damaged-current recovery preserves previous save; archive preserves original state",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden.spec.ts",
+        "title": "two windows reject stale saves and archive, then load the actual latest progress",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden.spec.ts",
+        "title": "WebGL context-loss recovery and measured rendering retain actual save",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-connected.json"
+      },
+      {
+        "project": "chromium",
+        "file": "garden-compact-reader.spec.ts",
+        "title": "Compact dialogue: full-sized story sentence, useful passage space, word help and both choices",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-compact.json"
+      },
+      {
+        "project": "firefox",
+        "file": "garden-compact-reader.spec.ts",
+        "title": "Compact dialogue: full-sized story sentence, useful passage space, word help and both choices",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-crossbrowser.json"
+      },
+      {
+        "project": "webkit",
+        "file": "garden-compact-reader.spec.ts",
+        "title": "Compact dialogue: full-sized story sentence, useful passage space, word help and both choices",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-crossbrowser.json"
+      },
+      {
+        "project": "firefox",
+        "file": "garden-continuity.spec.ts",
+        "title": "Continuity: passengers first, attributed dialogue in order, resume, accessible choices and read-only source returns",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-crossbrowser.json"
+      },
+      {
+        "project": "firefox",
+        "file": "garden-continuity.spec.ts",
+        "title": "Continuity: Grandma first, report without a page, spontaneous later agreement and nearby rereading",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-crossbrowser.json"
+      },
+      {
+        "project": "webkit",
+        "file": "garden-continuity.spec.ts",
+        "title": "Continuity: passengers first, attributed dialogue in order, resume, accessible choices and read-only source returns",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-crossbrowser.json"
+      },
+      {
+        "project": "webkit",
+        "file": "garden-continuity.spec.ts",
+        "title": "Continuity: Grandma first, report without a page, spontaneous later agreement and nearby rereading",
+        "status": "passed",
+        "expected": "expected",
+        "report": "evidence/dialogue-continuity-20260915/browser-crossbrowser.json"
+      }
+    ],
+    "runs": [
+      {
+        "path": "evidence/dialogue-continuity-20260915/browser-continuity-first.json",
+        "sha256": "46080f8eda12b3f21022697cf3811919b3fccba7621c47c144ab14a576167ba8",
+        "stats": {
+          "startTime": "2026-09-15T22:44:07.586Z",
+          "duration": 46983.880999999994,
+          "expected": 2,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        },
+        "runPath": "evidence/dialogue-continuity-20260915/browser-continuity-first-run.json",
+        "runSha256": "347d814a4bc0540f7d5d88368390f4fd17fc48e3286a93307abb99f3a55d64f8",
+        "exitCode": 0
+      },
+      {
+        "path": "evidence/dialogue-continuity-20260915/browser-connected.json",
+        "sha256": "2fadd6b5520962551b97c097ce4a564ede1ffa294de7bcc83cecd44c7e6021da",
+        "stats": {
+          "startTime": "2026-09-15T22:45:44.624Z",
+          "duration": 1684307.682,
+          "expected": 24,
+          "skipped": 0,
+          "unexpected": 5,
+          "flaky": 0
+        },
+        "runPath": "evidence/dialogue-continuity-20260915/browser-connected-run.json",
+        "runSha256": "37ce693997a8e730f79e4f4eea6214dae22458f5d24d632a52b493571f4bc285",
+        "exitCode": 1
+      },
+      {
+        "path": "evidence/dialogue-continuity-20260915/browser-compact.json",
+        "sha256": "bab294f705ce2c539786c42941735aa1914c252b3657ef4ee11f951852703cfc",
+        "stats": {
+          "startTime": "2026-09-15T23:14:09.182Z",
+          "duration": 56052.522,
+          "expected": 3,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        },
+        "runPath": "evidence/dialogue-continuity-20260915/browser-compact-run.json",
+        "runSha256": "63a306ebb2e22c65389c4f42ab47dc4d897659855fb497f37720ec441ce2984c",
+        "exitCode": 0
+      },
+      {
+        "path": "evidence/dialogue-continuity-20260915/browser-corrected.json",
+        "sha256": "c1c579490921c465625cd7ac7113f10fc5cd95b585b103a43af05265cf405964",
+        "stats": {
+          "startTime": "2026-09-15T23:15:55.699Z",
+          "duration": 520244.35699999996,
+          "expected": 7,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        },
+        "runPath": "evidence/dialogue-continuity-20260915/browser-corrected-run.json",
+        "runSha256": "357cc44dc206ba89de7710bd4b9da59f601a03f0cf4dbaaf15db97691fa1a068",
+        "exitCode": 0
+      },
+      {
+        "path": "evidence/dialogue-continuity-20260915/browser-crossbrowser.json",
+        "sha256": "ab8b9c7779452657fc8cd7858d484c7c89521104d736a31c7a6c34c61a62338c",
+        "stats": {
+          "startTime": "2026-09-15T23:24:38.128Z",
+          "duration": 122804.299,
+          "expected": 6,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        },
+        "runPath": "evidence/dialogue-continuity-20260915/browser-crossbrowser-run.json",
+        "runSha256": "4d3ab7de28fefce78a456268c81619a6e3c5bc1f396cf66facb476a444d9d140",
+        "exitCode": 0
+      }
+    ],
+    "note": "Latest passing identity per case across the dated runs. Earlier fixture failures and the compact-layout visual rejection remain preserved. The final compact candidate has focused changed-behavior and failed-case reruns; not every browser case reran on it."
+  },
+  "commands": {
+    "install": "npm ci: success; reviewed package and lockfile hashes unchanged",
+    "build": "npm run build: success including content/type/schema/server/client steps; initial sandbox denial retained",
+    "contracts": "99/99",
+    "authored": "23/23; zero provider calls",
+    "initialFailures": "Four initial contract fixture assumptions corrected; old browser fixture expectations and return-control setup corrected. No game assertions or physical outcomes removed."
+  },
+  "preservation": {
+    "protectedInputs": 460,
+    "originalArtwork": 52,
+    "sourceWordsAndIds": "unchanged",
+    "provider": {
+      "used": 1,
+      "cap": 75,
+      "status": "HALTED",
+      "files": [
+        {
+          "path": "evidence/er13/live-evaluation/attempts.jsonl",
+          "sha256": "17a4a6a57b5e1d54192320717e09f2c631a3eb052d1c1e62bc74c866bc877653",
+          "historical": "evidence/full-garden-20260914/regression-before/evidence/er13/live-evaluation/attempts.jsonl"
+        },
+        {
+          "path": "evidence/er13/live-evaluation/attempt-001.json",
+          "sha256": "b2b93d857488a3b57e4d053db4b18b7959ceda0ee630b2588c117b37075225b8",
+          "historical": "evidence/full-garden-20260914/regression-before/evidence/er13/live-evaluation/attempt-001.json"
+        }
+      ]
+    },
+    "userSaves": "4192 and4200 preserved; no reset"
+  },
+  "independentReview": {
+    "path": "evidence/dialogue-continuity-review-20260915/final-review.json",
+    "sha256": "361c326f11c880081d5b1235d124069cde1e5982f0526438eff525abf1084865",
+    "review": {
+      "schemaVersion": 1,
+      "recordedAt": "2026-09-15T23:29:18.091Z",
+      "verdict": "PASS",
+      "scope": "Independent review of the local dialogue continuity correction within the connected Groups 1-8 implementation. This is not production, live-provider, learner or performance qualification.",
+      "candidate": {
+        "garden": "assets/GardenApp-C_gM6ax5.js",
+        "css": [
+          "assets/GardenApp-8QVIon31.css"
+        ],
+        "entry": "assets/index-B9c9DSp7.js"
+      },
+      "candidateReceipt": "evidence/dialogue-continuity-20260915/candidate-compact.json",
+      "candidateReceiptSha256": "efdc1a4f5b84e700df052e91cc983a9b85b10cfe232074a52c3beb3c013f1101",
+      "gardenBundleSha256": "78073704ad6085483e284f83223fcbc90284864f127443cbe848e5cadbca859d",
+      "findings": [
+        {
+          "finding": "First Mara contact and premature choices",
+          "status": "RESOLVED",
+          "evidence": [
+            "native-complete-first-candidate.json",
+            "native-final-fresh-corrections.json"
+          ],
+          "result": "First story action is watching Mara help passengers. Untimed conversation parts establish work hours and passenger obligations before replies."
+        },
+        {
+          "finding": "Unclear speakers and unsupported bridge promise",
+          "status": "RESOLVED",
+          "evidence": [
+            "native-complete-first-candidate.json",
+            "evidence/dialogue-continuity-20260915/browser-compact.json"
+          ],
+          "result": "Named speakers remain separate from original source tokens. The bridge repair does not claim to change Mara’s work hours."
+        },
+        {
+          "finding": "Page possession, reporting, telling and rereading conflated",
+          "status": "RESOLVED",
+          "evidence": [
+            "native-complete-first-candidate.json",
+            "native-final-build.json"
+          ],
+          "result": "Giving Mara’s page, reporting her circumstances and performing her story are distinct. Reopening an earlier account is read only, including beside its author."
+        },
+        {
+          "finding": "Bird repair and later story events shown too early",
+          "status": "RESOLVED",
+          "evidence": [
+            "native-complete-first-candidate.json",
+            "evidence/dialogue-continuity-20260915/browser-corrected.json"
+          ],
+          "result": "The player hears the boy’s situation, receives consent, fetches tape and guides Mara through repair. Pip remains in the present garden."
+        },
+        {
+          "finding": "Rina welcome line repeated",
+          "status": "RESOLVED",
+          "evidence": [
+            "native-final-fresh-corrections.json",
+            "final-build-rina-single-introduction.png"
+          ],
+          "result": "Fresh final-build native contact contains one bread promise and no repeated footer notice; the spare tile is introduced before the offer."
+        },
+        {
+          "finding": "Largest-text small-screen passage crowded out by controls",
+          "status": "RESOLVED",
+          "evidence": [
+            "evidence/dialogue-continuity-20260915/browser-compact.json",
+            "evidence/dialogue-continuity-20260915/browser-crossbrowser.json"
+          ],
+          "result": "At 320x568 the Chromium source viewport is199.96875px, up from about70px; actual story text stays28px with roomier lines. Full sentence, word-help return and both replies were checked visually."
+        },
+        {
+          "finding": "Leaving unfinished Mara dialogue could hide bridge travel",
+          "status": "RESOLVED",
+          "evidence": [
+            "native-final-fresh-corrections.json",
+            "final-build-free-exploration.png"
+          ],
+          "result": "Fresh final-build play can leave Mara, build the bridge and visit the bakery without completing her conversation."
+        }
+      ],
+      "browserEvidence": {
+        "firstCandidate": {
+          "report": "evidence/dialogue-continuity-20260915/browser-connected.json",
+          "passed": 24,
+          "failed": 5,
+          "note": "Initial fixture failures are preserved. They were three final library-return toggles, an old flower-text expectation and a setup missing the new Sol conversation."
+        },
+        "finalCandidate": [
+          {
+            "report": "evidence/dialogue-continuity-20260915/browser-compact.json",
+            "startTime": "2026-09-15T23:14:09.182Z",
+            "duration": 56052.522,
+            "expected": 3,
+            "skipped": 0,
+            "unexpected": 0,
+            "flaky": 0
+          },
+          {
+            "report": "evidence/dialogue-continuity-20260915/browser-corrected.json",
+            "startTime": "2026-09-15T23:15:55.699Z",
+            "duration": 520244.35699999996,
+            "expected": 7,
+            "skipped": 0,
+            "unexpected": 0,
+            "flaky": 0
+          },
+          {
+            "report": "evidence/dialogue-continuity-20260915/browser-crossbrowser.json",
+            "startTime": "2026-09-15T23:24:38.128Z",
+            "duration": 122804.299,
+            "expected": 6,
+            "skipped": 0,
+            "unexpected": 0,
+            "flaky": 0
+          }
+        ],
+        "closedInitialFailures": [
+          {
+            "title": "Complete Garden chapter: later Mara tells; Sol prepared",
+            "project": "chromium",
+            "initial": "failed",
+            "corrected": "passed"
+          },
+          {
+            "title": "Complete Garden chapter: later Pip reads; Sol prepared",
+            "project": "chromium",
+            "initial": "failed",
+            "corrected": "passed"
+          },
+          {
+            "title": "Complete Garden chapter: usual time; Pip delivers Grandma’s story; Sol prepared",
+            "project": "chromium",
+            "initial": "failed",
+            "corrected": "passed"
+          },
+          {
+            "title": "G3 ordinary controls: named placement, actual far-held collapse, reload, recovery and first garden context",
+            "project": "chromium",
+            "initial": "failed",
+            "corrected": "passed"
+          },
+          {
+            "title": "Actual draft word view: local unavailable help, synthetic spelling suggestion, selected-occurrence edit and undo",
+            "project": "chromium",
+            "initial": "failed",
+            "corrected": "passed"
+          }
+        ],
+        "endingOutcomes": [
+          {
+            "title": "Complete Garden chapter: later Mara tells; Sol prepared",
+            "status": "passed",
+            "evidence": "evidence/dialogue-continuity-20260915/browser-corrected.json",
+            "candidate": "assets/GardenApp-C_gM6ax5.js"
+          },
+          {
+            "title": "Complete Garden chapter: later Mara tells; Sol developed",
+            "status": "passed",
+            "evidence": "evidence/dialogue-continuity-20260915/browser-connected.json",
+            "candidate": "assets/GardenApp-CH-hMmUf.js"
+          },
+          {
+            "title": "Complete Garden chapter: later Mara tells; Sol draft",
+            "status": "passed",
+            "evidence": "evidence/dialogue-continuity-20260915/browser-connected.json",
+            "candidate": "assets/GardenApp-CH-hMmUf.js"
+          },
+          {
+            "title": "Complete Garden chapter: later Pip reads; Sol prepared",
+            "status": "passed",
+            "evidence": "evidence/dialogue-continuity-20260915/browser-corrected.json",
+            "candidate": "assets/GardenApp-C_gM6ax5.js"
+          },
+          {
+            "title": "Complete Garden chapter: later Pip reads; Sol developed",
+            "status": "passed",
+            "evidence": "evidence/dialogue-continuity-20260915/browser-connected.json",
+            "candidate": "assets/GardenApp-CH-hMmUf.js"
+          },
+          {
+            "title": "Complete Garden chapter: later Pip reads; Sol draft",
+            "status": "passed",
+            "evidence": "evidence/dialogue-continuity-20260915/browser-connected.json",
+            "candidate": "assets/GardenApp-CH-hMmUf.js"
+          },
+          {
+            "title": "Complete Garden chapter: usual time; Pip delivers Grandma’s story; Sol prepared",
+            "status": "passed",
+            "evidence": "evidence/dialogue-continuity-20260915/browser-corrected.json",
+            "candidate": "assets/GardenApp-C_gM6ax5.js"
+          },
+          {
+            "title": "Complete Garden chapter: usual time; Pip delivers Grandma’s story; Sol developed",
+            "status": "passed",
+            "evidence": "evidence/dialogue-continuity-20260915/browser-connected.json",
+            "candidate": "assets/GardenApp-CH-hMmUf.js"
+          },
+          {
+            "title": "Complete Garden chapter: usual time; Pip delivers Grandma’s story; Sol draft",
+            "status": "passed",
+            "evidence": "evidence/dialogue-continuity-20260915/browser-connected.json",
+            "candidate": "assets/GardenApp-CH-hMmUf.js"
+          }
+        ],
+        "coverageLimit": "Six developed/draft ending routes passed on CH; all three prepared routes passed again on the final candidate. The final delta changes three UI/presentation files only; story/source/domain/outcome logic is byte-identical. Firefox and WebKit evidence covers the three focused continuity/compact cases each, not a newly rerun complete ending matrix."
+      },
+      "nativeEvidence": {
+        "firstCandidateCompletePlaythrough": "native-complete-first-candidate.json",
+        "finalReloadAndRecordedSources": "native-final-build.json",
+        "finalFreshCorrections": "native-final-fresh-corrections.json",
+        "ownViewport": {
+          "width": 1422,
+          "height": 800
+        },
+        "compactScreenshotReview": {
+          "source": "evidence/dialogue-continuity-20260915/browser-compact-artifacts/garden-compact-reader-Comp-2561c--word-help-and-both-choices-chromium/",
+          "files": [
+            "compact-whole-pip-sentence.png",
+            "compact-mara-reading-after-word-help.png",
+            "compact-visible-replies-and-reading.png"
+          ],
+          "measurement": {
+            "reading": {
+              "x": 17,
+              "y": 201.390625,
+              "width": 287,
+              "height": 199.96875
+            },
+            "storyFont": "28px",
+            "note": "Ordinary fresh play, actual28px roomier story text. No state injection or provider request."
+          },
+          "note": "Independently inspected implementation task screenshots and actual ordinary-browser measurements; this was not a native-tab resize."
+        }
+      },
+      "engineeringEvidence": {
+        "contractChecks": {
+          "passed": 99,
+          "report": "evidence/dialogue-continuity-20260915/contracts-corrected.log",
+          "note": "Story/domain code unchanged in final UI delta."
+        },
+        "authoredChecks": {
+          "passed": 23,
+          "apiCalls": 0,
+          "report": "evidence/dialogue-continuity-20260915/authored.log"
+        },
+        "finalBuild": {
+          "report": "evidence/dialogue-continuity-20260915/build-compact.log",
+          "includes": [
+            "validate:content",
+            "check",
+            "build:server",
+            "vite build"
+          ]
+        },
+        "integrity": "integrity-final-candidate.json",
+        "candidateHashesMatched": 175,
+        "protectedInputHashesMatched": 460,
+        "originalArtHashesMatched": 52,
+        "providerLedgerFilesMatched": 2,
+        "runtimeDeltaFromFirst": [
+          "src/garden/ConversationControls.tsx",
+          "src/garden/garden.css",
+          "src/garden/GardenApp.tsx"
+        ]
+      },
+      "remainingQualifications": [
+        "Prior Group8 qualification exclusions remain in force; earlier final-art/runtime-performance gaps are not waived.",
+        "No live AI, learner/participant study, real microphone/acoustic validation, device certification, deployment or public release was performed by this review.",
+        "TASK11.19 remains HALTED at1/75 with unchanged ledger; no provider attempt or reset was made."
+      ],
+      "delivery": {
+        "url": "http://127.0.0.1:4200/garden",
+        "evidence": "evidence/dialogue-continuity-20260915/delivered.json",
+        "originalUrl": "http://127.0.0.1:4192/garden",
+        "savedProgress": "Both existing user-save origins untouched."
+      },
+      "cleanup": {
+        "reviewTab": "Closed",
+        "ownedQaListener": {
+          "port": 4203,
+          "execSession": 71581,
+          "action": "Ctrl+C",
+          "processExitCode": 1,
+          "status": "Stopped"
+        },
+        "preservedListeners": [
+          4192,
+          4200
+        ],
+        "gitMutationsByReviewer": 0
+      },
+      "limitations": "The old sealed Group8 video remains evidence for its earlier build, not for this corrected candidate. Initial failures and screenshots remain retained."
+    }
+  },
+  "changed": [
+    {
+      "path": "src/garden/bakery.ts",
+      "before": "8125a9d827407e145194f0a57a56d8bb1de9b557cee49f62c85884136f49d4f4",
+      "after": "3d3d9f0c03b41b1b49f579ed72debfa56c0d5cc5e19fb035c68a022fc2c8aec0",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/src/garden/bakery.ts"
+    },
+    {
+      "path": "src/garden/chapter.ts",
+      "before": "545dd119c066d38535aee6764d378ce0730fd67bca2e80a675ac3181037b62bd",
+      "after": "9258c27091f64a5f947b5a449c86e59f4ad8a81c00dac70b9ac2580df6d03acb",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/src/garden/chapter.ts"
+    },
+    {
+      "path": "src/garden/ChapterPanels.tsx",
+      "before": "29f883bf061a29ae9e2ef9650370e7917060c33438656ba6debc86a7c65b5181",
+      "after": "15c07dca5ac44630c06a18587dc4b9c462f6d67de1fd898047b6feeaa5d456a1",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/src/garden/ChapterPanels.tsx"
+    },
+    {
+      "path": "src/garden/FeedbackActivity.tsx",
+      "before": "0efdefbb683aa99311dd701660322abcdbe7e9ffc56057f6d29df134db5714b4",
+      "after": "b2c60f3b03276c3b48fa50a9ca65f0e962b69c86c3b95366475cc9a21ab84ce1",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/src/garden/FeedbackActivity.tsx"
+    },
+    {
+      "path": "src/garden/garden.css",
+      "before": "5b4f201d7a8d3c86d22eab53a2b5a7b3782f320c9ac49b8a3e0af135c76212db",
+      "after": "8190a005f92d5595dbca34471821a22aeee42df8cd822e7b41f2f8089b30fdff",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/src/garden/garden.css"
+    },
+    {
+      "path": "src/garden/GardenApp.tsx",
+      "before": "7a0f15ebc9ae3331e78cf49b970c1100df207c72b4a045a7562c550f310456d9",
+      "after": "a95860f8e5d725846be1ffcc2a6eaf2071f2e9f88a322b2d5d23d7621dc6f14b",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/src/garden/GardenApp.tsx"
+    },
+    {
+      "path": "src/garden/model.ts",
+      "before": "00d7acec80e08e58c7e5c774907ee17dc8975e9c69420b9947370c1fd2afe218",
+      "after": "eff5d9f69c441d2080af659a9cf131cc18132efa5c8c45afc2425214314a1ad4",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/src/garden/model.ts"
+    },
+    {
+      "path": "src/garden/persistence.ts",
+      "before": "4dc2be2cc186191c98bf2e70bba6485a7ed0406a63edadcee248d70bb3674798",
+      "after": "933bed2c5df47d3abdb353b1c1985fd01854f79c5dbc541f3993369786a0fe99",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/src/garden/persistence.ts"
+    },
+    {
+      "path": "browser-tests/garden-actions.ts",
+      "before": "3789b38426fa3c4cf5b2619d4a2f8e9b6c4e706323c5c5671afde4fada6f2b86",
+      "after": "b4fc871a42a89765445dcfb2cf4950d10f61683475e4239a87422721e62120c5",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/browser-tests/garden-actions.ts"
+    },
+    {
+      "path": "browser-tests/garden-bakery.spec.ts",
+      "before": "31f26c73b8bbe10569258253cb221d402ae5088a2c50345ac65b3fc95038603b",
+      "after": "5097051d5ebefc8ce41c9baa218c39f01aed02ff7eff8c373bb5168fae3b6907",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/browser-tests/garden-bakery.spec.ts"
+    },
+    {
+      "path": "browser-tests/garden-chapter.spec.ts",
+      "before": "37a2e637cd32f8f0e9a744f04656430237edb3c0c1f8b0c5290975ca4761f143",
+      "after": "25d337a601285ee0bc9adcc12bc600b94d472c2a1fc6c475fdff3d1fa2d7be88",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/browser-tests/garden-chapter.spec.ts"
+    },
+    {
+      "path": "browser-tests/garden-interaction.spec.ts",
+      "before": "57f84226c00c1712cfef85171c0a4ab2697e6886e797081c648fb2bc6763c83b",
+      "after": "1bc6bcf640cbe8e245299dfde17f6a1ee75444abcf6a70c9c6ef38e9c0d461ec",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/browser-tests/garden-interaction.spec.ts"
+    },
+    {
+      "path": "browser-tests/garden-literacy.spec.ts",
+      "before": "01d8f77e01c4a75aeaff92979154398347e4fc251952730b5f4dcdc167635d10",
+      "after": "2207002860e45a713468def8dad88c2a03622041279ae6df1a62866dc1c15947",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/browser-tests/garden-literacy.spec.ts"
+    },
+    {
+      "path": "browser-tests/garden-mara.spec.ts",
+      "before": "47b518fe43fd4c9bcae431fabd6f46dd7ff9f0bd24af1977e4d921ffadd531a6",
+      "after": "494b725c0e6381537b0f56dc44804b2e04dd8869f044808793e58481046499c6",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/browser-tests/garden-mara.spec.ts"
+    },
+    {
+      "path": "browser-tests/garden-measurements.spec.ts",
+      "before": "849863c12c58ebc7c453bdb07f8135c44651cbffecc15e3e37160d489247b937",
+      "after": "78d0b30db88b9b6d2c0cd1537ab0a660370152c2243b8dbcdd3f3baf74d6cfaf",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/browser-tests/garden-measurements.spec.ts"
+    },
+    {
+      "path": "browser-tests/garden-river.spec.ts",
+      "before": "ac8a2fe2665065dd1739d09bce48c4b33c9a53e90534d91daf5183ff2f7498fc",
+      "after": "8799571f7a9e21eb6bd8a1a2b10ad13e5022017951064bd856c36a07502d4e87",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/browser-tests/garden-river.spec.ts"
+    },
+    {
+      "path": "browser-tests/garden-word-jobs.spec.ts",
+      "before": "c40aaff4844dae2f67865289bc4bff18e9725051363057d74522d118f274943a",
+      "after": "11df72d80bec838b044e5228534a2bceaafbef0ba8d98514ab1d11082d71ef25",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/browser-tests/garden-word-jobs.spec.ts"
+    },
+    {
+      "path": "browser-tests/garden.spec.ts",
+      "before": "6516d56c60161cb4edb613b0ccdb7f84c7772ceabee36248c4547c423adbaa1a",
+      "after": "c8c72921809dbff3cd83d42a2cbc9aa936e9d4c55ae2d8058f5d42a34a5e8fad",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/browser-tests/garden.spec.ts"
+    },
+    {
+      "path": "checks/garden-bakery.test.ts",
+      "before": "adb0d2a8f9f65b1d640e97fcb67ec9f3b5949d5b0d4e8ca88f940b42158224d9",
+      "after": "cc38bf0f455d9a239c545ee77ea0e7e5b4e5b25795d2e34936a7c483fdc1efdd",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/checks/garden-bakery.test.ts"
+    },
+    {
+      "path": "checks/garden-chapter.test.ts",
+      "before": "220fdff084c32fafe323640cd135b6a92314d2fdda97a455ab34c18afb22ea8a",
+      "after": "6c84592484441e355a567df7477e71e6cd4725bd536c48333df030211ec6d197",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/checks/garden-chapter.test.ts"
+    },
+    {
+      "path": "checks/garden-gathering.test.ts",
+      "before": "39f9a4a8c8485d834ec9fc6792a122e7f5187515123a4908b8bb1166714e9528",
+      "after": "0f1114ee0d35d401d4da7a005d741ebbfd0ea9d8eba6b457ab26f49bf5c9c503",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/checks/garden-gathering.test.ts"
+    },
+    {
+      "path": "checks/garden-interaction.test.ts",
+      "before": "8fec221528da97951a607bc3f63f7bbe7a6fcd511c25002f96d7c87bc2ebc59d",
+      "after": "75fb77876f9fc2b05ca8499d7fdb6c2794b00e216f3cd307dfd72236675991a2",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/checks/garden-interaction.test.ts"
+    },
+    {
+      "path": "checks/garden-mara.test.ts",
+      "before": "e1b7cf3a4a1626269abceffe1691cfbe720a7a450a864f1605bf4bd0de9fd292",
+      "after": "3ccf0127bad36de41c9a744cfdc4b9f127f031edc36c4b58a8f2db9a9d659f62",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/checks/garden-mara.test.ts"
+    },
+    {
+      "path": "checks/garden-play-actions.ts",
+      "before": "42bad1a0ab3872d8b961108e5ca1409fca46bc643eac84a0f7ad0eaed8446883",
+      "after": "5574965e7971f56ec2fd60c42a05f41e787550a2bd3f72ba8743e2f0e4f4c177",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/checks/garden-play-actions.ts"
+    },
+    {
+      "path": "checks/garden-river.test.ts",
+      "before": "3bb0ce3f8d1f27ea796a58001d92e2a050fd2073322c1ffc54f85d9c479cb72e",
+      "after": "87c99c43b69c84ba71c705685f27b557f6ae9ba07862b48d7448dfc8dbd77fce",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/checks/garden-river.test.ts"
+    },
+    {
+      "path": "checks/garden.test.ts",
+      "before": "6be5c3fc79585fedad9ab79c91ea4ef8160d7cf3509f1a7c182b560d999c273d",
+      "after": "f6fc6de740adc3a90536022a636c30ebebc937283f0a9990fa9e70bb3b46cb10",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/checks/garden.test.ts"
+    },
+    {
+      "path": "BUILD-STATUS.md",
+      "before": "771b1bf21c9f66f4eb475f9e01ee29314a064c9f942f27e884a2de82c79a41e5",
+      "after": "e3eb0a0d297cc9c17a04da0f6084ef224e2fff79175740abb250e66cc16969bc",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/BUILD-STATUS.md"
+    },
+    {
+      "path": "README.md",
+      "before": "ad1439bdc9b943093cf812e43e436251bc657ea17d26ea7f98b89aa3b4ef97c0",
+      "after": "6651e8386ab5366265f393b80ade6552399afef571a3418b6db7593101e76314",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/README.md"
+    },
+    {
+      "path": "docs/GARDEN-COMPLETE-DEMO.md",
+      "before": "21ac41b7283d1d595a2cafd100dd4d61b7d30c9c430e2a89a6ebb83533da0ec1",
+      "after": "87183c20a9802b5e55154512aab4c24753188394e55a27733ca67a82624ccf52",
+      "snapshot": "evidence/dialogue-continuity-20260915/before/docs/GARDEN-COMPLETE-DEMO.md"
+    }
+  ],
+  "created": [
+    {
+      "path": "src/garden/conversation.ts",
+      "sha256": "9e9d76e3cc288731c6347d830ab32569c88538b1810a241f1ffd294af45b4ce5"
+    },
+    {
+      "path": "src/garden/ConversationControls.tsx",
+      "sha256": "afc161da281a2c02e92afe45cb32e27fc13ffeda14b5bdeed4f48327d361d4e5"
+    },
+    {
+      "path": "checks/garden-continuity.test.ts",
+      "sha256": "92affbb503630b49aa59f9f53ea0c1ea6f38395ea0e10b4ba86235be821ae466"
+    },
+    {
+      "path": "browser-tests/garden-compact-reader.spec.ts",
+      "sha256": "cc5382c8cfc19b3aa1bb0a9fc133a53dff1ac2df07eaa368686f951032fb54d6"
+    },
+    {
+      "path": "browser-tests/garden-continuity.spec.ts",
+      "sha256": "719900c05ce16927dd6b2136336a7bd6395dc1ac9f80844d3f138821e7cbe444"
+    }
+  ],
+  "qualification": "Bounded continuity correction only. Owner acceptance, learner outcomes, live feedback/acoustic validation, final artwork and existing device/performance qualifications remain open. TASK11.19 remains halted at1/75. No commit, push, deployment, submission or child-live activation."
+}

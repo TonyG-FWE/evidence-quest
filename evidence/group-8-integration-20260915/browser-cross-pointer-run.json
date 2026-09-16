@@ -1,0 +1,18 @@
+{
+  "arguments": [
+    "node_modules/@playwright/test/cli.js",
+    "test",
+    "garden-finale.spec.ts",
+    "garden-interaction.spec.ts",
+    "--project=chromium",
+    "--project=firefox",
+    "--project=webkit",
+    "--grep",
+    "Finale:|G2 ordinary world"
+  ],
+  "artifacts": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\group-8-integration-20260915\\browser-cross-pointer-artifacts",
+  "chromiumChannel": "chromium",
+  "report": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\group-8-integration-20260915\\browser-cross-pointer.json",
+  "exitCode": 0,
+  "at": "2026-09-15T20:00:18.9000664Z"
+}

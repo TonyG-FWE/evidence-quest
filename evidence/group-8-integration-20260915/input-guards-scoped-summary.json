@@ -1,0 +1,496 @@
+{
+  "stats": {
+    "startTime": "2026-09-15T18:24:49.935Z",
+    "duration": 228870.625,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "cases": [
+    {
+      "title": "Bakery: connected repair, wrong placement, compact recovery, baking, accompanied thanks and exact draft excerpt",
+      "file": "garden-bakery.spec.ts",
+      "browser": "chromium",
+      "status": "passed",
+      "durationMs": 51246,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "native-selection-trace",
+          "value": [
+            {
+              "key": "Control+Home",
+              "active": "feedback-excerpt-sol-ending",
+              "start": 0,
+              "end": 0
+            },
+            {
+              "key": "Shift+ArrowRight",
+              "active": "feedback-excerpt-sol-ending",
+              "start": 0,
+              "end": 1
+            },
+            {
+              "key": "Shift+ArrowRight",
+              "active": "feedback-excerpt-sol-ending",
+              "start": 0,
+              "end": 2
+            },
+            {
+              "key": "Shift+ArrowRight",
+              "active": "feedback-excerpt-sol-ending",
+              "start": 0,
+              "end": 3
+            },
+            {
+              "key": "Shift+ArrowRight",
+              "active": "feedback-excerpt-sol-ending",
+              "start": 0,
+              "end": 4
+            },
+            {
+              "key": "Shift+ArrowRight",
+              "active": "feedback-excerpt-sol-ending",
+              "start": 0,
+              "end": 5
+            },
+            {
+              "key": "Shift+ArrowRight",
+              "active": "feedback-excerpt-sol-ending",
+              "start": 0,
+              "end": 6
+            },
+            {
+              "key": "Shift+ArrowRight",
+              "active": "feedback-excerpt-sol-ending",
+              "start": 0,
+              "end": 7
+            },
+            {
+              "key": "Shift+ArrowRight",
+              "active": "feedback-excerpt-sol-ending",
+              "start": 0,
+              "end": 8
+            },
+            {
+              "key": "Shift+ArrowRight",
+              "active": "feedback-excerpt-sol-ending",
+              "start": 0,
+              "end": 9
+            },
+            {
+              "key": "Shift+ArrowRight",
+              "active": "feedback-excerpt-sol-ending",
+              "start": 0,
+              "end": 10
+            }
+          ]
+        },
+        {
+          "name": "bakery-result",
+          "value": {
+            "version": 3,
+            "content": "garden-chapter-3",
+            "story": {
+              "metSol": false,
+              "solChoice": "none",
+              "solDraft": {
+                "text": "",
+                "revision": 0
+              },
+              "solEnding": null,
+              "maraPicture": "repair",
+              "laterKnown": false,
+              "questions": [],
+              "solReported": false,
+              "maraReported": false,
+              "timeAgreed": null,
+              "plan": null,
+              "solInvitation": null,
+              "maraInvitation": null,
+              "phase": "planning",
+              "solOutcome": null,
+              "records": {
+                "mara": null,
+                "sol": null,
+                "grandma": false,
+                "pip": null
+              },
+              "grandmaCopy": "none",
+              "closingDone": false,
+              "ending": null,
+              "presentation": {
+                "page": 0,
+                "finished": false
+              },
+              "answers": {},
+              "bridgeFailures": 0
+            },
+            "river": {
+              "edition": "connected-20260915",
+              "ropesCollected": true,
+              "soilPrepared": false,
+              "attachments": {
+                "west": "a",
+                "east": "b"
+              },
+              "ropeLocations": {
+                "west": "attached",
+                "east": "attached"
+              },
+              "boat": {
+                "position": {
+                  "x": -1.4,
+                  "z": 0.8
+                },
+                "phase": "moored"
+              }
+            },
+            "mara": {
+              "edition": "connected-20260915",
+              "asking": "none",
+              "returnOffered": false,
+              "permission": false,
+              "service": "waiting",
+              "participated": false,
+              "sharedAt": "none",
+              "scene": null
+            },
+            "bakery": {
+              "edition": "connected-20260915",
+              "stage": "done",
+              "met": true,
+              "permission": true,
+              "tile": "roof",
+              "cracked": "set-aside",
+              "loaf": "sol",
+              "rina": {
+                "x": 5.856802847614179,
+                "z": -0.9782887427972045
+              }
+            },
+            "gathering": {
+              "edition": "connected-20260915",
+              "reported": null,
+              "arrival": "not-started",
+              "welcome": false,
+              "solPerformed": null,
+              "solDisclosed": false,
+              "cushions": false,
+              "pageComplete": false,
+              "grandmaPerformed": false,
+              "turn": null
+            },
+            "runId": "1837c010-836c-4715-a7b3-b943daf7cb58",
+            "revision": 491,
+            "started": true,
+            "pip": {
+              "x": 4.65,
+              "z": -1.25
+            },
+            "sections": {
+              "a": {
+                "x": -0.775,
+                "z": 3,
+                "rotation": 0
+              },
+              "b": {
+                "x": 0.775,
+                "z": 3,
+                "rotation": 0
+              }
+            },
+            "ferrySide": "west",
+            "joined": true,
+            "west": true,
+            "east": true,
+            "crossed": true,
+            "seed": "pip",
+            "bloomed": false,
+            "maraHeard": false,
+            "page": "mara",
+            "grandmaHeard": false,
+            "exposed": [
+              "GA.SRC.OPENING.R20260915.1.W1",
+              "GA.SRC.OPENING.R20260915.1.W2",
+              "GA.SRC.OPENING.R20260915.1.W3",
+              "GA.SRC.OPENING.R20260915.1.W4",
+              "GA.SRC.OPENING.R20260915.1.W5",
+              "GA.SRC.OPENING.R20260915.1.W6",
+              "GA.SRC.OPENING.R20260915.1.W7",
+              "GA.SRC.OPENING.R20260915.1.W8",
+              "GA.SRC.OPENING.R20260915.1.W9",
+              "GA.SRC.OPENING.R20260915.1.W10",
+              "GA.SRC.OPENING.R20260915.1.W11",
+              "GA.SRC.OPENING.R20260915.1.W12",
+              "GA.SRC.OPENING.R20260915.1.W13",
+              "GA.SRC.OPENING.R20260915.1.W14",
+              "GA.SRC.OPENING.R20260915.1.W15",
+              "GA.SRC.OPENING.R20260915.1.W16",
+              "GA.SRC.OPENING.R20260915.1.W17",
+              "GA.SRC.OPENING.R20260915.1.W18",
+              "GA.SRC.OPENING.R20260915.1.W19",
+              "GA.SRC.OPENING.R20260915.1.W20",
+              "GA.SRC.OPENING.R20260915.1.W21",
+              "GA.SRC.OPENING.R20260915.1.W22",
+              "GA.SRC.OPENING.R20260915.1.W23",
+              "GA.SRC.OPENING.R20260915.1.W24",
+              "GA.SRC.OPENING.R20260915.1.W25",
+              "GA.SRC.OPENING.R20260915.1.W26",
+              "GA.SRC.OPENING.R20260915.1.W27",
+              "GA.SRC.OPENING.R20260915.1.W28",
+              "GA.SRC.OPENING.R20260915.1.W29",
+              "GA.SRC.OPENING.R20260915.1.W30",
+              "GA.SRC.OPENING.R20260915.1.W31",
+              "GA.SRC.OPENING.R20260915.1.W32",
+              "GA.SRC.OPENING.R20260915.1.W33",
+              "GA.SRC.OPENING.R20260915.1.W34",
+              "GA.SRC.OPENING.R20260915.2.W1",
+              "GA.SRC.OPENING.R20260915.2.W2",
+              "GA.SRC.OPENING.R20260915.2.W3",
+              "GA.SRC.OPENING.R20260915.2.W4",
+              "GA.SRC.OPENING.R20260915.2.W5",
+              "GA.SRC.OPENING.R20260915.2.W6",
+              "GA.SRC.OPENING.R20260915.2.W7",
+              "GA.SRC.OPENING.R20260915.2.W8",
+              "GA.SRC.OPENING.R20260915.2.W9",
+              "GA.SRC.OPENING.R20260915.2.W10",
+              "GA.SRC.OPENING.R20260915.2.W11",
+              "GA.SRC.OPENING.R20260915.2.W12",
+              "GA.SRC.OPENING.R20260915.2.W13",
+              "GA.SRC.OPENING.R20260915.2.W14",
+              "GA.SRC.OPENING.R20260915.2.W15",
+              "GA.SRC.OPENING.R20260915.2.W16",
+              "GA.SRC.OPENING.R20260915.2.W17",
+              "GA.SRC.OPENING.R20260915.2.W18",
+              "GA.SRC.OPENING.R20260915.2.W19",
+              "GA.SRC.OPENING.R20260915.2.W20",
+              "GA.SRC.OPENING.R20260915.2.W21",
+              "GA.SRC.OPENING.R20260915.2.W22",
+              "GA.SRC.OPENING.R20260915.2.W23",
+              "GA.SRC.OPENING.R20260915.2.W24",
+              "GA.SRC.OPENING.R20260915.2.W25",
+              "GA.SRC.OPENING.R20260915.3.W1",
+              "GA.SRC.OPENING.R20260915.3.W2",
+              "GA.SRC.OPENING.R20260915.3.W3",
+              "GA.SRC.OPENING.R20260915.3.W4",
+              "GA.SRC.OPENING.R20260915.3.W5",
+              "GA.SRC.OPENING.R20260915.3.W6",
+              "GA.SRC.OPENING.R20260915.3.W7",
+              "GA.SRC.OPENING.R20260915.3.W8",
+              "GA.SRC.OPENING.R20260915.3.W9",
+              "GA.SRC.OPENING.R20260915.3.W10",
+              "GA.SRC.OPENING.R20260915.3.W11",
+              "GA.SRC.OPENING.R20260915.3.W12",
+              "GA.SRC.OPENING.R20260915.3.W13",
+              "GA.SRC.OPENING.R20260915.3.W14",
+              "GA.SRC.OPENING.R20260915.3.W15",
+              "GA.SRC.OPENING.R20260915.3.W16",
+              "GA.SRC.OPENING.R20260915.3.W17",
+              "GA.SRC.OPENING.R20260915.3.W18",
+              "GA.SRC.OPENING.R20260915.3.W19",
+              "GA.SRC.OPENING.R20260915.3.W20",
+              "GA.SRC.OPENING.R20260915.3.W21",
+              "GA.SRC.OPENING.R20260915.1",
+              "GA.SRC.OPENING.R20260915.2",
+              "GA.SRC.OPENING.R20260915.3",
+              "GA.SRC.BAKERY.1.W1",
+              "GA.SRC.BAKERY.1.W2",
+              "GA.SRC.BAKERY.1.W3",
+              "GA.SRC.BAKERY.1.W4",
+              "GA.SRC.BAKERY.1.W5",
+              "GA.SRC.BAKERY.1.W6",
+              "GA.SRC.BAKERY.1.W7",
+              "GA.SRC.BAKERY.1.W8",
+              "GA.SRC.BAKERY.1.W9",
+              "GA.SRC.BAKERY.1.W10",
+              "GA.SRC.BAKERY.1.W11",
+              "GA.SRC.BAKERY.1.W12",
+              "GA.SRC.BAKERY.1.W13",
+              "GA.SRC.BAKERY.1.W14",
+              "GA.SRC.BAKERY.1.W15",
+              "GA.SRC.BAKERY.1.W16",
+              "GA.SRC.BAKERY.1.W17",
+              "GA.SRC.BAKERY.1.W18",
+              "GA.SRC.BAKERY.1.W19",
+              "GA.SRC.BAKERY.1.W20",
+              "GA.SRC.BAKERY.1.W21",
+              "GA.SRC.BAKERY.1.W22",
+              "GA.SRC.BAKERY.1.W23",
+              "GA.SRC.BAKERY.2.W1",
+              "GA.SRC.BAKERY.2.W2",
+              "GA.SRC.BAKERY.2.W3",
+              "GA.SRC.BAKERY.2.W4",
+              "GA.SRC.BAKERY.2.W5",
+              "GA.SRC.BAKERY.2.W6",
+              "GA.SRC.BAKERY.2.W7",
+              "GA.SRC.BAKERY.2.W8",
+              "GA.SRC.BAKERY.2.W9",
+              "GA.SRC.BAKERY.2.W10",
+              "GA.SRC.BAKERY.2.W11",
+              "GA.SRC.BAKERY.2.W12",
+              "GA.SRC.BAKERY.2.W13",
+              "GA.SRC.BAKERY.2.W14",
+              "GA.SRC.BAKERY.2.W15",
+              "GA.SRC.BAKERY.2.W16",
+              "GA.SRC.BAKERY.2.W17",
+              "GA.SRC.BAKERY.2.W18",
+              "GA.SRC.BAKERY.2.W19",
+              "GA.SRC.BAKERY.2.W20",
+              "GA.SRC.BAKERY.2.W21",
+              "GA.SRC.BAKERY.3.W1",
+              "GA.SRC.BAKERY.3.W2",
+              "GA.SRC.BAKERY.3.W3",
+              "GA.SRC.BAKERY.3.W4",
+              "GA.SRC.BAKERY.3.W5",
+              "GA.SRC.BAKERY.3.W6",
+              "GA.SRC.BAKERY.3.W7",
+              "GA.SRC.BAKERY.3.W8",
+              "GA.SRC.BAKERY.3.W9",
+              "GA.SRC.BAKERY.3.W10",
+              "GA.SRC.BAKERY.3.W11",
+              "GA.SRC.BAKERY.3.W12",
+              "GA.SRC.BAKERY.3.W13",
+              "GA.SRC.BAKERY.3.W14",
+              "GA.SRC.BAKERY.3.W15",
+              "GA.SRC.BAKERY.3.W16",
+              "GA.SRC.BAKERY.3.W17",
+              "GA.SRC.BAKERY.3.W18",
+              "GA.SRC.BAKERY.3.W19",
+              "GA.SRC.BAKERY.1",
+              "GA.SRC.BAKERY.2",
+              "GA.SRC.BAKERY.3"
+            ],
+            "assistance": [
+              "word:bakery:intact"
+            ],
+            "history": [
+              "0e15a295-4e1f-4ed9-a6df-ecddff89bfbf",
+              "B",
+              "fe850830-ef00-45d0-a777-72ac21db0c35",
+              "aade4b77-0731-4614-82ef-ce130ae87f22",
+              "bdbfd6e1-b72a-4aca-ad49-b3ee67b3f296",
+              "83cfe43d-be69-47c4-a2ee-e67f8486f15a",
+              "f8b98190-2065-43fd-8a8e-8840e114b72d",
+              "34360c13-9609-4921-a9a4-e7de53a12d0c",
+              "5be57951-bc7c-487d-a247-50284a547cac",
+              "da6f83b2-350b-4bfa-b7e8-878a706893f0",
+              "ba2bdf18-3699-4b24-8aed-1d6bb7b472bc",
+              "010243ae-ea80-4450-86da-2fc0b81326b3",
+              "52d6451b-1fa9-4b4b-907e-f5c5c1c4ec41",
+              "a585bf15-d072-4e33-9d3f-d7b2e823ab55"
+            ],
+            "reading": {},
+            "reducedMotion": false,
+            "largeText": false
+          }
+        }
+      ]
+    },
+    {
+      "title": "Complete Garden chapter: later Mara tells; Sol developed",
+      "file": "garden-chapter.spec.ts",
+      "browser": "chromium",
+      "status": "passed",
+      "durationMs": 120082,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "demo-timing",
+          "value": {
+            "route": "later Mara tells; Sol developed",
+            "started": 1789496797994,
+            "cues": [
+              {
+                "name": "opening",
+                "ms": 0
+              },
+              {
+                "name": "mara-reading-and-choice",
+                "ms": 1507
+              },
+              {
+                "name": "bridge-construction",
+                "ms": 2152
+              },
+              {
+                "name": "planting-with-grandma",
+                "ms": 4956
+              },
+              {
+                "name": "bakery-through-selected-ending",
+                "ms": 13104
+              },
+              {
+                "name": "planning-and-invitations",
+                "ms": 50249
+              },
+              {
+                "name": "actual-arrivals",
+                "ms": 65768
+              },
+              {
+                "name": "mara-earlier-bird-story",
+                "ms": 89019
+              },
+              {
+                "name": "sol-actual-contribution",
+                "ms": 105425
+              },
+              {
+                "name": "grandma-understanding-and-story",
+                "ms": 106636
+              },
+              {
+                "name": "memory-and-closing",
+                "ms": 115524
+              },
+              {
+                "name": "loop-picture-show",
+                "ms": 117738
+              },
+              {
+                "name": "completed-lantern-library",
+                "ms": 118861
+              },
+              {
+                "name": "end",
+                "ms": 119492
+              }
+            ],
+            "note": "Elapsed ordinary-control browser play; video begins slightly before test entry. Verify each edit against actual recorded frames."
+          }
+        },
+        {
+          "name": "full-chapter-state"
+        },
+        {
+          "name": "video",
+          "contentType": "video/webm",
+          "path": "evidence/group-8-integration-20260915/browser-input-guards-scoped-artifacts/garden-chapter-Complete-Ga-a8a70-er-Mara-tells-Sol-developed-chromium/video.webm",
+          "exists": true,
+          "sha256": "7de8eb6d586b55ea577cd26252ec1eec6fee3ae7e0dcc902188312ddb03eda02"
+        }
+      ]
+    },
+    {
+      "title": "G2 ordinary keyboard route: nested letter, Help and backpack preserve focus and return context",
+      "file": "garden-interaction.spec.ts",
+      "browser": "chromium",
+      "status": "passed",
+      "durationMs": 1101,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "title": "G2 ordinary world route: invalid plan, exact rehearsal, nested help and prepared return",
+      "file": "garden-interaction.spec.ts",
+      "browser": "chromium",
+      "status": "passed",
+      "durationMs": 53113,
+      "errors": [],
+      "attachments": []
+    }
+  ]
+}

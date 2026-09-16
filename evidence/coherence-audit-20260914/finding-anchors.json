@@ -1,0 +1,146 @@
+[
+  {
+    "id": "hidden-bridge-position",
+    "evidence": {
+      "path": "src/garden/model.ts",
+      "line": 49,
+      "text": "return Math.min(Math.abs(p.z-3),Math.abs(p.z+2))<=.22&&Math.abs(Math.sin(c.sections.a.rotation))<.01&&(end==='west'?edge<=bank:edge>=bank)&&Math.abs(edge-bank)<=.45;"
+    }
+  },
+  {
+    "id": "blocked-normal-route",
+    "evidence": {
+      "path": "src/garden/GardenApp.tsx",
+      "line": 194,
+      "text": "{bridgeAttemptable(c)&&!c.crossed&&<button className=\"g-primary\" disabled={disabled} onClick={()=>store.send({type:'TRY_CROSS'})}>Try crossing the bridge</button>}{nearSol&&<button className=\"g-primary\" disabled={disabled} onClick={()=>talk('sol')}>Talk to Sol</button>}{c.crossed&&!nearSol&&<button className=\"g-secondary\" disabled={disabled} onClick={()=>go('sol')}>Go to Sol’s workshop</button>}{bridgeReady(c)&&!nearGrandma&&<button className=\"g-primary\" disabled={disabled} onClick={()=>go('grandma')}>Go to Grandma <Icon kind=\"arrow\"/></button>}"
+    }
+  },
+  {
+    "id": "post-offset",
+    "evidence": {
+      "path": "src/garden/GardenScene.tsx",
+      "line": 45,
+      "text": "const post=new T.Group(),x=side*(z===3?1.65:2.45);post.position.set(x,.1,z+.53);art.cylinder(post,0,.20,0,.04,.07,.40,'#896748');art.cylinder(post,0,.40,0,.075,.075,.045,'#f7e9c2');const flag=art.shape(post,[[0,0],[.20,-.03],[.15,-.13],[0,-.13]],.006,side<0?'#d48e66':'#527e69');flag.position.set(0,.38,0);post.userData['target']=side<0?'west':'east';post.userData['postZ']=z;scene.add(post);pickables.push(post);"
+    }
+  },
+  {
+    "id": "known-coordinate-test",
+    "evidence": {
+      "path": "browser-tests/garden-chapter.spec.ts",
+      "line": 20,
+      "text": "for(const [name,x]of [['A',-.775],['B',.775]] as const){await page.locator('.g-select-sections').getByRole('button',{name:'Section '+name,exact:true}).click();const box=(await page.locator('.garden-scene canvas').boundingBox())!,aspect=box.width/box.height,h=Math.max(6.4,8.3/aspect),camera=new OrthographicCamera(-h*aspect,h*aspect,h,-h,.1,100);camera.position.set(7.5,16,19);camera.lookAt(0,0,.1);camera.updateMatrixWorld();const p=new Vector3(x,.13,3).project(camera);await page.mouse.click(box.x+(p.x*.5+.5)*box.width,box.y+(-p.y*.5+.5)*box.height);}"
+    }
+  },
+  {
+    "id": "work-hidden-before-decision",
+    "evidence": {
+      "path": "src/garden/GardenScene.tsx",
+      "line": 117,
+      "text": "passengerBoat.visible=gatheringStarted(c)&&c.story.plan?.time==='later';passengerBoat.position.set(-1.1,-.1,-4.1);passengerBoat.rotation.y=Math.PI/2;gangway.visible=passengerBoat.visible&&action?.kind!=='arrival';passengers.forEach(p=>p.rig.visible=false);"
+    }
+  },
+  {
+    "id": "empty-flowers-hidden",
+    "evidence": {
+      "path": "src/garden/GardenScene.tsx",
+      "line": 114,
+      "text": "cushions.visible=c.story.records.grandma;flowers[2]!.root.visible=!!c.story.records.mara;flowers[3]!.root.visible=!!c.story.records.sol;flowers[4]!.root.visible=c.story.records.grandma;"
+    }
+  },
+  {
+    "id": "identical-report-events",
+    "evidence": {
+      "path": "src/garden/ChapterPanels.tsx",
+      "line": 36,
+      "text": "{!f.maraReported?<><Reply who=\"Grandma\">What did Mara tell you about why she stopped visiting?</Reply><FeedbackActivity store={store} activity=\"grandma-assumption\" speaker=\"Grandma\" question=\"What did Mara tell you about why she stopped visiting?\" help=\"Mara said she misses the garden. Her work hours changed, so she is still at the dock when the stories start.\" sourceIds={['mara','opening']}/><Choices label=\"Continue the conversation.\"><button className=\"g-primary\" onClick={()=>send({kind:'REPORT_MARA'})}>Let Pip explain</button><button className=\"g-alternative\" onClick={()=>send({kind:'REPORT_MARA'})}>Share the account and continue</button></Choices></>:<Reply who=\"Grandma\">I thought she'd stopped enjoying the garden. I should have asked her what had happened. Let's read what she sent.</Reply>}"
+    }
+  },
+  {
+    "id": "all-flowers-open-library",
+    "evidence": {
+      "path": "src/garden/chapterWorld.ts",
+      "line": 14,
+      "text": "export function makeStoryFlowers(a:PaperArt){return STORY_FLOWERS.map((p,i)=>{const flower=makeLantern(a,p.x,p.z,i<2?'#d4ba83':i===2?'#e4c375':i===3?'#d6a878':'#e4d69c');flower.root.scale.setScalar(i<2?.8:.68);flower.root.userData['target']='lanterns';return flower;});}"
+    }
+  },
+  {
+    "id": "sol-later-account-immediate",
+    "evidence": {
+      "path": "src/garden/chapter.ts",
+      "line": 69,
+      "text": "case 'FINISH_WITH_SOL':if(!planning||!atSol||!f.metSol)break;s.notice='';f.laterKnown=true;s.panel='writing';break;"
+    }
+  },
+  {
+    "id": "nonempty-ending-adoption",
+    "evidence": {
+      "path": "src/garden/chapter.ts",
+      "line": 72,
+      "text": "case 'SELECT_ENDING':if(!planning||!f.laterKnown||!atSol||!event.contribution.text.trim()||event.contribution.origin==='child'&&(event.contribution.revision!==f.solDraft.revision||event.contribution.text!==f.solDraft.text))break;f.solEnding=structuredClone(event.contribution);f.solChoice='prepared';f.solReported=false;s.notice=\"Sol says: “I'll bring this version to the garden. I'd like people to hear what happened.”\";break;"
+    }
+  },
+  {
+    "id": "manual-picture-rehearsal",
+    "evidence": {
+      "path": "src/garden/ChapterPanels.tsx",
+      "line": 62,
+      "text": "<button className=\"g-primary\" disabled={!f.solDraft.text.trim()} onClick={()=>setPreview({text:f.solDraft.text,scene,revision:f.solDraft.revision,origin:'child'})}>Try my ending</button>"
+    }
+  },
+  {
+    "id": "bread-appears",
+    "evidence": {
+      "path": "src/garden/StoryStage.tsx",
+      "line": 29,
+      "text": "moves.push(t=>{for(let i=0;i<drops.length;i++)drops[i]!.position.y=.3+((2.6-t*1.8+i*.19)%2.3+2.3)%2.3;const walk=kind==='thanks'?Math.min(1,t/2.8):kind==='both'?Math.max(0,Math.min(1,(t-2)/3)):0;rina.rig.position.x=-.65+walk*1.7;rina.legs.forEach((l,i)=>l.rotation.x=walk>0&&walk<1?Math.sin(t*9+i*Math.PI)*.3:0);bread.position.x=-.6+walk*1.7;bread.visible=kind!=='draft'&&(!animate||t>.7);});loop=animate;"
+    }
+  },
+  {
+    "id": "fixed-repaired-roof",
+    "evidence": {
+      "path": "src/garden/StoryStage.tsx",
+      "line": 22,
+      "text": "const tile=a.box(set,-1.25,1.64,-.45,.38,.05,.33,'#8fa28a');tile.rotation.z=-.45;"
+    }
+  },
+  {
+    "id": "no-story-stage-game-mutations",
+    "evidence": {
+      "path": "src/garden/StoryStage.tsx",
+      "line": 4,
+      "text": "/** A separate illustrated memory/rehearsal. It never mutates the live garden. */"
+    }
+  },
+  {
+    "id": "records-on-next-button",
+    "evidence": {
+      "path": "src/garden/chapter.ts",
+      "line": 80,
+      "text": "else if(f.phase==='mara'){f.records.mara=f.maraPicture;f.phase='sol';}"
+    }
+  },
+  {
+    "id": "no-long-draft-selection",
+    "evidence": {
+      "path": "src/garden/FeedbackActivity.tsx",
+      "line": 14,
+      "text": "if(current.current||!draft.trim())return;if(Array.from(draft).length>4000){setStatus('Choose a shorter part to discuss. Your full writing is still here.');return;}"
+    }
+  },
+  {
+    "id": "generic-practice-target",
+    "evidence": {
+      "path": "src/garden/GardenApp.tsx",
+      "line": 170,
+      "text": "{source&&!practice&&<div className=\"g-row g-reading-actions\"><button className=\"g-text-button\" onClick={()=>speaking?stopAudio():speak(source.paragraphs.join(' '))}><Icon kind=\"sound\"/>{speaking?'Stop listening':'Hear this page'}</button><button className=\"g-text-button\" onClick={()=>{practicePart(source.id==='story'?'He hesitated. Then he held out the bird.':source.paragraphs[0]!,source.id+'-practice');store.send({type:'HELP_USED',id:'oral-practice:'+source.id});}}>Read a short part aloud</button></div>}"
+    }
+  },
+  {
+    "id": "picture-only-presentation-position",
+    "evidence": {
+      "path": "src/garden/chapter.ts",
+      "line": 16,
+      "text": "presentation:{page:number;finished:boolean};answers:Record<string,string>;bridgeFailures:number;"
+    }
+  }
+]

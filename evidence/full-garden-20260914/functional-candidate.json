@@ -1,0 +1,263 @@
+{
+  "at": "2026-09-14T21:15:15.878Z",
+  "head": "63af7a2261553c2639842a458b54dde38311e3f7",
+  "branch": "codex/first-connected",
+  "commit": "Local uncommitted",
+  "content": "garden-chapter-3",
+  "implementation": [
+    {
+      "path": "src/garden/AdditionalWordHelp.tsx",
+      "bytes": 3339,
+      "sha256": "894dcf6e43308739797639b687afc2fd75b3493acc43ba810c9f68f734f986cf"
+    },
+    {
+      "path": "src/garden/art.ts",
+      "bytes": 16835,
+      "sha256": "a0b581df39c6e79137050a909577394caacbcefc6ebfe1f373d489d5b86b2514"
+    },
+    {
+      "path": "src/garden/audio.ts",
+      "bytes": 1044,
+      "sha256": "fb4709059a8d33a2517714e0c3ec8ae02a990ebd7d976fad3224b44d8d97d30a"
+    },
+    {
+      "path": "src/garden/chapter.ts",
+      "bytes": 17550,
+      "sha256": "fc72b682e742489fdfc72ddc3baecf90415ecdbd098e1fcf74f7fd7d50235a5f"
+    },
+    {
+      "path": "src/garden/chapterContent.ts",
+      "bytes": 4262,
+      "sha256": "e779bb4edf96103badbaedfbfa54866bb7f6241d9b4a8d74292f8b04a174a370"
+    },
+    {
+      "path": "src/garden/chapterGlossary.ts",
+      "bytes": 6801,
+      "sha256": "2c5445b5d3c6aec7907a689df94d7d07f94da2462de4080e342c866c6a71708d"
+    },
+    {
+      "path": "src/garden/ChapterPanels.tsx",
+      "bytes": 24333,
+      "sha256": "a15d1dd77a363d76b00c1e4daeb83ec93f7954fe38daf615a0590d9e80c9cafb"
+    },
+    {
+      "path": "src/garden/chapterWorld.ts",
+      "bytes": 1521,
+      "sha256": "182c45f6dbad91c9bd366498e8714dd455e874c497372dbb8a1ff8ebd2cf26fa"
+    },
+    {
+      "path": "src/garden/content.ts",
+      "bytes": 18062,
+      "sha256": "b3a00c135cb1fbf47544fc6e3eb2cb596d0c652da8fa28440f04751350cdfd42"
+    },
+    {
+      "path": "src/garden/DraftReader.tsx",
+      "bytes": 3815,
+      "sha256": "5eaf6c66f34e2de5b4b598f97850fcd20756006e9ab351a7d2f82e60f27c7935"
+    },
+    {
+      "path": "src/garden/FeedbackActivity.tsx",
+      "bytes": 5747,
+      "sha256": "6848d320e18aa8447c3cd41e6f42ca2abfbbe6e2a3ebc73cf77b03e25303454a"
+    },
+    {
+      "path": "src/garden/garden.css",
+      "bytes": 25694,
+      "sha256": "7709a9b7e673b5f03f9c966f584d8273201a6f247cd0556e7e3670aaf0b139e6"
+    },
+    {
+      "path": "src/garden/GardenApp.tsx",
+      "bytes": 36354,
+      "sha256": "4aea53e49a57982a3688fd0bb8e3caed151690152c4dc27a62052d485e4fc156"
+    },
+    {
+      "path": "src/garden/GardenScene.tsx",
+      "bytes": 26192,
+      "sha256": "8c4a723fd31a8ab3bd07ff6c177ac04252034730e48c637f0e114799539b141e"
+    },
+    {
+      "path": "src/garden/model.ts",
+      "bytes": 22765,
+      "sha256": "fcc2a82f365d79cbdc571f34050f2f37d8fa9b2f491e401a083a6b6cc5b85f55"
+    },
+    {
+      "path": "src/garden/persistence.ts",
+      "bytes": 13537,
+      "sha256": "e766f2594b8fde96a68a0451555647045a1884b5b1edc76c4b9a6ec3be5103a2"
+    },
+    {
+      "path": "src/garden/ReadingPractice.tsx",
+      "bytes": 9809,
+      "sha256": "b96c72d59e872ad4e8149b4e0caa30fd9ad262bab9110ea081fc679cb62bef48"
+    },
+    {
+      "path": "src/garden/StoryStage.tsx",
+      "bytes": 8268,
+      "sha256": "88cdab5c69ddab975275daf8adf449689f3a28725683e45496682bbd40805310"
+    },
+    {
+      "path": "server/index.ts",
+      "bytes": 6862,
+      "sha256": "e555f675adc8978f41fdf28faa7916bddc66931f16b3573a1d60e32ae638abe8"
+    },
+    {
+      "path": "server/garden.ts",
+      "bytes": 7247,
+      "sha256": "c186a24ebe584637b71c761af47ddec7241199537cb6b2160c7075576b265524"
+    },
+    {
+      "path": "server/gardenSpeech.ts",
+      "bytes": 7671,
+      "sha256": "139604f511bc8d6b0710ebfac1841d71331b43c31cd03df808fedc3e93975af5"
+    },
+    {
+      "path": "server/gardenWords.ts",
+      "bytes": 6354,
+      "sha256": "5f7e246fc42f2c96d36af20f7b4a6b978ca5c01864a727a52884b4d9f163c1c3"
+    },
+    {
+      "path": "public/garden-recorder.js",
+      "bytes": 802,
+      "sha256": "b63cbd801b49119c8fb648fc75de681a73c6b50fe5c3c7993f9b053bbf237d3b"
+    },
+    {
+      "path": "scripts/validate-garden.mjs",
+      "bytes": 2983,
+      "sha256": "975794f64e56248d9c303eb2d64403978bec37dcc2ac9b904ee2919ad966bf66"
+    },
+    {
+      "path": "playwright.config.ts",
+      "bytes": 1189,
+      "sha256": "ddfade779c305ca9a7ee5e65445dfc931ccdbb57b9e1d2413e2e167da12f34cb"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1929,
+      "sha256": "015e9d79d86ee520d96b50ed2c75f19bd76e502d6f48b9a96727e5ea30cc60c1"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 79221,
+      "sha256": "55e01ed71458dcd8184bd26492e5433077066bc7cbebade60fb8be677203aec3"
+    },
+    {
+      "path": "checks/garden.test.ts",
+      "bytes": 13005,
+      "sha256": "d04870bb5f465e563f3761d5f5e21533d725216029e6a1b4f22afd90c183d936"
+    },
+    {
+      "path": "checks/garden-chapter.test.ts",
+      "bytes": 13972,
+      "sha256": "6a176194fda702ee2ed23978c1e34acc18a72fde219fa09ca55de9f54ee1257d"
+    },
+    {
+      "path": "browser-tests/garden.spec.ts",
+      "bytes": 26226,
+      "sha256": "26c8238e5bf42492a1c9a78e9d35bde1cee4825ab7686d70bdcb7bd0c2a1de17"
+    },
+    {
+      "path": "browser-tests/garden-chapter.spec.ts",
+      "bytes": 11979,
+      "sha256": "76673b0d34b7450f5c3a22229f8ce2ba8e60819b748027923d06fa3daa6feb71"
+    },
+    {
+      "path": "browser-tests/garden-literacy.spec.ts",
+      "bytes": 4865,
+      "sha256": "a0e7d021a6968b4b0a666e5c09e885fb966bdc604638e6987d53a8e079b6cc5e"
+    },
+    {
+      "path": "browser-tests/garden-word-jobs.spec.ts",
+      "bytes": 4854,
+      "sha256": "1d38d84afa0f828f976b8832cf5578f2c6576b64f5b53590a48e002edcb260d1"
+    },
+    {
+      "path": "browser-tests/garden-measurements.spec.ts",
+      "bytes": 3693,
+      "sha256": "849863c12c58ebc7c453bdb07f8135c44651cbffecc15e3e37160d489247b937"
+    }
+  ],
+  "client": [
+    {
+      "path": "dist/client/.vite/manifest.json",
+      "bytes": 953,
+      "sha256": "ad12644a55b2f3c07481c3f05f403ebcc7ee05ea994fdee01f2985756eb1ee50"
+    },
+    {
+      "path": "dist/client/assets/App-CvfCOyJg.css",
+      "bytes": 18659,
+      "sha256": "0e968f90c15700b38c0a0bbc3379546041046e29c2db3ba1c048a009b4be488c"
+    },
+    {
+      "path": "dist/client/assets/App-zK4rWo4f.js",
+      "bytes": 1168243,
+      "sha256": "8d848cb222101e9fa00a1e524ebeb31f45d86a00459bab7d2e46f4254dce92ba"
+    },
+    {
+      "path": "dist/client/assets/GardenApp-D2ksjeXZ.css",
+      "bytes": 25344,
+      "sha256": "e41e5a5279c138fd7bb8cab26660668a0258975c52b5b2a1f8b5cf86076238f1"
+    },
+    {
+      "path": "dist/client/assets/GardenApp-jSuu-SzD.js",
+      "bytes": 740076,
+      "sha256": "d51b75093e87e92a563bd84bd445548fcc67e5f0001aa09af498e67e41aa18db"
+    },
+    {
+      "path": "dist/client/assets/index-D7U2vX1x.css",
+      "bytes": 2698,
+      "sha256": "e57e791c5fdcecf3f5546f1bf865fe6b4277f670cc02656b51feb159a1f5601d"
+    },
+    {
+      "path": "dist/client/assets/index-DdmFJmyJ.js",
+      "bytes": 196583,
+      "sha256": "98f596b27ec773acda81cf7008727e372ef1ae40bc151e0740ad96bc2193d9f2"
+    },
+    {
+      "path": "dist/client/assets/serialized-AKKBhD_x.js",
+      "bytes": 233,
+      "sha256": "0cc190023b6a43708287682ef43eef52866a533144bca37c153373ee915ab6a4"
+    },
+    {
+      "path": "dist/client/client-entry.json",
+      "bytes": 75,
+      "sha256": "803f9a02b7d3680dc962de79a8479c440148502763a4fe77c3621045387b6913"
+    },
+    {
+      "path": "dist/client/garden-recorder.js",
+      "bytes": 802,
+      "sha256": "b63cbd801b49119c8fb648fc75de681a73c6b50fe5c3c7993f9b053bbf237d3b"
+    },
+    {
+      "path": "dist/client/index.html",
+      "bytes": 462,
+      "sha256": "72cf0d50fe3e9e1c6b2c65c2480a75e9b47a8c46b7b10dd3102700854b3a293a"
+    }
+  ],
+  "server": [
+    {
+      "path": "dist/server/coach.js",
+      "bytes": 11559,
+      "sha256": "6832ef74b5a23242ef52a66cc02ecb1574a408564a0aa1f7e42d7f7052ab321a"
+    },
+    {
+      "path": "dist/server/garden.js",
+      "bytes": 7473,
+      "sha256": "f7df9457e06157ca1ded1c6ead60deedc5478eea15440f87dca94704ca8651f5"
+    },
+    {
+      "path": "dist/server/gardenSpeech.js",
+      "bytes": 8298,
+      "sha256": "3384cc806be2b4fb068d7a7bcc40df10b5280bdef3fe964af6f5f734e500c7fb"
+    },
+    {
+      "path": "dist/server/gardenWords.js",
+      "bytes": 6879,
+      "sha256": "2cf2d894bf7de272fd8e05a380166e5507f3d9b09e06b523ce60392dc95682d7"
+    },
+    {
+      "path": "dist/server/index.js",
+      "bytes": 8689,
+      "sha256": "a8857516e7d90c1ef62c91090b0e74257e12c6ed9ea02c2186ae2f3a23198cf0"
+    }
+  ]
+}

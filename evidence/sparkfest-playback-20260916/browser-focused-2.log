@@ -1,0 +1,41 @@
+
+> evidence-quest@0.1.0 test:browser
+> node scripts/test-browser.mjs browser-tests/garden-continuous-playback.spec.ts browser-tests/garden-festival-welcome.spec.ts --workers=2 --output=evidence/sparkfest-playback-20260916/browser-focused-2
+
+[WebServer] (node:59104) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 18 tests using 2 workers
+
+(node:59736) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:55036) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chromium] › browser-tests\garden-festival-welcome.spec.ts:3:73 › SparkFest welcome: original illustrations, Loop identity and supported entry at 1440px (2.0s)
+  ok  3 [chromium] › browser-tests\garden-festival-welcome.spec.ts:3:73 › SparkFest welcome: original illustrations, Loop identity and supported entry at 320px (1.3s)
+  ok  2 [chromium] › browser-tests\garden-continuous-playback.spec.ts:15:1 › Continuous telling: complete Sol words, safe word help, replay and stale callback ownership (3.8s)
+(node:43860) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  4 [chromium] › browser-tests\garden-continuous-playback.spec.ts:26:1 › Continuous telling: restored progress waits, full Grandma telling proceeds without sentence choices (3.3s)
+  ok  5 [firefox] › browser-tests\garden-continuous-playback.spec.ts:15:1 › Continuous telling: complete Sol words, safe word help, replay and stale callback ownership (5.6s)
+  ok  6 [chromium] › browser-tests\garden-continuous-playback.spec.ts:32:1 › Continuous Loop: full ending, automatic pictures, pause and reload keep the actual story (6.6s)
+  ok  7 [firefox] › browser-tests\garden-continuous-playback.spec.ts:26:1 › Continuous telling: restored progress waits, full Grandma telling proceeds without sentence choices (5.0s)
+  ok  8 [chromium] › browser-tests\garden-continuous-playback.spec.ts:39:1 › Continuous captions: unavailable narration advances automatically and the complete story remains readable (7.9s)
+(node:65064) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  9 [firefox] › browser-tests\garden-continuous-playback.spec.ts:32:1 › Continuous Loop: full ending, automatic pictures, pause and reload keep the actual story (10.0s)
+  ok 10 [firefox] › browser-tests\garden-festival-welcome.spec.ts:3:73 › SparkFest welcome: original illustrations, Loop identity and supported entry at 1440px (3.7s)
+  ok 12 [firefox] › browser-tests\garden-festival-welcome.spec.ts:3:73 › SparkFest welcome: original illustrations, Loop identity and supported entry at 320px (2.3s)
+(node:17548) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 11 [firefox] › browser-tests\garden-continuous-playback.spec.ts:39:1 › Continuous captions: unavailable narration advances automatically and the complete story remains readable (9.4s)
+(node:56340) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 13 [webkit] › browser-tests\garden-continuous-playback.spec.ts:15:1 › Continuous telling: complete Sol words, safe word help, replay and stale callback ownership (6.7s)
+  ok 14 [webkit] › browser-tests\garden-festival-welcome.spec.ts:3:73 › SparkFest welcome: original illustrations, Loop identity and supported entry at 1440px (3.6s)
+  ok 16 [webkit] › browser-tests\garden-festival-welcome.spec.ts:3:73 › SparkFest welcome: original illustrations, Loop identity and supported entry at 320px (2.3s)
+  ok 15 [webkit] › browser-tests\garden-continuous-playback.spec.ts:26:1 › Continuous telling: restored progress waits, full Grandma telling proceeds without sentence choices (4.9s)
+  ok 17 [webkit] › browser-tests\garden-continuous-playback.spec.ts:32:1 › Continuous Loop: full ending, automatic pictures, pause and reload keep the actual story (9.2s)
+  ok 18 [webkit] › browser-tests\garden-continuous-playback.spec.ts:39:1 › Continuous captions: unavailable narration advances automatically and the complete story remains readable (8.3s)
+
+  18 passed (1.0m)

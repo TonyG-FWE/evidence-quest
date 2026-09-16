@@ -1,0 +1,33 @@
+{
+  "at": "2026-09-15T18:09:24.349Z",
+  "status": "VERIFICATION_ENVIRONMENT_CORRECTED_RUNTIME_UNCHANGED",
+  "candidateReceipt": "evidence/group-8-integration-20260915/candidate-full-chromium.json",
+  "interrupted": {
+    "report": "browser-chapter-outcomes.json was not produced after interruption; no complete ten-case result is claimed.",
+    "log": "evidence/group-8-integration-20260915/browser-chapter-outcomes.log",
+    "artifacts": "evidence/group-8-integration-20260915/browser-chapter-outcomes-artifacts",
+    "completedCases": [
+      {
+        "title": "Complete Garden chapter: later Mara tells; Sol developed",
+        "result": "timedOut",
+        "budgetMs": 450000,
+        "reportedDurationMinutes": 10.8
+      }
+    ],
+    "remainingCases": "One further case was interrupted; the remaining eight never started.",
+    "processIdentity": "evidence/group-8-integration-20260915/chapter-software-runner.json"
+  },
+  "softwareObservation": {
+    "adapter": "ANGLE SwiftShader Vulkan software renderer",
+    "activeP95Ms": 283.3,
+    "source": "Retained failed trace and screenshot at Grandma’s sixth story part. The final error context later shows a completed run; the deadline failure remains a failure."
+  },
+  "fullChromiumProbe": "evidence/group-8-integration-20260915/renderer-probe/result.json",
+  "reference": "https://github.com/microsoft/playwright/blob/v1.61.0/docs/src/browsers.md",
+  "newFullRun": {
+    "report": "evidence/group-8-integration-20260915/browser-full-chromium.json",
+    "runtimeBase": "evidence/group-8-integration-20260915/browser-full-chromium-candidate.json",
+    "configuration": "The copied runtime base predates the channel change. The sole config exception is bound by candidate-full-chromium.json and the actual Playwright report config."
+  },
+  "limits": "The short GPU probe is not a completed-route or all-device acceptance result. Full fresh routes and remaining qualification follow independently."
+}

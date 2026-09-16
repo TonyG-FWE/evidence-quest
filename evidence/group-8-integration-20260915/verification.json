@@ -1,0 +1,245 @@
+{
+  "at": "2026-09-15T20:48:17.602Z",
+  "result": "PASS_BOUNDED_GROUP_8_LOCAL_DEMO",
+  "groups": {
+    "1": "DESIGN_COMPLETE",
+    "2": "BOUNDED_IMPLEMENTATION_PASS",
+    "3": "BOUNDED_IMPLEMENTATION_PASS",
+    "4": "BOUNDED_IMPLEMENTATION_PASS",
+    "5": "BOUNDED_IMPLEMENTATION_PASS",
+    "6": "BOUNDED_IMPLEMENTATION_PASS",
+    "7": "BOUNDED_IMPLEMENTATION_PASS",
+    "8": "LOCAL_INTEGRATION_COMPLETE_QUALIFICATION_OPEN"
+  },
+  "candidate": {
+    "garden": "assets/GardenApp-D-NRNTbz.js",
+    "css": [
+      "assets/GardenApp-Cowp-FIg.css"
+    ],
+    "entry": "assets/index-sMxSaulA.js"
+  },
+  "scope": "Verified connected local authored demo, ordinary final browser routes, scoped cross-browser/native checks, actual short recording and all 169 original audit dispositions. Owner/learner/live/device/art and recorded performance qualification stay distinct.",
+  "checks": {
+    "chromium": {
+      "total": 113,
+      "passed": 111,
+      "failed": 2
+    },
+    "garden": {
+      "total": 31,
+      "passed": 31,
+      "freshChapterOutcomes": 9,
+      "freshChapterOutcomesOnFinalCandidate": 0
+    },
+    "otherBrowsers": [
+      {
+        "browser": "firefox",
+        "title": "Complete Garden chapter: usual time; Pip delivers Grandma’s story; Sol draft",
+        "status": "passed"
+      },
+      {
+        "browser": "webkit",
+        "title": "Complete Garden chapter: usual time; Pip delivers Grandma’s story; Sol draft",
+        "status": "passed"
+      },
+      {
+        "browser": "firefox",
+        "title": "Finale: authentic prior-save fixture, actual memory placement, lantern source return, compact show and replay recovery",
+        "status": "passed"
+      },
+      {
+        "browser": "webkit",
+        "title": "Finale: authentic prior-save fixture, actual memory placement, lantern source return, compact show and replay recovery",
+        "status": "passed"
+      },
+      {
+        "browser": "firefox",
+        "title": "G2 ordinary keyboard route: nested letter, Help and backpack preserve focus and return context",
+        "status": "passed"
+      },
+      {
+        "browser": "firefox",
+        "title": "G2 ordinary world route: invalid plan, exact rehearsal, nested help and prepared return",
+        "status": "passed"
+      },
+      {
+        "browser": "webkit",
+        "title": "G2 ordinary keyboard route: nested letter, Help and backpack preserve focus and return context",
+        "status": "passed"
+      },
+      {
+        "browser": "webkit",
+        "title": "G2 ordinary world route: invalid plan, exact rehearsal, nested help and prepared return",
+        "status": "passed"
+      },
+      {
+        "browser": "firefox",
+        "title": "G3 ordinary controls: named placement, actual far-held collapse, reload, recovery and first garden context",
+        "status": "passed"
+      },
+      {
+        "browser": "firefox",
+        "title": "G3 ordinary boat controls: loaded cargo, wrong dock, pause/reload, player steering and explicit receipt",
+        "status": "passed"
+      },
+      {
+        "browser": "webkit",
+        "title": "G3 ordinary controls: named placement, actual far-held collapse, reload, recovery and first garden context",
+        "status": "passed"
+      },
+      {
+        "browser": "webkit",
+        "title": "G3 ordinary boat controls: loaded cargo, wrong dock, pause/reload, player steering and explicit receipt",
+        "status": "passed"
+      },
+      {
+        "browser": "webkit",
+        "title": "Temporary reading practice starts with mic off and unavailable feedback is honest",
+        "status": "passed"
+      },
+      {
+        "browser": "webkit",
+        "title": "G4 ordinary early telling: actual duty, no source shortcut, compact repair, pause/reload and same present-day facts",
+        "status": "passed"
+      }
+    ]
+  },
+  "audit": {
+    "total": 169,
+    "localBehaviorVerified": 169,
+    "additionalQualificationOpen": 32
+  },
+  "provider": {
+    "used": 1,
+    "cap": 75,
+    "state": "HALTED_UNCHANGED",
+    "newRequests": 0
+  },
+  "protected": {
+    "inputs": 460,
+    "originalArt": 52,
+    "changed": 0
+  },
+  "git": {
+    "at": "2026-09-15T20:43:05.837Z",
+    "branch": "codex/first-connected",
+    "head": "63af7a2261553c2639842a458b54dde38311e3f7",
+    "status": "DIRTY_LOCAL_CHANGES_PRESERVED",
+    "statusPath": "evidence/group-8-integration-20260915/final-git-status.txt",
+    "diffStatPath": "evidence/group-8-integration-20260915/final-git-diff-stat.txt",
+    "mutations": {
+      "checkout": false,
+      "reset": false,
+      "clean": false,
+      "commit": false,
+      "push": false,
+      "deployment": false
+    },
+    "note": "This is the existing base HEAD, not a commit of the current local implementation. The runtime and evidence receipts bind current file bytes independently."
+  },
+  "preview": "http://127.0.0.1:4200/garden",
+  "files": [
+    {
+      "path": "evidence/group-8-integration-20260915/candidate-speech-cancel.json",
+      "sha256": "9968d3799848f9b32cec794970810b0405bfc00a2ebe4c528fb7a5f4aae66150"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/integration-checks.json",
+      "sha256": "bc8fda1a268538cd43af451c72af58aaabfe9d71362401da8ef74398d6d2277a"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/quality-measurements.json",
+      "sha256": "4b7699f670055874d52d3c27b3f410da57598dd1466936091dfafb138115eb22"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/demo/manifest.json",
+      "sha256": "0ed8a74c1fb80ec82b7a069831c60489ccaa300b12093ecaf8da93773a1885b1"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/measurement.json",
+      "sha256": "ff3afc82624a8d4a47fed626a58f912eb76b07fe69a437980b5902fd489c244d"
+    },
+    {
+      "path": "docs/game-review/GROUPS-1-8-RUNTIME-COVERAGE.json",
+      "sha256": "e3be5d48a7be267cd90582fc0560ddff71b3caae3ec7985092289afcaa243ea6"
+    },
+    {
+      "path": "docs/game-review/GROUPS-1-8-RUNTIME-COVERAGE.md",
+      "sha256": "399b791c7c6a043a73ad5bd47e6c27e1edf91b0ac6e4bd30f3902e861c9742f8"
+    },
+    {
+      "path": "docs/GARDEN-COMPLETE-DEMO.md",
+      "sha256": "21ac41b7283d1d595a2cafd100dd4d61b7d30c9c430e2a89a6ebb83533da0ec1"
+    },
+    {
+      "path": "README.md",
+      "sha256": "ad1439bdc9b943093cf812e43e436251bc657ea17d26ea7f98b89aa3b4ef97c0"
+    },
+    {
+      "path": "BUILD-STATUS.md",
+      "sha256": "771b1bf21c9f66f4eb475f9e01ee29314a064c9f942f27e884a2de82c79a41e5"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/final-review.json",
+      "sha256": "d11dd8099336f9bdc6cca881bca2ba77e61eea9a8a43aad73e5158a7d11ba842"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/native-input-review.json",
+      "sha256": "f7a829926f1c0ff4ec315b3992c5c21584c67bd9328e1a537b289898a521967b"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/native-final.json",
+      "sha256": "45cebe084634cca8d6a24b1c22c8e1029f4e65b3989a4bcfacd9a8d09aaddc8c"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/native-final-supplement.json",
+      "sha256": "e9280a22f18c8d8032192bdc794a5967251e260deb9ec075509e4fb5d9a0b24d"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/test-selector-review.json",
+      "sha256": "032528a81dd7e1f0932fd96f7a8aa75adeb65d8c881aaecbfbd9d22043418286"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/speech-source-review.json",
+      "sha256": "c3c676e7b79e18a1266eb2534f84d5eae11a6b4a9a61aaa3776f64f94137d78b"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/pointer-source-review.json",
+      "sha256": "086b48fe5d921302c7d83982208540c7b0a3c3750dcca889e77c17ed68d2ea65"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/boat-source-review.json",
+      "sha256": "2110ac306b9858219eab2ff4142d7736395a0e6e92966826644f907f1a9f49d2"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/final-view-source-review.json",
+      "sha256": "517b451dfcd0e959405d674951542390085d98bdea4e4440ef2034caa714560a"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/boat-entry-resolved-review.json",
+      "sha256": "585ebd4784392472f4487dc3be54e277a2753e7b5d0dfc1364ad79d1498acf45"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/final-preview.json",
+      "sha256": "c92f1c00fc3dd8dc84aeed8a6daca0d58ae413d68436eda36369abc5d46bf6a7"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/final-git.json",
+      "sha256": "a62ff2131d75c80c0f6d504ae3006bc317899f0290ee900627ae80a5e6ab006c"
+    }
+  ],
+  "independentReview": "evidence/group-8-review-20260915/final-review.json",
+  "limits": [
+    "Owner play and visual acceptance remain pending; the previous rejected experience is retained as historical evidence.",
+    "TASK11.19 remains halted at exactly 1/75 after exhausted provider credit. No live request, retry or ledger reset was made. Text analysis, pronunciation assessment and live dictionary generation remain unavailable.",
+    "Authored word meanings and browser speech playback are local support, not evidence of learning improvement or pronunciation accuracy. Actual learner and microphone qualification are NOT_RUN.",
+    "Firefox and WebKit cover the named desktop automation cases, not physical mobile devices or every browser version. Native evidence binds its own candidate, viewport and input scope.",
+    "Procedural Garden geometry remains subject to final illustrated-art acceptance. The 52 original art files and 460 protected inputs are unchanged.",
+    "The earlier G8-V01 boat entry defect is retained with its subsequent visual-resolution receipt. Fixing that defect does not establish final illustrated-art acceptance.",
+    "Two original-room DPR2 transfer tests remain failed at their unchanged limits. Garden active RAF samples and the dated native cadence receipt are bounded responsiveness proxies; total GPU memory is not measured.",
+    "The113-case inventory and9 fresh outcomes were first collected on DMD. The corrected test label, optional speech guards, invoking-button anchors and boat approach are separately reviewed incremental changes with their own affected browser/native checks. Every result keeps its actual candidate; the whole inventory was not rerun on the last build.",
+    "The short silent recording is an edited excerpt of actual ordinary browser play. It is not a measured child completion time or a live-AI demonstration.",
+    "All edits and artifacts remain local. No deployment, public publication, submission, paid evaluation or child-live activation occurred.",
+    "After the boat-entry measurements and full prepared recording, a reviewed view-only correction focuses initial passenger service and handles intentional speech cancellation. Its separate current browser/native checks are bound explicitly; the earlier measurement/recording editions are unchanged."
+  ]
+}

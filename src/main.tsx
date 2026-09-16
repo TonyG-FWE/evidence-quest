@@ -11,6 +11,7 @@ class Boundary extends Component<{children:ReactNode},{failed:boolean}>{
 const root=createRoot(document.getElementById('root')!);
 root.render(<p role="status" style={{padding:32}}>{bootstrap['CT.TECH.LOADING']}</p>);
 async function loadApp(){
+ if(location.pathname==='/garden'||location.pathname==='/garden/')return import('./garden/GardenApp.js');
  const token=new URL(location.href).searchParams.get('eq-retry');
  if(!import.meta.env.PROD||!token)return import('./ui/App.js');
  // WebKit can retain a failed module across ordinary reloads. An explicit

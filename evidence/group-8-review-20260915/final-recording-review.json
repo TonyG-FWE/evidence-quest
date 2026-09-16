@@ -1,0 +1,430 @@
+{
+  "at": "2026-09-15T20:44:09.419Z",
+  "result": "PASS_BOUNDED_ACTUAL_RECORDING_REVIEW",
+  "candidate": {
+    "garden": "assets/GardenApp-D-NRNTbz.js",
+    "css": [
+      "assets/GardenApp-Cowp-FIg.css"
+    ],
+    "entry": "assets/index-sMxSaulA.js"
+  },
+  "recordingCandidate": {
+    "garden": "assets/GardenApp-DQxss6LK.js",
+    "css": [
+      "assets/GardenApp-Cowp-FIg.css"
+    ],
+    "entry": "assets/index-Bk4gdjda.js"
+  },
+  "movie": {
+    "path": "evidence/group-8-integration-20260915/demo/evidence-quest-demo.webm",
+    "sha256": "5eb493aba29a5d4d1f1416bb4e342b582b9cecf7e5edf9dd4990d2ee14d93a5e",
+    "bytes": 77792309,
+    "decodedDurationSeconds": 158.88,
+    "width": 1440,
+    "height": 1120,
+    "framesPerSecond": 25,
+    "audio": false
+  },
+  "scope": "Independent visual inspection of all 30 retained decoded output frames: first, both sides of all 14 labeled cuts, and last. Metadata, source movies, cut timings, hashes and exact recording edition are reconciled. This is sampled output review, not a claim that every movie frame was watched or that the excerpt proves all runtime paths.",
+  "observations": [
+    {
+      "frames": [
+        "first",
+        "01-start",
+        "01-end"
+      ],
+      "observed": "The real opening and Begin Pip’s adventure control are visible. The introductory caption and excerpt footer remain readable."
+    },
+    {
+      "frames": [
+        "02-start",
+        "02-end"
+      ],
+      "observed": "Mara’s source page and the obligation word card show contextual reading help with readable text."
+    },
+    {
+      "frames": [
+        "03-start",
+        "03-end"
+      ],
+      "observed": "Both dialogue choices are visible; the later-gathering choice is selected. The label matches this route."
+    },
+    {
+      "frames": [
+        "04-start",
+        "04-end"
+      ],
+      "observed": "The separate-attempt label remains visible as the loose bridge separates and Pip is shown back on the bank."
+    },
+    {
+      "frames": [
+        "05-start",
+        "05-end"
+      ],
+      "observed": "The successful-route label distinguishes this source from the collapse attempt. The builder is visible at the start; the repaired bridge and planted flower are visible at the end."
+    },
+    {
+      "frames": [
+        "06-start",
+        "06-end",
+        "07-start",
+        "07-end"
+      ],
+      "observed": "Bakery and repair captions remain readable; the repaired roof and dry-flour action are visible. The later frame shows the bread with Sol after Rina’s thanks."
+    },
+    {
+      "frames": [
+        "08-start",
+        "08-end"
+      ],
+      "observed": "The proposed ending is explicitly labeled as the player’s suggestion with feedback unavailable; it is not presented as an assessed answer or Sol’s original source."
+    },
+    {
+      "frames": [
+        "09-start",
+        "09-end"
+      ],
+      "observed": "The plan-and-invitations caption bridges arranging the gathering and the resulting ready-to-begin world state."
+    },
+    {
+      "frames": [
+        "10-start",
+        "10-end"
+      ],
+      "observed": "The whole passenger boat is visible on water in the starting frame. The final frame shows the later gathering and Pip’s introduction naming Mara and Sol."
+    },
+    {
+      "frames": [
+        "11-start",
+        "11-end"
+      ],
+      "observed": "The earlier-story caption distinguishes Mara’s recalled repair from today’s gathering. The endpoint returns to the garden and shows her source account, including the boy’s promise to his sister and the tape repair."
+    },
+    {
+      "frames": [
+        "12-start",
+        "12-end"
+      ],
+      "observed": "The garden sequence shows Grandma’s preparation and then Pip’s chosen memory in the flower, with the caption connecting the stories."
+    },
+    {
+      "frames": [
+        "13-start",
+        "13-end"
+      ],
+      "observed": "The ending reader and kept-his-promise word card are visible and readable. Controls remain in the recorded frame."
+    },
+    {
+      "frames": [
+        "14-start",
+        "14-end",
+        "last"
+      ],
+      "observed": "The final narration picture and concluding words remain intact. The caption explicitly states that this silent excerpt uses cuts and held frames."
+    }
+  ],
+  "reviewedFrames": [
+    {
+      "id": "first",
+      "seconds": 1,
+      "label": "The Garden Adventure",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/first.png",
+      "sha256": "6d3b9db4770e9d540e9f63a359b4bf707a41671f58e355ce726da9728fee6261"
+    },
+    {
+      "id": "01-start",
+      "seconds": 3.535199999988079,
+      "label": "The Garden Adventure",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/01-start.png",
+      "sha256": "373870852cd55fd47b9de87233922180b688ae9f7818efc60e8c0f78b7b337fc"
+    },
+    {
+      "id": "01-end",
+      "seconds": 5.35459999999404,
+      "label": "The Garden Adventure",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/01-end.png",
+      "sha256": "3d6a38ef6a41b33d2be53b1db08520edb57c355574ce5d210d0881f427ed5cde"
+    },
+    {
+      "id": "02-start",
+      "seconds": 6.72209999999404,
+      "label": "Read words in their story",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/02-start.png",
+      "sha256": "6a71093824ecbd210e6cbcce27671b9b99d2a32c4f10c11ad03a608fd862709f"
+    },
+    {
+      "id": "02-end",
+      "seconds": 11.55940000000596,
+      "label": "Read words in their story",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/02-end.png",
+      "sha256": "2b58867bc7e6a854bf24a48a880ace41c4305f452fe65cc4b41eca39f47f8352"
+    },
+    {
+      "id": "03-start",
+      "seconds": 12.9105,
+      "label": "Choose what Pip says",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/03-start.png",
+      "sha256": "82955b9b7b6fe7bd73b86076fbe54ebf60ca367e0f83c08953014214d25aa169"
+    },
+    {
+      "id": "03-end",
+      "seconds": 14.8955,
+      "label": "Choose what Pip says",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/03-end.png",
+      "sha256": "543e13fac06932c46a0298bb1f30f66adc03b0b8d7ad2f13fa95e43ec8b5d1dc"
+    },
+    {
+      "id": "04-start",
+      "seconds": 16.279799999982117,
+      "label": "Separate attempt: crossing a loose bridge",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/04-start.png",
+      "sha256": "89425bf92151957a09263d2b2d594e4c6b95a9a59fb27f4554fb78a99cb87d81"
+    },
+    {
+      "id": "04-end",
+      "seconds": 19.699400000005962,
+      "label": "Separate attempt: crossing a loose bridge",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/04-end.png",
+      "sha256": "a52b031fc63ced924e20b3772b0631067ce213134f1830a57bc2b0cf3ff0d327"
+    },
+    {
+      "id": "05-start",
+      "seconds": 21.10009999999404,
+      "label": "Back to the successful route",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/05-start.png",
+      "sha256": "83f2f6a31db8ecc1093f14dd38cc3a08e21461aedcea6eaa441a3ad77535ac93"
+    },
+    {
+      "id": "05-end",
+      "seconds": 30.90869999998808,
+      "label": "Back to the successful route",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/05-end.png",
+      "sha256": "5ecd9d13b28ab41f792d192148299b1515bb8d35f8c3d0de93322b03a8d9a1a3"
+    },
+    {
+      "id": "06-start",
+      "seconds": 32.27619999998808,
+      "label": "Help at Rina’s bakery",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/06-start.png",
+      "sha256": "4a899e858dc290b09ce9ed4a8e2272cc3df687caa3b5823cc7acc931c59584dd"
+    },
+    {
+      "id": "06-end",
+      "seconds": 46.5885,
+      "label": "Help at Rina’s bakery",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/06-end.png",
+      "sha256": "c996792eb0ff74544c49a5ccf2a020d64be58ae55a0960cd4e75ec95d366077d"
+    },
+    {
+      "id": "07-start",
+      "seconds": 47.98840000000596,
+      "label": "See why the repair matters",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/07-start.png",
+      "sha256": "ab16bad7f6e4f5ffc71703fa0febb224415973cab0f87845c78befcd4b7dff8a"
+    },
+    {
+      "id": "07-end",
+      "seconds": 67.90629999998212,
+      "label": "See why the repair matters",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/07-end.png",
+      "sha256": "62064c20d4d9c197cf49df130c5131a0fcb982a8dcefd7147b1a6c4732a0fdc8"
+    },
+    {
+      "id": "08-start",
+      "seconds": 69.32249999999999,
+      "label": "Put the connection into words",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/08-start.png",
+      "sha256": "9752f42c192922b22285fbcecdbce665b3f29ef7bf0b66e1ff83099f89880d1a"
+    },
+    {
+      "id": "08-end",
+      "seconds": 75.19429999998212,
+      "label": "Put the connection into words",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/08-end.png",
+      "sha256": "99a9df2462a5f07b4a6c86cd9337a2e225cf0243a75ac6962a64d22fc8c99668"
+    },
+    {
+      "id": "09-start",
+      "seconds": 76.64529999998211,
+      "label": "Plan the gathering and tell everyone",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/09-start.png",
+      "sha256": "85915987f94fff9bbaf02715a7a7cfb8e8e9f136d07d53604c1fd1619eba4ae3"
+    },
+    {
+      "id": "09-end",
+      "seconds": 90.55709999999404,
+      "label": "Plan the gathering and tell everyone",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/09-end.png",
+      "sha256": "62cac65f379492e2f1feefcd940c8c671ffea9730c27382c5d6ce017c93a3d20"
+    },
+    {
+      "id": "10-start",
+      "seconds": 91.97379999998212,
+      "label": "The agreed plan happens in the world",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/10-start.png",
+      "sha256": "4f0eb032e2c9f288631d1e09cee0894b206b46e03ab0c350d487446007322b2d"
+    },
+    {
+      "id": "10-end",
+      "seconds": 114.27619999998808,
+      "label": "The agreed plan happens in the world",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/10-end.png",
+      "sha256": "f7f41b8d8e1c042f73fa731daaa6b53512e08d56c6eff3bb1e90963e702cb2c3"
+    },
+    {
+      "id": "11-start",
+      "seconds": 115.66019999998808,
+      "label": "Play through Mara’s earlier story",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/11-start.png",
+      "sha256": "2d7428312cf6080f3952ce6483fa78a95729d3d3086af9584e4b1033d5442024"
+    },
+    {
+      "id": "11-end",
+      "seconds": 130.87329999998212,
+      "label": "Play through Mara’s earlier story",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/11-end.png",
+      "sha256": "34693b80f4f38f39d5398bd5a98ca403cabaaf63838ccd0037ea17025b43ee99"
+    },
+    {
+      "id": "12-start",
+      "seconds": 132.37359999999404,
+      "label": "Bring the stories together",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/12-start.png",
+      "sha256": "12467162a64a33466b076af4431c46af7c51f5444249dbfab4c533f0aea66871"
+    },
+    {
+      "id": "12-end",
+      "seconds": 143.384,
+      "label": "Bring the stories together",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/12-end.png",
+      "sha256": "ccdcbf22c324fd362669c57f0facc008b1ef368c91947cc5b9e67a0a6ca838ee"
+    },
+    {
+      "id": "13-start",
+      "seconds": 144.7166999999881,
+      "label": "Read the ending with Loop",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/13-start.png",
+      "sha256": "7a9de42a78e408f451aab12318b87aecc8dbd484d0980a8a44e1966db3963b0e"
+    },
+    {
+      "id": "13-end",
+      "seconds": 149.988,
+      "label": "Read the ending with Loop",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/13-end.png",
+      "sha256": "16bbdd54f6790d457fa494560243ec4c1b4bf56338a0c924724b60882fffa52e"
+    },
+    {
+      "id": "14-start",
+      "seconds": 151.33869999998808,
+      "label": "A complete chapter, ready to replay",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/14-start.png",
+      "sha256": "abbc2377dbbd166dae7a4b601358fd7825ac26529810481f2a24ddcb2f2cf07f"
+    },
+    {
+      "id": "14-end",
+      "seconds": 155.3257999999821,
+      "label": "A complete chapter, ready to replay",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/14-end.png",
+      "sha256": "66c44b8d373f48e096417df3007a7deec047a8597d1b3f581bfed82af4f91205"
+    },
+    {
+      "id": "last",
+      "seconds": 157.88,
+      "label": "A complete chapter, ready to replay",
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/last.png",
+      "sha256": "a7ef096e24b09f4b03b7b7394c5bdd786358a747d397bd462f0c7d73200cbb3f"
+    }
+  ],
+  "sources": [
+    {
+      "id": "chapter",
+      "path": "evidence/group-8-integration-20260915/browser-final-boat-artifacts/garden-chapter-Complete-Ga-ae42f-ter-Mara-tells-Sol-prepared-chromium/video.webm",
+      "sha256": "38bb6ce8f6ade77eb3d18f6258259b96683e87596bca3a440ddf7c753bf77cc5",
+      "candidate": {
+        "garden": "assets/GardenApp-DQxss6LK.js",
+        "css": [
+          "assets/GardenApp-Cowp-FIg.css"
+        ],
+        "entry": "assets/index-Bk4gdjda.js"
+      }
+    },
+    {
+      "id": "collapse",
+      "path": "evidence/group-8-integration-20260915/browser-final-boat-artifacts/garden-chapter-Loose-bridg-e6b86-pse-safe-return-and-rebuild-chromium/video.webm",
+      "sha256": "e7f09d01c8e8d3b439671eff984a7a0bb1d9229c1294db486cd86a656781e92a",
+      "candidate": {
+        "garden": "assets/GardenApp-DQxss6LK.js",
+        "css": [
+          "assets/GardenApp-Cowp-FIg.css"
+        ],
+        "entry": "assets/index-Bk4gdjda.js"
+      }
+    }
+  ],
+  "sourceCarry": {
+    "path": "evidence/group-8-review-20260915/final-view-source-review.json",
+    "sha256": "517b451dfcd0e959405d674951542390085d98bdea4e4440ef2034caa714560a",
+    "recordingEdition": {
+      "garden": "assets/GardenApp-DQxss6LK.js",
+      "css": [
+        "assets/GardenApp-Cowp-FIg.css"
+      ],
+      "entry": "assets/index-Bk4gdjda.js"
+    },
+    "handoffEdition": {
+      "garden": "assets/GardenApp-D-NRNTbz.js",
+      "css": [
+        "assets/GardenApp-Cowp-FIg.css"
+      ],
+      "entry": "assets/index-sMxSaulA.js"
+    },
+    "reason": "The DQ footage predates two initial-service framing expressions and one intentional speech-cancellation guard. The recorded clips do not exercise those changed states. The exact changes and current native/view checks are separately bound; the movie is not labeled as all-on-final footage."
+  },
+  "references": [
+    {
+      "path": "evidence/group-8-integration-20260915/demo/manifest.json",
+      "sha256": "0ed8a74c1fb80ec82b7a069831c60489ccaa300b12093ecaf8da93773a1885b1"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/measurement.json",
+      "sha256": "ff3afc82624a8d4a47fed626a58f912eb76b07fe69a437980b5902fd489c244d"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/decoded-metadata.txt",
+      "sha256": "9c660dea8e1e2b79773ee36cc671195dcc00387a381c534bdaf3db6af0a39650"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/demo/visual-review/root-review.json",
+      "sha256": "e719ffe41af8df3c2d7891225d6f30e83f5fc70bdc3946813efc1e52d347de21"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/demo-cutlist-final.json",
+      "sha256": "26ff9c74015736241ae0e6af6770bc7438388ae1a5c80e3a0c07e092a52da8f4"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-final-boat.json",
+      "sha256": "95192289985ecd2346bfc18d5f4ffded81219b06ba563774266186551caae787"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-final-boat-candidate.json",
+      "sha256": "6e6a5ebc0f8df79a6cf77cbff4f8b95c7b6defe3b62c7610611a10d035b0b565"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/native-final-supplement.json",
+      "sha256": "e9280a22f18c8d8032192bdc794a5967251e260deb9ec075509e4fb5d9a0b24d"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/boat-entry-resolved-review.json",
+      "sha256": "585ebd4784392472f4487dc3be54e277a2753e7b5d0dfc1364ad79d1498acf45"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/candidate-speech-cancel.json",
+      "sha256": "9968d3799848f9b32cec794970810b0405bfc00a2ebe4c528fb7a5f4aae66150"
+    }
+  ],
+  "limitations": [
+    "Silent edited gameplay excerpt with explicit reading holds and one labeled separate collapse attempt; the full chapter remains separately playable.",
+    "No acoustic playback, microphone capture, learner assessment, final illustrated-art qualification, owner acceptance or live AI validation is claimed.",
+    "Current final native checks and service-framing evidence remain separate from this DQ-edition recording."
+  ]
+}

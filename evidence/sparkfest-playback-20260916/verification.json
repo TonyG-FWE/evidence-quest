@@ -1,0 +1,200 @@
+{
+  "at": "2026-09-16T06:36:00.654Z",
+  "status": "PASS_BOUNDED_LOCAL_CORRECTION",
+  "authority": "Tony clarified his confirmation was approval for continuous character tellings, complete Loop playback and the existing illustrated SparkFest/Loop introduction, with Pip's adventure kept distinct.",
+  "tasks": [
+    "TASK11.07",
+    "TASK11.08",
+    "TASK11.09",
+    "TASK11.13",
+    "TASK11.14",
+    "TASK11.16",
+    "TASK11.21"
+  ],
+  "checkout": {
+    "branch": "codex/first-connected",
+    "head": "63af7a2261553c2639842a458b54dde38311e3f7",
+    "changes": "Local and uncommitted; prior dirty work preserved.",
+    "pushes": 0,
+    "deployments": 0
+  },
+  "candidate": {
+    "path": "evidence/sparkfest-playback-20260916/final.json",
+    "sha256": "bfd9b70614c26c3e6f01989c8e6d95c5ed136dd5115366fba65ed683368a738f",
+    "matchingFiles": 143,
+    "mismatches": 0,
+    "delta": {
+      "path": "evidence/sparkfest-playback-20260916/final-delta.json",
+      "sha256": "d15e2c9f16f375bd2b85867f2e83b2cc97ed40dfcf58f89d8af2f868d136d0aa"
+    }
+  },
+  "commands": [
+    {
+      "command": "npm ci",
+      "status": "PASS",
+      "evidence": {
+        "path": "evidence/sparkfest-playback-20260916/npm-ci.log",
+        "sha256": "c6ceb73549397c657fc90775ff9b3bb4fba2930c28f06f11866e4cf6952d1c4b"
+      },
+      "edition": "Initial installation; package and lock unchanged."
+    },
+    {
+      "command": "npm run build (includes validate:content, check, build:server)",
+      "status": "PASS",
+      "evidence": {
+        "path": "evidence/sparkfest-playback-20260916/build-final.log",
+        "sha256": "ee382d9efdce87bae6d86c1588f4cc3882ae484f04568a074436b98906ca9e15"
+      },
+      "edition": "final"
+    },
+    {
+      "command": "npm run test:contracts",
+      "status": "PASS",
+      "pass": 116,
+      "fail": 0,
+      "skip": 0,
+      "evidence": {
+        "path": "evidence/sparkfest-playback-20260916/contracts-final.log",
+        "sha256": "a001b848ee71409773957719a679d11f3fb0c3200ca8055c61a2111a34a68e9e"
+      },
+      "edition": "final"
+    },
+    {
+      "command": "npm run eval:coach -- --mode authored",
+      "status": "PASS",
+      "pass": 23,
+      "providerCalls": 0,
+      "evidence": {
+        "path": "evidence/sparkfest-playback-20260916/authored-1.log",
+        "sha256": "25483957bcbd3e70fe1add0004c4b2d35bb352e3edc08679a69ea986bd860413"
+      },
+      "edition": "Dated authored check; coach implementation unchanged by this presentation correction."
+    },
+    {
+      "command": "npm run test:browser (affected cases)",
+      "status": "PASS",
+      "pass": 31,
+      "evidence": {
+        "path": "evidence/sparkfest-playback-20260916/browser-summary.json",
+        "sha256": "e752ba6563c6ff08463d81eacb6671190cfd923267ddc0841b82df8010ae84b3"
+      },
+      "edition": "final"
+    }
+  ],
+  "browser": {
+    "batches": [
+      {
+        "path": "evidence/sparkfest-playback-20260916/browser-focused-final.json",
+        "sha256": "d596cbe6fc58d599f28f1783cf81b494c1dfcf5deaf00006d84fc6bdf26e7688",
+        "edition": "final",
+        "stats": {
+          "startTime": "2026-09-16T06:18:58.068Z",
+          "duration": 80373.019,
+          "expected": 18,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        },
+        "errors": []
+      },
+      {
+        "path": "evidence/sparkfest-playback-20260916/browser-routes-2.json",
+        "sha256": "dbd1cee35c3310faead6c9e923436020b67bcfb01779e2bc01afab8bed4b718e",
+        "edition": "final",
+        "stats": {
+          "startTime": "2026-09-16T06:15:18.930Z",
+          "duration": 1175228.811,
+          "expected": 13,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        },
+        "errors": []
+      }
+    ],
+    "projects": {
+      "chromium": 19,
+      "firefox": 6,
+      "webkit": 6
+    },
+    "completeEndingCombinations": 9,
+    "scope": "18 focused cases in Chromium/Firefox/WebKit plus 13 Chromium connected-route cases, including all nine endings. This is not the full repository browser suite.",
+    "syntheticSpeech": "Explicit synthetic local voices test sequencing, exact text and stale callback cancellation. Missing-voice caption timing is checked with elapsed browser time. Native acoustic quality is not qualified."
+  },
+  "sourceReview": {
+    "path": "evidence/sparkfest-playback-20260916/independent-source-review.md",
+    "sha256": "ef75dfb1474854558d7cbd1c5cd1a62b5583e4da6e5cea7e7bc9c3022c7e7667",
+    "matchingRecordedHashes": 26,
+    "scope": "Source-only independent review with earlier browser results; the final batches above supersede its pending integration note."
+  },
+  "native": {
+    "status": "PASS_BOUNDED_UI",
+    "evidence": [
+      {
+        "path": "evidence/sparkfest-playback-20260916/native-introduction.png",
+        "sha256": "96ce41e80e309b1d261d4b8c2c9f9c3de65be01fcfe1d62933cc59ed67e4da7c"
+      },
+      {
+        "path": "evidence/sparkfest-playback-20260916/native-projector-word-help.png",
+        "sha256": "dd6e2ee56d0e3ae20b7e3cc2ef678b833265cc659cb607c3f0b57b74aaacf8d0"
+      },
+      {
+        "path": "evidence/sparkfest-playback-20260916/native-projector-word-help.txt",
+        "sha256": "a7db1972da435f6431df723aa8a183308e3fb22ac5a5ca4febd30a28293e61fb"
+      }
+    ],
+    "observations": [
+      "Opened Help and illustrated SparkFest/Loop introduction from the existing QA save.",
+      "Final projector card gives the authored device meaning, source sentence, word/sentence listening and reading-aloud controls.",
+      "Closing word help and the introduction returns through Help to the unchanged bakery scene.",
+      "Desktop and 320px automated screenshots inspected; mobile welcome uses one scrolling page."
+    ],
+    "limitations": "No native audible narration or microphone/acoustic qualification performed.",
+    "cleanup": "Owned 4199 QA tab closed and server session 88718 stopped. User preview tabs and saves were not reset."
+  },
+  "preservation": {
+    "path": "evidence/sparkfest-playback-20260916/preservation.json",
+    "sha256": "4c3da53c327e54e03f389aee57978e87456e17a1fef5100984a4e3ed96697a19"
+  },
+  "delivery": {
+    "path": "evidence/sparkfest-playback-20260916/delivered-final.json",
+    "sha256": "8e7db2042d72995990ddef2ca169ec4612005a97229c1dc9213fe603aad5a204"
+  },
+  "retainedFailures": [
+    {
+      "path": "evidence/sparkfest-playback-20260916/check-1.log",
+      "disposition": "Playback union separator typo corrected; final build strict checks pass."
+    },
+    {
+      "path": "evidence/sparkfest-playback-20260916/check-2.log",
+      "disposition": "Exact optional className corrected; final strict checks pass."
+    },
+    {
+      "path": "evidence/sparkfest-playback-20260916/build-1.log",
+      "disposition": "Sandbox denied esbuild directory traversal; approved local elevated final build passes."
+    },
+    {
+      "path": "evidence/sparkfest-playback-20260916/browser-focused-1.log",
+      "disposition": "Welcome focus return corrected. Save fixture now waits for the actual initial persisted payload and reports errors. Final 18 affected cases pass."
+    },
+    {
+      "path": "evidence/sparkfest-playback-20260916/browser-routes-1.log",
+      "disposition": "Obsolete duplicate-toolbar selector and premature Mara-return fixture check corrected. Interrupted batch retained; final 13 connected cases pass."
+    }
+  ],
+  "remainingQualification": [
+    "Owner play and visual acceptance",
+    "Existing TASK11.20/.21 and ER13.06–08 learner, live/audio, final-art and device/performance gaps",
+    "Native microphone/acoustic feedback and prior WebKit WAV decoder limitation remain unqualified",
+    "Provider TASK11.19 remains HALTED at exactly 1/75; no requests, retry or reset"
+  ],
+  "nextDependency": "Owner play review and the existing recorded qualification work; no deployment, publication, paid/provider evaluation or child-live activation authorized by this receipt.",
+  "statusDocument": {
+    "path": "BUILD-STATUS.md",
+    "sha256": "c9b85032b39b0c7be863e05d50cbf3c677ab1c7606581ff725cb44662cb067be"
+  },
+  "presentationAmendment": {
+    "path": "docs/game-review/SPARKFEST-CONTINUOUS-STORIES-20260916.md",
+    "sha256": "f61992595cfc6e31b61162722b6edd22350e3cad7a9ef09fb894b01b0c079006"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "artifacts": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\group-8-integration-20260915\\browser-service-final-artifacts",
+  "chromiumChannel": "chromium",
+  "arguments": [
+    "node_modules/@playwright/test/cli.js",
+    "test",
+    "garden-mara.spec.ts",
+    "garden-chapter.spec.ts",
+    "--project=chromium",
+    "--project=webkit",
+    "--grep",
+    "G4 ordinary|Temporary reading practice"
+  ],
+  "exitCode": 0,
+  "at": "2026-09-15T20:22:59.1088883Z",
+  "report": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\group-8-integration-20260915\\browser-service-final.json"
+}

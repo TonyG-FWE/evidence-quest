@@ -1,0 +1,67 @@
+{
+  "at": "2026-09-15T20:07:59.583Z",
+  "status": "PASS_CURRENT_HTTP_ASSETS_AUTHORED_CONFIG",
+  "candidate": {
+    "garden": "assets/GardenApp-DQxss6LK.js",
+    "css": [
+      "assets/GardenApp-Cowp-FIg.css"
+    ],
+    "entry": "assets/index-Bk4gdjda.js"
+  },
+  "origins": [
+    {
+      "origin": "http://127.0.0.1:4192",
+      "health": {
+        "status": "ok",
+        "mode": "authored"
+      },
+      "config": {
+        "content": "garden-chapter-3",
+        "textFeedback": false,
+        "readingFeedback": false
+      },
+      "files": [
+        {
+          "path": "assets/index-Bk4gdjda.js",
+          "sha256": "2434fa32c1a4934c0bd108d992d8a68865c34559b2cf32a8cf18beea2abad144"
+        },
+        {
+          "path": "assets/GardenApp-DQxss6LK.js",
+          "sha256": "21c217ff45cbf0bdea8bfd2510a9739cc404da1f93686fc1125c3465b4112e95"
+        },
+        {
+          "path": "assets/GardenApp-Cowp-FIg.css",
+          "sha256": "27507af379b212acd02d5a1f664758a51c12ad4b23b1b96a7c540e21d8d8e291"
+        }
+      ],
+      "saveAccess": "NONE: read-only HTTP; no browser storage access."
+    },
+    {
+      "origin": "http://127.0.0.1:4200",
+      "health": {
+        "status": "ok",
+        "mode": "authored"
+      },
+      "config": {
+        "content": "garden-chapter-3",
+        "textFeedback": false,
+        "readingFeedback": false
+      },
+      "files": [
+        {
+          "path": "assets/index-Bk4gdjda.js",
+          "sha256": "2434fa32c1a4934c0bd108d992d8a68865c34559b2cf32a8cf18beea2abad144"
+        },
+        {
+          "path": "assets/GardenApp-DQxss6LK.js",
+          "sha256": "21c217ff45cbf0bdea8bfd2510a9739cc404da1f93686fc1125c3465b4112e95"
+        },
+        {
+          "path": "assets/GardenApp-Cowp-FIg.css",
+          "sha256": "27507af379b212acd02d5a1f664758a51c12ad4b23b1b96a7c540e21d8d8e291"
+        }
+      ],
+      "saveAccess": "NONE: read-only HTTP; no browser storage access."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-09-16T01:29:20.873Z",
+  "name": "native-candidate-3-focus-corrected",
+  "snapshot": "- dialog \"At Mara’s dock\":\n  - banner:\n    - link:\n      - /url: /garden\n      - text: Evidence Quest\n      - generic: THE GARDEN ADVENTURE\n    - navigation \"Reading tools\":\n      - button \"Backpack\":\n        - generic: Backpack\n      - button \"Help\":\n        - generic: Help\n      - button \"Pause\":\n        - generic: Pause\n  - img \"The river and Grandma’s garden. Use the named controls below or click the scene.\"\n  - generic: YOUR ADVENTURE\n  - button \"Close page. Continue to the game\": ×\n  - heading \"At Mara’s dock\" [active] [level=2]\n  - paragraph: Read here, then choose what Pip says or does.\n  - strong: Pip says\n  - generic: I’ll ask Grandma to start the next gathering later.\n  - strong: Mara says\n  - generic: Please ask her. Starting after the last boat returns would give me time to finish work.\n  - paragraph: Pip will carry this message to Grandma. She has not heard it yet.\n  - blockquote: Mara wants to hear the stories, but she is helping passengers. Could we meet after the last boat returns?\n  - paragraph: Return to the game, cross the river and talk to Grandma to deliver it.\n  - group \"Your message is ready.\":\n    - generic: Your message is ready.\n    - button \"Change the message\"\n  - navigation \"Conversation navigation\":\n    - button \"Return to previous part\"\n    - button \"Continue to the game\"",
+  "dom": {
+    "active": "At Mara’s dock",
+    "flow": [
+      {
+        "className": "garden-reader ",
+        "clientHeight": 656,
+        "flex": "0 1 auto",
+        "height": 656,
+        "overflow": "visible",
+        "scrollHeight": 656,
+        "top": 64
+      },
+      {
+        "className": "garden-reading-scroll",
+        "clientHeight": 469,
+        "flex": "0 1 auto",
+        "height": 469.3999938964844,
+        "overflow": "auto",
+        "scrollHeight": 469,
+        "top": 178.1374969482422
+      },
+      {
+        "className": "g-reader-actions",
+        "clientHeight": 66,
+        "flex": "0 0 auto",
+        "height": 66.80000305175781,
+        "overflow": "visible",
+        "scrollHeight": 66,
+        "top": 647.5375366210938
+      }
+    ],
+    "url": "http://localhost:4198/garden",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "visible": "YOUR ADVENTURE\n×\nAt Mara’s dock\n\nRead here, then choose what Pip says or does.\n\nPip says\nI’ll ask Grandma to start the next gathering later.\nMara says\nPlease ask her. Starting after the last boat returns would give me time to finish work.\n\nPip will carry this message to Grandma. She has not heard it yet.\n\nMara wants to hear the stories, but she is helping passengers. Could we meet after the last boat returns?\n\nReturn to the game, cross the river and talk to Grandma to deliver it.\n\nYour message is ready.\nChange the message\nReturn to previous part\nContinue to the game"
+  }
+}

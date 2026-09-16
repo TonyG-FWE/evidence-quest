@@ -1,0 +1,904 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "browser-tests/garden-reading-support.spec.ts",
+      "browser-tests/garden-sequence.spec.ts",
+      "--output=evidence/literacy-experience-20260916/browser-reading-2"
+    ],
+    "configFile": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\playwright.config.ts",
+    "rootDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/evidence/literacy-experience-20260916/browser-reading-2",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/evidence/literacy-experience-20260916/browser-reading-2",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/evidence/literacy-experience-20260916/browser-reading-2",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/literacy-experience-20260916/browser-reading-2.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 1,
+    "webServer": {
+      "command": "\"C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe\" dist/server/index.js",
+      "url": "http://127.0.0.1:4195/healthz",
+      "env": {
+        "PORT": "4195",
+        "EQ_WEB_PORT": "4195",
+        "PUBLIC_ORIGIN": "http://127.0.0.1:4195"
+      },
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "garden-reading-support.spec.ts",
+      "file": "garden-reading-support.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Reading support: inspect choices without selecting, then read every green reply with word help and oral practice",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10928,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T03:41:53.085Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-5edebd59a17ab0ac212a",
+          "file": "garden-reading-support.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "Reading support: own message and compact choice help retain words, place and font size",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10313,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T03:42:04.198Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-db4d29794b0c7a60fe92",
+          "file": "garden-reading-support.spec.ts",
+          "line": 24,
+          "column": 1
+        },
+        {
+          "title": "Reading support: exact world controls can be inspected without placing a bridge section",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2852,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T03:42:14.530Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-dc4bff6771b5f7f77189",
+          "file": "garden-reading-support.spec.ts",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "Reading support: synthetic capture keeps Stop visible and pauses replay before word help",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9491,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T03:42:17.397Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-ed12efa97a3e333f3422",
+          "file": "garden-reading-support.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "Reading support: inspect choices without selecting, then read every green reply with word help and oral practice",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12258,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T03:43:13.312Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-f154c002180901d0df71",
+          "file": "garden-reading-support.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "Reading support: own message and compact choice help retain words, place and font size",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11339,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T03:43:26.102Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-30df6d586ff374a72a9f",
+          "file": "garden-reading-support.spec.ts",
+          "line": 24,
+          "column": 1
+        },
+        {
+          "title": "Reading support: exact world controls can be inspected without placing a bridge section",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4817,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T03:43:37.465Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-3f3ae94c266062f24443",
+          "file": "garden-reading-support.spec.ts",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "Reading support: synthetic capture keeps Stop visible and pauses replay before word help",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10255,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T03:43:42.304Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-7bf00b5947a8decfdf01",
+          "file": "garden-reading-support.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "Reading support: inspect choices without selecting, then read every green reply with word help and oral practice",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14354,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T03:44:40.788Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-c454fc50800f47cc9220",
+          "file": "garden-reading-support.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "Reading support: own message and compact choice help retain words, place and font size",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14879,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T03:44:55.221Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-00bc8a3c1546889f4b69",
+          "file": "garden-reading-support.spec.ts",
+          "line": 24,
+          "column": 1
+        },
+        {
+          "title": "Reading support: exact world controls can be inspected without placing a bridge section",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5527,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T03:45:10.123Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-eb26cb894c4e91724069",
+          "file": "garden-reading-support.spec.ts",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "Reading support: synthetic capture keeps Stop visible and pauses replay before word help",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 26570,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('dialog', { name: 'Reading practice', exact: true })\nExpected: \u001b[32m\"listening\"\u001b[39m\nReceived: \u001b[31m\"ready\"\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Reading practice', exact: true })\u001b[22m\n\u001b[2m    33 × locator resolved to <section role=\"dialog\" aria-modal=\"true\" data-recording=\"ready\" class=\"g-practice-overlay\" data-local-audio-bytes=\"0\" aria-label=\"Reading practice\">…</section>\u001b[22m\n\u001b[2m       - unexpected value \"ready\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('dialog', { name: 'Reading practice', exact: true })\nExpected: \u001b[32m\"listening\"\u001b[39m\nReceived: \u001b[31m\"ready\"\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Reading practice', exact: true })\u001b[22m\n\u001b[2m    33 × locator resolved to <section role=\"dialog\" aria-modal=\"true\" data-recording=\"ready\" class=\"g-practice-overlay\" data-local-audio-bytes=\"0\" aria-label=\"Reading practice\">…</section>\u001b[22m\n\u001b[2m       - unexpected value \"ready\"\u001b[22m\n\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-reading-support.spec.ts:42:299",
+                    "location": {
+                      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-reading-support.spec.ts",
+                      "column": 299,
+                      "line": 42
+                    },
+                    "snippet": "  40 |   (window as any).AudioWorkletNode=class{port:any={onmessage:null,postMessage:()=>{this.port.onmessage?.({data:{samples:new Float32Array(16000)}});this.port.onmessage?.({data:{done:true}});},close(){}};connect(){}disconnect(){}};\n  41 |  });\n> 42 |  await begin(page);await button(page,\"I'll ask Grandma to start the next gathering later.\").click();await button(page,'Read Mara’s reply aloud').click();await button(page,'Start listening').click();const practice=page.getByRole('dialog',{name:'Reading practice',exact:true});await expect(practice).toHaveAttribute('data-recording','listening');await expect(practice.locator('.g-practice-words button')).toHaveCount(0);await expect(button(page,'Stop')).toBeVisible();await button(page,'Stop').click();await expect(practice).toHaveAttribute('data-recording','review');\n     |                                                                                                                                                                                                                                                                                                           ^\n  43 |  await practice.locator('audio').evaluate(async(el:HTMLAudioElement)=>{await el.play();});await practice.getByRole('button',{name:'work',exact:true}).click();expect(await practice.locator('audio').evaluate((el:HTMLAudioElement)=>el.paused)).toBe(true);await expect(button(page,'Close word help')).toBeVisible();await button(page,'Close word help').click();await button(page,'Back to the story').click();\n  44 | });\n  45 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-reading-support.spec.ts",
+                        "column": 299,
+                        "line": 42
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('dialog', { name: 'Reading practice', exact: true })\nExpected: \u001b[32m\"listening\"\u001b[39m\nReceived: \u001b[31m\"ready\"\u001b[39m\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('dialog', { name: 'Reading practice', exact: true })\u001b[22m\n\u001b[2m    33 × locator resolved to <section role=\"dialog\" aria-modal=\"true\" data-recording=\"ready\" class=\"g-practice-overlay\" data-local-audio-bytes=\"0\" aria-label=\"Reading practice\">…</section>\u001b[22m\n\u001b[2m       - unexpected value \"ready\"\u001b[22m\n\n\n  40 |   (window as any).AudioWorkletNode=class{port:any={onmessage:null,postMessage:()=>{this.port.onmessage?.({data:{samples:new Float32Array(16000)}});this.port.onmessage?.({data:{done:true}});},close(){}};connect(){}disconnect(){}};\n  41 |  });\n> 42 |  await begin(page);await button(page,\"I'll ask Grandma to start the next gathering later.\").click();await button(page,'Read Mara’s reply aloud').click();await button(page,'Start listening').click();const practice=page.getByRole('dialog',{name:'Reading practice',exact:true});await expect(practice).toHaveAttribute('data-recording','listening');await expect(practice.locator('.g-practice-words button')).toHaveCount(0);await expect(button(page,'Stop')).toBeVisible();await button(page,'Stop').click();await expect(practice).toHaveAttribute('data-recording','review');\n     |                                                                                                                                                                                                                                                                                                           ^\n  43 |  await practice.locator('audio').evaluate(async(el:HTMLAudioElement)=>{await el.play();});await practice.getByRole('button',{name:'work',exact:true}).click();expect(await practice.locator('audio').evaluate((el:HTMLAudioElement)=>el.paused)).toBe(true);await expect(button(page,'Close word help')).toBeVisible();await button(page,'Close word help').click();await button(page,'Back to the story').click();\n  44 | });\n  45 |\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-reading-support.spec.ts:42:299"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T03:45:15.670Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\literacy-experience-20260916\\browser-reading-2\\garden-reading-support-Rea-17587-ses-replay-before-word-help-webkit\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\literacy-experience-20260916\\browser-reading-2\\garden-reading-support-Rea-17587-ses-replay-before-word-help-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\literacy-experience-20260916\\browser-reading-2\\garden-reading-support-Rea-17587-ses-replay-before-word-help-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-reading-support.spec.ts",
+                    "column": 299,
+                    "line": 42
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-cb67d23a34ebf5dae995",
+          "file": "garden-reading-support.spec.ts",
+          "line": 35,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "garden-sequence.spec.ts",
+      "file": "garden-sequence.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Conversation sequence: prepared relay advances, persists, and is delivered at Grandma",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16792,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T03:42:26.925Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-6065228d05e9b298dd3a",
+          "file": "garden-sequence.spec.ts",
+          "line": 12,
+          "column": 47
+        },
+        {
+          "title": "Conversation sequence: own relay advances, persists, and is delivered at Grandma",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18666,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T03:42:43.735Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-dc9353df3ea2a5c46c71",
+          "file": "garden-sequence.spec.ts",
+          "line": 12,
+          "column": 47
+        },
+        {
+          "title": "Conversation sequence: largest text keeps one scroll, adjacent navigation and an optional own-message editor",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9857,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T03:43:02.421Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-ec23a15f010b515225fd",
+          "file": "garden-sequence.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "Conversation sequence: prepared relay advances, persists, and is delivered at Grandma",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17149,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T03:43:52.605Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-4c303d1348064031d0a1",
+          "file": "garden-sequence.spec.ts",
+          "line": 12,
+          "column": 47
+        },
+        {
+          "title": "Conversation sequence: own relay advances, persists, and is delivered at Grandma",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 19777,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T03:44:09.767Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-77188064ebbe71403226",
+          "file": "garden-sequence.spec.ts",
+          "line": 12,
+          "column": 47
+        },
+        {
+          "title": "Conversation sequence: largest text keeps one scroll, adjacent navigation and an optional own-message editor",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10256,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T03:44:29.560Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-e886d79a95cfe7e571e4",
+          "file": "garden-sequence.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "Conversation sequence: prepared relay advances, persists, and is delivered at Grandma",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 24299,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T03:45:42.897Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-1cefb9975a597a38fced",
+          "file": "garden-sequence.spec.ts",
+          "line": 12,
+          "column": 47
+        },
+        {
+          "title": "Conversation sequence: own relay advances, persists, and is delivered at Grandma",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 27638,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T03:46:07.257Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-bc5a6ccd4b94f79b5d26",
+          "file": "garden-sequence.spec.ts",
+          "line": 12,
+          "column": 47
+        },
+        {
+          "title": "Conversation sequence: largest text keeps one scroll, adjacent navigation and an optional own-message editor",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12674,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T03:46:34.919Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-61e225d3098fbf4f8075",
+          "file": "garden-sequence.spec.ts",
+          "line": 29,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-16T03:41:52.271Z",
+    "duration": 295848.298,
+    "expected": 20,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

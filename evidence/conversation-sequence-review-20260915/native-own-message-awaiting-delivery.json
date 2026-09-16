@@ -1,0 +1,43 @@
+{
+  "at": "2026-09-16T01:30:27.478Z",
+  "name": "native-own-message-awaiting-delivery",
+  "snapshot": "- dialog \"Tell Grandma what you learned\":\n  - banner:\n    - link:\n      - /url: /garden\n      - text: Evidence Quest\n      - generic: THE GARDEN ADVENTURE\n    - generic: Saved in this browser\n    - navigation \"Reading tools\":\n      - button \"Backpack\":\n        - generic: Backpack\n      - button \"Help\":\n        - generic: Help\n      - button \"Pause\":\n        - generic: Pause\n  - img \"The river and Grandma’s garden. Use the named controls below or click the scene.\"\n  - generic: YOUR ADVENTURE\n  - button \"Close page. Back to Grandma\": ×\n  - heading \"Tell Grandma what you learned\" [active] [level=2]\n  - paragraph: Read here, then choose what Pip says or does.\n  - strong: Grandma says\n  - generic: What did Mara tell you about why she stopped visiting?\n  - paragraph: Your message is ready to tell Grandma.\n  - blockquote: Mara wants to hear the stories, but she is helping passengers. Could we meet after the last boat returns?\n  - group \"Tell Grandma your message.\":\n    - generic: Tell Grandma your message.\n    - button \"Tell Grandma\"\n    - button \"Change the message\"\n  - generic \"Reread what Grandma and Mara said\"\n  - navigation \"Conversation navigation\":\n    - button \"Back to Grandma\"",
+  "dom": {
+    "active": "Tell Grandma what you learned",
+    "flow": [
+      {
+        "className": "garden-reader ",
+        "clientHeight": 656,
+        "flex": "0 1 auto",
+        "height": 656,
+        "overflow": "visible",
+        "scrollHeight": 656,
+        "top": 64
+      },
+      {
+        "className": "garden-reading-scroll",
+        "clientHeight": 413,
+        "flex": "0 1 auto",
+        "height": 413.3000183105469,
+        "overflow": "auto",
+        "scrollHeight": 413,
+        "top": 178.1374969482422
+      },
+      {
+        "className": "g-reader-actions",
+        "clientHeight": 66,
+        "flex": "0 0 auto",
+        "height": 66.80000305175781,
+        "overflow": "visible",
+        "scrollHeight": 66,
+        "top": 591.4375
+      }
+    ],
+    "url": "http://localhost:4198/garden",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "visible": "YOUR ADVENTURE\n×\nTell Grandma what you learned\n\nRead here, then choose what Pip says or does.\n\nGrandma says\nWhat did Mara tell you about why she stopped visiting?\n\nYour message is ready to tell Grandma.\n\nMara wants to hear the stories, but she is helping passengers. Could we meet after the last boat returns?\nTell Grandma your message.\nTell Grandma\nChange the message\nReread what Grandma and Mara said\nBack to Grandma"
+  }
+}

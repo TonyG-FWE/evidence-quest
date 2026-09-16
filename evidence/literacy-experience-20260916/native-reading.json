@@ -1,0 +1,17 @@
+{
+  "at": "2026-09-16T03:55:45.947Z",
+  "url": "http://127.0.0.1:4199/garden",
+  "entry": "/assets/index-BEwRd92s.js",
+  "checks": [
+    "Grandma exact reply opens in Reading practice",
+    "Microphone ready by default",
+    "Reader title and header tools inert during practice",
+    "Close practice returns focus to Read Grandma’s reply aloud"
+  ],
+  "limits": [
+    "No actual microphone capture",
+    "No provider request",
+    "No speech quality claim"
+  ],
+  "snapshot": "- dialog \"A visit with Grandma\":\n  - banner:\n    - link:\n      - /url: /garden\n      - text: Evidence Quest\n      - generic: THE GARDEN ADVENTURE\n    - generic: Saved in this browser\n    - navigation \"Reading tools\":\n      - button \"Backpack\":\n        - generic: Backpack\n      - button \"Read what’s on screen\":\n        - generic: Read screen\n      - button \"Help\":\n        - generic: Help\n      - button \"Pause\":\n        - generic: Pause\n  - img \"The river and Grandma’s garden. Use the named controls below or click the scene.\"\n  - generic: GRANDMA’S GARDEN\n  - button \"Close page. Continue to the game\": ×\n  - heading \"A visit with Grandma\" [level=2]\n  - paragraph: Read here, then choose what Pip says or does.\n  - group \"Read the conversation\":\n    - button \"Hear this conversation\"\n    - button \"Read this conversation aloud\"\n  - strong: Grandma says\n  - button \"You\"\n  - button \"made\"\n  - button \"it\"\n  - text: \"!\"\n  - button \"Let’s\"\n  - button \"plant\"\n  - button \"the\"\n  - button \"seed\"\n  - button \"while\"\n  - button \"it’s\"\n  - button \"still\"\n  - button \"light\"\n  - text: .\n  - group \"Reading help for Grandma’s reply\":\n    - button \"Hear Grandma’s reply\": Hear this\n    - button \"Read Grandma’s reply aloud\" [active]: Read aloud\n  - paragraph:\n    - button \"Pip\"\n    - button \"is\"\n    - button \"carrying\"\n    - button \"the\"\n    - button \"seed\"\n    - button \"in\"\n    - button \"his\"\n    - button \"backpack\"\n    - text: .\n    - button \"Plant\"\n    - button \"it\"\n    - button \"together\"\n    - button \"in\"\n    - button \"the\"\n    - button \"garden\"\n    - text: .\n  - paragraph:\n    - button \"Pip\"\n    - button \"is\"\n    - button \"carrying\"\n    - button \"Mara’s\"\n    - button \"page\"\n    - text: \",\"\n    - button \"The\"\n    - button \"Torn\"\n    - button \"Wing\"\n    - text: .\n  - group \"What will Pip do next?\":\n    - generic: What will Pip do next?\n    - button \"Help me read these choices\"\n    - button \"Plant the seed with Grandma\"\n    - button \"Let’s talk about why Mara stopped visiting.\"\n    - button \"Give Grandma Mara’s page\"\n  - generic \"Ask Grandma about the lantern flowers\"\n  - navigation \"Conversation navigation\":\n    - button \"Continue to the game\""
+}

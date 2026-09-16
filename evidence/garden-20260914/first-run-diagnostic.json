@@ -1,0 +1,6 @@
+{
+  "kind": "diagnostic",
+  "repair": "Boat labels and meshes now send the same pointer commands; later runs verify real drag.",
+  "evidence": "First production attempt stopped after one passed carried-seed route and a real boat-label pointer-drag failure. The remaining cases did not complete. The separately retained discovery JSON is a --list result, not a completed run.",
+  "status": "INTERRUPTED"
+}

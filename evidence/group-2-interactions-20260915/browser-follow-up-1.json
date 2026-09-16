@@ -1,0 +1,351 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "garden",
+      "--grep",
+      "G2 |keyboard construction|two windows"
+    ],
+    "configFile": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\playwright.config.ts",
+    "rootDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/output/playwright/raw",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/group-2-interactions-20260915/browser-follow-up.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 1,
+    "webServer": {
+      "command": "\"C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe\" dist/server/index.js",
+      "url": "http://127.0.0.1:4196/healthz",
+      "env": {
+        "PORT": "4196",
+        "EQ_WEB_PORT": "4196",
+        "PUBLIC_ORIGIN": "http://127.0.0.1:4196"
+      },
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "garden-interaction.spec.ts",
+      "file": "garden-interaction.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "G2 ordinary keyboard route: nested letter, Help and backpack preserve focus and return context",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4534,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-15T04:50:41.584Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1799c544e2b95b36d5eb-2ea484918e5deaad3a0a",
+          "file": "garden-interaction.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "G2 ordinary world route: invalid plan, exact rehearsal, nested help and prepared return",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 29647,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Fasten dock-side end', exact: true })\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Fasten dock-side end', exact: true })\u001b[22m\n\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-interaction.spec.ts:37:77",
+                    "location": {
+                      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-interaction.spec.ts",
+                      "column": 77,
+                      "line": 37
+                    },
+                    "snippet": "  35 |   camera.position.set(7.5,16,19);camera.lookAt(0,0,.1);camera.updateMatrixWorld();const p=new Vector3(x,.13,3).project(camera);await page.mouse.click(box.x+(p.x*.5+.5)*box.width,box.y+(-p.y*.5+.5)*box.height);\n  36 |  }\n> 37 |  await button('Join sections').click();await button('Fasten dock-side end').click();await button('Fasten garden-side end').click();await button('Back to Pip').click();\n     |                                                                             ^\n  38 |  await button('Go to Grandma').click();await button('Talk to Grandma E').click();await page.getByRole('button',{name:'Plant the seed with Grandma'}).click();await expect(page.locator('.garden-feedback')).toContainText('kept his promise');\n  39 |  await button('Talk to Grandma E').click();await button('Plan the gathering with Grandma').click();await button('Mara tells her story').click();await button('Preview the gathering').click();\n  40 |  await expect(page.locator('[data-world-activity=\"plan-preview\"]')).toBeVisible();await expect(page.locator('[data-stage-scene=\"gather-waiting\"]')).toBeVisible();await expect(page.getByRole('img',{name:'Pip, Sol and Grandma wait. Mara is still working, so nobody is telling her story.'})).toBeVisible();await expect(button('Use this plan')).toBeDisabled();await page.screenshot({path:info.outputPath('invalid-plan-waiting.png')});"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-interaction.spec.ts",
+                        "column": 77,
+                        "line": 37
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Fasten dock-side end', exact: true })\u001b[22m\n\n\n  35 |   camera.position.set(7.5,16,19);camera.lookAt(0,0,.1);camera.updateMatrixWorld();const p=new Vector3(x,.13,3).project(camera);await page.mouse.click(box.x+(p.x*.5+.5)*box.width,box.y+(-p.y*.5+.5)*box.height);\n  36 |  }\n> 37 |  await button('Join sections').click();await button('Fasten dock-side end').click();await button('Fasten garden-side end').click();await button('Back to Pip').click();\n     |                                                                             ^\n  38 |  await button('Go to Grandma').click();await button('Talk to Grandma E').click();await page.getByRole('button',{name:'Plant the seed with Grandma'}).click();await expect(page.locator('.garden-feedback')).toContainText('kept his promise');\n  39 |  await button('Talk to Grandma E').click();await button('Plan the gathering with Grandma').click();await button('Mara tells her story').click();await button('Preview the gathering').click();\n  40 |  await expect(page.locator('[data-world-activity=\"plan-preview\"]')).toBeVisible();await expect(page.locator('[data-stage-scene=\"gather-waiting\"]')).toBeVisible();await expect(page.getByRole('img',{name:'Pip, Sol and Grandma wait. Mara is still working, so nobody is telling her story.'})).toBeVisible();await expect(button('Use this plan')).toBeDisabled();await page.screenshot({path:info.outputPath('invalid-plan-waiting.png')});\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-interaction.spec.ts:37:77"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-15T04:50:46.228Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\garden-interaction-G2-ordi-ecad5-ed-help-and-prepared-return-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\garden-interaction-G2-ordi-ecad5-ed-help-and-prepared-return-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\garden-interaction-G2-ordi-ecad5-ed-help-and-prepared-return-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-interaction.spec.ts",
+                    "column": 77,
+                    "line": 37
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1799c544e2b95b36d5eb-83404985116c3b107f63",
+          "file": "garden-interaction.spec.ts",
+          "line": 23,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "garden.spec.ts",
+      "file": "garden.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "First Garden Adventure encounter",
+          "file": "garden.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "keyboard construction, reading focus, largest text and compact layouts",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 48020,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m60\u001b[39m\nReceived:   \u001b[31m21\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m60\u001b[39m\nReceived:   \u001b[31m21\u001b[39m\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden.spec.ts:82:204",
+                        "location": {
+                          "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden.spec.ts",
+                          "column": 204,
+                          "line": 82
+                        },
+                        "snippet": "  80 |   for(const size of [{width:1440,height:900},{width:800,height:800},{width:390,height:844},{width:320,height:568}]){\n  81 |    await page.setViewportSize(size);await expect(page.getByRole('heading',{name:\"Mara's story can travel\",exact:true})).toBeVisible();await page.getByRole('button',{name:'obligation',exact:true}).click();const card=page.getByRole('complementary',{name:'Word help: obligation'});await expect(card).toBeVisible();\n> 82 |    const widths=await page.locator('.garden-reading-scroll').evaluate(e=>({w:e.clientWidth,scroll:e.scrollWidth,h:e.clientHeight}));expect(widths.scroll).toBeLessThanOrEqual(widths.w+1);expect(widths.h).toBeGreaterThan(60);\n     |                                                                                                                                                                                                            ^\n  83 |    await capture(page,info,`reader-${size.width}-${size.height}.png`);await page.keyboard.press('Escape');await expect(page.getByRole('button',{name:'obligation',exact:true})).toBeFocused();\n  84 |   }\n  85 |   await page.getByRole('button',{name:'Back to Help',exact:true}).click();await page.getByRole('button',{name:'Back to Pip',exact:true}).click();await page.getByRole('button',{name:'Arrange bridge',exact:true}).click();await page.getByRole('button',{name:'Give me a hint',exact:true}).click();await expect(page.locator('.garden-status')).toContainText('Both ends are secure');await expect(page.locator('.garden-feedback-content')).toHaveCSS('animation-name','none');"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden.spec.ts",
+                            "column": 204,
+                            "line": 82
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m60\u001b[39m\nReceived:   \u001b[31m21\u001b[39m\n\n  80 |   for(const size of [{width:1440,height:900},{width:800,height:800},{width:390,height:844},{width:320,height:568}]){\n  81 |    await page.setViewportSize(size);await expect(page.getByRole('heading',{name:\"Mara's story can travel\",exact:true})).toBeVisible();await page.getByRole('button',{name:'obligation',exact:true}).click();const card=page.getByRole('complementary',{name:'Word help: obligation'});await expect(card).toBeVisible();\n> 82 |    const widths=await page.locator('.garden-reading-scroll').evaluate(e=>({w:e.clientWidth,scroll:e.scrollWidth,h:e.clientHeight}));expect(widths.scroll).toBeLessThanOrEqual(widths.w+1);expect(widths.h).toBeGreaterThan(60);\n     |                                                                                                                                                                                                            ^\n  83 |    await capture(page,info,`reader-${size.width}-${size.height}.png`);await page.keyboard.press('Escape');await expect(page.getByRole('button',{name:'obligation',exact:true})).toBeFocused();\n  84 |   }\n  85 |   await page.getByRole('button',{name:'Back to Help',exact:true}).click();await page.getByRole('button',{name:'Back to Pip',exact:true}).click();await page.getByRole('button',{name:'Arrange bridge',exact:true}).click();await page.getByRole('button',{name:'Give me a hint',exact:true}).click();await expect(page.locator('.garden-status')).toContainText('Both ends are secure');await expect(page.locator('.garden-feedback-content')).toHaveCSS('animation-name','none');\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden.spec.ts:82:204"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-15T04:51:16.984Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\garden-First-Garden-Advent-5b2c3-st-text-and-compact-layouts-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\garden-First-Garden-Advent-5b2c3-st-text-and-compact-layouts-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\garden-First-Garden-Advent-5b2c3-st-text-and-compact-layouts-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\garden-First-Garden-Advent-5b2c3-st-text-and-compact-layouts-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden.spec.ts",
+                        "column": 204,
+                        "line": 82
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "8d392b78b326e6f8de96-bf0b17d77d1d44d5221e",
+              "file": "garden.spec.ts",
+              "line": 74,
+              "column": 2
+            },
+            {
+              "title": "two windows reject stale saves and archive, then load the actual latest progress",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 240000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 9905,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-15T04:52:07.838Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\garden-First-Garden-Advent-b3848--the-actual-latest-progress-chromium\\video-1.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\garden-First-Garden-Advent-b3848--the-actual-latest-progress-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d392b78b326e6f8de96-936a58dae529160c9604",
+              "file": "garden.spec.ts",
+              "line": 98,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-15T04:50:40.404Z",
+    "duration": 97833.431,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

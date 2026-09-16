@@ -1,0 +1,55 @@
+{
+  "at": "2026-09-15T18:11:59.198Z",
+  "result": "PASS_EVIDENCE_BINDING_UPDATE",
+  "scope": "Reviewed additions to the preparation baseline: use the prescribed Node24 matrix receipt, and bind the full installed Chromium test environment. The matrix outcomes, all169 row descriptions/qualifications, game runtime, test assertions and time/performance limits are unchanged.",
+  "catalog": {
+    "path": "evidence/group-8-integration-20260915/coverage-catalog.mjs",
+    "baselineSha256": "58d238b725078e24d601aee89a00e658a73e2677577f9c6f48f76a63e73bde4f",
+    "reconstructedBaselineSha256": "58d238b725078e24d601aee89a00e658a73e2677577f9c6f48f76a63e73bde4f",
+    "sha256": "5f897bd83e167090dfc59400d51e62e069d8e44027146f3e9faa5e63ac052db5",
+    "onlyChange": "routes-corrected.json -> routes-corrected-node24.json"
+  },
+  "candidate": {
+    "path": "evidence/group-8-integration-20260915/candidate-full-chromium.json",
+    "sha256": "3ae3e1f76747dda67893431d90346fe581244ff03f6468caa3167c140427e8da",
+    "prior": {
+      "path": "evidence/group-8-integration-20260915/candidate-corrected.json",
+      "sha256": "2e67762e3b9b9828d64852878b4a7b979cc5de3cbad3152cc8c02636d807f462"
+    },
+    "game": {
+      "garden": "assets/GardenApp-Bpq_fagU.js",
+      "css": [
+        "assets/GardenApp-Cowp-FIg.css"
+      ],
+      "entry": "assets/index-BB_gbQ44.js"
+    },
+    "changedFiles": [
+      {
+        "path": "playwright.config.ts",
+        "sha256": "b621eca801619a125eed1987e0df907e3a633cbd1098e8d06687cfb1f0382064"
+      }
+    ]
+  },
+  "pinnedRuntime": {
+    "path": "evidence/group-8-review-20260915/pinned-runtime-review.json",
+    "sha256": "a9200093354e0b70bdd12f8272a91c580b16fc752d336d19a7ee5c1fb2444b82"
+  },
+  "rowDetails": {
+    "path": "evidence/group-8-integration-20260915/row-details.tsv",
+    "sha256": "693990028e36104ac89b69fb0b15134d57c4f4aabfac857078e3ba3db3bfe5d1"
+  },
+  "failedSoftwareEvidence": [
+    {
+      "path": "evidence/group-8-integration-20260915/chapter-software-runner.json",
+      "sha256": "12937e8b0ed5a257b84c11f68a15cde9de31de342d71a7c8858c8c544539311e"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/renderer-change.json",
+      "sha256": "bc0dcbf08b28605699402301041dfe295bed6aeae2bf2c7f7e3ca435a4a758f0"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/software-renderer-timeout-review.md",
+      "sha256": "8c358d6a19977ca98646c4797ff080fdf4e613a42f8959e029aac331be7265a8"
+    }
+  ]
+}

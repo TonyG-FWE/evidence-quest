@@ -1,0 +1,54 @@
+{
+  "at": "2026-09-15T08:39:44.733Z",
+  "result": "PASS_REVIEWED_RENDERER_CORRECTION",
+  "scope": "Independent visual/source review of the implementation task final automated1/1 actual-handler migration fixture, distinct from the continuing native adventure. Images were viewed before this receipt and preserved byte-for-byte.",
+  "candidate": "assets/GardenApp-BsUNbHgl.js",
+  "observations": [
+    "During the actual cushion action Grandma is away from her original standing point and the retained Mara page is visibly carried with her",
+    "After account completion the own manuscript and retained Mara page are at distinct positions and two cushions are present",
+    "Final automated test additionally checks page position against the moving holder, durable arrival/turn recovery and exact selected contribution",
+    "The page is positioned after gathering movement, including Mara-owned page travel; source/telling/handoff interpolation remains explicit"
+  ],
+  "images": [
+    {
+      "source": "output/playwright/raw/garden-gathering-Gathering-b5395-d-exact-chosen-contribution-chromium/moving-grandma-retains-mara-page.png",
+      "path": "evidence/group-6-review-20260915/automated-moving-grandma-final.png",
+      "sha256": "e94bdb86e219e0ae9af62f0b452293697cd050cfebf33a20eee7e8d14980f460"
+    },
+    {
+      "source": "output/playwright/raw/garden-gathering-Gathering-b5395-d-exact-chosen-contribution-chromium/two-distinct-pages.png",
+      "path": "evidence/group-6-review-20260915/automated-separated-pages-final.png",
+      "sha256": "8d136ce785905d8595e10fa05c57d063c9fab2d10ccec653493c2a1335e2e721"
+    }
+  ],
+  "limits": [
+    "Intermediate movement proof uses the labeled prior-save automated fixture, not a repeated native cushion action",
+    "No final-art or all-device acceptance follows from these images"
+  ],
+  "hashes": [
+    {
+      "path": "evidence/group-6-gathering-20260915/browser-recovery-final.json",
+      "sha256": "d3a1a01a7dd40dfe1ded115ba1bab54be0a17551c5a613dc2a4db7b14f64b12f"
+    },
+    {
+      "path": "browser-tests/garden-gathering.spec.ts",
+      "sha256": "a2e6a8bceaa6871cf8c357e7e914c6f038764e2e0097356ac8467c08de7668f8"
+    },
+    {
+      "path": "src/garden/GardenScene.tsx",
+      "sha256": "3009781ae60b406e8a38e71767626331e4b6fceda1788dd4776db0fdf2b6acf5"
+    },
+    {
+      "path": "src/garden/gatheringWorld.ts",
+      "sha256": "c35a703a1b1a196f69b8a081de3fc82aa896db37d09a88680b07cd3fd050d2b0"
+    },
+    {
+      "path": "evidence/group-6-review-20260915/automated-moving-grandma-final.png",
+      "sha256": "e94bdb86e219e0ae9af62f0b452293697cd050cfebf33a20eee7e8d14980f460"
+    },
+    {
+      "path": "evidence/group-6-review-20260915/automated-separated-pages-final.png",
+      "sha256": "8d136ce785905d8595e10fa05c57d063c9fab2d10ccec653493c2a1335e2e721"
+    }
+  ]
+}

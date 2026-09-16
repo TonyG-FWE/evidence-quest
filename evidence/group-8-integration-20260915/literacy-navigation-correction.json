@@ -1,0 +1,21 @@
+{
+  "at": "2026-09-15T19:24:49.467Z",
+  "status": "CORRECTED_TEST_NAVIGATION_PENDING_REAL_HANDLER_CHECK",
+  "failedReport": "evidence/group-8-integration-20260915/browser-final-remainder.json",
+  "failedArtifacts": "evidence/group-8-integration-20260915/browser-final-remainder-artifacts/garden-literacy-Late-synth-cdf95-g-controls-remain-reachable-chromium",
+  "candidate": "evidence/group-8-integration-20260915/candidate-final-literacy.json",
+  "change": {
+    "path": "browser-tests/garden-literacy.spec.ts",
+    "before": {
+      "path": "evidence/group-8-integration-20260915/before-literacy-label-garden-literacy.spec.ts",
+      "sha256": "a0e7d021a6968b4b0a666e5c09e885fb966bdc604638e6987d53a8e079b6cc5e"
+    },
+    "after": "01d8f77e01c4a75aeaff92979154398347e4fc251952730b5f4dcdc167635d10",
+    "change": "Use the current approved OFFER_LATER response label. The delayed reply/edit and compact/focus assertions remain byte-identical.",
+    "priorCandidate": {
+      "path": "evidence/group-8-integration-20260915/candidate-final-controls.json",
+      "sha256": "7e098550344a329215bda4a776907489db411b38c990cf706cc77058891f4f86"
+    },
+    "productRuntimeChanged": false
+  }
+}

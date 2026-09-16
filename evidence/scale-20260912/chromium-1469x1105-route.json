@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-12T17:49:15.633Z",
+  "at": "2026-09-15T18:58:56.574Z",
   "viewport": {
     "width": 1469,
     "height": 1105
@@ -36,7 +36,10 @@
         "caddyHost": "MD.RACK.STATION",
         "order": [],
         "arrangementRevision": 0
-      }
+      },
+      "bundles": [
+        "/assets/App-Dk9r9XS7.js"
+      ]
     },
     {
       "name": "jo-approach",
@@ -69,7 +72,10 @@
         "caddyHost": "MD.RACK.STATION",
         "order": [],
         "arrangementRevision": 0
-      }
+      },
+      "bundles": [
+        "/assets/App-Dk9r9XS7.js"
+      ]
     },
     {
       "name": "model-approach",
@@ -102,7 +108,10 @@
         "caddyHost": "MD.RACK.STATION",
         "order": [],
         "arrangementRevision": 0
-      }
+      },
+      "bundles": [
+        "/assets/App-Dk9r9XS7.js"
+      ]
     },
     {
       "name": "courtyard",
@@ -135,7 +144,10 @@
         "caddyHost": "MD.RACK.STATION",
         "order": [],
         "arrangementRevision": 0
-      }
+      },
+      "bundles": [
+        "/assets/App-Dk9r9XS7.js"
+      ]
     },
     {
       "name": "remy-approach",
@@ -168,7 +180,10 @@
         "caddyHost": "MD.RACK.STATION",
         "order": [],
         "arrangementRevision": 0
-      }
+      },
+      "bundles": [
+        "/assets/App-Dk9r9XS7.js"
+      ]
     },
     {
       "name": "courtyard-bench",
@@ -201,7 +216,10 @@
         "caddyHost": "MD.RACK.STATION",
         "order": [],
         "arrangementRevision": 0
-      }
+      },
+      "bundles": [
+        "/assets/App-Dk9r9XS7.js"
+      ]
     },
     {
       "name": "workshop",
@@ -234,7 +252,10 @@
         "caddyHost": "MD.RACK.STATION",
         "order": [],
         "arrangementRevision": 0
-      }
+      },
+      "bundles": [
+        "/assets/App-Dk9r9XS7.js"
+      ]
     },
     {
       "name": "workshop-bench",
@@ -267,7 +288,10 @@
         "caddyHost": "MD.RACK.STATION",
         "order": [],
         "arrangementRevision": 0
-      }
+      },
+      "bundles": [
+        "/assets/App-Dk9r9XS7.js"
+      ]
     },
     {
       "name": "media",
@@ -300,7 +324,10 @@
         "caddyHost": "MD.RACK.STATION",
         "order": [],
         "arrangementRevision": 0
-      }
+      },
+      "bundles": [
+        "/assets/App-Dk9r9XS7.js"
+      ]
     },
     {
       "name": "ari-approach",
@@ -310,7 +337,7 @@
           52,
           52
         ],
-        "facing": "up",
+        "facing": "left",
         "loop": {
           "room": "SC.MD",
           "feet": [
@@ -333,17 +360,20 @@
         "caddyHost": "MD.RACK.STATION",
         "order": [],
         "arrangementRevision": 0
-      }
+      },
+      "bundles": [
+        "/assets/App-Dk9r9XS7.js"
+      ]
     },
     {
       "name": "media-rack",
       "physical": {
         "room": "SC.MD",
         "avatar": [
-          101,
-          48
+          114,
+          44
         ],
-        "facing": "right",
+        "facing": "left",
         "loop": {
           "room": "SC.MD",
           "feet": [
@@ -366,22 +396,25 @@
         "caddyHost": "MD.RACK.STATION",
         "order": [],
         "arrangementRevision": 0
-      }
+      },
+      "bundles": [
+        "/assets/App-Dk9r9XS7.js"
+      ]
     },
     {
       "name": "carrying-with-loop",
       "physical": {
         "room": "SC.MD",
         "avatar": [
-          68,
-          54
+          80,
+          49
         ],
         "facing": "left",
         "loop": {
           "room": "SC.MD",
           "feet": [
-            68,
-            46.050299999999964
+            72.41422338582909,
+            46.471407795276384
           ],
           "mode": "following"
         },
@@ -399,7 +432,46 @@
         "caddyHost": "ACT.PLAYER",
         "order": [],
         "arrangementRevision": 0
-      }
+      },
+      "bundles": [
+        "/assets/App-Dk9r9XS7.js"
+      ]
+    },
+    {
+      "name": "down-screen-follow",
+      "physical": {
+        "room": "SC.MD",
+        "avatar": [
+          80,
+          64.99919167437753
+        ],
+        "facing": "down",
+        "loop": {
+          "room": "SC.MD",
+          "feet": [
+            71,
+            56.88024999999999
+          ],
+          "mode": "following"
+        },
+        "objects": {
+          "modelTabTried": true,
+          "briefOpen": false,
+          "storyNoteOpen": false,
+          "filmingRequestOpen": false,
+          "noticeFlat": false,
+          "dockFlapOpen": false,
+          "rackOpened": true,
+          "previewTried": false,
+          "toastRevealed": false
+        },
+        "caddyHost": "ACT.PLAYER",
+        "order": [],
+        "arrangementRevision": 0
+      },
+      "bundles": [
+        "/assets/App-Dk9r9XS7.js"
+      ]
     },
     {
       "name": "carrying-workshop",
@@ -432,7 +504,10 @@
         "caddyHost": "ACT.PLAYER",
         "order": [],
         "arrangementRevision": 0
-      }
+      },
+      "bundles": [
+        "/assets/App-Dk9r9XS7.js"
+      ]
     },
     {
       "name": "carrying-courtyard",
@@ -465,7 +540,10 @@
         "caddyHost": "ACT.PLAYER",
         "order": [],
         "arrangementRevision": 0
-      }
+      },
+      "bundles": [
+        "/assets/App-Dk9r9XS7.js"
+      ]
     },
     {
       "name": "carrying-stage",
@@ -498,7 +576,10 @@
         "caddyHost": "ACT.PLAYER",
         "order": [],
         "arrangementRevision": 0
-      }
+      },
+      "bundles": [
+        "/assets/App-Dk9r9XS7.js"
+      ]
     },
     {
       "name": "console-left",
@@ -531,7 +612,10 @@
         "caddyHost": "ST.RACK.BAY",
         "order": [],
         "arrangementRevision": 0
-      }
+      },
+      "bundles": [
+        "/assets/App-Dk9r9XS7.js"
+      ]
     },
     {
       "name": "console-right",
@@ -564,7 +648,10 @@
         "caddyHost": "ST.RACK.BAY",
         "order": [],
         "arrangementRevision": 0
-      }
+      },
+      "bundles": [
+        "/assets/App-Dk9r9XS7.js"
+      ]
     }
   ],
   "errors": [],

@@ -1,0 +1,244 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config=evidence/group-8-integration-20260915/playwright-boat-compact.config.ts",
+      "garden-mara.spec.ts",
+      "garden-gathering.spec.ts",
+      "--project=chromium",
+      "--grep",
+      "G4 ordinary|Gathering:"
+    ],
+    "configFile": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\group-8-integration-20260915\\playwright-boat-compact.config.ts",
+    "rootDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/output/playwright/raw",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/output/playwright/raw",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/output/playwright/raw",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\group-8-integration-20260915\\browser-boat-compact.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 1,
+    "webServer": {
+      "command": "\"C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\.tools\\node-v24.21.0-win-x64\\node.exe\" dist/server/index.js",
+      "url": "http://127.0.0.1:4196/healthz",
+      "env": {
+        "PORT": "4196",
+        "EQ_WEB_PORT": "4196",
+        "PUBLIC_ORIGIN": "http://127.0.0.1:4196"
+      },
+      "reuseExistingServer": false,
+      "timeout": 15000,
+      "cwd": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest"
+    }
+  },
+  "suites": [
+    {
+      "title": "garden-gathering.spec.ts",
+      "file": "garden-gathering.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Gathering: authentic prior-save fixture, arrival recovery, compact world telling and exact chosen contribution",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 34377,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-15T20:11:22.141Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "fixture-boundary",
+                      "contentType": "text/plain",
+                      "body": "VW5lZGl0ZWQgcmVhbC1oYW5kbGVyIEdyb3VwNSBzYXZlIHRyYW5zcG9ydGVkIGludG8gYW4gaXNvbGF0ZWQgYXV0b21hdGVkIGJyb3dzZXIuIFRoaXMgaXMgYSBsYWJlbGVkIG1pZ3JhdGlvbiBmaXh0dXJlLCBub3QgbmF0aXZlIHBsYXkgb3IgcHJvdmlkZXIgZXZpZGVuY2UuIEFsbCBzdWJzZXF1ZW50IGFjdGlvbnMgdXNlIG9yZGluYXJ5IHZpc2libGUgY29udHJvbHMu"
+                    },
+                    {
+                      "name": "gathering-result",
+                      "contentType": "application/json",
+                      "body": "ewogICJ2ZXJzaW9uIjogMywKICAiY29udGVudCI6ICJnYXJkZW4tY2hhcHRlci0zIiwKICAic3RvcnkiOiB7CiAgICAibWV0U29sIjogdHJ1ZSwKICAgICJzb2xDaG9pY2UiOiAicHJlcGFyZWQiLAogICAgInNvbERyYWZ0IjogewogICAgICAidGV4dCI6ICJSaW5hIGJha2VkIHRoZSBicmVhZC4gTGF0ZXIgc2hlIGJyb3VnaHQgbWUgYSBsb2FmIHRvIHRoYW5rIG1lLiBJIGFtIHN0aWxsIGRlY2lkaW5nIGhvdyB0byB0ZWxsIHRoaXMgcGFydC4iLAogICAgICAicmV2aXNpb24iOiAyCiAgICB9LAogICAgInNvbEVuZGluZyI6IHsKICAgICAgInRleHQiOiAiTGF0ZXIsIFJpbmEgYnJvdWdodCBtZSBhIGxvYWYgb2YgYnJlYWQgdG8gc2F5IHRoYW5rIHlvdS4gSSBoYWQgdGhvdWdodCBpdCB3YXMgb25seSBhIHNtYWxsIHJlcGFpci4gSXQgaGFkIG1hdHRlcmVkIHRvIGhlci4iLAogICAgICAic2NlbmUiOiAidGhhbmtzIiwKICAgICAgIm9yaWdpbiI6ICJwcmVwYXJlZCIsCiAgICAgICJyZXZpc2lvbiI6IDIKICAgIH0sCiAgICAibWFyYVBpY3R1cmUiOiAicHJvbWlzZSIsCiAgICAibGF0ZXJLbm93biI6IHRydWUsCiAgICAicXVlc3Rpb25zIjogW10sCiAgICAic29sUmVwb3J0ZWQiOiB0cnVlLAogICAgIm1hcmFSZXBvcnRlZCI6IHRydWUsCiAgICAidGltZUFncmVlZCI6ICJsYXRlciIsCiAgICAicGxhbiI6IHsKICAgICAgInRpbWUiOiAibGF0ZXIiLAogICAgICAicmVhZGVyIjogInBpcCIsCiAgICAgICJyZXZpc2lvbiI6IDEKICAgIH0sCiAgICAic29sSW52aXRhdGlvbiI6ICJsYXRlciIsCiAgICAibWFyYUludml0YXRpb24iOiB7CiAgICAgICJ0aW1lIjogImxhdGVyIiwKICAgICAgInJlYWRlciI6ICJwaXAiCiAgICB9LAogICAgInBoYXNlIjogIm1vbWVudCIsCiAgICAic29sT3V0Y29tZSI6ICJwcmVwYXJlZCIsCiAgICAicmVjb3JkcyI6IHsKICAgICAgIm1hcmEiOiAicHJvbWlzZSIsCiAgICAgICJzb2wiOiAidGhhbmtzIiwKICAgICAgImdyYW5kbWEiOiB0cnVlLAogICAgICAicGlwIjogbnVsbAogICAgfSwKICAgICJncmFuZG1hQ29weSI6ICJub25lIiwKICAgICJjbG9zaW5nRG9uZSI6IGZhbHNlLAogICAgImVuZGluZyI6IG51bGwsCiAgICAicHJlc2VudGF0aW9uIjogewogICAgICAicGFnZSI6IDAsCiAgICAgICJmaW5pc2hlZCI6IGZhbHNlCiAgICB9LAogICAgImFuc3dlcnMiOiB7fSwKICAgICJicmlkZ2VGYWlsdXJlcyI6IDAKICB9LAogICJyaXZlciI6IHsKICAgICJlZGl0aW9uIjogImNvbm5lY3RlZC0yMDI2MDkxNSIsCiAgICAicm9wZXNDb2xsZWN0ZWQiOiB0cnVlLAogICAgInNvaWxQcmVwYXJlZCI6IHRydWUsCiAgICAiYXR0YWNobWVudHMiOiB7CiAgICAgICJ3ZXN0IjogImEiLAogICAgICAiZWFzdCI6ICJiIgogICAgfSwKICAgICJyb3BlTG9jYXRpb25zIjogewogICAgICAid2VzdCI6ICJhdHRhY2hlZCIsCiAgICAgICJlYXN0IjogImF0dGFjaGVkIgogICAgfSwKICAgICJib2F0IjogewogICAgICAicG9zaXRpb24iOiB7CiAgICAgICAgIngiOiAtMS40LAogICAgICAgICJ6IjogMC44CiAgICAgIH0sCiAgICAgICJwaGFzZSI6ICJtb29yZWQiCiAgICB9CiAgfSwKICAibWFyYSI6IHsKICAgICJlZGl0aW9uIjogImNvbm5lY3RlZC0yMDI2MDkxNSIsCiAgICAiYXNraW5nIjogImZ1bGZpbGxlZCIsCiAgICAicmV0dXJuT2ZmZXJlZCI6IHRydWUsCiAgICAicGVybWlzc2lvbiI6IHRydWUsCiAgICAic2VydmljZSI6ICJzZXJ2ZWQiLAogICAgInBhcnRpY2lwYXRlZCI6IHRydWUsCiAgICAic2hhcmVkQXQiOiAiZ2F0aGVyaW5nIiwKICAgICJzY2VuZSI6IG51bGwKICB9LAogICJydW5JZCI6ICJnNC1taWdyYXRpb24tY2FwdHVyZS0yNyIsCiAgInJldmlzaW9uIjogNTY4LAogICJzdGFydGVkIjogdHJ1ZSwKICAicGlwIjogewogICAgIngiOiAzLjI1LAogICAgInoiOiAzLjIKICB9LAogICJzZWN0aW9ucyI6IHsKICAgICJhIjogewogICAgICAieCI6IC0wLjc3NSwKICAgICAgInoiOiAzLAogICAgICAicm90YXRpb24iOiAwCiAgICB9LAogICAgImIiOiB7CiAgICAgICJ4IjogMC43NzUsCiAgICAgICJ6IjogMywKICAgICAgInJvdGF0aW9uIjogMAogICAgfQogIH0sCiAgImZlcnJ5U2lkZSI6ICJ3ZXN0IiwKICAiam9pbmVkIjogdHJ1ZSwKICAid2VzdCI6IHRydWUsCiAgImVhc3QiOiB0cnVlLAogICJjcm9zc2VkIjogdHJ1ZSwKICAic2VlZCI6ICJzb2lsIiwKICAiYmxvb21lZCI6IHRydWUsCiAgIm1hcmFIZWFyZCI6IHRydWUsCiAgInBhZ2UiOiAiZ3JhbmRtYSIsCiAgImdyYW5kbWFIZWFyZCI6IHRydWUsCiAgImV4cG9zZWQiOiBbCiAgICAiR0EuU1JDLlNUT1JZLjEuVzEiLAogICAgIkdBLlNSQy5TVE9SWS4xLlcyIiwKICAgICJHQS5TUkMuU1RPUlkuMS5XMyIsCiAgICAiR0EuU1JDLlNUT1JZLjEuVzQiLAogICAgIkdBLlNSQy5TVE9SWS4xLlc1IiwKICAgICJHQS5TUkMuU1RPUlkuMS5XNiIsCiAgICAiR0EuU1JDLlNUT1JZLjEuVzciLAogICAgIkdBLlNSQy5TVE9SWS4xLlc4IiwKICAgICJHQS5TUkMuU1RPUlkuMS5XOSIsCiAgICAiR0EuU1JDLlNUT1JZLjEuVzEwIiwKICAgICJHQS5TUkMuU1RPUlkuMS5XMTEiLAogICAgIkdBLlNSQy5TVE9SWS4xLlcxMiIsCiAgICAiR0EuU1JDLlNUT1JZLjEuVzEzIiwKICAgICJHQS5TUkMuU1RPUlkuMS5XMTQiLAogICAgIkdBLlNSQy5TVE9SWS4xIiwKICAgICJHQS5TUkMuU1RPUlkuMi5XMSIsCiAgICAiR0EuU1JDLlNUT1JZLjIuVzIiLAogICAgIkdBLlNSQy5TVE9SWS4yLlczIiwKICAgICJHQS5TUkMuU1RPUlkuMi5XNCIsCiAgICAiR0EuU1JDLlNUT1JZLjIuVzUiLAogICAgIkdBLlNSQy5TVE9SWS4yLlc2IiwKICAgICJHQS5TUkMuU1RPUlkuMi5XNyIsCiAgICAiR0EuU1JDLlNUT1JZLjMuVzEiLAogICAgIkdBLlNSQy5TVE9SWS4zLlcyIiwKICAgICJHQS5TUkMuU1RPUlkuMy5XMyIsCiAgICAiR0EuU1JDLlNUT1JZLjMuVzQiLAogICAgIkdBLlNSQy5TVE9SWS40LlcxIiwKICAgICJHQS5TUkMuU1RPUlkuNC5XMiIsCiAgICAiR0EuU1JDLlNUT1JZLjQuVzMiLAogICAgIkdBLlNSQy5TVE9SWS40Llc0IiwKICAgICJHQS5TUkMuU1RPUlkuNC5XNSIsCiAgICAiR0EuU1JDLlNUT1JZLjQuVzYiLAogICAgIkdBLlNSQy5TVE9SWS40Llc3IiwKICAgICJHQS5TUkMuU1RPUlkuNC5XOCIsCiAgICAiR0EuU1JDLlNUT1JZLjQuVzkiLAogICAgIkdBLlNSQy5TVE9SWS40LlcxMCIsCiAgICAiR0EuU1JDLlNUT1JZLjQuVzExIiwKICAgICJHQS5TUkMuU1RPUlkuNC5XMTIiLAogICAgIkdBLlNSQy5TVE9SWS40LlcxMyIsCiAgICAiR0EuU1JDLlNUT1JZLjQuVzE0IiwKICAgICJHQS5TUkMuU1RPUlkuNC5XMTUiLAogICAgIkdBLlNSQy5TVE9SWS40LlcxNiIsCiAgICAiR0EuU1JDLlNUT1JZLjQuVzE3IiwKICAgICJHQS5TUkMuU1RPUlkuNC5XMTgiLAogICAgIkdBLlNSQy5TVE9SWS40LlcxOSIsCiAgICAiR0EuU1JDLlNUT1JZLjQuVzIwIiwKICAgICJHQS5TUkMuU1RPUlkuNC5XMjEiLAogICAgIkdBLlNSQy5TVE9SWS40LlcyMiIsCiAgICAiR0EuU1JDLlNUT1JZLjQuVzIzIiwKICAgICJHQS5TUkMuU1RPUlkuNS5XMSIsCiAgICAiR0EuU1JDLlNUT1JZLjUuVzIiLAogICAgIkdBLlNSQy5TVE9SWS41LlczIiwKICAgICJHQS5TUkMuU1RPUlkuNS5XNCIsCiAgICAiR0EuU1JDLlNUT1JZLjYuVzEiLAogICAgIkdBLlNSQy5TVE9SWS42LlcyIiwKICAgICJHQS5TUkMuU1RPUlkuNi5XMyIsCiAgICAiR0EuU1JDLlNUT1JZLjYuVzQiLAogICAgIkdBLlNSQy5TVE9SWS42Llc1IiwKICAgICJHQS5TUkMuU1RPUlkuNi5XNiIsCiAgICAiR0EuU1JDLlNUT1JZLjYuVzciLAogICAgIkdBLlNSQy5TVE9SWS42Llc4IiwKICAgICJHQS5TUkMuU1RPUlkuNi5XOSIsCiAgICAiR0EuU1JDLlNUT1JZLjYuVzEwIiwKICAgICJHQS5TUkMuU1RPUlkuNy5XMSIsCiAgICAiR0EuU1JDLlNUT1JZLjcuVzIiLAogICAgIkdBLlNSQy5TVE9SWS43LlczIiwKICAgICJHQS5TUkMuU1RPUlkuNy5XNCIsCiAgICAiR0EuU1JDLlNUT1JZLjcuVzUiLAogICAgIkdBLlNSQy5TVE9SWS43Llc2IiwKICAgICJHQS5TUkMuU1RPUlkuNy5XNyIsCiAgICAiR0EuU1JDLlNUT1JZLjguVzEiLAogICAgIkdBLlNSQy5TVE9SWS44LlcyIiwKICAgICJHQS5TUkMuU1RPUlkuOC5XMyIsCiAgICAiR0EuU1JDLlNUT1JZLjguVzQiLAogICAgIkdBLlNSQy5TVE9SWS44Llc1IiwKICAgICJHQS5TUkMuU1RPUlkuOC5XNiIsCiAgICAiR0EuU1JDLlNUT1JZLjguVzciLAogICAgIkdBLlNSQy5TVE9SWS44Llc4IiwKICAgICJHQS5TUkMuU1RPUlkuOS5XMSIsCiAgICAiR0EuU1JDLlNUT1JZLjkuVzIiLAogICAgIkdBLlNSQy5TVE9SWS45LlczIiwKICAgICJHQS5TUkMuU1RPUlkuOS5XNCIsCiAgICAiR0EuU1JDLlNUT1JZLjkuVzUiLAogICAgIkdBLlNSQy5TVE9SWS45Llc2IiwKICAgICJHQS5TUkMuU1RPUlkuOS5XNyIsCiAgICAiR0EuU1JDLlNUT1JZLjkuVzgiLAogICAgIkdBLlNSQy5TVE9SWS45Llc5IiwKICAgICJHQS5TUkMuU1RPUlkuOS5XMTAiLAogICAgIkdBLlNSQy5TVE9SWS45LlcxMSIsCiAgICAiR0EuU1JDLlNUT1JZLjkuVzEyIiwKICAgICJHQS5TUkMuU1RPUlkuOS5XMTMiLAogICAgIkdBLlNSQy5TVE9SWS4yIiwKICAgICJHQS5TUkMuU1RPUlkuMyIsCiAgICAiR0EuU1JDLlNUT1JZLjQiLAogICAgIkdBLlNSQy5TVE9SWS41IiwKICAgICJHQS5TUkMuU1RPUlkuNiIsCiAgICAiR0EuU1JDLlNUT1JZLjciLAogICAgIkdBLlNSQy5TVE9SWS44IiwKICAgICJHQS5TUkMuU1RPUlkuOSIsCiAgICAiR0EuU1JDLlNUT1JZLjEwLlcxIiwKICAgICJHQS5TUkMuU1RPUlkuMTAuVzIiLAogICAgIkdBLlNSQy5TVE9SWS4xMC5XMyIsCiAgICAiR0EuU1JDLlNUT1JZLjEwLlc0IiwKICAgICJHQS5TUkMuU1RPUlkuMTAuVzUiLAogICAgIkdBLlNSQy5TVE9SWS4xMC5XNiIsCiAgICAiR0EuU1JDLlNUT1JZLjEwLlc3IiwKICAgICJHQS5TUkMuU1RPUlkuMTAuVzgiLAogICAgIkdBLlNSQy5TVE9SWS4xMC5XOSIsCiAgICAiR0EuU1JDLlNUT1JZLjEwLlcxMCIsCiAgICAiR0EuU1JDLlNUT1JZLjEwLlcxMSIsCiAgICAiR0EuU1JDLlNUT1JZLjEwLlcxMiIsCiAgICAiR0EuU1JDLlNUT1JZLjEwLlcxMyIsCiAgICAiR0EuU1JDLlNUT1JZLjEwLlcxNCIsCiAgICAiR0EuU1JDLlNUT1JZLjExLlcxIiwKICAgICJHQS5TUkMuU1RPUlkuMTEuVzIiLAogICAgIkdBLlNSQy5TVE9SWS4xMS5XMyIsCiAgICAiR0EuU1JDLlNUT1JZLjExLlc0IiwKICAgICJHQS5TUkMuU1RPUlkuMTEuVzUiLAogICAgIkdBLlNSQy5TVE9SWS4xMS5XNiIsCiAgICAiR0EuU1JDLlNUT1JZLjExLlc3IiwKICAgICJHQS5TUkMuU1RPUlkuMTEuVzgiLAogICAgIkdBLlNSQy5TVE9SWS4xMS5XOSIsCiAgICAiR0EuU1JDLlNUT1JZLjExLlcxMCIsCiAgICAiR0EuU1JDLlNUT1JZLjExLlcxMSIsCiAgICAiR0EuU1JDLlNUT1JZLjExLlcxMiIsCiAgICAiR0EuU1JDLlNUT1JZLjEwIiwKICAgICJHQS5TUkMuU1RPUlkuMTEiLAogICAgIkdBLlNSQy5TT0wuMS5XMSIsCiAgICAiR0EuU1JDLlNPTC4xLlcyIiwKICAgICJHQS5TUkMuU09MLjEuVzMiLAogICAgIkdBLlNSQy5TT0wuMS5XNCIsCiAgICAiR0EuU1JDLlNPTC4xLlc1IiwKICAgICJHQS5TUkMuU09MLjEuVzYiLAogICAgIkdBLlNSQy5TT0wuMS5XNyIsCiAgICAiR0EuU1JDLlNPTC4xLlc4IiwKICAgICJHQS5TUkMuU09MLjEuVzkiLAogICAgIkdBLlNSQy5TT0wuMS5XMTAiLAogICAgIkdBLlNSQy5TT0wuMS5XMTEiLAogICAgIkdBLlNSQy5TT0wuMS5XMTIiLAogICAgIkdBLlNSQy5TT0wuMS5XMTMiLAogICAgIkdBLlNSQy5TT0wuMS5XMTQiLAogICAgIkdBLlNSQy5TT0wuMS5XMTUiLAogICAgIkdBLlNSQy5TT0wuMS5XMTYiLAogICAgIkdBLlNSQy5TT0wuMS5XMTciLAogICAgIkdBLlNSQy5TT0wuMi5XMSIsCiAgICAiR0EuU1JDLlNPTC4yLlcyIiwKICAgICJHQS5TUkMuU09MLjIuVzMiLAogICAgIkdBLlNSQy5TT0wuMi5XNCIsCiAgICAiR0EuU1JDLlNPTC4yLlc1IiwKICAgICJHQS5TUkMuU09MLjIuVzYiLAogICAgIkdBLlNSQy5TT0wuMi5XNyIsCiAgICAiR0EuU1JDLlNPTC4yLlc4IiwKICAgICJHQS5TUkMuU09MLjIuVzkiLAogICAgIkdBLlNSQy5TT0wuMi5XMTAiLAogICAgIkdBLlNSQy5TT0wuMi5XMTEiLAogICAgIkdBLlNSQy5TT0wuMi5XMTIiLAogICAgIkdBLlNSQy5TT0wuMi5XMTMiLAogICAgIkdBLlNSQy5TT0wuMi5XMTQiLAogICAgIkdBLlNSQy5TT0wuMi5XMTUiLAogICAgIkdBLlNSQy5TT0wuMi5XMTYiLAogICAgIkdBLlNSQy5TT0wuMi5XMTciLAogICAgIkdBLlNSQy5TT0wuMi5XMTgiLAogICAgIkdBLlNSQy5TT0wuMi5XMTkiLAogICAgIkdBLlNSQy5TT0wuMi5XMjAiLAogICAgIkdBLlNSQy5TT0wuMi5XMjEiLAogICAgIkdBLlNSQy5TT0wuMy5XMSIsCiAgICAiR0EuU1JDLlNPTC4zLlcyIiwKICAgICJHQS5TUkMuU09MLjMuVzMiLAogICAgIkdBLlNSQy5TT0wuMy5XNCIsCiAgICAiR0EuU1JDLlNPTC4zLlc1IiwKICAgICJHQS5TUkMuU09MLjMuVzYiLAogICAgIkdBLlNSQy5TT0wuMy5XNyIsCiAgICAiR0EuU1JDLlNPTC4zLlc4IiwKICAgICJHQS5TUkMuU09MLjMuVzkiLAogICAgIkdBLlNSQy5TT0wuMy5XMTAiLAogICAgIkdBLlNSQy5TT0wuMy5XMTEiLAogICAgIkdBLlNSQy5TT0wuMy5XMTIiLAogICAgIkdBLlNSQy5TT0wuNC5XMSIsCiAgICAiR0EuU1JDLlNPTC40LlcyIiwKICAgICJHQS5TUkMuU09MLjQuVzMiLAogICAgIkdBLlNSQy5TT0wuNC5XNCIsCiAgICAiR0EuU1JDLlNPTC40Llc1IiwKICAgICJHQS5TUkMuU09MLjQuVzYiLAogICAgIkdBLlNSQy5TT0wuNC5XNyIsCiAgICAiR0EuU1JDLlNPTC40Llc4IiwKICAgICJHQS5TUkMuU09MLjQuVzkiLAogICAgIkdBLlNSQy5TT0wuNS5XMSIsCiAgICAiR0EuU1JDLlNPTC41LlcyIiwKICAgICJHQS5TUkMuU09MLjUuVzMiLAogICAgIkdBLlNSQy5TT0wuNS5XNCIsCiAgICAiR0EuU1JDLlNPTC41Llc1IiwKICAgICJHQS5TUkMuU09MLjUuVzYiLAogICAgIkdBLlNSQy5TT0wuNS5XNyIsCiAgICAiR0EuU1JDLlNPTC41Llc4IiwKICAgICJHQS5TUkMuU09MLjUuVzkiLAogICAgIkdBLlNSQy5TT0wuNS5XMTAiLAogICAgIkdBLlNSQy5USEFOS1NFTkRJTkcuMS5XMSIsCiAgICAiR0EuU1JDLlRIQU5LU0VORElORy4xLlcyIiwKICAgICJHQS5TUkMuVEhBTktTRU5ESU5HLjEuVzMiLAogICAgIkdBLlNSQy5USEFOS1NFTkRJTkcuMS5XNCIsCiAgICAiR0EuU1JDLlRIQU5LU0VORElORy4xLlc1IiwKICAgICJHQS5TUkMuVEhBTktTRU5ESU5HLjEuVzYiLAogICAgIkdBLlNSQy5USEFOS1NFTkRJTkcuMS5XNyIsCiAgICAiR0EuU1JDLlRIQU5LU0VORElORy4xLlc4IiwKICAgICJHQS5TUkMuVEhBTktTRU5ESU5HLjEuVzkiLAogICAgIkdBLlNSQy5USEFOS1NFTkRJTkcuMS5XMTAiLAogICAgIkdBLlNSQy5USEFOS1NFTkRJTkcuMS5XMTEiLAogICAgIkdBLlNSQy5USEFOS1NFTkRJTkcuMS5XMTIiLAogICAgIkdBLlNSQy5USEFOS1NFTkRJTkcuMS5XMTMiLAogICAgIkdBLlNSQy5USEFOS1NFTkRJTkcuMS5XMTQiLAogICAgIkdBLlNSQy5USEFOS1NFTkRJTkcuMS5XMTUiLAogICAgIkdBLlNSQy5USEFOS1NFTkRJTkcuMS5XMTYiLAogICAgIkdBLlNSQy5USEFOS1NFTkRJTkcuMS5XMTciLAogICAgIkdBLlNSQy5USEFOS1NFTkRJTkcuMS5XMTgiLAogICAgIkdBLlNSQy5USEFOS1NFTkRJTkcuMS5XMTkiLAogICAgIkdBLlNSQy5USEFOS1NFTkRJTkcuMS5XMjAiLAogICAgIkdBLlNSQy5USEFOS1NFTkRJTkcuMS5XMjEiLAogICAgIkdBLlNSQy5USEFOS1NFTkRJTkcuMS5XMjIiLAogICAgIkdBLlNSQy5USEFOS1NFTkRJTkcuMS5XMjMiLAogICAgIkdBLlNSQy5USEFOS1NFTkRJTkcuMS5XMjQiLAogICAgIkdBLlNSQy5USEFOS1NFTkRJTkcuMS5XMjUiLAogICAgIkdBLlNSQy5USEFOS1NFTkRJTkcuMS5XMjYiLAogICAgIkdBLlNSQy5TT0wuMSIsCiAgICAiR0EuU1JDLlNPTC4yIiwKICAgICJHQS5TUkMuU09MLjMiLAogICAgIkdBLlNSQy5TT0wuNCIsCiAgICAiR0EuU1JDLlNPTC41IiwKICAgICJHQS5TUkMuVEhBTktTRU5ESU5HLjEiLAogICAgIkdBLlNSQy5FTVBUWS4xLlcxIiwKICAgICJHQS5TUkMuRU1QVFkuMS5XMiIsCiAgICAiR0EuU1JDLkVNUFRZLjEuVzMiLAogICAgIkdBLlNSQy5FTVBUWS4xLlc0IiwKICAgICJHQS5TUkMuRU1QVFkuMS5XNSIsCiAgICAiR0EuU1JDLkVNUFRZLjEuVzYiLAogICAgIkdBLlNSQy5FTVBUWS4xLlc3IiwKICAgICJHQS5TUkMuRU1QVFkuMS5XOCIsCiAgICAiR0EuU1JDLkVNUFRZLjEuVzkiLAogICAgIkdBLlNSQy5FTVBUWS4xLlcxMCIsCiAgICAiR0EuU1JDLkVNUFRZLjEuVzExIiwKICAgICJHQS5TUkMuRU1QVFkuMS5XMTIiLAogICAgIkdBLlNSQy5FTVBUWS4yLlcxIiwKICAgICJHQS5TUkMuRU1QVFkuMi5XMiIsCiAgICAiR0EuU1JDLkVNUFRZLjIuVzMiLAogICAgIkdBLlNSQy5FTVBUWS4yLlc0IiwKICAgICJHQS5TUkMuRU1QVFkuMi5XNSIsCiAgICAiR0EuU1JDLkVNUFRZLjIuVzYiLAogICAgIkdBLlNSQy5FTVBUWS4yLlc3IiwKICAgICJHQS5TUkMuRU1QVFkuMi5XOCIsCiAgICAiR0EuU1JDLkVNUFRZLjIuVzkiLAogICAgIkdBLlNSQy5FTVBUWS4yLlcxMCIsCiAgICAiR0EuU1JDLkVNUFRZLjIuVzExIiwKICAgICJHQS5TUkMuRU1QVFkuMi5XMTIiLAogICAgIkdBLlNSQy5FTVBUWS4yLlcxMyIsCiAgICAiR0EuU1JDLkVNUFRZLjIuVzE0IiwKICAgICJHQS5TUkMuRU1QVFkuMi5XMTUiLAogICAgIkdBLlNSQy5FTVBUWS4yLlcxNiIsCiAgICAiR0EuU1JDLkVNUFRZLjIuVzE3IiwKICAgICJHQS5TUkMuRU1QVFkuMi5XMTgiLAogICAgIkdBLlNSQy5FTVBUWS4zLlcxIiwKICAgICJHQS5TUkMuRU1QVFkuMy5XMiIsCiAgICAiR0EuU1JDLkVNUFRZLjMuVzMiLAogICAgIkdBLlNSQy5FTVBUWS4zLlc0IiwKICAgICJHQS5TUkMuRU1QVFkuMy5XNSIsCiAgICAiR0EuU1JDLkVNUFRZLjMuVzYiLAogICAgIkdBLlNSQy5FTVBUWS4zLlc3IiwKICAgICJHQS5TUkMuRU1QVFkuMy5XOCIsCiAgICAiR0EuU1JDLkVNUFRZLjMuVzkiLAogICAgIkdBLlNSQy5FTVBUWS4zLlcxMCIsCiAgICAiR0EuU1JDLkVNUFRZLjMuVzExIiwKICAgICJHQS5TUkMuRU1QVFkuMy5XMTIiLAogICAgIkdBLlNSQy5FTVBUWS4zLlcxMyIsCiAgICAiR0EuU1JDLkVNUFRZLjQuVzEiLAogICAgIkdBLlNSQy5FTVBUWS40LlcyIiwKICAgICJHQS5TUkMuRU1QVFkuNC5XMyIsCiAgICAiR0EuU1JDLkVNUFRZLjQuVzQiLAogICAgIkdBLlNSQy5FTVBUWS40Llc1IiwKICAgICJHQS5TUkMuRU1QVFkuNC5XNiIsCiAgICAiR0EuU1JDLkVNUFRZLjQuVzciLAogICAgIkdBLlNSQy5FTVBUWS40Llc4IiwKICAgICJHQS5TUkMuRU1QVFkuNC5XOSIsCiAgICAiR0EuU1JDLkVNUFRZLjUuVzEiLAogICAgIkdBLlNSQy5FTVBUWS41LlcyIiwKICAgICJHQS5TUkMuRU1QVFkuNS5XMyIsCiAgICAiR0EuU1JDLkVNUFRZLjUuVzQiLAogICAgIkdBLlNSQy5FTVBUWS41Llc1IiwKICAgICJHQS5TUkMuRU1QVFkuNS5XNiIsCiAgICAiR0EuU1JDLkVNUFRZLjUuVzciLAogICAgIkdBLlNSQy5FTVBUWS42LlcxIiwKICAgICJHQS5TUkMuRU1QVFkuNi5XMiIsCiAgICAiR0EuU1JDLkVNUFRZLjYuVzMiLAogICAgIkdBLlNSQy5FTVBUWS42Llc0IiwKICAgICJHQS5TUkMuRU1QVFkuNi5XNSIsCiAgICAiR0EuU1JDLkVNUFRZLjYuVzYiLAogICAgIkdBLlNSQy5FTVBUWS42Llc3IiwKICAgICJHQS5TUkMuRU1QVFkuNi5XOCIsCiAgICAiR0EuU1JDLkVNUFRZLjYuVzkiLAogICAgIkdBLlNSQy5FTVBUWS42LlcxMCIsCiAgICAiR0EuU1JDLkVNUFRZLjYuVzExIiwKICAgICJHQS5TUkMuRU1QVFkuNi5XMTIiLAogICAgIkdBLlNSQy5FTVBUWS42LlcxMyIsCiAgICAiR0EuU1JDLkVNUFRZLjYuVzE0IiwKICAgICJHQS5TUkMuRU1QVFkuNi5XMTUiLAogICAgIkdBLlNSQy5FTVBUWS42LlcxNiIsCiAgICAiR0EuU1JDLkVNUFRZLjYuVzE3IiwKICAgICJHQS5TUkMuRU1QVFkuNi5XMTgiLAogICAgIkdBLlNSQy5FTVBUWS42LlcxOSIsCiAgICAiR0EuU1JDLkVNUFRZLjYuVzIwIiwKICAgICJHQS5TUkMuRU1QVFkuNi5XMjEiLAogICAgIkdBLlNSQy5FTVBUWS42LlcyMiIsCiAgICAiR0EuU1JDLkVNUFRZLjYuVzIzIiwKICAgICJHQS5TUkMuRU1QVFkuNi5XMjQiLAogICAgIkdBLlNSQy5FTVBUWS42LlcyNSIsCiAgICAiR0EuU1JDLkVNUFRZLjYuVzI2IiwKICAgICJHQS5TUkMuRU1QVFkuMSIsCiAgICAiR0EuU1JDLkVNUFRZLjIiLAogICAgIkdBLlNSQy5FTVBUWS4zIiwKICAgICJHQS5TUkMuRU1QVFkuNCIsCiAgICAiR0EuU1JDLkVNUFRZLjUiLAogICAgIkdBLlNSQy5FTVBUWS42IgogIF0sCiAgImFzc2lzdGFuY2UiOiBbXSwKICAiaGlzdG9yeSI6IFsKICAgICJnNC1hdXRoZW50aWMtY2FwdHVyZS0yMTMiLAogICAgImc0LWF1dGhlbnRpYy1jYXB0dXJlLTM5NSIsCiAgICAiZzQtYXV0aGVudGljLWNhcHR1cmUtNzU5IiwKICAgICJCIiwKICAgICJnNC1hdXRoZW50aWMtY2FwdHVyZS0xMTMzIiwKICAgICJNQVJBX1BBR0VfREVMSVZFUkVEIiwKICAgICJnNC1hdXRoZW50aWMtY2FwdHVyZS0xMzE3IiwKICAgICJnNC1hdXRoZW50aWMtY2FwdHVyZS0xMzQyLWJpcmQtaW50cm8iLAogICAgImc0LWF1dGhlbnRpYy1jYXB0dXJlLTE0OTgiLAogICAgImc0LWF1dGhlbnRpYy1jYXB0dXJlLTE4NjAiLAogICAgImc0LWF1dGhlbnRpYy1jYXB0dXJlLTIyMjciLAogICAgImc0LWF1dGhlbnRpYy1jYXB0dXJlLTI0MDgiLAogICAgImc1LWF1dGhlbnRpYy1jYXB0dXJlLTIzNiIsCiAgICAiUCIsCiAgICAiZzUtYXV0aGVudGljLWNhcHR1cmUtMjc0LWdyb3d0aCIsCiAgICAiTCIsCiAgICAiZzUtYXV0aGVudGljLWNhcHR1cmUtNTk4IiwKICAgICJnNS1hdXRoZW50aWMtY2FwdHVyZS05NjIiLAogICAgImc1LWF1dGhlbnRpYy1jYXB0dXJlLTEzMjQiLAogICAgImc1LWF1dGhlbnRpYy1jYXB0dXJlLTE1MDYiLAogICAgImc1LWF1dGhlbnRpYy1jYXB0dXJlLTE2ODgiLAogICAgImc1LWF1dGhlbnRpYy1jYXB0dXJlLTE4NzAiLAogICAgImc1LWF1dGhlbnRpYy1jYXB0dXJlLTIwNTEiLAogICAgImc1LWF1dGhlbnRpYy1jYXB0dXJlLTI0MTMiLAogICAgImc1LWF1dGhlbnRpYy1jYXB0dXJlLTI1OTQiLAogICAgImc1LWF1dGhlbnRpYy1jYXB0dXJlLTI3NzUiLAogICAgImc1LWF1dGhlbnRpYy1jYXB0dXJlLTI5NTYiLAogICAgImc1LWF1dGhlbnRpYy1jYXB0dXJlLTM2ODAiLAogICAgIjNhN2Q2ZWUyLWYxY2MtNGRiZC05MjY2LWZlYTIwZTAzYzBmZCIsCiAgICAiNDgyMmZmZTctMmJmZi00ODNkLWEyYzktOTY5MDY1YTlmZmQ1IiwKICAgICIxODUwYmFkNS1jMjdhLTQyMWMtOGU3Ny04OWEzZWNjMzI2ZWUiLAogICAgImExOTBmOTZmLTE1NmQtNGJkZS1iNzM1LWQ4MTEzODIzNjVlMSIsCiAgICAiR0FUSEVSX1dFTENPTUUiLAogICAgIjFjMjk2ODgxLTY2NTctNGJhZS05ODY5LWVjNDU1MDY5ZGQ0NiIsCiAgICAiR0FUSEVSX1NPTCIsCiAgICAiR0FUSEVSX0RJU0NMT1NVUkUiLAogICAgIjM1NDk4OGFkLTM4Y2ItNDZmMC04MDM4LTFkOTBhNmI1OGFlMCIsCiAgICAiZjNiYTQ3YzEtYzMxZC00ZGIxLWJhM2UtOGEwYTI3ZjdjZjIwIiwKICAgICJHQVRIRVJfR1JBTkRNQSIKICBdLAogICJyZWFkaW5nIjogewogICAgInBsYW5uZXIiOiA3MzgsCiAgICAiZ2F0aGVyaW5nOm1hcmEiOiAyMzQsCiAgICAiZ2F0aGVyaW5nOnNvbCI6IDAKICB9LAogICJyZWR1Y2VkTW90aW9uIjogZmFsc2UsCiAgImxhcmdlVGV4dCI6IGZhbHNlLAogICJiYWtlcnkiOiB7CiAgICAiZWRpdGlvbiI6ICJjb25uZWN0ZWQtMjAyNjA5MTUiLAogICAgInN0YWdlIjogImRvbmUiLAogICAgIm1ldCI6IHRydWUsCiAgICAicGVybWlzc2lvbiI6IHRydWUsCiAgICAidGlsZSI6ICJyb29mIiwKICAgICJjcmFja2VkIjogInNldC1hc2lkZSIsCiAgICAibG9hZiI6ICJzb2wiLAogICAgInJpbmEiOiB7CiAgICAgICJ4IjogNC43NDIxMDM4OTk2MjYzNzIsCiAgICAgICJ6IjogLTEuNzQxODg1NDYxOTk4NDE1OQogICAgfQogIH0sCiAgImdhdGhlcmluZyI6IHsKICAgICJlZGl0aW9uIjogImNvbm5lY3RlZC0yMDI2MDkxNSIsCiAgICAicmVwb3J0ZWQiOiB7CiAgICAgICJ0aW1lIjogImxhdGVyIiwKICAgICAgInJlYWRlciI6ICJwaXAiCiAgICB9LAogICAgImFycml2YWwiOiAicmVhZHkiLAogICAgIndlbGNvbWUiOiB0cnVlLAogICAgInNvbFBlcmZvcm1lZCI6IHsKICAgICAgInRleHQiOiAiTGF0ZXIsIFJpbmEgYnJvdWdodCBtZSBhIGxvYWYgb2YgYnJlYWQgdG8gc2F5IHRoYW5rIHlvdS4gSSBoYWQgdGhvdWdodCBpdCB3YXMgb25seSBhIHNtYWxsIHJlcGFpci4gSXQgaGFkIG1hdHRlcmVkIHRvIGhlci4iLAogICAgICAic2NlbmUiOiAidGhhbmtzIiwKICAgICAgIm9yaWdpbiI6ICJwcmVwYXJlZCIsCiAgICAgICJyZXZpc2lvbiI6IDIKICAgIH0sCiAgICAic29sRGlzY2xvc2VkIjogdHJ1ZSwKICAgICJjdXNoaW9ucyI6IHRydWUsCiAgICAicGFnZUNvbXBsZXRlIjogdHJ1ZSwKICAgICJncmFuZG1hUGVyZm9ybWVkIjogdHJ1ZSwKICAgICJ0dXJuIjogbnVsbAogIH0KfQ=="
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\garden-gathering-Gathering-b5395-d-exact-chosen-contribution-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b401158f27d32a69362b-d887055044b86906d8cc",
+          "file": "garden-gathering.spec.ts",
+          "line": 8,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "garden-mara.spec.ts",
+      "file": "garden-mara.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "G4 ordinary early telling: actual duty, no source shortcut, compact repair, pause/reload and same present-day facts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 37921,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-15T20:11:56.744Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\garden-mara-G4-ordinary-ea-c4629--and-same-present-day-facts-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "286cf88df7dee6c13e13-631437e50790960b64fd",
+          "file": "garden-mara.spec.ts",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-15T20:11:21.377Z",
+    "duration": 73839.94,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

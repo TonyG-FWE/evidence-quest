@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import {readFile,writeFile} from 'node:fs/promises';
 import {design,json,hash,readCanonical} from './content-source.mjs';
 import {validateAuthoredContent} from '../contracts/generated/validators.mjs';
+import {validateGarden} from './validate-garden.mjs';
 
 export async function validateFull(content) {
   assert(validateAuthoredContent(content),JSON.stringify(validateAuthoredContent.errors));
@@ -54,4 +55,5 @@ if(process.argv[1]?.endsWith('validate-content.mjs')){
   await assert.rejects(()=>validateFull(fragment.payload),/example-fragment/);
   await writeFile(counts.texts>557?'evidence/er13/content-validation.json':'evidence/content-validation.json',JSON.stringify({checkedAt:new Date().toISOString(),contentSha256:hash(await readFile('content/authored.json')),checks:['schema','all canonical words','code-point span bounds','complete refs/owners','legal geometry anchors','reciprocal doors','manifest bindings','fragment rejection'],counts,limits:'This transcription/structure check does not establish runtime behavior or full conditional/NPC branch coverage.'},null,2)+'\n');
   console.log(JSON.stringify(counts));
+  console.log(JSON.stringify(await validateGarden()));
 }

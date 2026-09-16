@@ -1,0 +1,142 @@
+{
+  "at": "2026-09-15T17:13:32.440Z",
+  "focus": "Evidence QuestTHE GARDEN ADVENTURESaving…BackpackHelpPauseWhat’s happeningMove the wooden bridge sections. Pip will wait on the bank.MaraGrandmaBridge piecesSee",
+  "images": [
+    "The river and Grandma’s garden. Use the named controls below or click the scene."
+  ],
+  "rendered": [
+    {
+      "attributes": [
+        [
+          "data-camera-focus",
+          "whole-adventure"
+        ],
+        [
+          "data-pip-memory",
+          "{\"record\":null,\"placing\":false,\"scene\":null,\"seed\":\"pip\"}"
+        ],
+        [
+          "data-bakery",
+          "{\"stage\":\"arrival\",\"leakOpen\":true,\"rain\":true,\"tile\":{\"x\":9.15,\"y\":0.6,\"z\":-0.4},\"rina\":{\"x\":8.5,\"z\":-0.7},\"loaf\":\"none\",\"solScreen\":{\"head\":{\"x\":0.46501759511999535,\"y\":0.11211137190929342},\"feet\":{\"x\":0.46501759511999535,\"y\":-0.03903969615475657}}}"
+        ],
+        [
+          "data-gathering",
+          "{\"arrival\":\"not-started\",\"offDuty\":false,\"sol\":{\"x\":7.05,\"z\":-1.5},\"mara\":{\"x\":-3.5,\"z\":-4},\"speaker\":null,\"turn\":null,\"part\":null,\"cushions\":false,\"pageComplete\":false,\"grandmaPerformed\":false}"
+        ],
+        [
+          "data-mara-page",
+          "{\"holder\":\"mara\",\"x\":-3.32,\"y\":0.8,\"z\":-3.87,\"holderX\":-3.5,\"holderZ\":-4}"
+        ],
+        [
+          "data-rendered-frame",
+          "654"
+        ],
+        [
+          "data-rendered-width",
+          "1284"
+        ],
+        [
+          "data-rendered-height",
+          "649"
+        ],
+        [
+          "data-rendered-view",
+          "arrange"
+        ],
+        [
+          "data-action-kind",
+          "none"
+        ],
+        [
+          "data-chapter-phase",
+          "planning"
+        ],
+        [
+          "data-sol-x",
+          "7.050"
+        ],
+        [
+          "data-sol-z",
+          "-1.500"
+        ],
+        [
+          "data-mara-x",
+          "-3.500"
+        ],
+        [
+          "data-mara-z",
+          "-4.000"
+        ],
+        [
+          "data-bridge-action",
+          "idle"
+        ],
+        [
+          "data-pip-x",
+          "-2.566"
+        ],
+        [
+          "data-pip-z",
+          "-0.202"
+        ],
+        [
+          "data-bridge-ready",
+          "false"
+        ],
+        [
+          "data-sections",
+          "{\"a\":{\"x\":-3.6,\"z\":1,\"rotation\":0},\"b\":{\"x\":-3.6,\"z\":2.5,\"rotation\":0}}"
+        ],
+        [
+          "data-seed-boat-x",
+          "-1.400"
+        ],
+        [
+          "data-seed-boat-z",
+          "0.800"
+        ],
+        [
+          "data-seed-x",
+          "-2.566"
+        ],
+        [
+          "data-seed-z",
+          "-0.352"
+        ],
+        [
+          "data-dock-service",
+          "waiting"
+        ],
+        [
+          "data-boat-operator",
+          "separate crew member"
+        ],
+        [
+          "data-passenger-boat",
+          "{\"visible\":true,\"x\":-1.1,\"z\":-4.1,\"passengers\":[{\"visible\":true,\"x\":-1.1,\"z\":-3.8},{\"visible\":true,\"x\":-1.1,\"z\":-4.33}]}"
+        ],
+        [
+          "data-ferry-phase",
+          "idle"
+        ],
+        [
+          "data-rendered-sections",
+          "{\"a\":{\"x\":-3.6,\"z\":1,\"rotation\":0},\"b\":{\"x\":-3.6,\"z\":2.5,\"rotation\":0}}"
+        ],
+        [
+          "data-metrics",
+          "{\"frames\":630,\"drawCalls\":705,\"triangles\":116614,\"geometries\":358,\"textures\":5,\"activeSamples\":19,\"p95\":16.799999999999272,\"lastRenderMs\":1.4000000059604645,\"dpr\":1.125,\"width\":1599,\"height\":649,\"geometryCpuBytes\":6859924,\"canvasColorBytes\":4151004,\"shadowDepthAllocationBytes\":9437184,\"sectionTextureBytes\":131072,\"gpuTotalMemory\":\"NOT_MEASURED\",\"adapter\":\"ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)\"}"
+        ]
+      ]
+    }
+  ],
+  "scripts": [
+    "http://127.0.0.1:4198/assets/index-BB_gbQ44.js"
+  ],
+  "text": "Evidence Quest\nTHE GARDEN ADVENTURE\nSaving…\nBackpack\nHelp\nPause\nWhat’s happening\n\nMove the wooden bridge sections. Pip will wait on the bank.\n\nSection A\nSection B\nDIRECTOR MODE\nPip waits on the bank.\nThe riverbank\nPlaces & scene description\nREPAIR THE FOOTBRIDGE\nTwo sections.\nOne way across.\n\nGrandma’s two sections can make a footbridge. Place them between the opposing posts, join their short ends and fasten both banks.\n\n2 repair ropes remain in Grandma’s box.\n\nTake the repair ropes\nGive me a hint\nRead the crossing note\nSection A\nSection B\nSelected: Section A\nPlace between the posts\nNarrow crossing · dock-side post\nNarrow crossing · garden-side post\nTry the wide crossing\n↑\n←\n→\n↓\n↶ Turn\nTurn ↷\nJoin sections\n○\nFasten dock-side end\n○\nFasten garden-side end\nBack to Pip\nYou direct the bridge repair · Pip waits on the bank\nDrag to move · Click to place · Escape to cancel",
+  "url": "http://127.0.0.1:4198/garden",
+  "viewport": {
+    "height": 800,
+    "width": 1422
+  }
+}

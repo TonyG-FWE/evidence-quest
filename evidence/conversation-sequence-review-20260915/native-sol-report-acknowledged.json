@@ -1,0 +1,43 @@
+{
+  "at": "2026-09-16T01:34:56.189Z",
+  "name": "native-sol-report-acknowledged",
+  "snapshot": "- dialog \"A visit with Grandma\":\n  - banner:\n    - link:\n      - /url: /garden\n      - text: Evidence Quest\n      - generic: THE GARDEN ADVENTURE\n    - navigation \"Reading tools\":\n      - button \"Backpack\":\n        - generic: Backpack\n      - button \"Help\":\n        - generic: Help\n      - button \"Pause\":\n        - generic: Pause\n  - img \"The river and Grandma’s garden. Use the named controls below or click the scene.\"\n  - generic: GRANDMA’S GARDEN\n  - button \"Close page. Continue to the game\": ×\n  - heading \"A visit with Grandma\" [active] [level=2]\n  - paragraph: Read here, then choose what Pip says or does.\n  - strong: Grandma says\n  - generic: I'd like to hear what Sol brings.\n  - group \"What will Pip do next?\":\n    - generic: What will Pip do next?\n    - button \"Plan the gathering with Grandma\"\n  - generic \"Ask Grandma about the lantern flowers\"\n  - navigation \"Conversation navigation\":\n    - button \"Continue to the game\"",
+  "dom": {
+    "active": "A visit with Grandma",
+    "flow": [
+      {
+        "className": "garden-reader ",
+        "clientHeight": 656,
+        "flex": "0 1 auto",
+        "height": 656,
+        "overflow": "visible",
+        "scrollHeight": 656,
+        "top": 64
+      },
+      {
+        "className": "garden-reading-scroll",
+        "clientHeight": 249,
+        "flex": "0 1 auto",
+        "height": 249.3000030517578,
+        "overflow": "auto",
+        "scrollHeight": 249,
+        "top": 178.1374969482422
+      },
+      {
+        "className": "g-reader-actions",
+        "clientHeight": 66,
+        "flex": "0 0 auto",
+        "height": 66.80000305175781,
+        "overflow": "visible",
+        "scrollHeight": 66,
+        "top": 427.4375
+      }
+    ],
+    "url": "http://localhost:4198/garden",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "visible": "GRANDMA’S GARDEN\n×\nA visit with Grandma\n\nRead here, then choose what Pip says or does.\n\nGrandma says\nI'd like to hear what Sol brings.\nWhat will Pip do next?\nPlan the gathering with Grandma\nAsk Grandma about the lantern flowers\nContinue to the game"
+  }
+}

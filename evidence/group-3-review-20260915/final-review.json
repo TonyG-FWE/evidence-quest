@@ -1,0 +1,208 @@
+{
+  "at": "2026-09-15T05:58:49.606Z",
+  "result": "PASS_BOUNDED_GROUP_3_INDEPENDENT_REVIEW",
+  "scope": "River E01-E11 and directly affected shared interactions, reviewed independently against accepted Group1 sequence. No full-game, learner or provider qualification claimed.",
+  "candidate": {
+    "garden": "assets/GardenApp-B-PC_riq.js",
+    "css": [
+      "assets/GardenApp-D2xtYYJf.css"
+    ],
+    "entry": "assets/index-BNaEA7PI.js"
+  },
+  "findings": [
+    {
+      "id": "G3-RV01",
+      "status": "RESOLVED",
+      "resolution": "Admitted post-offset fastening retains valid save"
+    },
+    {
+      "id": "G3-RV02",
+      "status": "RESOLVED",
+      "resolution": "JOIN preserves any attached section pose"
+    },
+    {
+      "id": "G3-RV03",
+      "status": "RESOLVED",
+      "resolution": "Object labels leave channel/boat/rock/planting visible; markers hidden during atomic actions"
+    },
+    {
+      "id": "G3-RV04",
+      "status": "RESOLVED",
+      "resolution": "Old-save rope collection uses actual zero/one/two ownership"
+    },
+    {
+      "id": "G3-RV05",
+      "status": "RESOLVED",
+      "resolution": "Boat and secured-crossing Help/return/docking cues reflect current activity"
+    },
+    {
+      "id": "G3-RV06",
+      "status": "RESOLVED",
+      "resolution": "Compact boat layout retains visible world and usable controls"
+    }
+  ],
+  "handlerChecks": [
+    {
+      "file": "river-observations-final.json",
+      "assertions": 41,
+      "result": "PASS"
+    },
+    {
+      "file": "migration-observations-final.json",
+      "assertions": 120,
+      "result": "PASS"
+    },
+    {
+      "file": "first-arrival-final.json",
+      "assertions": 7,
+      "result": "PASS"
+    }
+  ],
+  "oldSaveCases": 11,
+  "ropeOwnershipCases": 2,
+  "compact": {
+    "canvas": [
+      {
+        "height": 179.9166717529297,
+        "width": 320
+      }
+    ],
+    "controls": [
+      {
+        "height": 48,
+        "label": "Upstream ↑",
+        "width": 131.55555725097656
+      },
+      {
+        "height": 48,
+        "label": "← Dock side",
+        "width": 131.55555725097656
+      },
+      {
+        "height": 48,
+        "label": "Garden side →",
+        "width": 131.55555725097656
+      },
+      {
+        "height": 48,
+        "label": "Downstream ↓",
+        "width": 131.55555725097656
+      },
+      {
+        "height": 48,
+        "label": "Try docking at Grandma’s landing",
+        "width": 271.1111145019531
+      },
+      {
+        "height": 48,
+        "label": "Unload the seed at Pip’s launch",
+        "width": 271.1111145019531
+      }
+    ],
+    "height": 568,
+    "scripts": [
+      "http://127.0.0.1:4195/assets/index-BNaEA7PI.js"
+    ],
+    "scrollWidth": 320,
+    "width": 320
+  },
+  "consoleErrors": [],
+  "nativeEvidence": [
+    "native-review-initial.md",
+    "native-desktop-recheck.md",
+    "compact-boat-final.png",
+    "planting-clear-final.png",
+    "lantern-label-final.png"
+  ],
+  "nativeFinal": [
+    "Actual320x568 world320x179.92; all measured steering/docking/unload controls48px; no horizontal overflow",
+    "Help source has reading actions only and exact Help/boat return; Pause returns to stopped boat",
+    "Actual compact steering, physical return to launch, explicit unload, Pip carrying same seed across bridge",
+    "Unobstructed atomic planting and visible flower with offset lantern label"
+  ],
+  "qualification": [
+    "Native observations span recorded candidates with scoped final rechecks; not one fresh final full-route regression",
+    "Synthetic envelope transport in handler/codec tests is not native IndexedDB evidence",
+    "Native confirm cancellation and archive-byte equality not established by this run",
+    "No learner, physical touch/screen-reader/device-matrix, performance or live provider qualification",
+    "TASK11.19 remains halted at1/75; Groups4-8 and final169-row integration remain open"
+  ],
+  "hashes": [
+    {
+      "path": "src/garden/GardenApp.tsx",
+      "sha256": "7f751a1b41df5a95431d80a1f4ea2a2b02716f114f08d53f0c661dc16e3223df"
+    },
+    {
+      "path": "src/garden/GardenScene.tsx",
+      "sha256": "039e10a310c21ebd0fed58d12e94874cf37f03116cf38f48bdee5ef7a2e6a374"
+    },
+    {
+      "path": "src/garden/garden.css",
+      "sha256": "e3aa137c842c9196a56f879f4c3f5a522fcd4f51654d04037cc6bd353965203b"
+    },
+    {
+      "path": "src/garden/BoatControls.tsx",
+      "sha256": "a93e30ba9a0be417eb24a984326b904251a747cf852aa54337aeb8b49bd085d5"
+    },
+    {
+      "path": "src/garden/ChapterPanels.tsx",
+      "sha256": "18f471833c245217d96d3de9be6cb66c6106bee4705c7872b1464a09342f701d"
+    },
+    {
+      "path": "src/garden/chapter.ts",
+      "sha256": "94a785a9cf7d9ff32f60d1290b4a36e67ea5a4a29d18a2bf12e3615bcfaf56e5"
+    },
+    {
+      "path": "src/garden/model.ts",
+      "sha256": "21ab651fb38edc08eb77d6161e06d1ef2bb06958275937b7c4773284dd577d2c"
+    },
+    {
+      "path": "src/garden/river.ts",
+      "sha256": "94ef9e24dd10631b799a521283ddd4a504815249ed419975878653e03f0a6db0"
+    },
+    {
+      "path": "src/garden/persistence.ts",
+      "sha256": "9fee35c9d6b15f144fa2a0db24239fd56f3839d1a4495f624a10f23f521b3c67"
+    },
+    {
+      "path": "src/garden/content.ts",
+      "sha256": "9f70d1d297e59669e7bb1879c6d482a9fc6483507645ac1a17d33f04d5ccdac5"
+    },
+    {
+      "path": "dist/client/assets/GardenApp-B-PC_riq.js",
+      "sha256": "9e44d528f2532064d5a41b47cfda09d32094977ac5cb889ae93ee5efe8656918"
+    },
+    {
+      "path": "dist/client/assets/GardenApp-D2xtYYJf.css",
+      "sha256": "f88e5d14362d5cf8b34a20015c80d1a4f11a5e0c9d3cc1102d5d21ff8468b602"
+    },
+    {
+      "path": "dist/client/assets/index-BNaEA7PI.js",
+      "sha256": "d494e8080e29d027131c9ac53f93658b28ac44bbaae81a7706e7f7976bf0b4f3"
+    },
+    {
+      "path": "evidence/group-3-review-20260915/river-observations-final.json",
+      "sha256": "a6f57a74d47bcab14301b1a592f479ac9bac3bac5dd7284c4741a3d54eb5b761"
+    },
+    {
+      "path": "evidence/group-3-review-20260915/migration-observations-final.json",
+      "sha256": "72359e8556116554b0bb9f6c4663950be96925136b5641407802e421268eeed9"
+    },
+    {
+      "path": "evidence/group-3-review-20260915/first-arrival-final.json",
+      "sha256": "4ee305d89a9e18c768b15b00cf42e34e1715cc31d918da8457aed383bdfa4bb3"
+    },
+    {
+      "path": "evidence/group-3-review-20260915/rope-ownership-final.json",
+      "sha256": "5458ef66d1dcfed665edeafb822c76d84308fb401443e67f4423a4ae96f7c904"
+    },
+    {
+      "path": "evidence/group-3-review-20260915/compact-boat-final.json",
+      "sha256": "3193e4bce0345360bbd419ab55fc2927fe89bf44088b60f7efccde71e4d841f0"
+    },
+    {
+      "path": "evidence/group-3-review-20260915/native-console-final.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  ]
+}

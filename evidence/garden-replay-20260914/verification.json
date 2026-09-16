@@ -1,0 +1,46 @@
+{
+  "recordedAt": "2026-09-14T18:14:11.453Z",
+  "status": "REPLAY_UI_VERIFIED_FULL_CHAPTER_NOT_IMPLEMENTED",
+  "head": "63af7a2261553c2639842a458b54dde38311e3f7",
+  "commit": "Local uncommitted",
+  "build": {
+    "result": "PASS",
+    "log": "build-final.log",
+    "detail": "Includes source, strict TypeScript/schema/copy, server and production checks; existing chunk warning retained"
+  },
+  "browser": {
+    "result": "PASS",
+    "passed": 4,
+    "failed": 0,
+    "port": 4194,
+    "engine": "Chromium",
+    "report": "final-check/results.json",
+    "scope": "Completed-route replay, cancellation, fresh state, archived completed run, compact Pause controls, save recovery and concurrent-writer rejection",
+    "earlier": "first-check/results.json contains 3 pass / 1 fail; compact header button names were missing and are corrected"
+  },
+  "preservation": {
+    "changed": [
+      "src/garden/GardenApp.tsx",
+      "browser-tests/garden.spec.ts"
+    ],
+    "art": 52,
+    "domainContentSaveNamespaceDependenciesUnchanged": true,
+    "providerAttempts": 1,
+    "providerCap": 75,
+    "providerHalted": true,
+    "historicalSnapshots": "historical-snapshots.json"
+  },
+  "scopeInventory": "../../docs/game-review/PLAYABLE-SCOPE-20260914.md",
+  "limits": [
+    "Full Garden chapter, all narrative choices and consequences remain unimplemented",
+    "No new provider calls or live listening/semantic qualification",
+    "Existing full-suite, performance and native-device gaps remain open",
+    "No new install/contracts/authored evaluation run; unchanged baseline retained",
+    "User active save remains unchanged; tests use isolated contexts"
+  ],
+  "visuals": [
+    "replay.png",
+    "fresh.png",
+    "compact-pause.png"
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "at": "2026-09-15T17:21:29.671Z",
+  "focus": "Pip is speaking",
+  "images": [
+    "The river and Grandma’s garden. Use the named controls below or click the scene."
+  ],
+  "rendered": [
+    {
+      "attributes": [
+        [
+          "data-camera-focus",
+          "gathering"
+        ],
+        [
+          "data-pip-memory",
+          "{\"record\":null,\"placing\":false,\"scene\":null,\"seed\":\"soil\"}"
+        ],
+        [
+          "data-bakery",
+          "{\"stage\":\"done\",\"leakOpen\":false,\"rain\":true,\"tile\":{\"x\":7.45,\"y\":1.92,\"z\":-2.7},\"rina\":{\"x\":5.6597977853158055,\"z\":-1.0286804859283905},\"loaf\":\"sol\",\"solScreen\":{\"head\":{\"x\":-0.034968574742747505,\"y\":0.4751213514936932},\"feet\":{\"x\":-0.034968574742747505,\"y\":0.15944871187117593}}}"
+        ],
+        [
+          "data-gathering",
+          "{\"arrival\":\"ready\",\"offDuty\":false,\"sol\":{\"x\":5.2,\"z\":0.1},\"mara\":{\"x\":-3.5,\"z\":-4},\"speaker\":\"Pip\",\"turn\":\"welcome\",\"part\":0,\"cushions\":false,\"pageComplete\":false,\"grandmaPerformed\":false}"
+        ],
+        [
+          "data-mara-page",
+          "{\"holder\":\"pip\",\"x\":3.4,\"y\":0.55,\"z\":3.35,\"holderX\":3.25,\"holderZ\":3.2}"
+        ],
+        [
+          "data-rendered-frame",
+          "2757"
+        ],
+        [
+          "data-rendered-width",
+          "1206"
+        ],
+        [
+          "data-rendered-height",
+          "649"
+        ],
+        [
+          "data-rendered-view",
+          "walk"
+        ],
+        [
+          "data-action-kind",
+          "none"
+        ],
+        [
+          "data-chapter-phase",
+          "welcome"
+        ],
+        [
+          "data-sol-x",
+          "5.200"
+        ],
+        [
+          "data-sol-z",
+          "0.100"
+        ],
+        [
+          "data-mara-x",
+          "-3.500"
+        ],
+        [
+          "data-mara-z",
+          "-4.000"
+        ],
+        [
+          "data-bridge-action",
+          "idle"
+        ],
+        [
+          "data-pip-x",
+          "3.250"
+        ],
+        [
+          "data-pip-z",
+          "3.200"
+        ],
+        [
+          "data-bridge-ready",
+          "true"
+        ],
+        [
+          "data-sections",
+          "{\"a\":{\"x\":-0.775,\"z\":3,\"rotation\":0},\"b\":{\"x\":0.775,\"z\":3,\"rotation\":0}}"
+        ],
+        [
+          "data-seed-boat-x",
+          "-1.400"
+        ],
+        [
+          "data-seed-boat-z",
+          "0.800"
+        ],
+        [
+          "data-seed-x",
+          "4.180"
+        ],
+        [
+          "data-seed-z",
+          "3.740"
+        ],
+        [
+          "data-dock-service",
+          "served"
+        ],
+        [
+          "data-boat-operator",
+          "separate crew member"
+        ],
+        [
+          "data-passenger-boat",
+          "{\"visible\":true,\"x\":-1.1,\"z\":-4.1,\"passengers\":[{\"visible\":true,\"x\":-5.65,\"z\":-3.35},{\"visible\":true,\"x\":-5.35,\"z\":-3.65}]}"
+        ],
+        [
+          "data-ferry-phase",
+          "idle"
+        ],
+        [
+          "data-rendered-sections",
+          "{\"a\":{\"x\":-0.775,\"z\":3,\"rotation\":0},\"b\":{\"x\":0.775,\"z\":3,\"rotation\":0}}"
+        ],
+        [
+          "data-metrics",
+          "{\"frames\":2730,\"drawCalls\":638,\"triangles\":105710,\"geometries\":335,\"textures\":5,\"activeSamples\":600,\"p95\":16.79999999998836,\"lastRenderMs\":1.9000000059604645,\"dpr\":1.125,\"width\":1206,\"height\":649,\"geometryCpuBytes\":6864340,\"canvasColorBytes\":3130776,\"shadowDepthAllocationBytes\":9437184,\"sectionTextureBytes\":131072,\"gpuTotalMemory\":\"NOT_MEASURED\",\"adapter\":\"ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)\"}"
+        ]
+      ]
+    }
+  ],
+  "scripts": [
+    "http://127.0.0.1:4197/assets/index-BB_gbQ44.js"
+  ],
+  "text": "Evidence Quest\nTHE GARDEN ADVENTURE\nBackpack\nHelp\nPause\nWhat’s happening\n\nThe people in the garden are listening. Continue at your own pace.\n\nPip\nGrandma’s garden\nPlaces & scene description\nSPEAKING TO THE PEOPLE HERE\nPip is speaking\n\nWelcome back to the garden. Mara is working at the dock, so she asked me to share The Torn Wing for her. Sol has brought A Small Repair.\n\nPip, Sol and Grandma are here. Mara remains at work.\n\nPart 1 of 1\n\nFinish this turn\nRead this part with help\nAt the gathering · Continue each speaker’s turn when you are ready\nFollow the gathering here. Help and Pause keep your place.",
+  "url": "http://127.0.0.1:4197/garden",
+  "viewport": {
+    "height": 800,
+    "width": 1422
+  }
+}

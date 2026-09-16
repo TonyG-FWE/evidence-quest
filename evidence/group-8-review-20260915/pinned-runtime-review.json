@@ -1,0 +1,24 @@
+{
+  "at": "2026-09-15T18:06:02.784Z",
+  "result": "PASS_PINNED_NODE_24_INDEPENDENT_ROUTES",
+  "scope": "Supplemental explicit run under the prescribed workspace Node24.21.0. The earlier standalone independent helper used the system Node22.22.2; its receipt is preserved. Both complete real-handler matrices produce identical45 actual route outcomes and649 passing assertions. The production build and contract suite use the prescribed Node24 runtime separately.",
+  "runtime": {
+    "version": "v24.21.0",
+    "executable": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\.tools\\node-v24.21.0-win-x64\\node.exe",
+    "sha256": "ba4e6d110e8c1592a1ecd390f6b05f3da124b13871a5be62b341a07a853c6c32"
+  },
+  "earlier": {
+    "path": "evidence/group-8-review-20260915/routes-corrected.json",
+    "sha256": "549870d438d0008175cd33ff4c22b3b44026a8346a830be2e0854f865d4b0746",
+    "version": "v22.22.2"
+  },
+  "pinned": {
+    "path": "evidence/group-8-review-20260915/routes-corrected-node24.json",
+    "sha256": "44f56c6b85c6d16b0924a0ada38578d53c21ae252b03073fbe2a2745142c8b61",
+    "version": "v24.21.0"
+  },
+  "sameRoutes": true,
+  "routes": 45,
+  "assertions": 649,
+  "failures": 0
+}

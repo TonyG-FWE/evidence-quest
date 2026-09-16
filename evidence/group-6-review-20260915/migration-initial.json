@@ -1,0 +1,2099 @@
+{
+  "at": "2026-09-15T08:08:10.253Z",
+  "result": "PASS",
+  "scope": "Independent Group6 codec/BOOT review of51 authentic final Group5 payloads. Actual payloads were captured before Group6 runtime edits; only envelope transport is synthetic. No native storage injection or provider requests.",
+  "hashes": [
+    {
+      "path": "src/garden/model.ts",
+      "sha256": "801eb8a73768f13ee9e76d5645b4cea884ce1ee084e4ee72632e6b0cef057ce4"
+    },
+    {
+      "path": "src/garden/chapter.ts",
+      "sha256": "51ae7de4168b9ba58ca4932c554f74119415d536233bba3d6493a4f60aca463b"
+    },
+    {
+      "path": "src/garden/gathering.ts",
+      "sha256": "25560920fd399e97421d372724a2df74556cb20d6ea4bdca1041904df63636c8"
+    },
+    {
+      "path": "src/garden/persistence.ts",
+      "sha256": "53c8aa33d064bf9caecb4254c809ee04f10a7277f900b041bef43b9cc9d7f5cb"
+    },
+    {
+      "path": ".cache/checks/src/garden/model.js",
+      "sha256": "c8fba1cc9b5af657e32db994f97b7884c177d1d2a398d7f18a20c7af11970f29"
+    },
+    {
+      "path": ".cache/checks/src/garden/chapter.js",
+      "sha256": "81f988152fb23eb860ab132216644bbc4d0090c5871fc40a622e30aab87f7095"
+    },
+    {
+      "path": ".cache/checks/src/garden/gathering.js",
+      "sha256": "059e9ac0c6f356daf0cd5cbb822beca9ee6a1dace0593b7cecc73f91d3be5de1"
+    },
+    {
+      "path": ".cache/checks/src/garden/persistence.js",
+      "sha256": "993b202cd9bcf4676a6ca537abb00768f6f64fe6e685c0acc6105106fcc5009a"
+    },
+    {
+      "path": "evidence/group-6-review-20260915/group-5-migration-inputs.json",
+      "sha256": "4e1959e311fe8fcbd580b6170618995ae2af6b31d46195cb3802f9462abea94c"
+    }
+  ],
+  "historical": 8,
+  "eligible": 43,
+  "observations": [
+    {
+      "name": "legacy-legacy-fresh-started: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-fresh-started: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-fresh-started: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-fresh-started: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-fresh-started: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-fresh-started: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-fresh-started: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-fresh-started: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-fresh-started: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-fresh-started: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-heard-no-copy: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-heard-no-copy: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-heard-no-copy: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-heard-no-copy: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-heard-no-copy: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-heard-no-copy: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-heard-no-copy: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-heard-no-copy: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-heard-no-copy: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-heard-no-copy: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-gifted-page-carried: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-gifted-page-carried: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-gifted-page-carried: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-gifted-page-carried: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-gifted-page-carried: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-gifted-page-carried: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-gifted-page-carried: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-gifted-page-carried: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-gifted-page-carried: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-gifted-page-carried: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-page-with-grandma-not-shared: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-page-with-grandma-not-shared: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-page-with-grandma-not-shared: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-page-with-grandma-not-shared: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-page-with-grandma-not-shared: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-page-with-grandma-not-shared: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-page-with-grandma-not-shared: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-page-with-grandma-not-shared: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-page-with-grandma-not-shared: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-page-with-grandma-not-shared: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-earlier-engine-mara-contribution: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-earlier-engine-mara-contribution: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-earlier-engine-mara-contribution: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-earlier-engine-mara-contribution: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-earlier-engine-mara-contribution: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-earlier-engine-mara-contribution: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-earlier-engine-mara-contribution: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-earlier-engine-mara-contribution: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-earlier-engine-mara-contribution: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-earlier-engine-mara-contribution: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-usual-pip-first-telling: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-usual-pip-first-telling: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-usual-pip-first-telling: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-usual-pip-first-telling: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-usual-pip-first-telling: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-usual-pip-first-telling: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-usual-pip-first-telling: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-usual-pip-first-telling: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-usual-pip-first-telling: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-usual-pip-first-telling: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-usual-pip-completed-before-playable-bird: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-usual-pip-completed-before-playable-bird: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-usual-pip-completed-before-playable-bird: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-usual-pip-completed-before-playable-bird: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-usual-pip-completed-before-playable-bird: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-usual-pip-completed-before-playable-bird: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-usual-pip-completed-before-playable-bird: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-usual-pip-completed-before-playable-bird: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-usual-pip-completed-before-playable-bird: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-usual-pip-completed-before-playable-bird: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-mara-first-telling: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-mara-first-telling: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-mara-first-telling: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-mara-first-telling: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-mara-first-telling: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-mara-first-telling: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-mara-first-telling: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-mara-first-telling: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-mara-first-telling: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-mara-first-telling: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-mara-completed-before-playable-bird: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-mara-completed-before-playable-bird: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-mara-completed-before-playable-bird: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-mara-completed-before-playable-bird: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-mara-completed-before-playable-bird: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-mara-completed-before-playable-bird: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-mara-completed-before-playable-bird: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-mara-completed-before-playable-bird: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-mara-completed-before-playable-bird: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-mara-completed-before-playable-bird: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-pip-first-telling: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-pip-first-telling: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-pip-first-telling: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-pip-first-telling: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-pip-first-telling: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-pip-first-telling: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-pip-first-telling: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-pip-first-telling: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-pip-first-telling: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-pip-first-telling: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-pip-completed-before-playable-bird: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-pip-completed-before-playable-bird: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-pip-completed-before-playable-bird: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-pip-completed-before-playable-bird: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-pip-completed-before-playable-bird: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-pip-completed-before-playable-bird: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-pip-completed-before-playable-bird: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-pip-completed-before-playable-bird: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-pip-completed-before-playable-bird: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-later-pip-completed-before-playable-bird: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-early-contribution-at-gathering-welcome: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-early-contribution-at-gathering-welcome: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-early-contribution-at-gathering-welcome: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-early-contribution-at-gathering-welcome: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-early-contribution-at-gathering-welcome: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-early-contribution-at-gathering-welcome: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-early-contribution-at-gathering-welcome: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-early-contribution-at-gathering-welcome: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-early-contribution-at-gathering-welcome: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-early-contribution-at-gathering-welcome: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-early-contribution-before-public-retelling: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-early-contribution-before-public-retelling: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-early-contribution-before-public-retelling: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-early-contribution-before-public-retelling: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-early-contribution-before-public-retelling: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-early-contribution-before-public-retelling: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-early-contribution-before-public-retelling: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-early-contribution-before-public-retelling: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-early-contribution-before-public-retelling: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-legacy-early-contribution-before-public-retelling: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-fresh-group-4-start: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-fresh-group-4-start: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-fresh-group-4-start: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-fresh-group-4-start: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-fresh-group-4-start: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-fresh-group-4-start: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-fresh-group-4-start: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-fresh-group-4-start: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-fresh-group-4-start: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-fresh-group-4-start: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-current-service-and-pending-ask: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-current-service-and-pending-ask: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-current-service-and-pending-ask: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-current-service-and-pending-ask: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-current-service-and-pending-ask: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-current-service-and-pending-ask: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-current-service-and-pending-ask: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-current-service-and-pending-ask: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-current-service-and-pending-ask: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-current-service-and-pending-ask: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-gifted-page-and-conditional-return-promise: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-gifted-page-and-conditional-return-promise: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-gifted-page-and-conditional-return-promise: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-gifted-page-and-conditional-return-promise: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-gifted-page-and-conditional-return-promise: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-gifted-page-and-conditional-return-promise: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-gifted-page-and-conditional-return-promise: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-gifted-page-and-conditional-return-promise: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-gifted-page-and-conditional-return-promise: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-gifted-page-and-conditional-return-promise: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-actual-report-page-and-time-only-agreement: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-actual-report-page-and-time-only-agreement: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-actual-report-page-and-time-only-agreement: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-actual-report-page-and-time-only-agreement: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-actual-report-page-and-time-only-agreement: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-actual-report-page-and-time-only-agreement: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-actual-report-page-and-time-only-agreement: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-actual-report-page-and-time-only-agreement: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-actual-report-page-and-time-only-agreement: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-actual-report-page-and-time-only-agreement: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-before-consent: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-before-consent: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-before-consent: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-before-consent: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-before-consent: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-before-consent: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-before-consent: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-before-consent: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-before-consent: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-before-consent: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-consent-before-tape: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-consent-before-tape: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-consent-before-tape: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-consent-before-tape: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-consent-before-tape: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-consent-before-tape: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-consent-before-tape: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-consent-before-tape: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-consent-before-tape: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-consent-before-tape: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-tape-carried: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-tape-carried: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-tape-carried: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-tape-carried: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-tape-carried: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-tape-carried: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-tape-carried: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-tape-carried: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-tape-carried: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-tape-carried: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-aligned: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-aligned: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-aligned: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-aligned: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-aligned: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-aligned: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-aligned: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-aligned: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-aligned: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-aligned: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-strip-beside: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-strip-beside: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-strip-beside: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-strip-beside: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-strip-beside: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-strip-beside: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-strip-beside: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-strip-beside: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-strip-beside: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-strip-beside: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-repaired-before-departure: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-repaired-before-departure: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-repaired-before-departure: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-repaired-before-departure: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-repaired-before-departure: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-repaired-before-departure: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-repaired-before-departure: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-repaired-before-departure: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-repaired-before-departure: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-repaired-before-departure: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-departed-before-return: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-departed-before-return: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-departed-before-return: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-departed-before-return: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-departed-before-return: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-departed-before-return: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-departed-before-return: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-departed-before-return: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-departed-before-return: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-departed-before-return: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-shared-current-garden: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-shared-current-garden: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-shared-current-garden: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-shared-current-garden: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-shared-current-garden: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-shared-current-garden: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-shared-current-garden: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-shared-current-garden: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-shared-current-garden: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-shared-current-garden: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-shared-promise-picture: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-shared-promise-picture: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-shared-promise-picture: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-shared-promise-picture: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-shared-promise-picture: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-shared-promise-picture: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-shared-promise-picture: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-shared-promise-picture: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-shared-promise-picture: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "legacy-bird-shared-promise-picture: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "bakery-before-meeting: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "bakery-before-meeting: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "bakery-before-meeting: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "bakery-before-meeting: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "bakery-before-meeting: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "bakery-before-meeting: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "bakery-before-meeting: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "bakery-before-meeting: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "bakery-before-meeting: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "bakery-before-meeting: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "bakery-met-before-permission: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "bakery-met-before-permission: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "bakery-met-before-permission: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "bakery-met-before-permission: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "bakery-met-before-permission: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "bakery-met-before-permission: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "bakery-met-before-permission: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "bakery-met-before-permission: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "bakery-met-before-permission: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "bakery-met-before-permission: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "bakery-permission-tile-on-shelf: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "bakery-permission-tile-on-shelf: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "bakery-permission-tile-on-shelf: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "bakery-permission-tile-on-shelf: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "bakery-permission-tile-on-shelf: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "bakery-permission-tile-on-shelf: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "bakery-permission-tile-on-shelf: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "bakery-permission-tile-on-shelf: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "bakery-permission-tile-on-shelf: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "bakery-permission-tile-on-shelf: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "bakery-tile-carried-by-pip: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "bakery-tile-carried-by-pip: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "bakery-tile-carried-by-pip: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "bakery-tile-carried-by-pip: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "bakery-tile-carried-by-pip: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "bakery-tile-carried-by-pip: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "bakery-tile-carried-by-pip: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "bakery-tile-carried-by-pip: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "bakery-tile-carried-by-pip: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "bakery-tile-carried-by-pip: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "bakery-tile-given-to-sol: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "bakery-tile-given-to-sol: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "bakery-tile-given-to-sol: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "bakery-tile-given-to-sol: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "bakery-tile-given-to-sol: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "bakery-tile-given-to-sol: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "bakery-tile-given-to-sol: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "bakery-tile-given-to-sol: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "bakery-tile-given-to-sol: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "bakery-tile-given-to-sol: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "bakery-roof-gap: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "bakery-roof-gap: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "bakery-roof-gap: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "bakery-roof-gap: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "bakery-roof-gap: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "bakery-roof-gap: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "bakery-roof-gap: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "bakery-roof-gap: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "bakery-roof-gap: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "bakery-roof-gap: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "bakery-misplaced-tile: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "bakery-misplaced-tile: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "bakery-misplaced-tile: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "bakery-misplaced-tile: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "bakery-misplaced-tile: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "bakery-misplaced-tile: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "bakery-misplaced-tile: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "bakery-misplaced-tile: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "bakery-misplaced-tile: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "bakery-misplaced-tile: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "bakery-roof-sealed: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "bakery-roof-sealed: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "bakery-roof-sealed: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "bakery-roof-sealed: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "bakery-roof-sealed: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "bakery-roof-sealed: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "bakery-roof-sealed: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "bakery-roof-sealed: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "bakery-roof-sealed: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "bakery-roof-sealed: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "bakery-flour-checked: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "bakery-flour-checked: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "bakery-flour-checked: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "bakery-flour-checked: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "bakery-flour-checked: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "bakery-flour-checked: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "bakery-flour-checked: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "bakery-flour-checked: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "bakery-flour-checked: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "bakery-flour-checked: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "bakery-dough-mixed: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "bakery-dough-mixed: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "bakery-dough-mixed: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "bakery-dough-mixed: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "bakery-dough-mixed: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "bakery-dough-mixed: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "bakery-dough-mixed: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "bakery-dough-mixed: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "bakery-dough-mixed: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "bakery-dough-mixed: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "bakery-loaves-shaped: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "bakery-loaves-shaped: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "bakery-loaves-shaped: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "bakery-loaves-shaped: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "bakery-loaves-shaped: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "bakery-loaves-shaped: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "bakery-loaves-shaped: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "bakery-loaves-shaped: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "bakery-loaves-shaped: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "bakery-loaves-shaped: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "bakery-loaves-baked: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "bakery-loaves-baked: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "bakery-loaves-baked: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "bakery-loaves-baked: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "bakery-loaves-baked: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "bakery-loaves-baked: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "bakery-loaves-baked: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "bakery-loaves-baked: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "bakery-loaves-baked: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "bakery-loaves-baked: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "bakery-rina-carries-loaf: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "bakery-rina-carries-loaf: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "bakery-rina-carries-loaf: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "bakery-rina-carries-loaf: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "bakery-rina-carries-loaf: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "bakery-rina-carries-loaf: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "bakery-rina-carries-loaf: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "bakery-rina-carries-loaf: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "bakery-rina-carries-loaf: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "bakery-rina-carries-loaf: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "bakery-rina-waits-during-detour: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "bakery-rina-waits-during-detour: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "bakery-rina-waits-during-detour: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "bakery-rina-waits-during-detour: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "bakery-rina-waits-during-detour: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "bakery-rina-waits-during-detour: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "bakery-rina-waits-during-detour: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "bakery-rina-waits-during-detour: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "bakery-rina-waits-during-detour: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "bakery-rina-waits-during-detour: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "bakery-actual-thanks-before-manuscript: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "bakery-actual-thanks-before-manuscript: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "bakery-actual-thanks-before-manuscript: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "bakery-actual-thanks-before-manuscript: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "bakery-actual-thanks-before-manuscript: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "bakery-actual-thanks-before-manuscript: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "bakery-actual-thanks-before-manuscript: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "bakery-actual-thanks-before-manuscript: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "bakery-actual-thanks-before-manuscript: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "bakery-actual-thanks-before-manuscript: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "sol-writing-after-witnessed-bakery: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "sol-writing-after-witnessed-bakery: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "sol-writing-after-witnessed-bakery: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "sol-writing-after-witnessed-bakery: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "sol-writing-after-witnessed-bakery: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "sol-writing-after-witnessed-bakery: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "sol-writing-after-witnessed-bakery: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "sol-writing-after-witnessed-bakery: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "sol-writing-after-witnessed-bakery: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "sol-writing-after-witnessed-bakery: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "sol-child-selected-both: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "sol-child-selected-both: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "sol-child-selected-both: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "sol-child-selected-both: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "sol-child-selected-both: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "sol-child-selected-both: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "sol-child-selected-both: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "sol-child-selected-both: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "sol-child-selected-both: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "sol-child-selected-both: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "sol-working-edit-after-selection: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "sol-working-edit-after-selection: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "sol-working-edit-after-selection: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "sol-working-edit-after-selection: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "sol-working-edit-after-selection: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "sol-working-edit-after-selection: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "sol-working-edit-after-selection: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "sol-working-edit-after-selection: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "sol-working-edit-after-selection: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "sol-working-edit-after-selection: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "sol-prepared-thanks-child-draft-retained: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "sol-prepared-thanks-child-draft-retained: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "sol-prepared-thanks-child-draft-retained: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "sol-prepared-thanks-child-draft-retained: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "sol-prepared-thanks-child-draft-retained: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "sol-prepared-thanks-child-draft-retained: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "sol-prepared-thanks-child-draft-retained: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "sol-prepared-thanks-child-draft-retained: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "sol-prepared-thanks-child-draft-retained: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "sol-prepared-thanks-child-draft-retained: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "sol-open-draft-after-prior-selection: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "sol-open-draft-after-prior-selection: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "sol-open-draft-after-prior-selection: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "sol-open-draft-after-prior-selection: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "sol-open-draft-after-prior-selection: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "sol-open-draft-after-prior-selection: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "sol-open-draft-after-prior-selection: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "sol-open-draft-after-prior-selection: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "sol-open-draft-after-prior-selection: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "sol-open-draft-after-prior-selection: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "planned-later-pip-before-invitations: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "planned-later-pip-before-invitations: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "planned-later-pip-before-invitations: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "planned-later-pip-before-invitations: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "planned-later-pip-before-invitations: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "planned-later-pip-before-invitations: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "planned-later-pip-before-invitations: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "planned-later-pip-before-invitations: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "planned-later-pip-before-invitations: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "planned-later-pip-before-invitations: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "mara-informed-later-pip-existing-copy: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "mara-informed-later-pip-existing-copy: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "mara-informed-later-pip-existing-copy: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "mara-informed-later-pip-existing-copy: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "mara-informed-later-pip-existing-copy: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "mara-informed-later-pip-existing-copy: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "mara-informed-later-pip-existing-copy: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "mara-informed-later-pip-existing-copy: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "mara-informed-later-pip-existing-copy: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "mara-informed-later-pip-existing-copy: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "both-informed-later-pip: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "both-informed-later-pip: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "both-informed-later-pip: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "both-informed-later-pip: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "both-informed-later-pip: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "both-informed-later-pip: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "both-informed-later-pip: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "both-informed-later-pip: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "both-informed-later-pip: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "both-informed-later-pip: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "mara-role-changed-sol-time-still-valid: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "mara-role-changed-sol-time-still-valid: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "mara-role-changed-sol-time-still-valid: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "mara-role-changed-sol-time-still-valid: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "mara-role-changed-sol-time-still-valid: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "mara-role-changed-sol-time-still-valid: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "mara-role-changed-sol-time-still-valid: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "mara-role-changed-sol-time-still-valid: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "mara-role-changed-sol-time-still-valid: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "mara-role-changed-sol-time-still-valid: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "time-changed-old-invitations-retained: original transport bytes unchanged",
+      "pass": true
+    },
+    {
+      "name": "time-changed-old-invitations-retained: actual prior payload recognized",
+      "pass": true
+    },
+    {
+      "name": "time-changed-old-invitations-retained: every prior field preserved",
+      "pass": true
+    },
+    {
+      "name": "time-changed-old-invitations-retained: normalized revision advances once",
+      "pass": true
+    },
+    {
+      "name": "time-changed-old-invitations-retained: normalized chapter is valid",
+      "pass": true
+    },
+    {
+      "name": "time-changed-old-invitations-retained: correct current or historical gathering",
+      "pass": true
+    },
+    {
+      "name": "time-changed-old-invitations-retained: no fabricated arrival, report or turn",
+      "pass": true
+    },
+    {
+      "name": "time-changed-old-invitations-retained: no fabricated telling or disclosure",
+      "pass": true
+    },
+    {
+      "name": "time-changed-old-invitations-retained: stable normalized roundtrip",
+      "pass": true
+    },
+    {
+      "name": "time-changed-old-invitations-retained: actual BOOT preserves checkpoint",
+      "pass": true
+    },
+    {
+      "name": "all51 genuine final Group5 payloads were checked",
+      "pass": true,
+      "detail": {
+        "historical": 8,
+        "eligible": 43
+      }
+    },
+    {
+      "name": "source and captured input stayed unchanged",
+      "pass": true
+    }
+  ]
+}

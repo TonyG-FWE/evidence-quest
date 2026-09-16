@@ -1,0 +1,27 @@
+{
+  "recordedAt": "2026-09-16T02:05:14.206Z",
+  "status": "OPEN_EXISTING_RENDERER_QUALIFICATION",
+  "observation": "Independent visual inspection of normal-width WebKit screenshots on candidates4 and5 shows a blank world region while the reader, current choices and navigation are visible.",
+  "scope": "These screenshots support reader/focus checks only. They do not demonstrate a rendered WebKit scene. The native Chromium world journey is separately captured. No cause is inferred and no all-browser renderer acceptance is claimed.",
+  "images": [
+    {
+      "path": "evidence/conversation-sequence-20260915/browser-cross-c4-artifacts/garden-sequence-Conversati-15711-and-is-delivered-at-Grandma-webkit/01-next-choices-together.png",
+      "sha256": "dd39a6bae0632c00227cd3a22662e6e836853828451e68a7559bd83175ad9abf"
+    },
+    {
+      "path": "evidence/conversation-sequence-20260915/browser-focus-c5-artifacts/garden-sequence-Conversati-15711-and-is-delivered-at-Grandma-webkit/01-next-choices-together.png",
+      "sha256": "dd39a6bae0632c00227cd3a22662e6e836853828451e68a7559bd83175ad9abf"
+    }
+  ],
+  "cleanup": {
+    "at": "2026-09-16T02:03:08.9726762Z",
+    "reviewPort": 4198,
+    "serverSession": 88467,
+    "controlCExitCode": 1,
+    "ownedTabClosed": true,
+    "remainingListeners": 0,
+    "userOriginsAccessed": [],
+    "savesReset": [],
+    "note": "Stopped only the server session started by this reviewer and closed only its browser tab. User previews4192/4200 remain owned by the implementation task."
+  }
+}

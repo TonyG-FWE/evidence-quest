@@ -1,0 +1,43 @@
+{
+  "at": "2026-09-16T01:30:18.732Z",
+  "name": "native-grandma-visit-message-undelivered",
+  "snapshot": "- dialog \"A visit with Grandma\":\n  - banner:\n    - link:\n      - /url: /garden\n      - text: Evidence Quest\n      - generic: THE GARDEN ADVENTURE\n    - generic: Saved in this browser\n    - navigation \"Reading tools\":\n      - button \"Backpack\":\n        - generic: Backpack\n      - button \"Help\":\n        - generic: Help\n      - button \"Pause\":\n        - generic: Pause\n  - img \"The river and Grandma’s garden. Use the named controls below or click the scene.\"\n  - generic: GRANDMA’S GARDEN\n  - button \"Close page. Continue to the game\": ×\n  - heading \"A visit with Grandma\" [active] [level=2]\n  - paragraph: Read here, then choose what Pip says or does.\n  - strong: Grandma says\n  - generic: You made it! Let’s plant the seed while it’s still light.\n  - paragraph: Pip is carrying the seed in his backpack. Plant it together in the garden.\n  - group \"What will Pip do next?\":\n    - generic: What will Pip do next?\n    - button \"Plant the seed with Grandma\"\n    - button \"Tell Grandma what Mara said\"\n  - generic \"Ask Grandma about the lantern flowers\"\n  - navigation \"Conversation navigation\":\n    - button \"Continue to the game\"",
+  "dom": {
+    "active": "A visit with Grandma",
+    "flow": [
+      {
+        "className": "garden-reader ",
+        "clientHeight": 656,
+        "flex": "0 1 auto",
+        "height": 656,
+        "overflow": "visible",
+        "scrollHeight": 656,
+        "top": 64
+      },
+      {
+        "className": "garden-reading-scroll",
+        "clientHeight": 378,
+        "flex": "0 1 auto",
+        "height": 377.7000122070313,
+        "overflow": "auto",
+        "scrollHeight": 378,
+        "top": 178.1374969482422
+      },
+      {
+        "className": "g-reader-actions",
+        "clientHeight": 66,
+        "flex": "0 0 auto",
+        "height": 66.80000305175781,
+        "overflow": "visible",
+        "scrollHeight": 66,
+        "top": 555.8375244140625
+      }
+    ],
+    "url": "http://localhost:4198/garden",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "visible": "GRANDMA’S GARDEN\n×\nA visit with Grandma\n\nRead here, then choose what Pip says or does.\n\nGrandma says\nYou made it! Let’s plant the seed while it’s still light.\n\nPip is carrying the seed in his backpack. Plant it together in the garden.\n\nWhat will Pip do next?\nPlant the seed with Grandma\nTell Grandma what Mara said\nAsk Grandma about the lantern flowers\nContinue to the game"
+  }
+}

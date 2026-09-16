@@ -1,0 +1,113 @@
+{
+  "at": "2026-09-15T07:57:41.055Z",
+  "result": "PASS_BOUNDED_NATIVE_GROUP_5",
+  "candidate": {
+    "garden": "assets/GardenApp-Cl2pNkL9.js",
+    "css": [
+      "assets/GardenApp-BQg8ozvd.css"
+    ],
+    "entry": "assets/index-BinEw634.js"
+  },
+  "origin": "http://127.0.0.1:4195/garden",
+  "findings": [
+    {
+      "id": "G5-RV01",
+      "status": "RESOLVED",
+      "resolution": "Codec rejects unreachable bakery meeting and fabricated historical Sol bypass; all26 authentic earlier payloads still migrate."
+    },
+    {
+      "id": "G5-RV02",
+      "status": "RESOLVED",
+      "resolution": "Help uses durable bakery context and returns to the actual roof repair."
+    },
+    {
+      "id": "G5-RV03",
+      "status": "RESOLVED",
+      "resolution": "Unrelated seed-boat label is hidden in the bakery focus."
+    },
+    {
+      "id": "G5-RV04",
+      "status": "RESOLVED",
+      "resolution": "Closer roof framing supports an ordinary direct click on the gap and same-tile recovery."
+    },
+    {
+      "id": "G5-RV05",
+      "status": "RESOLVED",
+      "resolution": "Workshop closeup and locally faded tree crown expose all three characters and loaf; the duplicate compact goal card no longer covers them."
+    },
+    {
+      "id": "G5-RV06",
+      "status": "RESOLVED",
+      "resolution": "Child writing remains explicitly suggested at rehearsal, selection, dialogue, sharing surfaces and replay; original manuscript header no longer contradicts readiness."
+    },
+    {
+      "id": "G5-RV07",
+      "status": "RESOLVED",
+      "resolution": "Explicitly labeled second view edits the same actual working draft. Ordinary keyboard selection works; selecting preserves full text, edits invalidate excerpt, selected contribution remains fixed."
+    }
+  ],
+  "compact": {
+    "width": 320,
+    "height": 568,
+    "scrollWidth": 320,
+    "canvas": {
+      "height": 280.7638854980469,
+      "width": 320
+    },
+    "continuationControls": [
+      {
+        "height": 48,
+        "name": "Talk to Sol",
+        "width": 71.11111450195312
+      },
+      {
+        "height": 48,
+        "name": "Go to Grandma",
+        "width": 124.52777862548828
+      },
+      {
+        "height": 48,
+        "name": "Lantern stories",
+        "width": 93.30555725097656
+      }
+    ]
+  },
+  "nativeRoute": [
+    "Actual Rina problem, initial decline and later permission",
+    "Shelf pickup, carried tile, actual handoff to Sol",
+    "Removal, cancelled preview, recoverable beside-opening placement and source return",
+    "Direct visible gap click, correct same-tile placement, stopped indoor leak with exterior rain retained",
+    "Actual flour check, dough mixing, shaping, baking and Rina taking one loaf",
+    "Accompanied walk, Help and reload while Rina waits, actual gift before manuscript",
+    "Original and later source separation, child rehearsal/selection and later working edit",
+    "Reload retains both text versions; final source label and compact framing",
+    "Ordinary Ctrl+Home and Ctrl+Shift+ArrowRight selection, over4000 Ctrl+A rejection, same-draft second-editor edit"
+  ],
+  "nativeEvidence": [
+    "native-review-initial.md",
+    "native-review-current.md",
+    "native-excerpt-final.json",
+    "native-shared-edit-final.json",
+    "native-selected-version.json",
+    "native-reloaded-selected-version.json",
+    "compact-workshop-final.json",
+    "native-console-final.json",
+    "native-workshop-final.png"
+  ],
+  "implementationEvidence": {
+    "customBrowser": "evidence/group-5-bakery-20260915/browser-final.json",
+    "result": "PASS1/1",
+    "keyboardComparison": "evidence/group-5-bakery-20260915/keyboard-range-investigation.json",
+    "inspectedHandoff": "evidence/group-5-bakery-20260915/zero-selection-failure-artifacts/garden-bakery-Bakery-conne-36bb2-nks-and-exact-draft-excerpt-chromium/actual-thanks-handoff.png",
+    "handoffScope": "Actual physical handoff image from the earlier passing physical portion of a dated run that later failed the readonly-selection check; final geometry separately rechecked natively."
+  },
+  "limits": [
+    "Native observations span dated candidates; final changes received scoped rechecks, not a fresh final entire-game native run",
+    "Action entry/end and ordinary travel were observed; no frame-by-frame claim for every animation",
+    "Earlier readonly Ctrl-selection attempts failed; final editable same-draft keyboard path passed",
+    "No provider request in this native review; owner browser uses explicitly synthetic unavailable feedback",
+    "No user4192 reset or hidden store/browser selection injection",
+    "Procedural scene clarity and adult review do not qualify production illustration, child learning, physical devices or all-browser performance",
+    "Groups6–8 remain dependent work; TASK11.19 remains halted at1/75"
+  ]
+}

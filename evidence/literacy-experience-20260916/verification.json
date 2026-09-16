@@ -1,0 +1,339 @@
+{
+  "at": "2026-09-16T05:19:22.890Z",
+  "status": "PASS_BOUNDED_LOCAL_LITERACY_CORRECTION",
+  "authority": "Tony approved reading support throughout conversations, connected Rina gameplay and complete-story reading. Existing TASK11/FIX11/CHECK11 ownership is preserved.",
+  "tasks": [
+    "TASK11.07",
+    "TASK11.08",
+    "TASK11.09",
+    "TASK11.13",
+    "TASK11.14",
+    "TASK11.16",
+    "TASK11.21"
+  ],
+  "checkout": {
+    "branch": "codex/first-connected",
+    "head": "63af7a2261553c2639842a458b54dde38311e3f7",
+    "changes": "Local and uncommitted; pre-existing dirty work preserved.",
+    "pushes": 0,
+    "deployments": 0
+  },
+  "candidate": {
+    "path": "evidence/literacy-experience-20260916/final.json",
+    "sha256": "2b8acd5b8b1e9d9a0a485add8ae7bb4bd9e9aee00f78a88cdaf709275fa7cc1f",
+    "matches": 131,
+    "mismatches": 0,
+    "finalDelta": {
+      "path": "evidence/literacy-experience-20260916/final-delta.json",
+      "sha256": "b2b55624da233594346809558678831b3ceb3d5f665dc8e3d3814c719c3df58a"
+    }
+  },
+  "commandEvidence": [
+    {
+      "command": "npm ci",
+      "result": "PASS",
+      "evidence": {
+        "path": "evidence/literacy-experience-20260916/npm-ci.log",
+        "sha256": "ae370dcd5b18811926e6e73c0d0338756128270d69b6876aedeefbecc9f896f9"
+      },
+      "edition": "initial dependency installation; package and lockfile unchanged by this correction"
+    },
+    {
+      "command": "npm run build (includes validate:content, check and build:server)",
+      "result": "PASS",
+      "evidence": {
+        "path": "evidence/literacy-experience-20260916/build-pages.log",
+        "sha256": "25ab0ae08039f72019eea208d14e1abde690d0d56b3b430a4897671544ec5886"
+      },
+      "edition": "sealed-pages"
+    },
+    {
+      "command": "npm run check",
+      "result": "PASS",
+      "evidence": {
+        "path": "evidence/literacy-experience-20260916/check-final.log",
+        "sha256": "2fe0cf68410243fe7361775d92a4d144c551809dc02ea2dd5e29790fd28b1b3c"
+      },
+      "edition": "final"
+    },
+    {
+      "command": "npm run test:contracts",
+      "result": "PASS",
+      "pass": 111,
+      "fail": 0,
+      "skip": 0,
+      "evidence": {
+        "path": "evidence/literacy-experience-20260916/contracts-final.log",
+        "sha256": "6a682c3303e9d7df546b2546db5c9acdb13627ff019eccf1d41247f60fab7dcc"
+      },
+      "edition": "final"
+    },
+    {
+      "command": "npm run eval:coach -- --mode authored",
+      "result": "PASS",
+      "pass": 23,
+      "apiCalls": 0,
+      "evidence": {
+        "path": "evidence/literacy-experience-20260916/authored-final.log",
+        "sha256": "25483957bcbd3e70fe1add0004c4b2d35bb352e3edc08679a69ea986bd860413"
+      }
+    },
+    {
+      "command": "vite build and node scripts/prepare-client.mjs",
+      "result": "PASS",
+      "evidence": {
+        "path": "evidence/literacy-experience-20260916/client-final.log",
+        "sha256": "17ec806069909738a3661da160caa4011dfdd6a16f1279c261986a9abdd960d3"
+      },
+      "edition": "final"
+    },
+    {
+      "command": "npm run test:browser with scoped files and projects",
+      "result": "PASS_LATEST_CASE_IDENTITIES",
+      "evidence": {
+        "path": "evidence/literacy-experience-20260916/browser-summary.json",
+        "sha256": "8622566d24f1184bee9a79b1daedb2b3b55900d1d879a104b9a532b5f22e4c9d"
+      },
+      "uniqueCases": 39,
+      "passing": 39,
+      "projects": {
+        "chromium": 19,
+        "firefox": 10,
+        "webkit": 10
+      }
+    }
+  ],
+  "browser": {
+    "cleanBatches": [
+      {
+        "path": "evidence/literacy-experience-20260916/browser-final-reading.json",
+        "sha256": "bb8673e2f74cfa21e241bb18c4b8a3890aabc5f55558ac03787a47142578fdf4",
+        "edition": "stories-final",
+        "scope": "Shared reading and complete stories",
+        "stats": {
+          "startTime": "2026-09-16T04:39:15.380Z",
+          "duration": 221732.484,
+          "expected": 18,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        },
+        "errors": []
+      },
+      {
+        "path": "evidence/literacy-experience-20260916/browser-endings-reviewed.json",
+        "sha256": "d539cd761bc1c2460f38989eeaf5cb8c0a7c77bb40a59adcfc70189de9ef9fa3",
+        "edition": "stories-reviewed",
+        "scope": "All nine complete story outcomes",
+        "stats": {
+          "startTime": "2026-09-16T04:44:24.533Z",
+          "duration": 682306.258,
+          "expected": 9,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        },
+        "errors": []
+      },
+      {
+        "path": "evidence/literacy-experience-20260916/browser-sealed.json",
+        "sha256": "4c1a2e5a791e11e957711cab3b184179b866c14fe828e7e0986d617838d07625",
+        "edition": "sealed",
+        "scope": "Bakery, full reading, audio cancellation and capture ownership",
+        "stats": {
+          "startTime": "2026-09-16T04:58:37.295Z",
+          "duration": 245337.581,
+          "expected": 6,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        },
+        "errors": []
+      },
+      {
+        "path": "evidence/literacy-experience-20260916/browser-pages.json",
+        "sha256": "ff4271d374fbcc1d87fab5017281393c00773e0c177a05a8910175a9c041b76d",
+        "edition": "sealed-pages",
+        "scope": "Complete stories and long own writing with balanced pagination",
+        "stats": {
+          "startTime": "2026-09-16T05:03:59.661Z",
+          "duration": 102448.18400000001,
+          "expected": 6,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        },
+        "errors": []
+      }
+    ],
+    "latestCaseLedger": {
+      "path": "evidence/literacy-experience-20260916/browser-summary.json",
+      "sha256": "8622566d24f1184bee9a79b1daedb2b3b55900d1d879a104b9a532b5f22e4c9d"
+    },
+    "editionLimit": "Latest passing results across dated editions; no single final full-suite run. Final runtime delta is the residual-token pagination bound, with exact actual-text page equivalence and final contracts/check/client build.",
+    "finalPageEquivalence": {
+      "path": "evidence/literacy-experience-20260916/page-corpus-comparison.json",
+      "sha256": "1182013fa1bc1b720b518ea700f12c311b0dd3560744a888f91b5619d0ca33a1",
+      "inputs": 32,
+      "allUnchanged": true
+    },
+    "retainedFailures": [
+      {
+        "evidence": {
+          "path": "evidence/literacy-experience-20260916/browser-reading-stories-1.json",
+          "sha256": "630ff80fc2bef941d364ab622093e27d1b56eb05bd1c3c91221d7c55eaa1ba82"
+        },
+        "disposition": "WebKit bakery fixture awaited a scene attribute too early after reload. Render readiness corrected; later clean bakery cases passed."
+      },
+      {
+        "evidence": {
+          "path": "evidence/literacy-experience-20260916/browser-reviewed.json",
+          "sha256": "fa5de129cef4d8d52ec178a5a353f9de0ed7232faf6fd7f8bd08bfba8221ce76"
+        },
+        "disposition": "Six functional cases passed but two Chromium worker teardown errors made this an unclean run. Clean six-case browser-sealed run retained separately."
+      },
+      {
+        "evidence": {
+          "path": "evidence/literacy-experience-20260916/browser-endings-2.json",
+          "sha256": "9611f46bb114bd708f27ae29e63569c6388e4792408f841279b1ef7894c99a82"
+        },
+        "disposition": "Prepared ending paths exposed conditional Duet word context; corrected and all nine reviewed ending cases passed."
+      },
+      {
+        "evidence": {
+          "path": "evidence/literacy-experience-20260916/browser-whole-1.log",
+          "sha256": "0e776ce70051f9a6eb791f0cfb3068705008e2933a21ae1ed676b7a850ad43f7"
+        },
+        "disposition": "Initial Chromium Begin click timed out under concurrent load; later clean three-browser whole-story runs passed."
+      },
+      {
+        "evidence": {
+          "path": "evidence/literacy-experience-20260916/browser-reading-2.log",
+          "sha256": "01c02b4bc5c41d361c7fed5b132b08758582d61ded19fdbb02316d0c96ac1562"
+        },
+        "disposition": "Synthetic media fixture lacked the mediaDevices shim in WebKit. Fixture corrected; not a native media qualification."
+      },
+      {
+        "evidence": {
+          "path": "evidence/literacy-experience-20260916/browser-reading-final.json",
+          "sha256": "57027e4f32c8f2873811a606baa6d4799147740c6f9b09576a09569f6911e085"
+        },
+        "disposition": "Native WebKit WAV playback reported NotSupportedError. Synthetic final capture/playback verifies ownership only; native decoder qualification remains open."
+      }
+    ]
+  },
+  "sourceReviews": [
+    {
+      "path": "evidence/literacy-experience-review-20260916/final-source-review.json",
+      "sha256": "82c4f60b63d092e5cc3f713a9ddde955bd6ef7d492aa56ba342de3f390ff06f7",
+      "status": "PASS_BOUNDED_GROUP1_SOURCE_REVIEW",
+      "candidate": "evidence/literacy-experience-20260916/reading-sealed.json",
+      "candidateSha256": "ed123f95ba17eb86288782a62319c6e6f717dc7b99346c1c3fb815b2b8830b88",
+      "reviewerScope": "Source-only; implementation owner executed tests and native inspection."
+    },
+    {
+      "path": "evidence/literacy-experience-review-20260916/group-2-final-source-review.json",
+      "sha256": "9b70930b404d097015ba51bf365054b0968a11f2493e0c438e927321e7ef47e9",
+      "status": "PASS_BOUNDED_GROUP2_SOURCE_REVIEW",
+      "candidate": "evidence/literacy-experience-20260916/bakery-1.json",
+      "candidateSha256": "45cbf2a8f111266401844467a24a5c8e74540c0363981cdab536765b3cdfcb28",
+      "reviewerScope": "Source-only; implementation owner executed tests and native inspection."
+    },
+    {
+      "path": "evidence/literacy-experience-review-20260916/group-3-final-source-review.json",
+      "sha256": "97855d3579162402804359c688fd7fd6fb26624a613a11aa3505aa788b4cd8bd",
+      "status": "PASS_BOUNDED_GROUP3_SOURCE_REVIEW",
+      "candidate": "evidence/literacy-experience-20260916/sealed.json",
+      "candidateSha256": "95ab7e8b1da9423ced2bdfedb09909da6c76dbbdab3db95a476694a32534a9f2",
+      "reviewerScope": "Source-only; implementation owner executed tests and native inspection."
+    },
+    {
+      "path": "evidence/literacy-experience-review-20260916/group-3-paging-supplement.json",
+      "sha256": "e225e4b8ffbbd05702dafafed37e6e044109ac9340ba5bbeb16e35a77d3e957e",
+      "status": "PASS_BOUNDED_GROUP3_PAGING_SUPPLEMENT",
+      "candidate": "evidence/literacy-experience-20260916/final.json",
+      "candidateSha256": "2b8acd5b8b1e9d9a0a485add8ae7bb4bd9e9aee00f78a88cdaf709275fa7cc1f",
+      "reviewerScope": "Source-only; implementation owner executed tests and native inspection."
+    }
+  ],
+  "native": {
+    "reading": {
+      "path": "evidence/literacy-experience-20260916/native-final-reading.json",
+      "sha256": "7c2e549cee3f681a8d5b70ac3f6ccb47da0967cfa8f4806e95fc03bc0b9ef658"
+    },
+    "image": {
+      "path": "evidence/literacy-experience-20260916/native-final-reading.jpg",
+      "sha256": "b3facf0d7c46334d746d404636984e1fc8dcc9672ea0eb3bd4f1158b193dce47"
+    },
+    "focus": {
+      "path": "evidence/literacy-experience-20260916/native-final-focus.json",
+      "sha256": "44149a14e89701b62b85a81f6379da5f16fc1e735d877493e43bedd26e897cb7"
+    },
+    "scope": "Ordinary native whole-story pagination, contextual word help and focus return; microphone ready/off; no document overflow. No actual microphone or audible quality assessment."
+  },
+  "delivery": {
+    "path": "evidence/literacy-experience-20260916/delivered-final.json",
+    "sha256": "2de98dfe9acf3c9d4fda8f0bc40c9c85f2ab4a5c29897a925a9cf9c31983a3aa",
+    "ports": [
+      4192,
+      4200
+    ],
+    "mode": "authored",
+    "savesReset": false,
+    "assets": [
+      "assets/index-DDkLC4Xa.js",
+      "assets/index-D7U2vX1x.css",
+      "assets/GardenApp-BSJ5Icto.js",
+      "assets/GardenApp-BFC0cA8q.css"
+    ],
+    "processRecords": [
+      {
+        "path": "evidence/literacy-experience-20260916/preview-processes.json",
+        "sha256": "e37c0b5faa0881fb21fbb5baa0ea14adf79f234fa514115b7e32338bc4893d6f"
+      },
+      {
+        "path": "evidence/literacy-experience-20260916/preview-4200-restart.json",
+        "sha256": "fb2cf3ab33cb4f6bf6be0b5e9c5a0cb84009b2c9c972733745e2c3e38c9015fc"
+      }
+    ]
+  },
+  "preservation": {
+    "path": "evidence/literacy-experience-20260916/preservation.json",
+    "sha256": "c897b07f9502b1acfb9f5b2484e76cc655b25961e4fc631f3c194aeeac4f1acd",
+    "finalHashRecheck": "PASS",
+    "protectedInputs": 460,
+    "originalArt": 52,
+    "originalWordsAndPackage": 4,
+    "restoredReports": 4,
+    "provider": {
+      "status": "HALTED",
+      "used": 1,
+      "cap": 75,
+      "newRequests": 0
+    }
+  },
+  "cleanup": {
+    "path": "evidence/literacy-experience-20260916/qa-cleanup.txt",
+    "sha256": "d8039c367f57382a81e3da856b4c04b6219f9dc84d490be3b09022a40a375832"
+  },
+  "documentation": [
+    {
+      "path": "docs/game-review/LITERACY-EXPERIENCE-CORRECTION-20260916.md",
+      "sha256": "81c184a5990bc622f512cdd2b619ba9731416ae677b18fe33d5b93826945ea11"
+    },
+    {
+      "path": "BUILD-STATUS.md",
+      "sha256": "613d879fc87dbea4b2495432ef431435413cb4d128590058328dc6fe45dbd0c9"
+    }
+  ],
+  "limits": [
+    "Existing TASK11.20/.21 and ER13.06-08 owner, learner, device, performance and final illustrated-art qualifications remain open.",
+    "TASK11.19 remains halted at exactly 1/75; no new provider request, retry or reset.",
+    "Live AI listening feedback is unavailable in authored mode; synthetic media does not qualify native replay, capture or pronunciation accuracy.",
+    "The observed native WebKit WAV decoder issue remains a recorded limitation.",
+    "Server word/speech files changed but were not present in the initial source-only snapshot; no before-byte server comparison is claimed.",
+    "Whole-story reading is optional and does not record inferred learning mastery or automatically perform game events.",
+    "No deployment, public publication, child-live activation, submission or Git mutation occurred."
+  ],
+  "nextDependency": "Owner play review, followed by the existing separately scoped qualification dependencies."
+}

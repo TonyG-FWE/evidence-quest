@@ -1,0 +1,296 @@
+{
+  "capturedAt": "2026-09-16T03:34:04.8266291Z",
+  "kind": "Group 1 follow-up source and contract review; not runtime verification",
+  "branch": "codex/first-connected",
+  "head": "63af7a2261553c2639842a458b54dde38311e3f7",
+  "files": [
+    {
+      "path": "browser-tests/garden-literacy.spec.ts",
+      "sha256": "2207002860e45a713468def8dad88c2a03622041279ae6df1a62866dc1c15947",
+      "bytes": 4969,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "browser-tests/garden-reading-support.spec.ts",
+      "sha256": "eed58b8ea949e6ef6fd3a76dbcef84b97e6a9060aa79a7518926ba92196b1471",
+      "bytes": 5690,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "browser-tests/garden-word-jobs.spec.ts",
+      "sha256": "11df72d80bec838b044e5228534a2bceaafbef0ba8d98514ab1d11082d71ef25",
+      "bytes": 5741,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "checks/garden-reading-support.test.ts",
+      "sha256": "7f71854d57027d72edec7ca8738c0b559a2d06adac073792b0a0d7ed765fd8a1",
+      "bytes": 2839,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "server/gardenSpeech.ts",
+      "sha256": "87fcdbfc8eb443787c96e49089c524b362b9b296f9be97a7b48fdc20b649cb9c",
+      "bytes": 7908,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "server/gardenWords.ts",
+      "sha256": "8961ddb4329b6568df4de2ca85e6e0a30a2cea6f7e86dc567d4d7d58a6d4fb7e",
+      "bytes": 6902,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/AdditionalWordHelp.tsx",
+      "sha256": "c89a6b2f4dfb4fdd120d32af5094461ea0ca25c56092a3f9ad5122ba7b367ced",
+      "bytes": 3474,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/art.ts",
+      "sha256": "96ee9cebd507e5ff3280c443d394ced8ce496b6c1877542180752dd427af07bd",
+      "bytes": 18578,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/audio.ts",
+      "sha256": "223da1bed6dedc62bc01e5f731e72ebf95a02d06358c65adc13d9dd414adf1da",
+      "bytes": 1270,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/bakery.ts",
+      "sha256": "3d3d9f0c03b41b1b49f579ed72debfa56c0d5cc5e19fb035c68a022fc2c8aec0",
+      "bytes": 8827,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/BakeryControls.tsx",
+      "sha256": "d48badb9b0295d5ce70f7651d26da151c5a0d25ca43ee344be9e47c5c0c6fd80",
+      "bytes": 4540,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/bakeryWorld.ts",
+      "sha256": "ac096b223a8d851a9b155e24d751e4f375e37bc2e9628dfd54ef0d226a136beb",
+      "bytes": 10513,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/BoatControls.tsx",
+      "sha256": "a93e30ba9a0be417eb24a984326b904251a747cf852aa54337aeb8b49bd085d5",
+      "bytes": 1838,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/chapter.ts",
+      "sha256": "9a70c92d0e10bb0b93f03b77ba67dfbdbb1ef4ec4df8c8cc800ed01ce0bfec8d",
+      "bytes": 24028,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/chapterContent.ts",
+      "sha256": "e779bb4edf96103badbaedfbfa54866bb7f6241d9b4a8d74292f8b04a174a370",
+      "bytes": 4262,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/chapterGlossary.ts",
+      "sha256": "2c5445b5d3c6aec7907a689df94d7d07f94da2462de4080e342c866c6a71708d",
+      "bytes": 6801,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/ChapterPanels.tsx",
+      "sha256": "d22a88be6a28757e66cb6eb4d34227d356080f675134ef3486d939cc12a330ad",
+      "bytes": 31827,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/chapterWorld.ts",
+      "sha256": "b8b687191bd44599c4ebf8747dfba061e93c17c6735413f31cbfbc1924a095ce",
+      "bytes": 2098,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/content.ts",
+      "sha256": "e4cb004657d7eeba0a164db0ee285d8e72047c20ee6c412f640f3bf9228d96b1",
+      "bytes": 21019,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/conversation.ts",
+      "sha256": "426f2aaca092f7b3a5aa8ec0306c68e32530fb48a6526870267ddb9ad2829855",
+      "bytes": 6264,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/ConversationControls.tsx",
+      "sha256": "17ab9f05a9b90934c9828ee581a2c99926f885f3ec2281bf68e263146564bfa5",
+      "bytes": 5576,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/Dialogue.tsx",
+      "sha256": "e257cfbb5e76cecc27142ddf5ca347a32155120860bfb8edcb2b27bac08c6368",
+      "bytes": 2162,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/DraftReader.tsx",
+      "sha256": "8086ae7c07dcebd0841de6a582ab4ae522dba58b772d237f7bf820939673989a",
+      "bytes": 4057,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/FeedbackActivity.tsx",
+      "sha256": "f15750193dfd37e32db3e02e01a60c928f664afcc664d50db5fc3469f22ddb46",
+      "bytes": 8557,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/FinaleActivity.tsx",
+      "sha256": "202d60ae57880d837b7f2a1a61181d8a42a7e6d9b0ed9496e2a97caedfcd7258",
+      "bytes": 3686,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/focus.ts",
+      "sha256": "c074fe7a463c48dd915a47a8713e53b12829816be1b8b464ce095f770f937ea4",
+      "bytes": 1229,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/garden.css",
+      "sha256": "66f793ba391bba0370b7fe656b655fcc6692e2ccf866a300b8995085fc879df0",
+      "bytes": 38151,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/GardenApp.tsx",
+      "sha256": "18d4c2abb6814060e3df69618b6c65116332b1c827429a1b8ecd945b68129c75",
+      "bytes": 47752,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/GardenScene.tsx",
+      "sha256": "39038af06bffa4db834294615fa1f749dc569e174cfebfeca9b39c27522a71ea",
+      "bytes": 38684,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/gathering.ts",
+      "sha256": "b0f535de38bb497aef61faafdd26428cdbc60e0e1fc1de9e68fec7c3c63feccc",
+      "bytes": 18826,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/GatheringPanels.tsx",
+      "sha256": "cac9a8f8b35e8810fb1f7740f28a4c05669b716f7f6c9d87f1e905a604c5300c",
+      "bytes": 9102,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/gatheringWorld.ts",
+      "sha256": "eeca96abf0e201deb33e6014efa3748607b6ec560e644bd90181be4c45136f2c",
+      "bytes": 5804,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/interaction.ts",
+      "sha256": "ed1b635c34356cc9ee138824894b6979dd8a3b3a80f8b792d44e7ec75d844bf8",
+      "bytes": 4277,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/lanterns.ts",
+      "sha256": "a11ca909e73c6ea976075d08d72caa0b418d0b8b62ca92c66e004106b6763029",
+      "bytes": 3872,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/lanternWorld.ts",
+      "sha256": "3907c5d430636f2e8b468a5d2ee256157d40aa516ac290109a32ae18d8677bcb",
+      "bytes": 2204,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/mara.ts",
+      "sha256": "c77c7a89106e7149944aa22da9be97cdfbf882cde569740a16dbc2ebb24e5e0a",
+      "bytes": 4636,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/MaraMessage.tsx",
+      "sha256": "000b8dac7223cd29a8f19e30ba3868224bc3d040d3b4b6f5988a81f86514013d",
+      "bytes": 3291,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/MaraWorld.tsx",
+      "sha256": "9b15d9292b32a258cfb257551cdfe7a08a00517311389f64dbd9750a83ffd3ae",
+      "bytes": 11548,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/model.ts",
+      "sha256": "af04508d8e4bebf38edb3c30df2b17baee116a563265520690333b9b38a8cec0",
+      "bytes": 48423,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/persistence.ts",
+      "sha256": "933bed2c5df47d3abdb353b1c1985fd01854f79c5dbc541f3993369786a0fe99",
+      "bytes": 16047,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/Reading.tsx",
+      "sha256": "57e45391ba1645afed11c4b4a2f7da791d18b449fb4900d433ad18ded29e4fa5",
+      "bytes": 4795,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/ReadingDetails.tsx",
+      "sha256": "06195a7245343bac7019b78eb60756a6fe2a483ea25289c5693ab9c56d9e79a3",
+      "bytes": 465,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/readingGlossary.ts",
+      "sha256": "29036941a27aad12f293f961fe9c4f48e53a51df9d110aedc43ee2f7ce883727",
+      "bytes": 8061,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/ReadingPractice.tsx",
+      "sha256": "956c92c981513182bbcbe716c430e3b7d2ba5c5e4f5814a3a79971706f76e1d1",
+      "bytes": 10274,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/readingReference.ts",
+      "sha256": "eb51086ad6439115d596a4fba4f014bb4b1a40fcfb39105d48f108713977f9c5",
+      "bytes": 1701,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/river.ts",
+      "sha256": "94ef9e24dd10631b799a521283ddd4a504815249ed419975878653e03f0a6db0",
+      "bytes": 4191,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/StoryStage.tsx",
+      "sha256": "81a60da8fb6be1920740aca4d6b957a04726879b63778d625d282fc4bbc5cb62",
+      "bytes": 9130,
+      "changedDuringCapture": false
+    },
+    {
+      "path": "src/garden/WorldActivity.tsx",
+      "sha256": "825290492411a3f8a95b1e71e4127adaa366531efa8b88acebc6ca4207e8b7bd",
+      "bytes": 4075,
+      "changedDuringCapture": false
+    }
+  ]
+}

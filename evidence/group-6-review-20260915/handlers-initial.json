@@ -1,0 +1,790 @@
+{
+  "at": "2026-09-15T08:08:12.031Z",
+  "result": "PASS",
+  "scope": "Independent real-handler Group6 review of nine equally valid arrangements/outcomes, actual physical-stage and world-turn recovery, first permitted copy/earlier Mara repair, compatible notices and explicitly synthetic invalid saves. No browser injection or provider requests.",
+  "hashes": [
+    {
+      "path": "src/garden/model.ts",
+      "sha256": "801eb8a73768f13ee9e76d5645b4cea884ce1ee084e4ee72632e6b0cef057ce4"
+    },
+    {
+      "path": "src/garden/chapter.ts",
+      "sha256": "51ae7de4168b9ba58ca4932c554f74119415d536233bba3d6493a4f60aca463b"
+    },
+    {
+      "path": "src/garden/gathering.ts",
+      "sha256": "25560920fd399e97421d372724a2df74556cb20d6ea4bdca1041904df63636c8"
+    },
+    {
+      "path": "src/garden/persistence.ts",
+      "sha256": "53c8aa33d064bf9caecb4254c809ee04f10a7277f900b041bef43b9cc9d7f5cb"
+    },
+    {
+      "path": ".cache/checks/src/garden/model.js",
+      "sha256": "c8fba1cc9b5af657e32db994f97b7884c177d1d2a398d7f18a20c7af11970f29"
+    },
+    {
+      "path": ".cache/checks/src/garden/chapter.js",
+      "sha256": "81f988152fb23eb860ab132216644bbc4d0090c5871fc40a622e30aab87f7095"
+    },
+    {
+      "path": ".cache/checks/src/garden/gathering.js",
+      "sha256": "059e9ac0c6f356daf0cd5cbb822beca9ee6a1dace0593b7cecc73f91d3be5de1"
+    },
+    {
+      "path": ".cache/checks/src/garden/persistence.js",
+      "sha256": "993b202cd9bcf4676a6ca537abb00768f6f64fe6e685c0acc6105106fcc5009a"
+    },
+    {
+      "path": "evidence/group-6-review-20260915/group-5-migration-inputs.json",
+      "sha256": "4e1959e311fe8fcbd580b6170618995ae2af6b31d46195cb3802f9462abea94c"
+    }
+  ],
+  "observations": [
+    {
+      "case": "usual/pip/prepared",
+      "name": "actual compatible invitations and report",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/prepared",
+      "name": "only applicable people actually arrive",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/prepared",
+      "name": "welcome reading is not the welcome",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/prepared",
+      "name": "Pip actual welcome acknowledged",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/prepared",
+      "name": "public retelling reuses earlier repair and contribution",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/prepared",
+      "name": "actual Sol turn retains chosen words or draft",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/prepared",
+      "name": "exact actual Sol outcome",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/prepared",
+      "name": "complete Grandma story still withheld",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/prepared",
+      "name": "disclosure is the actual before-today exchange",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/prepared",
+      "name": "cushions follow disclosure without completing page",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/prepared",
+      "name": "completed page precedes actual telling",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/prepared",
+      "name": "Grandma actually shares before Pip moment",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/prepared",
+      "name": "gathering preserves actual bakery/river/material history",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/developed",
+      "name": "actual compatible invitations and report",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/developed",
+      "name": "only applicable people actually arrive",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/developed",
+      "name": "welcome reading is not the welcome",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/developed",
+      "name": "Pip actual welcome acknowledged",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/developed",
+      "name": "public retelling reuses earlier repair and contribution",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/developed",
+      "name": "actual Sol turn retains chosen words or draft",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/developed",
+      "name": "a question is not yet completed discussion",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/developed",
+      "name": "exact actual Sol outcome",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/developed",
+      "name": "complete Grandma story still withheld",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/developed",
+      "name": "disclosure is the actual before-today exchange",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/developed",
+      "name": "cushions follow disclosure without completing page",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/developed",
+      "name": "completed page precedes actual telling",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/developed",
+      "name": "Grandma actually shares before Pip moment",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/developed",
+      "name": "gathering preserves actual bakery/river/material history",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/draft",
+      "name": "actual compatible invitations and report",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/draft",
+      "name": "only applicable people actually arrive",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/draft",
+      "name": "welcome reading is not the welcome",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/draft",
+      "name": "Pip actual welcome acknowledged",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/draft",
+      "name": "public retelling reuses earlier repair and contribution",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/draft",
+      "name": "actual Sol turn retains chosen words or draft",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/draft",
+      "name": "no-question draft thanks listeners without invented advice",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/draft",
+      "name": "exact actual Sol outcome",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/draft",
+      "name": "complete Grandma story still withheld",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/draft",
+      "name": "disclosure is the actual before-today exchange",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/draft",
+      "name": "cushions follow disclosure without completing page",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/draft",
+      "name": "completed page precedes actual telling",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/draft",
+      "name": "Grandma actually shares before Pip moment",
+      "pass": true
+    },
+    {
+      "case": "usual/pip/draft",
+      "name": "gathering preserves actual bakery/river/material history",
+      "pass": true
+    },
+    {
+      "case": "later/mara/prepared",
+      "name": "actual compatible invitations and report",
+      "pass": true
+    },
+    {
+      "case": "later/mara/prepared",
+      "name": "only applicable people actually arrive",
+      "pass": true
+    },
+    {
+      "case": "later/mara/prepared",
+      "name": "welcome reading is not the welcome",
+      "pass": true
+    },
+    {
+      "case": "later/mara/prepared",
+      "name": "Pip actual welcome acknowledged",
+      "pass": true
+    },
+    {
+      "case": "later/mara/prepared",
+      "name": "public retelling reuses earlier repair and contribution",
+      "pass": true
+    },
+    {
+      "case": "later/mara/prepared",
+      "name": "actual Sol turn retains chosen words or draft",
+      "pass": true
+    },
+    {
+      "case": "later/mara/prepared",
+      "name": "exact actual Sol outcome",
+      "pass": true
+    },
+    {
+      "case": "later/mara/prepared",
+      "name": "complete Grandma story still withheld",
+      "pass": true
+    },
+    {
+      "case": "later/mara/prepared",
+      "name": "disclosure is the actual before-today exchange",
+      "pass": true
+    },
+    {
+      "case": "later/mara/prepared",
+      "name": "cushions follow disclosure without completing page",
+      "pass": true
+    },
+    {
+      "case": "later/mara/prepared",
+      "name": "completed page precedes actual telling",
+      "pass": true
+    },
+    {
+      "case": "later/mara/prepared",
+      "name": "Grandma actually shares before Pip moment",
+      "pass": true
+    },
+    {
+      "case": "later/mara/prepared",
+      "name": "gathering preserves actual bakery/river/material history",
+      "pass": true
+    },
+    {
+      "case": "later/mara/developed",
+      "name": "actual compatible invitations and report",
+      "pass": true
+    },
+    {
+      "case": "later/mara/developed",
+      "name": "only applicable people actually arrive",
+      "pass": true
+    },
+    {
+      "case": "later/mara/developed",
+      "name": "welcome reading is not the welcome",
+      "pass": true
+    },
+    {
+      "case": "later/mara/developed",
+      "name": "Pip actual welcome acknowledged",
+      "pass": true
+    },
+    {
+      "case": "later/mara/developed",
+      "name": "public retelling reuses earlier repair and contribution",
+      "pass": true
+    },
+    {
+      "case": "later/mara/developed",
+      "name": "actual Sol turn retains chosen words or draft",
+      "pass": true
+    },
+    {
+      "case": "later/mara/developed",
+      "name": "a question is not yet completed discussion",
+      "pass": true
+    },
+    {
+      "case": "later/mara/developed",
+      "name": "exact actual Sol outcome",
+      "pass": true
+    },
+    {
+      "case": "later/mara/developed",
+      "name": "complete Grandma story still withheld",
+      "pass": true
+    },
+    {
+      "case": "later/mara/developed",
+      "name": "disclosure is the actual before-today exchange",
+      "pass": true
+    },
+    {
+      "case": "later/mara/developed",
+      "name": "cushions follow disclosure without completing page",
+      "pass": true
+    },
+    {
+      "case": "later/mara/developed",
+      "name": "completed page precedes actual telling",
+      "pass": true
+    },
+    {
+      "case": "later/mara/developed",
+      "name": "Grandma actually shares before Pip moment",
+      "pass": true
+    },
+    {
+      "case": "later/mara/developed",
+      "name": "gathering preserves actual bakery/river/material history",
+      "pass": true
+    },
+    {
+      "case": "later/mara/draft",
+      "name": "actual compatible invitations and report",
+      "pass": true
+    },
+    {
+      "case": "later/mara/draft",
+      "name": "only applicable people actually arrive",
+      "pass": true
+    },
+    {
+      "case": "later/mara/draft",
+      "name": "welcome reading is not the welcome",
+      "pass": true
+    },
+    {
+      "case": "later/mara/draft",
+      "name": "Pip actual welcome acknowledged",
+      "pass": true
+    },
+    {
+      "case": "later/mara/draft",
+      "name": "public retelling reuses earlier repair and contribution",
+      "pass": true
+    },
+    {
+      "case": "later/mara/draft",
+      "name": "actual Sol turn retains chosen words or draft",
+      "pass": true
+    },
+    {
+      "case": "later/mara/draft",
+      "name": "no-question draft thanks listeners without invented advice",
+      "pass": true
+    },
+    {
+      "case": "later/mara/draft",
+      "name": "exact actual Sol outcome",
+      "pass": true
+    },
+    {
+      "case": "later/mara/draft",
+      "name": "complete Grandma story still withheld",
+      "pass": true
+    },
+    {
+      "case": "later/mara/draft",
+      "name": "disclosure is the actual before-today exchange",
+      "pass": true
+    },
+    {
+      "case": "later/mara/draft",
+      "name": "cushions follow disclosure without completing page",
+      "pass": true
+    },
+    {
+      "case": "later/mara/draft",
+      "name": "completed page precedes actual telling",
+      "pass": true
+    },
+    {
+      "case": "later/mara/draft",
+      "name": "Grandma actually shares before Pip moment",
+      "pass": true
+    },
+    {
+      "case": "later/mara/draft",
+      "name": "gathering preserves actual bakery/river/material history",
+      "pass": true
+    },
+    {
+      "case": "later/pip/prepared",
+      "name": "actual compatible invitations and report",
+      "pass": true
+    },
+    {
+      "case": "later/pip/prepared",
+      "name": "only applicable people actually arrive",
+      "pass": true
+    },
+    {
+      "case": "later/pip/prepared",
+      "name": "welcome reading is not the welcome",
+      "pass": true
+    },
+    {
+      "case": "later/pip/prepared",
+      "name": "Pip actual welcome acknowledged",
+      "pass": true
+    },
+    {
+      "case": "later/pip/prepared",
+      "name": "public retelling reuses earlier repair and contribution",
+      "pass": true
+    },
+    {
+      "case": "later/pip/prepared",
+      "name": "actual Sol turn retains chosen words or draft",
+      "pass": true
+    },
+    {
+      "case": "later/pip/prepared",
+      "name": "exact actual Sol outcome",
+      "pass": true
+    },
+    {
+      "case": "later/pip/prepared",
+      "name": "complete Grandma story still withheld",
+      "pass": true
+    },
+    {
+      "case": "later/pip/prepared",
+      "name": "disclosure is the actual before-today exchange",
+      "pass": true
+    },
+    {
+      "case": "later/pip/prepared",
+      "name": "cushions follow disclosure without completing page",
+      "pass": true
+    },
+    {
+      "case": "later/pip/prepared",
+      "name": "completed page precedes actual telling",
+      "pass": true
+    },
+    {
+      "case": "later/pip/prepared",
+      "name": "Grandma actually shares before Pip moment",
+      "pass": true
+    },
+    {
+      "case": "later/pip/prepared",
+      "name": "gathering preserves actual bakery/river/material history",
+      "pass": true
+    },
+    {
+      "case": "later/pip/developed",
+      "name": "actual compatible invitations and report",
+      "pass": true
+    },
+    {
+      "case": "later/pip/developed",
+      "name": "only applicable people actually arrive",
+      "pass": true
+    },
+    {
+      "case": "later/pip/developed",
+      "name": "welcome reading is not the welcome",
+      "pass": true
+    },
+    {
+      "case": "later/pip/developed",
+      "name": "Pip actual welcome acknowledged",
+      "pass": true
+    },
+    {
+      "case": "later/pip/developed",
+      "name": "public retelling reuses earlier repair and contribution",
+      "pass": true
+    },
+    {
+      "case": "later/pip/developed",
+      "name": "actual Sol turn retains chosen words or draft",
+      "pass": true
+    },
+    {
+      "case": "later/pip/developed",
+      "name": "a question is not yet completed discussion",
+      "pass": true
+    },
+    {
+      "case": "later/pip/developed",
+      "name": "exact actual Sol outcome",
+      "pass": true
+    },
+    {
+      "case": "later/pip/developed",
+      "name": "complete Grandma story still withheld",
+      "pass": true
+    },
+    {
+      "case": "later/pip/developed",
+      "name": "disclosure is the actual before-today exchange",
+      "pass": true
+    },
+    {
+      "case": "later/pip/developed",
+      "name": "cushions follow disclosure without completing page",
+      "pass": true
+    },
+    {
+      "case": "later/pip/developed",
+      "name": "completed page precedes actual telling",
+      "pass": true
+    },
+    {
+      "case": "later/pip/developed",
+      "name": "Grandma actually shares before Pip moment",
+      "pass": true
+    },
+    {
+      "case": "later/pip/developed",
+      "name": "gathering preserves actual bakery/river/material history",
+      "pass": true
+    },
+    {
+      "case": "later/pip/draft",
+      "name": "actual compatible invitations and report",
+      "pass": true
+    },
+    {
+      "case": "later/pip/draft",
+      "name": "only applicable people actually arrive",
+      "pass": true
+    },
+    {
+      "case": "later/pip/draft",
+      "name": "welcome reading is not the welcome",
+      "pass": true
+    },
+    {
+      "case": "later/pip/draft",
+      "name": "Pip actual welcome acknowledged",
+      "pass": true
+    },
+    {
+      "case": "later/pip/draft",
+      "name": "public retelling reuses earlier repair and contribution",
+      "pass": true
+    },
+    {
+      "case": "later/pip/draft",
+      "name": "actual Sol turn retains chosen words or draft",
+      "pass": true
+    },
+    {
+      "case": "later/pip/draft",
+      "name": "no-question draft thanks listeners without invented advice",
+      "pass": true
+    },
+    {
+      "case": "later/pip/draft",
+      "name": "exact actual Sol outcome",
+      "pass": true
+    },
+    {
+      "case": "later/pip/draft",
+      "name": "complete Grandma story still withheld",
+      "pass": true
+    },
+    {
+      "case": "later/pip/draft",
+      "name": "disclosure is the actual before-today exchange",
+      "pass": true
+    },
+    {
+      "case": "later/pip/draft",
+      "name": "cushions follow disclosure without completing page",
+      "pass": true
+    },
+    {
+      "case": "later/pip/draft",
+      "name": "completed page precedes actual telling",
+      "pass": true
+    },
+    {
+      "case": "later/pip/draft",
+      "name": "Grandma actually shares before Pip moment",
+      "pass": true
+    },
+    {
+      "case": "later/pip/draft",
+      "name": "gathering preserves actual bakery/river/material history",
+      "pass": true
+    },
+    {
+      "case": "actual invitation supplies the first permitted copy and first public Mara repair",
+      "name": "actual invitation transfers first copy to Pip",
+      "pass": true
+    },
+    {
+      "case": "actual invitation supplies the first permitted copy and first public Mara repair",
+      "name": "repeat invitation makes no second copy",
+      "pass": true
+    },
+    {
+      "case": "actual invitation supplies the first permitted copy and first public Mara repair",
+      "name": "first public telling enters earlier Mara scene",
+      "pass": true
+    },
+    {
+      "case": "actual invitation supplies the first permitted copy and first public Mara repair",
+      "name": "earlier story cannot advance current gathering",
+      "pass": true
+    },
+    {
+      "case": "actual invitation supplies the first permitted copy and first public Mara repair",
+      "name": "earlier repair returns to actual attendees and same current objects",
+      "pass": true
+    },
+    {
+      "case": "staged arrivals distinguish hard reload from acknowledged actions",
+      "name": "starting the final boat does not complete any arrival",
+      "pass": true
+    },
+    {
+      "case": "staged arrivals distinguish hard reload from acknowledged actions",
+      "name": "hard reload resumes unacknowledged final boat",
+      "pass": true
+    },
+    {
+      "case": "staged arrivals distinguish hard reload from acknowledged actions",
+      "name": "boat mooring is separate from passengers ashore",
+      "pass": true
+    },
+    {
+      "case": "staged arrivals distinguish hard reload from acknowledged actions",
+      "name": "soft interruption settles only the started passenger step",
+      "pass": true
+    },
+    {
+      "case": "staged arrivals distinguish hard reload from acknowledged actions",
+      "name": "Sol arrival is separate from Mara crossing",
+      "pass": true
+    },
+    {
+      "case": "staged arrivals distinguish hard reload from acknowledged actions",
+      "name": "reload preserves actual individual arrivals",
+      "pass": true
+    },
+    {
+      "case": "staged arrivals distinguish hard reload from acknowledged actions",
+      "name": "Mara actual crossing unlocks welcome",
+      "pass": true
+    },
+    {
+      "case": "actual world words wait, survive support and reject late edits",
+      "name": "time alone does not perform the turn",
+      "pass": true
+    },
+    {
+      "case": "actual world words wait, survive support and reject late edits",
+      "name": "active telling blocks changed words and travel",
+      "pass": true
+    },
+    {
+      "case": "actual world words wait, survive support and reject late edits",
+      "name": "Help cannot advance speaking",
+      "pass": true
+    },
+    {
+      "case": "actual world words wait, survive support and reject late edits",
+      "name": "reload retains exact selected contribution and paragraph",
+      "pass": true
+    },
+    {
+      "case": "actual world words wait, survive support and reject late edits",
+      "name": "late background input cannot advance",
+      "pass": true
+    },
+    {
+      "case": "actual world words wait, survive support and reject late edits",
+      "name": "continued actual performance finishes the original version once",
+      "pass": true
+    },
+    {
+      "case": "changed arrangements retain only compatible received notices",
+      "name": "reader change retains Sol time and invalidates Mara arrangement",
+      "pass": true
+    },
+    {
+      "case": "changed arrangements retain only compatible received notices",
+      "name": "actual Mara update and Grandma report restore readiness",
+      "pass": true
+    },
+    {
+      "case": "changed arrangements retain only compatible received notices",
+      "name": "time change preserves actual old notices while requiring updates",
+      "pass": true
+    },
+    {
+      "case": "explicitly synthetic impossible save combinations are rejected",
+      "name": "performed prepared story cannot become unfinished discussion",
+      "pass": true
+    },
+    {
+      "case": "explicitly synthetic impossible save combinations are rejected",
+      "name": "completed Grandma telling cannot remain stuck before its phase transition",
+      "pass": true
+    },
+    {
+      "case": "explicitly synthetic impossible save combinations are rejected",
+      "name": "out-of-range spoken paragraph is rejected",
+      "pass": true
+    },
+    {
+      "case": "explicitly synthetic impossible save combinations are rejected",
+      "name": "Grandma knowledge before Sol turn is rejected",
+      "pass": true
+    },
+    {
+      "case": "explicitly synthetic impossible save combinations are rejected",
+      "name": "reviewed handlers stayed unchanged",
+      "pass": true
+    }
+  ]
+}

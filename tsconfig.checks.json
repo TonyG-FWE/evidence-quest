@@ -8,5 +8,5 @@
     "rootDir": ".",
     "outDir": ".cache/checks"
   },
-  "include": ["checks/**/*.ts", "src/core/**/*.ts", "src/story/**/*.ts", "src/physical/**/*.ts", "src/coach/**/*.ts", "src/save/**/*.ts", "contracts/**/*.ts"]
+  "include": ["checks/**/*.ts", "src/garden/model.ts", "src/garden/content.ts", "src/garden/persistence.ts", "src/core/**/*.ts", "src/story/**/*.ts", "src/physical/**/*.ts", "src/coach/**/*.ts", "src/save/**/*.ts", "contracts/**/*.ts"]
 }

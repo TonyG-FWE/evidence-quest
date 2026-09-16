@@ -1,0 +1,692 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "browser-tests/garden-sequence.spec.ts",
+      "browser-tests/garden-compact-reader.spec.ts",
+      "browser-tests/garden-interaction.spec.ts",
+      "--grep",
+      "Conversation sequence|Compact dialogue|ordinary keyboard route",
+      "--project=chromium",
+      "--project=firefox",
+      "--project=webkit",
+      "--output=evidence/conversation-sequence-20260915/browser-focus-c5-artifacts"
+    ],
+    "configFile": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\playwright.config.ts",
+    "rootDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/evidence/conversation-sequence-20260915/browser-focus-c5-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/evidence/conversation-sequence-20260915/browser-focus-c5-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/evidence/conversation-sequence-20260915/browser-focus-c5-artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/conversation-sequence-20260915/browser-focus-c5.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 1,
+    "webServer": {
+      "command": "\"C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe\" dist/server/index.js",
+      "url": "http://127.0.0.1:4195/healthz",
+      "env": {
+        "PORT": "4195",
+        "EQ_WEB_PORT": "4195",
+        "PUBLIC_ORIGIN": "http://127.0.0.1:4195"
+      },
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "garden-compact-reader.spec.ts",
+      "file": "garden-compact-reader.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Compact dialogue: full-sized story sentence, useful passage space, word help and both choices",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9758,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T01:57:22.563Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "compact-measurements",
+                      "contentType": "application/json",
+                      "body": "eyJyZWFkaW5nIjp7IngiOjE3LCJ5IjoxMTkuMzkwNjI1LCJ3aWR0aCI6Mjg3LCJoZWlnaHQiOjM3OS42MDkzNzV9LCJzdG9yeUZvbnQiOiIyOHB4Iiwibm90ZSI6Ik9yZGluYXJ5IGZyZXNoIHBsYXksIGFjdHVhbDI4cHggcm9vbWllciBzdG9yeSB0ZXh0LiBObyBzdGF0ZSBpbmplY3Rpb24gb3IgcHJvdmlkZXIgcmVxdWVzdC4ifQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ab81f346b0a419dc85e0-9d50f7ac4920d50b733c",
+          "file": "garden-compact-reader.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "Compact dialogue: full-sized story sentence, useful passage space, word help and both choices",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10484,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T01:58:18.292Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "compact-measurements",
+                      "contentType": "application/json",
+                      "body": "eyJyZWFkaW5nIjp7IngiOjE2Ljc5OTk5OTIzNzA2MDU0NywieSI6MTE5LjQwMDAwMTUyNTg3ODksIndpZHRoIjoyODcuMjAwMDAwNzYyOTM5NDUsImhlaWdodCI6Mzc5LjgwMDAxMDY4MTE1MjM0fSwic3RvcnlGb250IjoiMjhweCIsIm5vdGUiOiJPcmRpbmFyeSBmcmVzaCBwbGF5LCBhY3R1YWwyOHB4IHJvb21pZXIgc3RvcnkgdGV4dC4gTm8gc3RhdGUgaW5qZWN0aW9uIG9yIHByb3ZpZGVyIHJlcXVlc3QuIn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ab81f346b0a419dc85e0-fb0f5848a1d6086249f5",
+          "file": "garden-compact-reader.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "Compact dialogue: full-sized story sentence, useful passage space, word help and both choices",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11632,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T01:59:18.128Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "compact-measurements",
+                      "contentType": "application/json",
+                      "body": "eyJyZWFkaW5nIjp7IngiOjE3LCJ5IjoxMTkuMzkwNjI1LCJ3aWR0aCI6Mjg3LCJoZWlnaHQiOjM3OS42MDkzNzV9LCJzdG9yeUZvbnQiOiIyOHB4Iiwibm90ZSI6Ik9yZGluYXJ5IGZyZXNoIHBsYXksIGFjdHVhbDI4cHggcm9vbWllciBzdG9yeSB0ZXh0LiBObyBzdGF0ZSBpbmplY3Rpb24gb3IgcHJvdmlkZXIgcmVxdWVzdC4ifQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ab81f346b0a419dc85e0-1b9f2a21a47684e70845",
+          "file": "garden-compact-reader.spec.ts",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "garden-interaction.spec.ts",
+      "file": "garden-interaction.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "G2 ordinary keyboard route: nested letter, Help and backpack preserve focus and return context",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1193,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T01:57:32.587Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1799c544e2b95b36d5eb-2ea484918e5deaad3a0a",
+          "file": "garden-interaction.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "G2 ordinary keyboard route: nested letter, Help and backpack preserve focus and return context",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1980,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T01:58:29.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1799c544e2b95b36d5eb-e628266ffe5dacfa87f5",
+          "file": "garden-interaction.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "G2 ordinary keyboard route: nested letter, Help and backpack preserve focus and return context",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2598,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T01:59:29.863Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1799c544e2b95b36d5eb-279c8662afcf017e5d15",
+          "file": "garden-interaction.spec.ts",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "garden-sequence.spec.ts",
+      "file": "garden-sequence.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Conversation sequence: prepared relay advances, persists, and is delivered at Grandma",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16901,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T01:57:33.808Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-6065228d05e9b298dd3a",
+          "file": "garden-sequence.spec.ts",
+          "line": 12,
+          "column": 47
+        },
+        {
+          "title": "Conversation sequence: own relay advances, persists, and is delivered at Grandma",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17617,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T01:57:50.719Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-dc9353df3ea2a5c46c71",
+          "file": "garden-sequence.spec.ts",
+          "line": 12,
+          "column": 47
+        },
+        {
+          "title": "Conversation sequence: largest text keeps one scroll, adjacent navigation and an optional own-message editor",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9309,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T01:58:08.348Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-ec23a15f010b515225fd",
+          "file": "garden-sequence.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "Conversation sequence: prepared relay advances, persists, and is delivered at Grandma",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17224,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T01:58:31.207Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-4c303d1348064031d0a1",
+          "file": "garden-sequence.spec.ts",
+          "line": 12,
+          "column": 47
+        },
+        {
+          "title": "Conversation sequence: own relay advances, persists, and is delivered at Grandma",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 19313,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T01:58:48.439Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-77188064ebbe71403226",
+          "file": "garden-sequence.spec.ts",
+          "line": 12,
+          "column": 47
+        },
+        {
+          "title": "Conversation sequence: largest text keeps one scroll, adjacent navigation and an optional own-message editor",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9605,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T01:59:07.759Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-e886d79a95cfe7e571e4",
+          "file": "garden-sequence.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "Conversation sequence: prepared relay advances, persists, and is delivered at Grandma",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 20672,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T01:59:32.485Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-1cefb9975a597a38fced",
+          "file": "garden-sequence.spec.ts",
+          "line": 12,
+          "column": 47
+        },
+        {
+          "title": "Conversation sequence: own relay advances, persists, and is delivered at Grandma",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 23396,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T01:59:53.171Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-bc5a6ccd4b94f79b5d26",
+          "file": "garden-sequence.spec.ts",
+          "line": 12,
+          "column": 47
+        },
+        {
+          "title": "Conversation sequence: largest text keeps one scroll, adjacent navigation and an optional own-message editor",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11314,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T02:00:16.575Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-61e225d3098fbf4f8075",
+          "file": "garden-sequence.spec.ts",
+          "line": 29,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-16T01:57:21.761Z",
+    "duration": 186581.342,
+    "expected": 15,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

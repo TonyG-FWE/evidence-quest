@@ -1,0 +1,22 @@
+{
+  "candidate": "Group1 R3",
+  "observedAt": "2026-09-16T03:47:08.7661955Z",
+  "note": "Correct dist/client asset paths discovered after snapshot3; original manifest retains unsuccessful dist/assets lookups.",
+  "assets": [
+    {
+      "path": "dist/client/assets/GardenApp-B9YSl7AB.js",
+      "sha256": "a884526f4212ce3de20cbf44f43c0db854aff08b448c5bc78ca17f66aadd8ecf",
+      "bytes": 900716
+    },
+    {
+      "path": "dist/client/assets/index-C2MsEsl5.js",
+      "sha256": "5111142a17facef40d82dcf365c96e89a1bc6498380347b5af7e3b96d3b5a078",
+      "bytes": 196583
+    },
+    {
+      "path": "dist/client/assets/GardenApp-CKnqLie0.css",
+      "sha256": "cb69591a9e665b7973574c50c4ea601e7e767e8232ddbb0ad60c40c59e7c8001",
+      "bytes": 37457
+    }
+  ]
+}

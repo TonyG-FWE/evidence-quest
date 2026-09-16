@@ -1,0 +1,23 @@
+
+> evidence-quest@0.1.0 test:browser
+> node scripts/test-browser.mjs browser-tests/garden-festival-welcome.spec.ts --workers=2 --output=evidence/sparkfest-main-image-20260916/browser-final
+
+[WebServer] (node:51340) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 6 tests using 2 workers
+
+(node:48772) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:52032) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 [chromium] › browser-tests\garden-festival-welcome.spec.ts:3:73 › SparkFest welcome: approved cast illustration, Loop identity and supported entry at 1440px (1.7s)
+  ok 3 [chromium] › browser-tests\garden-festival-welcome.spec.ts:3:73 › SparkFest welcome: approved cast illustration, Loop identity and supported entry at 320px (1.4s)
+(node:64796) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 2 [firefox] › browser-tests\garden-festival-welcome.spec.ts:3:73 › SparkFest welcome: approved cast illustration, Loop identity and supported entry at 1440px (3.4s)
+  ok 5 [firefox] › browser-tests\garden-festival-welcome.spec.ts:3:73 › SparkFest welcome: approved cast illustration, Loop identity and supported entry at 320px (2.6s)
+  ok 4 [webkit] › browser-tests\garden-festival-welcome.spec.ts:3:73 › SparkFest welcome: approved cast illustration, Loop identity and supported entry at 1440px (3.3s)
+  ok 6 [webkit] › browser-tests\garden-festival-welcome.spec.ts:3:73 › SparkFest welcome: approved cast illustration, Loop identity and supported entry at 320px (2.3s)
+
+  6 passed (10.9s)

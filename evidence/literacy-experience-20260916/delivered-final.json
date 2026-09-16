@@ -1,0 +1,80 @@
+{
+  "at": "2026-09-16T05:11:55.239Z",
+  "candidate": "final.json",
+  "status": "PASS",
+  "rows": [
+    {
+      "port": 4192,
+      "health": {
+        "status": "ok",
+        "mode": "authored"
+      },
+      "entryMatches": true,
+      "assets": [
+        {
+          "path": "assets/index-DDkLC4Xa.js",
+          "status": 200,
+          "sha256": "74f546b3d74fa74b8eff31bb237ca8d9ac00b65ad479126f058b662ddfd3107c",
+          "matches": true
+        },
+        {
+          "path": "assets/index-D7U2vX1x.css",
+          "status": 200,
+          "sha256": "e57e791c5fdcecf3f5546f1bf865fe6b4277f670cc02656b51feb159a1f5601d",
+          "matches": true
+        },
+        {
+          "path": "assets/GardenApp-BSJ5Icto.js",
+          "status": 200,
+          "sha256": "fea31266688d2af5ad58215d3d6d1676172b2cf7af3e5d70caf4cb2f6a297ddf",
+          "matches": true
+        },
+        {
+          "path": "assets/GardenApp-BFC0cA8q.css",
+          "status": 200,
+          "sha256": "4fc1d7765c7b5cc7f85ebe24337938a761c584d7d5ceea37d4adfe6e99087589",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "port": 4200,
+      "health": {
+        "status": "ok",
+        "mode": "authored"
+      },
+      "entryMatches": true,
+      "assets": [
+        {
+          "path": "assets/index-DDkLC4Xa.js",
+          "status": 200,
+          "sha256": "74f546b3d74fa74b8eff31bb237ca8d9ac00b65ad479126f058b662ddfd3107c",
+          "matches": true
+        },
+        {
+          "path": "assets/index-D7U2vX1x.css",
+          "status": 200,
+          "sha256": "e57e791c5fdcecf3f5546f1bf865fe6b4277f670cc02656b51feb159a1f5601d",
+          "matches": true
+        },
+        {
+          "path": "assets/GardenApp-BSJ5Icto.js",
+          "status": 200,
+          "sha256": "fea31266688d2af5ad58215d3d6d1676172b2cf7af3e5d70caf4cb2f6a297ddf",
+          "matches": true
+        },
+        {
+          "path": "assets/GardenApp-BFC0cA8q.css",
+          "status": 200,
+          "sha256": "4fc1d7765c7b5cc7f85ebe24337938a761c584d7d5ceea37d4adfe6e99087589",
+          "matches": true
+        }
+      ]
+    }
+  ],
+  "processes": [
+    "preview-processes.json",
+    "preview-4200-restart.json"
+  ],
+  "note": "Initial4200 stop failed and replacement hit EADDRINUSE; verified original was then stopped with Force and restart48876 succeeded. No browser save changes."
+}

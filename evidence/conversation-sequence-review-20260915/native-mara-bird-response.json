@@ -1,0 +1,43 @@
+{
+  "at": "2026-09-16T01:39:35.854Z",
+  "name": "native-mara-bird-response",
+  "snapshot": "- dialog \"The Torn Wing\":\n  - banner:\n    - link:\n      - /url: /garden\n      - text: Evidence Quest\n      - generic: THE GARDEN ADVENTURE\n    - generic: Saved in this browser\n    - navigation \"Reading tools\":\n      - button \"Backpack\":\n        - generic: Backpack\n      - button \"Help\":\n        - generic: Help\n      - button \"Pause\":\n        - generic: Pause\n  - region \"Play The Torn Wing\":\n    - strong: The Torn Wing · Mara’s earlier story\n    - generic: You guide Mara. Pip waits in Grandma’s garden.\n    - 'img \"Mara’s earlier dock: her office and tape on the left; the boy and his torn paper bird on the right. Named controls perform the same actions.\"'\n    - paragraph: The boy holds his sister’s torn bird. Speak to him before helping.\n    - button \"Speak to the boy\"\n    - button \"Read Mara’s page\"\n    - paragraph: Click the dock or use the arrow keys to walk. The boy keeps his sister’s original bird.\n  - generic: by Mara\n  - button \"Close page. Back to Mara’s earlier story\": ×\n  - heading \"The Torn Wing\" [active] [level=2]\n  - paragraph: Mara’s earlier story · You guide Mara; Pip stays in the garden\n  - paragraph:\n    - text: Click a word for its meaning and pronunciation.\n  - paragraph: Mara wrote this story about an earlier visit. “I” means Mara; the boy speaks about his sister’s paper bird.\n  - paragraph: Mara narrates\n  - paragraph:\n    - button \"Everyone\"\n    - button \"had\"\n    - button \"stepped\"\n    - button \"off\"\n    - button \"the\"\n    - button \"last\"\n    - button \"boat\"\n    - button \"except\"\n    - button \"a\"\n    - button \"boy\"\n    - button \"holding\"\n    - button \"a\"\n    - button \"paper\"\n    - button \"bird\"\n    - text: .\n  - paragraph: Mara\n  - paragraph:\n    - text: \"\\\"\"\n    - button \"Are\"\n    - button \"you\"\n    - button \"waiting\"\n    - button \"for\"\n    - button \"someone\"\n    - text: \"?\\\"\"\n    - button \"I\"\n    - button \"asked\"\n    - text: .\n  - paragraph: Mara narrates\n  - paragraph:\n    - button \"He\"\n    - button \"shook\"\n    - button \"his\"\n    - button \"head\"\n    - text: .\n  - paragraph: The boy\n  - paragraph:\n    - text: \"\\\"\"\n    - button \"This\"\n    - button \"is\"\n    - button \"for\"\n    - button \"my\"\n    - button \"grandmother\"\n    - text: .\n    - button \"My\"\n    - button \"sister\"\n    - button \"made\"\n    - button \"it\"\n    - text: \",\"\n    - button \"but\"\n    - button \"she's\"\n    - button \"too\"\n    - button \"ill\"\n    - button \"to\"\n    - button \"come\"\n    - text: .\n    - button \"I\"\n    - button \"promised\"\n    - button \"my\"\n    - button \"sister\"\n    - button \"I'd\"\n    - button \"keep\"\n    - button \"it\"\n    - button \"safe\"\n    - text: .\"\n  - paragraph: Mara narrates\n  - paragraph:\n    - button \"One\"\n    - button \"wing\"\n    - button \"was\"\n    - button \"torn\"\n    - text: .\n  - paragraph: Mara narrates\n  - paragraph:\n    - button \"I\"\n    - button \"reached\"\n    - button \"toward\"\n    - button \"the\"\n    - button \"bird\"\n    - text: \",\"\n    - button \"but\"\n    - button \"he\"\n    - button \"pulled\"\n    - button \"it\"\n    - button \"closer\"\n    - text: .\n  - button \"Hear this page\":\n    - text: Hear this page\n  - button \"Read a short part aloud\"\n  - group \"You are speaking as Mara. Choose your response.\":\n    - generic: You are speaking as Mara. Choose your response.\n    - button \"Would you like some help?\"\n  - navigation \"Conversation navigation\":\n    - button \"Back to Mara’s earlier story\"",
+  "dom": {
+    "active": "The Torn Wing",
+    "flow": [
+      {
+        "className": "garden-reader ",
+        "clientHeight": 656,
+        "flex": "0 1 auto",
+        "height": 656,
+        "overflow": "visible",
+        "scrollHeight": 656,
+        "top": 64
+      },
+      {
+        "className": "garden-reading-scroll",
+        "clientHeight": 475,
+        "flex": "0 1 auto",
+        "height": 475.0625,
+        "overflow": "auto",
+        "scrollHeight": 732,
+        "top": 178.1374969482422
+      },
+      {
+        "className": "g-reader-actions",
+        "clientHeight": 66,
+        "flex": "0 0 auto",
+        "height": 66.80000305175781,
+        "overflow": "visible",
+        "scrollHeight": 66,
+        "top": 653.2000122070312
+      }
+    ],
+    "url": "http://localhost:4198/garden",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "visible": "by Mara\n×\nThe Torn Wing\n\nMara’s earlier story · You guide Mara; Pip stays in the garden\n\nClick a word for its meaning and pronunciation.\n\nMara wrote this story about an earlier visit. “I” means Mara; the boy speaks about his sister’s paper bird.\n\nMara narrates\n\nEveryone had stepped off the last boat except a boy holding a paper bird.\n\nMara\n\n\"Are you waiting for someone?\" I asked.\n\nMara narrates\n\nHe shook his head.\n\nThe boy\n\n\"This is for my grandmother. My sister made it, but she's too ill to come. I promised my sister I'd keep it safe.\"\n\nMara narrates\n\nOne wing was torn.\n\nMara narrates\n\nI reached toward the bird, but he pulled it closer.\n\nHear this page\nRead a short part aloud\nYou are speaking as Mara. Choose your response.\nWould you like some help?\nBack to Mara’s earlier story"
+  }
+}

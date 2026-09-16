@@ -1,0 +1,753 @@
+{
+  "at": "2026-09-15T20:14:12.451Z",
+  "status": "RECORDED_QUALIFICATION_REMAINS_SCOPED",
+  "candidate": {
+    "garden": "assets/GardenApp-DQxss6LK.js",
+    "css": [
+      "assets/GardenApp-Cowp-FIg.css"
+    ],
+    "entry": "assets/index-Bk4gdjda.js"
+  },
+  "measurements": [
+    {
+      "browser": "chromium",
+      "test": "TASK11.20 first-encounter DPR1/DPR2 resource and active-cadence measurements",
+      "result": "passed",
+      "report": {
+        "path": "evidence/group-8-integration-20260915/browser-final-remainder.json",
+        "sha256": "1d7c2d0d8601a8a2ebf1eae3b7130066b34701ee6f984023ee1b902caa3d89ea"
+      },
+      "candidate": {
+        "garden": "assets/GardenApp-DMDJo1eK.js",
+        "css": [
+          "assets/GardenApp-Cowp-FIg.css"
+        ],
+        "entry": "assets/index-QL65HRqF.js"
+      },
+      "candidateReceipt": {
+        "path": "evidence/group-8-integration-20260915/browser-final-remainder-candidate.json",
+        "sha256": "7e098550344a329215bda4a776907489db411b38c990cf706cc77058891f4f86"
+      },
+      "attachment": "garden-renderer-measurements",
+      "data": [
+        {
+          "dpr": 1,
+          "openingMs": 266,
+          "render": {
+            "frames": 60,
+            "drawCalls": 705,
+            "triangles": 116614,
+            "geometries": 358,
+            "textures": 5,
+            "activeSamples": 46,
+            "p95": 16.800000000000068,
+            "lastRenderMs": 1.9000000059604645,
+            "dpr": 1,
+            "width": 1280,
+            "height": 497,
+            "geometryCpuBytes": 6859924,
+            "canvasColorBytes": 2544640,
+            "shadowDepthAllocationBytes": 9437184,
+            "sectionTextureBytes": 131072,
+            "gpuTotalMemory": "NOT_MEASURED",
+            "adapter": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+          },
+          "transfer": [
+            {
+              "url": "http://127.0.0.1:4196/assets/index-QL65HRqF.js",
+              "encodedBytes": 57628,
+              "transferBytes": 57928
+            },
+            {
+              "url": "http://127.0.0.1:4196/assets/index-D7U2vX1x.css",
+              "encodedBytes": 1042,
+              "transferBytes": 1342
+            },
+            {
+              "url": "http://127.0.0.1:4196/assets/GardenApp-DMDJo1eK.js",
+              "encodedBytes": 214557,
+              "transferBytes": 214857
+            },
+            {
+              "url": "http://127.0.0.1:4196/assets/serialized-AKKBhD_x.js",
+              "encodedBytes": 233,
+              "transferBytes": 533
+            },
+            {
+              "url": "http://127.0.0.1:4196/assets/GardenApp-Cowp-FIg.css",
+              "encodedBytes": 7132,
+              "transferBytes": 7432
+            }
+          ],
+          "checks": {
+            "initialTransferUnder4MiB": true,
+            "activeRafP95Under33_34ms": true
+          },
+          "limits": "Loopback and emulated density. RAF proxy, not physical display FPS. Total GPU memory and 10 Mbps/100 ms physical-device qualification not measured."
+        },
+        {
+          "dpr": 2,
+          "openingMs": 281,
+          "render": {
+            "frames": 60,
+            "drawCalls": 705,
+            "triangles": 116614,
+            "geometries": 358,
+            "textures": 5,
+            "activeSamples": 43,
+            "p95": 16.799999999999955,
+            "lastRenderMs": 2,
+            "dpr": 2,
+            "width": 2560,
+            "height": 994,
+            "geometryCpuBytes": 6859924,
+            "canvasColorBytes": 10178560,
+            "shadowDepthAllocationBytes": 9437184,
+            "sectionTextureBytes": 131072,
+            "gpuTotalMemory": "NOT_MEASURED",
+            "adapter": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+          },
+          "transfer": [
+            {
+              "url": "http://127.0.0.1:4196/assets/index-QL65HRqF.js",
+              "encodedBytes": 57628,
+              "transferBytes": 57928
+            },
+            {
+              "url": "http://127.0.0.1:4196/assets/index-D7U2vX1x.css",
+              "encodedBytes": 1042,
+              "transferBytes": 1342
+            },
+            {
+              "url": "http://127.0.0.1:4196/assets/GardenApp-DMDJo1eK.js",
+              "encodedBytes": 214557,
+              "transferBytes": 214857
+            },
+            {
+              "url": "http://127.0.0.1:4196/assets/GardenApp-Cowp-FIg.css",
+              "encodedBytes": 7132,
+              "transferBytes": 7432
+            },
+            {
+              "url": "http://127.0.0.1:4196/assets/serialized-AKKBhD_x.js",
+              "encodedBytes": 233,
+              "transferBytes": 533
+            }
+          ],
+          "checks": {
+            "initialTransferUnder4MiB": true,
+            "activeRafP95Under33_34ms": true
+          },
+          "limits": "Loopback and emulated density. RAF proxy, not physical display FPS. Total GPU memory and 10 Mbps/100 ms physical-device qualification not measured."
+        }
+      ]
+    },
+    {
+      "browser": "chromium",
+      "test": "WebGL context-loss recovery and measured rendering retain actual save",
+      "result": "passed",
+      "report": {
+        "path": "evidence/group-8-integration-20260915/browser-final-remainder.json",
+        "sha256": "1d7c2d0d8601a8a2ebf1eae3b7130066b34701ee6f984023ee1b902caa3d89ea"
+      },
+      "candidate": {
+        "garden": "assets/GardenApp-DMDJo1eK.js",
+        "css": [
+          "assets/GardenApp-Cowp-FIg.css"
+        ],
+        "entry": "assets/index-QL65HRqF.js"
+      },
+      "candidateReceipt": {
+        "path": "evidence/group-8-integration-20260915/browser-final-remainder-candidate.json",
+        "sha256": "7e098550344a329215bda4a776907489db411b38c990cf706cc77058891f4f86"
+      },
+      "attachment": "renderer-metrics",
+      "data": {
+        "frames": 30,
+        "drawCalls": 705,
+        "triangles": 116614,
+        "geometries": 316,
+        "textures": 5,
+        "activeSamples": 27,
+        "p95": 16.800000000000182,
+        "lastRenderMs": 2.199999988079071,
+        "dpr": 1,
+        "width": 1440,
+        "height": 777,
+        "geometryCpuBytes": 6859924,
+        "canvasColorBytes": 4475520,
+        "shadowDepthAllocationBytes": 9437184,
+        "sectionTextureBytes": 131072,
+        "gpuTotalMemory": "NOT_MEASURED",
+        "adapter": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      }
+    },
+    {
+      "browser": "chromium",
+      "test": "TASK11.20 first-encounter DPR1/DPR2 resource and active-cadence measurements",
+      "result": "passed",
+      "report": {
+        "path": "evidence/group-8-integration-20260915/browser-final-boat.json",
+        "sha256": "95192289985ecd2346bfc18d5f4ffded81219b06ba563774266186551caae787"
+      },
+      "candidate": {
+        "garden": "assets/GardenApp-DQxss6LK.js",
+        "css": [
+          "assets/GardenApp-Cowp-FIg.css"
+        ],
+        "entry": "assets/index-Bk4gdjda.js"
+      },
+      "candidateReceipt": {
+        "path": "evidence/group-8-integration-20260915/browser-final-boat-candidate.json",
+        "sha256": "6e6a5ebc0f8df79a6cf77cbff4f8b95c7b6defe3b62c7610611a10d035b0b565"
+      },
+      "attachment": "garden-renderer-measurements",
+      "data": [
+        {
+          "dpr": 1,
+          "openingMs": 313,
+          "render": {
+            "frames": 60,
+            "drawCalls": 705,
+            "triangles": 116614,
+            "geometries": 358,
+            "textures": 5,
+            "activeSamples": 45,
+            "p95": 16.799999999999955,
+            "lastRenderMs": 2.0999999940395355,
+            "dpr": 1,
+            "width": 1280,
+            "height": 497,
+            "geometryCpuBytes": 6859924,
+            "canvasColorBytes": 2544640,
+            "shadowDepthAllocationBytes": 9437184,
+            "sectionTextureBytes": 131072,
+            "gpuTotalMemory": "NOT_MEASURED",
+            "adapter": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+          },
+          "transfer": [
+            {
+              "url": "http://127.0.0.1:4196/assets/index-Bk4gdjda.js",
+              "encodedBytes": 57629,
+              "transferBytes": 57929
+            },
+            {
+              "url": "http://127.0.0.1:4196/assets/index-D7U2vX1x.css",
+              "encodedBytes": 1042,
+              "transferBytes": 1342
+            },
+            {
+              "url": "http://127.0.0.1:4196/assets/GardenApp-DQxss6LK.js",
+              "encodedBytes": 215018,
+              "transferBytes": 215318
+            },
+            {
+              "url": "http://127.0.0.1:4196/assets/GardenApp-Cowp-FIg.css",
+              "encodedBytes": 7132,
+              "transferBytes": 7432
+            },
+            {
+              "url": "http://127.0.0.1:4196/assets/serialized-AKKBhD_x.js",
+              "encodedBytes": 233,
+              "transferBytes": 533
+            }
+          ],
+          "checks": {
+            "initialTransferUnder4MiB": true,
+            "activeRafP95Under33_34ms": true
+          },
+          "limits": "Loopback and emulated density. RAF proxy, not physical display FPS. Total GPU memory and 10 Mbps/100 ms physical-device qualification not measured."
+        },
+        {
+          "dpr": 2,
+          "openingMs": 310,
+          "render": {
+            "frames": 60,
+            "drawCalls": 705,
+            "triangles": 116614,
+            "geometries": 358,
+            "textures": 5,
+            "activeSamples": 44,
+            "p95": 16.799999999999955,
+            "lastRenderMs": 2.5,
+            "dpr": 2,
+            "width": 2560,
+            "height": 994,
+            "geometryCpuBytes": 6859924,
+            "canvasColorBytes": 10178560,
+            "shadowDepthAllocationBytes": 9437184,
+            "sectionTextureBytes": 131072,
+            "gpuTotalMemory": "NOT_MEASURED",
+            "adapter": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+          },
+          "transfer": [
+            {
+              "url": "http://127.0.0.1:4196/assets/index-Bk4gdjda.js",
+              "encodedBytes": 57629,
+              "transferBytes": 57929
+            },
+            {
+              "url": "http://127.0.0.1:4196/assets/index-D7U2vX1x.css",
+              "encodedBytes": 1042,
+              "transferBytes": 1342
+            },
+            {
+              "url": "http://127.0.0.1:4196/assets/GardenApp-DQxss6LK.js",
+              "encodedBytes": 215018,
+              "transferBytes": 215318
+            },
+            {
+              "url": "http://127.0.0.1:4196/assets/GardenApp-Cowp-FIg.css",
+              "encodedBytes": 7132,
+              "transferBytes": 7432
+            },
+            {
+              "url": "http://127.0.0.1:4196/assets/serialized-AKKBhD_x.js",
+              "encodedBytes": 233,
+              "transferBytes": 533
+            }
+          ],
+          "checks": {
+            "initialTransferUnder4MiB": true,
+            "activeRafP95Under33_34ms": true
+          },
+          "limits": "Loopback and emulated density. RAF proxy, not physical display FPS. Total GPU memory and 10 Mbps/100 ms physical-device qualification not measured."
+        }
+      ]
+    }
+  ],
+  "gardenTargetResults": [
+    {
+      "browser": "chromium",
+      "candidate": {
+        "garden": "assets/GardenApp-DMDJo1eK.js",
+        "css": [
+          "assets/GardenApp-Cowp-FIg.css"
+        ],
+        "entry": "assets/index-QL65HRqF.js"
+      },
+      "candidateReceipt": {
+        "path": "evidence/group-8-integration-20260915/browser-final-remainder-candidate.json",
+        "sha256": "7e098550344a329215bda4a776907489db411b38c990cf706cc77058891f4f86"
+      },
+      "report": {
+        "path": "evidence/group-8-integration-20260915/browser-final-remainder.json",
+        "sha256": "1d7c2d0d8601a8a2ebf1eae3b7130066b34701ee6f984023ee1b902caa3d89ea"
+      },
+      "dpr": 1,
+      "openingMs": 266,
+      "adapter": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "activeSamples": 46,
+      "activeP95Ms": 16.800000000000068,
+      "encodedBytes": 280592,
+      "checks": {
+        "initialTransferUnder4MiB": true,
+        "activeRafP95Under33_34ms": true
+      },
+      "limits": "Loopback and emulated density. RAF proxy, not physical display FPS. Total GPU memory and 10 Mbps/100 ms physical-device qualification not measured."
+    },
+    {
+      "browser": "chromium",
+      "candidate": {
+        "garden": "assets/GardenApp-DMDJo1eK.js",
+        "css": [
+          "assets/GardenApp-Cowp-FIg.css"
+        ],
+        "entry": "assets/index-QL65HRqF.js"
+      },
+      "candidateReceipt": {
+        "path": "evidence/group-8-integration-20260915/browser-final-remainder-candidate.json",
+        "sha256": "7e098550344a329215bda4a776907489db411b38c990cf706cc77058891f4f86"
+      },
+      "report": {
+        "path": "evidence/group-8-integration-20260915/browser-final-remainder.json",
+        "sha256": "1d7c2d0d8601a8a2ebf1eae3b7130066b34701ee6f984023ee1b902caa3d89ea"
+      },
+      "dpr": 2,
+      "openingMs": 281,
+      "adapter": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "activeSamples": 43,
+      "activeP95Ms": 16.799999999999955,
+      "encodedBytes": 280592,
+      "checks": {
+        "initialTransferUnder4MiB": true,
+        "activeRafP95Under33_34ms": true
+      },
+      "limits": "Loopback and emulated density. RAF proxy, not physical display FPS. Total GPU memory and 10 Mbps/100 ms physical-device qualification not measured."
+    },
+    {
+      "browser": "chromium",
+      "candidate": {
+        "garden": "assets/GardenApp-DQxss6LK.js",
+        "css": [
+          "assets/GardenApp-Cowp-FIg.css"
+        ],
+        "entry": "assets/index-Bk4gdjda.js"
+      },
+      "candidateReceipt": {
+        "path": "evidence/group-8-integration-20260915/browser-final-boat-candidate.json",
+        "sha256": "6e6a5ebc0f8df79a6cf77cbff4f8b95c7b6defe3b62c7610611a10d035b0b565"
+      },
+      "report": {
+        "path": "evidence/group-8-integration-20260915/browser-final-boat.json",
+        "sha256": "95192289985ecd2346bfc18d5f4ffded81219b06ba563774266186551caae787"
+      },
+      "dpr": 1,
+      "openingMs": 313,
+      "adapter": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "activeSamples": 45,
+      "activeP95Ms": 16.799999999999955,
+      "encodedBytes": 281054,
+      "checks": {
+        "initialTransferUnder4MiB": true,
+        "activeRafP95Under33_34ms": true
+      },
+      "limits": "Loopback and emulated density. RAF proxy, not physical display FPS. Total GPU memory and 10 Mbps/100 ms physical-device qualification not measured."
+    },
+    {
+      "browser": "chromium",
+      "candidate": {
+        "garden": "assets/GardenApp-DQxss6LK.js",
+        "css": [
+          "assets/GardenApp-Cowp-FIg.css"
+        ],
+        "entry": "assets/index-Bk4gdjda.js"
+      },
+      "candidateReceipt": {
+        "path": "evidence/group-8-integration-20260915/browser-final-boat-candidate.json",
+        "sha256": "6e6a5ebc0f8df79a6cf77cbff4f8b95c7b6defe3b62c7610611a10d035b0b565"
+      },
+      "report": {
+        "path": "evidence/group-8-integration-20260915/browser-final-boat.json",
+        "sha256": "95192289985ecd2346bfc18d5f4ffded81219b06ba563774266186551caae787"
+      },
+      "dpr": 2,
+      "openingMs": 310,
+      "adapter": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "activeSamples": 44,
+      "activeP95Ms": 16.799999999999955,
+      "encodedBytes": 281054,
+      "checks": {
+        "initialTransferUnder4MiB": true,
+        "activeRafP95Under33_34ms": true
+      },
+      "limits": "Loopback and emulated density. RAF proxy, not physical display FPS. Total GPU memory and 10 Mbps/100 ms physical-device qualification not measured."
+    }
+  ],
+  "native": [
+    {
+      "path": "evidence/group-8-review-20260915/native-corrected-cadence.json",
+      "sha256": "31ce0d8ebab9766d13e55ea0a5cb1f2acd374d551fd7de4398862d9335da9d99",
+      "data": {
+        "at": "2026-09-15T17:39:09.306Z",
+        "result": "PASS_BOUNDED_NATIVE_ACTIVE_CADENCE",
+        "candidate": "GardenApp-Bpq_fagU.js / GardenApp-Cowp-FIg.css / index-BB_gbQ44.js",
+        "scope": "Actual supported native in-app browser public data-metrics after completed-adventure reload and two ordinary Go to Sol / Go to Mara trips across the repaired bridge. Heavy automated browser checks were idle by coordination. The initial one-sample idle reading is excluded from qualification.",
+        "targetP95Ms": 33.34,
+        "checks": [
+          {
+            "label": "after completed-route reload, before new travel",
+            "at": "2026-09-15T17:37:48.629Z",
+            "metrics": [
+              {
+                "activeSamples": 1,
+                "adapter": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+                "canvasColorBytes": 4151004,
+                "dpr": 1.125,
+                "drawCalls": 604,
+                "frames": 360,
+                "geometries": 394,
+                "geometryCpuBytes": 6956908,
+                "gpuTotalMemory": "NOT_MEASURED",
+                "height": 649,
+                "lastRenderMs": 4.300000011920929,
+                "p95": 16.700000000000017,
+                "sectionTextureBytes": 131072,
+                "shadowDepthAllocationBytes": 9437184,
+                "textures": 3,
+                "triangles": 95024,
+                "width": 1599
+              }
+            ],
+            "scripts": [
+              "http://127.0.0.1:4197/assets/index-BB_gbQ44.js"
+            ],
+            "text": "Evidence Quest\nTHE GARDEN ADVENTURE\nSaved in this browser\nBackpack\nHelp\nPause\nWhat’s happening\n\nWatch the ending with Jo and Loop, or explore your stories.\n\nYOUR ADVENTURE\nYour Garden Adventure is complete.\n\nWatch the ending with Jo and Loop, or explore your stories.\n\nWhere is that?\nThe riverbank\nPlaces & scene description\nYou are Pip · Explore, talk and help\nTalk to Mara\nE\nGo to Sol\nGo to Grandma\nLantern stories\nWatch your ending\nPlay from the beginning",
+            "url": "http://127.0.0.1:4197/garden",
+            "viewport": {
+              "dpr": 1.125,
+              "height": 800,
+              "width": 1422
+            }
+          },
+          {
+            "label": "ordinary dock-to-workshop travel",
+            "at": "2026-09-15T17:38:02.590Z",
+            "metrics": [
+              {
+                "activeSamples": 275,
+                "adapter": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+                "canvasColorBytes": 4151004,
+                "dpr": 1.125,
+                "drawCalls": 809,
+                "frames": 840,
+                "geometries": 397,
+                "geometryCpuBytes": 6956908,
+                "gpuTotalMemory": "NOT_MEASURED",
+                "height": 649,
+                "lastRenderMs": 1.9000000059604645,
+                "p95": 16.799999999999272,
+                "sectionTextureBytes": 131072,
+                "shadowDepthAllocationBytes": 9437184,
+                "textures": 5,
+                "triangles": 119730,
+                "width": 1599
+              }
+            ],
+            "scripts": [
+              "http://127.0.0.1:4197/assets/index-BB_gbQ44.js"
+            ],
+            "text": "Evidence Quest\nTHE GARDEN ADVENTURE\nSaved in this browser\nBackpack\nHelp\nPause\nWhat’s happening\n\nPip is here. Choose the nearby action.\n\nMara\nGrandma\nFootbridge\nSeed boat\nSol\nLantern stories\nRina’s bakery\nYOUR ADVENTURE\nYour Garden Adventure is complete.\n\nWatch the ending with Jo and Loop, or explore your stories.\n\nWhere is that?\nGrandma’s garden\nPlaces & scene description\nYou are Pip · Explore, talk and help\nTalk to Sol\nGo to Grandma\nLantern stories\nWatch your ending\nPlay from the beginning",
+            "url": "http://127.0.0.1:4197/garden",
+            "viewport": {
+              "dpr": 1.125,
+              "height": 800,
+              "width": 1422
+            }
+          },
+          {
+            "label": "ordinary workshop-to-dock return",
+            "at": "2026-09-15T17:38:39.583Z",
+            "metrics": [
+              {
+                "activeSamples": 549,
+                "adapter": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+                "canvasColorBytes": 4151004,
+                "dpr": 1.125,
+                "drawCalls": 604,
+                "frames": 1740,
+                "geometries": 397,
+                "geometryCpuBytes": 6956908,
+                "gpuTotalMemory": "NOT_MEASURED",
+                "height": 649,
+                "lastRenderMs": 1.699999988079071,
+                "p95": 16.799999999999272,
+                "sectionTextureBytes": 131072,
+                "shadowDepthAllocationBytes": 9437184,
+                "textures": 5,
+                "triangles": 95024,
+                "width": 1599
+              }
+            ],
+            "scripts": [
+              "http://127.0.0.1:4197/assets/index-BB_gbQ44.js"
+            ],
+            "text": "Evidence Quest\nTHE GARDEN ADVENTURE\nSaved in this browser\nBackpack\nHelp\nPause\nWhat’s happening\n\nPip is here. Choose the nearby action.\n\nYOUR ADVENTURE\nYour Garden Adventure is complete.\n\nWatch the ending with Jo and Loop, or explore your stories.\n\nWhere is that?\nThe riverbank\nPlaces & scene description\n\nPip is on the dock side of the river. The two wooden bridge sections are joined. Dock-side end fastened. Garden-side end fastened. The separate seed boat is by the dock-side bank. The seed is planted in the soil. Pip carries Mara's page. The lantern-flower is open. The garden keeps the stories that were shared.\n\nGo to Mara\nGo to the bridge pieces\nGo to Grandma\nGo to Sol\nOpen lantern stories\nInspect a particular flower\nYou are Pip · Explore, talk and help\nTalk to Mara\nE\nGo to Sol\nGo to Grandma\nLantern stories\nWatch your ending\nPlay from the beginning",
+            "url": "http://127.0.0.1:4197/garden",
+            "viewport": {
+              "dpr": 1.125,
+              "height": 800,
+              "width": 1422
+            }
+          }
+        ],
+        "qualifiedSamples": 549,
+        "qualifiedP95Ms": 16.799999999999272,
+        "limitations": [
+          "One native Chromium device at1422x800 CSS pixels and DPR1.125, NVIDIA RTX3070Ti; not all-device/cross-browser/DPR2 qualification.",
+          "GPU total memory is NOT_MEASURED; allocation counters are not total VRAM.",
+          "No lower art detail or relaxed target was used."
+        ]
+      }
+    },
+    {
+      "path": "evidence/group-8-review-20260915/legacy-transfer-observation.json",
+      "sha256": "eadd2e5cb9cc236e1d23bdc80f6e1b76c8fcd555193a681573c1bba7152f4397",
+      "data": {
+        "at": "2026-09-15T18:51:56.665Z",
+        "status": "RECORDED_OPEN_LEGACY_DPR2_QUALIFICATION",
+        "scope": "Exact current original-four-room DPR2 transfer failures recorded while the final regression is still running. The source metrics are retained byte for byte before any later restoration of generated evidence. This is not a claim that the final report or Garden performance passed.",
+        "candidate": {
+          "garden": "assets/GardenApp-DMDJo1eK.js",
+          "css": [
+            "assets/GardenApp-Cowp-FIg.css"
+          ],
+          "entry": "assets/index-QL65HRqF.js"
+        },
+        "candidateReceipt": {
+          "path": "evidence/group-8-integration-20260915/candidate-final-controls.json",
+          "sha256": "7e098550344a329215bda4a776907489db411b38c990cf706cc77058891f4f86"
+        },
+        "test": {
+          "path": "browser-tests/production.spec.ts",
+          "sha256": "46da3087b3b0d6904253d0dd63f6b398f6b82c50f69691958886e6598eafd221"
+        },
+        "observed": [
+          {
+            "format": "webp",
+            "checkedAt": "2026-09-15T18:50:04.807Z",
+            "sourceAtObservation": "evidence/er13/performance/chromium-dpr2-webp.json",
+            "exactRetainedCopy": {
+              "path": "evidence/group-8-review-20260915/legacy-dpr2-webp-current.json",
+              "sha256": "4b89a38cad98a03f83c076ef0062a191de5d31c9a3561e2a985b13b40be8d771"
+            },
+            "cold": {
+              "encodedBytes": 4203826,
+              "limitBytes": 4194304,
+              "excessBytes": 9522
+            },
+            "roomFailures": [
+              {
+                "visit": 1,
+                "room": "SC.CY",
+                "artEncodedBytes": 3600426,
+                "limitBytes": 3145728,
+                "excessBytes": 454698
+              },
+              {
+                "visit": 6,
+                "room": "SC.ST",
+                "artEncodedBytes": 3438310,
+                "limitBytes": 3145728,
+                "excessBytes": 292582
+              }
+            ],
+            "usableMs": 985,
+            "usableLimitMs": 5000,
+            "distinctRequestedRgbaUpperSum": 61997288,
+            "distinctRequestedRgbaLimit": 201326592,
+            "canvasPoolPeaks": [
+              {
+                "room": "SC.ST",
+                "bytes": [
+                  15467304
+                ]
+              },
+              {
+                "room": "SC.CY",
+                "bytes": [
+                  27269824
+                ]
+              },
+              {
+                "room": "SC.ST",
+                "bytes": [
+                  27269824
+                ]
+              },
+              {
+                "room": "SC.WK",
+                "bytes": [
+                  27269824
+                ]
+              },
+              {
+                "room": "SC.MD",
+                "bytes": [
+                  27269824
+                ]
+              },
+              {
+                "room": "SC.WK",
+                "bytes": [
+                  27269824
+                ]
+              },
+              {
+                "room": "SC.ST",
+                "bytes": [
+                  27269824
+                ]
+              }
+            ],
+            "canvasPoolLimit": 50331648,
+            "pageErrors": []
+          },
+          {
+            "format": "png",
+            "checkedAt": "2026-09-15T18:50:38.836Z",
+            "sourceAtObservation": "evidence/er13/performance/chromium-dpr2-png.json",
+            "exactRetainedCopy": {
+              "path": "evidence/group-8-review-20260915/legacy-dpr2-png-current.json",
+              "sha256": "bdeb38a1b722bc98591f2dee0c988eb9e1f35d12fd5456d44b75af1abfb24055"
+            },
+            "cold": {
+              "encodedBytes": 5440991,
+              "limitBytes": 5242880,
+              "excessBytes": 198111
+            },
+            "roomFailures": [
+              {
+                "visit": 1,
+                "room": "SC.CY",
+                "artEncodedBytes": 5325020,
+                "limitBytes": 4456448,
+                "excessBytes": 868572
+              }
+            ],
+            "usableMs": 1523,
+            "usableLimitMs": 5000,
+            "distinctRequestedRgbaUpperSum": 60456168,
+            "distinctRequestedRgbaLimit": 201326592,
+            "canvasPoolPeaks": [
+              {
+                "room": "SC.ST",
+                "bytes": [
+                  15467304
+                ]
+              },
+              {
+                "room": "SC.CY",
+                "bytes": [
+                  25655104
+                ]
+              },
+              {
+                "room": "SC.ST",
+                "bytes": [
+                  25655104
+                ]
+              },
+              {
+                "room": "SC.WK",
+                "bytes": [
+                  25655104
+                ]
+              },
+              {
+                "room": "SC.MD",
+                "bytes": [
+                  25655104
+                ]
+              },
+              {
+                "room": "SC.WK",
+                "bytes": [
+                  25655104
+                ]
+              },
+              {
+                "room": "SC.ST",
+                "bytes": [
+                  25655104
+                ]
+              }
+            ],
+            "canvasPoolLimit": 50331648,
+            "pageErrors": []
+          }
+        ],
+        "limits": "Existing format allocations, image quality and resource limits are unchanged. Final complete browser reports and their actual assertion errors must be reconciled separately."
+      }
+    }
+  ],
+  "softwareFailure": {
+    "reference": "evidence/group-8-integration-20260915/renderer-change.json",
+    "retained": true
+  },
+  "limits": [
+    "Each browser report and native receipt names its actual adapter, density and viewport. Passing a collection test does not make a false recorded target pass.",
+    "RAF cadence is a responsiveness proxy, not measured physical-display FPS; total GPU memory remains unmeasured.",
+    "The preserved original-room format/device qualifications remain separate. Current functional cases do not waive prior unresolved format, device or final illustrated-art requirements."
+  ]
+}

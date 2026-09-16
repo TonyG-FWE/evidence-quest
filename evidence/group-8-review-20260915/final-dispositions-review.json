@@ -1,0 +1,4080 @@
+{
+  "at": "2026-09-15T20:46:34.454Z",
+  "result": "PASS_BOUNDED_FINAL_169_DISPOSITIONS",
+  "scope": "Independent final reconciliation of all 169 original findings, acceptance wording, original owners, accepted event references, concrete local runtime/check evidence and explicit qualifications. This does not turn a local pass into owner, live AI, microphone, art, performance or learner acceptance.",
+  "candidate": {
+    "garden": "assets/GardenApp-D-NRNTbz.js",
+    "css": [
+      "assets/GardenApp-Cowp-FIg.css"
+    ],
+    "entry": "assets/index-sMxSaulA.js"
+  },
+  "rows": 169,
+  "additionalQualificationOpen": 32,
+  "sourceBaseline": {
+    "path": "evidence/group-8-review-20260915/final-disposition-baseline.json",
+    "sha256": "2f1bdc906d0d40b8821debbac80df7f6be36bb3ab3e82319a490c6af4a05caf3"
+  },
+  "sourceAddenda": [
+    {
+      "path": "evidence/group-8-review-20260915/final-disposition-addendum.json",
+      "sha256": "d491b4d351d9b654e79f058f82b618399645af1a4c22a8f482fd1b7d5c12a9bd"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/final-disposition-input-addendum.json",
+      "sha256": "78b35984f925cc0e122acc39624a08000743e95a5d37c04a79e09e5c03c53610"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/final-disposition-final-addendum.json",
+      "sha256": "a23c29c6e221cfda28d5230447e4e8754dfdcfbe01c7cba6e1a77a1edf8133d8"
+    }
+  ],
+  "ledger": {
+    "path": "docs/game-review/GROUPS-1-8-RUNTIME-COVERAGE.json",
+    "sha256": "e3be5d48a7be267cd90582fc0560ddff71b3caae3ec7985092289afcaa243ea6"
+  },
+  "reviewed": [
+    {
+      "id": "GA-A01",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E01",
+        "G1-E02",
+        "G1-E31",
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.07",
+        "TASK11.15",
+        "TASK11.16"
+      ],
+      "behavior": "The opening, current goal, actual action feedback and ending explain Pip's purpose and the connected next task; independent first-time comprehension still needs owner and learner review.",
+      "checkKinds": [
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": [
+        "owner",
+        "learner"
+      ]
+    },
+    {
+      "id": "GA-A02",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E01"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.07",
+        "TASK11.15",
+        "TASK11.16"
+      ],
+      "behavior": "Jo and ready Loop introduce guiding Pip and later showing the resulting adventure; beginning enters the playable river world.",
+      "checkKinds": [
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-A03",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E02",
+        "G1-E09",
+        "G1-E30"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.07",
+        "TASK11.15",
+        "TASK11.16"
+      ],
+      "behavior": "The original carried seed moves through optional cargo receipt to joint planting, growth, Pip's memory and the final opening paragraph.",
+      "checkKinds": [
+        "whole",
+        "river",
+        "finale",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-A04",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E02",
+        "G1-E28"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.07",
+        "TASK11.15",
+        "TASK11.16"
+      ],
+      "behavior": "Grandma's initial assumption is followed by Mara's actual schedule report and Sol's spoken disclosure before Grandma finishes and tells her account.",
+      "checkKinds": [
+        "whole",
+        "gathering",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-A05",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E02",
+        "G1-E28"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.07",
+        "TASK11.15",
+        "TASK11.16"
+      ],
+      "behavior": "Current source wording places changed hours and reluctance before storm damage; completing the bridge does not complete work or the later conversations.",
+      "checkKinds": [
+        "whole",
+        "mara",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-A06",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E01"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.07",
+        "TASK11.15",
+        "TASK11.16"
+      ],
+      "behavior": "The full chapter reaches an actual closing and matching Loop show; the separately edited recording is bound to real route footage.",
+      "checkKinds": [
+        "whole",
+        "matrix",
+        "recording"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-A07",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E01"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.07",
+        "TASK11.15",
+        "TASK11.16"
+      ],
+      "behavior": "Reader context and world controls identify Pip, directed Sol, earlier-story Mara and the current speaker; support returns to that role.",
+      "checkKinds": [
+        "whole",
+        "interaction",
+        "bakery",
+        "mara",
+        "gathering"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-A08",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E01",
+        "G1-E02",
+        "G1-E31",
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.07",
+        "TASK11.15",
+        "TASK11.16"
+      ],
+      "behavior": "Confirmation leaves the reader for atomic pickup, delivery, repair, rehearsal, arrivals, speaking, memory or presentation under the same coordinator.",
+      "checkKinds": [
+        "whole",
+        "interaction",
+        "bakery",
+        "mara",
+        "gathering",
+        "finale"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-A09",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E01",
+        "G1-E02",
+        "G1-E31",
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.07",
+        "TASK11.15",
+        "TASK11.16"
+      ],
+      "behavior": "Instructions establish reach, fastenings, schedule, permission, leak and story consequences before their choices; tests exercise applying and revising them, not child understanding.",
+      "checkKinds": [
+        "whole",
+        "river",
+        "bakery",
+        "mara",
+        "interaction",
+        "matrix"
+      ],
+      "additionalQualification": [
+        "learner"
+      ]
+    },
+    {
+      "id": "GA-A10",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E02"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.07",
+        "TASK11.15",
+        "TASK11.16"
+      ],
+      "behavior": "Current copy names the actor, object and purpose; local word and phrase support remains available. Adult inspection does not establish age-band usability.",
+      "checkKinds": [
+        "whole",
+        "words",
+        "interaction"
+      ],
+      "additionalQualification": [
+        "owner",
+        "learner"
+      ]
+    },
+    {
+      "id": "GA-B01",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E02",
+        "G1-E04",
+        "G1-E17"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.08",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Dock, bridge material area, garden, connected bakery and workshop each have approaches, named controls, relevant objects and observable work.",
+      "checkKinds": [
+        "whole",
+        "bakery",
+        "river",
+        "mara"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-B02",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E02",
+        "G1-E04",
+        "G1-E17"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.08",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Current cast roles and attributed turns remain distinct; the bird boy's grandmother is separate, Duet uses a passenger, and the dock has a separate operator.",
+      "checkKinds": [
+        "whole",
+        "mara",
+        "gathering",
+        "finale"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-B03",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E04"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.08",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Actual targets have scene picking and named controls; contextual activity instructions distinguish items, previews, sources and scenery.",
+      "checkKinds": [
+        "whole",
+        "river",
+        "bakery",
+        "mara"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-B04",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E04"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.08",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "The maintenance notice identifies Grandma's two reusable storm-damaged wooden sections and ropes with standing permission; there is no invented wood crafting economy.",
+      "checkKinds": [
+        "whole",
+        "river"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-B05",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E04",
+        "G1-E17"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.08",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Collecting the maintenance ropes and Rina's permitted spare tile visibly changes possession and enables their distinct uses.",
+      "checkKinds": [
+        "river",
+        "bakery",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-B06",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E02"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.08",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Backpack entries explain seed, page, ropes and tile ownership/use; finished stories are separately identified readable records.",
+      "checkKinds": [
+        "river",
+        "bakery",
+        "interaction"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-B07",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E02",
+        "G1-E31"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.08",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Pickup, handoff, planting, roof delivery, return-copy delivery and archived restart retain exact owners and do not duplicate records or objects.",
+      "checkKinds": [
+        "whole",
+        "river",
+        "bakery",
+        "save",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-B08",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E07",
+        "G1-E17"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.08",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Contextual actions name the item and recipient, then show the actual handoff; no arbitrary inventory drag is required.",
+      "checkKinds": [
+        "whole",
+        "interaction",
+        "bakery",
+        "river"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-B09",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E02",
+        "G1-E04",
+        "G1-E17"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.08",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Named posts, framed repair areas and explicit object feedback remove exact-pixel targeting; current viewport observations do not qualify final illustrated artwork or every display.",
+      "checkKinds": [
+        "river",
+        "bakery",
+        "measurements"
+      ],
+      "additionalQualification": [
+        "art",
+        "devices"
+      ]
+    },
+    {
+      "id": "GA-C01",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E03"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.06",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Mara's first conversation names her actual passenger obligation and offers observing the current dock service before any final-duty completion.",
+      "checkKinds": [
+        "mara",
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-C02",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E03"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.06",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "A passenger launch with benches/operator and passengers is separate from the open seed cargo boat and fixed wooden bridge sections.",
+      "checkKinds": [
+        "river",
+        "mara",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-C03",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E03"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.06",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Current service and the final event show actual passengers coming ashore before Mara can leave; no passenger-management side quest was added.",
+      "checkKinds": [
+        "mara",
+        "gathering",
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-C04",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E03"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.06",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Mara explains the last-boat overlap; usual/later choices and the world rehearsal make the constraint visible without counting down reading time.",
+      "checkKinds": [
+        "interaction",
+        "mara",
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-C05",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E03"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.06",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Offering bridge repair for usual-time attendance receives a specific work explanation; repaired access cannot set Mara off duty.",
+      "checkKinds": [
+        "mara",
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-C06",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E03",
+        "G1-E11",
+        "G1-E23"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.06",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Offers, early time agreement, scoped invitations and Grandma's final report have separate retained state and specific replies.",
+      "checkKinds": [
+        "interaction",
+        "mara",
+        "gathering",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-C07",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E03",
+        "G1-E23"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.06",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Permission and a visible page handoff precede carried ownership; opening the page or taking it never creates attendance.",
+      "checkKinds": [
+        "interaction",
+        "mara",
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-C08",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E03"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.06",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Mara's request to hear Grandma is fulfilled through actual attendance or the later physical copy receipt, not an inferred read event.",
+      "checkKinds": [
+        "whole",
+        "matrix",
+        "finale"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-C09",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E23",
+        "G1-E24"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.06",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "All three Mara arrangements change actual attendance, teller/listener behavior, final service and applicable delivery duty.",
+      "checkKinds": [
+        "whole",
+        "matrix",
+        "gathering"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-D01",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E04"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.10",
+        "TASK11.11",
+        "TASK11.15",
+        "TASK11.21"
+      ],
+      "behavior": "Visible broken crossing sections and the maintenance note explain damage, reuse and the connection to Grandma's bank.",
+      "checkKinds": [
+        "river",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-D02",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E05"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.10",
+        "TASK11.11",
+        "TASK11.15",
+        "TASK11.21"
+      ],
+      "behavior": "Generous visible post previews and placement tolerance support ordinary positioning; wide gaps and unplaced previews remain distinct.",
+      "checkKinds": [
+        "river"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-D03",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E04",
+        "G1-E05"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.10",
+        "TASK11.11",
+        "TASK11.15",
+        "TASK11.21"
+      ],
+      "behavior": "Opposing narrow and wide posts are labeled and available through native non-drag placement controls as well as scene targets.",
+      "checkKinds": [
+        "river",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-D04",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E05"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.10",
+        "TASK11.11",
+        "TASK11.15",
+        "TASK11.21"
+      ],
+      "behavior": "The selected real section can move and turn; explicit Place and Join apply the preview, preserving materials and explaining misalignment.",
+      "checkKinds": [
+        "river",
+        "save"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-D05",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E05"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.10",
+        "TASK11.11",
+        "TASK11.15",
+        "TASK11.21"
+      ],
+      "behavior": "The same section lengths span the narrow crossing and leave a visible gap at the wide crossing; recovery reuses them without resizing.",
+      "checkKinds": [
+        "river"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-D06",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E05"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.10",
+        "TASK11.11",
+        "TASK11.15",
+        "TASK11.21"
+      ],
+      "behavior": "Each end has its own attachment identity and rope; one secured bank never implies the other end is fastened.",
+      "checkKinds": [
+        "river",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-D07",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E06"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.10",
+        "TASK11.11",
+        "TASK11.15",
+        "TASK11.21"
+      ],
+      "behavior": "An ordinary attempt onto a reaching unsecured span triggers the same collapse through named, pointer or keyboard travel.",
+      "checkKinds": [
+        "river",
+        "loose"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-D08",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E06"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.10",
+        "TASK11.11",
+        "TASK11.15",
+        "TASK11.21"
+      ],
+      "behavior": "Collapse returns Pip safely and places the intact sections at readable recovery positions; correct attachments and unrelated progress survive rebuilding.",
+      "checkKinds": [
+        "river",
+        "loose",
+        "save"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-D09",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E05",
+        "G1-E06"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.10",
+        "TASK11.11",
+        "TASK11.15",
+        "TASK11.21"
+      ],
+      "behavior": "Unspanned water, section mismatch, loose ends, occupied boat route and unavailable actions have separate current feedback.",
+      "checkKinds": [
+        "river",
+        "interaction"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-D10",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E04",
+        "G1-E05"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.10",
+        "TASK11.11",
+        "TASK11.15",
+        "TASK11.21"
+      ],
+      "behavior": "Construction context identifies the selected section, current preview, confirmation and return; the competing walk goal is suppressed.",
+      "checkKinds": [
+        "river",
+        "interaction"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-D11",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E07",
+        "G1-E08"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.10",
+        "TASK11.11",
+        "TASK11.15",
+        "TASK11.21"
+      ],
+      "behavior": "The navigable channel, actual cargo position and permanent bridge are separate; completed river travel never turns the bridge into a boat.",
+      "checkKinds": [
+        "river",
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-D12",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E06"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.10",
+        "TASK11.11",
+        "TASK11.15",
+        "TASK11.21"
+      ],
+      "behavior": "Successful-first, missing-end collapse/recovery, seed-first/carry routes and interruption retain identical resources and valid progress.",
+      "checkKinds": [
+        "river",
+        "loose",
+        "save",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-E01",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E07"
+      ],
+      "owners": [
+        "TASK11.08",
+        "TASK11.10",
+        "TASK11.11",
+        "TASK11.12",
+        "TASK11.15"
+      ],
+      "behavior": "Sending the seed ahead explicitly lets Grandma receive it and prepare soil while Pip still needs to cross; carrying it is equally valid.",
+      "checkKinds": [
+        "whole",
+        "river",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-E02",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E07"
+      ],
+      "owners": [
+        "TASK11.08",
+        "TASK11.10",
+        "TASK11.11",
+        "TASK11.12",
+        "TASK11.15"
+      ],
+      "behavior": "Loading, steering and explicit dock receipt move the sole seed while Pip stays ashore and Grandma receives it.",
+      "checkKinds": [
+        "river",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-E03",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E07"
+      ],
+      "owners": [
+        "TASK11.08",
+        "TASK11.10",
+        "TASK11.11",
+        "TASK11.12",
+        "TASK11.15"
+      ],
+      "behavior": "Cargo and empty-boat states identify their different effects; later harmless use cannot transfer a planted seed or count another substantive task.",
+      "checkKinds": [
+        "river",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-E04",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E08",
+        "G1-E09"
+      ],
+      "owners": [
+        "TASK11.08",
+        "TASK11.10",
+        "TASK11.11",
+        "TASK11.12",
+        "TASK11.15"
+      ],
+      "behavior": "Plant confirmation returns to the world and moves the same seed from its actual holder into soil with Pip and Grandma together.",
+      "checkKinds": [
+        "whole",
+        "river",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-E05",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E09",
+        "G1-E10"
+      ],
+      "owners": [
+        "TASK11.08",
+        "TASK11.10",
+        "TASK11.11",
+        "TASK11.12",
+        "TASK11.15"
+      ],
+      "behavior": "Planting and bloom have separate coherent boundaries and resume once; the rooted flower is the original seed's fulfilled promise.",
+      "checkKinds": [
+        "whole",
+        "river",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-E06",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E07",
+        "G1-E09",
+        "G1-E10"
+      ],
+      "owners": [
+        "TASK11.08",
+        "TASK11.10",
+        "TASK11.11",
+        "TASK11.12",
+        "TASK11.15"
+      ],
+      "behavior": "Grandma responds to the fulfilled promise and explains her garden and missing visitors; the next task reflects what Pip actually knows.",
+      "checkKinds": [
+        "whole",
+        "river",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-F01",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E11"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.07",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.15"
+      ],
+      "behavior": "Grandma explains earlier story flowers, waiting places and new sharing before the library becomes part of the interaction.",
+      "checkKinds": [
+        "whole",
+        "river",
+        "finale"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-F02",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E12"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.07",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.15"
+      ],
+      "behavior": "Picnic and Duet are explicitly older, authored optional stories; source support returns to the ongoing adventure without a collection requirement.",
+      "checkKinds": [
+        "whole",
+        "finale",
+        "words"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-F03",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E10",
+        "G1-E11"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.07",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.15"
+      ],
+      "behavior": "Old contributions, three waiting flowers and the separately planted Pip flower are individually visible and inspectable before and after sharing.",
+      "checkKinds": [
+        "finale",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-F04",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E12"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.07",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.15"
+      ],
+      "behavior": "Each particular world flower opens its own owner, status, image and available source, retaining the world menu and focus on return.",
+      "checkKinds": [
+        "finale",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-F05",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E15"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.07",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.15"
+      ],
+      "behavior": "Actual sharing changes the designated rooted flower once, with its title, author and supported picture rather than a generic completion counter.",
+      "checkKinds": [
+        "whole",
+        "mara",
+        "gathering",
+        "finale",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-F06",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E11",
+        "G1-E28"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.07",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.15"
+      ],
+      "behavior": "Only Pip's actual report updates Grandma's knowledge of Mara; supplied explanation is identified separately from the child's own text.",
+      "checkKinds": [
+        "whole",
+        "mara",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-F07",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E08",
+        "G1-E11"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.07",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.15"
+      ],
+      "behavior": "Three actual visit-order families preserve known reports, current character location and completed work without inventing conversations.",
+      "checkKinds": [
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-F08",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E12",
+        "G1-E33"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.07",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.15"
+      ],
+      "behavior": "The completed library revisits the same contributions and exact selected/performed text; exploration and replay do not duplicate events.",
+      "checkKinds": [
+        "whole",
+        "finale",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-G01",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E13",
+        "G1-E14"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "The actual garden teller introduces Mara's earlier event, then the world clearly switches to guiding Mara while Pip remains at the present gathering.",
+      "checkKinds": [
+        "mara",
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-G02",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E14"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "The original damaged bird, sister's promise, Mara's reach and the boy's hesitation occur in order; the boy's private motive is left uncertain.",
+      "checkKinds": [
+        "mara",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-G03",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E14"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "The child asks permission, fetches tape, returns, aligns and mends in the world; the original repaired bird stays with its boy.",
+      "checkKinds": [
+        "mara",
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-G04",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E15"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "Promise and repair are two supported lantern emphases; the choice changes its picture, not an asserted private motive or the source events.",
+      "checkKinds": [
+        "mara",
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-G05",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E14"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "Source-based questions distinguish existing damage and plausible hesitation; misplaced tape remains visibly ineffective and recoverable without an answer gate.",
+      "checkKinds": [
+        "mara",
+        "literacy"
+      ],
+      "additionalQualification": [
+        "liveText"
+      ]
+    },
+    {
+      "id": "GA-G06",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E13",
+        "G1-E15",
+        "G1-E26"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "Opening, practice, picture selection, early sharing and public retelling stay distinct; actual repair occurs once and returns to its real teller.",
+      "checkKinds": [
+        "mara",
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-H01",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E16"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.05",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "The current route locates Sol at Rina's bakery, then at his workshop after witnessed work; his unfinished account and doubt precede the writing choice.",
+      "checkKinds": [
+        "bakery",
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-H02",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E20"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.05",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Sol's workshop provides his actual page, original account and writing interaction after the bakery and gift; tools remain his work equipment.",
+      "checkKinds": [
+        "bakery",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-H03",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E16",
+        "G1-E17",
+        "G1-E18",
+        "G1-E19",
+        "G1-E20"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.05",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "The later accepted Group1 decision places the repair during Pip's present visit: Pip collects the permitted tile and directs Sol's actual repair.",
+      "checkKinds": [
+        "bakery",
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-H04",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E16"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.05",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Rina explains her promised bread and the threat to flour before any repair or ending prompt; its consequence is seen through baking.",
+      "checkKinds": [
+        "bakery",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-H05",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E16"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.05",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "The accessible bakery contains roof fault, flour, spare-tile shelf, oven and relevant people with staged world actions and named targets.",
+      "checkKinds": [
+        "bakery",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-H06",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E16",
+        "G1-E18"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.05",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "The cracked tile leaks onto the interior floor; correct replacement stops the indoor leak while outside rain remains.",
+      "checkKinds": [
+        "bakery",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-H07",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E16",
+        "G1-E19"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.05",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Rina moves flour away from puddles and checks it after repair; dry flour enables baking without hidden countdown or invented spoilage.",
+      "checkKinds": [
+        "bakery",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-H08",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E17"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.05",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Bridge sections/ropes belong to maintenance; the replacement roof tile comes from Rina's permitted shelf; Sol retains his tools and the damaged tile stays aside.",
+      "checkKinds": [
+        "bakery",
+        "river",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-H09",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E17",
+        "G1-E18"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.05",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "The player directs Sol to remove and replace the actual tile; beside-opening failure leaves the same replacement available for repositioning.",
+      "checkKinds": [
+        "bakery",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-H10",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E18"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.05",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Stopping the interior leak protects flour and enables Rina's baking; the world retains outside rain to distinguish cause and weather.",
+      "checkKinds": [
+        "bakery",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-H11",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E19"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.05",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Rina checks flour, mixes dough, shapes and bakes during explicit preparation time; no ingredient grind or missed-gathering reading timer was added.",
+      "checkKinds": [
+        "bakery",
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-H12",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E20"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.05",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Rina takes one actual loaf and walks with Pip to Sol; the gift and thanks are visible while the other promised loaves remain at the bakery.",
+      "checkKinds": [
+        "bakery",
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-H13",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E19",
+        "G1-E20"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.05",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "The writing prompt follows the experienced dry flour, baking and actual thanks; Sol's later audience response refers to the selected consequence.",
+      "checkKinds": [
+        "bakery",
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-H14",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E18"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.05",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Beside-opening placement keeps the leak and risk visible; correction reuses the same tile, with successful-first play equally valid.",
+      "checkKinds": [
+        "bakery",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-H15",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E27"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.05",
+        "TASK11.08",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.15"
+      ],
+      "behavior": "Sol writes while bread bakes, retains the actual original/chosen page, acknowledges invitations, travels and only records it when shared.",
+      "checkKinds": [
+        "whole",
+        "bakery",
+        "gathering",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-I01",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E20",
+        "G1-E21"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.17",
+        "TASK11.18"
+      ],
+      "behavior": "Sol's source now follows the repair sequence the player experienced; the ending expresses the resulting bread or thanks rather than unexplained events.",
+      "checkKinds": [
+        "bakery",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-I02",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E21"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.17",
+        "TASK11.18"
+      ],
+      "behavior": "Original draft, later account and witnessed baking/thanks remain separately labeled; later information does not silently alter the source page.",
+      "checkKinds": [
+        "bakery",
+        "gathering",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-I03",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E21"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.17",
+        "TASK11.18"
+      ],
+      "behavior": "One writing workspace retains the original source, current draft, optional support, scene choice and separate Try/Use steps.",
+      "checkKinds": [
+        "bakery",
+        "interaction",
+        "words"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-I04",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E21",
+        "G1-E22"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.17",
+        "TASK11.18"
+      ],
+      "behavior": "Exact working, selected and performed text/revisions remain distinct through edits, source help, saving, lanterns and final narration with honest credit.",
+      "checkKinds": [
+        "bakery",
+        "words",
+        "gathering",
+        "finale",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-I05",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E22"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.17",
+        "TASK11.18"
+      ],
+      "behavior": "The direct supported-picture choice and unreviewed wording credit are explicit; live semantic interpretation and specific clarification are not qualified.",
+      "checkKinds": [
+        "literacy",
+        "words",
+        "whole"
+      ],
+      "additionalQualification": [
+        "liveText"
+      ]
+    },
+    {
+      "id": "GA-I06",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E22"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.17",
+        "TASK11.18"
+      ],
+      "behavior": "Unreviewed child text stays identified as a suggested contribution, never updates source facts, and retains prepared/open-draft alternatives; live contradiction handling remains unavailable.",
+      "checkKinds": [
+        "whole",
+        "words",
+        "matrix"
+      ],
+      "additionalQualification": [
+        "liveText"
+      ]
+    },
+    {
+      "id": "GA-I07",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E22"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.17",
+        "TASK11.18"
+      ],
+      "behavior": "Trying an ending opens an exact immutable world rehearsal; Use separately confirms it, and the actual gathering performs the selected version later.",
+      "checkKinds": [
+        "interaction",
+        "bakery",
+        "gathering",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-I08",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E21"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.17",
+        "TASK11.18"
+      ],
+      "behavior": "Prepared bread/thanks wording carries support credit and preserves the child's draft; sharing an unfinished draft remains an equal valid outcome.",
+      "checkKinds": [
+        "interaction",
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-I09",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E22",
+        "G1-E27"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.17",
+        "TASK11.18"
+      ],
+      "behavior": "Later working edits cannot replace the selected contribution; actual sharing snapshots the performed version used by its flower and final show.",
+      "checkKinds": [
+        "gathering",
+        "finale",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-J01",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E11",
+        "G1-E23"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.06",
+        "TASK11.07",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.12"
+      ],
+      "behavior": "Planning follows actual Mara and Sol reports; the chosen time/reader and visible invitations remain separate commitments.",
+      "checkKinds": [
+        "whole",
+        "interaction",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-J02",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E23"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.06",
+        "TASK11.07",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.12"
+      ],
+      "behavior": "Usual/Pip, later/Pip and later/Mara change real duties, attendees, teller, listening and the required closing.",
+      "checkKinds": [
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-J03",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E23"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.06",
+        "TASK11.07",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.12"
+      ],
+      "behavior": "An impossible usual-time Mara rehearsal shows her still working and no telling; revision changes the world preview without forcing a mistake.",
+      "checkKinds": [
+        "interaction",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-J04",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E23"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.06",
+        "TASK11.07",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.12"
+      ],
+      "behavior": "Actual visits deliver the current invitation to its named recipient and receive the appropriate reply; global plan state cannot substitute.",
+      "checkKinds": [
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-J05",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E23"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.06",
+        "TASK11.07",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.12"
+      ],
+      "behavior": "Changed time/role retains the earlier notices, identifies incompatible recipients and restores readiness only through the relevant new conversations.",
+      "checkKinds": [
+        "interaction",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-J06",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E23"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.06",
+        "TASK11.07",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.12"
+      ],
+      "behavior": "Pip explicitly reports agreed arrangements to Grandma; a preview or opening the planning reader cannot mark that report complete.",
+      "checkKinds": [
+        "whole",
+        "gathering",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-J07",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E23",
+        "G1-E24"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.06",
+        "TASK11.07",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.12"
+      ],
+      "behavior": "Readiness lists actual unfinished story preparations without a quiz score; compatible preparation stays complete across wording changes.",
+      "checkKinds": [
+        "whole",
+        "gathering",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-J08",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E19",
+        "G1-E24"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.06",
+        "TASK11.07",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.12"
+      ],
+      "behavior": "Only beginning the gathering advances to the chosen event time; baking, reading and optional practice cannot trigger a missed departure.",
+      "checkKinds": [
+        "whole",
+        "gathering",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-J09",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E24"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.06",
+        "TASK11.07",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.12"
+      ],
+      "behavior": "Later arrival acknowledges the boat, passengers ashore, Mara off duty and her crossing before participation; intermediate saves cannot invent the next stage.",
+      "checkKinds": [
+        "whole",
+        "gathering",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-J10",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E24"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.06",
+        "TASK11.07",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.12"
+      ],
+      "behavior": "Sol retains the actual original/chosen page through workshop readiness, invitation, departure, crossing, arrival and his world turn.",
+      "checkKinds": [
+        "whole",
+        "gathering",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-K01",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E13",
+        "G1-E24",
+        "G1-E25"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.12",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "The gathering shows actual participants, current speaker and page in the world, with acknowledged turns and a corresponding reader return.",
+      "checkKinds": [
+        "whole",
+        "gathering",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-K02",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E25"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.12",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "Pip's welcome matches the actual usual/later arrangement and names why Mara is present or remains at work.",
+      "checkKinds": [
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-K03",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E13",
+        "G1-E26"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.12",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "The current world teller is Pip or Mara as agreed; Mara is visibly absent, listening or speaking rather than a generic attendance flag.",
+      "checkKinds": [
+        "whole",
+        "gathering",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-K04",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E27"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.12",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "Sol shares the exact selected contribution and Grandma's response refers to its bread, thanks or combined emphasis with proper credit.",
+      "checkKinds": [
+        "whole",
+        "gathering",
+        "finale",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-K05",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E27"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.12",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "An open draft receives actual optional questions, Sol's response and a choice to develop or retain it; neither question is mandatory.",
+      "checkKinds": [
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-K06",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E27"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.12",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "A newly added bread/thanks ending is acknowledged as developed during discussion and then shared in the world, updating the same contribution.",
+      "checkKinds": [
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-K07",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E28"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.12",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "Grandma's question and Sol's actual spoken reason precede her changed understanding; a preparation report cannot give her his private disclosure.",
+      "checkKinds": [
+        "whole",
+        "gathering",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-K08",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E28",
+        "G1-E29"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.12",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "Grandma distinguishes earlier assumptions from the friends' reasons and later storm, fetches cushions, finishes and actually shares her own account.",
+      "checkKinds": [
+        "whole",
+        "gathering",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-K09",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E15",
+        "G1-E26",
+        "G1-E29"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.12",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "Actual Mara, Sol and Grandma tellings update their specific waiting flowers, retaining author, exact words, picture and draft history.",
+      "checkKinds": [
+        "whole",
+        "finale",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-K10",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E25",
+        "G1-E26",
+        "G1-E27",
+        "G1-E28",
+        "G1-E29"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.12",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "Nine ordinary browser outcomes and the independent45 actual-handler combinations bind participants, contributions, closing and exact narration separately.",
+      "checkKinds": [
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-L01",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E09",
+        "G1-E10",
+        "G1-E30"
+      ],
+      "owners": [
+        "TASK11.07",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.12",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "After Grandma's telling, Pip places the selected real planting/gathering memory in his original flower, preserving actual attendees and teller.",
+      "checkKinds": [
+        "finale",
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-L02",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E29",
+        "G1-E31"
+      ],
+      "owners": [
+        "TASK11.07",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.12",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "The later routes show Mara hear Grandma's account and their reciprocal closing exchange before the chapter can finish.",
+      "checkKinds": [
+        "whole",
+        "finale",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-L03",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E31"
+      ],
+      "owners": [
+        "TASK11.07",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.12",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "On the usual route Grandma gives the actual copy, Pip carries it over the retained bridge, and working Mara receives it with a future-reading reply.",
+      "checkKinds": [
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-L04",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E29",
+        "G1-E31",
+        "G1-E32"
+      ],
+      "owners": [
+        "TASK11.07",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.12",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "The final account links planting, Mara's arrangement, Sol's contribution and the actual reciprocal closing; explaining that relationship remains a review question.",
+      "checkKinds": [
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": [
+        "owner"
+      ]
+    },
+    {
+      "id": "GA-L05",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E01",
+        "G1-E32"
+      ],
+      "owners": [
+        "TASK11.07",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.12",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "Finishing returns to the ready studio with distinct Watch/Narrate choices; either opens the resulting world picture show.",
+      "checkKinds": [
+        "whole",
+        "finale"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-L06",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E32"
+      ],
+      "owners": [
+        "TASK11.07",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.12",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "The four exact D042 paragraphs and pictures bind the actual route, selected contribution and credit; the closing picture uses Grandma's own page or delivered copy.",
+      "checkKinds": [
+        "whole",
+        "finale",
+        "matrix"
+      ],
+      "additionalQualification": [
+        "art"
+      ]
+    },
+    {
+      "id": "GA-L07",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E33"
+      ],
+      "owners": [
+        "TASK11.07",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.12",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "Manual Previous/Next/Pause and exact-part support preserve picture position; unfinished replay at picture4 resumes, finished replay begins at1.",
+      "checkKinds": [
+        "finale",
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-L08",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E33"
+      ],
+      "owners": [
+        "TASK11.07",
+        "TASK11.09",
+        "TASK11.10",
+        "TASK11.12",
+        "TASK11.13",
+        "TASK11.15"
+      ],
+      "behavior": "Explore and replay preserve the completed story; visible restart cancellation retains it and confirmed restart archives only its own run.",
+      "checkKinds": [
+        "save",
+        "whole",
+        "finale"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-M01",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.17",
+        "TASK11.18"
+      ],
+      "behavior": "The reviewed event record identifies information, decision and consequence; actual reach, fastening, permission, scheduling and repair behavior realizes those connections.",
+      "checkKinds": [
+        "whole",
+        "river",
+        "mara",
+        "bakery",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-M02",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E21",
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.17",
+        "TASK11.18"
+      ],
+      "behavior": "Own explanation, supplied help and Let Pip explain remain distinct; assistance never records independent reasoning or an assessment result.",
+      "checkKinds": [
+        "literacy",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-M03",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E03"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.17",
+        "TASK11.18"
+      ],
+      "behavior": "The explanation prompt and local support connect changed hours, final passengers and gathering time; an actual plan changes attendance accordingly.",
+      "checkKinds": [
+        "mara",
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": [
+        "liveText"
+      ]
+    },
+    {
+      "id": "GA-M04",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E28"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.17",
+        "TASK11.18"
+      ],
+      "behavior": "Grandma's assumption and Mara's explanation remain separate sources; an actual report changes her response and later account.",
+      "checkKinds": [
+        "whole",
+        "mara",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-M05",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E16",
+        "G1-E18",
+        "G1-E19"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.17",
+        "TASK11.18"
+      ],
+      "behavior": "The causal sequence is visible: leak, replacement tile, stopped interior water, dry flour, baking and an accompanied thank-you gift.",
+      "checkKinds": [
+        "bakery",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-M06",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E14",
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.17",
+        "TASK11.18"
+      ],
+      "behavior": "Mara's supported pictures and local discussion allow uncertainty about hesitation rather than certifying a private motive; live interpretation remains unavailable.",
+      "checkKinds": [
+        "mara",
+        "literacy"
+      ],
+      "additionalQualification": [
+        "liveText"
+      ]
+    },
+    {
+      "id": "GA-M07",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E06",
+        "G1-E18",
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.17",
+        "TASK11.18"
+      ],
+      "behavior": "Wide/loose bridge, misplaced tape/tile and incompatible plan each show their own consequence and recovery; first-success and all valid outcomes remain available.",
+      "checkKinds": [
+        "river",
+        "loose",
+        "mara",
+        "bakery",
+        "interaction",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-M08",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E30",
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.09",
+        "TASK11.13",
+        "TASK11.17",
+        "TASK11.18"
+      ],
+      "behavior": "Exposure, assistance, action, text provenance and optional speech attempts remain separate; completion produces no invented reading or learning score.",
+      "checkKinds": [
+        "literacy",
+        "words",
+        "whole",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-N01",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.08",
+        "TASK11.13",
+        "TASK11.18"
+      ],
+      "behavior": "The15 titled sources and72 exact components appear in their corresponding encounter, attributed page, old flower or route-specific ending.",
+      "checkKinds": [
+        "words",
+        "whole",
+        "finale"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-N02",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.08",
+        "TASK11.13",
+        "TASK11.18"
+      ],
+      "behavior": "All1143 fixed-source occurrences have local reviewed meanings; dialogue/caption and own-writing support preserve exact targets, with unknown live explanations explicitly unavailable.",
+      "checkKinds": [
+        "words",
+        "literacy",
+        "whole"
+      ],
+      "additionalQualification": [
+        "liveText"
+      ]
+    },
+    {
+      "id": "GA-N03",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.08",
+        "TASK11.13",
+        "TASK11.18"
+      ],
+      "behavior": "Word occurrences bind their current sentence; reviewed contextual overrides, pronouns and phrase explanations do not borrow another source's meaning.",
+      "checkKinds": [
+        "words",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-N04",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E12",
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.08",
+        "TASK11.13",
+        "TASK11.18"
+      ],
+      "behavior": "Obligation, secure, hesitated and the remaining focus vocabulary occur in supported situations, with optional reuse and no lookup quota.",
+      "checkKinds": [
+        "words",
+        "mara",
+        "river",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-N05",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E12",
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.08",
+        "TASK11.13",
+        "TASK11.18"
+      ],
+      "behavior": "Kept his promise, stayed put and Duet title/phrase help use the actual context, withheld unread details and retained reading/focus position.",
+      "checkKinds": [
+        "words",
+        "whole",
+        "finale"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-N06",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.08",
+        "TASK11.13",
+        "TASK11.18"
+      ],
+      "behavior": "Own-draft help binds the chosen occurrence and revision, preserving the full text; arbitrary live explanations are unavailable rather than invented.",
+      "checkKinds": [
+        "words"
+      ],
+      "additionalQualification": [
+        "liveText"
+      ]
+    },
+    {
+      "id": "GA-N07",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.08",
+        "TASK11.13",
+        "TASK11.18"
+      ],
+      "behavior": "Explicit Use/Keep and undo affect only the selected occurrence/revision; a selected story contribution does not silently change with a working edit.",
+      "checkKinds": [
+        "words"
+      ],
+      "additionalQualification": [
+        "liveText"
+      ]
+    },
+    {
+      "id": "GA-N08",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.02",
+        "TASK11.08",
+        "TASK11.13",
+        "TASK11.18"
+      ],
+      "behavior": "Dispute withdraws uncertain extra help and binds one recheck to the retained text; synthetic replies test ownership, not live correction accuracy.",
+      "checkKinds": [
+        "words"
+      ],
+      "additionalQualification": [
+        "liveText"
+      ]
+    },
+    {
+      "id": "GA-O01",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E25",
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.13",
+        "TASK11.15",
+        "TASK11.18",
+        "TASK11.19",
+        "TASK11.21"
+      ],
+      "behavior": "Practice names the actual speaker and purpose for the current line, explanation, chosen ending or final narration, with a retained source return.",
+      "checkKinds": [
+        "literacy",
+        "gathering",
+        "finale"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-O02",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.13",
+        "TASK11.15",
+        "TASK11.18",
+        "TASK11.19",
+        "TASK11.21"
+      ],
+      "behavior": "Local model reading, independent reading without recording and purposeful rereading remain optional and separate from game completion.",
+      "checkKinds": [
+        "literacy",
+        "whole",
+        "finale"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-O03",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E25",
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.13",
+        "TASK11.15",
+        "TASK11.18",
+        "TASK11.19",
+        "TASK11.21"
+      ],
+      "behavior": "Practice snapshots the exact source or selected draft span and revision; stale edits or a later page cannot be assessed as the earlier target.",
+      "checkKinds": [
+        "literacy",
+        "words",
+        "finale"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-O04",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.13",
+        "TASK11.15",
+        "TASK11.18",
+        "TASK11.19",
+        "TASK11.21"
+      ],
+      "behavior": "Explicit microphone start, stop, temporary replay, discard and leave cleanup have synthetic-device integration checks; actual target-device capture remains unqualified.",
+      "checkKinds": [
+        "literacy"
+      ],
+      "additionalQualification": [
+        "microphone"
+      ]
+    },
+    {
+      "id": "GA-O05",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.13",
+        "TASK11.15",
+        "TASK11.18",
+        "TASK11.19",
+        "TASK11.21"
+      ],
+      "behavior": "Acoustic adapter and validation preserve uncertainty and target binding; adaptive pronunciation, omission, pause, expression and latency quality remain unavailable.",
+      "checkKinds": [
+        "literacy"
+      ],
+      "additionalQualification": [
+        "liveAudio"
+      ]
+    },
+    {
+      "id": "GA-O06",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.13",
+        "TASK11.15",
+        "TASK11.18",
+        "TASK11.19",
+        "TASK11.21"
+      ],
+      "behavior": "Final narration remains child-paced without a microphone; exact-part practice explicitly separates recording feedback from the story presentation.",
+      "checkKinds": [
+        "finale",
+        "whole"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-O07",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.13",
+        "TASK11.15",
+        "TASK11.18",
+        "TASK11.19",
+        "TASK11.21"
+      ],
+      "behavior": "Local model audio, playback, recording and word audio have owned cancellation/cleanup; synthetic overlap tests do not qualify actual target-device microphone behavior.",
+      "checkKinds": [
+        "literacy",
+        "words",
+        "finale"
+      ],
+      "additionalQualification": [
+        "microphone"
+      ]
+    },
+    {
+      "id": "GA-O08",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.13",
+        "TASK11.15",
+        "TASK11.18",
+        "TASK11.19",
+        "TASK11.21"
+      ],
+      "behavior": "Unavailable/denied speech preserves independent practice and the story; no invented score or required successful assessment blocks continuation.",
+      "checkKinds": [
+        "literacy",
+        "whole",
+        "finale"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-P01",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.13",
+        "TASK11.18",
+        "TASK11.19"
+      ],
+      "behavior": "Authored hints, reviewed meanings, unreviewed scene choice and unavailable live services have distinct provenance; no live understanding is claimed.",
+      "checkKinds": [
+        "literacy",
+        "words",
+        "whole"
+      ],
+      "additionalQualification": [
+        "liveText",
+        "liveAudio"
+      ]
+    },
+    {
+      "id": "GA-P02",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E22",
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.13",
+        "TASK11.18",
+        "TASK11.19"
+      ],
+      "behavior": "The implementation retains text and has structured clarification contracts, but actual handling of brief/ambiguous writing awaits authorized live qualification.",
+      "checkKinds": [
+        "literacy"
+      ],
+      "additionalQualification": [
+        "liveText"
+      ]
+    },
+    {
+      "id": "GA-P03",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E22",
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.13",
+        "TASK11.18",
+        "TASK11.19"
+      ],
+      "behavior": "The interface distinguishes explanation, hint, clarification and suggested picture; only explicit player confirmation can select or cause world action.",
+      "checkKinds": [
+        "literacy",
+        "interaction",
+        "words"
+      ],
+      "additionalQualification": [
+        "liveText"
+      ]
+    },
+    {
+      "id": "GA-P04",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E22",
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.13",
+        "TASK11.18",
+        "TASK11.19"
+      ],
+      "behavior": "Requests bind only exposed current sources and exact revisions; stale/unowned responses cannot change selected text or independently command the world.",
+      "checkKinds": [
+        "literacy",
+        "words"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-P05",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.13",
+        "TASK11.18",
+        "TASK11.19"
+      ],
+      "behavior": "Edit, stop, leave and recheck retain writing and reject stale responses; scoped synthetic tests identify the asynchronous seam honestly.",
+      "checkKinds": [
+        "literacy",
+        "words"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-P06",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.13",
+        "TASK11.18",
+        "TASK11.19"
+      ],
+      "behavior": "The full draft remains saved while the child selects a bounded feedback/practice span; there is no forced deletion or hidden truncation.",
+      "checkKinds": [
+        "bakery",
+        "words"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-P07",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.13",
+        "TASK11.18",
+        "TASK11.19"
+      ],
+      "behavior": "Local help works without model credentials; unavailable, slow and failed live requests keep the story and draft usable with truthful status.",
+      "checkKinds": [
+        "literacy",
+        "words",
+        "whole"
+      ],
+      "additionalQualification": [
+        "liveText",
+        "liveAudio"
+      ]
+    },
+    {
+      "id": "GA-P08",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.13",
+        "TASK11.18",
+        "TASK11.19"
+      ],
+      "behavior": "The original1/75 exhausted-credit ledger and provider-disabled services remain intact; no child profile, raw-audio save, hidden retry or activation is added.",
+      "checkKinds": [
+        "literacy",
+        "words",
+        "protected"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-Q01",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E01"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.07",
+        "TASK11.15",
+        "TASK11.16",
+        "TASK11.21"
+      ],
+      "behavior": "Reader confirmation yields the visible actual world operation and returns to its correct source, speaker or current situation throughout the chapter.",
+      "checkKinds": [
+        "whole",
+        "interaction",
+        "bakery",
+        "mara",
+        "gathering",
+        "finale"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-Q02",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.07",
+        "TASK11.15",
+        "TASK11.16",
+        "TASK11.21"
+      ],
+      "behavior": "Mode-specific goal/role text identifies the next relevant action; memory placement suppresses the walk goal and Sol's actual gathering location has correct guidance.",
+      "checkKinds": [
+        "whole",
+        "interaction",
+        "river",
+        "bakery",
+        "finale",
+        "matrix"
+      ],
+      "additionalQualification": [
+        "owner"
+      ]
+    },
+    {
+      "id": "GA-Q03",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.07",
+        "TASK11.15",
+        "TASK11.16",
+        "TASK11.21"
+      ],
+      "behavior": "Response groups name the role and use equal prominent alternatives; reading tools, preview, confirmation and selected state are explicitly labeled.",
+      "checkKinds": [
+        "whole",
+        "interaction",
+        "literacy"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-Q04",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.07",
+        "TASK11.15",
+        "TASK11.16",
+        "TASK11.21"
+      ],
+      "behavior": "Replies and world turns name the responding character and use the actual chosen conversation, rather than an anonymous status sentence.",
+      "checkKinds": [
+        "whole",
+        "gathering",
+        "mara"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-Q05",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.07",
+        "TASK11.15",
+        "TASK11.16",
+        "TASK11.21"
+      ],
+      "behavior": "Scrollable source and fixed relevant actions remain usable at tested compact/larger settings; finale support now stacks into full-width readable controls.",
+      "checkKinds": [
+        "interaction",
+        "bakery",
+        "gathering",
+        "finale",
+        "literacy"
+      ],
+      "additionalQualification": [
+        "devices"
+      ]
+    },
+    {
+      "id": "GA-Q06",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.07",
+        "TASK11.15",
+        "TASK11.16",
+        "TASK11.21"
+      ],
+      "behavior": "A prominent feedback/hint area and Where is that?/Help controls identify the current unresolved task without performing the action or marking understanding.",
+      "checkKinds": [
+        "interaction",
+        "river",
+        "whole"
+      ],
+      "additionalQualification": [
+        "owner"
+      ]
+    },
+    {
+      "id": "GA-Q07",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E14"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.07",
+        "TASK11.15",
+        "TASK11.16",
+        "TASK11.21"
+      ],
+      "behavior": "Input ownership resets held keys across reader, arrangement, boat and story roles; confirm/back/cancel retain the relevant state and discard only previews.",
+      "checkKinds": [
+        "interaction",
+        "river",
+        "mara",
+        "bakery",
+        "finale"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-Q08",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.07",
+        "TASK11.15",
+        "TASK11.16",
+        "TASK11.21"
+      ],
+      "behavior": "Visible named controls cover movement, post placement, boat steering, tile/tape work, world speaking and particular flower selection with keyboard returns.",
+      "checkKinds": [
+        "whole",
+        "river",
+        "bakery",
+        "mara",
+        "finale"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-Q09",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.07",
+        "TASK11.15",
+        "TASK11.16",
+        "TASK11.21"
+      ],
+      "behavior": "Nested Help, sources, practice, own writing, rehearsal, planner and individual lanterns preserve their actual parent, view state and focus.",
+      "checkKinds": [
+        "interaction",
+        "bakery",
+        "words",
+        "gathering",
+        "finale"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-Q10",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.05",
+        "TASK11.06",
+        "TASK11.07",
+        "TASK11.15",
+        "TASK11.16",
+        "TASK11.21"
+      ],
+      "behavior": "Current desktop/compact inspection and native controls establish only their stated scope; all-device access, microphone, art and retained performance targets remain separately qualified.",
+      "checkKinds": [
+        "interaction",
+        "literacy",
+        "measurements",
+        "finale"
+      ],
+      "additionalQualification": [
+        "devices",
+        "art",
+        "performance"
+      ]
+    },
+    {
+      "id": "GA-R01",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E33"
+      ],
+      "owners": [
+        "TASK11.03",
+        "TASK11.04",
+        "TASK11.10",
+        "TASK11.14",
+        "TASK11.21"
+      ],
+      "behavior": "One immutable GardenStore serializes world, reader, draft and presentation commands; preview state cannot masquerade as a committed world event.",
+      "checkKinds": [
+        "whole",
+        "interaction",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-R02",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E08",
+        "G1-E13",
+        "G1-E17",
+        "G1-E20",
+        "G1-E26",
+        "G1-E31"
+      ],
+      "owners": [
+        "TASK11.03",
+        "TASK11.04",
+        "TASK11.10",
+        "TASK11.14",
+        "TASK11.21"
+      ],
+      "behavior": "Possession, source exposure, actual NPC knowledge, promises, invitations and completed telling remain separate through the connected route.",
+      "checkKinds": [
+        "whole",
+        "interaction",
+        "mara",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-R03",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E22",
+        "G1-E27",
+        "G1-E32"
+      ],
+      "owners": [
+        "TASK11.03",
+        "TASK11.04",
+        "TASK11.10",
+        "TASK11.14",
+        "TASK11.21"
+      ],
+      "behavior": "Working revision, selected contribution and performed record are preserved separately through editing, saving, archive and replay with exact text and origin.",
+      "checkKinds": [
+        "words",
+        "gathering",
+        "finale",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-R04",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E33"
+      ],
+      "owners": [
+        "TASK11.03",
+        "TASK11.04",
+        "TASK11.10",
+        "TASK11.14",
+        "TASK11.21"
+      ],
+      "behavior": "Acknowledged commits, proposals and active task boundaries survive interruptions; reload restores the coherent task and cannot invent unfinished actions.",
+      "checkKinds": [
+        "river",
+        "mara",
+        "bakery",
+        "gathering",
+        "finale",
+        "save",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-R05",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E06",
+        "G1-E08",
+        "G1-E10"
+      ],
+      "owners": [
+        "TASK11.03",
+        "TASK11.04",
+        "TASK11.10",
+        "TASK11.14",
+        "TASK11.21"
+      ],
+      "behavior": "Revised river, bird, tile/loaf, arrival, speaking and memory actions retain ownership at start/middle/end and avoid duplicate transfer or fabricated progress.",
+      "checkKinds": [
+        "river",
+        "mara",
+        "bakery",
+        "gathering",
+        "finale",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-R06",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E33"
+      ],
+      "owners": [
+        "TASK11.03",
+        "TASK11.04",
+        "TASK11.10",
+        "TASK11.14",
+        "TASK11.21"
+      ],
+      "behavior": "Save acknowledgment, damaged-current recovery, stale-writer rejection, authentic old payloads and labeled fault seams retain prior data and current state.",
+      "checkKinds": [
+        "save",
+        "measurements",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-R07",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E33"
+      ],
+      "owners": [
+        "TASK11.03",
+        "TASK11.04",
+        "TASK11.10",
+        "TASK11.14",
+        "TASK11.21"
+      ],
+      "behavior": "Visible Pause restart/cancel and final replay preserve unrelated namespaces and archive the current run only after explicit confirmation.",
+      "checkKinds": [
+        "save",
+        "whole",
+        "finale"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-S01",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.16",
+        "TASK11.18",
+        "TASK11.19",
+        "TASK11.20",
+        "TASK11.21"
+      ],
+      "behavior": "Current status distinguishes implementation, exact evidence and unresolved product qualification while retaining the original failed experience audit and historical receipts.",
+      "checkKinds": [
+        "protected"
+      ],
+      "additionalQualification": [
+        "owner"
+      ]
+    },
+    {
+      "id": "GA-S02",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.16",
+        "TASK11.18",
+        "TASK11.19",
+        "TASK11.20",
+        "TASK11.21"
+      ],
+      "behavior": "Nine fresh routes and dedicated river/repair cases use ordinary named controls; geometry projections, migration injection and synthetic faults remain explicitly labeled.",
+      "checkKinds": [
+        "whole",
+        "river",
+        "bakery",
+        "mara",
+        "save"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-S03",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.16",
+        "TASK11.18",
+        "TASK11.19",
+        "TASK11.20",
+        "TASK11.21"
+      ],
+      "behavior": "Every original row retains its finding, accepted event, original task owners, concrete runtime/check links and an explicit local result or remaining qualification.",
+      "checkKinds": [
+        "whole",
+        "matrix",
+        "ledgerReview"
+      ],
+      "additionalQualification": [
+        "owner"
+      ]
+    },
+    {
+      "id": "GA-S04",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.16",
+        "TASK11.18",
+        "TASK11.19",
+        "TASK11.20",
+        "TASK11.21"
+      ],
+      "behavior": "Five physical histories, nine story outcomes, changed plans, alternate visits, first-success routes, setbacks and recovery have separate current integration evidence.",
+      "checkKinds": [
+        "whole",
+        "river",
+        "loose",
+        "bakery",
+        "mara",
+        "matrix"
+      ],
+      "additionalQualification": []
+    },
+    {
+      "id": "GA-S05",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.16",
+        "TASK11.18",
+        "TASK11.19",
+        "TASK11.20",
+        "TASK11.21"
+      ],
+      "behavior": "Current scene inspection, resource/frame measurements and original artwork hashes preserve the unchanged quality targets; failed metrics and final art acceptance remain open.",
+      "checkKinds": [
+        "measurements",
+        "protected"
+      ],
+      "additionalQualification": [
+        "art",
+        "performance",
+        "devices"
+      ]
+    },
+    {
+      "id": "GA-S06",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.16",
+        "TASK11.18",
+        "TASK11.19",
+        "TASK11.20",
+        "TASK11.21"
+      ],
+      "behavior": "Live text/speech qualification remains halted at1/75; no local pass, synthetic response or provider setting authorizes resumed calls or activation.",
+      "checkKinds": [
+        "protected",
+        "literacy",
+        "words"
+      ],
+      "additionalQualification": [
+        "liveText",
+        "liveAudio"
+      ]
+    },
+    {
+      "id": "GA-S07",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.16",
+        "TASK11.18",
+        "TASK11.19",
+        "TASK11.20",
+        "TASK11.21"
+      ],
+      "behavior": "Independent adult native review precedes an owner playthrough; no child-live study or9–12-year-old usability/learning claim has been collected or inferred.",
+      "checkKinds": [
+        "whole",
+        "ledgerReview"
+      ],
+      "additionalQualification": [
+        "owner",
+        "learner"
+      ]
+    },
+    {
+      "id": "GA-S08",
+      "originalProvenancePreserved": true,
+      "events": [
+        "G1-E34"
+      ],
+      "owners": [
+        "TASK11.16",
+        "TASK11.18",
+        "TASK11.19",
+        "TASK11.20",
+        "TASK11.21"
+      ],
+      "behavior": "The built authored server supports a fresh chapter without secrets; the bounded demonstration uses actual reading, choice, world action, consequence and ending footage with disclosed cuts.",
+      "checkKinds": [
+        "whole",
+        "recording",
+        "protected"
+      ],
+      "additionalQualification": [
+        "owner"
+      ]
+    }
+  ],
+  "referenced": [
+    {
+      "path": "src/garden/GardenApp.tsx",
+      "sha256": "7a0f15ebc9ae3331e78cf49b970c1100df207c72b4a045a7562c550f310456d9"
+    },
+    {
+      "path": "src/garden/chapter.ts",
+      "sha256": "545dd119c066d38535aee6764d378ce0730fd67bca2e80a675ac3181037b62bd"
+    },
+    {
+      "path": "src/garden/content.ts",
+      "sha256": "e4cb004657d7eeba0a164db0ee285d8e72047c20ee6c412f640f3bf9228d96b1"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/integration-checks.json",
+      "sha256": "bc8fda1a268538cd43af451c72af58aaabfe9d71362401da8ef74398d6d2277a"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-input-guards-scoped.json",
+      "sha256": "adfd0c778e69dd4a3adcb3b35bc1460645eb8d853c0a1488977e6576f3562a88"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-input-guards-scoped-candidate.json",
+      "sha256": "7e098550344a329215bda4a776907489db411b38c990cf706cc77058891f4f86"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-final-boat.json",
+      "sha256": "95192289985ecd2346bfc18d5f4ffded81219b06ba563774266186551caae787"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-final-boat-candidate.json",
+      "sha256": "6e6a5ebc0f8df79a6cf77cbff4f8b95c7b6defe3b62c7610611a10d035b0b565"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-final-remainder.json",
+      "sha256": "1d7c2d0d8601a8a2ebf1eae3b7130066b34701ee6f984023ee1b902caa3d89ea"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-final-remainder-candidate.json",
+      "sha256": "7e098550344a329215bda4a776907489db411b38c990cf706cc77058891f4f86"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/routes-boat-entry-node24.json",
+      "sha256": "7d944d2fb593e8020cb83d9a62050d2593a5c8ecf006f699ed044ff2f07e2cba"
+    },
+    {
+      "path": "src/garden/GardenScene.tsx",
+      "sha256": "39038af06bffa4db834294615fa1f749dc569e174cfebfeca9b39c27522a71ea"
+    },
+    {
+      "path": "src/garden/model.ts",
+      "sha256": "00d7acec80e08e58c7e5c774907ee17dc8975e9c69420b9947370c1fd2afe218"
+    },
+    {
+      "path": "src/garden/river.ts",
+      "sha256": "94ef9e24dd10631b799a521283ddd4a504815249ed419975878653e03f0a6db0"
+    },
+    {
+      "path": "src/garden/lanterns.ts",
+      "sha256": "a11ca909e73c6ea976075d08d72caa0b418d0b8b62ca92c66e004106b6763029"
+    },
+    {
+      "path": "src/garden/FinaleActivity.tsx",
+      "sha256": "4733eca5bb63848f51b1303cfb243be942d3d18df3d20bb3fe558ce868bbd344"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-cross-pointer.json",
+      "sha256": "1ffb951e13bced2441d228d73e9cf83c7bd2bb5f9628ba13e14d4f98717434f7"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-cross-pointer-candidate.json",
+      "sha256": "3a54da530d3b08101dbaf7d789a5f6fce1b5c199545b0dea9523b9ce2c859a1e"
+    },
+    {
+      "path": "src/garden/gathering.ts",
+      "sha256": "b0f535de38bb497aef61faafdd26428cdbc60e0e1fc1de9e68fec7c3c63feccc"
+    },
+    {
+      "path": "src/garden/ChapterPanels.tsx",
+      "sha256": "29f883bf061a29ae9e2ef9650370e7917060c33438656ba6debc86a7c65b5181"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-boat-compact.json",
+      "sha256": "7f600a5553996f9e3a18dff6141d085140748091a21293b636fd0110d0ee54ed"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-boat-compact-candidate.json",
+      "sha256": "6e6a5ebc0f8df79a6cf77cbff4f8b95c7b6defe3b62c7610611a10d035b0b565"
+    },
+    {
+      "path": "src/garden/chapterContent.ts",
+      "sha256": "e779bb4edf96103badbaedfbfa54866bb7f6241d9b4a8d74292f8b04a174a370"
+    },
+    {
+      "path": "src/garden/mara.ts",
+      "sha256": "c77c7a89106e7149944aa22da9be97cdfbf882cde569740a16dbc2ebb24e5e0a"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-service-compact.json",
+      "sha256": "74ce2634f89d22feb7ba134c7a621111902f736044d4ea07226aa70a8fa67491"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-service-compact-candidate.json",
+      "sha256": "9968d3799848f9b32cec794970810b0405bfc00a2ebe4c528fb7a5f4aae66150"
+    },
+    {
+      "path": "docs/GARDEN-COMPLETE-DEMO.md",
+      "sha256": "21ac41b7283d1d595a2cafd100dd4d61b7d30c9c430e2a89a6ebb83533da0ec1"
+    },
+    {
+      "path": "README.md",
+      "sha256": "ad1439bdc9b943093cf812e43e436251bc657ea17d26ea7f98b89aa3b4ef97c0"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/demo/manifest.json",
+      "sha256": "0ed8a74c1fb80ec82b7a069831c60489ccaa300b12093ecaf8da93773a1885b1"
+    },
+    {
+      "path": "src/garden/interaction.ts",
+      "sha256": "18b308d1b5c2236a12b3677704edda61b2bf37e9fe768c25f71c525baf0beff9"
+    },
+    {
+      "path": "src/garden/BakeryControls.tsx",
+      "sha256": "d48badb9b0295d5ce70f7651d26da151c5a0d25ca43ee344be9e47c5c0c6fd80"
+    },
+    {
+      "path": "src/garden/MaraWorld.tsx",
+      "sha256": "9b15d9292b32a258cfb257551cdfe7a08a00517311389f64dbd9750a83ffd3ae"
+    },
+    {
+      "path": "src/garden/GatheringPanels.tsx",
+      "sha256": "1ca2113debe7ff574c8896f894a8eeef5f5b1ccadee31771912b78364949ad3b"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-speech-smoke.json",
+      "sha256": "0ad02b0f2e285c1f920575473525bc2965bed444f6e8fc9a7d969fea084f2b0c"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-speech-smoke-candidate.json",
+      "sha256": "c69986156a803f220c79be168171b88df5f0cd64e5739abf93dbf465cbd752b9"
+    },
+    {
+      "path": "src/garden/WorldActivity.tsx",
+      "sha256": "6a529a4f23a362324709578ce1c71d9fe2c16a682af078909afd05073fcde504"
+    },
+    {
+      "path": "src/garden/bakeryWorld.ts",
+      "sha256": "ac096b223a8d851a9b155e24d751e4f375e37bc2e9628dfd54ef0d226a136beb"
+    },
+    {
+      "path": "src/garden/gatheringWorld.ts",
+      "sha256": "eeca96abf0e201deb33e6014efa3748607b6ec560e644bd90181be4c45136f2c"
+    },
+    {
+      "path": "src/garden/chapterWorld.ts",
+      "sha256": "b8b687191bd44599c4ebf8747dfba061e93c17c6735413f31cbfbc1924a095ce"
+    },
+    {
+      "path": "src/garden/art.ts",
+      "sha256": "96ee9cebd507e5ff3280c443d394ced8ce496b6c1877542180752dd427af07bd"
+    },
+    {
+      "path": "src/garden/StoryStage.tsx",
+      "sha256": "81a60da8fb6be1920740aca4d6b957a04726879b63778d625d282fc4bbc5cb62"
+    },
+    {
+      "path": "src/garden/BoatControls.tsx",
+      "sha256": "a93e30ba9a0be417eb24a984326b904251a747cf852aa54337aeb8b49bd085d5"
+    },
+    {
+      "path": "src/garden/bakery.ts",
+      "sha256": "8125a9d827407e145194f0a57a56d8bb1de9b557cee49f62c85884136f49d4f4"
+    },
+    {
+      "path": "src/garden/persistence.ts",
+      "sha256": "4dc2be2cc186191c98bf2e70bba6485a7ed0406a63edadcee248d70bb3674798"
+    },
+    {
+      "path": "src/garden/garden.css",
+      "sha256": "5b4f201d7a8d3c86d22eab53a2b5a7b3782f320c9ac49b8a3e0af135c76212db"
+    },
+    {
+      "path": "src/garden/lanternWorld.ts",
+      "sha256": "3907c5d430636f2e8b468a5d2ee256157d40aa516ac290109a32ae18d8677bcb"
+    },
+    {
+      "path": "src/garden/FeedbackActivity.tsx",
+      "sha256": "0efdefbb683aa99311dd701660322abcdbe7e9ffc56057f6d29df134db5714b4"
+    },
+    {
+      "path": "docs/game-review/GROUP-1-CONNECTED-ADVENTURE.md",
+      "sha256": "42e9bf8dbf9d72f71cfcab73fc383955a54e9ba4dd58dc9e194fe8600509e16b"
+    },
+    {
+      "path": "docs/game-review/GROUP-1-EVENT-RECORD.json",
+      "sha256": "c20a3c4666aaa7d955e0355e8b61bb22c7240f27280fc469b327acb7c193cad6"
+    },
+    {
+      "path": "src/garden/DraftReader.tsx",
+      "sha256": "52f723eab16b177e3a65dc43bf5a2fdc1f4575f876552416674f726c5c714f25"
+    },
+    {
+      "path": "server/garden.ts",
+      "sha256": "c186a24ebe584637b71c761af47ddec7241199537cb6b2160c7075576b265524"
+    },
+    {
+      "path": "src/garden/ReadingPractice.tsx",
+      "sha256": "b761826352354591d8e8aa3be5c24971e4211c931bb6c0cf07169ef5e4752805"
+    },
+    {
+      "path": "src/garden/chapterGlossary.ts",
+      "sha256": "2c5445b5d3c6aec7907a689df94d7d07f94da2462de4080e342c866c6a71708d"
+    },
+    {
+      "path": "src/garden/AdditionalWordHelp.tsx",
+      "sha256": "894dcf6e43308739797639b687afc2fd75b3493acc43ba810c9f68f734f986cf"
+    },
+    {
+      "path": "server/gardenWords.ts",
+      "sha256": "5f7e246fc42f2c96d36af20f7b4a6b978ca5c01864a727a52884b4d9f163c1c3"
+    },
+    {
+      "path": "src/garden/audio.ts",
+      "sha256": "223da1bed6dedc62bc01e5f731e72ebf95a02d06358c65adc13d9dd414adf1da"
+    },
+    {
+      "path": "server/gardenSpeech.ts",
+      "sha256": "139604f511bc8d6b0710ebfac1841d71331b43c31cd03df808fedc3e93975af5"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/protected-inputs.json",
+      "sha256": "d3bfd0d3d0225eb487747941248573d6dc9dafb65b42cf628d8cbbd1bfd7e362"
+    },
+    {
+      "path": "BUILD-STATUS.md",
+      "sha256": "7051e8ec63d4da45d86060954c2154a45a57e76ce75be9e02d844d3fcc5651ab"
+    },
+    {
+      "path": "docs/game-review/GROUPS-1-8-RUNTIME-COVERAGE.json",
+      "sha256": "e3be5d48a7be267cd90582fc0560ddff71b3caae3ec7985092289afcaa243ea6"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/prepared-dispositions-review.md",
+      "sha256": "4cb2683ed0c7c4d8926b4f6490586c5a3ecedcdc207d8143dfba3cfc26556f91"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/input-source-review.json",
+      "sha256": "4ed6a48696f39406c9f17df210d2edf0e8a4f73091d6372f7d106a0b90f7f431"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/native-input-review.json",
+      "sha256": "f7a829926f1c0ff4ec315b3992c5c21584c67bd9328e1a537b289898a521967b"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/routes-input-guards-node24.json",
+      "sha256": "050415f56cbc5b06387ad43f3a590605736e4924d059f37418c21ce96bea412c"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/test-selector-review.json",
+      "sha256": "032528a81dd7e1f0932fd96f7a8aa75adeb65d8c881aaecbfbd9d22043418286"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/speech-source-review.json",
+      "sha256": "c3c676e7b79e18a1266eb2534f84d5eae11a6b4a9a61aaa3776f64f94137d78b"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/pointer-source-review.json",
+      "sha256": "086b48fe5d921302c7d83982208540c7b0a3c3750dcca889e77c17ed68d2ea65"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/boat-source-review.json",
+      "sha256": "2110ac306b9858219eab2ff4142d7736395a0e6e92966826644f907f1a9f49d2"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/final-view-source-review.json",
+      "sha256": "517b451dfcd0e959405d674951542390085d98bdea4e4440ef2034caa714560a"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/native-final-supplement.json",
+      "sha256": "e9280a22f18c8d8032192bdc794a5967251e260deb9ec075509e4fb5d9a0b24d"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/boat-entry-resolved-review.json",
+      "sha256": "585ebd4784392472f4487dc3be54e277a2753e7b5d0dfc1364ad79d1498acf45"
+    },
+    {
+      "path": "docs/game-review/A-TO-Z-IMPLEMENTATION-CHECKLIST.json",
+      "sha256": "041118f314a67c01637a7b6fb2111c30ab2d1488160e56a3a7912a7651231e38"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/row-details.tsv",
+      "sha256": "693990028e36104ac89b69fb0b15134d57c4f4aabfac857078e3ba3db3bfe5d1"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/native-final.json",
+      "sha256": "45cebe084634cca8d6a24b1c22c8e1029f4e65b3989a4bcfacd9a8d09aaddc8c"
+    }
+  ],
+  "reviewerCorrection": {
+    "priorAttempt": {
+      "path": "evidence/group-8-review-20260915/dispositions-failed-1789505120237.json",
+      "sha256": "7e0c9491cc91116882fcba820e1937621ecd47f3fcdf38cbd22905b6080abc91"
+    },
+    "reason": "The initial review expected only title/file/result/report and rejected the final ledger’s additional per-case candidate and candidateReceipt fields. The reviewer now compares all six fields exactly and independently verifies every edition receipt hash and candidate. Original acceptance, case selection, passing-result and qualification checks are unchanged; the failed reviewer attempt is retained."
+  },
+  "faults": []
+}

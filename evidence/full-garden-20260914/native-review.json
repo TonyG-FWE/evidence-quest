@@ -1,0 +1,13 @@
+{
+  "date": "2026-09-14",
+  "candidate": "GardenApp-jSuu-SzD.js / GardenApp-D2ksjeXZ.css",
+  "environment": "Actual Codex in-app browser, separate owned loopback origin http://127.0.0.1:4195/garden; fresh QA run; user origin 4192 untouched",
+  "actions": ["Begin adventure", "Start playing", "Walk to Mara", "Talk to Mara", "Choose later gathering response", "Read named Mara reply and explicit Pip response legend", "Return to Pip", "Walk to bridge pieces", "Read revised crossing note", "Hear this page then Stop listening", "Open microphone-off reading practice", "Close practice and verify focus returns to Read a short part aloud"],
+  "visual": "Actual native screenshot inspected: green and blue response buttons have the explicit You are Pip. Choose your response. legend; reply is labeled Mara says; seed boat, separate bridge pieces, Sol workshop and current cast visible.",
+  "render": {"frames":1740,"drawCalls":323,"triangles":77350,"geometries":196,"textures":5,"activeSamples":108,"p95":16.80000000000291,"lastRenderMs":1.7000000029802322,"dpr":1.125,"width":1599,"height":649,"geometryCpuBytes":5856064,"canvasColorBytes":4151004,"shadowDepthAllocationBytes":9437184,"sectionTextureBytes":131072,"gpuTotalMemory":"NOT_MEASURED","adapter":"ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)"},
+  "browserWarningsOrErrorsAtReview": [],
+  "localModelReading": "Actual Hear this page changed to Stop listening; Stop returned to Hear this page. Local English voice admission ran in the application. Audio intelligibility was not independently assessed.",
+  "microphone": "Not activated in the native review. Off state and return focus verified. Separate automated fake-device capture tests are labeled synthetic.",
+  "limitations": "108 active RAF intervals from this bounded route and display scale, not physical display FPS, all-chapter performance, all-device or learner qualification. Direct voice enumeration was unavailable in the read-only browser evaluation scope; native controls were used instead. No provider request or pronunciation claim.",
+  "cleanup": "QA browser tab closed after review. QA server cleanup recorded separately in delivery.json. User tab and save retained."
+}

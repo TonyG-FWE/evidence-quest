@@ -1,0 +1,43 @@
+{
+  "at": "2026-09-16T01:33:30.069Z",
+  "name": "native-sol-first-decision",
+  "snapshot": "- dialog \"A Small Repair\":\n  - banner:\n    - link:\n      - /url: /garden\n      - text: Evidence Quest\n      - generic: THE GARDEN ADVENTURE\n    - navigation \"Reading tools\":\n      - button \"Backpack\":\n        - generic: Backpack\n      - button \"Help\":\n        - generic: Help\n      - button \"Pause\":\n        - generic: Pause\n  - img \"The river and Grandma’s garden. Use the named controls below or click the scene.\"\n  - generic: Sol’s original draft\n  - button \"Close page. Continue to the game\": ×\n  - heading \"A Small Repair\" [active] [level=2]\n  - paragraph: Read here, then choose what Pip says or does.\n  - paragraph:\n    - text: Click a word for its meaning and pronunciation.\n  - paragraph: Sol wrote this draft about today’s repair. “I” means Sol.\n  - paragraph: Sol narrates\n  - paragraph:\n    - button \"Rain\"\n    - button \"dripped\"\n    - button \"through\"\n    - button \"the\"\n    - button \"roof\"\n    - button \"of\"\n    - button \"Rina's\"\n    - button \"bakery\"\n    - text: .\n    - button \"She\"\n    - button \"dragged\"\n    - button \"her\"\n    - button \"flour\"\n    - button \"sacks\"\n    - button \"away\"\n    - button \"from\"\n    - button \"the\"\n    - button \"puddles\"\n    - text: .\n  - paragraph: Rina\n  - paragraph:\n    - text: \"\\\"\"\n    - button \"I\"\n    - button \"promised\"\n    - button \"to\"\n    - button \"have\"\n    - button \"everyone's\"\n    - button \"bread\"\n    - button \"ready\"\n    - button \"today\"\n    - text: \",\\\"\"\n    - button \"Rina\"\n    - button \"said\"\n    - text: .\n    - text: \"\\\"\"\n    - button \"If\"\n    - button \"those\"\n    - button \"sacks\"\n    - button \"get\"\n    - button \"wet\"\n    - text: \",\"\n    - button \"I\"\n    - button \"won't\"\n    - button \"be\"\n    - button \"able\"\n    - button \"to\"\n    - button \"bake\"\n    - text: .\"\n  - paragraph: Sol narrates\n  - paragraph:\n    - button \"I\"\n    - button \"found\"\n    - button \"a\"\n    - button \"cracked\"\n    - button \"roof\"\n    - button \"tile\"\n    - button \"and\"\n    - button \"replaced\"\n    - button \"it\"\n    - text: .\n    - button \"The\"\n    - button \"dripping\"\n    - button \"stopped\"\n    - text: .\n  - paragraph: Sol narrates\n  - paragraph:\n    - button \"Rina\"\n    - button \"checked\"\n    - button \"the\"\n    - button \"sacks\"\n    - text: .\n    - button \"The\"\n    - button \"flour\"\n    - button \"was\"\n    - button \"still\"\n    - button \"dry\"\n    - text: .\n  - paragraph: Sol narrates\n  - paragraph:\n    - button \"I\"\n    - button \"packed\"\n    - button \"my\"\n    - button \"tools\"\n    - button \"and\"\n    - button \"went\"\n    - button \"back\"\n    - button \"to\"\n    - button \"my\"\n    - button \"workshop\"\n    - text: .\n  - button \"Hear this page\":\n    - text: Hear this page\n  - button \"Read a short part aloud\"\n  - strong: Sol says\n  - generic: I don’t think anyone would want to hear about fixing a roof. I haven’t even written an ending.\n  - group \"You are Pip. Choose your response.\":\n    - generic: You are Pip. Choose your response.\n    - button \"Let’s finish the ending together.\"\n    - button \"You could read your draft and ask what people want to hear more about.\"\n  - generic \"Ask Sol about the dripping\"\n  - navigation \"Conversation navigation\":\n    - button \"Return to previous part\"\n    - button \"Continue to the game\"",
+  "dom": {
+    "active": "A Small Repair",
+    "flow": [
+      {
+        "className": "garden-reader ",
+        "clientHeight": 656,
+        "flex": "0 1 auto",
+        "height": 656,
+        "overflow": "visible",
+        "scrollHeight": 656,
+        "top": 64
+      },
+      {
+        "className": "garden-reading-scroll",
+        "clientHeight": 475,
+        "flex": "0 1 auto",
+        "height": 475.0625,
+        "overflow": "auto",
+        "scrollHeight": 908,
+        "top": 178.1374969482422
+      },
+      {
+        "className": "g-reader-actions",
+        "clientHeight": 66,
+        "flex": "0 0 auto",
+        "height": 66.80000305175781,
+        "overflow": "visible",
+        "scrollHeight": 66,
+        "top": 653.2000122070312
+      }
+    ],
+    "url": "http://localhost:4198/garden",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "visible": "Sol’s original draft\n×\nA Small Repair\n\nRead here, then choose what Pip says or does.\n\nClick a word for its meaning and pronunciation.\n\nSol wrote this draft about today’s repair. “I” means Sol.\n\nSol narrates\n\nRain dripped through the roof of Rina's bakery. She dragged her flour sacks away from the puddles.\n\nRina\n\n\"I promised to have everyone's bread ready today,\" Rina said. \"If those sacks get wet, I won't be able to bake.\"\n\nSol narrates\n\nI found a cracked roof tile and replaced it. The dripping stopped.\n\nSol narrates\n\nRina checked the sacks. The flour was still dry.\n\nSol narrates\n\nI packed my tools and went back to my workshop.\n\nHear this page\nRead a short part aloud\nSol says\nI don’t think anyone would want to hear about fixing a roof. I haven’t even written an ending.\nYou are Pip. Choose your response.\nLet’s finish the ending together.\nYou could read your draft and ask what people want to hear more about.\nAsk Sol about the dripping\nReturn to previous part\nContinue to the game"
+  }
+}

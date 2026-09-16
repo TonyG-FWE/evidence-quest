@@ -1,0 +1,60 @@
+{
+  "at": "2026-09-15T04:51:22.676Z",
+  "scope": "Read-only review of real reducer handlers in an isolated in-memory game. No browser/save/provider calls. Current compilation may differ from a later candidate.",
+  "hashes": [
+    {
+      "path": "src/garden/model.ts",
+      "sha256": "8d5f6f81220c64ba72b2e18d619cb13dd077a17a5e67ba475cad9d4b91bac4f3"
+    },
+    {
+      "path": "src/garden/interaction.ts",
+      "sha256": "292602386d547358c1ad547ad812e05201a430e44490dab39f86807f751b2e98"
+    },
+    {
+      "path": "src/garden/WorldActivity.tsx",
+      "sha256": "485dd965d783d319dfaa2c706727a03a98f0c81ae9fa2aa529ec62be1dc373b7"
+    },
+    {
+      "path": ".cache/checks/src/garden/model.js",
+      "sha256": "b4377ca80de1e5c2e3d197ce75ebe60b9a70b9df50ab16caa6a6b78e4ee8e248"
+    },
+    {
+      "path": ".cache/checks/src/garden/interaction.js",
+      "sha256": "14f5c43ae522bdfc4abf0dbc14807e3b2191eed09b693456c4a6e33d64045ace"
+    }
+  ],
+  "observations": [
+    {
+      "case": "rehearsal-help-letter",
+      "expectedPanel": "opening",
+      "actualPanel": "opening",
+      "pass": true
+    },
+    {
+      "case": "rehearsal-backpack-owned-story",
+      "expectedPanel": "story",
+      "actualPanel": "story",
+      "actualPageHolder": "pip",
+      "pass": true
+    },
+    {
+      "case": "parent-activity-retained",
+      "expectedActivityId": "1108",
+      "actualActivityId": "1108",
+      "pass": true
+    },
+    {
+      "case": "already-delivered-plan-preview",
+      "notices": {
+        "mara": {
+          "time": "later",
+          "reader": "mara"
+        },
+        "sol": "later"
+      },
+      "roleText": "Trying a gathering plan · Previewing does not send invitations",
+      "notice": "Previewing does not send invitations. Confirm the plan, then check who needs an update.",
+      "unchanged": true
+    }
+  ]
+}

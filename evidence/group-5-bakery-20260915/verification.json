@@ -1,0 +1,296 @@
+{
+  "at": "2026-09-15T07:58:11.726Z",
+  "status": "PASS_BOUNDED_GROUP_5",
+  "scope": "Actual connected bakery visit, permission/material transfer, directed roof repair, leak recovery, protected flour, baking, accompanied thanks, exact original/working/selected writing and bounded excerpt support. Groups6–8 and semantic-service qualification remain separate.",
+  "checks": {
+    "build": "PASS",
+    "installation": "Prior npm ci passed with exact unchanged reviewed package and lockfile",
+    "contracts": {
+      "passed": 85,
+      "failed": 0
+    },
+    "authored": {
+      "passed": 23,
+      "providerCalls": 0
+    },
+    "content": {
+      "sources": 15,
+      "components": 72,
+      "words": 1143
+    },
+    "browser": {
+      "uniqueCases": 4,
+      "latestResultPerCase": [
+        {
+          "file": "garden-bakery.spec.ts",
+          "title": "Bakery: connected repair, wrong placement, compact recovery, baking, accompanied thanks and exact draft excerpt",
+          "project": "chromium",
+          "result": "passed",
+          "evidence": "browser-final.json"
+        },
+        {
+          "file": "garden-chapter.spec.ts",
+          "title": "Complete Garden chapter: later Mara tells; Sol prepared ending",
+          "project": "chromium",
+          "result": "passed",
+          "evidence": "browser-initial.json"
+        },
+        {
+          "file": "garden-chapter.spec.ts",
+          "title": "Complete Garden chapter: later Pip reads; Sol develops draft",
+          "project": "chromium",
+          "result": "passed",
+          "evidence": "browser-initial.json"
+        },
+        {
+          "file": "garden-chapter.spec.ts",
+          "title": "Complete Garden chapter: usual time; Sol keeps draft and Pip delivers Grandma’s story",
+          "project": "chromium",
+          "result": "passed",
+          "evidence": "browser-initial.json"
+        }
+      ],
+      "meaning": "Dated affected routes plus final scoped corrections; not one final full-suite run"
+    },
+    "independent": "evidence/group-5-review-20260915/final-review.json",
+    "protectedInputs": {
+      "compared": 460,
+      "changed": 0
+    },
+    "originalArt": {
+      "compared": 52,
+      "changed": 0
+    },
+    "auditRows": 169
+  },
+  "limitations": [
+    "Full-game acceptance remains open until Groups6–8 and final owner review.",
+    "Procedural geometry is not acceptance of the final illustrated production artwork.",
+    "Actual handler/native adult review does not establish child learning improvement.",
+    "Live semantic/pronunciation qualification remains unavailable; TASK11.19 stays halted at1/75.",
+    "Final cross-browser, physical-device, accessibility and performance qualification remain Group8 responsibilities.",
+    "No reset, test injection or forced refresh used the owner4192 save."
+  ],
+  "hashes": [
+    {
+      "path": "src/garden/AdditionalWordHelp.tsx",
+      "sha256": "894dcf6e43308739797639b687afc2fd75b3493acc43ba810c9f68f734f986cf"
+    },
+    {
+      "path": "src/garden/art.ts",
+      "sha256": "3d1feb22ef4ae28c35e1ac65941d6a7629a3259589c173ec0ad5f91c6adc7d20"
+    },
+    {
+      "path": "src/garden/audio.ts",
+      "sha256": "fb4709059a8d33a2517714e0c3ec8ae02a990ebd7d976fad3224b44d8d97d30a"
+    },
+    {
+      "path": "src/garden/bakery.ts",
+      "sha256": "8125a9d827407e145194f0a57a56d8bb1de9b557cee49f62c85884136f49d4f4"
+    },
+    {
+      "path": "src/garden/BakeryControls.tsx",
+      "sha256": "d48badb9b0295d5ce70f7651d26da151c5a0d25ca43ee344be9e47c5c0c6fd80"
+    },
+    {
+      "path": "src/garden/bakeryWorld.ts",
+      "sha256": "ac096b223a8d851a9b155e24d751e4f375e37bc2e9628dfd54ef0d226a136beb"
+    },
+    {
+      "path": "src/garden/BoatControls.tsx",
+      "sha256": "a93e30ba9a0be417eb24a984326b904251a747cf852aa54337aeb8b49bd085d5"
+    },
+    {
+      "path": "src/garden/chapter.ts",
+      "sha256": "f13b2567987c7b963338a270da4b00a8a3881d12c86b7ecda305ea1d1be42b99"
+    },
+    {
+      "path": "src/garden/chapterContent.ts",
+      "sha256": "e779bb4edf96103badbaedfbfa54866bb7f6241d9b4a8d74292f8b04a174a370"
+    },
+    {
+      "path": "src/garden/chapterGlossary.ts",
+      "sha256": "2c5445b5d3c6aec7907a689df94d7d07f94da2462de4080e342c866c6a71708d"
+    },
+    {
+      "path": "src/garden/ChapterPanels.tsx",
+      "sha256": "5602ab4e3a5a09e44d55b0851e5beb1966d102412ae14b79c9f7ebab965f2a0b"
+    },
+    {
+      "path": "src/garden/chapterWorld.ts",
+      "sha256": "0d9925dfbe66fbdf5e5de1645638bd0739bc02a5d0c01edd0b20bd48edf76426"
+    },
+    {
+      "path": "src/garden/content.ts",
+      "sha256": "e4cb004657d7eeba0a164db0ee285d8e72047c20ee6c412f640f3bf9228d96b1"
+    },
+    {
+      "path": "src/garden/DraftReader.tsx",
+      "sha256": "5eaf6c66f34e2de5b4b598f97850fcd20756006e9ab351a7d2f82e60f27c7935"
+    },
+    {
+      "path": "src/garden/FeedbackActivity.tsx",
+      "sha256": "0efdefbb683aa99311dd701660322abcdbe7e9ffc56057f6d29df134db5714b4"
+    },
+    {
+      "path": "src/garden/focus.ts",
+      "sha256": "257caac77a8de22a2c35f7a9272d90fc13797c134eb81960849e449f952b8367"
+    },
+    {
+      "path": "src/garden/garden.css",
+      "sha256": "80448083281337cad54bb95d0e4508f25e0d8eef077d32df8165bc9ed9134b60"
+    },
+    {
+      "path": "src/garden/GardenApp.tsx",
+      "sha256": "de1bf88680a81aa1c2aa744f695700c600241c9760d86c000282b5e4979ddf0d"
+    },
+    {
+      "path": "src/garden/GardenScene.tsx",
+      "sha256": "866e0b208a30fff3fbabd5053b7269a0dc81a0a1a0702d7fd8e96904926b5851"
+    },
+    {
+      "path": "src/garden/interaction.ts",
+      "sha256": "10572db594a93d33784945d18a4ff8941f02860d4338759ac1936572b7eee767"
+    },
+    {
+      "path": "src/garden/mara.ts",
+      "sha256": "c77c7a89106e7149944aa22da9be97cdfbf882cde569740a16dbc2ebb24e5e0a"
+    },
+    {
+      "path": "src/garden/MaraWorld.tsx",
+      "sha256": "9b15d9292b32a258cfb257551cdfe7a08a00517311389f64dbd9750a83ffd3ae"
+    },
+    {
+      "path": "src/garden/model.ts",
+      "sha256": "41d62b1665b7e5f71a01ad0309998a8b28339f4c3a874d7825799a8ca4850bf7"
+    },
+    {
+      "path": "src/garden/persistence.ts",
+      "sha256": "4711ec4422e9309f41f2a06b19f06d8741c4b6668b29e5d96309fe57d37266a3"
+    },
+    {
+      "path": "src/garden/ReadingDetails.tsx",
+      "sha256": "06195a7245343bac7019b78eb60756a6fe2a483ea25289c5693ab9c56d9e79a3"
+    },
+    {
+      "path": "src/garden/ReadingPractice.tsx",
+      "sha256": "b96c72d59e872ad4e8149b4e0caa30fd9ad262bab9110ea081fc679cb62bef48"
+    },
+    {
+      "path": "src/garden/river.ts",
+      "sha256": "94ef9e24dd10631b799a521283ddd4a504815249ed419975878653e03f0a6db0"
+    },
+    {
+      "path": "src/garden/StoryStage.tsx",
+      "sha256": "f6e67ff578497383b3f5d8b3ffbb8093d274de737ba485eda9e535845df4a9d8"
+    },
+    {
+      "path": "src/garden/WorldActivity.tsx",
+      "sha256": "694708925805959c0d5994db6953f4bf98ea75c33fa62ed27f45ec6ce77ab9db"
+    },
+    {
+      "path": "checks/garden-bakery.test.ts",
+      "sha256": "adb0d2a8f9f65b1d640e97fcb67ec9f3b5949d5b0d4e8ca88f940b42158224d9"
+    },
+    {
+      "path": "checks/garden-chapter.test.ts",
+      "sha256": "e5c98607349ea391bc16157ee3a517f0960a17bc244db2688ad031e2ee7d98d5"
+    },
+    {
+      "path": "checks/garden-interaction.test.ts",
+      "sha256": "8fec221528da97951a607bc3f63f7bbe7a6fcd511c25002f96d7c87bc2ebc59d"
+    },
+    {
+      "path": "checks/garden-mara.test.ts",
+      "sha256": "e1b7cf3a4a1626269abceffe1691cfbe720a7a450a864f1605bf4bd0de9fd292"
+    },
+    {
+      "path": "checks/garden-play-actions.ts",
+      "sha256": "30515c5ab9629eee74d0e9fd6110b27aae9824e89c0792a62e0080f80c620d62"
+    },
+    {
+      "path": "checks/garden-river.test.ts",
+      "sha256": "3bb0ce3f8d1f27ea796a58001d92e2a050fd2073322c1ffc54f85d9c479cb72e"
+    },
+    {
+      "path": "checks/garden.test.ts",
+      "sha256": "6be5c3fc79585fedad9ab79c91ea4ef8160d7cf3509f1a7c182b560d999c273d"
+    },
+    {
+      "path": "browser-tests/garden-actions.ts",
+      "sha256": "826f171f868468944affd806d04a526fc4f90c5ea5678bf2b374ad47599e4d2f"
+    },
+    {
+      "path": "browser-tests/garden-bakery.spec.ts",
+      "sha256": "fe91532e72cadf6f84eaca798c6baca0dbca3ba260801ae15a2089e162ca588b"
+    },
+    {
+      "path": "browser-tests/garden-chapter.spec.ts",
+      "sha256": "4b2c89ab3a4b11a7673c6464fd0b7cee92748ec61d33891cf777cac58928f2d6"
+    },
+    {
+      "path": "browser-tests/garden-interaction.spec.ts",
+      "sha256": "949ad279edb9eb685ffb339a8a694cbb994acbe530c78b8eeea65b3897743238"
+    },
+    {
+      "path": "browser-tests/garden-literacy.spec.ts",
+      "sha256": "a0e7d021a6968b4b0a666e5c09e885fb966bdc604638e6987d53a8e079b6cc5e"
+    },
+    {
+      "path": "browser-tests/garden-mara.spec.ts",
+      "sha256": "47b518fe43fd4c9bcae431fabd6f46dd7ff9f0bd24af1977e4d921ffadd531a6"
+    },
+    {
+      "path": "browser-tests/garden-measurements.spec.ts",
+      "sha256": "849863c12c58ebc7c453bdb07f8135c44651cbffecc15e3e37160d489247b937"
+    },
+    {
+      "path": "browser-tests/garden-river.spec.ts",
+      "sha256": "ac8a2fe2665065dd1739d09bce48c4b33c9a53e90534d91daf5183ff2f7498fc"
+    },
+    {
+      "path": "browser-tests/garden-word-jobs.spec.ts",
+      "sha256": "c40aaff4844dae2f67865289bc4bff18e9725051363057d74522d118f274943a"
+    },
+    {
+      "path": "browser-tests/garden.spec.ts",
+      "sha256": "72f56fd655e056c42b72fadc8dccafe4c2a88dbd78210fb975b308285cab2b42"
+    },
+    {
+      "path": "dist/client/assets/serialized-AKKBhD_x.js",
+      "sha256": "0cc190023b6a43708287682ef43eef52866a533144bca37c153373ee915ab6a4"
+    },
+    {
+      "path": "dist/client/assets/index-BinEw634.js",
+      "sha256": "8f8090aaa5e0cea6f85c51c0eb38a7a1b020ac4f5664f5b80a3185b5b796cfdd"
+    },
+    {
+      "path": "dist/client/assets/index-D7U2vX1x.css",
+      "sha256": "e57e791c5fdcecf3f5546f1bf865fe6b4277f670cc02656b51feb159a1f5601d"
+    },
+    {
+      "path": "dist/client/assets/GardenApp-Cl2pNkL9.js",
+      "sha256": "f36c6df125c60ab81023bd95ca067ccf431507d20b4804c02520800afc2e667c"
+    },
+    {
+      "path": "dist/client/assets/GardenApp-BQg8ozvd.css",
+      "sha256": "156b987ab93515cfc82b6ae52a0f96369e688ad7c2ef316626fb9569b76270a3"
+    },
+    {
+      "path": "dist/client/assets/App-CRAk2gRf.js",
+      "sha256": "6ac481278a1fa8e428fd8cb646124855f80d48ec7914eb1b88a011524a3c6a49"
+    },
+    {
+      "path": "dist/client/assets/App-CvfCOyJg.css",
+      "sha256": "0e968f90c15700b38c0a0bbc3379546041046e29c2db3ba1c048a009b4be488c"
+    },
+    {
+      "path": "scripts/validate-garden.mjs",
+      "sha256": "47bb0039ddaa78bfc702b58e45c39292ce0819f7035b44b2f8120e3fa49edc9d"
+    },
+    {
+      "path": "evidence/group-5-review-20260915/final-review.json",
+      "sha256": "4a1326f1b03fb01d915b3eeecfa58f158c63fcca48621f7275a27c734f506a4e"
+    }
+  ]
+}

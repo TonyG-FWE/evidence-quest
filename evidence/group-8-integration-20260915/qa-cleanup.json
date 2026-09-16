@@ -1,0 +1,45 @@
+{
+  "At": "2026-09-15T20:48:55.7504424Z",
+  "Result": "PASS_OWNED_QA_CLEANUP",
+  "Stopped": [
+    {
+      "Port": 4195,
+      "Pid": 30560,
+      "ExecSession": 7101,
+      "Path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "Started": "2026-09-15T04:28:12.2479754Z",
+      "Ownership": "Root-created QA server",
+      "Action": "Stop exact owned process"
+    },
+    {
+      "Port": 4197,
+      "Pid": 3380,
+      "ExecSession": 14506,
+      "Path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "Started": "2026-09-15T16:36:42.8776642Z",
+      "Ownership": "Root-created QA server",
+      "Action": "Stop exact owned process"
+    },
+    {
+      "Port": 4198,
+      "Pid": 16092,
+      "ExecSession": 93105,
+      "Path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "Started": "2026-09-15T17:11:09.4549940Z",
+      "Ownership": "Root-created QA server",
+      "Action": "Stop exact owned process"
+    }
+  ],
+  "Retained": [
+    {
+      "Pid": 14092,
+      "Port": 4192
+    },
+    {
+      "Pid": 28540,
+      "Port": 4200
+    }
+  ],
+  "Peer4199": "Peer owns cleanup; not stopped here",
+  "SavedAdventures": "Unchanged; no storage deletion"
+}

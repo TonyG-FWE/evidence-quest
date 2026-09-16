@@ -1,0 +1,20 @@
+{
+  "report": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\dialogue-continuity-20260915\\browser-corrected.json",
+  "artifacts": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\dialogue-continuity-20260915\\browser-corrected-artifacts",
+  "exitCode": 0,
+  "arguments": [
+    "run",
+    "test:browser",
+    "--",
+    "garden-chapter.spec.ts",
+    "garden-river.spec.ts",
+    "garden-word-jobs.spec.ts",
+    "garden-bakery.spec.ts",
+    "garden-mara.spec.ts",
+    "--project=chromium",
+    "--grep",
+    "Sol prepared|G3 ordinary controls|Actual draft word view|Bakery:|G4 ordinary early"
+  ],
+  "chromiumChannel": "chromium",
+  "at": "2026-09-15T23:24:36.0668609Z"
+}

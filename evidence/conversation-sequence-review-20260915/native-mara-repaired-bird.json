@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-16T01:40:38.762Z",
+  "name": "native-mara-repaired-bird",
+  "snapshot": "- main:\n  - link \"Garden Adventure\":\n    - /url: /garden\n    - text: Evidence Quest\n    - generic: THE GARDEN ADVENTURE\n  - generic: Saving…\n  - navigation \"Game tools\":\n    - button \"Backpack\":\n      - generic: Backpack\n    - button \"Help\":\n      - generic: Help\n    - button \"Pause\":\n      - generic: Pause\n  - status:\n    - strong: What’s happening\n    - paragraph: The tape bridges both torn edges. The wing now holds together.\n  - region \"Play The Torn Wing\":\n    - strong: The Torn Wing · Mara’s earlier story\n    - generic: You guide Mara. Pip waits in Grandma’s garden.\n    - 'img \"Mara’s earlier dock: her office and tape on the left; the boy and his torn paper bird on the right. Named controls perform the same actions.\"'\n    - paragraph: The tape crosses the tear and holds the wing. Let the boy carry his repaired bird onto the dock.\n    - button \"Let the boy carry his bird\"\n    - button \"Read Mara’s page\"\n    - paragraph: The wing is mended. Let the boy carry his bird onto the dock. The boy keeps his sister’s original bird.",
+  "dom": {
+    "active": "\n    Evidence QuestTHE GARDEN ADVENTURESaved in this browserBackpackHelpPauseWhat’s happeningThe tape bridges both torn edges. The wing now holds together.The Torn Wing · Mara’s earlier storyYou guide Mara. Pip waits in Grandma’s garden.The tape crosses the tear and holds the wing. Let the boy carry his repaired bird onto the dock.Let the boy carry his birdRead Mara’s pageThe wing is mended. Let the boy carry his bird onto the dock. The boy keeps his sister’s original bird.\n  \n\n",
+    "flow": [],
+    "url": "http://localhost:4198/garden",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "visible": "Evidence Quest\nTHE GARDEN ADVENTURE\nSaved in this browser\nBackpack\nHelp\nPause\nWhat’s happening\n\nThe tape bridges both torn edges. The wing now holds together.\n\nThe Torn Wing · Mara’s earlier story\nYou guide Mara. Pip waits in Grandma’s garden.\n\nThe tape crosses the tear and holds the wing. Let the boy carry his repaired bird onto the dock.\n\nLet the boy carry his bird\nRead Mara’s page\n\nThe wing is mended. Let the boy carry his bird onto the dock. The boy keeps his sister’s original bird."
+  }
+}

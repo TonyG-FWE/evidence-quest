@@ -1,0 +1,24 @@
+{
+  "at": "2026-09-14T23:27:36.342Z",
+  "count": 169,
+  "groups": 19,
+  "statusCounts": {
+    "DEFECT": 28,
+    "PARTIAL": 88,
+    "UNVERIFIED": 7,
+    "MISSING": 23,
+    "PRESENT": 22,
+    "UNRESOLVED": 1
+  },
+  "topics": 20,
+  "requirementsIndexed": 344,
+  "sourceDocuments": 89,
+  "decisionsIndexed": 81,
+  "authority": "Latest user explicitly required audit before further decisions and world-based gameplay after confirmation.",
+  "limitations": [
+    "Source/handler inspection plus bounded native opening/backpack/construction audit and user-reported later play failures, not a newly completed full route.",
+    "No live provider requests or microphone recording.",
+    "No runtime or original imported design edits.",
+    "Existing functional tests retained as historical, not rerun or upgraded into experience acceptance."
+  ]
+}
