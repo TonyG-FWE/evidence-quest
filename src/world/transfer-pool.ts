@@ -18,6 +18,7 @@ export class TransferPool<T>{
   entry.owners.add(owner);entry.used=++this.clock;return entry.promise;
  }
  dispose(owner:symbol){for(const [url,e]of this.entries){e.owners.delete(owner);if(!e.owners.size&&e.status==='loading')this.drop(url);}}
+ available(url:string){const entry=this.entries.get(url);return !!entry&&entry.status!=='failed';}
  retry(){for(const [url,e]of this.entries)if(e.status==='failed')this.drop(url);}
  stats(){return{reservedBytes:this.bytes(),peakBytes:this.peak,maximumBytes:this.maximumBytes,entries:this.entries.size};}
 }

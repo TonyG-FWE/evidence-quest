@@ -1,3 +1,4 @@
+import {buildBridge} from './garden-bridge-actions.js';
 import {completeConversation} from './garden-play-actions.js';
 import test from 'node:test';import assert from 'node:assert/strict';
 import {GardenStore,initialGarden,CROSSING,MARA,GRANDMA_APPROACH,type Point} from '../src/garden/model.js';
@@ -12,8 +13,8 @@ function go(s:GardenStore,point:Point){close(s);s.send({type:'GO',point});advanc
 function ready(prepared=true){
  const s=new GardenStore(initialGarden('gather-'+serial++),()=>String(serial++));s.send({type:'BOOT'});s.send({type:'BEGIN'});s.send({type:'START_PLAY'});
  go(s,{x:MARA.x,z:MARA.z+.95});s.send({type:'TALK',who:'mara'});completeConversation(s);s.send({type:'TAKE_PAGE'});advance(s);event(s,{kind:'WATCH_DUTY'});advance(s);
- go(s,CROSSING);s.send({type:'COLLECT_ROPES'});advance(s);s.send({type:'ARRANGE'});for(const[section,x]of [['a',-.775],['b',.775]] as const){s.send({type:'SELECT',section});s.send({type:'PREVIEW',point:{x,z:3}});s.send({type:'PLACE'});}s.send({type:'JOIN'});s.send({type:'FASTEN',end:'west'});s.send({type:'FASTEN',end:'east'});s.send({type:'BACK'});
- go(s,GRANDMA_APPROACH);s.send({type:'PLANT'});advance(s);finishBakery(s);go(s,SOL_APPROACH);s.send({type:'TALK',who:'sol'});completeConversation(s);
+ go(s,CROSSING);buildBridge(s);
+ go(s,GRANDMA_APPROACH);s.send({type:'PLANT'});advance(s);s.send({type:'BLOOM'});advance(s);finishBakery(s);go(s,SOL_APPROACH);s.send({type:'TALK',who:'sol'});completeConversation(s);
  if(prepared){event(s,{kind:'FINISH_WITH_SOL'});event(s,{kind:'EDIT',text:'Rina brought me a loaf to thank me.'});event(s,{kind:'SELECT_ENDING',contribution:{text:s.getSnapshot().chapter.story.solDraft.text,scene:'thanks',origin:'child',revision:s.getSnapshot().chapter.story.solDraft.revision}});}else event(s,{kind:'BRING_DRAFT'});
  go(s,GRANDMA_APPROACH);event(s,{kind:'REPORT_MARA'});event(s,{kind:'REPORT_SOL'});event(s,{kind:'PLAN',time:'later',reader:'pip'});go(s,SOL_APPROACH);event(s,{kind:'INVITE',who:'sol'});go(s,{x:MARA.x,z:MARA.z+.95});event(s,{kind:'INVITE',who:'mara'});go(s,GRANDMA_APPROACH);
  assert.ok(planProblems(s.getSnapshot().chapter).some(x=>x.includes('report the agreed')));event(s,{kind:'REPORT_ARRANGEMENTS'});assert.deepEqual(planProblems(s.getSnapshot().chapter),[]);return s;
@@ -21,7 +22,7 @@ function ready(prepared=true){
 function boot(c:ReturnType<GardenStore['getSnapshot']>['chapter']){const s=new GardenStore(initialGarden('restore-'+serial++),()=>String(serial++));s.send({type:'BOOT',chapter:c});return s;}
 test('Gathering arrival commits each physical stage once and never invents arrival on reload',()=>{
  const s=ready(),prior=structuredClone(s.getSnapshot().chapter);assert.equal(prior.mara.service,'served');event(s,{kind:'BEGIN_GATHERING'});assert.equal(s.getSnapshot().action?.kind,'finalBoat');s.send({type:'TICK',ms:80});s.send({type:'OPEN',panel:'help'});assert.equal(s.getSnapshot().chapter.gathering.arrival,'boat-moored');assert.equal(s.getSnapshot().chapter.story.phase,'arriving');close(s);
- const restored=boot(s.getSnapshot().chapter);advance(restored);assert.equal(restored.getSnapshot().chapter.gathering.arrival,'boat-moored');const waiting={...restored.getSnapshot().chapter.pip};restored.send({type:'GO',point:SOL_APPROACH});advance(restored);assert.deepEqual(restored.getSnapshot().chapter.pip,waiting);assert.equal(restored.getSnapshot().chapter.gathering.arrival,'boat-moored');event(restored,{kind:'CONTINUE_ARRIVAL'});assert.equal(restored.getSnapshot().action?.kind,'finalPassengers');
+ const restored=boot(s.getSnapshot().chapter);advance(restored,12000);assert.equal(restored.getSnapshot().chapter.gathering.arrival,'boat-moored');const waiting={...restored.getSnapshot().chapter.pip};restored.send({type:'GO',point:SOL_APPROACH});advance(restored,12000);assert.deepEqual(restored.getSnapshot().chapter.pip,waiting);assert.equal(restored.getSnapshot().chapter.gathering.arrival,'boat-moored');event(restored,{kind:'CONTINUE_ARRIVAL'});assert.equal(restored.getSnapshot().action?.kind,'finalPassengers');
  const crashed=boot(restored.getSnapshot().chapter);assert.equal(crashed.getSnapshot().chapter.gathering.arrival,'boat-moored');event(crashed,{kind:'CONTINUE_ARRIVAL'});advance(crashed);assert.equal(crashed.getSnapshot().chapter.gathering.arrival,'passengers-ashore');assert.equal(crashed.getSnapshot().chapter.mara.service,'served');finishArrivals(crashed);assert.equal(crashed.getSnapshot().chapter.gathering.welcome,false);
  for(const key of ['seed','river','bakery','page'] as const)assert.deepEqual(crashed.getSnapshot().chapter[key],prior[key]);assert.ok(validChapter(crashed.getSnapshot().chapter));
 });

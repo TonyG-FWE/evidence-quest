@@ -1,0 +1,21 @@
+{
+  "at": "2026-09-19T06:26:10.034Z",
+  "profile": "local-review-personal-landscape",
+  "status": "BUILD_PASS_BOUND",
+  "git": {
+    "head": "7cc938a10bb52226a7a13493b64828eccf9c53d2",
+    "tree": "ccab31fd53324916b5cf4a2ad9abcdca06a0b589"
+  },
+  "runtime": {
+    "node": "v24.21.0",
+    "platform": "win32",
+    "arch": "x64"
+  },
+  "inputSha256": "7707ff96982dccc4362d7083951c4d55b2cc2f3fed465fa53cca8931cb4d643a",
+  "outputSha256": "4e4da51f4fe21089f34fe5b504ece6add3a6eca73d939ae7e441978b4a57532b",
+  "inputFiles": 8270,
+  "outputFiles": 7480,
+  "audioManifestSha256": "d5e493c3168c7a3929c5ad235d5740b5eb081a2fc401806731cee727b7fd6e0b",
+  "log": "output/repair-successor-build.log",
+  "limits": "Native browser qualification, clean checkout and human acceptance remain separate."
+}

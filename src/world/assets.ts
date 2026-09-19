@@ -3,7 +3,7 @@ import illustrated from '../../content/illustrated-assets.json' with {type:'json
 import type {Rect,Point} from '../../contracts/types.js';
 import {ImagePool,type ImageResource} from './image-pool.js';
 import {RasterPool} from './raster-pool.js';
-import{acquireArtUrl,releaseArtUrl,retryArtTransfers,artTransferStats}from'./transfers.js';
+import{acquireArtUrl,releaseArtUrl,retryArtTransfers,artTransferStats,hasArtTransfer}from'./transfers.js';
 import {production,productionFrame,productionFrames,type ProductionFrame} from './production.js';
 export {manifest};
 interface Illustration {url:string;frameWidth:number;frameHeight:number;columns:number;contentRectPixels:number[];frames?:Array<{rect:number[];anchor:number[]}>;anchor?:number[];referenceHeight?:number;mirror?:boolean;}
@@ -72,11 +72,25 @@ export class Assets {
   }
   return selected&&entry?{...selected,entry}:null;
  }
+ private existingHigher(id:string,variant:string,frame:number){
+  const frames=productionFrames(id,variant,2);if(!frames?.length)return null;
+  const adopt=(item:ProductionFrame)=>{for(const url of [item.url,...(item.fallbackUrl?[item.fallbackUrl]:[])]){const loaded=pool.existing(url,this.owner,true);if(loaded){this.used.add(url);this.collecting?.urls.add(url);if(loaded.status!=='failed')return {...loaded,entry:{...item,url}};}else if(hasArtTransfer(url)){const decoded=this.request({url,rgbaBytes:item.rgbaBytes,level:2,group:production[id+'/'+variant]!.group});if(decoded.status!=='budget')return {...decoded,entry:{...item,url}};}}return null;};
+  // Retain a failed primary alongside its admitted fallback. Otherwise a small
+  // draw retires that failure, the next large draw retries it, and the in-flight
+  // PNG fallback is canceled and downloaded again before it can finish.
+  // Use the high frame's own crop, anchor and reference-height metadata. Merely
+  // substituting its URL into the smaller frame would alter apparent scale.
+  const selected=adopt(frames[frame%frames.length]!);if(!selected)return null;
+  // Retain already-admitted companions of the same animation, so a small draw
+  // does not retire the next high frame before the cycle reaches it.
+  for(const [index,item]of frames.entries())if(index!==frame%frames.length)adopt(item);
+  return selected;
+ }
  private actorReady(id:string,item:ReadyImage){if(id.startsWith('ASSET.ACT.'))this.lastActor.set(id,item);return item;}
  private actorWaiting(id:string){const previous=this.lastActor.get(id);if(previous?.image.complete&&previous.image.naturalWidth>0){this.used.add(previous.entry.url);return previous;}this.lastActor.delete(id);return null;}
  image(id:string,variant='base',density=1,frame=0):ReadyImage|null {
   if(production[id+'/'+variant]){
-   const requested=density>=2?2:1,preferred=this.modern(id,variant,requested,frame),fallback=requested===2&&preferred?.status==='failed'?this.modern(id,variant,1,frame):null,item=preferred?.value?preferred:fallback??preferred;
+   const requested=density>=2?2:1,preferred=requested===1?this.existingHigher(id,variant,frame)??this.modern(id,variant,1,frame):this.modern(id,variant,2,frame),fallback=requested===2&&preferred?.status==='failed'?this.modern(id,variant,1,frame):null,item=preferred?.value?preferred:fallback??preferred;
    if(!item?.value){if(this.collecting)this.collecting.complete=false;if(item?.status==='failed'&&!this.notifiedFailure){this.notifiedFailure=true;this.fail();}return this.actorWaiting(id);}
    const entry=item.entry;return this.actorReady(id,{image:item.value,entry:{url:entry.url,density:1,frameWidth:entry.width,frameHeight:entry.height,columns:1,contentRectPixels:entry.contentRectPixels,anchor:entry.anchor,referenceHeight:entry.referenceHeight,mirror:entry.mirror},sourceFrame:0,modern:true});
   }

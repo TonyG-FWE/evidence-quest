@@ -1,1 +1,0 @@
-import{defineConfig}from'@playwright/test';import base from'./playwright.production.config.js';export default defineConfig({...base,testIgnore:[],testMatch:['**/chunk-retry-diagnostic.spec.ts'],outputDir:'output/playwright/chunk-diagnostic-raw',reporter:[['list'],['json',{outputFile:'evidence/er13/chunk-retry-diagnostic-results.json'}]]});
