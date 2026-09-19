@@ -1,2 +1,0 @@
-import{defineConfig}from'@playwright/test';import base from'./playwright.config.js';
-export default defineConfig({...base,workers:3,testMatch:['**/qualification-states.spec.ts','**/resilience.spec.ts','**/acceptance-boundaries.spec.ts','**/compact.spec.ts','**/save.spec.ts','**/watch-position.spec.ts'],grep:/TASK11\.21|FIX11\.SAVE|FIX11\.ART_FAILURE (missing|HTTP503)|FIX11\.ACCESS|TASK11\.14|ER13 Watch/,outputDir:'output/playwright/repair-final-raw',reporter:[['list'],['json',{outputFile:'evidence/er13/final-repair-matrix.json'}]]});

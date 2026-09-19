@@ -1,0 +1,76 @@
+{
+  "binding": "evidence/demo-release-20260919/repair-r2/source-binding.json",
+  "profile": "personal-review-fitted-paths-and-banks",
+  "results": [
+    {
+      "command": "npm ci",
+      "started": "2026-09-19T06:00:42.857Z",
+      "finished": "2026-09-19T06:00:58.308Z",
+      "exit": 0,
+      "log": "evidence/demo-release-20260919/repair-r2/ci.log",
+      "sourceSha256": "e970b43e6d227dfb0cc2bfcb33afb4ac298d5c4a92620dd3dab8524d2be58d3a",
+      "sourceChangesDuringRun": [],
+      "operationalLedgerChanges": []
+    },
+    {
+      "command": "npm run validate:content",
+      "started": "2026-09-19T06:00:58.311Z",
+      "finished": "2026-09-19T06:01:02.118Z",
+      "exit": 0,
+      "log": "evidence/demo-release-20260919/repair-r2/validate-content.log",
+      "sourceSha256": "e970b43e6d227dfb0cc2bfcb33afb4ac298d5c4a92620dd3dab8524d2be58d3a",
+      "sourceChangesDuringRun": [],
+      "operationalLedgerChanges": []
+    },
+    {
+      "command": "npm run check",
+      "started": "2026-09-19T06:01:02.119Z",
+      "finished": "2026-09-19T06:01:19.229Z",
+      "exit": 0,
+      "log": "evidence/demo-release-20260919/repair-r2/check.log",
+      "sourceSha256": "e970b43e6d227dfb0cc2bfcb33afb4ac298d5c4a92620dd3dab8524d2be58d3a",
+      "sourceChangesDuringRun": [],
+      "operationalLedgerChanges": []
+    },
+    {
+      "command": "npm run build:server",
+      "started": "2026-09-19T06:01:19.230Z",
+      "finished": "2026-09-19T06:01:24.453Z",
+      "exit": 0,
+      "log": "evidence/demo-release-20260919/repair-r2/build-server.log",
+      "sourceSha256": "e970b43e6d227dfb0cc2bfcb33afb4ac298d5c4a92620dd3dab8524d2be58d3a",
+      "sourceChangesDuringRun": [],
+      "operationalLedgerChanges": []
+    },
+    {
+      "command": "npm run test:contracts",
+      "started": "2026-09-19T06:01:24.454Z",
+      "finished": "2026-09-19T06:01:39.683Z",
+      "exit": 0,
+      "log": "evidence/demo-release-20260919/repair-r2/test-contracts.log",
+      "sourceSha256": "e970b43e6d227dfb0cc2bfcb33afb4ac298d5c4a92620dd3dab8524d2be58d3a",
+      "sourceChangesDuringRun": [],
+      "operationalLedgerChanges": []
+    },
+    {
+      "command": "npm run eval:coach -- --mode authored",
+      "started": "2026-09-19T06:01:39.684Z",
+      "finished": "2026-09-19T06:01:46.118Z",
+      "exit": 0,
+      "log": "evidence/demo-release-20260919/repair-r2/eval-coach.log",
+      "sourceSha256": "e970b43e6d227dfb0cc2bfcb33afb4ac298d5c4a92620dd3dab8524d2be58d3a",
+      "sourceChangesDuringRun": [],
+      "operationalLedgerChanges": []
+    },
+    {
+      "command": "npm run build",
+      "started": "2026-09-19T06:01:46.119Z",
+      "finished": "2026-09-19T06:02:53.873Z",
+      "exit": 0,
+      "log": "evidence/demo-release-20260919/repair-r2/build.log",
+      "sourceSha256": "e970b43e6d227dfb0cc2bfcb33afb4ac298d5c4a92620dd3dab8524d2be58d3a",
+      "sourceChangesDuringRun": [],
+      "operationalLedgerChanges": []
+    }
+  ]
+}

@@ -1,19 +1,21 @@
-import {sources,wordHelp} from '../src/garden/content.js';
+import {isNarrativeEdition,isMaintenanceEdition,type NarrativeEdition,type MaintenanceEdition} from '../src/garden/narrativeEdition.js';
+import {sourcesFor,wordHelp} from '../src/garden/content.js';
 import {boundedJSON} from './coach.js';
 import {supportedWordHelp} from '../src/garden/readingGlossary.js';
-export interface WordRequest {requestId:string;revision:number;source:string|null;paragraph:number;draft:string|null;start:number;end:number;word:string;sentence:string;disputed:string|null;origin?:'authored-display'|'child-draft'|'mixed-display';}
+export interface WordRequest {maintenanceEdition?:MaintenanceEdition;narrativeEdition?:NarrativeEdition;requestId:string;revision:number;source:string|null;paragraph:number;draft:string|null;start:number;end:number;word:string;sentence:string;disputed:string|null;origin?:'authored-display'|'child-draft'|'mixed-display';}
 export interface WordReply {status:'supported'|'uncertain';meaning:string|null;explanation:string;spelling:string|null;}
 /** The server resolves fixed text itself. A child's draft is never canonical source evidence. */
 export function wordContext(value:unknown){
- if(!value||typeof value!=='object')return null;const q=value as WordRequest;
- if(Object.keys(value).length!==(q.origin===undefined?10:11)||q.origin!==undefined&&!['authored-display','child-draft','mixed-display'].includes(q.origin)||q.source!==null&&q.origin!==undefined)return null;
+ if(!value||typeof value!=='object')return null;const q=value as WordRequest,sources=sourcesFor(q);
+ if(q.narrativeEdition!==undefined&&!isNarrativeEdition(q.narrativeEdition)||q.maintenanceEdition!==undefined&&!isMaintenanceEdition(q.maintenanceEdition))return null;
+ if(Object.keys(value).length!==((q.origin===undefined?10:11)+(q.narrativeEdition===undefined?0:1)+(q.maintenanceEdition===undefined?0:1))||q.origin!==undefined&&!['authored-display','child-draft','mixed-display'].includes(q.origin)||q.source!==null&&q.origin!==undefined)return null;
  if(typeof q.requestId!=='string'||!/^[a-zA-Z0-9-]{1,80}$/.test(q.requestId)||!Number.isSafeInteger(q.revision)||q.revision<0||!Number.isInteger(q.start)||!Number.isInteger(q.end)||q.start<0||q.end<=q.start||typeof q.word!=='string'||q.word.length>64||typeof q.sentence!=='string'||q.sentence.length>4000||!(q.disputed===null||typeof q.disputed==='string'&&q.disputed.length<=640))return null;
  let text:string|undefined,reviewed:string|null=null;
  if(q.source!==null){if(q.draft!==null||!Object.hasOwn(sources,q.source)||!Number.isInteger(q.paragraph))return null;text=sources[q.source as keyof typeof sources].paragraphs[q.paragraph];}
  else{if(typeof q.draft!=='string'||Array.from(q.draft).length>4000||q.paragraph!==0)return null;text=q.draft;}
  if(!text||q.end>text.length||text.slice(q.start,q.end)!==q.word||!/^[A-Za-z]+(?:['’][A-Za-z]+)?$/.test(q.word)||q.start>0&&/[A-Za-z’']/.test(text[q.start-1]!)||q.end<text.length&&/[A-Za-z’']/.test(text[q.end]!))return null;
  let offset=0;const actualSentence=(text.match(/[^.!?]+[.!?]?/g)??[text]).find(part=>{offset+=part.length;return q.start<offset;})?.trim();if(q.sentence!==actualSentence)return null;
- if(q.source!==null)reviewed=wordHelp(q.word,q.sentence).definition??null;
+ if(q.source!==null)reviewed=wordHelp(q.word,q.sentence,q.source==='duet').definition??null;
  else if(q.origin==='authored-display')reviewed=supportedWordHelp(q.word,q.sentence,false,false,true).definition??null;
  return {q,text,reviewed};
 }
