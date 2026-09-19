@@ -1,0 +1,33 @@
+{
+  "recordedAt": "2026-09-16T18:26:06.923Z",
+  "review": "http://127.0.0.1:4318/pilot/revision-r2/review.html",
+  "assets": [
+    {
+      "id": "pip",
+      "file": "evidence/hands-on-20260916/pilot/revision-r2/pip/pip-review.glb",
+      "sha256": "61006b3597984f6e8ceca9d08a0da39cd1e5ff14b407da439672262224024905",
+      "bytes": 1264800,
+      "status": "APPROVED",
+      "approval": "Explicit Tony request to implement integrated river-to-bakery checkpoint; corrected R2-feet models approved."
+    },
+    {
+      "id": "grandma",
+      "file": "evidence/hands-on-20260916/pilot/revision-r2/grandma/grandma-review.glb",
+      "sha256": "173164a1639606f0565aca5e8caa22d177d365d6dfb5f1c0ea360f58eeff1a67",
+      "bytes": 1465276,
+      "status": "APPROVED",
+      "approval": "Explicit Tony request to implement integrated river-to-bakery checkpoint; corrected R2-feet models approved."
+    }
+  ],
+  "unchangedApprovals": [
+    "village layout",
+    "four reference images"
+  ],
+  "notApproved": [
+    "seed-boat",
+    "lantern-flower",
+    "new animation variants",
+    "new locally modeled additions"
+  ],
+  "creditChanges": 0
+}

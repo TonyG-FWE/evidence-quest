@@ -1,3 +1,5 @@
+import {isLiterary,maintenanceOf,type NarrativeContext} from './narrativeEdition.js';
+import {literaryVoices,literaryParagraphs} from './literaryContent.js';
 import type {Chapter,GardenState,SourceId} from './model.js';
 import {MARA,distance} from './model.js';
 import {maraAtGarden,GATHER_MARA,solPosition} from './chapter.js';
@@ -5,6 +7,7 @@ import {nearBakery} from './bakery.js';
 
 export const conversationParts={mara:[[0,1,2,3],[4],[5,6]],bakery:[[0,1],[2]],sol:[[0,1,2,3,4]]} as const;
 export type ConversationId=keyof typeof conversationParts;
+export const conversationPartsFor=(c:Chapter)=>isLiterary(c)?{...conversationParts,sol:[literaryParagraphs.sol.map((_,index)=>index)]}:conversationParts;
 export type ConversationProgress={part:number;complete:boolean};
 export type Conversations=Partial<Record<ConversationId,ConversationProgress>>;
 export const freshConversations=():Conversations=>({mara:{part:0,complete:false},bakery:{part:0,complete:false},sol:{part:0,complete:false}});
@@ -57,7 +60,7 @@ const voices:Partial<Record<SourceId,readonly string[]>>={
  duet:['Mara narrates','Mara','Mara narrates','Mara narrates','Mara narrates','Mara narrates'],
  breadEnding:['Sol’s prepared ending'],thanksEnding:['Sol’s prepared ending']
 };
-export const sourceVoice=(id:SourceId,index:number)=>voices[id]?.[index]??null;
+export const sourceVoice=(id:SourceId,index:number,c?:NarrativeContext)=>isLiterary(c)?literaryVoices[id]?.[index]??({story:'Mara narrates',sol:'Sol narrates',empty:'Grandma narrates',picnic:'Grandma narrates',duet:'Mara narrates',later:'Sol',breadEnding:'Sol’s prepared ending',thanksEnding:'Sol’s prepared ending'} as Partial<Record<SourceId,string>>)[id]??null:voices[id]?.[index]??null;
 export const sourceNarration:Partial<Record<SourceId,string>>={story:'Mara wrote this story about an earlier visit. “I” means Mara; the boy speaks about his sister’s paper bird.',sol:'Sol wrote this draft about today’s repair. “I” means Sol.',empty:'Grandma wrote this story. “I” means Grandma.',picnic:'Grandma tells this older garden story. “I” means Grandma.',duet:'Mara tells this older story. “I” means Mara.'};
 
 /** Decision changes are reading transitions; typing never changes this key or steals focus. */
@@ -71,6 +74,7 @@ export function readerStep(s:GardenState){
   s.panel==='grandma'?[c.seed,f.maraReported,f.solReported,f.timeAgreed,f.plan?.revision,c.gathering.reported]:
   s.panel==='planner'?[f.plan?.revision,c.gathering.reported]:
   s.panel==='writing'?[f.solChoice,!!s.viewDrafts.disclosures['writing-revise']]:
-  s.panel==='gathering'?[f.phase,f.questions,c.gathering.solDisclosed,c.gathering.cushions,c.gathering.pageComplete]:[];
+  s.panel==='gathering'?[f.phase,f.questions,c.gathering.solDisclosed,c.gathering.cushions,c.gathering.pageComplete]:
+  s.panel==='sections'&&maintenanceOf(c)?[maintenanceOf(c)]:[];
  return s.panel+':step:'+JSON.stringify(step);
 }

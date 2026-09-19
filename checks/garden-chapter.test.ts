@@ -1,25 +1,27 @@
 import {completeConversation} from './garden-play-actions.js';
-import {finishBakery,finishSpokenTurn,finishArrivals,tellGrandmaStory} from './garden-play-actions.js';
+import {buildBridge,handPlace} from './garden-bridge-actions.js';
+import {advance as tick,finishBakery,finishSpokenTurn,finishArrivals,tellGrandmaStory} from './garden-play-actions.js';
 import test from 'node:test';
 import {shareTornWing} from './garden-play-actions.js';
 import assert from 'node:assert/strict';
 import {GardenStore,initialGarden,CROSSING,MARA,GRANDMA_APPROACH,bridgeReady,type Point} from '../src/garden/model.js';
 import {SOL_APPROACH,planProblems,type StoryEvent} from '../src/garden/chapter.js';
-import {preparedEndings} from '../src/garden/chapterContent.js';
+import {sourcesFor,preparedEndingsFor} from '../src/garden/content.js';
+import {turnLines} from '../src/garden/gathering.js';
 import {validChapter,unpack,checksum} from '../src/garden/persistence.js';
 import {GardenFeedbackService,validFeedback,validGardenRequest,gardenRequestBody,type GardenRequest} from '../server/garden.js';
 import {wav} from '../src/garden/audio.js';
 import {decodeWav,speechFeedback,GardenSpeechService} from '../server/gardenSpeech.js';
 import {wordHelp} from '../src/garden/content.js';
 import {wordContext,validWordReply,wordRequestBody,GardenWordService,type WordRequest} from '../server/gardenWords.js';
-let id=0;const tick=(s:GardenStore,ms=12000)=>{for(let t=0;t<ms;t+=80)s.send({type:'TICK',ms:80});};
+let id=0;
 function game(){const s=new GardenStore(initialGarden('full-'+id++),()=>String(id++));s.send({type:'BOOT'});s.send({type:'BEGIN'});s.send({type:'START_PLAY'});return s;}
 function close(s:GardenStore){for(let depth=0;depth<20&&s.getSnapshot().panel;depth++)s.send({type:'CLOSE'});assert.equal(s.getSnapshot().panel,null);}
 function go(s:GardenStore,point:Point){close(s);s.send({type:'GO',point});tick(s);const p=s.getSnapshot().chapter.pip;assert.ok(Math.hypot(p.x-point.x,p.z-point.z)<.02,`Could not reach ${JSON.stringify(point)} from ${JSON.stringify(p)}`);}
 function event(s:GardenStore,e:StoryEvent){s.send({type:'STORY',event:e});}
-function bridge(s:GardenStore,secure=true){go(s,CROSSING);s.send({type:'COLLECT_ROPES'});tick(s);s.send({type:'ARRANGE'});for(const [section,x]of [['a',-.775],['b',.775]] as const){s.send({type:'SELECT',section});s.send({type:'PREVIEW',point:{x,z:3}});s.send({type:'PLACE'});}s.send({type:'JOIN'});if(secure){s.send({type:'FASTEN',end:'west'});s.send({type:'FASTEN',end:'east'});}s.send({type:'BACK'});}
+function bridge(s:GardenStore,secure=true){close(s);if(secure){buildBridge(s);return;}go(s,CROSSING);s.send({type:'COLLECT_ROPES'});tick(s);handPlace(s,'section:a',{x:-.775,z:3});handPlace(s,'section:b',{x:.775,z:3});}
 function mara(s:GardenStore,take=false){go(s,{x:MARA.x,z:MARA.z+.95});s.send({type:'TALK',who:'mara'});completeConversation(s);if(take){s.send({type:'TAKE_PAGE'});tick(s);}close(s);}
-function plant(s:GardenStore){go(s,GRANDMA_APPROACH);s.send({type:'TALK',who:'grandma'});s.send({type:'PLANT'});tick(s);}
+function plant(s:GardenStore){go(s,GRANDMA_APPROACH);s.send({type:'TALK',who:'grandma'});s.send({type:'PLANT'});tick(s);s.send({type:'BLOOM'});tick(s);}
 function sol(s:GardenStore,prepared=false){finishBakery(s);go(s,SOL_APPROACH);s.send({type:'TALK',who:'sol'});completeConversation(s);if(prepared){event(s,{kind:'FINISH_WITH_SOL'});event(s,{kind:'EDIT',text:'I kept the flour dry. Rina baked the bread she had promised.'});event(s,{kind:'SELECT_ENDING',contribution:{text:s.getSnapshot().chapter.story.solDraft.text,scene:'bread',origin:'child',revision:s.getSnapshot().chapter.story.solDraft.revision}});}else event(s,{kind:'BRING_DRAFT'});}
 function plan(s:GardenStore,time:'usual'|'later',reader:'pip'|'mara'){go(s,GRANDMA_APPROACH);event(s,{kind:'REPORT_MARA'});event(s,{kind:'REPORT_SOL'});event(s,{kind:'PLAN',time,reader});}
 function invite(s:GardenStore){go(s,SOL_APPROACH);event(s,{kind:'INVITE',who:'sol'});go(s,{x:MARA.x,z:MARA.z+.95});event(s,{kind:'INVITE',who:'mara'});go(s,GRANDMA_APPROACH);event(s,{kind:'REPORT_ARRANGEMENTS'});}
@@ -27,8 +29,15 @@ test('Full chapter: all nine actual outcomes, six records and immutable ending r
  for(const arrangement of [{time:'usual',reader:'pip'},{time:'later',reader:'pip'},{time:'later',reader:'mara'}] as const)for(const outcome of ['prepared','developed','draft'] as const){
   const s=game();mara(s,arrangement.reader==='pip');bridge(s);plant(s);sol(s,outcome==='prepared');plan(s,arrangement.time,arrangement.reader);invite(s);assert.deepEqual(planProblems(s.getSnapshot().chapter),[]);
   event(s,{kind:'BEGIN_GATHERING'});assert.equal(s.getSnapshot().chapter.story.phase,'arriving');assert.equal(s.getSnapshot().chapter.story.records.grandma,false);finishArrivals(s);assert.equal(s.getSnapshot().chapter.story.phase,'welcome');
-  event(s,{kind:'NEXT_STORY'});finishSpokenTurn(s);shareTornWing(s);event(s,{kind:'NEXT_STORY'});event(s,{kind:'NEXT_STORY'});finishSpokenTurn(s);
-  if(outcome==='developed'){event(s,{kind:'ADD_ENDING',scene:'thanks'});assert.equal(s.getSnapshot().chapter.story.phase,'discussion');event(s,{kind:'ASK_SOL',question:'thanks'});finishSpokenTurn(s);event(s,{kind:'ADD_ENDING',scene:'thanks'});finishSpokenTurn(s);assert.equal(s.getSnapshot().chapter.story.solEnding?.text,preparedEndings.thanks);}
+  event(s,{kind:'NEXT_STORY'});finishSpokenTurn(s);shareTornWing(s);event(s,{kind:'NEXT_STORY'});event(s,{kind:'NEXT_STORY'});
+  // Resume an actual new-edition telling, with the selected contribution frozen.
+  event(s,{kind:'TURN_NEXT'});const paused=structuredClone(s.getSnapshot().chapter);
+  const restored=unpack({format:1,content:paused.content,revision:paused.revision,writer:'new-edition-interruption',payload:paused,checksum:checksum(JSON.stringify(paused))})!;
+  assert.ok(restored);assert.deepEqual(restored.payload,paused);s.send({type:'BOOT',chapter:restored.payload});
+  assert.equal(s.getSnapshot().playback?.paused,true);
+  assert.deepEqual(turnLines(s.getSnapshot().chapter).filter(line=>line.source==='sol').map(line=>line.text),sourcesFor(paused).sol.paragraphs);
+  finishSpokenTurn(s);
+  if(outcome==='developed'){event(s,{kind:'ADD_ENDING',scene:'thanks'});assert.equal(s.getSnapshot().chapter.story.phase,'discussion');event(s,{kind:'ASK_SOL',question:'thanks'});finishSpokenTurn(s);event(s,{kind:'ADD_ENDING',scene:'thanks'});finishSpokenTurn(s);assert.equal(s.getSnapshot().chapter.story.solEnding?.text,preparedEndingsFor(s.getSnapshot().chapter).thanks);}
   if(outcome==='draft'){event(s,{kind:'KEEP_DRAFT'});finishSpokenTurn(s);}
   assert.equal(s.getSnapshot().chapter.story.phase,'grandma');tellGrandmaStory(s);event(s,{kind:'MOMENT',moment:'gathering'});tick(s);event(s,{kind:'NEXT_STORY'});finishSpokenTurn(s);event(s,{kind:'FINISH'});
   if(arrangement.time==='usual'){assert.equal(s.getSnapshot().chapter.story.ending,null);event(s,{kind:'TAKE_COPY'});tick(s);assert.equal(s.getSnapshot().chapter.story.grandmaCopy,'pip');go(s,{x:MARA.x,z:MARA.z+.95});event(s,{kind:'DELIVER_COPY'});tick(s);finishSpokenTurn(s);event(s,{kind:'FINISH'});}

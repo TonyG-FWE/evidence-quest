@@ -3,7 +3,18 @@ import encodeWebp,{init as initWebp} from '@jsquash/webp/encode.js';
 import {simd} from 'wasm-feature-detect';
 import {readFile} from 'node:fs/promises';
 export const decodePng=bytes=>PNG.sync.read(bytes,{checkCRC:true});
-export const encodePng=image=>PNG.sync.write(image,{colorType:6,inputColorType:6,bitDepth:8,filterType:-1,deflateLevel:9,deflateStrategy:0});
+// Choose only between lossless scanline/DEFLATE encodings. RGBA samples, alpha,
+// dimensions and color interpretation stay identical, including hidden RGB.
+export function encodePng(image){
+ let best,opaque=true;for(let i=3;i<image.data.length;i+=4)if(image.data[i]!==255){opaque=false;break;}
+ // A fully opaque image can omit the redundant alpha channel in its encoded
+ // PNG. Decoders reconstruct the identical 255 alpha samples. Never quantize.
+ for(const colorType of opaque?[6,2]:[6])for(const [filterType,deflateStrategy]of [[-1,0],[-1,1],[1,1],[4,1]]){
+  const candidate=PNG.sync.write(image,{colorType,inputColorType:6,bitDepth:8,filterType,deflateLevel:9,deflateStrategy});
+  if(!best||candidate.length<best.length)best=candidate;
+ }
+ return best;
+}
 let webpReady;
 export async function losslessWebp(image){
   webpReady??=(async()=>{const file=await simd()?'webp_enc_simd.wasm':'webp_enc.wasm';await initWebp(await WebAssembly.compile(await readFile(new URL('../node_modules/@jsquash/webp/codec/enc/'+file,import.meta.url))));})();
