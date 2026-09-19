@@ -1,0 +1,13 @@
+import {expectedAssetStatus,reviewProfile} from './garden-asset-profile.js';
+import {test,expect} from '@playwright/test';
+test('profile-bound painted characters render through the texture worker at actual density',async({page},info)=>{
+ const errors:string[]=[];page.on('pageerror',error=>errors.push(error.message));
+ await page.goto('/garden');await page.getByRole('button',{name:'Begin Pip’s adventure',exact:true}).click();await page.getByRole('button',{name:'Start playing',exact:true}).click();
+ const scene=page.locator('.garden-scene');await expect.poll(async()=>JSON.parse(await scene.getAttribute('data-character-assets')??'{}').pip).toBe(expectedAssetStatus);
+ await page.getByRole('button',{name:'Go to the bridge pieces',exact:true}).click();await expect(page.locator('.garden-scene')).toHaveAttribute('data-pip-x','-2.800');
+ await page.screenshot({path:info.outputPath('approved-pip-in-village.png')});await page.getByRole('button',{name:'Map and camera',exact:true}).click();await page.getByRole('button',{name:'Fit map',exact:true}).click();
+ await expect.poll(async()=>JSON.parse(await scene.getAttribute('data-character-assets')??'{}').grandma).toBe(expectedAssetStatus);await expect.poll(async()=>JSON.parse(await scene.getAttribute('data-character-assets')??'{}').pending,{timeout:90000}).toBe(0);
+ const loaded=JSON.parse(await scene.getAttribute('data-character-assets')??'{}');if(reviewProfile){expect(loaded.profile).toBe('local-review');expect(loaded.objects).toEqual(expect.arrayContaining(['bakery','cottage','cottage-1','tree-1','bridge','platform']));expect(loaded.cast.filter((a:{ready:boolean})=>a.ready).map((a:{id:string})=>a.id)).toEqual(expect.arrayContaining(['rina','sol','mara']));}else expect(loaded.sources).toHaveLength(2);
+ const metrics=JSON.parse((await scene.getAttribute('data-metrics'))!);expect(metrics.dpr).toBe(info.project.use.deviceScaleFactor??1);expect(metrics.imported.textureBytes).toBeGreaterThan(0);expect.soft(metrics.decodedSceneBytes).toBeLessThanOrEqual(96*1024*1024);expect.soft(metrics.decodedCacheBytes).toBeLessThanOrEqual(192*1024*1024);expect(errors).toEqual([]);
+ await page.screenshot({path:info.outputPath('painted-characters-overview.png')});await info.attach('rendered-artwork',{body:JSON.stringify({metrics,errors,profile:reviewProfile?'local-review-pending-approval':'production',scope:'Asset loading, textured render and conservative resource checks; this case does not qualify frame timing or human visual acceptance.'}),contentType:'application/json'});
+});

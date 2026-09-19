@@ -9,8 +9,8 @@ const specification=JSON.parse(await readFile('docs/design/evidence-quest-design
 const byId=new Map(specification.assets.map(asset=>[asset.id,asset]));
 const directory='public/art/runtime';await mkdir(directory,{recursive:true});
 const sourceFiles=new Map(),derivatives=new Map(),generated={};
-const codec={pngjs:'7.0.0',webp:'1.5.0',resampler:'premultiplied-lanczos3-v1'},cache=new Map();
-try{const old=JSON.parse(await readFile('evidence/er13/production-art-exports.json','utf8'));for(const file of old.files??[])if(file.signature)cache.set(file.signature,file);}catch{}
+const codec={pngjs:'7.0.0',webp:'1.5.0',resampler:'premultiplied-lanczos3-v1',pngOptimizer:'lossless-best-of-adaptive-sub-paeth-rgb-v2'},cache=new Map();
+try{const old=JSON.parse(await readFile('evidence/er13/production-art-exports.json','utf8'));for(const file of old.files??[])if(file.signature){const parsed=JSON.parse(file.signature);cache.set(file.signature,file);if(!parsed[0].pngOptimizer||parsed[0].pngOptimizer==='lossless-best-of-adaptive-sub-paeth-v1'){parsed[0].pngOptimizer=codec.pngOptimizer;cache.set(JSON.stringify(parsed),file);}}}catch{}
 for(const [key,original] of Object.entries(originals)){
  if(key.startsWith('ER13.ATLAS.'))continue; // Source atlas rows are not runtime owners; canonical aliases below are exported.
  if(key.startsWith('ASSET.ACT.PLAYER/')&&!/^ASSET\.ACT\.PLAYER\/(idle|walk|carry|reach)-(front|back|left|right)$/.test(key))continue; // Canonical four-direction bindings own these accepted cels.
@@ -32,7 +32,15 @@ for(const [key,original] of Object.entries(originals)){
    const signature=JSON.stringify([codec,source.sha256,cell.rect,outputWidth,outputHeight,pad,webpEligible]);
    let output=derivatives.get(signature);
    if(!output&&cache.has(signature)){
-    const cached=cache.get(signature);try{if(digest(await readFile('public'+cached.url))===cached.sha256&&(!cached.webp||digest(await readFile('public'+cached.webp.url))===cached.webp.sha256))output=cached;}catch{}
+    const cached=cache.get(signature);try{if(digest(await readFile('public'+cached.url))===cached.sha256&&(!cached.webp||digest(await readFile('public'+cached.webp.url))===cached.webp.sha256)){
+     output=cached;
+     if(cached.signature!==signature){
+      const info=decodePng(await readFile('public'+cached.url)),data=encodePng(info),decoded=decodePng(data);
+      if(decoded.width!==info.width||decoded.height!==info.height||!decoded.data.equals(info.data))throw Error('PNG optimization changed samples');
+      const sha256=digest(data),url='/art/runtime/'+sha256.slice(0,24)+'.png';await writeFile('public'+url,data);
+      output={...cached,url,sha256,bytes:data.length};
+     }
+    }}catch(error){if(error?.message==='PNG optimization changed samples')throw error;}
    }
    if(!output){
     const info=cropResize(source.metadata,cell.rect,outputWidth,outputHeight,pad),data=encodePng(info);

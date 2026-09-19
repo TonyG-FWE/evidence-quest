@@ -10,3 +10,4 @@ export async function acquireArtUrl(url:string,owner:symbol){const bytes=sizes.g
 export const releaseArtUrl=(owner:symbol)=>{responses.dispose(owner);publish();};
 export const retryArtTransfers=()=>{responses.retry();publish();};
 export const artTransferStats=()=>responses.stats();
+export const hasArtTransfer=(url:string)=>responses.available(url);

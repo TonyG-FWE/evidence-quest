@@ -1,7 +1,10 @@
+import {bridgeStatus} from './bridgeConstruction.js';
 import {conversationReady,rememberConversation} from './conversation.js';
+import {anchors} from './worldLayout.js';
 import {arrivedMara,arrivedSol,connectedGathering,gatheringEvent,arrivalNext,reportedPlan,welcomeWords,type GatheringAction} from './gathering.js';
 import {bakeryReady,solAtWorkshop,bakeryInstruction,BAKERY_SOL,BAKERY_APPROACH} from './bakery.js';
-import {endingLines,preparedEndings} from './chapterContent.js';
+import {endingLinesFor,preparedEndingsFor} from './content.js';
+import type {NarrativeContext} from './narrativeEdition.js';
 import type {Chapter,GardenState,Point} from './model.js';
 export type GatheringTime='usual'|'later';
 export type Reader='pip'|'mara';
@@ -21,13 +24,13 @@ export interface StoryState {
  presentation:{page:number;finished:boolean;inProgress?:boolean};answers:Record<string,string>;bridgeFailures:number;
  maraMessage?:MaraMessageState;
 }
-export const SOL:Point={x:4.5,z:-2.15},SOL_APPROACH:Point={x:3.55,z:-1.4};
-export const GATHER_MARA:Point={x:4.4,z:.4},GATHER_SOL:Point={x:5.2,z:.1};
+export const SOL:Point=anchors.workshop.person,SOL_APPROACH:Point=anchors.workshop.approach;
+export const GATHER_MARA:Point=anchors.gathering.mara,GATHER_SOL:Point=anchors.gathering.sol;
 export const freshStory=():StoryState=>({metSol:false,solChoice:'none',solDraft:{text:'',revision:0},solEnding:null,maraPicture:'repair',laterKnown:false,questions:[],solReported:false,maraReported:false,timeAgreed:null,plan:null,solInvitation:null,maraInvitation:null,phase:'planning',solOutcome:null,records:{mara:null,sol:null,grandma:false,pip:null},grandmaCopy:'none',closingDone:false,ending:null,presentation:{page:0,finished:false},answers:{},bridgeFailures:0});
 export const gatheringStarted=(c:Chapter)=>c.story.phase!=='planning';
 export const maraAtGarden=(c:Chapter)=>arrivedMara(c);
 export const solPosition=(c:Chapter)=>arrivedSol(c)?GATHER_SOL:solAtWorkshop(c)?SOL:BAKERY_SOL;
-export const solApproach=(c:Chapter)=>gatheringStarted(c)?{x:4,z:.1}:solAtWorkshop(c)?SOL_APPROACH:BAKERY_APPROACH;
+export const solApproach=(c:Chapter)=>gatheringStarted(c)?anchors.gathering.approach:solAtWorkshop(c)?SOL_APPROACH:BAKERY_APPROACH;
 export function planProblems(c:Chapter):string[]{
  const f=c.story,p=f.plan,problems:string[]=[];
  if(!c.bloomed)problems.push('Plant the seed with Grandma first.');
@@ -53,6 +56,7 @@ export function chapterGoal(c:Chapter):{goal:string;next:string;target:'mara'|'g
  if(f.phase==='moment')return {goal:'Choose Pip’s memory.',next:'Grandma has shared her story. Choose the moment to keep in Pip’s flower during your conversation.',target:'grandma'};
  if(f.phase==='closing')return {goal:'Finish the gathering together.',next:f.plan?.time==='later'?'Hear Grandma and Mara finish their conversation.':'Hear Grandma’s offer to send her story to Mara.',target:'grandma'};
  if(f.phase!=='planning')return {goal:'Share stories in Grandma’s garden.',next:f.phase==='arriving'?'Your friends are on their way.':'Return to the gathering to continue the stories.',target:'grandma'};
+ if(!c.crossed&&c.river.construction?.first)return {goal:'Reach Grandma’s garden and plant the seed together.',next:bridgeStatus(c),target:c.joined&&c.west&&c.east?'grandma':'sections'};
  if(!c.crossed)return {goal:'Reach Grandma’s garden and plant the seed together.',next:c.joined&&c.west&&c.east?'The footbridge is secure. Guide Pip across to Grandma.':!conversationReady(c,'mara')?'Talk to Mara at the dock.':'Repair the footbridge. Read the note to find out how.',target:c.joined&&c.west&&c.east?'grandma':!conversationReady(c,'mara')?'mara':'sections'};
  if(!c.bloomed)return {goal:'Keep your promise to Grandma.',next:'Plant the seed together before the gathering.',target:'grandma'};
  if(!conversationReady(c,'mara'))return {goal:'Help the garden’s stories return.',next:'Find out why Mara has been unable to visit.',target:'mara'};
@@ -78,7 +82,8 @@ export type StoryEvent=
 const near=(a:Point,b:Point,r=1.5)=>Math.hypot(a.x-b.x,a.z-b.z)<r;
 /** Called only within GardenStore's serialized transaction. No provider response enters here. */
 export function applyStory(s:GardenState,event:StoryEvent):GatheringAction|'page'|'arrival'|'copy'|'delivery'|'keepMemory'|'dockService'|'maraTell'|null{
- const c=s.chapter,f=c.story,atGrandma=near(c.pip,{x:4.4,z:3.6}),atSol=near(c.pip,solPosition(c)),atMara=near(c.pip,maraAtGarden(c)?GATHER_MARA:{x:-3.5,z:-4});
+ const preparedEndings=preparedEndingsFor(s.chapter),endingLines=endingLinesFor(s.chapter);
+ const c=s.chapter,f=c.story,atGrandma=near(c.pip,anchors.garden.person),atSol=near(c.pip,solPosition(c)),atMara=near(c.pip,maraAtGarden(c)?GATHER_MARA:anchors.dock.person);
  if(s.action||!c.started||s.background||s.viewLost)return null;
  if(c.gathering.turn&&!['TURN_NEXT','ANSWER'].includes(event.kind))return null;
  const connected=gatheringEvent(s,event);if(connected.handled)return connected.action;
@@ -124,7 +129,8 @@ export function applyStory(s:GardenState,event:StoryEvent):GatheringAction|'page
  }
  return null;
 }
-export function validStory(value:unknown):value is StoryState{
+export function validStory(value:unknown,context?:NarrativeContext):value is StoryState{
+ const preparedEndings=preparedEndingsFor(context),endingLines=endingLinesFor(context);
  if(!value||typeof value!=='object')return false;const f=value as StoryState;
  const choices=(v:unknown,list:unknown[])=>list.includes(v),bool=(v:unknown)=>typeof v==='boolean',text=(v:unknown)=>typeof v==='string'&&v.length<=100000;
  const contribution=(e:Contribution|null)=>e===null||!!e&&text(e.text)&&!!e.text.trim()&&choices(e.scene,['bread','thanks','both'])&&choices(e.origin,['child','prepared'])&&Number.isSafeInteger(e.revision)&&e.revision>=0&&(e.origin==='child'||e.scene!=='both'&&e.text===preparedEndings[e.scene]);
