@@ -1,0 +1,245 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "er13.spec.ts",
+      "acceptance-boundaries.spec.ts",
+      "access.spec.ts",
+      "workstation.spec.ts",
+      "--grep",
+      "seed-only pause|compact Watch|settings|native rail|clipped narrator|narrator card pauses"
+    ],
+    "configFile": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\playwright.config.ts",
+    "rootDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/output/playwright/raw",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "output/playwright/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 1,
+    "webServer": {
+      "command": "\"C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe\" dist/server/index.js",
+      "url": "http://127.0.0.1:4174/healthz",
+      "env": {
+        "PORT": "4174",
+        "EQ_WEB_PORT": "4174",
+        "PUBLIC_ORIGIN": "http://127.0.0.1:4174"
+      },
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "er13.spec.ts",
+      "file": "er13.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "ER13 narrator card pauses actual cues once and stays optional for the whole show",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 22105,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T05:30:57.312Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d84d1a3c2dfabe2f9454-e172e02cb8ca25176df2",
+          "file": "er13.spec.ts",
+          "line": 25,
+          "column": 1
+        },
+        {
+          "title": "ER13 clipped narrator words become source exposure only after their own card is scrolled",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11410,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T05:31:19.551Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d84d1a3c2dfabe2f9454-2e7886e702e9f081e0f9",
+          "file": "er13.spec.ts",
+          "line": 43,
+          "column": 1
+        },
+        {
+          "title": "ER13 seed-only pause keeps the whole consequence visible and permits a revised premiere",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 21104,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeInViewport\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('whole-story')\nExpected: in viewport\nReceived: viewport ratio 0.9985317587852478\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeInViewport\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('whole-story')\u001b[22m\n\u001b[2m    33 × locator resolved to <canvas role=\"img\" width=\"511\" height=\"341\" class=\"whole-story\" data-testid=\"whole-story\" aria-label=\"The river separates the starting bank on the left from Grandma’s hill on the right. The old footbridge is broken. Pip is on the left bank, wearing the backpack you made. Grandma holds the seed on the hill. The seed is on the hill with Grandma. It is still loose and dark. The little boats are separate.\"></canvas>\u001b[22m\n\u001b[2m       - unexpected value \"viewport ratio 0.9985317587852478\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeInViewport\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('whole-story')\nExpected: in viewport\nReceived: viewport ratio 0.9985317587852478\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeInViewport\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('whole-story')\u001b[22m\n\u001b[2m    33 × locator resolved to <canvas role=\"img\" width=\"511\" height=\"341\" class=\"whole-story\" data-testid=\"whole-story\" aria-label=\"The river separates the starting bank on the left from Grandma’s hill on the right. The old footbridge is broken. Pip is on the left bank, wearing the backpack you made. Grandma holds the seed on the hill. The seed is on the hill with Grandma. It is still loose and dark. The little boats are separate.\"></canvas>\u001b[22m\n\u001b[2m       - unexpected value \"viewport ratio 0.9985317587852478\"\u001b[22m\n\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\er13.spec.ts:64:48",
+                    "location": {
+                      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\er13.spec.ts",
+                      "column": 48,
+                      "line": 64
+                    },
+                    "snippet": "  62 |  await page.setViewportSize({width:1422,height:800});await workstation(page);await putTile(page,'FERRY');await putTile(page,'PLANT','One Boat');await putTile(page,'BLOOM','Hill');await page.getByRole('button',{name:'Try this ending',exact:true}).click();\n  63 |  await expect.poll(async()=>(await saved(page)).payload.playback?.pauseReason).toBe('unmet');await expect(page.getByRole('button',{name:'Watch rehearsal',exact:true})).toHaveAttribute('aria-pressed','true');\n> 64 |  await expect(page.getByTestId('whole-story')).toBeInViewport({ratio:1});await expect(page.locator('.narrated-show .caption')).toContainText('Grandma has the seed. Pip is still across the river.');await expect(page.locator('.narrated-show .caption')).toBeInViewport();\n     |                                                ^\n  65 |  const c=(await saved(page)).payload;expect(c.playback?.puppet).toEqual({pip:'left',seed:'right',boats:'separate',lit:false});expect(c.certificate).toBeNull();await page.screenshot({path:'evidence/er13/seed-only-visible-consequence.png',fullPage:false});\n  66 |  await page.getByRole('button',{name:'Arrange tiles',exact:true}).click();await page.locator('[data-tile=\"TILE.BRIDGE\"]').click();await page.getByRole('button',{name:'Replace One Boat',exact:true}).click();await page.getByRole('button',{name:'Try this ending',exact:true}).click();await expect(page.getByRole('button',{name:'Start premiere',exact:true})).toBeVisible();await page.getByRole('button',{name:'Start premiere',exact:true}).click();await expect(page.getByRole('heading',{name:'The premiere',exact:true})).toBeVisible();expect((await saved(page)).payload.premiere).not.toBeNull();\n  67 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\er13.spec.ts",
+                        "column": 48,
+                        "line": 64
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeInViewport\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByTestId('whole-story')\nExpected: in viewport\nReceived: viewport ratio 0.9985317587852478\nTimeout:  15000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeInViewport\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('whole-story')\u001b[22m\n\u001b[2m    33 × locator resolved to <canvas role=\"img\" width=\"511\" height=\"341\" class=\"whole-story\" data-testid=\"whole-story\" aria-label=\"The river separates the starting bank on the left from Grandma’s hill on the right. The old footbridge is broken. Pip is on the left bank, wearing the backpack you made. Grandma holds the seed on the hill. The seed is on the hill with Grandma. It is still loose and dark. The little boats are separate.\"></canvas>\u001b[22m\n\u001b[2m       - unexpected value \"viewport ratio 0.9985317587852478\"\u001b[22m\n\n\n  62 |  await page.setViewportSize({width:1422,height:800});await workstation(page);await putTile(page,'FERRY');await putTile(page,'PLANT','One Boat');await putTile(page,'BLOOM','Hill');await page.getByRole('button',{name:'Try this ending',exact:true}).click();\n  63 |  await expect.poll(async()=>(await saved(page)).payload.playback?.pauseReason).toBe('unmet');await expect(page.getByRole('button',{name:'Watch rehearsal',exact:true})).toHaveAttribute('aria-pressed','true');\n> 64 |  await expect(page.getByTestId('whole-story')).toBeInViewport({ratio:1});await expect(page.locator('.narrated-show .caption')).toContainText('Grandma has the seed. Pip is still across the river.');await expect(page.locator('.narrated-show .caption')).toBeInViewport();\n     |                                                ^\n  65 |  const c=(await saved(page)).payload;expect(c.playback?.puppet).toEqual({pip:'left',seed:'right',boats:'separate',lit:false});expect(c.certificate).toBeNull();await page.screenshot({path:'evidence/er13/seed-only-visible-consequence.png',fullPage:false});\n  66 |  await page.getByRole('button',{name:'Arrange tiles',exact:true}).click();await page.locator('[data-tile=\"TILE.BRIDGE\"]').click();await page.getByRole('button',{name:'Replace One Boat',exact:true}).click();await page.getByRole('button',{name:'Try this ending',exact:true}).click();await expect(page.getByRole('button',{name:'Start premiere',exact:true})).toBeVisible();await page.getByRole('button',{name:'Start premiere',exact:true}).click();await expect(page.getByRole('heading',{name:'The premiere',exact:true})).toBeVisible();expect((await saved(page)).payload.premiere).not.toBeNull();\n  67 | });\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\er13.spec.ts:64:48"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T05:31:30.980Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\er13-ER13-seed-only-pause--ca828--permits-a-revised-premiere-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\er13-ER13-seed-only-pause--ca828--permits-a-revised-premiere-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\er13-ER13-seed-only-pause--ca828--permits-a-revised-premiere-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\er13.spec.ts",
+                    "column": 48,
+                    "line": 64
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d84d1a3c2dfabe2f9454-3920a69d69a7f09d44d8",
+          "file": "er13.spec.ts",
+          "line": 61,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-12T05:30:56.340Z",
+    "duration": 57020.528,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

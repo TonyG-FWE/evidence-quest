@@ -1,0 +1,283 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "browser-tests/garden-whole-reading.spec.ts",
+      "--workers=1",
+      "--output=evidence/literacy-experience-20260916/browser-whole-1"
+    ],
+    "configFile": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\playwright.config.ts",
+    "rootDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/evidence/literacy-experience-20260916/browser-whole-1",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/evidence/literacy-experience-20260916/browser-whole-1",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/evidence/literacy-experience-20260916/browser-whole-1",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/literacy-experience-20260916/browser-whole-1.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 1,
+    "webServer": {
+      "command": "\"C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe\" dist/server/index.js",
+      "url": "http://127.0.0.1:4197/healthz",
+      "env": {
+        "PORT": "4197",
+        "EQ_WEB_PORT": "4197",
+        "PUBLIC_ORIGIN": "http://127.0.0.1:4197"
+      },
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "garden-whole-reading.spec.ts",
+      "file": "garden-whole-reading.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Complete reading: the whole story is heard in order, can stop, and resumes without sending the page",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 103603,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 90000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 90000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 90000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-whole-reading.spec.ts",
+                        "column": 67,
+                        "line": 14
+                      },
+                      "message": "Error: locator.click: Test timeout of 90000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Begin Pip’s adventure', exact: true })\u001b[22m\n\n\n  12 |  });\n  13 |  const button=(name:string)=>page.getByRole('button',{name,exact:true});\n> 14 |  await page.goto('/garden');await button('Begin Pip’s adventure').click();await button('Start playing').click();await button('Go to Mara').click();await button('Talk to Mara E').click();await completeConversation(page);await button('I can read your story to Grandma.').click();await expect(page.locator('.garden-reading-scroll')).toContainText('Pip is carrying her copy.');await button('Backpack').click();await page.locator('.g-item').filter({has:page.locator('strong',{hasText:'The Torn Wing'})}).getByRole('button',{name:'Read',exact:true}).click();\n     |                                                                   ^\n  15 |  const tools=page.getByRole('region',{name:'Read the complete The Torn Wing',exact:true});await tools.getByRole('button',{name:'Hear the whole story',exact:true}).click();\n  16 |  for(let i=0;i<10&&await tools.getByRole('button',{name:'Stop listening',exact:true}).count();i++)await page.evaluate(()=>(window as any).__storyVoice.pending.onend());\n  17 |  expect(await page.evaluate(()=>(window as any).__storyVoice.spoken.join(''))).toBe(sources.story.paragraphs.join('\\n\\n'));\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-whole-reading.spec.ts:14:67"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:26:22.603Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\literacy-experience-20260916\\browser-whole-1\\garden-whole-reading-Compl-965bf-es-without-sending-the-page-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\literacy-experience-20260916\\browser-whole-1\\garden-whole-reading-Compl-965bf-es-without-sending-the-page-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d3a65a8b3596ee5bcf98-41b0af1538a0a486a30c",
+          "file": "garden-whole-reading.spec.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "Complete reading: the whole story is heard in order, can stop, and resumes without sending the page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 19208,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:31:55.798Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "scope",
+                      "contentType": "text/plain",
+                      "body": "T3JkaW5hcnkgcGFnZSBjb250cm9scywgY29tcGxldGUgdGV4dCwgbG9jYWwgcmVzdW1lIGFuZCBwYWdlIHBvc3Nlc3Npb24uIE1vZGVsIHNwZWVjaCBpcyBhIGxhYmVsZWQgc3ludGhldGljIGNhbGxiYWNrIHNlYW07IG1pY3JvcGhvbmUgYW5kIHByb3ZpZGVyIG5ldmVyIGVuYWJsZWQu"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d3a65a8b3596ee5bcf98-0f8be44083631f918679",
+          "file": "garden-whole-reading.spec.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "Complete reading: the whole story is heard in order, can stop, and resumes without sending the page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 39361,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:32:59.599Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "scope",
+                      "contentType": "text/plain",
+                      "body": "T3JkaW5hcnkgcGFnZSBjb250cm9scywgY29tcGxldGUgdGV4dCwgbG9jYWwgcmVzdW1lIGFuZCBwYWdlIHBvc3Nlc3Npb24uIE1vZGVsIHNwZWVjaCBpcyBhIGxhYmVsZWQgc3ludGhldGljIGNhbGxiYWNrIHNlYW07IG1pY3JvcGhvbmUgYW5kIHByb3ZpZGVyIG5ldmVyIGVuYWJsZWQu"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d3a65a8b3596ee5bcf98-8da95069e32d95cbea4b",
+          "file": "garden-whole-reading.spec.ts",
+          "line": 6,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-16T04:26:20.776Z",
+    "duration": 494527.001,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

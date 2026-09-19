@@ -1,0 +1,209 @@
+{
+  "at": "2026-09-15T18:24:22.001Z",
+  "status": "CORRECTED_PENDING_SCOPED_BROWSER_VERIFICATION",
+  "candidate": {
+    "garden": "assets/GardenApp-DMDJo1eK.js",
+    "css": [
+      "assets/GardenApp-Cowp-FIg.css"
+    ],
+    "entry": "assets/index-QL65HRqF.js"
+  },
+  "earlierRun": {
+    "log": "evidence/group-8-integration-20260915/browser-full-chromium.log",
+    "artifacts": "evidence/group-8-integration-20260915/browser-full-chromium-artifacts",
+    "completeReport": "NOT_PRODUCED after interruption; no full113 result is claimed.",
+    "completed": [
+      {
+        "result": "passed",
+        "ordinal": 1,
+        "description": "browser-tests\\acceptance-boundaries.spec.ts:6:67 › FIX11.ACCESS/UNMET 320x568 whole unmet story, note inspection and native revision (20.3s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 2,
+        "description": "browser-tests\\acceptance-boundaries.spec.ts:6:67 › FIX11.ACCESS/UNMET 640x360 whole unmet story, note inspection and native revision (19.7s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 3,
+        "description": "browser-tests\\acceptance-boundaries.spec.ts:15:1 › FIX11.NPC reading is not delivery; one scope passage differs from both cancellation passages (11.8s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 4,
+        "description": "browser-tests\\acceptance-boundaries.spec.ts:20:1 › FIX11.ART_FAILURE all Canvas contexts denied still supports a complete native rehearsal and premiere (10.5s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 5,
+        "description": "browser-tests\\acceptance-boundaries.spec.ts:23:1 › FIX11.RECAP fresh voluntary revision, post-outcome text, hint-then-trial and uncertain reload stay distinct (48.7s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 6,
+        "description": "browser-tests\\access.spec.ts:4:1 › TASK11.08 first recording frame and photo stay separate; canceled notice remains curled (14.7s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 7,
+        "description": "browser-tests\\access.spec.ts:13:1 › TASK11.07 compact Largest Roomier native navigation and typing retain world position (8.7s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 8,
+        "description": "browser-tests\\access.spec.ts:23:1 › TASK11.07 injected Canvas failure keeps named controls usable (16.9s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 9,
+        "description": "browser-tests\\coach-native.spec.ts:3:1 › TASK11.15 authored help records the visible response and exact submission without network analysis (1.2s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 10,
+        "description": "browser-tests\\coach-native.spec.ts:12:1 › TASK11.15 excess Unicode draft is retained across reload and never submitted (2.1s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 11,
+        "description": "browser-tests\\compact.spec.ts:13:1 › FIX11.ACCESS fresh 320x568 Largest Roomier reduced-motion sound-off case entirely through Tab and Enter (49.1s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 12,
+        "description": "browser-tests\\compact.spec.ts:19:1 › FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest (10.5s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 13,
+        "description": "browser-tests\\connected.spec.ts:5:1 › TASK11.16 media-first complete case, notes stay unread through collection, real rehearsal and premiere (1.0m)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 14,
+        "description": "browser-tests\\er13-http.spec.ts:8:1 › ER13 production HTTP client sends only a requested draft and displays a validated synthetic selection (820ms)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 15,
+        "description": "browser-tests\\er13.spec.ts:4:1 › ER13 fresh purpose, optional opening, re-entry, readings and exact word context (1.4s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 16,
+        "description": "browser-tests\\er13.spec.ts:14:1 › ER13 actual browser voice is used or its local English limitation is truthful (1.2s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 17,
+        "description": "browser-tests\\er13.spec.ts:20:1 › ER13 still meanings remain bounded and secured notice has no stale description or unrequested interpretation (15.2s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 18,
+        "description": "browser-tests\\er13.spec.ts:27:1 › ER13 narrator card pauses actual cues once and stays optional for the whole show (25.2s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 19,
+        "description": "browser-tests\\er13.spec.ts:31:1 › ER13 legacy save is preserved without forced introduction and compact reading stays operable (1.0s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 20,
+        "description": "browser-tests\\er13.spec.ts:37:1 › ER13 physical model gives a readable consequence and reachable big-screen action at laptop size (8.7s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 21,
+        "description": "browser-tests\\er13.spec.ts:45:1 › ER13 clipped narrator words become source exposure only after their own card is scrolled (13.5s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 22,
+        "description": "browser-tests\\er13.spec.ts:55:1 › ER13 lower world reading control restores a visible panel heading and return action (9.1s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 23,
+        "description": "browser-tests\\er13.spec.ts:63:1 › ER13 seed-only pause keeps the whole consequence visible and permits a revised premiere (18.9s)"
+      },
+      {
+        "result": "failed",
+        "ordinal": 24,
+        "description": "browser-tests\\garden-bakery.spec.ts:6:1 › Bakery: connected repair, wrong placement, compact recovery, baking, accompanied thanks and exact draft excerpt (17.4s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 25,
+        "description": "browser-tests\\garden-finale.spec.ts:7:1 › Finale: authentic prior-save fixture, actual memory placement, lantern source return, compact show and replay recovery (7.0s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 26,
+        "description": "browser-tests\\garden-gathering.spec.ts:8:1 › Gathering: authentic prior-save fixture, arrival recovery, compact world telling and exact chosen contribution (35.6s)"
+      },
+      {
+        "result": "failed",
+        "ordinal": 27,
+        "description": "browser-tests\\garden-interaction.spec.ts:5:1 › G2 ordinary keyboard route: nested letter, Help and backpack preserve focus and return context (15.9s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 28,
+        "description": "browser-tests\\garden-interaction.spec.ts:24:1 › G2 ordinary world route: invalid plan, exact rehearsal, nested help and prepared return (52.1s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 29,
+        "description": "browser-tests\\garden-mara.spec.ts:6:1 › G4 ordinary early telling: actual duty, no source shortcut, compact repair, pause/reload and same present-day facts (38.3s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 30,
+        "description": "browser-tests\\garden-measurements.spec.ts:2:1 › TASK11.20 first-encounter DPR1/DPR2 resource and active-cadence measurements (5.3s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 31,
+        "description": "browser-tests\\garden-measurements.spec.ts:15:1 › D081.R19.AC03 labeled write-failure seam retains state and retries the real save transaction (1.4s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 32,
+        "description": "browser-tests\\garden-river.spec.ts:7:1 › G3 ordinary controls: named placement, actual far-held collapse, reload, recovery and first garden context (16.6s)"
+      },
+      {
+        "result": "passed",
+        "ordinal": 33,
+        "description": "browser-tests\\garden-river.spec.ts:12:1 › G3 ordinary boat controls: loaded cargo, wrong dock, pause/reload, player steering and explicit receipt (17.0s)"
+      }
+    ],
+    "processIdentity": "evidence/group-8-integration-20260915/gpu-initial-runner.json"
+  },
+  "changes": [
+    {
+      "id": "G8-N03",
+      "problem": "Construction mutation buttons looked available during atomic rope collection although the coordinator correctly rejected their commands.",
+      "solution": "Use the shared unavailable-state flag for each physical construction mutation and aria-busy on the panel. Help, reading and Back retain their deliberate interrupt behavior.",
+      "file": "src/garden/GardenApp.tsx",
+      "before": "evidence/group-8-integration-20260915/before-input-guards-GardenApp.tsx",
+      "regression": "The bakery test now observes actual disabled section/post controls during pickup before ordinary placement. No sleep or forced click."
+    },
+    {
+      "id": "G8-N04",
+      "problem": "Delayed entry focus could arrive after the immediately following Tab key and steal its result.",
+      "solution": "Establish reader/world entry focus synchronously in useLayoutEffect before paint. The existing immediate-Tab test remains unchanged.",
+      "file": "src/garden/GardenApp.tsx",
+      "reference": "https://react.dev/reference/react/useLayoutEffect"
+    }
+  ],
+  "contracts": "evidence/group-8-integration-20260915/contracts-input-guards.log",
+  "authored": "evidence/group-8-integration-20260915/authored-input-guards.log",
+  "build": {
+    "failedSandbox": "evidence/group-8-integration-20260915/build-input-guards.log",
+    "completed": "evidence/group-8-integration-20260915/build-input-guards-elevated.log"
+  },
+  "candidateReceipt": "evidence/group-8-integration-20260915/candidate-final-controls.json",
+  "limits": "No story handler, art source or quality threshold changed. Rebind the independent current source review and finish all final browser/video/ledger checks."
+}

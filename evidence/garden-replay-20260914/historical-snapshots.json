@@ -1,0 +1,20 @@
+[
+  {
+    "path": "evidence/er13/content-validation.json",
+    "archive": "evidence/garden-replay-20260914/generated/evidence/er13/content-validation.json",
+    "currentRunSha256": "87cb07f92fad31b2be6abbc44544b3846667a2e3d6821781b7cc14dc061504a6",
+    "restoredGitBaselineSha256": "3a2e00bd8971dc0d9f74acb2533ce13286c4b6a89c6f82aee5e890ff325c061f"
+  },
+  {
+    "path": "evidence/er13/production-art-exports.json",
+    "archive": "evidence/garden-replay-20260914/generated/evidence/er13/production-art-exports.json",
+    "currentRunSha256": "4c1c19887bb13df592c2307d6a4d87687022f8628f14fa02ec6dc738c5e89f99",
+    "restoredGitBaselineSha256": "575103c7598cdf894e2795f47b05446c180fff45b18efe12826bf9dd96fa6700"
+  },
+  {
+    "path": "output/playwright/results.json",
+    "archive": "evidence/garden-replay-20260914/generated/output/playwright/results.json",
+    "currentRunSha256": "89275a57d57dbfddf5208befdccf7e2f9fc0cdefb21b90cab96f4be5e88acb6e",
+    "restoredGitBaselineSha256": "f355c21a6f3478f0af093d591b1ba69bc53773494a6a9630d923cb08861980b4"
+  }
+]

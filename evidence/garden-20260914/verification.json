@@ -1,0 +1,148 @@
+{
+  "recordedAt": "2026-09-14T10:16:37.590Z",
+  "status": "FIRST_ENCOUNTER_FUNCTIONAL_PASS_WITH_PERFORMANCE_LIMITS",
+  "branch": "codex/first-connected",
+  "baseline": "63af7a2261553c2639842a458b54dde38311e3f7",
+  "commit": "Local uncommitted candidate; exact implementation and generated client hashes in candidate.json",
+  "candidate": "candidate.json",
+  "commands": [
+    {
+      "command": "npm ci",
+      "result": "PASS",
+      "detail": "Pinned Node 24.21.0 and npm 11.19.0; exact Three.js/@types 0.186.0 lockfile installed, audit reported zero vulnerabilities. Execution recorded in task tool transcript."
+    },
+    {
+      "command": "npm run validate:content",
+      "result": "PASS",
+      "detail": "27 exact Garden paragraphs, 405 word occurrences; 586 original/current CT entries and 35 source refs preserved."
+    },
+    {
+      "command": "npm run check",
+      "result": "PASS",
+      "log": "build-reviewed.txt"
+    },
+    {
+      "command": "npm run build:server",
+      "result": "PASS",
+      "log": "build-reviewed.txt"
+    },
+    {
+      "command": "npm run test:contracts",
+      "result": "PASS",
+      "passed": 52,
+      "failed": 0,
+      "log": "contracts-final.txt"
+    },
+    {
+      "command": "npm run eval:coach -- --mode authored",
+      "result": "PASS",
+      "passed": 23,
+      "apiCalls": 0,
+      "receipt": "regenerated-regression-evidence/evidence/authored-evaluation.json"
+    },
+    {
+      "command": "npm run build",
+      "result": "PASS_WITH_EXISTING_CHUNK_SIZE_WARNING",
+      "log": "build-reviewed.txt"
+    },
+    {
+      "command": "npm run test:browser",
+      "result": "86_PASS_3_FAIL",
+      "receipt": "runs/full-production/summary.json",
+      "detail": "Two original DPR2 transfer failures and one subsequently repaired early-sampling test error. This run predates the final Garden-only redraw/label fixes."
+    },
+    {
+      "command": "npm run test:browser -- garden.spec.ts garden-measurements.spec.ts world.spec.ts",
+      "result": "PASS",
+      "receipt": "runs/reviewed-production/summary.json",
+      "passed": 9,
+      "failed": 0,
+      "detail": "Final identified candidate. Browser measurement test collects limits; passing collection does not turn failed frame-time flags into qualification."
+    }
+  ],
+  "finalBrowser": {
+    "startTime": "2026-09-14T10:12:27.014Z",
+    "duration": 231039.37099999998,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "priorRuns": {
+    "fullProduction": {
+      "startTime": "2026-09-14T09:38:50.275Z",
+      "duration": 1513594.983,
+      "expected": 86,
+      "skipped": 0,
+      "unexpected": 3,
+      "flaky": 0
+    },
+    "transitionCandidate": {
+      "startTime": "2026-09-14T10:06:53.389Z",
+      "duration": 218656.353,
+      "expected": 8,
+      "skipped": 0,
+      "unexpected": 1,
+      "flaky": 0
+    },
+    "development": "4 pass / 2 fail before corrections; browser-development-results.json and development-media",
+    "initial": "Interrupted after a real drag-label failure; first-run-diagnostic.json; discovery output is explicitly not a completed test run"
+  },
+  "corrections": [
+    "Floating boat captions are noninteractive and cannot steal placement clicks; actual boat meshes and native side controls own selection.",
+    "Full immutable UI state invalidates the renderer, including reduced-motion mode and reader-to-world transitions. Screenshots wait for actual resized rendering.",
+    "Keyboard movement remains preview-only until placement; Esc cancels.",
+    "Source exposure records actual visible word spans separately from page possession, NPC delivery, assistance and completion.",
+    "Ferry after crossing cannot steal the carried seed; all five F/B/P/L histories pass.",
+    "Recovery/new-adventure compare the stored revision transactionally and retain archived progress.",
+    "Measurement sampling waits for sufficient active frames without filtering long stalls or changing limits."
+  ],
+  "performance": {
+    "measurement": "renderer-measurements.json",
+    "softwareRendering": [
+      {
+        "dpr": 1,
+        "p95": 99.90000000000009,
+        "activeSamples": 16,
+        "adapter": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "checks": {
+          "initialTransferUnder4MiB": true,
+          "activeRafP95Under33_34ms": false
+        },
+        "openingMs": 409
+      },
+      {
+        "dpr": 2,
+        "p95": 200.09999999999854,
+        "activeSamples": 23,
+        "adapter": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+        "checks": {
+          "initialTransferUnder4MiB": true,
+          "activeRafP95Under33_34ms": false
+        },
+        "openingMs": 1033
+      }
+    ],
+    "native": "native-preview.json",
+    "limits": "Actual GPU preview has a short active-route sample. Software SwiftShader misses 33.34 ms. DPR2/native-device/browser/network/GPU-memory qualification remains open; no limits raised or geometry reduced."
+  },
+  "preservation": {
+    "originalImages": 52,
+    "importedFiles": 307,
+    "exactImportMatches": 301,
+    "retainedHistoricalTextDifferences": 6,
+    "receipt": "source-preservation.json",
+    "historicalEvidence": "regenerated-regression-evidence/manifest.json",
+    "providerLedger": "Unchanged: TASK11.19 halted at 1/75; zero new provider calls; no ledger reset"
+  },
+  "preview": "preview.json",
+  "notRun": [
+    "Tony D028 visual/play acceptance",
+    "Full Garden Adventure: Sol, gathering, contributions and ending presentation",
+    "Live AI semantic evaluation or child listening/recording",
+    "New-encounter Firefox/WebKit and physical touch/screen-reader matrix",
+    "Physical display FPS, total GPU memory, constrained-network and all-device qualification",
+    "Learner study, learning effectiveness or pronunciation-accuracy certification"
+  ],
+  "scope": "Bounded reopened TASK11.02/.05-.12/.14-.16/.20-.21 and ART02-07. Existing FIX11/CHECK11/D081 ownership crosswalk is in docs/GARDEN-FIRST-PLAYABLE.md."
+}

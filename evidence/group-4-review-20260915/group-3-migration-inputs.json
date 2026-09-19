@@ -1,0 +1,1316 @@
+{
+  "at": "2026-09-15T05:54:38.465Z",
+  "scope": "Authentic compiled Group3 command results before Group4 implementation. Payloads were not edited. Envelope transport is synthetic; not browser storage or native evidence.",
+  "dependencies": [
+    {
+      "path": ".cache/checks/src/garden/model.js",
+      "sha256": "0778b4e794d91a910caad77e5c61f8223e63ed0ad10cb5e872facd65847e0421"
+    },
+    {
+      "path": ".cache/checks/src/garden/chapter.js",
+      "sha256": "4d5283cc78eaca59e71521ce87fef9d95cae2e50a14d33590125f071eb237731"
+    },
+    {
+      "path": ".cache/checks/src/garden/river.js",
+      "sha256": "9704d3c35d7dde4c8004c5482e0f10457f6ca346cbd2d57d8b0cd6f5a0d615bf"
+    },
+    {
+      "path": ".cache/checks/src/garden/persistence.js",
+      "sha256": "c41b498c524b47dbe3e0d174722201b454eeaa789da00fef7681b6e81571b436"
+    }
+  ],
+  "cases": [
+    {
+      "name": "fresh-started",
+      "envelope": {
+        "format": 1,
+        "content": "garden-chapter-3",
+        "revision": 3,
+        "writer": "independent-group3-capture",
+        "payload": {
+          "version": 3,
+          "content": "garden-chapter-3",
+          "story": {
+            "metSol": false,
+            "solChoice": "none",
+            "solDraft": {
+              "text": "",
+              "revision": 0
+            },
+            "solEnding": null,
+            "maraPicture": "repair",
+            "laterKnown": false,
+            "questions": [],
+            "solReported": false,
+            "maraReported": false,
+            "timeAgreed": null,
+            "plan": null,
+            "solInvitation": null,
+            "maraInvitation": null,
+            "phase": "planning",
+            "solOutcome": null,
+            "records": {
+              "mara": null,
+              "sol": null,
+              "grandma": false,
+              "pip": null
+            },
+            "grandmaCopy": "none",
+            "closingDone": false,
+            "ending": null,
+            "presentation": {
+              "page": 0,
+              "finished": false
+            },
+            "answers": {},
+            "bridgeFailures": 0
+          },
+          "river": {
+            "edition": "connected-20260915",
+            "ropesCollected": false,
+            "soilPrepared": false,
+            "attachments": {
+              "west": null,
+              "east": null
+            },
+            "ropeLocations": {
+              "west": "box",
+              "east": "box"
+            },
+            "boat": {
+              "position": {
+                "x": -1.4,
+                "z": 0.8
+              },
+              "phase": "moored"
+            }
+          },
+          "runId": "prior-group3-1",
+          "revision": 1,
+          "started": true,
+          "pip": {
+            "x": -3.5,
+            "z": -1.8
+          },
+          "sections": {
+            "a": {
+              "x": -3.6,
+              "z": 1,
+              "rotation": 0
+            },
+            "b": {
+              "x": -3.6,
+              "z": 2.5,
+              "rotation": 0
+            }
+          },
+          "ferrySide": "west",
+          "joined": false,
+          "west": false,
+          "east": false,
+          "crossed": false,
+          "seed": "pip",
+          "bloomed": false,
+          "maraHeard": false,
+          "page": "mara",
+          "grandmaHeard": false,
+          "exposed": [],
+          "assistance": [],
+          "history": [],
+          "reading": {},
+          "reducedMotion": false,
+          "largeText": false
+        },
+        "checksum": "6bbbc972"
+      },
+      "exactBytes": "{\"format\":1,\"content\":\"garden-chapter-3\",\"revision\":3,\"writer\":\"independent-group3-capture\",\"payload\":{\"version\":3,\"content\":\"garden-chapter-3\",\"story\":{\"metSol\":false,\"solChoice\":\"none\",\"solDraft\":{\"text\":\"\",\"revision\":0},\"solEnding\":null,\"maraPicture\":\"repair\",\"laterKnown\":false,\"questions\":[],\"solReported\":false,\"maraReported\":false,\"timeAgreed\":null,\"plan\":null,\"solInvitation\":null,\"maraInvitation\":null,\"phase\":\"planning\",\"solOutcome\":null,\"records\":{\"mara\":null,\"sol\":null,\"grandma\":false,\"pip\":null},\"grandmaCopy\":\"none\",\"closingDone\":false,\"ending\":null,\"presentation\":{\"page\":0,\"finished\":false},\"answers\":{},\"bridgeFailures\":0},\"river\":{\"edition\":\"connected-20260915\",\"ropesCollected\":false,\"soilPrepared\":false,\"attachments\":{\"west\":null,\"east\":null},\"ropeLocations\":{\"west\":\"box\",\"east\":\"box\"},\"boat\":{\"position\":{\"x\":-1.4,\"z\":0.8},\"phase\":\"moored\"}},\"runId\":\"prior-group3-1\",\"revision\":1,\"started\":true,\"pip\":{\"x\":-3.5,\"z\":-1.8},\"sections\":{\"a\":{\"x\":-3.6,\"z\":1,\"rotation\":0},\"b\":{\"x\":-3.6,\"z\":2.5,\"rotation\":0}},\"ferrySide\":\"west\",\"joined\":false,\"west\":false,\"east\":false,\"crossed\":false,\"seed\":\"pip\",\"bloomed\":false,\"maraHeard\":false,\"page\":\"mara\",\"grandmaHeard\":false,\"exposed\":[],\"assistance\":[],\"history\":[],\"reading\":{},\"reducedMotion\":false,\"largeText\":false},\"checksum\":\"6bbbc972\"}"
+    },
+    {
+      "name": "heard-no-copy",
+      "envelope": {
+        "format": 1,
+        "content": "garden-chapter-3",
+        "revision": 3,
+        "writer": "independent-group3-capture",
+        "payload": {
+          "version": 3,
+          "content": "garden-chapter-3",
+          "story": {
+            "metSol": false,
+            "solChoice": "none",
+            "solDraft": {
+              "text": "",
+              "revision": 0
+            },
+            "solEnding": null,
+            "maraPicture": "repair",
+            "laterKnown": false,
+            "questions": [],
+            "solReported": false,
+            "maraReported": false,
+            "timeAgreed": null,
+            "plan": null,
+            "solInvitation": null,
+            "maraInvitation": null,
+            "phase": "planning",
+            "solOutcome": null,
+            "records": {
+              "mara": null,
+              "sol": null,
+              "grandma": false,
+              "pip": null
+            },
+            "grandmaCopy": "none",
+            "closingDone": false,
+            "ending": null,
+            "presentation": {
+              "page": 0,
+              "finished": false
+            },
+            "answers": {},
+            "bridgeFailures": 0
+          },
+          "river": {
+            "edition": "connected-20260915",
+            "ropesCollected": false,
+            "soilPrepared": false,
+            "attachments": {
+              "west": null,
+              "east": null
+            },
+            "ropeLocations": {
+              "west": "box",
+              "east": "box"
+            },
+            "boat": {
+              "position": {
+                "x": -1.4,
+                "z": 0.8
+              },
+              "phase": "moored"
+            }
+          },
+          "runId": "prior-group3-1",
+          "revision": 8,
+          "started": true,
+          "pip": {
+            "x": -3.5,
+            "z": -3.05
+          },
+          "sections": {
+            "a": {
+              "x": -3.6,
+              "z": 1,
+              "rotation": 0
+            },
+            "b": {
+              "x": -3.6,
+              "z": 2.5,
+              "rotation": 0
+            }
+          },
+          "ferrySide": "west",
+          "joined": false,
+          "west": false,
+          "east": false,
+          "crossed": false,
+          "seed": "pip",
+          "bloomed": false,
+          "maraHeard": true,
+          "page": "mara",
+          "grandmaHeard": false,
+          "exposed": [],
+          "assistance": [],
+          "history": [],
+          "reading": {},
+          "reducedMotion": false,
+          "largeText": false
+        },
+        "checksum": "62d8c53b"
+      },
+      "exactBytes": "{\"format\":1,\"content\":\"garden-chapter-3\",\"revision\":3,\"writer\":\"independent-group3-capture\",\"payload\":{\"version\":3,\"content\":\"garden-chapter-3\",\"story\":{\"metSol\":false,\"solChoice\":\"none\",\"solDraft\":{\"text\":\"\",\"revision\":0},\"solEnding\":null,\"maraPicture\":\"repair\",\"laterKnown\":false,\"questions\":[],\"solReported\":false,\"maraReported\":false,\"timeAgreed\":null,\"plan\":null,\"solInvitation\":null,\"maraInvitation\":null,\"phase\":\"planning\",\"solOutcome\":null,\"records\":{\"mara\":null,\"sol\":null,\"grandma\":false,\"pip\":null},\"grandmaCopy\":\"none\",\"closingDone\":false,\"ending\":null,\"presentation\":{\"page\":0,\"finished\":false},\"answers\":{},\"bridgeFailures\":0},\"river\":{\"edition\":\"connected-20260915\",\"ropesCollected\":false,\"soilPrepared\":false,\"attachments\":{\"west\":null,\"east\":null},\"ropeLocations\":{\"west\":\"box\",\"east\":\"box\"},\"boat\":{\"position\":{\"x\":-1.4,\"z\":0.8},\"phase\":\"moored\"}},\"runId\":\"prior-group3-1\",\"revision\":8,\"started\":true,\"pip\":{\"x\":-3.5,\"z\":-3.05},\"sections\":{\"a\":{\"x\":-3.6,\"z\":1,\"rotation\":0},\"b\":{\"x\":-3.6,\"z\":2.5,\"rotation\":0}},\"ferrySide\":\"west\",\"joined\":false,\"west\":false,\"east\":false,\"crossed\":false,\"seed\":\"pip\",\"bloomed\":false,\"maraHeard\":true,\"page\":\"mara\",\"grandmaHeard\":false,\"exposed\":[],\"assistance\":[],\"history\":[],\"reading\":{},\"reducedMotion\":false,\"largeText\":false},\"checksum\":\"62d8c53b\"}"
+    },
+    {
+      "name": "gifted-page-carried",
+      "envelope": {
+        "format": 1,
+        "content": "garden-chapter-3",
+        "revision": 3,
+        "writer": "independent-group3-capture",
+        "payload": {
+          "version": 3,
+          "content": "garden-chapter-3",
+          "story": {
+            "metSol": false,
+            "solChoice": "none",
+            "solDraft": {
+              "text": "",
+              "revision": 0
+            },
+            "solEnding": null,
+            "maraPicture": "repair",
+            "laterKnown": false,
+            "questions": [],
+            "solReported": false,
+            "maraReported": false,
+            "timeAgreed": null,
+            "plan": null,
+            "solInvitation": null,
+            "maraInvitation": null,
+            "phase": "planning",
+            "solOutcome": null,
+            "records": {
+              "mara": null,
+              "sol": null,
+              "grandma": false,
+              "pip": null
+            },
+            "grandmaCopy": "none",
+            "closingDone": false,
+            "ending": null,
+            "presentation": {
+              "page": 0,
+              "finished": false
+            },
+            "answers": {},
+            "bridgeFailures": 0
+          },
+          "river": {
+            "edition": "connected-20260915",
+            "ropesCollected": false,
+            "soilPrepared": false,
+            "attachments": {
+              "west": null,
+              "east": null
+            },
+            "ropeLocations": {
+              "west": "box",
+              "east": "box"
+            },
+            "boat": {
+              "position": {
+                "x": -1.4,
+                "z": 0.8
+              },
+              "phase": "moored"
+            }
+          },
+          "runId": "prior-group3-1",
+          "revision": 9,
+          "started": true,
+          "pip": {
+            "x": -3.5,
+            "z": -3.05
+          },
+          "sections": {
+            "a": {
+              "x": -3.6,
+              "z": 1,
+              "rotation": 0
+            },
+            "b": {
+              "x": -3.6,
+              "z": 2.5,
+              "rotation": 0
+            }
+          },
+          "ferrySide": "west",
+          "joined": false,
+          "west": false,
+          "east": false,
+          "crossed": false,
+          "seed": "pip",
+          "bloomed": false,
+          "maraHeard": true,
+          "page": "pip",
+          "grandmaHeard": false,
+          "exposed": [],
+          "assistance": [],
+          "history": [
+            "187"
+          ],
+          "reading": {},
+          "reducedMotion": false,
+          "largeText": false
+        },
+        "checksum": "48722e86"
+      },
+      "exactBytes": "{\"format\":1,\"content\":\"garden-chapter-3\",\"revision\":3,\"writer\":\"independent-group3-capture\",\"payload\":{\"version\":3,\"content\":\"garden-chapter-3\",\"story\":{\"metSol\":false,\"solChoice\":\"none\",\"solDraft\":{\"text\":\"\",\"revision\":0},\"solEnding\":null,\"maraPicture\":\"repair\",\"laterKnown\":false,\"questions\":[],\"solReported\":false,\"maraReported\":false,\"timeAgreed\":null,\"plan\":null,\"solInvitation\":null,\"maraInvitation\":null,\"phase\":\"planning\",\"solOutcome\":null,\"records\":{\"mara\":null,\"sol\":null,\"grandma\":false,\"pip\":null},\"grandmaCopy\":\"none\",\"closingDone\":false,\"ending\":null,\"presentation\":{\"page\":0,\"finished\":false},\"answers\":{},\"bridgeFailures\":0},\"river\":{\"edition\":\"connected-20260915\",\"ropesCollected\":false,\"soilPrepared\":false,\"attachments\":{\"west\":null,\"east\":null},\"ropeLocations\":{\"west\":\"box\",\"east\":\"box\"},\"boat\":{\"position\":{\"x\":-1.4,\"z\":0.8},\"phase\":\"moored\"}},\"runId\":\"prior-group3-1\",\"revision\":9,\"started\":true,\"pip\":{\"x\":-3.5,\"z\":-3.05},\"sections\":{\"a\":{\"x\":-3.6,\"z\":1,\"rotation\":0},\"b\":{\"x\":-3.6,\"z\":2.5,\"rotation\":0}},\"ferrySide\":\"west\",\"joined\":false,\"west\":false,\"east\":false,\"crossed\":false,\"seed\":\"pip\",\"bloomed\":false,\"maraHeard\":true,\"page\":\"pip\",\"grandmaHeard\":false,\"exposed\":[],\"assistance\":[],\"history\":[\"187\"],\"reading\":{},\"reducedMotion\":false,\"largeText\":false},\"checksum\":\"48722e86\"}"
+    },
+    {
+      "name": "page-with-grandma-not-shared",
+      "envelope": {
+        "format": 1,
+        "content": "garden-chapter-3",
+        "revision": 3,
+        "writer": "independent-group3-capture",
+        "payload": {
+          "version": 3,
+          "content": "garden-chapter-3",
+          "story": {
+            "metSol": false,
+            "solChoice": "none",
+            "solDraft": {
+              "text": "",
+              "revision": 0
+            },
+            "solEnding": null,
+            "maraPicture": "repair",
+            "laterKnown": false,
+            "questions": [],
+            "solReported": false,
+            "maraReported": true,
+            "timeAgreed": null,
+            "plan": null,
+            "solInvitation": null,
+            "maraInvitation": null,
+            "phase": "planning",
+            "solOutcome": null,
+            "records": {
+              "mara": null,
+              "sol": null,
+              "grandma": false,
+              "pip": null
+            },
+            "grandmaCopy": "none",
+            "closingDone": false,
+            "ending": null,
+            "presentation": {
+              "page": 0,
+              "finished": false
+            },
+            "answers": {},
+            "bridgeFailures": 0
+          },
+          "river": {
+            "edition": "connected-20260915",
+            "ropesCollected": true,
+            "soilPrepared": false,
+            "attachments": {
+              "west": "a",
+              "east": "b"
+            },
+            "ropeLocations": {
+              "west": "attached",
+              "east": "attached"
+            },
+            "boat": {
+              "position": {
+                "x": -1.4,
+                "z": 0.8
+              },
+              "phase": "moored"
+            }
+          },
+          "runId": "prior-group3-1",
+          "revision": 67,
+          "started": true,
+          "pip": {
+            "x": 3.25,
+            "z": 3.2
+          },
+          "sections": {
+            "a": {
+              "x": -0.775,
+              "z": 3,
+              "rotation": 0
+            },
+            "b": {
+              "x": 0.775,
+              "z": 3,
+              "rotation": 0
+            }
+          },
+          "ferrySide": "west",
+          "joined": true,
+          "west": true,
+          "east": true,
+          "crossed": true,
+          "seed": "pip",
+          "bloomed": false,
+          "maraHeard": true,
+          "page": "grandma",
+          "grandmaHeard": true,
+          "exposed": [],
+          "assistance": [],
+          "history": [
+            "187",
+            "550",
+            "B",
+            "924",
+            "MARA_PAGE_DELIVERED"
+          ],
+          "reading": {},
+          "reducedMotion": false,
+          "largeText": false
+        },
+        "checksum": "59ce32e0"
+      },
+      "exactBytes": "{\"format\":1,\"content\":\"garden-chapter-3\",\"revision\":3,\"writer\":\"independent-group3-capture\",\"payload\":{\"version\":3,\"content\":\"garden-chapter-3\",\"story\":{\"metSol\":false,\"solChoice\":\"none\",\"solDraft\":{\"text\":\"\",\"revision\":0},\"solEnding\":null,\"maraPicture\":\"repair\",\"laterKnown\":false,\"questions\":[],\"solReported\":false,\"maraReported\":true,\"timeAgreed\":null,\"plan\":null,\"solInvitation\":null,\"maraInvitation\":null,\"phase\":\"planning\",\"solOutcome\":null,\"records\":{\"mara\":null,\"sol\":null,\"grandma\":false,\"pip\":null},\"grandmaCopy\":\"none\",\"closingDone\":false,\"ending\":null,\"presentation\":{\"page\":0,\"finished\":false},\"answers\":{},\"bridgeFailures\":0},\"river\":{\"edition\":\"connected-20260915\",\"ropesCollected\":true,\"soilPrepared\":false,\"attachments\":{\"west\":\"a\",\"east\":\"b\"},\"ropeLocations\":{\"west\":\"attached\",\"east\":\"attached\"},\"boat\":{\"position\":{\"x\":-1.4,\"z\":0.8},\"phase\":\"moored\"}},\"runId\":\"prior-group3-1\",\"revision\":67,\"started\":true,\"pip\":{\"x\":3.25,\"z\":3.2},\"sections\":{\"a\":{\"x\":-0.775,\"z\":3,\"rotation\":0},\"b\":{\"x\":0.775,\"z\":3,\"rotation\":0}},\"ferrySide\":\"west\",\"joined\":true,\"west\":true,\"east\":true,\"crossed\":true,\"seed\":\"pip\",\"bloomed\":false,\"maraHeard\":true,\"page\":\"grandma\",\"grandmaHeard\":true,\"exposed\":[],\"assistance\":[],\"history\":[\"187\",\"550\",\"B\",\"924\",\"MARA_PAGE_DELIVERED\"],\"reading\":{},\"reducedMotion\":false,\"largeText\":false},\"checksum\":\"59ce32e0\"}"
+    },
+    {
+      "name": "earlier-engine-mara-contribution",
+      "envelope": {
+        "format": 1,
+        "content": "garden-chapter-3",
+        "revision": 3,
+        "writer": "independent-group3-capture",
+        "payload": {
+          "version": 3,
+          "content": "garden-chapter-3",
+          "story": {
+            "metSol": false,
+            "solChoice": "none",
+            "solDraft": {
+              "text": "",
+              "revision": 0
+            },
+            "solEnding": null,
+            "maraPicture": "repair",
+            "laterKnown": false,
+            "questions": [],
+            "solReported": false,
+            "maraReported": true,
+            "timeAgreed": null,
+            "plan": null,
+            "solInvitation": null,
+            "maraInvitation": null,
+            "phase": "planning",
+            "solOutcome": null,
+            "records": {
+              "mara": "repair",
+              "sol": null,
+              "grandma": false,
+              "pip": null
+            },
+            "grandmaCopy": "none",
+            "closingDone": false,
+            "ending": null,
+            "presentation": {
+              "page": 0,
+              "finished": false
+            },
+            "answers": {},
+            "bridgeFailures": 0
+          },
+          "river": {
+            "edition": "connected-20260915",
+            "ropesCollected": true,
+            "soilPrepared": false,
+            "attachments": {
+              "west": "a",
+              "east": "b"
+            },
+            "ropeLocations": {
+              "west": "attached",
+              "east": "attached"
+            },
+            "boat": {
+              "position": {
+                "x": -1.4,
+                "z": 0.8
+              },
+              "phase": "moored"
+            }
+          },
+          "runId": "prior-group3-1",
+          "revision": 68,
+          "started": true,
+          "pip": {
+            "x": 3.25,
+            "z": 3.2
+          },
+          "sections": {
+            "a": {
+              "x": -0.775,
+              "z": 3,
+              "rotation": 0
+            },
+            "b": {
+              "x": 0.775,
+              "z": 3,
+              "rotation": 0
+            }
+          },
+          "ferrySide": "west",
+          "joined": true,
+          "west": true,
+          "east": true,
+          "crossed": true,
+          "seed": "pip",
+          "bloomed": false,
+          "maraHeard": true,
+          "page": "grandma",
+          "grandmaHeard": true,
+          "exposed": [],
+          "assistance": [],
+          "history": [
+            "187",
+            "550",
+            "B",
+            "924",
+            "MARA_PAGE_DELIVERED"
+          ],
+          "reading": {},
+          "reducedMotion": false,
+          "largeText": false
+        },
+        "checksum": "61b0f12b"
+      },
+      "exactBytes": "{\"format\":1,\"content\":\"garden-chapter-3\",\"revision\":3,\"writer\":\"independent-group3-capture\",\"payload\":{\"version\":3,\"content\":\"garden-chapter-3\",\"story\":{\"metSol\":false,\"solChoice\":\"none\",\"solDraft\":{\"text\":\"\",\"revision\":0},\"solEnding\":null,\"maraPicture\":\"repair\",\"laterKnown\":false,\"questions\":[],\"solReported\":false,\"maraReported\":true,\"timeAgreed\":null,\"plan\":null,\"solInvitation\":null,\"maraInvitation\":null,\"phase\":\"planning\",\"solOutcome\":null,\"records\":{\"mara\":\"repair\",\"sol\":null,\"grandma\":false,\"pip\":null},\"grandmaCopy\":\"none\",\"closingDone\":false,\"ending\":null,\"presentation\":{\"page\":0,\"finished\":false},\"answers\":{},\"bridgeFailures\":0},\"river\":{\"edition\":\"connected-20260915\",\"ropesCollected\":true,\"soilPrepared\":false,\"attachments\":{\"west\":\"a\",\"east\":\"b\"},\"ropeLocations\":{\"west\":\"attached\",\"east\":\"attached\"},\"boat\":{\"position\":{\"x\":-1.4,\"z\":0.8},\"phase\":\"moored\"}},\"runId\":\"prior-group3-1\",\"revision\":68,\"started\":true,\"pip\":{\"x\":3.25,\"z\":3.2},\"sections\":{\"a\":{\"x\":-0.775,\"z\":3,\"rotation\":0},\"b\":{\"x\":0.775,\"z\":3,\"rotation\":0}},\"ferrySide\":\"west\",\"joined\":true,\"west\":true,\"east\":true,\"crossed\":true,\"seed\":\"pip\",\"bloomed\":false,\"maraHeard\":true,\"page\":\"grandma\",\"grandmaHeard\":true,\"exposed\":[],\"assistance\":[],\"history\":[\"187\",\"550\",\"B\",\"924\",\"MARA_PAGE_DELIVERED\"],\"reading\":{},\"reducedMotion\":false,\"largeText\":false},\"checksum\":\"61b0f12b\"}"
+    },
+    {
+      "name": "usual-pip-first-telling",
+      "envelope": {
+        "format": 1,
+        "content": "garden-chapter-3",
+        "revision": 3,
+        "writer": "independent-group3-capture",
+        "payload": {
+          "version": 3,
+          "content": "garden-chapter-3",
+          "story": {
+            "metSol": true,
+            "solChoice": "draft",
+            "solDraft": {
+              "text": "",
+              "revision": 0
+            },
+            "solEnding": null,
+            "maraPicture": "repair",
+            "laterKnown": false,
+            "questions": [],
+            "solReported": true,
+            "maraReported": true,
+            "timeAgreed": "usual",
+            "plan": {
+              "time": "usual",
+              "reader": "pip",
+              "revision": 1
+            },
+            "solInvitation": "usual",
+            "maraInvitation": {
+              "time": "usual",
+              "reader": "pip"
+            },
+            "phase": "mara",
+            "solOutcome": null,
+            "records": {
+              "mara": null,
+              "sol": null,
+              "grandma": false,
+              "pip": null
+            },
+            "grandmaCopy": "none",
+            "closingDone": false,
+            "ending": null,
+            "presentation": {
+              "page": 0,
+              "finished": false
+            },
+            "answers": {},
+            "bridgeFailures": 0
+          },
+          "river": {
+            "edition": "connected-20260915",
+            "ropesCollected": true,
+            "soilPrepared": true,
+            "attachments": {
+              "west": "a",
+              "east": "b"
+            },
+            "ropeLocations": {
+              "west": "attached",
+              "east": "attached"
+            },
+            "boat": {
+              "position": {
+                "x": -1.4,
+                "z": 0.8
+              },
+              "phase": "moored"
+            }
+          },
+          "runId": "prior-group3-1107",
+          "revision": 249,
+          "started": true,
+          "pip": {
+            "x": 3.25,
+            "z": 3.2
+          },
+          "sections": {
+            "a": {
+              "x": -0.775,
+              "z": 3,
+              "rotation": 0
+            },
+            "b": {
+              "x": 0.775,
+              "z": 3,
+              "rotation": 0
+            }
+          },
+          "ferrySide": "west",
+          "joined": true,
+          "west": true,
+          "east": true,
+          "crossed": true,
+          "seed": "soil",
+          "bloomed": true,
+          "maraHeard": true,
+          "page": "pip",
+          "grandmaHeard": false,
+          "exposed": [],
+          "assistance": [],
+          "history": [
+            "1293",
+            "1656",
+            "B",
+            "2031",
+            "P",
+            "2069-growth",
+            "L",
+            "3305"
+          ],
+          "reading": {},
+          "reducedMotion": false,
+          "largeText": false
+        },
+        "checksum": "b51b6a71"
+      },
+      "exactBytes": "{\"format\":1,\"content\":\"garden-chapter-3\",\"revision\":3,\"writer\":\"independent-group3-capture\",\"payload\":{\"version\":3,\"content\":\"garden-chapter-3\",\"story\":{\"metSol\":true,\"solChoice\":\"draft\",\"solDraft\":{\"text\":\"\",\"revision\":0},\"solEnding\":null,\"maraPicture\":\"repair\",\"laterKnown\":false,\"questions\":[],\"solReported\":true,\"maraReported\":true,\"timeAgreed\":\"usual\",\"plan\":{\"time\":\"usual\",\"reader\":\"pip\",\"revision\":1},\"solInvitation\":\"usual\",\"maraInvitation\":{\"time\":\"usual\",\"reader\":\"pip\"},\"phase\":\"mara\",\"solOutcome\":null,\"records\":{\"mara\":null,\"sol\":null,\"grandma\":false,\"pip\":null},\"grandmaCopy\":\"none\",\"closingDone\":false,\"ending\":null,\"presentation\":{\"page\":0,\"finished\":false},\"answers\":{},\"bridgeFailures\":0},\"river\":{\"edition\":\"connected-20260915\",\"ropesCollected\":true,\"soilPrepared\":true,\"attachments\":{\"west\":\"a\",\"east\":\"b\"},\"ropeLocations\":{\"west\":\"attached\",\"east\":\"attached\"},\"boat\":{\"position\":{\"x\":-1.4,\"z\":0.8},\"phase\":\"moored\"}},\"runId\":\"prior-group3-1107\",\"revision\":249,\"started\":true,\"pip\":{\"x\":3.25,\"z\":3.2},\"sections\":{\"a\":{\"x\":-0.775,\"z\":3,\"rotation\":0},\"b\":{\"x\":0.775,\"z\":3,\"rotation\":0}},\"ferrySide\":\"west\",\"joined\":true,\"west\":true,\"east\":true,\"crossed\":true,\"seed\":\"soil\",\"bloomed\":true,\"maraHeard\":true,\"page\":\"pip\",\"grandmaHeard\":false,\"exposed\":[],\"assistance\":[],\"history\":[\"1293\",\"1656\",\"B\",\"2031\",\"P\",\"2069-growth\",\"L\",\"3305\"],\"reading\":{},\"reducedMotion\":false,\"largeText\":false},\"checksum\":\"b51b6a71\"}"
+    },
+    {
+      "name": "usual-pip-completed-before-playable-bird",
+      "envelope": {
+        "format": 1,
+        "content": "garden-chapter-3",
+        "revision": 3,
+        "writer": "independent-group3-capture",
+        "payload": {
+          "version": 3,
+          "content": "garden-chapter-3",
+          "story": {
+            "metSol": true,
+            "solChoice": "draft",
+            "solDraft": {
+              "text": "",
+              "revision": 0
+            },
+            "solEnding": null,
+            "maraPicture": "repair",
+            "laterKnown": false,
+            "questions": [],
+            "solReported": true,
+            "maraReported": true,
+            "timeAgreed": "usual",
+            "plan": {
+              "time": "usual",
+              "reader": "pip",
+              "revision": 1
+            },
+            "solInvitation": "usual",
+            "maraInvitation": {
+              "time": "usual",
+              "reader": "pip"
+            },
+            "phase": "closed",
+            "solOutcome": "draft",
+            "records": {
+              "mara": "repair",
+              "sol": "draft",
+              "grandma": true,
+              "pip": "planting"
+            },
+            "grandmaCopy": "mara",
+            "closingDone": true,
+            "ending": {
+              "mara": "absent",
+              "sol": "draft",
+              "paragraphs": [
+                "Pip crossed the river and planted the seed with Grandma. He had kept his promise.",
+                "Mara was still working, so Pip read her story at the gathering.",
+                "Sol shared his unfinished draft.",
+                "Afterward, Pip took Grandma's story to Mara. Their stories could be shared even when they couldn't all be together."
+              ]
+            },
+            "presentation": {
+              "page": 0,
+              "finished": false
+            },
+            "answers": {},
+            "bridgeFailures": 0
+          },
+          "river": {
+            "edition": "connected-20260915",
+            "ropesCollected": true,
+            "soilPrepared": true,
+            "attachments": {
+              "west": "a",
+              "east": "b"
+            },
+            "ropeLocations": {
+              "west": "attached",
+              "east": "attached"
+            },
+            "boat": {
+              "position": {
+                "x": -1.4,
+                "z": 0.8
+              },
+              "phase": "moored"
+            }
+          },
+          "runId": "prior-group3-1107",
+          "revision": 307,
+          "started": true,
+          "pip": {
+            "x": -3.5,
+            "z": -3.05
+          },
+          "sections": {
+            "a": {
+              "x": -0.775,
+              "z": 3,
+              "rotation": 0
+            },
+            "b": {
+              "x": 0.775,
+              "z": 3,
+              "rotation": 0
+            }
+          },
+          "ferrySide": "west",
+          "joined": true,
+          "west": true,
+          "east": true,
+          "crossed": true,
+          "seed": "soil",
+          "bloomed": true,
+          "maraHeard": true,
+          "page": "pip",
+          "grandmaHeard": false,
+          "exposed": [],
+          "assistance": [],
+          "history": [
+            "1293",
+            "1656",
+            "B",
+            "2031",
+            "P",
+            "2069-growth",
+            "L",
+            "3305",
+            "3493",
+            "3856"
+          ],
+          "reading": {},
+          "reducedMotion": false,
+          "largeText": false
+        },
+        "checksum": "4c73f2b5"
+      },
+      "exactBytes": "{\"format\":1,\"content\":\"garden-chapter-3\",\"revision\":3,\"writer\":\"independent-group3-capture\",\"payload\":{\"version\":3,\"content\":\"garden-chapter-3\",\"story\":{\"metSol\":true,\"solChoice\":\"draft\",\"solDraft\":{\"text\":\"\",\"revision\":0},\"solEnding\":null,\"maraPicture\":\"repair\",\"laterKnown\":false,\"questions\":[],\"solReported\":true,\"maraReported\":true,\"timeAgreed\":\"usual\",\"plan\":{\"time\":\"usual\",\"reader\":\"pip\",\"revision\":1},\"solInvitation\":\"usual\",\"maraInvitation\":{\"time\":\"usual\",\"reader\":\"pip\"},\"phase\":\"closed\",\"solOutcome\":\"draft\",\"records\":{\"mara\":\"repair\",\"sol\":\"draft\",\"grandma\":true,\"pip\":\"planting\"},\"grandmaCopy\":\"mara\",\"closingDone\":true,\"ending\":{\"mara\":\"absent\",\"sol\":\"draft\",\"paragraphs\":[\"Pip crossed the river and planted the seed with Grandma. He had kept his promise.\",\"Mara was still working, so Pip read her story at the gathering.\",\"Sol shared his unfinished draft.\",\"Afterward, Pip took Grandma's story to Mara. Their stories could be shared even when they couldn't all be together.\"]},\"presentation\":{\"page\":0,\"finished\":false},\"answers\":{},\"bridgeFailures\":0},\"river\":{\"edition\":\"connected-20260915\",\"ropesCollected\":true,\"soilPrepared\":true,\"attachments\":{\"west\":\"a\",\"east\":\"b\"},\"ropeLocations\":{\"west\":\"attached\",\"east\":\"attached\"},\"boat\":{\"position\":{\"x\":-1.4,\"z\":0.8},\"phase\":\"moored\"}},\"runId\":\"prior-group3-1107\",\"revision\":307,\"started\":true,\"pip\":{\"x\":-3.5,\"z\":-3.05},\"sections\":{\"a\":{\"x\":-0.775,\"z\":3,\"rotation\":0},\"b\":{\"x\":0.775,\"z\":3,\"rotation\":0}},\"ferrySide\":\"west\",\"joined\":true,\"west\":true,\"east\":true,\"crossed\":true,\"seed\":\"soil\",\"bloomed\":true,\"maraHeard\":true,\"page\":\"pip\",\"grandmaHeard\":false,\"exposed\":[],\"assistance\":[],\"history\":[\"1293\",\"1656\",\"B\",\"2031\",\"P\",\"2069-growth\",\"L\",\"3305\",\"3493\",\"3856\"],\"reading\":{},\"reducedMotion\":false,\"largeText\":false},\"checksum\":\"4c73f2b5\"}"
+    },
+    {
+      "name": "later-mara-first-telling",
+      "envelope": {
+        "format": 1,
+        "content": "garden-chapter-3",
+        "revision": 3,
+        "writer": "independent-group3-capture",
+        "payload": {
+          "version": 3,
+          "content": "garden-chapter-3",
+          "story": {
+            "metSol": true,
+            "solChoice": "draft",
+            "solDraft": {
+              "text": "",
+              "revision": 0
+            },
+            "solEnding": null,
+            "maraPicture": "repair",
+            "laterKnown": false,
+            "questions": [],
+            "solReported": true,
+            "maraReported": true,
+            "timeAgreed": "later",
+            "plan": {
+              "time": "later",
+              "reader": "mara",
+              "revision": 1
+            },
+            "solInvitation": "later",
+            "maraInvitation": {
+              "time": "later",
+              "reader": "mara"
+            },
+            "phase": "mara",
+            "solOutcome": null,
+            "records": {
+              "mara": null,
+              "sol": null,
+              "grandma": false,
+              "pip": null
+            },
+            "grandmaCopy": "none",
+            "closingDone": false,
+            "ending": null,
+            "presentation": {
+              "page": 0,
+              "finished": false
+            },
+            "answers": {},
+            "bridgeFailures": 0
+          },
+          "river": {
+            "edition": "connected-20260915",
+            "ropesCollected": true,
+            "soilPrepared": true,
+            "attachments": {
+              "west": "a",
+              "east": "b"
+            },
+            "ropeLocations": {
+              "west": "attached",
+              "east": "attached"
+            },
+            "boat": {
+              "position": {
+                "x": -1.4,
+                "z": 0.8
+              },
+              "phase": "moored"
+            }
+          },
+          "runId": "prior-group3-4038",
+          "revision": 248,
+          "started": true,
+          "pip": {
+            "x": 3.25,
+            "z": 3.2
+          },
+          "sections": {
+            "a": {
+              "x": -0.775,
+              "z": 3,
+              "rotation": 0
+            },
+            "b": {
+              "x": 0.775,
+              "z": 3,
+              "rotation": 0
+            }
+          },
+          "ferrySide": "west",
+          "joined": true,
+          "west": true,
+          "east": true,
+          "crossed": true,
+          "seed": "soil",
+          "bloomed": true,
+          "maraHeard": true,
+          "page": "mara",
+          "grandmaHeard": false,
+          "exposed": [],
+          "assistance": [],
+          "history": [
+            "4406",
+            "B",
+            "4781",
+            "P",
+            "4819-growth",
+            "L",
+            "6055"
+          ],
+          "reading": {},
+          "reducedMotion": false,
+          "largeText": false
+        },
+        "checksum": "14aa3f7"
+      },
+      "exactBytes": "{\"format\":1,\"content\":\"garden-chapter-3\",\"revision\":3,\"writer\":\"independent-group3-capture\",\"payload\":{\"version\":3,\"content\":\"garden-chapter-3\",\"story\":{\"metSol\":true,\"solChoice\":\"draft\",\"solDraft\":{\"text\":\"\",\"revision\":0},\"solEnding\":null,\"maraPicture\":\"repair\",\"laterKnown\":false,\"questions\":[],\"solReported\":true,\"maraReported\":true,\"timeAgreed\":\"later\",\"plan\":{\"time\":\"later\",\"reader\":\"mara\",\"revision\":1},\"solInvitation\":\"later\",\"maraInvitation\":{\"time\":\"later\",\"reader\":\"mara\"},\"phase\":\"mara\",\"solOutcome\":null,\"records\":{\"mara\":null,\"sol\":null,\"grandma\":false,\"pip\":null},\"grandmaCopy\":\"none\",\"closingDone\":false,\"ending\":null,\"presentation\":{\"page\":0,\"finished\":false},\"answers\":{},\"bridgeFailures\":0},\"river\":{\"edition\":\"connected-20260915\",\"ropesCollected\":true,\"soilPrepared\":true,\"attachments\":{\"west\":\"a\",\"east\":\"b\"},\"ropeLocations\":{\"west\":\"attached\",\"east\":\"attached\"},\"boat\":{\"position\":{\"x\":-1.4,\"z\":0.8},\"phase\":\"moored\"}},\"runId\":\"prior-group3-4038\",\"revision\":248,\"started\":true,\"pip\":{\"x\":3.25,\"z\":3.2},\"sections\":{\"a\":{\"x\":-0.775,\"z\":3,\"rotation\":0},\"b\":{\"x\":0.775,\"z\":3,\"rotation\":0}},\"ferrySide\":\"west\",\"joined\":true,\"west\":true,\"east\":true,\"crossed\":true,\"seed\":\"soil\",\"bloomed\":true,\"maraHeard\":true,\"page\":\"mara\",\"grandmaHeard\":false,\"exposed\":[],\"assistance\":[],\"history\":[\"4406\",\"B\",\"4781\",\"P\",\"4819-growth\",\"L\",\"6055\"],\"reading\":{},\"reducedMotion\":false,\"largeText\":false},\"checksum\":\"14aa3f7\"}"
+    },
+    {
+      "name": "later-mara-completed-before-playable-bird",
+      "envelope": {
+        "format": 1,
+        "content": "garden-chapter-3",
+        "revision": 3,
+        "writer": "independent-group3-capture",
+        "payload": {
+          "version": 3,
+          "content": "garden-chapter-3",
+          "story": {
+            "metSol": true,
+            "solChoice": "draft",
+            "solDraft": {
+              "text": "",
+              "revision": 0
+            },
+            "solEnding": null,
+            "maraPicture": "repair",
+            "laterKnown": false,
+            "questions": [],
+            "solReported": true,
+            "maraReported": true,
+            "timeAgreed": "later",
+            "plan": {
+              "time": "later",
+              "reader": "mara",
+              "revision": 1
+            },
+            "solInvitation": "later",
+            "maraInvitation": {
+              "time": "later",
+              "reader": "mara"
+            },
+            "phase": "closed",
+            "solOutcome": "draft",
+            "records": {
+              "mara": "repair",
+              "sol": "draft",
+              "grandma": true,
+              "pip": "planting"
+            },
+            "grandmaCopy": "none",
+            "closingDone": true,
+            "ending": {
+              "mara": "mara",
+              "sol": "draft",
+              "paragraphs": [
+                "Pip crossed the river and planted the seed with Grandma. He had kept his promise.",
+                "The gathering began after the last boat returned. Mara told her story.",
+                "Sol shared his unfinished draft.",
+                "Grandma had heard why her friends had stopped visiting. Together, they had found a way to share stories again."
+              ]
+            },
+            "presentation": {
+              "page": 0,
+              "finished": false
+            },
+            "answers": {},
+            "bridgeFailures": 0
+          },
+          "river": {
+            "edition": "connected-20260915",
+            "ropesCollected": true,
+            "soilPrepared": true,
+            "attachments": {
+              "west": "a",
+              "east": "b"
+            },
+            "ropeLocations": {
+              "west": "attached",
+              "east": "attached"
+            },
+            "boat": {
+              "position": {
+                "x": -1.4,
+                "z": 0.8
+              },
+              "phase": "moored"
+            }
+          },
+          "runId": "prior-group3-4038",
+          "revision": 255,
+          "started": true,
+          "pip": {
+            "x": 3.25,
+            "z": 3.2
+          },
+          "sections": {
+            "a": {
+              "x": -0.775,
+              "z": 3,
+              "rotation": 0
+            },
+            "b": {
+              "x": 0.775,
+              "z": 3,
+              "rotation": 0
+            }
+          },
+          "ferrySide": "west",
+          "joined": true,
+          "west": true,
+          "east": true,
+          "crossed": true,
+          "seed": "soil",
+          "bloomed": true,
+          "maraHeard": true,
+          "page": "mara",
+          "grandmaHeard": false,
+          "exposed": [],
+          "assistance": [],
+          "history": [
+            "4406",
+            "B",
+            "4781",
+            "P",
+            "4819-growth",
+            "L",
+            "6055"
+          ],
+          "reading": {},
+          "reducedMotion": false,
+          "largeText": false
+        },
+        "checksum": "90ab8988"
+      },
+      "exactBytes": "{\"format\":1,\"content\":\"garden-chapter-3\",\"revision\":3,\"writer\":\"independent-group3-capture\",\"payload\":{\"version\":3,\"content\":\"garden-chapter-3\",\"story\":{\"metSol\":true,\"solChoice\":\"draft\",\"solDraft\":{\"text\":\"\",\"revision\":0},\"solEnding\":null,\"maraPicture\":\"repair\",\"laterKnown\":false,\"questions\":[],\"solReported\":true,\"maraReported\":true,\"timeAgreed\":\"later\",\"plan\":{\"time\":\"later\",\"reader\":\"mara\",\"revision\":1},\"solInvitation\":\"later\",\"maraInvitation\":{\"time\":\"later\",\"reader\":\"mara\"},\"phase\":\"closed\",\"solOutcome\":\"draft\",\"records\":{\"mara\":\"repair\",\"sol\":\"draft\",\"grandma\":true,\"pip\":\"planting\"},\"grandmaCopy\":\"none\",\"closingDone\":true,\"ending\":{\"mara\":\"mara\",\"sol\":\"draft\",\"paragraphs\":[\"Pip crossed the river and planted the seed with Grandma. He had kept his promise.\",\"The gathering began after the last boat returned. Mara told her story.\",\"Sol shared his unfinished draft.\",\"Grandma had heard why her friends had stopped visiting. Together, they had found a way to share stories again.\"]},\"presentation\":{\"page\":0,\"finished\":false},\"answers\":{},\"bridgeFailures\":0},\"river\":{\"edition\":\"connected-20260915\",\"ropesCollected\":true,\"soilPrepared\":true,\"attachments\":{\"west\":\"a\",\"east\":\"b\"},\"ropeLocations\":{\"west\":\"attached\",\"east\":\"attached\"},\"boat\":{\"position\":{\"x\":-1.4,\"z\":0.8},\"phase\":\"moored\"}},\"runId\":\"prior-group3-4038\",\"revision\":255,\"started\":true,\"pip\":{\"x\":3.25,\"z\":3.2},\"sections\":{\"a\":{\"x\":-0.775,\"z\":3,\"rotation\":0},\"b\":{\"x\":0.775,\"z\":3,\"rotation\":0}},\"ferrySide\":\"west\",\"joined\":true,\"west\":true,\"east\":true,\"crossed\":true,\"seed\":\"soil\",\"bloomed\":true,\"maraHeard\":true,\"page\":\"mara\",\"grandmaHeard\":false,\"exposed\":[],\"assistance\":[],\"history\":[\"4406\",\"B\",\"4781\",\"P\",\"4819-growth\",\"L\",\"6055\"],\"reading\":{},\"reducedMotion\":false,\"largeText\":false},\"checksum\":\"90ab8988\"}"
+    },
+    {
+      "name": "later-pip-first-telling",
+      "envelope": {
+        "format": 1,
+        "content": "garden-chapter-3",
+        "revision": 3,
+        "writer": "independent-group3-capture",
+        "payload": {
+          "version": 3,
+          "content": "garden-chapter-3",
+          "story": {
+            "metSol": true,
+            "solChoice": "draft",
+            "solDraft": {
+              "text": "",
+              "revision": 0
+            },
+            "solEnding": null,
+            "maraPicture": "repair",
+            "laterKnown": false,
+            "questions": [],
+            "solReported": true,
+            "maraReported": true,
+            "timeAgreed": "later",
+            "plan": {
+              "time": "later",
+              "reader": "pip",
+              "revision": 1
+            },
+            "solInvitation": "later",
+            "maraInvitation": {
+              "time": "later",
+              "reader": "pip"
+            },
+            "phase": "mara",
+            "solOutcome": null,
+            "records": {
+              "mara": null,
+              "sol": null,
+              "grandma": false,
+              "pip": null
+            },
+            "grandmaCopy": "none",
+            "closingDone": false,
+            "ending": null,
+            "presentation": {
+              "page": 0,
+              "finished": false
+            },
+            "answers": {},
+            "bridgeFailures": 0
+          },
+          "river": {
+            "edition": "connected-20260915",
+            "ropesCollected": true,
+            "soilPrepared": true,
+            "attachments": {
+              "west": "a",
+              "east": "b"
+            },
+            "ropeLocations": {
+              "west": "attached",
+              "east": "attached"
+            },
+            "boat": {
+              "position": {
+                "x": -1.4,
+                "z": 0.8
+              },
+              "phase": "moored"
+            }
+          },
+          "runId": "prior-group3-6244",
+          "revision": 249,
+          "started": true,
+          "pip": {
+            "x": 3.25,
+            "z": 3.2
+          },
+          "sections": {
+            "a": {
+              "x": -0.775,
+              "z": 3,
+              "rotation": 0
+            },
+            "b": {
+              "x": 0.775,
+              "z": 3,
+              "rotation": 0
+            }
+          },
+          "ferrySide": "west",
+          "joined": true,
+          "west": true,
+          "east": true,
+          "crossed": true,
+          "seed": "soil",
+          "bloomed": true,
+          "maraHeard": true,
+          "page": "pip",
+          "grandmaHeard": false,
+          "exposed": [],
+          "assistance": [],
+          "history": [
+            "6430",
+            "6793",
+            "B",
+            "7168",
+            "P",
+            "7206-growth",
+            "L",
+            "8442"
+          ],
+          "reading": {},
+          "reducedMotion": false,
+          "largeText": false
+        },
+        "checksum": "6810605e"
+      },
+      "exactBytes": "{\"format\":1,\"content\":\"garden-chapter-3\",\"revision\":3,\"writer\":\"independent-group3-capture\",\"payload\":{\"version\":3,\"content\":\"garden-chapter-3\",\"story\":{\"metSol\":true,\"solChoice\":\"draft\",\"solDraft\":{\"text\":\"\",\"revision\":0},\"solEnding\":null,\"maraPicture\":\"repair\",\"laterKnown\":false,\"questions\":[],\"solReported\":true,\"maraReported\":true,\"timeAgreed\":\"later\",\"plan\":{\"time\":\"later\",\"reader\":\"pip\",\"revision\":1},\"solInvitation\":\"later\",\"maraInvitation\":{\"time\":\"later\",\"reader\":\"pip\"},\"phase\":\"mara\",\"solOutcome\":null,\"records\":{\"mara\":null,\"sol\":null,\"grandma\":false,\"pip\":null},\"grandmaCopy\":\"none\",\"closingDone\":false,\"ending\":null,\"presentation\":{\"page\":0,\"finished\":false},\"answers\":{},\"bridgeFailures\":0},\"river\":{\"edition\":\"connected-20260915\",\"ropesCollected\":true,\"soilPrepared\":true,\"attachments\":{\"west\":\"a\",\"east\":\"b\"},\"ropeLocations\":{\"west\":\"attached\",\"east\":\"attached\"},\"boat\":{\"position\":{\"x\":-1.4,\"z\":0.8},\"phase\":\"moored\"}},\"runId\":\"prior-group3-6244\",\"revision\":249,\"started\":true,\"pip\":{\"x\":3.25,\"z\":3.2},\"sections\":{\"a\":{\"x\":-0.775,\"z\":3,\"rotation\":0},\"b\":{\"x\":0.775,\"z\":3,\"rotation\":0}},\"ferrySide\":\"west\",\"joined\":true,\"west\":true,\"east\":true,\"crossed\":true,\"seed\":\"soil\",\"bloomed\":true,\"maraHeard\":true,\"page\":\"pip\",\"grandmaHeard\":false,\"exposed\":[],\"assistance\":[],\"history\":[\"6430\",\"6793\",\"B\",\"7168\",\"P\",\"7206-growth\",\"L\",\"8442\"],\"reading\":{},\"reducedMotion\":false,\"largeText\":false},\"checksum\":\"6810605e\"}"
+    },
+    {
+      "name": "later-pip-completed-before-playable-bird",
+      "envelope": {
+        "format": 1,
+        "content": "garden-chapter-3",
+        "revision": 3,
+        "writer": "independent-group3-capture",
+        "payload": {
+          "version": 3,
+          "content": "garden-chapter-3",
+          "story": {
+            "metSol": true,
+            "solChoice": "draft",
+            "solDraft": {
+              "text": "",
+              "revision": 0
+            },
+            "solEnding": null,
+            "maraPicture": "repair",
+            "laterKnown": false,
+            "questions": [],
+            "solReported": true,
+            "maraReported": true,
+            "timeAgreed": "later",
+            "plan": {
+              "time": "later",
+              "reader": "pip",
+              "revision": 1
+            },
+            "solInvitation": "later",
+            "maraInvitation": {
+              "time": "later",
+              "reader": "pip"
+            },
+            "phase": "closed",
+            "solOutcome": "draft",
+            "records": {
+              "mara": "repair",
+              "sol": "draft",
+              "grandma": true,
+              "pip": "planting"
+            },
+            "grandmaCopy": "none",
+            "closingDone": true,
+            "ending": {
+              "mara": "listener",
+              "sol": "draft",
+              "paragraphs": [
+                "Pip crossed the river and planted the seed with Grandma. He had kept his promise.",
+                "The gathering began after the last boat returned. Mara listened while Pip read her story.",
+                "Sol shared his unfinished draft.",
+                "Grandma had heard why her friends had stopped visiting. Together, they had found a way to share stories again."
+              ]
+            },
+            "presentation": {
+              "page": 0,
+              "finished": false
+            },
+            "answers": {},
+            "bridgeFailures": 0
+          },
+          "river": {
+            "edition": "connected-20260915",
+            "ropesCollected": true,
+            "soilPrepared": true,
+            "attachments": {
+              "west": "a",
+              "east": "b"
+            },
+            "ropeLocations": {
+              "west": "attached",
+              "east": "attached"
+            },
+            "boat": {
+              "position": {
+                "x": -1.4,
+                "z": 0.8
+              },
+              "phase": "moored"
+            }
+          },
+          "runId": "prior-group3-6244",
+          "revision": 256,
+          "started": true,
+          "pip": {
+            "x": 3.25,
+            "z": 3.2
+          },
+          "sections": {
+            "a": {
+              "x": -0.775,
+              "z": 3,
+              "rotation": 0
+            },
+            "b": {
+              "x": 0.775,
+              "z": 3,
+              "rotation": 0
+            }
+          },
+          "ferrySide": "west",
+          "joined": true,
+          "west": true,
+          "east": true,
+          "crossed": true,
+          "seed": "soil",
+          "bloomed": true,
+          "maraHeard": true,
+          "page": "pip",
+          "grandmaHeard": false,
+          "exposed": [],
+          "assistance": [],
+          "history": [
+            "6430",
+            "6793",
+            "B",
+            "7168",
+            "P",
+            "7206-growth",
+            "L",
+            "8442"
+          ],
+          "reading": {},
+          "reducedMotion": false,
+          "largeText": false
+        },
+        "checksum": "7e362b79"
+      },
+      "exactBytes": "{\"format\":1,\"content\":\"garden-chapter-3\",\"revision\":3,\"writer\":\"independent-group3-capture\",\"payload\":{\"version\":3,\"content\":\"garden-chapter-3\",\"story\":{\"metSol\":true,\"solChoice\":\"draft\",\"solDraft\":{\"text\":\"\",\"revision\":0},\"solEnding\":null,\"maraPicture\":\"repair\",\"laterKnown\":false,\"questions\":[],\"solReported\":true,\"maraReported\":true,\"timeAgreed\":\"later\",\"plan\":{\"time\":\"later\",\"reader\":\"pip\",\"revision\":1},\"solInvitation\":\"later\",\"maraInvitation\":{\"time\":\"later\",\"reader\":\"pip\"},\"phase\":\"closed\",\"solOutcome\":\"draft\",\"records\":{\"mara\":\"repair\",\"sol\":\"draft\",\"grandma\":true,\"pip\":\"planting\"},\"grandmaCopy\":\"none\",\"closingDone\":true,\"ending\":{\"mara\":\"listener\",\"sol\":\"draft\",\"paragraphs\":[\"Pip crossed the river and planted the seed with Grandma. He had kept his promise.\",\"The gathering began after the last boat returned. Mara listened while Pip read her story.\",\"Sol shared his unfinished draft.\",\"Grandma had heard why her friends had stopped visiting. Together, they had found a way to share stories again.\"]},\"presentation\":{\"page\":0,\"finished\":false},\"answers\":{},\"bridgeFailures\":0},\"river\":{\"edition\":\"connected-20260915\",\"ropesCollected\":true,\"soilPrepared\":true,\"attachments\":{\"west\":\"a\",\"east\":\"b\"},\"ropeLocations\":{\"west\":\"attached\",\"east\":\"attached\"},\"boat\":{\"position\":{\"x\":-1.4,\"z\":0.8},\"phase\":\"moored\"}},\"runId\":\"prior-group3-6244\",\"revision\":256,\"started\":true,\"pip\":{\"x\":3.25,\"z\":3.2},\"sections\":{\"a\":{\"x\":-0.775,\"z\":3,\"rotation\":0},\"b\":{\"x\":0.775,\"z\":3,\"rotation\":0}},\"ferrySide\":\"west\",\"joined\":true,\"west\":true,\"east\":true,\"crossed\":true,\"seed\":\"soil\",\"bloomed\":true,\"maraHeard\":true,\"page\":\"pip\",\"grandmaHeard\":false,\"exposed\":[],\"assistance\":[],\"history\":[\"6430\",\"6793\",\"B\",\"7168\",\"P\",\"7206-growth\",\"L\",\"8442\"],\"reading\":{},\"reducedMotion\":false,\"largeText\":false},\"checksum\":\"7e362b79\"}"
+    }
+  ]
+}

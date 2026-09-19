@@ -1,0 +1,458 @@
+{
+  "at": "2026-09-12T13:15:24.095Z",
+  "authority": {
+    "path": "docs/design/evidence-quest-design-v3/10-asset-production/asset-manifest.json",
+    "sha256": "9ce4446d02159051a0c7901792da8c36fa5a48542979749121ebde33856f6938"
+  },
+  "files": [
+    {
+      "path": "src/world/paint.ts",
+      "sha256": "9ad64ae58322a37cb8147bdeb509871f177d1ccf68c2628a1b13a39b2aae41f3"
+    },
+    {
+      "path": "src/world/assets.ts",
+      "sha256": "8b7dadec432558785366395b4d9d496900876f3586d553b1e1668a1c704fca8d"
+    },
+    {
+      "path": "src/world/image-pool.ts",
+      "sha256": "56bf703c22451d3f95f5d3a53c3b171267353dc666057130a45ce539e56eef2b"
+    },
+    {
+      "path": "src/core/reducer.ts",
+      "sha256": "cfd7e1bc5e6fb292c082a2f8d8dce125a77bd46d1320188951bfd19b55f8baf8"
+    },
+    {
+      "path": "src/ui/App.tsx",
+      "sha256": "c8ab8414dfb4d096a16bf90e1bfd9715c61badf7f7e986f6f5c0251cd0b676d7"
+    },
+    {
+      "path": "src/ui/Reader.tsx",
+      "sha256": "c11d5b85b6d57bb108979ea74c6ede668139fa826260806bb0c1baf52d55fa55"
+    },
+    {
+      "path": "src/ui/RecordingFrame.tsx",
+      "sha256": "eda5b92b3042e86f9391e2855d862763bed03da27949481ff4bc42d394683bd9"
+    },
+    {
+      "path": "src/ui/app.css",
+      "sha256": "b4e298b206ed24139db730d9949464d3ad9191440986ada0a60a6cf106eecb29"
+    },
+    {
+      "path": "src/ui/tokens.css",
+      "sha256": "b1dfbe0c45e0b116de72c226d67601c5111680e1860db07548a0b2e99f1b3437"
+    }
+  ],
+  "clips": [
+    {
+      "id": "CLIP.WALK",
+      "owners": [
+        "ACT.PLAYER"
+      ],
+      "policy": "decorative",
+      "recommendedDurationMs": 500,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Four accepted direction cels at125ms each; carry upper pose uses the same moving lower legs. Only actual motion selects gait.",
+      "endpointAuthority": "No game-state change; existing state owns visibility.",
+      "interruption": "Stop immediately; resume only while owner eligible. No progress, exposure or certificate invented.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.ROLL",
+      "owners": [
+        "ACT.LOOP"
+      ],
+      "policy": "decorative",
+      "recommendedDurationMs": 334,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Two accepted roller cels at167ms each, selected from actual following direction; no invented movement.",
+      "endpointAuthority": "No game-state change; existing state owns visibility.",
+      "interruption": "Stop immediately; resume only while owner eligible. No progress, exposure or certificate invented.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.REACH",
+      "owners": [
+        "ACT.PLAYER"
+      ],
+      "policy": "decorative",
+      "recommendedDurationMs": 400,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Accepted reach blends over240ms and holds through the existing operation; endpoint alone commits.",
+      "endpointAuthority": "No game-state change; existing state owns visibility.",
+      "interruption": "Stop immediately; resume only while owner eligible. No progress, exposure or certificate invented.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.MODEL",
+      "owners": [
+        "ST.MODEL.TAB",
+        "MODEL.PIP",
+        "MODEL.BROKEN_BRIDGE"
+      ],
+      "policy": "physical",
+      "recommendedDurationMs": 600,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Tab0–220ms, Pip220–420ms and left bridge fold420–600ms. Only the independent model resets.",
+      "endpointAuthority": "Item05/09 physical operation owns stable endpoint; clip cannot apply action again.",
+      "interruption": "Before physical endpoint restore stable start; after endpoint retain committed owner/flag and actual exposure. Reload restores acknowledged state, clears transient selections; no frame-perfect promise.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.BRIEF",
+      "owners": [
+        "ST.SOURCE.E1"
+      ],
+      "policy": "physical",
+      "recommendedDurationMs": 450,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Blank accepted flap morph0–350ms; existing450ms endpoint opens actual text.",
+      "endpointAuthority": "Item05/09 physical operation owns stable endpoint; clip cannot apply action again.",
+      "interruption": "Before physical endpoint restore stable start; after endpoint retain committed owner/flag and actual exposure. Reload restores acknowledged state, clears transient selections; no frame-perfect promise.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.DRAWER",
+      "owners": [
+        "ST.SOURCE.E6"
+      ],
+      "policy": "physical",
+      "recommendedDurationMs": 450,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Blank accepted drawer morph/slide0–350ms;450ms source endpoint.",
+      "endpointAuthority": "Item05/09 physical operation owns stable endpoint; clip cannot apply action again.",
+      "interruption": "Before physical endpoint restore stable start; after endpoint retain committed owner/flag and actual exposure. Reload restores acknowledged state, clears transient selections; no frame-perfect promise.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.REQUEST",
+      "owners": [
+        "ST.SOURCE.E4"
+      ],
+      "policy": "physical",
+      "recommendedDurationMs": 450,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Accepted folded/unfolded envelope morph; source text appears at existing physical endpoint.",
+      "endpointAuthority": "Item05/09 physical operation owns stable endpoint; clip cannot apply action again.",
+      "interruption": "Before physical endpoint restore stable start; after endpoint retain committed owner/flag and actual exposure. Reload restores acknowledged state, clears transient selections; no frame-perfect promise.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.DOCK_OPEN",
+      "owners": [
+        "ST.DOCK.FLAP"
+      ],
+      "policy": "physical",
+      "recommendedDurationMs": 450,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Accepted dock flap morph before the original physical flag/channel endpoint.",
+      "endpointAuthority": "Item05/09 physical operation owns stable endpoint; clip cannot apply action again.",
+      "interruption": "Before physical endpoint restore stable start; after endpoint retain committed owner/flag and actual exposure. Reload restores acknowledged state, clears transient selections; no frame-perfect promise.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.CADDY_OPEN",
+      "owners": [
+        "KIT.CADDY"
+      ],
+      "policy": "physical",
+      "recommendedDurationMs": 450,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Accepted open inspection case at workstation; portable case stays closed and hand-sized.",
+      "endpointAuthority": "Item05/09 physical operation owns stable endpoint; clip cannot apply action again.",
+      "interruption": "Before physical endpoint restore stable start; after endpoint retain committed owner/flag and actual exposure. Reload restores acknowledged state, clears transient selections; no frame-perfect promise.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.LEAFLET",
+      "owners": [
+        "KIT.NOTE.E6"
+      ],
+      "policy": "physical",
+      "recommendedDurationMs": 450,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Blank leaflet pulls toward real hand; original note/source admission at endpoint.",
+      "endpointAuthority": "Item05/09 physical operation owns stable endpoint; clip cannot apply action again.",
+      "interruption": "Before physical endpoint restore stable start; after endpoint retain committed owner/flag and actual exposure. Reload restores acknowledged state, clears transient selections; no frame-perfect promise.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.NOTICE",
+      "owners": [
+        "CY.SOURCE.E3"
+      ],
+      "policy": "physical",
+      "recommendedDurationMs": 800,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Clip release0–150ms, blank reverse150–650ms, reclip650–800ms; full canonical text after secure.",
+      "endpointAuthority": "Item05/09 physical operation owns stable endpoint; clip cannot apply action again.",
+      "interruption": "Before physical endpoint restore stable start; after endpoint retain committed owner/flag and actual exposure. Reload restores acknowledged state, clears transient selections; no frame-perfect promise.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.WAKE",
+      "owners": [
+        "ACT.LOOP",
+        "LOOP.FOLLOW.PAD"
+      ],
+      "policy": "physical",
+      "recommendedDurationMs": 500,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Standby/responsive lens crossfade0–250ms, stable response through500ms; following turn comes from actual route.",
+      "endpointAuthority": "Item05/09 physical operation owns stable endpoint; clip cannot apply action again.",
+      "interruption": "Before physical endpoint restore stable start; after endpoint retain committed owner/flag and actual exposure. Reload restores acknowledged state, clears transient selections; no frame-perfect promise.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.DOCK",
+      "owners": [
+        "ACT.LOOP",
+        "ST.DOCK"
+      ],
+      "policy": "physical",
+      "recommendedDurationMs": 500,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Existing physical channel travel then500ms rolling/docked contact crossfade; ownership commits once.",
+      "endpointAuthority": "Item05/09 physical operation owns stable endpoint; clip cannot apply action again.",
+      "interruption": "Before physical endpoint restore stable start; after endpoint retain committed owner/flag and actual exposure. Reload restores acknowledged state, clears transient selections; no frame-perfect promise.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.COLLECT",
+      "owners": [
+        "MD.ACCESS.E8",
+        "KIT.CADDY"
+      ],
+      "policy": "physical",
+      "recommendedDurationMs": 350,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Closed carrier moves/scales to hand over200ms; original350ms endpoint transfers host.",
+      "endpointAuthority": "Item05/09 physical operation owns stable endpoint; clip cannot apply action again.",
+      "interruption": "Before physical endpoint restore stable start; after endpoint retain committed owner/flag and actual exposure. Reload restores acknowledged state, clears transient selections; no frame-perfect promise.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.HANDOFF",
+      "owners": [
+        "ST.RACK.BAY",
+        "KIT.CADDY"
+      ],
+      "policy": "physical",
+      "recommendedDurationMs": 350,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Closed carrier lowers to desk over200ms;350ms endpoint seats and opens the inspection presentation.",
+      "endpointAuthority": "Item05/09 physical operation owns stable endpoint; clip cannot apply action again.",
+      "interruption": "Before physical endpoint restore stable start; after endpoint retain committed owner/flag and actual exposure. Reload restores acknowledged state, clears transient selections; no frame-perfect promise.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.TILE",
+      "owners": [
+        "ST.RAIL"
+      ],
+      "policy": "physical",
+      "recommendedDurationMs": 180,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "180ms native FLIP motion,3CSSpx separating swap paths; actual committed order and focused tile retained.",
+      "endpointAuthority": "Item05/09 physical operation owns stable endpoint; clip cannot apply action again.",
+      "interruption": "Before physical endpoint restore stable start; after endpoint retain committed owner/flag and actual exposure. Reload restores acknowledged state, clears transient selections; no frame-perfect promise.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.E2",
+      "owners": [
+        "ST.ACCESS.E2",
+        "CY.ACCESS.E2"
+      ],
+      "policy": "decorative",
+      "recommendedDurationMs": 3000,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Three authored stills at1000ms each, with explicit step/pause/replay/full-description controls.",
+      "endpointAuthority": "No game-state change; existing state owns visibility.",
+      "interruption": "Stop immediately; resume only while owner eligible. No progress, exposure or certificate invented.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.PETALS",
+      "owners": [
+        "CY.PETALS",
+        "WK.SCENERY"
+      ],
+      "policy": "decorative",
+      "recommendedDurationMs": 4000,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Contained four-second ±6degree motion;400ms staggering, six Courtyard/four Workshop/three static Media.",
+      "endpointAuthority": "No game-state change; existing state owns visibility.",
+      "interruption": "Stop immediately; resume only while owner eligible. No progress, exposure or certificate invented.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.FERRY",
+      "owners": [
+        "PUP.BOATS",
+        "PUP.SEED"
+      ],
+      "policy": "cue",
+      "recommendedDurationMs": 1200,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Seed travel150–950ms and receive by1200ms; empty-boat bob leaves engine state unchanged.",
+      "endpointAuthority": "Item09 runId:index endpoint once; last endpoint is not run finalization.",
+      "interruption": "Controlled Stop, source/help/rail inspection, edit or door: settle active cue once, expose endpoint, pause before next. Continue retains mode/revision/index. Unmet PLANT/BLOOM holds; empty FERRY continues. Hard close restores acknowledged boundary with exposure uncertainty.",
+      "reducedMotion": "Same endpoint immediately with exact factual caption. Unmet/no-op semantics unchanged; exposure retained.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.BRIDGE",
+      "owners": [
+        "PUP.BOATS",
+        "PUP.PIP"
+      ],
+      "policy": "cue",
+      "recommendedDurationMs": 1400,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Join0–400ms, actual Pip/seed crossing400–1200ms, settled by1400ms.",
+      "endpointAuthority": "Item09 runId:index endpoint once; last endpoint is not run finalization.",
+      "interruption": "Controlled Stop, source/help/rail inspection, edit or door: settle active cue once, expose endpoint, pause before next. Continue retains mode/revision/index. Unmet PLANT/BLOOM holds; empty FERRY continues. Hard close restores acknowledged boundary with exposure uncertainty.",
+      "reducedMotion": "Same endpoint immediately with exact factual caption. Unmet/no-op semantics unchanged; exposure retained.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.PLANT",
+      "owners": [
+        "PUP.PIP",
+        "PUP.GRANDMA",
+        "PUP.SEED",
+        "PUP.FLOWER"
+      ],
+      "policy": "cue",
+      "recommendedDurationMs": 1200,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Planting pose, seed/hands400–800ms, roots800–1200ms; unmet factual hold unchanged.",
+      "endpointAuthority": "Item09 runId:index endpoint once; last endpoint is not run finalization.",
+      "interruption": "Controlled Stop, source/help/rail inspection, edit or door: settle active cue once, expose endpoint, pause before next. Continue retains mode/revision/index. Unmet PLANT/BLOOM holds; empty FERRY continues. Hard close restores acknowledged boundary with exposure uncertainty.",
+      "reducedMotion": "Same endpoint immediately with exact factual caption. Unmet/no-op semantics unchanged; exposure retained.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.BLOOM",
+      "owners": [
+        "PUP.FLOWER"
+      ],
+      "policy": "cue",
+      "recommendedDurationMs": 1200,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Flower growth0–600ms and light fade600–1200ms; unmet/noop remain engine-owned.",
+      "endpointAuthority": "Item09 runId:index endpoint once; last endpoint is not run finalization.",
+      "interruption": "Controlled Stop, source/help/rail inspection, edit or door: settle active cue once, expose endpoint, pause before next. Continue retains mode/revision/index. Unmet PLANT/BLOOM holds; empty FERRY continues. Hard close restores acknowledged boundary with exposure uncertainty.",
+      "reducedMotion": "Same endpoint immediately with exact factual caption. Unmet/no-op semantics unchanged; exposure retained.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.TOAST_REVEAL",
+      "owners": [
+        "WK.TOAST"
+      ],
+      "policy": "toast",
+      "recommendedDurationMs": 7000,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Seven-second cover/arms/lights, one-slice tray, then translucent magnifier; original retained reveal intent.",
+      "endpointAuthority": "Item05/09 physical operation owns stable endpoint; clip cannot apply action again.",
+      "interruption": "Reveal-start intent retained. Skip/leave/supporting view/handled interruption settles revealed. Canceled approach stays covered. Hard reload honors retained reveal intent.",
+      "reducedMotion": "Immediate revealed pose and CT.TOAST.PUNCHLINE, no flashes.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.TOAST_REPLAY",
+      "owners": [
+        "WK.TOAST"
+      ],
+      "policy": "toast",
+      "recommendedDurationMs": 2000,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Two-second lid/arm flourish around the same revealed single slice; no repeated reveal commit.",
+      "endpointAuthority": "Item05/09 physical operation owns stable endpoint; clip cannot apply action again.",
+      "interruption": "Reveal-start intent retained. Skip/leave/supporting view/handled interruption settles revealed. Canceled approach stays covered. Hard reload honors retained reveal intent.",
+      "reducedMotion": "Immediate revealed pose and CT.TOAST.PUNCHLINE, no flashes.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.CELEBRATE",
+      "owners": [
+        "ACT.JO",
+        "ACT.LOOP",
+        "ST.PROJECTION"
+      ],
+      "policy": "decorative",
+      "recommendedDurationMs": 800,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "800ms accepted Jo accent after successful show finalization only; leaving stops decoration without changing milestone.",
+      "endpointAuthority": "No game-state change; existing state owns visibility.",
+      "interruption": "Stop immediately; resume only while owner eligible. No progress, exposure or certificate invented.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.FOCUS",
+      "owners": [
+        "ACC.OBJECTS",
+        "ST.RAIL"
+      ],
+      "policy": "decorative",
+      "recommendedDurationMs": 120,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "120ms bracket opacity, immediate keyboard outline and immediate reduced-motion endpoint.",
+      "endpointAuthority": "No game-state change; existing state owns visibility.",
+      "interruption": "Stop immediately; resume only while owner eligible. No progress, exposure or certificate invented.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.NPC_TURN",
+      "owners": [
+        "ACT.JO",
+        "ACT.REMY",
+        "ACT.ARI"
+      ],
+      "policy": "decorative",
+      "recommendedDurationMs": 400,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Anchored150ms turn within400ms approached operation; actual delivery alone permits receive/acknowledge follow-through.",
+      "endpointAuthority": "No game-state change; existing state owns visibility.",
+      "interruption": "Stop immediately; resume only while owner eligible. No progress, exposure or certificate invented.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    },
+    {
+      "id": "CLIP.TOAST_IDLE",
+      "owners": [
+        "WK.TOAST"
+      ],
+      "policy": "decorative",
+      "recommendedDurationMs": 2000,
+      "timingStatus": "unmeasured production recommendation within Item08 target",
+      "implementedBehavior": "Covered-only ±0.15world-unit lid motion over2s; stopped by reveal, reduced motion or room departure.",
+      "endpointAuthority": "No game-state change; existing state owns visibility.",
+      "interruption": "Stop immediately; resume only while owner eligible. No progress, exposure or certificate invented.",
+      "reducedMotion": "Static endpoint/minimal transition; same required approach and logical commit.",
+      "review": "Implementation inspected; final browser/native candidate results are separately recorded. This is not a claim of a measured screenshot for every frame."
+    }
+  ],
+  "regression": "39 passing contracts include65orders/five successes and36cue races plus foreground draft and active-cue retention. Final candidate browser result and native paths are separately recorded in production qualification."
+}

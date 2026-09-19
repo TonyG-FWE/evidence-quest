@@ -1,0 +1,332 @@
+{
+  "at": "2026-09-15T07:57:42.091Z",
+  "result": "PASS_BOUNDED_GROUP_5_INDEPENDENT_REVIEW",
+  "scope": "Actual current bakery permission, physical tile transfer and directed repair, flour/baking, accompanied thanks, prior-save preservation and distinct original/working/selected child writing with bounded excerpt support. Whole-game and provider acceptance remain separate.",
+  "candidate": {
+    "garden": "assets/GardenApp-Cl2pNkL9.js",
+    "css": [
+      "assets/GardenApp-BQg8ozvd.css"
+    ],
+    "entry": "assets/index-BinEw634.js"
+  },
+  "findings": [
+    {
+      "id": "G5-RV01",
+      "status": "RESOLVED",
+      "resolution": "Codec rejects unreachable bakery meeting and fabricated historical Sol bypass; all26 authentic earlier payloads still migrate."
+    },
+    {
+      "id": "G5-RV02",
+      "status": "RESOLVED",
+      "resolution": "Help uses durable bakery context and returns to the actual roof repair."
+    },
+    {
+      "id": "G5-RV03",
+      "status": "RESOLVED",
+      "resolution": "Unrelated seed-boat label is hidden in the bakery focus."
+    },
+    {
+      "id": "G5-RV04",
+      "status": "RESOLVED",
+      "resolution": "Closer roof framing supports an ordinary direct click on the gap and same-tile recovery."
+    },
+    {
+      "id": "G5-RV05",
+      "status": "RESOLVED",
+      "resolution": "Workshop closeup and locally faded tree crown expose all three characters and loaf; the duplicate compact goal card no longer covers them."
+    },
+    {
+      "id": "G5-RV06",
+      "status": "RESOLVED",
+      "resolution": "Child writing remains explicitly suggested at rehearsal, selection, dialogue, sharing surfaces and replay; original manuscript header no longer contradicts readiness."
+    },
+    {
+      "id": "G5-RV07",
+      "status": "RESOLVED",
+      "resolution": "Explicitly labeled second view edits the same actual working draft. Ordinary keyboard selection works; selecting preserves full text, edits invalidate excerpt, selected contribution remains fixed."
+    }
+  ],
+  "handlerChecks": [
+    {
+      "file": "handlers-attribution-reviewed.json",
+      "assertions": 66,
+      "result": "PASS"
+    },
+    {
+      "file": "migration-final.json",
+      "assertions": 262,
+      "result": "PASS"
+    }
+  ],
+  "oldSaveCases": 26,
+  "oldSaveSplit": {
+    "eligible": 18,
+    "historical": 8
+  },
+  "native": {
+    "at": "2026-09-15T07:57:41.055Z",
+    "result": "PASS_BOUNDED_NATIVE_GROUP_5",
+    "candidate": {
+      "garden": "assets/GardenApp-Cl2pNkL9.js",
+      "css": [
+        "assets/GardenApp-BQg8ozvd.css"
+      ],
+      "entry": "assets/index-BinEw634.js"
+    },
+    "origin": "http://127.0.0.1:4195/garden",
+    "findings": [
+      {
+        "id": "G5-RV01",
+        "status": "RESOLVED",
+        "resolution": "Codec rejects unreachable bakery meeting and fabricated historical Sol bypass; all26 authentic earlier payloads still migrate."
+      },
+      {
+        "id": "G5-RV02",
+        "status": "RESOLVED",
+        "resolution": "Help uses durable bakery context and returns to the actual roof repair."
+      },
+      {
+        "id": "G5-RV03",
+        "status": "RESOLVED",
+        "resolution": "Unrelated seed-boat label is hidden in the bakery focus."
+      },
+      {
+        "id": "G5-RV04",
+        "status": "RESOLVED",
+        "resolution": "Closer roof framing supports an ordinary direct click on the gap and same-tile recovery."
+      },
+      {
+        "id": "G5-RV05",
+        "status": "RESOLVED",
+        "resolution": "Workshop closeup and locally faded tree crown expose all three characters and loaf; the duplicate compact goal card no longer covers them."
+      },
+      {
+        "id": "G5-RV06",
+        "status": "RESOLVED",
+        "resolution": "Child writing remains explicitly suggested at rehearsal, selection, dialogue, sharing surfaces and replay; original manuscript header no longer contradicts readiness."
+      },
+      {
+        "id": "G5-RV07",
+        "status": "RESOLVED",
+        "resolution": "Explicitly labeled second view edits the same actual working draft. Ordinary keyboard selection works; selecting preserves full text, edits invalidate excerpt, selected contribution remains fixed."
+      }
+    ],
+    "compact": {
+      "width": 320,
+      "height": 568,
+      "scrollWidth": 320,
+      "canvas": {
+        "height": 280.7638854980469,
+        "width": 320
+      },
+      "continuationControls": [
+        {
+          "height": 48,
+          "name": "Talk to Sol",
+          "width": 71.11111450195312
+        },
+        {
+          "height": 48,
+          "name": "Go to Grandma",
+          "width": 124.52777862548828
+        },
+        {
+          "height": 48,
+          "name": "Lantern stories",
+          "width": 93.30555725097656
+        }
+      ]
+    },
+    "nativeRoute": [
+      "Actual Rina problem, initial decline and later permission",
+      "Shelf pickup, carried tile, actual handoff to Sol",
+      "Removal, cancelled preview, recoverable beside-opening placement and source return",
+      "Direct visible gap click, correct same-tile placement, stopped indoor leak with exterior rain retained",
+      "Actual flour check, dough mixing, shaping, baking and Rina taking one loaf",
+      "Accompanied walk, Help and reload while Rina waits, actual gift before manuscript",
+      "Original and later source separation, child rehearsal/selection and later working edit",
+      "Reload retains both text versions; final source label and compact framing",
+      "Ordinary Ctrl+Home and Ctrl+Shift+ArrowRight selection, over4000 Ctrl+A rejection, same-draft second-editor edit"
+    ],
+    "nativeEvidence": [
+      "native-review-initial.md",
+      "native-review-current.md",
+      "native-excerpt-final.json",
+      "native-shared-edit-final.json",
+      "native-selected-version.json",
+      "native-reloaded-selected-version.json",
+      "compact-workshop-final.json",
+      "native-console-final.json",
+      "native-workshop-final.png"
+    ],
+    "implementationEvidence": {
+      "customBrowser": "evidence/group-5-bakery-20260915/browser-final.json",
+      "result": "PASS1/1",
+      "keyboardComparison": "evidence/group-5-bakery-20260915/keyboard-range-investigation.json",
+      "inspectedHandoff": "evidence/group-5-bakery-20260915/zero-selection-failure-artifacts/garden-bakery-Bakery-conne-36bb2-nks-and-exact-draft-excerpt-chromium/actual-thanks-handoff.png",
+      "handoffScope": "Actual physical handoff image from the earlier passing physical portion of a dated run that later failed the readonly-selection check; final geometry separately rechecked natively."
+    },
+    "limits": [
+      "Native observations span dated candidates; final changes received scoped rechecks, not a fresh final entire-game native run",
+      "Action entry/end and ordinary travel were observed; no frame-by-frame claim for every animation",
+      "Earlier readonly Ctrl-selection attempts failed; final editable same-draft keyboard path passed",
+      "No provider request in this native review; owner browser uses explicitly synthetic unavailable feedback",
+      "No user4192 reset or hidden store/browser selection injection",
+      "Procedural scene clarity and adult review do not qualify production illustration, child learning, physical devices or all-browser performance",
+      "Groups6–8 remain dependent work; TASK11.19 remains halted at1/75"
+    ]
+  },
+  "qualification": [
+    "Native observations span dated candidates with scoped final rechecks, not one fresh final full-game regression",
+    "Explicitly synthetic corrupt inputs and envelope transport are separated from real-handler payloads and ordinary native play",
+    "Authored suggested wording is not automatic semantic verification; source-backed examples and open-draft routes remain valid",
+    "No child learning, acoustic, physical-device or cross-browser qualification follows from this review",
+    "The169 original findings and Groups6–8 remain open for integration; TASK11.19 remains halted at1/75"
+  ],
+  "hashes": [
+    {
+      "path": "src/garden/model.ts",
+      "sha256": "41d62b1665b7e5f71a01ad0309998a8b28339f4c3a874d7825799a8ca4850bf7"
+    },
+    {
+      "path": "src/garden/chapter.ts",
+      "sha256": "f13b2567987c7b963338a270da4b00a8a3881d12c86b7ecda305ea1d1be42b99"
+    },
+    {
+      "path": "src/garden/bakery.ts",
+      "sha256": "8125a9d827407e145194f0a57a56d8bb1de9b557cee49f62c85884136f49d4f4"
+    },
+    {
+      "path": "src/garden/persistence.ts",
+      "sha256": "4711ec4422e9309f41f2a06b19f06d8741c4b6668b29e5d96309fe57d37266a3"
+    },
+    {
+      "path": ".cache/checks/src/garden/model.js",
+      "sha256": "bd230172322851fd1f309c1c469a0a6de4ff611e85713c837e0ef8bb4facd995"
+    },
+    {
+      "path": ".cache/checks/src/garden/chapter.js",
+      "sha256": "746b62e95399e27dc1259aa0df44adae71ab6e490707f4672b3641c6a0586f41"
+    },
+    {
+      "path": ".cache/checks/src/garden/bakery.js",
+      "sha256": "a97c79bc6f1bd104312a314763187fb65220103c4125ca601e43d345546513c9"
+    },
+    {
+      "path": ".cache/checks/src/garden/persistence.js",
+      "sha256": "9d44e3a880593afe9762672d2aff60a2afca1556b17ef525137e70f93f550b98"
+    },
+    {
+      "path": "src/garden/mara.ts",
+      "sha256": "c77c7a89106e7149944aa22da9be97cdfbf882cde569740a16dbc2ebb24e5e0a"
+    },
+    {
+      "path": ".cache/checks/src/garden/mara.js",
+      "sha256": "27880ac7c8976c0b560b326fab8936c3ba480aa46c7e88eca13ea6d9d2753437"
+    },
+    {
+      "path": "src/garden/bakeryWorld.ts",
+      "sha256": "ac096b223a8d851a9b155e24d751e4f375e37bc2e9628dfd54ef0d226a136beb"
+    },
+    {
+      "path": "src/garden/BakeryControls.tsx",
+      "sha256": "d48badb9b0295d5ce70f7651d26da151c5a0d25ca43ee344be9e47c5c0c6fd80"
+    },
+    {
+      "path": "src/garden/GardenApp.tsx",
+      "sha256": "de1bf88680a81aa1c2aa744f695700c600241c9760d86c000282b5e4979ddf0d"
+    },
+    {
+      "path": "src/garden/GardenScene.tsx",
+      "sha256": "866e0b208a30fff3fbabd5053b7269a0dc81a0a1a0702d7fd8e96904926b5851"
+    },
+    {
+      "path": "src/garden/ChapterPanels.tsx",
+      "sha256": "5602ab4e3a5a09e44d55b0851e5beb1966d102412ae14b79c9f7ebab965f2a0b"
+    },
+    {
+      "path": "src/garden/WorldActivity.tsx",
+      "sha256": "694708925805959c0d5994db6953f4bf98ea75c33fa62ed27f45ec6ce77ab9db"
+    },
+    {
+      "path": "src/garden/FeedbackActivity.tsx",
+      "sha256": "0efdefbb683aa99311dd701660322abcdbe7e9ffc56057f6d29df134db5714b4"
+    },
+    {
+      "path": "src/garden/content.ts",
+      "sha256": "e4cb004657d7eeba0a164db0ee285d8e72047c20ee6c412f640f3bf9228d96b1"
+    },
+    {
+      "path": "src/garden/chapterContent.ts",
+      "sha256": "e779bb4edf96103badbaedfbfa54866bb7f6241d9b4a8d74292f8b04a174a370"
+    },
+    {
+      "path": "src/garden/chapterWorld.ts",
+      "sha256": "0d9925dfbe66fbdf5e5de1645638bd0739bc02a5d0c01edd0b20bd48edf76426"
+    },
+    {
+      "path": "src/garden/garden.css",
+      "sha256": "80448083281337cad54bb95d0e4508f25e0d8eef077d32df8165bc9ed9134b60"
+    },
+    {
+      "path": "dist/client/assets/GardenApp-Cl2pNkL9.js",
+      "sha256": "f36c6df125c60ab81023bd95ca067ccf431507d20b4804c02520800afc2e667c"
+    },
+    {
+      "path": "dist/client/assets/GardenApp-BQg8ozvd.css",
+      "sha256": "156b987ab93515cfc82b6ae52a0f96369e688ad7c2ef316626fb9569b76270a3"
+    },
+    {
+      "path": "dist/client/assets/index-BinEw634.js",
+      "sha256": "8f8090aaa5e0cea6f85c51c0eb38a7a1b020ac4f5664f5b80a3185b5b796cfdd"
+    },
+    {
+      "path": "evidence/group-5-review-20260915/handlers-attribution-reviewed.json",
+      "sha256": "edc0c5fccb937fa8cd55ae5ebd9ffea012907ec1cac203fb0f0758dd7c631c46"
+    },
+    {
+      "path": "evidence/group-5-review-20260915/migration-final.json",
+      "sha256": "73f5487abe93bb3fb8863180cd930e912754dfe2267d74d45e6cab2af1b65526"
+    },
+    {
+      "path": "evidence/group-5-review-20260915/native-final.json",
+      "sha256": "f670658f6020793f361412da36fb659347837186ab05e9d111fc9b7370d7dacd"
+    },
+    {
+      "path": "evidence/group-5-review-20260915/native-excerpt.json",
+      "sha256": "ed8ef990f734250092eb31878e3e80685d769885571093c35a0e660f6d2e4df2"
+    },
+    {
+      "path": "evidence/group-5-review-20260915/native-selected-version.json",
+      "sha256": "596707580dde18d06f44d41055c30af82e46175a5c1ab7695c1995dd06dd9608"
+    },
+    {
+      "path": "evidence/group-5-review-20260915/native-console-final.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "docs/game-review/GROUP-5-BAKERY-PACKET-20260915.md",
+      "sha256": "f3dad004deceded367f0e839c3ebfd69326e2eb6576cde5ed9b6ebb60c44205e"
+    },
+    {
+      "path": "evidence/group-5-review-20260915/native-excerpt-final.json",
+      "sha256": "83ac82e3cb743d32be0f3be432ee251a2264d71113883b83026cde41e0a2a9e7"
+    },
+    {
+      "path": "evidence/group-5-review-20260915/native-shared-edit-final.json",
+      "sha256": "e4cd48ddf96a87712c172d9bc9cf501148b3462ad4c56b9860152bf942a546e8"
+    },
+    {
+      "path": "evidence/group-5-review-20260915/native-reloaded-selected-version.json",
+      "sha256": "19fd0b1c95cce7949fcb437621b109f0c1821795aedddc7feb86f223752d5da8"
+    },
+    {
+      "path": "evidence/group-5-review-20260915/compact-workshop-final.json",
+      "sha256": "3cb19fae5b28547db25c33ab3d5c0dbf6ecf7165a508264be87f1769e8deff0d"
+    },
+    {
+      "path": "evidence/group-5-bakery-20260915/browser-final.json",
+      "sha256": "814a4de83315367e7bdc356fb8c0abec22d220d313873e7709f40609df6e157e"
+    }
+  ]
+}

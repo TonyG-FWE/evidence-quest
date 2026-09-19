@@ -1,0 +1,2204 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.repair-final.config.ts"
+    ],
+    "configFile": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\playwright.repair-final.config.ts",
+    "rootDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 3
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/output/playwright/repair-final-raw",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts"
+        ],
+        "testMatch": [
+          "**/qualification-states.spec.ts",
+          "**/resilience.spec.ts",
+          "**/acceptance-boundaries.spec.ts",
+          "**/compact.spec.ts",
+          "**/save.spec.ts",
+          "**/watch-position.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/output/playwright/repair-final-raw",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts"
+        ],
+        "testMatch": [
+          "**/qualification-states.spec.ts",
+          "**/resilience.spec.ts",
+          "**/acceptance-boundaries.spec.ts",
+          "**/compact.spec.ts",
+          "**/save.spec.ts",
+          "**/watch-position.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/output/playwright/repair-final-raw",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 3
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts"
+        ],
+        "testMatch": [
+          "**/qualification-states.spec.ts",
+          "**/resilience.spec.ts",
+          "**/acceptance-boundaries.spec.ts",
+          "**/compact.spec.ts",
+          "**/save.spec.ts",
+          "**/watch-position.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/er13/final-repair-matrix.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 3,
+    "webServer": {
+      "command": "\"C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\.tools\\node-v24.21.0-win-x64\\node.exe\" dist/server/index.js",
+      "url": "http://127.0.0.1:4174/healthz",
+      "env": {
+        "PORT": "4174",
+        "EQ_WEB_PORT": "4174",
+        "PUBLIC_ORIGIN": "http://127.0.0.1:4174"
+      },
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "acceptance-boundaries.spec.ts",
+      "file": "acceptance-boundaries.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "FIX11.ACCESS/UNMET 320x568 whole unmet story, note inspection and native revision",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 19742,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts:11:222",
+                    "location": {
+                      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts",
+                      "column": 222,
+                      "line": 11
+                    },
+                    "snippet": "   9 |  // Verify the game's own Watch placement, without an automation scroll that\n  10 |  // can center the image underneath a sticky dock. Include every dock row.\n> 11 |  await expect.poll(async()=>{const box=(await page.getByTestId('whole-story').boundingBox())!,dock=(await page.locator('.world-dock').boundingBox())!;return box.y>=dock.y+dock.height-1&&box.y+box.height<=size.height+1;}).toBe(true);await page.screenshot({path:`output/playwright/compact-${size.width}-unmet.png`,fullPage:false});\n     |                                                                                                                                                                                                                              ^\n  12 |  await button(page,'CT.RAIL.ARRANGE_MODE').click();for(const id of ['CT.KIT.NOTE_JO','CT.KIT.NOTE_REMY']){await button(page,id).click();await settled(page);await page.locator('.reader .source-words').first().scrollIntoViewIfNeeded();await page.locator('.task-close button').click();await expect(button(page,id)).toBeFocused();}\n  13 |  await button(page,'CT.STORY.OPEN').click();await expect(page.getByTestId('whole-story')).toHaveAttribute('aria-label',/Pip/);await page.locator('.task-close button').click();await target(page,'ST.RAIL');await settled(page);await page.getByRole('button',{name:'Continue rehearsal',exact:true}).click();await expect(page.getByRole('button',{name:'Continue to finish rehearsal',exact:true})).toBeVisible();await page.getByRole('button',{name:'Continue to finish rehearsal',exact:true}).click();await putTile(page,'BRIDGE','One Boat');const state=await premiere(page);expect(state.payload.premiere?.order).toEqual(['TILE.FERRY','TILE.BRIDGE','TILE.PLANT','TILE.BLOOM']);\n  14 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts",
+                        "column": 222,
+                        "line": 11
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n\n   9 |  // Verify the game's own Watch placement, without an automation scroll that\n  10 |  // can center the image underneath a sticky dock. Include every dock row.\n> 11 |  await expect.poll(async()=>{const box=(await page.getByTestId('whole-story').boundingBox())!,dock=(await page.locator('.world-dock').boundingBox())!;return box.y>=dock.y+dock.height-1&&box.y+box.height<=size.height+1;}).toBe(true);await page.screenshot({path:`output/playwright/compact-${size.width}-unmet.png`,fullPage:false});\n     |                                                                                                                                                                                                                              ^\n  12 |  await button(page,'CT.RAIL.ARRANGE_MODE').click();for(const id of ['CT.KIT.NOTE_JO','CT.KIT.NOTE_REMY']){await button(page,id).click();await settled(page);await page.locator('.reader .source-words').first().scrollIntoViewIfNeeded();await page.locator('.task-close button').click();await expect(button(page,id)).toBeFocused();}\n  13 |  await button(page,'CT.STORY.OPEN').click();await expect(page.getByTestId('whole-story')).toHaveAttribute('aria-label',/Pip/);await page.locator('.task-close button').click();await target(page,'ST.RAIL');await settled(page);await page.getByRole('button',{name:'Continue rehearsal',exact:true}).click();await expect(page.getByRole('button',{name:'Continue to finish rehearsal',exact:true})).toBeVisible();await page.getByRole('button',{name:'Continue to finish rehearsal',exact:true}).click();await putTile(page,'BRIDGE','One Boat');const state=await premiere(page);expect(state.payload.premiere?.order).toEqual(['TILE.FERRY','TILE.BRIDGE','TILE.PLANT','TILE.BLOOM']);\n  14 | });\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts:11:222"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:43:08.609Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\repair-final-raw\\acceptance-boundaries-FIX1-f59c8-pection-and-native-revision-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\repair-final-raw\\acceptance-boundaries-FIX1-f59c8-pection-and-native-revision-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\repair-final-raw\\acceptance-boundaries-FIX1-f59c8-pection-and-native-revision-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts",
+                    "column": 222,
+                    "line": 11
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "173560b87f9fa848f1ab-8e389a27ab0663833fd5",
+          "file": "acceptance-boundaries.spec.ts",
+          "line": 6,
+          "column": 67
+        },
+        {
+          "title": "FIX11.ACCESS/UNMET 640x360 whole unmet story, note inspection and native revision",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 19061,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts:11:222",
+                    "location": {
+                      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts",
+                      "column": 222,
+                      "line": 11
+                    },
+                    "snippet": "   9 |  // Verify the game's own Watch placement, without an automation scroll that\n  10 |  // can center the image underneath a sticky dock. Include every dock row.\n> 11 |  await expect.poll(async()=>{const box=(await page.getByTestId('whole-story').boundingBox())!,dock=(await page.locator('.world-dock').boundingBox())!;return box.y>=dock.y+dock.height-1&&box.y+box.height<=size.height+1;}).toBe(true);await page.screenshot({path:`output/playwright/compact-${size.width}-unmet.png`,fullPage:false});\n     |                                                                                                                                                                                                                              ^\n  12 |  await button(page,'CT.RAIL.ARRANGE_MODE').click();for(const id of ['CT.KIT.NOTE_JO','CT.KIT.NOTE_REMY']){await button(page,id).click();await settled(page);await page.locator('.reader .source-words').first().scrollIntoViewIfNeeded();await page.locator('.task-close button').click();await expect(button(page,id)).toBeFocused();}\n  13 |  await button(page,'CT.STORY.OPEN').click();await expect(page.getByTestId('whole-story')).toHaveAttribute('aria-label',/Pip/);await page.locator('.task-close button').click();await target(page,'ST.RAIL');await settled(page);await page.getByRole('button',{name:'Continue rehearsal',exact:true}).click();await expect(page.getByRole('button',{name:'Continue to finish rehearsal',exact:true})).toBeVisible();await page.getByRole('button',{name:'Continue to finish rehearsal',exact:true}).click();await putTile(page,'BRIDGE','One Boat');const state=await premiere(page);expect(state.payload.premiere?.order).toEqual(['TILE.FERRY','TILE.BRIDGE','TILE.PLANT','TILE.BLOOM']);\n  14 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts",
+                        "column": 222,
+                        "line": 11
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n\n   9 |  // Verify the game's own Watch placement, without an automation scroll that\n  10 |  // can center the image underneath a sticky dock. Include every dock row.\n> 11 |  await expect.poll(async()=>{const box=(await page.getByTestId('whole-story').boundingBox())!,dock=(await page.locator('.world-dock').boundingBox())!;return box.y>=dock.y+dock.height-1&&box.y+box.height<=size.height+1;}).toBe(true);await page.screenshot({path:`output/playwright/compact-${size.width}-unmet.png`,fullPage:false});\n     |                                                                                                                                                                                                                              ^\n  12 |  await button(page,'CT.RAIL.ARRANGE_MODE').click();for(const id of ['CT.KIT.NOTE_JO','CT.KIT.NOTE_REMY']){await button(page,id).click();await settled(page);await page.locator('.reader .source-words').first().scrollIntoViewIfNeeded();await page.locator('.task-close button').click();await expect(button(page,id)).toBeFocused();}\n  13 |  await button(page,'CT.STORY.OPEN').click();await expect(page.getByTestId('whole-story')).toHaveAttribute('aria-label',/Pip/);await page.locator('.task-close button').click();await target(page,'ST.RAIL');await settled(page);await page.getByRole('button',{name:'Continue rehearsal',exact:true}).click();await expect(page.getByRole('button',{name:'Continue to finish rehearsal',exact:true})).toBeVisible();await page.getByRole('button',{name:'Continue to finish rehearsal',exact:true}).click();await putTile(page,'BRIDGE','One Boat');const state=await premiere(page);expect(state.payload.premiere?.order).toEqual(['TILE.FERRY','TILE.BRIDGE','TILE.PLANT','TILE.BLOOM']);\n  14 | });\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts:11:222"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:43:29.407Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\repair-final-raw\\acceptance-boundaries-FIX1-cd6a8-pection-and-native-revision-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\repair-final-raw\\acceptance-boundaries-FIX1-cd6a8-pection-and-native-revision-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\repair-final-raw\\acceptance-boundaries-FIX1-cd6a8-pection-and-native-revision-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts",
+                    "column": 222,
+                    "line": 11
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "173560b87f9fa848f1ab-8a7c71b40f36b3ac80f3",
+          "file": "acceptance-boundaries.spec.ts",
+          "line": 6,
+          "column": 67
+        },
+        {
+          "title": "FIX11.ACCESS/UNMET 320x568 whole unmet story, note inspection and native revision",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 2,
+                  "status": "failed",
+                  "duration": 23357,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts:11:222",
+                    "location": {
+                      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts",
+                      "column": 222,
+                      "line": 11
+                    },
+                    "snippet": "   9 |  // Verify the game's own Watch placement, without an automation scroll that\n  10 |  // can center the image underneath a sticky dock. Include every dock row.\n> 11 |  await expect.poll(async()=>{const box=(await page.getByTestId('whole-story').boundingBox())!,dock=(await page.locator('.world-dock').boundingBox())!;return box.y>=dock.y+dock.height-1&&box.y+box.height<=size.height+1;}).toBe(true);await page.screenshot({path:`output/playwright/compact-${size.width}-unmet.png`,fullPage:false});\n     |                                                                                                                                                                                                                              ^\n  12 |  await button(page,'CT.RAIL.ARRANGE_MODE').click();for(const id of ['CT.KIT.NOTE_JO','CT.KIT.NOTE_REMY']){await button(page,id).click();await settled(page);await page.locator('.reader .source-words').first().scrollIntoViewIfNeeded();await page.locator('.task-close button').click();await expect(button(page,id)).toBeFocused();}\n  13 |  await button(page,'CT.STORY.OPEN').click();await expect(page.getByTestId('whole-story')).toHaveAttribute('aria-label',/Pip/);await page.locator('.task-close button').click();await target(page,'ST.RAIL');await settled(page);await page.getByRole('button',{name:'Continue rehearsal',exact:true}).click();await expect(page.getByRole('button',{name:'Continue to finish rehearsal',exact:true})).toBeVisible();await page.getByRole('button',{name:'Continue to finish rehearsal',exact:true}).click();await putTile(page,'BRIDGE','One Boat');const state=await premiere(page);expect(state.payload.premiere?.order).toEqual(['TILE.FERRY','TILE.BRIDGE','TILE.PLANT','TILE.BLOOM']);\n  14 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts",
+                        "column": 222,
+                        "line": 11
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n\n   9 |  // Verify the game's own Watch placement, without an automation scroll that\n  10 |  // can center the image underneath a sticky dock. Include every dock row.\n> 11 |  await expect.poll(async()=>{const box=(await page.getByTestId('whole-story').boundingBox())!,dock=(await page.locator('.world-dock').boundingBox())!;return box.y>=dock.y+dock.height-1&&box.y+box.height<=size.height+1;}).toBe(true);await page.screenshot({path:`output/playwright/compact-${size.width}-unmet.png`,fullPage:false});\n     |                                                                                                                                                                                                                              ^\n  12 |  await button(page,'CT.RAIL.ARRANGE_MODE').click();for(const id of ['CT.KIT.NOTE_JO','CT.KIT.NOTE_REMY']){await button(page,id).click();await settled(page);await page.locator('.reader .source-words').first().scrollIntoViewIfNeeded();await page.locator('.task-close button').click();await expect(button(page,id)).toBeFocused();}\n  13 |  await button(page,'CT.STORY.OPEN').click();await expect(page.getByTestId('whole-story')).toHaveAttribute('aria-label',/Pip/);await page.locator('.task-close button').click();await target(page,'ST.RAIL');await settled(page);await page.getByRole('button',{name:'Continue rehearsal',exact:true}).click();await expect(page.getByRole('button',{name:'Continue to finish rehearsal',exact:true})).toBeVisible();await page.getByRole('button',{name:'Continue to finish rehearsal',exact:true}).click();await putTile(page,'BRIDGE','One Boat');const state=await premiere(page);expect(state.payload.premiere?.order).toEqual(['TILE.FERRY','TILE.BRIDGE','TILE.PLANT','TILE.BLOOM']);\n  14 | });\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts:11:222"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:44:00.728Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\repair-final-raw\\acceptance-boundaries-FIX1-f59c8-pection-and-native-revision-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\repair-final-raw\\acceptance-boundaries-FIX1-f59c8-pection-and-native-revision-firefox\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\repair-final-raw\\acceptance-boundaries-FIX1-f59c8-pection-and-native-revision-firefox\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts",
+                    "column": 222,
+                    "line": 11
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "173560b87f9fa848f1ab-79d1f118c0a6114b31d3",
+          "file": "acceptance-boundaries.spec.ts",
+          "line": 6,
+          "column": 67
+        },
+        {
+          "title": "FIX11.ACCESS/UNMET 640x360 whole unmet story, note inspection and native revision",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 2,
+                  "status": "failed",
+                  "duration": 23480,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts:11:222",
+                    "location": {
+                      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts",
+                      "column": 222,
+                      "line": 11
+                    },
+                    "snippet": "   9 |  // Verify the game's own Watch placement, without an automation scroll that\n  10 |  // can center the image underneath a sticky dock. Include every dock row.\n> 11 |  await expect.poll(async()=>{const box=(await page.getByTestId('whole-story').boundingBox())!,dock=(await page.locator('.world-dock').boundingBox())!;return box.y>=dock.y+dock.height-1&&box.y+box.height<=size.height+1;}).toBe(true);await page.screenshot({path:`output/playwright/compact-${size.width}-unmet.png`,fullPage:false});\n     |                                                                                                                                                                                                                              ^\n  12 |  await button(page,'CT.RAIL.ARRANGE_MODE').click();for(const id of ['CT.KIT.NOTE_JO','CT.KIT.NOTE_REMY']){await button(page,id).click();await settled(page);await page.locator('.reader .source-words').first().scrollIntoViewIfNeeded();await page.locator('.task-close button').click();await expect(button(page,id)).toBeFocused();}\n  13 |  await button(page,'CT.STORY.OPEN').click();await expect(page.getByTestId('whole-story')).toHaveAttribute('aria-label',/Pip/);await page.locator('.task-close button').click();await target(page,'ST.RAIL');await settled(page);await page.getByRole('button',{name:'Continue rehearsal',exact:true}).click();await expect(page.getByRole('button',{name:'Continue to finish rehearsal',exact:true})).toBeVisible();await page.getByRole('button',{name:'Continue to finish rehearsal',exact:true}).click();await putTile(page,'BRIDGE','One Boat');const state=await premiere(page);expect(state.payload.premiere?.order).toEqual(['TILE.FERRY','TILE.BRIDGE','TILE.PLANT','TILE.BLOOM']);\n  14 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts",
+                        "column": 222,
+                        "line": 11
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n\n   9 |  // Verify the game's own Watch placement, without an automation scroll that\n  10 |  // can center the image underneath a sticky dock. Include every dock row.\n> 11 |  await expect.poll(async()=>{const box=(await page.getByTestId('whole-story').boundingBox())!,dock=(await page.locator('.world-dock').boundingBox())!;return box.y>=dock.y+dock.height-1&&box.y+box.height<=size.height+1;}).toBe(true);await page.screenshot({path:`output/playwright/compact-${size.width}-unmet.png`,fullPage:false});\n     |                                                                                                                                                                                                                              ^\n  12 |  await button(page,'CT.RAIL.ARRANGE_MODE').click();for(const id of ['CT.KIT.NOTE_JO','CT.KIT.NOTE_REMY']){await button(page,id).click();await settled(page);await page.locator('.reader .source-words').first().scrollIntoViewIfNeeded();await page.locator('.task-close button').click();await expect(button(page,id)).toBeFocused();}\n  13 |  await button(page,'CT.STORY.OPEN').click();await expect(page.getByTestId('whole-story')).toHaveAttribute('aria-label',/Pip/);await page.locator('.task-close button').click();await target(page,'ST.RAIL');await settled(page);await page.getByRole('button',{name:'Continue rehearsal',exact:true}).click();await expect(page.getByRole('button',{name:'Continue to finish rehearsal',exact:true})).toBeVisible();await page.getByRole('button',{name:'Continue to finish rehearsal',exact:true}).click();await putTile(page,'BRIDGE','One Boat');const state=await premiere(page);expect(state.payload.premiere?.order).toEqual(['TILE.FERRY','TILE.BRIDGE','TILE.PLANT','TILE.BLOOM']);\n  14 | });\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts:11:222"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:44:26.662Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\repair-final-raw\\acceptance-boundaries-FIX1-cd6a8-pection-and-native-revision-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\repair-final-raw\\acceptance-boundaries-FIX1-cd6a8-pection-and-native-revision-firefox\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\repair-final-raw\\acceptance-boundaries-FIX1-cd6a8-pection-and-native-revision-firefox\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts",
+                    "column": 222,
+                    "line": 11
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "173560b87f9fa848f1ab-ec413cc57fcf7cd85cad",
+          "file": "acceptance-boundaries.spec.ts",
+          "line": 6,
+          "column": 67
+        },
+        {
+          "title": "FIX11.ACCESS/UNMET 320x568 whole unmet story, note inspection and native revision",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 23782,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts:11:222",
+                    "location": {
+                      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts",
+                      "column": 222,
+                      "line": 11
+                    },
+                    "snippet": "   9 |  // Verify the game's own Watch placement, without an automation scroll that\n  10 |  // can center the image underneath a sticky dock. Include every dock row.\n> 11 |  await expect.poll(async()=>{const box=(await page.getByTestId('whole-story').boundingBox())!,dock=(await page.locator('.world-dock').boundingBox())!;return box.y>=dock.y+dock.height-1&&box.y+box.height<=size.height+1;}).toBe(true);await page.screenshot({path:`output/playwright/compact-${size.width}-unmet.png`,fullPage:false});\n     |                                                                                                                                                                                                                              ^\n  12 |  await button(page,'CT.RAIL.ARRANGE_MODE').click();for(const id of ['CT.KIT.NOTE_JO','CT.KIT.NOTE_REMY']){await button(page,id).click();await settled(page);await page.locator('.reader .source-words').first().scrollIntoViewIfNeeded();await page.locator('.task-close button').click();await expect(button(page,id)).toBeFocused();}\n  13 |  await button(page,'CT.STORY.OPEN').click();await expect(page.getByTestId('whole-story')).toHaveAttribute('aria-label',/Pip/);await page.locator('.task-close button').click();await target(page,'ST.RAIL');await settled(page);await page.getByRole('button',{name:'Continue rehearsal',exact:true}).click();await expect(page.getByRole('button',{name:'Continue to finish rehearsal',exact:true})).toBeVisible();await page.getByRole('button',{name:'Continue to finish rehearsal',exact:true}).click();await putTile(page,'BRIDGE','One Boat');const state=await premiere(page);expect(state.payload.premiere?.order).toEqual(['TILE.FERRY','TILE.BRIDGE','TILE.PLANT','TILE.BLOOM']);\n  14 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts",
+                        "column": 222,
+                        "line": 11
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n\n   9 |  // Verify the game's own Watch placement, without an automation scroll that\n  10 |  // can center the image underneath a sticky dock. Include every dock row.\n> 11 |  await expect.poll(async()=>{const box=(await page.getByTestId('whole-story').boundingBox())!,dock=(await page.locator('.world-dock').boundingBox())!;return box.y>=dock.y+dock.height-1&&box.y+box.height<=size.height+1;}).toBe(true);await page.screenshot({path:`output/playwright/compact-${size.width}-unmet.png`,fullPage:false});\n     |                                                                                                                                                                                                                              ^\n  12 |  await button(page,'CT.RAIL.ARRANGE_MODE').click();for(const id of ['CT.KIT.NOTE_JO','CT.KIT.NOTE_REMY']){await button(page,id).click();await settled(page);await page.locator('.reader .source-words').first().scrollIntoViewIfNeeded();await page.locator('.task-close button').click();await expect(button(page,id)).toBeFocused();}\n  13 |  await button(page,'CT.STORY.OPEN').click();await expect(page.getByTestId('whole-story')).toHaveAttribute('aria-label',/Pip/);await page.locator('.task-close button').click();await target(page,'ST.RAIL');await settled(page);await page.getByRole('button',{name:'Continue rehearsal',exact:true}).click();await expect(page.getByRole('button',{name:'Continue to finish rehearsal',exact:true})).toBeVisible();await page.getByRole('button',{name:'Continue to finish rehearsal',exact:true}).click();await putTile(page,'BRIDGE','One Boat');const state=await premiere(page);expect(state.payload.premiere?.order).toEqual(['TILE.FERRY','TILE.BRIDGE','TILE.PLANT','TILE.BLOOM']);\n  14 | });\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts:11:222"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:45:05.766Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\repair-final-raw\\acceptance-boundaries-FIX1-f59c8-pection-and-native-revision-webkit\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\repair-final-raw\\acceptance-boundaries-FIX1-f59c8-pection-and-native-revision-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\repair-final-raw\\acceptance-boundaries-FIX1-f59c8-pection-and-native-revision-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts",
+                    "column": 222,
+                    "line": 11
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "173560b87f9fa848f1ab-d64be97074630de189e3",
+          "file": "acceptance-boundaries.spec.ts",
+          "line": 6,
+          "column": 67
+        },
+        {
+          "title": "FIX11.ACCESS/UNMET 640x360 whole unmet story, note inspection and native revision",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 13,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 23910,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts:11:222",
+                    "location": {
+                      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts",
+                      "column": 222,
+                      "line": 11
+                    },
+                    "snippet": "   9 |  // Verify the game's own Watch placement, without an automation scroll that\n  10 |  // can center the image underneath a sticky dock. Include every dock row.\n> 11 |  await expect.poll(async()=>{const box=(await page.getByTestId('whole-story').boundingBox())!,dock=(await page.locator('.world-dock').boundingBox())!;return box.y>=dock.y+dock.height-1&&box.y+box.height<=size.height+1;}).toBe(true);await page.screenshot({path:`output/playwright/compact-${size.width}-unmet.png`,fullPage:false});\n     |                                                                                                                                                                                                                              ^\n  12 |  await button(page,'CT.RAIL.ARRANGE_MODE').click();for(const id of ['CT.KIT.NOTE_JO','CT.KIT.NOTE_REMY']){await button(page,id).click();await settled(page);await page.locator('.reader .source-words').first().scrollIntoViewIfNeeded();await page.locator('.task-close button').click();await expect(button(page,id)).toBeFocused();}\n  13 |  await button(page,'CT.STORY.OPEN').click();await expect(page.getByTestId('whole-story')).toHaveAttribute('aria-label',/Pip/);await page.locator('.task-close button').click();await target(page,'ST.RAIL');await settled(page);await page.getByRole('button',{name:'Continue rehearsal',exact:true}).click();await expect(page.getByRole('button',{name:'Continue to finish rehearsal',exact:true})).toBeVisible();await page.getByRole('button',{name:'Continue to finish rehearsal',exact:true}).click();await putTile(page,'BRIDGE','One Boat');const state=await premiere(page);expect(state.payload.premiere?.order).toEqual(['TILE.FERRY','TILE.BRIDGE','TILE.PLANT','TILE.BLOOM']);\n  14 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts",
+                        "column": 222,
+                        "line": 11
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n\n   9 |  // Verify the game's own Watch placement, without an automation scroll that\n  10 |  // can center the image underneath a sticky dock. Include every dock row.\n> 11 |  await expect.poll(async()=>{const box=(await page.getByTestId('whole-story').boundingBox())!,dock=(await page.locator('.world-dock').boundingBox())!;return box.y>=dock.y+dock.height-1&&box.y+box.height<=size.height+1;}).toBe(true);await page.screenshot({path:`output/playwright/compact-${size.width}-unmet.png`,fullPage:false});\n     |                                                                                                                                                                                                                              ^\n  12 |  await button(page,'CT.RAIL.ARRANGE_MODE').click();for(const id of ['CT.KIT.NOTE_JO','CT.KIT.NOTE_REMY']){await button(page,id).click();await settled(page);await page.locator('.reader .source-words').first().scrollIntoViewIfNeeded();await page.locator('.task-close button').click();await expect(button(page,id)).toBeFocused();}\n  13 |  await button(page,'CT.STORY.OPEN').click();await expect(page.getByTestId('whole-story')).toHaveAttribute('aria-label',/Pip/);await page.locator('.task-close button').click();await target(page,'ST.RAIL');await settled(page);await page.getByRole('button',{name:'Continue rehearsal',exact:true}).click();await expect(page.getByRole('button',{name:'Continue to finish rehearsal',exact:true})).toBeVisible();await page.getByRole('button',{name:'Continue to finish rehearsal',exact:true}).click();await putTile(page,'BRIDGE','One Boat');const state=await premiere(page);expect(state.payload.premiere?.order).toEqual(['TILE.FERRY','TILE.BRIDGE','TILE.PLANT','TILE.BLOOM']);\n  14 | });\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts:11:222"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:45:30.481Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\repair-final-raw\\acceptance-boundaries-FIX1-cd6a8-pection-and-native-revision-webkit\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\repair-final-raw\\acceptance-boundaries-FIX1-cd6a8-pection-and-native-revision-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\repair-final-raw\\acceptance-boundaries-FIX1-cd6a8-pection-and-native-revision-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\acceptance-boundaries.spec.ts",
+                    "column": 222,
+                    "line": 11
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "173560b87f9fa848f1ab-dcde4bfd5f232d2f5c72",
+          "file": "acceptance-boundaries.spec.ts",
+          "line": 6,
+          "column": 67
+        }
+      ]
+    },
+    {
+      "title": "compact.spec.ts",
+      "file": "compact.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "FIX11.ACCESS fresh 320x568 Largest Roomier reduced-motion sound-off case entirely through Tab and Enter",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 47898,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:43:08.597Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f701f705758d39c20745-7cec9c326f9edf656328",
+          "file": "compact.spec.ts",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 8893,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:43:56.676Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f701f705758d39c20745-26cb1bd09db2b3316733",
+          "file": "compact.spec.ts",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "FIX11.ACCESS fresh 320x568 Largest Roomier reduced-motion sound-off case entirely through Tab and Enter",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 51611,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:44:04.876Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f701f705758d39c20745-8f6c9cdcc59568f32615",
+          "file": "compact.spec.ts",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9115,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:44:57.118Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f701f705758d39c20745-f10929f12a40dc6010c1",
+          "file": "compact.spec.ts",
+          "line": 19,
+          "column": 1
+        },
+        {
+          "title": "FIX11.ACCESS fresh 320x568 Largest Roomier reduced-motion sound-off case entirely through Tab and Enter",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 50847,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:45:07.453Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f701f705758d39c20745-6042f090dc2f8cb31099",
+          "file": "compact.spec.ts",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "FIX11.ACCESS touch Arrange and Watch keep the whole puppet story visible at 640x360 Largest",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12207,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:45:58.402Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f701f705758d39c20745-aae88364578c31f4bbeb",
+          "file": "compact.spec.ts",
+          "line": 19,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "qualification-states.spec.ts",
+      "file": "qualification-states.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TASK11.21 UI.TECH.LOADING and HOME.CHECKING retain honest actions through delayed module and storage completion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1291,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:43:08.595Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4b61faf3ea4e5834a47c-ddde6640f91ae4489d0f",
+          "file": "qualification-states.spec.ts",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "TASK11.21 UI.WORLD.CHOOSER and BLOCKED keep source choice explicit and failed floor movement harmless",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1403,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:43:10.069Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4b61faf3ea4e5834a47c-679b1549208736a628dc",
+          "file": "qualification-states.spec.ts",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "TASK11.21 foreground lifecycle event acknowledgment retains private draft and prior task without autoplay",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 2241,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:43:11.488Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4b61faf3ea4e5834a47c-cb58eba9ec9123b052bf",
+          "file": "qualification-states.spec.ts",
+          "line": 23,
+          "column": 1
+        },
+        {
+          "title": "TASK11.21 foreground return keeps an active rehearsal paused through old callbacks and explicit room acknowledgment",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 8222,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:43:13.739Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4b61faf3ea4e5834a47c-21715d6f4f7e8c2d5541",
+          "file": "qualification-states.spec.ts",
+          "line": 32,
+          "column": 1
+        },
+        {
+          "title": "TASK11.21 UI.RECOVERY.RUN retains independently valid resources and rejects only the broken pending playback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 2005,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:43:21.973Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4b61faf3ea4e5834a47c-2fbe076cf4a2b015d33b",
+          "file": "qualification-states.spec.ts",
+          "line": 40,
+          "column": 1
+        },
+        {
+          "title": "TASK11.21 UI.TECH.LOADING and HOME.CHECKING retain honest actions through delayed module and storage completion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2970,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:44:06.660Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4b61faf3ea4e5834a47c-ecbd960d22ef833f5ade",
+          "file": "qualification-states.spec.ts",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "TASK11.21 UI.WORLD.CHOOSER and BLOCKED keep source choice explicit and failed floor movement harmless",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2371,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:44:10.362Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4b61faf3ea4e5834a47c-eaa2e12ef85a8f647f58",
+          "file": "qualification-states.spec.ts",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "TASK11.21 foreground lifecycle event acknowledgment retains private draft and prior task without autoplay",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2422,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:44:12.747Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4b61faf3ea4e5834a47c-c360b585ffdfdd8dda07",
+          "file": "qualification-states.spec.ts",
+          "line": 23,
+          "column": 1
+        },
+        {
+          "title": "TASK11.21 foreground return keeps an active rehearsal paused through old callbacks and explicit room acknowledgment",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9633,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:44:15.188Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4b61faf3ea4e5834a47c-2ce50fe881a02fd8254c",
+          "file": "qualification-states.spec.ts",
+          "line": 32,
+          "column": 1
+        },
+        {
+          "title": "TASK11.21 UI.RECOVERY.RUN retains independently valid resources and rejects only the broken pending playback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 3763,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:44:24.833Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4b61faf3ea4e5834a47c-bfb74d2ee49ef967f8fd",
+          "file": "qualification-states.spec.ts",
+          "line": 40,
+          "column": 1
+        },
+        {
+          "title": "TASK11.21 UI.TECH.LOADING and HOME.CHECKING retain honest actions through delayed module and storage completion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1539,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:45:11.208Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4b61faf3ea4e5834a47c-e11fd9bf20601b6db0e2",
+          "file": "qualification-states.spec.ts",
+          "line": 5,
+          "column": 1
+        },
+        {
+          "title": "TASK11.21 UI.WORLD.CHOOSER and BLOCKED keep source choice explicit and failed floor movement harmless",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 2017,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:45:12.815Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4b61faf3ea4e5834a47c-701d7bb64df95a60acbf",
+          "file": "qualification-states.spec.ts",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "TASK11.21 foreground lifecycle event acknowledgment retains private draft and prior task without autoplay",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 3003,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:45:14.843Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4b61faf3ea4e5834a47c-9a756e2ee586689d58eb",
+          "file": "qualification-states.spec.ts",
+          "line": 23,
+          "column": 1
+        },
+        {
+          "title": "TASK11.21 foreground return keeps an active rehearsal paused through old callbacks and explicit room acknowledgment",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 10759,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:45:17.862Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4b61faf3ea4e5834a47c-7eb236904fe4f642fd7b",
+          "file": "qualification-states.spec.ts",
+          "line": 32,
+          "column": 1
+        },
+        {
+          "title": "TASK11.21 UI.RECOVERY.RUN retains independently valid resources and rejects only the broken pending playback",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 4007,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:45:28.632Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "4b61faf3ea4e5834a47c-dd58e459eba1e03eb322",
+          "file": "qualification-states.spec.ts",
+          "line": 40,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "resilience.spec.ts",
+      "file": "resilience.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "FIX11.SAVE_INTERRUPTED actual Chromium renderer crash retains acknowledged active cue and uncertainty",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 5769,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:43:24.010Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-b9795ceb23225b00e923",
+          "file": "resilience.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "FIX11.ART_FAILURE missing artwork can retry; failed application chunk has native retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1591,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:43:29.792Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-3beb9e89a385d23a9abb",
+          "file": "resilience.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "FIX11.ART_FAILURE HTTP503 recovers only after explicit Retry and keeps saved bytes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1471,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:43:31.400Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-741f8f65b261ac613445",
+          "file": "resilience.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "FIX11.SAVE_FAILURE preference transaction failure never mislabels a successful case save",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1156,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:43:32.884Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-74890f2da4d4593322db",
+          "file": "resilience.spec.ts",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "FIX11.SAVE_INTERRUPTED actual Chromium renderer crash retains acknowledged active cue and uncertainty",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "CDP renderer crash is Chromium-only; normal restoration is checked in every engine.",
+                  "location": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\resilience.spec.ts",
+                    "line": 17,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "skipped",
+                  "duration": 284,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:44:28.628Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "CDP renderer crash is Chromium-only; normal restoration is checked in every engine.",
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\resilience.spec.ts",
+                        "line": 17,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-b87121e3de0fa4ac1092",
+          "file": "resilience.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "FIX11.ART_FAILURE missing artwork can retry; failed application chunk has native retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2656,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:44:28.925Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-de4435fc0af1173b30fe",
+          "file": "resilience.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "FIX11.ART_FAILURE HTTP503 recovers only after explicit Retry and keeps saved bytes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 2420,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:44:31.594Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-b243de0a87e9cb21b426",
+          "file": "resilience.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "FIX11.SAVE_FAILURE preference transaction failure never mislabels a successful case save",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1751,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:44:34.025Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-90c1305050153d9c96d6",
+          "file": "resilience.spec.ts",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "FIX11.SAVE_INTERRUPTED actual Chromium renderer crash retains acknowledged active cue and uncertainty",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "CDP renderer crash is Chromium-only; normal restoration is checked in every engine.",
+                  "location": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\resilience.spec.ts",
+                    "line": 17,
+                    "column": 7
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 2,
+                  "status": "skipped",
+                  "duration": 273,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:45:32.673Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "CDP renderer crash is Chromium-only; normal restoration is checked in every engine.",
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\resilience.spec.ts",
+                        "line": 17,
+                        "column": 7
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-45b463c05759a7d7e0b2",
+          "file": "resilience.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "FIX11.ART_FAILURE missing artwork can retry; failed application chunk has native retry",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 2655,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:45:32.959Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-a9941ff2011b9769d109",
+          "file": "resilience.spec.ts",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "FIX11.ART_FAILURE HTTP503 recovers only after explicit Retry and keeps saved bytes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 2342,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:45:35.624Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-b9582ddac20aee604397",
+          "file": "resilience.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "FIX11.SAVE_FAILURE preference transaction failure never mislabels a successful case save",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 1995,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:45:37.977Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c1cdccb29e536012e9c2-c951b23156f6557e181c",
+          "file": "resilience.spec.ts",
+          "line": 30,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "save.spec.ts",
+      "file": "save.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "TASK11.14 actual IndexedDB acknowledgement, reload and separated preferences",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 8206,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:43:34.070Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "67a2c4c4ea80bd146eba-45eec9a0fb9490297455",
+          "file": "save.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "TASK11.14 damaged current offers previous explicitly and preserves both slots",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 8679,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:43:42.288Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "67a2c4c4ea80bd146eba-10e10a104c1e7f137aa0",
+          "file": "save.spec.ts",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "TASK11.14 second visit wins CAS, older visit remains playable and replacement rechecks head",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 9036,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:43:50.984Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "67a2c4c4ea80bd146eba-343c1573bfb3bd0ae399",
+          "file": "save.spec.ts",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "TASK11.14 actual IndexedDB acknowledgement, reload and separated preferences",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9110,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:44:35.803Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "67a2c4c4ea80bd146eba-0f8683960ac308650743",
+          "file": "save.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "TASK11.14 damaged current offers previous explicitly and preserves both slots",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9188,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:44:44.924Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "67a2c4c4ea80bd146eba-1beeec36576984bee3ec",
+          "file": "save.spec.ts",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "TASK11.14 second visit wins CAS, older visit remains playable and replacement rechecks head",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 10349,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:44:54.122Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "67a2c4c4ea80bd146eba-df82c376631c7a3a2c62",
+          "file": "save.spec.ts",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "TASK11.14 actual IndexedDB acknowledgement, reload and separated preferences",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 9341,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:45:40.011Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "67a2c4c4ea80bd146eba-bc421252bc18dc8cdde1",
+          "file": "save.spec.ts",
+          "line": 4,
+          "column": 1
+        },
+        {
+          "title": "TASK11.14 damaged current offers previous explicitly and preserves both slots",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 9741,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:45:49.362Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "67a2c4c4ea80bd146eba-e2079f12996600984360",
+          "file": "save.spec.ts",
+          "line": 15,
+          "column": 1
+        },
+        {
+          "title": "TASK11.14 second visit wins CAS, older visit remains playable and replacement rechecks head",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 10590,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:45:59.124Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "67a2c4c4ea80bd146eba-43f50cc568aa484f6c7a",
+          "file": "save.spec.ts",
+          "line": 27,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "watch-position.spec.ts",
+      "file": "watch-position.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "ER13 Watch start, unmet and completion keep the full consequence visible without moving keyboard focus",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14229,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:43:49.517Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "99964675dddf341c7401-bd012a3bf59d4900707a",
+          "file": "watch-position.spec.ts",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "ER13 Watch start, unmet and completion keep the full consequence visible without moving keyboard focus",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 16792,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:44:52.646Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "99964675dddf341c7401-ccb44554e81957e2cf9e",
+          "file": "watch-position.spec.ts",
+          "line": 9,
+          "column": 1
+        },
+        {
+          "title": "ER13 Watch start, unmet and completion keep the full consequence visible without moving keyboard focus",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 14,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 16395,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-12T11:45:55.167Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "99964675dddf341c7401-e8f8f09e8e8e14ab2167",
+          "file": "watch-position.spec.ts",
+          "line": 9,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-12T11:43:07.315Z",
+    "duration": 184755.85700000002,
+    "expected": 43,
+    "skipped": 2,
+    "unexpected": 6,
+    "flaky": 0
+  }
+}

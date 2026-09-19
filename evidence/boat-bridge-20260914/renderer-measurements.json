@@ -1,0 +1,112 @@
+[
+  {
+    "dpr": 1,
+    "openingMs": 384,
+    "render": {
+      "frames": 60,
+      "drawCalls": 263,
+      "triangles": 72050,
+      "geometries": 165,
+      "textures": 5,
+      "activeSamples": 33,
+      "p95": 66.80000000000018,
+      "lastRenderMs": 1.4000000059604645,
+      "dpr": 1,
+      "width": 1280,
+      "height": 497,
+      "geometryCpuBytes": 4785520,
+      "canvasColorBytes": 2544640,
+      "shadowDepthAllocationBytes": 9437184,
+      "sectionTextureBytes": 131072,
+      "gpuTotalMemory": "NOT_MEASURED",
+      "adapter": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    "transfer": [
+      {
+        "url": "http://127.0.0.1:4194/assets/index-hOHzF2Mb.js",
+        "encodedBytes": 57628,
+        "transferBytes": 57928
+      },
+      {
+        "url": "http://127.0.0.1:4194/assets/index-D7U2vX1x.css",
+        "encodedBytes": 1042,
+        "transferBytes": 1342
+      },
+      {
+        "url": "http://127.0.0.1:4194/assets/GardenApp-a2lCjdtT.js",
+        "encodedBytes": 157165,
+        "transferBytes": 157465
+      },
+      {
+        "url": "http://127.0.0.1:4194/assets/serialized-AKKBhD_x.js",
+        "encodedBytes": 233,
+        "transferBytes": 533
+      },
+      {
+        "url": "http://127.0.0.1:4194/assets/GardenApp-DcVB_8la.css",
+        "encodedBytes": 4867,
+        "transferBytes": 5167
+      }
+    ],
+    "checks": {
+      "initialTransferUnder4MiB": true,
+      "activeRafP95Under33_34ms": false
+    },
+    "limits": "Loopback and emulated density. RAF proxy, not physical display FPS. Total GPU memory and 10 Mbps/100 ms physical-device qualification not measured."
+  },
+  {
+    "dpr": 2,
+    "openingMs": 1021,
+    "render": {
+      "frames": 90,
+      "drawCalls": 261,
+      "triangles": 71938,
+      "geometries": 165,
+      "textures": 5,
+      "activeSamples": 24,
+      "p95": 199.89999999999964,
+      "lastRenderMs": 1.2999999970197678,
+      "dpr": 2,
+      "width": 2560,
+      "height": 994,
+      "geometryCpuBytes": 4785520,
+      "canvasColorBytes": 10178560,
+      "shadowDepthAllocationBytes": 9437184,
+      "sectionTextureBytes": 131072,
+      "gpuTotalMemory": "NOT_MEASURED",
+      "adapter": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)"
+    },
+    "transfer": [
+      {
+        "url": "http://127.0.0.1:4194/assets/index-hOHzF2Mb.js",
+        "encodedBytes": 57628,
+        "transferBytes": 57928
+      },
+      {
+        "url": "http://127.0.0.1:4194/assets/index-D7U2vX1x.css",
+        "encodedBytes": 1042,
+        "transferBytes": 1342
+      },
+      {
+        "url": "http://127.0.0.1:4194/assets/GardenApp-a2lCjdtT.js",
+        "encodedBytes": 157165,
+        "transferBytes": 157465
+      },
+      {
+        "url": "http://127.0.0.1:4194/assets/serialized-AKKBhD_x.js",
+        "encodedBytes": 233,
+        "transferBytes": 533
+      },
+      {
+        "url": "http://127.0.0.1:4194/assets/GardenApp-DcVB_8la.css",
+        "encodedBytes": 4867,
+        "transferBytes": 5167
+      }
+    ],
+    "checks": {
+      "initialTransferUnder4MiB": true,
+      "activeRafP95Under33_34ms": false
+    },
+    "limits": "Loopback and emulated density. RAF proxy, not physical display FPS. Total GPU memory and 10 Mbps/100 ms physical-device qualification not measured."
+  }
+]

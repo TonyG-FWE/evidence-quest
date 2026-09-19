@@ -1,0 +1,48 @@
+{
+  "reload": "The festival couldn’t be opened. Try loading it again.\nRetry",
+  "fresh": "The festival couldn’t be opened. Try loading it again.\nRetry",
+  "events": [
+    {
+      "request": "http://127.0.0.1:4177/assets/index-D6ty2l2r.js"
+    },
+    {
+      "request": "http://127.0.0.1:4177/assets/index-D7U2vX1x.css"
+    },
+    {
+      "request": "http://127.0.0.1:4177/assets/App-DJ8u0fG2.js"
+    },
+    {
+      "request": "http://127.0.0.1:4177/assets/App-BUgh_hdR.css"
+    },
+    {
+      "failed": "http://127.0.0.1:4177/assets/App-DJ8u0fG2.js",
+      "error": {
+        "errorText": "Blocked by Web Inspector"
+      }
+    },
+    {
+      "phase": "reload"
+    },
+    {
+      "request": "http://127.0.0.1:4177/assets/index-D6ty2l2r.js"
+    },
+    {
+      "request": "http://127.0.0.1:4177/assets/index-D7U2vX1x.css"
+    },
+    {
+      "request": "http://127.0.0.1:4177/assets/App-BUgh_hdR.css"
+    },
+    {
+      "phase": "fresh URL"
+    },
+    {
+      "request": "http://127.0.0.1:4177/assets/index-D6ty2l2r.js"
+    },
+    {
+      "request": "http://127.0.0.1:4177/assets/index-D7U2vX1x.css"
+    },
+    {
+      "request": "http://127.0.0.1:4177/assets/App-BUgh_hdR.css"
+    }
+  ]
+}

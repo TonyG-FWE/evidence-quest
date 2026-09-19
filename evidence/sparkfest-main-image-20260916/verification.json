@@ -1,0 +1,3378 @@
+{
+  "at": "2026-09-16T06:58:13.597Z",
+  "status": "PASS_APPROVED_IMAGE_CORRECTION",
+  "tasks": [
+    "TASK11.07",
+    "TASK11.16",
+    "TASK11.21"
+  ],
+  "authority": "Tony approved the displayed V08-CAST-ILLUSTRATED.png as the main SparkFest image.",
+  "scope": "Replace the studio hero with the whole cast in welcome and help, remove the secondary workshop thumbnail, preserve the introduction and controls. No gameplay logic changed by this correction.",
+  "source": {
+    "path": "docs/design/evidence-quest-design-v3/08-visual-designs/V08-CAST-ILLUSTRATED.png",
+    "sha256": "d656e38f3e9986def76d30c233e2fde5dc1c2442bb13556c6f41be9cf5babb66",
+    "width": 1774,
+    "height": 887
+  },
+  "runtimeImage": {
+    "path": "public/art/sparkfest/cast-original.png",
+    "sha256": "d656e38f3e9986def76d30c233e2fde5dc1c2442bb13556c6f41be9cf5babb66"
+  },
+  "final": [
+    {
+      "path": "src/garden/FestivalWelcome.tsx",
+      "sha256": "90d1e9699da4a4713dd13723c427a32b59d7316dd2b6451df42481b7be644cf5"
+    },
+    {
+      "path": "src/garden/festivalWelcome.css",
+      "sha256": "cf81c346f5c3f6f36a4454bc4776526d53158ce031324c622f4129ba67fe3dc6"
+    },
+    {
+      "path": "browser-tests/garden-festival-welcome.spec.ts",
+      "sha256": "2b18204caf359ba748ab5e2dda326d67d2a5fc8fb71b99ac6bd8817d6b3baeab"
+    },
+    {
+      "path": "public/art/sparkfest/cast-original.png",
+      "sha256": "d656e38f3e9986def76d30c233e2fde5dc1c2442bb13556c6f41be9cf5babb66"
+    },
+    {
+      "path": "dist/client/.vite/manifest.json",
+      "sha256": "4b8bc07eca80a62aea10d0589e690aa2924174a0a47f8609f20a565067e9087a"
+    }
+  ],
+  "manifest": {
+    "_serialized-AKKBhD_x.js": {
+      "file": "assets/serialized-AKKBhD_x.js",
+      "name": "serialized"
+    },
+    "index.html": {
+      "file": "assets/index-Ck_4A3aJ.js",
+      "name": "index",
+      "src": "index.html",
+      "isEntry": true,
+      "dynamicImports": [
+        "src/garden/GardenApp.tsx",
+        "src/ui/App.tsx"
+      ],
+      "css": [
+        "assets/index-D7U2vX1x.css"
+      ]
+    },
+    "src/garden/GardenApp.tsx": {
+      "file": "assets/GardenApp-4Pp4tfI3.js",
+      "name": "GardenApp",
+      "src": "src/garden/GardenApp.tsx",
+      "isDynamicEntry": true,
+      "imports": [
+        "index.html",
+        "_serialized-AKKBhD_x.js"
+      ],
+      "css": [
+        "assets/GardenApp-DuWd7jSm.css"
+      ]
+    },
+    "src/ui/App.tsx": {
+      "file": "assets/App-CofEunKn.js",
+      "name": "App",
+      "src": "src/ui/App.tsx",
+      "isDynamicEntry": true,
+      "imports": [
+        "index.html",
+        "_serialized-AKKBhD_x.js"
+      ],
+      "css": [
+        "assets/App-CvfCOyJg.css"
+      ]
+    }
+  },
+  "verification": {
+    "install": {
+      "path": "evidence/sparkfest-main-image-20260916/npm-ci.log",
+      "sha256": "ffe3215e4eaf01a1b810e708b471ccea2ea6840b727a81c6268ccf35a0a6ef2c"
+    },
+    "build": {
+      "path": "evidence/sparkfest-main-image-20260916/build.log",
+      "sha256": "528991a1c7644342868961122e83e917547a0506b849298d725d17d5464f069c"
+    },
+    "contracts": {
+      "pass": 116,
+      "evidence": {
+        "path": "evidence/sparkfest-main-image-20260916/contracts.log",
+        "sha256": "5de0813eb1d9a2f59114ae91c844abe163be2501a223c222d9d85777131e0297"
+      }
+    },
+    "authored": {
+      "pass": 23,
+      "providerCalls": 0,
+      "evidence": {
+        "path": "evidence/sparkfest-main-image-20260916/authored.log",
+        "sha256": "25483957bcbd3e70fe1add0004c4b2d35bb352e3edc08679a69ea986bd860413"
+      }
+    },
+    "browser": {
+      "pass": 6,
+      "projects": [
+        "chromium",
+        "firefox",
+        "webkit"
+      ],
+      "widths": [
+        1440,
+        320
+      ],
+      "report": {
+        "path": "evidence/sparkfest-main-image-20260916/browser-final.json",
+        "sha256": "4c3873fa2aecf83313f317493793cb28cd17bb760728b3cf4bdf2e7383ad5c38"
+      }
+    },
+    "native": {
+      "screenshot": {
+        "path": "evidence/sparkfest-main-image-20260916/native-help.png",
+        "sha256": "5684c39e575dc9ae5bc49432c1d4dde8ed53c6eb343ffcbb68f0dc11e364a887"
+      },
+      "dom": {
+        "path": "evidence/sparkfest-main-image-20260916/native-help.txt",
+        "sha256": "67cbfea415b479a102dd4bad63ce26ea6b9b1d74410f73c8da1d51fb5b954cbb"
+      },
+      "scope": "Approved group shown through Help from the existing QA save; returned to game and closed owned QA tab and4199 server."
+    }
+  },
+  "preserved": [
+    {
+      "path": "docs/design/evidence-quest-design-v3\\05-FUNCTIONAL-SCENES-AND-INTERACTIONS.md",
+      "sha256": "3fdb67267e23a12573547b3031c2678eab774ea7b91e6a8fb07048001b5d0a61",
+      "expected": "3fdb67267e23a12573547b3031c2678eab774ea7b91e6a8fb07048001b5d0a61",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\06-COMPLETE-INTERFACE-AND-PLAYER-FLOWS.md",
+      "sha256": "04ba8831c38fd3b7fb3e74a3ba68a5dee20ab0340aeb7b0064d79180b4af10d8",
+      "expected": "04ba8831c38fd3b7fb3e74a3ba68a5dee20ab0340aeb7b0064d79180b4af10d8",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\07-COMPLETE-CHILD-FACING-CONTENT-AND-REFERENCES.md",
+      "sha256": "940fed98f18818d6597338b7419d28da86f3cd64630cb3e50194696a3a512554",
+      "expected": "940fed98f18818d6597338b7419d28da86f3cd64630cb3e50194696a3a512554",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\_design-tools\\compose.py",
+      "sha256": "79e97a2e7b9116827f312ff4b5797430337ed48eaea690b8811e531208947be2",
+      "expected": "79e97a2e7b9116827f312ff4b5797430337ed48eaea690b8811e531208947be2",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\_design-tools\\package.py",
+      "sha256": "2d8117214bcba4c202b5d10f21274708b78cd79317a4d376657a5556314b2b2f",
+      "expected": "2d8117214bcba4c202b5d10f21274708b78cd79317a4d376657a5556314b2b2f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\_design-tools\\render.cjs",
+      "sha256": "c12a5f1f6f159c3625ed8a9352fb492267a150bec81c481404883e73c38fbe1f",
+      "expected": "c12a5f1f6f159c3625ed8a9352fb492267a150bec81c481404883e73c38fbe1f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\_design-tools\\verify_packet.py",
+      "sha256": "b629bebded17052b0675e79f54ba70ce8da4653decf3dc067299329631d7a268",
+      "expected": "b629bebded17052b0675e79f54ba70ce8da4653decf3dc067299329631d7a268",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\artifact-register.json",
+      "sha256": "f110dbaedb87e79d382d47dc5f9d387b8b4d327ff64ef41132e17b65ec294d6a",
+      "expected": "f110dbaedb87e79d382d47dc5f9d387b8b4d327ff64ef41132e17b65ec294d6a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\ARTIFACT-REGISTER.md",
+      "sha256": "246c889572916a575ab41456da59e787c7a05721b67c4481d0fad1ab16278b5a",
+      "expected": "246c889572916a575ab41456da59e787c7a05721b67c4481d0fad1ab16278b5a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\design-checks.json",
+      "sha256": "5b184d341eb657dfb313dd5e8af446e132010e775ba3d4227f436ba93cb62715",
+      "expected": "5b184d341eb657dfb313dd5e8af446e132010e775ba3d4227f436ba93cb62715",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\ILLUSTRATED-REVISION-PROMPTS.md",
+      "sha256": "263a7c8a66894596949b20e8fd380904bc2bc0be43eac172bb313dc1481b1e2f",
+      "expected": "263a7c8a66894596949b20e8fd380904bc2bc0be43eac172bb313dc1481b1e2f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\index.html",
+      "sha256": "13f44e00e51c4997b66d57b16b1f5233def12b33ce909b4a7562897378b8d510",
+      "expected": "13f44e00e51c4997b66d57b16b1f5233def12b33ce909b4a7562897378b8d510",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\packet-verification.json",
+      "sha256": "ced69572c273ec4c24660f904d3d60f3514a9f8ec2191cec2d6d460846b0385f",
+      "expected": "ced69572c273ec4c24660f904d3d60f3514a9f8ec2191cec2d6d460846b0385f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\PROVENANCE.md",
+      "sha256": "3b14393762cdd37d799919cc1bfe5fb93077f6ef7a63bfe73f2cf65a91d5b68c",
+      "expected": "3b14393762cdd37d799919cc1bfe5fb93077f6ef7a63bfe73f2cf65a91d5b68c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\reference-inputs\\USER-CAST-QUALITY.png",
+      "sha256": "705887944fd0caa8c7a624a76a2763d90dfe93283a9b1d94cd9d0096d6730865",
+      "expected": "705887944fd0caa8c7a624a76a2763d90dfe93283a9b1d94cd9d0096d6730865",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\reference-inputs\\USER-STAGE-QUALITY.png",
+      "sha256": "0946e8db5c275289288b8224db5d3668add7e242583159080c0bc65c5eeff798",
+      "expected": "0946e8db5c275289288b8224db5d3668add7e242583159080c0bc65c5eeff798",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\REVIEW-CONTACT-01.png",
+      "sha256": "2e200e09bb119c04fc65b5e9743a7df77d834330561c96126159ad46551e254a",
+      "expected": "2e200e09bb119c04fc65b5e9743a7df77d834330561c96126159ad46551e254a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\REVIEW-CONTACT-01.svg",
+      "sha256": "d3c85efa6b5305f3905bb23a181a2d2d7b3703d05280416710aabeb10249d89c",
+      "expected": "d3c85efa6b5305f3905bb23a181a2d2d7b3703d05280416710aabeb10249d89c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\REVIEW-CONTACT-02.png",
+      "sha256": "b67a7342e922a67293488e6b13e3ff0c47048f377a538f7420c52ed9192cea17",
+      "expected": "b67a7342e922a67293488e6b13e3ff0c47048f377a538f7420c52ed9192cea17",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\REVIEW-CONTACT-02.svg",
+      "sha256": "50a7376dcd513e998f62a97d4e4b8b2008bfbebf693091505557537f8e2046a9",
+      "expected": "50a7376dcd513e998f62a97d4e4b8b2008bfbebf693091505557537f8e2046a9",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\REVIEW-CONTACT-03.png",
+      "sha256": "3f6a922a35a154395159debffe973ed94129824a88da044809a7d081af005322",
+      "expected": "3f6a922a35a154395159debffe973ed94129824a88da044809a7d081af005322",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\REVIEW-CONTACT-03.svg",
+      "sha256": "61008d96532f733890c01c89fb043cd0fff74f66a654117a3b6e83e494f13a8a",
+      "expected": "61008d96532f733890c01c89fb043cd0fff74f66a654117a3b6e83e494f13a8a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\REVIEW-CONTACT-04.png",
+      "sha256": "2951579756764dec73de3468d0944fd82c738ea8430fa61dc1e2fe86338fdf47",
+      "expected": "2951579756764dec73de3468d0944fd82c738ea8430fa61dc1e2fe86338fdf47",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\REVIEW-CONTACT-04.svg",
+      "sha256": "bdf5b01ba553e7cff18b498cca61402b183c8db3e6cd5d2d30554fa25deb8385",
+      "expected": "bdf5b01ba553e7cff18b498cca61402b183c8db3e6cd5d2d30554fa25deb8385",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\REVIEW-CONTACT-05.png",
+      "sha256": "81948aac4b9900b9030019cdde44e5a9b0297f81cbc8e5169ea43df7834d2979",
+      "expected": "81948aac4b9900b9030019cdde44e5a9b0297f81cbc8e5169ea43df7834d2979",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\REVIEW-CONTACT-05.svg",
+      "sha256": "ce52c5f95c9fec1d309179b047fcc08f4c0371557d9f0e106d6fc1d0f04d90f0",
+      "expected": "ce52c5f95c9fec1d309179b047fcc08f4c0371557d9f0e106d6fc1d0f04d90f0",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\REVIEW-CONTACT-06.png",
+      "sha256": "42341dc9a0e432241df335194f66562ee9f056cfafe9d07f731868ef48a63fe7",
+      "expected": "42341dc9a0e432241df335194f66562ee9f056cfafe9d07f731868ef48a63fe7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\REVIEW-CONTACT-06.svg",
+      "sha256": "e2862f088b4209ae7df2002d1abd6029121754b8695619929d2c93bb8fd6b112",
+      "expected": "e2862f088b4209ae7df2002d1abd6029121754b8695619929d2c93bb8fd6b112",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\REVIEW-CONTACT-07.png",
+      "sha256": "077afa4d0fa87e0b350f59c689c88aaa7f60469c9b9fd7886b931fab1b4e0553",
+      "expected": "077afa4d0fa87e0b350f59c689c88aaa7f60469c9b9fd7886b931fab1b4e0553",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\REVIEW-CONTACT-07.svg",
+      "sha256": "33d617cae126b4171e4aa085631050e1cae8d904036ac31cfe90b42f62889600",
+      "expected": "33d617cae126b4171e4aa085631050e1cae8d904036ac31cfe90b42f62889600",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\REVIEW-CONTACT-08.png",
+      "sha256": "1c95e6e2d9343e3a8c202836780202a70409356dfcfb64e4df50c426aef780dc",
+      "expected": "1c95e6e2d9343e3a8c202836780202a70409356dfcfb64e4df50c426aef780dc",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\REVIEW-CONTACT-08.svg",
+      "sha256": "b20d1f45152ee7600e8a324232890991f3c41bd6cda787a63c53b288f4fb0880",
+      "expected": "b20d1f45152ee7600e8a324232890991f3c41bd6cda787a63c53b288f4fb0880",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\STATE-CROSSWALK.md",
+      "sha256": "094badfb22d8da086906e6cad4ba61bd0fa5680fd274b957e9b3a2065ab3318a",
+      "expected": "094badfb22d8da086906e6cad4ba61bd0fa5680fd274b957e9b3a2065ab3318a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\TRANSITION-CROSSWALK.md",
+      "sha256": "86933ccf24cd0cbd8af483c3282d7ef0fb554899bba7408fadfe851615decad0",
+      "expected": "86933ccf24cd0cbd8af483c3282d7ef0fb554899bba7408fadfe851615decad0",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-CAST-ILLUSTRATED.png",
+      "sha256": "d656e38f3e9986def76d30c233e2fde5dc1c2442bb13556c6f41be9cf5babb66",
+      "expected": "d656e38f3e9986def76d30c233e2fde5dc1c2442bb13556c6f41be9cf5babb66",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-CAST-ORIGINAL.png",
+      "sha256": "6a44171ca83a892ef275815abd7d1a4386ec0ea4551160f5b557f12eadc608b6",
+      "expected": "6a44171ca83a892ef275815abd7d1a4386ec0ea4551160f5b557f12eadc608b6",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-CAST.png",
+      "sha256": "03491bf1db69e037e3b308c2f674b45fddeb013ddbef14f0c7184490f927510e",
+      "expected": "03491bf1db69e037e3b308c2f674b45fddeb013ddbef14f0c7184490f927510e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-CAST.svg",
+      "sha256": "e45dd8c64e21cae4d97dfe28433759af2eeecb5695b0d9590385349036adfd8e",
+      "expected": "e45dd8c64e21cae4d97dfe28433759af2eeecb5695b0d9590385349036adfd8e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-CHOOSER.png",
+      "sha256": "ac28471192848994b8598d7bb28f34e5f1359ee1a43485fce88b5c0018cf283a",
+      "expected": "ac28471192848994b8598d7bb28f34e5f1359ee1a43485fce88b5c0018cf283a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-CHOOSER.svg",
+      "sha256": "f08dec88c4ad187f02a37b9e75c28ba53e9075079e96083604a2f2261190c5ec",
+      "expected": "f08dec88c4ad187f02a37b9e75c28ba53e9075079e96083604a2f2261190c5ec",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-ARRANGE-END.png",
+      "sha256": "1f0f8de3bc63c473ef22297db0477b83d3d80ee34e336a1127d99c9be2fd008e",
+      "expected": "1f0f8de3bc63c473ef22297db0477b83d3d80ee34e336a1127d99c9be2fd008e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-ARRANGE-END.svg",
+      "sha256": "7f12606cafdf9673de3055df04a21afe365b78f9b31502acd271ac12e23a0080",
+      "expected": "7f12606cafdf9673de3055df04a21afe365b78f9b31502acd271ac12e23a0080",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-ARRANGE.png",
+      "sha256": "4a992506a3a548535bcaa94e3c66b208aa18ed95413f01c0e7ac0587bc754ff9",
+      "expected": "4a992506a3a548535bcaa94e3c66b208aa18ed95413f01c0e7ac0587bc754ff9",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-ARRANGE.svg",
+      "sha256": "95b765e65cf9481045497568b7d6bc1f74474d9ec057fc12748988041c1eef58",
+      "expected": "95b765e65cf9481045497568b7d6bc1f74474d9ec057fc12748988041c1eef58",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-E2-FULL.png",
+      "sha256": "dba47957c6bcbf6f0c2a4a61b978c8cdfc0e049abb6d9c139a80c7581a2c8b0a",
+      "expected": "dba47957c6bcbf6f0c2a4a61b978c8cdfc0e049abb6d9c139a80c7581a2c8b0a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-E2-FULL.svg",
+      "sha256": "0e3bd0ddc07129277dbd9c35676f7f89bd67321d9dfce51628be86e9172c0526",
+      "expected": "0e3bd0ddc07129277dbd9c35676f7f89bd67321d9dfce51628be86e9172c0526",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-E2.png",
+      "sha256": "423e7a25dabd9644d3d9437797b733ca40c80d95093fbd75c0d238a7eeb51340",
+      "expected": "423e7a25dabd9644d3d9437797b733ca40c80d95093fbd75c0d238a7eeb51340",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-E2.svg",
+      "sha256": "b4090d74071648c6841cf9c23e1cda36a5c3029f4309d0f9f4738da76953ff68",
+      "expected": "b4090d74071648c6841cf9c23e1cda36a5c3029f4309d0f9f4738da76953ff68",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-HELP-FULL.png",
+      "sha256": "176206f36825f1679d8043cfb32512dac5ff434322bada862dd2466b03456ed4",
+      "expected": "176206f36825f1679d8043cfb32512dac5ff434322bada862dd2466b03456ed4",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-HELP-FULL.svg",
+      "sha256": "8634221f1c67dca85dc2dc7c30ce62396cd224016deb0f85bc228bbb2bef2a32",
+      "expected": "8634221f1c67dca85dc2dc7c30ce62396cd224016deb0f85bc228bbb2bef2a32",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-HELP.png",
+      "sha256": "15c7296e36b6a7116aac6045c0707bc757d0e00608856d4ece8810d20b494881",
+      "expected": "15c7296e36b6a7116aac6045c0707bc757d0e00608856d4ece8810d20b494881",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-HELP.svg",
+      "sha256": "a72e1b27f1c63e8a928f0c36c84e3a28a4e623ffeee9b23c51521acb830df795",
+      "expected": "a72e1b27f1c63e8a928f0c36c84e3a28a4e623ffeee9b23c51521acb830df795",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-NAV-END.png",
+      "sha256": "c15fa51ac414a700d30b7bc90bc46f206239d11982260e709259b074a85bc712",
+      "expected": "c15fa51ac414a700d30b7bc90bc46f206239d11982260e709259b074a85bc712",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-NAV-END.svg",
+      "sha256": "a67142cb1ffb715da30bd9a9bcec636518049d7c06b05ea90ed44308c317dcb2",
+      "expected": "a67142cb1ffb715da30bd9a9bcec636518049d7c06b05ea90ed44308c317dcb2",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-NAV.png",
+      "sha256": "8d27cc80c010b409e0b98c75b10b09ae200b17b94037d37d72f7dca120a9c480",
+      "expected": "8d27cc80c010b409e0b98c75b10b09ae200b17b94037d37d72f7dca120a9c480",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-NAV.svg",
+      "sha256": "90566f67e84d54b8da12649738f5c8e49b75675f1d3ec64f8ddd09bfe1200d2c",
+      "expected": "90566f67e84d54b8da12649738f5c8e49b75675f1d3ec64f8ddd09bfe1200d2c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-PLAN-FULL.png",
+      "sha256": "9b5902d69b9f2122b605d51f46a5bf1e8283202650422518f9769c0c035f55f6",
+      "expected": "9b5902d69b9f2122b605d51f46a5bf1e8283202650422518f9769c0c035f55f6",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-PLAN-FULL.svg",
+      "sha256": "989f1ce868e505ae1b7afee08a56f08f4f6409ee1fc753fb41d8edadf3b8e863",
+      "expected": "989f1ce868e505ae1b7afee08a56f08f4f6409ee1fc753fb41d8edadf3b8e863",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-PLAN.png",
+      "sha256": "724cba6a097e8ab7a9e409316c2546ea7d874c77db88e382f8f5646db018b5cb",
+      "expected": "724cba6a097e8ab7a9e409316c2546ea7d874c77db88e382f8f5646db018b5cb",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-PLAN.svg",
+      "sha256": "24e6dd6f272b23ebb0214874bb9cded12475f53061449ddee2000a60f1290293",
+      "expected": "24e6dd6f272b23ebb0214874bb9cded12475f53061449ddee2000a60f1290293",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-RECOVERY-FULL.png",
+      "sha256": "f07b3163f21a7893a556d28fcc0fda22cd4351f7cca2990c92c64b03856da4f8",
+      "expected": "f07b3163f21a7893a556d28fcc0fda22cd4351f7cca2990c92c64b03856da4f8",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-RECOVERY-FULL.svg",
+      "sha256": "d1ceda41731feb509a82dee967d9d2523b589ff4b9b9b8b1d6be5fdeded9259b",
+      "expected": "d1ceda41731feb509a82dee967d9d2523b589ff4b9b9b8b1d6be5fdeded9259b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-RECOVERY.png",
+      "sha256": "f9020cd4a827ded57a03460ae9fa951e05375ab7e11d1ec041ebda60d7e2fc4c",
+      "expected": "f9020cd4a827ded57a03460ae9fa951e05375ab7e11d1ec041ebda60d7e2fc4c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-RECOVERY.svg",
+      "sha256": "4c8f4edd7470900ec5d6ef2a787079e1ef60ec592604e7d2c030422db8ceefe3",
+      "expected": "4c8f4edd7470900ec5d6ef2a787079e1ef60ec592604e7d2c030422db8ceefe3",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-SOURCE-END.png",
+      "sha256": "451950db1ac78df934259aa02c6cf68bbe1c2ee43f6e1e6cb306897b3ce41578",
+      "expected": "451950db1ac78df934259aa02c6cf68bbe1c2ee43f6e1e6cb306897b3ce41578",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-SOURCE-END.svg",
+      "sha256": "117abfa58b7f13cdee7249832faf33f99e85e7c9ecd47b7992f7e4902240bfe7",
+      "expected": "117abfa58b7f13cdee7249832faf33f99e85e7c9ecd47b7992f7e4902240bfe7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-SOURCE-FULL.png",
+      "sha256": "6779c01720ff74842b61d1bddabe93078b5344e9ea19b88329dc65bdaac12085",
+      "expected": "6779c01720ff74842b61d1bddabe93078b5344e9ea19b88329dc65bdaac12085",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-SOURCE-FULL.svg",
+      "sha256": "766ad8d5e325e3958b639d55edde61a6ec0a2ae7c5d5ec9ab95dbca0b8d6355b",
+      "expected": "766ad8d5e325e3958b639d55edde61a6ec0a2ae7c5d5ec9ab95dbca0b8d6355b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-SOURCE-TOP.png",
+      "sha256": "6d24a9d72f5d8bebb0408d411bdfaa7571824b3a5b5f318bf6d394166d2abdac",
+      "expected": "6d24a9d72f5d8bebb0408d411bdfaa7571824b3a5b5f318bf6d394166d2abdac",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-SOURCE-TOP.svg",
+      "sha256": "88938fcfe1b101717332aa5590a9ca62382d33e2601471849beb419deea41810",
+      "expected": "88938fcfe1b101717332aa5590a9ca62382d33e2601471849beb419deea41810",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-WATCH-ACTIONS.png",
+      "sha256": "ed553c7cc8a6d7b437661bd11d4ee1cbcb39b6387e0a0abae066d90a1e61ec85",
+      "expected": "ed553c7cc8a6d7b437661bd11d4ee1cbcb39b6387e0a0abae066d90a1e61ec85",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-WATCH-ACTIONS.svg",
+      "sha256": "97d3ee1a0c49d3f3e3ef3e137b73712fabd99f734005f6d47e6949da1ab1392c",
+      "expected": "97d3ee1a0c49d3f3e3ef3e137b73712fabd99f734005f6d47e6949da1ab1392c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-WATCH.png",
+      "sha256": "b4447614aa166def370eeb662c83fca283d9adf72c9d5b94fe55e69411072bed",
+      "expected": "b4447614aa166def370eeb662c83fca283d9adf72c9d5b94fe55e69411072bed",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-WATCH.svg",
+      "sha256": "38cc3e7d72a4f8798322a4e64ac396349887d5a0b7a525c73f7faa43b6ade12c",
+      "expected": "38cc3e7d72a4f8798322a4e64ac396349887d5a0b7a525c73f7faa43b6ade12c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-WORLD.png",
+      "sha256": "dab2676a46aee5a3290dedf606ddc8bb70814ccf23c7b9267ece9aecc855c206",
+      "expected": "dab2676a46aee5a3290dedf606ddc8bb70814ccf23c7b9267ece9aecc855c206",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPACT-WORLD.svg",
+      "sha256": "5dffe5733431ba7ed04857560c0c3ffdcd8b9f794e0072233930a5771635dc15",
+      "expected": "5dffe5733431ba7ed04857560c0c3ffdcd8b9f794e0072233930a5771635dc15",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPARE.png",
+      "sha256": "de1d5b78bc9dc0461b03d69b73bc94e7209353d3b4dfd641b707a540f10f42bc",
+      "expected": "de1d5b78bc9dc0461b03d69b73bc94e7209353d3b4dfd641b707a540f10f42bc",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COMPARE.svg",
+      "sha256": "2c695dab7faa2424a4b70457f0b0a7ed153b0e99af372c5f2c8e6b01334515f9",
+      "expected": "2c695dab7faa2424a4b70457f0b0a7ed153b0e99af372c5f2c8e6b01334515f9",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-COURTYARD-ILLUSTRATED.png",
+      "sha256": "9704698bc3a15590d3b94527ca4a1f3a2e06e815f1e9c6c067fa123f04739a0c",
+      "expected": "9704698bc3a15590d3b94527ca4a1f3a2e06e815f1e9c6c067fa123f04739a0c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-DIRECTION.png",
+      "sha256": "abd7e8f74324a7408449398d2c3707d20205e27ce84807cb4497b1a496079574",
+      "expected": "abd7e8f74324a7408449398d2c3707d20205e27ce84807cb4497b1a496079574",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-DIRECTION.svg",
+      "sha256": "e9f1b52044cd197325563649a667fe03c0f8eecd4f7a90887cd9622fbd9b8965",
+      "expected": "e9f1b52044cd197325563649a667fe03c0f8eecd4f7a90887cd9622fbd9b8965",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-E2-END.png",
+      "sha256": "1e1ed05020cdc2bf9d9194295e50ee45f894a2111ed42ce098c9623a93d27f58",
+      "expected": "1e1ed05020cdc2bf9d9194295e50ee45f894a2111ed42ce098c9623a93d27f58",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-E2-END.svg",
+      "sha256": "5a4a8573da1b262082f2d4f408d99a162b6c3ad445b0cd37b6258a0391a0ed20",
+      "expected": "5a4a8573da1b262082f2d4f408d99a162b6c3ad445b0cd37b6258a0391a0ed20",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-E2-FIRST.png",
+      "sha256": "d2537e089d39add36e97c1d39e86019153cd4c34fbaab82bf07a8faa0f4f257b",
+      "expected": "d2537e089d39add36e97c1d39e86019153cd4c34fbaab82bf07a8faa0f4f257b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-E2-FIRST.svg",
+      "sha256": "ef189ef26d8400b99853ec462d34a8de12b827da2f7f42054318b42fa5030cfa",
+      "expected": "ef189ef26d8400b99853ec462d34a8de12b827da2f7f42054318b42fa5030cfa",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-E2-FULL.png",
+      "sha256": "394ad54acc903f2af7ae3ddd4c8b5892d538ea3cfc0765de3764afe38bcac754",
+      "expected": "394ad54acc903f2af7ae3ddd4c8b5892d538ea3cfc0765de3764afe38bcac754",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-E2-FULL.svg",
+      "sha256": "09941a87b1d71858c862603889151cbd608c5e1fcb4c0ed319bc0f78607e32a8",
+      "expected": "09941a87b1d71858c862603889151cbd608c5e1fcb4c0ed319bc0f78607e32a8",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-E2-PHOTO.png",
+      "sha256": "39c0eb82bcb8766e0af6563d4fd9d6f10bc51489f66cecacf779c7f8d189dc5f",
+      "expected": "39c0eb82bcb8766e0af6563d4fd9d6f10bc51489f66cecacf779c7f8d189dc5f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-E2-PHOTO.svg",
+      "sha256": "6286dec52a7ba1691b8b4f733363a2a2faa617adc747cbc1348b66b31d1b62f5",
+      "expected": "6286dec52a7ba1691b8b4f733363a2a2faa617adc747cbc1348b66b31d1b62f5",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HELP-CLARIFY.png",
+      "sha256": "a702effcb0a0bc09eee83e8a9191aa7a84f1542fe8b56569435898df47a6b974",
+      "expected": "a702effcb0a0bc09eee83e8a9191aa7a84f1542fe8b56569435898df47a6b974",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HELP-CLARIFY.svg",
+      "sha256": "587620fdcafaf1dbb4db2a5ecc0f0777a988293976ec64c8b5971d7de648bf89",
+      "expected": "587620fdcafaf1dbb4db2a5ecc0f0777a988293976ec64c8b5971d7de648bf89",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HELP-DIRECT.png",
+      "sha256": "8b37c9f96a49b9df6c093e1e64cd4bfb1a4a384b8415bea49fbc6a50deb3996c",
+      "expected": "8b37c9f96a49b9df6c093e1e64cd4bfb1a4a384b8415bea49fbc6a50deb3996c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HELP-DIRECT.svg",
+      "sha256": "61e0095fa7d04d6396f59765cdef83072baa51918ae37f7c98e900a8664a9f78",
+      "expected": "61e0095fa7d04d6396f59765cdef83072baa51918ae37f7c98e900a8664a9f78",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HELP-ENTRY.png",
+      "sha256": "354988e76085ebdf7bfa25dd6b8a88704b0bb9c2470806c731cfdc8a0cde9248",
+      "expected": "354988e76085ebdf7bfa25dd6b8a88704b0bb9c2470806c731cfdc8a0cde9248",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HELP-ENTRY.svg",
+      "sha256": "d24f907152ac86b0f074ccddcfc430508113cf45d20c36ed6f5bf4ec0f5e5d9a",
+      "expected": "d24f907152ac86b0f074ccddcfc430508113cf45d20c36ed6f5bf4ec0f5e5d9a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HELP-FALLBACK.png",
+      "sha256": "84c7efaef08eea9f22b131cd7236a7be43bbc4120321707bd5a51508f63f66bb",
+      "expected": "84c7efaef08eea9f22b131cd7236a7be43bbc4120321707bd5a51508f63f66bb",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HELP-FALLBACK.svg",
+      "sha256": "c7a4353fe685bf804b8e3cd5a2a81788dec91269714590d747a21335c3db9666",
+      "expected": "c7a4353fe685bf804b8e3cd5a2a81788dec91269714590d747a21335c3db9666",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HELP-PREPARED.png",
+      "sha256": "94643382d9ca3ac5ed23f98f5b4bad2c5119a36b16e4e97fb9e54c76380c3127",
+      "expected": "94643382d9ca3ac5ed23f98f5b4bad2c5119a36b16e4e97fb9e54c76380c3127",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HELP-PREPARED.svg",
+      "sha256": "6b4dc456e4b07ae6ca265ca177b0f266422466dec1d225c347136dfd668def72",
+      "expected": "6b4dc456e4b07ae6ca265ca177b0f266422466dec1d225c347136dfd668def72",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HELP-RESPONSE.png",
+      "sha256": "e46409fc6717f85e22948730a7665fefe5509e8399769111ecc351659db0a92f",
+      "expected": "e46409fc6717f85e22948730a7665fefe5509e8399769111ecc351659db0a92f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HELP-RESPONSE.svg",
+      "sha256": "e43d7866c59e43a10af14df9a5b299796aacb55a34841b9be8d9a4a1a44088b1",
+      "expected": "e43d7866c59e43a10af14df9a5b299796aacb55a34841b9be8d9a4a1a44088b1",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HELP-STALE.png",
+      "sha256": "70b38986d2eda19052a6ae624064fdc33df4cb9c13a44e8346507852eced750c",
+      "expected": "70b38986d2eda19052a6ae624064fdc33df4cb9c13a44e8346507852eced750c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HELP-STALE.svg",
+      "sha256": "b462e608fe2c588f9659c2127382c2b32d8656165a59e71488012676e7099fa5",
+      "expected": "b462e608fe2c588f9659c2127382c2b32d8656165a59e71488012676e7099fa5",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HELP-UNAVAILABLE.png",
+      "sha256": "00bcc3c75430e2ba456df8d1b2917b06dd17c8da42fbaf052f25c8ba0b446618",
+      "expected": "00bcc3c75430e2ba456df8d1b2917b06dd17c8da42fbaf052f25c8ba0b446618",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HELP-UNAVAILABLE.svg",
+      "sha256": "716b4e59a62df4a294003bacedd358b5b9601e9e8e09c7a48db0a7bf25751c5d",
+      "expected": "716b4e59a62df4a294003bacedd358b5b9601e9e8e09c7a48db0a7bf25751c5d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HELP-WAITING.png",
+      "sha256": "798b705c55717b206bb1fd4acc663003e03f855ab3b515faf7da56d89ad7c396",
+      "expected": "798b705c55717b206bb1fd4acc663003e03f855ab3b515faf7da56d89ad7c396",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HELP-WAITING.svg",
+      "sha256": "01bc1e7b107cb6a6283640b7ede57c67b30824c73002ab379a765b3922acb5c9",
+      "expected": "01bc1e7b107cb6a6283640b7ede57c67b30824c73002ab379a765b3922acb5c9",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HELP-WORLD.png",
+      "sha256": "d45c3df66908b314994052106f3893d178df7abac78de67817867f7aefc00481",
+      "expected": "d45c3df66908b314994052106f3893d178df7abac78de67817867f7aefc00481",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HELP-WORLD.svg",
+      "sha256": "672bfef3701a33a7d2cb5503807ae82eea9b693996e99c28319fd239df4d1ba5",
+      "expected": "672bfef3701a33a7d2cb5503807ae82eea9b693996e99c28319fd239df4d1ba5",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HOME-EMPTY.png",
+      "sha256": "43e214e7b4d9dfbeda70f8295b869013bb2d4b2a180572bfaa4bbd1dae4d6c8a",
+      "expected": "43e214e7b4d9dfbeda70f8295b869013bb2d4b2a180572bfaa4bbd1dae4d6c8a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HOME-EMPTY.svg",
+      "sha256": "841bf69942dc92eeab6191883009a88d034689627b3371ddb6be0fc87a2e2e52",
+      "expected": "841bf69942dc92eeab6191883009a88d034689627b3371ddb6be0fc87a2e2e52",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HOME-SAVED.png",
+      "sha256": "18b5f9419950ddf236bb079a0d08c8c9ab25c50f9312113ce6317567ba1aef88",
+      "expected": "18b5f9419950ddf236bb079a0d08c8c9ab25c50f9312113ce6317567ba1aef88",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-HOME-SAVED.svg",
+      "sha256": "e615140a10337422ef27d4edd599e9eb2f8a218a8ae10fe69539b98cb8be7964",
+      "expected": "e615140a10337422ef27d4edd599e9eb2f8a218a8ae10fe69539b98cb8be7964",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-KIT-OWNERS.png",
+      "sha256": "bb15e313566ada290d6edb7b27a58827f5c65b5c0e392e0e50c449163d18c3fb",
+      "expected": "bb15e313566ada290d6edb7b27a58827f5c65b5c0e392e0e50c449163d18c3fb",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-KIT-OWNERS.svg",
+      "sha256": "8651c92da7f941959145446741600eba203a610beac7ed2d2709002eb92c2691",
+      "expected": "8651c92da7f941959145446741600eba203a610beac7ed2d2709002eb92c2691",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-KIT.png",
+      "sha256": "99aa977c9b5b1c129391da4a56a54b7701038333f3802db4a66da7b1d99011c3",
+      "expected": "99aa977c9b5b1c129391da4a56a54b7701038333f3802db4a66da7b1d99011c3",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-KIT.svg",
+      "sha256": "1421a903b0ec63b50486a7092672bb988327d6911d2d1e11c4b214972ab99c56",
+      "expected": "1421a903b0ec63b50486a7092672bb988327d6911d2d1e11c4b214972ab99c56",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-LAPTOP.png",
+      "sha256": "a9e8221f5dd7f50dd025fa556380be337f08fc052156aceb6013ec1bf1df890b",
+      "expected": "a9e8221f5dd7f50dd025fa556380be337f08fc052156aceb6013ec1bf1df890b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-LAPTOP.svg",
+      "sha256": "ff3518bb3378d1a6d543a0fee1d961b5be9f5194aec157a5b2e32667340fae7d",
+      "expected": "ff3518bb3378d1a6d543a0fee1d961b5be9f5194aec157a5b2e32667340fae7d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-LEAD.png",
+      "sha256": "cf34e9ff20014c3dbef296b8abc149bf0d79647f96819877a377f3000e20a352",
+      "expected": "cf34e9ff20014c3dbef296b8abc149bf0d79647f96819877a377f3000e20a352",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-LEAD.svg",
+      "sha256": "21c99edbf5f9193effe15f69a5aae09c18aa120211a3cb81741b34f44488c49f",
+      "expected": "21c99edbf5f9193effe15f69a5aae09c18aa120211a3cb81741b34f44488c49f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-MEDIA-ILLUSTRATED.png",
+      "sha256": "b9454f42bdf0cd8cf2c392a7552b66ee74ca969160a7fd0cdfc51d2e2dfaddb7",
+      "expected": "b9454f42bdf0cd8cf2c392a7552b66ee74ca969160a7fd0cdfc51d2e2dfaddb7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-NAV.png",
+      "sha256": "0348b6a347bbc8ee166d88aff2fe2d2d19aa203d3f4975403138ae0cc8cba1ae",
+      "expected": "0348b6a347bbc8ee166d88aff2fe2d2d19aa203d3f4975403138ae0cc8cba1ae",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-NAV.svg",
+      "sha256": "6ffe5d145295ed17a5ca3625eeb442fc091a9e7d44cc611decdd2f1a7eddd38e",
+      "expected": "6ffe5d145295ed17a5ca3625eeb442fc091a9e7d44cc611decdd2f1a7eddd38e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-NOTES-EMPTY.png",
+      "sha256": "691f5cd70d1c023d9a097cf88dda0562be4eb67601fe5884ce02d6b8c8161adf",
+      "expected": "691f5cd70d1c023d9a097cf88dda0562be4eb67601fe5884ce02d6b8c8161adf",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-NOTES-EMPTY.svg",
+      "sha256": "b93f4ae5c0ff764f909c439dcfe7befce10fe1d2768a4ddda779764ac70a36fd",
+      "expected": "b93f4ae5c0ff764f909c439dcfe7befce10fe1d2768a4ddda779764ac70a36fd",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-NOTES.png",
+      "sha256": "34ebd1eb56b255137b4adfee7dc635479276cf88181dc88a1fb14cf016155293",
+      "expected": "34ebd1eb56b255137b4adfee7dc635479276cf88181dc88a1fb14cf016155293",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-NOTES.svg",
+      "sha256": "8988999f1cf8038014f6887c009939c6a8d55f0d3832f53e505dded776ad906a",
+      "expected": "8988999f1cf8038014f6887c009939c6a8d55f0d3832f53e505dded776ad906a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-OPENING.png",
+      "sha256": "b57527967cfeba87899f8f452db7c8b8e39599e73bb57f3ce6205635f0c351a6",
+      "expected": "b57527967cfeba87899f8f452db7c8b8e39599e73bb57f3ce6205635f0c351a6",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-OPENING.svg",
+      "sha256": "de8f0d7c66cabe44e285411b5948073835566f063631e6ab8a94014ed93385f7",
+      "expected": "de8f0d7c66cabe44e285411b5948073835566f063631e6ab8a94014ed93385f7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-OVERVIEW.png",
+      "sha256": "eff2f38fd3873f851c3c0882fc0198ccd8ad7d22c7e6f1bcdfb5b779c4e98634",
+      "expected": "eff2f38fd3873f851c3c0882fc0198ccd8ad7d22c7e6f1bcdfb5b779c4e98634",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-OVERVIEW.svg",
+      "sha256": "e24a853f8636ea1955a9da3471958bee8c5436c3501e27f9d1deb422ae05d052",
+      "expected": "e24a853f8636ea1955a9da3471958bee8c5436c3501e27f9d1deb422ae05d052",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-PAUSE-SAVE.png",
+      "sha256": "e3fef58b9abf64403a1f10750749912d75afdacaf6e50d6ad866cb2d48a10813",
+      "expected": "e3fef58b9abf64403a1f10750749912d75afdacaf6e50d6ad866cb2d48a10813",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-PAUSE-SAVE.svg",
+      "sha256": "b76c81528b11d98c7557f28af11eed78cec4291466684c1815f4ca8ff1baad83",
+      "expected": "b76c81528b11d98c7557f28af11eed78cec4291466684c1815f4ca8ff1baad83",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-PICK.png",
+      "sha256": "e833c8e5bd181baeb70a5881a4a168b4c18a3ebfa0866a0861032ccb93a4b5eb",
+      "expected": "e833c8e5bd181baeb70a5881a4a168b4c18a3ebfa0866a0861032ccb93a4b5eb",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-PICK.svg",
+      "sha256": "e882d4560b75799a95e31f7f0f541abc3f76ce60d59b238707d62b2b7df8334d",
+      "expected": "e882d4560b75799a95e31f7f0f541abc3f76ce60d59b238707d62b2b7df8334d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-PLAN-DELIVERED.png",
+      "sha256": "9641e0dcf365e9825bc82edc8a28b9d75d160a77dccdda780b1a9296be0159ee",
+      "expected": "9641e0dcf365e9825bc82edc8a28b9d75d160a77dccdda780b1a9296be0159ee",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-PLAN-DELIVERED.svg",
+      "sha256": "18ccd2ee87c77c56ebf7b1534b9acf2094a083c9cb3d0f981cfa6ef34d06ecdf",
+      "expected": "18ccd2ee87c77c56ebf7b1534b9acf2094a083c9cb3d0f981cfa6ef34d06ecdf",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-PLAN-PRIVATE.png",
+      "sha256": "7c10f2f6394c3ed5a64233101dd6140dbb689beadbaa6f0a5a9f8b07c141a0f6",
+      "expected": "7c10f2f6394c3ed5a64233101dd6140dbb689beadbaa6f0a5a9f8b07c141a0f6",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-PLAN-PRIVATE.svg",
+      "sha256": "15ac524ede96479929004eca4d697ee9337ee7e1d9c455ea61f1dc3666c2d59d",
+      "expected": "15ac524ede96479929004eca4d697ee9337ee7e1d9c455ea61f1dc3666c2d59d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-PLAN-RECORDED.png",
+      "sha256": "b37e36d7d47f6f686561da210275c4eec38d61eb4285c9c8867852a869696ba3",
+      "expected": "b37e36d7d47f6f686561da210275c4eec38d61eb4285c9c8867852a869696ba3",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-PLAN-RECORDED.svg",
+      "sha256": "587b5a206bc0fb3c780c1a2a2fae8387598cf4e3c5e5e1f9dc8036fdf136ed95",
+      "expected": "587b5a206bc0fb3c780c1a2a2fae8387598cf4e3c5e5e1f9dc8036fdf136ed95",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-PREMIERE.png",
+      "sha256": "2bcbd0add43a93999f0790f9a217a76a3c19259681294e4159352176bdf60b22",
+      "expected": "2bcbd0add43a93999f0790f9a217a76a3c19259681294e4159352176bdf60b22",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-PREMIERE.svg",
+      "sha256": "40956fe623989b645f9ea7c8344ab13d26f7270b18c41fdad889e2e4e0cd4e0c",
+      "expected": "40956fe623989b645f9ea7c8344ab13d26f7270b18c41fdad889e2e4e0cd4e0c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-PRESENT.png",
+      "sha256": "4eeaf1073e1ecaa66ffaa26a7dcdaa509175298a0bc6e295a6b3292452d75f5d",
+      "expected": "4eeaf1073e1ecaa66ffaa26a7dcdaa509175298a0bc6e295a6b3292452d75f5d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-PRESENT.svg",
+      "sha256": "73efedea673189632b83adf1bb0dedff06c42c25fcfffaa3f366afca5889d522",
+      "expected": "73efedea673189632b83adf1bb0dedff06c42c25fcfffaa3f366afca5889d522",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-RAIL-ACTIONS.png",
+      "sha256": "411575c3f01dcb19381ff081e6a234ebb054a16e5919b7f271aa5ceaf1549752",
+      "expected": "411575c3f01dcb19381ff081e6a234ebb054a16e5919b7f271aa5ceaf1549752",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-RAIL-ACTIONS.svg",
+      "sha256": "a6abcf646a3483c91197ef098e09a2d758c26de2c4e84e7d13722336c03d9981",
+      "expected": "a6abcf646a3483c91197ef098e09a2d758c26de2c4e84e7d13722336c03d9981",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-READ-E3.png",
+      "sha256": "d41081eed5669eb67d561c1237ab4e1de5c00bb8fd1d04075056ee59b1799c51",
+      "expected": "d41081eed5669eb67d561c1237ab4e1de5c00bb8fd1d04075056ee59b1799c51",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-READ-E3.svg",
+      "sha256": "774c558ac5fadb60cff1ea602c34419d4faab54b95aeb061bbf6e8fb5b05eea4",
+      "expected": "774c558ac5fadb60cff1ea602c34419d4faab54b95aeb061bbf6e8fb5b05eea4",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-READ-E4.png",
+      "sha256": "6b268d417e2be52467baa597b1d04e10b9cd3bc76fe53be9648346efd7bf781f",
+      "expected": "6b268d417e2be52467baa597b1d04e10b9cd3bc76fe53be9648346efd7bf781f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-READ-E4.svg",
+      "sha256": "5ab613b44e551cb2e7929e1b97d023c04ca51525ed209905f6ac09ca30eb19e7",
+      "expected": "5ab613b44e551cb2e7929e1b97d023c04ca51525ed209905f6ac09ca30eb19e7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-READ-E6.png",
+      "sha256": "d9688dd0fafbcd4ceebc63cdbe82cb065435628b79dabb624e49bfbca674d45e",
+      "expected": "d9688dd0fafbcd4ceebc63cdbe82cb065435628b79dabb624e49bfbca674d45e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-READ-E6.svg",
+      "sha256": "efde9a2791ebc4e5e5f9d79ba662eb833812d154d0fafb9c3c9400cf4573e64c",
+      "expected": "efde9a2791ebc4e5e5f9d79ba662eb833812d154d0fafb9c3c9400cf4573e64c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-READ-E7.png",
+      "sha256": "703b550dbcedf4c475344aeaf5fdcff63037f1657ca58db12fbf27aa5eec8bb6",
+      "expected": "703b550dbcedf4c475344aeaf5fdcff63037f1657ca58db12fbf27aa5eec8bb6",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-READ-E7.svg",
+      "sha256": "41e1e956144d72698f4342284713f416df0b2281d6c50c69a8e88cfdea2e8e69",
+      "expected": "41e1e956144d72698f4342284713f416df0b2281d6c50c69a8e88cfdea2e8e69",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-RECAP-REVISION.png",
+      "sha256": "b00aaecba9849b68ddb7ce65287c1aa012a4b32d73419ad36327ace11c37a5dc",
+      "expected": "b00aaecba9849b68ddb7ce65287c1aa012a4b32d73419ad36327ace11c37a5dc",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-RECAP-REVISION.svg",
+      "sha256": "7a13e0027085cad92090579e9e4a507f31a1f65df4519e1e1ef9f330772e6a5a",
+      "expected": "7a13e0027085cad92090579e9e4a507f31a1f65df4519e1e1ef9f330772e6a5a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-RECAP.png",
+      "sha256": "4603ca247075cb1485c995bf0e509a4c3d73650df4fc4aa5fc7ac86e6fa4baa7",
+      "expected": "4603ca247075cb1485c995bf0e509a4c3d73650df4fc4aa5fc7ac86e6fa4baa7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-RECAP.svg",
+      "sha256": "5dd550e23f71861eb1d03f2cb36ea87402e8b42fa02b8d1fe0b601e9da058421",
+      "expected": "5dd550e23f71861eb1d03f2cb36ea87402e8b42fa02b8d1fe0b601e9da058421",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-RECOVERY-DAMAGED.png",
+      "sha256": "8cfac1dc17c0d921c3f47ccabace99bf20023b2661c4a35dccd5e39817ae1308",
+      "expected": "8cfac1dc17c0d921c3f47ccabace99bf20023b2661c4a35dccd5e39817ae1308",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-RECOVERY-DAMAGED.svg",
+      "sha256": "4d84a2e4a8b091099f2e2176110987906b0b3cfada8d8b5b4fcd07ac0340abcf",
+      "expected": "4d84a2e4a8b091099f2e2176110987906b0b3cfada8d8b5b4fcd07ac0340abcf",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-RECOVERY-INCOMPATIBLE.png",
+      "sha256": "6735e3f8305312d74a349bfd1341302f6c5eaab5f5295e9051a7a1456abc14ca",
+      "expected": "6735e3f8305312d74a349bfd1341302f6c5eaab5f5295e9051a7a1456abc14ca",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-RECOVERY-INCOMPATIBLE.svg",
+      "sha256": "8bef776f21fa6e51b587d9c8f858d9c14ca0a6c657042f4a8ac696b13555a816",
+      "expected": "8bef776f21fa6e51b587d9c8f858d9c14ca0a6c657042f4a8ac696b13555a816",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-RECOVERY-NEW-GAME.png",
+      "sha256": "87ce1ce003f1d293c7e83cac61e77df94b9ba2e9264e8cbbaa987e9719f3f88f",
+      "expected": "87ce1ce003f1d293c7e83cac61e77df94b9ba2e9264e8cbbaa987e9719f3f88f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-RECOVERY-NEW-GAME.svg",
+      "sha256": "4a5117801b04de3f972c2267de9b67722ea060cd4c57802fca64b185768f6a36",
+      "expected": "4a5117801b04de3f972c2267de9b67722ea060cd4c57802fca64b185768f6a36",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-RECOVERY-READ.png",
+      "sha256": "7e184a90278d44339140b50d8d460a22506bc125aaa052313e06c42b17c34ecc",
+      "expected": "7e184a90278d44339140b50d8d460a22506bc125aaa052313e06c42b17c34ecc",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-RECOVERY-READ.svg",
+      "sha256": "a9b5fd5734357287bc59f7ca61af12530038ee9eef969c43b5017f8a61575d2b",
+      "expected": "a9b5fd5734357287bc59f7ca61af12530038ee9eef969c43b5017f8a61575d2b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-RECOVERY-RESUME.png",
+      "sha256": "c4605c906086de3ab3158df10b4bb1a5fedb5535bd5ff63e5371e9a90486c8d6",
+      "expected": "c4605c906086de3ab3158df10b4bb1a5fedb5535bd5ff63e5371e9a90486c8d6",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-RECOVERY-RESUME.svg",
+      "sha256": "ac18f1af9cd7a033a06b1fb69a03650f07549fb50bd64c407d3c8e68127ef791",
+      "expected": "ac18f1af9cd7a033a06b1fb69a03650f07549fb50bd64c407d3c8e68127ef791",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-RESOURCES.png",
+      "sha256": "804b6a2626bdbc204bf88ed946b779702a48466699d277db95775573b4c4676b",
+      "expected": "804b6a2626bdbc204bf88ed946b779702a48466699d277db95775573b4c4676b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-RESOURCES.svg",
+      "sha256": "fa8a375a627d5c85edaca3e7e0048b437d7f447b2fd8137fbde1b6fc7c9561d5",
+      "expected": "fa8a375a627d5c85edaca3e7e0048b437d7f447b2fd8137fbde1b6fc7c9561d5",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-CY-FLAT-A.png",
+      "sha256": "56f5e9a24b5cc0a4464d0531b501a22d035ef803f84b1f8a3cbb01265ab9805f",
+      "expected": "56f5e9a24b5cc0a4464d0531b501a22d035ef803f84b1f8a3cbb01265ab9805f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-CY-FLAT-A.svg",
+      "sha256": "a19286b2ce27c49f5162111b4d9778aa8428f929baa36e0a3206a6f6353ea1c6",
+      "expected": "a19286b2ce27c49f5162111b4d9778aa8428f929baa36e0a3206a6f6353ea1c6",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-CY-FLAT.png",
+      "sha256": "a675e46c9f01cae858c761f2599cdef3456ae7918ea3c0105d4c87834d2d373b",
+      "expected": "a675e46c9f01cae858c761f2599cdef3456ae7918ea3c0105d4c87834d2d373b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-CY-FLAT.svg",
+      "sha256": "f6315a24b183f53b8b82c1290aeb575652d6b7801c031c2c81894effd9557d8e",
+      "expected": "f6315a24b183f53b8b82c1290aeb575652d6b7801c031c2c81894effd9557d8e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-CY-INITIAL-A.png",
+      "sha256": "ea522b013942de8377a8e177f3c8fe3ba46d054860d6aefe952038870869c1da",
+      "expected": "ea522b013942de8377a8e177f3c8fe3ba46d054860d6aefe952038870869c1da",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-CY-INITIAL-A.svg",
+      "sha256": "44e672eaa575cf32c299eb1b9bf9f29a6e9fefa383affb203b27f66f7077f83f",
+      "expected": "44e672eaa575cf32c299eb1b9bf9f29a6e9fefa383affb203b27f66f7077f83f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-CY-INITIAL.png",
+      "sha256": "3cfe68e31c05f3b4f7311ded4c8daf6bd6bd1d9e6aa3d8a95a07de536e304ad0",
+      "expected": "3cfe68e31c05f3b4f7311ded4c8daf6bd6bd1d9e6aa3d8a95a07de536e304ad0",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-CY-INITIAL.svg",
+      "sha256": "f9402cf250df49c92c07c76e1ad61e93352eaabc571bd65a1d2ee6012874eb62",
+      "expected": "f9402cf250df49c92c07c76e1ad61e93352eaabc571bd65a1d2ee6012874eb62",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-MD-DEPARTED-A.png",
+      "sha256": "818a2ddc8652c992683c6e435bc4fc87fd4bbb65078acda520013e2ce95af92a",
+      "expected": "818a2ddc8652c992683c6e435bc4fc87fd4bbb65078acda520013e2ce95af92a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-MD-DEPARTED-A.svg",
+      "sha256": "4ac5eda8d616c0cb107d3859ce517b5c2a33205834a888017f367904b719b248",
+      "expected": "4ac5eda8d616c0cb107d3859ce517b5c2a33205834a888017f367904b719b248",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-MD-DEPARTED.png",
+      "sha256": "699a38290203fff66321fff920d08e6fe804dc0a43df4c51de933d8062ec12dd",
+      "expected": "699a38290203fff66321fff920d08e6fe804dc0a43df4c51de933d8062ec12dd",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-MD-DEPARTED.svg",
+      "sha256": "3aff63e2ea5770f341511afd0e9ff9fcb9d165e1da5bd87036b214fd0c693b55",
+      "expected": "3aff63e2ea5770f341511afd0e9ff9fcb9d165e1da5bd87036b214fd0c693b55",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-MD-INITIAL-A.png",
+      "sha256": "cd9a4b09c33f8aa179120301b873b50b162da1bb828c18fedf99365904bda839",
+      "expected": "cd9a4b09c33f8aa179120301b873b50b162da1bb828c18fedf99365904bda839",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-MD-INITIAL-A.svg",
+      "sha256": "d7524113234c35e04aa20df290a534882361c59c617c2e27badf80145c6b5334",
+      "expected": "d7524113234c35e04aa20df290a534882361c59c617c2e27badf80145c6b5334",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-MD-INITIAL.png",
+      "sha256": "f0a82d97c4fcdac52f88456a94584583880b6b4f9784620b7fd9979345e01db8",
+      "expected": "f0a82d97c4fcdac52f88456a94584583880b6b4f9784620b7fd9979345e01db8",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-MD-INITIAL.svg",
+      "sha256": "ca337ad6536a6196401b031d6d9e4a36cc726fe7cd50cec1cb5147f7fdca2f97",
+      "expected": "ca337ad6536a6196401b031d6d9e4a36cc726fe7cd50cec1cb5147f7fdca2f97",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-ST-INITIAL-A.png",
+      "sha256": "91d815c25ec4c74a651b11a8310d0412b80083eafe0da0f9b767f1e54f1f088b",
+      "expected": "91d815c25ec4c74a651b11a8310d0412b80083eafe0da0f9b767f1e54f1f088b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-ST-INITIAL-A.svg",
+      "sha256": "3483a4c2bd763b5d30c7c1a503768dff8d12d0d13033be6398a73ffe57e3c161",
+      "expected": "3483a4c2bd763b5d30c7c1a503768dff8d12d0d13033be6398a73ffe57e3c161",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-ST-INITIAL.png",
+      "sha256": "ba4ffc94272a3f0ec09ab8eb8dd304aaa752f4a5dfce946b87513d446c9ce149",
+      "expected": "ba4ffc94272a3f0ec09ab8eb8dd304aaa752f4a5dfce946b87513d446c9ce149",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-ST-INITIAL.svg",
+      "sha256": "599678859aaf3e93066a0fdf0e4b66831de3201021a15f52fd37af1c0a47d05b",
+      "expected": "599678859aaf3e93066a0fdf0e4b66831de3201021a15f52fd37af1c0a47d05b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-ST-READY-A.png",
+      "sha256": "dafe93c76bc5c5cd4a2784a9e07258fa7b9ecea9662f5d1c22849993cea4413c",
+      "expected": "dafe93c76bc5c5cd4a2784a9e07258fa7b9ecea9662f5d1c22849993cea4413c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-ST-READY-A.svg",
+      "sha256": "9720993480cea09cff65e7ab2f6ecfae56db47b521ed779f53d8c5e7cb0f1f1e",
+      "expected": "9720993480cea09cff65e7ab2f6ecfae56db47b521ed779f53d8c5e7cb0f1f1e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-ST-READY.png",
+      "sha256": "300eeceb588f4d0a7c7688ecbd38de8e4fe45f2b5d1ffdf602e4aa3e6a8a8e57",
+      "expected": "300eeceb588f4d0a7c7688ecbd38de8e4fe45f2b5d1ffdf602e4aa3e6a8a8e57",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-ST-READY.svg",
+      "sha256": "dedff8914d21ea9fcc3deffc553b18e30b63807336f56e158ce068f949b697c1",
+      "expected": "dedff8914d21ea9fcc3deffc553b18e30b63807336f56e158ce068f949b697c1",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-WK-INITIAL-A.png",
+      "sha256": "8f2fff274b251396debe723ccd14725de66f0ef0891cc0c1b1d434c0a286897c",
+      "expected": "8f2fff274b251396debe723ccd14725de66f0ef0891cc0c1b1d434c0a286897c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-WK-INITIAL-A.svg",
+      "sha256": "0d111973e55c18da6aa89b9368414e90d6d6d8350ceeb253dc77710844459c5c",
+      "expected": "0d111973e55c18da6aa89b9368414e90d6d6d8350ceeb253dc77710844459c5c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-WK-INITIAL.png",
+      "sha256": "8c5cd6612e0b983820fbe253a86812225244d27ff6fc246cb140f4fb319694bd",
+      "expected": "8c5cd6612e0b983820fbe253a86812225244d27ff6fc246cb140f4fb319694bd",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-WK-INITIAL.svg",
+      "sha256": "0611b96c0fa2a19c463cd2c0ef9238c662b822c15d4e72c78ca3b85f0b04791b",
+      "expected": "0611b96c0fa2a19c463cd2c0ef9238c662b822c15d4e72c78ca3b85f0b04791b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-WK-REVEALED-A.png",
+      "sha256": "5591c945a8b0f3cd4e335251cbeb8c70baf1f9f1ad8e73580110a99e183adc26",
+      "expected": "5591c945a8b0f3cd4e335251cbeb8c70baf1f9f1ad8e73580110a99e183adc26",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-WK-REVEALED-A.svg",
+      "sha256": "3d7ac5b1e13e9330685549c02928495d729e4f099c0f25fae663fc39a29cf23c",
+      "expected": "3d7ac5b1e13e9330685549c02928495d729e4f099c0f25fae663fc39a29cf23c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-WK-REVEALED.png",
+      "sha256": "24454338ccd5e4e9fa965485e374cb0ab3c64c505e19020e5adc06eca810cd6d",
+      "expected": "24454338ccd5e4e9fa965485e374cb0ab3c64c505e19020e5adc06eca810cd6d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-ROOM-WK-REVEALED.svg",
+      "sha256": "31e1a3f50e7a8b630392ef1706c576d605aa29da03286b60e2800b71bcea31c1",
+      "expected": "31e1a3f50e7a8b630392ef1706c576d605aa29da03286b60e2800b71bcea31c1",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-SETTINGS.png",
+      "sha256": "70a1c8b88be2f9f05129f2455684ac66deb9fc473974128779c01c75fc58d508",
+      "expected": "70a1c8b88be2f9f05129f2455684ac66deb9fc473974128779c01c75fc58d508",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-SETTINGS.svg",
+      "sha256": "e8feb673dccadfd70bb1a72dc007a5d6082ee8b0596dc57d69d7d7ebd5a29a61",
+      "expected": "e8feb673dccadfd70bb1a72dc007a5d6082ee8b0596dc57d69d7d7ebd5a29a61",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-STAGE-ILLUSTRATED-CANDIDATE.png",
+      "sha256": "e1de563f6add0e8042d372de88648864dc15d4dc3bfd2d046f22d1a3aa920f42",
+      "expected": "e1de563f6add0e8042d372de88648864dc15d4dc3bfd2d046f22d1a3aa920f42",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-STAGE-ILLUSTRATED.png",
+      "sha256": "5078ba1105350e500cdad1939cac951e456d4e58b9edfe77c52ca96f1ff526ba",
+      "expected": "5078ba1105350e500cdad1939cac951e456d4e58b9edfe77c52ca96f1ff526ba",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-STORYBOARD-EXPLORE.png",
+      "sha256": "7672374087ad678373e9ac265657b2eb0bdcd1be55a2a866d858231cb5bfab29",
+      "expected": "7672374087ad678373e9ac265657b2eb0bdcd1be55a2a866d858231cb5bfab29",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-STORYBOARD-EXPLORE.svg",
+      "sha256": "f9f4f530a19bf42a572bba840d21e864275bf647c898ca372906a22e798c5d57",
+      "expected": "f9f4f530a19bf42a572bba840d21e864275bf647c898ca372906a22e798c5d57",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-STORYBOARD-INTERRUPT.png",
+      "sha256": "5210b5346178669c62e432ea33184f2feadc3440cddd9869756b00c2b4370cb0",
+      "expected": "5210b5346178669c62e432ea33184f2feadc3440cddd9869756b00c2b4370cb0",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-STORYBOARD-INTERRUPT.svg",
+      "sha256": "48b00c23c2b01c528790f32c104d7c0ae07db735eb30183dfb477aefcaaaad18",
+      "expected": "48b00c23c2b01c528790f32c104d7c0ae07db735eb30183dfb477aefcaaaad18",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-STORYBOARD-NOTICE.png",
+      "sha256": "210ef86fcccee611726275baa90d6519c26e151d3f60aef3189bfc13feef868f",
+      "expected": "210ef86fcccee611726275baa90d6519c26e151d3f60aef3189bfc13feef868f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-STORYBOARD-NOTICE.svg",
+      "sha256": "9107653e0e06aa1cb5971579204179369c84507372c0671c9dfef515f6b0012e",
+      "expected": "9107653e0e06aa1cb5971579204179369c84507372c0671c9dfef515f6b0012e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-STORYBOARD-PREMIERE.png",
+      "sha256": "d2f7ee9cbfd92666228d2bf7fc0686e1244b9188adf1e42d0520d69a542b9923",
+      "expected": "d2f7ee9cbfd92666228d2bf7fc0686e1244b9188adf1e42d0520d69a542b9923",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-STORYBOARD-PREMIERE.svg",
+      "sha256": "f0258ce337f8e9e8d93cafb9564c13f11e52c38e6c69dea6f3e445c714a4dbe8",
+      "expected": "f0258ce337f8e9e8d93cafb9564c13f11e52c38e6c69dea6f3e445c714a4dbe8",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-STORYBOARD-RECOVERY.png",
+      "sha256": "c55333292a57b59bacf16118f4d67f355e85709acf956553c8761eada7b57257",
+      "expected": "c55333292a57b59bacf16118f4d67f355e85709acf956553c8761eada7b57257",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-STORYBOARD-RECOVERY.svg",
+      "sha256": "fb9d1abbf2d44636e3626a876512461068016ded14130f1dbae3b57e923e5b8a",
+      "expected": "fb9d1abbf2d44636e3626a876512461068016ded14130f1dbae3b57e923e5b8a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-STORYBOARD-REHEARSAL.png",
+      "sha256": "a1b5b17523cad36a8093c3ec82bd34dd8453f2840263828775740de0cf02a531",
+      "expected": "a1b5b17523cad36a8093c3ec82bd34dd8453f2840263828775740de0cf02a531",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-STORYBOARD-REHEARSAL.svg",
+      "sha256": "5d03c5c34d1aef81c3eab1740e8c49ba21fd6709f6dcd0ed8508d8b8eadf6d6d",
+      "expected": "5d03c5c34d1aef81c3eab1740e8c49ba21fd6709f6dcd0ed8508d8b8eadf6d6d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-STORYBOARD-TILES.png",
+      "sha256": "d8ddf26dc3952fe810f13a3ece339bbdb9e967468f1d25b78610643cb92a375e",
+      "expected": "d8ddf26dc3952fe810f13a3ece339bbdb9e967468f1d25b78610643cb92a375e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-STORYBOARD-TILES.svg",
+      "sha256": "3eddbec795eeb9cdea0b52582bf05dd78199067ddfcaefe3cb21e486eba3bff2",
+      "expected": "3eddbec795eeb9cdea0b52582bf05dd78199067ddfcaefe3cb21e486eba3bff2",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-STORYBOARD-TOAST.png",
+      "sha256": "3500a5f2431514b333d3397e077e9948319955ac1900d2fe935a1b1adb16aa47",
+      "expected": "3500a5f2431514b333d3397e077e9948319955ac1900d2fe935a1b1adb16aa47",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-STORYBOARD-TOAST.svg",
+      "sha256": "cb5152f03fbfe839379aa14252700f1d8b5f74ed4252cc57ead4b8286d4fb540",
+      "expected": "cb5152f03fbfe839379aa14252700f1d8b5f74ed4252cc57ead4b8286d4fb540",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-TALK.png",
+      "sha256": "6fd01eb2c4a0c19b8025f29fefe18bd250691aaad036f535b4d8bdc508b73f24",
+      "expected": "6fd01eb2c4a0c19b8025f29fefe18bd250691aaad036f535b4d8bdc508b73f24",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-TALK.svg",
+      "sha256": "2bf506b35a5d7ea0cee24f41b445a0834adc71bcdd8ddecaebdeb444242798ff",
+      "expected": "2bf506b35a5d7ea0cee24f41b445a0834adc71bcdd8ddecaebdeb444242798ff",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-TILE-INSPECT.png",
+      "sha256": "c7da812bfb7edae4b90971fbbc2496da54d69a6e18e44e977d37db747514b8f7",
+      "expected": "c7da812bfb7edae4b90971fbbc2496da54d69a6e18e44e977d37db747514b8f7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-TILE-INSPECT.svg",
+      "sha256": "d6bda101042ac5baea7656737d400c9b193faad40710bd2a9303f26f510bc9aa",
+      "expected": "d6bda101042ac5baea7656737d400c9b193faad40710bd2a9303f26f510bc9aa",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-TIMELINE.png",
+      "sha256": "d675695a56f7beb8a8d41b4617333315dc8c1cac1482786beab8a826233cf9b9",
+      "expected": "d675695a56f7beb8a8d41b4617333315dc8c1cac1482786beab8a826233cf9b9",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-TIMELINE.svg",
+      "sha256": "5a7ecdc82bcb38de54ffd62fd8a4f65db7ec0d97ea04be7950f5358cda96827a",
+      "expected": "5a7ecdc82bcb38de54ffd62fd8a4f65db7ec0d97ea04be7950f5358cda96827a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-VALID-PLANS.png",
+      "sha256": "cd4c73842563d72060ca0426930b33c9bc07c3e5fa077e1c46f8b8864a4d941d",
+      "expected": "cd4c73842563d72060ca0426930b33c9bc07c3e5fa077e1c46f8b8864a4d941d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-VALID-PLANS.svg",
+      "sha256": "c6e42eb5ce670a7903979fbebeec1f7b6ba426183c3246e6dd6dad128d54e128",
+      "expected": "c6e42eb5ce670a7903979fbebeec1f7b6ba426183c3246e6dd6dad128d54e128",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-WORD.png",
+      "sha256": "13985a64095a9e6152dfe30a5d255746b2ba265ba5e345745443c20ca89879c2",
+      "expected": "13985a64095a9e6152dfe30a5d255746b2ba265ba5e345745443c20ca89879c2",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-WORD.svg",
+      "sha256": "7fc00bfc6d2cb7b4244ed53390ea44269c96f18025850638bad27fe36fb1989e",
+      "expected": "7fc00bfc6d2cb7b4244ed53390ea44269c96f18025850638bad27fe36fb1989e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-WORK-CHANGED.png",
+      "sha256": "2c916d348c69f01e7ed44eaed79c6f06219a4b218b3afe7bc1898c4a79e7a777",
+      "expected": "2c916d348c69f01e7ed44eaed79c6f06219a4b218b3afe7bc1898c4a79e7a777",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-WORK-CHANGED.svg",
+      "sha256": "5e2aa53c6637ff70d24f6bb10c7192934775e46a42f04ec58852839cc472172a",
+      "expected": "5e2aa53c6637ff70d24f6bb10c7192934775e46a42f04ec58852839cc472172a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-WORK-EMPTY.png",
+      "sha256": "8d323875b4da4912899aed59633fb15f0301436768bc1cad220fb51b4c2a584c",
+      "expected": "8d323875b4da4912899aed59633fb15f0301436768bc1cad220fb51b4c2a584c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-WORK-EMPTY.svg",
+      "sha256": "59851f9cc8379ba9bbad782aeabd03e2f752079e4664176ca493870d097a0850",
+      "expected": "59851f9cc8379ba9bbad782aeabd03e2f752079e4664176ca493870d097a0850",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-WORK-FLOWER-UNMET.png",
+      "sha256": "b6d9b20c5618f69e0fd8bdb0b94003aedab6562b06e99c685aad5d9aec2bfd91",
+      "expected": "b6d9b20c5618f69e0fd8bdb0b94003aedab6562b06e99c685aad5d9aec2bfd91",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-WORK-FLOWER-UNMET.svg",
+      "sha256": "83c4f869eccbf584e4bf9d5b83b08d0f1441c978fadaf500a2f1c1122f05d9c0",
+      "expected": "83c4f869eccbf584e4bf9d5b83b08d0f1441c978fadaf500a2f1c1122f05d9c0",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-WORK-HISTORY.png",
+      "sha256": "7c742ad992574a9c00e5762a3f3b5097a57b1c2bc38f06da28a80eafbd25c338",
+      "expected": "7c742ad992574a9c00e5762a3f3b5097a57b1c2bc38f06da28a80eafbd25c338",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-WORK-HISTORY.svg",
+      "sha256": "97da9388c07d6fbb96d3f9a38a5e5d724ec95096953747c9dcc1827672284e8e",
+      "expected": "97da9388c07d6fbb96d3f9a38a5e5d724ec95096953747c9dcc1827672284e8e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-WORK-MORE.png",
+      "sha256": "07ebb5b807814c9e5fd22e97d8d49dd05fc4a1ad129797d58f8483794fc79884",
+      "expected": "07ebb5b807814c9e5fd22e97d8d49dd05fc4a1ad129797d58f8483794fc79884",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-WORK-MORE.svg",
+      "sha256": "845003e7731b87a719256df250b848c11b50384c3df3a2d4b7f6ebc43325e28f",
+      "expected": "845003e7731b87a719256df250b848c11b50384c3df3a2d4b7f6ebc43325e28f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-WORK-PAUSED.png",
+      "sha256": "b32013d816108d015b0818ceae58c0b766a61fc8fb8882b7ed77c79ac04966bc",
+      "expected": "b32013d816108d015b0818ceae58c0b766a61fc8fb8882b7ed77c79ac04966bc",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-WORK-PAUSED.svg",
+      "sha256": "570a471a9bae6778aa1b81d163bbafc77f54f635231d6497d70b4f2a41c42dee",
+      "expected": "570a471a9bae6778aa1b81d163bbafc77f54f635231d6497d70b4f2a41c42dee",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-WORK-SEED.png",
+      "sha256": "6405ef6dc7b9cf939ee9daea6592d66957b4be8d67d9ba4592ecb2688424cd4e",
+      "expected": "6405ef6dc7b9cf939ee9daea6592d66957b4be8d67d9ba4592ecb2688424cd4e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-WORK-SEED.svg",
+      "sha256": "4b39c338b5d5f2195f9c72c41c4396c68168ed8aa06612525ede2a7469ff3352",
+      "expected": "4b39c338b5d5f2195f9c72c41c4396c68168ed8aa06612525ede2a7469ff3352",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-WORK-SUCCESS.png",
+      "sha256": "6a336808bd789c31e198eca830b5bd15a0def7dde5531cfe2af2d6f7c6be9c00",
+      "expected": "6a336808bd789c31e198eca830b5bd15a0def7dde5531cfe2af2d6f7c6be9c00",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-WORK-SUCCESS.svg",
+      "sha256": "c83a3a00f34ebf5a639e5ddf560eb0286eff92f1b1c95827800be31f3621eedd",
+      "expected": "c83a3a00f34ebf5a639e5ddf560eb0286eff92f1b1c95827800be31f3621eedd",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-WORK-UNMET.png",
+      "sha256": "8a37f5a9ad8b5804f1ff557f36110749ed342a0da7b43711a8a859762d66e7de",
+      "expected": "8a37f5a9ad8b5804f1ff557f36110749ed342a0da7b43711a8a859762d66e7de",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-WORK-UNMET.svg",
+      "sha256": "14cc918e62b928550b5245e497fb1a0ad716c0082260cd516b11dcf632ddde4b",
+      "expected": "14cc918e62b928550b5245e497fb1a0ad716c0082260cd516b11dcf632ddde4b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-visual-designs\\V08-WORKSHOP-ILLUSTRATED.png",
+      "sha256": "4bd15addcb0e6d9b3888683762faf664770d79ccc501b830c9170e946a1e5b96",
+      "expected": "4bd15addcb0e6d9b3888683762faf664770d79ccc501b830c9170e946a1e5b96",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\08-VISUAL-DIRECTION-AND-READABLE-DESIGNS.md",
+      "sha256": "db48b9cc1c63f7989174c1e681e1aed8b7984649a597e9fbce1a6fc10056b56c",
+      "expected": "db48b9cc1c63f7989174c1e681e1aed8b7984649a597e9fbce1a6fc10056b56c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\09-CONCRETE-TECHNICAL-DECISIONS-AND-IMPLEMENTATION-CONTRACTS.md",
+      "sha256": "940b3765c11beb683195097fcd8b69aa516ef32f643410b92cf219217b92ccf5",
+      "expected": "940b3765c11beb683195097fcd8b69aa516ef32f643410b92cf219217b92ccf5",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\09-technical-contracts\\_checks\\validate-schema.ps1",
+      "sha256": "c220b832573a060e7c2a8a49e9e7cecbbd41a126fd02316b42d1687effd1df9e",
+      "expected": "c220b832573a060e7c2a8a49e9e7cecbbd41a126fd02316b42d1687effd1df9e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\09-technical-contracts\\_checks\\verify-contracts.py",
+      "sha256": "5b483718529e74194877d3f04fdf7caf1943657ca7de51939564716295bd1764",
+      "expected": "5b483718529e74194877d3f04fdf7caf1943657ca7de51939564716295bd1764",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\09-technical-contracts\\COACHING-AND-EVALUATION.md",
+      "sha256": "0621566acc513fb3160799f903b203180a9b61c1916871f1ac9442eaf86dbae7",
+      "expected": "0621566acc513fb3160799f903b203180a9b61c1916871f1ac9442eaf86dbae7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\09-technical-contracts\\CONTRACT-RULES.md",
+      "sha256": "032648f4568154f49d39a4f5e25261a0f3ec2dfab8f4d6b58fd64e42fb9c1d8a",
+      "expected": "032648f4568154f49d39a4f5e25261a0f3ec2dfab8f4d6b58fd64e42fb9c1d8a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\09-technical-contracts\\contracts.schema.json",
+      "sha256": "f43b3af9cf7aa931f3b81cd611c34596458269681ff3e93cd6b6818d219bf368",
+      "expected": "f43b3af9cf7aa931f3b81cd611c34596458269681ff3e93cd6b6818d219bf368",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\09-technical-contracts\\examples.json",
+      "sha256": "e665c6773c16a0f95aeb24c583f31783b3748df6ba423ec227c1acc2c922c9a1",
+      "expected": "e665c6773c16a0f95aeb24c583f31783b3748df6ba423ec227c1acc2c922c9a1",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\09-technical-contracts\\OWNERSHIP-CROSSWALK.md",
+      "sha256": "1699dbdcccf6ed931b7b566aea2e9d455366dbbf8bfad7ac786f90d7fb2c84a1",
+      "expected": "1699dbdcccf6ed931b7b566aea2e9d455366dbbf8bfad7ac786f90d7fb2c84a1",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\09-technical-contracts\\package-audit.json",
+      "sha256": "8ec772baef85a34d8bf4514b71e3ebfd5a4421d8719c44e635cc98b20b6ee80a",
+      "expected": "8ec772baef85a34d8bf4514b71e3ebfd5a4421d8719c44e635cc98b20b6ee80a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\09-technical-contracts\\README.md",
+      "sha256": "68551fa963bb23fdb591628ba4b52f995b80685e1eb4b8fb55bd30b41b74eda9",
+      "expected": "68551fa963bb23fdb591628ba4b52f995b80685e1eb4b8fb55bd30b41b74eda9",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\09-technical-contracts\\REFERENCE-REGISTRY.json",
+      "sha256": "6fa3228b61058c307da9ff15eb6857ed1d658d34f1d8051e3f68589fcb1fb519",
+      "expected": "6fa3228b61058c307da9ff15eb6857ed1d658d34f1d8051e3f68589fcb1fb519",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\09-technical-contracts\\schema-validation.json",
+      "sha256": "537f20d70811b975d11542cfc6e961fd34906b88461f0e267dad2f44c496fc0e",
+      "expected": "537f20d70811b975d11542cfc6e961fd34906b88461f0e267dad2f44c496fc0e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\09-technical-contracts\\technical-copy.json",
+      "sha256": "23755c419856bac2fbfab83a26c549a37452f88e2a6620621f6d7cad4246f884",
+      "expected": "23755c419856bac2fbfab83a26c549a37452f88e2a6620621f6d7cad4246f884",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\09-technical-contracts\\TECHNICAL-TRACES.md",
+      "sha256": "21ea852dff21e4979a836db927a39091699e71e9ce963ef6450d2c293d6dbb6d",
+      "expected": "21ea852dff21e4979a836db927a39091699e71e9ce963ef6450d2c293d6dbb6d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\09-technical-contracts\\validation-report.json",
+      "sha256": "60b1a95826f9dcced561e193969ccff281a561a90dfa6ab9db55625518813966",
+      "expected": "60b1a95826f9dcced561e193969ccff281a561a90dfa6ab9db55625518813966",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\10-asset-production\\_checks\\validate-schema.ps1",
+      "sha256": "631ce0487653b814912b6142f719123216037f770e4bb258d9a810bf01c1d2bf",
+      "expected": "631ce0487653b814912b6142f719123216037f770e4bb258d9a810bf01c1d2bf",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\10-asset-production\\_checks\\verify-manifest.py",
+      "sha256": "7aedba2c5f332cbc2d9b0c3bbca180ccb2f31a5fcd9fa31d788685b2e6e08586",
+      "expected": "7aedba2c5f332cbc2d9b0c3bbca180ccb2f31a5fcd9fa31d788685b2e6e08586",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\10-asset-production\\asset-manifest.json",
+      "sha256": "9ce4446d02159051a0c7901792da8c36fa5a48542979749121ebde33856f6938",
+      "expected": "9ce4446d02159051a0c7901792da8c36fa5a48542979749121ebde33856f6938",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\10-asset-production\\asset-manifest.schema.json",
+      "sha256": "4a0c99d1eccc161dee52be5e1887decded76c9d69c94b585749bede13b8c5de7",
+      "expected": "4a0c99d1eccc161dee52be5e1887decded76c9d69c94b585749bede13b8c5de7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\10-asset-production\\ASSET-STATE-CROSSWALK.md",
+      "sha256": "9ebf0bbae775c4efbba7e652776254d9cf83152e90def93bbdac591de54c7e71",
+      "expected": "9ebf0bbae775c4efbba7e652776254d9cf83152e90def93bbdac591de54c7e71",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\10-asset-production\\schema-check-results.json",
+      "sha256": "7e3c7b0a3c0637629411b8e44c8bba4c044a769b4180256b6be751180c2efea5",
+      "expected": "7e3c7b0a3c0637629411b8e44c8bba4c044a769b4180256b6be751180c2efea5",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\10-asset-production\\validation-report.json",
+      "sha256": "f503ae73100e84482100708b71d2604d83e9b30bb6d3e8e0a3c84b813d51bad7",
+      "expected": "f503ae73100e84482100708b71d2604d83e9b30bb6d3e8e0a3c84b813d51bad7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\10-INDIVIDUAL-ASSET-MANIFEST-AND-PRODUCTION-PLAN.md",
+      "sha256": "9218e94a9367bbdcefc70c0694cf8ad070d31e80ab6b2c0b666d10baf958798b",
+      "expected": "9218e94a9367bbdcefc70c0694cf8ad070d31e80ab6b2c0b666d10baf958798b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\11-build-packet\\_checks\\check_packet.py",
+      "sha256": "fddc3fcbae7816d2a9c9dc6cf6ff9d9e0a9290c6c8ae9dc9fc2baee92fe1fb86",
+      "expected": "fddc3fcbae7816d2a9c9dc6cf6ff9d9e0a9290c6c8ae9dc9fc2baee92fe1fb86",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\11-build-packet\\acceptance-fixtures.json",
+      "sha256": "445f69e32d313c29d2bff6e29da3fe9353fb4fe5304fd66ea133a56e45a458bf",
+      "expected": "445f69e32d313c29d2bff6e29da3fe9353fb4fe5304fd66ea133a56e45a458bf",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\11-build-packet\\FIRST-CONNECTED-BUILD.md",
+      "sha256": "cdd13d3e2080c5e5a106f06419714dcbe187e1c239e7afb4fba70e4551434a4c",
+      "expected": "cdd13d3e2080c5e5a106f06419714dcbe187e1c239e7afb4fba70e4551434a4c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\11-build-packet\\implementation-plan.json",
+      "sha256": "8acfdfbccf57e6036b2e425dcb703b197795b0b5b83a6f0e441d6046a608fb62",
+      "expected": "8acfdfbccf57e6036b2e425dcb703b197795b0b5b83a6f0e441d6046a608fb62",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\11-build-packet\\OPEN-ISSUES-AND-DEFAULTS.md",
+      "sha256": "75d97b1034b619acff7430d2585a15148b3f9005819d6dd6b6c17beb4f184165",
+      "expected": "75d97b1034b619acff7430d2585a15148b3f9005819d6dd6b6c17beb4f184165",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\11-build-packet\\REQUIREMENT-TO-BUILD-CROSSWALK.md",
+      "sha256": "7f2928ef7254d6009674685d77ebc3aa53e83b8359e2b986f2f3c4f461ccaa4f",
+      "expected": "7f2928ef7254d6009674685d77ebc3aa53e83b8359e2b986f2f3c4f461ccaa4f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\11-build-packet\\REVISED-SCHEDULE.md",
+      "sha256": "e6efad3f0629b7b24be0b4a9f3a451b297a1f93725591e1b06987aa2f58bb606",
+      "expected": "e6efad3f0629b7b24be0b4a9f3a451b297a1f93725591e1b06987aa2f58bb606",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\11-build-packet\\source-snapshot.json",
+      "sha256": "8cfb39e4807d68244f4f12c6f5a3ccda1b8d5c10ea62c8515597a018ed960cbf",
+      "expected": "8cfb39e4807d68244f4f12c6f5a3ccda1b8d5c10ea62c8515597a018ed960cbf",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\11-build-packet\\validation-report.json",
+      "sha256": "c68ee8143bc0bed2c989e2b22507df07ba41511a1584d6737d9612af82e105ac",
+      "expected": "c68ee8143bc0bed2c989e2b22507df07ba41511a1584d6737d9612af82e105ac",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\11-FINAL-CODEX-BUILD-PACKET-AND-REVISED-SCHEDULE.md",
+      "sha256": "a3e8f7e7331bcb8aa8006244a69af1bb56af89a4bbb647d6854f0f3eac05ff12",
+      "expected": "a3e8f7e7331bcb8aa8006244a69af1bb56af89a4bbb647d6854f0f3eac05ff12",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\12-BUILD-READINESS-CHECKPOINT.md",
+      "sha256": "7455651259d8bb288b7408d04d2fd173f82a2917061eb0e17b3487c14ef46800",
+      "expected": "7455651259d8bb288b7408d04d2fd173f82a2917061eb0e17b3487c14ef46800",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\12-readiness\\_checks\\check_readiness.py",
+      "sha256": "7ca2d5c9090a2bf3f63ef92ad04ee8e25b2483a6d0631a2ec4baeccc9a248b64",
+      "expected": "7ca2d5c9090a2bf3f63ef92ad04ee8e25b2483a6d0631a2ec4baeccc9a248b64",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\12-readiness\\CHANGE-REGISTER.md",
+      "sha256": "c8e58100895af9e3db232955c9a9067331b615c7c272e82410eb8567a24e3e62",
+      "expected": "c8e58100895af9e3db232955c9a9067331b615c7c272e82410eb8567a24e3e62",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\12-readiness\\history\\checkpoint-validator-initial-result.json",
+      "sha256": "3e23a5127cee4f851151038ed9b8c1531cb3bf23420b793ce8d392664127d903",
+      "expected": "3e23a5127cee4f851151038ed9b8c1531cb3bf23420b793ce8d392664127d903",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\12-readiness\\history\\item11-before-review\\11-build-packet\\_checks\\check_packet.py",
+      "sha256": "bd743968bf00f72196a33ef331cdb15168b4ee96aa6ff068475ab229025e92b1",
+      "expected": "bd743968bf00f72196a33ef331cdb15168b4ee96aa6ff068475ab229025e92b1",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\12-readiness\\history\\item11-before-review\\11-build-packet\\acceptance-fixtures.json",
+      "sha256": "6a447e63fcfff34ebedb9973cbf7efdd95a76096114b20353d745e06bfecbd49",
+      "expected": "6a447e63fcfff34ebedb9973cbf7efdd95a76096114b20353d745e06bfecbd49",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\12-readiness\\history\\item11-before-review\\11-build-packet\\FIRST-CONNECTED-BUILD.md",
+      "sha256": "5ccc2ed3ef10579785c1b62b7294b9ed094cbb19b600ffc9fb5b731d9ccc13a3",
+      "expected": "5ccc2ed3ef10579785c1b62b7294b9ed094cbb19b600ffc9fb5b731d9ccc13a3",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\12-readiness\\history\\item11-before-review\\11-build-packet\\implementation-plan.json",
+      "sha256": "0fff7373fc3651754ea2adf2f7e42c7b4058cab9b55f5f30e7a4c0b1b9251a4f",
+      "expected": "0fff7373fc3651754ea2adf2f7e42c7b4058cab9b55f5f30e7a4c0b1b9251a4f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\12-readiness\\history\\item11-before-review\\11-build-packet\\OPEN-ISSUES-AND-DEFAULTS.md",
+      "sha256": "6931cce660b8ed35d1353be197860422b69bf5dbb041385dbc0364e78aab3dfa",
+      "expected": "6931cce660b8ed35d1353be197860422b69bf5dbb041385dbc0364e78aab3dfa",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\12-readiness\\history\\item11-before-review\\11-build-packet\\REQUIREMENT-TO-BUILD-CROSSWALK.md",
+      "sha256": "9f0c11b05511aeb9107c35b510564919f5059a6ec64bb845b96c183a9a10ccb8",
+      "expected": "9f0c11b05511aeb9107c35b510564919f5059a6ec64bb845b96c183a9a10ccb8",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\12-readiness\\history\\item11-before-review\\11-build-packet\\REVISED-SCHEDULE.md",
+      "sha256": "b2dce1a94f532652fff93dbed142b8614d44f0de81541a78c6960111e963d621",
+      "expected": "b2dce1a94f532652fff93dbed142b8614d44f0de81541a78c6960111e963d621",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\12-readiness\\history\\item11-before-review\\11-build-packet\\validation-report.json",
+      "sha256": "c3d7605975d51661db1bba7971290f911199f2ec5fc32e285910c0a31ca37530",
+      "expected": "c3d7605975d51661db1bba7971290f911199f2ec5fc32e285910c0a31ca37530",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\12-readiness\\history\\item11-before-review\\11-FINAL-CODEX-BUILD-PACKET-AND-REVISED-SCHEDULE.md",
+      "sha256": "cab71bc3e206fb684355e00e57b1a73120bea6f11ea382dcffb54a2cbcef000c",
+      "expected": "cab71bc3e206fb684355e00e57b1a73120bea6f11ea382dcffb54a2cbcef000c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\12-readiness\\history\\item11-before-review\\EVIDENCE-QUEST-MASTER-CHECKLIST.md",
+      "sha256": "4ae5962859d161ff80d43e7fec4d2eec69ee01d4d8124e0259da580856c8ad59",
+      "expected": "4ae5962859d161ff80d43e7fec4d2eec69ee01d4d8124e0259da580856c8ad59",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\12-readiness\\history\\item11-before-review\\README.md",
+      "sha256": "40fbb1098c73dbe9854039e72c75bc7cf07990d7f0f5724a0b50a89bec8f3ba5",
+      "expected": "40fbb1098c73dbe9854039e72c75bc7cf07990d7f0f5724a0b50a89bec8f3ba5",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\12-readiness\\source-snapshot.json",
+      "sha256": "785da74e34628b31f6c44c64fc266dc78a27a3672b80c7c33086012b53798331",
+      "expected": "785da74e34628b31f6c44c64fc266dc78a27a3672b80c7c33086012b53798331",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\12-readiness\\validation-report.json",
+      "sha256": "683bd456066d8adc7507a1df0362251d8d373f7d96667baadd450c65cced8e21",
+      "expected": "683bd456066d8adc7507a1df0362251d8d373f7d96667baadd450c65cced8e21",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-EXPERIENCE-AND-LITERACY-CORRECTION.md",
+      "sha256": "c8f22de816b7220de46a74357c1905de8259ceb9e83bc465514588a732cc291f",
+      "expected": "c8f22de816b7220de46a74357c1905de8259ceb9e83bc465514588a732cc291f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\FINAL-PARENT-IMPORT-20260912-BZE.json",
+      "sha256": "5149e6317d094a2e46091e9133589d6fbc860d76cabd2a87b475edf5b55785bb",
+      "expected": "5149e6317d094a2e46091e9133589d6fbc860d76cabd2a87b475edf5b55785bb",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\FINAL-PARENT-IMPORT-20260912-SCALE.json",
+      "sha256": "ff2fc9c24899f37d97c74b594e70df3bebccb3a80ac17fad4639d3b31f93b7c0",
+      "expected": "ff2fc9c24899f37d97c74b594e70df3bebccb3a80ac17fad4639d3b31f93b7c0",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\LIVE-EVALUATION-STATUS.md",
+      "sha256": "54a4d8f32187c00f051feaa12bffa1fd5b895f3d2ddf775ffc9fd23d4a695f73",
+      "expected": "54a4d8f32187c00f051feaa12bffa1fd5b895f3d2ddf775ffc9fd23d4a695f73",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\native-bzeahbjq-earned-reading.jpg",
+      "sha256": "0dbbd041d8355fa1ab72942a77259b10fae40d4ef1a7f264f1f3d85fcb8a1664",
+      "expected": "0dbbd041d8355fa1ab72942a77259b10fae40d4ef1a7f264f1f3d85fcb8a1664",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\native-bzeahbjq-replayed-ending.jpg",
+      "sha256": "0f4b3d173d1148cf541bb1533d334dbafee640006913514df6edadf6aa7ec219",
+      "expected": "0f4b3d173d1148cf541bb1533d334dbafee640006913514df6edadf6aa7ec219",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\native-bzeahbjq-resumed-stage.jpg",
+      "sha256": "4c77c5a8d25235381715de83c1cd422c69437b471947f508bf19bcd350144caf",
+      "expected": "4c77c5a8d25235381715de83c1cd422c69437b471947f508bf19bcd350144caf",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\NATIVE-SCENE-SCALE-REVIEW-20260912.md",
+      "sha256": "e7ce50d97df06900ae7112c2e92d36d7c6ed3133a6fd8b8dd0309e3f5f248f61",
+      "expected": "e7ce50d97df06900ae7112c2e92d36d7c6ed3133a6fd8b8dd0309e3f5f248f61",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\chromium-DPR1-PNG-qualification.json",
+      "sha256": "8dfeb23573b212a706a6307ecc337ab06b9ba87ca4522846064f7b75a52329f7",
+      "expected": "8dfeb23573b212a706a6307ecc337ab06b9ba87ca4522846064f7b75a52329f7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\chromium-DPR1-WebP-qualification.json",
+      "sha256": "8681482237937fc024f5ced2ee41f396f310ea5402469000a23897310de012cd",
+      "expected": "8681482237937fc024f5ced2ee41f396f310ea5402469000a23897310de012cd",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\chromium-DPR2-PNG-qualification.json",
+      "sha256": "cdfc02e8df66dcdafce3595acd4444fc67a1352210f0101d1c9c6d9244f75156",
+      "expected": "cdfc02e8df66dcdafce3595acd4444fc67a1352210f0101d1c9c6d9244f75156",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\chromium-DPR2-WebP-qualification.json",
+      "sha256": "b020d056a9e80bd1a64d79ea707a86e35c6fdb7fcf60adab0a0dd296e39af907",
+      "expected": "b020d056a9e80bd1a64d79ea707a86e35c6fdb7fcf60adab0a0dd296e39af907",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\final-formats-matrix.json",
+      "sha256": "733be7b42b514bf93e63f669c62666c1bcd5d0e4e879871f7622788fa5fcc282",
+      "expected": "733be7b42b514bf93e63f669c62666c1bcd5d0e4e879871f7622788fa5fcc282",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\final-formats-matrix.txt",
+      "sha256": "9ccba26d93718318d049e104c1da2aa0b9090d845b013b211d7f7e105c8485d8",
+      "expected": "9ccba26d93718318d049e104c1da2aa0b9090d845b013b211d7f7e105c8485d8",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\final-production-build.txt",
+      "sha256": "a34749405c56339c25d04b7eef729d3c9d4dcf4a2fc3daf9bce35f13300d2174",
+      "expected": "a34749405c56339c25d04b7eef729d3c9d4dcf4a2fc3daf9bce35f13300d2174",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\final-production-contracts.txt",
+      "sha256": "81a48c5458be7b368075c80c66a7f58c2adf8426df2f70b62294e39cf956f32a",
+      "expected": "81a48c5458be7b368075c80c66a7f58c2adf8426df2f70b62294e39cf956f32a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\final-rendering-matrix.json",
+      "sha256": "3e640ee8cfb404951dc718b57b5fc5111ce492cf5a036aaeac8a4d04d3ac29e3",
+      "expected": "3e640ee8cfb404951dc718b57b5fc5111ce492cf5a036aaeac8a4d04d3ac29e3",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\final-rendering-matrix.txt",
+      "sha256": "0e19c51d481f9774848287c1cd6e31a89c509bb02b881d059f214c69946e4baf",
+      "expected": "0e19c51d481f9774848287c1cd6e31a89c509bb02b881d059f214c69946e4baf",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\firefox-DPR1-PNG-qualification.json",
+      "sha256": "94b6392dde346408d151e9f336248d77eab5631df758ea7546de1fc6e98385ee",
+      "expected": "94b6392dde346408d151e9f336248d77eab5631df758ea7546de1fc6e98385ee",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\firefox-DPR1-WebP-qualification.json",
+      "sha256": "f96271fb2304c41b36fc9144b9cacc848a6d3d09ca0453e7611cd84a5b5c7124",
+      "expected": "f96271fb2304c41b36fc9144b9cacc848a6d3d09ca0453e7611cd84a5b5c7124",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\firefox-DPR2-PNG-qualification.json",
+      "sha256": "80338b1b4f68f0189105d5964aac1f7e8a2f891a6e72ecbe6e8e0be23b4700e4",
+      "expected": "80338b1b4f68f0189105d5964aac1f7e8a2f891a6e72ecbe6e8e0be23b4700e4",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\firefox-DPR2-WebP-qualification.json",
+      "sha256": "eaa1128f5b49b9c12113acc6017e8a25baeb4d0ad68d7071bea15ffad8b0d04d",
+      "expected": "eaa1128f5b49b9c12113acc6017e8a25baeb4d0ad68d7071bea15ffad8b0d04d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\integrity.json",
+      "sha256": "cd29dc95569166b3677be2b3b0c013aecebfa9e19792697b3f1b7e6fc4cf743e",
+      "expected": "cd29dc95569166b3677be2b3b0c013aecebfa9e19792697b3f1b7e6fc4cf743e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\production-art-verification.json",
+      "sha256": "06902796793cf7a2cdca9a8eb9079bdd5cde314247976d8e0dae51f9eb2b37e7",
+      "expected": "06902796793cf7a2cdca9a8eb9079bdd5cde314247976d8e0dae51f9eb2b37e7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\production-codec-ledger-tests.txt",
+      "sha256": "8f365e21cbb97f5f596dc9584e61accaa56bacffd67bcb071700898d6481f5e2",
+      "expected": "8f365e21cbb97f5f596dc9584e61accaa56bacffd67bcb071700898d6481f5e2",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\production-tool-licenses.json",
+      "sha256": "0c322e734e013c428fa5d8386edafd997645b9bb140840f21ce8c8bd17cbdf86",
+      "expected": "0c322e734e013c428fa5d8386edafd997645b9bb140840f21ce8c8bd17cbdf86",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\README.md",
+      "sha256": "a252c260d81b9a65d14b2a504b90c93d1e469f36f26071183ac44d79b4f81a18",
+      "expected": "a252c260d81b9a65d14b2a504b90c93d1e469f36f26071183ac44d79b4f81a18",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\summary.json",
+      "sha256": "0154ce44f1ca034d8ef3b19d1c6d1fade7e3778f2e01f7474bd185b71bc1f373",
+      "expected": "0154ce44f1ca034d8ef3b19d1c6d1fade7e3778f2e01f7474bd185b71bc1f373",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\webkit-DPR1-PNG-qualification.json",
+      "sha256": "d4b90d183b2f9592e339e40d18eb02d41d2a216ce2f490b57ba309dfe94fe09a",
+      "expected": "d4b90d183b2f9592e339e40d18eb02d41d2a216ce2f490b57ba309dfe94fe09a",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\webkit-DPR1-WebP-qualification.json",
+      "sha256": "02e93201ae69bca718c2b36fc656e3fd8d0e64d872c6c93ee7ca09345d35a329",
+      "expected": "02e93201ae69bca718c2b36fc656e3fd8d0e64d872c6c93ee7ca09345d35a329",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\webkit-DPR2-PNG-qualification.json",
+      "sha256": "3d78fb652cef670cf7bd80dcaa3d6c9659d01179bbe9093528faa0f0b488251e",
+      "expected": "3d78fb652cef670cf7bd80dcaa3d6c9659d01179bbe9093528faa0f0b488251e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\packing-review\\final-20260912-bzeahbjq\\webkit-DPR2-WebP-qualification.json",
+      "sha256": "19862afecc0ae205ae2ef76fc53da6b523ad2a9ab7273dea2508a52b99415e75",
+      "expected": "19862afecc0ae205ae2ef76fc53da6b523ad2a9ab7273dea2508a52b99415e75",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\PARENT-NATIVE-REVIEW.md",
+      "sha256": "d2e8ea7ae334016a7abe6e0c06a4b5331316230cda1754fdeb63394741e4af72",
+      "expected": "d2e8ea7ae334016a7abe6e0c06a4b5331316230cda1754fdeb63394741e4af72",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\preview-4176-restart.json",
+      "sha256": "2569dc052919b327b7486b1f293efd3add98db75e2d65bf24ade78e508abdfd9",
+      "expected": "2569dc052919b327b7486b1f293efd3add98db75e2d65bf24ade78e508abdfd9",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\after-ari-approach.jpg",
+      "sha256": "2e708aeeb1a3117192c08f5001ac0f2622a2a480c5fb6978fa5da7257073a684",
+      "expected": "2e708aeeb1a3117192c08f5001ac0f2622a2a480c5fb6978fa5da7257073a684",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\after-courtyard.jpg",
+      "sha256": "05e139d370ae721ca4367183cd515f0618abe2bb9e8fcc956fccf17aba3a4f95",
+      "expected": "05e139d370ae721ca4367183cd515f0618abe2bb9e8fcc956fccf17aba3a4f95",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\after-media-kit-clear.jpg",
+      "sha256": "b0b4cc0fa5c2fcf6102fed666cc263ac181661e00d21130991df79bfdb321336",
+      "expected": "b0b4cc0fa5c2fcf6102fed666cc263ac181661e00d21130991df79bfdb321336",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\after-media.jpg",
+      "sha256": "79d927cb138a839de327399f864008bcbd4b2a6292d5aca7cb935608db589f44",
+      "expected": "79d927cb138a839de327399f864008bcbd4b2a6292d5aca7cb935608db589f44",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\after-stage.jpg",
+      "sha256": "07600907c20eea4377641bd155b135276b80b17c3ed4a8459865660a179eae48",
+      "expected": "07600907c20eea4377641bd155b135276b80b17c3ed4a8459865660a179eae48",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\after-workshop.jpg",
+      "sha256": "25c3e27d667fc3a7e5e4bcbdc61cd16d63cdf2dc98f8a0d0df1a476432fc3342",
+      "expected": "25c3e27d667fc3a7e5e4bcbdc61cd16d63cdf2dc98f8a0d0df1a476432fc3342",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\before-courtyard.jpg",
+      "sha256": "e9e4c6f006cf715e1afa86aedcdfc500f9d8a3e37f1ba635c168ea20172bf753",
+      "expected": "e9e4c6f006cf715e1afa86aedcdfc500f9d8a3e37f1ba635c168ea20172bf753",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\before-integrity.json",
+      "sha256": "c26e06566290cb9d40949772e074162d3d75180dc78a9095aa751204e844cc6d",
+      "expected": "c26e06566290cb9d40949772e074162d3d75180dc78a9095aa751204e844cc6d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\before-media.jpg",
+      "sha256": "c5d4a9813b914595e558f114e07f5979c233fd28aa5546ff85e2e9b2aae162cc",
+      "expected": "c5d4a9813b914595e558f114e07f5979c233fd28aa5546ff85e2e9b2aae162cc",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\before-stage.jpg",
+      "sha256": "4c77c5a8d25235381715de83c1cd422c69437b471947f508bf19bcd350144caf",
+      "expected": "4c77c5a8d25235381715de83c1cd422c69437b471947f508bf19bcd350144caf",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\before-workshop.jpg",
+      "sha256": "c82b1e7d07c3b755fa8bcfb8d1ce1ff3d6bc18649153bd3f384df0cb8e9c589e",
+      "expected": "c82b1e7d07c3b755fa8bcfb8d1ce1ff3d6bc18649153bd3f384df0cb8e9c589e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\capture-integrity.json",
+      "sha256": "44e0cfa5f79fc8643222703e71f50202f759bf5291dba835f337c8aa244be9f8",
+      "expected": "44e0cfa5f79fc8643222703e71f50202f759bf5291dba835f337c8aa244be9f8",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\final-courtyard.jpg",
+      "sha256": "6c7c99bf449d7f594e6b167d933ab3da9d06c6880c2675023e2798e1ae84ddfe",
+      "expected": "6c7c99bf449d7f594e6b167d933ab3da9d06c6880c2675023e2798e1ae84ddfe",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\final-dock-after-kit.jpg",
+      "sha256": "caefb368cc1bffabbadc94d7b44893c58b3e4bc2719be7c508b44c8637c067bb",
+      "expected": "caefb368cc1bffabbadc94d7b44893c58b3e4bc2719be7c508b44c8637c067bb",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\final-kit-handoff.jpg",
+      "sha256": "64a5d3fd8d5825a36d53839e28556b8bfe8dbd03adb25195ba7049700b8ffc99",
+      "expected": "64a5d3fd8d5825a36d53839e28556b8bfe8dbd03adb25195ba7049700b8ffc99",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\final-loop-wake.jpg",
+      "sha256": "c0e3bd12182eee8428e6d2d57bc4de72e485fc70dace9b1ab63cee205ad52a42",
+      "expected": "c0e3bd12182eee8428e6d2d57bc4de72e485fc70dace9b1ab63cee205ad52a42",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\final-media-cutaway.jpg",
+      "sha256": "24d60ba72cbce98c6fe288961a95a120919aa74d0396dc0856429971d0b27235",
+      "expected": "24d60ba72cbce98c6fe288961a95a120919aa74d0396dc0856429971d0b27235",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\final-stage-side.jpg",
+      "sha256": "10a3e5b34198da0a9fa0535c71b25c4a95c1c4b29bffb5be6aaf3b4320c8f811",
+      "expected": "10a3e5b34198da0a9fa0535c71b25c4a95c1c4b29bffb5be6aaf3b4320c8f811",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\final-stage.jpg",
+      "sha256": "07600907c20eea4377641bd155b135276b80b17c3ed4a8459865660a179eae48",
+      "expected": "07600907c20eea4377641bd155b135276b80b17c3ed4a8459865660a179eae48",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\final-workshop-follow.jpg",
+      "sha256": "5471351df05c905dc4986963de8e418c2051a0e5942cc446e32c518cb1fd9d98",
+      "expected": "5471351df05c905dc4986963de8e418c2051a0e5942cc446e32c518cb1fd9d98",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\final-workshop.jpg",
+      "sha256": "64a49829106ae777670ef879f94c1ee3b680e495d34bc7f0f22c11a27f922974",
+      "expected": "64a49829106ae777670ef879f94c1ee3b680e495d34bc7f0f22c11a27f922974",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\geometry-carry-loop.jpg",
+      "sha256": "6e0cd73b740625d5d7b09b106dbdfb2a58b860067a6a551ac247d3e3ac582599",
+      "expected": "6e0cd73b740625d5d7b09b106dbdfb2a58b860067a6a551ac247d3e3ac582599",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\geometry-courtyard.jpg",
+      "sha256": "212556160bc6e376efd678db00a3c31050143c2d5b6ae4649be2712f2d8946db",
+      "expected": "212556160bc6e376efd678db00a3c31050143c2d5b6ae4649be2712f2d8946db",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\geometry-dock-clear.jpg",
+      "sha256": "fd72b0af1db319e2091f9ae46f3d3cfcc72c19cb8d7197d9a2e5d1f9727dcd07",
+      "expected": "fd72b0af1db319e2091f9ae46f3d3cfcc72c19cb8d7197d9a2e5d1f9727dcd07",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\geometry-media-carry.jpg",
+      "sha256": "208fe09deb968ac0afe760b233a842d550f3ce706f7ad14a8a54035ebe80968b",
+      "expected": "208fe09deb968ac0afe760b233a842d550f3ce706f7ad14a8a54035ebe80968b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\geometry-media-kit-overlap.jpg",
+      "sha256": "84649b34fa8f7ff25c521c9ac9b0eb1b6aef0c418e478c008e365d1e049d2845",
+      "expected": "84649b34fa8f7ff25c521c9ac9b0eb1b6aef0c418e478c008e365d1e049d2845",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\geometry-media.jpg",
+      "sha256": "0ef716fd71843c2dadbcdbb0ef124f4665456a2bf8d199caf9f534c69fdd1b6f",
+      "expected": "0ef716fd71843c2dadbcdbb0ef124f4665456a2bf8d199caf9f534c69fdd1b6f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\geometry-stage-side.jpg",
+      "sha256": "542911b8e09d2df11f8bda254e2fc2fcb8ee5eada3842e603f334af0098710e9",
+      "expected": "542911b8e09d2df11f8bda254e2fc2fcb8ee5eada3842e603f334af0098710e9",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\geometry-stage.jpg",
+      "sha256": "6ad3ecc459efd1a4d9f6797a8ba6dc6f1f556c9d00d87157645a8a83c360a454",
+      "expected": "6ad3ecc459efd1a4d9f6797a8ba6dc6f1f556c9d00d87157645a8a83c360a454",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\geometry-toast-revealed.jpg",
+      "sha256": "257e20df18704a32797398d7e24b8de7aaedf347b795af63becb64e30d083821",
+      "expected": "257e20df18704a32797398d7e24b8de7aaedf347b795af63becb64e30d083821",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\geometry-toast-side.jpg",
+      "sha256": "07333ace677e702cde36d51429ac7baf18a8746e96a510582a5f257d51bca2aa",
+      "expected": "07333ace677e702cde36d51429ac7baf18a8746e96a510582a5f257d51bca2aa",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\scale-review-20260912\\geometry-workshop.jpg",
+      "sha256": "526e160f5cbcb8a63eb9453e45503875fb96059343c3524c2758ca8293bb2665",
+      "expected": "526e160f5cbcb8a63eb9453e45503875fb96059343c3524c2758ca8293bb2665",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\13-experience-correction\\SCENE-SCALE-CORRECTION-20260912.md",
+      "sha256": "7e172d207749ef7be1eb8913cb26b18ee91e93bbde97fa67e9c8fc21e71a4dc7",
+      "expected": "7e172d207749ef7be1eb8913cb26b18ee91e93bbde97fa67e9c8fc21e71a4dc7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\Evidence-Quest-Complete-Game-Specification-v3.md",
+      "sha256": "6cfb0958c7d6deec52b485058197b93ef4297e3f8e087a7874a9aae3fa70ab16",
+      "expected": "6cfb0958c7d6deec52b485058197b93ef4297e3f8e087a7874a9aae3fa70ab16",
+      "unchanged": true
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3\\EVIDENCE-QUEST-MASTER-CHECKLIST.md",
+      "sha256": "9cab75c0d94ee3d7237ceb81db2cde98c1ee26fdce021ddda93a158838f32225",
+      "expected": "9cab75c0d94ee3d7237ceb81db2cde98c1ee26fdce021ddda93a158838f32225",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D014-INTERACTION-DRAFT.md",
+      "sha256": "e196c5a3046a758117978e726860a84bd31d70a70dc3d70cbb06d40db69c6d3c",
+      "expected": "e196c5a3046a758117978e726860a84bd31d70a70dc3d70cbb06d40db69c6d3c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D015-MARAS-STORY-TO-GRANDMA.md",
+      "sha256": "b8115c94ed207d1ede5511877439e5cf0b0df3b7d232d8715e78afb1b3a2fdef",
+      "expected": "b8115c94ed207d1ede5511877439e5cf0b0df3b7d232d8715e78afb1b3a2fdef",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D016-SOLS-UNFINISHED-STORY.md",
+      "sha256": "53a68f24381a17986e48c706e3c70eccb8d1af95e24ccab3ed58a107187d807f",
+      "expected": "53a68f24381a17986e48c706e3c70eccb8d1af95e24ccab3ed58a107187d807f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D017-PLANNING-THE-GATHERING.md",
+      "sha256": "67f6487884b0b012a667a0f3af62837fffc560f7ad7b6deb8e3fb7035816f6a8",
+      "expected": "67f6487884b0b012a667a0f3af62837fffc560f7ad7b6deb8e3fb7035816f6a8",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D018-ROUTE-CROSSING-AND-TIME.md",
+      "sha256": "22a0570167502c99fbd61091e1edcb57cb066053d92451a6ee100711e849eee5",
+      "expected": "22a0570167502c99fbd61091e1edcb57cb066053d92451a6ee100711e849eee5",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D019-THE-GATHERING.md",
+      "sha256": "ed2d3bae6a1ef8949a9ead51e99939705dee875296bd7998b6ac2f9db540a0a0",
+      "expected": "ed2d3bae6a1ef8949a9ead51e99939705dee875296bd7998b6ac2f9db540a0a0",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D020-GRANDMAS-STORY-AND-CLOSING.md",
+      "sha256": "199859fa4d5483ed294fa16e468a57ce60f0645914a5901d62d73115dfd970ed",
+      "expected": "199859fa4d5483ed294fa16e468a57ce60f0645914a5901d62d73115dfd970ed",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D021-LANTERN-GARDEN-RULES.md",
+      "sha256": "b1d06c1956ccb7ad6e8cd55ec1b019ebf15dabd71ce010b073a20d1fc1b10190",
+      "expected": "b1d06c1956ccb7ad6e8cd55ec1b019ebf15dabd71ce010b073a20d1fc1b10190",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D022-STUDIO-AND-PIPS-ADVENTURE.md",
+      "sha256": "cd589e168c590f41e68733f153106dcc106d17f065ea9f5c32a2c82110cc0031",
+      "expected": "cd589e168c590f41e68733f153106dcc106d17f065ea9f5c32a2c82110cc0031",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D023-VISIT-ORDER-AND-CHARACTER-KNOWLEDGE.md",
+      "sha256": "2781dd55c77b190ac7e751d86a960ef21c3335aa84e00cc3419d16fdb35c6025",
+      "expected": "2781dd55c77b190ac7e751d86a960ef21c3335aa84e00cc3419d16fdb35c6025",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D024-CHANGING-THE-GATHERING-PLAN.md",
+      "sha256": "a308149b4300f6a0626e2ebdf430d6dfe4b0ab2eb7ce34060e9ad824b7f17aaf",
+      "expected": "a308149b4300f6a0626e2ebdf430d6dfe4b0ab2eb7ce34060e9ad824b7f17aaf",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D025-GRANDMA-BEFORE-MARA.md",
+      "sha256": "7aa27bc2e2923e742f9a54aa5f72dba7567877e7f9cd3222637da410a1053e20",
+      "expected": "7aa27bc2e2923e742f9a54aa5f72dba7567877e7f9cd3222637da410a1053e20",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D026-REQUIRED-STORY-AND-OPTIONAL-PLAY.md",
+      "sha256": "1d8cd85b62c1862df4dae17c2b48d15b20739e67ca108582b8b69247d12c3cb1",
+      "expected": "1d8cd85b62c1862df4dae17c2b48d15b20739e67ca108582b8b69247d12c3cb1",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D027-DIRECT-ACTIONS-IN-THE-STORY.md",
+      "sha256": "4ebdd2b645db5caf09216b161a6be8cd15eb9b2d858cbe70916e5d8c48c8c1ce",
+      "expected": "4ebdd2b645db5caf09216b161a6be8cd15eb9b2d858cbe70916e5d8c48c8c1ce",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D028-3D-AND-DEMO-SCOPE.md",
+      "sha256": "69d12fa498c027aaa8476ce37175b1069905617e750dfb6a14911262ca00ba0f",
+      "expected": "69d12fa498c027aaa8476ce37175b1069905617e750dfb6a14911262ca00ba0f",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D029-FIRST-PLAYABLE-ENCOUNTER.md",
+      "sha256": "1be95a51164571017ac49fc5d647854b76ed07343e10118be38b062888a93b3c",
+      "expected": "1be95a51164571017ac49fc5d647854b76ed07343e10118be38b062888a93b3c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D030-CROSSING-CHALLENGE.md",
+      "sha256": "7d2e1199b41b66ad8c762a91a2fe9a21d466d5703297304e88d77e9c025493e4",
+      "expected": "7d2e1199b41b66ad8c762a91a2fe9a21d466d5703297304e88d77e9c025493e4",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D031-SOLS-PLAYER-WRITTEN-ENDING.md",
+      "sha256": "281cb7b583f9d00a833b6046a86afbdc9ee6a52a1c46bb5ebf1cbfdb842e579e",
+      "expected": "281cb7b583f9d00a833b6046a86afbdc9ee6a52a1c46bb5ebf1cbfdb842e579e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D032-GATHERING-THROUGH-CHARACTER-INTERACTIONS.md",
+      "sha256": "127a2dbb3845d7ef1410a4ec612ec6f099565a7a13920b16ad43ac59641f4334",
+      "expected": "127a2dbb3845d7ef1410a4ec612ec6f099565a7a13920b16ad43ac59641f4334",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D033-OPENING-AND-FIRST-ACTIONS.md",
+      "sha256": "973fd7b7c9837612e12e0d6734238934d6961428e95ddc78f654451ab48bc408",
+      "expected": "973fd7b7c9837612e12e0d6734238934d6961428e95ddc78f654451ab48bc408",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D034-GOALS-AND-NEXT-STEPS.md",
+      "sha256": "7e69d96c27a325b142ef33f67a3d570ab433ac0dcf78645ca72178c89a80ad26",
+      "expected": "7e69d96c27a325b142ef33f67a3d570ab433ac0dcf78645ca72178c89a80ad26",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D035-CHAPTER-PROGRESSION-AND-ENDING-GUIDANCE.md",
+      "sha256": "f8a8f99c51eae914699fde872c5c093d41c01f12c7902c1e9e1c72255987df08",
+      "expected": "f8a8f99c51eae914699fde872c5c093d41c01f12c7902c1e9e1c72255987df08",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D036-CAST-AND-PLACES.md",
+      "sha256": "2d6a64dc072bb2c084ae1d03d5280194668d0ce3acb9c79caed8ce4eecc35321",
+      "expected": "2d6a64dc072bb2c084ae1d03d5280194668d0ce3acb9c79caed8ce4eecc35321",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D037-OBJECTS-ACTIONS-AND-RESPONSES.md",
+      "sha256": "588b1623fa678fa1ed2b397e697ec7632b4a9e6f689878fab0971d5e90345228",
+      "expected": "588b1623fa678fa1ed2b397e697ec7632b4a9e6f689878fab0971d5e90345228",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D038-READING-FORMAT-AND-MARAS-PAGE.md",
+      "sha256": "c168fac3eef597ab53389008b565ce329af1069fa6b22e8a5fdccb6c56168398",
+      "expected": "c168fac3eef597ab53389008b565ce329af1069fa6b22e8a5fdccb6c56168398",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D039-SOLS-PAGE-AND-WRITING-SOURCES.md",
+      "sha256": "88264eb1bf967d7f1e4ebf97a08b3ab1bb2b0ab3bc2a6625ce02c5c223841313",
+      "expected": "88264eb1bf967d7f1e4ebf97a08b3ab1bb2b0ab3bc2a6625ce02c5c223841313",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D040-GRANDMAS-PAGE-AND-CHRONOLOGY.md",
+      "sha256": "a7024c4c8c206e14ac7f65858200de0e19a9aa17876a3dca9445205c8dbd1a42",
+      "expected": "a7024c4c8c206e14ac7f65858200de0e19a9aa17876a3dca9445205c8dbd1a42",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D041-OLDER-LANTERN-STORIES.md",
+      "sha256": "8899a7508d119356b89f677b150b041ceae66efa6d9c895b46bdb3a7a7338277",
+      "expected": "8899a7508d119356b89f677b150b041ceae66efa6d9c895b46bdb3a7a7338277",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D042-ENDING-NARRATION-AND-CHOICES.md",
+      "sha256": "a5eb357cdc444a19fac56120430ca93a6ff7983675006a47b0a0451f0d4dbf51",
+      "expected": "a5eb357cdc444a19fac56120430ca93a6ff7983675006a47b0a0451f0d4dbf51",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D043-ALTERNATE-GATHERING-DIALOGUE.md",
+      "sha256": "0770a50aabdf927101636b88fd4bd194eb5eabedc1f1e75c2d2bf9adb990e02b",
+      "expected": "0770a50aabdf927101636b88fd4bd194eb5eabedc1f1e75c2d2bf9adb990e02b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D044-FIRST-FLUENCY-PRACTICE.md",
+      "sha256": "05705d0258d86a391ca5d8406aea965f6b0a9eb8c18b25a88a9bc92057e614f9",
+      "expected": "05705d0258d86a391ca5d8406aea965f6b0a9eb8c18b25a88a9bc92057e614f9",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D045-SPOKEN-READING-FEEDBACK-OPTIONS.md",
+      "sha256": "b87c88d0c29dba2e4a2f2fc5accc5a814adeb554200cd5bfafd11a9b273aae58",
+      "expected": "b87c88d0c29dba2e4a2f2fc5accc5a814adeb554200cd5bfafd11a9b273aae58",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D046-FEEDBACK-OUTCOMES-AND-FALLBACKS.md",
+      "sha256": "fe5d2d8c2970cb66db59b0e53806e34ebf0f2ac6e5dabab45d11d70c629079bf",
+      "expected": "fe5d2d8c2970cb66db59b0e53806e34ebf0f2ac6e5dabab45d11d70c629079bf",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D047-READING-SOLS-ENDING-ALOUD.md",
+      "sha256": "292cd09f7e87f990b371078c24df89f4b5e61a41f375cc1209e32f9130f2fed2",
+      "expected": "292cd09f7e87f990b371078c24df89f4b5e61a41f375cc1209e32f9130f2fed2",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D048-LANTERN-AND-ENDING-PRACTICE.md",
+      "sha256": "70e95357f3ff3b9095344ed7dc8e056e251b328c3e11a023368f3d30b2f5c97e",
+      "expected": "70e95357f3ff3b9095344ed7dc8e056e251b328c3e11a023368f3d30b2f5c97e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D049-EXPLAINING-A-PLAN-TO-MARA.md",
+      "sha256": "274a1d4544c057ea38841d65930ecefa90a1aeafb8f753a81658a5a58b9c41f6",
+      "expected": "274a1d4544c057ea38841d65930ecefa90a1aeafb8f753a81658a5a58b9c41f6",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D050-SHARING-STORIES-WHILE-MARA-WORKS.md",
+      "sha256": "f2d3a87eff54ccbe9551fea2de258516a59cf2b813bf9df7e4998cdbdd8ce123",
+      "expected": "f2d3a87eff54ccbe9551fea2de258516a59cf2b813bf9df7e4998cdbdd8ce123",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D051-GRANDMAS-ASSUMPTION-AND-MARAS-ACCOUNT.md",
+      "sha256": "313e6a9324c607369d6937f51e1a7a886720cdf33281a10c3ef8fc962ed21b8c",
+      "expected": "313e6a9324c607369d6937f51e1a7a886720cdf33281a10c3ef8fc962ed21b8c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D052-THE-BOYS-WORDS-AND-ACTIONS.md",
+      "sha256": "74c503317124e6832a13fd47ba07e4d364639246ff1a2e464c69411b07577cea",
+      "expected": "74c503317124e6832a13fd47ba07e4d364639246ff1a2e464c69411b07577cea",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D053-DEVELOPING-A-BRIEF-SOL-ENDING.md",
+      "sha256": "c5bfd5099ed8a464271309cc37fb7d4ecf7d2fe1ee026ddb153be75b1094ee1c",
+      "expected": "c5bfd5099ed8a464271309cc37fb7d4ecf7d2fe1ee026ddb153be75b1094ee1c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D054-WORD-HELP-IN-DIFFERENT-CONTEXTS.md",
+      "sha256": "37787c2020c0e535526ee90de8b3a071c1674ed4cf4d0675e4c6eaf017d3417e",
+      "expected": "37787c2020c0e535526ee90de8b3a071c1674ed4cf4d0675e4c6eaf017d3417e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D055-USING-SECURE-IN-PLAY-AND-STORY.md",
+      "sha256": "1f454516518d061d99c307fb6a61415abcc1859420303b3be0f3a940b5ec962d",
+      "expected": "1f454516518d061d99c307fb6a61415abcc1859420303b3be0f3a940b5ec962d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D056-VOCABULARY-FOCUS-AND-REUSE-MAP.md",
+      "sha256": "0881ea678ab96d2d8cd95395a26fdddc113fd27861aa3b9d7fc4aafce47780df",
+      "expected": "0881ea678ab96d2d8cd95395a26fdddc113fd27861aa3b9d7fc4aafce47780df",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D057-HELP-FOR-WHOLE-PHRASES.md",
+      "sha256": "20e4def5e2924bbc84a32fb7ba218433bed7bc9e07e7af1b48728cf66c4d95d8",
+      "expected": "20e4def5e2924bbc84a32fb7ba218433bed7bc9e07e7af1b48728cf66c4d95d8",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D058-REMAINING-VOCABULARY-HELP-CARDS.md",
+      "sha256": "ddba3fb8d1ca4a104374efa978c381a3a3b8521702c12a3b3fa53b2b1454b904",
+      "expected": "ddba3fb8d1ca4a104374efa978c381a3a3b8521702c12a3b3fa53b2b1454b904",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D059-AI-INTERPRETS-SOLS-ENDING.md",
+      "sha256": "c879b4bcc8ff00dab6eca9ace9a7281c37a2166f8f666d7af6863e4d66fd61ff",
+      "expected": "c879b4bcc8ff00dab6eca9ace9a7281c37a2166f8f666d7af6863e4d66fd61ff",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D060-UNCLEAR-ENDING-CLARIFICATION.md",
+      "sha256": "2154acbfcc3235d0ca40f43f917fdebae4342a13f28ee826b4b9e0a76fc191eb",
+      "expected": "2154acbfcc3235d0ca40f43f917fdebae4342a13f28ee826b4b9e0a76fc191eb",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D061-CORRECTING-A-WRONG-SCENE.md",
+      "sha256": "5146d18cc6511ac207eecaa6260352fc9b9dbd437fffac8aebb841918ff828fe",
+      "expected": "5146d18cc6511ac207eecaa6260352fc9b9dbd437fffac8aebb841918ff828fe",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D062-CHECKING-DISPUTED-WRITING-FEEDBACK.md",
+      "sha256": "e5584890727edcf3a850c74ff20644d881e10ddf835e1d43d32e8070dc57c8f3",
+      "expected": "e5584890727edcf3a850c74ff20644d881e10ddf835e1d43d32e8070dc57c8f3",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D063-WRITING-WHEN-AI-IS-UNAVAILABLE.md",
+      "sha256": "e29236143aca1358d1e363c8f02a070153feb9f17150c16093faf5b225bc9a52",
+      "expected": "e29236143aca1358d1e363c8f02a070153feb9f17150c16093faf5b225bc9a52",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D064-EDITING-WHILE-FEEDBACK-IS-PENDING.md",
+      "sha256": "dde0cad4d1a3833eb6678e799bf1532f078a38d480175031b4e76c497955d9b5",
+      "expected": "dde0cad4d1a3833eb6678e799bf1532f078a38d480175031b4e76c497955d9b5",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D065-AI-HELP-FOR-ADDITIONAL-WORDS.md",
+      "sha256": "3d173bfc778bddded5ae58a3c254f65209901065d6dc5eb2331412e98881b4ad",
+      "expected": "3d173bfc778bddded5ae58a3c254f65209901065d6dc5eb2331412e98881b4ad",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D066-BASIC-WORD-HELP-WITHOUT-AI.md",
+      "sha256": "cb9fb64a421002360264af784d35d2ba54a751c11c51a350d6365c286abfda72",
+      "expected": "cb9fb64a421002360264af784d35d2ba54a751c11c51a350d6365c286abfda72",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D067-WORD-HELP-IN-THE-CHILDS-ENDING.md",
+      "sha256": "3bac473536c1cd0f7992dfb644cf4f10e932b7899916fe70974ed427afaa3e0c",
+      "expected": "3bac473536c1cd0f7992dfb644cf4f10e932b7899916fe70974ed427afaa3e0c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D068-CHECKING-WORD-EXPLANATIONS.md",
+      "sha256": "35e60845b621385599f65d08ebd107e83b85f689f653a3cb35be963e91c7021c",
+      "expected": "35e60845b621385599f65d08ebd107e83b85f689f653a3cb35be963e91c7021c",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D069-HELP-WITH-A-MISSPELLED-WORD.md",
+      "sha256": "93efe25ad13a20619ba181d81815820254f679b11fcb1a3fb005087b2f1b24e6",
+      "expected": "93efe25ad13a20619ba181d81815820254f679b11fcb1a3fb005087b2f1b24e6",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D070-AI-FEEDBACK-IN-MARAS-CONVERSATION.md",
+      "sha256": "bef79f36dee534112168480cea016e518ebc86d81cb79f7e49929105a13d581b",
+      "expected": "bef79f36dee534112168480cea016e518ebc86d81cb79f7e49929105a13d581b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D071-CHECKING-MISUNDERSTOOD-CONVERSATION-ANSWERS.md",
+      "sha256": "599597565985df98691dca39c3208d2680966b5a47e36a204050b25f9e3326d3",
+      "expected": "599597565985df98691dca39c3208d2680966b5a47e36a204050b25f9e3326d3",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D072-CONVERSATION-WHEN-AI-IS-UNAVAILABLE.md",
+      "sha256": "aaf7600e58295b878d15380ec18018bd4219b97eb25225ced33680227a2a789b",
+      "expected": "aaf7600e58295b878d15380ec18018bd4219b97eb25225ced33680227a2a789b",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D073-AUDIO-BASED-PRONUNCIATION-FEEDBACK.md",
+      "sha256": "1ba289413f717995618335da4218822ef61acfbfd233595f96083d46258451b5",
+      "expected": "1ba289413f717995618335da4218822ef61acfbfd233595f96083d46258451b5",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D074-PAUSES-AND-EXPRESSION-IN-READING.md",
+      "sha256": "01b52a91f081acb020fc9901758e9c10e51ce2360022547558174db7c336daa4",
+      "expected": "01b52a91f081acb020fc9901758e9c10e51ce2360022547558174db7c336daa4",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D075-START-STOP-AND-REVIEW-A-READING.md",
+      "sha256": "1127ce66fe6a2339698e8233ac09116c702dde93e2c2287066af2cb52e874155",
+      "expected": "1127ce66fe6a2339698e8233ac09116c702dde93e2c2287066af2cb52e874155",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D076-TEMPORARY-RECORDINGS-AFTER-FEEDBACK.md",
+      "sha256": "29f3eca0c2eaebf3dd9dea9493f7604477eb994b3efa2a5b896198ead942770d",
+      "expected": "29f3eca0c2eaebf3dd9dea9493f7604477eb994b3efa2a5b896198ead942770d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D077-WAITING-FOR-READING-FEEDBACK.md",
+      "sha256": "fbda948bec9cb5fbacdbba338d1698f0b248475c4f12469b2a9bca54b46e25c6",
+      "expected": "fbda948bec9cb5fbacdbba338d1698f0b248475c4f12469b2a9bca54b46e25c6",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D078-FAST-AI-WITH-RELIABLE-FEEDBACK.md",
+      "sha256": "7c3de52d8878d2c37a1369185242115a5d8a078c448f39c474a74553b3a9a3da",
+      "expected": "7c3de52d8878d2c37a1369185242115a5d8a078c448f39c474a74553b3a9a3da",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D079-ASKING-FOR-A-HINT.md",
+      "sha256": "7c5eef8fe87e607f063268b08ef2f9ca6b381c2976fe57ba23f53b1f82b821ba",
+      "expected": "7c5eef8fe87e607f063268b08ef2f9ca6b381c2976fe57ba23f53b1f82b821ba",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D080-ACCELERATED-REVIEW-AND-REMAINING-WORK.md",
+      "sha256": "68130c06643d3b499aae81957a58d99c6a252f091c0d11a888023a7a959daffd",
+      "expected": "68130c06643d3b499aae81957a58d99c6a252f091c0d11a888023a7a959daffd",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\D081-COMPLETED-REMAINING-SPECIFICATION.md",
+      "sha256": "da1ed43df66c32bd76c00273d479c2b4c620654241f07798559469a1cd5b7123",
+      "expected": "da1ed43df66c32bd76c00273d479c2b4c620654241f07798559469a1cd5b7123",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\R04-STORY-OUTLINE.md",
+      "sha256": "b61bd5206ec6efd435ede625aff8096f8901161ca88cecf9274587f124b233f7",
+      "expected": "b61bd5206ec6efd435ede625aff8096f8901161ca88cecf9274587f124b233f7",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\R05-CORE-GAMEPLAY.md",
+      "sha256": "b7686435941b1ea6c9db74cf2d3cc4c1058cee93ea8ec35c51a554a25a0f2a32",
+      "expected": "b7686435941b1ea6c9db74cf2d3cc4c1058cee93ea8ec35c51a554a25a0f2a32",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\R07-OBJECTIVES-AND-PROGRESSION.md",
+      "sha256": "754974ac835193a7795fd00c042329ee775e85b9984cd2a2d0aecce682ca5cd0",
+      "expected": "754974ac835193a7795fd00c042329ee775e85b9984cd2a2d0aecce682ca5cd0",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\R08-CAST-PLACES-AND-OBJECTS.md",
+      "sha256": "3f8ef92c3395f3da3773047c13595ad340d07a551ff386f3bac00c733444a534",
+      "expected": "3f8ef92c3395f3da3773047c13595ad340d07a551ff386f3bac00c733444a534",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\R09-READING-MATERIALS.md",
+      "sha256": "26af73ab527ab3d4d337586eff0a411bd96ff713501d61456609aea28784987d",
+      "expected": "26af73ab527ab3d4d337586eff0a411bd96ff713501d61456609aea28784987d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\R10-FLUENCY-AND-NARRATION-CONTRACT.md",
+      "sha256": "7a5a3770ca1368b39a40c313d00109aac72f1820522bc70821af4b4aca82f434",
+      "expected": "7a5a3770ca1368b39a40c313d00109aac72f1820522bc70821af4b4aca82f434",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\R11-COMPREHENSION-THROUGH-PLAY.md",
+      "sha256": "96e00107ec2ee88b7636cc56ad4d4d6f52ec64fc54f93449b8bd30ec2c8e81a9",
+      "expected": "96e00107ec2ee88b7636cc56ad4d4d6f52ec64fc54f93449b8bd30ec2c8e81a9",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\R12-VOCABULARY-TEACHING.md",
+      "sha256": "e758441e114055a4012886539c7d162720d1e7cda4d4fc2218cbe7df05283153",
+      "expected": "e758441e114055a4012886539c7d162720d1e7cda4d4fc2218cbe7df05283153",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\R13-AI-AND-DATA-CONTRACT.md",
+      "sha256": "91ff281c4432cee837834064502dd3ea30f2f6a5ff52957aa0147f99c020411d",
+      "expected": "91ff281c4432cee837834064502dd3ea30f2f6a5ff52957aa0147f99c020411d",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\R14-SUPPORT-AND-DIFFICULTY-CONTRACT.md",
+      "sha256": "ec1268f44617b5f8a671bca3aabf4cb8e20842bf257d5fd0d62423ef6ad84c8e",
+      "expected": "ec1268f44617b5f8a671bca3aabf4cb8e20842bf257d5fd0d62423ef6ad84c8e",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\R15-CONTROLS-AND-PHYSICAL-STATE.md",
+      "sha256": "2f8f90ddbc23f058a143bd3e8b275dd48694487afed1f955a324d24fbc31b9c6",
+      "expected": "2f8f90ddbc23f058a143bd3e8b275dd48694487afed1f955a324d24fbc31b9c6",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\R16-LAYOUT-AND-ACCESS-CONTRACT.md",
+      "sha256": "b92b15c4aba92046779ed62250788001f338af6a9afaa181f04411721285af83",
+      "expected": "b92b15c4aba92046779ed62250788001f338af6a9afaa181f04411721285af83",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\R17-VISUAL-AUDIO-AND-RENDERER-CONTRACT.md",
+      "sha256": "a1ef9921b16eb722ea6b902b9ca68b53149e9aed2c8f7852dcca22ac5d9a4464",
+      "expected": "a1ef9921b16eb722ea6b902b9ca68b53149e9aed2c8f7852dcca22ac5d9a4464",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\R18-PACING-ENDING-AND-DEMO-CONTRACT.md",
+      "sha256": "296923b260ce8dcdc78697b3bd00ebe385c363fcc0564d0b5684245a25aa0a43",
+      "expected": "296923b260ce8dcdc78697b3bd00ebe385c363fcc0564d0b5684245a25aa0a43",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\R19-STATE-SAVE-AND-RECOVERY-CONTRACT.md",
+      "sha256": "24a5402a83361a363be0198a436d8ebee88cdc039e17ee0083de6a41e8fa5529",
+      "expected": "24a5402a83361a363be0198a436d8ebee88cdc039e17ee0083de6a41e8fa5529",
+      "unchanged": true
+    },
+    {
+      "path": "docs/game-review\\R20-ACCEPTANCE-AND-EVIDENCE-CONTRACT.md",
+      "sha256": "ad47359e98a231873fa53710bdd24f68451d11639dec5f25eec6e4084300acab",
+      "expected": "ad47359e98a231873fa53710bdd24f68451d11639dec5f25eec6e4084300acab",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/design-import.json",
+      "sha256": "eaa35bd7db2f6612b58a5de0b5b89657a7d893e95998ef8c5b2748f16dc7c22d",
+      "expected": "eaa35bd7db2f6612b58a5de0b5b89657a7d893e95998ef8c5b2748f16dc7c22d",
+      "unchanged": true
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "55e01ed71458dcd8184bd26492e5433077066bc7cbebade60fb8be677203aec3",
+      "expected": "55e01ed71458dcd8184bd26492e5433077066bc7cbebade60fb8be677203aec3",
+      "unchanged": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "015e9d79d86ee520d96b50ed2c75f19bd76e502d6f48b9a96727e5ea30cc60c1",
+      "expected": "015e9d79d86ee520d96b50ed2c75f19bd76e502d6f48b9a96727e5ea30cc60c1",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/ari-action-poses-v1-alpha.png",
+      "sha256": "f87761809f8a632435a4241b98b75b0e94296a195214788314331ea6b9ec4a71",
+      "expected": "f87761809f8a632435a4241b98b75b0e94296a195214788314331ea6b9ec4a71",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/ari-poses-v1.png",
+      "sha256": "3f55f68ceb5dd45558fe2075c973fe9ac1c8e4617d4055b73299afdede64ce4f",
+      "expected": "3f55f68ceb5dd45558fe2075c973fe9ac1c8e4617d4055b73299afdede64ce4f",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/caddy-fresh-v1.png",
+      "sha256": "5a7bc641fd2fcdeb8595fd22922142ad5820aa99269c0a1275feacf1eb5619fa",
+      "expected": "5a7bc641fd2fcdeb8595fd22922142ad5820aa99269c0a1275feacf1eb5619fa",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/courtyard-backplate-v1.png",
+      "sha256": "69924b81614e0ae2dd77faffd370d22284560bcc0d2777b6d7bf174f843bffc1",
+      "expected": "69924b81614e0ae2dd77faffd370d22284560bcc0d2777b6d7bf174f843bffc1",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/courtyard-tablet-stand-fresh-v1.png",
+      "sha256": "ce6738dff33124edcf2bdf3e119e5cf4e9edb85f61de8940456c2e34df54e691",
+      "expected": "ce6738dff33124edcf2bdf3e119e5cf4e9edb85f61de8940456c2e34df54e691",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/four-story-tiles-v1.png",
+      "sha256": "7299e51a2cd927b3566d3789c00422326e9fb9c8a5da8dcb777eaf2b513cb04e",
+      "expected": "7299e51a2cd927b3566d3789c00422326e9fb9c8a5da8dcb777eaf2b513cb04e",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/grandma-poses-v1.png",
+      "sha256": "23eba9c9f15c82c3566206da92c1c6401e78172f825faafd976bd6c21e0f17a8",
+      "expected": "23eba9c9f15c82c3566206da92c1c6401e78172f825faafd976bd6c21e0f17a8",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/jo-action-poses-v1-alpha.png",
+      "sha256": "8fc9d69c22f490ddf3af47686c128ebd66c05eedb1fe65d0e7d6c7cd9608fefd",
+      "expected": "8fc9d69c22f490ddf3af47686c128ebd66c05eedb1fe65d0e7d6c7cd9608fefd",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/jo-poses-v1.png",
+      "sha256": "776ad18264662f6bd4860d0ba0c8c486d052fdb08dd9de43fd495f9ea33c5aa5",
+      "expected": "776ad18264662f6bd4860d0ba0c8c486d052fdb08dd9de43fd495f9ea33c5aa5",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/loop-awake-v1.png",
+      "sha256": "7aff93a39780987a546b2fe32ae44681e45e3c5ab7b1f9256113a032eda4ee0a",
+      "expected": "7aff93a39780987a546b2fe32ae44681e45e3c5ab7b1f9256113a032eda4ee0a",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/loop-rolling-directions-v1.png",
+      "sha256": "a163c2932c6a68d0452144320e445d047a788ba34de72eb30988208de15ce105",
+      "expected": "a163c2932c6a68d0452144320e445d047a788ba34de72eb30988208de15ce105",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/loop-state-poses-v1.png",
+      "sha256": "668985a54255d66145a1867c80918a8b7ef2b90fb4d0cea86b1ee97e74e92add",
+      "expected": "668985a54255d66145a1867c80918a8b7ef2b90fb4d0cea86b1ee97e74e92add",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/media-backplate-v1.png",
+      "sha256": "23b739d71cec7673d7402d2103aec3d73780a3a852031d775e48ce704c7bc96c",
+      "expected": "23b739d71cec7673d7402d2103aec3d73780a3a852031d775e48ce704c7bc96c",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/media-kit-rack-fresh-v1.png",
+      "sha256": "b158b4b00651161330112ae6effad818501c9af7e11bc9745c6ca481450999ac",
+      "expected": "b158b4b00651161330112ae6effad818501c9af7e11bc9745c6ca481450999ac",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/notice-states-v1.png",
+      "sha256": "40550f1531b3f82e1681c52a4a6910d65c1f9728df36024113f526ee685cd463",
+      "expected": "40550f1531b3f82e1681c52a4a6910d65c1f9728df36024113f526ee685cd463",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/paper-bridge-parts-v1.png",
+      "sha256": "4a09cd2b6b2f15499153ce2130051a543164b597f786dff12a29bab8e67f2d33",
+      "expected": "4a09cd2b6b2f15499153ce2130051a543164b597f786dff12a29bab8e67f2d33",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/paper-materials-v1.png",
+      "sha256": "669dad05ca0d222ce0914dab61e92f63f302b4a7028ecfd4de9fc0a1280dec7a",
+      "expected": "669dad05ca0d222ce0914dab61e92f63f302b4a7028ecfd4de9fc0a1280dec7a",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/pip-poses-v1.png",
+      "sha256": "db99b2243a8ab537f08a343b2d453a425bfb5f0803fb266c55886b8ef44c9ef2",
+      "expected": "db99b2243a8ab537f08a343b2d453a425bfb5f0803fb266c55886b8ef44c9ef2",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/player-back-v2.png",
+      "sha256": "04c4adbb47d72d61dac6dd3ea1d1c5cd75b972cba73d602d23e5967262a12121",
+      "expected": "04c4adbb47d72d61dac6dd3ea1d1c5cd75b972cba73d602d23e5967262a12121",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/player-carry-poses-v1-alpha.png",
+      "sha256": "c90f5182b771f34218dc6e4cd293fb4e782b05fa99a1e89469cdc397fcdb8cd3",
+      "expected": "c90f5182b771f34218dc6e4cd293fb4e782b05fa99a1e89469cdc397fcdb8cd3",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/player-front-v2.png",
+      "sha256": "66f0f86ab7edf05c3f71f62b716a73f5aeabb3f3e57d96a10f9365b062753122",
+      "expected": "66f0f86ab7edf05c3f71f62b716a73f5aeabb3f3e57d96a10f9365b062753122",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/player-front-walk-v3-alpha.png",
+      "sha256": "6b23ddb53a034019e9b9ca544354cd683f2a849e20d28e03acea1d2bdfc40962",
+      "expected": "6b23ddb53a034019e9b9ca544354cd683f2a849e20d28e03acea1d2bdfc40962",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/player-idle-directions-v1-alpha.png",
+      "sha256": "702443c5c0789287273e12ee9478cf5a4adcf063704200843362d91c4761d673",
+      "expected": "702443c5c0789287273e12ee9478cf5a4adcf063704200843362d91c4761d673",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/player-left-walk-v3-alpha.png",
+      "sha256": "a5e93a3474f03bea677d77ae4d295680af2d417739ebb6e5a7757f321cff3324",
+      "expected": "a5e93a3474f03bea677d77ae4d295680af2d417739ebb6e5a7757f321cff3324",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/player-reach-poses-v1-alpha.png",
+      "sha256": "2738aacc5f591ca01a75b3aeee7a7ed743d9914641938a03664459c4308cd069",
+      "expected": "2738aacc5f591ca01a75b3aeee7a7ed743d9914641938a03664459c4308cd069",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/player-right-v2.png",
+      "sha256": "262ce6f0129bef61f0fe354657414cd1a1662b053570d61564eece237f981517",
+      "expected": "262ce6f0129bef61f0fe354657414cd1a1662b053570d61564eece237f981517",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/remy-action-poses-v1-alpha2.png",
+      "sha256": "be0e8c80b8b19629cb4c5d7465f20b1977ffada97769f4eed492295b61d0bd02",
+      "expected": "be0e8c80b8b19629cb4c5d7465f20b1977ffada97769f4eed492295b61d0bd02",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/remy-poses-v2.png",
+      "sha256": "06dd4fb59d3961a1a83c59b9e6507596a1e7be4abdf864a6fdeaf59138816b97",
+      "expected": "06dd4fb59d3961a1a83c59b9e6507596a1e7be4abdf864a6fdeaf59138816b97",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/single-cy-bench-cutout-v2.png",
+      "sha256": "4c522e4696d8b52d056d372a512d3d1f630ee551c3f518e1e64ef4b1d59d204e",
+      "expected": "4c522e4696d8b52d056d372a512d3d1f630ee551c3f518e1e64ef4b1d59d204e",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/single-cy-board-cutout-v2.png",
+      "sha256": "1eeb9f5b6e02ef9ab975afc9a927da24d4d8c7d1c44743ad9501d06399b7c0ab",
+      "expected": "1eeb9f5b6e02ef9ab975afc9a927da24d4d8c7d1c44743ad9501d06399b7c0ab",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/single-md-table-cutout-v2.png",
+      "sha256": "76225232cc78009a6f32a2a7660f5157323332a87d646d015116db7c7de8af4f",
+      "expected": "76225232cc78009a6f32a2a7660f5157323332a87d646d015116db7c7de8af4f",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/single-story-backpack-v1.png",
+      "sha256": "d43eec1d5737696701777bbe86f68fa351fc8a8f1f0b0ab51f295479d73322d2",
+      "expected": "d43eec1d5737696701777bbe86f68fa351fc8a8f1f0b0ab51f295479d73322d2",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/single-story-boat-v1.png",
+      "sha256": "ae24aefc48edebfbf3e19bcb6e3460b24589f162aae58cfb164d71d404c8bbd9",
+      "expected": "ae24aefc48edebfbf3e19bcb6e3460b24589f162aae58cfb164d71d404c8bbd9",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/single-story-roots-cutout-v2.png",
+      "sha256": "473e0b487d385074a557cfd87c877d5c56aa89e7ae76e2eb799310f4dd838727",
+      "expected": "473e0b487d385074a557cfd87c877d5c56aa89e7ae76e2eb799310f4dd838727",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/single-toast-arm-cutout-v2.png",
+      "sha256": "98060b536c02b03ead120fef3196294aa08b0f583d091e70e4ad579df9d17c7e",
+      "expected": "98060b536c02b03ead120fef3196294aa08b0f583d091e70e4ad579df9d17c7e",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/single-toast-body-cutout-v2.png",
+      "sha256": "c3cca7d42d8ac91f54f13726d910157435cd68db014dde07bce7d82f74c903d0",
+      "expected": "c3cca7d42d8ac91f54f13726d910157435cd68db014dde07bce7d82f74c903d0",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/single-toast-lid-cutout-v2.png",
+      "sha256": "9e0385e0fba345fc053054aeaa2262c8205bc5d8744f05e04afb3f8bda2e344a",
+      "expected": "9e0385e0fba345fc053054aeaa2262c8205bc5d8744f05e04afb3f8bda2e344a",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/single-toast-tray-v1.png",
+      "sha256": "7920296ecd173acee29d7f618008209bac8b8db62deb23319ef15a4895dde1a5",
+      "expected": "7920296ecd173acee29d7f618008209bac8b8db62deb23319ef15a4895dde1a5",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/single-wk-bench-cutout-v2.png",
+      "sha256": "2070a56ab45f11a40b2c24701de56cc1a8d2323d6f3fafd37ac87ee70b4df5f9",
+      "expected": "2070a56ab45f11a40b2c24701de56cc1a8d2323d6f3fafd37ac87ee70b4df5f9",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/small-interactions-v1.png",
+      "sha256": "dd92b74815f7c851806d41758cb7829a5c18aec962b54d08d7456d19565ac470",
+      "expected": "dd92b74815f7c851806d41758cb7829a5c18aec962b54d08d7456d19565ac470",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/source-carrier-parts-v1.png",
+      "sha256": "ef0452b58e9e84bf8f618684782b7b0ead0e3d6a204713df2b5b56179c0492ed",
+      "expected": "ef0452b58e9e84bf8f618684782b7b0ead0e3d6a204713df2b5b56179c0492ed",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/stage-backplate-v1.png",
+      "sha256": "cfa20e792a36344d8faa65998097360f3f2f0f602e48473abfb06455c22488c0",
+      "expected": "cfa20e792a36344d8faa65998097360f3f2f0f602e48473abfb06455c22488c0",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/stage-board-v2.png",
+      "sha256": "0d341b894832ca9cb11fdeac01c3420dbb7df9324e88f256342b23b4bfdd4c43",
+      "expected": "0d341b894832ca9cb11fdeac01c3420dbb7df9324e88f256342b23b4bfdd4c43",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/stage-console-v2.png",
+      "sha256": "fae3a9564f51e9ec8dbd883e725e32f467806fa4814d931d85f03d6ee3be42ad",
+      "expected": "fae3a9564f51e9ec8dbd883e725e32f467806fa4814d931d85f03d6ee3be42ad",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/stage-dock-alpha3-v1.png",
+      "sha256": "c45c37d7ff5b4bc2a919961b3d07dcf266f564866c653a9a6cd1763447c244e2",
+      "expected": "c45c37d7ff5b4bc2a919961b3d07dcf266f564866c653a9a6cd1763447c244e2",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/stage-model-cabinet-v2.png",
+      "sha256": "43590abd211849f8dd520d3163ab666384d2555f6c44a64bdf3f16e009fb6612",
+      "expected": "43590abd211849f8dd520d3163ab666384d2555f6c44a64bdf3f16e009fb6612",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/story-bud-fresh-v1.png",
+      "sha256": "1166a249222daeab9d4855b5fba06e80c93e7737cab5b9cf49f17763dc5abe42",
+      "expected": "1166a249222daeab9d4855b5fba06e80c93e7737cab5b9cf49f17763dc5abe42",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/story-flower-fresh-v1.png",
+      "sha256": "bfee27ce086161f9f5b4afd3d8f4f335eb353a952c869467a8d7f9da68628783",
+      "expected": "bfee27ce086161f9f5b4afd3d8f4f335eb353a952c869467a8d7f9da68628783",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/story-seed-fresh-v1.png",
+      "sha256": "557dd2af715d730b73ca4564652597b6363c8a7be3436cd4c4b47d32f61047f9",
+      "expected": "557dd2af715d730b73ca4564652597b6363c8a7be3436cd4c4b47d32f61047f9",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/toast-glass-fresh-v1.png",
+      "sha256": "2fc6e42ff148a34f21f70c8406012d23a5c1f8beaa1670ace2a5043233ca6a4d",
+      "expected": "2fc6e42ff148a34f21f70c8406012d23a5c1f8beaa1670ace2a5043233ca6a4d",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/toast-piece-fresh-v1.png",
+      "sha256": "a8adb7813033106d22b08122c9012ee06b594b13b3b374dba36d5ef5e0089eb2",
+      "expected": "a8adb7813033106d22b08122c9012ee06b594b13b3b374dba36d5ef5e0089eb2",
+      "unchanged": true
+    },
+    {
+      "path": "public/art/er13/workshop-backplate-v1.png",
+      "sha256": "ae969f6cf52eb634ec7e0562bd2b3498f8372c09d5cca7c29276c238a6f4284f",
+      "expected": "ae969f6cf52eb634ec7e0562bd2b3498f8372c09d5cca7c29276c238a6f4284f",
+      "unchanged": true
+    },
+    {
+      "path": "src/garden/content.ts",
+      "sha256": "e4cb004657d7eeba0a164db0ee285d8e72047c20ee6c412f640f3bf9228d96b1",
+      "expected": "e4cb004657d7eeba0a164db0ee285d8e72047c20ee6c412f640f3bf9228d96b1",
+      "unchanged": true
+    },
+    {
+      "path": "src/garden/chapterContent.ts",
+      "sha256": "e779bb4edf96103badbaedfbfa54866bb7f6241d9b4a8d74292f8b04a174a370",
+      "expected": "e779bb4edf96103badbaedfbfa54866bb7f6241d9b4a8d74292f8b04a174a370",
+      "unchanged": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "015e9d79d86ee520d96b50ed2c75f19bd76e502d6f48b9a96727e5ea30cc60c1",
+      "expected": "015e9d79d86ee520d96b50ed2c75f19bd76e502d6f48b9a96727e5ea30cc60c1",
+      "unchanged": true
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "55e01ed71458dcd8184bd26492e5433077066bc7cbebade60fb8be677203aec3",
+      "expected": "55e01ed71458dcd8184bd26492e5433077066bc7cbebade60fb8be677203aec3",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/er13/live-evaluation/attempts.jsonl",
+      "sha256": "17a4a6a57b5e1d54192320717e09f2c631a3eb052d1c1e62bc74c866bc877653",
+      "expected": "17a4a6a57b5e1d54192320717e09f2c631a3eb052d1c1e62bc74c866bc877653",
+      "unchanged": true
+    },
+    {
+      "path": "evidence/er13/live-evaluation/attempt-001.json",
+      "sha256": "b2b93d857488a3b57e4d053db4b18b7959ceda0ee630b2588c117b37075225b8",
+      "expected": "b2b93d857488a3b57e4d053db4b18b7959ceda0ee630b2588c117b37075225b8",
+      "unchanged": true
+    }
+  ],
+  "restored": [
+    {
+      "path": "evidence/authored-evaluation.json",
+      "sha256": "5c507695ab1bddb65bc62a032d5e9411b300f513ddc542d4d60ff114e8213abc",
+      "archive": {
+        "path": "evidence/sparkfest-main-image-20260916/generated-reports/evidence/authored-evaluation.json",
+        "sha256": "158be0ad6ba178c9c96b51e1cb92b96f9ff3547e31206c380a7c0a42688b4857"
+      },
+      "matchesBefore": true
+    },
+    {
+      "path": "evidence/er13/content-validation.json",
+      "sha256": "e465db0416004e744a81b50378bf0856edae5ceec2b6710f58c315ecdd9046ec",
+      "archive": {
+        "path": "evidence/sparkfest-main-image-20260916/generated-reports/evidence/er13/content-validation.json",
+        "sha256": "e530984f2d8fc902db96ce69d088c0f27f522d9643f997609c13e1b0c6ebe0ad"
+      },
+      "matchesBefore": true
+    },
+    {
+      "path": "evidence/er13/production-art-exports.json",
+      "sha256": "4501cef52bdb2bcf4998bd6196df8b3dea7678eadcc48d4a273ff194fceb64b9",
+      "archive": {
+        "path": "evidence/sparkfest-main-image-20260916/generated-reports/evidence/er13/production-art-exports.json",
+        "sha256": "a50328baca2402d5ebe37e2088843bb282892b11277f6b443f92bd43e44519d4"
+      },
+      "matchesBefore": true
+    },
+    {
+      "path": "evidence/group-7-finale-20260915/content-manifest.json",
+      "sha256": "8a0525415cce153cf8cbf76ae892211e457f4f3284f2006b96fa2df91b7bb8d6",
+      "archive": {
+        "path": "evidence/sparkfest-main-image-20260916/generated-reports/evidence/group-7-finale-20260915/content-manifest.json",
+        "sha256": "668e2a85a85b9c03db41e83276f1b6efa02967757f7aca1df731577e1404dca4"
+      },
+      "matchesBefore": true
+    }
+  ],
+  "delivery": [
+    {
+      "port": 4192,
+      "health": {
+        "status": "ok",
+        "mode": "authored"
+      },
+      "entryMatches": true,
+      "assets": [
+        {
+          "path": "assets/index-Ck_4A3aJ.js",
+          "status": 200,
+          "sha256": "8634ea0a83a8e19c2f22bcab4d1ea1766bcad2b4b55454629eb4948913104876",
+          "matches": true
+        },
+        {
+          "path": "assets/index-D7U2vX1x.css",
+          "status": 200,
+          "sha256": "e57e791c5fdcecf3f5546f1bf865fe6b4277f670cc02656b51feb159a1f5601d",
+          "matches": true
+        },
+        {
+          "path": "assets/GardenApp-4Pp4tfI3.js",
+          "status": 200,
+          "sha256": "6e926bef90545fedbe03511871c481e01df9f0e595d018343167d5de916010de",
+          "matches": true
+        },
+        {
+          "path": "assets/GardenApp-DuWd7jSm.css",
+          "status": 200,
+          "sha256": "4857b8c5930230176324804f744d4975c7cf6e4f429e2fed8aa7894df8f30d59",
+          "matches": true
+        },
+        {
+          "path": "art/sparkfest/cast-original.png",
+          "status": 200,
+          "sha256": "d656e38f3e9986def76d30c233e2fde5dc1c2442bb13556c6f41be9cf5babb66",
+          "matches": true
+        }
+      ]
+    },
+    {
+      "port": 4200,
+      "health": {
+        "status": "ok",
+        "mode": "authored"
+      },
+      "entryMatches": true,
+      "assets": [
+        {
+          "path": "assets/index-Ck_4A3aJ.js",
+          "status": 200,
+          "sha256": "8634ea0a83a8e19c2f22bcab4d1ea1766bcad2b4b55454629eb4948913104876",
+          "matches": true
+        },
+        {
+          "path": "assets/index-D7U2vX1x.css",
+          "status": 200,
+          "sha256": "e57e791c5fdcecf3f5546f1bf865fe6b4277f670cc02656b51feb159a1f5601d",
+          "matches": true
+        },
+        {
+          "path": "assets/GardenApp-4Pp4tfI3.js",
+          "status": 200,
+          "sha256": "6e926bef90545fedbe03511871c481e01df9f0e595d018343167d5de916010de",
+          "matches": true
+        },
+        {
+          "path": "assets/GardenApp-DuWd7jSm.css",
+          "status": 200,
+          "sha256": "4857b8c5930230176324804f744d4975c7cf6e4f429e2fed8aa7894df8f30d59",
+          "matches": true
+        },
+        {
+          "path": "art/sparkfest/cast-original.png",
+          "status": 200,
+          "sha256": "d656e38f3e9986def76d30c233e2fde5dc1c2442bb13556c6f41be9cf5babb66",
+          "matches": true
+        }
+      ]
+    }
+  ],
+  "retainedFailure": {
+    "report": {
+      "path": "evidence/sparkfest-main-image-20260916/browser.json",
+      "sha256": "51686734e9ec0277093b93575b60d13433dfa573b7f811eeb7825cea36380b9b"
+    },
+    "cause": "Firefox reported48px target height as47.999969482421875 after scroll. Fixture rounds geometry to0.001 CSS pixels;48px requirement and runtime styles unchanged. Clean six-case rerun passes."
+  },
+  "limitations": "Image/layout correction only. Earlier complete-story routes remain dated; no new all-ending rerun. Existing TASK11.20/.21 and ER13.06–08 qualification gaps remain. TASK11.19 stays HALTED at1/75; no provider request, retry or reset. No user save reset, commit, push or deployment."
+}

@@ -1,0 +1,20 @@
+
+> evidence-quest@0.1.0 test:browser
+> node scripts/test-browser.mjs browser-tests/garden-chapter.spec.ts browser-tests/garden-gathering.spec.ts browser-tests/garden-finale.spec.ts --workers=2 --output=evidence/sparkfest-playback-20260916/browser-routes-1
+
+[WebServer] (node:60076) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 13 tests using 2 workers
+
+(node:53948) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:54620) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   1 [chromium] › browser-tests\garden-finale.spec.ts:8:1 › Finale: authentic prior-save fixture, actual memory placement, lantern source return, compact show and replay recovery (18.1s)
+(node:37784) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  3 [chromium] › browser-tests\garden-gathering.spec.ts:9:1 › Gathering: authentic prior-save fixture, arrival recovery, compact world telling and exact chosen contribution (34.1s)
+  x   2 [chromium] › browser-tests\garden-chapter.spec.ts:35:312 › Complete Garden chapter: later Mara tells; Sol prepared (2.3m)
+(node:57760) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

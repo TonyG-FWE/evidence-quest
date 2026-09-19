@@ -1,0 +1,1140 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "browser-tests/garden-reading-support.spec.ts",
+      "browser-tests/garden-sequence.spec.ts",
+      "browser-tests/garden-bakery.spec.ts",
+      "--workers=2",
+      "--output=evidence/literacy-experience-20260916/browser-reading-stories-1"
+    ],
+    "configFile": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\playwright.config.ts",
+    "rootDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/evidence/literacy-experience-20260916/browser-reading-stories-1",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/evidence/literacy-experience-20260916/browser-reading-stories-1",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/evidence/literacy-experience-20260916/browser-reading-stories-1",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/literacy-experience-20260916/browser-reading-stories-1.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 2,
+    "webServer": {
+      "command": "\"C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe\" dist/server/index.js",
+      "url": "http://127.0.0.1:4196/healthz",
+      "env": {
+        "PORT": "4196",
+        "EQ_WEB_PORT": "4196",
+        "PUBLIC_ORIGIN": "http://127.0.0.1:4196"
+      },
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "garden-bakery.spec.ts",
+      "file": "garden-bakery.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Bakery: connected repair, wrong placement, compact recovery, baking, accompanied thanks and exact draft excerpt",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 81170,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:19:16.843Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "native-selection-trace",
+                      "contentType": "application/json",
+                      "body": "W3sia2V5IjoiQ29udHJvbCtIb21lIiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6MH0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6MX0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6Mn0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6M30seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6NH0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6NX0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6Nn0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6N30seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6OH0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6OX0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6MTB9XQ=="
+                    },
+                    {
+                      "name": "bakery-result",
+                      "contentType": "application/json",
+                      "body": "ewogICJ2ZXJzaW9uIjogMywKICAiY29udGVudCI6ICJnYXJkZW4tY2hhcHRlci0zIiwKICAic3RvcnkiOiB7CiAgICAibWV0U29sIjogZmFsc2UsCiAgICAic29sQ2hvaWNlIjogIm5vbmUiLAogICAgInNvbERyYWZ0IjogewogICAgICAidGV4dCI6ICIiLAogICAgICAicmV2aXNpb24iOiAwCiAgICB9LAogICAgInNvbEVuZGluZyI6IG51bGwsCiAgICAibWFyYVBpY3R1cmUiOiAicmVwYWlyIiwKICAgICJsYXRlcktub3duIjogZmFsc2UsCiAgICAicXVlc3Rpb25zIjogW10sCiAgICAic29sUmVwb3J0ZWQiOiBmYWxzZSwKICAgICJtYXJhUmVwb3J0ZWQiOiBmYWxzZSwKICAgICJ0aW1lQWdyZWVkIjogbnVsbCwKICAgICJwbGFuIjogbnVsbCwKICAgICJzb2xJbnZpdGF0aW9uIjogbnVsbCwKICAgICJtYXJhSW52aXRhdGlvbiI6IG51bGwsCiAgICAicGhhc2UiOiAicGxhbm5pbmciLAogICAgInNvbE91dGNvbWUiOiBudWxsLAogICAgInJlY29yZHMiOiB7CiAgICAgICJtYXJhIjogbnVsbCwKICAgICAgInNvbCI6IG51bGwsCiAgICAgICJncmFuZG1hIjogZmFsc2UsCiAgICAgICJwaXAiOiBudWxsCiAgICB9LAogICAgImdyYW5kbWFDb3B5IjogIm5vbmUiLAogICAgImNsb3NpbmdEb25lIjogZmFsc2UsCiAgICAiZW5kaW5nIjogbnVsbCwKICAgICJwcmVzZW50YXRpb24iOiB7CiAgICAgICJwYWdlIjogMCwKICAgICAgImZpbmlzaGVkIjogZmFsc2UKICAgIH0sCiAgICAiYW5zd2VycyI6IHt9LAogICAgImJyaWRnZUZhaWx1cmVzIjogMAogIH0sCiAgInJpdmVyIjogewogICAgImVkaXRpb24iOiAiY29ubmVjdGVkLTIwMjYwOTE1IiwKICAgICJyb3Blc0NvbGxlY3RlZCI6IHRydWUsCiAgICAic29pbFByZXBhcmVkIjogZmFsc2UsCiAgICAiYXR0YWNobWVudHMiOiB7CiAgICAgICJ3ZXN0IjogImEiLAogICAgICAiZWFzdCI6ICJiIgogICAgfSwKICAgICJyb3BlTG9jYXRpb25zIjogewogICAgICAid2VzdCI6ICJhdHRhY2hlZCIsCiAgICAgICJlYXN0IjogImF0dGFjaGVkIgogICAgfSwKICAgICJib2F0IjogewogICAgICAicG9zaXRpb24iOiB7CiAgICAgICAgIngiOiAtMS40LAogICAgICAgICJ6IjogMC44CiAgICAgIH0sCiAgICAgICJwaGFzZSI6ICJtb29yZWQiCiAgICB9CiAgfSwKICAibWFyYSI6IHsKICAgICJlZGl0aW9uIjogImNvbm5lY3RlZC0yMDI2MDkxNSIsCiAgICAiYXNraW5nIjogIm5vbmUiLAogICAgInJldHVybk9mZmVyZWQiOiBmYWxzZSwKICAgICJwZXJtaXNzaW9uIjogZmFsc2UsCiAgICAic2VydmljZSI6ICJ3YWl0aW5nIiwKICAgICJwYXJ0aWNpcGF0ZWQiOiBmYWxzZSwKICAgICJzaGFyZWRBdCI6ICJub25lIiwKICAgICJzY2VuZSI6IG51bGwKICB9LAogICJiYWtlcnkiOiB7CiAgICAiZWRpdGlvbiI6ICJjb25uZWN0ZWQtMjAyNjA5MTUiLAogICAgInN0YWdlIjogImRvbmUiLAogICAgIm1ldCI6IHRydWUsCiAgICAicGVybWlzc2lvbiI6IHRydWUsCiAgICAidGlsZSI6ICJyb29mIiwKICAgICJjcmFja2VkIjogInNldC1hc2lkZSIsCiAgICAibG9hZiI6ICJzb2wiLAogICAgInJpbmEiOiB7CiAgICAgICJ4IjogNS44NTcwODMyMjczNjg2MzM1LAogICAgICAieiI6IC0wLjk3ODQyNTIwOTU0MTczNTEKICAgIH0sCiAgICAidW5zaGFwZWRCYXRjaGVzIjogMQogIH0sCiAgImdhdGhlcmluZyI6IHsKICAgICJlZGl0aW9uIjogImNvbm5lY3RlZC0yMDI2MDkxNSIsCiAgICAicmVwb3J0ZWQiOiBudWxsLAogICAgImFycml2YWwiOiAibm90LXN0YXJ0ZWQiLAogICAgIndlbGNvbWUiOiBmYWxzZSwKICAgICJzb2xQZXJmb3JtZWQiOiBudWxsLAogICAgInNvbERpc2Nsb3NlZCI6IGZhbHNlLAogICAgImN1c2hpb25zIjogZmFsc2UsCiAgICAicGFnZUNvbXBsZXRlIjogZmFsc2UsCiAgICAiZ3JhbmRtYVBlcmZvcm1lZCI6IGZhbHNlLAogICAgInR1cm4iOiBudWxsCiAgfSwKICAiY29udmVyc2F0aW9ucyI6IHsKICAgICJtYXJhIjogewogICAgICAicGFydCI6IDAsCiAgICAgICJjb21wbGV0ZSI6IGZhbHNlCiAgICB9LAogICAgImJha2VyeSI6IHsKICAgICAgInBhcnQiOiAyLAogICAgICAiY29tcGxldGUiOiB0cnVlCiAgICB9LAogICAgInNvbCI6IHsKICAgICAgInBhcnQiOiAwLAogICAgICAiY29tcGxldGUiOiBmYWxzZQogICAgfQogIH0sCiAgInJ1bklkIjogIjRhZGJiYWYzLWExYTYtNGRhNC04ZTJjLWI5ZTc2MmQ2MGU4NiIsCiAgInJldmlzaW9uIjogNDc0LAogICJzdGFydGVkIjogdHJ1ZSwKICAicGlwIjogewogICAgIngiOiA0LjY1LAogICAgInoiOiAtMS4yNQogIH0sCiAgInNlY3Rpb25zIjogewogICAgImEiOiB7CiAgICAgICJ4IjogLTAuNzc1LAogICAgICAieiI6IDMsCiAgICAgICJyb3RhdGlvbiI6IDAKICAgIH0sCiAgICAiYiI6IHsKICAgICAgIngiOiAwLjc3NSwKICAgICAgInoiOiAzLAogICAgICAicm90YXRpb24iOiAwCiAgICB9CiAgfSwKICAiZmVycnlTaWRlIjogIndlc3QiLAogICJqb2luZWQiOiB0cnVlLAogICJ3ZXN0IjogdHJ1ZSwKICAiZWFzdCI6IHRydWUsCiAgImNyb3NzZWQiOiB0cnVlLAogICJzZWVkIjogInBpcCIsCiAgImJsb29tZWQiOiBmYWxzZSwKICAibWFyYUhlYXJkIjogZmFsc2UsCiAgInBhZ2UiOiAibWFyYSIsCiAgImdyYW5kbWFIZWFyZCI6IGZhbHNlLAogICJleHBvc2VkIjogWwogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlcxIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzMiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlc0IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XNSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzYiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlc3IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XOCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzkiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlcxMCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzExIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMTIiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlcxMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzE0IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMTUiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlcxNiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzE3IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMTgiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlcxOSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzIwIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMjEiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlcyMiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzIzIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMjQiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlcyNSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzI2IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMjciLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlcyOCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzI5IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMzAiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlczMSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzMyIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMzMiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlczNCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzEiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yLlcyIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzQiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yLlc1IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XNiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzciLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yLlc4IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XOSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzEwIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XMTEiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yLlcxMiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzEzIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XMTQiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yLlcxNSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzE2IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XMTciLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yLlcxOCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzE5IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XMjAiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yLlcyMSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzIyIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XMjMiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yLlcyNCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzI1IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMy5XMSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjMuVzIiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlczIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMy5XNCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjMuVzUiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlc2IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMy5XNyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjMuVzgiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlc5IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMy5XMTAiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlcxMSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjMuVzEyIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMy5XMTMiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlcxNCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjMuVzE1IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMy5XMTYiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlcxNyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjMuVzE4IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMy5XMTkiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlcyMCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjMuVzIxIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zIiwKICAgICJHQS5TUkMuQkFLRVJZLjEuVzEiLAogICAgIkdBLlNSQy5CQUtFUlkuMS5XMiIsCiAgICAiR0EuU1JDLkJBS0VSWS4xLlczIiwKICAgICJHQS5TUkMuQkFLRVJZLjEuVzQiLAogICAgIkdBLlNSQy5CQUtFUlkuMS5XNSIsCiAgICAiR0EuU1JDLkJBS0VSWS4xLlc2IiwKICAgICJHQS5TUkMuQkFLRVJZLjEuVzciLAogICAgIkdBLlNSQy5CQUtFUlkuMS5XOCIsCiAgICAiR0EuU1JDLkJBS0VSWS4xLlc5IiwKICAgICJHQS5TUkMuQkFLRVJZLjEuVzEwIiwKICAgICJHQS5TUkMuQkFLRVJZLjEuVzExIiwKICAgICJHQS5TUkMuQkFLRVJZLjEuVzEyIiwKICAgICJHQS5TUkMuQkFLRVJZLjEuVzEzIiwKICAgICJHQS5TUkMuQkFLRVJZLjEuVzE0IiwKICAgICJHQS5TUkMuQkFLRVJZLjEuVzE1IiwKICAgICJHQS5TUkMuQkFLRVJZLjEuVzE2IiwKICAgICJHQS5TUkMuQkFLRVJZLjEuVzE3IiwKICAgICJHQS5TUkMuQkFLRVJZLjEuVzE4IiwKICAgICJHQS5TUkMuQkFLRVJZLjEuVzE5IiwKICAgICJHQS5TUkMuQkFLRVJZLjEuVzIwIiwKICAgICJHQS5TUkMuQkFLRVJZLjEuVzIxIiwKICAgICJHQS5TUkMuQkFLRVJZLjEuVzIyIiwKICAgICJHQS5TUkMuQkFLRVJZLjEuVzIzIiwKICAgICJHQS5TUkMuQkFLRVJZLjIuVzEiLAogICAgIkdBLlNSQy5CQUtFUlkuMi5XMiIsCiAgICAiR0EuU1JDLkJBS0VSWS4yLlczIiwKICAgICJHQS5TUkMuQkFLRVJZLjIuVzQiLAogICAgIkdBLlNSQy5CQUtFUlkuMi5XNSIsCiAgICAiR0EuU1JDLkJBS0VSWS4yLlc2IiwKICAgICJHQS5TUkMuQkFLRVJZLjIuVzciLAogICAgIkdBLlNSQy5CQUtFUlkuMi5XOCIsCiAgICAiR0EuU1JDLkJBS0VSWS4yLlc5IiwKICAgICJHQS5TUkMuQkFLRVJZLjIuVzEwIiwKICAgICJHQS5TUkMuQkFLRVJZLjIuVzExIiwKICAgICJHQS5TUkMuQkFLRVJZLjIuVzEyIiwKICAgICJHQS5TUkMuQkFLRVJZLjIuVzEzIiwKICAgICJHQS5TUkMuQkFLRVJZLjIuVzE0IiwKICAgICJHQS5TUkMuQkFLRVJZLjIuVzE1IiwKICAgICJHQS5TUkMuQkFLRVJZLjIuVzE2IiwKICAgICJHQS5TUkMuQkFLRVJZLjIuVzE3IiwKICAgICJHQS5TUkMuQkFLRVJZLjIuVzE4IiwKICAgICJHQS5TUkMuQkFLRVJZLjIuVzE5IiwKICAgICJHQS5TUkMuQkFLRVJZLjIuVzIwIiwKICAgICJHQS5TUkMuQkFLRVJZLjIuVzIxIiwKICAgICJHQS5TUkMuQkFLRVJZLjEiLAogICAgIkdBLlNSQy5CQUtFUlkuMiIsCiAgICAiR0EuU1JDLkJBS0VSWS4zLlcxIiwKICAgICJHQS5TUkMuQkFLRVJZLjMuVzIiLAogICAgIkdBLlNSQy5CQUtFUlkuMy5XMyIsCiAgICAiR0EuU1JDLkJBS0VSWS4zLlc0IiwKICAgICJHQS5TUkMuQkFLRVJZLjMuVzUiLAogICAgIkdBLlNSQy5CQUtFUlkuMy5XNiIsCiAgICAiR0EuU1JDLkJBS0VSWS4zLlc3IiwKICAgICJHQS5TUkMuQkFLRVJZLjMuVzgiLAogICAgIkdBLlNSQy5CQUtFUlkuMy5XOSIsCiAgICAiR0EuU1JDLkJBS0VSWS4zLlcxMCIsCiAgICAiR0EuU1JDLkJBS0VSWS4zLlcxMSIsCiAgICAiR0EuU1JDLkJBS0VSWS4zLlcxMiIsCiAgICAiR0EuU1JDLkJBS0VSWS4zLlcxMyIsCiAgICAiR0EuU1JDLkJBS0VSWS4zLlcxNCIsCiAgICAiR0EuU1JDLkJBS0VSWS4zLlcxNSIsCiAgICAiR0EuU1JDLkJBS0VSWS4zLlcxNiIsCiAgICAiR0EuU1JDLkJBS0VSWS4zLlcxNyIsCiAgICAiR0EuU1JDLkJBS0VSWS4zLlcxOCIsCiAgICAiR0EuU1JDLkJBS0VSWS4zLlcxOSIsCiAgICAiR0EuU1JDLkJBS0VSWS4zIgogIF0sCiAgImFzc2lzdGFuY2UiOiBbCiAgICAid29yZDpiYWtlcnk6aW50YWN0IgogIF0sCiAgImhpc3RvcnkiOiBbCiAgICAiNjYzODEyMDctNjdkYy00NjUyLWI3ZWMtM2I1NGY2OWIyMjU1IiwKICAgICJCIiwKICAgICIzYTE2NGE1OS0xYWQ1LTQwZDYtOTJkNC0wYjU1YTI1NWJiNzMiLAogICAgIjY3ZjY1MDg4LWNhNmYtNGEzNC1iNWVkLWI0ODQzZTk0ZGYzMSIsCiAgICAiYzA1ZjZhMGMtYmViZi00ZTM3LWIzODAtZjk0NjgxNDkyODcxIiwKICAgICIxYjY3NzRjMC1jY2IwLTQzMWYtYTFhOS05YTYxNTE0OWU1YjEiLAogICAgIjQ5ZjFiNjJlLWI5OWQtNDc3YS1iMjI5LTYyMGM2MjY5YTYzZiIsCiAgICAiYzk4YThjOTctM2FkNy00MWQ2LWFhNzQtOTA2ZTY3ZTIwMzYxIiwKICAgICJlZDQ4NDYwZC1hNDU4LTRlNmUtYWRkNS1mOWRiMGZjMTQ5NWQiLAogICAgImU1ZTVmNDZlLTY2ZWQtNDA1OC05YTRmLWZmMTI5ZjVmOGI0OCIsCiAgICAiNzc3NDAzMWYtNGZiMS00ZjM2LWFjZWItNTE3ZmUzMzE4ZDVjIiwKICAgICJhMzc0NDI2ZC05NmFlLTRiNTktYTRlYi00YmE4MDk2MjFkNmIiLAogICAgImI3MmQwMmY5LWU5MmQtNGI1ZC1iNGZiLWIwODdhMDZmNDcyZiIsCiAgICAiNTg3YzVjMTEtZTRjZi00YTBjLThhODgtYjY2YzJjMWUwYWVkIiwKICAgICI4MjM2NjEwYy03OWE5LTQwYWItODJmNC0xNTAzZDk2MDdjYWQiLAogICAgIjdjYmIwM2RjLWQ4NDktNDllYy04YjRhLWVmMTdmODMxYjZiYyIKICBdLAogICJyZWFkaW5nIjogewogICAgImJha2VyeSI6IDAsCiAgICAiYmFrZXJ5OnN0ZXA6W251bGwsXCJuZWVkZWRcIl0iOiAwCiAgfSwKICAicmVkdWNlZE1vdGlvbiI6IGZhbHNlLAogICJsYXJnZVRleHQiOiBmYWxzZQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "80555de4c23a13a481f8-f778c4041c2fea32e433",
+          "file": "garden-bakery.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "Bakery: connected repair, wrong placement, compact recovery, baking, accompanied thanks and exact draft excerpt",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 72345,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:21:12.163Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "native-selection-trace",
+                      "contentType": "application/json",
+                      "body": "W3sia2V5IjoiQ29udHJvbCtIb21lIiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6MH0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6MX0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6Mn0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6M30seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6NH0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6NX0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6Nn0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6N30seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6OH0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6OX0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6MTB9XQ=="
+                    },
+                    {
+                      "name": "bakery-result",
+                      "contentType": "application/json",
+                      "body": "ewogICJ2ZXJzaW9uIjogMywKICAiY29udGVudCI6ICJnYXJkZW4tY2hhcHRlci0zIiwKICAic3RvcnkiOiB7CiAgICAibWV0U29sIjogZmFsc2UsCiAgICAic29sQ2hvaWNlIjogIm5vbmUiLAogICAgInNvbERyYWZ0IjogewogICAgICAidGV4dCI6ICIiLAogICAgICAicmV2aXNpb24iOiAwCiAgICB9LAogICAgInNvbEVuZGluZyI6IG51bGwsCiAgICAibWFyYVBpY3R1cmUiOiAicmVwYWlyIiwKICAgICJsYXRlcktub3duIjogZmFsc2UsCiAgICAicXVlc3Rpb25zIjogW10sCiAgICAic29sUmVwb3J0ZWQiOiBmYWxzZSwKICAgICJtYXJhUmVwb3J0ZWQiOiBmYWxzZSwKICAgICJ0aW1lQWdyZWVkIjogbnVsbCwKICAgICJwbGFuIjogbnVsbCwKICAgICJzb2xJbnZpdGF0aW9uIjogbnVsbCwKICAgICJtYXJhSW52aXRhdGlvbiI6IG51bGwsCiAgICAicGhhc2UiOiAicGxhbm5pbmciLAogICAgInNvbE91dGNvbWUiOiBudWxsLAogICAgInJlY29yZHMiOiB7CiAgICAgICJtYXJhIjogbnVsbCwKICAgICAgInNvbCI6IG51bGwsCiAgICAgICJncmFuZG1hIjogZmFsc2UsCiAgICAgICJwaXAiOiBudWxsCiAgICB9LAogICAgImdyYW5kbWFDb3B5IjogIm5vbmUiLAogICAgImNsb3NpbmdEb25lIjogZmFsc2UsCiAgICAiZW5kaW5nIjogbnVsbCwKICAgICJwcmVzZW50YXRpb24iOiB7CiAgICAgICJwYWdlIjogMCwKICAgICAgImZpbmlzaGVkIjogZmFsc2UKICAgIH0sCiAgICAiYW5zd2VycyI6IHt9LAogICAgImJyaWRnZUZhaWx1cmVzIjogMAogIH0sCiAgInJpdmVyIjogewogICAgImVkaXRpb24iOiAiY29ubmVjdGVkLTIwMjYwOTE1IiwKICAgICJyb3Blc0NvbGxlY3RlZCI6IHRydWUsCiAgICAic29pbFByZXBhcmVkIjogZmFsc2UsCiAgICAiYXR0YWNobWVudHMiOiB7CiAgICAgICJ3ZXN0IjogImEiLAogICAgICAiZWFzdCI6ICJiIgogICAgfSwKICAgICJyb3BlTG9jYXRpb25zIjogewogICAgICAid2VzdCI6ICJhdHRhY2hlZCIsCiAgICAgICJlYXN0IjogImF0dGFjaGVkIgogICAgfSwKICAgICJib2F0IjogewogICAgICAicG9zaXRpb24iOiB7CiAgICAgICAgIngiOiAtMS40LAogICAgICAgICJ6IjogMC44CiAgICAgIH0sCiAgICAgICJwaGFzZSI6ICJtb29yZWQiCiAgICB9CiAgfSwKICAibWFyYSI6IHsKICAgICJlZGl0aW9uIjogImNvbm5lY3RlZC0yMDI2MDkxNSIsCiAgICAiYXNraW5nIjogIm5vbmUiLAogICAgInJldHVybk9mZmVyZWQiOiBmYWxzZSwKICAgICJwZXJtaXNzaW9uIjogZmFsc2UsCiAgICAic2VydmljZSI6ICJ3YWl0aW5nIiwKICAgICJwYXJ0aWNpcGF0ZWQiOiBmYWxzZSwKICAgICJzaGFyZWRBdCI6ICJub25lIiwKICAgICJzY2VuZSI6IG51bGwKICB9LAogICJiYWtlcnkiOiB7CiAgICAiZWRpdGlvbiI6ICJjb25uZWN0ZWQtMjAyNjA5MTUiLAogICAgInN0YWdlIjogImRvbmUiLAogICAgIm1ldCI6IHRydWUsCiAgICAicGVybWlzc2lvbiI6IHRydWUsCiAgICAidGlsZSI6ICJyb29mIiwKICAgICJjcmFja2VkIjogInNldC1hc2lkZSIsCiAgICAibG9hZiI6ICJzb2wiLAogICAgInJpbmEiOiB7CiAgICAgICJ4IjogNS44MTkwMzk1NzU5NDQyNjEsCiAgICAgICJ6IjogLTAuOTg3NzY2MzQ2NDQxODM5OQogICAgfSwKICAgICJ1bnNoYXBlZEJhdGNoZXMiOiAxCiAgfSwKICAiZ2F0aGVyaW5nIjogewogICAgImVkaXRpb24iOiAiY29ubmVjdGVkLTIwMjYwOTE1IiwKICAgICJyZXBvcnRlZCI6IG51bGwsCiAgICAiYXJyaXZhbCI6ICJub3Qtc3RhcnRlZCIsCiAgICAid2VsY29tZSI6IGZhbHNlLAogICAgInNvbFBlcmZvcm1lZCI6IG51bGwsCiAgICAic29sRGlzY2xvc2VkIjogZmFsc2UsCiAgICAiY3VzaGlvbnMiOiBmYWxzZSwKICAgICJwYWdlQ29tcGxldGUiOiBmYWxzZSwKICAgICJncmFuZG1hUGVyZm9ybWVkIjogZmFsc2UsCiAgICAidHVybiI6IG51bGwKICB9LAogICJjb252ZXJzYXRpb25zIjogewogICAgIm1hcmEiOiB7CiAgICAgICJwYXJ0IjogMCwKICAgICAgImNvbXBsZXRlIjogZmFsc2UKICAgIH0sCiAgICAiYmFrZXJ5IjogewogICAgICAicGFydCI6IDIsCiAgICAgICJjb21wbGV0ZSI6IHRydWUKICAgIH0sCiAgICAic29sIjogewogICAgICAicGFydCI6IDAsCiAgICAgICJjb21wbGV0ZSI6IGZhbHNlCiAgICB9CiAgfSwKICAicnVuSWQiOiAiYjVkYmYxZjUtMDA5Ny00YjM2LTgzYmEtMTJhNTUzZTUyZjBiIiwKICAicmV2aXNpb24iOiAzODUsCiAgInN0YXJ0ZWQiOiB0cnVlLAogICJwaXAiOiB7CiAgICAieCI6IDQuNjUsCiAgICAieiI6IC0xLjI1CiAgfSwKICAic2VjdGlvbnMiOiB7CiAgICAiYSI6IHsKICAgICAgIngiOiAtMC43NzUsCiAgICAgICJ6IjogMywKICAgICAgInJvdGF0aW9uIjogMAogICAgfSwKICAgICJiIjogewogICAgICAieCI6IDAuNzc1LAogICAgICAieiI6IDMsCiAgICAgICJyb3RhdGlvbiI6IDAKICAgIH0KICB9LAogICJmZXJyeVNpZGUiOiAid2VzdCIsCiAgImpvaW5lZCI6IHRydWUsCiAgIndlc3QiOiB0cnVlLAogICJlYXN0IjogdHJ1ZSwKICAiY3Jvc3NlZCI6IHRydWUsCiAgInNlZWQiOiAicGlwIiwKICAiYmxvb21lZCI6IGZhbHNlLAogICJtYXJhSGVhcmQiOiBmYWxzZSwKICAicGFnZSI6ICJtYXJhIiwKICAiZ3JhbmRtYUhlYXJkIjogZmFsc2UsCiAgImV4cG9zZWQiOiBbCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzEiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlcyIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzQiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlc1IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XNiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzciLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlc4IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XOSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzEwIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMTEiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlcxMiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzEzIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMTQiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlcxNSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzE2IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMTciLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlcxOCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzE5IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMjAiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlcyMSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzIyIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMjMiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlcyNCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzI1IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMjYiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlcyNyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzI4IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMjkiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlczMCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzMxIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMzIiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlczMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzM0IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XMSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzIiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yLlczIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XNCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzUiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yLlc2IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XNyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzgiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yLlc5IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XMTAiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yLlcxMSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzEyIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XMTMiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yLlcxNCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzE1IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XMTYiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yLlcxNyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzE4IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XMTkiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yLlcyMCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzIxIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XMjIiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yLlcyMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzI0IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XMjUiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlcxIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMy5XMiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjMuVzMiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlc0IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMy5XNSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjMuVzYiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlc3IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMy5XOCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjMuVzkiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlcxMCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjMuVzExIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMy5XMTIiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlcxMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjMuVzE0IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMy5XMTUiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlcxNiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjMuVzE3IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMy5XMTgiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlcxOSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjMuVzIwIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMy5XMjEiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjMiLAogICAgIkdBLlNSQy5CQUtFUlkuMS5XMSIsCiAgICAiR0EuU1JDLkJBS0VSWS4xLlcyIiwKICAgICJHQS5TUkMuQkFLRVJZLjEuVzMiLAogICAgIkdBLlNSQy5CQUtFUlkuMS5XNCIsCiAgICAiR0EuU1JDLkJBS0VSWS4xLlc1IiwKICAgICJHQS5TUkMuQkFLRVJZLjEuVzYiLAogICAgIkdBLlNSQy5CQUtFUlkuMS5XNyIsCiAgICAiR0EuU1JDLkJBS0VSWS4xLlc4IiwKICAgICJHQS5TUkMuQkFLRVJZLjEuVzkiLAogICAgIkdBLlNSQy5CQUtFUlkuMS5XMTAiLAogICAgIkdBLlNSQy5CQUtFUlkuMS5XMTEiLAogICAgIkdBLlNSQy5CQUtFUlkuMS5XMTIiLAogICAgIkdBLlNSQy5CQUtFUlkuMS5XMTMiLAogICAgIkdBLlNSQy5CQUtFUlkuMS5XMTQiLAogICAgIkdBLlNSQy5CQUtFUlkuMS5XMTUiLAogICAgIkdBLlNSQy5CQUtFUlkuMS5XMTYiLAogICAgIkdBLlNSQy5CQUtFUlkuMS5XMTciLAogICAgIkdBLlNSQy5CQUtFUlkuMS5XMTgiLAogICAgIkdBLlNSQy5CQUtFUlkuMS5XMTkiLAogICAgIkdBLlNSQy5CQUtFUlkuMS5XMjAiLAogICAgIkdBLlNSQy5CQUtFUlkuMS5XMjEiLAogICAgIkdBLlNSQy5CQUtFUlkuMS5XMjIiLAogICAgIkdBLlNSQy5CQUtFUlkuMS5XMjMiLAogICAgIkdBLlNSQy5CQUtFUlkuMi5XMSIsCiAgICAiR0EuU1JDLkJBS0VSWS4yLlcyIiwKICAgICJHQS5TUkMuQkFLRVJZLjIuVzMiLAogICAgIkdBLlNSQy5CQUtFUlkuMi5XNCIsCiAgICAiR0EuU1JDLkJBS0VSWS4yLlc1IiwKICAgICJHQS5TUkMuQkFLRVJZLjIuVzYiLAogICAgIkdBLlNSQy5CQUtFUlkuMi5XNyIsCiAgICAiR0EuU1JDLkJBS0VSWS4yLlc4IiwKICAgICJHQS5TUkMuQkFLRVJZLjIuVzkiLAogICAgIkdBLlNSQy5CQUtFUlkuMi5XMTAiLAogICAgIkdBLlNSQy5CQUtFUlkuMi5XMTEiLAogICAgIkdBLlNSQy5CQUtFUlkuMi5XMTIiLAogICAgIkdBLlNSQy5CQUtFUlkuMi5XMTMiLAogICAgIkdBLlNSQy5CQUtFUlkuMi5XMTQiLAogICAgIkdBLlNSQy5CQUtFUlkuMi5XMTUiLAogICAgIkdBLlNSQy5CQUtFUlkuMi5XMTYiLAogICAgIkdBLlNSQy5CQUtFUlkuMi5XMTciLAogICAgIkdBLlNSQy5CQUtFUlkuMi5XMTgiLAogICAgIkdBLlNSQy5CQUtFUlkuMi5XMTkiLAogICAgIkdBLlNSQy5CQUtFUlkuMi5XMjAiLAogICAgIkdBLlNSQy5CQUtFUlkuMi5XMjEiLAogICAgIkdBLlNSQy5CQUtFUlkuMSIsCiAgICAiR0EuU1JDLkJBS0VSWS4yIiwKICAgICJHQS5TUkMuQkFLRVJZLjMuVzEiLAogICAgIkdBLlNSQy5CQUtFUlkuMy5XMiIsCiAgICAiR0EuU1JDLkJBS0VSWS4zLlczIiwKICAgICJHQS5TUkMuQkFLRVJZLjMuVzQiLAogICAgIkdBLlNSQy5CQUtFUlkuMy5XNSIsCiAgICAiR0EuU1JDLkJBS0VSWS4zLlc2IiwKICAgICJHQS5TUkMuQkFLRVJZLjMuVzciLAogICAgIkdBLlNSQy5CQUtFUlkuMy5XOCIsCiAgICAiR0EuU1JDLkJBS0VSWS4zLlc5IiwKICAgICJHQS5TUkMuQkFLRVJZLjMuVzEwIiwKICAgICJHQS5TUkMuQkFLRVJZLjMuVzExIiwKICAgICJHQS5TUkMuQkFLRVJZLjMuVzEyIiwKICAgICJHQS5TUkMuQkFLRVJZLjMuVzEzIiwKICAgICJHQS5TUkMuQkFLRVJZLjMuVzE0IiwKICAgICJHQS5TUkMuQkFLRVJZLjMuVzE1IiwKICAgICJHQS5TUkMuQkFLRVJZLjMuVzE2IiwKICAgICJHQS5TUkMuQkFLRVJZLjMuVzE3IiwKICAgICJHQS5TUkMuQkFLRVJZLjMuVzE4IiwKICAgICJHQS5TUkMuQkFLRVJZLjMuVzE5IiwKICAgICJHQS5TUkMuQkFLRVJZLjMiCiAgXSwKICAiYXNzaXN0YW5jZSI6IFsKICAgICJ3b3JkOmJha2VyeTppbnRhY3QiCiAgXSwKICAiaGlzdG9yeSI6IFsKICAgICI5ODU2ZTM0Zi00Yjk3LTRhZTItOWIzYS1hYzQzYTBmNzJkOTMiLAogICAgIkIiLAogICAgImU5ZDg5YTM5LWQ0ZDItNDY5MS1hN2IyLTE4ODY4MDc3MTFlZCIsCiAgICAiYzMyMzE0MzYtMDBhMi00ZDc3LTlkYjUtMDA2OTU3YWFiYmQ0IiwKICAgICIwNTgyODQxYi0yNzUzLTQxNTMtYTJkZi1iMDhjMmI4NDkyOGQiLAogICAgIjc2OWI0ZWI4LTVkYWUtNGIwYi05M2YwLWZjNjM2MmUxYmFmMyIsCiAgICAiNjkzMDRjNWYtYTNlMC00Nzg2LTllMTItMzY5NTM5YWEyMjMyIiwKICAgICI0MWFiMDAyMC05Nzc5LTQyNTgtYjhjZi1kOGE2NWQ2NzlhZjgiLAogICAgIjVhNDg3OTFhLTc2YTItNGIyNC1iZDhiLTZiODcyYjhiYjc0MyIsCiAgICAiMjM4NTMzNzgtYmU0MC00MTZkLWFhMzktYzEzYjI4MWJiYmY0IiwKICAgICI2NzlmZGMwYi1kZTY5LTQxYjUtODU4NC0xZjFlNmY1YTg2ZWIiLAogICAgImI3YWI1YTUwLWZmY2ItNGIzZC05Yzc5LWViMWUyYTBlNGYwZSIsCiAgICAiYWI0N2Q3NTctZDdlOC00N2JiLWEyNzgtNGI1YWJiY2EwMmJhIiwKICAgICJlNzY1NzIyYi00MjdiLTRmM2QtYTNiMC04MjYwZDA5ZGFiMjkiLAogICAgIjFiNWUwZWI2LTQ0MzItNGIyYS04NWI1LTc5NGQ3MGQwMGYzMiIsCiAgICAiOGUwNGIxNTctZjA4Yy00YTlmLWI3MWQtM2RmMGEwNzY4OTIyIgogIF0sCiAgInJlYWRpbmciOiB7CiAgICAiYmFrZXJ5IjogMCwKICAgICJiYWtlcnk6c3RlcDpbMixcImFycml2YWxcIl0iOiAyMDMuMTk5OTk2OTQ4MjQyMiwKICAgICJiYWtlcnk6c3RlcDpbbnVsbCxcIm5lZWRlZFwiXSI6IDAsCiAgICAiYmFrZXJ5OnN0ZXA6W251bGwsXCJzZWFsZWRcIl0iOiAxMzcuNjAwMDA2MTAzNTE1NjIKICB9LAogICJyZWR1Y2VkTW90aW9uIjogZmFsc2UsCiAgImxhcmdlVGV4dCI6IGZhbHNlCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "80555de4c23a13a481f8-3fc9a6a25140fc15e358",
+          "file": "garden-bakery.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "Bakery: connected repair, wrong placement, compact recovery, baking, accompanied thanks and exact draft excerpt",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 58265,
+                  "error": {
+                    "message": "TypeError: Cannot read properties of null (reading 'stage')",
+                    "stack": "TypeError: Cannot read properties of null (reading 'stage')\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-bakery.spec.ts:13:613\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-bakery.spec.ts:13:567",
+                    "location": {
+                      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-bakery.spec.ts",
+                      "column": 613,
+                      "line": 13
+                    },
+                    "snippet": "  11 |  await button(page,'Go to Rina’s bakery').click();await expect(page.locator('.garden-bakery-controls')).toBeVisible();await button(page,'Talk to Rina').click();await completeConversation(page);await expect(page.getByRole('heading',{name:'What Pip found at Rina’s bakery'})).toBeVisible();await page.locator('.garden-passage').getByRole('button',{name:'intact',exact:true}).click();await expect(page.getByRole('complementary',{name:'Word help: intact'})).toContainText('Whole and undamaged');await button(page,'Close word help').click();await button(page,'I can bring the spare tile to Sol.').click();await expect(page.locator('.garden-reading-scroll .g-dialogue-response').first()).toContainText('Rina says');await button(page,'Back to Pip').click();\n  12 |  const prior=await saved(page);expect(prior.bakery.tile).toBe('shelf');await button(page,'Go to the tile shelf').click();await button(page,'Take the spare tile').click();await expect.poll(async()=>(await saved(page)).bakery.tile).toBe('pip');await button(page,'Backpack').click();await expect(page.getByText('Rina’s spare roof tile',{exact:true})).toBeVisible();await button(page,'Back to Pip').click();await button(page,'Bring the tile to Sol').click();await button(page,'Give the tile to Sol').click();await button(page,'Direct Sol’s roof repair').click();await button(page,'Remove the cracked tile').click();await page.setViewportSize({width:1422,height:800});await button(page,'Beside the opening').click();await button(page,'Place the tile').click();await expect.poll(async()=>(await data(page)).stage).toBe('misplaced');expect((await data(page)).leakOpen).toBe(true);const directed=(await data(page)).solScreen;expect(directed.head.y).toBeLessThan(.95);expect(directed.feet.y).toBeGreaterThan(-.95);expect(Math.abs(directed.head.x)).toBeLessThan(.95);await page.screenshot({path:info.outputPath('misplaced-tile-leak.png')});\n> 13 |  await page.setViewportSize({width:320,height:568});await button(page,'Over the opening').click();await page.keyboard.press('Escape');await expect(button(page,'Over the opening')).toHaveAttribute('aria-pressed','false');await button(page,'Over the opening').click();await button(page,'Help').click();await expect(page.getByText(/Help and Pause stop travel and cancel unplaced tile previews/)).toBeVisible();await button(page,'Back to the roof repair').click();await expect(button(page,'Over the opening')).toHaveAttribute('aria-pressed','false');await page.reload();await expect.poll(async()=>(await data(page)).stage).toBe('misplaced');const box=await page.locator('.garden-scene canvas').boundingBox();expect(box?.height).toBeGreaterThanOrEqual(145);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:info.outputPath('roof-compact-recovery.png')});\n     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^\n  14 |  await button(page,'Over the opening').click();await button(page,'Place the tile').click();await expect.poll(async()=>(await data(page)).stage).toBe('sealed');expect((await data(page)).leakOpen).toBe(false);expect((await data(page)).rain).toBe(true);await page.setViewportSize({width:1422,height:800});const settled=(await data(page)).solScreen;expect(settled.head.y).toBeLessThan(.95);expect(settled.feet.y).toBeGreaterThan(-.95);await page.screenshot({path:info.outputPath('roof-laptop-fully-framed.png')});await button(page,'Let Rina check the flour').click();await expect.poll(async()=>(await data(page)).stage).toBe('checked');await page.setViewportSize({width:1440,height:1000});if(await button(page,'Go to Rina').isVisible())await button(page,'Go to Rina').click();await button(page,'Make the dough with Rina').click();await expect(page.locator('.garden-reading-scroll')).toContainText('Similar-sized loaves will bake evenly');await button(page,'Try baking the whole lump').click();await expect(page.locator('.garden-scene')).toHaveAttribute('data-action-kind','bakeUnshaped');await expect(page.locator('.garden-reader')).toHaveCount(0);await expect.poll(async()=>(await data(page)).stage).toBe('checked');await expect(page.locator('.garden-reading-scroll')).toContainText('The middle was still doughy');expect((await data(page)).unevenBatchVisible).toBe(true);expect((await saved(page)).bakery.loaf).toBe('none');await page.reload();await button(page,'Make the dough with Rina').click();await button(page,'Shape the loaves').click();await button(page,'Bake the bread').click();await expect.poll(async()=>(await data(page)).stage).toBe('baked');await page.screenshot({path:info.outputPath('bread-in-oven.png')});await button(page,'Take a loaf to thank Sol').click();await expect.poll(async()=>(await data(page)).loaf).toBe('rina');await button(page,'Walk with Rina to the workshop').click();await button(page,'Let Rina give Sol the loaf').click();await expect(page.locator('.garden-scene')).toHaveAttribute('data-camera-focus','workshop');await expect(page.locator('.garden-scene')).toHaveAttribute('data-action-kind','thankSol');await page.screenshot({path:info.outputPath('actual-thanks-handoff.png')});await expect.poll(async()=>(await data(page)).stage).toBe('done');const end=await saved(page);expect(end.bakery.loaf).toBe('sol');for(const key of ['seed','river','mara','page'])expect(end[key]).toEqual(prior[key]);expect(end.story.metSol).toBe(false);await page.screenshot({path:info.outputPath('actual-thanks.png')});\n  15 |  await button(page,'Talk to Sol').click();await completeConversation(page);await button(page,'Let’s finish the ending together.').click();const full='Rina baked the bread she had promised. '.repeat(120)+'She brought me a loaf to thank me.';await page.getByLabel('Your ending for Sol’s story',{exact:true}).fill(full);await page.getByText('Choose a shorter part for feedback',{exact:true}).click();const selector=page.getByLabel('Select words from your ending',{exact:true});await selector.click();const selectionTrace:any[]=[];for(const key of ['Control+Home','Shift+ArrowRight','Shift+ArrowRight','Shift+ArrowRight','Shift+ArrowRight','Shift+ArrowRight','Shift+ArrowRight','Shift+ArrowRight','Shift+ArrowRight','Shift+ArrowRight','Shift+ArrowRight']){await page.keyboard.press(key);selectionTrace.push(await selector.evaluate((el,key)=>({key,active:document.activeElement?.id,start:(el as HTMLTextAreaElement).selectionStart,end:(el as HTMLTextAreaElement).selectionEnd}),key));}await info.attach('native-selection-trace',{body:JSON.stringify(selectionTrace),contentType:'application/json'});await expect.poll(()=>selector.evaluate(el=>(el as HTMLTextAreaElement).selectionEnd-(el as HTMLTextAreaElement).selectionStart)).toBeGreaterThan(0);await button(page,'Use selected words for feedback').click();await expect(page.getByText('Feedback on these selected words only',{exact:true})).toBeVisible();let submitted='';await page.route('**/api/garden/feedback',async route=>{const req=route.request().postDataJSON();submitted=req.text;await route.fulfill({status:503,contentType:'application/json',body:JSON.stringify({requestId:req.requestId,status:'unavailable'})});});await button(page,'Ask for feedback').click();await expect(page.getByText('AI feedback isn’t available right now. Your words are kept here. You can use a hint, revise, or continue.')).toBeVisible();expect(submitted).toBe('Rina baked');expect(submitted.length).toBeLessThan(30);expect((await saved(page)).story.solDraft.text).toBe(full);expect((await saved(page)).story.solEnding).toBe(null);await page.getByLabel('Your ending for Sol’s story',{exact:true}).fill('The rain turned into chocolate.');await button(page,'Try my ending').click();await expect(page.getByRole('heading',{name:'Your suggested ending for Sol'})).toBeVisible();await expect(page.locator('.g-world-activity-caption')).toContainText('these words have not been checked');await button(page,'Use this ending').click();await expect(page.locator('.garden-reading-scroll')).toContainText('The rain turned into chocolate.');expect((await saved(page)).bakery).toEqual(end.bakery);expect(errors).toEqual([]);await info.attach('bakery-result',{body:JSON.stringify(end,null,2),contentType:'application/json'});\n  16 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-bakery.spec.ts",
+                        "column": 613,
+                        "line": 13
+                      },
+                      "message": "TypeError: Cannot read properties of null (reading 'stage')\n\n  11 |  await button(page,'Go to Rina’s bakery').click();await expect(page.locator('.garden-bakery-controls')).toBeVisible();await button(page,'Talk to Rina').click();await completeConversation(page);await expect(page.getByRole('heading',{name:'What Pip found at Rina’s bakery'})).toBeVisible();await page.locator('.garden-passage').getByRole('button',{name:'intact',exact:true}).click();await expect(page.getByRole('complementary',{name:'Word help: intact'})).toContainText('Whole and undamaged');await button(page,'Close word help').click();await button(page,'I can bring the spare tile to Sol.').click();await expect(page.locator('.garden-reading-scroll .g-dialogue-response').first()).toContainText('Rina says');await button(page,'Back to Pip').click();\n  12 |  const prior=await saved(page);expect(prior.bakery.tile).toBe('shelf');await button(page,'Go to the tile shelf').click();await button(page,'Take the spare tile').click();await expect.poll(async()=>(await saved(page)).bakery.tile).toBe('pip');await button(page,'Backpack').click();await expect(page.getByText('Rina’s spare roof tile',{exact:true})).toBeVisible();await button(page,'Back to Pip').click();await button(page,'Bring the tile to Sol').click();await button(page,'Give the tile to Sol').click();await button(page,'Direct Sol’s roof repair').click();await button(page,'Remove the cracked tile').click();await page.setViewportSize({width:1422,height:800});await button(page,'Beside the opening').click();await button(page,'Place the tile').click();await expect.poll(async()=>(await data(page)).stage).toBe('misplaced');expect((await data(page)).leakOpen).toBe(true);const directed=(await data(page)).solScreen;expect(directed.head.y).toBeLessThan(.95);expect(directed.feet.y).toBeGreaterThan(-.95);expect(Math.abs(directed.head.x)).toBeLessThan(.95);await page.screenshot({path:info.outputPath('misplaced-tile-leak.png')});\n> 13 |  await page.setViewportSize({width:320,height:568});await button(page,'Over the opening').click();await page.keyboard.press('Escape');await expect(button(page,'Over the opening')).toHaveAttribute('aria-pressed','false');await button(page,'Over the opening').click();await button(page,'Help').click();await expect(page.getByText(/Help and Pause stop travel and cancel unplaced tile previews/)).toBeVisible();await button(page,'Back to the roof repair').click();await expect(button(page,'Over the opening')).toHaveAttribute('aria-pressed','false');await page.reload();await expect.poll(async()=>(await data(page)).stage).toBe('misplaced');const box=await page.locator('.garden-scene canvas').boundingBox();expect(box?.height).toBeGreaterThanOrEqual(145);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:info.outputPath('roof-compact-recovery.png')});\n     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ^\n  14 |  await button(page,'Over the opening').click();await button(page,'Place the tile').click();await expect.poll(async()=>(await data(page)).stage).toBe('sealed');expect((await data(page)).leakOpen).toBe(false);expect((await data(page)).rain).toBe(true);await page.setViewportSize({width:1422,height:800});const settled=(await data(page)).solScreen;expect(settled.head.y).toBeLessThan(.95);expect(settled.feet.y).toBeGreaterThan(-.95);await page.screenshot({path:info.outputPath('roof-laptop-fully-framed.png')});await button(page,'Let Rina check the flour').click();await expect.poll(async()=>(await data(page)).stage).toBe('checked');await page.setViewportSize({width:1440,height:1000});if(await button(page,'Go to Rina').isVisible())await button(page,'Go to Rina').click();await button(page,'Make the dough with Rina').click();await expect(page.locator('.garden-reading-scroll')).toContainText('Similar-sized loaves will bake evenly');await button(page,'Try baking the whole lump').click();await expect(page.locator('.garden-scene')).toHaveAttribute('data-action-kind','bakeUnshaped');await expect(page.locator('.garden-reader')).toHaveCount(0);await expect.poll(async()=>(await data(page)).stage).toBe('checked');await expect(page.locator('.garden-reading-scroll')).toContainText('The middle was still doughy');expect((await data(page)).unevenBatchVisible).toBe(true);expect((await saved(page)).bakery.loaf).toBe('none');await page.reload();await button(page,'Make the dough with Rina').click();await button(page,'Shape the loaves').click();await button(page,'Bake the bread').click();await expect.poll(async()=>(await data(page)).stage).toBe('baked');await page.screenshot({path:info.outputPath('bread-in-oven.png')});await button(page,'Take a loaf to thank Sol').click();await expect.poll(async()=>(await data(page)).loaf).toBe('rina');await button(page,'Walk with Rina to the workshop').click();await button(page,'Let Rina give Sol the loaf').click();await expect(page.locator('.garden-scene')).toHaveAttribute('data-camera-focus','workshop');await expect(page.locator('.garden-scene')).toHaveAttribute('data-action-kind','thankSol');await page.screenshot({path:info.outputPath('actual-thanks-handoff.png')});await expect.poll(async()=>(await data(page)).stage).toBe('done');const end=await saved(page);expect(end.bakery.loaf).toBe('sol');for(const key of ['seed','river','mara','page'])expect(end[key]).toEqual(prior[key]);expect(end.story.metSol).toBe(false);await page.screenshot({path:info.outputPath('actual-thanks.png')});\n  15 |  await button(page,'Talk to Sol').click();await completeConversation(page);await button(page,'Let’s finish the ending together.').click();const full='Rina baked the bread she had promised. '.repeat(120)+'She brought me a loaf to thank me.';await page.getByLabel('Your ending for Sol’s story',{exact:true}).fill(full);await page.getByText('Choose a shorter part for feedback',{exact:true}).click();const selector=page.getByLabel('Select words from your ending',{exact:true});await selector.click();const selectionTrace:any[]=[];for(const key of ['Control+Home','Shift+ArrowRight','Shift+ArrowRight','Shift+ArrowRight','Shift+ArrowRight','Shift+ArrowRight','Shift+ArrowRight','Shift+ArrowRight','Shift+ArrowRight','Shift+ArrowRight','Shift+ArrowRight']){await page.keyboard.press(key);selectionTrace.push(await selector.evaluate((el,key)=>({key,active:document.activeElement?.id,start:(el as HTMLTextAreaElement).selectionStart,end:(el as HTMLTextAreaElement).selectionEnd}),key));}await info.attach('native-selection-trace',{body:JSON.stringify(selectionTrace),contentType:'application/json'});await expect.poll(()=>selector.evaluate(el=>(el as HTMLTextAreaElement).selectionEnd-(el as HTMLTextAreaElement).selectionStart)).toBeGreaterThan(0);await button(page,'Use selected words for feedback').click();await expect(page.getByText('Feedback on these selected words only',{exact:true})).toBeVisible();let submitted='';await page.route('**/api/garden/feedback',async route=>{const req=route.request().postDataJSON();submitted=req.text;await route.fulfill({status:503,contentType:'application/json',body:JSON.stringify({requestId:req.requestId,status:'unavailable'})});});await button(page,'Ask for feedback').click();await expect(page.getByText('AI feedback isn’t available right now. Your words are kept here. You can use a hint, revise, or continue.')).toBeVisible();expect(submitted).toBe('Rina baked');expect(submitted.length).toBeLessThan(30);expect((await saved(page)).story.solDraft.text).toBe(full);expect((await saved(page)).story.solEnding).toBe(null);await page.getByLabel('Your ending for Sol’s story',{exact:true}).fill('The rain turned into chocolate.');await button(page,'Try my ending').click();await expect(page.getByRole('heading',{name:'Your suggested ending for Sol'})).toBeVisible();await expect(page.locator('.g-world-activity-caption')).toContainText('these words have not been checked');await button(page,'Use this ending').click();await expect(page.locator('.garden-reading-scroll')).toContainText('The rain turned into chocolate.');expect((await saved(page)).bakery).toEqual(end.bakery);expect(errors).toEqual([]);await info.attach('bakery-result',{body:JSON.stringify(end,null,2),contentType:'application/json'});\n  16 | });\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-bakery.spec.ts:13:613\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-bakery.spec.ts:13:567"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:22:45.959Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\literacy-experience-20260916\\browser-reading-stories-1\\garden-bakery-Bakery-conne-36bb2-nks-and-exact-draft-excerpt-webkit\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\literacy-experience-20260916\\browser-reading-stories-1\\garden-bakery-Bakery-conne-36bb2-nks-and-exact-draft-excerpt-webkit\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\literacy-experience-20260916\\browser-reading-stories-1\\garden-bakery-Bakery-conne-36bb2-nks-and-exact-draft-excerpt-webkit\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-bakery.spec.ts",
+                    "column": 613,
+                    "line": 13
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "80555de4c23a13a481f8-bcb4bf4accf7e09f2e0d",
+          "file": "garden-bakery.spec.ts",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "garden-reading-support.spec.ts",
+      "file": "garden-reading-support.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Reading support: inspect choices without selecting, then read every green reply with word help and oral practice",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 15818,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:19:16.824Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-5edebd59a17ab0ac212a",
+          "file": "garden-reading-support.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "Reading support: own message and compact choice help retain words, place and font size",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 13195,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:19:33.036Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-db4d29794b0c7a60fe92",
+          "file": "garden-reading-support.spec.ts",
+          "line": 24,
+          "column": 1
+        },
+        {
+          "title": "Reading support: exact world controls can be inspected without placing a bridge section",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4478,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:19:46.283Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-dc4bff6771b5f7f77189",
+          "file": "garden-reading-support.spec.ts",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "Reading support: synthetic capture keeps Stop visible and pauses replay before word help",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 11150,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:19:50.805Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-ed12efa97a3e333f3422",
+          "file": "garden-reading-support.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "Reading support: long own writing is complete, bounded and resumes its reading page after reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 22055,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:20:02.015Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-c17ce49518167b0c9f0f",
+          "file": "garden-reading-support.spec.ts",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "Reading support: inspect choices without selecting, then read every green reply with word help and oral practice",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 13261,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:21:37.047Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-f154c002180901d0df71",
+          "file": "garden-reading-support.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "Reading support: own message and compact choice help retain words, place and font size",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 12995,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:21:50.944Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-30df6d586ff374a72a9f",
+          "file": "garden-reading-support.spec.ts",
+          "line": 24,
+          "column": 1
+        },
+        {
+          "title": "Reading support: exact world controls can be inspected without placing a bridge section",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 6180,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:22:03.971Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-3f3ae94c266062f24443",
+          "file": "garden-reading-support.spec.ts",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "Reading support: synthetic capture keeps Stop visible and pauses replay before word help",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 12105,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:22:10.176Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-7bf00b5947a8decfdf01",
+          "file": "garden-reading-support.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "Reading support: long own writing is complete, bounded and resumes its reading page after reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 21666,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:22:22.315Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-197eb246dfb7e899cde5",
+          "file": "garden-reading-support.spec.ts",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "Reading support: inspect choices without selecting, then read every green reply with word help and oral practice",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 73797,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:25:56.986Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-c454fc50800f47cc9220",
+          "file": "garden-reading-support.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "Reading support: own message and compact choice help retain words, place and font size",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 64632,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:27:11.022Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-00bc8a3c1546889f4b69",
+          "file": "garden-reading-support.spec.ts",
+          "line": 24,
+          "column": 1
+        },
+        {
+          "title": "Reading support: exact world controls can be inspected without placing a bridge section",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 33700,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:28:15.855Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-eb26cb894c4e91724069",
+          "file": "garden-reading-support.spec.ts",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "Reading support: synthetic capture keeps Stop visible and pauses replay before word help",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 41031,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:28:49.666Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-cb67d23a34ebf5dae995",
+          "file": "garden-reading-support.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "Reading support: long own writing is complete, bounded and resumes its reading page after reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 81762,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:29:30.800Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bde4d28661352ea025b8-0ce97f7da97a90f3a64a",
+          "file": "garden-reading-support.spec.ts",
+          "line": 47,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "garden-sequence.spec.ts",
+      "file": "garden-sequence.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Conversation sequence: prepared relay advances, persists, and is delivered at Grandma",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 19141,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:20:24.220Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-6065228d05e9b298dd3a",
+          "file": "garden-sequence.spec.ts",
+          "line": 12,
+          "column": 47
+        },
+        {
+          "title": "Conversation sequence: own relay advances, persists, and is delivered at Grandma",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 19555,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:20:43.410Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-dc9353df3ea2a5c46c71",
+          "file": "garden-sequence.spec.ts",
+          "line": 12,
+          "column": 47
+        },
+        {
+          "title": "Conversation sequence: largest text keeps one scroll, adjacent navigation and an optional own-message editor",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 11560,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:21:02.996Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-ec23a15f010b515225fd",
+          "file": "garden-sequence.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "Conversation sequence: prepared relay advances, persists, and is delivered at Grandma",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 20166,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:22:25.261Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-4c303d1348064031d0a1",
+          "file": "garden-sequence.spec.ts",
+          "line": 12,
+          "column": 47
+        },
+        {
+          "title": "Conversation sequence: own relay advances, persists, and is delivered at Grandma",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 21834,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:22:45.466Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-77188064ebbe71403226",
+          "file": "garden-sequence.spec.ts",
+          "line": 12,
+          "column": 47
+        },
+        {
+          "title": "Conversation sequence: largest text keeps one scroll, adjacent navigation and an optional own-message editor",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14519,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:23:07.353Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-e886d79a95cfe7e571e4",
+          "file": "garden-sequence.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "Conversation sequence: prepared relay advances, persists, and is delivered at Grandma",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 91345,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:27:06.960Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-1cefb9975a597a38fced",
+          "file": "garden-sequence.spec.ts",
+          "line": 12,
+          "column": 47
+        },
+        {
+          "title": "Conversation sequence: own relay advances, persists, and is delivered at Grandma",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 101622,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:28:38.695Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-bc5a6ccd4b94f79b5d26",
+          "file": "garden-sequence.spec.ts",
+          "line": 12,
+          "column": 47
+        },
+        {
+          "title": "Conversation sequence: largest text keeps one scroll, adjacent navigation and an optional own-message editor",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 27901,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T04:30:20.413Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c2509b9ebedda94afb4-61e225d3098fbf4f8075",
+          "file": "garden-sequence.spec.ts",
+          "line": 29,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-16T04:19:15.283Z",
+    "duration": 782509.783,
+    "expected": 26,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

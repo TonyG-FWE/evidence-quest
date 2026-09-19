@@ -147,7 +147,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Pin/peer mismatch: document exact incompatibility and make smallest compatible patch within chosen stack; never use a proprietary checkout.",
-      "status": "NOT_STARTED",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         3,
         5
@@ -163,6 +163,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/toolchain.json",
+        "result": "Clean installation, strict builds, 33 schema expectations, three contract checks and 23 authored guards pass; private origin verified. Gameplay is not yet implemented.",
+        "updatedAt": "2026-09-12T00:39:32.663Z"
       }
     },
     {
@@ -822,7 +827,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Unknown ID or changed frozen sentence fails the content build; repair transcription at its owning source.",
-      "status": "NOT_STARTED",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         6,
         10
@@ -838,6 +843,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/content-validation.json",
+        "result": "Full canonical transcription and FIX11.CONTENT structure pass. Runtime conditional behavior is tested in dependent tasks.",
+        "updatedAt": "2026-09-12T00:39:32.726Z"
       }
     },
     {
@@ -922,7 +932,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Unreadable labels/focus: repair native definitions; never rasterize clues.",
-      "status": "NOT_STARTED",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         2,
         4
@@ -938,6 +948,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/native-assets.json",
+        "result": "32 native asset definitions, 13 original icons, palette, focus and 48px control tokens prepared; browser behavior remains TASK11.07/16.",
+        "updatedAt": "2026-09-12T00:41:17.714Z"
       }
     },
     {
@@ -1044,7 +1059,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Missing endpoint/owner: create the specified component; a flattened room painting cannot substitute.",
-      "status": "NOT_STARTED",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         6,
         10
@@ -1060,6 +1075,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/temp-assets.json",
+        "result": "58 original temporary raster assets; 123 variants and 246 PNG exports, exact dimensions/anchors and per-density budgets checked. Contact sheet inspected; composition is tested in TASK11.06/16.",
+        "updatedAt": "2026-09-12T00:45:50.022Z"
       }
     },
     {
@@ -1136,7 +1156,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Duplicate mutation or lost revision: repair command owner; replay recorded synthetic event order before continuing.",
-      "status": "NOT_STARTED",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         4,
         7
@@ -1152,6 +1172,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/runtime-tests.txt",
+        "result": "10 contract suites pass, including all 65 orders through real handlers, cue/terminal idempotence, immutable snapshots, reentrant effects and matching save acknowledgments. Storage transport remains TASK11.14.",
+        "updatedAt": "2026-09-12T00:58:58.824Z"
       }
     },
     {
@@ -1284,7 +1309,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Unreachable anchor or duplicate follower: repair path/ownership against05, not room geometry.",
-      "status": "NOT_STARTED",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         6,
         10
@@ -1300,6 +1325,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/runtime-tests.txt",
+        "result": "All 61 approaches, legal follower routes, approach clearance, remote-owner rejection and retarget cancellation pass; four-room browser route and full Media-first recovery/premiere passed.",
+        "updatedAt": "2026-09-12T02:01:04.265Z"
       }
     },
     {
@@ -1475,7 +1505,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Focus trap, clipped source or hidden world consequence: repair before connected review.",
-      "status": "NOT_STARTED",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         5,
         8
@@ -1491,6 +1521,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/chromium-compact-unmet-pass.json",
+        "result": "Native keyboard/touch and Largest/Roomier compact flows pass; both banks remain whole. Stable control, tile and moved-note focus returns are verified.",
+        "updatedAt": "2026-09-12T03:22:29.050Z"
       }
     },
     {
@@ -1763,7 +1798,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Premature text/name/preview exposure: fail route acceptance and repair source slicing.",
-      "status": "NOT_STARTED",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         4,
         7
@@ -1779,6 +1814,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/chromium-final-main.json",
+        "result": "Exact recording frames, photo, post, full description, canceled and secured notice, native zoom/vocabulary and source-component exposure pass.",
+        "updatedAt": "2026-09-12T03:22:29.116Z"
       }
     },
     {
@@ -1987,7 +2027,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Invented NPC knowledge or automatic diagnosis: use exact selected-source branch or canonical neutral reply.",
-      "status": "NOT_STARTED",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         4,
         6
@@ -2003,6 +2043,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/chromium-final-boundaries.json",
+        "result": "Local character branches, scope-only versus full Remy delivery, Ari before/after recovery, in-place records and actual approached Jo explanation pass.",
+        "updatedAt": "2026-09-12T03:22:29.184Z"
       }
     },
     {
@@ -2147,7 +2192,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Lost note/remote handoff/duplicate item: repair ownership transition, then repeat both recovery orders.",
-      "status": "NOT_STARTED",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         4,
         6
@@ -2163,6 +2208,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/chromium-final-main.json",
+        "result": "Three fresh routes pass, including independent kit-first and Loop-first recovery, unread notes, physical docking/handoff and surviving-owner access.",
+        "updatedAt": "2026-09-12T03:22:29.252Z"
       }
     },
     {
@@ -2291,7 +2341,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Wrong gap index/canceled edit: correct atomic order operation and rerun exact operation sequence fixture.",
-      "status": "NOT_STARTED",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         3,
         5
@@ -2307,6 +2357,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/chromium-final-main.json",
+        "result": "Native and drag insertion/replacement/swap/return, boundary/no-op/cancel/invalid drops, uniqueness and certification invalidation pass.",
+        "updatedAt": "2026-09-12T03:22:29.338Z"
       }
     },
     {
@@ -2572,7 +2627,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Wrong endpoint/pause/certificate: compare per-cue expected states, fix pure rules or coordinator independently.",
-      "status": "NOT_STARTED",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         5,
         8
@@ -2588,6 +2643,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/runtime-tests.txt",
+        "result": "All 65 orders, five native successful plans, 36 cue-race variants, terminal finalization and both-mode Stop/Continue pass. Compact seed-only revision passes separately.",
+        "updatedAt": "2026-09-12T03:22:29.429Z"
       }
     },
     {
@@ -2747,7 +2807,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "False ending/history or gag gate: repair finalization/recap condition and rerun silent and interrupted paths.",
-      "status": "NOT_STARTED",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         3,
         5
@@ -2763,6 +2823,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/chromium-final-boundaries.json",
+        "result": "Full-show milestone, coral-backpack payoff, optional staged Toast, own-room reactions and factual recap chronology pass.",
+        "updatedAt": "2026-09-12T03:22:29.518Z"
       }
     },
     {
@@ -2944,7 +3009,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Fault test loses progress or removes uncertainty: repair read/write generations and transaction boundary; never claim close-time guarantee.",
-      "status": "NOT_STARTED",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         5,
         8
@@ -2960,6 +3025,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/chromium-final-main.json",
+        "result": "Real IndexedDB acknowledgment, previous/damaged/version/read/quota/conflict/reset cases, retained Unicode drafts and actual renderer crash recovery pass. Fault-injection limits remain explicit.",
+        "updatedAt": "2026-09-12T03:22:29.612Z"
       }
     },
     {
@@ -3205,7 +3275,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Unseen ordinary hint or fabricated interpretation: repair eligibility; authored mode never keyword-diagnoses text.",
-      "status": "NOT_STARTED",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         3,
         5
@@ -3221,6 +3291,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/coach-fault-final.json",
+        "result": "Authored/direct native assistance and three labeled development lifecycle tests pass, including real admission timeout. Twenty-three eligibility guards and ownership tests pass; no live model call.",
+        "updatedAt": "2026-09-12T03:22:29.691Z"
       }
     },
     {
@@ -3592,7 +3667,7 @@
       ],
       "expectedEvidence": "Versioned outputs, exact commands/results and relevant fixture assertions; browser tasks include visible evidence. No runtime result exists yet.",
       "failureAndRecovery": "Any essential route trap, missing consequence or failed recovery blocks milestone; repair owning task within its scope, re-estimate overrun.",
-      "status": "NOT_STARTED",
+      "status": "COMPLETE",
       "historicalEffortHours": [
         5,
         8
@@ -3608,6 +3683,11 @@
         "totalElapsedHours": null,
         "calibration": "CAL12.CONNECTED",
         "aggregation": "Components may overlap or include one another. Record intervals/attention separately; never sum them into elapsed time blindly."
+      },
+      "execution": {
+        "evidence": "evidence/first-connected-acceptance.md",
+        "result": "39 production Chromium, 16 Firefox/WebKit and 3 labeled development coaching checks pass across recorded runs. All 65 production-handler orders pass. Actual playable preview inspected; exact first-build and NOT_RUN boundaries recorded.",
+        "updatedAt": "2026-09-12T03:28:55.692Z"
       }
     },
     {
@@ -7669,7 +7749,13 @@
       "passCondition": "E4 + discovered NAV.MEDIA supports a suitable search destination, not guaranteed occupancy; E3 scope correction is labeled separately",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PARTIAL",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "Live interpretation of source relationships and participant inference remain NOT_RUN."
+      }
     },
     {
       "id": "CHECK11.L02",
@@ -7714,7 +7800,13 @@
       "passCondition": "Child’s explanation can connect personal arrival/joint planting with boat capacity/crossing, not merely name a tile",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PARTIAL",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "Meaning-sensitive live response and child explanation assessment remain NOT_RUN."
+      }
     },
     {
       "id": "CHECK11.L03",
@@ -7735,7 +7827,13 @@
       "passCondition": "Prior answer hint, relevant outcome exposure, later reflection, and copied response cannot become a false independent prediction",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.L04",
@@ -7815,7 +7913,13 @@
       "passCondition": "Seed ahead then crossing receives the same recognition as carrying the seed across; no penalty for harmless excess",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.L05",
@@ -7835,7 +7939,13 @@
       "passCondition": "Completion without a rationale remains success with reasoning unobserved; navigation/inactivity never becomes a reading diagnosis",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.L06",
@@ -7849,7 +7959,13 @@
       "passCondition": "Record voluntary investigation, confusion, revisions, and desire to continue separately; adult checks cannot establish child enjoyment or lasting learning",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "NOT_RUN",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "NOT_APPLICABLE",
+        "remaining": "Participant observation, child enjoyment and learning NOT_RUN."
+      }
     },
     {
       "id": "CHECK11.G01",
@@ -7865,7 +7981,13 @@
       "passCondition": "Old pending interaction canceled; new reachable intent honored",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.G02",
@@ -7881,7 +8003,13 @@
       "passCondition": "No wall crossing, remote interaction, or stranded avatar",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.G03",
@@ -7897,7 +8025,13 @@
       "passCondition": "Screen-relative movement; typing never moves character",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.G04",
@@ -7913,7 +8047,13 @@
       "passCondition": "One Loop, correct scene/location, no trapped follower",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.G05",
@@ -7937,7 +8077,13 @@
       "passCondition": "One canonical record, source preserved, knowledge consistent, no item consumed",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.G06",
@@ -7957,7 +8103,13 @@
       "passCondition": "Full case completes; recap does not claim a cancellation revision",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.G07",
@@ -7974,7 +8126,13 @@
       "passCondition": "Physical notice discovery; narrow contradiction; convenient onward route",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.G08",
@@ -7991,7 +8149,13 @@
       "passCondition": "Local facts, rack, notes, and Loop all available; no hidden evidence gate",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.P01",
@@ -8074,7 +8238,13 @@
       "passCondition": "Exactly the state outcomes defined in section 9; no hard-coded preference over equivalent success",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.P02",
@@ -8156,7 +8326,13 @@
       "passCondition": "Seed right/Pip left; no joint planting; no light; visible unmet state; no lost evidence",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.P03",
@@ -8237,7 +8413,13 @@
       "passCondition": "Same completed promise and launch eligibility, including harmless Ferry positions",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.P04",
@@ -8319,7 +8501,13 @@
       "passCondition": "No impossible planting/light, no teleportation; state preserved and later cues act on actual state",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.P05",
@@ -8339,7 +8527,13 @@
       "passCondition": "Old success does not authorize launch of the edited plan",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.P06",
@@ -8420,7 +8614,13 @@
       "passCondition": "Completion retained; seed never uprooted or returned across river",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.A01",
@@ -8449,7 +8649,13 @@
       "passCondition": "Eligible, useful move; source boundaries preserved; record failures rather than invent a percentage",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PARTIAL",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "Eligibility guards pass; genuine model selection usefulness NOT_RUN."
+      }
     },
     {
       "id": "CHECK11.A02",
@@ -8469,7 +8675,13 @@
       "passCondition": "No correction based solely on an extra Ferry; equivalent meaning accepted",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "NOT_RUN",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "NOT_APPLICABLE",
+        "remaining": "Equivalent game orders pass; meaning-sensitive live recognition NOT_RUN."
+      }
     },
     {
       "id": "CHECK11.A03",
@@ -8487,7 +8699,13 @@
       "passCondition": "Clarification or neutral response, not confident diagnosis",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "NOT_RUN",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "NOT_APPLICABLE",
+        "remaining": "Neutral authored response passes; genuine interpretation/clarification NOT_RUN."
+      }
     },
     {
       "id": "CHECK11.A04",
@@ -8515,7 +8733,13 @@
       "passCondition": "No new clue text/state mutation; invalid reference rejected",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.A05",
@@ -8536,7 +8760,13 @@
       "passCondition": "Authored fallback and all game actions usable",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.A06",
@@ -8557,7 +8787,13 @@
       "passCondition": "Relevant stale response discarded",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.A07",
@@ -8579,7 +8815,13 @@
       "passCondition": "No false independent inference label",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.A08",
@@ -8625,7 +8867,13 @@
       "passCondition": "Modes honestly identified in evidence; no simulated response presented as a live model result",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.A09",
@@ -8645,7 +8893,13 @@
       "passCondition": "Useful authored level-4 answer; actual new information recorded; no fake full-source discovery; ordinary hints retain spoiler limits",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.A10",
@@ -8662,7 +8916,13 @@
       "passCondition": "Acknowledge the plan using observed outcomes; no invented note reference or two-text inference claim",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "NOT_RUN",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "NOT_APPLICABLE",
+        "remaining": "Authored state-sensitive help only; genuine meaning-sensitive acknowledgment NOT_RUN."
+      }
     },
     {
       "id": "CHECK11.X01",
@@ -8682,7 +8942,13 @@
       "passCondition": "Movement alternatives, evidence, rail, hints, launch, reset all operable",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.X02",
@@ -8698,7 +8964,13 @@
       "passCondition": "Same necessary information and actions available",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.X03",
@@ -8716,7 +8988,13 @@
       "passCondition": "Readable sources, no clipped decisive words, usable object access",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.X04",
@@ -8732,7 +9010,13 @@
       "passCondition": "Equal story outcomes and source information, no compulsory elaborate animation",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.X05",
@@ -8754,7 +9038,13 @@
       "passCondition": "Predictable focus and no unintended movement or vanished instructions",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.AUTHORITY",
@@ -8769,7 +9059,13 @@
       "passCondition": "One authoritative, isolated entry point and bounded readiness",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.STORY",
@@ -8787,7 +9083,13 @@
       "passCondition": "Player as premiere captain, missing borrowed Loop and Little Bridge assignment",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.EDUCATION",
@@ -8808,7 +9110,13 @@
       "passCondition": "Use relevant details from more than one source to infer a reason or plan and revise a conflicting idea; access is not answer help",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PARTIAL",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "Voluntary multi-source records are implemented and exercised; inference assessment and learning evidence NOT_RUN."
+      }
     },
     {
       "id": "CHECK11.CONTENT",
@@ -8824,7 +9132,13 @@
       "passCondition": "Complete exact canonical copy/geometry/accesses and information slices, not example fragments",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.EXPOSURE",
@@ -8841,7 +9155,13 @@
       "passCondition": "E2 components, curled/full E3 and source availability/exposure/interpretation remain separate",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.ROUTES",
@@ -8858,7 +9178,13 @@
       "passCondition": "Correct-first, cancellation and Media-first are freely chosen complete routes",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.RESOURCES",
@@ -8875,7 +9201,13 @@
       "passCondition": "Loop and caddy recovered independently with real approaches and a single physical owner",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.NOTES",
@@ -8892,7 +9224,13 @@
       "passCondition": "Two unread portable notes, mounted copies and surviving-owner focus",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.RAIL",
@@ -8909,7 +9247,13 @@
       "passCondition": "All four unique tiles and exact committed versus pending manipulation",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.INTERRUPT",
@@ -8931,7 +9275,13 @@
       "passCondition": "Cue settle-once, retained mode/next index, terminal finalization and uncertain crash exposure",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.PAYOFF",
@@ -8947,7 +9297,13 @@
       "passCondition": "Player backpack, actual complete-show milestone, skippable own-room aftermath and replay",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.RECORDS",
@@ -8970,7 +9326,13 @@
       "passCondition": "Private/recorded/addressed/presented/requested-help records and honest recap chronology",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.TOOLS",
@@ -8987,7 +9349,13 @@
       "passCondition": "Evidence tray, comparison, known-time timeline, optional theory and leads",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PARTIAL",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "Tray, source selection, leads and search/story plans pass; the seven TASK11.17 comparison/timeline/general-idea states NOT_RUN."
+      }
     },
     {
       "id": "CHECK11.SAVE",
@@ -9008,7 +9376,13 @@
       "passCondition": "Valid/failed/corrupt/incompatible/previous/concurrent save handling, reset separation and draft recovery",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.AI_LIFECYCLE",
@@ -9036,7 +9410,13 @@
       "passCondition": "Meaningful live interpretation, bounded selection, authored/no-key default, source eligibility and request races",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PARTIAL",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "Authored default, eligibility and native lifecycle pass; genuine live interpretation and child-live eligibility NOT_RUN."
+      }
     },
     {
       "id": "CHECK11.PERSONALITY",
@@ -9052,7 +9432,13 @@
       "passCondition": "Maximum Toast and restrained expressive feedback remain optional but present",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.VISUAL",
@@ -9079,7 +9465,13 @@
       "passCondition": "Rich current illustrated finish with white Jo; individual layers replace temporary equivalents",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PARTIAL",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "Approved cast/layout and Q00/Q01 pass; current rich illustrated finish remains required, NOT_RUN."
+      }
     },
     {
       "id": "CHECK11.PERFORMANCE",
@@ -9099,7 +9491,13 @@
       "passCondition": "Real exports and runtime measurements against allocated transfer/decoded memory budgets",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "NOT_RUN",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "NOT_APPLICABLE",
+        "remaining": "Temporary export/static gzip bounds recorded; final-art runtime budget qualification TASK11.20 NOT_RUN."
+      }
     },
     {
       "id": "CHECK11.TECH",
@@ -9118,7 +9516,13 @@
       "passCondition": "Chosen Canvas/React/TS/Node architecture, strict seven-root contracts and isolated operating commands",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.HARDENING",
@@ -9134,7 +9538,13 @@
       "passCondition": "Connected actual browser/usable-state evidence and protected repair capacity",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.DELIVERY",
@@ -9152,7 +9562,13 @@
       "passCondition": "Working ≤3min evidence, meaningful live contribution, accurate disclosures and authorized reviewer access/delivery",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "NOT_RUN",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "NOT_APPLICABLE",
+        "remaining": "No deployment, video delivery or submission authorized; NOT_RUN."
+      }
     },
     {
       "id": "CHECK11.OPTIONAL",
@@ -9167,7 +9583,13 @@
       "passCondition": "Only Q08 audio and Q09 decorative refinements may be deferred as optional polish",
       "method": "Execute the linked fixture assertions against the future implementation or stated artifact/evaluation boundary. Requirement coverage alone is not a test pass.",
       "evidence": "Actual dated build/version, fixture input, expected/actual outcome and visible/access/live/participant evidence where required; retain failures and NOT_RUN.",
-      "status": "NOT_RUN"
+      "status": "NOT_RUN",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "NOT_APPLICABLE",
+        "remaining": "Optional final audio/decorative production NOT_RUN."
+      }
     },
     {
       "id": "CHECK11.N01",
@@ -9184,7 +9606,13 @@
       "passCondition": "Fresh observer can identify the avatar and describe the goal without facilitator explanation; proposed target first 45 seconds, adjusted for access needs rather than scored reading speed",
       "method": "Execute linked future fixture criteria; human clarity/learning and production provenance are not inferred from ID presence.",
       "evidence": "Actual build, fixture, expected/observed result and stated browser/participant/live/provenance limits.",
-      "status": "NOT_RUN"
+      "status": "NOT_RUN",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "NOT_APPLICABLE",
+        "remaining": "Fresh participant avatar/goal identification observation NOT_RUN."
+      }
     },
     {
       "id": "CHECK11.N02",
@@ -9211,7 +9639,13 @@
       "passCondition": "No contradictory tense, invented witness, inaccurate current-location claim, or duplicate-copy “independent source”",
       "method": "Execute linked future fixture criteria; human clarity/learning and production provenance are not inferred from ID presence.",
       "evidence": "Actual build, fixture, expected/observed result and stated browser/participant/live/provenance limits.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.N03",
@@ -9230,7 +9664,13 @@
       "passCondition": "Early Ari supplies full local facts/materials; Jo does not invent a room; Remy can revise a claim while retaining expertise about boats",
       "method": "Execute linked future fixture criteria; human clarity/learning and production provenance are not inferred from ID presence.",
       "evidence": "Actual build, fixture, expected/observed result and stated browser/participant/live/provenance limits.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.N04",
@@ -9252,7 +9692,13 @@
       "passCondition": "Rehearsal is established before retrieval and is not an unrelated new assignment introduced only afterward",
       "method": "Execute linked future fixture criteria; human clarity/learning and production provenance are not inferred from ID presence.",
       "evidence": "Actual build, fixture, expected/observed result and stated browser/participant/live/provenance limits.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.R01",
@@ -9275,7 +9721,13 @@
       "passCondition": "Restore consistent source/world/puppet state; playback paused, no duplicate cue",
       "method": "Execute linked future fixture criteria; human clarity/learning and production provenance are not inferred from ID presence.",
       "evidence": "Actual build, fixture, expected/observed result and stated browser/participant/live/provenance limits.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.R02",
@@ -9292,7 +9744,13 @@
       "passCondition": "Scopes remain distinct and clearly explained",
       "method": "Execute linked future fixture criteria; human clarity/learning and production provenance are not inferred from ID presence.",
       "evidence": "Actual build, fixture, expected/observed result and stated browser/participant/live/provenance limits.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.R03",
@@ -9308,7 +9766,13 @@
       "passCondition": "No silent success or migrated old-story facts; clear new-run recovery",
       "method": "Execute linked future fixture criteria; human clarity/learning and production provenance are not inferred from ID presence.",
       "evidence": "Actual build, fixture, expected/observed result and stated browser/participant/live/provenance limits.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.R04",
@@ -9323,7 +9787,13 @@
       "passCondition": "Session remains playable with clear saving limitation",
       "method": "Execute linked future fixture criteria; human clarity/learning and production provenance are not inferred from ID presence.",
       "evidence": "Actual build, fixture, expected/observed result and stated browser/participant/live/provenance limits.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.R05",
@@ -9345,7 +9815,13 @@
       "passCondition": "Idempotent state; no duplicate tiles, follower, or completion record",
       "method": "Execute linked future fixture criteria; human clarity/learning and production provenance are not inferred from ID presence.",
       "evidence": "Actual build, fixture, expected/observed result and stated browser/participant/live/provenance limits.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.R06",
@@ -9362,7 +9838,13 @@
       "passCondition": "Settled result, control retained, stable save on return",
       "method": "Execute linked future fixture criteria; human clarity/learning and production provenance are not inferred from ID presence.",
       "evidence": "Actual build, fixture, expected/observed result and stated browser/participant/live/provenance limits.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.H01",
@@ -9381,7 +9863,13 @@
       "passCondition": "Identical case completion",
       "method": "Execute linked future fixture criteria; human clarity/learning and production provenance are not inferred from ID presence.",
       "evidence": "Actual build, fixture, expected/observed result and stated browser/participant/live/provenance limits.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.H02",
@@ -9396,7 +9884,13 @@
       "passCondition": "Bounded behavior, no case facts or farmable scores",
       "method": "Execute linked future fixture criteria; human clarity/learning and production provenance are not inferred from ID presence.",
       "evidence": "Actual build, fixture, expected/observed result and stated browser/participant/live/provenance limits.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.H03",
@@ -9422,7 +9916,13 @@
       "passCondition": "The personal creation and unfinished opening receive the promised visible payoff",
       "method": "Execute linked future fixture criteria; human clarity/learning and production provenance are not inferred from ID presence.",
       "evidence": "Actual build, fixture, expected/observed result and stated browser/participant/live/provenance limits.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.D01",
@@ -9436,7 +9936,13 @@
       "passCondition": "All showcased behavior exists; time skips and AI mode are truthful",
       "method": "Execute linked future fixture criteria; human clarity/learning and production provenance are not inferred from ID presence.",
       "evidence": "Actual build, fixture, expected/observed result and stated browser/participant/live/provenance limits.",
-      "status": "NOT_RUN"
+      "status": "NOT_RUN",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "NOT_APPLICABLE",
+        "remaining": "Showcase recording NOT_RUN."
+      }
     },
     {
       "id": "CHECK11.D02",
@@ -9465,7 +9971,13 @@
       "passCondition": "Every incorporated item has origin, applicable license, modifications, and assistance disclosure",
       "method": "Execute linked future fixture criteria; human clarity/learning and production provenance are not inferred from ID presence.",
       "evidence": "Actual build, fixture, expected/observed result and stated browser/participant/live/provenance limits.",
-      "status": "NOT_RUN"
+      "status": "PASS_FIRST_BUILD",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "PASS",
+        "remaining": "No unperformed first-build portion claimed."
+      }
     },
     {
       "id": "CHECK11.D03",
@@ -9485,7 +9997,13 @@
       "passCondition": "Working, free, accessible through required period; no dependency on creator’s private session",
       "method": "Execute linked future fixture criteria; human clarity/learning and production provenance are not inferred from ID presence.",
       "evidence": "Actual build, fixture, expected/observed result and stated browser/participant/live/provenance limits.",
-      "status": "NOT_RUN"
+      "status": "NOT_RUN",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "NOT_APPLICABLE",
+        "remaining": "Hosted anonymous access and availability-through-date NOT_RUN."
+      }
     },
     {
       "id": "CHECK11.D04",
@@ -9502,7 +10020,13 @@
       "passCondition": "Under three minutes; functioning experience, description, disclosures, and actual chosen delivery route ready",
       "method": "Execute linked future fixture criteria; human clarity/learning and production provenance are not inferred from ID presence.",
       "evidence": "Actual build, fixture, expected/observed result and stated browser/participant/live/provenance limits.",
-      "status": "NOT_RUN"
+      "status": "NOT_RUN",
+      "firstConnectedExecution": {
+        "at": "2026-09-12T03:29:57.944Z",
+        "evidence": "evidence/first-connected-acceptance.json",
+        "result": "NOT_APPLICABLE",
+        "remaining": "Submission video/package and delivery NOT_RUN."
+      }
     }
   ],
   "coverage": {
@@ -24939,7 +25463,7 @@
       "userZone": "America/New_York (EDT)",
       "judgingEndDate": "2026-09-23"
     },
-    "remainingSeconds": 632753.0,
+    "remainingSeconds": 632753,
     "staffing": "Tony directs Codex for implementation/debugging/integration and AI-assisted assets, personally reviewing decisions/results/tests/demo. No hired illustrator, extra human team or guaranteed parallel agents.",
     "availabilityCeilingHoursPerDay": [
       16,
@@ -25131,7 +25655,167 @@
           "TASK11.16"
         ],
         "measure": "During the existing authorized tasks record task start/end; Codex iteration duration/count; Tony hands-on minutes; waits; acceptance failures/rework; actual disjoint overlap. First setup and complete content check calibrate configuration/transcription only. Q00/Q01 calibrate temporary work only. Store/world integration calibrates connected mechanics; TASK11.16 calibrates browser/recovery repair. Reforecast after 01–02, 04–06 and 16; preserve evidence and uncertainty for unsampled families.",
-        "recordAt": "In the authorized game review evidence, keyed to TASK11/FIX11 IDs; update only this plan schedule after observing results, then regenerate the schedule view."
+        "recordAt": "In the authorized game review evidence, keyed to TASK11/FIX11 IDs; update only this plan schedule after observing results, then regenerate the schedule view.",
+        "observations": [
+          {
+            "kind": "observed-integration-interval",
+            "tasks": [
+              "TASK11.06",
+              "TASK11.07",
+              "TASK11.08",
+              "TASK11.14"
+            ],
+            "start": "2026-09-12T01:43:44.153Z",
+            "end": "2026-09-12T02:01:04.816Z",
+            "seconds": 1040.663,
+            "basis": "Two host UTC tool/task-event boundaries. Includes implementation, browser waits and repairs; not the whole task duration.",
+            "humanAttentionMinutes": null,
+            "disjointOverlapSeconds": null
+          },
+          {
+            "kind": "successful-browser-route",
+            "tasks": [
+              "TASK11.10",
+              "TASK11.12",
+              "TASK11.13",
+              "TASK11.16"
+            ],
+            "seconds": 49.9,
+            "evidence": "evidence/connected-media-first-pass.json",
+            "basis": "Actual Playwright test duration: fresh Media-first through full rehearsal and premiere, including physical travel. Inspection and repair excluded."
+          },
+          {
+            "kind": "recorded-task-interval",
+            "task": "TASK11.03",
+            "start": "2026-09-12T00:39:32.804Z",
+            "end": "2026-09-12T00:41:17.714Z",
+            "seconds": 104.91,
+            "humanAttentionMinutes": null,
+            "disjointOverlapSeconds": null,
+            "basis": "Host UTC task events. Includes implementation/testing/tool waits/review within the interval; not isolated labor or uninterrupted execution."
+          },
+          {
+            "kind": "recorded-task-interval",
+            "task": "TASK11.04",
+            "start": "2026-09-12T00:41:17.804Z",
+            "end": "2026-09-12T00:45:50.022Z",
+            "seconds": 272.218,
+            "humanAttentionMinutes": null,
+            "disjointOverlapSeconds": null,
+            "basis": "Host UTC task events. Includes implementation/testing/tool waits/review within the interval; not isolated labor or uninterrupted execution."
+          },
+          {
+            "kind": "recorded-task-interval",
+            "task": "TASK11.05",
+            "start": "2026-09-12T00:45:50.114Z",
+            "end": "2026-09-12T00:58:58.824Z",
+            "seconds": 788.71,
+            "humanAttentionMinutes": null,
+            "disjointOverlapSeconds": null,
+            "basis": "Host UTC task events. Includes implementation/testing/tool waits/review within the interval; not isolated labor or uninterrupted execution."
+          },
+          {
+            "kind": "recorded-task-interval",
+            "task": "TASK11.06",
+            "start": "2026-09-12T00:58:58.911Z",
+            "end": "2026-09-12T02:01:04.265Z",
+            "seconds": 3725.354,
+            "humanAttentionMinutes": null,
+            "disjointOverlapSeconds": null,
+            "basis": "Host UTC task events. Includes implementation/testing/tool waits/review within the interval; not isolated labor or uninterrupted execution."
+          },
+          {
+            "kind": "recorded-task-interval",
+            "task": "TASK11.16",
+            "start": "2026-09-12T02:57:58.175Z",
+            "end": "2026-09-12T03:28:55.692Z",
+            "seconds": 1857.517,
+            "humanAttentionMinutes": null,
+            "disjointOverlapSeconds": null,
+            "basis": "Host UTC task events. Includes implementation/testing/tool waits/review within the interval; not isolated labor or uninterrupted execution."
+          },
+          {
+            "kind": "browser-suite",
+            "file": "evidence/chromium-final-main.json",
+            "startTime": "2026-09-12T03:06:47.292Z",
+            "durationMs": 564328.953,
+            "expected": 33,
+            "unexpected": 1,
+            "skipped": 0,
+            "basis": "Measured Playwright duration; overlaps integration/review intervals and is not added to them."
+          },
+          {
+            "kind": "browser-suite",
+            "file": "evidence/chromium-final-boundaries.json",
+            "startTime": "2026-09-12T03:17:01.024Z",
+            "durationMs": 108494.14,
+            "expected": 4,
+            "unexpected": 2,
+            "skipped": 0,
+            "basis": "Measured Playwright duration; overlaps integration/review intervals and is not added to them."
+          },
+          {
+            "kind": "browser-suite",
+            "file": "evidence/chromium-compact-unmet-pass.json",
+            "startTime": "2026-09-12T03:19:33.610Z",
+            "durationMs": 25051.519,
+            "expected": 2,
+            "unexpected": 0,
+            "skipped": 0,
+            "basis": "Measured Playwright duration; overlaps integration/review intervals and is not added to them."
+          },
+          {
+            "kind": "browser-suite",
+            "file": "evidence/cross-browser-first-run.json",
+            "startTime": "2026-09-12T03:21:22.947Z",
+            "durationMs": 234459.038,
+            "expected": 15,
+            "unexpected": 1,
+            "skipped": 0,
+            "basis": "Measured Playwright duration; overlaps integration/review intervals and is not added to them."
+          },
+          {
+            "kind": "browser-suite",
+            "file": "evidence/cross-browser-keyboard-pass.json",
+            "startTime": "2026-09-12T03:25:40.065Z",
+            "durationMs": 133991.26499999998,
+            "expected": 3,
+            "unexpected": 0,
+            "skipped": 0,
+            "basis": "Measured Playwright duration; overlaps integration/review intervals and is not added to them."
+          },
+          {
+            "kind": "browser-suite",
+            "file": "evidence/coach-fault-final.json",
+            "startTime": "2026-09-12T03:20:16.507Z",
+            "durationMs": 22150.212000000003,
+            "expected": 3,
+            "unexpected": 0,
+            "skipped": 0,
+            "basis": "Measured Playwright duration; overlaps integration/review intervals and is not added to them."
+          },
+          {
+            "kind": "successful-connected-route",
+            "title": "TASK11.16 media-first complete case, notes stay unread through collection, real rehearsal and premiere",
+            "seconds": 49.439,
+            "evidence": "evidence/chromium-final-main.json",
+            "basis": "Automated browser execution with physical travel; excludes authoring and repair."
+          },
+          {
+            "kind": "successful-connected-route",
+            "title": "TASK11.16 correct-first, in-place search plan and Loop-first independent recovery",
+            "seconds": 65.986,
+            "evidence": "evidence/chromium-final-main.json",
+            "basis": "Automated browser execution with physical travel; excludes authoring and repair."
+          },
+          {
+            "kind": "successful-connected-route",
+            "title": "TASK11.16 cancellation evidence delivered to Remy, kit-first recovery and seed-only revision",
+            "seconds": 85.71,
+            "evidence": "evidence/chromium-final-main.json",
+            "basis": "Automated browser execution with physical travel; excludes authoring and repair."
+          }
+        ]
       },
       {
         "id": "CAL12.ART",
@@ -25165,8 +25849,8 @@
     "milestoneFailurePolicy": "Any essential-state/focus/source/save failure holds the connected milestone; any required temporary art or unreadable consequence holds illustrated candidate; missing/incorrect live evidence holds the intended AI demo; unready final materials at internal cutoff trigger an explicit changed plan, never a fictional submission.",
     "feasibility": "UNDETERMINED. Product/package readiness is separable from deadline forecast. The previous infeasibility conclusion was unsupported by measured AI-led throughput; neither feasibility nor infeasibility is established now.",
     "forecast": {
-      "status": "UNCALIBRATED",
-      "confidence": "No calibrated numerical confidence or finish dates.",
+      "status": "PARTIALLY_MEASURED",
+      "confidence": "First connected implementation and browser checks are complete for the authorized scope. Task intervals and suite durations are separate. Human attention, unobserved waits and overlap are unknown. Final art, live interpretation, participant and delivery work remain unsampled; no forecast for those families follows from temporary graphics.",
       "firstConnectedElapsedHours": null,
       "remainingRequiredElapsedHours": null,
       "criticalPathElapsedHours": null,
@@ -25177,7 +25861,7 @@
           "remainingElapsedHours": null
         },
         "M11.CONNECTED": {
-          "status": "NOT_STARTED",
+          "status": "COMPLETE",
           "forecastFinish": null,
           "remainingElapsedHours": null
         },
@@ -25201,6 +25885,11 @@
           "forecastFinish": null,
           "remainingElapsedHours": null
         }
+      },
+      "comparableBrowserRun": {
+        "lowerSeconds": 45,
+        "upperSeconds": 100,
+        "basis": "Execution-only provisional allowance from three fresh connected routes on this host. Authoring, repair, review, environment variation and extra detours excluded."
       }
     }
   },

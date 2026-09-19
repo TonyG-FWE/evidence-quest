@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-15T23:29:18.091Z",
+  "verdict": "PASS",
+  "scope": "Independent review of the local dialogue continuity correction within the connected Groups 1-8 implementation. This is not production, live-provider, learner or performance qualification.",
+  "candidate": {
+    "garden": "assets/GardenApp-C_gM6ax5.js",
+    "css": [
+      "assets/GardenApp-8QVIon31.css"
+    ],
+    "entry": "assets/index-B9c9DSp7.js"
+  },
+  "candidateReceipt": "evidence/dialogue-continuity-20260915/candidate-compact.json",
+  "candidateReceiptSha256": "efdc1a4f5b84e700df052e91cc983a9b85b10cfe232074a52c3beb3c013f1101",
+  "gardenBundleSha256": "78073704ad6085483e284f83223fcbc90284864f127443cbe848e5cadbca859d",
+  "findings": [
+    {
+      "finding": "First Mara contact and premature choices",
+      "status": "RESOLVED",
+      "evidence": [
+        "native-complete-first-candidate.json",
+        "native-final-fresh-corrections.json"
+      ],
+      "result": "First story action is watching Mara help passengers. Untimed conversation parts establish work hours and passenger obligations before replies."
+    },
+    {
+      "finding": "Unclear speakers and unsupported bridge promise",
+      "status": "RESOLVED",
+      "evidence": [
+        "native-complete-first-candidate.json",
+        "evidence/dialogue-continuity-20260915/browser-compact.json"
+      ],
+      "result": "Named speakers remain separate from original source tokens. The bridge repair does not claim to change Mara’s work hours."
+    },
+    {
+      "finding": "Page possession, reporting, telling and rereading conflated",
+      "status": "RESOLVED",
+      "evidence": [
+        "native-complete-first-candidate.json",
+        "native-final-build.json"
+      ],
+      "result": "Giving Mara’s page, reporting her circumstances and performing her story are distinct. Reopening an earlier account is read only, including beside its author."
+    },
+    {
+      "finding": "Bird repair and later story events shown too early",
+      "status": "RESOLVED",
+      "evidence": [
+        "native-complete-first-candidate.json",
+        "evidence/dialogue-continuity-20260915/browser-corrected.json"
+      ],
+      "result": "The player hears the boy’s situation, receives consent, fetches tape and guides Mara through repair. Pip remains in the present garden."
+    },
+    {
+      "finding": "Rina welcome line repeated",
+      "status": "RESOLVED",
+      "evidence": [
+        "native-final-fresh-corrections.json",
+        "final-build-rina-single-introduction.png"
+      ],
+      "result": "Fresh final-build native contact contains one bread promise and no repeated footer notice; the spare tile is introduced before the offer."
+    },
+    {
+      "finding": "Largest-text small-screen passage crowded out by controls",
+      "status": "RESOLVED",
+      "evidence": [
+        "evidence/dialogue-continuity-20260915/browser-compact.json",
+        "evidence/dialogue-continuity-20260915/browser-crossbrowser.json"
+      ],
+      "result": "At 320x568 the Chromium source viewport is199.96875px, up from about70px; actual story text stays28px with roomier lines. Full sentence, word-help return and both replies were checked visually."
+    },
+    {
+      "finding": "Leaving unfinished Mara dialogue could hide bridge travel",
+      "status": "RESOLVED",
+      "evidence": [
+        "native-final-fresh-corrections.json",
+        "final-build-free-exploration.png"
+      ],
+      "result": "Fresh final-build play can leave Mara, build the bridge and visit the bakery without completing her conversation."
+    }
+  ],
+  "browserEvidence": {
+    "firstCandidate": {
+      "report": "evidence/dialogue-continuity-20260915/browser-connected.json",
+      "passed": 24,
+      "failed": 5,
+      "note": "Initial fixture failures are preserved. They were three final library-return toggles, an old flower-text expectation and a setup missing the new Sol conversation."
+    },
+    "finalCandidate": [
+      {
+        "report": "evidence/dialogue-continuity-20260915/browser-compact.json",
+        "startTime": "2026-09-15T23:14:09.182Z",
+        "duration": 56052.522,
+        "expected": 3,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      {
+        "report": "evidence/dialogue-continuity-20260915/browser-corrected.json",
+        "startTime": "2026-09-15T23:15:55.699Z",
+        "duration": 520244.35699999996,
+        "expected": 7,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      {
+        "report": "evidence/dialogue-continuity-20260915/browser-crossbrowser.json",
+        "startTime": "2026-09-15T23:24:38.128Z",
+        "duration": 122804.299,
+        "expected": 6,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    ],
+    "closedInitialFailures": [
+      {
+        "title": "Complete Garden chapter: later Mara tells; Sol prepared",
+        "project": "chromium",
+        "initial": "failed",
+        "corrected": "passed"
+      },
+      {
+        "title": "Complete Garden chapter: later Pip reads; Sol prepared",
+        "project": "chromium",
+        "initial": "failed",
+        "corrected": "passed"
+      },
+      {
+        "title": "Complete Garden chapter: usual time; Pip delivers Grandma’s story; Sol prepared",
+        "project": "chromium",
+        "initial": "failed",
+        "corrected": "passed"
+      },
+      {
+        "title": "G3 ordinary controls: named placement, actual far-held collapse, reload, recovery and first garden context",
+        "project": "chromium",
+        "initial": "failed",
+        "corrected": "passed"
+      },
+      {
+        "title": "Actual draft word view: local unavailable help, synthetic spelling suggestion, selected-occurrence edit and undo",
+        "project": "chromium",
+        "initial": "failed",
+        "corrected": "passed"
+      }
+    ],
+    "endingOutcomes": [
+      {
+        "title": "Complete Garden chapter: later Mara tells; Sol prepared",
+        "status": "passed",
+        "evidence": "evidence/dialogue-continuity-20260915/browser-corrected.json",
+        "candidate": "assets/GardenApp-C_gM6ax5.js"
+      },
+      {
+        "title": "Complete Garden chapter: later Mara tells; Sol developed",
+        "status": "passed",
+        "evidence": "evidence/dialogue-continuity-20260915/browser-connected.json",
+        "candidate": "assets/GardenApp-CH-hMmUf.js"
+      },
+      {
+        "title": "Complete Garden chapter: later Mara tells; Sol draft",
+        "status": "passed",
+        "evidence": "evidence/dialogue-continuity-20260915/browser-connected.json",
+        "candidate": "assets/GardenApp-CH-hMmUf.js"
+      },
+      {
+        "title": "Complete Garden chapter: later Pip reads; Sol prepared",
+        "status": "passed",
+        "evidence": "evidence/dialogue-continuity-20260915/browser-corrected.json",
+        "candidate": "assets/GardenApp-C_gM6ax5.js"
+      },
+      {
+        "title": "Complete Garden chapter: later Pip reads; Sol developed",
+        "status": "passed",
+        "evidence": "evidence/dialogue-continuity-20260915/browser-connected.json",
+        "candidate": "assets/GardenApp-CH-hMmUf.js"
+      },
+      {
+        "title": "Complete Garden chapter: later Pip reads; Sol draft",
+        "status": "passed",
+        "evidence": "evidence/dialogue-continuity-20260915/browser-connected.json",
+        "candidate": "assets/GardenApp-CH-hMmUf.js"
+      },
+      {
+        "title": "Complete Garden chapter: usual time; Pip delivers Grandma’s story; Sol prepared",
+        "status": "passed",
+        "evidence": "evidence/dialogue-continuity-20260915/browser-corrected.json",
+        "candidate": "assets/GardenApp-C_gM6ax5.js"
+      },
+      {
+        "title": "Complete Garden chapter: usual time; Pip delivers Grandma’s story; Sol developed",
+        "status": "passed",
+        "evidence": "evidence/dialogue-continuity-20260915/browser-connected.json",
+        "candidate": "assets/GardenApp-CH-hMmUf.js"
+      },
+      {
+        "title": "Complete Garden chapter: usual time; Pip delivers Grandma’s story; Sol draft",
+        "status": "passed",
+        "evidence": "evidence/dialogue-continuity-20260915/browser-connected.json",
+        "candidate": "assets/GardenApp-CH-hMmUf.js"
+      }
+    ],
+    "coverageLimit": "Six developed/draft ending routes passed on CH; all three prepared routes passed again on the final candidate. The final delta changes three UI/presentation files only; story/source/domain/outcome logic is byte-identical. Firefox and WebKit evidence covers the three focused continuity/compact cases each, not a newly rerun complete ending matrix."
+  },
+  "nativeEvidence": {
+    "firstCandidateCompletePlaythrough": "native-complete-first-candidate.json",
+    "finalReloadAndRecordedSources": "native-final-build.json",
+    "finalFreshCorrections": "native-final-fresh-corrections.json",
+    "ownViewport": {
+      "width": 1422,
+      "height": 800
+    },
+    "compactScreenshotReview": {
+      "source": "evidence/dialogue-continuity-20260915/browser-compact-artifacts/garden-compact-reader-Comp-2561c--word-help-and-both-choices-chromium/",
+      "files": [
+        "compact-whole-pip-sentence.png",
+        "compact-mara-reading-after-word-help.png",
+        "compact-visible-replies-and-reading.png"
+      ],
+      "measurement": {
+        "reading": {
+          "x": 17,
+          "y": 201.390625,
+          "width": 287,
+          "height": 199.96875
+        },
+        "storyFont": "28px",
+        "note": "Ordinary fresh play, actual28px roomier story text. No state injection or provider request."
+      },
+      "note": "Independently inspected implementation task screenshots and actual ordinary-browser measurements; this was not a native-tab resize."
+    }
+  },
+  "engineeringEvidence": {
+    "contractChecks": {
+      "passed": 99,
+      "report": "evidence/dialogue-continuity-20260915/contracts-corrected.log",
+      "note": "Story/domain code unchanged in final UI delta."
+    },
+    "authoredChecks": {
+      "passed": 23,
+      "apiCalls": 0,
+      "report": "evidence/dialogue-continuity-20260915/authored.log"
+    },
+    "finalBuild": {
+      "report": "evidence/dialogue-continuity-20260915/build-compact.log",
+      "includes": [
+        "validate:content",
+        "check",
+        "build:server",
+        "vite build"
+      ]
+    },
+    "integrity": "integrity-final-candidate.json",
+    "candidateHashesMatched": 175,
+    "protectedInputHashesMatched": 460,
+    "originalArtHashesMatched": 52,
+    "providerLedgerFilesMatched": 2,
+    "runtimeDeltaFromFirst": [
+      "src/garden/ConversationControls.tsx",
+      "src/garden/garden.css",
+      "src/garden/GardenApp.tsx"
+    ]
+  },
+  "remainingQualifications": [
+    "Prior Group8 qualification exclusions remain in force; earlier final-art/runtime-performance gaps are not waived.",
+    "No live AI, learner/participant study, real microphone/acoustic validation, device certification, deployment or public release was performed by this review.",
+    "TASK11.19 remains HALTED at1/75 with unchanged ledger; no provider attempt or reset was made."
+  ],
+  "delivery": {
+    "url": "http://127.0.0.1:4200/garden",
+    "evidence": "evidence/dialogue-continuity-20260915/delivered.json",
+    "originalUrl": "http://127.0.0.1:4192/garden",
+    "savedProgress": "Both existing user-save origins untouched."
+  },
+  "cleanup": {
+    "reviewTab": "Closed",
+    "ownedQaListener": {
+      "port": 4203,
+      "execSession": 71581,
+      "action": "Ctrl+C",
+      "processExitCode": 1,
+      "status": "Stopped"
+    },
+    "preservedListeners": [
+      4192,
+      4200
+    ],
+    "gitMutationsByReviewer": 0
+  },
+  "limitations": "The old sealed Group8 video remains evidence for its earlier build, not for this corrected candidate. Initial failures and screenshots remain retained."
+}

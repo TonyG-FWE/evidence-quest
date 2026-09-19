@@ -1,0 +1,100 @@
+{
+  "at": "2026-09-15T20:11:31.346Z",
+  "candidate": {
+    "garden": "assets/GardenApp-DQxss6LK.js",
+    "css": [
+      "assets/GardenApp-Cowp-FIg.css"
+    ],
+    "entry": "assets/index-Bk4gdjda.js"
+  },
+  "report": {
+    "path": "evidence/group-8-integration-20260915/browser-final-boat.json",
+    "sha256": "95192289985ecd2346bfc18d5f4ffded81219b06ba563774266186551caae787"
+  },
+  "sources": [
+    {
+      "id": "chapter",
+      "title": "Complete Garden chapter: later Mara tells; Sol prepared",
+      "testDurationMs": 121867,
+      "path": "evidence/group-8-integration-20260915/browser-final-boat-artifacts/garden-chapter-Complete-Ga-ae42f-ter-Mara-tells-Sol-prepared-chromium/video.webm",
+      "sha256": "38bb6ce8f6ade77eb3d18f6258259b96683e87596bca3a440ddf7c753bf77cc5",
+      "decodedDurationSeconds": 122.04,
+      "cues": {
+        "route": "later Mara tells; Sol prepared",
+        "started": 1789502906946,
+        "cues": [
+          {
+            "name": "opening",
+            "ms": 0
+          },
+          {
+            "name": "mara-reading-and-choice",
+            "ms": 676
+          },
+          {
+            "name": "bridge-construction",
+            "ms": 1472
+          },
+          {
+            "name": "planting-with-grandma",
+            "ms": 4385
+          },
+          {
+            "name": "bakery-through-selected-ending",
+            "ms": 12523
+          },
+          {
+            "name": "planning-and-invitations",
+            "ms": 50628
+          },
+          {
+            "name": "actual-arrivals",
+            "ms": 65934
+          },
+          {
+            "name": "mara-earlier-bird-story",
+            "ms": 89089
+          },
+          {
+            "name": "sol-actual-contribution",
+            "ms": 105514
+          },
+          {
+            "name": "grandma-understanding-and-story",
+            "ms": 106375
+          },
+          {
+            "name": "memory-and-closing",
+            "ms": 115726
+          },
+          {
+            "name": "loop-picture-show",
+            "ms": 117949
+          },
+          {
+            "name": "completed-lantern-library",
+            "ms": 119375
+          },
+          {
+            "name": "end",
+            "ms": 121243
+          }
+        ],
+        "note": "Elapsed ordinary-control browser play; video begins slightly before test entry. Verify each edit against actual recorded frames."
+      },
+      "metadata": "evidence/group-8-integration-20260915/film-source-inspection-final/chapter/metadata.txt",
+      "screenshots": []
+    },
+    {
+      "id": "collapse",
+      "title": "Loose bridge: Pip attempts it, visible collapse, safe return and rebuild",
+      "testDurationMs": 19576,
+      "path": "evidence/group-8-integration-20260915/browser-final-boat-artifacts/garden-chapter-Loose-bridg-e6b86-pse-safe-return-and-rebuild-chromium/video.webm",
+      "sha256": "e7f09d01c8e8d3b439671eff984a7a0bb1d9229c1294db486cd86a656781e92a",
+      "decodedDurationSeconds": 20.04,
+      "metadata": "evidence/group-8-integration-20260915/film-source-inspection-final/collapse/metadata.txt",
+      "screenshots": []
+    }
+  ],
+  "note": "Current passed ordinary routes. Cue clocks are approximate and must be matched to decoded source frames before choosing edits."
+}

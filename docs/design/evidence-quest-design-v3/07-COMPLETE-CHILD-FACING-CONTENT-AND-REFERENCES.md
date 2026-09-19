@@ -1,5 +1,7 @@
 # Evidence Quest — Item 07: Complete Child-Facing Content and References
 
+**TASK11.02 binding addendum, September 12, 2026:** section 6.1's existing exact tile names now have the CT identifiers required by Item 09 `Tile.labelCt`: `CT.TILE.LABEL.FERRY` = One Boat, `CT.TILE.LABEL.BRIDGE` = Joined Boats, `CT.TILE.LABEL.PLANT` = Hill, `CT.TILE.LABEL.BLOOM` = Flower. They are recorded in the technical-copy addendum and reference registry. All original 548 Item 07 entries plus five original technical entries remain unchanged; the compiled catalog adds these four references to already-defined words. No story, source, meaning, behavior or case/version identity changes. See [setup decisions](../../SETUP-DECISIONS.md).
+
 **Case:** Launch Day: Where’s Loop? / The Little Bridge  
 **Prepared:** September 11, 2026  
 **Scope:** canonical English content and its display conditions; Items 01–06 retain narrative, spatial, interaction and interface authority. This is a content specification, not an implemented game or evidence of learning effects.

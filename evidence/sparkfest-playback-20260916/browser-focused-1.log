@@ -1,0 +1,31 @@
+
+> evidence-quest@0.1.0 test:browser
+> node scripts/test-browser.mjs browser-tests/garden-continuous-playback.spec.ts browser-tests/garden-festival-welcome.spec.ts --workers=2 --output=evidence/sparkfest-playback-20260916/browser-focused-1
+
+[WebServer] (node:57752) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 18 tests using 2 workers
+
+(node:36052) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:61872) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   1 [chromium] › browser-tests\garden-festival-welcome.spec.ts:3:73 › SparkFest welcome: original illustrations, Loop identity and supported entry at 1440px (16.5s)
+(node:47692) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   2 [chromium] › browser-tests\garden-continuous-playback.spec.ts:15:1 › Continuous telling: complete Sol words, safe word help, replay and stale callback ownership (30.6s)
+(node:19984) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   3 [chromium] › browser-tests\garden-festival-welcome.spec.ts:3:73 › SparkFest welcome: original illustrations, Loop identity and supported entry at 320px (16.0s)
+(node:60920) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   4 [chromium] › browser-tests\garden-continuous-playback.spec.ts:26:1 › Continuous telling: restored progress waits, full Grandma telling proceeds without sentence choices (30.6s)
+(node:62040) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   6 [chromium] › browser-tests\garden-continuous-playback.spec.ts:32:1 › Continuous Loop: full ending, automatic pictures, pause and reload keep the actual story (30.6s)
+(node:3000) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  x   7 [chromium] › browser-tests\garden-continuous-playback.spec.ts:39:1 › Continuous captions: unavailable narration advances automatically and the complete story remains readable (30.6s)
+(node:56552) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)

@@ -1,0 +1,15 @@
+{
+  "chromiumChannel": "chromium",
+  "report": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\group-8-integration-20260915\\browser-literacy-corrected.json",
+  "exitCode": 0,
+  "artifacts": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\group-8-integration-20260915\\browser-literacy-corrected-artifacts",
+  "arguments": [
+    "node_modules/@playwright/test/cli.js",
+    "test",
+    "garden-literacy.spec.ts",
+    "--project=chromium",
+    "--grep",
+    "Late synthetic meaning"
+  ],
+  "at": "2026-09-15T19:24:54.4620975Z"
+}

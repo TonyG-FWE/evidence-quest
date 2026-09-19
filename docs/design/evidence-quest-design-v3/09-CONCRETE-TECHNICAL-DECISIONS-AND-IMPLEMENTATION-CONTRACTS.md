@@ -1,5 +1,7 @@
 # Evidence Quest — Item 09: Technical decisions and implementation contracts
 
+**TASK11.01 execution addendum, September 12, 2026:** the verified installation exposed published security advisories in the original Vite/Ajv pins below. The effective implementation pins are **Vite 8.0.16** and **Ajv 8.18.0**, the first fixed releases in their existing lines; all other selected versions and architecture remain unchanged. See [setup decisions](../../SETUP-DECISIONS.md) and the initial audit evidence. Original baseline bytes are preserved in the initial main commit and design-import inventory. This repository's dedicated workspace replaces the historical proposed sibling path; the original source package remains unchanged.
+
 **Date:** September 11, 2026. **Status:** Defined — Item 09 complete as technical design; no game implementation.
 **Case:** `sparkfest-little-bridge-001`, content version `3`.
 **Scope:** complete Item 09. Item 10 remains the next dependency; this package is not a declaration of build readiness.

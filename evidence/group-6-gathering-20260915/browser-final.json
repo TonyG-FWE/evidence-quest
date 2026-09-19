@@ -1,0 +1,235 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "garden-gathering.spec.ts",
+      "garden-chapter.spec.ts",
+      "-g",
+      "Gathering: authentic|Complete Garden chapter: usual"
+    ],
+    "configFile": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\playwright.config.ts",
+    "rootDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/output/playwright/raw",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/group-6-gathering-20260915/browser-final.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 1,
+    "webServer": {
+      "command": "\"C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe\" dist/server/index.js",
+      "url": "http://127.0.0.1:4196/healthz",
+      "env": {
+        "PORT": "4196",
+        "EQ_WEB_PORT": "4196",
+        "PUBLIC_ORIGIN": "http://127.0.0.1:4196"
+      },
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "garden-chapter.spec.ts",
+      "file": "garden-chapter.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Complete Garden chapter: usual time; Sol keeps draft and Pip delivers Grandma’s story",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 450000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 253964,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-15T08:27:43.236Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "full-chapter-state",
+                      "contentType": "application/json",
+                      "body": "ewogICJmb3JtYXQiOiAxLAogICJjb250ZW50IjogImdhcmRlbi1jaGFwdGVyLTMiLAogICJyZXZpc2lvbiI6IDg4LAogICJ3cml0ZXIiOiAiYjgwNzhmMmItYzVlMS00NWVkLWJlNTUtMWY4NzA4Y2FkMzQ2IiwKICAicGF5bG9hZCI6IHsKICAgICJ2ZXJzaW9uIjogMywKICAgICJjb250ZW50IjogImdhcmRlbi1jaGFwdGVyLTMiLAogICAgInN0b3J5IjogewogICAgICAibWV0U29sIjogdHJ1ZSwKICAgICAgInNvbENob2ljZSI6ICJkcmFmdCIsCiAgICAgICJzb2xEcmFmdCI6IHsKICAgICAgICAidGV4dCI6ICIiLAogICAgICAgICJyZXZpc2lvbiI6IDAKICAgICAgfSwKICAgICAgInNvbEVuZGluZyI6IG51bGwsCiAgICAgICJtYXJhUGljdHVyZSI6ICJyZXBhaXIiLAogICAgICAibGF0ZXJLbm93biI6IGZhbHNlLAogICAgICAicXVlc3Rpb25zIjogW10sCiAgICAgICJzb2xSZXBvcnRlZCI6IHRydWUsCiAgICAgICJtYXJhUmVwb3J0ZWQiOiB0cnVlLAogICAgICAidGltZUFncmVlZCI6ICJ1c3VhbCIsCiAgICAgICJwbGFuIjogewogICAgICAgICJ0aW1lIjogInVzdWFsIiwKICAgICAgICAicmVhZGVyIjogInBpcCIsCiAgICAgICAgInJldmlzaW9uIjogMQogICAgICB9LAogICAgICAic29sSW52aXRhdGlvbiI6ICJ1c3VhbCIsCiAgICAgICJtYXJhSW52aXRhdGlvbiI6IHsKICAgICAgICAidGltZSI6ICJ1c3VhbCIsCiAgICAgICAgInJlYWRlciI6ICJwaXAiCiAgICAgIH0sCiAgICAgICJwaGFzZSI6ICJjbG9zZWQiLAogICAgICAic29sT3V0Y29tZSI6ICJkcmFmdCIsCiAgICAgICJyZWNvcmRzIjogewogICAgICAgICJtYXJhIjogInJlcGFpciIsCiAgICAgICAgInNvbCI6ICJkcmFmdCIsCiAgICAgICAgImdyYW5kbWEiOiB0cnVlLAogICAgICAgICJwaXAiOiAiZ2F0aGVyaW5nIgogICAgICB9LAogICAgICAiZ3JhbmRtYUNvcHkiOiAibWFyYSIsCiAgICAgICJjbG9zaW5nRG9uZSI6IHRydWUsCiAgICAgICJlbmRpbmciOiB7CiAgICAgICAgIm1hcmEiOiAiYWJzZW50IiwKICAgICAgICAic29sIjogImRyYWZ0IiwKICAgICAgICAicGFyYWdyYXBocyI6IFsKICAgICAgICAgICJQaXAgY3Jvc3NlZCB0aGUgcml2ZXIgYW5kIHBsYW50ZWQgdGhlIHNlZWQgd2l0aCBHcmFuZG1hLiBIZSBoYWQga2VwdCBoaXMgcHJvbWlzZS4iLAogICAgICAgICAgIk1hcmEgd2FzIHN0aWxsIHdvcmtpbmcsIHNvIFBpcCByZWFkIGhlciBzdG9yeSBhdCB0aGUgZ2F0aGVyaW5nLiIsCiAgICAgICAgICAiU29sIHNoYXJlZCBoaXMgdW5maW5pc2hlZCBkcmFmdC4iLAogICAgICAgICAgIkFmdGVyd2FyZCwgUGlwIHRvb2sgR3JhbmRtYSdzIHN0b3J5IHRvIE1hcmEuIFRoZWlyIHN0b3JpZXMgY291bGQgYmUgc2hhcmVkIGV2ZW4gd2hlbiB0aGV5IGNvdWxkbid0IGFsbCBiZSB0b2dldGhlci4iCiAgICAgICAgXQogICAgICB9LAogICAgICAicHJlc2VudGF0aW9uIjogewogICAgICAgICJwYWdlIjogMywKICAgICAgICAiZmluaXNoZWQiOiB0cnVlCiAgICAgIH0sCiAgICAgICJhbnN3ZXJzIjoge30sCiAgICAgICJicmlkZ2VGYWlsdXJlcyI6IDAKICAgIH0sCiAgICAicml2ZXIiOiB7CiAgICAgICJlZGl0aW9uIjogImNvbm5lY3RlZC0yMDI2MDkxNSIsCiAgICAgICJyb3Blc0NvbGxlY3RlZCI6IHRydWUsCiAgICAgICJzb2lsUHJlcGFyZWQiOiB0cnVlLAogICAgICAiYXR0YWNobWVudHMiOiB7CiAgICAgICAgIndlc3QiOiAiYSIsCiAgICAgICAgImVhc3QiOiAiYiIKICAgICAgfSwKICAgICAgInJvcGVMb2NhdGlvbnMiOiB7CiAgICAgICAgIndlc3QiOiAiYXR0YWNoZWQiLAogICAgICAgICJlYXN0IjogImF0dGFjaGVkIgogICAgICB9LAogICAgICAiYm9hdCI6IHsKICAgICAgICAicG9zaXRpb24iOiB7CiAgICAgICAgICAieCI6IC0xLjQsCiAgICAgICAgICAieiI6IDAuOAogICAgICAgIH0sCiAgICAgICAgInBoYXNlIjogIm1vb3JlZCIKICAgICAgfQogICAgfSwKICAgICJtYXJhIjogewogICAgICAiZWRpdGlvbiI6ICJjb25uZWN0ZWQtMjAyNjA5MTUiLAogICAgICAiYXNraW5nIjogInBlbmRpbmciLAogICAgICAicmV0dXJuT2ZmZXJlZCI6IGZhbHNlLAogICAgICAicGVybWlzc2lvbiI6IHRydWUsCiAgICAgICJzZXJ2aWNlIjogIndhaXRpbmciLAogICAgICAicGFydGljaXBhdGVkIjogdHJ1ZSwKICAgICAgInNoYXJlZEF0IjogImdhdGhlcmluZyIsCiAgICAgICJzY2VuZSI6IG51bGwKICAgIH0sCiAgICAiYmFrZXJ5IjogewogICAgICAiZWRpdGlvbiI6ICJjb25uZWN0ZWQtMjAyNjA5MTUiLAogICAgICAic3RhZ2UiOiAiZG9uZSIsCiAgICAgICJtZXQiOiB0cnVlLAogICAgICAicGVybWlzc2lvbiI6IHRydWUsCiAgICAgICJ0aWxlIjogInJvb2YiLAogICAgICAiY3JhY2tlZCI6ICJzZXQtYXNpZGUiLAogICAgICAibG9hZiI6ICJzb2wiLAogICAgICAicmluYSI6IHsKICAgICAgICAieCI6IDUuNzU0MTgyNzM4OTU2OTMxLAogICAgICAgICJ6IjogLTEuMDEwMjA0Mzg2NjUzNDI5OAogICAgICB9CiAgICB9LAogICAgImdhdGhlcmluZyI6IHsKICAgICAgImVkaXRpb24iOiAiY29ubmVjdGVkLTIwMjYwOTE1IiwKICAgICAgInJlcG9ydGVkIjogewogICAgICAgICJ0aW1lIjogInVzdWFsIiwKICAgICAgICAicmVhZGVyIjogInBpcCIKICAgICAgfSwKICAgICAgImFycml2YWwiOiAicmVhZHkiLAogICAgICAid2VsY29tZSI6IHRydWUsCiAgICAgICJzb2xQZXJmb3JtZWQiOiAiZHJhZnQiLAogICAgICAic29sRGlzY2xvc2VkIjogdHJ1ZSwKICAgICAgImN1c2hpb25zIjogdHJ1ZSwKICAgICAgInBhZ2VDb21wbGV0ZSI6IHRydWUsCiAgICAgICJncmFuZG1hUGVyZm9ybWVkIjogdHJ1ZSwKICAgICAgInR1cm4iOiBudWxsCiAgICB9LAogICAgInJ1bklkIjogIjAyMmFhZTM5LTRiYTAtNDk2My05ZGVlLTZkNWIzNDg0NzhiOSIsCiAgICAicmV2aXNpb24iOiA1MTQsCiAgICAic3RhcnRlZCI6IHRydWUsCiAgICAicGlwIjogewogICAgICAieCI6IC0zLjUsCiAgICAgICJ6IjogLTMuMDUKICAgIH0sCiAgICAic2VjdGlvbnMiOiB7CiAgICAgICJhIjogewogICAgICAgICJ4IjogLTAuNzc1LAogICAgICAgICJ6IjogMywKICAgICAgICAicm90YXRpb24iOiAwCiAgICAgIH0sCiAgICAgICJiIjogewogICAgICAgICJ4IjogMC43NzUsCiAgICAgICAgInoiOiAzLAogICAgICAgICJyb3RhdGlvbiI6IDAKICAgICAgfQogICAgfSwKICAgICJmZXJyeVNpZGUiOiAid2VzdCIsCiAgICAiam9pbmVkIjogdHJ1ZSwKICAgICJ3ZXN0IjogdHJ1ZSwKICAgICJlYXN0IjogdHJ1ZSwKICAgICJjcm9zc2VkIjogdHJ1ZSwKICAgICJzZWVkIjogInNvaWwiLAogICAgImJsb29tZWQiOiB0cnVlLAogICAgIm1hcmFIZWFyZCI6IHRydWUsCiAgICAicGFnZSI6ICJwaXAiLAogICAgImdyYW5kbWFIZWFyZCI6IGZhbHNlLAogICAgImV4cG9zZWQiOiBbCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMSIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMiIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMyIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XNCIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XNSIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XNiIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XNyIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XOCIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XOSIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMTAiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzExIiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlcxMiIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMTMiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzE0IiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlcxNSIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMTYiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzE3IiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlcxOCIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMTkiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzIwIiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlcyMSIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMjIiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzIzIiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlcyNCIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMjUiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzI2IiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlcyNyIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMjgiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzI5IiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlczMCIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMzEiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjEuVzMyIiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xLlczMyIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMS5XMzQiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzEiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzIiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzMiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzQiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzUiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzYiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzciLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzgiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzkiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzEwIiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yLlcxMSIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XMTIiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzEzIiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yLlcxNCIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XMTUiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzE2IiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yLlcxNyIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XMTgiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzE5IiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yLlcyMCIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XMjEiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzIyIiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yLlcyMyIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMi5XMjQiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjIuVzI1IiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlcxIiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlcyIiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlczIiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlc0IiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlc1IiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlc2IiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlc3IiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlc4IiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlc5IiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlcxMCIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMy5XMTEiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjMuVzEyIiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlcxMyIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMy5XMTQiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjMuVzE1IiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlcxNiIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMy5XMTciLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjMuVzE4IiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zLlcxOSIsCiAgICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTUuMy5XMjAiLAogICAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE1LjMuVzIxIiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4xIiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4yIiwKICAgICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNS4zIiwKICAgICAgIkdBLlNSQy5NQVJBLjEuVzEiLAogICAgICAiR0EuU1JDLk1BUkEuMS5XMiIsCiAgICAgICJHQS5TUkMuTUFSQS4xLlczIiwKICAgICAgIkdBLlNSQy5NQVJBLjEuVzQiLAogICAgICAiR0EuU1JDLk1BUkEuMS5XNSIsCiAgICAgICJHQS5TUkMuTUFSQS4xLlc2IiwKICAgICAgIkdBLlNSQy5NQVJBLjEuVzciLAogICAgICAiR0EuU1JDLk1BUkEuMS5XOCIsCiAgICAgICJHQS5TUkMuTUFSQS4xLlc5IiwKICAgICAgIkdBLlNSQy5NQVJBLjEuVzEwIiwKICAgICAgIkdBLlNSQy5NQVJBLjEuVzExIiwKICAgICAgIkdBLlNSQy5NQVJBLjEuVzEyIiwKICAgICAgIkdBLlNSQy5NQVJBLjEuVzEzIiwKICAgICAgIkdBLlNSQy5NQVJBLjIuVzEiLAogICAgICAiR0EuU1JDLk1BUkEuMi5XMiIsCiAgICAgICJHQS5TUkMuTUFSQS4yLlczIiwKICAgICAgIkdBLlNSQy5NQVJBLjIuVzQiLAogICAgICAiR0EuU1JDLk1BUkEuMi5XNSIsCiAgICAgICJHQS5TUkMuTUFSQS4yLlc2IiwKICAgICAgIkdBLlNSQy5NQVJBLjMuVzEiLAogICAgICAiR0EuU1JDLk1BUkEuMy5XMiIsCiAgICAgICJHQS5TUkMuTUFSQS4zLlczIiwKICAgICAgIkdBLlNSQy5NQVJBLjMuVzQiLAogICAgICAiR0EuU1JDLk1BUkEuMy5XNSIsCiAgICAgICJHQS5TUkMuTUFSQS4zLlc2IiwKICAgICAgIkdBLlNSQy5NQVJBLjMuVzciLAogICAgICAiR0EuU1JDLk1BUkEuMy5XOCIsCiAgICAgICJHQS5TUkMuTUFSQS4xIiwKICAgICAgIkdBLlNSQy5NQVJBLjIiLAogICAgICAiR0EuU1JDLk1BUkEuMyIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjEuVzEiLAogICAgICAiR0EuU1JDLkJBS0VSWS4xLlcyIiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMS5XMyIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjEuVzQiLAogICAgICAiR0EuU1JDLkJBS0VSWS4xLlc1IiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMS5XNiIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjEuVzciLAogICAgICAiR0EuU1JDLkJBS0VSWS4xLlc4IiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMS5XOSIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjEuVzEwIiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMS5XMTEiLAogICAgICAiR0EuU1JDLkJBS0VSWS4xLlcxMiIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjEuVzEzIiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMS5XMTQiLAogICAgICAiR0EuU1JDLkJBS0VSWS4xLlcxNSIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjEuVzE2IiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMS5XMTciLAogICAgICAiR0EuU1JDLkJBS0VSWS4xLlcxOCIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjEuVzE5IiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMS5XMjAiLAogICAgICAiR0EuU1JDLkJBS0VSWS4xLlcyMSIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjEuVzIyIiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMS5XMjMiLAogICAgICAiR0EuU1JDLkJBS0VSWS4yLlcxIiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMi5XMiIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjIuVzMiLAogICAgICAiR0EuU1JDLkJBS0VSWS4yLlc0IiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMi5XNSIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjIuVzYiLAogICAgICAiR0EuU1JDLkJBS0VSWS4yLlc3IiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMi5XOCIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjIuVzkiLAogICAgICAiR0EuU1JDLkJBS0VSWS4yLlcxMCIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjIuVzExIiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMi5XMTIiLAogICAgICAiR0EuU1JDLkJBS0VSWS4yLlcxMyIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjIuVzE0IiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMi5XMTUiLAogICAgICAiR0EuU1JDLkJBS0VSWS4yLlcxNiIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjIuVzE3IiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMi5XMTgiLAogICAgICAiR0EuU1JDLkJBS0VSWS4yLlcxOSIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjIuVzIwIiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMi5XMjEiLAogICAgICAiR0EuU1JDLkJBS0VSWS4zLlcxIiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMy5XMiIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjMuVzMiLAogICAgICAiR0EuU1JDLkJBS0VSWS4zLlc0IiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMy5XNSIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjMuVzYiLAogICAgICAiR0EuU1JDLkJBS0VSWS4zLlc3IiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMy5XOCIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjMuVzkiLAogICAgICAiR0EuU1JDLkJBS0VSWS4zLlcxMCIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjMuVzExIiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMy5XMTIiLAogICAgICAiR0EuU1JDLkJBS0VSWS4zLlcxMyIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjMuVzE0IiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMy5XMTUiLAogICAgICAiR0EuU1JDLkJBS0VSWS4zLlcxNiIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjMuVzE3IiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMy5XMTgiLAogICAgICAiR0EuU1JDLkJBS0VSWS4zLlcxOSIsCiAgICAgICJHQS5TUkMuQkFLRVJZLjEiLAogICAgICAiR0EuU1JDLkJBS0VSWS4yIiwKICAgICAgIkdBLlNSQy5CQUtFUlkuMyIsCiAgICAgICJHQS5TUkMuU09MLjEuVzEiLAogICAgICAiR0EuU1JDLlNPTC4xLlcyIiwKICAgICAgIkdBLlNSQy5TT0wuMS5XMyIsCiAgICAgICJHQS5TUkMuU09MLjEuVzQiLAogICAgICAiR0EuU1JDLlNPTC4xLlc1IiwKICAgICAgIkdBLlNSQy5TT0wuMS5XNiIsCiAgICAgICJHQS5TUkMuU09MLjEuVzciLAogICAgICAiR0EuU1JDLlNPTC4xLlc4IiwKICAgICAgIkdBLlNSQy5TT0wuMS5XOSIsCiAgICAgICJHQS5TUkMuU09MLjEuVzEwIiwKICAgICAgIkdBLlNSQy5TT0wuMS5XMTEiLAogICAgICAiR0EuU1JDLlNPTC4xLlcxMiIsCiAgICAgICJHQS5TUkMuU09MLjEuVzEzIiwKICAgICAgIkdBLlNSQy5TT0wuMS5XMTQiLAogICAgICAiR0EuU1JDLlNPTC4xLlcxNSIsCiAgICAgICJHQS5TUkMuU09MLjEuVzE2IiwKICAgICAgIkdBLlNSQy5TT0wuMS5XMTciLAogICAgICAiR0EuU1JDLlNPTC4yLlcxIiwKICAgICAgIkdBLlNSQy5TT0wuMi5XMiIsCiAgICAgICJHQS5TUkMuU09MLjIuVzMiLAogICAgICAiR0EuU1JDLlNPTC4yLlc0IiwKICAgICAgIkdBLlNSQy5TT0wuMi5XNSIsCiAgICAgICJHQS5TUkMuU09MLjIuVzYiLAogICAgICAiR0EuU1JDLlNPTC4yLlc3IiwKICAgICAgIkdBLlNSQy5TT0wuMi5XOCIsCiAgICAgICJHQS5TUkMuU09MLjIuVzkiLAogICAgICAiR0EuU1JDLlNPTC4yLlcxMCIsCiAgICAgICJHQS5TUkMuU09MLjIuVzExIiwKICAgICAgIkdBLlNSQy5TT0wuMi5XMTIiLAogICAgICAiR0EuU1JDLlNPTC4yLlcxMyIsCiAgICAgICJHQS5TUkMuU09MLjIuVzE0IiwKICAgICAgIkdBLlNSQy5TT0wuMi5XMTUiLAogICAgICAiR0EuU1JDLlNPTC4yLlcxNiIsCiAgICAgICJHQS5TUkMuU09MLjIuVzE3IiwKICAgICAgIkdBLlNSQy5TT0wuMi5XMTgiLAogICAgICAiR0EuU1JDLlNPTC4yLlcxOSIsCiAgICAgICJHQS5TUkMuU09MLjIuVzIwIiwKICAgICAgIkdBLlNSQy5TT0wuMi5XMjEiLAogICAgICAiR0EuU1JDLlNPTC4zLlcxIiwKICAgICAgIkdBLlNSQy5TT0wuMy5XMiIsCiAgICAgICJHQS5TUkMuU09MLjMuVzMiLAogICAgICAiR0EuU1JDLlNPTC4zLlc0IiwKICAgICAgIkdBLlNSQy5TT0wuMy5XNSIsCiAgICAgICJHQS5TUkMuU09MLjMuVzYiLAogICAgICAiR0EuU1JDLlNPTC4zLlc3IiwKICAgICAgIkdBLlNSQy5TT0wuMy5XOCIsCiAgICAgICJHQS5TUkMuU09MLjMuVzkiLAogICAgICAiR0EuU1JDLlNPTC4zLlcxMCIsCiAgICAgICJHQS5TUkMuU09MLjMuVzExIiwKICAgICAgIkdBLlNSQy5TT0wuMy5XMTIiLAogICAgICAiR0EuU1JDLlNPTC40LlcxIiwKICAgICAgIkdBLlNSQy5TT0wuNC5XMiIsCiAgICAgICJHQS5TUkMuU09MLjQuVzMiLAogICAgICAiR0EuU1JDLlNPTC40Llc0IiwKICAgICAgIkdBLlNSQy5TT0wuNC5XNSIsCiAgICAgICJHQS5TUkMuU09MLjQuVzYiLAogICAgICAiR0EuU1JDLlNPTC40Llc3IiwKICAgICAgIkdBLlNSQy5TT0wuNC5XOCIsCiAgICAgICJHQS5TUkMuU09MLjQuVzkiLAogICAgICAiR0EuU1JDLlNPTC41LlcxIiwKICAgICAgIkdBLlNSQy5TT0wuNS5XMiIsCiAgICAgICJHQS5TUkMuU09MLjUuVzMiLAogICAgICAiR0EuU1JDLlNPTC41Llc0IiwKICAgICAgIkdBLlNSQy5TT0wuNS5XNSIsCiAgICAgICJHQS5TUkMuU09MLjUuVzYiLAogICAgICAiR0EuU1JDLlNPTC41Llc3IiwKICAgICAgIkdBLlNSQy5TT0wuNS5XOCIsCiAgICAgICJHQS5TUkMuU09MLjUuVzkiLAogICAgICAiR0EuU1JDLlNPTC41LlcxMCIsCiAgICAgICJHQS5TUkMuU09MLjEiLAogICAgICAiR0EuU1JDLlNPTC4yIiwKICAgICAgIkdBLlNSQy5TT0wuMyIsCiAgICAgICJHQS5TUkMuU09MLjQiLAogICAgICAiR0EuU1JDLlNPTC41IiwKICAgICAgIkdBLlNSQy5TVE9SWS4xLlcxIiwKICAgICAgIkdBLlNSQy5TVE9SWS4xLlcyIiwKICAgICAgIkdBLlNSQy5TVE9SWS4xLlczIiwKICAgICAgIkdBLlNSQy5TVE9SWS4xLlc0IiwKICAgICAgIkdBLlNSQy5TVE9SWS4xLlc1IiwKICAgICAgIkdBLlNSQy5TVE9SWS4xLlc2IiwKICAgICAgIkdBLlNSQy5TVE9SWS4xLlc3IiwKICAgICAgIkdBLlNSQy5TVE9SWS4xLlc4IiwKICAgICAgIkdBLlNSQy5TVE9SWS4xLlc5IiwKICAgICAgIkdBLlNSQy5TVE9SWS4xLlcxMCIsCiAgICAgICJHQS5TUkMuU1RPUlkuMS5XMTEiLAogICAgICAiR0EuU1JDLlNUT1JZLjEuVzEyIiwKICAgICAgIkdBLlNSQy5TVE9SWS4xLlcxMyIsCiAgICAgICJHQS5TUkMuU1RPUlkuMS5XMTQiLAogICAgICAiR0EuU1JDLlNUT1JZLjIuVzEiLAogICAgICAiR0EuU1JDLlNUT1JZLjIuVzIiLAogICAgICAiR0EuU1JDLlNUT1JZLjIuVzMiLAogICAgICAiR0EuU1JDLlNUT1JZLjIuVzQiLAogICAgICAiR0EuU1JDLlNUT1JZLjIuVzUiLAogICAgICAiR0EuU1JDLlNUT1JZLjIuVzYiLAogICAgICAiR0EuU1JDLlNUT1JZLjIuVzciLAogICAgICAiR0EuU1JDLlNUT1JZLjMuVzEiLAogICAgICAiR0EuU1JDLlNUT1JZLjMuVzIiLAogICAgICAiR0EuU1JDLlNUT1JZLjMuVzMiLAogICAgICAiR0EuU1JDLlNUT1JZLjMuVzQiLAogICAgICAiR0EuU1JDLlNUT1JZLjQuVzEiLAogICAgICAiR0EuU1JDLlNUT1JZLjQuVzIiLAogICAgICAiR0EuU1JDLlNUT1JZLjQuVzMiLAogICAgICAiR0EuU1JDLlNUT1JZLjQuVzQiLAogICAgICAiR0EuU1JDLlNUT1JZLjQuVzUiLAogICAgICAiR0EuU1JDLlNUT1JZLjQuVzYiLAogICAgICAiR0EuU1JDLlNUT1JZLjQuVzciLAogICAgICAiR0EuU1JDLlNUT1JZLjQuVzgiLAogICAgICAiR0EuU1JDLlNUT1JZLjQuVzkiLAogICAgICAiR0EuU1JDLlNUT1JZLjQuVzEwIiwKICAgICAgIkdBLlNSQy5TVE9SWS40LlcxMSIsCiAgICAgICJHQS5TUkMuU1RPUlkuNC5XMTIiLAogICAgICAiR0EuU1JDLlNUT1JZLjQuVzEzIiwKICAgICAgIkdBLlNSQy5TVE9SWS40LlcxNCIsCiAgICAgICJHQS5TUkMuU1RPUlkuNC5XMTUiLAogICAgICAiR0EuU1JDLlNUT1JZLjQuVzE2IiwKICAgICAgIkdBLlNSQy5TVE9SWS40LlcxNyIsCiAgICAgICJHQS5TUkMuU1RPUlkuNC5XMTgiLAogICAgICAiR0EuU1JDLlNUT1JZLjQuVzE5IiwKICAgICAgIkdBLlNSQy5TVE9SWS40LlcyMCIsCiAgICAgICJHQS5TUkMuU1RPUlkuNC5XMjEiLAogICAgICAiR0EuU1JDLlNUT1JZLjQuVzIyIiwKICAgICAgIkdBLlNSQy5TVE9SWS40LlcyMyIsCiAgICAgICJHQS5TUkMuU1RPUlkuNS5XMSIsCiAgICAgICJHQS5TUkMuU1RPUlkuNS5XMiIsCiAgICAgICJHQS5TUkMuU1RPUlkuNS5XMyIsCiAgICAgICJHQS5TUkMuU1RPUlkuNS5XNCIsCiAgICAgICJHQS5TUkMuU1RPUlkuNi5XMSIsCiAgICAgICJHQS5TUkMuU1RPUlkuNi5XMiIsCiAgICAgICJHQS5TUkMuU1RPUlkuNi5XMyIsCiAgICAgICJHQS5TUkMuU1RPUlkuNi5XNCIsCiAgICAgICJHQS5TUkMuU1RPUlkuNi5XNSIsCiAgICAgICJHQS5TUkMuU1RPUlkuNi5XNiIsCiAgICAgICJHQS5TUkMuU1RPUlkuNi5XNyIsCiAgICAgICJHQS5TUkMuU1RPUlkuNi5XOCIsCiAgICAgICJHQS5TUkMuU1RPUlkuNi5XOSIsCiAgICAgICJHQS5TUkMuU1RPUlkuNi5XMTAiLAogICAgICAiR0EuU1JDLlNUT1JZLjcuVzEiLAogICAgICAiR0EuU1JDLlNUT1JZLjcuVzIiLAogICAgICAiR0EuU1JDLlNUT1JZLjcuVzMiLAogICAgICAiR0EuU1JDLlNUT1JZLjcuVzQiLAogICAgICAiR0EuU1JDLlNUT1JZLjcuVzUiLAogICAgICAiR0EuU1JDLlNUT1JZLjcuVzYiLAogICAgICAiR0EuU1JDLlNUT1JZLjcuVzciLAogICAgICAiR0EuU1JDLlNUT1JZLjguVzEiLAogICAgICAiR0EuU1JDLlNUT1JZLjguVzIiLAogICAgICAiR0EuU1JDLlNUT1JZLjguVzMiLAogICAgICAiR0EuU1JDLlNUT1JZLjguVzQiLAogICAgICAiR0EuU1JDLlNUT1JZLjguVzUiLAogICAgICAiR0EuU1JDLlNUT1JZLjguVzYiLAogICAgICAiR0EuU1JDLlNUT1JZLjguVzciLAogICAgICAiR0EuU1JDLlNUT1JZLjguVzgiLAogICAgICAiR0EuU1JDLlNUT1JZLjkuVzEiLAogICAgICAiR0EuU1JDLlNUT1JZLjkuVzIiLAogICAgICAiR0EuU1JDLlNUT1JZLjkuVzMiLAogICAgICAiR0EuU1JDLlNUT1JZLjkuVzQiLAogICAgICAiR0EuU1JDLlNUT1JZLjkuVzUiLAogICAgICAiR0EuU1JDLlNUT1JZLjkuVzYiLAogICAgICAiR0EuU1JDLlNUT1JZLjkuVzciLAogICAgICAiR0EuU1JDLlNUT1JZLjkuVzgiLAogICAgICAiR0EuU1JDLlNUT1JZLjkuVzkiLAogICAgICAiR0EuU1JDLlNUT1JZLjkuVzEwIiwKICAgICAgIkdBLlNSQy5TVE9SWS45LlcxMSIsCiAgICAgICJHQS5TUkMuU1RPUlkuOS5XMTIiLAogICAgICAiR0EuU1JDLlNUT1JZLjkuVzEzIiwKICAgICAgIkdBLlNSQy5TVE9SWS4xIiwKICAgICAgIkdBLlNSQy5TVE9SWS4yIiwKICAgICAgIkdBLlNSQy5TVE9SWS4zIiwKICAgICAgIkdBLlNSQy5TVE9SWS40IiwKICAgICAgIkdBLlNSQy5TVE9SWS41IiwKICAgICAgIkdBLlNSQy5TVE9SWS42IiwKICAgICAgIkdBLlNSQy5TVE9SWS43IiwKICAgICAgIkdBLlNSQy5TVE9SWS44IiwKICAgICAgIkdBLlNSQy5TVE9SWS45IiwKICAgICAgIkdBLlNSQy5FTVBUWS4xLlcxIiwKICAgICAgIkdBLlNSQy5FTVBUWS4xLlcyIiwKICAgICAgIkdBLlNSQy5FTVBUWS4xLlczIiwKICAgICAgIkdBLlNSQy5FTVBUWS4xLlc0IiwKICAgICAgIkdBLlNSQy5FTVBUWS4xLlc1IiwKICAgICAgIkdBLlNSQy5FTVBUWS4xLlc2IiwKICAgICAgIkdBLlNSQy5FTVBUWS4xLlc3IiwKICAgICAgIkdBLlNSQy5FTVBUWS4xLlc4IiwKICAgICAgIkdBLlNSQy5FTVBUWS4xLlc5IiwKICAgICAgIkdBLlNSQy5FTVBUWS4xLlcxMCIsCiAgICAgICJHQS5TUkMuRU1QVFkuMS5XMTEiLAogICAgICAiR0EuU1JDLkVNUFRZLjEuVzEyIiwKICAgICAgIkdBLlNSQy5FTVBUWS4yLlcxIiwKICAgICAgIkdBLlNSQy5FTVBUWS4yLlcyIiwKICAgICAgIkdBLlNSQy5FTVBUWS4yLlczIiwKICAgICAgIkdBLlNSQy5FTVBUWS4yLlc0IiwKICAgICAgIkdBLlNSQy5FTVBUWS4yLlc1IiwKICAgICAgIkdBLlNSQy5FTVBUWS4yLlc2IiwKICAgICAgIkdBLlNSQy5FTVBUWS4yLlc3IiwKICAgICAgIkdBLlNSQy5FTVBUWS4yLlc4IiwKICAgICAgIkdBLlNSQy5FTVBUWS4yLlc5IiwKICAgICAgIkdBLlNSQy5FTVBUWS4yLlcxMCIsCiAgICAgICJHQS5TUkMuRU1QVFkuMi5XMTEiLAogICAgICAiR0EuU1JDLkVNUFRZLjIuVzEyIiwKICAgICAgIkdBLlNSQy5FTVBUWS4yLlcxMyIsCiAgICAgICJHQS5TUkMuRU1QVFkuMi5XMTQiLAogICAgICAiR0EuU1JDLkVNUFRZLjIuVzE1IiwKICAgICAgIkdBLlNSQy5FTVBUWS4yLlcxNiIsCiAgICAgICJHQS5TUkMuRU1QVFkuMi5XMTciLAogICAgICAiR0EuU1JDLkVNUFRZLjIuVzE4IiwKICAgICAgIkdBLlNSQy5FTVBUWS4zLlcxIiwKICAgICAgIkdBLlNSQy5FTVBUWS4zLlcyIiwKICAgICAgIkdBLlNSQy5FTVBUWS4zLlczIiwKICAgICAgIkdBLlNSQy5FTVBUWS4zLlc0IiwKICAgICAgIkdBLlNSQy5FTVBUWS4zLlc1IiwKICAgICAgIkdBLlNSQy5FTVBUWS4zLlc2IiwKICAgICAgIkdBLlNSQy5FTVBUWS4zLlc3IiwKICAgICAgIkdBLlNSQy5FTVBUWS4zLlc4IiwKICAgICAgIkdBLlNSQy5FTVBUWS4zLlc5IiwKICAgICAgIkdBLlNSQy5FTVBUWS4zLlcxMCIsCiAgICAgICJHQS5TUkMuRU1QVFkuMy5XMTEiLAogICAgICAiR0EuU1JDLkVNUFRZLjMuVzEyIiwKICAgICAgIkdBLlNSQy5FTVBUWS4zLlcxMyIsCiAgICAgICJHQS5TUkMuRU1QVFkuNC5XMSIsCiAgICAgICJHQS5TUkMuRU1QVFkuNC5XMiIsCiAgICAgICJHQS5TUkMuRU1QVFkuNC5XMyIsCiAgICAgICJHQS5TUkMuRU1QVFkuNC5XNCIsCiAgICAgICJHQS5TUkMuRU1QVFkuNC5XNSIsCiAgICAgICJHQS5TUkMuRU1QVFkuNC5XNiIsCiAgICAgICJHQS5TUkMuRU1QVFkuNC5XNyIsCiAgICAgICJHQS5TUkMuRU1QVFkuNC5XOCIsCiAgICAgICJHQS5TUkMuRU1QVFkuNC5XOSIsCiAgICAgICJHQS5TUkMuRU1QVFkuNS5XMSIsCiAgICAgICJHQS5TUkMuRU1QVFkuNS5XMiIsCiAgICAgICJHQS5TUkMuRU1QVFkuNS5XMyIsCiAgICAgICJHQS5TUkMuRU1QVFkuNS5XNCIsCiAgICAgICJHQS5TUkMuRU1QVFkuNS5XNSIsCiAgICAgICJHQS5TUkMuRU1QVFkuNS5XNiIsCiAgICAgICJHQS5TUkMuRU1QVFkuNS5XNyIsCiAgICAgICJHQS5TUkMuRU1QVFkuNi5XMSIsCiAgICAgICJHQS5TUkMuRU1QVFkuNi5XMiIsCiAgICAgICJHQS5TUkMuRU1QVFkuNi5XMyIsCiAgICAgICJHQS5TUkMuRU1QVFkuNi5XNCIsCiAgICAgICJHQS5TUkMuRU1QVFkuNi5XNSIsCiAgICAgICJHQS5TUkMuRU1QVFkuNi5XNiIsCiAgICAgICJHQS5TUkMuRU1QVFkuNi5XNyIsCiAgICAgICJHQS5TUkMuRU1QVFkuNi5XOCIsCiAgICAgICJHQS5TUkMuRU1QVFkuNi5XOSIsCiAgICAgICJHQS5TUkMuRU1QVFkuNi5XMTAiLAogICAgICAiR0EuU1JDLkVNUFRZLjYuVzExIiwKICAgICAgIkdBLlNSQy5FTVBUWS42LlcxMiIsCiAgICAgICJHQS5TUkMuRU1QVFkuNi5XMTMiLAogICAgICAiR0EuU1JDLkVNUFRZLjYuVzE0IiwKICAgICAgIkdBLlNSQy5FTVBUWS42LlcxNSIsCiAgICAgICJHQS5TUkMuRU1QVFkuNi5XMTYiLAogICAgICAiR0EuU1JDLkVNUFRZLjYuVzE3IiwKICAgICAgIkdBLlNSQy5FTVBUWS42LlcxOCIsCiAgICAgICJHQS5TUkMuRU1QVFkuNi5XMTkiLAogICAgICAiR0EuU1JDLkVNUFRZLjYuVzIwIiwKICAgICAgIkdBLlNSQy5FTVBUWS42LlcyMSIsCiAgICAgICJHQS5TUkMuRU1QVFkuNi5XMjIiLAogICAgICAiR0EuU1JDLkVNUFRZLjYuVzIzIiwKICAgICAgIkdBLlNSQy5FTVBUWS42LlcyNCIsCiAgICAgICJHQS5TUkMuRU1QVFkuNi5XMjUiLAogICAgICAiR0EuU1JDLkVNUFRZLjYuVzI2IiwKICAgICAgIkdBLlNSQy5FTVBUWS4xIiwKICAgICAgIkdBLlNSQy5FTVBUWS4yIiwKICAgICAgIkdBLlNSQy5FTVBUWS4zIiwKICAgICAgIkdBLlNSQy5FTVBUWS40IiwKICAgICAgIkdBLlNSQy5FTVBUWS41IiwKICAgICAgIkdBLlNSQy5FTVBUWS42IiwKICAgICAgIkdBLlNSQy5GSU5BTEUuMS5XMSIsCiAgICAgICJHQS5TUkMuRklOQUxFLjEuVzIiLAogICAgICAiR0EuU1JDLkZJTkFMRS4xLlczIiwKICAgICAgIkdBLlNSQy5GSU5BTEUuMS5XNCIsCiAgICAgICJHQS5TUkMuRklOQUxFLjEuVzUiLAogICAgICAiR0EuU1JDLkZJTkFMRS4xLlc2IiwKICAgICAgIkdBLlNSQy5GSU5BTEUuMS5XNyIsCiAgICAgICJHQS5TUkMuRklOQUxFLjEuVzgiLAogICAgICAiR0EuU1JDLkZJTkFMRS4xLlc5IiwKICAgICAgIkdBLlNSQy5GSU5BTEUuMS5XMTAiLAogICAgICAiR0EuU1JDLkZJTkFMRS4xLlcxMSIsCiAgICAgICJHQS5TUkMuRklOQUxFLjEuVzEyIiwKICAgICAgIkdBLlNSQy5GSU5BTEUuMS5XMTMiLAogICAgICAiR0EuU1JDLkZJTkFMRS4xLlcxNCIsCiAgICAgICJHQS5TUkMuRklOQUxFLjEuVzE1IiwKICAgICAgIkdBLlNSQy5GSU5BTEUuMSIKICAgIF0sCiAgICAiYXNzaXN0YW5jZSI6IFtdLAogICAgImhpc3RvcnkiOiBbCiAgICAgICJhYWFmZDEzMy1kNzkzLTQ3YzctOGRmNy02MmNkMGQ1ZGY4OWEiLAogICAgICAiOTBhZjU4NWUtYTRmMS00ZDQ4LTk2ODktODNjMWEyMjNkNmY3IiwKICAgICAgIkIiLAogICAgICAiNWM5NmEzOWUtN2RjOS00ZDlkLWJiNmItZTViZDAxYzdlMTdiIiwKICAgICAgIlAiLAogICAgICAiNGU5ZTFlMjktZjBkOS00MDBkLWJkYWYtYmE0ZGVkMTdkZjE2LWdyb3d0aCIsCiAgICAgICJMIiwKICAgICAgImNjZjZlOWRlLTExZjMtNDJkYi04NmI2LWI2ZGYwMTRhYmMwNCIsCiAgICAgICIwY2ZmYWM3Mi02Mjc4LTRkZGQtYWY3Ni1mNGRkNGJkZTI0YmUiLAogICAgICAiNWFkYzUyMzYtNDQzNS00ZWQzLWEzMDItMjc3YWFkNzY4ZTY5IiwKICAgICAgImVhMTM0NmNkLWZmMzUtNGI2Zi05YzhkLTQxNDEzNzU0NTg4OSIsCiAgICAgICJmMTNkMTA1Ni0xYzNjLTRlNWEtODhmZi1mYWNmMzU3YjgyM2EiLAogICAgICAiNjZiNDY3ODctZGUyNi00OGVmLWE5NzEtZmMyNGNiMmVkYTlhIiwKICAgICAgIjE0NjJmYTA0LTg1MGMtNDg3Yi04NTE0LTllODliZmIwMGNiNiIsCiAgICAgICJlMTdkMmUwMC1mOWRkLTRmYzUtODc5OS00ODYwMTcyMzFiZTIiLAogICAgICAiMjgzZjkyMjYtOWQ0Mi00YWQzLTg2NDEtMjk4NTg2Yjg0MWNlIiwKICAgICAgIjAxY2EyYWFiLThhNjEtNDI5MS1iYWVkLTU5ZDRkZTM1N2RlMSIsCiAgICAgICJhM2YyY2FlYi0xMTAxLTRkYzEtYTA3Zi00OTc4MzVhM2UwNmEiLAogICAgICAiMzA2ZTY5NTItNjIyNS00YTM1LWE2YzYtMDQ3MWU0ZTVkMGUwIiwKICAgICAgIkdBVEhFUl9XRUxDT01FIiwKICAgICAgIjAzOTM4MThjLTBhNTktNDU4My04OGJjLTJhNmRjZmNkY2UxMiIsCiAgICAgICI2YmQ5NWE3Yy01ZjM3LTRjM2YtYTU3OC1iNThjNWMwNmUzYWUtYmlyZC1pbnRybyIsCiAgICAgICIwMmUxZWU3My04ODg4LTRhMTQtYjNjNy1iZWJkZmMzNjhkZWIiLAogICAgICAiZjAwNzkyNzYtODI5Ni00ODhkLWJiZTEtODZkOWQ2ZTFiNTM5IiwKICAgICAgIjg1NTg0NjM3LTk2ZDEtNDJjZi1hZGFlLTIyZjdhMDk2YTRmZCIsCiAgICAgICJhMzMyZWU3OC1kYjk1LTRlZWMtYWYzOS02YzAwOWYyZDFjMDEiLAogICAgICAiR0FUSEVSX1NPTCIsCiAgICAgICJHQVRIRVJfS0VFUC1EUkFGVCIsCiAgICAgICJHQVRIRVJfRElTQ0xPU1VSRSIsCiAgICAgICI2Y2FmY2Y2My1iZjFjLTQ0MWEtOTQzNS0zMTk0ZGM3MWQ0MjUiLAogICAgICAiYzkyNWZkODMtNzMwOS00Y2Q5LWJhMmYtNWFlYzAxMDQxZTcxIiwKICAgICAgIkdBVEhFUl9HUkFORE1BIiwKICAgICAgImEyMDE1MTY4LWEzNGYtNGM3Ni1iNGM2LTk2YTBlMGY4YjUzYiIsCiAgICAgICI1NDkwN2I1Yi01MWJiLTQ4ZTMtOTQxZi1lZjlhODNkMTZiMWYiCiAgICBdLAogICAgInJlYWRpbmciOiB7CiAgICAgICJzb2wiOiA0MzUsCiAgICAgICJyZXBvcnQiOiAwLAogICAgICAiZ3JhbmRtYSI6IDE3MywKICAgICAgInBsYW5uZXIiOiAzNzYsCiAgICAgICJnYXRoZXJpbmc6c29sIjogMAogICAgfSwKICAgICJyZWR1Y2VkTW90aW9uIjogZmFsc2UsCiAgICAibGFyZ2VUZXh0IjogZmFsc2UKICB9LAogICJjaGVja3N1bSI6ICJiYzI5MTU5ZCIKfQ=="
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\garden-chapter-Complete-Ga-3662c-ip-delivers-Grandma’s-story-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b02b7fdbf8995c6f12bf-a44652de04a1eb2a54b5",
+          "file": "garden-chapter.spec.ts",
+          "line": 29,
+          "column": 293
+        }
+      ]
+    },
+    {
+      "title": "garden-gathering.spec.ts",
+      "file": "garden-gathering.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Gathering: authentic prior-save fixture, arrival recovery, compact world telling and exact chosen contribution",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 32237,
+                  "error": {
+                    "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Help the last passengers ashore', exact: true })\u001b[22m\n",
+                    "stack": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Help the last passengers ashore', exact: true })\u001b[22m\n\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-gathering.spec.ts:17:55",
+                    "location": {
+                      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-gathering.spec.ts",
+                      "column": 55,
+                      "line": 17
+                    },
+                    "snippet": "  15 |  await page.locator('.garden-access summary').click();await page.locator('.garden-access').getByRole('button',{name:'Go to Grandma',exact:true}).click();await page.locator('.garden-access summary').click();await button(page,'Talk to Grandma E').click();await button(page,'Plan the gathering with Grandma').click();await button(page,'Tell Grandma everyone has agreed').click();await button(page,'Begin the gathering').click();await expect(page.locator('.garden-scene')).toHaveAttribute('data-action-kind','finalBoat');\n  16 |  await button(page,'Help').click();await button(page,'Back to Pip').click();await expect.poll(async()=>(await gathering(page)).arrival).toBe('boat-moored');await page.reload();const waiting=await saved(page);await page.keyboard.press('ArrowUp');expect((await saved(page)).pip).toEqual(waiting.pip);\n> 17 |  await button(page,'Help the last passengers ashore').click();await expect.poll(async()=>(await gathering(page)).arrival).toBe('passengers-ashore');expect((await gathering(page)).offDuty).toBe(true);await page.reload();await button(page,'Let Sol walk to the garden').click();await expect.poll(async()=>(await gathering(page)).arrival).toBe('sol-arrived');await button(page,'Let Mara cross to the garden').click();await expect(page.locator('.garden-scene')).toHaveAttribute('data-action-kind','maraArrival');await page.screenshot({path:info.outputPath('mara-actual-crossing.png')});\n     |                                                       ^\n  18 |  await button(page,'Welcome everyone in the garden').click();await page.setViewportSize({width:320,height:568});await expect(page.locator('.garden-gathering-controls')).toBeVisible();const canvas=await page.locator('.garden-scene canvas').boundingBox();expect(canvas!.height).toBeGreaterThanOrEqual(145);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await button(page,'Read this part with help').scrollIntoViewIfNeeded();expect((await button(page,'Read this part with help').boundingBox())!.height).toBeGreaterThanOrEqual(44);await page.screenshot({path:info.outputPath('compact-world-welcome.png')});\n  19 |  await button(page,'Read this part with help').click();await expect(page.getByText('The world telling is paused at this part. Reading or practising it does not move the gathering forward.')).toBeVisible();await button(page,'Back to the world telling').click();expect((await saved(page)).gathering.turn.kind).toBe('welcome');await playSpeakingTurn(page);await page.setViewportSize({width:1440,height:1000});await button(page,'Share The Torn Wing').click();await expect(button(page,'Invite Sol to share')).toBeVisible();await button(page,'Invite Sol to share').click();await button(page,'Let Sol share with everyone').click();await button(page,'Continue speaking').click();await button(page,'Continue speaking').click();const mid=await saved(page);expect(mid.gathering.solPerformed).toBe(null);await button(page,'Read this part with help').click();await page.locator('.garden-reader').getByRole('button',{name:'Help',exact:true}).click();await button(page,'Back to the gathering').click();await button(page,'Back to the world telling').click();await page.reload();expect((await saved(page)).gathering.turn).toEqual(mid.gathering.turn);await page.screenshot({path:info.outputPath('restored-sol-world-turn.png')});await playSpeakingTurn(page);expect((await saved(page)).gathering.solPerformed).toEqual(prior.story.solEnding);\n  20 |  await button(page,'Hear Grandma ask Sol').click();await playSpeakingTurn(page);await button(page,'Let Grandma bring out the cushions').click();await expect(page.locator('.garden-scene')).toHaveAttribute('data-action-kind','bringCushions');await expect.poll(async()=>{const p=JSON.parse((await page.locator('.garden-scene').getAttribute('data-mara-page'))!);return p.holderX>4.7;}).toBe(true);const held=JSON.parse((await page.locator('.garden-scene').getAttribute('data-mara-page'))!);expect(held.x).toBeCloseTo(held.holderX-.2,4);expect(held.z).toBeCloseTo(held.holderZ+.15,4);await page.screenshot({path:info.outputPath('moving-grandma-retains-mara-page.png')});await button(page,'Let Grandma finish her account').click();await expect(page.getByRole('heading',{name:'The Empty Bench · by Grandma'})).toBeVisible();await page.screenshot({path:info.outputPath('two-distinct-pages.png')});await button(page,'Let Grandma share her story').click();await playSpeakingTurn(page);const end=await saved(page);expect(end.gathering).toMatchObject({solDisclosed:true,cushions:true,pageComplete:true,grandmaPerformed:true});for(const key of ['seed','river','bakery','page'])expect(end[key]).toEqual(prior[key]);expect(errors).toEqual([]);await info.attach('gathering-result',{body:JSON.stringify(end,null,2),contentType:'application/json'});"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-gathering.spec.ts",
+                        "column": 55,
+                        "line": 17
+                      },
+                      "message": "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Help the last passengers ashore', exact: true })\u001b[22m\n\n\n  15 |  await page.locator('.garden-access summary').click();await page.locator('.garden-access').getByRole('button',{name:'Go to Grandma',exact:true}).click();await page.locator('.garden-access summary').click();await button(page,'Talk to Grandma E').click();await button(page,'Plan the gathering with Grandma').click();await button(page,'Tell Grandma everyone has agreed').click();await button(page,'Begin the gathering').click();await expect(page.locator('.garden-scene')).toHaveAttribute('data-action-kind','finalBoat');\n  16 |  await button(page,'Help').click();await button(page,'Back to Pip').click();await expect.poll(async()=>(await gathering(page)).arrival).toBe('boat-moored');await page.reload();const waiting=await saved(page);await page.keyboard.press('ArrowUp');expect((await saved(page)).pip).toEqual(waiting.pip);\n> 17 |  await button(page,'Help the last passengers ashore').click();await expect.poll(async()=>(await gathering(page)).arrival).toBe('passengers-ashore');expect((await gathering(page)).offDuty).toBe(true);await page.reload();await button(page,'Let Sol walk to the garden').click();await expect.poll(async()=>(await gathering(page)).arrival).toBe('sol-arrived');await button(page,'Let Mara cross to the garden').click();await expect(page.locator('.garden-scene')).toHaveAttribute('data-action-kind','maraArrival');await page.screenshot({path:info.outputPath('mara-actual-crossing.png')});\n     |                                                       ^\n  18 |  await button(page,'Welcome everyone in the garden').click();await page.setViewportSize({width:320,height:568});await expect(page.locator('.garden-gathering-controls')).toBeVisible();const canvas=await page.locator('.garden-scene canvas').boundingBox();expect(canvas!.height).toBeGreaterThanOrEqual(145);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await button(page,'Read this part with help').scrollIntoViewIfNeeded();expect((await button(page,'Read this part with help').boundingBox())!.height).toBeGreaterThanOrEqual(44);await page.screenshot({path:info.outputPath('compact-world-welcome.png')});\n  19 |  await button(page,'Read this part with help').click();await expect(page.getByText('The world telling is paused at this part. Reading or practising it does not move the gathering forward.')).toBeVisible();await button(page,'Back to the world telling').click();expect((await saved(page)).gathering.turn.kind).toBe('welcome');await playSpeakingTurn(page);await page.setViewportSize({width:1440,height:1000});await button(page,'Share The Torn Wing').click();await expect(button(page,'Invite Sol to share')).toBeVisible();await button(page,'Invite Sol to share').click();await button(page,'Let Sol share with everyone').click();await button(page,'Continue speaking').click();await button(page,'Continue speaking').click();const mid=await saved(page);expect(mid.gathering.solPerformed).toBe(null);await button(page,'Read this part with help').click();await page.locator('.garden-reader').getByRole('button',{name:'Help',exact:true}).click();await button(page,'Back to the gathering').click();await button(page,'Back to the world telling').click();await page.reload();expect((await saved(page)).gathering.turn).toEqual(mid.gathering.turn);await page.screenshot({path:info.outputPath('restored-sol-world-turn.png')});await playSpeakingTurn(page);expect((await saved(page)).gathering.solPerformed).toEqual(prior.story.solEnding);\n  20 |  await button(page,'Hear Grandma ask Sol').click();await playSpeakingTurn(page);await button(page,'Let Grandma bring out the cushions').click();await expect(page.locator('.garden-scene')).toHaveAttribute('data-action-kind','bringCushions');await expect.poll(async()=>{const p=JSON.parse((await page.locator('.garden-scene').getAttribute('data-mara-page'))!);return p.holderX>4.7;}).toBe(true);const held=JSON.parse((await page.locator('.garden-scene').getAttribute('data-mara-page'))!);expect(held.x).toBeCloseTo(held.holderX-.2,4);expect(held.z).toBeCloseTo(held.holderZ+.15,4);await page.screenshot({path:info.outputPath('moving-grandma-retains-mara-page.png')});await button(page,'Let Grandma finish her account').click();await expect(page.getByRole('heading',{name:'The Empty Bench · by Grandma'})).toBeVisible();await page.screenshot({path:info.outputPath('two-distinct-pages.png')});await button(page,'Let Grandma share her story').click();await playSpeakingTurn(page);const end=await saved(page);expect(end.gathering).toMatchObject({solDisclosed:true,cushions:true,pageComplete:true,grandmaPerformed:true});for(const key of ['seed','river','bakery','page'])expect(end[key]).toEqual(prior[key]);expect(errors).toEqual([]);await info.attach('gathering-result',{body:JSON.stringify(end,null,2),contentType:'application/json'});\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-gathering.spec.ts:17:55"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-15T08:31:57.930Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "fixture-boundary",
+                      "contentType": "text/plain",
+                      "body": "VW5lZGl0ZWQgcmVhbC1oYW5kbGVyIEdyb3VwNSBzYXZlIHRyYW5zcG9ydGVkIGludG8gYW4gaXNvbGF0ZWQgYXV0b21hdGVkIGJyb3dzZXIuIFRoaXMgaXMgYSBsYWJlbGVkIG1pZ3JhdGlvbiBmaXh0dXJlLCBub3QgbmF0aXZlIHBsYXkgb3IgcHJvdmlkZXIgZXZpZGVuY2UuIEFsbCBzdWJzZXF1ZW50IGFjdGlvbnMgdXNlIG9yZGluYXJ5IHZpc2libGUgY29udHJvbHMu"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\garden-gathering-Gathering-b5395-d-exact-chosen-contribution-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\garden-gathering-Gathering-b5395-d-exact-chosen-contribution-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\garden-gathering-Gathering-b5395-d-exact-chosen-contribution-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-gathering.spec.ts",
+                    "column": 55,
+                    "line": 17
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b401158f27d32a69362b-d887055044b86906d8cc",
+          "file": "garden-gathering.spec.ts",
+          "line": 8,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-15T08:27:42.259Z",
+    "duration": 288641.237,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

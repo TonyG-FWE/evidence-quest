@@ -1,0 +1,49 @@
+{
+  "identity": {
+    "caseId": "sparkfest-little-bridge-001",
+    "contentVersion": 3,
+    "contentRevision": 1
+  },
+  "generatedAt": "2026-09-12T09:59:13.061Z",
+  "compiler": "scripts/build-content.mjs",
+  "addendumFiles": [
+    {
+      "path": "scripts/er13-copy.mjs",
+      "sha256": "9911e4cac904ded98538f9868dd1d62f291e6fd4209ec1f48c1b257c8d92edbe"
+    },
+    {
+      "path": "scripts/er13-schema.mjs",
+      "sha256": "780499a63d87e913df756a52f14e8c608568511d379713ad422959d188806db6"
+    },
+    {
+      "path": "docs/design/evidence-quest-design-v3/13-EXPERIENCE-AND-LITERACY-CORRECTION.md",
+      "sha256": "d2edb796bf97ac5c1d9ae75dd634e23b8d6fdd6f5e960d9bb750c26764793658"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "05-FUNCTIONAL-SCENES-AND-INTERACTIONS.md",
+      "sha256": "3fdb67267e23a12573547b3031c2678eab774ea7b91e6a8fb07048001b5d0a61"
+    },
+    {
+      "path": "07-COMPLETE-CHILD-FACING-CONTENT-AND-REFERENCES.md",
+      "sha256": "940fed98f18818d6597338b7419d28da86f3cd64630cb3e50194696a3a512554"
+    },
+    {
+      "path": "09-technical-contracts/contracts.schema.json",
+      "sha256": "f43b3af9cf7aa931f3b81cd611c34596458269681ff3e93cd6b6818d219bf368"
+    },
+    {
+      "path": "09-technical-contracts/REFERENCE-REGISTRY.json",
+      "sha256": "6fa3228b61058c307da9ff15eb6857ed1d658d34f1d8051e3f68589fcb1fb519"
+    },
+    {
+      "path": "09-technical-contracts/technical-copy.json",
+      "sha256": "23755c419856bac2fbfab83a26c549a37452f88e2a6620621f6d7cad4246f884"
+    },
+    {
+      "path": "10-asset-production/asset-manifest.json",
+      "sha256": "9ce4446d02159051a0c7901792da8c36fa5a48542979749121ebde33856f6938"
+    }
+  ]
+}

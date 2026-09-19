@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-14",
+  "verifiedAt": "2026-09-14T04:04:50.9334747-04:00",
+  "scope": "D081 local specification documents only",
+  "status": "PASS_DOCUMENT_CHECKS",
+  "checks": {
+    "topicContracts": 9,
+    "requirementCaseGroups": 38,
+    "existingOwners": 29,
+    "checklistDispositions": 20,
+    "relativeLinksChecked": 337,
+    "textEvaluationCases": 24,
+    "audioEvaluationCases": 12,
+    "proposedEvaluationAttempts": 72,
+    "decisionReferences": "FOUND_IN_REGISTER",
+    "ownerCheckFixtureDependencies": "EXACT_MATCH_TO_PRESERVED_PLAN",
+    "caseIds": "UNIQUE_AND_MATCH_DOCUMENTS",
+    "geometry": {
+      "deckSpan": 3.1,
+      "narrowGap": 2.8,
+      "wideGap": 4.4,
+      "overlapPerBank": 0.15,
+      "deckPassesNarrowButNotWide": true,
+      "physicalRendering": "NOT_RUN"
+    }
+  },
+  "baseline": {
+    "branch": "codex/first-connected",
+    "head": "63af7a2261553c2639842a458b54dde38311e3f7",
+    "trackedDiff": [],
+    "files": [
+      {
+        "path": "BUILD-STATUS.md",
+        "sha256": "b31f0e204a165b2d5a7fd4f91257180ac913beab17f09e9f7a5eabb92d2451d2",
+        "unchanged": true
+      },
+      {
+        "path": "evidence/design-import.json",
+        "sha256": "eaa35bd7db2f6612b58a5de0b5b89657a7d893e95998ef8c5b2748f16dc7c22d",
+        "unchanged": true
+      },
+      {
+        "path": "docs/design/evidence-quest-design-v3/11-build-packet/implementation-plan.json",
+        "sha256": "8acfdfbccf57e6036b2e425dcb703b197795b0b5b83a6f0e441d6046a608fb62",
+        "unchanged": true
+      },
+      {
+        "path": "docs/design/evidence-quest-design-v3/05-FUNCTIONAL-SCENES-AND-INTERACTIONS.md",
+        "sha256": "3fdb67267e23a12573547b3031c2678eab774ea7b91e6a8fb07048001b5d0a61",
+        "unchanged": true
+      },
+      {
+        "path": "docs/design/evidence-quest-design-v3/07-COMPLETE-CHILD-FACING-CONTENT-AND-REFERENCES.md",
+        "sha256": "940fed98f18818d6597338b7419d28da86f3cd64630cb3e50194696a3a512554",
+        "unchanged": true
+      },
+      {
+        "path": "docs/design/evidence-quest-design-v3/09-CONCRETE-TECHNICAL-DECISIONS-AND-IMPLEMENTATION-CONTRACTS.md",
+        "sha256": "940b3765c11beb683195097fcd8b69aa516ef32f643410b92cf219217b92ccf5",
+        "unchanged": true
+      },
+      {
+        "path": "docs/design/evidence-quest-design-v3/10-INDIVIDUAL-ASSET-MANIFEST-AND-PRODUCTION-PLAN.md",
+        "sha256": "9218e94a9367bbdcefc70c0694cf8ad070d31e80ab6b2c0b666d10baf958798b",
+        "unchanged": true
+      },
+      {
+        "path": "package.json",
+        "sha256": "854b5007f8ed67fd5c3881c3333e9c86377f502d4fdf136de75829352004a796",
+        "unchanged": true
+      },
+      {
+        "path": "package-lock.json",
+        "sha256": "5d73c806bf9a225e4d922f9e27888684ccfe6294424c9537aaf3f249478b4bb9",
+        "unchanged": true
+      },
+      {
+        "path": "server/coach.ts",
+        "sha256": "02ad79440c902ac41fec257f1408b2ee013f07210327919175b7bca4e6690bbb",
+        "unchanged": true
+      },
+      {
+        "path": "server/index.ts",
+        "sha256": "bde8a9bfb2ff4b3eae2be75095fd64ca6bb2ba646222b4ffdb4dc8700bc89cb0",
+        "unchanged": true
+      }
+    ]
+  },
+  "documentHashes": [
+    {
+      "path": "BUILD-HANDOFF-FIRST-ENCOUNTER.md",
+      "sha256": "92396ec85e8b29faa898b5c9dd63aa483b92cd57dffe990f5cb89cd174137704"
+    },
+    {
+      "path": "BUILD-SPEC.md",
+      "sha256": "f3a91501e99dec676ef2b257e551eb1705f9e9518a0a1798d46d1d94f13cbab7"
+    },
+    {
+      "path": "CHECKLIST.md",
+      "sha256": "85b83d609b098961b0131c5f99aa4a26a362bffa984e0cca6bd835d6ce151bde"
+    },
+    {
+      "path": "D030-CROSSING-CHALLENGE.md",
+      "sha256": "7d2e1199b41b66ad8c762a91a2fe9a21d466d5703297304e88d77e9c025493e4"
+    },
+    {
+      "path": "D037-OBJECTS-ACTIONS-AND-RESPONSES.md",
+      "sha256": "588b1623fa678fa1ed2b397e697ec7632b4a9e6f689878fab0971d5e90345228"
+    },
+    {
+      "path": "D048-LANTERN-AND-ENDING-PRACTICE.md",
+      "sha256": "70e95357f3ff3b9095344ed7dc8e056e251b328c3e11a023368f3d30b2f5c97e"
+    },
+    {
+      "path": "D080-ACCELERATED-REVIEW-AND-REMAINING-WORK.md",
+      "sha256": "68130c06643d3b499aae81957a58d99c6a252f091c0d11a888023a7a959daffd"
+    },
+    {
+      "path": "D081-COMPLETED-REMAINING-SPECIFICATION.md",
+      "sha256": "da1ed43df66c32bd76c00273d479c2b4c620654241f07798559469a1cd5b7123"
+    },
+    {
+      "path": "DECISIONS.md",
+      "sha256": "31d88b3e598d12efc44494e2b652411bf6b683649d7dd0cd605ac1b718297af7"
+    },
+    {
+      "path": "evaluation-casebook.json",
+      "sha256": "b8b262790902332ce18404251e8845f1858c4cdf23ec64dfe1c19d846d5599c1"
+    },
+    {
+      "path": "R05-CORE-GAMEPLAY.md",
+      "sha256": "b7686435941b1ea6c9db74cf2d3cc4c1058cee93ea8ec35c51a554a25a0f2a32"
+    },
+    {
+      "path": "R08-CAST-PLACES-AND-OBJECTS.md",
+      "sha256": "3f8ef92c3395f3da3773047c13595ad340d07a551ff386f3bac00c733444a534"
+    },
+    {
+      "path": "R09-READING-MATERIALS.md",
+      "sha256": "26af73ab527ab3d4d337586eff0a411bd96ff713501d61456609aea28784987d"
+    },
+    {
+      "path": "R10-FLUENCY-AND-NARRATION-CONTRACT.md",
+      "sha256": "7a5a3770ca1368b39a40c313d00109aac72f1820522bc70821af4b4aca82f434"
+    },
+    {
+      "path": "R13-AI-AND-DATA-CONTRACT.md",
+      "sha256": "91ff281c4432cee837834064502dd3ea30f2f6a5ff52957aa0147f99c020411d"
+    },
+    {
+      "path": "R14-SUPPORT-AND-DIFFICULTY-CONTRACT.md",
+      "sha256": "ec1268f44617b5f8a671bca3aabf4cb8e20842bf257d5fd0d62423ef6ad84c8e"
+    },
+    {
+      "path": "R15-CONTROLS-AND-PHYSICAL-STATE.md",
+      "sha256": "2f8f90ddbc23f058a143bd3e8b275dd48694487afed1f955a324d24fbc31b9c6"
+    },
+    {
+      "path": "R16-LAYOUT-AND-ACCESS-CONTRACT.md",
+      "sha256": "b92b15c4aba92046779ed62250788001f338af6a9afaa181f04411721285af83"
+    },
+    {
+      "path": "R17-VISUAL-AUDIO-AND-RENDERER-CONTRACT.md",
+      "sha256": "a1ef9921b16eb722ea6b902b9ca68b53149e9aed2c8f7852dcca22ac5d9a4464"
+    },
+    {
+      "path": "R18-PACING-ENDING-AND-DEMO-CONTRACT.md",
+      "sha256": "296923b260ce8dcdc78697b3bd00ebe385c363fcc0564d0b5684245a25aa0a43"
+    },
+    {
+      "path": "R19-STATE-SAVE-AND-RECOVERY-CONTRACT.md",
+      "sha256": "24a5402a83361a363be0198a436d8ebee88cdc039e17ee0083de6a41e8fa5529"
+    },
+    {
+      "path": "R20-ACCEPTANCE-AND-EVIDENCE-CONTRACT.md",
+      "sha256": "ad47359e98a231873fa53710bdd24f68451d11639dec5f25eec6e4084300acab"
+    },
+    {
+      "path": "remaining-contracts.json",
+      "sha256": "759ab8f86fbbd30df6c72eb48ca233dc064cd2777033d19427b0cff145bd2ea9"
+    }
+  ],
+  "excluded": {
+    "runtimeEdits": "NOT_STARTED",
+    "npmTests": "NOT_RUN_DOCUMENT_ONLY",
+    "browserChecks": "NOT_RUN",
+    "artProduction": "NOT_RUN",
+    "providerRequests": "NOT_RUN",
+    "audioRecordings": "NOT_CREATED",
+    "humanPlayReview": "NOT_RUN",
+    "learnerEvaluation": "NOT_RUN",
+    "agentDispatch": "NOT_SENT",
+    "commitPush": "NOT_DONE"
+  },
+  "providerScope": "Existing halt at 1/75 remains; 72-call casebook is only an unexecuted proposal requiring coordinated authorization and funded access.",
+  "issues": []
+}

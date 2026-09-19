@@ -1,0 +1,40 @@
+{
+  "at": "2026-09-15T18:42:16.500Z",
+  "result": "PASS_INPUT_EVIDENCE_BINDING_UPDATE",
+  "scope": "Second review addendum: refresh only the catalog matrix link after the two input corrections. All169 concrete behaviors, original owners/event references, acceptance statements and qualifications remain as substantively reviewed. The source and native supplements independently bind the current corrections.",
+  "priorAddendum": {
+    "path": "evidence/group-8-review-20260915/final-disposition-addendum.json",
+    "sha256": "d491b4d351d9b654e79f058f82b618399645af1a4c22a8f482fd1b7d5c12a9bd"
+  },
+  "catalog": {
+    "path": "evidence/group-8-integration-20260915/coverage-catalog.mjs",
+    "priorSha256": "5f897bd83e167090dfc59400d51e62e069d8e44027146f3e9faa5e63ac052db5",
+    "reconstructedPriorSha256": "5f897bd83e167090dfc59400d51e62e069d8e44027146f3e9faa5e63ac052db5",
+    "sha256": "8bce73d3bc1fa5e014389b08bfe81d88b9d68c23abf7b76a6590cc86f0978141",
+    "onlyChange": "routes-corrected-node24.json -> routes-input-guards-node24.json"
+  },
+  "candidate": {
+    "garden": "assets/GardenApp-DMDJo1eK.js",
+    "css": [
+      "assets/GardenApp-Cowp-FIg.css"
+    ],
+    "entry": "assets/index-QL65HRqF.js"
+  },
+  "sourceReview": {
+    "path": "evidence/group-8-review-20260915/input-source-review.json",
+    "sha256": "4ed6a48696f39406c9f17df210d2edf0e8a4f73091d6372f7d106a0b90f7f431"
+  },
+  "nativeReview": {
+    "path": "evidence/group-8-review-20260915/native-input-review.json",
+    "sha256": "f7a829926f1c0ff4ec315b3992c5c21584c67bd9328e1a537b289898a521967b"
+  },
+  "matrix": {
+    "path": "evidence/group-8-review-20260915/routes-input-guards-node24.json",
+    "sha256": "050415f56cbc5b06387ad43f3a590605736e4924d059f37418c21ce96bea412c"
+  },
+  "rowDetails": {
+    "path": "evidence/group-8-integration-20260915/row-details.tsv",
+    "sha256": "693990028e36104ac89b69fb0b15134d57c4f4aabfac857078e3ba3db3bfe5d1"
+  },
+  "pending": "Final current browser inventory, recording and169-row dispositions remain separate."
+}

@@ -1,0 +1,37 @@
+{
+  "at": "2026-09-15T20:30:21.801Z",
+  "result": "PASS_FRESH_NATIVE_AND_SERVED_PREVIEW",
+  "url": "http://127.0.0.1:4200/garden",
+  "candidate": {
+    "garden": "assets/GardenApp-D-NRNTbz.js",
+    "css": [
+      "assets/GardenApp-Cowp-FIg.css"
+    ],
+    "entry": "assets/index-sMxSaulA.js"
+  },
+  "openingStarted": false,
+  "ownerProcess": {
+    "pid": 28540,
+    "port": 4200,
+    "execSession": 56576,
+    "ownership": "Root-created authored preview; retained for owner play."
+  },
+  "native": {
+    "path": "evidence/group-8-review-20260915/native-final-supplement.json",
+    "sha256": "e9280a22f18c8d8032192bdc794a5967251e260deb9ec075509e4fb5d9a0b24d"
+  },
+  "http": {
+    "path": "evidence/group-8-integration-20260915/latest-http.json",
+    "sha256": "7a4f3e574871394d9230bb47d58e43ac74555338293e98eee57fcd9b7d657d8d"
+  },
+  "screenshot": {
+    "path": "evidence/group-8-review-20260915/native-supplement-fresh-opening.png",
+    "sha256": "5bba41eead32b17e83367e0ddbf3bb308243e2cc00b1d0b0a90a12e77465984f"
+  },
+  "console": {
+    "path": "evidence/group-8-review-20260915/native-supplement-console.json",
+    "sha256": "ff94f6051190329822425a569d93e6190891b82c91219ef4e46d8678664d849d"
+  },
+  "original4192": "Existing process14092 and original-origin save retained; latest static assets verified read-only.",
+  "limits": "Opening and actual rendered controls verified, not owner acceptance. Native input and recording checks retain their distinct scopes."
+}

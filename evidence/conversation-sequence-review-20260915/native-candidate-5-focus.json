@@ -1,0 +1,40 @@
+{
+  "at": "2026-09-16T01:59:32.121Z",
+  "status": "PASS",
+  "candidate": "assets/GardenApp-CdD9m4T-.js",
+  "origin": "http://localhost:4198/garden",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "points": [
+    {
+      "name": "Help returns to its opener",
+      "label": "Help",
+      "reader": "Read this part with Loop",
+      "tag": "BUTTON",
+      "world": "LOOP’S PICTURE SHOW\nThe ending of Pip’s adventure\n\nPicture 1 of 4 · Watch and read at your own pace. You can listen to any part.\n\nPip crossed the river and planted the seed with Grandma. He had kept his promise.\n\nPrevious picture\nNext picture\nHear this part\nRead or practise this part with help\nPause · Back to studio"
+    },
+    {
+      "name": "Backpack returns to its opener",
+      "label": "Backpack",
+      "reader": "Read this part with Loop",
+      "tag": "BUTTON",
+      "world": "LOOP’S PICTURE SHOW\nThe ending of Pip’s adventure\n\nPicture 1 of 4 · Watch and read at your own pace. You can listen to any part.\n\nPip crossed the river and planted the seed with Grandma. He had kept his promise.\n\nPrevious picture\nNext picture\nHear this part\nRead or practise this part with help\nPause · Back to studio"
+    },
+    {
+      "name": "Word help returns to exact word",
+      "label": "promise",
+      "reader": "Read this part with Loop",
+      "tag": "BUTTON",
+      "world": "LOOP’S PICTURE SHOW\nThe ending of Pip’s adventure\n\nPicture 1 of 4 · Watch and read at your own pace. You can listen to any part.\n\nPip crossed the river and planted the seed with Grandma. He had kept his promise.\n\nPrevious picture\nNext picture\nHear this part\nRead or practise this part with help\nPause · Back to studio"
+    },
+    {
+      "name": "Reader returns to exact world opener",
+      "label": "Read or practise this part with help",
+      "tag": "BUTTON",
+      "world": "LOOP’S PICTURE SHOW\nThe ending of Pip’s adventure\n\nPicture 1 of 4 · Watch and read at your own pace. You can listen to any part.\n\nPip crossed the river and planted the seed with Grandma. He had kept his promise.\n\nPrevious picture\nNext picture\nHear this part\nRead or practise this part with help\nPause · Back to studio"
+    }
+  ],
+  "scope": "Native final-candidate completed-save reload and nested reader opener focus. Actual Help, Backpack, word-help and world-return controls; no hidden state inspection or injection. Existing complete chapter and same first replay picture retained. Final WebKit/Firefox proof belongs to owner ordinary-browser run."
+}

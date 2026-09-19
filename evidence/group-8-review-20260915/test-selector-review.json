@@ -1,0 +1,73 @@
+{
+  "at": "2026-09-15T19:27:08.765Z",
+  "result": "PASS_EXACT_TEST_LABEL_UPDATE_AND_RECHECK",
+  "scope": "The full regression stopped this case at an obsolete dialogue label, before feedback assertions. Only that string literal changed to the approved current visible response. The delayed-reply/edit assertions, compact reachability and focus return remain byte-identical, and the corrected actual browser case passes. All product runtime, content, source/art, save behavior and limits remain unchanged.",
+  "candidate": {
+    "garden": "assets/GardenApp-DMDJo1eK.js",
+    "css": [
+      "assets/GardenApp-Cowp-FIg.css"
+    ],
+    "entry": "assets/index-QL65HRqF.js"
+  },
+  "candidateReceipt": {
+    "path": "evidence/group-8-integration-20260915/candidate-final-literacy.json",
+    "sha256": "77de2af8db1ddedaa0f0e211741dc120cf6838e513c55abca8845a823edc2245"
+  },
+  "priorCandidate": {
+    "path": "evidence/group-8-integration-20260915/candidate-final-controls.json",
+    "sha256": "7e098550344a329215bda4a776907489db411b38c990cf706cc77058891f4f86"
+  },
+  "change": {
+    "path": "browser-tests/garden-literacy.spec.ts",
+    "beforeSha256": "a0e7d021a6968b4b0a666e5c09e885fb966bdc604638e6987d53a8e079b6cc5e",
+    "afterSha256": "01d8f77e01c4a75aeaff92979154398347e4fc251952730b5f4dcdc167635d10",
+    "before": {
+      "path": "evidence/group-8-review-20260915/before-literacy-selector.spec.ts",
+      "sha256": "a0e7d021a6968b4b0a666e5c09e885fb966bdc604638e6987d53a8e079b6cc5e"
+    },
+    "oldLiteral": "'We could start the gathering later.'",
+    "newLiteral": "\"I'll ask Grandma to start the next gathering later.\""
+  },
+  "runtimeChanged": false,
+  "failedCase": {
+    "report": {
+      "path": "evidence/group-8-integration-20260915/browser-final-remainder.json",
+      "sha256": "1d7c2d0d8601a8a2ebf1eae3b7130066b34701ee6f984023ee1b902caa3d89ea"
+    },
+    "title": "Late synthetic meaning feedback cannot replace an edited answer; compact reading controls remain reachable",
+    "status": "failed",
+    "durationMs": 16198
+  },
+  "passingCase": {
+    "report": {
+      "path": "evidence/group-8-integration-20260915/browser-literacy-corrected.json",
+      "sha256": "29ef2ceace5ff58dd25e36ae1dd521b06cf73e6ce87d63e0cbc26e7115172f30"
+    },
+    "title": "Late synthetic meaning feedback cannot replace an edited answer; compact reading controls remain reachable",
+    "status": "passed",
+    "durationMs": 1714
+  },
+  "references": [
+    {
+      "path": "evidence/group-8-integration-20260915/before-literacy-label-garden-literacy.spec.ts",
+      "sha256": "a0e7d021a6968b4b0a666e5c09e885fb966bdc604638e6987d53a8e079b6cc5e"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/literacy-navigation-correction.json",
+      "sha256": "3869c9b62446439ef6d4c4db74afa7efa3b0b7a72ea376dc26e052abba75d624"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-literacy-corrected-run.json",
+      "sha256": "73cfa40857293127936fc2cf28a6ae0bd9cdc019ec081b09afd01e3e1c724148"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-literacy-corrected-candidate.json",
+      "sha256": "77de2af8db1ddedaa0f0e211741dc120cf6838e513c55abca8845a823edc2245"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/browser-final-remainder-artifacts/garden-literacy-Late-synth-cdf95-g-controls-remain-reachable-chromium/error-context.md",
+      "sha256": "f557455f15c3a9bfdb829b1fd1e0fd4fc3e144570c4bb18b31cf9c16e782c901"
+    }
+  ],
+  "meaningForFinalInventory": "Use the corrected case as its latest current result. Retain the complete109-case batch and its three original failures. Other unchanged cases and the nine full chapters retain their original run/candidate bindings; do not claim a new single113-case green run."
+}

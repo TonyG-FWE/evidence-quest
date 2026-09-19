@@ -1,0 +1,60 @@
+import {test,expect,type Page} from '@playwright/test';
+import {copy} from '../src/core/content.js';
+import {exposed} from '../src/core/evidence.js';
+import {validCase} from '../src/save/validate.js';
+import {start,saved,target,settled,closePanel,go} from './helpers.js';
+const button=(page:Page,id:string)=>page.getByRole('button',{name:copy(id),exact:true});
+const tab=async(page:Page,id:string)=>{await button(page,'CT.UI.NOTES').click();await button(page,id).click();};
+async function choose(page:Page,slot:'leftRef'|'rightRef',source:string,ref:string){
+ await page.locator(`[data-focus-slot="compare-${slot}"]`).click();await page.getByRole('button',{name:source,exact:true}).click();await page.locator(`[data-picker-ref="${ref}"]`).click();
+ const preview=page.locator('.picker-preview');await preview.scrollIntoViewIfNeeded();await expect(button(page,'CT.SOURCE.USE')).toBeEnabled();await button(page,'CT.SOURCE.USE').click();await expect(page.locator(`[data-focus-slot="compare-${slot}"]`)).toBeFocused();
+}
+test('TASK11.17 empty and text-only ideas retain drafts, actual revisions and private ownership across reload',async({page})=>{
+ await start(page);await tab(page,'CT.NOTES.TIMELINE');await expect(page.getByText(copy('CT.TIMELINE.EMPTY'),{exact:true})).toBeVisible();await button(page,'CT.NOTES.COMPARE').click();await button(page,'CT.IDEA.SAVE').click();await expect(page.locator('[data-task]')).toContainText('Nothing to save yet');
+ await page.getByRole('textbox',{name:'My idea',exact:true}).fill('I want to look at the notice.');await closePanel(page);await saved(page);await page.reload();await button(page,'CT.START.CONTINUE').click();await tab(page,'CT.NOTES.COMPARE');await expect(page.getByRole('textbox')).toHaveValue('I want to look at the notice.');await button(page,'CT.IDEA.SAVE').click();
+ let c=(await saved(page)).payload;const first=c.records.at(-1)!;expect(first.recipient).toBeNull();expect(first.previousRecordId).toBeNull();expect(c.npcReceived).toEqual([]);
+ await button(page,'CT.IDEA.EDIT').click();await page.getByRole('textbox').fill('I want to ask what the notice means.');await button(page,'CT.IDEA.SAVE').click();await page.getByText('Earlier idea',{exact:true}).click();await expect(page.locator('details blockquote')).toHaveText(first.text);c=(await saved(page)).payload;expect(c.records.at(-1)!.previousRecordId).toBe(first.id);expect(validCase(c)).toBe(true);
+ await page.screenshot({path:'evidence/er13/task17-private-revision.png',fullPage:true});
+});
+test('TASK11.17 explicit passage replacement, source groups, cancellation and same-source comparison preserve facts',async({page})=>{
+ test.setTimeout(120000);await start(page);await target(page,'ST.SOURCE.E4');await settled(page);await tab(page,'CT.NOTES.COMPARE');
+ await choose(page,'leftRef',copy('CT.TITLE.E4'),'E4.a');let c=(await saved(page)).payload;expect(c.comparisons.find(r=>r.recordedSeq===null)?.leftRef).toBe('E4.a');
+ await page.locator('[data-focus-slot="compare-leftRef"]').click();await button(page,'CT.UI.CANCEL').click();await expect(page.locator('[data-focus-slot="compare-leftRef"]')).toBeFocused();expect((await saved(page)).payload.comparisons.find(r=>r.recordedSeq===null)?.leftRef).toBe('E4.a');
+ await choose(page,'rightRef',copy('CT.TITLE.E4'),'E4.b');await button(page,'CT.COMPARE.CONFLICTS').click();await button(page,'CT.IDEA.SAVE').click();c=(await saved(page)).payload;expect(c.records.at(-1)?.refs).toEqual(['E4.a','E4.b']);expect(c.npcReceived).toEqual([]);expect(c.certificate).toBeNull();
+ await target(page,'ST.ACCESS.E2');await settled(page);await button(page,'CT.MEDIA.PHOTO').click();await page.locator('[data-content-id="CT.SRC.E2.B"]').scrollIntoViewIfNeeded();await tab(page,'CT.NOTES.COMPARE');await choose(page,'leftRef',copy('CT.MEDIA.PHOTO'),'E2.b');
+ await button(page,'CT.PRESENT.OPEN').click();await expect(page.getByRole('heading',{name:'Photo',exact:true})).toBeVisible();await expect(page.getByRole('heading',{name:copy('CT.TITLE.E4'),exact:true})).toBeVisible();expect((await saved(page)).payload.npcReceived).toEqual([]);await page.screenshot({path:'evidence/er13/task17-source-groups.png',fullPage:true});
+});
+test('TASK11.17 metadata chronology and lead selection do not turn a plan into completion or move before Go',async({page})=>{
+ test.setTimeout(120000);await start(page);await target(page,'ST.SOURCE.E4');await settled(page);await page.locator('[data-metadata-ref="E4.a"]').scrollIntoViewIfNeeded();await tab(page,'CT.NOTES.TIMELINE');await expect(page.locator('[data-timeline-row="E4"]')).toContainText('9:05 · Request or plan');await expect(page.locator('[data-task]')).not.toContainText('Completed recording');
+ await page.locator('[data-timeline-row="E4"] button').click();await closePanel(page);await expect(page.locator('[data-focus-slot="timeline-E4"]')).toBeFocused();await button(page,'CT.TIMELINE.DISCOVERY').click();
+ await button(page,'CT.UI.MAP').click();await page.locator('[data-content-id="CT.NAV.MEDIA"]').scrollIntoViewIfNeeded();await saved(page);await button(page,'CT.UI.GOAL').click();await button(page,'CT.LEAD.CHOOSE').click();await button(page,'CT.LEAD.WHERE').click();await page.getByRole('button',{name:'Media room',exact:true}).click();let c=(await saved(page)).payload;expect(c.selectedLead).toBeNull();await button(page,'CT.LEAD.FOLLOW').click();c=(await saved(page)).payload;expect(c.selectedLead).toBe('where-loop');expect(c.physical.room).toBe('SC.ST');await expect(page.getByRole('button',{name:'Stop walking',exact:true})).toHaveCount(0);
+ await button(page,'CT.UI.GOAL').click();await page.getByRole('button',{name:'Go to Media room',exact:true}).click();await expect(page.locator('.game-header strong')).toHaveText('Media room');await settled(page);expect((await saved(page)).payload.physical.room).toBe('SC.MD');expect(await page.evaluate(()=>window.scrollY)).toBe(0);await page.screenshot({path:'evidence/er13/task17-lead-arrival.png',fullPage:false});
+});
+test('ER13 closing a source and vocabulary before traveling restores the world, not a stale source reader',async({page})=>{
+ test.setTimeout(120000);await page.setViewportSize({width:1422,height:800});await start(page);await go(page,'ST.EXIT.CY','Courtyard');await target(page,'CY.SOURCE.E3');await settled(page);await button(page,'CT.OBJ.NOTICE_FLATTEN').click();await settled(page);await page.locator('[data-word=STILL]').click();await page.getByRole('button',{name:'Return to the passage',exact:true}).click();await closePanel(page);await go(page,'CY.EXIT.WK','Workshop');
+ expect(await page.evaluate(()=>window.scrollY)).toBe(0);expect((await saved(page)).payload.readerResume).toBeNull();await page.reload();await button(page,'CT.START.CONTINUE').click();await expect(page.locator('.reader')).toHaveCount(0);await expect(page.locator('.game-header strong')).toHaveText('Workshop');expect(await page.evaluate(()=>window.scrollY)).toBe(0);
+});
+test('FIX11.TOOLS E4 and public venue comparison, all relations, acquired post and capture, optional theory and lead',async({page})=>{
+ test.setTimeout(150000);await start(page);
+ for(const id of ['CT.NOTES.COMPARE','CT.NOTES.TIMELINE','CT.NOTES.IDEAS']){await tab(page,id);await closePanel(page);}expect((await saved(page)).payload.exposures).toEqual([]);
+ await target(page,'ST.SOURCE.E4');await settled(page);await page.locator('[data-metadata-ref="E4.a"]').scrollIntoViewIfNeeded();await tab(page,'CT.NOTES.COMPARE');await choose(page,'leftRef',copy('CT.TITLE.E4'),'E4.a');
+ await page.locator('[data-focus-slot="compare-rightRef"]').click();await button(page,'CT.SOURCE.OPEN_VENUE').click();await page.locator('[data-content-id="CT.NAV.MEDIA"]').scrollIntoViewIfNeeded();await saved(page);await closePanel(page);await page.getByRole('button',{name:'Venue information',exact:true}).click();await page.locator('[data-picker-ref="NAV.MEDIA"]').click();await button(page,'CT.SOURCE.USE').click();
+ let c=(await saved(page)).payload;expect(c.comparisons.find(row=>row.recordedSeq===null)?.rightRef).toBe('NAV.MEDIA');expect(exposed(c,'NAV.MEDIA')).toBe(true);
+ for(const id of ['CT.COMPARE.SUPPORTS','CT.COMPARE.CONFLICTS','CT.COMPARE.BEFORE'])await button(page,id).click();await button(page,'CT.COMPARE.CLEAR_RELATION').click();await choose(page,'leftRef',copy('CT.TITLE.E4'),'E4.b');
+ await page.getByRole('textbox').fill('I want to compare the plan with the recording.');await button(page,'CT.IDEA.SAVE').click();await button(page,'CT.IDEA.EDIT').click();await page.getByRole('textbox').fill('I will check what was actually recorded.');await button(page,'CT.IDEA.SAVE').click();expect((await saved(page)).payload.npcReceived).toEqual([]);
+ await target(page,'ST.ACCESS.E2');await settled(page);await button(page,'CT.MEDIA.MESSAGE').click();await page.locator('[data-metadata-ref="E2.c"]').scrollIntoViewIfNeeded();await saved(page);await button(page,'CT.UI.MAP').click();await page.getByRole('button',{name:'Go to Media room',exact:true}).click();await expect(page.locator('.game-header strong')).toHaveText('Media room');await target(page,'MD.SOURCE.E5');await settled(page);await page.locator('[data-metadata-ref="E5.a"]').scrollIntoViewIfNeeded();
+ await tab(page,'CT.NOTES.TIMELINE');await expect(page.locator('[data-timeline-row="E4"]')).toContainText('9:05 · Request or plan');await expect(page.locator('[data-timeline-row="E2.post"]')).toContainText('9:13 · Remy’s posted interpretation');await expect(page.locator('[data-timeline-row="E5.a"]')).toContainText('9:18 · Completed recording');
+ await page.screenshot({path:'evidence/er13/task17-known-times.png',fullPage:true});c=(await saved(page)).payload;expect(validCase(c)).toBe(true);expect(c.premiere).toBeNull();expect(c.certificate).toBeNull();
+});
+test('TASK11.17 Help receives only an explicitly requested private text snapshot and never delivers it to a character',async({page})=>{
+ await start(page);await tab(page,'CT.NOTES.IDEAS');await page.getByRole('textbox').fill('I want to find out what happened.');let c=(await saved(page)).payload;expect(c.coachingHistory).toEqual([]);expect(c.records).toEqual([]);await button(page,'CT.HELP.THINK').click();
+ await page.getByText(copy('CT.HELP.SUBMITTED'),{exact:true}).click();await expect(page.locator('[data-task] details p')).toHaveText('I want to find out what happened.');c=(await saved(page)).payload;expect(c.records.find(row=>row.kind==='coaching-submission')?.text).toBe('I want to find out what happened.');expect(c.npcReceived).toEqual([]);expect(c.drafts.find(row=>row.id==='private')?.text).toBe('I want to find out what happened.');expect(c.records.some(row=>row.kind==='private-idea')).toBe(false);await button(page,'CT.HELP.AGAIN').click();await expect(page.getByRole('textbox')).toHaveValue('I want to find out what happened.');await closePanel(page);await tab(page,'CT.NOTES.IDEAS');await expect(page.getByRole('textbox')).toHaveValue('I want to find out what happened.');
+});
+test.describe('compact tools',()=>{
+ test.use({hasTouch:true});
+ test('TASK11.17 compact keyboard and touch keep private drafts optional and both comparison slots reachable',async({page})=>{
+  await page.setViewportSize({width:390,height:844});await start(page);await tab(page,'CT.NOTES.COMPARE');await page.getByRole('textbox').fill('My own small idea.');await page.keyboard.press('Escape');await tab(page,'CT.NOTES.COMPARE');await expect(page.getByRole('textbox')).toHaveValue('My own small idea.');
+  await page.locator('[data-focus-slot="compare-rightRef"]').tap();await button(page,'CT.UI.CANCEL').tap();await expect(page.locator('[data-focus-slot="compare-rightRef"]')).toBeFocused();await page.keyboard.press('Enter');await expect(button(page,'CT.SOURCE.USE')).toBeDisabled();await page.keyboard.press('Escape');await expect(page.locator('[data-focus-slot="compare-rightRef"]')).toBeFocused();
+  await button(page,'CT.IDEA.SAVE').tap();expect((await saved(page)).payload.npcReceived).toEqual([]);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:'evidence/er13/task17-compact.png',fullPage:true});
+ });
+});

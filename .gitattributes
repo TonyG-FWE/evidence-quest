@@ -1,7 +1,14 @@
 * text=auto
+src/** text eol=lf
+scripts/*.mjs text eol=lf
+content/*.json text eol=lf
 docs/design/** -text
 docs/BUILD-START.md -text
+evidence/er13/parent-final-* -text
+evidence/er13/parent-import-history/** -text
+evidence/scale-20260912/** -text
 *.png binary
 *.webp binary
 *.jpg binary
 *.zip binary
+evidence/** -text

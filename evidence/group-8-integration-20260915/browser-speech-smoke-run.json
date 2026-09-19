@@ -1,0 +1,17 @@
+{
+  "chromiumChannel": "chromium",
+  "exitCode": 0,
+  "arguments": [
+    "node_modules/@playwright/test/cli.js",
+    "test",
+    "garden-chapter.spec.ts",
+    "garden-interaction.spec.ts",
+    "--project=chromium",
+    "--project=webkit",
+    "--grep",
+    "Temporary reading practice|G2 ordinary keyboard"
+  ],
+  "artifacts": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\group-8-integration-20260915\\browser-speech-smoke-artifacts",
+  "report": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\group-8-integration-20260915\\browser-speech-smoke.json",
+  "at": "2026-09-15T19:40:07.8497337Z"
+}

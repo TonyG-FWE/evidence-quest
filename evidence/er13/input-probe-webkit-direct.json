@@ -1,0 +1,22 @@
+{
+  "at": "2026-09-12T11:02:17.758Z",
+  "probe": "direct",
+  "resources": [
+    "/assets/index-B4tGJcqT.js",
+    "/assets/index-D7U2vX1x.css",
+    "/assets/App-DhOwL0CT.css",
+    "/assets/App-Br7waghk.js"
+  ],
+  "result": {
+    "pixelMs": 92,
+    "baselineReadbackMs": 128,
+    "frames": [
+      {
+        "eventToRafMs": 6,
+        "readbackMs": 86,
+        "changed": true
+      }
+    ],
+    "samplePixels": 82369
+  }
+}

@@ -1,0 +1,5 @@
+
+> evidence-quest@0.1.0 eval:coach
+> tsc -p tsconfig.checks.json && node scripts/prepare-checks.mjs && node evaluation/evaluate.mjs --mode authored
+
+23 authored eligibility/fallback checks passed; zero API calls.

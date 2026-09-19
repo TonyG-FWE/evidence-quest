@@ -1,0 +1,70 @@
+{
+  "recordedAt": "2026-09-14T18:56:49.791Z",
+  "status": "SEPARATE_BOAT_AND_FOOTBRIDGE_VERIFIED",
+  "head": "63af7a2261553c2639842a458b54dde38311e3f7",
+  "commit": "Local uncommitted",
+  "build": {
+    "result": "PASS",
+    "log": "build-final.log",
+    "detail": "Includes art export, exact content, strict TypeScript/schema/copy, server and production build; existing chunk warning retained"
+  },
+  "contracts": {
+    "passed": 57,
+    "failed": 0,
+    "log": "contracts-final.log",
+    "includes": "Independent ferry/bridge behavior, five F/B/P/L histories, all 65 legacy orders, source coverage and old-save migration/rejection"
+  },
+  "authored": {
+    "passed": 23,
+    "apiCalls": 0,
+    "log": "authored.log"
+  },
+  "browser": {
+    "result": "PASS",
+    "passed": 9,
+    "failed": 0,
+    "port": 4194,
+    "engine": "Chromium",
+    "report": "final-check/results.json",
+    "scope": "Both complete routes, actual boat motion and seed possession, fixed sections, repaired old-save acknowledgment and exact atomic archive, keyboard/compact/reading/replay, save recovery/conflict/write failure and WebGL restoration; resource and RAF collection",
+    "earlier": "first-check/results.json: 8 pass / 1 fail. The upgrade initially displayed Saved before its write completed; final client waits for durable acknowledgment. Missing beside/place word definitions were caught in the earlier contract/content logs and corrected."
+  },
+  "preservation": {
+    "changed": [
+      "src/garden/art.ts",
+      "src/garden/content.ts",
+      "src/garden/garden.css",
+      "src/garden/GardenApp.tsx",
+      "src/garden/GardenScene.tsx",
+      "src/garden/model.ts",
+      "src/garden/persistence.ts",
+      "scripts/validate-garden.mjs",
+      "checks/garden.test.ts",
+      "browser-tests/garden.spec.ts",
+      "browser-tests/garden-measurements.spec.ts"
+    ],
+    "originalArt": 52,
+    "importedFiles": 307,
+    "dependenciesAndLegacyRuntimeUnchanged": true,
+    "providerAttempts": 1,
+    "providerCap": 75,
+    "providerHalted": true,
+    "historicalSnapshots": "historical-snapshots.json"
+  },
+  "limits": [
+    "Full Garden chapter and remaining story choices/consequences remain outside this correction",
+    "No new install: dependency/lockfile hashes unchanged from installed and reviewed prior candidate",
+    "No provider calls or child recordings; no live semantic/listening or learning-effectiveness qualification",
+    "Storage corruption, old-save fixtures, write failure and context loss are explicitly synthetic seams driving real handlers",
+    "Measurement collection passing is not performance qualification: unchanged 33.34 ms RAF limit and prior full-suite/native-device gaps remain open",
+    "No new-encounter Firefox/WebKit or current native-GPU test; automated Chromium uses SwiftShader",
+    "Active player save was not read or changed by test injection; all tests use isolated browser contexts"
+  ],
+  "measurements": "renderer-measurements.json",
+  "visuals": [
+    "separate-objects.png",
+    "seed-boat-trip.png",
+    "boat-and-footbridge.png",
+    "seed-delivered.png"
+  ]
+}

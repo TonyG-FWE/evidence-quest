@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-16T02:01:57.728Z",
+  "status": "PASS_BOUNDED_CONVERSATION_SEQUENCE_REVIEW",
+  "scope": "Independent review of the user-approved next-decision conversation sequence across the existing Groups1-8 local game. This is not learner, live service, final art, or all-device/performance acceptance.",
+  "candidate": {
+    "garden": "assets/GardenApp-CdD9m4T-.js",
+    "css": [
+      "assets/GardenApp-BMTJJ3eZ.css"
+    ],
+    "entry": "assets/index-BYe6MXIX.js"
+  },
+  "candidateReceipt": "evidence/conversation-sequence-20260915/candidate-5.json",
+  "candidateReceiptSha256": "a1269e421a76db9023f85a49b93b87105848557fe07bd68fa30d91b35e50a237",
+  "candidateFilesVerified": 179,
+  "handlers": {
+    "freshEndingRoutes": 9,
+    "priorCapturedPayloads": 84,
+    "syntheticMalformedMessageRejections": 4,
+    "compiledSourceEquivalentModules": 14,
+    "candidate": "candidate1; exact domain source unchanged through candidate5"
+  },
+  "browser": {
+    "uniqueLatestPassingCases": 32,
+    "byProject": {
+      "chromium": 22,
+      "firefox": 5,
+      "webkit": 5
+    },
+    "fullEndingCases": 9,
+    "fullEndingEdition": "candidate4",
+    "finalFocusRelayCompactCases": 15,
+    "finalFocusEdition": "candidate5",
+    "historicalFailuresRetained": 4,
+    "editionLimit": "This is the latest passing result for32 identities across dated runs, not32 cases all rerun on candidate5."
+  },
+  "native": {
+    "freshRoute": "later / Mara tells / Sol prepared from the player’s selected words",
+    "editions": "Started on candidate1; focus/delivery/bakery on candidate3; complete chapter, Loop and reload on candidate4; nested support/focus supplement on candidate5.",
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "readerObservations": 18,
+    "visibleSpeakingSegments": 26,
+    "compactScope": "Independent inspection of owner ordinary Chromium320x568 screenshots with28px roomier text; not a native compact-device run.",
+    "finalFocusReturns": [
+      "Help",
+      "Backpack",
+      "promise",
+      "Read or practise this part with help"
+    ]
+  },
+  "correctedFindings": [
+    {
+      "finding": "New report state could claim delivery without matching delivered words.",
+      "result": "Stricter validator verified by four explicit synthetic rejections; legacy field-absent reports retained."
+    },
+    {
+      "finding": "Next decision reused an old Help focus anchor.",
+      "result": "Native candidate3 retest focuses the new heading while true Help return retains its opener."
+    },
+    {
+      "finding": "WebKit mouse click could retain textbox focus instead of the Help opener.",
+      "result": "Explicit clicked-control capture; unchanged final browser assertions pass in Chromium,Firefox,WebKit. Native candidate5 nested focus passes."
+    }
+  ],
+  "focusOnlyFinalDelta": {
+    "changedUIFiles": 5,
+    "otherRuntimeFilesUnchanged": 90,
+    "proof": "Independent inverse text changes reproduce all five candidate4 hashes. Domain,CSS and source prose remain identical."
+  },
+  "preservation": {
+    "protectedInputs": {
+      "checked": 460,
+      "mismatches": []
+    },
+    "originalArt": {
+      "checked": 52,
+      "mismatches": []
+    },
+    "providerLedger": {
+      "checked": 2,
+      "mismatches": []
+    }
+  },
+  "boundaries": [
+    "Reviewer wrote only this evidence directory and changed no runtime/test/build/Git/provider file.",
+    "Only review origin4198 was exercised. Reviewer did not access/reset user4192/4200 saves.",
+    "TASK11.19 remains HALTED at1/75; no request,retry,ledger reset or microphone recording.",
+    "Original TASK11.20/.21 and ER13.06-08 owner,learner,live/audio,final-art and device/performance qualifications remain open.",
+    "Local uncommitted work; no publication,deployment or production activation.",
+    "Normal-width WebKit C4/C5 screenshots have a blank world area. Those tests qualify reader/focus behavior only; WebKit scene rendering remains open."
+  ],
+  "evidence": [
+    {
+      "path": "evidence/conversation-sequence-review-20260915/source-audit.md",
+      "sha256": "715dec6a51d4d38664e31162153365e51223ab0a4e4677da2f53f7ac7b2e0bf6"
+    },
+    {
+      "path": "evidence/conversation-sequence-review-20260915/handlers-candidate-1.json",
+      "sha256": "18acc79ee3dfdfdebc33f6a66733cbe6e62e45f28c52e42f2c0d558878415b97"
+    },
+    {
+      "path": "evidence/conversation-sequence-review-20260915/integrity-candidate-1.json",
+      "sha256": "3c8d8f554911b78ba6efbf1550d65d15c680c096c710068c45c079d03b16be0e"
+    },
+    {
+      "path": "evidence/conversation-sequence-review-20260915/integrity-candidate-3.json",
+      "sha256": "6c8e4593ed225f2f4d3d2d74af01890bdd8cb82083e43eaef49a7f3063ca0b34"
+    },
+    {
+      "path": "evidence/conversation-sequence-review-20260915/integrity-candidate-4.json",
+      "sha256": "bec95fa46fc4f1c28aa78c123d5adf3cf98a27f8b3496449840612270ac4f1e3"
+    },
+    {
+      "path": "evidence/conversation-sequence-review-20260915/integrity-candidate-5.json",
+      "sha256": "396c2771fab1f4f7342cd73bb261b0ea9d598189a96df511cc7e45211037ca10"
+    },
+    {
+      "path": "evidence/conversation-sequence-review-20260915/candidate-4-domain-and-compact-binding.json",
+      "sha256": "dd156b09adaa79cdb3157b64a8b67a02663332076ce76cd3b8fd5f603f8844d7"
+    },
+    {
+      "path": "evidence/conversation-sequence-review-20260915/focus-delta-independent.json",
+      "sha256": "dfcc382504ac980e55c4dd2c3efe23433417117c28cc4ef35e5581d94f684398"
+    },
+    {
+      "path": "evidence/conversation-sequence-review-20260915/focus-finding-candidate-1.json",
+      "sha256": "f74e13298d45d547553d6b1cbb48aa0324b25370153529e93223c62060ca1e55"
+    },
+    {
+      "path": "evidence/conversation-sequence-review-20260915/focus-resolved-candidate-3.json",
+      "sha256": "8a36671b433df1c8a64d00dccf8169653fccafc463ef495924a017cea1618381"
+    },
+    {
+      "path": "evidence/conversation-sequence-review-20260915/native-route-through-candidate-4.json",
+      "sha256": "b3b498cf57751c32ce81fae83d0812c93b87c94e8247c62e760e578a5aa44631"
+    },
+    {
+      "path": "evidence/conversation-sequence-review-20260915/native-observation-checks.json",
+      "sha256": "7caebe7dcc16f9895edccfb08ca0a32bee72572f7d3e77b9ff68b7449a1b49f4"
+    },
+    {
+      "path": "evidence/conversation-sequence-review-20260915/native-selected-words-check.json",
+      "sha256": "f5d9c911e82fa7596936858f9c3b5278e11c3428acdccfa348fda2e350092ea6"
+    },
+    {
+      "path": "evidence/conversation-sequence-review-20260915/native-speaking-turns.json",
+      "sha256": "8a35db983ff51894ef2d564716e23e577c2fab18199513987945b6f9ff250cab"
+    },
+    {
+      "path": "evidence/conversation-sequence-review-20260915/native-candidate-5-focus.json",
+      "sha256": "651c789d5d15d59400c9ab859353d92fbaa3b91a47346114184db0b0dc4f0f3d"
+    },
+    {
+      "path": "evidence/conversation-sequence-review-20260915/browser-review-final.json",
+      "sha256": "596688e7a6bfcf95f8e98e5d4eb04cb74eee934eb086e2a23b0d86604dc4ec6b"
+    },
+    {
+      "path": "evidence/conversation-sequence-review-20260915/visual-qualification-addendum.json",
+      "sha256": "6ab1c6a0cc4dfe21dfd73c270a73a74d71e85204c26ce3acf14a6e74d8286578"
+    },
+    {
+      "path": "evidence/conversation-sequence-review-20260915/cleanup.json",
+      "sha256": "2b67771384012293e9609a822a47734d20ac76e8dac0348a888008e3c4d8e1c6"
+    }
+  ],
+  "visualQualification": {
+    "recordedAt": "2026-09-16T02:05:14.206Z",
+    "status": "OPEN_EXISTING_RENDERER_QUALIFICATION",
+    "observation": "Independent visual inspection of normal-width WebKit screenshots on candidates4 and5 shows a blank world region while the reader, current choices and navigation are visible.",
+    "scope": "These screenshots support reader/focus checks only. They do not demonstrate a rendered WebKit scene. The native Chromium world journey is separately captured. No cause is inferred and no all-browser renderer acceptance is claimed.",
+    "images": [
+      {
+        "path": "evidence/conversation-sequence-20260915/browser-cross-c4-artifacts/garden-sequence-Conversati-15711-and-is-delivered-at-Grandma-webkit/01-next-choices-together.png",
+        "sha256": "dd39a6bae0632c00227cd3a22662e6e836853828451e68a7559bd83175ad9abf"
+      },
+      {
+        "path": "evidence/conversation-sequence-20260915/browser-focus-c5-artifacts/garden-sequence-Conversati-15711-and-is-delivered-at-Grandma-webkit/01-next-choices-together.png",
+        "sha256": "dd39a6bae0632c00227cd3a22662e6e836853828451e68a7559bd83175ad9abf"
+      }
+    ]
+  },
+  "addendumAt": "2026-09-16T02:05:14.214Z"
+}

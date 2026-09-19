@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-15T23:21:32.465Z",
+  "candidate": "assets/GardenApp-C_gM6ax5.js",
+  "origin": "http://localhost:4203/garden",
+  "input": "Fresh separate origin on the same owned QA listener; normal UI only, reduced motion selected through Pause; no state injection.",
+  "checks": [
+    {
+      "check": "First Mara contact shows only Watch Mara help these passengers as story action",
+      "result": "PASS"
+    },
+    {
+      "check": "Leaving before watching retains Go to the bridge pieces and actual bridge construction remains playable",
+      "result": "PASS",
+      "evidence": "final-build-free-exploration.png"
+    },
+    {
+      "check": "Rina initial dialogue contains exactly one bread promise and no duplicate footer welcome",
+      "result": "PASS",
+      "evidence": "final-build-rina-single-introduction.png"
+    },
+    {
+      "check": "Rina roof/flour problem and spare-tile premise precede the player offer",
+      "result": "PASS"
+    },
+    {
+      "check": "Completed reply stage removes duplicate Choose what Pip says next instruction",
+      "result": "PASS"
+    }
+  ],
+  "maraFirstContact": "YOUR ADVENTURE\n×\nAt Mara’s dock\nHelp\nBackpack\nPause\n\nRead here, then choose what Pip says or does.\n\nMara says\nA boat is arriving. I need to help these passengers ashore. We can talk when they are safely off the boat.\n\nPip waits at the dock while Mara does her work.\n\nWatch Mara help these passengers\nBack to Pip",
+  "rinaIntro": "Pip’s visit today\n×\nWhat Pip found at Rina’s bakery\nHelp\nBackpack\nPause\n\nRead here, then choose what Pip says or does.\n\nClick a word for its meaning and pronunciation.\n\nNarrator\n\nWhen Pip reached the bakery, rain was dripping through a cracked roof tile. Rina was moving her flour sacks away from the puddle.\n\nRina\n\n“I promised to have everyone’s bread ready today,” Rina said. “If those sacks get wet, I won’t be able to bake.”\n\nHear this page\nRead a short part aloud\n\nConversation · part 1 of 2\n\nContinue conversation\nBack to Pip",
+  "rinaIntroFooter": "Hear this page\nRead a short part aloud\n\nConversation · part 1 of 2\n\nContinue conversation\nBack to Pip",
+  "rinaReply": "Pip’s visit today\n×\nWhat Pip found at Rina’s bakery\nHelp\nBackpack\nPause\n\nRead here, then choose what Pip says or does.\n\nClick a word for its meaning and pronunciation.\n\nNarrator\n\nSol had brought his tools and a ladder. An intact spare tile rested on a shelf beside the bakery.\n\nYou are Pip. Choose your response.\nI can bring the spare tile to Sol.\nI’ll look around first.\nHear this page\nRead a short part aloud\nPrevious part\nBack to Pip",
+  "providerCallsInitiatedByReview": 0,
+  "userSaveOriginsUntouched": [
+    4192,
+    4200
+  ],
+  "priorCompleteReviewSave": "http://127.0.0.1:4203"
+}

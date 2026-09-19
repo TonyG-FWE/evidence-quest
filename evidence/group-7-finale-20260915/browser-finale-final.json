@@ -1,0 +1,180 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "browser-tests/garden-finale.spec.ts",
+      "--workers=1"
+    ],
+    "configFile": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\playwright.config.ts",
+    "rootDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/output/playwright/raw",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/group-7-finale-20260915/browser-finale-final.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 1,
+    "webServer": {
+      "command": "\"C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe\" dist/server/index.js",
+      "url": "http://127.0.0.1:4196/healthz",
+      "env": {
+        "PORT": "4196",
+        "EQ_WEB_PORT": "4196",
+        "PUBLIC_ORIGIN": "http://127.0.0.1:4196"
+      },
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "garden-finale.spec.ts",
+      "file": "garden-finale.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Finale: authentic prior-save fixture, actual memory placement, lantern source return, compact show and replay recovery",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 34195,
+                  "error": {
+                    "message": "Error: page.evaluate: Execution context was destroyed, most likely because of a navigation.",
+                    "stack": "Error: page.evaluate: Execution context was destroyed, most likely because of a navigation.\n    at saved (C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-finale.spec.ts:6:110)\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-finale.spec.ts:10:101",
+                    "location": {
+                      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-finale.spec.ts",
+                      "column": 110,
+                      "line": 6
+                    },
+                    "snippet": "  4 | test.setTimeout(180000);\n  5 | const button=(p:Page,name:string)=>p.getByRole('button',{name,exact:true});\n> 6 | async function saved(p:Page){await expect(p.locator('.g-save')).toHaveText('Saved in this browser');return p.evaluate(async()=>new Promise<any>(resolve=>{const r=indexedDB.open('evidence-quest-garden-adventure-v1');r.onsuccess=()=>{const db=r.result,t=db.transaction('slots'),q=t.objectStore('slots').get('current');t.oncomplete=()=>{db.close();resolve(q.result.payload);};};}));}\n    |                                                                                                              ^\n  7 | test('Finale: authentic prior-save fixture, actual memory placement, lantern source return, compact show and replay recovery',async({page},info)=>{\n  8 |  const captures=JSON.parse(readFileSync('evidence/group-7-review-20260915/group-6-migration-inputs.json','utf8').replace(/^\\uFEFF/,'')),fixture=captures.cases.find((c:any)=>c.name==='later-pip-prepared-before-pip-moment');\n  9 |  await info.attach('fixture-boundary',{body:'Unedited actual-handler Group6 moment checkpoint transported into isolated automated browser. Later controls are ordinary UI actions. This is migration/connected-browser evidence, not a fresh native journey or provider qualification.',contentType:'text/plain'});"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-finale.spec.ts",
+                        "column": 110,
+                        "line": 6
+                      },
+                      "message": "Error: page.evaluate: Execution context was destroyed, most likely because of a navigation.\n\n  4 | test.setTimeout(180000);\n  5 | const button=(p:Page,name:string)=>p.getByRole('button',{name,exact:true});\n> 6 | async function saved(p:Page){await expect(p.locator('.g-save')).toHaveText('Saved in this browser');return p.evaluate(async()=>new Promise<any>(resolve=>{const r=indexedDB.open('evidence-quest-garden-adventure-v1');r.onsuccess=()=>{const db=r.result,t=db.transaction('slots'),q=t.objectStore('slots').get('current');t.oncomplete=()=>{db.close();resolve(q.result.payload);};};}));}\n    |                                                                                                              ^\n  7 | test('Finale: authentic prior-save fixture, actual memory placement, lantern source return, compact show and replay recovery',async({page},info)=>{\n  8 |  const captures=JSON.parse(readFileSync('evidence/group-7-review-20260915/group-6-migration-inputs.json','utf8').replace(/^\\uFEFF/,'')),fixture=captures.cases.find((c:any)=>c.name==='later-pip-prepared-before-pip-moment');\n  9 |  await info.attach('fixture-boundary',{body:'Unedited actual-handler Group6 moment checkpoint transported into isolated automated browser. Later controls are ordinary UI actions. This is migration/connected-browser evidence, not a fresh native journey or provider qualification.',contentType:'text/plain'});\n    at saved (C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-finale.spec.ts:6:110)\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-finale.spec.ts:10:101"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-15T16:15:28.064Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "fixture-boundary",
+                      "contentType": "text/plain",
+                      "body": "VW5lZGl0ZWQgYWN0dWFsLWhhbmRsZXIgR3JvdXA2IG1vbWVudCBjaGVja3BvaW50IHRyYW5zcG9ydGVkIGludG8gaXNvbGF0ZWQgYXV0b21hdGVkIGJyb3dzZXIuIExhdGVyIGNvbnRyb2xzIGFyZSBvcmRpbmFyeSBVSSBhY3Rpb25zLiBUaGlzIGlzIG1pZ3JhdGlvbi9jb25uZWN0ZWQtYnJvd3NlciBldmlkZW5jZSwgbm90IGEgZnJlc2ggbmF0aXZlIGpvdXJuZXkgb3IgcHJvdmlkZXIgcXVhbGlmaWNhdGlvbi4="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\garden-finale-Finale-authe-b2844-ct-show-and-replay-recovery-chromium\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\garden-finale-Finale-authe-b2844-ct-show-and-replay-recovery-chromium\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\playwright\\raw\\garden-finale-Finale-authe-b2844-ct-show-and-replay-recovery-chromium\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-finale.spec.ts",
+                    "column": 110,
+                    "line": 6
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0983633077f67d60fe1d-508c38c0804efa618631",
+          "file": "garden-finale.spec.ts",
+          "line": 7,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-15T16:15:27.276Z",
+    "duration": 36486.793,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

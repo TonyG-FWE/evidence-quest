@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-16T01:37:32.336Z",
+  "candidate": "assets/GardenApp-DLDCEOAI.js",
+  "helpReturnFocus": {
+    "tag": "BUTTON",
+    "label": "Help"
+  },
+  "nextDecision": {
+    "active": "At Mara’s dock"
+  },
+  "evidence": "native-candidate-3-focus-corrected.json",
+  "result": "PASS: Help returned to Help; Use my message then focused the new At Mara’s dock heading. Text survived C1-to-C3 reload."
+}

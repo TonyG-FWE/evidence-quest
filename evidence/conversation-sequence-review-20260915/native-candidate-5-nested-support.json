@@ -1,0 +1,43 @@
+{
+  "at": "2026-09-16T01:58:58.274Z",
+  "name": "native-candidate-5-nested-support",
+  "snapshot": "- dialog \"Read this part with Loop\":\n  - banner:\n    - link:\n      - /url: /garden\n      - text: Evidence Quest\n      - generic: THE GARDEN ADVENTURE\n    - generic: Saved in this browser\n    - navigation \"Reading tools\":\n      - button \"Backpack\":\n        - generic: Backpack\n      - button \"Help\":\n        - generic: Help\n      - button \"Pause\":\n        - generic: Pause\n  - region \"The ending of Pip’s adventure\":\n    - generic: LOOP’S PICTURE SHOW\n    - heading \"The ending of Pip’s adventure\" [level=2]\n    - paragraph: Picture 1 of 4 · Watch and read at your own pace. You can listen to any part.\n    - img \"Pip and Grandma plant the lantern seed together.\"\n    - paragraph: Pip crossed the river and planted the seed with Grandma. He had kept his promise.\n    - button \"Previous picture\" [disabled]\n    - button \"Next picture\"\n    - button \"Hear this part\"\n    - button \"Read or practise this part with help\"\n    - button \"Pause · Back to studio\"\n  - generic: YOUR ADVENTURE\n  - button \"Close page. Back to Loop’s picture show\": ×\n  - heading \"Read this part with Loop\" [level=2]\n  - paragraph: Reading help · Loop is waiting at this picture\n  - paragraph: Picture 1 of 4. Loop waits while you read or practise this part.\n  - paragraph:\n    - button \"Pip\"\n    - button \"crossed\"\n    - button \"the\"\n    - button \"river\"\n    - button \"and\"\n    - button \"planted\"\n    - button \"the\"\n    - button \"seed\"\n    - button \"with\"\n    - button \"Grandma\"\n    - text: .\n    - button \"He\"\n    - button \"had\"\n    - button \"kept\"\n    - button \"his\"\n    - button \"promise\" [active]\n    - text: .\n  - button \"Hear this part\"\n  - button \"Practise this part with listening feedback\"\n  - navigation \"Conversation navigation\":\n    - button \"Back to Loop’s picture show\"",
+  "dom": {
+    "active": "promise",
+    "flow": [
+      {
+        "className": "garden-reader ",
+        "clientHeight": 656,
+        "flex": "0 1 auto",
+        "height": 656,
+        "overflow": "visible",
+        "scrollHeight": 656,
+        "top": 64
+      },
+      {
+        "className": "garden-reading-scroll",
+        "clientHeight": 203,
+        "flex": "0 1 auto",
+        "height": 202.8000030517578,
+        "overflow": "auto",
+        "scrollHeight": 203,
+        "top": 178.1374969482422
+      },
+      {
+        "className": "g-reader-actions",
+        "clientHeight": 66,
+        "flex": "0 0 auto",
+        "height": 66.80000305175781,
+        "overflow": "visible",
+        "scrollHeight": 66,
+        "top": 380.9375
+      }
+    ],
+    "url": "http://localhost:4198/garden",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "visible": "YOUR ADVENTURE\n×\nRead this part with Loop\n\nReading help · Loop is waiting at this picture\n\nPicture 1 of 4. Loop waits while you read or practise this part.\n\nPip crossed the river and planted the seed with Grandma. He had kept his promise.\n\nHear this partPractise this part with listening feedback\nBack to Loop’s picture show"
+  }
+}

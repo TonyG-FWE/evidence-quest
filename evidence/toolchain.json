@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-09-12T00:39:32.4473021Z",
+  "fixture": "FIX11.TOOLCHAIN",
+  "checks": [
+    "CHECK11.AUTHORITY",
+    "CHECK11.TECH"
+  ],
+  "node": "24.21.0",
+  "npm": "11.19.0",
+  "cleanInstall": "PASS npm ci",
+  "typescript": "PASS strict client/server/checks",
+  "build": "PASS dist/client plus dist/server",
+  "schemaExpectations": 33,
+  "contractTests": 3,
+  "authoredGuardChecks": 23,
+  "apiCalls": 0,
+  "auditVulnerabilities": 0,
+  "lockfileSha256": "EB8D4C39E580798D8E72A4D9083639BC47BC5FD747800518F5C61D669B623CA3",
+  "limits": "Bootstrap build only; gameplay, storage and connected browser acceptance remain later tasks."
+}

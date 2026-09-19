@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-16T01:22:49.655Z",
+  "name": "native-fresh-opening",
+  "snapshot": "- main:\n  - link \"Garden Adventure\":\n    - /url: /garden\n    - text: Evidence Quest\n    - generic: THE GARDEN ADVENTURE\n  - generic: Saved in this browser\n  - navigation \"Game tools\":\n    - button \"Backpack\" [disabled]:\n      - generic: Backpack\n    - button \"Help\":\n      - generic: Help\n    - button \"Pause\":\n      - generic: Pause\n  - img \"The river and Grandma’s garden. Use the named controls below or click the scene.\"\n  - text: SPARKFEST · LOOP IS READY\n  - heading \"A little seed. A story to bring home.\" [level=1]:\n    - text: A little seed.\n    - text: A story to\n    - emphasis: bring home.\n  - paragraph: Help Pip bring new stories to Grandma's garden.\n  - paragraph: Welcome to SparkFest, our festival of stories and inventions. This is Pip's story. You'll guide him through it, read what he finds, and help him decide what to do. Then we'll show the ending you helped create.\n  - button \"Begin Pip’s adventure\":\n    - text: Begin Pip’s adventure\n  - generic: Read. Explore. Make something happen.",
+  "dom": {
+    "active": "\n    Evidence QuestTHE GARDEN ADVENTURESaved in this browserBackpackHelpPauseMaraGrandmaBridge piecesSeed boatSol · roof repairLantern storiesGrandma’s repair boxYellow launchGrandma’s blue landingRina’s bakerySection ASection B SPARKFEST · LOOP IS READYA little seed.A story tobring home.Help Pip bring new stories to Grandma's garden.Welcome to SparkFest, our festival of stories and inventions. This is Pip's story. You'll guide him through it, read what he finds, and help him decide what to do. Then we'll show the ending you helped create.Begin Pip’s adventure Read. Explore. Make something happen.\n  \n\n",
+    "flow": [],
+    "url": "http://localhost:4198/garden",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "visible": "Evidence Quest\nTHE GARDEN ADVENTURE\nSaved in this browser\nBackpack\nHelp\nPause\nSPARKFEST · LOOP IS READY\nA little seed.\nA story to\nbring home.\n\nHelp Pip bring new stories to Grandma's garden.\n\nWelcome to SparkFest, our festival of stories and inventions. This is Pip's story. You'll guide him through it, read what he finds, and help him decide what to do. Then we'll show the ending you helped create.\n\nBegin Pip’s adventure\nRead. Explore. Make something happen."
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "at": "2026-09-15T18:27:41.917Z",
+  "result": "PASS_INPUT_SOURCE_SCOPE_AND_REAL_HANDLERS",
+  "scope": "Independent review of the two actual UI corrections and refreshed real-handler evidence. Source inspection does not replace the pending current native and ordinary-browser input checks.",
+  "candidate": {
+    "garden": "assets/GardenApp-DMDJo1eK.js",
+    "css": [
+      "assets/GardenApp-Cowp-FIg.css"
+    ],
+    "entry": "assets/index-QL65HRqF.js"
+  },
+  "candidateReceipt": "evidence/group-8-integration-20260915/candidate-final-controls.json",
+  "runtimeVersion": "v24.21.0",
+  "changes": [
+    {
+      "path": "src/garden/GardenApp.tsx",
+      "sha256": "378beb760a69f02fa573a8df55f29cdd4d0e3023f5b28c3b4e54855606653611"
+    },
+    {
+      "path": "browser-tests/garden-bakery.spec.ts",
+      "sha256": "31f26c73b8bbe10569258253cb221d402ae5088a2c50345ac65b3fc95038603b"
+    },
+    {
+      "path": "browser-tests/garden-chapter.spec.ts",
+      "sha256": "77a602629d8c8598bef215bf98d7cce5ab6c9ac1b485984deecfed3956597bbd"
+    }
+  ],
+  "findings": [
+    {
+      "id": "G8-N03",
+      "sourceResult": "CORRECTED",
+      "behavior": "Unavailable construction mutations reflect the existing action/view/background guard, with an announced busy builder. Help, source reading and Back remain separate."
+    },
+    {
+      "id": "G8-N04",
+      "sourceResult": "CORRECTED",
+      "behavior": "Reader entry establishes the same focus target before paint. The immediate-Tab regression is unchanged."
+    }
+  ],
+  "unchanged": "All other src/server files, including canonical content, domain/save coordination, artwork and world rendering; current immediate-Tab test and existing time/performance limits.",
+  "portableTestEnvironment": "The microphone-free chapter routes remove only unused Chromium-specific fake-media launch arguments and add an explanatory comment. The chapter actions/assertions, video and timeout are byte-identical after reversing that configuration-only change.",
+  "matrix": {
+    "path": "evidence/group-8-review-20260915/routes-input-guards-node24.json",
+    "routes": 45,
+    "assertions": 649,
+    "failures": 0,
+    "sameOutcomesAsPrior": true
+  },
+  "commands": {
+    "content": {
+      "sources": 15,
+      "components": 72,
+      "wordOccurrences": 1143,
+      "log": "evidence/group-8-integration-20260915/build-input-guards-elevated.log"
+    },
+    "check": {
+      "result": "PASS",
+      "log": "evidence/group-8-integration-20260915/build-input-guards-elevated.log"
+    },
+    "serverBuild": {
+      "result": "PASS",
+      "log": "evidence/group-8-integration-20260915/build-input-guards-elevated.log"
+    },
+    "fullBuild": {
+      "result": "PASS",
+      "log": "evidence/group-8-integration-20260915/build-input-guards-elevated.log"
+    },
+    "contracts": {
+      "passed": 93,
+      "failed": 0,
+      "log": "evidence/group-8-integration-20260915/contracts-input-guards.log"
+    },
+    "authored": {
+      "passed": 23,
+      "providerCalls": 0,
+      "log": "evidence/group-8-integration-20260915/authored-input-guards.log"
+    },
+    "install": {
+      "result": "INHERITED_EXACT_DEPENDENCIES",
+      "reference": "evidence/group-8-review-20260915/required-command-review.json"
+    }
+  },
+  "failedBuild": "The first input-guard build could not read Vite configuration under the restricted shell. Its log is retained; the authorized subsequent full build completed. No game or limit change was used to obtain that build result.",
+  "references": [
+    {
+      "path": "evidence/group-8-integration-20260915/candidate-final-controls.json",
+      "sha256": "7e098550344a329215bda4a776907489db411b38c990cf706cc77058891f4f86"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/candidate-full-chromium.json",
+      "sha256": "3ae3e1f76747dda67893431d90346fe581244ff03f6468caa3167c140427e8da"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/before-input-guards-GardenApp.tsx",
+      "sha256": "c673bc730d48de6ac92af6bc6abc07e90d5c9514d1e6833c6d5ac79fe4564bcc"
+    },
+    {
+      "path": "src/garden/GardenApp.tsx",
+      "sha256": "378beb760a69f02fa573a8df55f29cdd4d0e3023f5b28c3b4e54855606653611"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/routes-input-guards-node24.json",
+      "sha256": "050415f56cbc5b06387ad43f3a590605736e4924d059f37418c21ce96bea412c"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/build-input-guards-elevated.log",
+      "sha256": "6c9fdafabbc2d38d0f57c0a07fdaa1457a14472b26c1aadc543a7a482dcf9cb2"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/contracts-input-guards.log",
+      "sha256": "802921e6faa8d17baa9e3c85ee9da381ee569c0d85c792da2e448e83e73b989f"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/authored-input-guards.log",
+      "sha256": "25483957bcbd3e70fe1add0004c4b2d35bb352e3edc08679a69ea986bd860413"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/build-input-guards.log",
+      "sha256": "8719d9237d901186da3dffc9f75c99018d279aa3b8fe5c97125f726e898fdff8"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/input-corrections-preflight.md",
+      "sha256": "c4ace7027c7f1d7c552c9a8ac9d9aedebde85ae3237f58b5ef3f4a0703852307"
+    }
+  ],
+  "nativeFollowup": "PENDING_SCOPED_WINDOW",
+  "wholeBrowserAndFinalLedger": "PENDING_SEPARATE_FINAL_REVIEW"
+}

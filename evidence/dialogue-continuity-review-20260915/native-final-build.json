@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-15T23:18:15.844Z",
+  "candidateReceipt": "../dialogue-continuity-20260915/candidate-compact.json",
+  "gardenBundle": "assets/GardenApp-C_gM6ax5.js",
+  "observedDomAssets": [
+    "/assets/index-B9c9DSp7.js",
+    "/assets/GardenApp-8QVIon31.css"
+  ],
+  "origin": "http://127.0.0.1:4203/garden",
+  "viewport": {
+    "width": 1422,
+    "height": 800
+  },
+  "checks": [
+    {
+      "check": "Full reload of corrected build preserves chapter completion",
+      "result": "PASS",
+      "evidence": "final-build-persisted-ending.png"
+    },
+    {
+      "check": "Six-story library preserves Mara listening, Pip gathering memory and Sol unfinished draft",
+      "result": "PASS"
+    },
+    {
+      "check": "Sol recorded manuscript stays read only and ending stays open",
+      "result": "PASS",
+      "evidence": "final-build-sol-recorded-draft.png"
+    },
+    {
+      "check": "Mara full earlier account remains accessible after completion with all speaker labels and no old live choice",
+      "result": "PASS",
+      "evidence": "final-build-mara-earlier-account.png"
+    }
+  ],
+  "solText": "Sol’s original draft\n×\nA Small Repair\nHelp\nBackpack\nPause\n\nRereading an earlier account · Pip stays where you left him\n\nClick a word for its meaning and pronunciation.\n\nSol wrote this draft about today’s repair. “I” means Sol.\n\nSol narrates\n\nRain dripped through the roof of Rina's bakery. She dragged her flour sacks away from the puddles.\n\nRina\n\n\"I promised to have everyone's bread ready today,\" Rina said. \"If those sacks get wet, I won't be able to bake.\"\n\nSol narrates\n\nI found a cracked roof tile and replaced it. The dripping stopped.\n\nSol narrates\n\nRina checked the sacks. The flour was still dry.\n\nSol narrates\n\nI packed my tools and went back to my workshop.\n\nSol shared this draft. Its ending is still open.\n\nHear this page\nRead a short part aloud\nBack to the lantern stories",
+  "maraText": "At the passenger dock\n×\nMara's story can travel\nHelp\nBackpack\nPause\n\nRereading an earlier account · Pip stays where you left him\n\nClick a word for its meaning and pronunciation.\n\nNarrator\n\nMara stood on the dock with a sheet of paper in her hand.\n\nPip\n\n\"Is that a story?\" Pip asked.\n\nMara\n\n\"One I wrote for Grandma's garden,\" Mara replied.\n\nPip\n\n\"Grandma thinks you don't enjoy going there anymore.\"\n\nMara\n\nMara lowered the page. \"I miss it. But my work hours changed before the storm. I used to finish before the storytelling began. Now I have to wait for the last boat to return. By then, everyone at the garden has gone home.\"\n\nPip\n\n\"Could you leave a little earlier?\"\n\nMara\n\n\"I have an obligation to the passengers,\" Mara said. \"I need to help them get safely off the boat.\"\n\nHear this page\nRead a short part aloud\nBack to Help",
+  "limitations": [
+    "Own native viewport is1422x800. Compact320x568 screenshots/geometry were independently reviewed from the implementation task ordinary Chromium test.",
+    "The full fresh native chapter was played on the immediately preceding CH candidate; the bounded final UI delta has a separate reload/source check."
+  ],
+  "providerCallsInitiatedByReview": 0
+}

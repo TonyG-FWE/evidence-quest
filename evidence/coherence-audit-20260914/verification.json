@@ -1,0 +1,56 @@
+{
+  "at": "2026-09-14T23:28:31.559Z",
+  "type": "DOCUMENT_AND_SOURCE_PRESERVATION_CHECK_NOT_GAME_TEST",
+  "status": "PASS",
+  "errors": [],
+  "rows": 169,
+  "groups": 19,
+  "topics": 20,
+  "linkedTargetsChecked": 245,
+  "codeEvidenceAnchors": 18,
+  "sourceRequirements": 344,
+  "protectedFilesCompared": 1609,
+  "changedProtected": [],
+  "providerAttempts": 1,
+  "providerLedgerEvents": 3,
+  "initialValidatorCorrection": "The first documentation validator counted three ledger events as three attempts. The ledger actually contains one reservation, its halt and its result. Bytes never changed.",
+  "runtimeTests": "NOT_RUN - no runtime changes; historical receipts not promoted",
+  "liveProviderTests": "NOT_RUN - existing 1/75 hold",
+  "ownerExperienceAcceptance": "REJECTED - current build; no acceptance requested for a replacement design",
+  "unmappedSourceDecisions": [
+    {
+      "id": "D005",
+      "note": "Contains proposed or superseded material; do not promote unselected examples."
+    },
+    {
+      "id": "D008",
+      "note": "Contains proposed or superseded material; do not promote unselected examples."
+    },
+    {
+      "id": "D010",
+      "note": "Contains proposed or superseded material; do not promote unselected examples."
+    },
+    {
+      "id": "D013",
+      "note": "Contains proposed or superseded material; do not promote unselected examples."
+    },
+    {
+      "id": "D027",
+      "note": "Contains proposed or superseded material; do not promote unselected examples."
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "docs/game-review/EXPERIENCE-AUDIT-20260914.md",
+      "sha256": "234bfca551784325e74e67e000eb968770c28afdced31e4d10179395b1d8240b"
+    },
+    {
+      "path": "docs/game-review/A-TO-Z-IMPLEMENTATION-CHECKLIST.md",
+      "sha256": "9e7132bd7378a11a67feda1932877d8af2f57ce5db2c1d332a170a320c801b5d"
+    },
+    {
+      "path": "docs/game-review/A-TO-Z-IMPLEMENTATION-CHECKLIST.json",
+      "sha256": "041118f314a67c01637a7b6fb2111c30ab2d1488160e56a3a7912a7651231e38"
+    }
+  ]
+}

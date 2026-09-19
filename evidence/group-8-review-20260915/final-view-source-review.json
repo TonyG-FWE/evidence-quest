@@ -1,0 +1,317 @@
+{
+  "at": "2026-09-15T20:19:43.599Z",
+  "result": "PASS_FINAL_VIEW_SOURCE_REVIEW",
+  "scope": "Independent exact review of two initial dock-service framing expressions and one deliberate speech-cancellation guard. The camera uses the existing dock framing during service and the unrelated travel goal is hidden. Canceled/interrupted speech ends playback without falsely reporting unavailable; real errors and stale-sequence protection are unchanged. All story, save, source words, geometry, boat path, input handlers and browser assertions remain unchanged.",
+  "candidate": {
+    "garden": "assets/GardenApp-D-NRNTbz.js",
+    "css": [
+      "assets/GardenApp-Cowp-FIg.css"
+    ],
+    "entry": "assets/index-sMxSaulA.js"
+  },
+  "candidateReceipt": {
+    "path": "evidence/group-8-integration-20260915/candidate-speech-cancel.json",
+    "sha256": "9968d3799848f9b32cec794970810b0405bfc00a2ebe4c528fb7a5f4aae66150"
+  },
+  "priorCandidate": {
+    "path": "evidence/group-8-integration-20260915/candidate-boat-entry.json",
+    "sha256": "6e6a5ebc0f8df79a6cf77cbff4f8b95c7b6defe3b62c7610611a10d035b0b565",
+    "game": {
+      "garden": "assets/GardenApp-DQxss6LK.js",
+      "css": [
+        "assets/GardenApp-Cowp-FIg.css"
+      ],
+      "entry": "assets/index-Bk4gdjda.js"
+    }
+  },
+  "intermediateCandidate": {
+    "path": "evidence/group-8-integration-20260915/candidate-service-framing.json",
+    "sha256": "91d3c9220e3fc2326ae9e63cbcfa506ac9bb6c2216c9a338cc078b3f1406d1b7",
+    "game": {
+      "garden": "assets/GardenApp-DwaLuXIt.js",
+      "css": [
+        "assets/GardenApp-Cowp-FIg.css"
+      ],
+      "entry": "assets/index-Dq2iufyH.js"
+    }
+  },
+  "priorReview": {
+    "path": "evidence/group-8-review-20260915/boat-source-review.json",
+    "sha256": "2110ac306b9858219eab2ff4142d7736395a0e6e92966826644f907f1a9f49d2"
+  },
+  "changes": [
+    {
+      "path": "src/garden/GardenApp.tsx",
+      "beforeSha256": "f75cfeb59e5e89ec46cfda334f6c19afbb0201c1284d5ab70bda6f7a69c92fdd",
+      "afterSha256": "7a0f15ebc9ae3331e78cf49b970c1100df207c72b4a045a7562c550f310456d9"
+    },
+    {
+      "path": "src/garden/GardenScene.tsx",
+      "beforeSha256": "0602004248dbbd517cd9bc747c1a61b5589cc7a1391a14f010c085688ecff538",
+      "afterSha256": "39038af06bffa4db834294615fa1f749dc569e174cfebfeca9b39c27522a71ea"
+    }
+  ],
+  "matrixCarry": {
+    "path": "evidence/group-8-review-20260915/routes-boat-entry-node24.json",
+    "sha256": "7d944d2fb593e8020cb83d9a62050d2593a5c8ecf006f699ed044ff2f07e2cba",
+    "routes": 45,
+    "assertions": 649,
+    "rerun": false,
+    "unchangedBindings": [
+      {
+        "path": "src/garden/AdditionalWordHelp.tsx",
+        "sha256": "894dcf6e43308739797639b687afc2fd75b3493acc43ba810c9f68f734f986cf"
+      },
+      {
+        "path": "src/garden/art.ts",
+        "sha256": "96ee9cebd507e5ff3280c443d394ced8ce496b6c1877542180752dd427af07bd"
+      },
+      {
+        "path": "src/garden/audio.ts",
+        "sha256": "223da1bed6dedc62bc01e5f731e72ebf95a02d06358c65adc13d9dd414adf1da"
+      },
+      {
+        "path": "src/garden/bakery.ts",
+        "sha256": "8125a9d827407e145194f0a57a56d8bb1de9b557cee49f62c85884136f49d4f4"
+      },
+      {
+        "path": "src/garden/BakeryControls.tsx",
+        "sha256": "d48badb9b0295d5ce70f7651d26da151c5a0d25ca43ee344be9e47c5c0c6fd80"
+      },
+      {
+        "path": "src/garden/bakeryWorld.ts",
+        "sha256": "ac096b223a8d851a9b155e24d751e4f375e37bc2e9628dfd54ef0d226a136beb"
+      },
+      {
+        "path": "src/garden/BoatControls.tsx",
+        "sha256": "a93e30ba9a0be417eb24a984326b904251a747cf852aa54337aeb8b49bd085d5"
+      },
+      {
+        "path": "src/garden/chapter.ts",
+        "sha256": "545dd119c066d38535aee6764d378ce0730fd67bca2e80a675ac3181037b62bd"
+      },
+      {
+        "path": "src/garden/chapterContent.ts",
+        "sha256": "e779bb4edf96103badbaedfbfa54866bb7f6241d9b4a8d74292f8b04a174a370"
+      },
+      {
+        "path": "src/garden/chapterGlossary.ts",
+        "sha256": "2c5445b5d3c6aec7907a689df94d7d07f94da2462de4080e342c866c6a71708d"
+      },
+      {
+        "path": "src/garden/ChapterPanels.tsx",
+        "sha256": "29f883bf061a29ae9e2ef9650370e7917060c33438656ba6debc86a7c65b5181"
+      },
+      {
+        "path": "src/garden/chapterWorld.ts",
+        "sha256": "b8b687191bd44599c4ebf8747dfba061e93c17c6735413f31cbfbc1924a095ce"
+      },
+      {
+        "path": "src/garden/content.ts",
+        "sha256": "e4cb004657d7eeba0a164db0ee285d8e72047c20ee6c412f640f3bf9228d96b1"
+      },
+      {
+        "path": "src/garden/DraftReader.tsx",
+        "sha256": "52f723eab16b177e3a65dc43bf5a2fdc1f4575f876552416674f726c5c714f25"
+      },
+      {
+        "path": "src/garden/FeedbackActivity.tsx",
+        "sha256": "0efdefbb683aa99311dd701660322abcdbe7e9ffc56057f6d29df134db5714b4"
+      },
+      {
+        "path": "src/garden/FinaleActivity.tsx",
+        "sha256": "4733eca5bb63848f51b1303cfb243be942d3d18df3d20bb3fe558ce868bbd344"
+      },
+      {
+        "path": "src/garden/focus.ts",
+        "sha256": "257caac77a8de22a2c35f7a9272d90fc13797c134eb81960849e449f952b8367"
+      },
+      {
+        "path": "src/garden/garden.css",
+        "sha256": "5b4f201d7a8d3c86d22eab53a2b5a7b3782f320c9ac49b8a3e0af135c76212db"
+      },
+      {
+        "path": "src/garden/gathering.ts",
+        "sha256": "b0f535de38bb497aef61faafdd26428cdbc60e0e1fc1de9e68fec7c3c63feccc"
+      },
+      {
+        "path": "src/garden/GatheringPanels.tsx",
+        "sha256": "1ca2113debe7ff574c8896f894a8eeef5f5b1ccadee31771912b78364949ad3b"
+      },
+      {
+        "path": "src/garden/gatheringWorld.ts",
+        "sha256": "eeca96abf0e201deb33e6014efa3748607b6ec560e644bd90181be4c45136f2c"
+      },
+      {
+        "path": "src/garden/interaction.ts",
+        "sha256": "18b308d1b5c2236a12b3677704edda61b2bf37e9fe768c25f71c525baf0beff9"
+      },
+      {
+        "path": "src/garden/lanterns.ts",
+        "sha256": "a11ca909e73c6ea976075d08d72caa0b418d0b8b62ca92c66e004106b6763029"
+      },
+      {
+        "path": "src/garden/lanternWorld.ts",
+        "sha256": "3907c5d430636f2e8b468a5d2ee256157d40aa516ac290109a32ae18d8677bcb"
+      },
+      {
+        "path": "src/garden/mara.ts",
+        "sha256": "c77c7a89106e7149944aa22da9be97cdfbf882cde569740a16dbc2ebb24e5e0a"
+      },
+      {
+        "path": "src/garden/MaraWorld.tsx",
+        "sha256": "9b15d9292b32a258cfb257551cdfe7a08a00517311389f64dbd9750a83ffd3ae"
+      },
+      {
+        "path": "src/garden/model.ts",
+        "sha256": "00d7acec80e08e58c7e5c774907ee17dc8975e9c69420b9947370c1fd2afe218"
+      },
+      {
+        "path": "src/garden/persistence.ts",
+        "sha256": "4dc2be2cc186191c98bf2e70bba6485a7ed0406a63edadcee248d70bb3674798"
+      },
+      {
+        "path": "src/garden/ReadingDetails.tsx",
+        "sha256": "06195a7245343bac7019b78eb60756a6fe2a483ea25289c5693ab9c56d9e79a3"
+      },
+      {
+        "path": "src/garden/ReadingPractice.tsx",
+        "sha256": "b761826352354591d8e8aa3be5c24971e4211c931bb6c0cf07169ef5e4752805"
+      },
+      {
+        "path": "src/garden/river.ts",
+        "sha256": "94ef9e24dd10631b799a521283ddd4a504815249ed419975878653e03f0a6db0"
+      },
+      {
+        "path": "src/garden/StoryStage.tsx",
+        "sha256": "81a60da8fb6be1920740aca4d6b957a04726879b63778d625d282fc4bbc5cb62"
+      },
+      {
+        "path": "src/garden/WorldActivity.tsx",
+        "sha256": "6a529a4f23a362324709578ce1c71d9fe2c16a682af078909afd05073fcde504"
+      },
+      {
+        "path": ".cache/checks/src/garden/audio.js",
+        "sha256": "970891fdcbeea659b54752bf170ed02fc121faea31a7a336da5a7312d02bd2d5"
+      },
+      {
+        "path": ".cache/checks/src/garden/bakery.js",
+        "sha256": "a97c79bc6f1bd104312a314763187fb65220103c4125ca601e43d345546513c9"
+      },
+      {
+        "path": ".cache/checks/src/garden/chapter.js",
+        "sha256": "320adee8bf7166960021a3acafc2eee854d584771042077a3c6a6fda9a9a21cc"
+      },
+      {
+        "path": ".cache/checks/src/garden/chapterContent.js",
+        "sha256": "f1804cf2f11f750fa8fd5bf69332faae10b518196ba6314a26256e03f8e7a079"
+      },
+      {
+        "path": ".cache/checks/src/garden/chapterGlossary.js",
+        "sha256": "218d4bb79f3e940c59aec13d50c7881ad80190a57ad49f7ddb35da17e1c33a23"
+      },
+      {
+        "path": ".cache/checks/src/garden/content.js",
+        "sha256": "358228a200374a93451c88d3063518206f9ad3c150de065956916bd9c9206b76"
+      },
+      {
+        "path": ".cache/checks/src/garden/gathering.js",
+        "sha256": "585c5b5891be05fd0c0775ad8db3332cfcfee05bf36a5575b0058e4d23ede6b8"
+      },
+      {
+        "path": ".cache/checks/src/garden/interaction.js",
+        "sha256": "738836c9f1f6ab794264d76d02c3586602d8197b8b521f0e9075a6e73d39e9f1"
+      },
+      {
+        "path": ".cache/checks/src/garden/lanterns.js",
+        "sha256": "8e43911d81d251a007bdfa4e0d38e6dea5ba063ab5a16844af7d0346b89f0eed"
+      },
+      {
+        "path": ".cache/checks/src/garden/mara.js",
+        "sha256": "27880ac7c8976c0b560b326fab8936c3ba480aa46c7e88eca13ea6d9d2753437"
+      },
+      {
+        "path": ".cache/checks/src/garden/model.js",
+        "sha256": "4427c142473b84aef134224fe75f3138b001fed5e16521d6ead1ece7b27ca0bf"
+      },
+      {
+        "path": ".cache/checks/src/garden/persistence.js",
+        "sha256": "1268d4a8509486adc8be926c624d61c46b3b3b41bcd5d6d1fec6c1e17ba92613"
+      },
+      {
+        "path": ".cache/checks/src/garden/river.js",
+        "sha256": "9704d3c35d7dde4c8004c5482e0f10457f6ca346cbd2d57d8b0cd6f5a0d615bf"
+      },
+      {
+        "path": "evidence/group-8-review-20260915/review-connected-routes.mjs",
+        "sha256": "0429d4619ab7282c9124d7706eb820cdf40f0a1b9fd34fe1332175c0bfffb6f8"
+      }
+    ],
+    "reason": "Every compiled real-handler module and every other source bound by the45-route run is byte-identical. Only the two exactly reviewed view files changed; the original run retains its DQ edition."
+  },
+  "commands": {
+    "build": {
+      "result": "PASS",
+      "log": {
+        "path": "evidence/group-8-integration-20260915/build-speech-cancel.log",
+        "sha256": "d218f986d8618398e09d747d3cf58758f1bdf56504e167f55b0c01e1d17e68b6"
+      }
+    },
+    "contracts": {
+      "passed": 93,
+      "edition": {
+        "garden": "assets/GardenApp-DwaLuXIt.js",
+        "css": [
+          "assets/GardenApp-Cowp-FIg.css"
+        ],
+        "entry": "assets/index-Dq2iufyH.js"
+      },
+      "log": {
+        "path": "evidence/group-8-integration-20260915/contracts-service-framing.log",
+        "sha256": "d45078c669ab211e5027614355e979a96ef1d3db2124e95dd0f11cad03673ac2"
+      }
+    },
+    "authored": {
+      "passed": 23,
+      "providerCalls": 0,
+      "edition": {
+        "garden": "assets/GardenApp-DwaLuXIt.js",
+        "css": [
+          "assets/GardenApp-Cowp-FIg.css"
+        ],
+        "entry": "assets/index-Dq2iufyH.js"
+      },
+      "log": {
+        "path": "evidence/group-8-integration-20260915/authored-service-framing.log",
+        "sha256": "25483957bcbd3e70fe1add0004c4b2d35bb352e3edc08679a69ea986bd860413"
+      }
+    }
+  },
+  "references": [
+    {
+      "path": "evidence/group-8-integration-20260915/before-service-framing/GardenApp.tsx",
+      "sha256": "f75cfeb59e5e89ec46cfda334f6c19afbb0201c1284d5ab70bda6f7a69c92fdd"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/before-service-framing/GardenScene.tsx",
+      "sha256": "0602004248dbbd517cd9bc747c1a61b5589cc7a1391a14f010c085688ecff538"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/before-speech-cancel-GardenApp.tsx",
+      "sha256": "f5efe8e39cbb0aa519ee0bd20f2b05f05454de0814177a7568ae18ab2e7bbb34"
+    },
+    {
+      "path": "evidence/group-8-review-20260915/native-supplement-practice-return.json",
+      "sha256": "f624d1d0b24fa70598edaf0d9682ebcd0653c1d46acf91ce588c93a78cceeb3c"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/source-frames/service-compact-final/2.png",
+      "sha256": "7cd7567dd9b16a311c9446e9adba60acd115ef6a7553ff524456804626917c6e"
+    },
+    {
+      "path": "evidence/group-8-integration-20260915/source-frames/boat-compact-final/4.png",
+      "sha256": "f504d0d60963830baf7891b3f4b9bece94c0b67aade9c66ee80035c309edf92c"
+    }
+  ],
+  "pending": "Final native cancellation, opening and return checks, the current initial-service desktop/compact frames, final film and169-row reconciliation remain separate."
+}

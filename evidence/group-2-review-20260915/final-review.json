@@ -1,0 +1,153 @@
+{
+  "at": "2026-09-15T05:00:21.422Z",
+  "group": 2,
+  "status": "PASS_FOR_BOUNDED_SHARED_INTERACTION_SCOPE",
+  "implementationOwnerTask": "01a096d0-72bf-7c01-8a73-66f1c0b8f9bd",
+  "reviewOrigin": "http://127.0.0.1:4195/garden",
+  "findings": [
+    {
+      "id": "G2-RV01",
+      "status": "PASS",
+      "evidence": "Actual native nested Help/Backpack/source returns and independent real-handler activity identity."
+    },
+    {
+      "id": "G2-RV02",
+      "status": "PASS",
+      "evidence": "Matching delivered notices unchanged in real handlers; neutral preview notice and recipient-specific caption."
+    },
+    {
+      "id": "G2-RV03",
+      "status": "PASS",
+      "evidence": "Actual native Tab and Enter reach internal Help; focus returns to originating control."
+    },
+    {
+      "id": "G2-RV04",
+      "status": "PASS",
+      "evidence": "Native invalid usual/Mara waiting scene, no teller/page, disabled acceptance and available change control."
+    },
+    {
+      "id": "G2-RV05",
+      "status": "PASS",
+      "evidence": "Native prepared disclosure remains expanded, originating button regains focus, exact child draft separate from prepared selection."
+    },
+    {
+      "id": "G2-RV06",
+      "status": "PASS_REAL_HANDLER",
+      "evidence": "Previously failing real-handler conversation distance 1.48 now starts and completes actual page handoff; final native boundary replay not repeated."
+    },
+    {
+      "id": "G2-RV07",
+      "status": "PASS",
+      "evidence": "Native measured320x568, Largest/Roomier28px source and meaning,127px passage,48px audio controls, no horizontal overflow, Escape focus return."
+    }
+  ],
+  "verification": {
+    "independentHandlerReceipts": [
+      "evidence/group-2-review-20260915/handler-observations-final.json",
+      "evidence/group-2-review-20260915/approach-final.json"
+    ],
+    "nativeReceipts": [
+      "evidence/group-2-review-20260915/native-js-recheck.md",
+      "evidence/group-2-review-20260915/compact-target-final.json"
+    ],
+    "ownerResults": "74 contract checks; broader Garden run15 passes/3 failures retained; corrected keyboard/conflict and new world/compact paths pass in subsequent bounded runs. This is not a claim of one complete final-suite run.",
+    "finalCssCorrection": "Restored word-help audio min-height from35 to48; native final measurement passed. Viewport reset."
+  },
+  "limitations": [
+    "Only Group2 shared interaction scope is accepted by this engineering review. Groups3-8 remain unfinished.",
+    "Earlier reader miniatures are not accepted as actual encounter gameplay.",
+    "Native fresh-start cancellation/archive contents were not verified; normal restart affected only owned4195 QA. Owner retains automated archive/conflict evidence.",
+    "No provider requests, ledger changes, child-live activation, learner evidence, physical-touch/screen-reader or all-device/performance qualification.",
+    "User4192 save not accessed. Runtime edits and BUILD-STATUS belong to the implementation task."
+  ],
+  "hashes": [
+    {
+      "path": "dist/client/assets/GardenApp-Cnqf67CK.js",
+      "sha256": "9daafb1e2f91a968b0c42d106c2fed6731e76429ab4a1976a3b212e00d93807e"
+    },
+    {
+      "path": "dist/client/assets/GardenApp-CqyjCMVr.css",
+      "sha256": "2d268f8e4165fbcab67f3d04c138051f37fc83319439ec06a1f5306b2f8f3226"
+    },
+    {
+      "path": "dist/client/assets/index-CkP7PFmJ.js",
+      "sha256": "417dc7d27bf7e2986a1969c97b29fa7ccd72dae61b99b9ed3ac38bc81d54d2e5"
+    },
+    {
+      "path": "src/garden/model.ts",
+      "sha256": "8d5f6f81220c64ba72b2e18d619cb13dd077a17a5e67ba475cad9d4b91bac4f3"
+    },
+    {
+      "path": "src/garden/interaction.ts",
+      "sha256": "292602386d547358c1ad547ad812e05201a430e44490dab39f86807f751b2e98"
+    },
+    {
+      "path": "src/garden/focus.ts",
+      "sha256": "257caac77a8de22a2c35f7a9272d90fc13797c134eb81960849e449f952b8367"
+    },
+    {
+      "path": "src/garden/WorldActivity.tsx",
+      "sha256": "485dd965d783d319dfaa2c706727a03a98f0c81ae9fa2aa529ec62be1dc373b7"
+    },
+    {
+      "path": "src/garden/GardenApp.tsx",
+      "sha256": "739c162708d453acf23edbf8de5eec2e0941eef96165a7477a9ddf6ae8cbf9fa"
+    },
+    {
+      "path": "src/garden/ChapterPanels.tsx",
+      "sha256": "a86127fa3c3c3183d3440f56525b706e0fff93c77440b9b68a78a23913eecab5"
+    },
+    {
+      "path": "src/garden/StoryStage.tsx",
+      "sha256": "f6e67ff578497383b3f5d8b3ffbb8093d274de737ba485eda9e535845df4a9d8"
+    },
+    {
+      "path": "src/garden/garden.css",
+      "sha256": "f05aa24bea36af94393b3010b44f08321112b16cc8b9db1bccb5c4e82067116f"
+    },
+    {
+      "path": "docs/game-review/GROUP-2-SHARED-INTERACTION-PACKET-20260915.md",
+      "sha256": "e97606e00ee6ae9181c9606a1ba7882cdd375b57b177c0ec8ef854dc8b851000"
+    },
+    {
+      "path": "evidence/group-2-review-20260915/native-review-initial.md",
+      "sha256": "063f0326d053d60bdd794de9415c8badf20f779ce62befa819176fa4ab04c4f0"
+    },
+    {
+      "path": "evidence/group-2-review-20260915/native-js-recheck.md",
+      "sha256": "221e47a7a518170f89b8045d32306bfe58e260b46e2234197cf13fc7dcffe022"
+    },
+    {
+      "path": "evidence/group-2-review-20260915/compact-layout-recheck.md",
+      "sha256": "4bd556d94100ad1b24ee48ee1d8f135d440636d3c72ac66787e7aed33f6634a0"
+    },
+    {
+      "path": "evidence/group-2-review-20260915/handler-observations-final.json",
+      "sha256": "21ea511900c64dd07818c02b5830074c63714ee24e6c10c5cd50c3f73955dd6b"
+    },
+    {
+      "path": "evidence/group-2-review-20260915/approach-final.json",
+      "sha256": "7497e5c5cd5aaa7ca70787b4fbf52012393b7b9acdc17730eaf9761865a5f7f8"
+    },
+    {
+      "path": "evidence/group-2-review-20260915/compact-target-final.json",
+      "sha256": "7814e712a4555c0b8daf03449f1463e15c7bf9ed19e07beb36d8df71d083e094"
+    },
+    {
+      "path": "evidence/group-2-interactions-20260915/contracts.log",
+      "sha256": "e89a04a2427cfca6cc7fb0d1d132e05326a42118de85ef7b546ce8d47f5d52ce"
+    },
+    {
+      "path": "evidence/group-2-interactions-20260915/browser-reviewed-candidate.log",
+      "sha256": "caec3829a9d294220ab7a00720890a8fb54124193e4bd553beb737c1afd9671c"
+    },
+    {
+      "path": "evidence/group-2-interactions-20260915/browser-follow-up-1.log",
+      "sha256": "82aa905c169956fd5bddfe8506a10a857c4c9a186889cce61032c1daa907f48a"
+    },
+    {
+      "path": "evidence/group-2-interactions-20260915/browser-final.log",
+      "sha256": "1198ca346740aab288caa85990b39e24da7b073bf844352e9a97cae7dff3de9a"
+    }
+  ]
+}

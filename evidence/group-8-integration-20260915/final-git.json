@@ -1,0 +1,17 @@
+{
+  "at": "2026-09-15T20:43:05.837Z",
+  "branch": "codex/first-connected",
+  "head": "63af7a2261553c2639842a458b54dde38311e3f7",
+  "status": "DIRTY_LOCAL_CHANGES_PRESERVED",
+  "statusPath": "evidence/group-8-integration-20260915/final-git-status.txt",
+  "diffStatPath": "evidence/group-8-integration-20260915/final-git-diff-stat.txt",
+  "mutations": {
+    "checkout": false,
+    "reset": false,
+    "clean": false,
+    "commit": false,
+    "push": false,
+    "deployment": false
+  },
+  "note": "This is the existing base HEAD, not a commit of the current local implementation. The runtime and evidence receipts bind current file bytes independently."
+}

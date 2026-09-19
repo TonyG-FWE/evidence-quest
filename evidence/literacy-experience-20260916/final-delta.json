@@ -1,0 +1,19 @@
+{
+  "at": "2026-09-16T05:11:07.120Z",
+  "from": "sealed-pages.json",
+  "to": "final.json",
+  "deltas": [
+    {
+      "path": "src/garden/readingPages.ts",
+      "sha256": "8d795b3fc36efa2179da8f97d6182cafc0f307acbf49ec3e12ae7eb428c732bf"
+    },
+    {
+      "path": "checks/garden-reading-support.test.ts",
+      "sha256": "b2c30842a1a8019ee3e106b301415e073c559f7c9dca25c6895d61ec7bd723f8"
+    },
+    {
+      "path": "dist/client/.vite/manifest.json",
+      "sha256": "f558c380ab9bf4eb4c0112f4ad5dc510b919ca8239b3d50ef8719999394a1594"
+    }
+  ]
+}

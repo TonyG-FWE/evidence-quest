@@ -1,0 +1,61 @@
+{
+  "at": "2026-09-15T23:49:48.730Z",
+  "scope": "Reader spacing and duplicate toolbar correction requested by Tony. Preserve story/store/save semantics.",
+  "entries": [
+    {
+      "path": "src/garden/GardenApp.tsx",
+      "sha256": "a95860f8e5d725846be1ffcc2a6eaf2071f2e9f88a322b2d5d23d7621dc6f14b",
+      "snapshot": "evidence/reader-layout-20260915/before/src/garden/GardenApp.tsx"
+    },
+    {
+      "path": "src/garden/garden.css",
+      "sha256": "8190a005f92d5595dbca34471821a22aeee42df8cd822e7b41f2f8089b30fdff",
+      "snapshot": "evidence/reader-layout-20260915/before/src/garden/garden.css"
+    },
+    {
+      "path": "BUILD-STATUS.md",
+      "sha256": "e3eb0a0d297cc9c17a04da0f6084ef224e2fff79175740abb250e66cc16969bc",
+      "snapshot": "evidence/reader-layout-20260915/before/BUILD-STATUS.md"
+    },
+    {
+      "path": "README.md",
+      "sha256": "6651e8386ab5366265f393b80ade6552399afef571a3418b6db7593101e76314",
+      "snapshot": "evidence/reader-layout-20260915/before/README.md"
+    },
+    {
+      "path": "docs/GARDEN-COMPLETE-DEMO.md",
+      "sha256": "87183c20a9802b5e55154512aab4c24753188394e55a27733ca67a82624ccf52",
+      "snapshot": "evidence/reader-layout-20260915/before/docs/GARDEN-COMPLETE-DEMO.md"
+    },
+    {
+      "path": "package.json",
+      "sha256": "015e9d79d86ee520d96b50ed2c75f19bd76e502d6f48b9a96727e5ea30cc60c1",
+      "snapshot": "evidence/reader-layout-20260915/before/package.json"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "55e01ed71458dcd8184bd26492e5433077066bc7cbebade60fb8be677203aec3",
+      "snapshot": "evidence/reader-layout-20260915/before/package-lock.json"
+    },
+    {
+      "path": "evidence/authored-evaluation.json",
+      "sha256": "5c507695ab1bddb65bc62a032d5e9411b300f513ddc542d4d60ff114e8213abc",
+      "snapshot": "evidence/reader-layout-20260915/before/evidence/authored-evaluation.json"
+    },
+    {
+      "path": "evidence/er13/content-validation.json",
+      "sha256": "e465db0416004e744a81b50378bf0856edae5ceec2b6710f58c315ecdd9046ec",
+      "snapshot": "evidence/reader-layout-20260915/before/evidence/er13/content-validation.json"
+    },
+    {
+      "path": "evidence/er13/production-art-exports.json",
+      "sha256": "4501cef52bdb2bcf4998bd6196df8b3dea7678eadcc48d4a273ff194fceb64b9",
+      "snapshot": "evidence/reader-layout-20260915/before/evidence/er13/production-art-exports.json"
+    },
+    {
+      "path": "evidence/group-7-finale-20260915/content-manifest.json",
+      "sha256": "8a0525415cce153cf8cbf76ae892211e457f4f3284f2006b96fa2df91b7bb8d6",
+      "snapshot": "evidence/reader-layout-20260915/before/evidence/group-7-finale-20260915/content-manifest.json"
+    }
+  ]
+}

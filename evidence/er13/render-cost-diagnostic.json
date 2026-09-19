@@ -1,0 +1,362 @@
+{
+  "scope": "Diagnostic wrappers measure synchronous Canvas API calls and clone/freeze/UUID operations during an actual two-second rehearsal. Deferred compositing and total React commit duration are not attributed. Instrumentation overhead is included; this is diagnosis, not qualification.",
+  "result": {
+    "frames": [
+      112,
+      174,
+      78,
+      77,
+      72,
+      71,
+      72,
+      77,
+      78,
+      84,
+      73,
+      76,
+      77,
+      83,
+      76,
+      93,
+      137,
+      160,
+      82,
+      76,
+      87,
+      173
+    ],
+    "costs": {
+      "randomUUID": {
+        "calls": 926,
+        "ms": 1,
+        "maxMs": 1
+      },
+      "structuredClone": {
+        "calls": 28,
+        "ms": 8,
+        "maxMs": 1
+      },
+      "Object.freeze": {
+        "calls": 2848,
+        "ms": 5,
+        "maxMs": 1
+      },
+      "world:drawImage:/art/runtime/5236eb83877343905b37043e.webp": {
+        "calls": 29,
+        "ms": 1,
+        "maxMs": 1
+      },
+      "world:drawImage:/art/runtime/1d1ee86f05052f73ceb34023.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/4146f22a4ed5621c2d79683d.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/2be933ad2350bda7c55d02e9.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/a9fba8e5b6900a5994905a54.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/2387c2868ca1ccc2a206b7b5.webp": {
+        "calls": 29,
+        "ms": 1,
+        "maxMs": 1
+      },
+      "world:drawImage:/art/runtime/682d0e0eba401f4f708aeb98.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/1762cebafb4cb92d8e6705d3.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/cd1874ddd8944a8dfdab97cb.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/5fee5be1403cf1c714c8b9ce.webp": {
+        "calls": 29,
+        "ms": 1,
+        "maxMs": 1
+      },
+      "world:drawImage:/art/runtime/5115de167fc55b8e5a7ffff7.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/780240c12e0600652987d150.webp": {
+        "calls": 522,
+        "ms": 1,
+        "maxMs": 1
+      },
+      "world:fillRect:geometry": {
+        "calls": 174,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:strokeRect:geometry": {
+        "calls": 145,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:fill:geometry": {
+        "calls": 290,
+        "ms": 1,
+        "maxMs": 1
+      },
+      "world:clip:geometry": {
+        "calls": 232,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/1be59efb6f7bd575b278cd5b.webp": {
+        "calls": 58,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/9084bd424517427956b36c8b.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/ae6ca396772773d2d43f8ab0.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/39e76eccca4ccf92d0595a96.webp": {
+        "calls": 87,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/284836e569a1dc4918906e11.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/3a06b2576cf37c29e20bf2c9.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/0a00d83e289589747b29737d.webp": {
+        "calls": 58,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/1f3ade0a4f65eee03c7d6d91.webp": {
+        "calls": 58,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/8d0d39604e164acbb04f8567.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/c9c1a89dd124e976dbef2332.webp": {
+        "calls": 45,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/b73db10c12d56cfb06d2ac9f.webp": {
+        "calls": 58,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/4ac9977477b7e19f90729a92.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/951c2f2441a0bbdd57f2af89.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/47afa38e40e6368ef1e88baa.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/e7419996d653299fd8985eff.webp": {
+        "calls": 58,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/d4f77426628db36c2593abe6.webp": {
+        "calls": 16,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/7acec308f61dad623dca0e34.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/7f0f398ba4c10f64eeae886a.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/c38233616684d657ea0f004e.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/81b1b99e4949c2e7438ea4f5.webp": {
+        "calls": 29,
+        "ms": 1,
+        "maxMs": 1
+      },
+      "world:drawImage:/art/runtime/368ad626ae1f6a0a513e8318.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/90de0cfb12f1991f707bad2b.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/7f7c028988ce6f9eb98aba92.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/298cfbe9ff0f206ab546e09a.webp": {
+        "calls": 29,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "whole-story:clip:geometry": {
+        "calls": 104,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "whole-story:fillRect:geometry": {
+        "calls": 26,
+        "ms": 1,
+        "maxMs": 1
+      },
+      "whole-story:drawImage:/art/runtime/1be59efb6f7bd575b278cd5b.webp": {
+        "calls": 26,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "whole-story:fill:geometry": {
+        "calls": 78,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "whole-story:drawImage:/art/runtime/39e76eccca4ccf92d0595a96.webp": {
+        "calls": 52,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "whole-story:drawImage:/art/runtime/4ac9977477b7e19f90729a92.webp": {
+        "calls": 26,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "whole-story:drawImage:/art/runtime/951c2f2441a0bbdd57f2af89.webp": {
+        "calls": 26,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "whole-story:drawImage:/art/runtime/47afa38e40e6368ef1e88baa.webp": {
+        "calls": 26,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "whole-story:drawImage:/art/runtime/e7419996d653299fd8985eff.webp": {
+        "calls": 52,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "whole-story:drawImage:/art/runtime/9342e370f4415ac86fe6ba46.webp": {
+        "calls": 26,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "whole-story:drawImage:/art/runtime/ed94a4357338c73e6265d930.webp": {
+        "calls": 15,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "whole-story:drawImage:/art/runtime/f4fe130b2a0429ae9416ee33.webp": {
+        "calls": 15,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "whole-story:drawImage:/art/runtime/f7d8c4e0681229d76485d058.webp": {
+        "calls": 26,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/0e9ce614d204d4f0b45ec54a.webp": {
+        "calls": 24,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "whole-story:drawImage:/art/runtime/0e9ce614d204d4f0b45ec54a.webp": {
+        "calls": 22,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "whole-story:drawImage:/art/runtime/2695fb7d55fcf28671dd227f.webp": {
+        "calls": 7,
+        "ms": 1,
+        "maxMs": 1
+      },
+      "whole-story:drawImage:/art/runtime/83b4c48b17c2983d4c6875b2.webp": {
+        "calls": 7,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/6cf8746cdbf738d62d541dfd.webp": {
+        "calls": 6,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/63a688ad467b8cbd4da29e9a.webp": {
+        "calls": 6,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "whole-story:drawImage:/art/runtime/40d6291457bd6107681a491a.webp": {
+        "calls": 4,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "whole-story:drawImage:/art/runtime/06fbf5b17ac314e645d31116.webp": {
+        "calls": 4,
+        "ms": 0,
+        "maxMs": 0
+      },
+      "world:drawImage:/art/runtime/1e3f386e3fe766c290e163c3.webp": {
+        "calls": 4,
+        "ms": 1,
+        "maxMs": 1
+      },
+      "world:drawImage:/art/runtime/baa37d0d47a407491dd58864.webp": {
+        "calls": 4,
+        "ms": 0,
+        "maxMs": 0
+      }
+    },
+    "elapsed": 2090
+  }
+}

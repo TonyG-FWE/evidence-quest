@@ -1,0 +1,142 @@
+{
+  "at": "2026-09-15T17:35:28.343Z",
+  "focus": "Mara is speaking",
+  "images": [
+    "The river and Grandma’s garden. Use the named controls below or click the scene."
+  ],
+  "rendered": [
+    {
+      "attributes": [
+        [
+          "data-camera-focus",
+          "passenger-dock"
+        ],
+        [
+          "data-pip-memory",
+          "{\"record\":\"planting\",\"placing\":false,\"scene\":\"planting\",\"seed\":\"soil\"}"
+        ],
+        [
+          "data-bakery",
+          "{\"stage\":\"done\",\"leakOpen\":false,\"rain\":true,\"tile\":{\"x\":7.45,\"y\":1.92,\"z\":-2.7},\"rina\":{\"x\":5.6597977853158055,\"z\":-1.0286804859283905},\"loaf\":\"sol\",\"solScreen\":{\"head\":{\"x\":1.023538081252239,\"y\":-0.9939792474086405},\"feet\":{\"x\":1.023538081252239,\"y\":-1.301004854413742}}}"
+        ],
+        [
+          "data-gathering",
+          "{\"arrival\":\"ready\",\"offDuty\":false,\"sol\":{\"x\":5.2,\"z\":0.1},\"mara\":{\"x\":-3.5,\"z\":-4},\"speaker\":\"Mara\",\"turn\":\"receipt\",\"part\":0,\"cushions\":true,\"pageComplete\":true,\"grandmaPerformed\":true}"
+        ],
+        [
+          "data-mara-page",
+          "{\"holder\":\"pip\",\"x\":-3.35,\"y\":0.55,\"z\":-2.9,\"holderX\":-3.5,\"holderZ\":-3.05}"
+        ],
+        [
+          "data-rendered-frame",
+          "2573"
+        ],
+        [
+          "data-rendered-width",
+          "1206"
+        ],
+        [
+          "data-rendered-height",
+          "649"
+        ],
+        [
+          "data-rendered-view",
+          "walk"
+        ],
+        [
+          "data-action-kind",
+          "none"
+        ],
+        [
+          "data-chapter-phase",
+          "closed"
+        ],
+        [
+          "data-sol-x",
+          "5.200"
+        ],
+        [
+          "data-sol-z",
+          "0.100"
+        ],
+        [
+          "data-mara-x",
+          "-3.500"
+        ],
+        [
+          "data-mara-z",
+          "-4.000"
+        ],
+        [
+          "data-bridge-action",
+          "idle"
+        ],
+        [
+          "data-pip-x",
+          "-3.500"
+        ],
+        [
+          "data-pip-z",
+          "-3.050"
+        ],
+        [
+          "data-bridge-ready",
+          "true"
+        ],
+        [
+          "data-sections",
+          "{\"a\":{\"x\":-0.775,\"z\":3,\"rotation\":0},\"b\":{\"x\":0.775,\"z\":3,\"rotation\":0}}"
+        ],
+        [
+          "data-seed-boat-x",
+          "-1.400"
+        ],
+        [
+          "data-seed-boat-z",
+          "0.800"
+        ],
+        [
+          "data-seed-x",
+          "4.180"
+        ],
+        [
+          "data-seed-z",
+          "3.740"
+        ],
+        [
+          "data-dock-service",
+          "served"
+        ],
+        [
+          "data-boat-operator",
+          "separate crew member"
+        ],
+        [
+          "data-passenger-boat",
+          "{\"visible\":true,\"x\":-1.1,\"z\":-4.1,\"passengers\":[{\"visible\":true,\"x\":-5.65,\"z\":-3.35},{\"visible\":true,\"x\":-5.35,\"z\":-3.65}]}"
+        ],
+        [
+          "data-ferry-phase",
+          "idle"
+        ],
+        [
+          "data-rendered-sections",
+          "{\"a\":{\"x\":-0.775,\"z\":3,\"rotation\":0},\"b\":{\"x\":0.775,\"z\":3,\"rotation\":0}}"
+        ],
+        [
+          "data-metrics",
+          "{\"frames\":2550,\"drawCalls\":575,\"triangles\":92430,\"geometries\":361,\"textures\":5,\"activeSamples\":600,\"p95\":16.800000000046566,\"lastRenderMs\":1.300000011920929,\"dpr\":1.125,\"width\":1206,\"height\":649,\"geometryCpuBytes\":6968116,\"canvasColorBytes\":3130776,\"shadowDepthAllocationBytes\":9437184,\"sectionTextureBytes\":131072,\"gpuTotalMemory\":\"NOT_MEASURED\",\"adapter\":\"ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)\"}"
+        ]
+      ]
+    }
+  ],
+  "scripts": [
+    "http://127.0.0.1:4197/assets/index-BB_gbQ44.js"
+  ],
+  "text": "Evidence Quest\nTHE GARDEN ADVENTURE\nSaved in this browser\nBackpack\nHelp\nPause\nWhat’s happening\n\nPip has delivered Grandma’s copy. Hear Mara’s reply at the dock.\n\nMara\nThe riverbank\nPlaces & scene description\n\nPip is on the dock side of the river. The two wooden bridge sections are joined. Dock-side end fastened. Garden-side end fastened. The separate seed boat is by the dock-side bank. The seed is planted in the soil. Pip carries Mara's page. The lantern-flower is open. Mara has this turn. Read or practise the current part with help, then return to the world telling. Choose Continue speaking or Finish this turn when you are ready. Pip stays with the listeners; Help and Pause keep the exact part.\n\nGo to Mara\nGo to the bridge pieces\nGo to Grandma\nGo to Sol\nOpen lantern stories\nInspect a particular flower\nSPEAKING TO THE PEOPLE HERE\nMara is speaking\n\nThank you. I’ll read it after the last boat returns. It’s good to have a story from her again.\n\nPip and Mara are at the dock. Mara has the copy and is still on duty.\n\nPart 1 of 1\n\nFinish this turn\nRead this part with help\nAt Mara’s dock · Hear her reply to the delivered story\nFollow the gathering here. Help and Pause keep your place.",
+  "url": "http://127.0.0.1:4197/garden",
+  "viewport": {
+    "height": 800,
+    "width": 1422
+  }
+}

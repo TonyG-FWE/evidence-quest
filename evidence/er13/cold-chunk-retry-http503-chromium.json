@@ -1,0 +1,25 @@
+{
+  "mode": "http503",
+  "denied": [
+    "http://127.0.0.1:4196/assets/App-Dk9r9XS7.js"
+  ],
+  "network": [
+    {
+      "url": "http://127.0.0.1:4196/assets/App-Dk9r9XS7.js",
+      "status": 503
+    },
+    {
+      "url": "http://127.0.0.1:4196/assets/App-Dk9r9XS7.js?eq-retry=039b86c3-4639-4372-ac5b-29d97aa3b2c9",
+      "status": 200
+    }
+  ],
+  "failures": [
+    {
+      "url": "http://127.0.0.1:4196/assets/App-Dk9r9XS7.js",
+      "error": "net::ERR_ABORTED"
+    }
+  ],
+  "headingObserved": "The festival couldn’t be opened. Try loading it again.",
+  "recovered": true,
+  "saveSlotsUnchanged": true
+}

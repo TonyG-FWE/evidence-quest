@@ -1,0 +1,30 @@
+
+> evidence-quest@0.1.0 test:browser
+> node scripts/test-browser.mjs browser-tests/garden-chapter.spec.ts browser-tests/garden-gathering.spec.ts browser-tests/garden-finale.spec.ts --workers=2 --output=evidence/sparkfest-playback-20260916/browser-routes-2
+
+[WebServer] (node:22136) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 13 tests using 2 workers
+
+(node:49272) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:51136) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 [chromium] › browser-tests\garden-finale.spec.ts:8:1 › Finale: authentic prior-save fixture, actual memory placement, lantern source return, compact show and replay recovery (9.5s)
+  ok  3 [chromium] › browser-tests\garden-gathering.spec.ts:9:1 › Gathering: authentic prior-save fixture, arrival recovery, compact world telling and exact chosen contribution (33.9s)
+  ok  2 [chromium] › browser-tests\garden-chapter.spec.ts:35:312 › Complete Garden chapter: later Mara tells; Sol prepared (2.2m)
+  ok  4 [chromium] › browser-tests\garden-chapter.spec.ts:35:312 › Complete Garden chapter: later Mara tells; Sol developed (2.2m)
+  ok  5 [chromium] › browser-tests\garden-chapter.spec.ts:35:312 › Complete Garden chapter: later Mara tells; Sol draft (2.2m)
+  ok  6 [chromium] › browser-tests\garden-chapter.spec.ts:35:312 › Complete Garden chapter: later Pip reads; Sol prepared (2.2m)
+  ok  7 [chromium] › browser-tests\garden-chapter.spec.ts:35:312 › Complete Garden chapter: later Pip reads; Sol developed (2.1m)
+  ok  8 [chromium] › browser-tests\garden-chapter.spec.ts:35:312 › Complete Garden chapter: later Pip reads; Sol draft (2.1m)
+  ok  9 [chromium] › browser-tests\garden-chapter.spec.ts:35:312 › Complete Garden chapter: usual time; Pip delivers Grandma’s story; Sol prepared (2.0m)
+  ok 10 [chromium] › browser-tests\garden-chapter.spec.ts:35:312 › Complete Garden chapter: usual time; Pip delivers Grandma’s story; Sol developed (2.0m)
+  ok 11 [chromium] › browser-tests\garden-chapter.spec.ts:35:312 › Complete Garden chapter: usual time; Pip delivers Grandma’s story; Sol draft (1.9m)
+  ok 12 [chromium] › browser-tests\garden-chapter.spec.ts:42:1 › Loose bridge: Pip attempts it, visible collapse, safe return and rebuild (27.4s)
+  ok 13 [chromium] › browser-tests\garden-chapter.spec.ts:45:1 › Temporary reading practice starts with mic off and unavailable feedback is honest (9.7s)
+
+  Slow test file: [chromium] › browser-tests\garden-chapter.spec.ts (19.5m)
+  Consider running tests from slow files in parallel. See: https://playwright.dev/docs/test-parallel
+  13 passed (19.6m)

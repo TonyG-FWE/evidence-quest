@@ -1,0 +1,121 @@
+{
+  "at": "2026-09-15T17:39:09.306Z",
+  "result": "PASS_BOUNDED_NATIVE_ACTIVE_CADENCE",
+  "candidate": "GardenApp-Bpq_fagU.js / GardenApp-Cowp-FIg.css / index-BB_gbQ44.js",
+  "scope": "Actual supported native in-app browser public data-metrics after completed-adventure reload and two ordinary Go to Sol / Go to Mara trips across the repaired bridge. Heavy automated browser checks were idle by coordination. The initial one-sample idle reading is excluded from qualification.",
+  "targetP95Ms": 33.34,
+  "checks": [
+    {
+      "label": "after completed-route reload, before new travel",
+      "at": "2026-09-15T17:37:48.629Z",
+      "metrics": [
+        {
+          "activeSamples": 1,
+          "adapter": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "canvasColorBytes": 4151004,
+          "dpr": 1.125,
+          "drawCalls": 604,
+          "frames": 360,
+          "geometries": 394,
+          "geometryCpuBytes": 6956908,
+          "gpuTotalMemory": "NOT_MEASURED",
+          "height": 649,
+          "lastRenderMs": 4.300000011920929,
+          "p95": 16.700000000000017,
+          "sectionTextureBytes": 131072,
+          "shadowDepthAllocationBytes": 9437184,
+          "textures": 3,
+          "triangles": 95024,
+          "width": 1599
+        }
+      ],
+      "scripts": [
+        "http://127.0.0.1:4197/assets/index-BB_gbQ44.js"
+      ],
+      "text": "Evidence Quest\nTHE GARDEN ADVENTURE\nSaved in this browser\nBackpack\nHelp\nPause\nWhat’s happening\n\nWatch the ending with Jo and Loop, or explore your stories.\n\nYOUR ADVENTURE\nYour Garden Adventure is complete.\n\nWatch the ending with Jo and Loop, or explore your stories.\n\nWhere is that?\nThe riverbank\nPlaces & scene description\nYou are Pip · Explore, talk and help\nTalk to Mara\nE\nGo to Sol\nGo to Grandma\nLantern stories\nWatch your ending\nPlay from the beginning",
+      "url": "http://127.0.0.1:4197/garden",
+      "viewport": {
+        "dpr": 1.125,
+        "height": 800,
+        "width": 1422
+      }
+    },
+    {
+      "label": "ordinary dock-to-workshop travel",
+      "at": "2026-09-15T17:38:02.590Z",
+      "metrics": [
+        {
+          "activeSamples": 275,
+          "adapter": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "canvasColorBytes": 4151004,
+          "dpr": 1.125,
+          "drawCalls": 809,
+          "frames": 840,
+          "geometries": 397,
+          "geometryCpuBytes": 6956908,
+          "gpuTotalMemory": "NOT_MEASURED",
+          "height": 649,
+          "lastRenderMs": 1.9000000059604645,
+          "p95": 16.799999999999272,
+          "sectionTextureBytes": 131072,
+          "shadowDepthAllocationBytes": 9437184,
+          "textures": 5,
+          "triangles": 119730,
+          "width": 1599
+        }
+      ],
+      "scripts": [
+        "http://127.0.0.1:4197/assets/index-BB_gbQ44.js"
+      ],
+      "text": "Evidence Quest\nTHE GARDEN ADVENTURE\nSaved in this browser\nBackpack\nHelp\nPause\nWhat’s happening\n\nPip is here. Choose the nearby action.\n\nMara\nGrandma\nFootbridge\nSeed boat\nSol\nLantern stories\nRina’s bakery\nYOUR ADVENTURE\nYour Garden Adventure is complete.\n\nWatch the ending with Jo and Loop, or explore your stories.\n\nWhere is that?\nGrandma’s garden\nPlaces & scene description\nYou are Pip · Explore, talk and help\nTalk to Sol\nGo to Grandma\nLantern stories\nWatch your ending\nPlay from the beginning",
+      "url": "http://127.0.0.1:4197/garden",
+      "viewport": {
+        "dpr": 1.125,
+        "height": 800,
+        "width": 1422
+      }
+    },
+    {
+      "label": "ordinary workshop-to-dock return",
+      "at": "2026-09-15T17:38:39.583Z",
+      "metrics": [
+        {
+          "activeSamples": 549,
+          "adapter": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+          "canvasColorBytes": 4151004,
+          "dpr": 1.125,
+          "drawCalls": 604,
+          "frames": 1740,
+          "geometries": 397,
+          "geometryCpuBytes": 6956908,
+          "gpuTotalMemory": "NOT_MEASURED",
+          "height": 649,
+          "lastRenderMs": 1.699999988079071,
+          "p95": 16.799999999999272,
+          "sectionTextureBytes": 131072,
+          "shadowDepthAllocationBytes": 9437184,
+          "textures": 5,
+          "triangles": 95024,
+          "width": 1599
+        }
+      ],
+      "scripts": [
+        "http://127.0.0.1:4197/assets/index-BB_gbQ44.js"
+      ],
+      "text": "Evidence Quest\nTHE GARDEN ADVENTURE\nSaved in this browser\nBackpack\nHelp\nPause\nWhat’s happening\n\nPip is here. Choose the nearby action.\n\nYOUR ADVENTURE\nYour Garden Adventure is complete.\n\nWatch the ending with Jo and Loop, or explore your stories.\n\nWhere is that?\nThe riverbank\nPlaces & scene description\n\nPip is on the dock side of the river. The two wooden bridge sections are joined. Dock-side end fastened. Garden-side end fastened. The separate seed boat is by the dock-side bank. The seed is planted in the soil. Pip carries Mara's page. The lantern-flower is open. The garden keeps the stories that were shared.\n\nGo to Mara\nGo to the bridge pieces\nGo to Grandma\nGo to Sol\nOpen lantern stories\nInspect a particular flower\nYou are Pip · Explore, talk and help\nTalk to Mara\nE\nGo to Sol\nGo to Grandma\nLantern stories\nWatch your ending\nPlay from the beginning",
+      "url": "http://127.0.0.1:4197/garden",
+      "viewport": {
+        "dpr": 1.125,
+        "height": 800,
+        "width": 1422
+      }
+    }
+  ],
+  "qualifiedSamples": 549,
+  "qualifiedP95Ms": 16.799999999999272,
+  "limitations": [
+    "One native Chromium device at1422x800 CSS pixels and DPR1.125, NVIDIA RTX3070Ti; not all-device/cross-browser/DPR2 qualification.",
+    "GPU total memory is NOT_MEASURED; allocation counters are not total VRAM.",
+    "No lower art detail or relaxed target was used."
+  ]
+}

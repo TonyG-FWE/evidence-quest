@@ -1,0 +1,416 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "browser-tests/garden-festival-welcome.spec.ts",
+      "--workers=2",
+      "--output=evidence/sparkfest-main-image-20260916/browser"
+    ],
+    "configFile": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\playwright.config.ts",
+    "rootDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/evidence/sparkfest-main-image-20260916/browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/evidence/sparkfest-main-image-20260916/browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/evidence/sparkfest-main-image-20260916/browser",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/sparkfest-main-image-20260916/browser.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 2,
+    "webServer": {
+      "command": "\"C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\scripts\\..\\.tools\\node-v24.21.0-win-x64\\node.exe\" dist/server/index.js",
+      "url": "http://127.0.0.1:4196/healthz",
+      "env": {
+        "PORT": "4196",
+        "EQ_WEB_PORT": "4196",
+        "PUBLIC_ORIGIN": "http://127.0.0.1:4196"
+      },
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "garden-festival-welcome.spec.ts",
+      "file": "garden-festival-welcome.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "SparkFest welcome: approved cast illustration, Loop identity and supported entry at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1557,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T06:52:45.235Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "scope",
+                      "contentType": "text/plain",
+                      "body": "T3JkaW5hcnkgZnJlc2ggYnJvd3NlciBlbnRyeS4gQXBwcm92ZWQgZXhpc3RpbmcgY2FzdCBpbWFnZSBVUkwgYW5kIG5hdGl2ZSBkZWNvZGVkIDE3NzTDlzg4NyBhc3NldCBpbiB0aGUgd2VsY29tZSBhbmQgaGVscCByZWFkZXIsIExvb3AgaWRlbnRpdHksIGNvbnRleHR1YWwgd29yZCBoZWxwLCBvcmlnaW5hbCBpbnRyb2R1Y3Rpb24gcmV0dXJuIGZvY3VzIGFuZCBvcGVuaW5nIHRyYW5zaXRpb24uIE5vIGFzc2VydGlvbiBvZiBhIHBsYXlhYmxlIGZlc3RpdmFsIG1hcCBvciBhIGZlc3RpdmFsIGFzc2lnbm1lbnQgZm9yIFBpcC4="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31db0ed4d45d1d57686-9175040efe09fe91c73f",
+          "file": "garden-festival-welcome.spec.ts",
+          "line": 3,
+          "column": 73
+        },
+        {
+          "title": "SparkFest welcome: approved cast illustration, Loop identity and supported entry at 320px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1218,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T06:52:47.057Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "scope",
+                      "contentType": "text/plain",
+                      "body": "T3JkaW5hcnkgZnJlc2ggYnJvd3NlciBlbnRyeS4gQXBwcm92ZWQgZXhpc3RpbmcgY2FzdCBpbWFnZSBVUkwgYW5kIG5hdGl2ZSBkZWNvZGVkIDE3NzTDlzg4NyBhc3NldCBpbiB0aGUgd2VsY29tZSBhbmQgaGVscCByZWFkZXIsIExvb3AgaWRlbnRpdHksIGNvbnRleHR1YWwgd29yZCBoZWxwLCBvcmlnaW5hbCBpbnRyb2R1Y3Rpb24gcmV0dXJuIGZvY3VzIGFuZCBvcGVuaW5nIHRyYW5zaXRpb24uIE5vIGFzc2VydGlvbiBvZiBhIHBsYXlhYmxlIGZlc3RpdmFsIG1hcCBvciBhIGZlc3RpdmFsIGFzc2lnbm1lbnQgZm9yIFBpcC4="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31db0ed4d45d1d57686-ee53a675ddba7ce2b25a",
+          "file": "garden-festival-welcome.spec.ts",
+          "line": 3,
+          "column": 73
+        },
+        {
+          "title": "SparkFest welcome: approved cast illustration, Loop identity and supported entry at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 3081,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T06:52:45.235Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "scope",
+                      "contentType": "text/plain",
+                      "body": "T3JkaW5hcnkgZnJlc2ggYnJvd3NlciBlbnRyeS4gQXBwcm92ZWQgZXhpc3RpbmcgY2FzdCBpbWFnZSBVUkwgYW5kIG5hdGl2ZSBkZWNvZGVkIDE3NzTDlzg4NyBhc3NldCBpbiB0aGUgd2VsY29tZSBhbmQgaGVscCByZWFkZXIsIExvb3AgaWRlbnRpdHksIGNvbnRleHR1YWwgd29yZCBoZWxwLCBvcmlnaW5hbCBpbnRyb2R1Y3Rpb24gcmV0dXJuIGZvY3VzIGFuZCBvcGVuaW5nIHRyYW5zaXRpb24uIE5vIGFzc2VydGlvbiBvZiBhIHBsYXlhYmxlIGZlc3RpdmFsIG1hcCBvciBhIGZlc3RpdmFsIGFzc2lnbm1lbnQgZm9yIFBpcC4="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31db0ed4d45d1d57686-b3c071d91452b23a6b21",
+          "file": "garden-festival-welcome.spec.ts",
+          "line": 3,
+          "column": 73
+        },
+        {
+          "title": "SparkFest welcome: approved cast illustration, Loop identity and supported entry at 320px",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 828,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m48\u001b[39m\nReceived:    \u001b[31m47.999969482421875\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m48\u001b[39m\nReceived:    \u001b[31m47.999969482421875\u001b[39m\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-festival-welcome.spec.ts:7:164",
+                    "location": {
+                      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-festival-welcome.spec.ts",
+                      "column": 164,
+                      "line": 7
+                    },
+                    "snippet": "   5 |  const cast=welcome.locator('img[src=\"/art/sparkfest/cast-original.png\"]');await expect(cast).toBeVisible();await expect.poll(()=>cast.evaluate((image:HTMLImageElement)=>image.complete&&image.naturalWidth===1774&&image.naturalHeight===887)).toBe(true);\n   6 |  await expect(welcome.locator('.festival-loop-portrait img')).toBeVisible();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:info.outputPath('sparkfest-welcome.png')});\n>  7 |  const help=page.getByRole('button',{name:'Read the welcome with help',exact:true});await help.scrollIntoViewIfNeeded();expect((await help.boundingBox())!.height).toBeGreaterThanOrEqual(48);await help.click();const reader=page.locator('.garden-reader');await expect(page.getByRole('heading',{name:'SparkFest and Loop',exact:true})).toBeVisible();await expect(reader).toContainText('Jo · story writer');await expect(reader.getByRole('button',{name:'Hear SparkFest and Loop’s welcome',exact:true})).toBeVisible();await expect(reader.getByRole('button',{name:'Read SparkFest and Loop’s welcome aloud',exact:true})).toBeVisible();\n     |                                                                                                                                                                    ^\n   8 |  const helpCast=reader.locator('img[src=\"/art/sparkfest/cast-original.png\"]');await expect(helpCast).toBeVisible();await expect.poll(()=>helpCast.evaluate((image:HTMLImageElement)=>image.complete&&image.naturalWidth===1774&&image.naturalHeight===887)).toBe(true);\n   9 |  const word=reader.getByRole('button',{name:'projector',exact:true});await word.click();const card=page.getByRole('complementary',{name:'Word help: projector',exact:true});await expect(card).toBeVisible();const definition=card.locator(':scope > p').first();await expect(definition).toHaveText('A device that uses light to show pictures on a screen.');await expect(definition).not.toContainText(/unavailable|isn.t available|not available/i);await page.screenshot({path:info.outputPath('projector-word-help.png')});await page.getByRole('button',{name:'Close word help',exact:true}).click();await expect(word).toBeFocused();await reader.locator('.g-reader-top .g-close').click();await expect(help).toBeFocused();await expect(welcome).toBeVisible();\n  10 |  await page.getByRole('button',{name:'Begin Pip’s adventure',exact:true}).click();await expect(page.getByRole('button',{name:'Start playing',exact:true})).toBeVisible();await expect(page.locator('.garden-passage')).toContainText('Grandma');await expect(page.locator('.garden-scene')).toHaveAttribute('data-chapter-phase','planning');await expect(page.getByRole('button',{name:'Watch the ending',exact:true})).toHaveCount(0);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:info.outputPath('garden-opening-after-festival.png')});"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-festival-welcome.spec.ts",
+                        "column": 164,
+                        "line": 7
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: >= \u001b[32m48\u001b[39m\nReceived:    \u001b[31m47.999969482421875\u001b[39m\n\n   5 |  const cast=welcome.locator('img[src=\"/art/sparkfest/cast-original.png\"]');await expect(cast).toBeVisible();await expect.poll(()=>cast.evaluate((image:HTMLImageElement)=>image.complete&&image.naturalWidth===1774&&image.naturalHeight===887)).toBe(true);\n   6 |  await expect(welcome.locator('.festival-loop-portrait img')).toBeVisible();expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:info.outputPath('sparkfest-welcome.png')});\n>  7 |  const help=page.getByRole('button',{name:'Read the welcome with help',exact:true});await help.scrollIntoViewIfNeeded();expect((await help.boundingBox())!.height).toBeGreaterThanOrEqual(48);await help.click();const reader=page.locator('.garden-reader');await expect(page.getByRole('heading',{name:'SparkFest and Loop',exact:true})).toBeVisible();await expect(reader).toContainText('Jo · story writer');await expect(reader.getByRole('button',{name:'Hear SparkFest and Loop’s welcome',exact:true})).toBeVisible();await expect(reader.getByRole('button',{name:'Read SparkFest and Loop’s welcome aloud',exact:true})).toBeVisible();\n     |                                                                                                                                                                    ^\n   8 |  const helpCast=reader.locator('img[src=\"/art/sparkfest/cast-original.png\"]');await expect(helpCast).toBeVisible();await expect.poll(()=>helpCast.evaluate((image:HTMLImageElement)=>image.complete&&image.naturalWidth===1774&&image.naturalHeight===887)).toBe(true);\n   9 |  const word=reader.getByRole('button',{name:'projector',exact:true});await word.click();const card=page.getByRole('complementary',{name:'Word help: projector',exact:true});await expect(card).toBeVisible();const definition=card.locator(':scope > p').first();await expect(definition).toHaveText('A device that uses light to show pictures on a screen.');await expect(definition).not.toContainText(/unavailable|isn.t available|not available/i);await page.screenshot({path:info.outputPath('projector-word-help.png')});await page.getByRole('button',{name:'Close word help',exact:true}).click();await expect(word).toBeFocused();await reader.locator('.g-reader-top .g-close').click();await expect(help).toBeFocused();await expect(welcome).toBeVisible();\n  10 |  await page.getByRole('button',{name:'Begin Pip’s adventure',exact:true}).click();await expect(page.getByRole('button',{name:'Start playing',exact:true})).toBeVisible();await expect(page.locator('.garden-passage')).toContainText('Grandma');await expect(page.locator('.garden-scene')).toHaveAttribute('data-chapter-phase','planning');await expect(page.getByRole('button',{name:'Watch the ending',exact:true})).toHaveCount(0);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:info.outputPath('garden-opening-after-festival.png')});\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-festival-welcome.spec.ts:7:164"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T06:52:48.873Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\sparkfest-main-image-20260916\\browser\\garden-festival-welcome-Sp-f021a-nd-supported-entry-at-320px-firefox\\test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\sparkfest-main-image-20260916\\browser\\garden-festival-welcome-Sp-f021a-nd-supported-entry-at-320px-firefox\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\evidence\\sparkfest-main-image-20260916\\browser\\garden-festival-welcome-Sp-f021a-nd-supported-entry-at-320px-firefox\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-festival-welcome.spec.ts",
+                    "column": 164,
+                    "line": 7
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "c31db0ed4d45d1d57686-ddfa3fcd67f13b5b879a",
+          "file": "garden-festival-welcome.spec.ts",
+          "line": 3,
+          "column": 73
+        },
+        {
+          "title": "SparkFest welcome: approved cast illustration, Loop identity and supported entry at 1440px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2726,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T06:52:48.816Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "scope",
+                      "contentType": "text/plain",
+                      "body": "T3JkaW5hcnkgZnJlc2ggYnJvd3NlciBlbnRyeS4gQXBwcm92ZWQgZXhpc3RpbmcgY2FzdCBpbWFnZSBVUkwgYW5kIG5hdGl2ZSBkZWNvZGVkIDE3NzTDlzg4NyBhc3NldCBpbiB0aGUgd2VsY29tZSBhbmQgaGVscCByZWFkZXIsIExvb3AgaWRlbnRpdHksIGNvbnRleHR1YWwgd29yZCBoZWxwLCBvcmlnaW5hbCBpbnRyb2R1Y3Rpb24gcmV0dXJuIGZvY3VzIGFuZCBvcGVuaW5nIHRyYW5zaXRpb24uIE5vIGFzc2VydGlvbiBvZiBhIHBsYXlhYmxlIGZlc3RpdmFsIG1hcCBvciBhIGZlc3RpdmFsIGFzc2lnbm1lbnQgZm9yIFBpcC4="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31db0ed4d45d1d57686-a929186e80d33984e07c",
+          "file": "garden-festival-welcome.spec.ts",
+          "line": 3,
+          "column": 73
+        },
+        {
+          "title": "SparkFest welcome: approved cast illustration, Loop identity and supported entry at 320px",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1822,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-16T06:52:51.618Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "scope",
+                      "contentType": "text/plain",
+                      "body": "T3JkaW5hcnkgZnJlc2ggYnJvd3NlciBlbnRyeS4gQXBwcm92ZWQgZXhpc3RpbmcgY2FzdCBpbWFnZSBVUkwgYW5kIG5hdGl2ZSBkZWNvZGVkIDE3NzTDlzg4NyBhc3NldCBpbiB0aGUgd2VsY29tZSBhbmQgaGVscCByZWFkZXIsIExvb3AgaWRlbnRpdHksIGNvbnRleHR1YWwgd29yZCBoZWxwLCBvcmlnaW5hbCBpbnRyb2R1Y3Rpb24gcmV0dXJuIGZvY3VzIGFuZCBvcGVuaW5nIHRyYW5zaXRpb24uIE5vIGFzc2VydGlvbiBvZiBhIHBsYXlhYmxlIGZlc3RpdmFsIG1hcCBvciBhIGZlc3RpdmFsIGFzc2lnbm1lbnQgZm9yIFBpcC4="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "c31db0ed4d45d1d57686-af85d6c16ba0bfdd1f0d",
+          "file": "garden-festival-welcome.spec.ts",
+          "line": 3,
+          "column": 73
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-16T06:52:44.413Z",
+    "duration": 9442.071999999998,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-16T01:58:58.639Z",
+  "name": "native-candidate-5-world-return",
+  "snapshot": "- main:\n  - link \"Garden Adventure\":\n    - /url: /garden\n    - text: Evidence Quest\n    - generic: THE GARDEN ADVENTURE\n  - generic: Saved in this browser\n  - navigation \"Game tools\":\n    - button \"Backpack\":\n      - generic: Backpack\n    - button \"Help\":\n      - generic: Help\n    - button \"Pause\":\n      - generic: Pause\n  - status:\n    - strong: What’s happening\n    - paragraph: Change the picture when you are ready. Reading help keeps this same part.\n  - region \"The ending of Pip’s adventure\":\n    - generic: LOOP’S PICTURE SHOW\n    - heading \"The ending of Pip’s adventure\" [level=2]\n    - paragraph: Picture 1 of 4 · Watch and read at your own pace. You can listen to any part.\n    - img \"Pip and Grandma plant the lantern seed together.\"\n    - paragraph: Pip crossed the river and planted the seed with Grandma. He had kept his promise.\n    - button \"Previous picture\" [disabled]\n    - button \"Next picture\"\n    - button \"Hear this part\"\n    - button \"Read or practise this part with help\" [active]\n    - button \"Pause · Back to studio\"",
+  "dom": {
+    "active": "Read or practise this part with help",
+    "flow": [],
+    "url": "http://localhost:4198/garden",
+    "viewport": {
+      "height": 720,
+      "width": 1280
+    },
+    "visible": "Evidence Quest\nTHE GARDEN ADVENTURE\nSaved in this browser\nBackpack\nHelp\nPause\nWhat’s happening\n\nChange the picture when you are ready. Reading help keeps this same part.\n\nLOOP’S PICTURE SHOW\nThe ending of Pip’s adventure\n\nPicture 1 of 4 · Watch and read at your own pace. You can listen to any part.\n\nPip crossed the river and planted the seed with Grandma. He had kept his promise.\n\nPrevious picture\nNext picture\nHear this part\nRead or practise this part with help\nPause · Back to studio"
+  }
+}

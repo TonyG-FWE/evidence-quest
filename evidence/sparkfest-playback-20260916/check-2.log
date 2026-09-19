@@ -1,0 +1,13 @@
+
+> evidence-quest@0.1.0 check
+> npm run build:contracts && tsc -p tsconfig.client.json && tsc -p tsconfig.server.json --noEmit && tsc -p tsconfig.checks.json --noEmit && node scripts/check-schema.mjs && node scripts/check-ui-copy.mjs
+
+
+> evidence-quest@0.1.0 build:contracts
+> node scripts/build-contracts.mjs
+
+Generated 48 schema-linked types and 8 standalone validators.
+src/garden/FestivalWelcome.tsx(24,44): error TS2375: Type '{ children: "At SparkFest, children share stories and show things they have made. The Garden Adventure is one of the stories you can step into." | "Meet Loop, our rolling projector. Loop shines pictures onto a screen to bring our paper stories to life." | "In this adventure, you guide Pip as he visits Grandma’s gard...' is not assignable to type '{ children: ReactNode; className?: string; role?: "status" | "alert"; origin?: ReadingOrigin; }' with 'exactOptionalPropertyTypes: true'. Consider adding 'undefined' to the types of the target's properties.
+  Types of property 'className' are incompatible.
+    Type 'string | undefined' is not assignable to type 'string'.
+      Type 'undefined' is not assignable to type 'string'.
