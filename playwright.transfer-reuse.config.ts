@@ -1,0 +1,4 @@
+import {defineConfig} from '@playwright/test';
+const port=4346;
+const label=process.env.EQ_TRANSFER_LABEL??'final-candidate';
+export default defineConfig({testDir:'.cache/transfer-reuse-candidate/tests',testMatch:['**/production.spec.ts'],grep:/production DPR2/,workers:1,fullyParallel:false,timeout:150000,expect:{timeout:15000},outputDir:'output/playwright/transfer-reuse-'+label,reporter:[['list'],['json',{outputFile:'evidence/staged-bridge-20260916/transfer-reuse/'+label+'/browser.json'}]],use:{baseURL:`http://127.0.0.1:${port}`,browserName:'chromium',channel:'chromium',viewport:{width:1440,height:1000},actionTimeout:15000,screenshot:'only-on-failure'},webServer:{command:`"${process.execPath}" .cache/transfer-reuse-candidate/dist/server/index.js`,url:`http://127.0.0.1:${port}/healthz`,env:{PORT:String(port),COACH_MODE:'authored',PUBLIC_ORIGIN:`http://127.0.0.1:${port}`},reuseExistingServer:false,timeout:15000}});
