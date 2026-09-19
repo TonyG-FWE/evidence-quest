@@ -1,1 +1,0 @@
-import{defineConfig}from'@playwright/test';import base from'./playwright.production.config.js';export default defineConfig({...base,testIgnore:[],testMatch:['**/render-cost-diagnostic.spec.ts'],outputDir:'output/playwright/render-cost-raw',reporter:[['list'],['json',{outputFile:'evidence/er13/render-cost-results.json'}]]});

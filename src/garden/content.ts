@@ -1,3 +1,7 @@
+import {literaryGlossary} from './literaryGlossary.js';
+import {isLiterary,editionOf,maintenanceOf,type NarrativeContext} from './narrativeEdition.js';
+import {stagedBridgeParagraphs,bridgeGlossary} from './bridgeReading.js';
+import {literaryParagraphs,literaryPreparedEndings,literaryEndingLines} from './literaryContent.js';
 import type {SourceId} from './model.js';
 import {chapterSources,endingLines,preparedEndings} from './chapterContent.js';
 import {chapterGlossary} from './chapterGlossary.js';
@@ -46,7 +50,7 @@ export const sources:Record<SourceId,Source>={
  '"Mara still wants to come. But she\'s working at the dock while we\'re telling stories here. She asked me to share this with you."',
  '"I thought she\'d stopped enjoying the garden. I should have asked her what had happened. Let\'s read what she sent."']}
 };
-export const sourcePrefix=(id:string)=>'GA.SRC.'+id.toUpperCase()+'.'+(['opening','sections'].includes(id)?'R20260915.':'');
+export const sourcePrefix=(id:string,context?:NarrativeContext)=>'GA.SRC.'+id.toUpperCase()+'.'+(id==='sections'&&maintenanceOf(context)?'STAGED20260916.':isLiterary(context)?'R20260916L.':(['opening','sections'].includes(id)?'R20260915.':''));
 export const intro="Welcome to SparkFest, our festival of stories and inventions. This is Pip's story. You'll guide him through it, read what he finds, and help him decide what to do. Then we'll show the ending you helped create.";
 export const words=(text:string)=>text.match(/[A-Za-z]+(?:['’][A-Za-z]+)?/g)??[];
 export const normalize=(word:string)=>word.toLowerCase().replaceAll('’',"'");
@@ -135,17 +139,21 @@ const groups:[string,string][]=[
 export const glossary:Record<string,string>={...Object.fromEntries(groups.flatMap(([keys,meaning])=>keys.split(' ').map(key=>[key,meaning]))),...chapterGlossary,sol:'Grandma’s friend who repairs things and wrote A Small Repair.',crossed:'Went from one side to the other.',planted:'Put a seed into the soil so it could grow.',returned:'Came or went back.',listened:'Paid attention to what could be heard.',ending:'The last part of a story.',prepared:'Made something ready beforehand.',shared:'Let other people hear, use or take part in something.',draft:'A piece of writing that may still be changed.',add:'Put something more with what is already there.',unfinished:'Not completed yet.',heard:'Noticed sound or listened to someone.',afterward:'After the event just described.',even:'Emphasizes something that may be surprising.',"couldn't":'Short for could not.'};
 export function meaning(word:string,sentence:string){
  const key=normalize(word);
+ if(key==='still'&&/stood very still|became still/.test(sentence))return 'Not moving.';
+ if(key==='last'&&/last visit/.test(sentence))return 'The most recent visit before this one.';
+ if(key==='too'&&/too (late|ordinary)/.test(sentence))return 'More than is suitable or helpful in this situation.';
+ if(key==='still'&&/still dry/.test(sentence))return 'Continuing to be dry.';
  if(key==='last')return sentence.includes('night')?'The night before today.': 'The final boat or event in this sequence.';
  if(key==='too')return sentence.includes('ill')?'So ill that she is unable to come.': 'Also; in addition.';
  if(key==='secure'&&sentence.includes('corners'))return 'Hold something firmly in place.';
  if(key==='still'&&sentence.includes('flour'))return 'Continuing to be dry after Sol fixed the tile.';
  if(key==='end'&&sentence.includes('ending'))return 'The last part of a story.';
- return glossary[key];
+ return (stagedBridgeParagraphs.some(paragraph=>paragraph.includes(sentence))?bridgeGlossary[key]:undefined)??glossary[key]??literaryGlossary[key];
 }
 export function context(word:string,sentence:string){
  const key=normalize(word);
  if(key==='obligation')return 'Here, Mara means that helping the passengers get off the boat safely is her responsibility. She cannot leave before she has done that.';
- if(key==='secure'||key==='secured')return sentence.includes('corners')?'The stones hold the tablecloth down so the wind cannot lift it.':'Here, you need to fasten one end of the crossing to each riverbank.';
+ if(key==='secure'||key==='secured')return sentence.includes('corners')?'The stones hold the tablecloth down so the wind cannot lift it.':stagedBridgeParagraphs.some(paragraph=>paragraph.includes(sentence))||/first section|each side|weight|secured bridge/.test(sentence)?'Fastening both sides holds that section steady before Pip steps onto it.':'Here, you need to fasten one end of the crossing to each riverbank.';
  if(key==='hesitated')return sentence.includes('flute')?'The boy pauses before deciding to play his flute.':"The boy does not hand over the bird immediately. He pauses before deciding to accept Mara's help.";
  if(key==='assumed')return 'Grandma thought her friends no longer enjoyed visiting. She had not asked them why they stayed away.';
  if(key==='prevented')return 'The repaired roof stopped water from reaching the flour.';
@@ -157,7 +165,29 @@ export function context(word:string,sentence:string){
 export function wordHelp(word:string,sentence:string,duetContext=false,title=false){
  const key=normalize(word);
  if(key==='kept'&&sentence.includes('kept his promise'))return {title:'Kept his promise',definition:'Did what he had said he would do.',explanation:'Pip said he would plant the seed with Grandma before dark. He planted it with her.',phrase:'kept his promise'};
+ if(key==='hand'&&/need(?:ed)? a hand/.test(sentence))return {title:'A hand',definition:'Help with something.',explanation:'Here, a hand means help with stepping off the boat.',phrase:'a hand'};
+ if(key==='drew'&&sentence.includes('drew breath'))return {title:'Drew breath',definition:'Breathed in.',explanation:'The boy pauses to take in air before playing more notes.',phrase:'drew breath'};
+ if(key==='counting'&&sentence.includes('counting on'))return {title:'Counting on',definition:'Relying on someone to do something.',explanation:'Rina’s customers expect her to have their bread ready.',phrase:'counting on'};
  if(key==='put'&&sentence.includes('stayed put'))return {title:'Stayed put',definition:'Stayed in the same place.',explanation:'The stones held the cloth down while the wind blew.',phrase:'stayed put'};
  if(title&&key==='duet')return {title:word,definition:'Music performed by two people together.',explanation:duetContext?'The boy plays the flute while another passenger whistles the same tune.':'',phrase:null};
- return {title:word,definition:key==='postponed'?'Moved something to a later time.':key==='prevented'?'Stopped something from happening.':meaning(word,sentence),explanation:context(word,sentence),phrase:null};
+ return {title:word,definition:key==='postponed'?'Moved something to a later time.':key==='prevented'?'Stopped something from happening.':meaning(word,sentence),explanation:key==='hesitated'&&duetContext?'The boy pauses before deciding to play his flute.':context(word,sentence),phrase:null};
 }
+
+const literarySources:Record<SourceId,Source>=Object.fromEntries(Object.entries(sources).map(([id,source])=>[id,id in literaryParagraphs?{...source,paragraphs:literaryParagraphs[id as keyof typeof literaryParagraphs],authority:['NARRATIVE-REVISION-20260916']}:source])) as Record<SourceId,Source>;
+const stagedNote:Source={id:'sections',title:'The boat and the broken bridge',author:'Grandma’s maintenance note',authority:['STAGED-BRIDGE-NOTE-20260916'],paragraphs:stagedBridgeParagraphs};
+const stagedSources={...sources,sections:stagedNote},literaryStagedSources={...literarySources,sections:stagedNote};
+export const sourcesFor=(context?:NarrativeContext):Record<SourceId,Source>=>maintenanceOf(context)?isLiterary(context)?literaryStagedSources:stagedSources:isLiterary(context)?literarySources:sources;
+const idsCache=new Map<string,Set<string>>();
+/** Current visible IDs only: an archived exposure cannot stand in for this note. */
+export function sourceIdsFor(context?:NarrativeContext):ReadonlySet<string>{
+ const key=editionOf(context)+'|'+(maintenanceOf(context)??'original');let ids=idsCache.get(key);
+ if(!ids){ids=new Set(Object.values(sourcesFor(context)).flatMap(source=>source.paragraphs.flatMap((p,i)=>{const id=sourcePrefix(source.id,context)+(i+1);return [id,...words(p).map((_,n)=>id+'.W'+(n+1))];})));idsCache.set(key,ids);}return ids;
+}
+/** Exact historical text remains resolvable after the construction migration. */
+export function sourceComponentsFor(context?:NarrativeContext):Map<string,string>{
+ const legacy={narrativeEdition:editionOf(context)},all=new Map<string,string>();
+ for(const corpus of maintenanceOf(context)?[legacy,context]:[legacy])for(const source of Object.values(sourcesFor(corpus)))source.paragraphs.forEach((text,i)=>all.set(sourcePrefix(source.id,corpus)+(i+1),text));
+ return all;
+}
+export const preparedEndingsFor=(context?:NarrativeContext):Record<keyof typeof preparedEndings,string>=>isLiterary(context)?literaryPreparedEndings:preparedEndings;
+export const endingLinesFor=(context?:NarrativeContext):Record<keyof typeof endingLines,string>=>isLiterary(context)?literaryEndingLines:endingLines;

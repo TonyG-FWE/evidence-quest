@@ -1,0 +1,59 @@
+{
+  "schema": "eq.renderer-assets-diff-review.v1",
+  "date": "2026-09-19",
+  "baseline": "7cc938a",
+  "reviewer": "Codex renderer/assets subagent",
+  "scope": "Bounded source review of changed renderer integration against the baseline and new active asset adapters. Subsequent explicitly authorized repairs address the two concrete findings below. No browser, provider, binary regeneration, Git mutation or large source-binary hashing was performed by this review.",
+  "reviewedFiles": {
+    "renderersAndOwnership": ["src/garden/GardenScene.tsx", "src/garden/StoryStage.tsx", "src/garden/MaraWorld.tsx", "src/garden/GardenApp.tsx", "src/garden/worldArt.ts", "src/garden/art.ts"],
+    "assetAdapters": ["src/garden/assets/runtimeLibrary.ts", "src/garden/assets/workQueue.ts", "src/garden/assets/visualAsset.ts", "src/garden/assets/actor.ts", "src/garden/assets/prop.ts", "src/garden/assets/sceneryBatch.ts", "src/garden/assets/reviewWorld.ts", "src/garden/assets/reviewBridge.ts", "src/garden/assets/reviewLandscape.ts", "src/garden/assets/reviewLanternPicture.ts", "src/garden/assets/storyProps.ts", "src/garden/assets/storyBounds.ts", "src/garden/assets/resourceBudget.ts"],
+    "landscapeAndPresentation": ["src/garden/assets/personalAssetRequest.ts", "src/garden/assets/personalPathSurface.ts", "src/garden/assets/personalRiverSurface.ts", "src/garden/assets/personalMemoryLandscape.ts", "src/garden/assets/personalStoryLandscape.ts", "src/garden/materialFade.ts", "src/garden/locomotion.ts"],
+    "sourceAndProfileBindings": ["src/garden/assets/profile.ts", "src/garden/assets/reviewManifest.ts", "src/garden/assets/runtimeManifest.ts", "src/garden/assets/runtimeFinish.ts", "scripts/prepare-final-demo.mjs", "scripts/export-garden-assets.mjs", "scripts/author-final-demo-actions.mjs", "scripts/final-demo-selection.mjs"]
+  },
+  "observations": [
+    "Live instances clone skeletons, share source geometry/textures, and apply normalization through outer groups. Native GLB clips remain separate from source-hash-bound action sidecars; action presentation uses authoritative state progress.",
+    "Review approval remains a build-time profile distinction. Runtime hashes and sidecar source bindings are checked. Production export retains its separate matching-approval gate.",
+    "Active actor/prop/scenery demand and errors are scoped to current owners; leases and transcoder ownership have explicit disposal. Main renderer recovery remounts on ordinary Restore view and retains the serialized chapter.",
+    "Asset transfers, decode queues, and primary personal path/river texture requests already use bounded loading. The remaining unbounded personal-memory texture family was repaired as recorded below.",
+    "Recollection context loss reaches its existing Restore story view remount. Static StoryStage restoration previously did not invalidate its final frame; this was repaired as recorded below.",
+    "A search of current world/story texture paths found no other TextureLoader.loadAsync network path outside the repaired personal-memory family. The VisualAssetLibrary default raw GLTF loader is not the live renderer path; live renderers use createRuntimeLibrary. Workbench SVG image decoding is a locally generated Blob path with cleanup, not a remote texture request."
+  ],
+  "findings": [
+    {
+      "id": "RENDER-REVIEW-01",
+      "severity": "P1",
+      "file": "src/garden/assets/personalMemoryLandscape.ts",
+      "originalLines": [55, 69],
+      "defect": "Unbounded TextureLoader.loadAsync plus Promise.allSettled could leave memory cards, story illustrations and recollection landscapes loading forever. A rejected sibling was concealed until a stalled request settled; pending requests were not canceled on owner retirement.",
+      "repair": "Use the existing bounded native-resolution texture loader, immediate Promise.all rejection with sibling abort, per-attempt ownership, late-result rejection, pending and completed texture disposal on retirement, and a fresh demand after leaving. Source geometry, dimensions, UVs, color space, mipmaps, wrapping and anisotropy remain unchanged.",
+      "status": "IMPLEMENTED_CONTRACTS_PASS_NATIVE_PENDING",
+      "tests": ["checks/garden-memory-landscape.test.ts", "checks/garden-personal-assets.test.ts"]
+    },
+    {
+      "id": "RENDER-REVIEW-02",
+      "severity": "P1",
+      "file": "src/garden/StoryStage.tsx",
+      "originalLines": [98, 114],
+      "defect": "A settled static or paused picture only rendered when dirty or time changed and had no context-restored invalidation. Native context restoration could therefore retain a blank frame until another unrelated state/size change.",
+      "repair": "Handle context loss/restoration, expose the existing recovery control, suspend visible demand while lost, and invalidate/reload/redraw after restoration. Cleanup removes both listeners. The renderer remains at native DPR and keeps source/story state.",
+      "status": "IMPLEMENTED_TYPECHECK_PASS_NATIVE_NOT_RUN",
+      "tests": ["browser-tests/garden-stage-recovery.spec.ts"]
+    }
+  ],
+  "verification": {
+    "node": "v24.21.0",
+    "clientTypecheck": "PASS",
+    "checksTypecheck": "PASS",
+    "focusedContracts": {"passed": 8, "failed": 0, "scope": "Two new memory ownership/failure tests and six existing personal-request/texture/river tests. Image decoding is a labeled synthetic seam; no native fidelity claim."},
+    "browserDiscovery": {"status": "PASS", "tests": 1, "file": "browser-tests/garden-stage-recovery.spec.ts"},
+    "browserExecution": "NOT_RUN_BY_THIS_REVIEW"
+  },
+  "remainingDefiniteBlockersFound": [],
+  "limits": [
+    "This is a source-level reliability review, not independent binary anatomy/topology/skin-weight or native visual acceptance. Original model bytes were not rehashed here.",
+    "Exporter source checks compare decoded accessors and source texture dimensions; their existing receipts were not regenerated by this review. Lossy texture appearance, contact/deformation and human Form decisions still require their recorded review.",
+    "No new frame-time, transfer, decoded-memory, cache, WebKit DPR2 or studio-transfer qualification is claimed. Existing measured failures and limits remain unchanged.",
+    "Native recovery regression uses a saved ending fixture and a synthetic native context-loss trigger; it is not a fresh chapter or a real driver failure. Its execution remains with the root-owned compiled browser qualification.",
+    "Review focused on active loading, transforms, ownership and recovery paths. It is not a proof of every physical activity gesture, world-layout route or rendered composition."
+  ]
+}
