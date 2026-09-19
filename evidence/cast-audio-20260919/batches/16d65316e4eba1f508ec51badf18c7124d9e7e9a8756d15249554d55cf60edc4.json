@@ -1,0 +1,105 @@
+{
+  "id": "16d65316e4eba1f508ec51badf18c7124d9e7e9a8756d15249554d55cf60edc4",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 60521,
+      "sha256": "518f13eacd2c58dd4c3a93f59cd629ac52b3e8f983239c2952f318a67d0bd14b"
+    },
+    {
+      "bytes": 831,
+      "sha256": "e6c6fdb6923eb9ecac5bf4a8139c765e79e8eeb3964dbef62ce96b059f96173a"
+    },
+    {
+      "bytes": 1340,
+      "sha256": "51255c604edf0c33cd728007f82462f2e00aeeafadbb3326b81e151287bd2fdc"
+    }
+  ],
+  "speaker": "mara",
+  "voiceId": "77c3a0cb23d34557b05732b5bdc97688",
+  "model": "s2.1-pro-free",
+  "text": "It’s good to hear the stories after a day of listening for the boat.",
+  "textSha256": "daa506d0c5adf8ada8b2e5ce9be37976711556a89021ec076a5aea9b0c4fc56d",
+  "sha256": "3db2d4835c1b84a31433fad54228995489d5f933f6778e616e05beb9ad847185",
+  "bytes": 62692,
+  "alignment": [
+    {
+      "text": "It's",
+      "start": 0.16,
+      "end": 0.4
+    },
+    {
+      "text": "good",
+      "start": 0.4,
+      "end": 0.64
+    },
+    {
+      "text": "to",
+      "start": 0.64,
+      "end": 0.72
+    },
+    {
+      "text": "hear",
+      "start": 0.72,
+      "end": 0.96
+    },
+    {
+      "text": "the",
+      "start": 0.96,
+      "end": 1.04
+    },
+    {
+      "text": "stories",
+      "start": 1.04,
+      "end": 1.6
+    },
+    {
+      "text": "after",
+      "start": 1.6,
+      "end": 2
+    },
+    {
+      "text": "a",
+      "start": 2,
+      "end": 2
+    },
+    {
+      "text": "day",
+      "start": 2,
+      "end": 2.32
+    },
+    {
+      "text": "of",
+      "start": 2.32,
+      "end": 2.48
+    },
+    {
+      "text": "listening",
+      "start": 2.48,
+      "end": 2.88
+    },
+    {
+      "text": "for",
+      "start": 2.88,
+      "end": 3.04
+    },
+    {
+      "text": "the",
+      "start": 3.04,
+      "end": 3.12
+    },
+    {
+      "text": "boat",
+      "start": 3.12,
+      "end": 3.76
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 3.864126984126984
+    }
+  ],
+  "expectedChargeUSD": 0
+}

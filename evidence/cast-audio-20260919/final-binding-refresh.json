@@ -1,0 +1,69 @@
+{
+  "schema": "eq.cast-final-binding-refresh.v1",
+  "at": "2026-09-19T06:23:32.999Z",
+  "node": "v24.21.0",
+  "executable": ".tools/node-v24.21.0-win-x64/node.exe",
+  "authorization": "Root confirmed all shared runtime/test/source files frozen before this refresh.",
+  "commands": [
+    {
+      "command": ".tools/node-v24.21.0-win-x64/node.exe scripts/prepare-cast-audio.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": ".tools/node-v24.21.0-win-x64/node.exe scripts/repair-cast-bindings.mjs --write",
+      "exitCode": 0
+    },
+    {
+      "command": ".tools/node-v24.21.0-win-x64/node.exe scripts/derive-cast-clips.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": ".tools/node-v24.21.0-win-x64/node.exe scripts/verify-demo-audio.mjs > .cache/cast-audio-verification-current.json",
+      "exitCode": 0
+    }
+  ],
+  "status": "COMPLETE_EXACT_PCM_VERIFIED",
+  "manifestSha256": "d5e493c3168c7a3929c5ad235d5740b5eb081a2fc401806731cee727b7fd6e0b",
+  "entries": 6167,
+  "exactBound": 6167,
+  "changedRecordingBindings": 0,
+  "missing": 0,
+  "roles": {
+    "narrator": 5307,
+    "pip": 239,
+    "grandma": 216,
+    "mara": 173,
+    "sol": 141,
+    "rina": 63,
+    "boy": 10,
+    "jo": 18
+  },
+  "runtimeClips": 5591,
+  "runtimeClipBytes": 1084832556,
+  "preservedSourceRecordings": 170,
+  "verifierInputs": 247,
+  "providerRequests": 0,
+  "provenance": [
+    {
+      "file": "public/audio/cast/manifest.json",
+      "sha256": "d5e493c3168c7a3929c5ad235d5740b5eb081a2fc401806731cee727b7fd6e0b"
+    },
+    {
+      "file": "evidence/cast-audio-20260919/catalogue.json",
+      "sha256": "74d0902d03b7edb5efe8b1390b17be2ec6178ae935d632a4773559d91dab7f8f"
+    },
+    {
+      "file": "evidence/cast-audio-20260919/semantic-repair.json",
+      "sha256": "7c6e3250ccf3d7ca422d45a4772ab5c38b9f46407f9e99b3cfff80decb8c9726"
+    },
+    {
+      "file": "evidence/cast-audio-20260919/independent-clips.json",
+      "sha256": "6b1162deaa4f06dcd2607754a4bfd7ed19c01afa4c6006f5146173cadaef5a43"
+    },
+    {
+      "file": ".cache/cast-audio-verification-current.json",
+      "sha256": "ffa765b27abc6971ee3a1e8defb97858df9c31853c9656050f1f2cf0915c9425"
+    }
+  ],
+  "scope": "Definitive provider-free source/catalogue/word/voice/master/independent-PCM binding refresh. No runtime or tests edited. No browser run, human listening or full-app acceptance is claimed."
+}

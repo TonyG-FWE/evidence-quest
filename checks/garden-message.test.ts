@@ -1,3 +1,4 @@
+import {buildBridge} from './garden-bridge-actions.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {GardenStore,initialGarden,CROSSING,MARA,GRANDMA_APPROACH,type Point} from '../src/garden/model.js';
@@ -10,7 +11,7 @@ const story=(s:GardenStore,event:StoryEvent)=>s.send({type:'STORY',event});
 const close=(s:GardenStore)=>{for(let i=0;i<20&&s.getSnapshot().panel;i++)s.send({type:'CLOSE'});};
 const go=(s:GardenStore,point:Point)=>{close(s);s.send({type:'GO',point});advance(s);assert.ok(Math.hypot(s.getSnapshot().chapter.pip.x-point.x,s.getSnapshot().chapter.pip.z-point.z)<.02);};
 function fresh(){const s=new GardenStore(initialGarden('message-'+n++),()=>String(n++));s.send({type:'BOOT'});s.send({type:'BEGIN'});s.send({type:'START_PLAY'});go(s,{x:MARA.x,z:MARA.z+.95});s.send({type:'TALK',who:'mara'});completeConversation(s);story(s,{kind:'OFFER_LATER'});return s;}
-function reachGrandma(s:GardenStore){go(s,CROSSING);s.send({type:'COLLECT_ROPES'});advance(s);s.send({type:'ARRANGE'});for(const [section,side]of [['a','west'],['b','east']]as const){s.send({type:'SELECT',section});s.send({type:'POST_PREVIEW',site:'narrow',side});s.send({type:'PLACE'});}s.send({type:'JOIN'});s.send({type:'FASTEN',end:'west'});s.send({type:'FASTEN',end:'east'});s.send({type:'BACK'});go(s,GRANDMA_APPROACH);s.send({type:'TALK',who:'grandma'});s.send({type:'OPEN',panel:'report'});}
+function reachGrandma(s:GardenStore){go(s,CROSSING);buildBridge(s);go(s,GRANDMA_APPROACH);s.send({type:'TALK',who:'grandma'});s.send({type:'OPEN',panel:'report'});}
 function reload(s:GardenStore){const c=s.getSnapshot().chapter,envelope={format:1,content:'garden-chapter-3',revision:c.revision,writer:'message-check',payload:c,checksum:checksum(JSON.stringify(c))},loaded=unpack(envelope);assert.ok(loaded);assert.deepEqual(loaded.payload,c);const r=new GardenStore(initialGarden('reload'),()=>String(n++));r.send({type:'BOOT',chapter:loaded.payload});return r;}
 
 test('Prepared relay is not a report, invitation, page handoff or time agreement; only actual delivery informs Grandma',()=>{

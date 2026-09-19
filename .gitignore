@@ -3,6 +3,7 @@ dist/
 .tools/
 .cache/
 .tmp/
+/tmp/
 *.tsbuildinfo
 .env
 .env.*
@@ -31,6 +32,7 @@ evidence/er13/preview-*-stderr.txt
 !/evidence/*.md
 !/evidence/*/*.json
 !/evidence/*/*.md
+!/evidence/voice-ai-demo-20260918/openai-attempts.jsonl
 !/evidence/*/*.tsv
 # Authoritative imported history and the provider-attempt ledger are retained.
 !/evidence/er13/parent-import-history/**
@@ -41,3 +43,45 @@ evidence/er13/preview-*-stderr.txt
 !/evidence/sparkfest-main-image-20260916/*.log
 !/evidence/sparkfest-playback-20260916/*.log
 !/evidence/repository-checkpoint-20260916/*.log
+# The authored layout and four source references are required review inputs.
+!/evidence/hands-on-20260916/review.html
+!/evidence/hands-on-20260916/openings.html
+!/evidence/hands-on-20260916/*.svg
+!/evidence/hands-on-20260916/references/*.png
+# Keep the requested concise demonstration and summaries, not duplicate raw runs.
+!/evidence/hands-on-20260916/before-after.html
+!/evidence/hands-on-20260916/demonstration/*.png
+/evidence/hands-on-20260916/browser-*.json
+!/evidence/hands-on-20260916/browser-summary.json
+!/evidence/hands-on-20260916/*-final.log
+# Approved pilot provenance and original production candidates are project assets.
+!/evidence/hands-on-20260916/pilot/**
+/.tripo/
+/evidence/hands-on-20260916/pilot/**/*.blend1
+
+# Generated work areas and exact hydrated copies. Required demo bytes are tracked
+# in the finite assets/demo manifest; ignoring a path never deletes an original.
+/output/
+/public/garden-assets/
+# Large captures and duplicate candidate trees are local audit material.
+/evidence/**/*.zip
+/evidence/**/*.7z
+/evidence/**/*.tar
+/evidence/**/*.gz
+/evidence/**/*.webm
+/evidence/**/*.mp4
+/evidence/**/trace/
+/evidence/**/traces/
+/evidence/final-demo-20260918/*-built/
+/evidence/final-demo-20260918/*-source-before-*/
+/evidence/final-demo-20260918/required*/before-*/
+/evidence/final-demo-20260918/required*/compiled-before-*/
+# Durable recording allowance is evidence, not a disposable cache.
+!/evidence/demo-ai-20260919/openai-attempts.jsonl
+!/evidence/cast-audio-20260919/attempts.jsonl
+# .cache/ above includes cast-audio-dynamic; authored public/audio/cast stays tracked.
+# Release receipts and deterministic authored-audio inputs are explicit finite
+# selections in assets/demo/release-files.json; never force-add whole evidence.
+!/evidence/demo-release-20260919/*.json
+!/evidence/demo-release-20260919/recording-launch/*.json
+!/evidence/cast-audio-20260919/batches/*.json

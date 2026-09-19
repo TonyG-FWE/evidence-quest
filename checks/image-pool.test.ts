@@ -20,3 +20,23 @@ test('TASK11.20 failed image loads can be retried without an unbounded request l
  let calls=0;const owner=Symbol(),pool=new ImagePool<string>(async()=>{calls++;if(calls===1)throw Error('fixture image error');return 'ready';},()=>{},100);
  pool.request(item('image',20),owner);await turn();assert.equal(pool.request(item('image',20),owner).status,'failed');assert.equal(calls,1);pool.retry();pool.request(item('image',20),owner);await turn();assert.equal(pool.request(item('image',20),owner).value,'ready');assert.equal(calls,2);
 });
+test('TASK11.20 reusing an existing high-resolution decode acquires ownership without requesting a low duplicate',async()=>{
+ const loads:string[]=[],released:string[]=[],large=Symbol('large draw'),small=Symbol('small draw'),pool=new ImagePool<string>(async url=>{loads.push(url);return url;},value=>released.push(value),100);
+ assert.equal(pool.existing('high',small),null);assert.deepEqual(loads,[]);
+ pool.request(item('high',80,2),large);const pending=pool.existing('high',small);assert.equal(pending?.status,'loading');
+ pool.retain(large,new Set());await turn();assert.equal(pool.existing('high',small)?.value,'high');assert.deepEqual(loads,['high']);assert.deepEqual(released,[]);assert.equal(pool.stats().reservedBytes,80);
+ pool.retain(small,new Set(['high']));assert.equal(pool.stats().entries,1);pool.dispose(small);assert.deepEqual(released,['high']);assert.equal(pool.stats().reservedBytes,0);
+});
+test('TASK11.20 failed or retired high-resolution frames do not suppress the normal low-resolution recovery',async()=>{
+ const owner=Symbol('scene'),released:string[]=[],pool=new ImagePool<string>(async url=>{if(url==='high')throw Error('Failed high decode');return url;},value=>released.push(value),100);
+ pool.request(item('high',80,2),owner);await turn();assert.equal(pool.existing('high',owner),null);
+ pool.request(item('low',20),owner);await turn();assert.equal(pool.existing('low',owner)?.value,'low');assert.equal(pool.stats().readyBytes,20);
+ pool.retain(owner,new Set(['low']));assert.equal(pool.existing('high',owner),null);assert.equal(pool.stats().entries,1);assert.deepEqual(released,[]);
+});
+test('TASK11.20 adopting a fallback retains its failed primary without retrying or canceling the pending PNG',async()=>{
+ const large=Symbol('large'),small=Symbol('small'),loads:string[]=[],released:string[]=[],pool=new ImagePool<string>(async url=>{loads.push(url);if(url==='webp')throw Error('Unsupported primary');return url;},value=>released.push(value),100);
+ pool.request(item('webp',80,2),large);await turn();pool.request(item('png',80,2),large);
+ assert.equal(pool.existing('webp',small,true)?.status,'failed');assert.equal(pool.existing('png',small)?.status,'loading');pool.retain(large,new Set());await turn();
+ assert.equal(pool.request(item('webp',80,2),small).status,'failed');assert.equal(pool.existing('png',small)?.value,'png');assert.deepEqual(loads,['webp','png']);assert.deepEqual(released,[]);
+ pool.retain(small,new Set(['webp','png']));assert.equal(pool.stats().readyBytes,80);pool.retry();assert.equal(pool.existing('webp',small,true),null);assert.equal(pool.existing('png',small)?.value,'png');pool.dispose(small);assert.deepEqual(released,['png']);
+});

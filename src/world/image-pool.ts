@@ -22,6 +22,13 @@ export class ImagePool<T> {
   }
   entry.used=++this.clock;entry.owners.add(owner);return {value:entry.value,status:entry.status};
  }
+ /** Adopt a matching decode already admitted by another draw/consumer. This
+  * never starts a request or re-admits a failed frame, and the new owner must
+  * still retain/release it through the ordinary lifecycle. */
+ existing(url:string,owner:symbol,includeFailed=false){
+  const entry=this.entries.get(url);if(!entry||entry.status==='failed'&&!includeFailed)return null;
+  entry.used=++this.clock;entry.owners.add(owner);return {value:entry.value,status:entry.status,resource:entry.resource};
+ }
  retain(owner:symbol,urls:ReadonlySet<string>){
   for(const [url,entry]of this.entries){if(!urls.has(url))entry.owners.delete(owner);if(!entry.owners.size&&entry.resource.level===2)this.drop(url);}
  }

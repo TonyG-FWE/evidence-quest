@@ -1,0 +1,8 @@
+import fs from 'node:fs/promises';
+import * as T from 'three';
+import {loadPilotGeometry} from './pilot-glb.mjs';
+const path='evidence/final-demo-20260918',manifest=JSON.parse(await fs.readFile(path+'/review-assets.json')),d=manifest.assets.oven,source=manifest.bindings.find(b=>b.id==='oven').source,g=await loadPilotGeometry(source),root=new T.Group(),origin=new T.Group();
+root.scale.fromArray(d.normalization.scale);root.rotation.set(...d.normalization.rotation);origin.position.fromArray(d.normalization.offset);origin.add(g.scene);root.add(origin);root.updateMatrixWorld(true);
+const rows=[];for(const y of [.40,.55,.70,.85])for(const [name,from,direction]of [['+X',[2,y,0],[-1,0,0]],['-X',[-2,y,0],[1,0,0]],['+Z',[0,y,2],[0,0,-1]],['-Z',[0,y,-2],[0,0,1]]]){const ray=new T.Raycaster(new T.Vector3(...from),new T.Vector3(...direction));rows.push({name,y,hits:ray.intersectObject(root,true).slice(0,4).map(h=>({point:h.point.toArray(),normal:h.face.normal.clone().transformDirection(h.object.matrixWorld).toArray()}))});}
+const hearth=[];for(const x of [.20,.32,.42,.52])for(const z of [-.18,0,.18]){const ray=new T.Raycaster(new T.Vector3(x,.85,z),new T.Vector3(0,-1,0));hearth.push({x,z,hits:ray.intersectObject(root,true).slice(0,4).map(h=>({point:h.point.toArray(),normal:h.face.normal.clone().transformDirection(h.object.matrixWorld).toArray()}))});}
+await fs.writeFile(path+'/oven-opening.json',JSON.stringify({source,sourceSha256:d.sourceSha256,rows,hearth},null,2)+'\n');console.log(JSON.stringify({opening:rows.map(r=>({side:r.name,y:r.y,point:r.hits[0]?.point})),hearth:hearth.map(r=>({x:r.x,z:r.z,point:r.hits[0]?.point,normal:r.hits[0]?.normal}))},null,2));

@@ -1,21 +1,23 @@
+import {chooseHandObject,moveHandObject} from './garden-actions.js';
 import {test,expect,type Page} from '@playwright/test';
 import {completeConversation} from './garden-actions.js';
+import {installPlaybackVoice,automaticVoice,spokenWords} from './garden-playback-voice.js';
 test.setTimeout(90000);
 const button=(p:Page,name:string)=>p.getByRole('button',{name,exact:true});
 async function begin(p:Page){await p.goto('/garden');await button(p,'Begin Pip’s adventure').click();await button(p,'Start playing').click();await button(p,'Go to Mara').click();await button(p,'Talk to Mara E').click();await completeConversation(p);}
 async function saved(p:Page){await expect(p.locator('.g-save')).toHaveText('Saved in this browser');return p.evaluate(async()=>new Promise<any>(resolve=>{const r=indexedDB.open('evidence-quest-garden-adventure-v1');r.onsuccess=()=>{const db=r.result,t=db.transaction('slots'),q=t.objectStore('slots').get('current');t.oncomplete=()=>{db.close();resolve(q.result.payload);};};}));}
 
 test('Reading support: inspect choices without selecting, then read every green reply with word help and oral practice',async({page},info)=>{
- // Synthetic local voice seam verifies exact speech requests, not audible voice quality.
- await page.addInitScript(()=>{const spoken:string[]=[];(window as any).__readingSpeech=spoken;Object.defineProperty(window,'speechSynthesis',{value:{getVoices:()=>[{localService:true,lang:'en-US'}],speak:(u:any)=>{spoken.push(u.text);u.onend?.();},cancel:()=>{}},configurable:true});Object.defineProperty(window,'SpeechSynthesisUtterance',{value:class{constructor(public text:string){}},configurable:true});});
- await begin(page);const initial=await saved(page);
+ // Synthetic cast-media seam verifies exact text and cancellation, not native decoding or audible voice quality.
+ await installPlaybackVoice(page);
+ await begin(page);await automaticVoice(page,true);const initial=await saved(page);
  await button(page,'Help me read these choices').click();const preview=page.getByRole('region',{name:'Read the choices before choosing'});
  await expect(preview).toContainText("I'll ask Grandma to start the next gathering later.");await preview.getByRole('button',{name:'gathering',exact:true}).click();await expect(page.getByRole('complementary',{name:'Word help: gathering'})).toContainText('people come together');await button(page,'Close word help').click();
  const inspected=await saved(page);expect(inspected.mara.asking).toBe(initial.mara.asking);expect(inspected.page).toBe(initial.page);expect(inspected.story).toEqual(initial.story);
  await button(page,"I'll ask Grandma to start the next gathering later.").click();
  const reply=page.locator('.g-dialogue-response').filter({has:page.locator('.g-speaker',{hasText:'Mara says'})});
- await reply.getByRole('button',{name:'Starting',exact:true}).click();await expect(page.getByRole('complementary',{name:'Word help: Starting'})).toContainText('Begin doing something');await button(page,'Hear the word').click();expect(await page.evaluate(()=>(window as any).__readingSpeech.at(-1))).toBe('Starting');await button(page,'Close word help').click();
- await button(page,'Hear Mara’s reply').click();const words='Please ask her. Starting after the last boat returns would give me time to finish work.';expect(await page.evaluate(()=>(window as any).__readingSpeech.at(-1))).toBe(words);
+ await reply.getByRole('button',{name:'Starting',exact:true}).click();await expect(page.getByRole('complementary',{name:'Word help: Starting'})).toContainText('Begin doing something');await button(page,'Hear the word').click();await expect.poll(async()=>(await spokenWords(page)).at(-1)).toBe('Starting');await button(page,'Close word help').click();
+ const replyStart=(await spokenWords(page)).length;await button(page,'Hear Mara’s reply').click();const words='Please ask her. Starting after the last boat returns would give me time to finish work.';await expect.poll(async()=>(await spokenWords(page)).slice(replyStart).join(' ').replace(/\s+/g,' ').trim()).toBe(words);
  await button(page,'Read Mara’s reply aloud').click();const practice=page.getByRole('dialog',{name:'Reading practice',exact:true});await expect(practice.locator('.g-practice-words')).toHaveText(words);await expect(practice).toHaveAttribute('data-recording','ready');await practice.getByRole('button',{name:'work',exact:true}).click();await expect(button(page,'Hear the sentence')).toBeVisible();await button(page,'Close word help').click();await expect(practice).toBeVisible();await button(page,'Back to the story').click();
  const after=await saved(page);expect(after.story.maraReported).toBe(false);expect(after.story.timeAgreed).toBe(null);expect(after.exposed.some((x:string)=>x.startsWith('GA.SRC.READING')||x.startsWith('GA.SRC.:'))).toBe(false);
  await page.screenshot({path:info.outputPath('supported-replies.png')});
@@ -28,8 +30,11 @@ test('Reading support: own message and compact choice help retain words, place a
 });
 
 test('Reading support: exact world controls can be inspected without placing a bridge section',async({page})=>{
- await page.goto('/garden');await button(page,'Begin Pip’s adventure').click();await button(page,'Start playing').click();await button(page,'Go to the bridge pieces').click();await button(page,'Arrange bridge').click();await button(page,'Narrow crossing · dock-side post').click();
- const before=await saved(page);await button(page,'Read what’s on screen').click();await expect(page.getByRole('heading',{name:'Read what’s on screen',exact:true})).toBeVisible();await expect(page.locator('.garden-reading-scroll')).toContainText('Place section');await page.locator('.garden-reading-scroll').getByRole('button',{name:'section',exact:true}).first().click();await button(page,'Close word help').click();await button(page,'Back to the bridge pieces').click();await expect(page.getByRole('button',{name:'Place section'})).toBeEnabled();expect((await saved(page)).sections).toEqual(before.sections);await page.getByRole('button',{name:'Place section'}).click();expect((await saved(page)).sections).not.toEqual(before.sections);
+ await page.goto('/garden');await button(page,'Begin Pip’s adventure').click();await button(page,'Start playing').click();await button(page,'Go to the bridge pieces').click();await chooseHandObject(page,'section:a');await moveHandObject(page,-.775,3);
+ const before=await saved(page);await button(page,'Read what’s on screen').click();await expect(page.getByRole('heading',{name:'Read what’s on screen',exact:true})).toBeVisible();await expect(page.locator('.garden-reading-scroll')).toContainText('Release object');await page.locator('.garden-reading-scroll').getByRole('button',{name:'object',exact:true}).first().click();await button(page,'Close word help').click();await page.locator('.g-reader-top .g-close').click();expect((await saved(page)).sections).toEqual(before.sections);
+ // Reading interrupts an uncommitted gesture. Resume explicitly; inspection
+ // must neither move a section nor complete the physical action on return.
+ await expect(page.locator('.garden-scene')).toHaveAttribute('data-hand-gesture','');await chooseHandObject(page,'section:a');await moveHandObject(page,-.775,3);await button(page,'Release object').click();expect((await saved(page)).sections).not.toEqual(before.sections);
 });
 
 test('Reading support: synthetic capture keeps Stop visible and pauses replay before word help',async({page})=>{

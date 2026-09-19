@@ -1,0 +1,55 @@
+{
+  "id": "70866b60de8e28647e32e437a66aec96b7bdde9109dc8776bf1ed02c20f8924c",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 27510,
+      "sha256": "435648dd7b864b22587c4a69c86cedef8a525ac4048d532dc349c34dad6758c8"
+    },
+    {
+      "bytes": 840,
+      "sha256": "7a57830bf15b48500420d299fb879acf419683f3424496c738985736be9da024"
+    },
+    {
+      "bytes": 1324,
+      "sha256": "50fd292d2240718a7ceafaacf4e54682ca0b738401858d6ee619aa71ba6c31b0"
+    }
+  ],
+  "speaker": "pip",
+  "voiceId": "829184c635314c9485e48690116ff8ad",
+  "model": "s2.1-pro-free",
+  "text": "Return to the gathering",
+  "textSha256": "e1f7c45278599ec24bd8437344ef450f32f57152b65a5867cf421265ec095795",
+  "sha256": "dc475f6f3d14dd12701719a673e15b723f8104134a738d5927373e308b7f56af",
+  "bytes": 29674,
+  "alignment": [
+    {
+      "text": "Return",
+      "start": 0.16,
+      "end": 0.8
+    },
+    {
+      "text": "to",
+      "start": 0.8,
+      "end": 0.88
+    },
+    {
+      "text": "the",
+      "start": 0.88,
+      "end": 0.96
+    },
+    {
+      "text": "gathering",
+      "start": 0.96,
+      "end": 1.76
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 1.7891609977324263
+    }
+  ],
+  "expectedChargeUSD": 0
+}

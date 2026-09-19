@@ -1,0 +1,38 @@
+{
+  "schema": "evidence-quest.demo-package-verification.v1",
+  "at": "2026-09-19T04:00:11.489Z",
+  "status": "PASS",
+  "isolatedDirectory": ".tmp/demo-verification-63792a58-5e6d-4e7d-b11f-73da9fb531cc",
+  "manifestSha256": "5287ab79bb0ae8a46869d2314d99d0e165af85f61f6ed7df5792babf3db32d94",
+  "filesSha256": "b418e92648d1275f4fa904f0af62c48c2dc914a1b202227b3a1482a19904e4c9",
+  "packageFiles": 151,
+  "packageBytes": 585710767,
+  "hydrationTargets": 152,
+  "firstCopyCount": 152,
+  "secondMatchedCount": 152,
+  "reviewFileReferencesVerified": 128,
+  "landscapeDerivatives": 9,
+  "landscapeOriginals": 4,
+  "grassOriginalBytes": 20422608,
+  "checks": [
+    "all packaged bytes verified before hydration",
+    "fresh isolated directory copied every declared target",
+    "second pass matched all targets",
+    "actual personal landscape and grass loaders accepted hydrated originals/receipts",
+    "all review asset and animation references matched",
+    "direct path-support runtime import exists",
+    "conflicting existing target rejected and preserved",
+    "synthetic complete audio manifest accepted",
+    "synthetic replacement of approved cast rejected",
+    "synthetic out-of-bounds audio timing rejected",
+    "synthetic wrong audio hash rejected",
+    "synthetic missing WAV binding rejected"
+  ],
+  "notRun": [
+    "full npm build",
+    "browser or GPU work",
+    "actual audio decoding/listening",
+    "human artwork or gameplay acceptance"
+  ],
+  "scope": "No live cache changed; no original deleted; isolated copies remain ignored under .tmp."
+}

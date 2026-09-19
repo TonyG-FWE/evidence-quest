@@ -1,0 +1,60 @@
+{
+  "id": "606c158f2d3fee38793c4c4b0774166a1b109b9140b3573eadb0e63438bfe58d",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 78504,
+      "sha256": "3834cb0d16c711c4370424a2ff3a9beb0d0d34d343ea5e337639a3f52da46d6a"
+    },
+    {
+      "bytes": 1249,
+      "sha256": "a86f0a86af38b371ac90f357c687a918bb2855f16b2e1fabdba953fd568955c0"
+    },
+    {
+      "bytes": 1330,
+      "sha256": "ae7c29b150b33532671270299316cb24f7c99d88ef13615e8dbbf1a2165f66fc"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "Receiving\n\nfallen\n\nknew\n\nl\n\nZ",
+  "textSha256": "47e59b6c2e0c9dd87c11c67946ac6fc9fcde39fd3ca21bc6b4a2239e4a2965cd",
+  "sha256": "4b50de8baae16b70f65a87ff450c608de29e243699445b72602cd54610bcc0ff",
+  "bytes": 81083,
+  "alignment": [
+    {
+      "text": "Receiving",
+      "start": 0.08,
+      "end": 0.88
+    },
+    {
+      "text": "fallen",
+      "start": 1.36,
+      "end": 2.08
+    },
+    {
+      "text": "knew",
+      "start": 2.4,
+      "end": 2.96
+    },
+    {
+      "text": "l",
+      "start": 3.44,
+      "end": 3.92
+    },
+    {
+      "text": "Z",
+      "start": 4.32,
+      "end": 4.88
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 5.000430839002267
+    }
+  ],
+  "expectedChargeUSD": 0
+}

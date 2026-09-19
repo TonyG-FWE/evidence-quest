@@ -4,12 +4,12 @@ import {readFileSync} from 'node:fs';
 import {GardenStore,initialGarden,MARA,type Chapter} from '../src/garden/model.js';
 import {validChapter,unpack,checksum} from '../src/garden/persistence.js';
 import {lanternIds,lanternRecord,performedEnding,presentationScene} from '../src/garden/lanterns.js';
-import {endingLines} from '../src/garden/chapterContent.js';
-import {advance,finishSpokenTurn} from './garden-play-actions.js';
+import {endingLinesFor,sourcePrefix} from '../src/garden/content.js';
+import {advance,finishSpokenTurn,migratedCheckpoint} from './garden-play-actions.js';
 const captured=JSON.parse(readFileSync('evidence/group-7-review-20260915/group-6-migration-inputs.json','utf8').replace(/^\uFEFF/,'')) as {cases:{name:string;envelope:{payload:Chapter}}[]};
 let id=0;
 /** Authentic Group6 checkpoint fixture; no claim that BOOT played the preceding route. */
-function fixture(name:string){const s=new GardenStore(initialGarden('finale-fixture-'+id++),()=>String(id++));s.send({type:'BOOT',chapter:captured.cases.find(x=>x.name===name)!.envelope.payload});return s;}
+function fixture(name:string){const s=new GardenStore(initialGarden('finale-fixture-'+id++),()=>String(id++));s.send({type:'BOOT',chapter:migratedCheckpoint(captured.cases.find(x=>x.name===name)!.envelope)});return s;}
 function close(s:GardenStore){for(let i=0;i<20&&s.getSnapshot().panel;i++)s.send({type:'CLOSE'});}
 function physical(c:Chapter){return {seed:c.seed,river:c.river,sections:c.sections,west:c.west,east:c.east,joined:c.joined,page:c.page,bakery:c.bakery,mara:c.mara,bloomed:c.bloomed};}
 function finish(s:GardenStore,moment:'planting'|'gathering'='planting'){
@@ -41,7 +41,7 @@ test('Finale: finished replay starts at one; interrupted replay resumes its exac
  s.send({type:'START_PRESENTATION',mode:'narrate'});assert.equal(s.getSnapshot().chapter.story.presentation.page,0);assert.equal(s.getSnapshot().chapter.story.presentation.finished,true);for(let i=0;i<3;i++)s.send({type:'PRESENTATION',step:'next'});s.send({type:'ACTIVITY_BACK'});
  const payload=s.getSnapshot().chapter,raw={format:1,content:payload.content,revision:payload.revision,writer:'finale-fixture',payload,checksum:checksum(JSON.stringify(payload))};const restored=unpack(raw)!;assert.ok(restored);s.send({type:'BOOT',chapter:restored.payload});s.send({type:'OPEN',panel:'studio'});s.send({type:'START_PRESENTATION',mode:'watch'});assert.equal(s.getSnapshot().chapter.story.presentation.page,3);
  s.send({type:'OPEN',panel:'endingWords'});s.send({type:'PRESENTATION',step:'previous'});assert.equal(s.getSnapshot().chapter.story.presentation.page,3);s.send({type:'CLOSE'});s.send({type:'PRESENTATION',step:'previous'});assert.equal(s.getSnapshot().chapter.story.presentation.page,2);
- s.send({type:'OPEN',panel:'endingWords'});const word='GA.SRC.FINALE.'+(Object.values(endingLines).findIndex(line=>line===s.getSnapshot().chapter.story.ending!.paragraphs[2]!)+1)+'.W1',otherVariant='GA.SRC.FINALE.'+(Object.values(endingLines).findIndex(line=>line===endingLines.absent)+1)+'.W1';s.send({type:'EXPOSE_WORDS',ids:[word,'GA.SRC.FINALE.1.W1',otherVariant]});assert.ok(s.getSnapshot().chapter.exposed.includes(word));assert.equal(s.getSnapshot().chapter.exposed.includes('GA.SRC.FINALE.1.W1'),true,'The complete-text reader includes the opening even while Loop waits at picture3');assert.equal(s.getSnapshot().chapter.exposed.includes(otherVariant),false,'A different unperformed arrangement remains outside the displayed text');
+ s.send({type:'OPEN',panel:'endingWords'});const c=s.getSnapshot().chapter,endingLines=endingLinesFor(c),prefix=sourcePrefix('finale',c);const word=prefix+(Object.values(endingLines).findIndex(line=>line===s.getSnapshot().chapter.story.ending!.paragraphs[2]!)+1)+'.W1',otherVariant=prefix+(Object.values(endingLines).findIndex(line=>line===endingLines.absent)+1)+'.W1';s.send({type:'EXPOSE_WORDS',ids:[word,prefix+'1.W1',otherVariant]});assert.ok(s.getSnapshot().chapter.exposed.includes(word));assert.equal(s.getSnapshot().chapter.exposed.includes(prefix+'1.W1'),true,'The complete-text reader includes the opening even while Loop waits at picture3');assert.equal(s.getSnapshot().chapter.exposed.includes(otherVariant),false,'A different unperformed arrangement remains outside the displayed text');
 });
 test('Finale: particular waiting and recorded flowers retain source return, ownership and selected words',()=>{
  const s=fixture('legacy-legacy-legacy-page-with-grandma-not-shared');const before=structuredClone(s.getSnapshot().chapter);

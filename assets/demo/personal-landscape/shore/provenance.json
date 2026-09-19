@@ -1,0 +1,149 @@
+{
+  "createdAt": "2026-09-18T19:09:00.515Z",
+  "sources": [
+    {
+      "id": "coastal",
+      "source": "output\\tripo-reference-batches-20260917\\New 3D Objects Evidence Quest\\coastal+island+3d+model.glb",
+      "sourceSha256": "0d16a00cc6a43c9112de8f58aba6a0c3d959dd15ca06d3d9116a42841c750901",
+      "textureSha256": "74ea47314ff8ee0e41df3828148b885aa9796ebc5b727fe87239951f54f191e0",
+      "triangles": 39812,
+      "bounds": [
+        -0.4990709125995636,
+        -0.293780118227005,
+        0.4990709125995636,
+        0.293780118227005
+      ],
+      "projection": "1024 square top projection; topmost triangle; original UV color, no generated artwork",
+      "derivedLand": {
+        "file": "output\\personal-landscape-20260918\\shore\\coastal-land.glb",
+        "sha256": "38d5e5873733d7af688c4e0324b9163a6098a8a26430086e2e20caf90c0f74f3",
+        "triangles": 17181,
+        "removedTriangles": 22631,
+        "method": "Original vertex/UV/material data; index-only omission of cyan water, low current strokes and diorama underside; separate raised details retain shape",
+        "visualReview": "PENDING"
+      }
+    },
+    {
+      "id": "riverbank",
+      "source": "output\\tripo-reference-batches-20260917\\New 3D Objects Evidence Quest\\riverbank+diorama+3d+model.glb",
+      "sourceSha256": "7da9e650b9cf4512991c8329897bbb281ba1d406c2471995f7e965b31c101482",
+      "textureSha256": "8ca61a01e201ed9e2dee39fc8dd1281d4a46cff2063c6161299f471e9ca42229",
+      "triangles": 2731,
+      "bounds": [
+        -0.499755859375,
+        -0.294677734375,
+        0.499755859375,
+        0.294677734375
+      ],
+      "projection": "1024 square top projection; topmost triangle; original UV color, no generated artwork",
+      "derivedLand": {
+        "file": "output\\personal-landscape-20260918\\shore\\riverbank-land.glb",
+        "sha256": "0d9ebde6489a0a796c3a63788515b3aca1c3c459bf7dd7a0ac2e0fc9ad744eac",
+        "triangles": 940,
+        "removedTriangles": 1791,
+        "method": "Original vertex/UV/material data; index-only omission of cyan water, low current strokes and diorama underside; separate raised details retain shape",
+        "visualReview": "PENDING"
+      }
+    },
+    {
+      "id": "grassy-bank",
+      "source": "output\\tripo-reference-batches-20260917\\New 3D Objects Evidence Quest\\grass+island+3d+model.glb",
+      "sourceSha256": "1a29851131183c6254a5062c9991c30c4117b6f896ed069fd0495dd6fa32f197",
+      "textureSha256": "6960242931f73e5060a4d3cd555145ff67a400e208e0a700eaf60e8cb34f81cd",
+      "triangles": 40678,
+      "bounds": [
+        -0.41429126262664795,
+        -0.49572092294692993,
+        0.41429126262664795,
+        0.49572092294692993
+      ],
+      "projection": "1024 square top projection; topmost triangle; original UV color, no generated artwork"
+    }
+  ],
+  "swatches": [
+    {
+      "id": "bank-top",
+      "source": "grassy-bank",
+      "crop": {
+        "left": 516,
+        "top": 449,
+        "width": 220,
+        "height": 224
+      }
+    },
+    {
+      "id": "river-water",
+      "source": "coastal",
+      "crop": {
+        "left": 831,
+        "top": 636,
+        "width": 133,
+        "height": 133
+      },
+      "derivation": "Foam-free original cyan paint crop; corresponding edge pixels blended across a 16-pixel border for continuous repeat; no generated artwork or color tint"
+    },
+    {
+      "id": "bank-soil",
+      "source": "coastal-original-UV-atlas",
+      "crop": {
+        "left": 3478,
+        "top": 3918,
+        "width": 123,
+        "height": 123
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "file": "bank-soil.png",
+      "sha256": "5d26e63d5ebef4e182c2826f5c1ad5c7cc0b6cdd474a0d5b272b6b8db4d28ae6",
+      "bytes": 36079
+    },
+    {
+      "file": "bank-top.png",
+      "sha256": "dbdd48725487a47a35450b588de333ad03b6ecd184e2e073bcf3c187b272eb87",
+      "bytes": 137682
+    },
+    {
+      "file": "coastal-land.glb",
+      "sha256": "38d5e5873733d7af688c4e0324b9163a6098a8a26430086e2e20caf90c0f74f3",
+      "bytes": 20929176
+    },
+    {
+      "file": "coastal-soil-study.png",
+      "sha256": "a0392911803a1e1ea822dc8313372d3f89f47da0fafb62283f50e1e4477449d4",
+      "bytes": 1284491
+    },
+    {
+      "file": "coastal-top.png",
+      "sha256": "b51fb91c9f22b3ffb830f6f5834d5bd3a08a2c0c8f678e5ecebbdff6ecbc4cea",
+      "bytes": 2262306
+    },
+    {
+      "file": "grassy-bank-top.png",
+      "sha256": "cb314b37fa14a92cc7142fb95059c72d7c6cd98e8532d5c79f1475486319e776",
+      "bytes": 2476941
+    },
+    {
+      "file": "river-water.png",
+      "sha256": "0668ac725a9c08883e5e3d634ee6dca8fc981b87cfb5c8dd2ca81ed212d7d4ba",
+      "bytes": 42352
+    },
+    {
+      "file": "riverbank-land.glb",
+      "sha256": "0d9ebde6489a0a796c3a63788515b3aca1c3c459bf7dd7a0ac2e0fc9ad744eac",
+      "bytes": 4337216
+    },
+    {
+      "file": "riverbank-top.png",
+      "sha256": "37ebc3607c8e7e8c522f248c437a15f3cab19df14c662c87a0343a4297fe574e",
+      "bytes": 2267083
+    }
+  ],
+  "sourceBytesUnchanged": true,
+  "providerRequests": 0,
+  "scope": "Derived source shoreline working copies and UV swatches; no grass generation or alteration",
+  "visualReview": "PENDING",
+  "waterRevisedAt": "2026-09-18T19:26:03.822Z",
+  "waterVisualReview": "PENDING_QUIET_SWATCH"
+}

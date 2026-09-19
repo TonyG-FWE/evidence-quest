@@ -1,17 +1,18 @@
-import {completeConversation} from './garden-play-actions.js';
+import {advance,completeConversation} from './garden-play-actions.js';
+import {buildBridge} from './garden-bridge-actions.js';
 import {finishBakery} from './garden-play-actions.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {GardenStore,initialGarden,CROSSING,GRANDMA_APPROACH,MARA,type Point} from '../src/garden/model.js';
 import {SOL_APPROACH} from '../src/garden/chapter.js';
 import {readerReturnLabel} from '../src/garden/interaction.js';
-import {preparedEndings} from '../src/garden/chapterContent.js';
+import {preparedEndingsFor} from '../src/garden/content.js';
 let serial=0;
 function game(){const store=new GardenStore(initialGarden('interaction-'+(++serial)),()=>String(++serial));store.send({type:'BOOT'});store.send({type:'BEGIN'});store.send({type:'START_PLAY'});return store;}
-function tick(s:GardenStore,n=180){for(let i=0;i<n;i++)s.send({type:'TICK',ms:80});}
+function tick(s:GardenStore,n?:number){advance(s,n===undefined?undefined:n*80);}
 function walk(s:GardenStore,point:Point){s.send({type:'GO',point});tick(s);assert.ok(Math.hypot(s.getSnapshot().chapter.pip.x-point.x,s.getSnapshot().chapter.pip.z-point.z)<.01);}
 function closeAll(s:GardenStore){for(let i=0;i<20&&s.getSnapshot().panel;i++)s.send({type:'CLOSE'});assert.equal(s.getSnapshot().panel,null);}
-function garden(){const s=game();walk(s,CROSSING);s.send({type:'COLLECT_ROPES'});tick(s);s.send({type:'ARRANGE'});for(const [section,x] of [['a',-.775],['b',.775]] as const){s.send({type:'SELECT',section});s.send({type:'PREVIEW',point:{x,z:3}});s.send({type:'PLACE'});}s.send({type:'JOIN'});s.send({type:'FASTEN',end:'west'});s.send({type:'FASTEN',end:'east'});s.send({type:'BACK'});walk(s,GRANDMA_APPROACH);s.send({type:'TALK',who:'grandma'});s.send({type:'PLANT'});tick(s);return s;}
+function garden(){const s=game();buildBridge(s);walk(s,GRANDMA_APPROACH);s.send({type:'TALK',who:'grandma'});s.send({type:'PLANT'});tick(s);s.send({type:'BLOOM'});tick(s);return s;}
 function writing(){const s=garden();closeAll(s);finishBakery(s);walk(s,SOL_APPROACH);s.send({type:'TALK',who:'sol'});completeConversation(s);s.send({type:'STORY',event:{kind:'FINISH_WITH_SOL'}});return s;}
 
 test('G2-I01: nested sources, backpack and Help return to their actual parent without walking',()=>{
@@ -20,7 +21,7 @@ test('G2-I01: nested sources, backpack and Help return to their actual parent wi
  s.send({type:'OPEN',panel:'opening',focus:{tag:'BUTTON',label:'Read',index:0}});
  s.send({type:'READ_POSITION',id:'opening',position:177});
  s.send({type:'OPEN',panel:'help'});assert.equal(readerReturnLabel(s.getSnapshot()),'Back to Grandma’s letter');
- s.send({type:'KEY',key:'d',down:true});tick(s);assert.deepEqual(s.getSnapshot().chapter.pip,pip);
+ s.send({type:'KEY',key:'d',down:true});tick(s,180);assert.deepEqual(s.getSnapshot().chapter.pip,pip);
  s.send({type:'CLOSE'});assert.equal(s.getSnapshot().panel,'opening');assert.equal(s.getSnapshot().chapter.reading.opening,177);
  s.send({type:'CLOSE'});assert.equal(s.getSnapshot().panel,'backpack');assert.equal(s.getSnapshot().restoreFocus?.label,'Read');
  s.send({type:'CLOSE'});assert.equal(s.getSnapshot().panel,null);assert.equal(s.getSnapshot().restoreFocus?.label,'Backpack');
@@ -35,7 +36,7 @@ test('G2-I03: a page handoff leaves the reader, settles once on interruption, an
  const s=game();walk(s,{x:MARA.x,z:MARA.z+1.4});s.send({type:'TALK',who:'mara'});completeConversation(s);const beforeHandoff=s.getSnapshot().chapter.history.length;s.send({type:'TAKE_PAGE'});
  assert.equal(s.getSnapshot().panel,null);assert.equal(s.getSnapshot().chapter.page,'mara');assert.equal(s.getSnapshot().action?.kind,'page');
  s.send({type:'OPEN',panel:'help'});assert.equal(s.getSnapshot().chapter.page,'pip');const revision=s.getSnapshot().chapter.revision;
- s.send({type:'CLOSE'});assert.equal(s.getSnapshot().panel,'mara');tick(s);assert.equal(s.getSnapshot().chapter.revision,revision);
+ s.send({type:'CLOSE'});assert.equal(s.getSnapshot().panel,'mara');tick(s,180);assert.equal(s.getSnapshot().chapter.revision,revision);
  assert.equal(s.getSnapshot().action,null);assert.equal(s.getSnapshot().chapter.history.length,beforeHandoff+1);
 });
 test('G2-I04/I06: rehearsal has exact immutable input, no live-world effects, and freezes under Help',()=>{
@@ -55,7 +56,7 @@ test('G2-I04/I06: rehearsal has exact immutable input, no live-world effects, an
 });
 test('G2-I04: a prepared rehearsal never overwrites the child draft before or after selection',()=>{
  const s=writing();s.send({type:'STORY',event:{kind:'EDIT',text:'My own ending stays here.'}});const draft=s.getSnapshot().chapter.story.solDraft;
- s.send({type:'REHEARSE',contribution:{text:preparedEndings.thanks,scene:'thanks',origin:'prepared',revision:draft.revision}});s.send({type:'ACTIVITY_ACCEPT'});
+ s.send({type:'REHEARSE',contribution:{text:preparedEndingsFor(s.getSnapshot().chapter).thanks,scene:'thanks',origin:'prepared',revision:draft.revision}});s.send({type:'ACTIVITY_ACCEPT'});
  assert.deepEqual(s.getSnapshot().chapter.story.solDraft,draft);assert.equal(s.getSnapshot().chapter.story.solEnding?.origin,'prepared');
 });
 test('G2-I05: plan preview cannot invite, advance time, or accept Mara during her working hours',()=>{

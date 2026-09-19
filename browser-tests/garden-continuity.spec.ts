@@ -1,3 +1,6 @@
+import {buildStagedBridge} from './garden-actions.js';
+import {waitForWalk} from './garden-actions.js';
+import {openDirections,plantWithGrandma} from './garden-actions.js';
 import {deliverMaraReport} from './garden-actions.js';
 import {test,expect,type Page} from '@playwright/test';
 import {completeConversation} from './garden-actions.js';
@@ -9,17 +12,15 @@ async function close(p:Page){for(let i=0;i<20&&await p.locator('.garden-reader')
 async function saved(p:Page){await expect(p.locator('.g-save')).toHaveText('Saved in this browser');return p.evaluate(async()=>new Promise<any>(resolve=>{const r=indexedDB.open('evidence-quest-garden-adventure-v1');r.onsuccess=()=>{const db=r.result,t=db.transaction('slots'),q=t.objectStore('slots').get('current');t.oncomplete=()=>{db.close();resolve(q.result.payload);};};}));}
 async function walk(p:Page,who:'Mara'|'Grandma'){
  await close(p);const talk=button(p,`Talk to ${who} E`);
- if(!await talk.isVisible()){const access=p.locator('.garden-access');await access.locator(':scope>summary').click();await access.getByRole('button',{name:`Go to ${who}`,exact:true}).click();await access.locator(':scope>summary').click();}
+ if(!await talk.isVisible()){const beforeTravel=await saved(p),access=p.locator('.garden-access');await access.locator(':scope>summary').click();await access.getByRole('button',{name:`Go to ${who}`,exact:true}).click();await access.locator(':scope>summary').click();await waitForWalk(p,who,beforeTravel);}
  await talk.click();
 }
 async function bridge(p:Page){
- await close(p);await button(p,'Go to the bridge pieces').click();await button(p,'Arrange bridge').click();await button(p,'Take the repair ropes').click();
- for(const [section,side]of [['A','dock'],['B','garden']]as const){await p.locator('.g-select-sections').getByRole('button',{name:`Section ${section}`,exact:true}).click();await button(p,`Narrow crossing · ${side}-side post`).click();await p.getByRole('button',{name:'Place section'}).click();}
- await button(p,'Join sections').click();await p.getByRole('button',{name:'Fasten dock-side end'}).click();await p.getByRole('button',{name:'Fasten garden-side end'}).click();await button(p,'Back to Pip').click();
+ await close(p);await buildStagedBridge(p);
 }
 test('Continuity: passengers first, attributed dialogue in order, resume, accessible choices and read-only source returns',async({page},info)=>{
  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await begin(page);await button(page,'Go to Mara').click();await button(page,'Talk to Mara E').click();
- await expect(page.getByRole('heading',{name:'At Mara’s dock'})).toBeVisible();await expect(page.locator('.garden-reading-scroll .g-choices button')).toHaveText(['Watch Mara help these passengers']);await expect(page.locator('.g-reader-actions button')).toHaveText(['Continue to the game']);
+ await expect(page.getByRole('heading',{name:'At Mara’s dock'})).toBeVisible();await expect(page.locator('.garden-reading-scroll .g-choices button')).toHaveText(['Help me read these choices','Watch Mara help these passengers']);await expect(page.locator('.g-reader-actions button')).toHaveText(['Continue to the game']);
  await expect(page.locator('.garden-passage')).toHaveCount(0);await expect(button(page,readOffer)).toHaveCount(0);await expect(button(page,laterOffer)).toHaveCount(0);await expect(page.getByRole('button',{name:/fix the bridge.*usual/})).toHaveCount(0);await page.screenshot({path:info.outputPath('01-only-current-action.png')});await button(page,'Back to Pip').click();await expect(button(page,'Go to the bridge pieces')).toBeVisible();await button(page,'Talk to Mara E').click();
  await button(page,'Watch Mara help these passengers').click();await expect(page.locator('.garden-scene')).toHaveAttribute('data-dock-service','served');await expect(page.locator('.garden-passage .g-source-voice')).toHaveText(['Narrator','Pip','Mara','Pip']);
  await expect(button(page,readOffer)).toHaveCount(0);await button(page,'Continue conversation').click();await expect(page.locator('.garden-passage .g-source-voice')).toHaveText(['Mara']);await expect(page.locator('.garden-passage')).toContainText('work hours changed');
@@ -33,7 +34,7 @@ test('Continuity: passengers first, attributed dialogue in order, resume, access
  expect((await saved(page)).story.maraReported).toBe(false);expect(errors).toEqual([]);
 });
 test('Continuity: Grandma first, report without a page, spontaneous later agreement and nearby rereading',async({page},info)=>{
- await begin(page);await bridge(page);await walk(page,'Grandma');await page.getByRole('button',{name:'Plant the seed with Grandma'}).click();await expect(page.locator('.garden-feedback')).toContainText('kept his promise');await button(page,'Talk to Grandma E').click();
+ await begin(page);await bridge(page);await walk(page,'Grandma');await plantWithGrandma(page);await expect(page.locator('.garden-feedback')).toContainText('kept his promise');await button(page,'Talk to Grandma E').click();
  await expect(button(page,'Plan the gathering with Grandma')).toHaveCount(0);await expect(button(page,'Let’s talk about why Mara stopped visiting.')).toHaveCount(0);await page.screenshot({path:info.outputPath('grandma-before-account.png')});
  await walk(page,'Mara');await completeConversation(page);await walk(page,'Grandma');await expect(button(page,'Plan the gathering with Grandma')).toHaveCount(0);await button(page,'Let’s talk about why Mara stopped visiting.').click();await deliverMaraReport(page);
  await expect(page.locator('.garden-reading-scroll .g-speaker')).toHaveText(['Pip says','Grandma says']);await expect(page.locator('.g-reader-actions .g-dialogue-response')).toHaveCount(0);await expect(page.locator('.garden-reading-scroll')).not.toContainText('Let’s read what she sent');await page.screenshot({path:info.outputPath('one-attributed-no-page-report.png')});

@@ -1,0 +1,51 @@
+.g-journal{--journal-rule:#d6d3b9;--journal-rust:#945c37;box-sizing:border-box;position:relative;min-width:0;max-width:100%;padding:24px 28px 30px;color:#2d4439;background:radial-gradient(ellipse at 100% 0,#eadbb95c,transparent 50%),#fcf7ea;border:1px solid #d9caa9;border-left:8px solid #b29a73;border-radius:5px 18px 18px 5px;box-shadow:0 5px 16px #47361b12}
+.g-journal-header{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;border-bottom:1px solid var(--journal-rule);padding-bottom:16px;margin-bottom:14px}
+.g-journal-heading{display:flex;align-items:center;gap:12px;min-width:0}
+.g-journal h2{font:normal 30px/1.15 Georgia,'Times New Roman',serif;margin:3px 0;color:#315641}
+.g-journal h3{font:normal 23px/1.3 Georgia,'Times New Roman',serif;margin:0 0 8px}
+.g-journal h4{font:normal 22px/1.35 Georgia,'Times New Roman',serif;margin:4px 0 8px}
+.g-journal p{margin:8px 0;line-height:1.65;overflow-wrap:anywhere}
+.g-journal .g-journal-eyebrow{font-size:12px;font-weight:650;letter-spacing:.08em;color:#706645;margin:0}
+.g-journal-mark{display:block;flex:none;width:45px;height:54px;transform:rotate(-6deg)}
+.g-journal-mark svg{display:block;width:100%;height:100%;fill:#eadcae;stroke:#647850;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}
+.g-journal-mark svg path+path{fill:none}
+.g-journal-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 22px}
+.garden-app .g-journal button:not(.g-word){min-height:48px;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+.garden-app .g-journal-tabs button{flex:1 1 180px;background:#efe8d4;border-color:#c8bc9e}
+.garden-app .g-journal-tabs button[aria-pressed=true]{background:#315c49;color:#fff7e6;border-color:#315c49;box-shadow:0 3px 0 #21412f}
+.g-journal-notes{padding:20px;background:#f5eaca;border:1px solid #d7c394;border-radius:3px 13px 13px 3px;margin:0 0 24px;box-shadow:3px 4px 0 #d9c69735}
+.g-journal-notes label{display:block;font-weight:650;margin-top:9px}
+.g-journal-notes textarea{box-sizing:border-box;display:block;width:100%;min-height:120px;resize:vertical;margin-top:12px;padding:12px 14px;border:1px solid #b9ab86;border-radius:7px;background:repeating-linear-gradient(transparent 0,transparent 31px,#dad6be55 32px),#fffdf5;color:#2d4439;font:inherit;line-height:2;white-space:pre-wrap;overflow-wrap:anywhere}
+.g-journal-notes textarea:focus-visible{outline:3px solid #a76b23;outline-offset:3px}
+.g-journal .g-journal-small{font-size:.84em;color:#655b41;line-height:1.5;margin:7px 0}
+.g-journal-notes-reading{margin-top:12px;border-top:1px solid #d7c394;padding-top:12px}
+.g-journal-notes-reading summary{cursor:pointer;min-height:48px;box-sizing:border-box;padding:10px 0;color:#3e583e;font-weight:600}
+.g-journal-own-words{white-space:pre-wrap;overflow-wrap:anywhere}
+.g-journal-card-heading{margin:0 0 14px}
+.g-journal .g-journal-instructions{padding:13px 15px;background:#e8ecde;border:1px solid #bdc8aa;border-radius:8px;font-size:.93em}
+.g-journal-cards{list-style:none;display:grid;gap:18px;padding:0;margin:18px 0 0;min-width:0}
+.g-journal-card{position:relative;box-sizing:border-box;min-width:0;padding:18px 20px;background:linear-gradient(120deg,#fffdf6,#f9f2df);border:1px solid #d2c7a6;border-radius:3px 11px 11px 3px;box-shadow:2px 3px 0 #c9b79226}
+.g-journal-card::before{content:'';display:block;position:absolute;left:-1px;top:21px;bottom:21px;width:4px;background:#a4b78a;border-radius:0 3px 3px 0}
+.g-observation-picture{width:min(100%,420px);aspect-ratio:9/5;overflow:hidden;box-sizing:border-box;margin:14px auto 16px;border:1px solid #cfc2a0;border-radius:10px;background:#f4ecd7;box-shadow:0 3px 0 #cbbb9226;pointer-events:none}
+.g-observation-picture svg{display:block;width:100%;height:100%}
+.g-journal-card-top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.g-journal .g-journal-context{font-size:.78em;line-height:1.5;letter-spacing:.02em;color:#706545;margin:0}
+.g-journal-references{display:flex;align-items:center;gap:8px;flex-wrap:wrap;border-top:1px dashed #d1c7a8;padding-top:8px;margin-top:12px}
+.g-journal-references .g-journal-small{width:100%;margin:0}
+.garden-app .g-journal-references button{font-size:.86em;text-align:left}
+.g-journal-moves{display:flex;gap:9px;flex-wrap:wrap;border-top:1px solid #e0d8c0;padding-top:12px;margin-top:15px}
+.garden-app .g-journal-moves button{flex:1 1 130px;background:#f2ecd9;font-size:.9em}
+.garden-app .g-journal-grip{display:flex;align-items:center;gap:8px;padding:8px 11px;font-size:.82em;background:#e8eadb;border:1px solid #bfcaab;cursor:grab;touch-action:none;user-select:none}
+.g-journal-grip span:first-child{font-size:24px;line-height:1}
+.g-journal-card.is-dragging{opacity:.68;box-shadow:0 0 0 2px #a87834}
+.g-journal-card.is-dragging .g-journal-grip{cursor:grabbing}
+.g-journal-card.drop-before{border-top:4px solid #9a671e}
+.g-journal-card.drop-after{border-bottom:4px solid #9a671e}
+.g-journal-empty{display:flex;align-items:center;gap:18px;padding:25px 20px;background:#f7efdb;border:1px dashed #c5b899;border-radius:12px}
+.g-journal-empty>span{font:40px Georgia,serif;color:#a07937}
+.g-journal-status{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:580px){.g-journal{padding:17px 14px 24px;border-left-width:5px}.g-journal-header{gap:14px}.g-journal-header>button{width:100%}.g-journal h2{font-size:27px}.g-journal-notes{padding:16px 13px}.g-journal-card{padding:16px 13px}.g-journal-mark{width:37px;height:45px}.g-journal-references button{width:100%}.g-journal-empty{padding:18px 14px;gap:12px}}
+@media(prefers-reduced-motion:reduce){.g-journal button{transition:none}}
+.garden-workbench{position:absolute;left:16px;bottom:16px;z-index:8;background:#fff8e9ed;border:1px solid #cbbb8e;border-radius:16px;padding:16px;max-width:350px;max-height:calc(100% - 32px);overflow:auto;box-shadow:0 5px 25px #3c503327}
+.garden-workbench h2{margin:0 0 8px;font:700 21px Georgia,serif}.garden-workbench p{margin:8px 0}.garden-workbench summary{min-height:48px;display:flex;align-items:center;cursor:pointer}.garden-workbench ol{padding:0;list-style:none}.garden-workbench li button{width:100%;text-align:left;margin-bottom:6px}.garden-workbench [aria-pressed=true]{outline:3px solid #b88f34}
+@media(max-width:650px){.garden-workbench{left:8px;right:8px;bottom:8px;max-width:none;max-height:42%;padding:10px}.garden-workbench h2{font-size:18px}.garden-workbench p{font-size:14px}}

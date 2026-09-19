@@ -32,7 +32,7 @@ export function readerReturnLabel(s:GardenState){
  const parent=s.panelTrail.at(-1);
  if(s.panel==='gathering'&&!parent?.panel&&s.chapter.gathering.turn)return 'Back to the world telling';
  if(s.panel==='gathering'&&!parent?.panel&&s.chapter.story.phase==='arriving')return 'Back to the arriving guests';
- return parent?.panel?'Back to '+(labels[parent.panel]??'the story'):s.activity?s.activity.kind==='lantern-inspect'?'Back to this lantern':s.activity.kind==='ending-presentation'?'Back to Loop’s picture show':'Back to the preview':s.mode==='bakery-repair'?'Back to the roof repair':s.mode==='mara-story'?'Back to Mara’s earlier story':s.mode==='boat'?'Back to the seed boat':parent?.mode==='arrange'||s.mode==='arrange'?'Back to the bridge pieces':'Continue to the game';
+ return parent?.panel?'Back to '+(labels[parent.panel]??'the story'):s.activity?s.activity.kind==='lantern-inspect'?'Back to this lantern':s.activity.kind==='ending-presentation'?'Back to Loop’s picture show':'Back to the preview':s.mode==='workbench'?'Back to the workbench':s.mode==='bakery-repair'?'Back to the roof repair':s.mode==='mara-story'?'Back to Mara’s earlier story':s.mode==='boat'?'Back to the seed boat':parent?.mode==='arrange'||s.mode==='arrange'?'Back to the bridge pieces':'Continue to the game';
 }
 export function roleText(s:GardenState){
  if(s.chapter.gathering.turn)return s.chapter.gathering.turn.kind==='receipt'?'At Mara’s dock · Hear her reply to the delivered story':'At the gathering · Listen to the whole telling, pause or read the complete text';
@@ -40,5 +40,5 @@ export function roleText(s:GardenState){
  if(s.activity)return s.activity.kind==='ending-rehearsal'?'Rehearsing Sol’s ending · Pip waits at the workshop':s.activity.kind==='lantern-inspect'?'A memory kept in the garden · Pip stays where you left him':s.activity.kind==='ending-presentation'?(s.activity.mode==='watch'?'Watching Loop’s picture show':'Narrating with Loop'):'Trying a gathering plan · Previewing does not send invitations';
  if(s.action?.kind==='keepMemory')return 'Pip puts his chosen memory in the flower he grew with Grandma';
  if(s.action?.kind==='bringCushions'||s.action?.kind==='finishGrandmaPage')return 'Grandma prepares to share her own story';
- return s.mode==='bakery-repair'?'You direct Sol’s roof repair · Pip is the material helper':s.mode==='mara-story'?'You guide Mara in her earlier story · Pip waits in the garden':s.mode==='boat'?'You steer the seed boat · Pip waits on the bank':s.mode==='arrange'?'You direct the bridge repair · Pip waits on the bank':'You are Pip · Explore, talk and help';
+ return s.mode==='workbench'?'At Sol’s workbench · Arrange witnessed moments in your own telling':s.mode==='bakery-repair'?'You direct Sol’s roof repair · Pip is the material helper':s.mode==='mara-story'?'You guide Mara in her earlier story · Pip waits in the garden':s.mode==='boat'?'You steer the seed boat · Pip waits on the bank':s.mode==='arrange'?'You direct the bridge repair · Pip waits on the bank':'You are Pip · Explore, talk and help';
 }
