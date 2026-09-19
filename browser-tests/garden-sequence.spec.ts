@@ -1,3 +1,5 @@
+import {buildStagedBridge} from './garden-actions.js';
+import {openDirections} from './garden-actions.js';
 import {test,expect,type Page} from '@playwright/test';
 import {completeConversation} from './garden-actions.js';
 test.setTimeout(180000);
@@ -5,15 +7,13 @@ const button=(p:Page,name:string)=>p.getByRole('button',{name,exact:true});
 async function saved(p:Page){await expect(p.locator('.g-save')).toHaveText('Saved in this browser');return p.evaluate(async()=>new Promise<any>(resolve=>{const r=indexedDB.open('evidence-quest-garden-adventure-v1');r.onsuccess=()=>{const db=r.result,t=db.transaction('slots'),q=t.objectStore('slots').get('current');t.oncomplete=()=>{db.close();resolve(q.result.payload);};};}));}
 async function begin(p:Page){await p.goto('/garden');await button(p,'Begin Pip’s adventure').click();await button(p,'Start playing').click();await button(p,'Go to Mara').click();await button(p,'Talk to Mara E').click();await completeConversation(p);}
 async function grandma(p:Page){
- await button(p,'Continue to the game').click();await button(p,'Go to the bridge pieces').click();await button(p,'Arrange bridge').click();await button(p,'Take the repair ropes').click();
- for(const [section,side]of [['A','dock'],['B','garden']]as const){await p.locator('.g-select-sections').getByRole('button',{name:`Section ${section}`,exact:true}).click();await button(p,`Narrow crossing · ${side}-side post`).click();await p.getByRole('button',{name:'Place section'}).click();}
- await button(p,'Join sections').click();await p.getByRole('button',{name:'Fasten dock-side end'}).click();await p.getByRole('button',{name:'Fasten garden-side end'}).click();await button(p,'Back to Pip').click();await button(p,'Go to Grandma').click();await button(p,'Talk to Grandma E').click();
+ await button(p,'Continue to the game').click();await buildStagedBridge(p);await button(p,'Go to Grandma').click();await button(p,'Talk to Grandma E').click();
 }
 for(const mode of ['prepared','own'] as const)test('Conversation sequence: '+mode+' relay advances, persists, and is delivered at Grandma',async({page},info)=>{
  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await begin(page);
  await button(page,"I'll ask Grandma to start the next gathering later.").click();
  const flow=page.locator('.garden-reading-scroll'),footer=page.locator('.g-reader-actions');
- await expect(flow.locator('.g-speaker')).toHaveText(['Pip says','Mara says']);await expect(flow).toContainText('Starting after the last boat returns');await expect(button(page,'I can read your story to Grandma.')).toHaveCount(0);await expect(page.locator('textarea')).toHaveCount(0);await expect(footer.locator('.g-dialogue-response,.g-choices')).toHaveCount(0);
+ await expect(flow.locator('.g-speaker')).toHaveText(['Pip says','Mara says']);await expect(flow).toContainText('Starting after the last boat returns');await expect(button(page,'I can read your story to Grandma.')).toHaveCount(0);await expect(page.locator('#mara-message')).toHaveCount(0);await expect(page.locator('textarea:visible')).toHaveCount(0);await expect(page.getByLabel('Your answer, in your own words',{exact:true})).toBeHidden();await expect(footer.locator('.g-dialogue-response,.g-choices')).toHaveCount(0);
  await expect(flow.getByRole('group',{name:'How will you carry Mara’s message?'}).locator(':scope > .g-primary, :scope > .g-alternative')).toHaveText(['Let Grandma know what Mara said','Tell Grandma in your own words']);await page.screenshot({path:info.outputPath('01-next-choices-together.png')});
  const bounds=await flow.boundingBox(),nav=await footer.boundingBox();expect(nav!.y-(bounds!.y+bounds!.height)).toBeLessThan(12);expect(await footer.evaluate(e=>e.scrollHeight-e.clientHeight)).toBeLessThanOrEqual(1);
  await button(page,mode==='own'?'Tell Grandma in your own words':'Let Grandma know what Mara said').click();const words='Mara wants to hear the stories. She has to finish helping passengers after the last boat. Can we meet then?';

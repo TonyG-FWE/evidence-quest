@@ -1,0 +1,1550 @@
+{
+  "schema": "evidence-quest.demo-package.v1",
+  "profile": "local-review-personal-landscape",
+  "approval": "pending-review",
+  "filesSha256": "50ef3ef9c69c000445a6993612be90bc84400986e3768648222fa63feca25212",
+  "files": [
+    {
+      "file": "assets/demo/approved-runtime/grandma-786f1df1f93d.glb",
+      "targets": [
+        "public/garden-assets/grandma-786f1df1f93d.glb"
+      ],
+      "sha256": "786f1df1f93d495fe5376cfd948ca633a3c0556d625b4cc86304e8430a19ff8d",
+      "bytes": 1579920,
+      "kind": "retained-approved-runtime",
+      "source": "public/garden-assets/grandma-786f1df1f93d.glb"
+    },
+    {
+      "file": "assets/demo/approved-runtime/manifest.json",
+      "targets": [
+        "public/garden-assets/manifest.json"
+      ],
+      "sha256": "6025c8e883b77695c2ec04d9f2782828c200a097009e4a0d0524b66ee01631e6",
+      "bytes": 6694,
+      "kind": "retained-approved-runtime",
+      "source": "public/garden-assets/manifest.json"
+    },
+    {
+      "file": "assets/demo/approved-runtime/pip-05c6608c2954.glb",
+      "targets": [
+        "public/garden-assets/pip-05c6608c2954.glb"
+      ],
+      "sha256": "05c6608c295433d004d3926cc7261b9f6d192a8c6c0a0a4e9ec636d3f195c47a",
+      "bytes": 1419204,
+      "kind": "retained-approved-runtime",
+      "source": "public/garden-assets/pip-05c6608c2954.glb"
+    },
+    {
+      "file": "assets/demo/decoders/basis_transcoder.js",
+      "targets": [
+        "public/garden-assets/basis/basis_transcoder.js"
+      ],
+      "sha256": "8478b5b6d6b74e7d3082b89f6417321d8d1dc0307f2b30d4484bb11b441696a1",
+      "bytes": 57529,
+      "kind": "runtime-decoder",
+      "source": "public/garden-assets/basis/basis_transcoder.js"
+    },
+    {
+      "file": "assets/demo/decoders/basis_transcoder.wasm",
+      "targets": [
+        "public/garden-assets/basis/basis_transcoder.wasm"
+      ],
+      "sha256": "6cf17dc889352c42e9acf8897107978d127005fe3386c36a0e3845e27967630a",
+      "bytes": 527333,
+      "kind": "runtime-decoder",
+      "source": "public/garden-assets/basis/basis_transcoder.wasm"
+    },
+    {
+      "file": "assets/demo/decoders/texture-worker.js",
+      "targets": [
+        "public/garden-assets/basis/texture-worker.js"
+      ],
+      "sha256": "f22f03ef7ee2ca7676e9a8317f4a26901946a1ade2f35a96fdd9e8b1ec61cdb3",
+      "bytes": 68734,
+      "kind": "runtime-decoder",
+      "source": "public/garden-assets/basis/texture-worker.js"
+    },
+    {
+      "file": "assets/demo/metadata/inventory.json",
+      "targets": [
+        "evidence/final-demo-20260918/inventory.json"
+      ],
+      "sha256": "86264c539ad2ac57402781967e86f20ad6df354827b6032081b2b294eb0f2a72",
+      "bytes": 222362,
+      "kind": "original-inventory",
+      "source": "evidence/final-demo-20260918/inventory.json"
+    },
+    {
+      "file": "assets/demo/originals/0d16a00cc6a43c9112de8f58aba6a0c3d959dd15ca06d3d9116a42841c750901.glb",
+      "targets": [
+        "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/coastal+island+3d+model.glb"
+      ],
+      "sha256": "0d16a00cc6a43c9112de8f58aba6a0c3d959dd15ca06d3d9116a42841c750901",
+      "bytes": 20961876,
+      "kind": "loader-verified-original",
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/coastal+island+3d+model.glb"
+    },
+    {
+      "file": "assets/demo/originals/1a29851131183c6254a5062c9991c30c4117b6f896ed069fd0495dd6fa32f197.glb",
+      "targets": [
+        "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/grass+island+3d+model.glb"
+      ],
+      "sha256": "1a29851131183c6254a5062c9991c30c4117b6f896ed069fd0495dd6fa32f197",
+      "bytes": 21058564,
+      "kind": "loader-verified-original",
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/grass+island+3d+model.glb"
+    },
+    {
+      "file": "assets/demo/originals/3e355b7bf9bc5fe7550a3d3c9126cd28ba3c8fbd3164e660310476d2f6b4074c.glb",
+      "targets": [
+        "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/garden+path+3d+model.glb"
+      ],
+      "sha256": "3e355b7bf9bc5fe7550a3d3c9126cd28ba3c8fbd3164e660310476d2f6b4074c",
+      "bytes": 13879196,
+      "kind": "loader-verified-original",
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/garden+path+3d+model.glb"
+    },
+    {
+      "file": "assets/demo/originals/7da9e650b9cf4512991c8329897bbb281ba1d406c2471995f7e965b31c101482.glb",
+      "targets": [
+        "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/riverbank+diorama+3d+model.glb"
+      ],
+      "sha256": "7da9e650b9cf4512991c8329897bbb281ba1d406c2471995f7e965b31c101482",
+      "bytes": 4342328,
+      "kind": "loader-verified-original",
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/riverbank+diorama+3d+model.glb"
+    },
+    {
+      "file": "assets/demo/originals/ad697d242cb5a5402829a13b0bc26d5b4aec88e4efa378691269286fd5d1a8a1.glb",
+      "targets": [
+        "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/grass 3d model_Clone1.glb"
+      ],
+      "sha256": "ad697d242cb5a5402829a13b0bc26d5b4aec88e4efa378691269286fd5d1a8a1",
+      "bytes": 20422608,
+      "kind": "loader-verified-original",
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/grass 3d model_Clone1.glb"
+    },
+    {
+      "file": "assets/demo/personal-landscape/path/path-derived.json",
+      "targets": [
+        "output/personal-landscape-20260918/path/path-derived.json"
+      ],
+      "sha256": "f29bd9d099371ba9c5e79f4cbf2347adca0c10b3254e23c8627836f5546e3d8c",
+      "bytes": 1128423,
+      "kind": "personal-runtime",
+      "source": "output/personal-landscape-20260918/path/path-derived.json"
+    },
+    {
+      "file": "assets/demo/personal-landscape/path/path-footprint.json",
+      "targets": [
+        "output/personal-landscape-20260918/path/path-footprint.json"
+      ],
+      "sha256": "1c571f47708449cdc70ec9fb8ad229403cc86e398601ec7707c96a88981ad83f",
+      "bytes": 336396,
+      "kind": "personal-path-metadata",
+      "source": "output/personal-landscape-20260918/path/path-footprint.json"
+    },
+    {
+      "file": "assets/demo/personal-landscape/path/path-support.json",
+      "targets": [
+        "output/personal-landscape-20260918/path/path-support.json"
+      ],
+      "sha256": "07763c4795e2e5e02145647c574d16558597543478a0117a473180e2547ff777",
+      "bytes": 40499,
+      "kind": "personal-path-metadata",
+      "source": "output/personal-landscape-20260918/path/path-support.json"
+    },
+    {
+      "file": "assets/demo/personal-landscape/path/provenance.json",
+      "targets": [
+        "output/personal-landscape-20260918/path/provenance.json"
+      ],
+      "sha256": "f8791540096ba5b627c6cadba9d537945e09fb33f374a7960bd7f2538e250412",
+      "bytes": 4782,
+      "kind": "personal-provenance",
+      "source": "output/personal-landscape-20260918/path/provenance.json"
+    },
+    {
+      "file": "assets/demo/personal-landscape/path/soil-color.png",
+      "targets": [
+        "output/personal-landscape-20260918/path/soil-color.png"
+      ],
+      "sha256": "6fb3cfc75fb4632c7b31db29084a1c5bb37a3f114289fb24f0543fe7dc377504",
+      "bytes": 373474,
+      "kind": "personal-runtime",
+      "source": "output/personal-landscape-20260918/path/soil-color.png"
+    },
+    {
+      "file": "assets/demo/personal-landscape/path/stone-color.jpg",
+      "targets": [
+        "output/personal-landscape-20260918/path/stone-color.jpg"
+      ],
+      "sha256": "d106bb6084714ddb17f51f2529a3d296db6f60929ec8be5fe03c9ebe8fa42518",
+      "bytes": 3506941,
+      "kind": "personal-runtime",
+      "source": "output/personal-landscape-20260918/path/stone-color.jpg"
+    },
+    {
+      "file": "assets/demo/personal-landscape/path/stone-normal.png",
+      "targets": [
+        "output/personal-landscape-20260918/path/stone-normal.png"
+      ],
+      "sha256": "8b0486809118a51db5a91216908e36c14aa9caf8337729ad69b2c2d52ff5493b",
+      "bytes": 9151436,
+      "kind": "personal-runtime",
+      "source": "output/personal-landscape-20260918/path/stone-normal.png"
+    },
+    {
+      "file": "assets/demo/personal-landscape/shore/bank-soil.png",
+      "targets": [
+        "output/personal-landscape-20260918/shore/bank-soil.png"
+      ],
+      "sha256": "5d26e63d5ebef4e182c2826f5c1ad5c7cc0b6cdd474a0d5b272b6b8db4d28ae6",
+      "bytes": 36079,
+      "kind": "personal-runtime",
+      "source": "output/personal-landscape-20260918/shore/bank-soil.png"
+    },
+    {
+      "file": "assets/demo/personal-landscape/shore/bank-top.png",
+      "targets": [
+        "output/personal-landscape-20260918/shore/bank-top.png"
+      ],
+      "sha256": "dbdd48725487a47a35450b588de333ad03b6ecd184e2e073bcf3c187b272eb87",
+      "bytes": 137682,
+      "kind": "personal-runtime",
+      "source": "output/personal-landscape-20260918/shore/bank-top.png"
+    },
+    {
+      "file": "assets/demo/personal-landscape/shore/coastal-land.glb",
+      "targets": [
+        "output/personal-landscape-20260918/shore/coastal-land.glb"
+      ],
+      "sha256": "38d5e5873733d7af688c4e0324b9163a6098a8a26430086e2e20caf90c0f74f3",
+      "bytes": 20929176,
+      "kind": "personal-runtime",
+      "source": "output/personal-landscape-20260918/shore/coastal-land.glb"
+    },
+    {
+      "file": "assets/demo/personal-landscape/shore/provenance.json",
+      "targets": [
+        "output/personal-landscape-20260918/shore/provenance.json"
+      ],
+      "sha256": "cb74fd08089f0a3575d188f5e77b74175b80284d26ef6b6e9676b7a2845f0a52",
+      "bytes": 5252,
+      "kind": "personal-provenance",
+      "source": "output/personal-landscape-20260918/shore/provenance.json"
+    },
+    {
+      "file": "assets/demo/personal-landscape/shore/river-water.png",
+      "targets": [
+        "output/personal-landscape-20260918/shore/river-water.png"
+      ],
+      "sha256": "0668ac725a9c08883e5e3d634ee6dca8fc981b87cfb5c8dd2ca81ed212d7d4ba",
+      "bytes": 42352,
+      "kind": "personal-runtime",
+      "source": "output/personal-landscape-20260918/shore/river-water.png"
+    },
+    {
+      "file": "assets/demo/personal-landscape/shore/riverbank-land.glb",
+      "targets": [
+        "output/personal-landscape-20260918/shore/riverbank-land.glb"
+      ],
+      "sha256": "0d9ebde6489a0a796c3a63788515b3aca1c3c459bf7dd7a0ac2e0fc9ad744eac",
+      "bytes": 4337216,
+      "kind": "personal-runtime",
+      "source": "output/personal-landscape-20260918/shore/riverbank-land.glb"
+    },
+    {
+      "file": "assets/demo/review/arbor-0f60810c9a24-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/arbor-0f60810c9a24-ktx.glb"
+      ],
+      "sha256": "efda578a5d3816e42c0ae82ac3fc89f31bc320fff5157e9c7c2f11aa9470eb72",
+      "bytes": 5076668,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/arbor-0f60810c9a24-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/bakery-63f0c371788b-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/bakery-63f0c371788b-ktx.glb"
+      ],
+      "sha256": "2c1addef2c757c0da1ce92f9edb22dafc16ec57b6d882a399c91ede1ee3add27",
+      "bytes": 5079284,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/bakery-63f0c371788b-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/bakery-cutaway-c762559c1d36-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/bakery-cutaway-c762559c1d36-ktx.glb"
+      ],
+      "sha256": "dd626a010a8cf221da507eb3499215a1f1dd2eb1dd4e5b3f6c257c77f47b71d9",
+      "bytes": 5083288,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/bakery-cutaway-c762559c1d36-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/bakery-damaged-0254adeda7f3-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/bakery-damaged-0254adeda7f3-ktx.glb"
+      ],
+      "sha256": "3d61631e99cbf8cf1816ac8cd2a013f59413484bbc8ac98fd90e65ade2f10a9f",
+      "bytes": 34064936,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/bakery-damaged-0254adeda7f3-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/basket-21b9555dc4dd-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/basket-21b9555dc4dd-ktx.glb"
+      ],
+      "sha256": "9594d3efad0333dfef6044e0c8247aa3fb3ac9ffa6cdcd16f4dd681773a1826c",
+      "bytes": 3063352,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/basket-21b9555dc4dd-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/bell-7123b5fa7eb2-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/bell-7123b5fa7eb2-ktx.glb"
+      ],
+      "sha256": "e3fd3c70c09b25bcc7cc3333cafc5dbfbedd98fef196671de65bbf777c283ab4",
+      "bytes": 2771780,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/bell-7123b5fa7eb2-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/bench-1-7ad9fd1af005-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/bench-1-7ad9fd1af005-ktx.glb"
+      ],
+      "sha256": "f52cdace80b4d6a60f50a78ec90cd478cae92cd25e2905b9820b737fc37ae1ed",
+      "bytes": 2843244,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/bench-1-7ad9fd1af005-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/bench-1b86eb32a9e7-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/bench-1b86eb32a9e7-ktx.glb"
+      ],
+      "sha256": "f948d42084315f760203c34b5f9addb15ad3f8a90c28d94bc795b6ad2048f19d",
+      "bytes": 3078708,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/bench-1b86eb32a9e7-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/bird-1e7b96cfae4b-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/bird-1e7b96cfae4b-ktx.glb"
+      ],
+      "sha256": "691e5d3e23ac09655edb464947b6790b6a451e1215177066b17e2a38a73db91b",
+      "bytes": 3360724,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/bird-1e7b96cfae4b-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/board-b8835e705f38-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/board-b8835e705f38-ktx.glb"
+      ],
+      "sha256": "647e4df4a07d12ae242fc78a3bfbd12787b6341e5db6eb8ea194f9d0518e1c8e",
+      "bytes": 3458816,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/board-b8835e705f38-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/boat-1-1dc797342acb-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/boat-1-1dc797342acb-ktx.glb"
+      ],
+      "sha256": "1197cacc4e4322e3a2de22493ead8d6bfa009ad09d67a4fdce8f5c6a95650fd8",
+      "bytes": 3274564,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/boat-1-1dc797342acb-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/boat-2-b8bb50e2ca18-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/boat-2-b8bb50e2ca18-ktx.glb"
+      ],
+      "sha256": "52ba74a16ea74fabf8c09f247c6b5341c403b9c708747eb57b5662081521a46e",
+      "bytes": 3026012,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/boat-2-b8bb50e2ca18-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/boat-92caa649a8fc-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/boat-92caa649a8fc-ktx.glb"
+      ],
+      "sha256": "b206e21d08bed55d61421215765fb6490bae7d9a290cc77bee326e10711cf4e0",
+      "bytes": 3131800,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/boat-92caa649a8fc-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/boat-space-abd7eb65bfd9-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/boat-space-abd7eb65bfd9-ktx.glb"
+      ],
+      "sha256": "1eacc5461ea5e07877251d078da746162ba5f607e2739c1ab6d8aa445e966dab",
+      "bytes": 4886192,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/boat-space-abd7eb65bfd9-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/bollard-6365b655c8c4-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/bollard-6365b655c8c4-ktx.glb"
+      ],
+      "sha256": "8eee6257bbccdf06827dc83bdbfc714ec142d229b31697fd1cc58f503a547d5d",
+      "bytes": 3154044,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/bollard-6365b655c8c4-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/bowl-08aa74859578-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/bowl-08aa74859578-ktx.glb"
+      ],
+      "sha256": "40a4e34fbeaa5f28e5cec83413bf62f0b3769b707b7cd2f37ab92efd1f9b8ba4",
+      "bytes": 2609344,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/bowl-08aa74859578-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/boy-actions-20517ac2d197.json",
+      "targets": [
+        ".cache/final-demo-review/assets/boy-actions-20517ac2d197.json"
+      ],
+      "sha256": "20517ac2d197158d4caecb29e184592f4163babf3245971e7c9dd9bfc2e6e48c",
+      "bytes": 3598246,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/boy-actions-20517ac2d197.json"
+    },
+    {
+      "file": "assets/demo/review/boy-c416c75de56a-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/boy-c416c75de56a-ktx.glb"
+      ],
+      "sha256": "12bdaccb1df1cf70c4346613397ea2d270ec72f3648a20c3dfecb452243a5c0b",
+      "bytes": 1960288,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/boy-c416c75de56a-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/bridge-7112920700c7-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/bridge-7112920700c7-ktx.glb"
+      ],
+      "sha256": "c263630495b726d437a940ddab277a605ec3e7c983cdccdfa201296cc24a6cc8",
+      "bytes": 2305872,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/bridge-7112920700c7-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/bridge-fitted-5ef26f708229.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/bridge-fitted-5ef26f708229.glb"
+      ],
+      "sha256": "5ef26f70822970c04794bc60e11a4ffa0c36751c70d73d9395b0b24a099fbca9",
+      "bytes": 2329628,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/bridge-fitted-5ef26f708229.glb"
+    },
+    {
+      "file": "assets/demo/review/bud-edc543b120d0-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/bud-edc543b120d0-ktx.glb"
+      ],
+      "sha256": "ad6b5e97ae9b4838635e40d22386cf27ee3a808691f76aeebbdd333ef39227bd",
+      "bytes": 3933444,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/bud-edc543b120d0-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/cake-a42ce09429d3-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/cake-a42ce09429d3-ktx.glb"
+      ],
+      "sha256": "c1253a537a97b92842cd75b7d94ffc7bd652f8d17a0567960ef97011d86b0a1b",
+      "bytes": 2731764,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/cake-a42ce09429d3-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/camera-42b95460292e-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/camera-42b95460292e-ktx.glb"
+      ],
+      "sha256": "94b8486f94a68ef15038bffe66af1d8d1f336571d3a8863447badedf541b5b2b",
+      "bytes": 2268368,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/camera-42b95460292e-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/card-040be114e54c-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/card-040be114e54c-ktx.glb"
+      ],
+      "sha256": "c37b54c41d5d1224dc2123c4f8b12b36f2a3e8bc93fd58ff651ae264ca302a14",
+      "bytes": 1992844,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/card-040be114e54c-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/cards-5bc79c14eaa8-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/cards-5bc79c14eaa8-ktx.glb"
+      ],
+      "sha256": "ce825b5621f03d0d1c4aba8d4c392f9f546b4c954f179c6bfb7578fcbbcd8d23",
+      "bytes": 2454880,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/cards-5bc79c14eaa8-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/cattail-a140eef62257-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/cattail-a140eef62257-ktx.glb"
+      ],
+      "sha256": "9a9610b1348bf7954244f5299b1aa8c96b2d7005b49d8566aecceae8871d94a5",
+      "bytes": 2948808,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/cattail-a140eef62257-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/chest-4c140e6c2317-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/chest-4c140e6c2317-ktx.glb"
+      ],
+      "sha256": "ea4869e93336d7a53094bdd65d782c6ea0f7305c63780656fa0dd38f768d444e",
+      "bytes": 2526104,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/chest-4c140e6c2317-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/coastal-bank-0d16a00cc6a4-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/coastal-bank-0d16a00cc6a4-ktx.glb"
+      ],
+      "sha256": "81601ddfa2da5f2d9d3cffb020669a104c5ad76de2d6b1e4673beab0f36d2e82",
+      "bytes": 6305284,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/coastal-bank-0d16a00cc6a4-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/cottage-1-bc475a88992a-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/cottage-1-bc475a88992a-ktx.glb"
+      ],
+      "sha256": "a05d0d3dcfa690b81e7c007ae71bce3383a0f0db87999c4b5f421683b11a6710",
+      "bytes": 5449720,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/cottage-1-bc475a88992a-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/cottage-e5fcb550940e-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/cottage-e5fcb550940e-ktx.glb"
+      ],
+      "sha256": "1719f9a539fc959047d48f5c79c621408b2d2cca1d10d0085a3df44c77ee3d22",
+      "bytes": 4683000,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/cottage-e5fcb550940e-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/crate-2-ea0c733d64d4-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/crate-2-ea0c733d64d4-ktx.glb"
+      ],
+      "sha256": "d030ed1aec1fee6338a55d3bf6581595b1563d0a15c5d1f4591768e63c285617",
+      "bytes": 5141728,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/crate-2-ea0c733d64d4-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/crate-d919cab07df0-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/crate-d919cab07df0-ktx.glb"
+      ],
+      "sha256": "7d965ed26275148b21106aec22b07dd425bea4c89ad500a821699bf90fb8ff9a",
+      "bytes": 2901004,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/crate-d919cab07df0-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/cup-e6982ae30012-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/cup-e6982ae30012-ktx.glb"
+      ],
+      "sha256": "d22319d4a0ef52cbec6d95810ca59d07cd8f27aba8ce3a9aba40069eead9b4f2",
+      "bytes": 2941092,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/cup-e6982ae30012-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/cushion-d84519803fc4-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/cushion-d84519803fc4-ktx.glb"
+      ],
+      "sha256": "8af9d7a10c96fdbac1dd88307522620a08233ac69a2d1ca999c5df123e1a8f03",
+      "bytes": 3313136,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/cushion-d84519803fc4-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/dishware-3fd5a865d673-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/dishware-3fd5a865d673-ktx.glb"
+      ],
+      "sha256": "cb82f745ccbb9ca5aa3ddf245c44778a16dad97a0c7c5e5c41f1b26a022a0f2d",
+      "bytes": 2858608,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/dishware-3fd5a865d673-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/dock-1-1bbd83bfb417-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/dock-1-1bbd83bfb417-ktx.glb"
+      ],
+      "sha256": "33ca4939152418588b1dbfa134b35a8bfe2d57eb60147273e90dadf1868fe485",
+      "bytes": 2940976,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/dock-1-1bbd83bfb417-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/dock-d8fa07e78704-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/dock-d8fa07e78704-ktx.glb"
+      ],
+      "sha256": "5065d1e349ced2e18c70e28eabe8e337ca3b19eb7bb1f9c0b6178e10aa4ea205",
+      "bytes": 3504756,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/dock-d8fa07e78704-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/dough-189222404027-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/dough-189222404027-ktx.glb"
+      ],
+      "sha256": "d8b8f1caf21a92965bb41d1a00a2ccd0d077ba05ca70fc4166271ec30d320be3",
+      "bytes": 2951392,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/dough-189222404027-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/dough-kneaded-6e039d9b801d-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/dough-kneaded-6e039d9b801d-ktx.glb"
+      ],
+      "sha256": "04654036056ccfdc635e89801a3497002984ebf5ea436dfb45ca7b485ae41e2e",
+      "bytes": 2781584,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/dough-kneaded-6e039d9b801d-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/flour-e5c4505d4268-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/flour-e5c4505d4268-ktx.glb"
+      ],
+      "sha256": "a5f556db904a9d3d984b21230b276a8e2a3104f2ea9b3177454fd7e5725abc20",
+      "bytes": 2773692,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/flour-e5c4505d4268-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/flour-wet-1505e1bbbe2b-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/flour-wet-1505e1bbbe2b-ktx.glb"
+      ],
+      "sha256": "d53e28713939f47cc6bb86f1083c321c691fca836042a2c3b26d90ed57824db7",
+      "bytes": 3673876,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/flour-wet-1505e1bbbe2b-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/flower-2-5b04a1f6e2b0-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/flower-2-5b04a1f6e2b0-ktx.glb"
+      ],
+      "sha256": "79cd8c1ecb52efb7b59184f857fa627d0bf706410b00f5a31227cdb194a6f0bc",
+      "bytes": 3816340,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/flower-2-5b04a1f6e2b0-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/flower-9c876870beba-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/flower-9c876870beba-ktx.glb"
+      ],
+      "sha256": "a1a21570265fab0110fa9eaf59072a476521bf3bdb3cd605143e01656487614c",
+      "bytes": 3231404,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/flower-9c876870beba-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/flower-sculpture-0ff34e1fbed5-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/flower-sculpture-0ff34e1fbed5-ktx.glb"
+      ],
+      "sha256": "eb3543de82192a8b9ae65d6b7b11027b8f1c226b1f82303ab5743519b6a57259",
+      "bytes": 2930904,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/flower-sculpture-0ff34e1fbed5-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/garden-path-3e355b7bf9bc-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/garden-path-3e355b7bf9bc-ktx.glb"
+      ],
+      "sha256": "c3f3fec385eb40bf2ce2dc3115baab752f2e6c62e18cab35cb098c18d3271d60",
+      "bytes": 4731840,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/garden-path-3e355b7bf9bc-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/grandma-165014a7bd3e-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/grandma-165014a7bd3e-ktx.glb"
+      ],
+      "sha256": "bf621d917bb48ae4f80bb57da4eb6c201f1f4f03bbd62675c61b3c52601cb6a5",
+      "bytes": 1596964,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/grandma-165014a7bd3e-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/grandma-actions-fd9b228af85e.json",
+      "targets": [
+        ".cache/final-demo-review/assets/grandma-actions-fd9b228af85e.json"
+      ],
+      "sha256": "fd9b228af85e6c00d626f104d49f847e447c3fe3178d98e5bdb0999a18c24ec7",
+      "bytes": 7211523,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/grandma-actions-fd9b228af85e.json"
+    },
+    {
+      "file": "assets/demo/review/grass-66d3f08d39f1-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/grass-66d3f08d39f1-ktx.glb"
+      ],
+      "sha256": "4db5abaa8e272d27228955eeb843809d76b326e267cd4767aded8020bd72bfbd",
+      "bytes": 3082188,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/grass-66d3f08d39f1-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/grass-island-1a2985113118-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/grass-island-1a2985113118-ktx.glb"
+      ],
+      "sha256": "da694f01788256cef4ad449676944bb769cfb315a68ed8430e439641bdd11805",
+      "bytes": 6019068,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/grass-island-1a2985113118-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/grass-patch-ad697d242cb5-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/grass-patch-ad697d242cb5-ktx.glb"
+      ],
+      "sha256": "2a6767eecfdc6229601ec723f53f6544cbc10ec37ba69ebe562df4bda85369ec",
+      "bytes": 9678204,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/grass-patch-ad697d242cb5-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/grass-tuft-6fb74286a1eb-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/grass-tuft-6fb74286a1eb-ktx.glb"
+      ],
+      "sha256": "c9f7eb3515beccdd0d65a23492bd4c17bafc1d3fca2cc516f5de33968ec44f2e",
+      "bytes": 1194912,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/grass-tuft-6fb74286a1eb-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/hammer-092927c260d3-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/hammer-092927c260d3-ktx.glb"
+      ],
+      "sha256": "a47533569be042954e5aea6db4b7c6db6bd2443c4094f0a6c0e805815312b515",
+      "bytes": 3275696,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/hammer-092927c260d3-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/jo-75d0fd33314e-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/jo-75d0fd33314e-ktx.glb"
+      ],
+      "sha256": "8fcca0069bb230cd0d53b6a0f51c6500a904bde635bcaf199bd8d788c0bdc2ec",
+      "bytes": 11249232,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/jo-75d0fd33314e-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/knot-b068d4f58c07-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/knot-b068d4f58c07-ktx.glb"
+      ],
+      "sha256": "903740f4edd550f0a5bcb8b989c4996511dd8536ae7ea5643cd94f0711b61a67",
+      "bytes": 3184640,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/knot-b068d4f58c07-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/ladder-16f6994cce24-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/ladder-16f6994cce24-ktx.glb"
+      ],
+      "sha256": "d77be1f99a9725098ab7e4ac973c1862d362a3e6ce2b966d92e36fb8fe5eb079",
+      "bytes": 3131260,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/ladder-16f6994cce24-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/lamp-920611758044-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/lamp-920611758044-ktx.glb"
+      ],
+      "sha256": "1df32895e3f7e630529d2dc2889c0dc7b8ac26662dc600d4e40895d91f40e53d",
+      "bytes": 2795704,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/lamp-920611758044-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/landscape-d78f5a1ce49a-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/landscape-d78f5a1ce49a-ktx.glb"
+      ],
+      "sha256": "fa49af62619f57221846c6d76019905bb5165473fe80ff46de19d5916ee9f22e",
+      "bytes": 3660372,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/landscape-d78f5a1ce49a-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/loaf-1daf67c7c219-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/loaf-1daf67c7c219-ktx.glb"
+      ],
+      "sha256": "47f2a92f5f438743f4373355c48266a38dc52c1f09febebfa4c06cfbca762e1b",
+      "bytes": 3218216,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/loaf-1daf67c7c219-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/loaf-3-ecc77fdf2b23-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/loaf-3-ecc77fdf2b23-ktx.glb"
+      ],
+      "sha256": "1d641f536e41c257b8b793d33ae0656ef76cadb456ee98ffdae19182fef3b68f",
+      "bytes": 4416672,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/loaf-3-ecc77fdf2b23-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/loaf-4-9a501ced67c1-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/loaf-4-9a501ced67c1-ktx.glb"
+      ],
+      "sha256": "61b8092182adcc0cff2ca205355067a8c5e9ba484f86267ea30a8d4cf5ba5859",
+      "bytes": 3130424,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/loaf-4-9a501ced67c1-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/loop-8be1606edaa4-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/loop-8be1606edaa4-ktx.glb"
+      ],
+      "sha256": "d00fed1089f966f89c958bf71e34a3528341dd00e0b538f637c6ebf7c628ded4",
+      "bytes": 1924956,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/loop-8be1606edaa4-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/manifest.json",
+      "targets": [
+        ".cache/final-demo-review/assets/manifest.json",
+        "evidence/final-demo-20260918/review-assets.json"
+      ],
+      "sha256": "0e9f0cd65e19e8b464235890170db9e473adc98ec88de6495ad8eff6631c486f",
+      "bytes": 350760,
+      "kind": "review-manifest",
+      "source": "evidence/final-demo-20260918/review-assets.json"
+    },
+    {
+      "file": "assets/demo/review/mara-4edc95e1a420-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/mara-4edc95e1a420-ktx.glb"
+      ],
+      "sha256": "301037397672af71a013c8f05060ee6f7efc8d1cb2b5579e6ee051b53520d9bb",
+      "bytes": 1650464,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/mara-4edc95e1a420-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/mara-actions-bf1b8cd4e408.json",
+      "targets": [
+        ".cache/final-demo-review/assets/mara-actions-bf1b8cd4e408.json"
+      ],
+      "sha256": "bf1b8cd4e408f8d468e2189d6429719ae675713fd83be9e02d4cd93295db90bd",
+      "bytes": 3486279,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/mara-actions-bf1b8cd4e408.json"
+    },
+    {
+      "file": "assets/demo/review/marker-a4f3f059f6c5-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/marker-a4f3f059f6c5-ktx.glb"
+      ],
+      "sha256": "70e7158dd988f9e142ae038095d757498a50d692b5b2021e2bfbf2a6f62f8491",
+      "bytes": 3230880,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/marker-a4f3f059f6c5-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/napkin-9063e568445a-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/napkin-9063e568445a-ktx.glb"
+      ],
+      "sha256": "696bb4a6bf0029429a78a0ae25b3676090b11ad15e0d79fc5496e866a1df60f2",
+      "bytes": 3037160,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/napkin-9063e568445a-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/notebook-0aeee7827537-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/notebook-0aeee7827537-ktx.glb"
+      ],
+      "sha256": "f38158b9ea2b4de7cb352b9ddc67a3d248e1956f60c5436162dc6e5583e4484a",
+      "bytes": 3179972,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/notebook-0aeee7827537-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/operator-actions-8d887b84af8f.json",
+      "targets": [
+        ".cache/final-demo-review/assets/operator-actions-8d887b84af8f.json"
+      ],
+      "sha256": "8d887b84af8fdd9fa441d2aaecf2127c2045445cc45cce7f8ea5a203cd02ff13",
+      "bytes": 2169114,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/operator-actions-8d887b84af8f.json"
+    },
+    {
+      "file": "assets/demo/review/operator-e1ae6d58997c-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/operator-e1ae6d58997c-ktx.glb"
+      ],
+      "sha256": "9e96f3e847edf93914ac9da4b6615235deeaefcd6ae15a65321dcdcc3353815f",
+      "bytes": 2023088,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/operator-e1ae6d58997c-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/oven-92403a656236-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/oven-92403a656236-ktx.glb"
+      ],
+      "sha256": "5b019fb6f8dd7395902615cd1c6d9884dac65285f4f0bd60f4cc98ecc737d6d8",
+      "bytes": 2984864,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/oven-92403a656236-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/panel-d46d19f43ac6-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/panel-d46d19f43ac6-ktx.glb"
+      ],
+      "sha256": "5193422d4bf4f62aee8bc11f6344f0c836080c65cc4a19b0cdebaaed51a05f14",
+      "bytes": 2507016,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/panel-d46d19f43ac6-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/passenger-01b6d51e341a-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/passenger-01b6d51e341a-ktx.glb"
+      ],
+      "sha256": "75e57de5564cf113d2f106ac80daa09a662d653b39c3d217ca717175f121fc64",
+      "bytes": 1536132,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/passenger-01b6d51e341a-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/passenger-actions-922a5af2bd9c.json",
+      "targets": [
+        ".cache/final-demo-review/assets/passenger-actions-922a5af2bd9c.json"
+      ],
+      "sha256": "922a5af2bd9c37611027528e2cc1f343153675582deb2b0581284f1a0e430235",
+      "bytes": 3145737,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/passenger-actions-922a5af2bd9c.json"
+    },
+    {
+      "file": "assets/demo/review/pebbles-0936dca96145-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/pebbles-0936dca96145-ktx.glb"
+      ],
+      "sha256": "68315c80190a2766fc3233abf3330be0b97d82a676669bdddd69e804cc700963",
+      "bytes": 3833188,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/pebbles-0936dca96145-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/peg-01b0847cb5ef-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/peg-01b0847cb5ef-ktx.glb"
+      ],
+      "sha256": "7aa3f9a1211507660def516492d35bdcc650ac237331a9f5beedb53ecfd80108",
+      "bytes": 3073204,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/peg-01b0847cb5ef-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/pencil-holder-47305dea64a0-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/pencil-holder-47305dea64a0-ktx.glb"
+      ],
+      "sha256": "bdb22645140f2b06eaee67e64b5e9d2c0a095aabd7159b06155bdf63d9007f79",
+      "bytes": 1757484,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/pencil-holder-47305dea64a0-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/pencils-2259620fcd01-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/pencils-2259620fcd01-ktx.glb"
+      ],
+      "sha256": "7b7a715c0dde2e5101f9ba76295ea85f5822ef7d23352c616a73c0dc550d4c9e",
+      "bytes": 2704560,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/pencils-2259620fcd01-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/pip-2ce7a6ac9743-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/pip-2ce7a6ac9743-ktx.glb"
+      ],
+      "sha256": "c277cc0e8e481bff191707ceee2af8dcac9ff2d06cb61855d47455e11d42ab93",
+      "bytes": 1836992,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/pip-2ce7a6ac9743-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/pip-actions-ba054b472d69.json",
+      "targets": [
+        ".cache/final-demo-review/assets/pip-actions-ba054b472d69.json"
+      ],
+      "sha256": "ba054b472d69408e80b7fb87241987de714299bac3bf8c8cb3c19de3ac0376a5",
+      "bytes": 720616,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/pip-actions-ba054b472d69.json"
+    },
+    {
+      "file": "assets/demo/review/pitcher-d146fd4369b2-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/pitcher-d146fd4369b2-ktx.glb"
+      ],
+      "sha256": "6629b2e09efd1ff87ad70ba882cd714621e505e2973657357238961a083086c6",
+      "bytes": 2449196,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/pitcher-d146fd4369b2-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/plate-15efbb274a2b-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/plate-15efbb274a2b-ktx.glb"
+      ],
+      "sha256": "a9abf605e8fc45b10321cd06ecdd62329114d26083497f0049db021fc14caf44",
+      "bytes": 2735972,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/plate-15efbb274a2b-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/platform-026121fdd2df-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/platform-026121fdd2df-ktx.glb"
+      ],
+      "sha256": "b473ddd0c85b07725cfb9dca576d2173592f95645418e0845617045d78e547a3",
+      "bytes": 2806868,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/platform-026121fdd2df-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/platform-bridge-fitted-830bd029d8d3.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/platform-bridge-fitted-830bd029d8d3.glb"
+      ],
+      "sha256": "830bd029d8d3559a340ddb1a40030890743fcd94dced4a5a8467f7eb7b803e4a",
+      "bytes": 2831304,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/platform-bridge-fitted-830bd029d8d3.glb"
+    },
+    {
+      "file": "assets/demo/review/post-aac3844da761-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/post-aac3844da761-ktx.glb"
+      ],
+      "sha256": "b50e9a544a649f5ece4ac2b579b3bbed49ee96318d04c1726131bf8a60a2f891",
+      "bytes": 2976832,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/post-aac3844da761-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/potted-0383d93dc7b9-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/potted-0383d93dc7b9-ktx.glb"
+      ],
+      "sha256": "fa32b71b963237ad2e0a74073ad1d37ab9f3ed2245d706aee87c266b1c212011",
+      "bytes": 3459904,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/potted-0383d93dc7b9-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/potted-1-cbf8685e453a-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/potted-1-cbf8685e453a-ktx.glb"
+      ],
+      "sha256": "0217f9d96ac108386b351d74489d72a6dfe1f140050fb9612dc04621c06b843f",
+      "bytes": 2407920,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/potted-1-cbf8685e453a-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/ramp-fdc1eea5b2fc-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/ramp-fdc1eea5b2fc-ktx.glb"
+      ],
+      "sha256": "c9989d6d34be3c0ec681a8971159cdb3e4b19ca71247e3143d295754fde4d0c6",
+      "bytes": 2848564,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/ramp-fdc1eea5b2fc-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/recorder-89e5a773169f-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/recorder-89e5a773169f-ktx.glb"
+      ],
+      "sha256": "68f703824ea68fb4a9806444d54db09fc10931f1d3aa55c4677d44b3abbfadb8",
+      "bytes": 2690760,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/recorder-89e5a773169f-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/red-pencil-25501eadb414-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/red-pencil-25501eadb414-ktx.glb"
+      ],
+      "sha256": "70fb91a3c4e0c40ec176d52b4d045a9376bc0c03b28b5cafa9e57343c5acb626",
+      "bytes": 2491320,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/red-pencil-25501eadb414-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/rina-201714e9f1e7-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/rina-201714e9f1e7-ktx.glb"
+      ],
+      "sha256": "5bbfd536982efe9353d8d566290b8f5e32c1aace8d743aec03286817d47817b5",
+      "bytes": 1807288,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/rina-201714e9f1e7-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/rina-actions-de8be1deed1f.json",
+      "targets": [
+        ".cache/final-demo-review/assets/rina-actions-de8be1deed1f.json"
+      ],
+      "sha256": "de8be1deed1f49d6119aff3b03686e49d0c34303c2cf282fddc6dbc291941a30",
+      "bytes": 6512768,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/rina-actions-de8be1deed1f.json"
+    },
+    {
+      "file": "assets/demo/review/riverbank-7da9e650b9cf-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/riverbank-7da9e650b9cf-ktx.glb"
+      ],
+      "sha256": "0b1496c7886cf6bb18edfc0d8ef48ba6a96f80186563c4b2466a52717b1ca215",
+      "bytes": 3309960,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/riverbank-7da9e650b9cf-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/rock-facfdcd4baf6-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/rock-facfdcd4baf6-ktx.glb"
+      ],
+      "sha256": "59fdbfd5827c66a56d2d1dd187fbe29cd89bbe1ac5135c14214b1bbc79d16036",
+      "bytes": 3318528,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/rock-facfdcd4baf6-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/rope-coil-ce23d7b096b4-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/rope-coil-ce23d7b096b4-ktx.glb"
+      ],
+      "sha256": "fae4be2371160481d401aff1aba362aa4f65a32277d35a0763b344935fd1ad49",
+      "bytes": 3128108,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/rope-coil-ce23d7b096b4-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/rope-straight-cb0de12c812d-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/rope-straight-cb0de12c812d-ktx.glb"
+      ],
+      "sha256": "ddac30ea73e96bc53ed8404f65a392858d4dceb576169937b29e19085453d6af",
+      "bytes": 3545096,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/rope-straight-cb0de12c812d-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/scoop-fefee2ee7a93-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/scoop-fefee2ee7a93-ktx.glb"
+      ],
+      "sha256": "42869016b198df8a7afec0ac1936818d06b5d5e2e87465dc37370e5c7f31229f",
+      "bytes": 3263864,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/scoop-fefee2ee7a93-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/seed-48788fa76744-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/seed-48788fa76744-ktx.glb"
+      ],
+      "sha256": "057ed705b0722df8ef7a9b16fa465c09c5a57a6a5630feb5dba2fd5d76b581eb",
+      "bytes": 2993160,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/seed-48788fa76744-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/shrub-116d9076be82-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/shrub-116d9076be82-ktx.glb"
+      ],
+      "sha256": "7de85ed241656af2e32bfd7f691e545474be962fef3d0c799b4de581078d5770",
+      "bytes": 4813520,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/shrub-116d9076be82-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/soil-covered-82cd8c734362-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/soil-covered-82cd8c734362-ktx.glb"
+      ],
+      "sha256": "2c4fe3c911cae03150a868427e3b62ebe231e8c635deb332e2cf84d0004461d2",
+      "bytes": 3968924,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/soil-covered-82cd8c734362-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/soil-open-2b65760d7dab-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/soil-open-2b65760d7dab-ktx.glb"
+      ],
+      "sha256": "2bdb831792ee3a30fbc32cead3740571d981000c1778d1290ec865dbbe35bed2",
+      "bytes": 4097856,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/soil-open-2b65760d7dab-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/sol-actions-4b5ab1d25063.json",
+      "targets": [
+        ".cache/final-demo-review/assets/sol-actions-4b5ab1d25063.json"
+      ],
+      "sha256": "4b5ab1d25063ae0ec7a3cf368d6fc72c0b9d8998d178507b10e58954373fe85f",
+      "bytes": 3892699,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/sol-actions-4b5ab1d25063.json"
+    },
+    {
+      "file": "assets/demo/review/sol-b779a8fc68e7-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/sol-b779a8fc68e7-ktx.glb"
+      ],
+      "sha256": "6a5ca8dc6d42a5814403a012f8ce9379ff1bc72548d85a099b95662e31d55b18",
+      "bytes": 1947160,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/sol-b779a8fc68e7-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/sol-roof-8ea464cd568f.json",
+      "targets": [
+        ".cache/final-demo-review/assets/sol-roof-8ea464cd568f.json"
+      ],
+      "sha256": "8ea464cd568f316f00a5460640863f515485ac559d504de0fede497692c9dfc2",
+      "bytes": 869383,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/sol-roof-8ea464cd568f.json"
+    },
+    {
+      "file": "assets/demo/review/spatula-aa5806fedceb-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/spatula-aa5806fedceb-ktx.glb"
+      ],
+      "sha256": "8f299a3a0b44d58af44a82ef2a3dbe38e8298818cc2589c418e33ec4a1330a7e",
+      "bytes": 3054360,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/spatula-aa5806fedceb-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/spoon-a0d53830df9f-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/spoon-a0d53830df9f-ktx.glb"
+      ],
+      "sha256": "ce3ede789ba73c8abb0656c74fb1cb2e9f903d01ba8587c5e6723d52b6ba0a0d",
+      "bytes": 2943704,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/spoon-a0d53830df9f-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/sprout-f4997e66fe1b-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/sprout-f4997e66fe1b-ktx.glb"
+      ],
+      "sha256": "280ed3356ccd96a082066ba966b6adbddd7fc07e3f97eb6baf02bd98ae40281b",
+      "bytes": 4639088,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/sprout-f4997e66fe1b-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/stage-1-85af5a75b339-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/stage-1-85af5a75b339-ktx.glb"
+      ],
+      "sha256": "47252d3a79f1ff4288b9ae02537b224d5310cdf2849dbe596297f01aed2c2bcd",
+      "bytes": 3238140,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/stage-1-85af5a75b339-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/stage-7eef6dafc4cf-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/stage-7eef6dafc4cf-ktx.glb"
+      ],
+      "sha256": "3fbe90f21738e275ad3fe7703a2e888c566cfb2dc86c55396930e0eb17af71e7",
+      "bytes": 3432968,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/stage-7eef6dafc4cf-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/storybook-5218e3e9a657-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/storybook-5218e3e9a657-ktx.glb"
+      ],
+      "sha256": "fb487d82bcc63882988f70c8e0497bbffc6e8b165b8381767d7d869b71cb1d35",
+      "bytes": 3682684,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/storybook-5218e3e9a657-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/table-b834dd8ba9e3-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/table-b834dd8ba9e3-ktx.glb"
+      ],
+      "sha256": "b529d8e9a1e733ebae05ed6762db75fe944c7343be181639f72810bb2be5bf50",
+      "bytes": 2472236,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/table-b834dd8ba9e3-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/tag-a15f496e13e1-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/tag-a15f496e13e1-ktx.glb"
+      ],
+      "sha256": "00a5b14d13366b2b91da330b723bc1d8dc4a06c1a9b71ce870ddd9f0f5ed038a",
+      "bytes": 2364544,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/tag-a15f496e13e1-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/tape-roll-05e9df4a7d0a-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/tape-roll-05e9df4a7d0a-ktx.glb"
+      ],
+      "sha256": "f647c8a2a4d986d47989a84e6cdc3ab594e387ba37748793d2254c290427d9d0",
+      "bytes": 2831572,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/tape-roll-05e9df4a7d0a-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/tape-roll-2-0844841a8ee8-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/tape-roll-2-0844841a8ee8-ktx.glb"
+      ],
+      "sha256": "0d7d1e701832887a0cf2a478366475a6d6ca1b4d51ec114374164f13939ca29d",
+      "bytes": 2825952,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/tape-roll-2-0844841a8ee8-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/tape-strip-73bc296ced54-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/tape-strip-73bc296ced54-ktx.glb"
+      ],
+      "sha256": "d721131a124cea086dbd1178329e33ba4fc81532360ef2789a1fd47b6e5edfc9",
+      "bytes": 2625524,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/tape-strip-73bc296ced54-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/teal-pencil-1687e916885f-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/teal-pencil-1687e916885f-ktx.glb"
+      ],
+      "sha256": "6ae9a456eaabde82b6585c47fd0467e7730f9a0a07cd138e8d72ce0adda1e684",
+      "bytes": 3519156,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/teal-pencil-1687e916885f-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/tile-2-4a69f1bc5d70-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/tile-2-4a69f1bc5d70-ktx.glb"
+      ],
+      "sha256": "8076cebde85cbdba4fa93c4da26ae392ca745456add6188b8bf570c40cdefbe0",
+      "bytes": 3717220,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/tile-2-4a69f1bc5d70-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/tile-30d898e454b9-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/tile-30d898e454b9-ktx.glb"
+      ],
+      "sha256": "7ec63d24a9ca09d325ddb91b2c3d0f4e30a22241ac2bd7e5d2f81c44bbd822e0",
+      "bytes": 3131364,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/tile-30d898e454b9-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/toolbox-1-a3929260a27b-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/toolbox-1-a3929260a27b-ktx.glb"
+      ],
+      "sha256": "152357d968871b9df5565c482ce579e11f790d224abc29de8e3fd17d30997feb",
+      "bytes": 2566604,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/toolbox-1-a3929260a27b-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/toolbox-126e4668b3c0-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/toolbox-126e4668b3c0-ktx.glb"
+      ],
+      "sha256": "85b86b5731c3e4c12fa55ce36cca3d69f712938d46160f7d6dbcd2bb9184a465",
+      "bytes": 2449484,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/toolbox-126e4668b3c0-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/tray-c1d62c6ee744-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/tray-c1d62c6ee744-ktx.glb"
+      ],
+      "sha256": "7448a0f5ffdb3d07269e6789c5dce44fc9675439d8f83422711507adc1cdbc7e",
+      "bytes": 6599452,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/tray-c1d62c6ee744-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/tree-1-8277e00b97b6-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/tree-1-8277e00b97b6-ktx.glb"
+      ],
+      "sha256": "715287d76453632505df77d41bd4082c7c9cf2878c8b3e5d3479d5d895a9151e",
+      "bytes": 4977196,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/tree-1-8277e00b97b6-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/tree-972d9541ef1a-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/tree-972d9541ef1a-ktx.glb"
+      ],
+      "sha256": "4bd994d0d50e0fc6dd12fd97a39fe55095f1b7eb9fe2f366783e21d247d95f3c",
+      "bytes": 3045568,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/tree-972d9541ef1a-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/trowel-546bf33f85d2-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/trowel-546bf33f85d2-ktx.glb"
+      ],
+      "sha256": "175c1ced52dc69bf85ec56f73996390956d2894e6384a3c7113bcd1273c6a4e6",
+      "bytes": 3393148,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/trowel-546bf33f85d2-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/vine-1a362a31dbee-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/vine-1a362a31dbee-ktx.glb"
+      ],
+      "sha256": "7f7e33fa1b598a0bbbd0fd4f49c018fb5c8e7eb08c2cc318cc368a1f691325e6",
+      "bytes": 3328712,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/vine-1a362a31dbee-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/willow-2-e3ca2fac42d7-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/willow-2-e3ca2fac42d7-ktx.glb"
+      ],
+      "sha256": "5e3a69c08067f4078876b3c2ddb49bb9ba6366caacade7915840f5c81faaf768",
+      "bytes": 3375980,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/willow-2-e3ca2fac42d7-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/willow-ade0186ae5cd-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/willow-ade0186ae5cd-ktx.glb"
+      ],
+      "sha256": "ff0f8294ce95a1e2060835c2932a01a0acc957cd394e160a7dbc591cc0b87050",
+      "bytes": 3893472,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/willow-ade0186ae5cd-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/wingtip-6fa35ff98b79-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/wingtip-6fa35ff98b79-ktx.glb"
+      ],
+      "sha256": "6fa3cef7c80684c37dfcefac28cdcc8ada2bca448a53921c78149ce6238d2667",
+      "bytes": 3719232,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/wingtip-6fa35ff98b79-ktx.glb"
+    },
+    {
+      "file": "assets/demo/review/workshop-clear-porch-59ee5bf44e30.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/workshop-clear-porch-59ee5bf44e30.glb"
+      ],
+      "sha256": "59ee5bf44e304a14c796c5cee231ab62492c28a432af9cb9dfc096f9e5db17b3",
+      "bytes": 5444328,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/workshop-clear-porch-59ee5bf44e30.glb"
+    },
+    {
+      "file": "assets/demo/review/workshop-e945bb07ef60-ktx.glb",
+      "targets": [
+        ".cache/final-demo-review/assets/workshop-e945bb07ef60-ktx.glb"
+      ],
+      "sha256": "e2bdd2f3cdf2d7022605f4878cb7cfaf603ff476d7f773de6acbc2b613eeeb64",
+      "bytes": 5761008,
+      "kind": "review-runtime",
+      "source": ".cache/final-demo-review/assets/workshop-e945bb07ef60-ktx.glb"
+    }
+  ],
+  "scope": "Finite byte-identical runtime copies and original/provenance inputs required by the current review loaders. Selected assets remain pending matching Form/movement acceptance. Original supplied files are preserved at their source paths. No regeneration, recompression, paid operation or production approval."
+}

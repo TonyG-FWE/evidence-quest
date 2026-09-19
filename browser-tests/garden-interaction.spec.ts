@@ -1,8 +1,18 @@
+import {buildStagedBridge} from './garden-actions.js';
+import {openDirections,plantWithGrandma} from './garden-actions.js';
 import {deliverMaraReport} from './garden-actions.js';
 import {completeConversation} from './garden-actions.js';
 import {playBakery} from './garden-actions.js';
 import {test,expect} from '@playwright/test';
-import {OrthographicCamera,Vector3} from 'three';
+import {worldPoint} from './garden-actions.js';
+
+if(process.env['EQ_CONTROL_DIAGNOSTIC']==='1'){
+ test.beforeEach(async({page})=>{await page.addInitScript(()=>{
+  const samples:unknown[]=[];let frames=0;const frame=()=>{frames++;requestAnimationFrame(frame);};requestAnimationFrame(frame);
+  Object.assign(window,{controlDiagnostic:samples});setInterval(()=>{const button=[...document.querySelectorAll<HTMLButtonElement>('button')].find(b=>b.textContent?.trim()==='Release object')??[...document.querySelectorAll<HTMLButtonElement>('.garden-nearby button')].find(b=>b.textContent?.includes('Talk to Grandma'));if(!button)return;const r=button.getBoundingClientRect();samples.push({at:performance.now(),frames,visibility:document.visibilityState,focus:document.hasFocus(),name:button.textContent,disabled:button.disabled,rect:{x:r.x,y:r.y,w:r.width,h:r.height},hit:document.elementFromPoint(r.x+r.width/2,r.y+r.height/2)?.textContent,active:document.activeElement?.outerHTML.slice(0,180)});if(samples.length>60)samples.shift();},200);
+ });});
+ test.afterEach(async({page},info)=>{await info.attach('read-only-control-diagnostic',{body:JSON.stringify(await page.evaluate(()=>(window as unknown as {controlDiagnostic:unknown[]}).controlDiagnostic??[])),contentType:'application/json'});});
+}
 
 test('G2 ordinary keyboard route: nested letter, Help and backpack preserve focus and return context',async({page},info)=>{
  const errors:string[]=[];page.on('pageerror',error=>errors.push(error.message));
@@ -34,14 +44,8 @@ test('G2 ordinary world route: invalid plan, exact rehearsal, nested help and pr
  await button('Go to Mara').click();await button('Talk to Mara E').click();await completeConversation(page);await button('I can read your story to Grandma.').click();
  await expect(page.locator('.garden-reader')).toHaveCount(0);await expect(page.locator('.garden-feedback')).toContainText('Mara gives Pip');
  await expect(page.locator('.garden-reading-scroll')).toContainText('Pip is carrying her copy.');await button('Back to Pip').click();
- await button('Go to the bridge pieces').click();await button('Arrange bridge').click();{const ropeButton=page.getByRole('button',{name:'Take the repair ropes',exact:true});if(await ropeButton.count()){await ropeButton.click();await expect(ropeButton).toHaveCount(0);}}
- for(const [name,x] of [['A',-.775],['B',.775]] as const){
-  await page.locator('.g-select-sections').getByRole('button',{name:'Section '+name,exact:true}).click();
-  const box=(await page.locator('.garden-scene canvas').boundingBox())!,aspect=box.width/box.height,h=Math.max(6.5,10.2/aspect),camera=new OrthographicCamera(-h*aspect,h*aspect,h,-h,.1,100);
-  camera.position.set(8.75,16,19.1);camera.lookAt(1.25,0,.1);camera.updateMatrixWorld();const p=new Vector3(x,.13,3).project(camera);await page.mouse.click(box.x+(p.x*.5+.5)*box.width,box.y+(-p.y*.5+.5)*box.height);
- }
- await button('Join sections').click();await page.getByRole('button',{name:'Fasten dock-side end'}).click();await page.getByRole('button',{name:'Fasten garden-side end'}).click();await expect(page.locator('.garden-scene')).toHaveAttribute('data-bridge-ready','true');await button('Back to Pip').click();
- await button('Go to Grandma').click();await button('Talk to Grandma E').click();await page.getByRole('button',{name:'Plant the seed with Grandma'}).click();await expect(page.locator('.garden-feedback')).toContainText('kept his promise');
+ await buildStagedBridge(page);
+ await button('Go to Grandma').click();await button('Talk to Grandma E').click();await plantWithGrandma(page);await expect(page.locator('.garden-feedback')).toContainText('kept his promise');
  await button('Talk to Grandma E').click();await button('Let’s talk about why Mara stopped visiting.').click();await deliverMaraReport(page);await button('Back to Grandma').click();await button('Plan the gathering with Grandma').click();await button('Mara tells her story').click();await button('Preview the gathering').click();
  await expect(page.locator('[data-world-activity="plan-preview"]')).toBeVisible();await expect(page.locator('[data-stage-scene="gather-waiting"]')).toBeVisible();await expect(page.getByRole('img',{name:'Pip, Sol and Grandma wait. Mara is still working, so nobody is telling her story.'})).toBeVisible();await expect(button('Use this plan')).toBeDisabled();await page.screenshot({path:info.outputPath('invalid-plan-waiting.png')});
  await button('Change the plan').click();await expect(button('Preview the gathering')).toBeFocused();await closeAll();

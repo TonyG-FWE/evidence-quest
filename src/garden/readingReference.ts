@@ -1,4 +1,4 @@
-export type DisplayOrigin='authored-display'|'child-draft'|'mixed-display';
+export type DisplayOrigin=import('./voiceTypes.js').ReadingOrigin;
 /** Binds an acoustic reference to the exact displayed UTF-8 text. This is not
  * source authentication or exposure evidence; neither target grants progress. */
 export async function displayReadingTarget(text:string,origin:DisplayOrigin){

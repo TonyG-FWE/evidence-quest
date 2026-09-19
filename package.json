@@ -15,12 +15,24 @@
     "dev:types": "tsc -p tsconfig.server.json --watch",
     "dev:api": "node --env-file-if-exists=.env.server.local --watch dist/server/index.js",
     "dev:web": "vite",
+    "dev:review": "node scripts/review-profile.mjs dev",
+    "build:review": "node scripts/review-profile.mjs build",
+    "start:review": "node scripts/review-profile.mjs start",
+    "hydrate:demo": "node scripts/demo-assets.mjs",
+    "verify:demo-assets": "node scripts/demo-assets.mjs --verify",
+    "build:demo": "node scripts/demo-profile.mjs build",
+    "start:demo": "node --env-file-if-exists=.env.fish-audition.local --env-file-if-exists=.env.server.local scripts/demo-profile.mjs start",
     "test:contracts": "npm run build:contracts && tsc -p tsconfig.checks.json && node scripts/prepare-checks.mjs && node --test .cache/checks/checks/*.test.js",
     "build:art": "node scripts/export-production-art.mjs",
-    "build": "npm run build:art && npm run validate:content && npm run check && npm run build:server && vite build && node scripts/prepare-client.mjs",
+    "build:garden-art": "node scripts/export-garden-assets.mjs",
+    "build": "npm run build:art && npm run build:garden-art && npm run validate:content && npm run check && npm run build:server && vite build && node scripts/prepare-client.mjs",
     "start": "node --env-file-if-exists=.env.server.local dist/server/index.js",
     "test:browser": "node scripts/test-browser.mjs",
-    "eval:coach": "tsc -p tsconfig.checks.json && node scripts/prepare-checks.mjs && node evaluation/evaluate.mjs"
+    "eval:coach": "tsc -p tsconfig.checks.json && node scripts/prepare-checks.mjs && node evaluation/evaluate.mjs",
+    "verify:demo-build": "node scripts/demo-build-receipt.mjs verify",
+    "verify:demo-originals": "node scripts/demo-assets.mjs --verify-originals",
+    "demo:release-files": "node scripts/demo-release-files.mjs write",
+    "verify:demo-release-files": "node scripts/demo-release-files.mjs verify"
   },
   "dependencies": {
     "ajv": "8.18.0",
@@ -30,6 +42,9 @@
     "three": "0.186.0"
   },
   "devDependencies": {
+    "@gltf-transform/cli": "4.5.0",
+    "@gltf-transform/core": "4.5.0",
+    "@gltf-transform/extensions": "4.5.0",
     "@jsquash/webp": "1.5.0",
     "@playwright/test": "1.61.0",
     "@types/node": "24.10.1",
@@ -37,6 +52,7 @@
     "@types/react-dom": "19.2.3",
     "@types/three": "0.186.0",
     "@vitejs/plugin-react": "5.2.0",
+    "meshoptimizer": "1.1.1",
     "pngjs": "7.0.0",
     "typescript": "5.9.3",
     "vite": "7.3.6"

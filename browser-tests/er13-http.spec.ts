@@ -15,5 +15,7 @@ test('ER13 production HTTP client sends only a requested draft and displays a va
  await start(page);expect(requests).toHaveLength(0);await page.getByRole('button',{name:'Help',exact:true}).click();await page.getByRole('button',{name:'Your story plan',exact:true}).click();
  await page.getByRole('textbox').fill('It goes there.');expect(requests).toHaveLength(0);await page.getByRole('button',{name:'Help me think',exact:true}).click();
  await expect(page.locator('.help-response')).toContainText(copy('CT.HINT.CLARIFY'));
+ // The visible text is rendered before its next-frame COACH_DISPLAY event is saved.
+ await expect.poll(async()=>(await saved(page)).payload.coachingHistory).toHaveLength(1);
  const c=(await saved(page)).payload;expect(requests).toHaveLength(1);expect(requests[0]?.explanation).toBe('It goes there.');expect(requests[0]?.context.exposedRefs).toEqual([]);expect(c.coachingHistory).toHaveLength(1);expect(c.coachingHistory[0]?.origin).toBe('live-selection');expect(c.exposures).toEqual([]);expect(c.certificate).toBeNull();
 });

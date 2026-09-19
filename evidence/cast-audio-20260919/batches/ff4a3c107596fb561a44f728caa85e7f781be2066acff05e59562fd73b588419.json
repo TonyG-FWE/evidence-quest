@@ -1,0 +1,210 @@
+{
+  "id": "ff4a3c107596fb561a44f728caa85e7f781be2066acff05e59562fd73b588419",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 222756,
+      "sha256": "48bdf70522b9af394d7dab7eb09bd7b1024ab7f3604175ef9167d159923d69ce"
+    },
+    {
+      "bytes": 933,
+      "sha256": "6acc4f8c2a3bcdd1c405c0c36c77891c13a007a088c23da2e4f14c9b2ae7baf9"
+    },
+    {
+      "bytes": 1172,
+      "sha256": "bf534974ba734877c482307d773f5dda0c7a197f7561a4d3ed274106ab205ebc"
+    }
+  ],
+  "speaker": "grandma",
+  "voiceId": "9c633ca4a45a4e9ba74cb36cfa21fb00",
+  "model": "s2.1-pro-free",
+  "text": "First the bread, then her visit. Now I can follow what happened after you left the bakery.\n\nI could hear that rain as you read. I’m glad to hear what happened to the flour afterward.",
+  "textSha256": "8e42852181f50bdbf0ea73cc413d7da6dd46911f037842ba6cb6b2616ef44e03",
+  "sha256": "18d2635a9778d9522d27fac2756cb0d621b692830bd899775bcbf50a96acec9f",
+  "bytes": 224861,
+  "alignment": [
+    {
+      "text": "First",
+      "start": 0.16,
+      "end": 0.56
+    },
+    {
+      "text": "the",
+      "start": 0.56,
+      "end": 0.64
+    },
+    {
+      "text": "bread",
+      "start": 0.64,
+      "end": 1.2
+    },
+    {
+      "text": "then",
+      "start": 1.44,
+      "end": 1.68
+    },
+    {
+      "text": "her",
+      "start": 1.76,
+      "end": 1.92
+    },
+    {
+      "text": "visit",
+      "start": 1.92,
+      "end": 2.48
+    },
+    {
+      "text": "Now",
+      "start": 3.12,
+      "end": 3.44
+    },
+    {
+      "text": "I",
+      "start": 3.44,
+      "end": 3.6
+    },
+    {
+      "text": "can",
+      "start": 3.6,
+      "end": 3.84
+    },
+    {
+      "text": "follow",
+      "start": 3.84,
+      "end": 4.32
+    },
+    {
+      "text": "what",
+      "start": 4.32,
+      "end": 4.48
+    },
+    {
+      "text": "happened",
+      "start": 4.48,
+      "end": 5.04
+    },
+    {
+      "text": "after",
+      "start": 5.04,
+      "end": 5.36
+    },
+    {
+      "text": "you",
+      "start": 5.36,
+      "end": 5.52
+    },
+    {
+      "text": "left",
+      "start": 5.52,
+      "end": 5.92
+    },
+    {
+      "text": "the",
+      "start": 5.92,
+      "end": 6
+    },
+    {
+      "text": "bakery",
+      "start": 6,
+      "end": 6.8
+    },
+    {
+      "text": "I",
+      "start": 7.28,
+      "end": 7.44
+    },
+    {
+      "text": "could",
+      "start": 7.44,
+      "end": 7.68
+    },
+    {
+      "text": "hear",
+      "start": 7.68,
+      "end": 8
+    },
+    {
+      "text": "that",
+      "start": 8,
+      "end": 8.24
+    },
+    {
+      "text": "rain",
+      "start": 8.24,
+      "end": 8.72
+    },
+    {
+      "text": "as",
+      "start": 8.72,
+      "end": 8.88
+    },
+    {
+      "text": "you",
+      "start": 8.88,
+      "end": 9.12
+    },
+    {
+      "text": "read",
+      "start": 9.12,
+      "end": 9.6
+    },
+    {
+      "text": "I'm",
+      "start": 10.16,
+      "end": 10.4
+    },
+    {
+      "text": "glad",
+      "start": 10.4,
+      "end": 10.8
+    },
+    {
+      "text": "to",
+      "start": 10.8,
+      "end": 10.88
+    },
+    {
+      "text": "hear",
+      "start": 10.88,
+      "end": 11.2
+    },
+    {
+      "text": "what",
+      "start": 11.2,
+      "end": 11.44
+    },
+    {
+      "text": "happened",
+      "start": 11.44,
+      "end": 11.92
+    },
+    {
+      "text": "to",
+      "start": 12,
+      "end": 12
+    },
+    {
+      "text": "the",
+      "start": 12,
+      "end": 12.16
+    },
+    {
+      "text": "flour",
+      "start": 12.16,
+      "end": 12.64
+    },
+    {
+      "text": "afterward",
+      "start": 12.64,
+      "end": 13.52
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 13.991972789115646
+    }
+  ],
+  "expectedChargeUSD": 0
+}

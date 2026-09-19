@@ -1,0 +1,11 @@
+{
+ "status":"INCOMPLETE_SUPERSEDED",
+ "reason":"Stopped after 25 completed browser cases to correct obsolete batch-audio test expectations and two concrete recovery findings: unbounded memory-landscape requests and a running-server spending-history floor. A story-picture context-restoration gap was also identified for the successor.",
+ "completedRequiredCommands":7,
+ "completedBrowserCases":25,
+ "browserPassed":22,
+ "browserFailed":3,
+ "failedScopes":["Unavailable-audio status assertion still expected the earlier shorter copy","DPR1 native voice test requested source master recordings excluded from runtime","DPR2 repeated the obsolete master-recording test"],
+ "preservation":"Source binding, command logs, failure traces and screenshots remain in repair-r2. This run does not qualify the successor. Owned runner and server were stopped; port4384 has no listener. Submitted preview was not stopped.",
+ "providers":"Disabled by authored environment; no provider requests authorized or made by this run."
+}

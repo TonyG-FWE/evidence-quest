@@ -1,0 +1,168 @@
+{
+  "schema": "eq.personal-path.provenance.v1",
+  "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/garden+path+3d+model.glb",
+  "sourceSha256": "3e355b7bf9bc5fe7550a3d3c9126cd28ba3c8fbd3164e660310476d2f6b4074c",
+  "originalUnchanged": true,
+  "preparation": "CPU UV reprojection of existing source soil; opposite texture edges blended. Six existing raised stones clipped only below source Y=.025 and at their documented source envelopes. Original stone color and normal bytes extracted without re-encoding. Runtime creates connected fitted support surfaces, retaining original stones as detail; no new model provider request.",
+  "crop": {
+    "x": 574,
+    "z": 392,
+    "width": 45,
+    "height": 54
+  },
+  "stones": [
+    {
+      "id": "oval",
+      "triangles": 203,
+      "sourceEllipsePixels": {
+        "id": "oval",
+        "x": 201,
+        "z": 185,
+        "rx": 40,
+        "rz": 56
+      }
+    },
+    {
+      "id": "round",
+      "triangles": 255,
+      "sourceEllipsePixels": {
+        "id": "round",
+        "x": 348,
+        "z": 234,
+        "rx": 40,
+        "rz": 49
+      }
+    },
+    {
+      "id": "broad",
+      "triangles": 533,
+      "sourceEllipsePixels": {
+        "id": "broad",
+        "x": 505,
+        "z": 432,
+        "rx": 53,
+        "rz": 63
+      }
+    },
+    {
+      "id": "narrow",
+      "triangles": 248,
+      "sourceEllipsePixels": {
+        "id": "narrow",
+        "x": 656,
+        "z": 465,
+        "rx": 29,
+        "rz": 50
+      }
+    },
+    {
+      "id": "square",
+      "triangles": 460,
+      "sourceEllipsePixels": {
+        "id": "square",
+        "x": 797,
+        "z": 488,
+        "rx": 56,
+        "rz": 64
+      }
+    },
+    {
+      "id": "long",
+      "triangles": 554,
+      "sourceEllipsePixels": {
+        "id": "long",
+        "x": 916,
+        "z": 500,
+        "rx": 55,
+        "rz": 70
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "output/personal-landscape-20260918/path/garden-source-top.png",
+      "bytes": 1147630,
+      "sha256": "7a4aeebe0a9877bec9ef9b3c2f7e67e7c89dfa26983c8c2d1b87bbade6bf9b43"
+    },
+    {
+      "file": "output/personal-landscape-20260918/path/soil-color.png",
+      "bytes": 373474,
+      "sha256": "6fb3cfc75fb4632c7b31db29084a1c5bb37a3f114289fb24f0543fe7dc377504"
+    },
+    {
+      "file": "output/personal-landscape-20260918/path/stone-color.jpg",
+      "bytes": 3506941,
+      "sha256": "d106bb6084714ddb17f51f2529a3d296db6f60929ec8be5fe03c9ebe8fa42518"
+    },
+    {
+      "file": "output/personal-landscape-20260918/path/stone-normal.png",
+      "bytes": 9151436,
+      "sha256": "8b0486809118a51db5a91216908e36c14aa9caf8337729ad69b2c2d52ff5493b"
+    },
+    {
+      "file": "output/personal-landscape-20260918/path/path-derived.json",
+      "bytes": 1128423,
+      "sha256": "f29bd9d099371ba9c5e79f4cbf2347adca0c10b3254e23c8627836f5546e3d8c"
+    },
+    {
+      "file": "output/personal-landscape-20260918/path/path-footprint.json",
+      "bytes": 336396,
+      "sha256": "1c571f47708449cdc70ec9fb8ad229403cc86e398601ec7707c96a88981ad83f"
+    },
+    {
+      "file": "output/personal-landscape-20260918/path/path-support.json",
+      "bytes": 40499,
+      "sha256": "07763c4795e2e5e02145647c574d16558597543478a0117a473180e2547ff777"
+    }
+  ],
+  "providerRequests": 0,
+  "contactSupport": {
+    "generator": "scripts/prepare-personal-path-support.mjs",
+    "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/garden+path+3d+model.glb",
+    "sourceSha256": "3e355b7bf9bc5fe7550a3d3c9126cd28ba3c8fbd3164e660310476d2f6b4074c",
+    "input": {
+      "file": "output/personal-landscape-20260918/path/path-derived.json",
+      "bytes": 1128423,
+      "sha256": "f29bd9d099371ba9c5e79f4cbf2347adca0c10b3254e23c8627836f5546e3d8c"
+    },
+    "output": {
+      "file": "output/personal-landscape-20260918/path/path-support.json",
+      "bytes": 40499,
+      "sha256": "07763c4795e2e5e02145647c574d16558597543478a0117a473180e2547ff777"
+    },
+    "encoding": "Float32 XYZ and Uint16 triangle indices, little-endian base64; same coordinates as renderer geometry, no UVs or texture data.",
+    "stones": [
+      {
+        "id": "oval",
+        "vertexCount": 131,
+        "triangleCount": 203
+      },
+      {
+        "id": "round",
+        "vertexCount": 159,
+        "triangleCount": 255
+      },
+      {
+        "id": "broad",
+        "vertexCount": 310,
+        "triangleCount": 533
+      },
+      {
+        "id": "narrow",
+        "vertexCount": 155,
+        "triangleCount": 248
+      },
+      {
+        "id": "square",
+        "vertexCount": 269,
+        "triangleCount": 460
+      },
+      {
+        "id": "long",
+        "vertexCount": 326,
+        "triangleCount": 554
+      }
+    ],
+    "providerRequests": 0
+  }
+}

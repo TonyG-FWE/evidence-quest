@@ -1,3 +1,4 @@
+import {buildBridge} from './garden-bridge-actions.js';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {GardenStore,initialGarden,CROSSING,MARA,GRANDMA_APPROACH,type Point} from '../src/garden/model.js';
@@ -12,9 +13,7 @@ const go=(s:GardenStore,point:Point)=>{close(s);s.send({type:'GO',point});advanc
 const dock=(s:GardenStore)=>{go(s,{x:MARA.x,z:MARA.z+.95});s.send({type:'TALK',who:'mara'});};
 const next=(s:GardenStore)=>s.send({type:'CONVERSATION',direction:'next'});
 function garden(s:GardenStore){
- go(s,CROSSING);s.send({type:'COLLECT_ROPES'});advance(s);s.send({type:'ARRANGE'});
- for(const [section,side]of [['a','west'],['b','east']]as const){s.send({type:'SELECT',section});s.send({type:'POST_PREVIEW',site:'narrow',side});s.send({type:'PLACE'});}
- s.send({type:'JOIN'});s.send({type:'FASTEN',end:'west'});s.send({type:'FASTEN',end:'east'});s.send({type:'BACK'});go(s,GRANDMA_APPROACH);s.send({type:'TALK',who:'grandma'});
+ go(s,CROSSING);buildBridge(s);go(s,GRANDMA_APPROACH);s.send({type:'TALK',who:'grandma'});
 }
 test('Continuity: dock duty precedes account, and offers follow the complete untimed conversation',()=>{
  const s=fresh();dock(s);next(s);s.send({type:'TAKE_PAGE'});s.send({type:'STORY',event:{kind:'OFFER_LATER'}});
@@ -38,7 +37,7 @@ test('Continuity: Help, close and checksummed reload retain partial dialogue wit
  completeConversation(r);r.send({type:'CONVERSATION',direction:'previous'});assert.equal(conversationReady(r.getSnapshot().chapter,'mara'),true);
 });
 test('Continuity: Grandma-first physical play stays open; planning needs an actual account and report, never a page quota',()=>{
- const s=fresh();garden(s);s.send({type:'PLANT'});advance(s);s.send({type:'TALK',who:'grandma'});
+ const s=fresh();garden(s);s.send({type:'PLANT'});advance(s);s.send({type:'BLOOM'});advance(s);s.send({type:'TALK',who:'grandma'});
  s.send({type:'OPEN',panel:'planner'});assert.notEqual(s.getSnapshot().panel,'planner');s.send({type:'STORY',event:{kind:'REPORT_MARA'}});s.send({type:'STORY',event:{kind:'ASK_LATER'}});s.send({type:'STORY',event:{kind:'PLAN',time:'later',reader:'mara'}});
  assert.equal(s.getSnapshot().chapter.story.maraReported,false);assert.equal(s.getSnapshot().chapter.story.plan,null);assert.equal(s.getSnapshot().chapter.seed,'soil');
  dock(s);completeConversation(s);go(s,GRANDMA_APPROACH);s.send({type:'TALK',who:'grandma'});s.send({type:'STORY',event:{kind:'REPORT_MARA'}});s.send({type:'STORY',event:{kind:'ASK_LATER'}});s.send({type:'OPEN',panel:'planner'});

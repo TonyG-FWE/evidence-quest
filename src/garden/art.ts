@@ -1,10 +1,12 @@
 import * as T from 'three';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
 import {riverHalf,GRANDMA,MARA,PLANT,TREE_POSITIONS} from './model.js';
+import {setMaterialFade} from './materialFade.js';
 export class PaperArt {
  readonly resources=new Set<{dispose:()=>void}>();
  private materials=new Map<string,T.MeshStandardMaterial>();
  private shapes=new Map<string,T.BufferGeometry>();
+ private vertexMaterial:T.MeshStandardMaterial|null=null;
  material(color:string){let m=this.materials.get(color);if(!m){m=new T.MeshStandardMaterial({color,roughness:.92,metalness:0,flatShading:true});this.materials.set(color,m);this.resources.add(m);}return m;}
  geometry(key:string,create:()=>T.BufferGeometry){let g=this.shapes.get(key);if(!g){g=create();this.shapes.set(key,g);this.resources.add(g);}return g;}
  mesh(g:T.BufferGeometry,color:string,parent:T.Object3D,x=0,y=0,z=0){this.resources.add(g);const m=new T.Mesh(g,this.material(color));m.position.set(x,y,z);m.castShadow=true;m.receiveShadow=true;parent.add(m);return m;}
@@ -15,8 +17,20 @@ export class PaperArt {
  line(parent:T.Object3D,points:T.Vector3[],color:string,r=.018){return this.mesh(new T.TubeGeometry(new T.CatmullRomCurve3(points),Math.max(8,points.length*3),r,5,false),color,parent);}
  dispose(){for(const r of this.resources)r.dispose();this.resources.clear();}
  mergeStatic(root:T.Group){
-  root.updateWorldMatrix(true,true);const inverse=root.matrixWorld.clone().invert(),groups=new Map<T.Material,T.BufferGeometry[]>();
-  root.traverse(object=>{if(!(object instanceof T.Mesh)||Array.isArray(object.material))return;let geo=object.geometry.clone();if(geo.index){const next=geo.toNonIndexed();geo.dispose();geo=next;}geo.applyMatrix4(inverse.clone().multiply(object.matrixWorld));if(!geo.getAttribute('uv'))geo.setAttribute('uv',new T.Float32BufferAttribute(new Float32Array(geo.getAttribute('position').count*2),2));const list=groups.get(object.material)??[];list.push(geo);groups.set(object.material,list);});
+  root.updateWorldMatrix(true,true);const inverse=root.matrixWorld.clone().invert(),groups=new Map<T.Material,T.BufferGeometry[]>(),palette=new Set(this.materials.values());
+  root.traverse(object=>{if(!(object instanceof T.Mesh)||Array.isArray(object.material))return;let geo=object.geometry.clone();if(geo.index){const next=geo.toNonIndexed();geo.dispose();geo=next;}geo.applyMatrix4(inverse.clone().multiply(object.matrixWorld));if(!geo.getAttribute('uv'))geo.setAttribute('uv',new T.Float32BufferAttribute(new Float32Array(geo.getAttribute('position').count*2),2));
+   let material=object.material;
+   // These palette materials differ only in their linear RGB color. Baking that
+   // same color into each vertex preserves every triangle and shading property
+   // while drawing a static assembly once. Textured/special materials stay apart.
+   if(material instanceof T.MeshStandardMaterial&&palette.has(material)&&!material.transparent&&!material.map&&material.roughness===.92&&material.metalness===0&&material.flatShading&&material.emissive.r===0&&material.emissive.g===0&&material.emissive.b===0){
+    const colors=new Float32Array(geo.getAttribute('position').count*3);for(let i=0;i<colors.length;i+=3){colors[i]=material.color.r;colors[i+1]=material.color.g;colors[i+2]=material.color.b;}
+    geo.setAttribute('color',new T.Float32BufferAttribute(colors,3));
+    if(!this.vertexMaterial){this.vertexMaterial=new T.MeshStandardMaterial({color:'#ffffff',roughness:.92,metalness:0,flatShading:true,vertexColors:true});this.resources.add(this.vertexMaterial);}
+    material=this.vertexMaterial;
+   }
+   const list=groups.get(material)??[];list.push(geo);groups.set(material,list);
+  });
   root.clear();
   for(const [material,geos]of groups){const merged=mergeGeometries(geos,false);for(const g of geos)g.dispose();if(!merged)throw Error('Papercraft batch mismatch');this.resources.add(merged);const mesh=new T.Mesh(merged,material);mesh.castShadow=true;mesh.receiveShadow=true;root.add(mesh);}
  }
@@ -160,9 +174,9 @@ export function makeLandscape(a:PaperArt){
  const currents=new T.Group(),lineMaterial=a.material('#b0ded0');
  for(let i=0;i<22;i++){const z=(i*1.13)%11.8-5.9,x=Math.sin(i*1.77)*(riverHalf(z)-.38),line=a.line(currents,[new T.Vector3(x-.12,.018,z),new T.Vector3(x,.018,z+.04),new T.Vector3(x+.20,.018,z)],'#b0ded0',.009);line.material=lineMaterial;}
  a.mergeStatic(currents);currents.position.y=-.14;
- const foliage=new Map<T.Material,T.MeshStandardMaterial>();workshopLeaves.traverse(o=>{if(!(o instanceof T.Mesh)||Array.isArray(o.material))return;let material=foliage.get(o.material);if(!material){material=(o.material as T.MeshStandardMaterial).clone();material.transparent=true;a.resources.add(material);foliage.set(o.material,material);}o.material=material;});root.add(workshopTree);
- const frameWorkshop=(focused:boolean)=>{for(const material of foliage.values()){material.opacity=focused?.12:1;material.depthWrite=!focused;}workshopLeaves.traverse(o=>{o.castShadow=!focused;});};
- const gardenMaterials:T.MeshStandardMaterial[]=[];for(const crown of gardenCrowns){a.mergeStatic(crown);crown.traverse(o=>{if(!(o instanceof T.Mesh)||Array.isArray(o.material))return;const material=(o.material as T.MeshStandardMaterial).clone();material.transparent=true;a.resources.add(material);o.material=material;gardenMaterials.push(material);});}root.add(gardenTrees);const frameGathering=(focused:boolean)=>{for(const material of gardenMaterials){material.opacity=focused?.12:1;material.depthWrite=!focused;}for(const crown of gardenCrowns)crown.traverse(o=>{o.castShadow=!focused;});};return {root,currents,frameWorkshop,frameGathering};
+ const foliage=new Map<T.Material,T.MeshStandardMaterial>();workshopLeaves.traverse(o=>{if(!(o instanceof T.Mesh)||Array.isArray(o.material))return;let material=foliage.get(o.material);if(!material){material=(o.material as T.MeshStandardMaterial).clone();a.resources.add(material);foliage.set(o.material,material);}o.material=material;});root.add(workshopTree);
+ const frameWorkshop=(focused:boolean)=>{for(const material of foliage.values())setMaterialFade(material,focused?.12:1,!focused);workshopLeaves.traverse(o=>{o.castShadow=!focused;});};
+ const gardenMaterials:T.MeshStandardMaterial[]=[];for(const crown of gardenCrowns){a.mergeStatic(crown);crown.traverse(o=>{if(!(o instanceof T.Mesh)||Array.isArray(o.material))return;const material=(o.material as T.MeshStandardMaterial).clone();a.resources.add(material);o.material=material;gardenMaterials.push(material);});}root.add(gardenTrees);const frameGathering=(focused:boolean)=>{for(const material of gardenMaterials)setMaterialFade(material,focused?.12:1,!focused);for(const crown of gardenCrowns)crown.traverse(o=>{o.castShadow=!focused;});};return {root,currents,frameWorkshop,frameGathering};
 }
 export function makeLantern(a:PaperArt,x:number,z:number,color='#e6bf61'){
  const root=new T.Group();root.position.set(x,.12,z);a.cylinder(root,0,.35,0,.019,.024,.7,C.dark);

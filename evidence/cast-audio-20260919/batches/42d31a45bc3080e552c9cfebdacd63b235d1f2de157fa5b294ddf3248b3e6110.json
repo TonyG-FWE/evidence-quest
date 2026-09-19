@@ -1,0 +1,503 @@
+{
+  "id": "42d31a45bc3080e552c9cfebdacd63b235d1f2de157fa5b294ddf3248b3e6110",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 292081,
+      "sha256": "e7b095d0b1278a7e4e0208568ae8b8853a9fbad2a05269aa63505b009a45c92a"
+    },
+    {
+      "bytes": 810,
+      "sha256": "0f367411249d13182eb07417f621e89c2bc74ba4d5dd9a5c286f3af7c8c4ff62"
+    },
+    {
+      "bytes": 226134,
+      "sha256": "d6e8906ef354eeba475b7bebb13858bde28ec74c7193de2e8fc047697de5e41f"
+    },
+    {
+      "bytes": 849,
+      "sha256": "43aacc386838ad21e960f41b292a51149b13070943038389f09c5d5a0920e363"
+    },
+    {
+      "bytes": 1738,
+      "sha256": "7aaaee84305ac146c04ce3c8d155a77e7b0c67178b9ba51b27000803d7d763ee"
+    }
+  ],
+  "speaker": "pip",
+  "voiceId": "829184c635314c9485e48690116ff8ad",
+  "model": "s2.1-pro-free",
+  "text": "Welcome back to the garden. We postponed the gathering so Mara could finish her work and join us. I'll read The Torn Wing for her, and Sol will share A Small Repair.\n\nWelcome back to the garden. We postponed the gathering so Mara could finish her work and join us. Mara will tell The Torn Wing, and Sol will share A Small Repair.\n\nWelcome back to the garden. Mara is working at the dock, so she asked me to share The Torn Wing for her. Sol has brought A Small Repair.",
+  "textSha256": "9d45b625f7c8a07ebb0c191f3c57a2fe5ac42f0912c115935e8599463c3ef84f",
+  "sha256": "95efc769b9284bc81f7405f50df73da80f24ac167a47c3b09197ac7ad7fcd9a6",
+  "bytes": 521612,
+  "alignment": [
+    {
+      "text": "Welcome",
+      "start": 0.08,
+      "end": 0.64
+    },
+    {
+      "text": "back",
+      "start": 0.64,
+      "end": 0.8
+    },
+    {
+      "text": "to",
+      "start": 1.04,
+      "end": 1.12
+    },
+    {
+      "text": "the",
+      "start": 1.12,
+      "end": 1.2
+    },
+    {
+      "text": "garden",
+      "start": 1.2,
+      "end": 1.84
+    },
+    {
+      "text": "We",
+      "start": 2.72,
+      "end": 2.88
+    },
+    {
+      "text": "postponed",
+      "start": 2.88,
+      "end": 3.36
+    },
+    {
+      "text": "the",
+      "start": 3.44,
+      "end": 3.6
+    },
+    {
+      "text": "gathering",
+      "start": 3.6,
+      "end": 4.16
+    },
+    {
+      "text": "so",
+      "start": 4.16,
+      "end": 4.32
+    },
+    {
+      "text": "Mara",
+      "start": 4.32,
+      "end": 4.72
+    },
+    {
+      "text": "could",
+      "start": 4.72,
+      "end": 4.96
+    },
+    {
+      "text": "finish",
+      "start": 4.96,
+      "end": 5.36
+    },
+    {
+      "text": "her",
+      "start": 5.36,
+      "end": 5.44
+    },
+    {
+      "text": "work",
+      "start": 5.44,
+      "end": 5.76
+    },
+    {
+      "text": "and",
+      "start": 5.76,
+      "end": 5.92
+    },
+    {
+      "text": "join",
+      "start": 5.92,
+      "end": 6.08
+    },
+    {
+      "text": "us",
+      "start": 6.4,
+      "end": 6.64
+    },
+    {
+      "text": "I'll",
+      "start": 7.84,
+      "end": 8.08
+    },
+    {
+      "text": "read",
+      "start": 8.08,
+      "end": 8.32
+    },
+    {
+      "text": "The",
+      "start": 8.32,
+      "end": 8.4
+    },
+    {
+      "text": "Torn",
+      "start": 8.4,
+      "end": 8.64
+    },
+    {
+      "text": "Wing",
+      "start": 8.8,
+      "end": 9.04
+    },
+    {
+      "text": "for",
+      "start": 9.04,
+      "end": 9.2
+    },
+    {
+      "text": "her",
+      "start": 9.2,
+      "end": 9.52
+    },
+    {
+      "text": "and",
+      "start": 10.08,
+      "end": 10.24
+    },
+    {
+      "text": "Sol",
+      "start": 10.24,
+      "end": 10.48
+    },
+    {
+      "text": "will",
+      "start": 10.56,
+      "end": 10.8
+    },
+    {
+      "text": "share",
+      "start": 10.8,
+      "end": 11.12
+    },
+    {
+      "text": "A",
+      "start": 11.12,
+      "end": 11.2
+    },
+    {
+      "text": "Small",
+      "start": 11.2,
+      "end": 11.52
+    },
+    {
+      "text": "Repair",
+      "start": 11.6,
+      "end": 12.16
+    },
+    {
+      "text": "Welcome",
+      "start": 12.4,
+      "end": 12.88
+    },
+    {
+      "text": "back",
+      "start": 12.88,
+      "end": 13.04
+    },
+    {
+      "text": "to",
+      "start": 13.28,
+      "end": 13.28
+    },
+    {
+      "text": "the",
+      "start": 13.28,
+      "end": 13.44
+    },
+    {
+      "text": "garden",
+      "start": 13.44,
+      "end": 14.08
+    },
+    {
+      "text": "We",
+      "start": 14.56,
+      "end": 14.72
+    },
+    {
+      "text": "postponed",
+      "start": 14.72,
+      "end": 15.2
+    },
+    {
+      "text": "the",
+      "start": 15.28,
+      "end": 15.36
+    },
+    {
+      "text": "gathering",
+      "start": 15.36,
+      "end": 15.92
+    },
+    {
+      "text": "so",
+      "start": 15.92,
+      "end": 16.08
+    },
+    {
+      "text": "Mara",
+      "start": 16.08,
+      "end": 16.48
+    },
+    {
+      "text": "could",
+      "start": 16.48,
+      "end": 16.72
+    },
+    {
+      "text": "finish",
+      "start": 16.72,
+      "end": 17.04
+    },
+    {
+      "text": "her",
+      "start": 17.04,
+      "end": 17.12
+    },
+    {
+      "text": "work",
+      "start": 17.12,
+      "end": 17.44
+    },
+    {
+      "text": "and",
+      "start": 17.44,
+      "end": 17.6
+    },
+    {
+      "text": "join",
+      "start": 17.6,
+      "end": 17.76
+    },
+    {
+      "text": "us",
+      "start": 18,
+      "end": 18.32
+    },
+    {
+      "text": "Mara",
+      "start": 18.659546485260773,
+      "end": 19.05954648526077
+    },
+    {
+      "text": "will",
+      "start": 19.05954648526077,
+      "end": 19.299546485260773
+    },
+    {
+      "text": "tell",
+      "start": 19.299546485260773,
+      "end": 19.459546485260773
+    },
+    {
+      "text": "The",
+      "start": 19.53954648526077,
+      "end": 19.619546485260773
+    },
+    {
+      "text": "Torn",
+      "start": 19.619546485260773,
+      "end": 19.859546485260772
+    },
+    {
+      "text": "Wing",
+      "start": 20.019546485260772,
+      "end": 20.339546485260772
+    },
+    {
+      "text": "and",
+      "start": 20.73954648526077,
+      "end": 20.89954648526077
+    },
+    {
+      "text": "Sol",
+      "start": 20.89954648526077,
+      "end": 21.139546485260773
+    },
+    {
+      "text": "will",
+      "start": 21.299546485260773,
+      "end": 21.459546485260773
+    },
+    {
+      "text": "share",
+      "start": 21.459546485260773,
+      "end": 21.779546485260774
+    },
+    {
+      "text": "A",
+      "start": 21.779546485260774,
+      "end": 21.859546485260772
+    },
+    {
+      "text": "Small",
+      "start": 21.859546485260772,
+      "end": 22.25954648526077
+    },
+    {
+      "text": "Repair",
+      "start": 22.25954648526077,
+      "end": 22.819546485260773
+    },
+    {
+      "text": "Welcome",
+      "start": 22.979546485260773,
+      "end": 23.53954648526077
+    },
+    {
+      "text": "back",
+      "start": 23.53954648526077,
+      "end": 23.619546485260773
+    },
+    {
+      "text": "to",
+      "start": 23.859546485260772,
+      "end": 23.93954648526077
+    },
+    {
+      "text": "the",
+      "start": 23.93954648526077,
+      "end": 24.019546485260772
+    },
+    {
+      "text": "garden",
+      "start": 24.019546485260772,
+      "end": 24.659546485260773
+    },
+    {
+      "text": "Mara",
+      "start": 25.139546485260773,
+      "end": 25.619546485260773
+    },
+    {
+      "text": "is",
+      "start": 25.619546485260773,
+      "end": 25.699546485260772
+    },
+    {
+      "text": "working",
+      "start": 25.699546485260772,
+      "end": 26.099546485260774
+    },
+    {
+      "text": "at",
+      "start": 26.099546485260774,
+      "end": 26.25954648526077
+    },
+    {
+      "text": "the",
+      "start": 26.25954648526077,
+      "end": 26.339546485260772
+    },
+    {
+      "text": "dock",
+      "start": 26.339546485260772,
+      "end": 26.499546485260772
+    },
+    {
+      "text": "so",
+      "start": 27.299546485260773,
+      "end": 27.53954648526077
+    },
+    {
+      "text": "she",
+      "start": 27.53954648526077,
+      "end": 27.699546485260772
+    },
+    {
+      "text": "asked",
+      "start": 27.93954648526077,
+      "end": 28.099546485260774
+    },
+    {
+      "text": "me",
+      "start": 28.099546485260774,
+      "end": 28.25954648526077
+    },
+    {
+      "text": "to",
+      "start": 28.339546485260772,
+      "end": 28.339546485260772
+    },
+    {
+      "text": "share",
+      "start": 28.339546485260772,
+      "end": 28.57954648526077
+    },
+    {
+      "text": "The",
+      "start": 28.739546485260774,
+      "end": 28.819546485260773
+    },
+    {
+      "text": "Torn",
+      "start": 28.819546485260773,
+      "end": 29.37954648526077
+    },
+    {
+      "text": "Wing",
+      "start": 29.37954648526077,
+      "end": 29.37954648526077
+    },
+    {
+      "text": "for",
+      "start": 29.37954648526077,
+      "end": 29.459546485260773
+    },
+    {
+      "text": "her",
+      "start": 29.459546485260773,
+      "end": 29.859546485260772
+    },
+    {
+      "text": "Sol",
+      "start": 30.57954648526077,
+      "end": 30.819546485260773
+    },
+    {
+      "text": "has",
+      "start": 30.979546485260773,
+      "end": 31.139546485260773
+    },
+    {
+      "text": "brought",
+      "start": 31.139546485260773,
+      "end": 31.459546485260773
+    },
+    {
+      "text": "A",
+      "start": 31.459546485260773,
+      "end": 31.459546485260773
+    },
+    {
+      "text": "Small",
+      "start": 31.459546485260773,
+      "end": 31.779546485260774
+    },
+    {
+      "text": "Repair",
+      "start": 31.859546485260772,
+      "end": 32.099546485260774
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 18.339546485260772
+    },
+    {
+      "seq": 1,
+      "offset": 18.339546485260772,
+      "duration": 14.187755102040816
+    }
+  ],
+  "expectedChargeUSD": 0
+}

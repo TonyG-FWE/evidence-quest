@@ -1,0 +1,5 @@
+{
+  "extends": "./tsconfig.checks.json",
+  "compilerOptions": {"outDir": ".cache/contact-runtime"},
+  "include": ["src/garden/bakeryWorld.ts", "src/garden/assets/visualAsset.ts"]
+}

@@ -1,3 +1,4 @@
+import {useNarrativeLine} from './NarrativeReadingContext.js';
 import {ReadingParagraph,ReadingTools} from './Reading';
 import './festivalWelcome.css';
 
@@ -13,7 +14,7 @@ export const festivalIntroductionText='Jo, story writer: '+festivalIntroduction.
 
 function CastIllustration(){
  return <figure className="festival-cast-illustration">
-  <img src="/art/sparkfest/cast-original.png" alt="The SparkFest group together: four children, Loop the rolling projector, and the paper characters Pip and Grandma." width="1774" height="887" decoding="async"/>
+  <img src="/art/sparkfest/cast-original.lossless.webp" alt="The SparkFest group together: four children, Loop the rolling projector, and the paper characters Pip and Grandma." width="1774" height="887" decoding="async"/>
   <figcaption>Meet the SparkFest crew, Loop, Pip and Grandma.</figcaption>
  </figure>;
 }
@@ -27,11 +28,12 @@ function FestivalCopy(){
 
 /** Reused in the reading panel so the exact welcome has all existing literacy tools. */
 export function FestivalIntroduction(){
- return <div className="festival-reading-introduction">
+ const revise=useNarrativeLine(),introductionText=festivalIntroduction.map(revise).join('\n\n');
+ return <div className="festival-reading-introduction" data-speech-speaker="jo">
   <CastIllustration/>
-  <div className="festival-loop-portrait"><img src="/art/er13/loop-awake-v1.png" width="1125" height="1379" alt="Loop, a small cream and teal rolling projector with one large round lens."/><span>Loop · rolling projector</span></div>
+  <div className="festival-loop-portrait"><img src="/art/er13/loop-awake-v1.lossless.webp" width="1125" height="1379" alt="Loop, a small cream and teal rolling projector with one large round lens."/><span>Loop · rolling projector</span></div>
   <FestivalCopy/>
-  <ReadingTools text={festivalIntroductionText} label="SparkFest and Loop’s welcome"/>
+  <ReadingTools text={introductionText} speaker="jo" label="SparkFest and Loop’s welcome"/>
  </div>;
 }
 
@@ -42,7 +44,7 @@ export function FestivalWelcome({onBegin,onReadHelp,disabled=false}:{onBegin:()=
   </div>
   <div className="festival-welcome-content">
    <header><p className="festival-eyebrow">STORIES & INVENTIONS MADE BY CHILDREN</p><h1 id="festival-welcome-title">Welcome to<br/><em>SparkFest</em></h1></header>
-   <div className="festival-loop-portrait"><img src="/art/er13/loop-awake-v1.png" width="1125" height="1379" alt="Loop, the cream and teal rolling projector beside the story screen."/><span>Meet Loop<br/><small>Your rolling projector</small></span></div>
+   <div className="festival-loop-portrait"><img src="/art/er13/loop-awake-v1.lossless.webp" width="1125" height="1379" alt="Loop, the cream and teal rolling projector beside the story screen."/><span>Meet Loop<br/><small>Your rolling projector</small></span></div>
    <FestivalCopy/>
    <div className="festival-welcome-actions">
     <p className="festival-adventure-name">The Garden Adventure</p>

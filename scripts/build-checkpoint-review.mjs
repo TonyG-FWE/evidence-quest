@@ -1,0 +1,24 @@
+import fs from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {build} from 'vite';
+import {loadPilotGeometry} from './pilot-glb.mjs';
+const root='evidence/hands-on-20260916/pilot/checkpoint-review';
+await fs.mkdir(root,{recursive:true});
+const pilot=JSON.parse(await fs.readFile('evidence/hands-on-20260916/pilot/review-manifest.json','utf8'));
+const characters=JSON.parse(await fs.readFile('evidence/hands-on-20260916/pilot/revision-r2/manifest.json','utf8'));
+const travel=JSON.parse(await fs.readFile(root+'/pip/travel.json','utf8'));
+const pip={...characters.assets.find(a=>a.id==='pip').visual,uri:'/pilot/checkpoint-review/pip/pip-travel-review.glb',sha256:travel.sha256,approval:'review'};
+pip.rig={...pip.rig,gaits:{jog:{clip:'pip_jog',cycleDistance:travel.clips.jog.cycleDistance},carryJog:{clip:'pip_carry_jog',cycleDistance:travel.clips.carry_jog.cycleDistance}}};
+const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
+const props=pilot.assets.filter(a=>['seed-boat','lantern-flower'].includes(a.id));
+for(const prop of props)if(hash(await fs.readFile('evidence/hands-on-20260916'+prop.visual.uri))!==prop.visual.sha256)throw Error('Prop changed since review: '+prop.id);
+// The new review uses the exact approved rig and original clip tracks.
+const before=await loadPilotGeometry('evidence/hands-on-20260916'+characters.assets[0].visual.uri);
+const after=await loadPilotGeometry('evidence/hands-on-20260916'+pip.uri);
+const preserved=before.animations.every(clip=>{const candidate=after.animations.find(a=>a.name===clip.name);return candidate&&clip.tracks.every(track=>{const other=candidate.tracks.find(t=>t.name===track.name);return other&&JSON.stringify([...track.times])===JSON.stringify([...other.times])&&JSON.stringify([...track.values])===JSON.stringify([...other.values]);});});
+if(!preserved)throw Error('Approved clips changed during new gait authoring');
+const supportingSources=await Promise.all(['src/garden/art.ts','src/garden/worldLayout.ts','src/garden/worldArt.ts','src/garden/assets/visualAsset.ts','scripts/checkpoint-review.ts'].map(async file=>({file,sha256:hash(await fs.readFile(file))})));
+await fs.writeFile(root+'/manifest.json',JSON.stringify({schema:'evidence-quest.checkpoint-form-review.v1',approval:'PENDING',additionalCredits:0,originalClipsPreserved:preserved,pip,grandma:characters.assets[1].visual,props,localKit:{file:'src/garden/assets/paintedKit.ts',sha256:hash(await fs.readFile('src/garden/assets/paintedKit.ts'))},supportingSources},null,2)+'\n');
+await build({configFile:false,logLevel:'warn',build:{outDir:root,emptyOutDir:false,lib:{entry:'scripts/checkpoint-review.ts',formats:['es'],fileName:()=> 'review.js'},rollupOptions:{external:id=>id==='three'||id.startsWith('three/addons/')}}});
+await fs.copyFile('scripts/checkpoint-review.html',root+'/review.html');
+console.log('Consolidated review: http://127.0.0.1:4318/pilot/checkpoint-review/review.html');

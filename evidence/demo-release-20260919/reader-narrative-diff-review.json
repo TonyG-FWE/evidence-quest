@@ -1,0 +1,308 @@
+{
+  "schema": "eq.reader-narrative-diff-review.v1",
+  "createdAt": "2026-09-19T06:14:04.559Z",
+  "candidate": "repair-r2 (subsequently stopped; findings now authorized for successor repair)",
+  "baseline": "7cc938a10bb52226a7a13493b64828eccf9c53d2",
+  "enrichedReference": "9ea8234665a4409aa6817f53f469fe4f2e689dd5",
+  "scope": "Read-only source/diff review, including untracked runtime reader files. Initial findings recorded before successor edits.",
+  "reviewedFiles": [
+    {
+      "path": "src/garden/literaryContent.ts",
+      "sha256": "f5055ea1c006bff3b178d760667eddd2f84af968127ce4093d416ed46e9765fa"
+    },
+    {
+      "path": "src/garden/literaryGlossary.ts",
+      "sha256": "7f05023b8bab44c0c09484bbe31fce23612a3a3c44ee5d80bcc62b2466053c38"
+    },
+    {
+      "path": "src/garden/narrativeDialogue.ts",
+      "sha256": "c23e4a030168ac628b2e17647a4a352884fdb07e01ca5fafffa75cb70cde17bf"
+    },
+    {
+      "path": "src/garden/narrativeEdition.ts",
+      "sha256": "ab1dc377b7e790bfff4a9248860911efb16f76a6e468588f3e1f77e842bbc3c6"
+    },
+    {
+      "path": "src/garden/NarrativeReadingContext.tsx",
+      "sha256": "b31c6b9183b165ed387e3f5c6ed4a603b684d6a2540ec64e2149cb72aab97446"
+    },
+    {
+      "path": "src/garden/content.ts",
+      "sha256": "81145b70bcf76f9a0aa742d683086d0c270405230dddac0e53c69090a204712f"
+    },
+    {
+      "path": "src/garden/conversation.ts",
+      "sha256": "e0a2457cd112043a3f0a7701d90da6e75e8e30fb6f49dcac8cef7f344bd9c2d9"
+    },
+    {
+      "path": "src/garden/ChapterPanels.tsx",
+      "sha256": "88482e1d86f5c2c2664d544f2ebf394a327cf84349e79d4909b082c358ce06ed"
+    },
+    {
+      "path": "src/garden/GatheringPanels.tsx",
+      "sha256": "2f69bacab691d82c467e201a3ef1eba397606c426e98e19f670ea11ece8ab9f8"
+    },
+    {
+      "path": "src/garden/gathering.ts",
+      "sha256": "d45287e07817a2cc300a8a98c5020e868304d21f68a545cec944e9bea34fcdec"
+    },
+    {
+      "path": "src/garden/ReaderPresentation.tsx",
+      "sha256": "d5323af0eacc7921ccb4ec367ddc8382dc290800f7989c47ff37073f33ae59c8"
+    },
+    {
+      "path": "src/garden/Reading.tsx",
+      "sha256": "2e60cf83d0dc352e642c0a97711a3940b2e66c78fb6c7a384633a65be921b470"
+    },
+    {
+      "path": "src/garden/ReadingSession.tsx",
+      "sha256": "562ff0c5da1a2f1645463a4bf7247b9cbe384c4bf2f2db220e7e4fd3bc333aea"
+    },
+    {
+      "path": "src/garden/ReadingPractice.tsx",
+      "sha256": "298bf61395b85b653b2e06746fa3b2c7eecd16d97da6fbe2e6b84cd0dcb70e28"
+    },
+    {
+      "path": "src/garden/readingSpeech.ts",
+      "sha256": "bfde12f771fdacf8bdae14d5328e3ba2a4cf46e8fcbdbbd94a8e28428bd0ebcb"
+    },
+    {
+      "path": "src/garden/Dialogue.tsx",
+      "sha256": "bdeec896824689b42e21e2d8263cfa703f6289426fb66c8e34d3ab455615fa0f"
+    },
+    {
+      "path": "src/garden/FeedbackActivity.tsx",
+      "sha256": "4afa12fd62329be3140feced40bd160235c7658b08bcf83c221e834ea577c0af"
+    },
+    {
+      "path": "src/garden/StoryReadingTools.tsx",
+      "sha256": "063c906751f42c847adb6a7f3811b66f9b895c1e6b754e18cd8ce29caa7a0159"
+    },
+    {
+      "path": "src/garden/storyReading.ts",
+      "sha256": "1e8232678e77f3b27248d387f014fd074b440d34d6fc68397c6739e2f5ccccfc"
+    },
+    {
+      "path": "src/garden/ContinuousPlayback.tsx",
+      "sha256": "080e78899d3b97e63d680080eaf037e889c8c6bad8883612c26c3c3d97e2cc27"
+    },
+    {
+      "path": "src/garden/continuousSpeech.ts",
+      "sha256": "e201963e960306802f958c6bcfd5884e18807190be9d6512baeda5db5b7cfe64"
+    },
+    {
+      "path": "src/garden/GardenApp.tsx",
+      "sha256": "dfafd1783f76cd134d07477a7912fe64ff3c0f6d560d41f35a69707f6c73bcdc"
+    },
+    {
+      "path": "src/garden/model.ts",
+      "sha256": "6179051a1d74c583921f17fb3adf7f8d57fbee0f733001fa0b0700f7f6236a2e"
+    },
+    {
+      "path": "src/garden/persistence.ts",
+      "sha256": "40e50ff4250370ad56483458365d07c8889e4c50bac4a6bcd65a7623ce6b7da9"
+    },
+    {
+      "path": "src/garden/river.ts",
+      "sha256": "e5401102dd7890bac24206403f49c0ce6f710317174814fe362c9d3788b0e4e6"
+    },
+    {
+      "path": "src/garden/bakery.ts",
+      "sha256": "95c25c8cf2d5af04e4faa8d69a3a7cebe56047e1b649ea48296d1168e66e17b6"
+    },
+    {
+      "path": "src/garden/hands.ts",
+      "sha256": "cbcf360c7ad9d76bf149fb5d3fbcd250cb2707824fc238b1fe632669591e86b3"
+    },
+    {
+      "path": "src/garden/playback.ts",
+      "sha256": "71457321cd14f3cc5f49eb69b44badb15e2d3dbe420a581a791c62ecb09ef0f0"
+    },
+    {
+      "path": "src/garden/WorldActivity.tsx",
+      "sha256": "5ac94de4986e0dc6b87aca5fb693214efc2ce4229cb8c60477cc8230aa32f49f"
+    },
+    {
+      "path": "src/garden/castSpeech.ts",
+      "sha256": "d9027e1fff27ff3fd453347f12d6eaa61e8f155202481c5a0b629cbebfeae97b"
+    },
+    {
+      "path": "src/garden/voiceTypes.ts",
+      "sha256": "f32f5ceba20958b2b0ebac222a74f355cbdfbe0616080f833ee6f224f5805de7"
+    },
+    {
+      "path": "checks/garden-reader-repairs.test.ts",
+      "sha256": "668b2c5b85f549498634d41dad3c75bce9384f05c1fea0159c9b1101d9afd51d"
+    },
+    {
+      "path": "browser-tests/garden-adaptive-reader.spec.ts",
+      "sha256": "c21cf4e2b0359dcebe4eb7cb0bb5906f5ff9e0b22eba11ab9adcf4b1ea48fd9b"
+    }
+  ],
+  "corpus": [
+    {
+      "path": "src/garden/literaryContent.ts",
+      "byteEqual": true,
+      "sha256": "f5055ea1c006bff3b178d760667eddd2f84af968127ce4093d416ed46e9765fa"
+    },
+    {
+      "path": "src/garden/literaryGlossary.ts",
+      "byteEqual": true,
+      "sha256": "7f05023b8bab44c0c09484bbe31fce23612a3a3c44ee5d80bcc62b2466053c38"
+    },
+    {
+      "path": "src/garden/narrativeDialogue.ts",
+      "byteEqual": true,
+      "sha256": "c23e4a030168ac628b2e17647a4a352884fdb07e01ca5fafffa75cb70cde17bf"
+    },
+    {
+      "path": "src/garden/NarrativeReadingContext.tsx",
+      "byteEqual": true,
+      "sha256": "b31c6b9183b165ed387e3f5c6ed4a603b684d6a2540ec64e2149cb72aab97446"
+    }
+  ],
+  "mappings": {
+    "count": 45,
+    "uniqueKeys": 45,
+    "allNonempty": true,
+    "allKeysStillReferencedInGardenRuntime": true
+  },
+  "verifiedStatic": [
+    "Fresh chapters select the literary edition; existing edition remains save-bound.",
+    "The maintenance note follows staged construction independently of narrative edition; source IDs and clipping preserve that edition.",
+    "Bridge gesture release/cancel returns to walking; same-material collapse recovery and independent secured sections remain.",
+    "Covering commits a rooted plant; growth still requires BLOOM and its saved boundary.",
+    "Bakery physical stages, unshaped-batch recovery, gathering performer ownership and immutable chosen/performed endings remain distinct.",
+    "Adaptive source paging keeps exact original paragraph indexes; writing Try and Use remain separate.",
+    "Repeated reading spans carry occurrence offsets and canonical source offsets separately.",
+    "Conflict guard precedes hand dispatch, freezes world/draft mutations, and preserves readable/copyable fields.",
+    "Persistence durably snapshots conflicting local progress before loading the other writer and CAS-archives both before explicit recovery.",
+    "ContinuousPlayback now uses continuousSpeech with performer/source/edition/maintenance identity."
+  ],
+  "findings": [
+    {
+      "id": "READER-DIFF-01",
+      "severity": "P2",
+      "status": "REPAIRED_FOR_SUCCESSOR; browser assertion NOT_RUN",
+      "files": [
+        {
+          "path": "src/garden/ChapterPanels.tsx",
+          "line": 35
+        },
+        {
+          "path": "src/garden/ChapterPanels.tsx",
+          "line": 95
+        }
+      ],
+      "trigger": "After Sol performs a child-written ending, open the completed Sol account or lantern library and use general conversation or word/sentence listening on the child contribution.",
+      "behavior": "These two ReadingParagraph wrappers supply child-draft origin without speaker/revision metadata. General conversation reading therefore requests the narrator with revision 0; word/sentence listening also lacks the Sol speaker. Whole-story buttons and actual onstage performance already preserve Sol.",
+      "repair": "Attach Sol, immutable contribution revision and run/contribution owner to the readable wrappers; audit same-family dynamic wrappers.",
+      "impact": "Selected-cast reading acceptance defect; chapter progression unaffected."
+    }
+  ],
+  "limits": [
+    "No browser or provider requests, no user save changes, no runtime changes during initial review.",
+    "No new native UX/audio acceptance; root owns the stopped repair-r2 and successor browser qualification.",
+    "This is a bounded reader/narrative diff review, not full renderer/assets/security/performance qualification.",
+    "Existing focused tests were inspected, not rerun for this review.",
+    "An evidence JSON is the sole file created by the read-only audit."
+  ],
+  "followup": {
+    "authorized": true,
+    "status": "SOURCE_FROZEN",
+    "completedAt": "2026-09-19T06:17:42.683Z",
+    "newVisibleText": false,
+    "changes": [
+      "Shared solContributionSpeech binds selected/performed endings to Sol, the exact immutable contribution revision and run owner.",
+      "Applied to completed Sol account, lantern library, selected ending views, connected gathering preview and legacy gathering view.",
+      "Selected feedback excerpts now carry Sol/Pip ownership and full-draft text revision.",
+      "Personal notes explicitly carry narrator, exact note-text revision and chapter owner.",
+      "Existing castSpeech SHA-256 revision normalization (>200 characters) already keeps outbound revisions under the server limit; retained unchanged."
+    ],
+    "sameFamilyCallersReviewed": [
+      "src/garden/Dialogue.tsx",
+      "src/garden/DraftReader.tsx",
+      "src/garden/MaraMessage.tsx",
+      "src/garden/FeedbackActivity.tsx",
+      "src/garden/ObservationJournal.tsx",
+      "src/garden/GatheringPanels.tsx",
+      "src/garden/ChapterPanels.tsx",
+      "src/garden/StoryReadingTools.tsx",
+      "src/garden/storyReading.ts",
+      "src/garden/ContinuousPlayback.tsx",
+      "src/garden/continuousSpeech.ts"
+    ],
+    "files": [
+      {
+        "path": "src/garden/ChapterPanels.tsx",
+        "sha256": "c83c72c0ee2b32cc59b389f07a52176a70207dbd7ef0222855308fed846159a2"
+      },
+      {
+        "path": "src/garden/GatheringPanels.tsx",
+        "sha256": "7bc5e313c3f9466f92141271dbb897aa6d95e8a88d2d0253ada52a62f843fbda"
+      },
+      {
+        "path": "src/garden/FeedbackActivity.tsx",
+        "sha256": "6ddcc2388321a3121607ba70eee873e999aacc49e73a803424288bb20cb456f1"
+      },
+      {
+        "path": "src/garden/ObservationJournal.tsx",
+        "sha256": "97097f50e824d76590cbbff023690caca4d5f02a2d4c8986b1f40c2d8a8ea695"
+      },
+      {
+        "path": "src/garden/storyReading.ts",
+        "sha256": "33d9f1215cea58caa8b6cc791456896ae8218f02119d2994d187a6a7f5988e73"
+      },
+      {
+        "path": "checks/garden-reader-repairs.test.ts",
+        "sha256": "9792b021529f33424492f4259b41a575ce31c49f470974e84d6d9356ceef9d21"
+      },
+      {
+        "path": "browser-tests/garden-adaptive-reader.spec.ts",
+        "sha256": "dd9eb522daf625770a2a44331c7d2117cb18766b13f9ae543b6fd1b766270b4e"
+      }
+    ],
+    "validation": [
+      {
+        "command": ".tools/node-v24.21.0-win-x64/node.exe node_modules/typescript/bin/tsc -p tsconfig.client.json",
+        "result": "PASS",
+        "exitCode": 0
+      },
+      {
+        "command": ".tools/node-v24.21.0-win-x64/node.exe node_modules/typescript/bin/tsc -p tsconfig.checks.json",
+        "result": "PASS",
+        "exitCode": 0
+      },
+      {
+        "command": ".tools/node-v24.21.0-win-x64/node.exe --test .cache/checks/checks/garden-reader-repairs.test.js",
+        "result": "PASS",
+        "passed": 6,
+        "failed": 0,
+        "durationMs": 105.8761
+      },
+      {
+        "command": ".tools/node-v24.21.0-win-x64/node.exe node_modules/@playwright/test/cli.js test browser-tests/garden-adaptive-reader.spec.ts --list",
+        "result": "DISCOVERY_ONLY",
+        "cases": 10
+      }
+    ],
+    "newBrowserChecks": [
+      {
+        "name": "saved child endings keep Sol voice and exact revision in library and completed-story word help",
+        "status": "NOT_RUN",
+        "boundary": "Real reader controls and request identity; synthetic unavailable audio delivery, no provider/native acoustic proof."
+      },
+      {
+        "name": "long personal notes send a compact exact-text revision only after explicit listening",
+        "status": "NOT_RUN",
+        "boundary": "500+ character notes, real request SHA-256 identity, synthetic unavailable delivery."
+      }
+    ],
+    "coordination": "Root owns successor compiled browser checks. Sartre notified source frozen and provider-free catalogue refresh needed after all peer repairs freeze.",
+    "limits": [
+      "No browser, provider or Git operation performed during this repair.",
+      "New browser assertions have only been discovered; no pass claimed.",
+      "Exact original corpus files and 45 mappings were not edited."
+    ]
+  }
+}

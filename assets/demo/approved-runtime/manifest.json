@@ -1,0 +1,212 @@
+{
+  "schema": "evidence-quest.runtime-assets.v1",
+  "assets": [
+    {
+      "id": "pip",
+      "uri": "/garden-assets/pip-05c6608c2954.glb",
+      "sha256": "05c6608c295433d004d3926cc7261b9f6d192a8c6c0a0a4e9ec636d3f195c47a",
+      "approval": "approved",
+      "hand": {
+        "wrist": "handR",
+        "palm": [
+          -0.3008999913930893,
+          0.3808000028133392,
+          0.06413896123476848
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      "rig": {
+        "joints": {
+          "root": "root",
+          "pelvis": "pelvis",
+          "spine": "spine",
+          "chest": "chest",
+          "neck": "neck",
+          "head": "head",
+          "clavicle.L": "clavicleL",
+          "upper_arm.L": "upper_armL",
+          "forearm.L": "forearmL",
+          "hand.L": "handL",
+          "thigh.L": "thighL",
+          "shin.L": "shinL",
+          "foot.L": "footL",
+          "toe.L": "toeL",
+          "clavicle.R": "clavicleR",
+          "upper_arm.R": "upper_armR",
+          "forearm.R": "forearmR",
+          "hand.R": "handR",
+          "thigh.R": "thighR",
+          "shin.R": "shinR",
+          "foot.R": "footR",
+          "toe.R": "toeR",
+          "backpack": "backpack"
+        },
+        "clips": {
+          "idle": "pip_idle",
+          "walk": "pip_walk",
+          "carryIdle": "pip_carry_idle",
+          "carryWalk": "pip_carry_walk"
+        },
+        "walkCycleDistance": 0.33333333333333337
+      },
+      "attachments": {
+        "backpack": {
+          "joint": "backpack",
+          "point": [
+            0.065,
+            0.51,
+            -0.305
+          ]
+        }
+      },
+      "sourceSha256": "61006b3597984f6e8ceca9d08a0da39cd1e5ff14b407da439672262224024905",
+      "anatomySha256": "61006b3597984f6e8ceca9d08a0da39cd1e5ff14b407da439672262224024905",
+      "approvalRecord": "evidence/integrated-checkpoint-20260916/character-form-approval.json",
+      "location": "resident",
+      "resources": {
+        "id": "pip",
+        "sourceSha256": "61006b3597984f6e8ceca9d08a0da39cd1e5ff14b407da439672262224024905",
+        "sha256": "05c6608c295433d004d3926cc7261b9f6d192a8c6c0a0a4e9ec636d3f195c47a",
+        "bytes": 1419204,
+        "attributesAndAnimationsUnchanged": true,
+        "triangleTopologyAndWindingUnchanged": true,
+        "indexEncoding": "Meshopt permits cyclic rotation within each triangle; no triangle order or winding changes",
+        "textures": [
+          {
+            "name": "Color_729ba162-0a0b-4726-a561-4e0bdd190199",
+            "size": [
+              2048,
+              2048
+            ],
+            "mimeType": "image/ktx2",
+            "encodedBytes": 687565
+          },
+          {
+            "name": "ORM_729ba162-0a0b-4726-a561-4e0bdd190199",
+            "size": [
+              2048,
+              2048
+            ],
+            "mimeType": "image/ktx2",
+            "encodedBytes": 204624
+          },
+          {
+            "name": "NormalGL_729ba162-0a0b-4726-a561-4e0bdd190199",
+            "size": [
+              2048,
+              2048
+            ],
+            "mimeType": "image/ktx2",
+            "encodedBytes": 209758
+          }
+        ],
+        "encoding": "Meshopt lossless attributes; ETC1S quality 255 compression 5; 2048px with mipmaps",
+        "source": "evidence/hands-on-20260916/pilot/revision-r2/pip/pip-review.glb"
+      }
+    },
+    {
+      "id": "grandma",
+      "uri": "/garden-assets/grandma-786f1df1f93d.glb",
+      "sha256": "786f1df1f93d495fe5376cfd948ca633a3c0556d625b4cc86304e8430a19ff8d",
+      "approval": "approved",
+      "hand": {
+        "wrist": "handR",
+        "palm": [
+          -0.34410001039505,
+          0.5537000060081482,
+          0.01769051206223904
+        ],
+        "normal": [
+          0,
+          0,
+          1
+        ]
+      },
+      "rig": {
+        "joints": {
+          "root": "root",
+          "pelvis": "pelvis",
+          "spine": "spine",
+          "chest": "chest",
+          "neck": "neck",
+          "head": "head",
+          "clavicle.L": "clavicleL",
+          "upper_arm.L": "upper_armL",
+          "forearm.L": "forearmL",
+          "hand.L": "handL",
+          "thigh.L": "thighL",
+          "shin.L": "shinL",
+          "foot.L": "footL",
+          "toe.L": "toeL",
+          "clavicle.R": "clavicleR",
+          "upper_arm.R": "upper_armR",
+          "forearm.R": "forearmR",
+          "hand.R": "handR",
+          "thigh.R": "thighR",
+          "shin.R": "shinR",
+          "foot.R": "footR",
+          "toe.R": "toeR",
+          "skirt.front": "skirtfront",
+          "skirt.back": "skirtback",
+          "skirt.left": "skirtleft",
+          "skirt.right": "skirtright"
+        },
+        "clips": {
+          "idle": "grandma_idle",
+          "walk": "grandma_walk",
+          "carryIdle": "grandma_carry_idle",
+          "carryWalk": "grandma_carry_walk"
+        },
+        "walkCycleDistance": 0.5166666666666667
+      },
+      "sourceSha256": "173164a1639606f0565aca5e8caa22d177d365d6dfb5f1c0ea360f58eeff1a67",
+      "anatomySha256": "173164a1639606f0565aca5e8caa22d177d365d6dfb5f1c0ea360f58eeff1a67",
+      "approvalRecord": "evidence/integrated-checkpoint-20260916/character-form-approval.json",
+      "location": "garden",
+      "resources": {
+        "id": "grandma",
+        "sourceSha256": "173164a1639606f0565aca5e8caa22d177d365d6dfb5f1c0ea360f58eeff1a67",
+        "sha256": "786f1df1f93d495fe5376cfd948ca633a3c0556d625b4cc86304e8430a19ff8d",
+        "bytes": 1579920,
+        "attributesAndAnimationsUnchanged": true,
+        "triangleTopologyAndWindingUnchanged": true,
+        "indexEncoding": "Meshopt permits cyclic rotation within each triangle; no triangle order or winding changes",
+        "textures": [
+          {
+            "name": "Color_c0aa77f7-c52b-4b1b-84cc-2baf66d650ea",
+            "size": [
+              2048,
+              2048
+            ],
+            "mimeType": "image/ktx2",
+            "encodedBytes": 742198
+          },
+          {
+            "name": "ORM_c0aa77f7-c52b-4b1b-84cc-2baf66d650ea",
+            "size": [
+              2048,
+              2048
+            ],
+            "mimeType": "image/ktx2",
+            "encodedBytes": 273282
+          },
+          {
+            "name": "NormalGL_c0aa77f7-c52b-4b1b-84cc-2baf66d650ea",
+            "size": [
+              2048,
+              2048
+            ],
+            "mimeType": "image/ktx2",
+            "encodedBytes": 197152
+          }
+        ],
+        "encoding": "Meshopt lossless attributes; ETC1S quality 255 compression 5; 2048px with mipmaps",
+        "source": "evidence/hands-on-20260916/pilot/revision-r2/grandma/grandma-review.glb"
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema": "evidence-quest.server-delivery-start-guard.v1",
+  "at": "2026-09-19T06:16:07.038Z",
+  "status": "FOCUSED_CHECKS_PASS",
+  "priorReview": "evidence/demo-release-20260919/server-delivery-diff-review.json",
+  "sourceSha256": "ed36058781511a3ae8b94d5ff936dee1e531f71466c060da2c020b17e32cc850",
+  "records": [
+    {
+      "file": "checks/garden-recording-demo.test.ts",
+      "bytes": 11130,
+      "sha256": "4b6a465bac101ec543623d770e43e155da9946cec55cb6518cba157e3f8a6037"
+    },
+    {
+      "file": "scripts/demo-delivery.test.mjs",
+      "bytes": 10314,
+      "sha256": "28c270851243f96a7872fe709b940bafe088d81a506942d6a3ef840eaddc7029"
+    },
+    {
+      "file": "scripts/demo-profile.mjs",
+      "bytes": 3490,
+      "sha256": "0bb868b9e59fdb491b46dca07286c53fedadbf13c5a680048dcb457372f46f07"
+    },
+    {
+      "file": "server/gardenRecordingDemo.ts",
+      "bytes": 9523,
+      "sha256": "98bb2ea53d2c3d06032c3751a4ef9e0900a966fc93c749e787b9107db48a6cb1"
+    }
+  ],
+  "changes": [
+    "start:demo disables optional Sol feedback with an explicit console notice unless EQ_GARDEN_AI_SESSION is exactly recording; authored play remains enabled.",
+    "The historical two-attempt service and historical ledger remain untouched. Current enabled demo feedback can reach only repaired $10 recording accounting.",
+    "Recording service observes complete valid ledger prefixes and its own durable appends; rollback/rewrite is rejected without replacing history."
+  ],
+  "tests": [
+    {
+      "command": "node --test scripts/demo-delivery.test.mjs",
+      "passed": 12,
+      "failed": 0,
+      "durationMs": 879.3935,
+      "scope": "Synthetic filesystem/environment fixtures; includes missing/empty/wrong-case/legacy session disable, correct recording admission and unchanged authored-off behavior."
+    },
+    {
+      "command": "node --test .cache/recording-cap-check/checks/garden-recording-demo.test.js",
+      "passed": 8,
+      "failed": 0,
+      "durationMs": 435.8431,
+      "scope": "Previously completed isolated strict TypeScript compile and synthetic-provider recording accounting contracts; server files unchanged since that pass."
+    }
+  ],
+  "limitations": [
+    "No live provider calls or live server startup.",
+    "No browser or full candidate qualification claimed.",
+    "Legacy smoke service remains historical and unchanged; the current demo profile prevents routing enabled feedback to it.",
+    "Final build/qualification must bind these current files."
+  ]
+}

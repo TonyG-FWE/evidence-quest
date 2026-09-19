@@ -1,0 +1,9089 @@
+// Generated local review only. This does not grant production approval.
+import type {VisualAssetDefinition} from './visualAsset.js';
+export const reviewAssets:Record<string,VisualAssetDefinition>={
+  "pip": {
+    "id": "pip",
+    "uri": "/review-assets/pip-2ce7a6ac9743-ktx.glb",
+    "sha256": "c277cc0e8e481bff191707ceee2af8dcac9ff2d06cb61855d47455e11d42ab93",
+    "sourceSha256": "2ce7a6ac97437cab35fdee7eb58572f775d0f934f0e5d8afe8323f47554ca740",
+    "approval": "review",
+    "resources": {
+      "source": "evidence/hands-on-20260916/pilot/pip-tripo-restart-20260917/animate/tripo-out/retarget-3-8200d5a4/model.glb",
+      "sourceSha256": "2ce7a6ac97437cab35fdee7eb58572f775d0f934f0e5d8afe8323f47554ca740",
+      "sha256": "c277cc0e8e481bff191707ceee2af8dcac9ff2d06cb61855d47455e11d42ab93",
+      "bytes": 1836992,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "resident",
+    "normalization": {
+      "scale": [
+        1.0311192423761308,
+        1.0311192423761308,
+        1.0311192423761308
+      ],
+      "rotation": [
+        0,
+        -1.5707963267948966,
+        0
+      ],
+      "offset": [
+        -0.022691698874042654,
+        0.3329439123985378,
+        -0.007916679635403961
+      ]
+    },
+    "animations": [
+      {
+        "uri": "/review-assets/pip-actions-ba054b472d69.json",
+        "sha256": "ba054b472d69408e80b7fb87241987de714299bac3bf8c8cb3c19de3ac0376a5",
+        "sourceModelSha256": "2ce7a6ac97437cab35fdee7eb58572f775d0f934f0e5d8afe8323f47554ca740"
+      }
+    ],
+    "rig": {
+      "joints": {
+        "root": "Root",
+        "rightHand": "R_Hand",
+        "leftHand": "L_Hand"
+      },
+      "clips": {
+        "idle": "preset:biped:idle",
+        "walk": "preset:biped:walk",
+        "carryIdle": "final:pip:carry",
+        "carryWalk": "final:pip:carry-walk"
+      },
+      "walkCycleDistance": 0.735,
+      "actions": {
+        "carry": {
+          "clip": "final:pip:carry"
+        },
+        "post": {
+          "clip": "final:pip:post"
+        },
+        "tie": {
+          "clip": "final:pip:tie"
+        },
+        "plant": {
+          "clip": "final:pip:plant"
+        },
+        "carry-walk": {
+          "clip": "final:pip:carry-walk"
+        }
+      }
+    },
+    "attachments": {
+      "hand": {
+        "joint": "R_Hand",
+        "point": [
+          0,
+          0.025,
+          0
+        ],
+        "space": "bone"
+      },
+      "leftHand": {
+        "joint": "L_Hand",
+        "point": [
+          0,
+          0.025,
+          0
+        ],
+        "space": "bone"
+      },
+      "backpack": {
+        "joint": "Spine02",
+        "point": [
+          -0.1745675888903058,
+          0,
+          0
+        ],
+        "space": "bone"
+      }
+    },
+    "locations": [
+      "crossing",
+      "dock",
+      "river",
+      "garden",
+      "bakery",
+      "workshop",
+      "presentation"
+    ],
+    "grounding": [
+      {
+        "mesh": "tripo_node_25e4f034-1fb9-46d8-97c2-df66f27a99bd",
+        "vertices": [
+          3943,
+          3944,
+          3945,
+          4019,
+          4020,
+          4021,
+          4244,
+          4245,
+          4246,
+          5242,
+          5243,
+          5371,
+          5372,
+          5767,
+          5768,
+          5973,
+          5974,
+          5975,
+          5988,
+          5989,
+          6322,
+          6323,
+          6324
+        ]
+      }
+    ]
+  },
+  "grandma": {
+    "id": "grandma",
+    "uri": "/review-assets/grandma-165014a7bd3e-ktx.glb",
+    "sha256": "bf621d917bb48ae4f80bb57da4eb6c201f1f4f03bbd62675c61b3c52601cb6a5",
+    "sourceSha256": "165014a7bd3e1a972b11be88c1c2a8908c03eea00ccb68d50374ad2db262d381",
+    "approval": "review",
+    "resources": {
+      "source": "evidence/hands-on-20260916/pilot/village-p2-20260917/grandma/animate/tripo-out/retarget-4-5b2a7628/model.glb",
+      "sourceSha256": "165014a7bd3e1a972b11be88c1c2a8908c03eea00ccb68d50374ad2db262d381",
+      "sha256": "bf621d917bb48ae4f80bb57da4eb6c201f1f4f03bbd62675c61b3c52601cb6a5",
+      "bytes": 1596964,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        1.289110361031836,
+        1.289110361031836,
+        1.289110361031836
+      ],
+      "rotation": [
+        0,
+        -1.5707963267948966,
+        0
+      ],
+      "offset": [
+        -0.0502607280490454,
+        0.3907566305840916,
+        -0.00925011712370935
+      ]
+    },
+    "animations": [
+      {
+        "uri": "/review-assets/grandma-actions-fd9b228af85e.json",
+        "sha256": "fd9b228af85e6c00d626f104d49f847e447c3fe3178d98e5bdb0999a18c24ec7",
+        "sourceModelSha256": "165014a7bd3e1a972b11be88c1c2a8908c03eea00ccb68d50374ad2db262d381"
+      }
+    ],
+    "rig": {
+      "joints": {
+        "root": "Root",
+        "rightHand": "R_Hand",
+        "leftHand": "L_Hand"
+      },
+      "clips": {
+        "idle": "preset:biped:idle",
+        "walk": "preset:biped:walk",
+        "carryIdle": "final:grandma:carry",
+        "carryWalk": "final:grandma:carry-walk"
+      },
+      "walkCycleDistance": 0.9099999999999999,
+      "actions": {
+        "seed": {
+          "clip": "custom:grandma:seed"
+        },
+        "plant": {
+          "clip": "final:grandma:plant"
+        },
+        "cushion": {
+          "clip": "custom:grandma:cushion"
+        },
+        "page": {
+          "clip": "custom:grandma:page"
+        },
+        "carry-walk": {
+          "clip": "final:grandma:carry-walk"
+        },
+        "turn": {
+          "clip": "preset:biped:turn"
+        },
+        "sit": {
+          "clip": "preset:biped:sit"
+        },
+        "dig": {
+          "clip": "preset:biped:dig"
+        },
+        "carry": {
+          "clip": "final:grandma:carry"
+        }
+      }
+    },
+    "attachments": {
+      "hand": {
+        "joint": "R_Hand",
+        "point": [
+          0,
+          0.025211185157170093,
+          0
+        ],
+        "space": "bone"
+      },
+      "leftHand": {
+        "joint": "L_Hand",
+        "point": [
+          0,
+          0.025211185157170093,
+          0
+        ],
+        "space": "bone"
+      },
+      "backpack": {
+        "joint": "Spine02",
+        "point": [
+          -0.13963117933201896,
+          0,
+          0
+        ],
+        "space": "bone"
+      }
+    },
+    "locations": [
+      "river",
+      "garden",
+      "presentation"
+    ],
+    "grounding": [
+      {
+        "mesh": "tripo_node_81799f5a-7f30-49d5-8fb2-28e36b3d12da",
+        "vertices": [
+          1527,
+          1528,
+          1562,
+          1563,
+          2466,
+          2467,
+          2627,
+          2715,
+          2819,
+          2820,
+          2844,
+          2852,
+          2853,
+          2874
+        ]
+      }
+    ]
+  },
+  "mara": {
+    "id": "mara",
+    "uri": "/review-assets/mara-4edc95e1a420-ktx.glb",
+    "sha256": "301037397672af71a013c8f05060ee6f7efc8d1cb2b5579e6ee051b53520d9bb",
+    "sourceSha256": "4edc95e1a420ece0e1e6c17a02f977999c84de4327027ff6143a9282564195d4",
+    "approval": "review",
+    "resources": {
+      "source": "evidence/hands-on-20260916/pilot/village-p2-20260917/mara/animate/tripo-out/retarget-6-977986fc/model.glb",
+      "sourceSha256": "4edc95e1a420ece0e1e6c17a02f977999c84de4327027ff6143a9282564195d4",
+      "sha256": "301037397672af71a013c8f05060ee6f7efc8d1cb2b5579e6ee051b53520d9bb",
+      "bytes": 1650464,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "dock",
+    "normalization": {
+      "scale": [
+        1.5015321386828584,
+        1.5015321386828584,
+        1.5015321386828584
+      ],
+      "rotation": [
+        0,
+        -1.5707963267948966,
+        0
+      ],
+      "offset": [
+        -0.03855834939042734,
+        0.4817137340650395,
+        0.011118129004154098
+      ]
+    },
+    "animations": [
+      {
+        "uri": "/review-assets/mara-actions-bf1b8cd4e408.json",
+        "sha256": "bf1b8cd4e408f8d468e2189d6429719ae675713fd83be9e02d4cd93295db90bd",
+        "sourceModelSha256": "4edc95e1a420ece0e1e6c17a02f977999c84de4327027ff6143a9282564195d4"
+      }
+    ],
+    "rig": {
+      "joints": {
+        "root": "Root",
+        "rightHand": "R_Hand",
+        "leftHand": "L_Hand"
+      },
+      "clips": {
+        "idle": "preset:biped:idle",
+        "walk": "preset:biped:walk",
+        "carryIdle": "final:mara:carry",
+        "carryWalk": "final:mara:carry-walk"
+      },
+      "walkCycleDistance": 1.0639999999999998,
+      "actions": {
+        "permission": {
+          "clip": "custom:mara:permission"
+        },
+        "tape": {
+          "clip": "custom:mara:tape"
+        },
+        "page": {
+          "clip": "custom:mara:page"
+        },
+        "carry-walk": {
+          "clip": "final:mara:carry-walk"
+        },
+        "turn": {
+          "clip": "preset:biped:turn"
+        },
+        "sit": {
+          "clip": "preset:biped:sit"
+        },
+        "carry": {
+          "clip": "final:mara:carry"
+        }
+      }
+    },
+    "attachments": {
+      "hand": {
+        "joint": "R_Hand",
+        "point": [
+          0,
+          0.02530748361692314,
+          0
+        ],
+        "space": "bone"
+      },
+      "leftHand": {
+        "joint": "L_Hand",
+        "point": [
+          0,
+          0.02530748361692314,
+          0
+        ],
+        "space": "bone"
+      },
+      "backpack": {
+        "joint": "Spine02",
+        "point": [
+          -0.11987755397489908,
+          0,
+          0
+        ],
+        "space": "bone"
+      }
+    },
+    "locations": [
+      "dock",
+      "garden",
+      "recollection",
+      "presentation"
+    ],
+    "grounding": [
+      {
+        "mesh": "tripo_node_d8487268-9c0c-4fd3-8941-e837d03472a6",
+        "vertices": [
+          241,
+          1602,
+          1826,
+          1896,
+          1906,
+          2928,
+          2960,
+          3375,
+          3396,
+          3461,
+          3471
+        ]
+      }
+    ]
+  },
+  "rina": {
+    "id": "rina",
+    "uri": "/review-assets/rina-201714e9f1e7-ktx.glb",
+    "sha256": "5bbfd536982efe9353d8d566290b8f5e32c1aace8d743aec03286817d47817b5",
+    "sourceSha256": "201714e9f1e763a675101d2f6d61927afe8d15ae4e6a99d689b3ae0556c12a45",
+    "approval": "review",
+    "resources": {
+      "source": "evidence/hands-on-20260916/pilot/village-p2-20260917/rina/animate/tripo-out/retarget-8-4c916f34/model.glb",
+      "sourceSha256": "201714e9f1e763a675101d2f6d61927afe8d15ae4e6a99d689b3ae0556c12a45",
+      "sha256": "5bbfd536982efe9353d8d566290b8f5e32c1aace8d743aec03286817d47817b5",
+      "bytes": 1807288,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        1.3702320301900168,
+        1.3702320301900168,
+        1.3702320301900168
+      ],
+      "rotation": [
+        0,
+        -1.5707963267948966,
+        0
+      ],
+      "offset": [
+        -0.024340689237487265,
+        0.3698090773677713,
+        0.006221910497191924
+      ]
+    },
+    "animations": [
+      {
+        "uri": "/review-assets/rina-actions-de8be1deed1f.json",
+        "sha256": "de8be1deed1f49d6119aff3b03686e49d0c34303c2cf282fddc6dbc291941a30",
+        "sourceModelSha256": "201714e9f1e763a675101d2f6d61927afe8d15ae4e6a99d689b3ae0556c12a45"
+      }
+    ],
+    "rig": {
+      "joints": {
+        "root": "Root",
+        "rightHand": "R_Hand",
+        "leftHand": "L_Hand"
+      },
+      "clips": {
+        "idle": "preset:biped:idle",
+        "walk": "preset:biped:walk",
+        "carryIdle": "final:rina:carry",
+        "carryWalk": "final:rina:carry-walk"
+      },
+      "walkCycleDistance": 0.9799999999999999,
+      "actions": {
+        "sack": {
+          "clip": "final:rina:sack"
+        },
+        "mix": {
+          "clip": "final:rina:mix"
+        },
+        "knead": {
+          "clip": "final:rina:knead"
+        },
+        "divide": {
+          "clip": "final:rina:divide"
+        },
+        "bread": {
+          "clip": "custom:rina:bread"
+        },
+        "carry-walk": {
+          "clip": "final:rina:carry-walk"
+        },
+        "turn": {
+          "clip": "preset:biped:turn"
+        },
+        "lift_heavy": {
+          "clip": "preset:biped:lift_heavy"
+        },
+        "carry": {
+          "clip": "final:rina:carry"
+        }
+      }
+    },
+    "attachments": {
+      "hand": {
+        "joint": "R_Hand",
+        "point": [
+          0,
+          0.025543119142490325,
+          0
+        ],
+        "space": "bone"
+      },
+      "leftHand": {
+        "joint": "L_Hand",
+        "point": [
+          0,
+          0.025543119142490325,
+          0
+        ],
+        "space": "bone"
+      },
+      "backpack": {
+        "joint": "Spine02",
+        "point": [
+          -0.1313646127328074,
+          0,
+          0
+        ],
+        "space": "bone"
+      }
+    },
+    "locations": [
+      "garden",
+      "bakery",
+      "workshop",
+      "presentation"
+    ],
+    "grounding": [
+      {
+        "mesh": "tripo_node_45ee24cd-b3e7-48dd-bc39-3385a8ee6ca9",
+        "vertices": [
+          59,
+          60,
+          61,
+          150,
+          151,
+          152,
+          362,
+          363,
+          364,
+          471,
+          472,
+          473,
+          789,
+          790,
+          5173,
+          5174,
+          5175,
+          5178,
+          5179,
+          5207,
+          5208,
+          5209,
+          5314,
+          5315,
+          5358,
+          5359
+        ]
+      }
+    ]
+  },
+  "sol": {
+    "id": "sol",
+    "uri": "/review-assets/sol-b779a8fc68e7-ktx.glb",
+    "sha256": "6a5ca8dc6d42a5814403a012f8ce9379ff1bc72548d85a099b95662e31d55b18",
+    "sourceSha256": "b779a8fc68e7a2cf4f3bdcc5f901645ea15a70123940fcc31a3be06e619e8140",
+    "approval": "review",
+    "resources": {
+      "source": "evidence/hands-on-20260916/pilot/village-p2-20260917/sol/animate/tripo-out/retarget-10-37f7f73c/model.glb",
+      "sourceSha256": "b779a8fc68e7a2cf4f3bdcc5f901645ea15a70123940fcc31a3be06e619e8140",
+      "sha256": "6a5ca8dc6d42a5814403a012f8ce9379ff1bc72548d85a099b95662e31d55b18",
+      "bytes": 1947160,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "workshop",
+    "normalization": {
+      "scale": [
+        1.5620419028641122,
+        1.5620419028641122,
+        1.5620419028641122
+      ],
+      "rotation": [
+        0,
+        -1.5707963267948966,
+        0
+      ],
+      "offset": [
+        -0.0444532783244326,
+        0.43192050790850295,
+        0.0055876081264102095
+      ]
+    },
+    "animations": [
+      {
+        "uri": "/review-assets/sol-actions-4b5ab1d25063.json",
+        "sha256": "4b5ab1d25063ae0ec7a3cf368d6fc72c0b9d8998d178507b10e58954373fe85f",
+        "sourceModelSha256": "b779a8fc68e7a2cf4f3bdcc5f901645ea15a70123940fcc31a3be06e619e8140"
+      },
+      {
+        "uri": "/review-assets/sol-roof-8ea464cd568f.json",
+        "sha256": "8ea464cd568f316f00a5460640863f515485ac559d504de0fede497692c9dfc2",
+        "sourceModelSha256": "b779a8fc68e7a2cf4f3bdcc5f901645ea15a70123940fcc31a3be06e619e8140"
+      }
+    ],
+    "rig": {
+      "joints": {
+        "root": "Root",
+        "rightHand": "R_Hand",
+        "leftHand": "L_Hand"
+      },
+      "clips": {
+        "idle": "preset:biped:idle",
+        "walk": "preset:biped:walk",
+        "carryIdle": "final:sol:carry",
+        "carryWalk": "final:sol:carry-walk"
+      },
+      "walkCycleDistance": 1.1059999999999999,
+      "actions": {
+        "tile": {
+          "clip": "final:sol:tile"
+        },
+        "tool": {
+          "clip": "final:sol:tool"
+        },
+        "cards": {
+          "clip": "custom:sol:cards"
+        },
+        "page": {
+          "clip": "custom:sol:page"
+        },
+        "carry-walk": {
+          "clip": "final:sol:carry-walk"
+        },
+        "turn": {
+          "clip": "preset:biped:turn"
+        },
+        "sit": {
+          "clip": "preset:biped:sit"
+        },
+        "carry": {
+          "clip": "final:sol:carry"
+        },
+        "climb": {
+          "clip": "final:sol:climb"
+        },
+        "roof": {
+          "clip": "final:sol:roof"
+        }
+      }
+    },
+    "attachments": {
+      "hand": {
+        "joint": "R_Hand",
+        "point": [
+          0,
+          0.025287413818780413,
+          0
+        ],
+        "space": "bone"
+      },
+      "leftHand": {
+        "joint": "L_Hand",
+        "point": [
+          0,
+          0.025287413818780413,
+          0
+        ],
+        "space": "bone"
+      },
+      "backpack": {
+        "joint": "Spine02",
+        "point": [
+          -0.1152337844906449,
+          0,
+          0
+        ],
+        "space": "bone"
+      }
+    },
+    "locations": [
+      "garden",
+      "bakery",
+      "workshop",
+      "presentation"
+    ],
+    "grounding": [
+      {
+        "mesh": "tripo_node_4aabf7e4-497f-464a-8055-3b12f8ad3b9d",
+        "vertices": [
+          3580,
+          3581,
+          3785,
+          3786,
+          3787,
+          3829,
+          3830,
+          3858,
+          3859,
+          3879,
+          3880,
+          3881,
+          5981,
+          5982,
+          5983,
+          6611,
+          6612
+        ]
+      }
+    ]
+  },
+  "boy": {
+    "id": "boy",
+    "uri": "/review-assets/boy-c416c75de56a-ktx.glb",
+    "sha256": "12bdaccb1df1cf70c4346613397ea2d270ec72f3648a20c3dfecb452243a5c0b",
+    "sourceSha256": "c416c75de56a1082e86fac9e7e8e2f0664d1badefa5ef64f44fc2d95df78a035",
+    "approval": "review",
+    "resources": {
+      "source": "evidence/hands-on-20260916/pilot/village-p2-20260917/boy/animate/tripo-out/retarget-13-305ca31c/model.glb",
+      "sourceSha256": "c416c75de56a1082e86fac9e7e8e2f0664d1badefa5ef64f44fc2d95df78a035",
+      "sha256": "12bdaccb1df1cf70c4346613397ea2d270ec72f3648a20c3dfecb452243a5c0b",
+      "bytes": 1960288,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "dock",
+    "normalization": {
+      "scale": [
+        1.0280395938420974,
+        1.0280395938420974,
+        1.0280395938420974
+      ],
+      "rotation": [
+        0,
+        -1.5707963267948966,
+        0
+      ],
+      "offset": [
+        -0.041035725079242996,
+        0.3176888376044781,
+        0.0316596127258818
+      ]
+    },
+    "animations": [
+      {
+        "uri": "/review-assets/boy-actions-20517ac2d197.json",
+        "sha256": "20517ac2d197158d4caecb29e184592f4163babf3245971e7c9dd9bfc2e6e48c",
+        "sourceModelSha256": "c416c75de56a1082e86fac9e7e8e2f0664d1badefa5ef64f44fc2d95df78a035"
+      }
+    ],
+    "rig": {
+      "joints": {
+        "root": "Root",
+        "rightHand": "R_Hand",
+        "leftHand": "L_Hand"
+      },
+      "clips": {
+        "idle": "preset:biped:idle",
+        "walk": "preset:biped:walk",
+        "carryIdle": "final:boy:carry",
+        "carryWalk": "final:boy:carry-walk"
+      },
+      "walkCycleDistance": 0.742,
+      "actions": {
+        "bird": {
+          "clip": "custom:boy:bird"
+        },
+        "wing": {
+          "clip": "custom:boy:wing"
+        },
+        "flute": {
+          "clip": "custom:boy:flute"
+        },
+        "carry-walk": {
+          "clip": "final:boy:carry-walk"
+        },
+        "turn": {
+          "clip": "preset:biped:turn"
+        },
+        "sit": {
+          "clip": "preset:biped:sit"
+        },
+        "carry": {
+          "clip": "final:boy:carry"
+        }
+      }
+    },
+    "attachments": {
+      "hand": {
+        "joint": "R_Hand",
+        "point": [
+          0,
+          0.025777217296623203,
+          0
+        ],
+        "space": "bone"
+      },
+      "leftHand": {
+        "joint": "L_Hand",
+        "point": [
+          0,
+          0.025777217296623203,
+          0
+        ],
+        "space": "bone"
+      },
+      "backpack": {
+        "joint": "Spine02",
+        "point": [
+          -0.17509053258083682,
+          0,
+          0
+        ],
+        "space": "bone"
+      }
+    },
+    "locations": [
+      "dock",
+      "garden",
+      "recollection",
+      "presentation"
+    ],
+    "grounding": [
+      {
+        "mesh": "tripo_node_ab181a68-5daf-4516-9e41-167eddce97a2",
+        "vertices": [
+          3118,
+          3119,
+          3120,
+          3606,
+          3607,
+          3632,
+          3633,
+          3941,
+          3942,
+          3943,
+          3974,
+          3975,
+          4103,
+          4104,
+          4131,
+          4132,
+          4133,
+          4226,
+          4227,
+          4233,
+          4234,
+          4267,
+          4268,
+          4269,
+          4270,
+          4271,
+          4272,
+          4287,
+          4288
+        ]
+      }
+    ]
+  },
+  "operator": {
+    "id": "operator",
+    "uri": "/review-assets/operator-e1ae6d58997c-ktx.glb",
+    "sha256": "9e96f3e847edf93914ac9da4b6615235deeaefcd6ae15a65321dcdcc3353815f",
+    "sourceSha256": "e1ae6d58997cf569de12c65b365a2b48dc3e84381d6afd66468f43bda5740eef",
+    "approval": "review",
+    "resources": {
+      "source": "evidence/hands-on-20260916/pilot/village-p2-20260917/operator/animate/tripo-out/retarget-15-3bc03f55/model.glb",
+      "sourceSha256": "e1ae6d58997cf569de12c65b365a2b48dc3e84381d6afd66468f43bda5740eef",
+      "sha256": "9e96f3e847edf93914ac9da4b6615235deeaefcd6ae15a65321dcdcc3353815f",
+      "bytes": 2023088,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "dock",
+    "normalization": {
+      "scale": [
+        1.5361465010548787,
+        1.5361465010548787,
+        1.5361465010548787
+      ],
+      "rotation": [
+        0,
+        -1.5707963267948966,
+        0
+      ],
+      "offset": [
+        -0.04432995630599368,
+        0.44073177892557547,
+        0.036618756815316095
+      ]
+    },
+    "animations": [
+      {
+        "uri": "/review-assets/operator-actions-8d887b84af8f.json",
+        "sha256": "8d887b84af8fdd9fa441d2aaecf2127c2045445cc45cce7f8ea5a203cd02ff13",
+        "sourceModelSha256": "e1ae6d58997cf569de12c65b365a2b48dc3e84381d6afd66468f43bda5740eef"
+      }
+    ],
+    "rig": {
+      "joints": {
+        "root": "Root",
+        "rightHand": "R_Hand",
+        "leftHand": "L_Hand"
+      },
+      "clips": {
+        "idle": "preset:biped:idle",
+        "walk": "preset:biped:walk",
+        "carryIdle": "final:operator:carry",
+        "carryWalk": "final:operator:carry-walk"
+      },
+      "walkCycleDistance": 1.099,
+      "actions": {
+        "assist": {
+          "clip": "custom:operator:assist"
+        },
+        "direction": {
+          "clip": "custom:operator:direction"
+        },
+        "turn": {
+          "clip": "preset:biped:turn"
+        },
+        "greet_01": {
+          "clip": "preset:biped:greet_01"
+        },
+        "carry": {
+          "clip": "final:operator:carry"
+        },
+        "carry-walk": {
+          "clip": "final:operator:carry-walk"
+        }
+      }
+    },
+    "attachments": {
+      "hand": {
+        "joint": "R_Hand",
+        "point": [
+          0,
+          0.02555094841087543,
+          0
+        ],
+        "space": "bone"
+      },
+      "leftHand": {
+        "joint": "L_Hand",
+        "point": [
+          0,
+          0.02555094841087543,
+          0
+        ],
+        "space": "bone"
+      },
+      "backpack": {
+        "joint": "Spine02",
+        "point": [
+          -0.11717632392248603,
+          0,
+          0
+        ],
+        "space": "bone"
+      }
+    },
+    "locations": [
+      "dock"
+    ],
+    "grounding": [
+      {
+        "mesh": "tripo_node_04b22b11-8c3b-4b0e-ac9e-39e6a84abd82",
+        "vertices": [
+          1886,
+          1887,
+          2157,
+          2158,
+          2159,
+          2921,
+          2922,
+          3142,
+          3143,
+          3144,
+          3163,
+          3164,
+          3165,
+          3170,
+          3171,
+          5753,
+          5754,
+          5755,
+          5982,
+          5983,
+          5984
+        ]
+      }
+    ]
+  },
+  "passenger": {
+    "id": "passenger",
+    "uri": "/review-assets/passenger-01b6d51e341a-ktx.glb",
+    "sha256": "75e57de5564cf113d2f106ac80daa09a662d653b39c3d217ca717175f121fc64",
+    "sourceSha256": "01b6d51e341a394890c1ebe122c8a2f25262dcba170d76ddb96949adfcb642b8",
+    "approval": "review",
+    "resources": {
+      "source": "evidence/hands-on-20260916/pilot/village-p2-20260917/passenger/animate/tripo-out/retarget-17-b6425913/model.glb",
+      "sourceSha256": "01b6d51e341a394890c1ebe122c8a2f25262dcba170d76ddb96949adfcb642b8",
+      "sha256": "75e57de5564cf113d2f106ac80daa09a662d653b39c3d217ca717175f121fc64",
+      "bytes": 1536132,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "dock",
+    "normalization": {
+      "scale": [
+        1.4474032967264778,
+        1.4474032967264778,
+        1.4474032967264778
+      ],
+      "rotation": [
+        0,
+        -1.5707963267948966,
+        0
+      ],
+      "offset": [
+        -0.04094606113088277,
+        0.4479864142218659,
+        0.014648296282743195
+      ]
+    },
+    "animations": [
+      {
+        "uri": "/review-assets/passenger-actions-922a5af2bd9c.json",
+        "sha256": "922a5af2bd9c37611027528e2cc1f343153675582deb2b0581284f1a0e430235",
+        "sourceModelSha256": "01b6d51e341a394890c1ebe122c8a2f25262dcba170d76ddb96949adfcb642b8"
+      }
+    ],
+    "rig": {
+      "joints": {
+        "root": "Root",
+        "rightHand": "R_Hand",
+        "leftHand": "L_Hand"
+      },
+      "clips": {
+        "idle": "preset:biped:idle",
+        "walk": "preset:biped:walk",
+        "carryIdle": "final:passenger:carry",
+        "carryWalk": "final:passenger:carry-walk"
+      },
+      "walkCycleDistance": 1.0499999999999998,
+      "actions": {
+        "listen": {
+          "clip": "custom:passenger:listen"
+        },
+        "duet": {
+          "clip": "custom:passenger:duet"
+        },
+        "seat-and-stand": {
+          "clip": "custom:passenger:seat-and-stand"
+        },
+        "turn": {
+          "clip": "preset:biped:turn"
+        },
+        "sit": {
+          "clip": "preset:biped:sit"
+        },
+        "carry": {
+          "clip": "final:passenger:carry"
+        },
+        "carry-walk": {
+          "clip": "final:passenger:carry-walk"
+        }
+      }
+    },
+    "attachments": {
+      "hand": {
+        "joint": "R_Hand",
+        "point": [
+          0,
+          0.025908466620748995,
+          0
+        ],
+        "space": "bone"
+      },
+      "leftHand": {
+        "joint": "L_Hand",
+        "point": [
+          0,
+          0.025908466620748995,
+          0
+        ],
+        "space": "bone"
+      },
+      "backpack": {
+        "joint": "Spine02",
+        "point": [
+          -0.12436063977959516,
+          0,
+          0
+        ],
+        "space": "bone"
+      }
+    },
+    "locations": [
+      "dock",
+      "garden",
+      "presentation"
+    ],
+    "grounding": [
+      {
+        "mesh": "tripo_node_912830a9-5b03-414d-b6f0-a403383bca03",
+        "vertices": [
+          476,
+          716,
+          1054,
+          1522,
+          1705,
+          1706,
+          1787,
+          1788,
+          1805,
+          1817,
+          1981,
+          3032
+        ]
+      }
+    ]
+  },
+  "jo": {
+    "id": "jo",
+    "uri": "/review-assets/jo-75d0fd33314e-ktx.glb",
+    "sha256": "8fcca0069bb230cd0d53b6a0f51c6500a904bde635bcaf199bd8d788c0bdc2ec",
+    "sourceSha256": "75d0fd33314efecdfc857b346cbdcd4b7e3c6f3a25a7be5b4da25638c0fbc644",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/cartoon+girl+3d+model.glb",
+      "sourceSha256": "75d0fd33314efecdfc857b346cbdcd4b7e3c6f3a25a7be5b4da25638c0fbc644",
+      "sha256": "8fcca0069bb230cd0d53b6a0f51c6500a904bde635bcaf199bd8d788c0bdc2ec",
+      "bytes": 11249232,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "studio",
+    "normalization": {
+      "scale": [
+        1.1649261383479608,
+        1.1649261383479608,
+        1.1649261383479608
+      ],
+      "rotation": [
+        0,
+        -1.5707963267948966,
+        0
+      ],
+      "offset": [
+        -0.0002072905608872938,
+        0.004975092834708555,
+        0.0012764989556641598
+      ]
+    },
+    "animations": [],
+    "rig": {
+      "joints": {
+        "root": "Root",
+        "rightHand": "R_Hand",
+        "leftHand": "L_Hand"
+      },
+      "clips": {
+        "idle": "fold_arms.001",
+        "walk": "swagger.001",
+        "carryIdle": "fold_arms.001",
+        "carryWalk": "swagger.001"
+      },
+      "walkCycleDistance": 0.819,
+      "actions": {}
+    },
+    "attachments": {
+      "hand": {
+        "joint": "R_Hand",
+        "point": [
+          0,
+          0.025,
+          0
+        ],
+        "space": "bone"
+      },
+      "leftHand": {
+        "joint": "L_Hand",
+        "point": [
+          0,
+          0.025,
+          0
+        ],
+        "space": "bone"
+      },
+      "backpack": {
+        "joint": "Spine02",
+        "point": [
+          -0.15451623418396884,
+          0,
+          0
+        ],
+        "space": "bone"
+      }
+    },
+    "locations": [
+      "studio"
+    ],
+    "reference": {
+      "id": "jo",
+      "state": "rigged character",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/jo-sparkfest-r3.png",
+          "sha256": "1c65ab60e38c9f6ee2467af36327ed19b7c3709cefcb249ac8b9fe35867b8038",
+          "role": "master"
+        }
+      ]
+    },
+    "components": {
+      "referenceParts": [
+        "modeled face and hair",
+        "two brown hair buns",
+        "separate limbs and empty hands",
+        "coral fabric shirt",
+        "teal fabric overalls",
+        "forward cream shoes"
+      ]
+    },
+    "grounding": [
+      {
+        "mesh": "tripo_node_ff99882b-190e-4544-8668-5d333030b64a",
+        "vertices": [
+          87,
+          88,
+          3354,
+          3355,
+          3361,
+          3362,
+          3381,
+          3382,
+          3592,
+          3593,
+          3594,
+          3595,
+          3596,
+          6991,
+          6992,
+          6993,
+          7050,
+          7051,
+          10375,
+          10376,
+          10383,
+          10384,
+          10409,
+          10410,
+          10595,
+          10596,
+          10597,
+          10598,
+          10599,
+          10600
+        ]
+      }
+    ]
+  },
+  "card": {
+    "id": "card",
+    "uri": "/review-assets/card-040be114e54c-ktx.glb",
+    "sha256": "c37b54c41d5d1224dc2123c4f8b12b36f2a3e8bc93fd58ff651ae264ca302a14",
+    "sourceSha256": "040be114e54ce2f215d57d528b7e3cbe594d7a68a52329715d6243a185c874c4",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/blank+card+3d+model (1).glb",
+      "sourceSha256": "040be114e54ce2f215d57d528b7e3cbe594d7a68a52329715d6243a185c874c4",
+      "sha256": "c37b54c41d5d1224dc2123c4f8b12b36f2a3e8bc93fd58ff651ae264ca302a14",
+      "bytes": 1992844,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "studio",
+    "normalization": {
+      "scale": [
+        0.2801367855398144,
+        0.2801367855398144,
+        0.2801367855398144
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "thin smooth cardstock",
+        "separate flat printed village artwork",
+        "plain back"
+      ]
+    },
+    "locations": [
+      "dock",
+      "garden",
+      "bakery",
+      "workshop",
+      "presentation"
+    ],
+    "reference": {
+      "id": "sparkfest-cards",
+      "state": "sparkfest-card-blank",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/sparkfest-cards-r1.png",
+          "sha256": "54835fb76dca98c85b8203597c2896de2eb7433ae0e54f2a15a41002bb724df0",
+          "role": "master"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/04-Sparkfest-Functional-Objects/P2/Sparkfest--sparkfest-card-blank.png",
+          "sha256": "f60da988119c67335e2285d5815a27c0ff1ead4b4e7f22ba570041091bde964b",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "cards": {
+    "id": "cards",
+    "uri": "/review-assets/cards-5bc79c14eaa8-ktx.glb",
+    "sha256": "ce825b5621f03d0d1c4aba8d4c392f9f546b4c954f179c6bfb7578fcbbcd8d23",
+    "sourceSha256": "5bc79c14eaa848e302cf821a634656fb8112f63caeeec61f130ad3308cbcda75",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/blank+card+set+3d+model.glb",
+      "sourceSha256": "5bc79c14eaa848e302cf821a634656fb8112f63caeeec61f130ad3308cbcda75",
+      "sha256": "ce825b5621f03d0d1c4aba8d4c392f9f546b4c954f179c6bfb7578fcbbcd8d23",
+      "bytes": 2454880,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "workshop",
+    "normalization": {
+      "scale": [
+        0.32015632633121643,
+        0.32015632633121643,
+        0.32015632633121643
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "pages",
+        "page curl",
+        "simple binding"
+      ]
+    },
+    "locations": [
+      "studio"
+    ],
+    "reference": {
+      "id": "manuscript",
+      "state": "stack and copies",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/manuscript-r1.png",
+          "sha256": "7298ae4d9cf82ed53ec9ad7f97268394ec5c39299ab575884a22d1291070423e",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "notebook": {
+    "id": "notebook",
+    "uri": "/review-assets/notebook-0aeee7827537-ktx.glb",
+    "sha256": "f38158b9ea2b4de7cb352b9ddc67a3d248e1956f60c5436162dc6e5583e4484a",
+    "sourceSha256": "0aeee7827537328b7eaab4da77fcd2988739e32d5f932cb19f68171199081756",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/blue+notebook+3d+model (1).glb",
+      "sourceSha256": "0aeee7827537328b7eaab4da77fcd2988739e32d5f932cb19f68171199081756",
+      "sha256": "f38158b9ea2b4de7cb352b9ddc67a3d248e1956f60c5436162dc6e5583e4484a",
+      "bytes": 3179972,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "studio",
+    "normalization": {
+      "scale": [
+        0.4084003240481087,
+        0.4084003240481087,
+        0.4084003240481087
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0.000457763671875,
+        0,
+        0.000030517578125
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "clothbound cover",
+        "ordinary paper pages",
+        "bound spine",
+        "separate miniature village insert"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "storybook",
+      "state": "storybook-empty",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/storybook-sparkfest-r3.png",
+          "sha256": "8c248807acbc4751db68dba69d2602011bfb8c47573ef3fed402f0859c684a34",
+          "role": "master"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/04-Sparkfest-Functional-Objects/P2/Sparkfest--storybook-empty.png",
+          "sha256": "a5fa479195e7951dcb73d6e7266219753444b28397a4b7304f353a5fe02af092",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "knot": {
+    "id": "knot",
+    "uri": "/review-assets/knot-b068d4f58c07-ktx.glb",
+    "sha256": "903740f4edd550f0a5bcb8b989c4996511dd8536ae7ea5643cd94f0711b61a67",
+    "sourceSha256": "b068d4f58c074de62b4714520aef155fcc6739f1d5704c5418fc6a1c6db442af",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/braided+rope+3d+model (4).glb",
+      "sourceSha256": "b068d4f58c074de62b4714520aef155fcc6739f1d5704c5418fc6a1c6db442af",
+      "sha256": "903740f4edd550f0a5bcb8b989c4996511dd8536ae7ea5643cd94f0711b61a67",
+      "bytes": 3184640,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "crossing",
+    "normalization": {
+      "scale": [
+        0.17008304836345872,
+        0.17008304836345872,
+        0.17008304836345872
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "continuous rope",
+        "loose coil",
+        "free tip",
+        "tied loop"
+      ]
+    },
+    "locations": [
+      "crossing"
+    ],
+    "reference": {
+      "id": "rope",
+      "state": "rope-knot",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/rope-r1.png",
+          "sha256": "39d187c0f6ea654a9b1fa5c697852d3827a778ce1e1b5a1e72369d40d4905eb4",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/rope-states-r1.png",
+          "sha256": "6bd2f8eb88ac668c4c1ee5d81e6069e4623c8d0b8bec862ff9dc2e5e32fd4cf7",
+          "role": "wrap-and-knot-states"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--rope-knot.png",
+          "sha256": "97d0ca1d4d3332f39bf55bb999931703364c1c927d57468b7cbeae46e283520f",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "rope-straight": {
+    "id": "rope-straight",
+    "uri": "/review-assets/rope-straight-cb0de12c812d-ktx.glb",
+    "sha256": "ddac30ea73e96bc53ed8404f65a392858d4dceb576169937b29e19085453d6af",
+    "sourceSha256": "cb0de12c812d3e5d38a94c7e4870f4ba0845ceceb9957e54338d62f22c5a0e5c",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/braided+rope+3d+model (3).glb",
+      "sourceSha256": "cb0de12c812d3e5d38a94c7e4870f4ba0845ceceb9957e54338d62f22c5a0e5c",
+      "sha256": "ddac30ea73e96bc53ed8404f65a392858d4dceb576169937b29e19085453d6af",
+      "bytes": 3545096,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "crossing",
+    "normalization": {
+      "scale": [
+        1.4507083536883243,
+        1.4507083536883243,
+        1.4507083536883243
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "continuous rope",
+        "loose coil",
+        "free tip",
+        "tied loop"
+      ]
+    },
+    "locations": [
+      "crossing"
+    ],
+    "reference": {
+      "id": "rope",
+      "state": "rope-straight",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/rope-r1.png",
+          "sha256": "39d187c0f6ea654a9b1fa5c697852d3827a778ce1e1b5a1e72369d40d4905eb4",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/rope-states-r1.png",
+          "sha256": "6bd2f8eb88ac668c4c1ee5d81e6069e4623c8d0b8bec862ff9dc2e5e32fd4cf7",
+          "role": "wrap-and-knot-states"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--rope-straight.png",
+          "sha256": "cbe8f531bf59d8e356329cceb846d57b60b1ad65e910d9d592dac116bbb7d018",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "rope-coil": {
+    "id": "rope-coil",
+    "uri": "/review-assets/rope-coil-ce23d7b096b4-ktx.glb",
+    "sha256": "fae4be2371160481d401aff1aba362aa4f65a32277d35a0763b344935fd1ad49",
+    "sourceSha256": "ce23d7b096b4a349cfc530f4dc09459c0b4bff857ed57434493d97b24d78260d",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/braided+rope+3d+model.glb",
+      "sourceSha256": "ce23d7b096b4a349cfc530f4dc09459c0b4bff857ed57434493d97b24d78260d",
+      "sha256": "fae4be2371160481d401aff1aba362aa4f65a32277d35a0763b344935fd1ad49",
+      "bytes": 3128108,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "crossing",
+    "normalization": {
+      "scale": [
+        0.2501221299462628,
+        0.2501221299462628,
+        0.2501221299462628
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "continuous rope",
+        "loose coil",
+        "free tip",
+        "tied loop"
+      ]
+    },
+    "locations": [
+      "crossing"
+    ],
+    "reference": {
+      "id": "rope",
+      "state": "loose coil",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/rope-r1.png",
+          "sha256": "39d187c0f6ea654a9b1fa5c697852d3827a778ce1e1b5a1e72369d40d4905eb4",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/rope-states-r1.png",
+          "sha256": "6bd2f8eb88ac668c4c1ee5d81e6069e4623c8d0b8bec862ff9dc2e5e32fd4cf7",
+          "role": "wrap-and-knot-states"
+        }
+      ]
+    }
+  },
+  "dough-kneaded": {
+    "id": "dough-kneaded",
+    "uri": "/review-assets/dough-kneaded-6e039d9b801d-ktx.glb",
+    "sha256": "04654036056ccfdc635e89801a3497002984ebf5ea436dfb45ca7b485ae41e2e",
+    "sourceSha256": "6e039d9b801ddf6f8e01dfae4e863c25ad9932c689b1ea561f38693271e5666d",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/bread+dough+3d+model (1).glb",
+      "sourceSha256": "6e039d9b801ddf6f8e01dfae4e863c25ad9932c689b1ea561f38693271e5666d",
+      "sha256": "04654036056ccfdc635e89801a3497002984ebf5ea436dfb45ca7b485ae41e2e",
+      "bytes": 2781584,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        0.4602247191011236,
+        0.4602247191011236,
+        0.4602247191011236
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "whole dough",
+        "kneading surface",
+        "later portions"
+      ]
+    },
+    "locations": [
+      "bakery"
+    ],
+    "reference": {
+      "id": "dough",
+      "state": "kneaded dough",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/dough-r1.png",
+          "sha256": "8e080dd854443db4031d4ac64c92e091db412f88f78d25a009d5b53cc5626132",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/dough-states-r1.png",
+          "sha256": "c8821518d3a1cc27318b63d54594ffc9c2ac57c7fbd2fea71e878567c524d962",
+          "role": "kneading-and-division"
+        }
+      ]
+    }
+  },
+  "loaf-3": {
+    "id": "loaf-3",
+    "uri": "/review-assets/loaf-3-ecc77fdf2b23-ktx.glb",
+    "sha256": "1d641f536e41c257b8b793d33ae0656ef76cadb456ee98ffdae19182fef3b68f",
+    "sourceSha256": "ecc77fdf2b233f04e1b5f4a0c9ea502de6cd2b23da9bf61dc87095dcd775d729",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/bread+loaf+3d+model (3).glb",
+      "sourceSha256": "ecc77fdf2b233f04e1b5f4a0c9ea502de6cd2b23da9bf61dc87095dcd775d729",
+      "sha256": "1d641f536e41c257b8b793d33ae0656ef76cadb456ee98ffdae19182fef3b68f",
+      "bytes": 4416672,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        0.42,
+        0.42,
+        0.42
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "loaf",
+        "score marks",
+        "crust",
+        "crumb"
+      ]
+    },
+    "locations": [
+      "bakery"
+    ],
+    "reference": {
+      "id": "bread",
+      "state": "bread-underdone",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bread-r1.png",
+          "sha256": "1677a10de05803c181c9136a73bab2fc3049141da76472845cbc98ff229d69ee",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bread-states-r1.png",
+          "sha256": "cdce9ab8a1cf2b2323dbceaf2bf856952cce19f355798a9e338f1d5b900a4651",
+          "role": "bake-and-recovery-states"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--bread-underdone.png",
+          "sha256": "8bed04f1c86c9b9c193c2d12506949e4d6139840629dd2b579c96950ae934022",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "loaf-4": {
+    "id": "loaf-4",
+    "uri": "/review-assets/loaf-4-9a501ced67c1-ktx.glb",
+    "sha256": "61b8092182adcc0cff2ca205355067a8c5e9ba484f86267ea30a8d4cf5ba5859",
+    "sourceSha256": "9a501ced67c16822ccb327493df6cff9ee3fa4ea87b1b4cee8c04f5981286100",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/bread+loaf+3d+model (4).glb",
+      "sourceSha256": "9a501ced67c16822ccb327493df6cff9ee3fa4ea87b1b4cee8c04f5981286100",
+      "sha256": "61b8092182adcc0cff2ca205355067a8c5e9ba484f86267ea30a8d4cf5ba5859",
+      "bytes": 3130424,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        0.4206161369193154,
+        0.4206161369193154,
+        0.4206161369193154
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        -0.00048828125
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "loaf",
+        "score marks",
+        "crust",
+        "crumb"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "bread",
+      "state": "bread-recovered",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bread-r1.png",
+          "sha256": "1677a10de05803c181c9136a73bab2fc3049141da76472845cbc98ff229d69ee",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bread-states-r1.png",
+          "sha256": "cdce9ab8a1cf2b2323dbceaf2bf856952cce19f355798a9e338f1d5b900a4651",
+          "role": "bake-and-recovery-states"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/OPTIONAL-APPEARANCE-REFERENCES/03-Village-Functional-Objects/Reference-Only/Village--bread-recovered.png",
+          "sha256": "3f6d127f6edf17014794ff3b4e64af993480b7b65169bd298899b2d72b612fe6",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "loaf": {
+    "id": "loaf",
+    "uri": "/review-assets/loaf-1daf67c7c219-ktx.glb",
+    "sha256": "47f2a92f5f438743f4373355c48266a38dc52c1f09febebfa4c06cfbca762e1b",
+    "sourceSha256": "1daf67c7c21997a1d0ae72415a96195093f174d67bec894cd9f8e332f737ceb8",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/bread+loaf+3d+model.glb",
+      "sourceSha256": "1daf67c7c21997a1d0ae72415a96195093f174d67bec894cd9f8e332f737ceb8",
+      "sha256": "47f2a92f5f438743f4373355c48266a38dc52c1f09febebfa4c06cfbca762e1b",
+      "bytes": 3218216,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        0.42020517830972154,
+        0.42020517830972154,
+        0.42020517830972154
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "loaf",
+        "score marks",
+        "crust",
+        "crumb"
+      ]
+    },
+    "locations": [
+      "garden",
+      "bakery",
+      "workshop",
+      "presentation"
+    ],
+    "reference": {
+      "id": "bread",
+      "state": "well baked loaf",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bread-r1.png",
+          "sha256": "1677a10de05803c181c9136a73bab2fc3049141da76472845cbc98ff229d69ee",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bread-states-r1.png",
+          "sha256": "cdce9ab8a1cf2b2323dbceaf2bf856952cce19f355798a9e338f1d5b900a4651",
+          "role": "bake-and-recovery-states"
+        }
+      ]
+    }
+  },
+  "cattail": {
+    "id": "cattail",
+    "uri": "/review-assets/cattail-a140eef62257-ktx.glb",
+    "sha256": "9a9610b1348bf7954244f5299b1aa8c96b2d7005b49d8566aecceae8871d94a5",
+    "sourceSha256": "a140eef622579ea07a91df120dbf46ee5255e7baaf6cd450bbfbf629f6d4bc4c",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/cattail+plant+3d+model.glb",
+      "sourceSha256": "a140eef622579ea07a91df120dbf46ee5255e7baaf6cd450bbfbf629f6d4bc4c",
+      "sha256": "9a9610b1348bf7954244f5299b1aa8c96b2d7005b49d8566aecceae8871d94a5",
+      "bytes": 2948808,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "river",
+    "normalization": {
+      "scale": [
+        0.7003419638495358,
+        0.7003419638495358,
+        0.7003419638495358
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "stems",
+        "cattails",
+        "leaves",
+        "base"
+      ]
+    },
+    "locations": [
+      "crossing",
+      "dock",
+      "river",
+      "garden",
+      "bakery",
+      "workshop"
+    ],
+    "reference": {
+      "id": "reeds",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/reeds-r1.png",
+          "sha256": "367500ff02b34233fd3fe3576e788cca66c92ceea95f964b5776c366cb545b72",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "plate": {
+    "id": "plate",
+    "uri": "/review-assets/plate-15efbb274a2b-ktx.glb",
+    "sha256": "a9abf605e8fc45b10321cd06ecdd62329114d26083497f0049db021fc14caf44",
+    "sourceSha256": "15efbb274a2b694b512932263eaf2b47885f9080a2dd7282f89106ee51572100",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/ceramic+bowl+3d+model (2).glb",
+      "sourceSha256": "15efbb274a2b694b512932263eaf2b47885f9080a2dd7282f89106ee51572100",
+      "sha256": "a9abf605e8fc45b10321cd06ecdd62329114d26083497f0049db021fc14caf44",
+      "bytes": 2735972,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        0.370180752320469,
+        0.370180752320469,
+        0.370180752320469
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "plate",
+        "cup",
+        "open handle",
+        "spoon"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "tableware",
+      "state": "plate",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/tableware-r1.png",
+          "sha256": "2412546a861784264d3662c080e8326ea15c1d5acc9a77fbe15eac2469571b76",
+          "role": "master"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--plate.png",
+          "sha256": "8b021a03484f013930e27036ceb7d4337e6c48dcfcdb47ddcefe1384b54d7dca",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "bowl": {
+    "id": "bowl",
+    "uri": "/review-assets/bowl-08aa74859578-ktx.glb",
+    "sha256": "40a4e34fbeaa5f28e5cec83413bf62f0b3769b707b7cd2f37ab92efd1f9b8ba4",
+    "sourceSha256": "08aa748595781d53a1fcc30b350f9a0048e3f3d5da6e056e049a714083f3796c",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/ceramic+bowl+3d+model.glb",
+      "sourceSha256": "08aa748595781d53a1fcc30b350f9a0048e3f3d5da6e056e049a714083f3796c",
+      "sha256": "40a4e34fbeaa5f28e5cec83413bf62f0b3769b707b7cd2f37ab92efd1f9b8ba4",
+      "bytes": 2609344,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        0.4702296042989741,
+        0.4702296042989741,
+        0.4702296042989741
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "bowl wall",
+        "rim",
+        "interior",
+        "foot"
+      ]
+    },
+    "locations": [
+      "bakery"
+    ],
+    "reference": {
+      "id": "mixing-bowl",
+      "state": "empty bowl",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/mixing-bowl-r1.png",
+          "sha256": "bc5bab77300293c9834d507c1bbad06c534267cc1d74bd96d89b586c09798dfb",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "cup": {
+    "id": "cup",
+    "uri": "/review-assets/cup-e6982ae30012-ktx.glb",
+    "sha256": "d22319d4a0ef52cbec6d95810ca59d07cd8f27aba8ce3a9aba40069eead9b4f2",
+    "sourceSha256": "e6982ae300123977eec784bf9258dcb83cfb09eb6ffccecf7d97ffa4b4f01118",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/ceramic+cup+3d+model (1).glb",
+      "sourceSha256": "e6982ae300123977eec784bf9258dcb83cfb09eb6ffccecf7d97ffa4b4f01118",
+      "sha256": "d22319d4a0ef52cbec6d95810ca59d07cd8f27aba8ce3a9aba40069eead9b4f2",
+      "bytes": 2941092,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "studio",
+    "normalization": {
+      "scale": [
+        0.19009281875915976,
+        0.19009281875915976,
+        0.19009281875915976
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "plate",
+        "cup",
+        "open handle",
+        "spoon"
+      ]
+    },
+    "locations": [
+      "studio"
+    ],
+    "reference": {
+      "id": "tableware",
+      "state": "cup",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/tableware-r1.png",
+          "sha256": "2412546a861784264d3662c080e8326ea15c1d5acc9a77fbe15eac2469571b76",
+          "role": "master"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--cup.png",
+          "sha256": "1be15122b542acbabeb1022739c3241ad7b453f84935400b1d5cf1e8b5592314",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "dishware": {
+    "id": "dishware",
+    "uri": "/review-assets/dishware-3fd5a865d673-ktx.glb",
+    "sha256": "cb82f745ccbb9ca5aa3ddf245c44778a16dad97a0c7c5e5c41f1b26a022a0f2d",
+    "sourceSha256": "3fd5a865d67337638c06a4489cd58bf5302019c594faa0968e4229ede5d27b79",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/ceramic+dishware+3d+model.glb",
+      "sourceSha256": "3fd5a865d67337638c06a4489cd58bf5302019c594faa0968e4229ede5d27b79",
+      "sha256": "cb82f745ccbb9ca5aa3ddf245c44778a16dad97a0c7c5e5c41f1b26a022a0f2d",
+      "bytes": 2858608,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "studio",
+    "normalization": {
+      "scale": [
+        0.40019540791402053,
+        0.40019540791402053,
+        0.40019540791402053
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "plate",
+        "cup",
+        "open handle",
+        "spoon"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "tableware",
+      "state": "place setting",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/tableware-r1.png",
+          "sha256": "2412546a861784264d3662c080e8326ea15c1d5acc9a77fbe15eac2469571b76",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "pitcher": {
+    "id": "pitcher",
+    "uri": "/review-assets/pitcher-d146fd4369b2-ktx.glb",
+    "sha256": "6629b2e09efd1ff87ad70ba882cd714621e505e2973657357238961a083086c6",
+    "sourceSha256": "d146fd4369b287a04d67a294fefbb9e98c7a5f497e8b18bee0e35c3ed2ac54c2",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/ceramic+pitcher+3d+model.glb",
+      "sourceSha256": "d146fd4369b287a04d67a294fefbb9e98c7a5f497e8b18bee0e35c3ed2ac54c2",
+      "sha256": "6629b2e09efd1ff87ad70ba882cd714621e505e2973657357238961a083086c6",
+      "bytes": 2449196,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        0.3501709819247679,
+        0.3501709819247679,
+        0.3501709819247679
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "hollow vessel",
+        "pouring lip",
+        "separate open handle",
+        "flat base"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "ceramic-jug",
+      "state": "filled jug",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/ceramic-jug-r1.png",
+          "sha256": "8e8f7b3f123243b5c529ec52d55136358c16cc0a039f05a4f27f3f74528d973d",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "lamp": {
+    "id": "lamp",
+    "uri": "/review-assets/lamp-920611758044-ktx.glb",
+    "sha256": "1df32895e3f7e630529d2dc2889c0dc7b8ac26662dc600d4e40895d91f40e53d",
+    "sourceSha256": "9206117580448bbfa2304f0efe6342d32912b89f9df5dc55847971be38c8f87b",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/ceramic+wall+lamp+3d+model.glb",
+      "sourceSha256": "9206117580448bbfa2304f0efe6342d32912b89f9df5dc55847971be38c8f87b",
+      "sha256": "1df32895e3f7e630529d2dc2889c0dc7b8ac26662dc600d4e40895d91f40e53d",
+      "bytes": 2795704,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "studio",
+    "normalization": {
+      "scale": [
+        0.3801856375183195,
+        0.3801856375183195,
+        0.3801856375183195
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "wall plate",
+        "curved support",
+        "metal shade",
+        "warm lamp"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "wall-lamp",
+      "state": "unlit",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/wall-lamp-r1.png",
+          "sha256": "ad138a6d4f097105d6041e1201a584a3e92aa45f4fe273daecb24f4102e40d63",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "oven": {
+    "id": "oven",
+    "uri": "/review-assets/oven-92403a656236-ktx.glb",
+    "sha256": "5b019fb6f8dd7395902615cd1c6d9884dac65285f4f0bd60f4cc98ecc737d6d8",
+    "sourceSha256": "92403a656236d48119f67937a9aa1808ad58bacec863b57dfde46a94e71b415c",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/clay+brick+oven+3d+model.glb",
+      "sourceSha256": "92403a656236d48119f67937a9aa1808ad58bacec863b57dfde46a94e71b415c",
+      "sha256": "5b019fb6f8dd7395902615cd1c6d9884dac65285f4f0bd60f4cc98ecc737d6d8",
+      "bytes": 2984864,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        1.4507083536883243,
+        1.4507083536883243,
+        1.4507083536883243
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "brick shell",
+        "chamber",
+        "mouth",
+        "hearth",
+        "flue",
+        "embers"
+      ]
+    },
+    "locations": [
+      "bakery"
+    ],
+    "reference": {
+      "id": "oven",
+      "state": "open chamber",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/oven-r1.png",
+          "sha256": "8b4f4c1b6040a8e3d3b75bdb9733b27506b13879aca177c899e5e48269bf66fd",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "flour-wet": {
+    "id": "flour-wet",
+    "uri": "/review-assets/flour-wet-1505e1bbbe2b-ktx.glb",
+    "sha256": "d53e28713939f47cc6bb86f1083c321c691fca836042a2c3b26d90ed57824db7",
+    "sourceSha256": "1505e1bbbe2bc3fc1ca2d486ed00a81adb3bb4bcba5288fdecafd312f4dbeff3",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/cloth+bag+3d+model (2).glb",
+      "sourceSha256": "1505e1bbbe2bc3fc1ca2d486ed00a81adb3bb4bcba5288fdecafd312f4dbeff3",
+      "sha256": "d53e28713939f47cc6bb86f1083c321c691fca836042a2c3b26d90ed57824db7",
+      "bytes": 3673876,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        0.59,
+        0.59,
+        0.59
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "sack",
+        "open rim",
+        "flour surface",
+        "patch"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "flour-sack",
+      "state": "flour-sack-damp",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/flour-sack-r1.png",
+          "sha256": "520056327b81046622b6517fa273c27518e5f21f4b4f4b08227d489c0f22fe7a",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/flour-states-r1.png",
+          "sha256": "3200e332e2603d4bcc200f10d01bf6a007cd24c09cd11fbf8639488d1c77e31e",
+          "role": "dry-and-damp"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/OPTIONAL-APPEARANCE-REFERENCES/03-Village-Functional-Objects/Reference-Only/Village--flour-sack-damp.png",
+          "sha256": "2b8d3c5b789dd935a4b058329f8bb4fcb2275081203542c7368a7d2cc12dc78d",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "flour": {
+    "id": "flour",
+    "uri": "/review-assets/flour-e5c4505d4268-ktx.glb",
+    "sha256": "a5f556db904a9d3d984b21230b276a8e2a3104f2ea9b3177454fd7e5725abc20",
+    "sourceSha256": "e5c4505d42685e28b8282b51c9a4b779efb4aee2b029490d9411b9e5f6dc0429",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/cloth+bag+3d+model.glb",
+      "sourceSha256": "e5c4505d42685e28b8282b51c9a4b779efb4aee2b029490d9411b9e5f6dc0429",
+      "sha256": "a5f556db904a9d3d984b21230b276a8e2a3104f2ea9b3177454fd7e5725abc20",
+      "bytes": 2773692,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        0.5902882266731803,
+        0.5902882266731803,
+        0.5902882266731803
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "sack",
+        "open rim",
+        "flour surface",
+        "patch"
+      ]
+    },
+    "locations": [
+      "garden",
+      "bakery",
+      "workshop",
+      "presentation"
+    ],
+    "reference": {
+      "id": "flour-sack",
+      "state": "dry sack",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/flour-sack-r1.png",
+          "sha256": "520056327b81046622b6517fa273c27518e5f21f4b4f4b08227d489c0f22fe7a",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/flour-states-r1.png",
+          "sha256": "3200e332e2603d4bcc200f10d01bf6a007cd24c09cd11fbf8639488d1c77e31e",
+          "role": "dry-and-damp"
+        }
+      ]
+    }
+  },
+  "coastal-bank": {
+    "id": "coastal-bank",
+    "uri": "/review-assets/coastal-bank-0d16a00cc6a4-ktx.glb",
+    "sha256": "81601ddfa2da5f2d9d3cffb020669a104c5ad76de2d6b1e4673beab0f36d2e82",
+    "sourceSha256": "0d16a00cc6a43c9112de8f58aba6a0c3d959dd15ca06d3d9116a42841c750901",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/coastal+island+3d+model.glb",
+      "sourceSha256": "0d16a00cc6a43c9112de8f58aba6a0c3d959dd15ca06d3d9116a42841c750901",
+      "sha256": "81601ddfa2da5f2d9d3cffb020669a104c5ad76de2d6b1e4673beab0f36d2e82",
+      "bytes": 6305284,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "river",
+    "normalization": {
+      "scale": [
+        6.011169804254032,
+        6.011169804254032,
+        6.011169804254032
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        -0.00045809149742126465,
+        0,
+        0.00015789270401000977
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "water surface",
+        "wet edge",
+        "pebble margin",
+        "shore transition"
+      ]
+    },
+    "locations": [
+      "river",
+      "garden"
+    ],
+    "reference": {
+      "id": "river-shore",
+      "state": "shore module",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/river-shore-r1.png",
+          "sha256": "74f8336ebca3ef301f7112149ec2e0d54dc257a7d690962a9b77d4adaf2a8a5f",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "loop": {
+    "id": "loop",
+    "uri": "/review-assets/loop-8be1606edaa4-ktx.glb",
+    "sha256": "d00fed1089f966f89c958bf71e34a3528341dd00e0b538f637c6ebf7c628ded4",
+    "sourceSha256": "8be1606edaa48f3348297e321725c7f92cdabd907b09f78fe5a54871c7546bef",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/cute+camera+robot+3d+model.glb",
+      "sourceSha256": "8be1606edaa48f3348297e321725c7f92cdabd907b09f78fe5a54871c7546bef",
+      "sha256": "d00fed1089f966f89c958bf71e34a3528341dd00e0b538f637c6ebf7c628ded4",
+      "bytes": 1924956,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "studio",
+    "normalization": {
+      "scale": [
+        0.6503175378602833,
+        0.6503175378602833,
+        0.6503175378602833
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Complete supplied camera robot with native wheel geometry",
+      "referenceParts": [
+        "cream and teal painted casing",
+        "glass lens",
+        "rubber wheels",
+        "open carry handle",
+        "coral button"
+      ]
+    },
+    "locations": [
+      "studio"
+    ],
+    "reference": {
+      "id": "loop",
+      "state": "loop-complete",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/loop-sparkfest-r2.png",
+          "sha256": "efc1369193067f0e5c725759a61362d4b6ed3aa009ed7dd97b9ba904a040bee9",
+          "role": "master"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/ASSEMBLY-GUIDES-NOT-FOR-UPLOAD/04-Sparkfest-Functional-Objects/Reference-Only/Sparkfest--loop-complete.png",
+          "sha256": "ce466c158441a1237b5c12ddfa0d2987f271cd56e452a0bd851e0ae86990e25b",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "soil-open": {
+    "id": "soil-open",
+    "uri": "/review-assets/soil-open-2b65760d7dab-ktx.glb",
+    "sha256": "2bdb831792ee3a30fbc32cead3740571d981000c1778d1290ec865dbbe35bed2",
+    "sourceSha256": "2b65760d7dabee8755dc494fec46d19d36127f12aeddef3caadbdd4bb0f020ab",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/donut+dirt+mound+3d+model (1).glb",
+      "sourceSha256": "2b65760d7dabee8755dc494fec46d19d36127f12aeddef3caadbdd4bb0f020ab",
+      "sha256": "2bdb831792ee3a30fbc32cead3740571d981000c1778d1290ec865dbbe35bed2",
+      "bytes": 4097856,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        0.6503175378602833,
+        0.6503175378602833,
+        0.6503175378602833
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Prepared planting bed before covering",
+      "referenceParts": [
+        "soil",
+        "planting hollow",
+        "stone rim"
+      ],
+      "states": [
+        "seed held",
+        "seed in bed"
+      ]
+    },
+    "locations": [
+      "garden"
+    ],
+    "reference": {
+      "id": "planting-bed",
+      "state": "soil-hollow",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/planting-bed-r1.png",
+          "sha256": "104c733521b74807b332e5a5b5700be3beba3322d9e14bc5b811d6b739357bf4",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/planting-states-r1.png",
+          "sha256": "7ba63d0438ba5cafee61bd919d4e6f68dbdb132ba82988bcfb945758964f7c31",
+          "role": "soil-preparation-states"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--soil-hollow.png",
+          "sha256": "f2b9fea95d13fa78eee48ed4b5f8d73330a62abfcebab3456fd5a1e75bb64ab2",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "dough": {
+    "id": "dough",
+    "uri": "/review-assets/dough-189222404027-ktx.glb",
+    "sha256": "d8b8f1caf21a92965bb41d1a00a2ccd0d077ba05ca70fc4166271ec30d320be3",
+    "sourceSha256": "1892224040273daa3a55938d72f437e4a158dc811375d6020740b4bdb6fdabb9",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/dough+ball+3d+model.glb",
+      "sourceSha256": "1892224040273daa3a55938d72f437e4a158dc811375d6020740b4bdb6fdabb9",
+      "sha256": "d8b8f1caf21a92965bb41d1a00a2ccd0d077ba05ca70fc4166271ec30d320be3",
+      "bytes": 2951392,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        0.42020517830972154,
+        0.42020517830972154,
+        0.42020517830972154
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "whole dough",
+        "kneading surface",
+        "later portions"
+      ]
+    },
+    "locations": [
+      "bakery"
+    ],
+    "reference": {
+      "id": "dough",
+      "state": "dough-portion",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/dough-r1.png",
+          "sha256": "8e080dd854443db4031d4ac64c92e091db412f88f78d25a009d5b53cc5626132",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/dough-states-r1.png",
+          "sha256": "c8821518d3a1cc27318b63d54594ffc9c2ac57c7fbd2fea71e878567c524d962",
+          "role": "kneading-and-division"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--dough-portion.png",
+          "sha256": "21fe2e4b7f83d2a8f13d6249f1d159a8981bd5f9aff6de296d41ff0bb3ff4748",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "board": {
+    "id": "board",
+    "uri": "/review-assets/board-b8835e705f38-ktx.glb",
+    "sha256": "647e4df4a07d12ae242fc78a3bfbd12787b6341e5db6eb8ea194f9d0518e1c8e",
+    "sourceSha256": "b8835e705f38ceb3ae532b8898b1fae13b4df52b7346f08bcba69a35270c3169",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/foam+board+3d+model.glb",
+      "sourceSha256": "b8835e705f38ceb3ae532b8898b1fae13b4df52b7346f08bcba69a35270c3169",
+      "sha256": "647e4df4a07d12ae242fc78a3bfbd12787b6341e5db6eb8ea194f9d0518e1c8e",
+      "bytes": 3458816,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "studio",
+    "normalization": {
+      "scale": [
+        1.5,
+        1.5,
+        1.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "card backing",
+        "illustrated replaceable face"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "story-card",
+      "state": "village-card-blank",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/story-card-r2-r1.png",
+          "sha256": "a12c32e34a0db6692d77ddf4007f352ff79b96115ebd2ba626d4ee483b1e3c8b",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/story-card-states-r2-r1.png",
+          "sha256": "30c463a2070beb34706e584a5b3d92df1f4058bf8b82fc9a0dc3501f581a6b9b",
+          "role": "witnessed-picture-inserts"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--village-card-blank.png",
+          "sha256": "1e8c8dfefc6268ea90717b36c983de0249e0e2e1229030ed436d6e7afb8a286b",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "garden-path": {
+    "id": "garden-path",
+    "uri": "/review-assets/garden-path-3e355b7bf9bc-ktx.glb",
+    "sha256": "c3f3fec385eb40bf2ce2dc3115baab752f2e6c62e18cab35cb098c18d3271d60",
+    "sourceSha256": "3e355b7bf9bc5fe7550a3d3c9126cd28ba3c8fbd3164e660310476d2f6b4074c",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/garden+path+3d+model.glb",
+      "sourceSha256": "3e355b7bf9bc5fe7550a3d3c9126cd28ba3c8fbd3164e660310476d2f6b4074c",
+      "sha256": "c3f3fec385eb40bf2ce2dc3115baab752f2e6c62e18cab35cb098c18d3271d60",
+      "bytes": 4731840,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        4.342175263899806,
+        4.342175263899806,
+        4.342175263899806
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0.0001418590545654297,
+        0,
+        -0.00014218688011169434
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "main path",
+        "branch",
+        "edge",
+        "inset stones"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "path",
+      "state": "path module",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/path-r1.png",
+          "sha256": "1a3653bd92f048361bbfbf5c65081ae71c253d82ea55c4376cfa286c9a7555bd",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "bell": {
+    "id": "bell",
+    "uri": "/review-assets/bell-7123b5fa7eb2-ktx.glb",
+    "sha256": "e3fd3c70c09b25bcc7cc3333cafc5dbfbedd98fef196671de65bbf777c283ab4",
+    "sourceSha256": "7123b5fa7eb28fee4c2a8fc963594800ba07b218fcab09d39949a8b50650f210",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/golden+bell+3d+model.glb",
+      "sourceSha256": "7123b5fa7eb28fee4c2a8fc963594800ba07b218fcab09d39949a8b50650f210",
+      "sha256": "e3fd3c70c09b25bcc7cc3333cafc5dbfbedd98fef196671de65bbf777c283ab4",
+      "bytes": 2771780,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "dock",
+    "normalization": {
+      "scale": [
+        0.40019540791402053,
+        0.40019540791402053,
+        0.40019540791402053
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "mount",
+        "bell shell",
+        "clapper",
+        "cord"
+      ]
+    },
+    "locations": [
+      "dock"
+    ],
+    "reference": {
+      "id": "dock-bell",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/dock-bell-r1.png",
+          "sha256": "73ec1a1647a5012ad1ec8c73cb5d024d0bbf088535b087121e1dee8c30e31c32",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "grass-island": {
+    "id": "grass-island",
+    "uri": "/review-assets/grass-island-1a2985113118-ktx.glb",
+    "sha256": "da694f01788256cef4ad449676944bb769cfb315a68ed8430e439641bdd11805",
+    "sourceSha256": "1a29851131183c6254a5062c9991c30c4117b6f896ed069fd0495dd6fa32f197",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/grass+island+3d+model.glb",
+      "sourceSha256": "1a29851131183c6254a5062c9991c30c4117b6f896ed069fd0495dd6fa32f197",
+      "sha256": "da694f01788256cef4ad449676944bb769cfb315a68ed8430e439641bdd11805",
+      "bytes": 6019068,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        3.530212099172075,
+        3.530212099172075,
+        3.530212099172075
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0.00019131600856781006,
+        0,
+        0.0003967583179473877
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "slope",
+        "low ridge",
+        "earth layers",
+        "organic perimeter"
+      ]
+    },
+    "locations": [
+      "crossing",
+      "river",
+      "garden"
+    ],
+    "reference": {
+      "id": "sloping-bank",
+      "state": "bank module",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/sloping-bank-r1.png",
+          "sha256": "637e2e9644dc4fbd734ace4ddaf6c10453ae9bc8778cc223fa44a97d793e06e2",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "hammer": {
+    "id": "hammer",
+    "uri": "/review-assets/hammer-092927c260d3-ktx.glb",
+    "sha256": "a47533569be042954e5aea6db4b7c6db6bd2443c4094f0a6c0e805815312b515",
+    "sourceSha256": "092927c260d368390234e3a5ee2cdd4aec9e5889fe902bcfcefcffa6c93b59bf",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/hammer+3d+model (1).glb",
+      "sourceSha256": "092927c260d368390234e3a5ee2cdd4aec9e5889fe902bcfcefcffa6c93b59bf",
+      "sha256": "a47533569be042954e5aea6db4b7c6db6bd2443c4094f0a6c0e805815312b515",
+      "bytes": 3275696,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "workshop",
+    "normalization": {
+      "scale": [
+        0.34016609672691744,
+        0.34016609672691744,
+        0.34016609672691744
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "tote",
+        "handle",
+        "hammer",
+        "peg pouch"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "toolkit",
+      "state": "hammer",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/toolkit-r1.png",
+          "sha256": "87b51e3e35c1bd23128cf2a07e64b9f56e4d44c7dce7ed7f9af8295747b2eecb",
+          "role": "master"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--hammer.png",
+          "sha256": "e7dbb20ff428b3c3da6df66440500d709c715e32ef3d49cc6593a1f5ef4deee5",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "trowel": {
+    "id": "trowel",
+    "uri": "/review-assets/trowel-546bf33f85d2-ktx.glb",
+    "sha256": "175c1ced52dc69bf85ec56f73996390956d2894e6384a3c7113bcd1273c6a4e6",
+    "sourceSha256": "546bf33f85d23d32177535ed20c1871072358c01401841de9c3d9a23bab14844",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/hand+trowel+3d+model.glb",
+      "sourceSha256": "546bf33f85d23d32177535ed20c1871072358c01401841de9c3d9a23bab14844",
+      "sha256": "175c1ced52dc69bf85ec56f73996390956d2894e6384a3c7113bcd1273c6a4e6",
+      "bytes": 3393148,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        0.32015632633121643,
+        0.32015632633121643,
+        0.32015632633121643
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "wood grip",
+        "tang",
+        "concave blade"
+      ]
+    },
+    "locations": [
+      "garden"
+    ],
+    "reference": {
+      "id": "trowel",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/trowel-r1.png",
+          "sha256": "e4d1f2da8909a4bf243c8e8c8317f035ff94d0ee18d427129f44b198e12154ed",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "tag": {
+    "id": "tag",
+    "uri": "/review-assets/tag-a15f496e13e1-ktx.glb",
+    "sha256": "00a5b14d13366b2b91da330b723bc1d8dc4a06c1a9b71ce870ddd9f0f5ed038a",
+    "sourceSha256": "a15f496e13e1cfd0e7802c3b8dc98de122676aba5142eadcd36c57ea4bff95c2",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/handmade+paper+tag+3d+model.glb",
+      "sourceSha256": "a15f496e13e1cfd0e7802c3b8dc98de122676aba5142eadcd36c57ea4bff95c2",
+      "sha256": "00a5b14d13366b2b91da330b723bc1d8dc4a06c1a9b71ce870ddd9f0f5ed038a",
+      "bytes": 2364544,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "studio",
+    "normalization": {
+      "scale": [
+        0.2501221299462628,
+        0.2501221299462628,
+        0.2501221299462628
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "pages",
+        "page curl",
+        "simple binding"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "manuscript",
+      "state": "paper tag",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/manuscript-r1.png",
+          "sha256": "7298ae4d9cf82ed53ec9ad7f97268394ec5c39299ab575884a22d1291070423e",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "tape-strip": {
+    "id": "tape-strip",
+    "uri": "/review-assets/tape-strip-73bc296ced54-ktx.glb",
+    "sha256": "d721131a124cea086dbd1178329e33ba4fc81532360ef2789a1fd47b6e5edfc9",
+    "sourceSha256": "73bc296ced5429f37b32e193cd32f2ec77aca9404f304ec2813eff64fe421dff",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/lace+fabric+strip+3d+model (1).glb",
+      "sourceSha256": "73bc296ced5429f37b32e193cd32f2ec77aca9404f304ec2813eff64fe421dff",
+      "sha256": "d721131a124cea086dbd1178329e33ba4fc81532360ef2789a1fd47b6e5edfc9",
+      "bytes": 2625524,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "recollection",
+    "normalization": {
+      "scale": [
+        0.18008793356130923,
+        0.18008793356130923,
+        0.18008793356130923
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Applied across the aligned tear on that bird",
+      "referenceParts": [
+        "core",
+        "tape roll",
+        "separable strip"
+      ],
+      "host": "MaraWorld.tape"
+    },
+    "locations": [
+      "garden",
+      "recollection",
+      "presentation"
+    ],
+    "reference": {
+      "id": "tape",
+      "state": "tape-strip",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/tape-r1.png",
+          "sha256": "02688b7ba13575edef5547abd233df6f281b08b8d0c09f4cded6215a10e7834f",
+          "role": "master"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--tape-strip.png",
+          "sha256": "ae1af06d7b86b7de424af3b60b24638305744542762e602bb85dc411f7b347e1",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "napkin": {
+    "id": "napkin",
+    "uri": "/review-assets/napkin-9063e568445a-ktx.glb",
+    "sha256": "696bb4a6bf0029429a78a0ae25b3676090b11ad15e0d79fc5496e866a1df60f2",
+    "sourceSha256": "9063e568445af537d8535ed45ab9eec74e8e86c74590d7e2f5eb7509248375ba",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/napkin+3d+model.glb",
+      "sourceSha256": "9063e568445af537d8535ed45ab9eec74e8e86c74590d7e2f5eb7509248375ba",
+      "sha256": "696bb4a6bf0029429a78a0ae25b3676090b11ad15e0d79fc5496e866a1df60f2",
+      "bytes": 3037160,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        0.42020517830972154,
+        0.42020517830972154,
+        0.42020517830972154
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "cloth surface",
+        "four free corners",
+        "border"
+      ]
+    },
+    "locations": [
+      "garden",
+      "presentation"
+    ],
+    "reference": {
+      "id": "picnic-cloth",
+      "state": "folded cloth",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/picnic-cloth-r1.png",
+          "sha256": "0286e6f94afdb7f1afb2aa870e9d6590b89301101ae7e62b4763245e70970f23",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "cushion": {
+    "id": "cushion",
+    "uri": "/review-assets/cushion-d84519803fc4-ktx.glb",
+    "sha256": "8af9d7a10c96fdbac1dd88307522620a08233ac69a2d1ca999c5df123e1a8f03",
+    "sourceSha256": "d84519803fc4ab0e65788356bf8e60852855ad5f236542154d9c4493716c45b3",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/orange+cushion+3d+model.glb",
+      "sourceSha256": "d84519803fc4ab0e65788356bf8e60852855ad5f236542154d9c4493716c45b3",
+      "sha256": "8af9d7a10c96fdbac1dd88307522620a08233ac69a2d1ca999c5df123e1a8f03",
+      "bytes": 3313136,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        0.5002442598925256,
+        0.5002442598925256,
+        0.5002442598925256
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "soft body",
+        "seam",
+        "tie"
+      ]
+    },
+    "locations": [
+      "garden",
+      "presentation"
+    ],
+    "reference": {
+      "id": "cushion",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/cushion-r1.png",
+          "sha256": "4208c391163498bff6ae8b33c153a721388be625d5a3c06fc8ed478b34729a73",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "bird": {
+    "id": "bird",
+    "uri": "/review-assets/bird-1e7b96cfae4b-ktx.glb",
+    "sha256": "691e5d3e23ac09655edb464947b6790b6a451e1215177066b17e2a38a73db91b",
+    "sourceSha256": "1e7b96cfae4b9c58417e793f0d8cbb8b3ec54164c4127e51b9ec246ed1699320",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/origami+crane+3d+model (1).glb",
+      "sourceSha256": "1e7b96cfae4b9c58417e793f0d8cbb8b3ec54164c4127e51b9ec246ed1699320",
+      "sha256": "691e5d3e23ac09655edb464947b6790b6a451e1215177066b17e2a38a73db91b",
+      "bytes": 3360724,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "recollection",
+    "normalization": {
+      "scale": [
+        0.36017586712261845,
+        0.36017586712261845,
+        0.36017586712261845
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Same paper bird body throughout earlier recollection",
+      "referenceParts": [
+        "body",
+        "intact wing",
+        "torn independent wing panel",
+        "tear seam"
+      ],
+      "parts": [
+        "wingtip",
+        "tape-strip"
+      ]
+    },
+    "locations": [
+      "garden",
+      "recollection",
+      "presentation"
+    ],
+    "reference": {
+      "id": "paper-bird",
+      "state": "paper-bird-body",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/paper-bird-r2-r1.png",
+          "sha256": "0c655de0e25561198c4cf33035b4c52f789325763350c4b1b0bfce9a0e99f88a",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bird-repair-r1.png",
+          "sha256": "ed537b329bd0947beae3791cc2192156575710c3bdaf1429188854bff9169482",
+          "role": "wing-repair-states"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--paper-bird-body.png",
+          "sha256": "65d5c18275d596f8c4c3026b5abf35767bd11ba48e25117128d0510b2802469d",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "wingtip": {
+    "id": "wingtip",
+    "uri": "/review-assets/wingtip-6fa35ff98b79-ktx.glb",
+    "sha256": "6fa3cef7c80684c37dfcefac28cdcc8ada2bca448a53921c78149ce6238d2667",
+    "sourceSha256": "6fa35ff98b794f2a39dba0cd691a5951cd9e865460fb13ad12a83918a6e97bb0",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/cheese+wedge+3d+model (1).glb",
+      "sourceSha256": "6fa35ff98b794f2a39dba0cd691a5951cd9e865460fb13ad12a83918a6e97bb0",
+      "sha256": "6fa3cef7c80684c37dfcefac28cdcc8ada2bca448a53921c78149ce6238d2667",
+      "bytes": 3719232,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "recollection",
+    "normalization": {
+      "scale": [
+        0.22010747435271127,
+        0.22010747435271127,
+        0.22010747435271127
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Movable wing fragment of the same bird",
+      "referenceParts": [
+        "body",
+        "intact wing",
+        "torn independent wing panel",
+        "tear seam"
+      ],
+      "host": "MaraWorld.wing"
+    },
+    "locations": [
+      "garden",
+      "recollection",
+      "presentation"
+    ],
+    "reference": {
+      "id": "paper-bird",
+      "state": "paper-bird-wingtip",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/paper-bird-r2-r1.png",
+          "sha256": "0c655de0e25561198c4cf33035b4c52f789325763350c4b1b0bfce9a0e99f88a",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bird-repair-r1.png",
+          "sha256": "ed537b329bd0947beae3791cc2192156575710c3bdaf1429188854bff9169482",
+          "role": "wing-repair-states"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--paper-bird-wingtip.png",
+          "sha256": "8d21e5a35bdb6487fafdb1363e13f1d14586c20744d790c0d65f08dccea52ae0",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "flower-2": {
+    "id": "flower-2",
+    "uri": "/review-assets/flower-2-5b04a1f6e2b0-ktx.glb",
+    "sha256": "79cd8c1ecb52efb7b59184f857fa627d0bf706410b00f5a31227cdb194a6f0bc",
+    "sourceSha256": "5b04a1f6e2b0801bd24c72d797deedc297ec61aea4dff468b07aa9ac5c98ea6a",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/paper+flower+3d+model (2).glb",
+      "sourceSha256": "5b04a1f6e2b0801bd24c72d797deedc297ec61aea4dff468b07aa9ac5c98ea6a",
+      "sha256": "79cd8c1ecb52efb7b59184f857fa627d0bf706410b00f5a31227cdb194a6f0bc",
+      "bytes": 3816340,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        1.2806253053248657,
+        1.2806253053248657,
+        1.2806253053248657
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Completed lantern flower and selected memory host",
+      "referenceParts": [
+        "rooted base",
+        "stem",
+        "leaves",
+        "lantern petals",
+        "memory attachment"
+      ]
+    },
+    "locations": [
+      "garden",
+      "presentation"
+    ],
+    "reference": {
+      "id": "lantern-flower",
+      "state": "lantern-flower-bloom",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/lantern-flower-r1.png",
+          "sha256": "d9aa3329869033f51007c1c86d2577b770fdc722f3dcece8ef94fc321c12a4d1",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/flower-growth-r1.png",
+          "sha256": "65fedea7faf174c1fca32352749fa0a12c5b120710f05e8e68e077e23eefe8de",
+          "role": "growth-and-roots"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--lantern-flower-bloom.png",
+          "sha256": "ee1308ae5351eca39c1285bcd927f0c43cb8201bc7a16424b36ee627533e926c",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "flower": {
+    "id": "flower",
+    "uri": "/review-assets/flower-9c876870beba-ktx.glb",
+    "sha256": "a1a21570265fab0110fa9eaf59072a476521bf3bdb3cd605143e01656487614c",
+    "sourceSha256": "9c876870beba2733d236cdddf05b917d7ce54acac4af51998534224459814869",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/paper+flower+3d+model.glb",
+      "sourceSha256": "9c876870beba2733d236cdddf05b917d7ce54acac4af51998534224459814869",
+      "sha256": "a1a21570265fab0110fa9eaf59072a476521bf3bdb3cd605143e01656487614c",
+      "bytes": 3231404,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        1.2806253053248657,
+        1.2806253053248657,
+        1.2806253053248657
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "rooted base",
+        "stem",
+        "leaves",
+        "lantern petals",
+        "memory attachment"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "lantern-flower",
+      "state": "lantern-flower-bloom",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/lantern-flower-r1.png",
+          "sha256": "d9aa3329869033f51007c1c86d2577b770fdc722f3dcece8ef94fc321c12a4d1",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/flower-growth-r1.png",
+          "sha256": "65fedea7faf174c1fca32352749fa0a12c5b120710f05e8e68e077e23eefe8de",
+          "role": "growth-and-roots"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--lantern-flower-bloom.png",
+          "sha256": "ee1308ae5351eca39c1285bcd927f0c43cb8201bc7a16424b36ee627533e926c",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "flower-sculpture": {
+    "id": "flower-sculpture",
+    "uri": "/review-assets/flower-sculpture-0ff34e1fbed5-ktx.glb",
+    "sha256": "eb3543de82192a8b9ae65d6b7b11027b8f1c226b1f82303ab5743519b6a57259",
+    "sourceSha256": "0ff34e1fbed5a60a1217a2e055ce16ce9955d5e1607bbee2c7f47d409884a4a2",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/paper+flower+sculpture+3d+model.glb",
+      "sourceSha256": "0ff34e1fbed5a60a1217a2e055ce16ce9955d5e1607bbee2c7f47d409884a4a2",
+      "sha256": "eb3543de82192a8b9ae65d6b7b11027b8f1c226b1f82303ab5743519b6a57259",
+      "bytes": 2930904,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        1.2806253053248657,
+        1.2806253053248657,
+        1.2806253053248657
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "stems",
+        "leaves",
+        "blooms",
+        "roots"
+      ]
+    },
+    "locations": [
+      "dock",
+      "garden",
+      "bakery",
+      "workshop"
+    ],
+    "reference": {
+      "id": "meadow-flowers",
+      "state": "flower clump",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/meadow-flowers-r1.png",
+          "sha256": "15d5bb80d2730ccb58d42d350532fec48a156a6351033cacd2abcb33a2bdd910",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "bud": {
+    "id": "bud",
+    "uri": "/review-assets/bud-edc543b120d0-ktx.glb",
+    "sha256": "ad6b5e97ae9b4838635e40d22386cf27ee3a808691f76aeebbdd333ef39227bd",
+    "sourceSha256": "edc543b120d0c3d15b27b02b675f741b62623f423e5d22e4103972c19a751918",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/paper+plant+3d+model (1).glb",
+      "sourceSha256": "edc543b120d0c3d15b27b02b675f741b62623f423e5d22e4103972c19a751918",
+      "sha256": "ad6b5e97ae9b4838635e40d22386cf27ee3a808691f76aeebbdd333ef39227bd",
+      "bytes": 3933444,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        1.0004885197850513,
+        1.0004885197850513,
+        1.0004885197850513
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Intermediate growth during BLOOM",
+      "referenceParts": [
+        "rooted base",
+        "stem",
+        "leaves",
+        "lantern petals",
+        "memory attachment"
+      ],
+      "next": "flower-2"
+    },
+    "locations": [
+      "garden"
+    ],
+    "reference": {
+      "id": "lantern-flower",
+      "state": "lantern-flower-bud",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/lantern-flower-r1.png",
+          "sha256": "d9aa3329869033f51007c1c86d2577b770fdc722f3dcece8ef94fc321c12a4d1",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/flower-growth-r1.png",
+          "sha256": "65fedea7faf174c1fca32352749fa0a12c5b120710f05e8e68e077e23eefe8de",
+          "role": "growth-and-roots"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--lantern-flower-bud.png",
+          "sha256": "99295e2bff977799358a242a6ed19cd0727a93e2aa9e9cf252805da1e7ea3337",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "pebbles": {
+    "id": "pebbles",
+    "uri": "/review-assets/pebbles-0936dca96145-ktx.glb",
+    "sha256": "68315c80190a2766fc3233abf3330be0b97d82a676669bdddd69e804cc700963",
+    "sourceSha256": "0936dca961457abf2e4086332a524cb3b9d93aa3b9e5973dbf6dafb84fc901a4",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/pebble+ring+3d+model (1).glb",
+      "sourceSha256": "0936dca961457abf2e4086332a524cb3b9d93aa3b9e5973dbf6dafb84fc901a4",
+      "sha256": "68315c80190a2766fc3233abf3330be0b97d82a676669bdddd69e804cc700963",
+      "bytes": 3833188,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        0.7203517342452369,
+        0.7203517342452369,
+        0.7203517342452369
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "soil",
+        "planting hollow",
+        "stone rim"
+      ]
+    },
+    "locations": [
+      "garden"
+    ],
+    "reference": {
+      "id": "planting-bed",
+      "state": "planting-rim",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/planting-bed-r1.png",
+          "sha256": "104c733521b74807b332e5a5b5700be3beba3322d9e14bc5b811d6b739357bf4",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/planting-states-r1.png",
+          "sha256": "7ba63d0438ba5cafee61bd919d4e6f68dbdb132ba82988bcfb945758964f7c31",
+          "role": "soil-preparation-states"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--planting-rim.png",
+          "sha256": "11ebc27e80c0702f68aa2dfce9b7d46999e20d04361c43148f6449e9ffce8c8c",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "pencil-holder": {
+    "id": "pencil-holder",
+    "uri": "/review-assets/pencil-holder-47305dea64a0-ktx.glb",
+    "sha256": "bdb22645140f2b06eaee67e64b5e9d2c0a095aabd7159b06155bdf63d9007f79",
+    "sourceSha256": "47305dea64a06fa086e743dad45e92e66d37c7315dd5d6e59aae1263253159e6",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/pencil+holder+3d+model.glb",
+      "sourceSha256": "47305dea64a06fa086e743dad45e92e66d37c7315dd5d6e59aae1263253159e6",
+      "sha256": "bdb22645140f2b06eaee67e64b5e9d2c0a095aabd7159b06155bdf63d9007f79",
+      "bytes": 1757484,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "studio",
+    "normalization": {
+      "scale": [
+        0.26012701514411335,
+        0.26012701514411335,
+        0.26012701514411335
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "holder",
+        "three pencils",
+        "loose pencil"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "writing-supplies",
+      "state": "village-pencil-holder",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/writing-supplies-r1.png",
+          "sha256": "0a64a08ec7e2ccdb1acc47c12390b2abd9a79dbb01e10d4ac097da3d277b507b",
+          "role": "master"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--village-pencil-holder.png",
+          "sha256": "8261e5295e8dbbd1a4017a569d39be7ad58b85a29ffda2e1abd58e1b64dfae58",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "pencils": {
+    "id": "pencils",
+    "uri": "/review-assets/pencils-2259620fcd01-ktx.glb",
+    "sha256": "7b7a715c0dde2e5101f9ba76295ea85f5822ef7d23352c616a73c0dc550d4c9e",
+    "sourceSha256": "2259620fcd01d502558b7da09d8a80c3be9fecf457167e1995efbb05760329f8",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/pencils+in+cup+3d+model.glb",
+      "sourceSha256": "2259620fcd01d502558b7da09d8a80c3be9fecf457167e1995efbb05760329f8",
+      "sha256": "7b7a715c0dde2e5101f9ba76295ea85f5822ef7d23352c616a73c0dc550d4c9e",
+      "bytes": 2704560,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "studio",
+    "normalization": {
+      "scale": [
+        0.30014655593551537,
+        0.30014655593551537,
+        0.30014655593551537
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        -0.005859375
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "glazed ceramic pencil cup",
+        "wood pencils",
+        "graphite tips"
+      ]
+    },
+    "locations": [
+      "studio"
+    ],
+    "reference": {
+      "id": "sparkfest-writing",
+      "state": "sparkfest-pencil-holder",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/sparkfest-writing-r1.png",
+          "sha256": "636178a65422ca1f8cc34ffcf9b0965b1568a2e111a74d1e7730b3358ac0e5ec",
+          "role": "master"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/04-Sparkfest-Functional-Objects/P2/Sparkfest--sparkfest-pencil-holder.png",
+          "sha256": "5d5c5aecd9c2059356c02450f3cf7cca2fd0301e3e576ed93caadcfe2a0eba04",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "sprout": {
+    "id": "sprout",
+    "uri": "/review-assets/sprout-f4997e66fe1b-ktx.glb",
+    "sha256": "280ed3356ccd96a082066ba966b6adbddd7fc07e3f97eb6baf02bd98ae40281b",
+    "sourceSha256": "f4997e66fe1b78e72483faec424960b720a19a8b9713821f2fc100a010686e02",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/plant+3d+model.glb",
+      "sourceSha256": "f4997e66fe1b78e72483faec424960b720a19a8b9713821f2fc100a010686e02",
+      "sha256": "280ed3356ccd96a082066ba966b6adbddd7fc07e3f97eb6baf02bd98ae40281b",
+      "bytes": 4639088,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Rooted plant after covering; awaits explicit BLOOM",
+      "referenceParts": [
+        "rooted base",
+        "stem",
+        "leaves",
+        "lantern petals",
+        "memory attachment"
+      ],
+      "next": "bud"
+    },
+    "locations": [
+      "garden",
+      "presentation"
+    ],
+    "reference": {
+      "id": "lantern-flower",
+      "state": "lantern-flower-shoot",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/lantern-flower-r1.png",
+          "sha256": "d9aa3329869033f51007c1c86d2577b770fdc722f3dcece8ef94fc321c12a4d1",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/flower-growth-r1.png",
+          "sha256": "65fedea7faf174c1fca32352749fa0a12c5b120710f05e8e68e077e23eefe8de",
+          "role": "growth-and-roots"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--lantern-flower-shoot.png",
+          "sha256": "93363fbfbc442423b2a299d9bb8dd3a09fa2b6a7ee68ccbc17ae33a3cd62a5ce",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "seed": {
+    "id": "seed",
+    "uri": "/review-assets/seed-48788fa76744-ktx.glb",
+    "sha256": "057ed705b0722df8ef7a9b16fa465c09c5a57a6a5630feb5dba2fd5d76b581eb",
+    "sourceSha256": "48788fa76744eb14dc6a7f6363c03102673aea79793cc89b9b6fcc0a02458322",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/nut+3d+model.glb",
+      "sourceSha256": "48788fa76744eb14dc6a7f6363c03102673aea79793cc89b9b6fcc0a02458322",
+      "sha256": "057ed705b0722df8ef7a9b16fa465c09c5a57a6a5630feb5dba2fd5d76b581eb",
+      "bytes": 2993160,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "resident",
+    "normalization": {
+      "scale": [
+        0.08003908158280411,
+        0.08003908158280411,
+        0.08003908158280411
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "seed shell",
+        "visible seam",
+        "pale mark"
+      ]
+    },
+    "locations": [
+      "crossing",
+      "dock",
+      "river",
+      "garden",
+      "bakery",
+      "workshop"
+    ],
+    "reference": {
+      "id": "seed",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/seed-r1.png",
+          "sha256": "b9e262782636943deed7d695ca16f167b92328f1f25b4e6e1caa8c157da1ccc3",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "storybook": {
+    "id": "storybook",
+    "uri": "/review-assets/storybook-5218e3e9a657-ktx.glb",
+    "sha256": "fb487d82bcc63882988f70c8e0497bbffc6e8b165b8381767d7d869b71cb1d35",
+    "sourceSha256": "5218e3e9a65729ff6734856e9cf502e28cbe1f11c9eb87288f5382f4c2673b50",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/paper+diorama+3d+model.glb",
+      "sourceSha256": "5218e3e9a65729ff6734856e9cf502e28cbe1f11c9eb87288f5382f4c2673b50",
+      "sha256": "fb487d82bcc63882988f70c8e0497bbffc6e8b165b8381767d7d869b71cb1d35",
+      "bytes": 3682684,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "studio",
+    "normalization": {
+      "scale": [
+        1.8371717800965581,
+        1.8371717800965581,
+        1.8371717800965581
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        -0.000213623046875,
+        0,
+        0.0002288818359375
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "clothbound cover",
+        "ordinary paper pages",
+        "bound spine",
+        "separate miniature village insert"
+      ]
+    },
+    "locations": [
+      "studio"
+    ],
+    "reference": {
+      "id": "storybook",
+      "state": "open with miniature village",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/storybook-sparkfest-r3.png",
+          "sha256": "8c248807acbc4751db68dba69d2602011bfb8c47573ef3fed402f0859c684a34",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "potted-1": {
+    "id": "potted-1",
+    "uri": "/review-assets/potted-1-cbf8685e453a-ktx.glb",
+    "sha256": "0217f9d96ac108386b351d74489d72a6dfe1f140050fb9612dc04621c06b843f",
+    "sourceSha256": "cbf8685e453a8dd4890d509063fcd2d6cf2b185554757066f438590668b80f63",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/potted+plant+3d+model (1).glb",
+      "sourceSha256": "cbf8685e453a8dd4890d509063fcd2d6cf2b185554757066f438590668b80f63",
+      "sha256": "0217f9d96ac108386b351d74489d72a6dfe1f140050fb9612dc04621c06b843f",
+      "bytes": 2407920,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        0.5502686858817782,
+        0.5502686858817782,
+        0.5502686858817782
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "leaf/stem plant",
+        "soil",
+        "removable pot"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "garden-plants",
+      "state": "potted herb",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/garden-plants-r1.png",
+          "sha256": "2c8a25eca6fcb81a7fbefd070c0463a5775137aff4e6c568510c5f6fbf8de3ea",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "potted": {
+    "id": "potted",
+    "uri": "/review-assets/potted-0383d93dc7b9-ktx.glb",
+    "sha256": "fa32b71b963237ad2e0a74073ad1d37ab9f3ed2245d706aee87c266b1c212011",
+    "sourceSha256": "0383d93dc7b99411ddae2ec5573517a27dd6ba8168d8a7599a7dcde962fdb299",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/potted+plant+3d+model.glb",
+      "sourceSha256": "0383d93dc7b99411ddae2ec5573517a27dd6ba8168d8a7599a7dcde962fdb299",
+      "sha256": "fa32b71b963237ad2e0a74073ad1d37ab9f3ed2245d706aee87c266b1c212011",
+      "bytes": 3459904,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "studio",
+    "normalization": {
+      "scale": [
+        0.5502686858817782,
+        0.5502686858817782,
+        0.5502686858817782
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0.00390625,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "natural leaves and stems",
+        "soil",
+        "terracotta pot",
+        "saucer"
+      ]
+    },
+    "locations": [
+      "studio"
+    ],
+    "reference": {
+      "id": "sparkfest-plant",
+      "state": "potted plant",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/sparkfest-plant-r1.png",
+          "sha256": "56ce7f47d9ef55337718a631a607c823908ec0162c3eb47d71b70b5d9ba22c28",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "workshop": {
+    "id": "workshop",
+    "uri": "/review-assets/workshop-e945bb07ef60-ktx.glb",
+    "sha256": "e2bdd2f3cdf2d7022605f4878cb7cfaf603ff476d7f773de6acbc2b613eeeb64",
+    "sourceSha256": "e945bb07ef608c9293abe08695dd409f937c184224ed7a656fc3d63fa721dfcc",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/pottery+workshop+3d+model.glb",
+      "sourceSha256": "e945bb07ef608c9293abe08695dd409f937c184224ed7a656fc3d63fa721dfcc",
+      "sha256": "e2bdd2f3cdf2d7022605f4878cb7cfaf603ff476d7f773de6acbc2b613eeeb64",
+      "bytes": 5761008,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "workshop",
+    "normalization": {
+      "scale": [
+        3.8,
+        3.8,
+        3.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "roof panels",
+        "repair opening",
+        "chimney",
+        "windows",
+        "open front",
+        "floor"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "bakery",
+      "state": "open front candidate",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bakery-r1.png",
+          "sha256": "161cb6ec3f22d4c65746626f73c66a5258c0fa0a04b13d4a00f8daf0f964d5bf",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bakery-cutaway-r1.png",
+          "sha256": "0d16daaca018841969dc800f55c3ad231bc85b22486de2b28b248fb42027771e",
+          "role": "interior-cutaway"
+        }
+      ]
+    }
+  },
+  "bakery-cutaway": {
+    "id": "bakery-cutaway",
+    "uri": "/review-assets/bakery-cutaway-c762559c1d36-ktx.glb",
+    "sha256": "dd626a010a8cf221da507eb3499215a1f1dd2eb1dd4e5b3f6c257c77f47b71d9",
+    "sourceSha256": "c762559c1d364e420c73d68ec16c2839aca3eb23b7f0c731411938c6637ca064",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/rustic+cottage+3d+model.glb",
+      "sourceSha256": "c762559c1d364e420c73d68ec16c2839aca3eb23b7f0c731411938c6637ca064",
+      "sha256": "dd626a010a8cf221da507eb3499215a1f1dd2eb1dd4e5b3f6c257c77f47b71d9",
+      "bytes": 5083288,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        3.3011837066535525,
+        3.3011837066535525,
+        3.3011837066535525
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        -0.000906825065612793,
+        0,
+        -0.0009158998727798462
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "roof panels",
+        "repair opening",
+        "chimney",
+        "windows",
+        "open front",
+        "floor"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "bakery",
+      "state": "open front candidate",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bakery-r1.png",
+          "sha256": "161cb6ec3f22d4c65746626f73c66a5258c0fa0a04b13d4a00f8daf0f964d5bf",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bakery-cutaway-r1.png",
+          "sha256": "0d16daaca018841969dc800f55c3ad231bc85b22486de2b28b248fb42027771e",
+          "role": "interior-cutaway"
+        }
+      ]
+    }
+  },
+  "bakery-damaged": {
+    "id": "bakery-damaged",
+    "uri": "/review-assets/bakery-damaged-0254adeda7f3-ktx.glb",
+    "sha256": "3d61631e99cbf8cf1816ac8cd2a013f59413484bbc8ac98fd90e65ade2f10a9f",
+    "sourceSha256": "0254adeda7f3e5b1c5dd4f16da78a68189fa12fc87877a07244bfa8b4f444fb0",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/bakery+shop+3d+model.glb",
+      "sourceSha256": "0254adeda7f3e5b1c5dd4f16da78a68189fa12fc87877a07244bfa8b4f444fb0",
+      "sha256": "3d61631e99cbf8cf1816ac8cd2a013f59413484bbc8ac98fd90e65ade2f10a9f",
+      "bytes": 34064936,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        3.6737714107754593,
+        3.6737714107754593,
+        3.6737714107754593
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        -0.0000457763671875,
+        0,
+        0.00054931640625
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "roof panels",
+        "repair opening",
+        "chimney",
+        "windows",
+        "open front",
+        "floor"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "bakery",
+      "state": "roof opening",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bakery-r1.png",
+          "sha256": "161cb6ec3f22d4c65746626f73c66a5258c0fa0a04b13d4a00f8daf0f964d5bf",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bakery-cutaway-r1.png",
+          "sha256": "0d16daaca018841969dc800f55c3ad231bc85b22486de2b28b248fb42027771e",
+          "role": "interior-cutaway"
+        }
+      ]
+    }
+  },
+  "arbor": {
+    "id": "arbor",
+    "uri": "/review-assets/arbor-0f60810c9a24-ktx.glb",
+    "sha256": "efda578a5d3816e42c0ae82ac3fc89f31bc320fff5157e9c7c2f11aa9470eb72",
+    "sourceSha256": "0f60810c9a24014f475f9f1012b15ab8102d25a517849f102762c40d390ce204",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+arch+3d+model.glb",
+      "sourceSha256": "0f60810c9a24014f475f9f1012b15ab8102d25a517849f102762c40d390ce204",
+      "sha256": "efda578a5d3816e42c0ae82ac3fc89f31bc320fff5157e9c7c2f11aa9470eb72",
+      "bytes": 5076668,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        2.5009027401801665,
+        2.5009027401801665,
+        2.5009027401801665
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        -0.00013907253742218018,
+        0,
+        -0.00021055340766906738
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "posts",
+        "overhead lattice",
+        "open span"
+      ]
+    },
+    "locations": [
+      "garden"
+    ],
+    "reference": {
+      "id": "arbor",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/arbor-r1.png",
+          "sha256": "82c1654cc41c3bbb9c383ffc557767cd5b8a120cd6ef72b7de0f9079f484dcc9",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "rock": {
+    "id": "rock",
+    "uri": "/review-assets/rock-facfdcd4baf6-ktx.glb",
+    "sha256": "59fdbfd5827c66a56d2d1dd187fbe29cd89bbe1ac5135c14214b1bbc79d16036",
+    "sourceSha256": "facfdcd4baf6587852b7fd3bd6022d2e59bab1d151dff078b4bad550aa78e433",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/striped+rock+3d+model.glb",
+      "sourceSha256": "facfdcd4baf6587852b7fd3bd6022d2e59bab1d151dff078b4bad550aa78e433",
+      "sha256": "59fdbfd5827c66a56d2d1dd187fbe29cd89bbe1ac5135c14214b1bbc79d16036",
+      "bytes": 3318528,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "river",
+    "normalization": {
+      "scale": [
+        0.6002931118710307,
+        0.6002931118710307,
+        0.6002931118710307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "body",
+        "flat support face"
+      ]
+    },
+    "locations": [
+      "crossing",
+      "dock",
+      "river",
+      "garden",
+      "bakery",
+      "workshop",
+      "presentation"
+    ],
+    "reference": {
+      "id": "rocks",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/rocks-r1.png",
+          "sha256": "afb27d8add10d7a1ce759b54aead7954507c02a4b5966e9868fc7781bb0d1ced",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "grass": {
+    "id": "grass",
+    "uri": "/review-assets/grass-66d3f08d39f1-ktx.glb",
+    "sha256": "4db5abaa8e272d27228955eeb843809d76b326e267cd4767aded8020bd72bfbd",
+    "sourceSha256": "66d3f08d39f196309c81c631ad346787d889e38b9f18da0e4a34b6d924cbec49",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/succulent+plant+3d+model.glb",
+      "sourceSha256": "66d3f08d39f196309c81c631ad346787d889e38b9f18da0e4a34b6d924cbec49",
+      "sha256": "4db5abaa8e272d27228955eeb843809d76b326e267cd4767aded8020bd72bfbd",
+      "bytes": 3082188,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        0.30014655593551537,
+        0.30014655593551537,
+        0.30014655593551537
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "blade cluster",
+        "rooted base"
+      ]
+    },
+    "locations": [
+      "crossing",
+      "dock",
+      "river",
+      "garden",
+      "bakery",
+      "workshop"
+    ],
+    "reference": {
+      "id": "grass",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/grass-r1.png",
+          "sha256": "24bd2ef9bb5506012b2bd5a7c504ad9dc4879c4be5ada91909daa41325163933",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "shrub": {
+    "id": "shrub",
+    "uri": "/review-assets/shrub-116d9076be82-ktx.glb",
+    "sha256": "7de85ed241656af2e32bfd7f691e545474be962fef3d0c799b4de581078d5770",
+    "sourceSha256": "116d9076be823e9b57a219709adab6c376dae4144aa354b482f3047fba8d0aa7",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/tree+3d+model.glb",
+      "sourceSha256": "116d9076be823e9b57a219709adab6c376dae4144aa354b482f3047fba8d0aa7",
+      "sha256": "7de85ed241656af2e32bfd7f691e545474be962fef3d0c799b4de581078d5770",
+      "bytes": 4813520,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        0.651772002957517,
+        0.651772002957517,
+        0.651772002957517
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        -0.004513278603553772,
+        0,
+        -0.00019693374633789062
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "stems",
+        "leaf clusters",
+        "grounded base"
+      ]
+    },
+    "locations": [
+      "crossing",
+      "dock",
+      "river",
+      "garden",
+      "bakery",
+      "workshop"
+    ],
+    "reference": {
+      "id": "shrub",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/shrub-r1.png",
+          "sha256": "874529904ea9b3c14a684490139594452d5c452d5395d5ab46b74fdde23b31c5",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "vine": {
+    "id": "vine",
+    "uri": "/review-assets/vine-1a362a31dbee-ktx.glb",
+    "sha256": "7f7e33fa1b598a0bbbd0fd4f49c018fb5c8e7eb08c2cc318cc368a1f691325e6",
+    "sourceSha256": "1a362a31dbeec44c2bbb3f08a5e3c016b2f4a3e9d25100ba9d027fefa5aa8d77",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/vine+3d+model.glb",
+      "sourceSha256": "1a362a31dbeec44c2bbb3f08a5e3c016b2f4a3e9d25100ba9d027fefa5aa8d77",
+      "sha256": "7f7e33fa1b598a0bbbd0fd4f49c018fb5c8e7eb08c2cc318cc368a1f691325e6",
+      "bytes": 3328712,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        1.700830483634587,
+        1.700830483634587,
+        1.700830483634587
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "flexible stem",
+        "leaves",
+        "blossoms"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "arbor-vine",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/arbor-vine-r1.png",
+          "sha256": "a1600900c1c262a9529b44df3598aded516195006df4a90c3f95d0f1029962df",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "cake": {
+    "id": "cake",
+    "uri": "/review-assets/cake-a42ce09429d3-ktx.glb",
+    "sha256": "c1253a537a97b92842cd75b7d94ffc7bd652f8d17a0567960ef97011d86b0a1b",
+    "sourceSha256": "a42ce09429d3c32d17cda542856588c2388c0ce17bfc9263327ba06ec17b8a65",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/vanilla+cake+3d+model.glb",
+      "sourceSha256": "a42ce09429d3c32d17cda542856588c2388c0ce17bfc9263327ba06ec17b8a65",
+      "sha256": "c1253a537a97b92842cd75b7d94ffc7bd652f8d17a0567960ef97011d86b0a1b",
+      "bytes": 2731764,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        0.3501709819247679,
+        0.3501709819247679,
+        0.3501709819247679
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "cake",
+        "icing",
+        "serving plate"
+      ]
+    },
+    "locations": [
+      "garden",
+      "presentation"
+    ],
+    "reference": {
+      "id": "cake",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/cake-r1.png",
+          "sha256": "c79dc444d8c7f561e1f3eb6f09d25208d232987770c3875093cf2a93f9dfbbf2",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "red-pencil": {
+    "id": "red-pencil",
+    "uri": "/review-assets/red-pencil-25501eadb414-ktx.glb",
+    "sha256": "70fb91a3c4e0c40ec176d52b4d045a9376bc0c03b28b5cafa9e57343c5acb626",
+    "sourceSha256": "25501eadb414340fdd8e9e495f3af1edaac696d60698fec47a0cde3476c37760",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/red+pencil+3d+model (1).glb",
+      "sourceSha256": "25501eadb414340fdd8e9e495f3af1edaac696d60698fec47a0cde3476c37760",
+      "sha256": "70fb91a3c4e0c40ec176d52b4d045a9376bc0c03b28b5cafa9e57343c5acb626",
+      "bytes": 2491320,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "studio",
+    "normalization": {
+      "scale": [
+        0.2655181226041699,
+        0.2655181226041699,
+        0.2655181226041699
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        -0.0001373291015625,
+        0,
+        0.0000152587890625
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "holder",
+        "three pencils",
+        "loose pencil"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "writing-supplies",
+      "state": "village-pencil",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/writing-supplies-r1.png",
+          "sha256": "0a64a08ec7e2ccdb1acc47c12390b2abd9a79dbb01e10d4ac097da3d277b507b",
+          "role": "master"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--village-pencil.png",
+          "sha256": "3e88cdfbd4e4443676db94c26f534d4939a07483ab7c348f0b888b66f1264e2a",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "riverbank": {
+    "id": "riverbank",
+    "uri": "/review-assets/riverbank-7da9e650b9cf-ktx.glb",
+    "sha256": "0b1496c7886cf6bb18edfc0d8ef48ba6a96f80186563c4b2466a52717b1ca215",
+    "sourceSha256": "7da9e650b9cf4512991c8329897bbb281ba1d406c2471995f7e965b31c101482",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/riverbank+diorama+3d+model.glb",
+      "sourceSha256": "7da9e650b9cf4512991c8329897bbb281ba1d406c2471995f7e965b31c101482",
+      "sha256": "0b1496c7886cf6bb18edfc0d8ef48ba6a96f80186563c4b2466a52717b1ca215",
+      "bytes": 3309960,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "river",
+    "normalization": {
+      "scale": [
+        6.002931118710308,
+        6.002931118710308,
+        6.002931118710308
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "water surface",
+        "wet edge",
+        "pebble margin",
+        "shore transition"
+      ]
+    },
+    "locations": [
+      "river",
+      "garden"
+    ],
+    "reference": {
+      "id": "river-shore",
+      "state": "shore module",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/river-shore-r1.png",
+          "sha256": "74f8336ebca3ef301f7112149ec2e0d54dc257a7d690962a9b77d4adaf2a8a5f",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "soil-covered": {
+    "id": "soil-covered",
+    "uri": "/review-assets/soil-covered-82cd8c734362-ktx.glb",
+    "sha256": "2c4fe3c911cae03150a868427e3b62ebe231e8c635deb332e2cf84d0004461d2",
+    "sourceSha256": "82cd8c7343626dc938ab6373bb6d83776dcc53c4591088fb5884ee12586481c7",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/soil+pile+3d+model (1).glb",
+      "sourceSha256": "82cd8c7343626dc938ab6373bb6d83776dcc53c4591088fb5884ee12586481c7",
+      "sha256": "2c4fe3c911cae03150a868427e3b62ebe231e8c635deb332e2cf84d0004461d2",
+      "bytes": 3968924,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        0.5802833414753297,
+        0.5802833414753297,
+        0.5802833414753297
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Covered planting bed",
+      "referenceParts": [
+        "soil",
+        "planting hollow",
+        "stone rim"
+      ],
+      "states": [
+        "rooted sprout",
+        "BLOOM growth",
+        "bloom"
+      ]
+    },
+    "locations": [
+      "garden",
+      "presentation"
+    ],
+    "reference": {
+      "id": "planting-bed",
+      "state": "soil-covered",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/planting-bed-r1.png",
+          "sha256": "104c733521b74807b332e5a5b5700be3beba3322d9e14bc5b811d6b739357bf4",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/planting-states-r1.png",
+          "sha256": "7ba63d0438ba5cafee61bd919d4e6f68dbdb132ba82988bcfb945758964f7c31",
+          "role": "soil-preparation-states"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--soil-covered.png",
+          "sha256": "b6c0d8e04e3721301aee852689c592876fde8c0b6fed8c44bd72cd4049a439af",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "landscape": {
+    "id": "landscape",
+    "uri": "/review-assets/landscape-d78f5a1ce49a-ktx.glb",
+    "sha256": "fa49af62619f57221846c6d76019905bb5165473fe80ff46de19d5916ee9f22e",
+    "sourceSha256": "d78f5a1ce49af908259a188623288be109a7c1d72daefa44da37c920d0f5f2fe",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/storybook+landscape+3d+model.glb",
+      "sourceSha256": "d78f5a1ce49af908259a188623288be109a7c1d72daefa44da37c920d0f5f2fe",
+      "sha256": "fa49af62619f57221846c6d76019905bb5165473fe80ff46de19d5916ee9f22e",
+      "bytes": 3660372,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        8.161394769613947,
+        8.161394769613947,
+        8.161394769613947
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        -0.0009002685546875,
+        0,
+        0.000091552734375
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "clothbound cover",
+        "ordinary paper pages",
+        "bound spine",
+        "separate miniature village insert"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "storybook",
+      "state": "open with miniature village",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/storybook-sparkfest-r3.png",
+          "sha256": "8c248807acbc4751db68dba69d2602011bfb8c47573ef3fed402f0859c684a34",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "tree-1": {
+    "id": "tree-1",
+    "uri": "/review-assets/tree-1-8277e00b97b6-ktx.glb",
+    "sha256": "715287d76453632505df77d41bd4082c7c9cf2878c8b3e5d3479d5d895a9151e",
+    "sourceSha256": "8277e00b97b6626bb3b9dac217f4dada2f93995bb9f5a9ba24f09721445975d0",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/stylized+tree+3d+model (1).glb",
+      "sourceSha256": "8277e00b97b6626bb3b9dac217f4dada2f93995bb9f5a9ba24f09721445975d0",
+      "sha256": "715287d76453632505df77d41bd4082c7c9cf2878c8b3e5d3479d5d895a9151e",
+      "bytes": 4977196,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        2.4089089861376207,
+        2.4089089861376207,
+        2.4089089861376207
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        -0.002017989754676819,
+        0,
+        -0.0008834004402160645
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "trunk",
+        "branches",
+        "leaf clusters",
+        "root flare"
+      ]
+    },
+    "locations": [
+      "crossing",
+      "dock",
+      "river",
+      "garden",
+      "bakery",
+      "workshop"
+    ],
+    "reference": {
+      "id": "shade-tree",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/shade-tree-r1.png",
+          "sha256": "56c0302a3837a8db6da8b921df018bdfb347e58ff1c7b7d75413a6c537f83616",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "tree": {
+    "id": "tree",
+    "uri": "/review-assets/tree-972d9541ef1a-ktx.glb",
+    "sha256": "4bd994d0d50e0fc6dd12fd97a39fe55095f1b7eb9fe2f366783e21d247d95f3c",
+    "sourceSha256": "972d9541ef1a99e09758cdf187da4a886d46b4c8c3b9f90d706fcade731d5f34",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/stylized+tree+3d+model.glb",
+      "sourceSha256": "972d9541ef1a99e09758cdf187da4a886d46b4c8c3b9f90d706fcade731d5f34",
+      "sha256": "4bd994d0d50e0fc6dd12fd97a39fe55095f1b7eb9fe2f366783e21d247d95f3c",
+      "bytes": 3045568,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        2.6012701514411334,
+        2.6012701514411334,
+        2.6012701514411334
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "trunk",
+        "branches",
+        "leaf clusters",
+        "root flare"
+      ]
+    },
+    "locations": [
+      "crossing",
+      "dock",
+      "river",
+      "garden",
+      "bakery",
+      "workshop"
+    ],
+    "reference": {
+      "id": "shade-tree",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/shade-tree-r1.png",
+          "sha256": "56c0302a3837a8db6da8b921df018bdfb347e58ff1c7b7d75413a6c537f83616",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "tape-roll-2": {
+    "id": "tape-roll-2",
+    "uri": "/review-assets/tape-roll-2-0844841a8ee8-ktx.glb",
+    "sha256": "0d7d1e701832887a0cf2a478366475a6d6ca1b4d51ec114374164f13939ca29d",
+    "sourceSha256": "0844841a8ee8f3daa5b97e250c2570d990c70d3836dea5b59f34879c29580d6b",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/tape+roll+3d+model (2).glb",
+      "sourceSha256": "0844841a8ee8f3daa5b97e250c2570d990c70d3836dea5b59f34879c29580d6b",
+      "sha256": "0d7d1e701832887a0cf2a478366475a6d6ca1b4d51ec114374164f13939ca29d",
+      "bytes": 2825952,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "recollection",
+    "normalization": {
+      "scale": [
+        0.16,
+        0.16,
+        0.16
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "core",
+        "tape roll",
+        "separable strip"
+      ]
+    },
+    "locations": [
+      "recollection"
+    ],
+    "reference": {
+      "id": "tape",
+      "state": "tape-roll",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/tape-r1.png",
+          "sha256": "02688b7ba13575edef5547abd233df6f281b08b8d0c09f4cded6215a10e7834f",
+          "role": "master"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--tape-roll.png",
+          "sha256": "3a08fd908eb7809e7b8ba41fe012879d81d19849c08f4e1ade05d627c04c5b1d",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "tape-roll": {
+    "id": "tape-roll",
+    "uri": "/review-assets/tape-roll-05e9df4a7d0a-ktx.glb",
+    "sha256": "f647c8a2a4d986d47989a84e6cdc3ab594e387ba37748793d2254c290427d9d0",
+    "sourceSha256": "05e9df4a7d0a34d3b63cabc1e7c540bfef34d68c07dcf9a17d426e55f1de7452",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/tape+roll+3d+model.glb",
+      "sourceSha256": "05e9df4a7d0a34d3b63cabc1e7c540bfef34d68c07dcf9a17d426e55f1de7452",
+      "sha256": "f647c8a2a4d986d47989a84e6cdc3ab594e387ba37748793d2254c290427d9d0",
+      "bytes": 2831572,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "recollection",
+    "normalization": {
+      "scale": [
+        0.16007816316560822,
+        0.16007816316560822,
+        0.16007816316560822
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        -0.0009765625,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "core",
+        "tape roll",
+        "separable strip"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "tape",
+      "state": "roll with loose tail",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/tape-r1.png",
+          "sha256": "02688b7ba13575edef5547abd233df6f281b08b8d0c09f4cded6215a10e7834f",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "teal-pencil": {
+    "id": "teal-pencil",
+    "uri": "/review-assets/teal-pencil-1687e916885f-ktx.glb",
+    "sha256": "6ae9a456eaabde82b6585c47fd0467e7730f9a0a07cd138e8d72ce0adda1e684",
+    "sourceSha256": "1687e916885f4864baea9d1d13e554f749b92eae050023c9c6a281d3ad02a946",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/teal+pencil+3d+model (1).glb",
+      "sourceSha256": "1687e916885f4864baea9d1d13e554f749b92eae050023c9c6a281d3ad02a946",
+      "sha256": "6ae9a456eaabde82b6585c47fd0467e7730f9a0a07cd138e8d72ce0adda1e684",
+      "bytes": 3519156,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "studio",
+    "normalization": {
+      "scale": [
+        0.26012701514411335,
+        0.26012701514411335,
+        0.26012701514411335
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "glazed ceramic pencil cup",
+        "wood pencils",
+        "graphite tips"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "sparkfest-writing",
+      "state": "sparkfest-pencil",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/sparkfest-writing-r1.png",
+          "sha256": "636178a65422ca1f8cc34ffcf9b0965b1568a2e111a74d1e7730b3358ac0e5ec",
+          "role": "master"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/04-Sparkfest-Functional-Objects/P2/Sparkfest--sparkfest-pencil.png",
+          "sha256": "dc4c760b0b51fee1578419bf26ffb843f5d4c275c687b5d36ea49d9ff434cb0d",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "tile-2": {
+    "id": "tile-2",
+    "uri": "/review-assets/tile-2-4a69f1bc5d70-ktx.glb",
+    "sha256": "8076cebde85cbdba4fa93c4da26ae392ca745456add6188b8bf570c40cdefbe0",
+    "sourceSha256": "4a69f1bc5d706bdcc158c5c820eab5b3a6fa57ed1ca0f34a0075d4b1f288ce9f",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/terracotta+roof+tile+3d+model (2).glb",
+      "sourceSha256": "4a69f1bc5d706bdcc158c5c820eab5b3a6fa57ed1ca0f34a0075d4b1f288ce9f",
+      "sha256": "8076cebde85cbdba4fa93c4da26ae392ca745456add6188b8bf570c40cdefbe0",
+      "bytes": 3717220,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        0.7703761602344895,
+        0.7703761602344895,
+        0.7703761602344895
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Damaged roof state; removed when the same gap is repaired",
+      "referenceParts": [
+        "tile",
+        "overlap lip",
+        "locating holes",
+        "support surface"
+      ]
+    },
+    "locations": [
+      "bakery"
+    ],
+    "reference": {
+      "id": "roof-tile",
+      "state": "roof-tile-cracked",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/roof-tile-r1.png",
+          "sha256": "f34e647909980c159f7f25d9576af8f967a9883e1135aebdae07e9952d10c074",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/tile-states-r2-r1.png",
+          "sha256": "1fdb18101b431ff5fc34de676a62bf257d5e42bffdcb3d800587a440e81404d3",
+          "role": "cracked-and-replaced"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--roof-tile-cracked.png",
+          "sha256": "941e4043a9656efed01ca5c43e4d5c910398715a457f2f1a5838f249204c5116",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "tile": {
+    "id": "tile",
+    "uri": "/review-assets/tile-30d898e454b9-ktx.glb",
+    "sha256": "7ec63d24a9ca09d325ddb91b2c3d0f4e30a22241ac2bd7e5d2f81c44bbd822e0",
+    "sourceSha256": "30d898e454b98de0dc6aa52a086f2a327f5e32cf557546656ed0b04bb5aa3b6e",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/terracotta+roof+tile+3d+model.glb",
+      "sourceSha256": "30d898e454b98de0dc6aa52a086f2a327f5e32cf557546656ed0b04bb5aa3b6e",
+      "sha256": "7ec63d24a9ca09d325ddb91b2c3d0f4e30a22241ac2bd7e5d2f81c44bbd822e0",
+      "bytes": 3131364,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        0.7703761602344895,
+        0.7703761602344895,
+        0.7703761602344895
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Intact roof tile transferred through Sol hand to actual roof gap",
+      "referenceParts": [
+        "tile",
+        "overlap lip",
+        "locating holes",
+        "support surface"
+      ]
+    },
+    "locations": [
+      "garden",
+      "bakery",
+      "workshop",
+      "presentation"
+    ],
+    "reference": {
+      "id": "roof-tile",
+      "state": "intact",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/roof-tile-r1.png",
+          "sha256": "f34e647909980c159f7f25d9576af8f967a9883e1135aebdae07e9952d10c074",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/tile-states-r2-r1.png",
+          "sha256": "1fdb18101b431ff5fc34de676a62bf257d5e42bffdcb3d800587a440e81404d3",
+          "role": "cracked-and-replaced"
+        }
+      ]
+    }
+  },
+  "camera": {
+    "id": "camera",
+    "uri": "/review-assets/camera-42b95460292e-ktx.glb",
+    "sha256": "94b8486f94a68ef15038bffe66af1d8d1f336571d3a8863447badedf541b5b2b",
+    "sourceSha256": "42b95460292ed20b989e7099c5cecb66ced4f70bd28eef18cd1ec2c570331eef",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/toy+camera+3d+model (1).glb",
+      "sourceSha256": "42b95460292ed20b989e7099c5cecb66ced4f70bd28eef18cd1ec2c570331eef",
+      "sha256": "94b8486f94a68ef15038bffe66af1d8d1f336571d3a8863447badedf541b5b2b",
+      "bytes": 2268368,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "studio",
+    "normalization": {
+      "scale": [
+        0.3575087592917168,
+        0.3575087592917168,
+        0.3575087592917168
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0.000009939074516296387,
+        0,
+        0.00010833144187927246
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "cream and teal painted casing",
+        "glass lens",
+        "rubber wheels",
+        "open carry handle",
+        "coral button"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "loop",
+      "state": "loop-body",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/loop-sparkfest-r2.png",
+          "sha256": "efc1369193067f0e5c725759a61362d4b6ed3aa009ed7dd97b9ba904a040bee9",
+          "role": "master"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/04-Sparkfest-Functional-Objects/P2/Sparkfest--loop-body.png",
+          "sha256": "477104893c9f0d1f15334a294eb7bf587bcaf85f3153d965825062a4a6a0abe4",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "willow": {
+    "id": "willow",
+    "uri": "/review-assets/willow-ade0186ae5cd-ktx.glb",
+    "sha256": "ff0f8294ce95a1e2060835c2932a01a0acc957cd394e160a7dbc591cc0b87050",
+    "sourceSha256": "ade0186ae5cd5eb76c72cac0444ba62058dcdf7f6b02dc794c5645e19be2e0e7",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/willow+tree+3d+model (1).glb",
+      "sourceSha256": "ade0186ae5cd5eb76c72cac0444ba62058dcdf7f6b02dc794c5645e19be2e0e7",
+      "sha256": "ff0f8294ce95a1e2060835c2932a01a0acc957cd394e160a7dbc591cc0b87050",
+      "bytes": 3893472,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        3.573614183778394,
+        3.573614183778394,
+        3.573614183778394
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        -0.00048828125,
+        0,
+        -0.0001983642578125
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "trunk",
+        "arching branches",
+        "hanging leaf clusters"
+      ]
+    },
+    "locations": [
+      "crossing",
+      "dock",
+      "river",
+      "garden",
+      "bakery",
+      "workshop"
+    ],
+    "reference": {
+      "id": "willow",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/willow-r1.png",
+          "sha256": "b57494dc483de0257c65cd6186a6d5b70cbe40be47bbc44e8a770bba9c53d3b2",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "willow-2": {
+    "id": "willow-2",
+    "uri": "/review-assets/willow-2-e3ca2fac42d7-ktx.glb",
+    "sha256": "5e3a69c08067f4078876b3c2ddb49bb9ba6366caacade7915840f5c81faaf768",
+    "sourceSha256": "e3ca2fac42d7f2ee5299b1608435f7e50640ead4ae266d499e5de55edae36d54",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/willow+tree+3d+model.glb",
+      "sourceSha256": "e3ca2fac42d7f2ee5299b1608435f7e50640ead4ae266d499e5de55edae36d54",
+      "sha256": "5e3a69c08067f4078876b3c2ddb49bb9ba6366caacade7915840f5c81faaf768",
+      "bytes": 3375980,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        3.5017098192476794,
+        3.5017098192476794,
+        3.5017098192476794
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "trunk",
+        "arching branches",
+        "hanging leaf clusters"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "willow",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/willow-r1.png",
+          "sha256": "b57494dc483de0257c65cd6186a6d5b70cbe40be47bbc44e8a770bba9c53d3b2",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "panel": {
+    "id": "panel",
+    "uri": "/review-assets/panel-d46d19f43ac6-ktx.glb",
+    "sha256": "5193422d4bf4f62aee8bc11f6344f0c836080c65cc4a19b0cdebaaed51a05f14",
+    "sourceSha256": "d46d19f43ac609e77e314b775eeb351aafced9a722c30fc07d8084633561eca1",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wood+framed+panel+3d+model (1).glb",
+      "sourceSha256": "d46d19f43ac609e77e314b775eeb351aafced9a722c30fc07d8084633561eca1",
+      "sha256": "5193422d4bf4f62aee8bc11f6344f0c836080c65cc4a19b0cdebaaed51a05f14",
+      "bytes": 2507016,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "studio",
+    "normalization": {
+      "scale": [
+        2.201074743527113,
+        2.201074743527113,
+        2.201074743527113
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "smooth matte projection fabric",
+        "wood frame",
+        "rear mounting brackets"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "projection",
+      "state": "blank framed surface",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/projection-sparkfest-r2.png",
+          "sha256": "ad47698244af9d3dc749919d126580187f729b988d2c1e93a3039aa6e075e4d4",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "boat-space": {
+    "id": "boat-space",
+    "uri": "/review-assets/boat-space-abd7eb65bfd9-ktx.glb",
+    "sha256": "1eacc5461ea5e07877251d078da746162ba5f607e2739c1ab6d8aa445e966dab",
+    "sourceSha256": "abd7eb65bfd9df20e494c5b49303cba219473cd2a289422dde27af0ff1336fb0",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden boat 3d model.glb",
+      "sourceSha256": "abd7eb65bfd9df20e494c5b49303cba219473cd2a289422dde27af0ff1336fb0",
+      "sha256": "1eacc5461ea5e07877251d078da746162ba5f607e2739c1ab6d8aa445e966dab",
+      "bytes": 4886192,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "river",
+    "normalization": {
+      "scale": [
+        0.9193431651548749,
+        0.9193431651548749,
+        0.9193431651548749
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ],
+      "seed-cradle": [
+        0,
+        0.187,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 2,
+      "assembly": "Steered seed boat",
+      "referenceParts": [
+        "open hull",
+        "empty accessible cradle",
+        "cargo fastenings",
+        "marker flag"
+      ],
+      "attachments": {
+        "seed-cradle": [
+          0,
+          0.187,
+          0
+        ]
+      }
+    },
+    "locations": [
+      "crossing",
+      "river"
+    ],
+    "reference": {
+      "id": "seed-boat",
+      "state": "empty cradle",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/seed-boat-r1.png",
+          "sha256": "3adf9f1914e7b96fbb4cf8388b92fad0ece25a7dfd915aadad708fbb856ad88b",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/seed-boat-detail-r1.png",
+          "sha256": "88b21dd9241326ea8c8ab189e03560d155554eddd43e12f7e5ab81a36cde45c3",
+          "role": "cradle-and-loading-detail"
+        }
+      ]
+    }
+  },
+  "bakery": {
+    "id": "bakery",
+    "uri": "/review-assets/bakery-63f0c371788b-ktx.glb",
+    "sha256": "2c1addef2c757c0da1ce92f9edb22dafc16ec57b6d882a399c91ede1ee3add27",
+    "sourceSha256": "63f0c371788b87a11b26c6eef3d4267cc0f5e4225934a6ddb3ecda38460d92ff",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+bakery+3d+model.glb",
+      "sourceSha256": "63f0c371788b87a11b26c6eef3d4267cc0f5e4225934a6ddb3ecda38460d92ff",
+      "sha256": "2c1addef2c757c0da1ce92f9edb22dafc16ec57b6d882a399c91ede1ee3add27",
+      "bytes": 5079284,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        3.678319550947406,
+        3.678319550947406,
+        3.678319550947406
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        -0.0011527836322784424,
+        0,
+        0.0005303770303726196
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "roof panels",
+        "repair opening",
+        "chimney",
+        "windows",
+        "open front",
+        "floor"
+      ]
+    },
+    "locations": [
+      "garden",
+      "bakery",
+      "workshop",
+      "presentation"
+    ],
+    "reference": {
+      "id": "bakery",
+      "state": "roof opening",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bakery-r1.png",
+          "sha256": "161cb6ec3f22d4c65746626f73c66a5258c0fa0a04b13d4a00f8daf0f964d5bf",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bakery-cutaway-r1.png",
+          "sha256": "0d16daaca018841969dc800f55c3ad231bc85b22486de2b28b248fb42027771e",
+          "role": "interior-cutaway"
+        }
+      ]
+    }
+  },
+  "bench-1": {
+    "id": "bench-1",
+    "uri": "/review-assets/bench-1-7ad9fd1af005-ktx.glb",
+    "sha256": "f52cdace80b4d6a60f50a78ec90cd478cae92cd25e2905b9820b737fc37ae1ed",
+    "sourceSha256": "7ad9fd1af0051ec6277ce9c85121d4137eaff1882df33b6b49eedad001910683",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+bench+3d+model (1).glb",
+      "sourceSha256": "7ad9fd1af0051ec6277ce9c85121d4137eaff1882df33b6b49eedad001910683",
+      "sha256": "f52cdace80b4d6a60f50a78ec90cd478cae92cd25e2905b9820b737fc37ae1ed",
+      "bytes": 2843244,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        1.700830483634587,
+        1.700830483634587,
+        1.700830483634587
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "seat",
+        "back",
+        "arms",
+        "legs"
+      ]
+    },
+    "locations": [
+      "garden",
+      "presentation"
+    ],
+    "reference": {
+      "id": "bench",
+      "state": "backrest bench",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bench-r1.png",
+          "sha256": "38f71f3d526ccad9a429592922e68063e5831d940bed11f99e7588749b6384ef",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "bench": {
+    "id": "bench",
+    "uri": "/review-assets/bench-1b86eb32a9e7-ktx.glb",
+    "sha256": "f948d42084315f760203c34b5f9addb15ad3f8a90c28d94bc795b6ad2048f19d",
+    "sourceSha256": "1b86eb32a9e7bb166e173e6decd8e2c30862196add32e45d321c33ff07052613",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+bench+3d+model.glb",
+      "sourceSha256": "1b86eb32a9e7bb166e173e6decd8e2c30862196add32e45d321c33ff07052613",
+      "sha256": "f948d42084315f760203c34b5f9addb15ad3f8a90c28d94bc795b6ad2048f19d",
+      "bytes": 3078708,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        1.700830483634587,
+        1.700830483634587,
+        1.700830483634587
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        -0.00048828125,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "top",
+        "legs",
+        "braces"
+      ]
+    },
+    "locations": [
+      "garden",
+      "bakery",
+      "workshop",
+      "recollection",
+      "presentation"
+    ],
+    "reference": {
+      "id": "worktable",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/worktable-r1.png",
+          "sha256": "326b80bb9de2cc11dfc70cdbface71db57c6b6abde42e9c4d312bf507cff281c",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "boat-1": {
+    "id": "boat-1",
+    "uri": "/review-assets/boat-1-1dc797342acb-ktx.glb",
+    "sha256": "1197cacc4e4322e3a2de22493ead8d6bfa009ad09d67a4fdce8f5c6a95650fd8",
+    "sourceSha256": "1dc797342acbd54c98e8990baf7e484b9e5b81ffcb78808e14901d935abde3a2",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+boat+3d+model (1).glb",
+      "sourceSha256": "1dc797342acbd54c98e8990baf7e484b9e5b81ffcb78808e14901d935abde3a2",
+      "sha256": "1197cacc4e4322e3a2de22493ead8d6bfa009ad09d67a4fdce8f5c6a95650fd8",
+      "bytes": 3274564,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "river",
+    "normalization": {
+      "scale": [
+        0.9004396678065462,
+        0.9004396678065462,
+        0.9004396678065462
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "card backing",
+        "illustrated replaceable face"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "story-card",
+      "state": "seed voyage picture",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/story-card-r2-r1.png",
+          "sha256": "a12c32e34a0db6692d77ddf4007f352ff79b96115ebd2ba626d4ee483b1e3c8b",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/story-card-states-r2-r1.png",
+          "sha256": "30c463a2070beb34706e584a5b3d92df1f4058bf8b82fc9a0dc3501f581a6b9b",
+          "role": "witnessed-picture-inserts"
+        }
+      ]
+    }
+  },
+  "boat-2": {
+    "id": "boat-2",
+    "uri": "/review-assets/boat-2-b8bb50e2ca18-ktx.glb",
+    "sha256": "52ba74a16ea74fabf8c09f247c6b5341c403b9c708747eb57b5662081521a46e",
+    "sourceSha256": "b8bb50e2ca188c86e055c388e1ae6e1abeb706581b5b341b8fe66cbc9d85abca",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+boat+3d+model (2).glb",
+      "sourceSha256": "b8bb50e2ca188c86e055c388e1ae6e1abeb706581b5b341b8fe66cbc9d85abca",
+      "sha256": "52ba74a16ea74fabf8c09f247c6b5341c403b9c708747eb57b5662081521a46e",
+      "bytes": 3026012,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "dock",
+    "normalization": {
+      "scale": [
+        3.001465559355154,
+        3.001465559355154,
+        3.001465559355154
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "hull",
+        "benches",
+        "tiller",
+        "operator seat",
+        "rail",
+        "boarding gap",
+        "ring"
+      ]
+    },
+    "locations": [
+      "dock",
+      "garden",
+      "recollection",
+      "presentation"
+    ],
+    "reference": {
+      "id": "passenger-boat",
+      "state": "open passenger hull",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/passenger-boat-r1.png",
+          "sha256": "e48efb36a4a5bc285253a123259064939c60c37ab732ff5d182e65f549ff91a3",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "boat": {
+    "id": "boat",
+    "uri": "/review-assets/boat-92caa649a8fc-ktx.glb",
+    "sha256": "b206e21d08bed55d61421215765fb6490bae7d9a290cc77bee326e10711cf4e0",
+    "sourceSha256": "92caa649a8fcb2f62d74bddcc8d8c8f5e90c7b873e86b5d2c66668a22e8ee1ad",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+boat+3d+model.glb",
+      "sourceSha256": "92caa649a8fcb2f62d74bddcc8d8c8f5e90c7b873e86b5d2c66668a22e8ee1ad",
+      "sha256": "b206e21d08bed55d61421215765fb6490bae7d9a290cc77bee326e10711cf4e0",
+      "bytes": 3131800,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "river",
+    "normalization": {
+      "scale": [
+        0.9004396678065462,
+        0.9004396678065462,
+        0.9004396678065462
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "card backing",
+        "illustrated replaceable face"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "story-card",
+      "state": "seed voyage picture",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/story-card-r2-r1.png",
+          "sha256": "a12c32e34a0db6692d77ddf4007f352ff79b96115ebd2ba626d4ee483b1e3c8b",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/story-card-states-r2-r1.png",
+          "sha256": "30c463a2070beb34706e584a5b3d92df1f4058bf8b82fc9a0dc3501f581a6b9b",
+          "role": "witnessed-picture-inserts"
+        }
+      ]
+    }
+  },
+  "bollard": {
+    "id": "bollard",
+    "uri": "/review-assets/bollard-6365b655c8c4-ktx.glb",
+    "sha256": "8eee6257bbccdf06827dc83bdbfc714ec142d229b31697fd1cc58f503a547d5d",
+    "sourceSha256": "6365b655c8c476e4ed954efae52ade2b0ecbd3ab74b572e251f911ba089dec59",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+bollard+3d+model.glb",
+      "sourceSha256": "6365b655c8c476e4ed954efae52ade2b0ecbd3ab74b572e251f911ba089dec59",
+      "sha256": "8eee6257bbccdf06827dc83bdbfc714ec142d229b31697fd1cc58f503a547d5d",
+      "bytes": 3154044,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "dock",
+    "normalization": {
+      "scale": [
+        0.6002931118710307,
+        0.6002931118710307,
+        0.6002931118710307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "shaft",
+        "cap",
+        "rope eye",
+        "collar",
+        "ground foot"
+      ]
+    },
+    "locations": [
+      "crossing"
+    ],
+    "reference": {
+      "id": "bank-post",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bank-post-r1.png",
+          "sha256": "9113ac201330c301dcbe1d255c4e6b47f7e80a397d638e1fd7d2dc725843964b",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "bridge": {
+    "id": "bridge",
+    "uri": "/review-assets/bridge-7112920700c7-ktx.glb",
+    "sha256": "c263630495b726d437a940ddab277a605ec3e7c983cdccdfa201296cc24a6cc8",
+    "sourceSha256": "7112920700c7b0cdcb448966069268d17772561754a4b465f9fd2b62026783e7",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+bridge+3d+model.glb",
+      "sourceSha256": "7112920700c7b0cdcb448966069268d17772561754a4b465f9fd2b62026783e7",
+      "sha256": "c263630495b726d437a940ddab277a605ec3e7c983cdccdfa201296cc24a6cc8",
+      "bytes": 2305872,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "crossing",
+    "normalization": {
+      "scale": [
+        1.5507572056668295,
+        1.5507572056668295,
+        1.5507572056668295
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "First independent deck; six-post bridge construction",
+      "referenceParts": [
+        "deck",
+        "support beams",
+        "end connectors",
+        "side sockets"
+      ],
+      "connectors": [
+        "west-north",
+        "west-south",
+        "center-north",
+        "center-south"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "bridge-a",
+      "state": "independent section",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bridge-a-r1.png",
+          "sha256": "b96d96c4b68aee0be8e229a4aa3e519ccf6cae3abb4d1d629974d66fa9e89ea4",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bridge-joint-detail-r1.png",
+          "sha256": "61fd9379fbbc2709f93b21f9d3a7c7d39f10132a106d18f33f5b531d16571842",
+          "role": "connections-and-staged-layout"
+        }
+      ]
+    }
+  },
+  "chest": {
+    "id": "chest",
+    "uri": "/review-assets/chest-4c140e6c2317-ktx.glb",
+    "sha256": "ea4869e93336d7a53094bdd65d782c6ea0f7305c63780656fa0dd38f768d444e",
+    "sourceSha256": "4c140e6c2317f862114cc9b9357cc8c02b0519af48c92acd23287945007c436d",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+chest+3d+model.glb",
+      "sourceSha256": "4c140e6c2317f862114cc9b9357cc8c02b0519af48c92acd23287945007c436d",
+      "sha256": "ea4869e93336d7a53094bdd65d782c6ea0f7305c63780656fa0dd38f768d444e",
+      "bytes": 2526104,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        0.8003908158280411,
+        0.8003908158280411,
+        0.8003908158280411
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        7.450580596923828e-9,
+        0,
+        4.6566128730773926e-9
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 17,
+      "sourceNodes": 18,
+      "assembly": "Complete supplied open chest; cushion retrieval begins inside this same source model",
+      "referenceParts": [
+        "box",
+        "hinged lid",
+        "latch",
+        "feet"
+      ]
+    },
+    "locations": [
+      "garden"
+    ],
+    "reference": {
+      "id": "storage-chest",
+      "state": "complete open chest",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/storage-chest-r1.png",
+          "sha256": "4fa136dd87b3c73961d91769c64ec5f60b831fefb79b7f8c57bd75dd259394e0",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "table": {
+    "id": "table",
+    "uri": "/review-assets/table-b834dd8ba9e3-ktx.glb",
+    "sha256": "b529d8e9a1e733ebae05ed6762db75fe944c7343be181639f72810bb2be5bf50",
+    "sourceSha256": "b834dd8ba9e30811fa9ad1a7e9e6055bd88a49487ad78df270dfa0b6b4e1a7d1",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+coffee+table+3d+model.glb",
+      "sourceSha256": "b834dd8ba9e30811fa9ad1a7e9e6055bd88a49487ad78df270dfa0b6b4e1a7d1",
+      "sha256": "b529d8e9a1e733ebae05ed6762db75fe944c7343be181639f72810bb2be5bf50",
+      "bytes": 2472236,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "studio",
+    "normalization": {
+      "scale": [
+        1.9009281875915973,
+        1.9009281875915973,
+        1.9009281875915973
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "smooth wood top",
+        "four legs",
+        "apron and stretchers",
+        "teal painted accents"
+      ]
+    },
+    "locations": [
+      "studio"
+    ],
+    "reference": {
+      "id": "sparkfest-table",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/sparkfest-table-r1.png",
+          "sha256": "89892612f880acfee60f8e5c455aaa85077852724a89276a5119e70d3a22d5f6",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "cottage-1": {
+    "id": "cottage-1",
+    "uri": "/review-assets/cottage-1-bc475a88992a-ktx.glb",
+    "sha256": "a05d0d3dcfa690b81e7c007ae71bce3383a0f0db87999c4b5f421683b11a6710",
+    "sourceSha256": "bc475a88992a00fad0624e6751a2ba340b67ba5d1c25f8da4ade359a960168fb",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+cottage+3d+model (1).glb",
+      "sourceSha256": "bc475a88992a00fad0624e6751a2ba340b67ba5d1c25f8da4ade359a960168fb",
+      "sha256": "a05d0d3dcfa690b81e7c007ae71bce3383a0f0db87999c4b5f421683b11a6710",
+      "bytes": 5449720,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "dock",
+    "normalization": {
+      "scale": [
+        3,
+        3,
+        3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "door",
+        "windows",
+        "covered work bay",
+        "roof",
+        "shelf"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "workshop",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/workshop-r1.png",
+          "sha256": "f8b98d9a2111c30ca7bb2cd2c99eb88c8f271a401db712acf64df919db619eb3",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "cottage": {
+    "id": "cottage",
+    "uri": "/review-assets/cottage-e5fcb550940e-ktx.glb",
+    "sha256": "1719f9a539fc959047d48f5c79c621408b2d2cca1d10d0085a3df44c77ee3d22",
+    "sourceSha256": "e5fcb550940eee066ade501204b4b8fddc91a6fc62ec353f8de54a7caff4743c",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+cottage+3d+model.glb",
+      "sourceSha256": "e5fcb550940eee066ade501204b4b8fddc91a6fc62ec353f8de54a7caff4743c",
+      "sha256": "1719f9a539fc959047d48f5c79c621408b2d2cca1d10d0085a3df44c77ee3d22",
+      "bytes": 4683000,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "normalization": {
+      "scale": [
+        3,
+        3,
+        3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "door",
+        "service window",
+        "shelf",
+        "counter",
+        "roof"
+      ]
+    },
+    "locations": [
+      "dock",
+      "recollection"
+    ],
+    "reference": {
+      "id": "dock-office",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/dock-office-r1.png",
+          "sha256": "c1225d424d681d6f1e95296dbcce6a97a1d18a6980d1665cbbb70a8d83bcc70f",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "crate-2": {
+    "id": "crate-2",
+    "uri": "/review-assets/crate-2-ea0c733d64d4-ktx.glb",
+    "sha256": "d030ed1aec1fee6338a55d3bf6581595b1563d0a15c5d1f4591768e63c285617",
+    "sourceSha256": "ea0c733d64d42f3dac6bf5871f35a2ed4b8838974190f8892160d627633ff2f0",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+crate+3d+model (2).glb",
+      "sourceSha256": "ea0c733d64d42f3dac6bf5871f35a2ed4b8838974190f8892160d627633ff2f0",
+      "sha256": "d030ed1aec1fee6338a55d3bf6581595b1563d0a15c5d1f4591768e63c285617",
+      "bytes": 5141728,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "crossing",
+    "normalization": {
+      "scale": [
+        0.6343631860469144,
+        0.6343631860469144,
+        0.6343631860469144
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        -0.000005751848220825195,
+        0,
+        -0.000012919306755065918
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Garden storage chest base",
+      "referenceParts": [
+        "box",
+        "hinged lid",
+        "latch",
+        "feet"
+      ],
+      "parts": [
+        "tray"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "storage-chest",
+      "state": "chest-base",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/storage-chest-r1.png",
+          "sha256": "4fa136dd87b3c73961d91769c64ec5f60b831fefb79b7f8c57bd75dd259394e0",
+          "role": "master"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/01-Buildings-and-Furniture/P2/Village--chest-base.png",
+          "sha256": "ad97b233c9ce30ff100c1a9c268edc81d9f2b3da4fb81e3994e4aeb0f088ebd2",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "crate": {
+    "id": "crate",
+    "uri": "/review-assets/crate-d919cab07df0-ktx.glb",
+    "sha256": "7d965ed26275148b21106aec22b07dd425bea4c89ad500a821699bf90fb8ff9a",
+    "sourceSha256": "d919cab07df0fbdc0cdc6aac88455cbece90f91d369b019c650f160b8ba503a2",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+crate+3d+model.glb",
+      "sourceSha256": "d919cab07df0fbdc0cdc6aac88455cbece90f91d369b019c650f160b8ba503a2",
+      "sha256": "7d965ed26275148b21106aec22b07dd425bea4c89ad500a821699bf90fb8ff9a",
+      "bytes": 2901004,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "crossing",
+    "normalization": {
+      "scale": [
+        0.6203028822667318,
+        0.6203028822667318,
+        0.6203028822667318
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "box",
+        "interior",
+        "handholds",
+        "braces"
+      ]
+    },
+    "locations": [
+      "crossing"
+    ],
+    "reference": {
+      "id": "material-crate",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/material-crate-r1.png",
+          "sha256": "e6afa811da30b7ee0fe12493951b22290ab8742bc56322ed56bf193f077297ed",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "dock-1": {
+    "id": "dock-1",
+    "uri": "/review-assets/dock-1-1bbd83bfb417-ktx.glb",
+    "sha256": "33ca4939152418588b1dbfa134b35a8bfe2d57eb60147273e90dadf1868fe485",
+    "sourceSha256": "1bbd83bfb417d80436f67de9b1723799040e12136def52448f984bf067dff1d9",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+dock+3d+model (1).glb",
+      "sourceSha256": "1bbd83bfb417d80436f67de9b1723799040e12136def52448f984bf067dff1d9",
+      "sha256": "33ca4939152418588b1dbfa134b35a8bfe2d57eb60147273e90dadf1868fe485",
+      "bytes": 2940976,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "dock",
+    "normalization": {
+      "scale": [
+        3.401660967269174,
+        3.401660967269174,
+        3.401660967269174
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "low deck",
+        "bank pad",
+        "cleat",
+        "supports"
+      ]
+    },
+    "locations": [
+      "river",
+      "garden"
+    ],
+    "reference": {
+      "id": "garden-landing",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/garden-landing-r1.png",
+          "sha256": "e67e4c4edae74d75f2bbd4f01dbb5944c71eb9d71ddf65d1ea13f138e3690928",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "dock": {
+    "id": "dock",
+    "uri": "/review-assets/dock-d8fa07e78704-ktx.glb",
+    "sha256": "5065d1e349ced2e18c70e28eabe8e337ca3b19eb7bb1f9c0b6178e10aa4ea205",
+    "sourceSha256": "d8fa07e78704859e59a79cc9ae950ba4d4cd14adddfe61c2b79134182c755c2d",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+dock+3d+model.glb",
+      "sourceSha256": "d8fa07e78704859e59a79cc9ae950ba4d4cd14adddfe61c2b79134182c755c2d",
+      "sha256": "5065d1e349ced2e18c70e28eabe8e337ca3b19eb7bb1f9c0b6178e10aa4ea205",
+      "bytes": 3504756,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "dock",
+    "normalization": {
+      "scale": [
+        3.401660967269174,
+        3.401660967269174,
+        3.401660967269174
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "deck",
+        "apron",
+        "pilings",
+        "braces",
+        "mooring points"
+      ]
+    },
+    "locations": [
+      "dock",
+      "garden",
+      "recollection",
+      "presentation"
+    ],
+    "reference": {
+      "id": "passenger-dock",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/passenger-dock-r1.png",
+          "sha256": "443087d7b697c51ab6bebdf267a2730f45b817454b3ff386c19b7073fb4d4b73",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "ladder": {
+    "id": "ladder",
+    "uri": "/review-assets/ladder-16f6994cce24-ktx.glb",
+    "sha256": "d77be1f99a9725098ab7e4ac973c1862d362a3e6ce2b966d92e36fb8fe5eb079",
+    "sourceSha256": "16f6994cce242648ec9a09458b299705beecfed86e264416f194e32b3a334807",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+ladder+3d+model.glb",
+      "sourceSha256": "16f6994cce242648ec9a09458b299705beecfed86e264416f194e32b3a334807",
+      "sha256": "d77be1f99a9725098ab7e4ac973c1862d362a3e6ce2b966d92e36fb8fe5eb079",
+      "bytes": 3131260,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        2.1010258915486077,
+        2.1010258915486077,
+        2.1010258915486077
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "rails",
+        "seven rungs",
+        "feet"
+      ]
+    },
+    "locations": [
+      "bakery"
+    ],
+    "reference": {
+      "id": "ladder",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/ladder-r1.png",
+          "sha256": "b1e49510a55e23d96c0bcf3b9a8663c9f4c45cce120f8c26dafd4544da7d3caf",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "peg": {
+    "id": "peg",
+    "uri": "/review-assets/peg-01b0847cb5ef-ktx.glb",
+    "sha256": "7aa3f9a1211507660def516492d35bdcc650ac237331a9f5beedb53ecfd80108",
+    "sourceSha256": "01b0847cb5ef6ce85a9986e52cfbc482bb13cbcc746da4648f8a12d96c2bae65",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+peg+3d+model (1).glb",
+      "sourceSha256": "01b0847cb5ef6ce85a9986e52cfbc482bb13cbcc746da4648f8a12d96c2bae65",
+      "sha256": "7aa3f9a1211507660def516492d35bdcc650ac237331a9f5beedb53ecfd80108",
+      "bytes": 3073204,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "crossing",
+    "normalization": {
+      "scale": [
+        0.20009770395701026,
+        0.20009770395701026,
+        0.20009770395701026
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "tote",
+        "handle",
+        "hammer",
+        "peg pouch"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "toolkit",
+      "state": "wooden-peg",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/toolkit-r1.png",
+          "sha256": "87b51e3e35c1bd23128cf2a07e64b9f56e4d44c7dce7ed7f9af8295747b2eecb",
+          "role": "master"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--wooden-peg.png",
+          "sha256": "62ceb8d7a064298d083c52e4cbb8b87896fabd7cd2a6651fb2f0d559bd56d390",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "platform": {
+    "id": "platform",
+    "uri": "/review-assets/platform-026121fdd2df-ktx.glb",
+    "sha256": "b473ddd0c85b07725cfb9dca576d2173592f95645418e0845617045d78e547a3",
+    "sourceSha256": "026121fdd2df8525b24b56d209c13da4e0c95d40f0d26711638cde3aaa41b915",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+platform+3d+model.glb",
+      "sourceSha256": "026121fdd2df8525b24b56d209c13da4e0c95d40f0d26711638cde3aaa41b915",
+      "sha256": "b473ddd0c85b07725cfb9dca576d2173592f95645418e0845617045d78e547a3",
+      "bytes": 2806868,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "crossing",
+    "normalization": {
+      "scale": [
+        1.5738225086762518,
+        1.5738225086762518,
+        1.5738225086762518
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Second independent deck",
+      "referenceParts": [
+        "deck",
+        "support beams",
+        "mating end connectors",
+        "side sockets"
+      ],
+      "connectors": [
+        "center-north",
+        "center-south",
+        "east-north",
+        "east-south"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "bridge-b",
+      "state": "independent section",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bridge-b-r1.png",
+          "sha256": "b62f7772a93e6375e3676298ec206d6068ce13d8022a9970247e90eed1a43b5d",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "post": {
+    "id": "post",
+    "uri": "/review-assets/post-aac3844da761-ktx.glb",
+    "sha256": "b50e9a544a649f5ece4ac2b579b3bbed49ee96318d04c1726131bf8a60a2f891",
+    "sourceSha256": "aac3844da761deb139188150643d6fb95c2df470f538b281462d53d4813d63b2",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+post+3d+model.glb",
+      "sourceSha256": "aac3844da761deb139188150643d6fb95c2df470f538b281462d53d4813d63b2",
+      "sha256": "b50e9a544a649f5ece4ac2b579b3bbed49ee96318d04c1726131bf8a60a2f891",
+      "bytes": 2976832,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "crossing",
+    "normalization": {
+      "scale": [
+        0.5502686858817782,
+        0.5502686858817782,
+        0.5502686858817782
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "shaft",
+        "cap",
+        "rope guides",
+        "deck mounting shoe"
+      ]
+    },
+    "locations": [
+      "crossing",
+      "dock"
+    ],
+    "reference": {
+      "id": "center-post",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/center-post-r1.png",
+          "sha256": "0fb5ab087a37577f231ce873410c854ebaa8706d2e3b65ff1042d589b3434434",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "ramp": {
+    "id": "ramp",
+    "uri": "/review-assets/ramp-fdc1eea5b2fc-ktx.glb",
+    "sha256": "c9989d6d34be3c0ec681a8971159cdb3e4b19ca71247e3143d295754fde4d0c6",
+    "sourceSha256": "fdc1eea5b2fcaa68e9acd9c605a459afd8b1f3649af3d0cd6cae6968f65e4d64",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+ramp+3d+model.glb",
+      "sourceSha256": "fdc1eea5b2fcaa68e9acd9c605a459afd8b1f3649af3d0cd6cae6968f65e4d64",
+      "sha256": "c9989d6d34be3c0ec681a8971159cdb3e4b19ca71247e3143d295754fde4d0c6",
+      "bytes": 2848564,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "studio",
+    "normalization": {
+      "scale": [
+        1.4006839276990717,
+        1.4006839276990717,
+        1.4006839276990717
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "planks",
+        "stringers",
+        "hooks",
+        "landing lip"
+      ]
+    },
+    "locations": [
+      "dock",
+      "recollection"
+    ],
+    "reference": {
+      "id": "gangway",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/gangway-r1.png",
+          "sha256": "126e931df07c623bb377314ac4b37dbc4fc2d340b636948581a96f9d2188abd5",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "recorder": {
+    "id": "recorder",
+    "uri": "/review-assets/recorder-89e5a773169f-ktx.glb",
+    "sha256": "68f703824ea68fb4a9806444d54db09fc10931f1d3aa55c4677d44b3abbfadb8",
+    "sourceSha256": "89e5a773169f1705b9537c4bf8060f57fff76b0c34a054e42e646d02e67f5d7e",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+recorder+3d+model.glb",
+      "sourceSha256": "89e5a773169f1705b9537c4bf8060f57fff76b0c34a054e42e646d02e67f5d7e",
+      "sha256": "68f703824ea68fb4a9806444d54db09fc10931f1d3aa55c4677d44b3abbfadb8",
+      "bytes": 2690760,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "recollection",
+    "normalization": {
+      "scale": [
+        0.36017586712261845,
+        0.36017586712261845,
+        0.36017586712261845
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "mouthpiece",
+        "bore",
+        "finger holes",
+        "foot"
+      ]
+    },
+    "locations": [
+      "garden",
+      "presentation"
+    ],
+    "reference": {
+      "id": "flute",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/flute-r1.png",
+          "sha256": "5d8eaa25823e3d0c5009c3ad790c645cd52a860689c537fc76dfa163e2865a07",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "scoop": {
+    "id": "scoop",
+    "uri": "/review-assets/scoop-fefee2ee7a93-ktx.glb",
+    "sha256": "42869016b198df8a7afec0ac1936818d06b5d5e2e87465dc37370e5c7f31229f",
+    "sourceSha256": "fefee2ee7a9331443c733be084d9ae0665671c9243513134b43574767587031c",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+scoop+3d+model.glb",
+      "sourceSha256": "fefee2ee7a9331443c733be084d9ae0665671c9243513134b43574767587031c",
+      "sha256": "42869016b198df8a7afec0ac1936818d06b5d5e2e87465dc37370e5c7f31229f",
+      "bytes": 3263864,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        0.30014655593551537,
+        0.30014655593551537,
+        0.30014655593551537
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "cup",
+        "grip",
+        "flour fill"
+      ]
+    },
+    "locations": [
+      "bakery"
+    ],
+    "reference": {
+      "id": "scoop",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/scoop-r1.png",
+          "sha256": "da7f1d34517e04a3c700b84486899f7cc8067136ba5d93d98cd4ee0ec1ed2c37",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "spatula": {
+    "id": "spatula",
+    "uri": "/review-assets/spatula-aa5806fedceb-ktx.glb",
+    "sha256": "8f299a3a0b44d58af44a82ef2a3dbe38e8298818cc2589c418e33ec4a1330a7e",
+    "sourceSha256": "aa5806fedceb112b76cdf94192ba6a82dacd0769522f3ead62d0c6983f87cbd6",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+spatula+3d+model.glb",
+      "sourceSha256": "aa5806fedceb112b76cdf94192ba6a82dacd0769522f3ead62d0c6983f87cbd6",
+      "sha256": "8f299a3a0b44d58af44a82ef2a3dbe38e8298818cc2589c418e33ec4a1330a7e",
+      "bytes": 3054360,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        0.32015632633121643,
+        0.32015632633121643,
+        0.32015632633121643
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "flat paddle",
+        "long grip",
+        "wall-hanging hole"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "bread-peel",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bread-peel-r1.png",
+          "sha256": "e4152f4672d70c8f2b027bfaca6e77a4b0d6b944f60c9cfda0de4a22ff13f9a0",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "spoon": {
+    "id": "spoon",
+    "uri": "/review-assets/spoon-a0d53830df9f-ktx.glb",
+    "sha256": "ce3ede789ba73c8abb0656c74fb1cb2e9f903d01ba8587c5e6723d52b6ba0a0d",
+    "sourceSha256": "a0d53830df9fb0bd0038bdc4feb1b484580d12482d44ed4c71ad1f280512df51",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+spoon+3d+model (1).glb",
+      "sourceSha256": "a0d53830df9fb0bd0038bdc4feb1b484580d12482d44ed4c71ad1f280512df51",
+      "sha256": "ce3ede789ba73c8abb0656c74fb1cb2e9f903d01ba8587c5e6723d52b6ba0a0d",
+      "bytes": 2943704,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        0.30014655593551537,
+        0.30014655593551537,
+        0.30014655593551537
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "plate",
+        "cup",
+        "open handle",
+        "spoon"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "tableware",
+      "state": "spoon",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/tableware-r1.png",
+          "sha256": "2412546a861784264d3662c080e8326ea15c1d5acc9a77fbe15eac2469571b76",
+          "role": "master"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--spoon.png",
+          "sha256": "b8c84b5983924bcb304200b0058a1538406fe95a750cc708d33b73b7cdf00cf6",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "stage-1": {
+    "id": "stage-1",
+    "uri": "/review-assets/stage-1-85af5a75b339-ktx.glb",
+    "sha256": "47252d3a79f1ff4288b9ae02537b224d5310cdf2849dbe596297f01aed2c2bcd",
+    "sourceSha256": "85af5a75b33914713f34eea663a4dbf2057eb7f462216ea33779a7b6201874ae",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+stage+3d+model (1).glb",
+      "sourceSha256": "85af5a75b33914713f34eea663a4dbf2057eb7f462216ea33779a7b6201874ae",
+      "sha256": "47252d3a79f1ff4288b9ae02537b224d5310cdf2849dbe596297f01aed2c2bcd",
+      "bytes": 3238140,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "studio",
+    "normalization": {
+      "scale": [
+        4.802344894968246,
+        4.802344894968246,
+        4.802344894968246
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Studio floor and open stage; furniture remains independent",
+      "referenceParts": [
+        "wood platform and ramp",
+        "wood posts and beam",
+        "painted wall and wainscot",
+        "woven teal curtain",
+        "mounted projection panel"
+      ]
+    },
+    "locations": [
+      "studio"
+    ],
+    "reference": {
+      "id": "studio-stage",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/studio-stage-sparkfest-r4.png",
+          "sha256": "543a17eadbf9f8a15a76b1ed52f34492e899b7aa35ee991e5a52fe96b28ca718",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "stage": {
+    "id": "stage",
+    "uri": "/review-assets/stage-7eef6dafc4cf-ktx.glb",
+    "sha256": "3fbe90f21738e275ad3fe7703a2e888c566cfb2dc86c55396930e0eb17af71e7",
+    "sourceSha256": "7eef6dafc4cfda24d579513d424bcfd0ee0930062f72cae43659f1999effe50e",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+stage+3d+model.glb",
+      "sourceSha256": "7eef6dafc4cfda24d579513d424bcfd0ee0930062f72cae43659f1999effe50e",
+      "sha256": "3fbe90f21738e275ad3fe7703a2e888c566cfb2dc86c55396930e0eb17af71e7",
+      "bytes": 3432968,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "studio",
+    "normalization": {
+      "scale": [
+        6,
+        6,
+        6
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "wood platform and ramp",
+        "wood posts and beam",
+        "painted wall and wainscot",
+        "woven teal curtain",
+        "mounted projection panel"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "studio-stage",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/studio-stage-sparkfest-r4.png",
+          "sha256": "543a17eadbf9f8a15a76b1ed52f34492e899b7aa35ee991e5a52fe96b28ca718",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "toolbox": {
+    "id": "toolbox",
+    "uri": "/review-assets/toolbox-126e4668b3c0-ktx.glb",
+    "sha256": "85b86b5731c3e4c12fa55ce36cca3d69f712938d46160f7d6dbcd2bb9184a465",
+    "sourceSha256": "126e4668b3c04a52133ef484f42310d35d532b9a36f8da472339a38568a3ed75",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+tool+box+3d+model.glb",
+      "sourceSha256": "126e4668b3c04a52133ef484f42310d35d532b9a36f8da472339a38568a3ed75",
+      "sha256": "85b86b5731c3e4c12fa55ce36cca3d69f712938d46160f7d6dbcd2bb9184a465",
+      "bytes": 2449484,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "workshop",
+    "normalization": {
+      "scale": [
+        0.4802344894968246,
+        0.4802344894968246,
+        0.4802344894968246
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "tote",
+        "handle",
+        "hammer",
+        "peg pouch"
+      ]
+    },
+    "locations": [
+      "garden",
+      "bakery",
+      "workshop",
+      "presentation"
+    ],
+    "reference": {
+      "id": "toolkit",
+      "state": "with tools",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/toolkit-r1.png",
+          "sha256": "87b51e3e35c1bd23128cf2a07e64b9f56e4d44c7dce7ed7f9af8295747b2eecb",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "toolbox-1": {
+    "id": "toolbox-1",
+    "uri": "/review-assets/toolbox-1-a3929260a27b-ktx.glb",
+    "sha256": "152357d968871b9df5565c482ce579e11f790d224abc29de8e3fd17d30997feb",
+    "sourceSha256": "a3929260a27b1f67efaa22fb93c342da44653af22d91455f0c22636d1b88fdbe",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+toolbox+3d+model (1).glb",
+      "sourceSha256": "a3929260a27b1f67efaa22fb93c342da44653af22d91455f0c22636d1b88fdbe",
+      "sha256": "152357d968871b9df5565c482ce579e11f790d224abc29de8e3fd17d30997feb",
+      "bytes": 2566604,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "workshop",
+    "normalization": {
+      "scale": [
+        0.4802344894968246,
+        0.4802344894968246,
+        0.4802344894968246
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "tote",
+        "handle",
+        "hammer",
+        "peg pouch"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "toolkit",
+      "state": "toolkit-empty",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/toolkit-r1.png",
+          "sha256": "87b51e3e35c1bd23128cf2a07e64b9f56e4d44c7dce7ed7f9af8295747b2eecb",
+          "role": "master"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--toolkit-empty.png",
+          "sha256": "b032e4d2a2bd5149518f3adb33fedf5fbc251c83fc0d20500dd3f010cf6876cc",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "tray": {
+    "id": "tray",
+    "uri": "/review-assets/tray-c1d62c6ee744-ktx.glb",
+    "sha256": "7448a0f5ffdb3d07269e6789c5dce44fc9675439d8f83422711507adc1cdbc7e",
+    "sourceSha256": "c1d62c6ee744dab9d0d6978962d5ebc921bdb38456245611479bc8bff82b6023",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+tray+3d+model (1).glb",
+      "sourceSha256": "c1d62c6ee744dab9d0d6978962d5ebc921bdb38456245611479bc8bff82b6023",
+      "sha256": "7448a0f5ffdb3d07269e6789c5dce44fc9675439d8f83422711507adc1cdbc7e",
+      "bytes": 6599452,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        0.5109241404513202,
+        0.5109241404513202,
+        0.5109241404513202
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0.00000928342342376709,
+        0,
+        0.0002611428499221802
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Garden storage chest lid",
+      "referenceParts": [
+        "box",
+        "hinged lid",
+        "latch",
+        "feet"
+      ],
+      "host": "gathering.storageLid hinge"
+    },
+    "locations": [],
+    "reference": {
+      "id": "storage-chest",
+      "state": "chest-lid",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/storage-chest-r1.png",
+          "sha256": "4fa136dd87b3c73961d91769c64ec5f60b831fefb79b7f8c57bd75dd259394e0",
+          "role": "master"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/01-Buildings-and-Furniture/P2/Village--chest-lid.png",
+          "sha256": "f261801311b3257f96a139b16b6e1aee27d3e3a3d31b172ed08127b77b165c5a",
+          "role": "individual component"
+        }
+      ]
+    }
+  },
+  "basket": {
+    "id": "basket",
+    "uri": "/review-assets/basket-21b9555dc4dd-ktx.glb",
+    "sha256": "9594d3efad0333dfef6044e0c8247aa3fb3ac9ffa6cdcd16f4dd681773a1826c",
+    "sourceSha256": "21b9555dc4dd9b76a3bd647a7e32bdc8791c84bb2b8cc46dfe9a2b5eb15826d0",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/woven+basket+3d+model.glb",
+      "sourceSha256": "21b9555dc4dd9b76a3bd647a7e32bdc8791c84bb2b8cc46dfe9a2b5eb15826d0",
+      "sha256": "9594d3efad0333dfef6044e0c8247aa3fb3ac9ffa6cdcd16f4dd681773a1826c",
+      "bytes": 3063352,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "bakery",
+    "normalization": {
+      "scale": [
+        0.4602247191011236,
+        0.4602247191011236,
+        0.4602247191011236
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Preserved; separate supplied components use independent leases",
+      "referenceParts": [
+        "woven bowl",
+        "thick open rim",
+        "flat base"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "bread-basket",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bread-basket-r1.png",
+          "sha256": "363ad6a49a7e3b5373bc99bdf3cc209016cf5b98332c1f5d46cc4f5d90f3e847",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "grass-tuft": {
+    "id": "grass-tuft",
+    "uri": "/review-assets/grass-tuft-6fb74286a1eb-ktx.glb",
+    "sha256": "c9f7eb3515beccdd0d65a23492bd4c17bafc1d3fca2cc516f5de33968ec44f2e",
+    "sourceSha256": "6fb74286a1ebacaf8e967593218a9566df2ff81e120069e1d0ded3e58101d873",
+    "approval": "review",
+    "resources": {
+      "source": "output/grass-tuft-20260918/grass-tuft.glb",
+      "sourceSha256": "6fb74286a1ebacaf8e967593218a9566df2ff81e120069e1d0ded3e58101d873",
+      "sha256": "c9f7eb3515beccdd0d65a23492bd4c17bafc1d3fca2cc516f5de33968ec44f2e",
+      "bytes": 1194912,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "textureDimensions": [
+        "2048x2048",
+        "2048x2048",
+        "2048x2048"
+      ],
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "locations": [
+      "crossing",
+      "dock",
+      "river",
+      "garden",
+      "bakery",
+      "workshop"
+    ],
+    "normalization": {
+      "scale": [
+        0.21420104590354444,
+        0.21420104590354444,
+        0.21420104590354444
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0.420166015625,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "reference": {
+      "id": "grass-tuft",
+      "state": "static",
+      "images": [
+        {
+          "path": "output/grass-tuft-20260918/grass-tuft-reference.png",
+          "sha256": "4dc3f46f9ef2470bf46bce30e614c881e7f0f621a42e3adbf505748918683dc4",
+          "role": "master"
+        }
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Single original Tripo tuft, instanced without mesh edits"
+    }
+  },
+  "grass-patch": {
+    "id": "grass-patch",
+    "uri": "/review-assets/grass-patch-ad697d242cb5-ktx.glb",
+    "sha256": "2a6767eecfdc6229601ec723f53f6544cbc10ec37ba69ebe562df4bda85369ec",
+    "sourceSha256": "ad697d242cb5a5402829a13b0bc26d5b4aec88e4efa378691269286fd5d1a8a1",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/grass 3d model_Clone1.glb",
+      "sourceSha256": "ad697d242cb5a5402829a13b0bc26d5b4aec88e4efa378691269286fd5d1a8a1",
+      "sha256": "2a6767eecfdc6229601ec723f53f6544cbc10ec37ba69ebe562df4bda85369ec",
+      "bytes": 9678204,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "textureDimensions": [
+        "4096x4096"
+      ],
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "garden",
+    "locations": [
+      "dock",
+      "garden",
+      "workshop"
+    ],
+    "normalization": {
+      "scale": [
+        0.7665989890128254,
+        0.7665989890128254,
+        0.7665989890128254
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "reference": {
+      "id": "grass-patch",
+      "state": "static",
+      "images": []
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Original Tripo grass, instanced without mesh edits"
+    }
+  },
+  "marker": {
+    "id": "marker",
+    "uri": "/review-assets/marker-a4f3f059f6c5-ktx.glb",
+    "sha256": "70e7158dd988f9e142ae038095d757498a50d692b5b2021e2bfbf2a6f62f8491",
+    "sourceSha256": "a4f3f059f6c53cd87aabec40ff3adacab2a5ccbb0369721a9ba6a5f747fdae3f",
+    "approval": "review",
+    "resources": {
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+pencil+3d+model (1).glb",
+      "sourceSha256": "a4f3f059f6c53cd87aabec40ff3adacab2a5ccbb0369721a9ba6a5f747fdae3f",
+      "sha256": "70e7158dd988f9e142ae038095d757498a50d692b5b2021e2bfbf2a6f62f8491",
+      "bytes": 3230880,
+      "encoding": "Meshopt lossless accessors; ETC1S 255/5; source texture dimensions retained",
+      "accessorsPreserved": true,
+      "textureDimensions": [
+        "4096x4096"
+      ],
+      "visualCompressionReview": "PENDING",
+      "approval": "PENDING_FORM_REVIEW"
+    },
+    "location": "river",
+    "locations": [
+      "crossing",
+      "river",
+      "garden"
+    ],
+    "normalization": {
+      "scale": [
+        0.7003419638495358,
+        0.7003419638495358,
+        0.7003419638495358
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "reference": {
+      "id": "landing-marker",
+      "state": "landing-marker",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/landing-marker-r1.png",
+          "sha256": "063f6534b6151ab82c4083ae3e3a59340107d08da98148bfbc7190178c1dd3e7",
+          "role": "master"
+        },
+        {
+          "path": "output/tripo-reference-batches-20260917/Evidence-Quest-Individual-References-Supplement/BATCH-INPUTS/03-Village-Functional-Objects/P2/Village--landing-marker.png",
+          "sha256": "4856afe17dc8fcb49c5ec1e887d113df5bfd1ce55f28d5b81620271c974b87a6",
+          "role": "individual component"
+        }
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "referenceParts": [
+        "stake",
+        "flag",
+        "fastenings"
+      ],
+      "assembly": "Supplied landing-marker stake, flag and fastening"
+    }
+  },
+  "workshop-clear-porch": {
+    "id": "workshop-clear-porch",
+    "uri": "/review-assets/workshop-clear-porch-59ee5bf44e30.glb",
+    "sha256": "59ee5bf44e304a14c796c5cee231ab62492c28a432af9cb9dfc096f9e5db17b3",
+    "sourceSha256": "5ee2f545358f4d3ed3ea5edd2ba85e2896d7907237b33df2ab6d7cbc6f32e172",
+    "approval": "review",
+    "resources": {
+      "at": "2026-09-19T00:41:02.611Z",
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+cottage+3d+model (1).glb",
+      "sourceSha256": "bc475a88992a00fad0624e6751a2ba340b67ba5d1c25f8da4ade359a960168fb",
+      "workingCopy": "output/screenshot-repairs-20260918/workshop/workshop-clear-porch.glb",
+      "workingSha256": "5ee2f545358f4d3ed3ea5edd2ba85e2896d7907237b33df2ab6d7cbc6f32e172",
+      "uri": "/review-assets/workshop-clear-porch-59ee5bf44e30.glb",
+      "sha256": "59ee5bf44e304a14c796c5cee231ab62492c28a432af9cb9dfc096f9e5db17b3",
+      "bytes": 5444328,
+      "textureBindings": [
+        {
+          "sourceSha256": "6fc1b33ed4d340937e448008dbf924ec778fb82afc4f55ea773f9c3f08c11d19",
+          "runtimeSha256": "92a1b8d75afd77fe7c30e8a1663b86ce64a1ea68d09c2851f1568fc8cbb500bf",
+          "runtimeDimensions": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "sourceSha256": "2aaf8c9b39af82dec18f5ec435051456463b6dd7dfa434d0c2c7e24e6e9647cb",
+          "runtimeSha256": "747fb045565374685c0b820fcc220a1483276c0891dc713fd3421303a1ab8eef",
+          "runtimeDimensions": [
+            4096,
+            4096
+          ]
+        },
+        {
+          "sourceSha256": "119ebff359a4457707e3cd66497c41d7f268e06dfa030ff777c7a4076f20aa4c",
+          "runtimeSha256": "eb8b35791d28eb60e6ee3f8301287c30cf4c57fad5b4e5a76b5b03116440b372",
+          "runtimeDimensions": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "encoding": "Existing full-resolution ETC1S bytes reused exactly; lossless Meshopt accessors",
+      "positionsNormalsUVsIndicesPreserved": true,
+      "approval": "PENDING_FORM_REVIEW",
+      "sourceUnchanged": true
+    },
+    "location": "dock",
+    "normalization": {
+      "scale": [
+        3,
+        3,
+        3
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "sourceMeshes": 1,
+      "sourceNodes": 1,
+      "assembly": "Original workshop roof cap retained; disconnected embedded porch table removed from a separately hashed working copy",
+      "referenceParts": [
+        "door",
+        "windows",
+        "covered work bay",
+        "roof",
+        "shelf"
+      ],
+      "workingCopyProvenance": "output/screenshot-repairs-20260918/workshop/provenance.json"
+    },
+    "locations": [
+      "workshop"
+    ],
+    "reference": {
+      "id": "workshop",
+      "state": "static",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/workshop-r1.png",
+          "sha256": "f8b98d9a2111c30ca7bb2cd2c99eb88c8f271a401db712acf64df919db619eb3",
+          "role": "master"
+        }
+      ]
+    }
+  },
+  "bridge-fitted": {
+    "id": "bridge-fitted",
+    "uri": "/review-assets/bridge-fitted-5ef26f708229.glb",
+    "sha256": "5ef26f70822970c04794bc60e11a4ffa0c36751c70d73d9395b0b24a099fbca9",
+    "sourceSha256": "5a550ba32818ac4a67fec7c1cc73d89a557f5239229c3f0a17c4c17280220318",
+    "approval": "review",
+    "resources": {
+      "at": "2026-09-19T00:43:12.117Z",
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+bridge+3d+model.glb",
+      "sourceSha256": "7112920700c7b0cdcb448966069268d17772561754a4b465f9fd2b62026783e7",
+      "workingCopy": "output/screenshot-repairs-20260918/bridge/bridge-fitted-planks.glb",
+      "workingSha256": "5a550ba32818ac4a67fec7c1cc73d89a557f5239229c3f0a17c4c17280220318",
+      "uri": "/review-assets/bridge-fitted-5ef26f708229.glb",
+      "sha256": "5ef26f70822970c04794bc60e11a4ffa0c36751c70d73d9395b0b24a099fbca9",
+      "bytes": 2329628,
+      "triangles": 4924,
+      "textureBindings": [
+        {
+          "sourceSha256": "7139a2986d4a735055a849a20053ddf90bfc5854117e15445867b7c835c8398d",
+          "runtimeSha256": "ad3a5820ed8d70bebd9564bf7a9072154b3e8fc2b604469d574fac7f308c9e88",
+          "dimensions": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "accessorsAndComponentTransformsPreserved": true,
+      "sourceUnchanged": true,
+      "approval": "PENDING_FORM_REVIEW",
+      "encoding": "Existing full-resolution KTX2 images reused exactly; lossless Meshopt accessors"
+    },
+    "location": "crossing",
+    "normalization": {
+      "scale": [
+        1.5507572056668295,
+        1.5507572056668295,
+        1.5507572056668295
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "assembly": "Two independent halves from the same supplied bridge; source component transforms fit planks and post sockets",
+      "workingCopyProvenance": "output/screenshot-repairs-20260918/bridge/provenance.json",
+      "sharedCenterSockets": [
+        "socket-right-negative",
+        "socket-left-negative"
+      ]
+    },
+    "locations": [],
+    "reference": {
+      "id": "bridge-a",
+      "state": "independent section",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bridge-a-r1.png",
+          "sha256": "b96d96c4b68aee0be8e229a4aa3e519ccf6cae3abb4d1d629974d66fa9e89ea4",
+          "role": "master"
+        },
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bridge-joint-detail-r1.png",
+          "sha256": "61fd9379fbbc2709f93b21f9d3a7c7d39f10132a106d18f33f5b531d16571842",
+          "role": "connections-and-staged-layout"
+        }
+      ]
+    }
+  },
+  "platform-bridge-fitted": {
+    "id": "platform-bridge-fitted",
+    "uri": "/review-assets/platform-bridge-fitted-830bd029d8d3.glb",
+    "sha256": "830bd029d8d3559a340ddb1a40030890743fcd94dced4a5a8467f7eb7b803e4a",
+    "sourceSha256": "9f002e5b30b18cb0b18909d1d3978c05aa5a51f80b64f273682b1fcd37156942",
+    "approval": "review",
+    "resources": {
+      "at": "2026-09-19T01:48:14.000Z",
+      "source": "output/tripo-reference-batches-20260917/New 3D Objects Evidence Quest/wooden+platform+3d+model.glb",
+      "sourceSha256": "026121fdd2df8525b24b56d209c13da4e0c95d40f0d26711638cde3aaa41b915",
+      "workingCopy": "output/screenshot-repairs-20260918/platform-bridge/platform-fitted-planks.glb",
+      "workingSha256": "9f002e5b30b18cb0b18909d1d3978c05aa5a51f80b64f273682b1fcd37156942",
+      "uri": "/review-assets/platform-bridge-fitted-830bd029d8d3.glb",
+      "sha256": "830bd029d8d3559a340ddb1a40030890743fcd94dced4a5a8467f7eb7b803e4a",
+      "bytes": 2831304,
+      "triangles": 5082,
+      "textureBindings": [
+        {
+          "sourceSha256": "16cf001b11bb9868be39ac925bf6094f8f3f85f4e62fecc9fc32e6b5e806fe4d",
+          "runtimeSha256": "dca74d80f07b95ae07ee9e23cf3d13feb35b4cd3337202a0a4bf5ae9071e12ad",
+          "dimensions": [
+            4096,
+            4096
+          ]
+        }
+      ],
+      "accessorsAndComponentTransformsPreserved": true,
+      "sourceUnchanged": true,
+      "approval": "PENDING_FORM_REVIEW",
+      "encoding": "Existing full-resolution KTX2 images reused exactly; lossless Meshopt accessors"
+    },
+    "location": "crossing",
+    "normalization": {
+      "scale": [
+        1.5738225086762518,
+        1.5738225086762518,
+        1.5738225086762518
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "offset": [
+        0,
+        0,
+        0
+      ]
+    },
+    "anchors": {
+      "base": [
+        0,
+        0,
+        0
+      ]
+    },
+    "components": {
+      "assembly": "Two independent halves from the same supplied six-board platform selected in the annotated screenshot; source component transforms fit planks and post sockets",
+      "workingCopyProvenance": "output/screenshot-repairs-20260918/platform-bridge/provenance.json",
+      "sharedCenterSockets": [
+        "socket-right-negative",
+        "socket-left-negative"
+      ]
+    },
+    "locations": [
+      "crossing"
+    ],
+    "reference": {
+      "id": "bridge-b",
+      "state": "independent section",
+      "images": [
+        {
+          "path": "evidence/hands-on-20260916/pilot/reference-library-20260917/images/bridge-b-r1.png",
+          "sha256": "b62f7772a93e6375e3676298ec206d6068ce13d8022a9970247e90eed1a43b5d",
+          "role": "master"
+        }
+      ]
+    }
+  }
+};

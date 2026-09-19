@@ -1,0 +1,806 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\.tools\\node-v24.21.0-win-x64\\node.exe",
+      "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "definition-narrator.spec.ts"
+    ],
+    "configFile": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\playwright.config.ts",
+    "rootDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/output/playwright/audio-fixture-repair-r2",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/output/playwright/audio-fixture-repair-r2",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/output/playwright/audio-fixture-repair-r2",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/TonyGuillaro/OneDrive - Summit Gov Solutions/Documents/ChatGPT/Evidence quest/browser-tests",
+        "testIgnore": [
+          "**/coach-fault.spec.ts",
+          "**/*diagnostic.spec.ts",
+          "**/production-formats.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/demo-release-20260919/audio-fixture-repair-r2.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.61.0",
+    "workers": 1,
+    "webServer": {
+      "command": "\"C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\.tools\\node-v24.21.0-win-x64\\node.exe\" dist/server/index.js",
+      "url": "http://127.0.0.1:4384/healthz",
+      "env": {
+        "PORT": "4384",
+        "EQ_WEB_PORT": "4384",
+        "PUBLIC_ORIGIN": "http://127.0.0.1:4384"
+      },
+      "reuseExistingServer": false,
+      "timeout": 15000
+    }
+  },
+  "suites": [
+    {
+      "title": "definition-narrator.spec.ts",
+      "file": "definition-narrator.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Definition narrator: Escape cancels a pending local catalogue load and restores its word",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2152,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-19T06:12:03.483Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a85bdd1c94397f2e9d60-85f907e750c6202304e0",
+          "file": "definition-narrator.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "Definition narrator: unavailable local audio preserves the meaning without device speech",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2024,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-19T06:12:05.817Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a85bdd1c94397f2e9d60-011b237fc0188d955bee",
+          "file": "definition-narrator.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "Definition narrator: Escape cancels a pending local catalogue load and restores its word",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3431,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-19T06:12:59.294Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a85bdd1c94397f2e9d60-cb02a7d24ac3bab11dc5",
+          "file": "definition-narrator.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "Definition narrator: unavailable local audio preserves the meaning without device speech",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2557,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-19T06:13:03.113Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a85bdd1c94397f2e9d60-73dd1a71db2fc163d476",
+          "file": "definition-narrator.spec.ts",
+          "line": 14,
+          "column": 1
+        },
+        {
+          "title": "Definition narrator: Escape cancels a pending local catalogue load and restores its word",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3312,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-19T06:13:58.627Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a85bdd1c94397f2e9d60-0a6b0234a0b52313c94d",
+          "file": "definition-narrator.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "Definition narrator: unavailable local audio preserves the meaning without device speech",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3411,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-19T06:14:02.001Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a85bdd1c94397f2e9d60-5280c7038ebae14ef053",
+          "file": "definition-narrator.spec.ts",
+          "line": 14,
+          "column": 1
+        }
+      ],
+      "suites": [
+        {
+          "title": "Native saved cast DPR 1",
+          "file": "definition-narrator.spec.ts",
+          "line": 20,
+          "column": 29,
+          "specs": [
+            {
+              "title": "All eight selected saved voices start at zero and finish at their own boundary, with no provider",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 23103,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-19T06:12:07.852Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "native-selected-cast",
+                          "contentType": "application/json",
+                          "body": "ewogICJkcHIiOiAxLAogICJtYW5pZmVzdFBsYXliYWNrIjogImluZGVwZW5kZW50LXBjbS12MSIsCiAgInJlc3VsdHMiOiBbCiAgICB7CiAgICAgICJ2b2ljZSI6ICIwN2E0NGE2OTU4MzA0ZmEyOGNlZjYwYjBkNDAyM2MwNCIsCiAgICAgICJzcGVha2VyIjogIm5hcnJhdG9yIiwKICAgICAgInRleHQiOiAiV2FsayBvbnRvIHRoZSBzZWN1cmVkIGZpcnN0IHNlY3Rpb24uIiwKICAgICAgInVyaSI6ICIvYXVkaW8vY2FzdC9jbGlwcy84OGZmN2RjMTM0ODIzMTkwOWIzYWE4ZjY2ZWNjOTMwNGIyZGQwOTlkZDZjZWZlZmUwMGQ0OTMyNWQ3OGZhZjdkLndhdiIsCiAgICAgICJzdGFydCI6IDAsCiAgICAgICJ0aW1lIjogMS45MiwKICAgICAgImR1cmF0aW9uIjogMS45MiwKICAgICAgImVuZGVkIjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInZvaWNlIjogIjgyOTE4NGM2MzUzMTRjOTQ4NWU0ODY5MDExNmZmOGFkIiwKICAgICAgInNwZWFrZXIiOiAicGlwIiwKICAgICAgInRleHQiOiAiUmV2aWV3IHRoZSBnYXRoZXJpbmcgcGxhbiB3aXRoIEdyYW5kbWEiLAogICAgICAidXJpIjogIi9hdWRpby9jYXN0L2NsaXBzLzFiNWNkNDQxYjA5YjQ4MjNmYWFkODEzNWVkOGQ1NWRjMjQ4ZjdiMGZlMWIxYWY3MDYxNTU4MTg1YjU3NjQ4ZmIud2F2IiwKICAgICAgInN0YXJ0IjogMCwKICAgICAgInRpbWUiOiAyLjE2LAogICAgICAiZHVyYXRpb24iOiAyLjE2LAogICAgICAiZW5kZWQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAidm9pY2UiOiAiOWM2MzNjYTRhNDVhNGU5YmE3NGNiMzZjZmEyMWZiMDAiLAogICAgICAic3BlYWtlciI6ICJncmFuZG1hIiwKICAgICAgInRleHQiOiAiU29sIGxldCBnbyBuZXh0LiIsCiAgICAgICJ1cmkiOiAiL2F1ZGlvL2Nhc3QvY2xpcHMvMGNkNWRjYTAyYjdlMzk1MjVjM2NiMWY5MGNmNWI5MWRiMDZmNDQyMTk5ODgwMGM4OTY4ODE2NDQyOGI1YzhlZS53YXYiLAogICAgICAic3RhcnQiOiAwLAogICAgICAidGltZSI6IDEuNjAwMDIxLAogICAgICAiZHVyYXRpb24iOiAxLjYwMDAyMSwKICAgICAgImVuZGVkIjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInZvaWNlIjogIjc3YzNhMGNiMjNkMzQ1NTdiMDU3MzJiNWJkYzk3Njg4IiwKICAgICAgInNwZWFrZXIiOiAibWFyYSIsCiAgICAgICJ0ZXh0IjogIkEgd2hpc3RsZSBhbnN3ZXJlZCBmcm9tIHRoZSBiYWNrIG9mIHRoZSBib2F0LiIsCiAgICAgICJ1cmkiOiAiL2F1ZGlvL2Nhc3QvY2xpcHMvMWRhMjQ2ZjY3NWJhOTgxODlmMWNiMjcxMGZlZmUwMjE3ZWJiYmUwNDFmODZkN2I1Zjk2ZTI2ZDg3M2ExOGEzOC53YXYiLAogICAgICAic3RhcnQiOiAwLAogICAgICAidGltZSI6IDIuMDAwMDIxLAogICAgICAiZHVyYXRpb24iOiAyLjAwMDAyMSwKICAgICAgImVuZGVkIjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInZvaWNlIjogIjE2NThkNzc3MjQwNzQxMTJhMDRmNWFhOWQwM2NjNTkxIiwKICAgICAgInNwZWFrZXIiOiAic29sIiwKICAgICAgInRleHQiOiAiU2hlIGJyb3VnaHQgYSBsb2FmIG9mIGJyZWFkIGFuZCBwdXQgaXQgaW50byBteSBoYW5kcy4iLAogICAgICAidXJpIjogIi9hdWRpby9jYXN0L2NsaXBzL2ViOWQ0MDBmNGZiMWI2MGM5NTY3ODdmZjI1YzY0NThmYjhiODNkMWUzZTY5MjliZjcxNWIzN2NmNTkwYzExOTQud2F2IiwKICAgICAgInN0YXJ0IjogMCwKICAgICAgInRpbWUiOiAyLjgwMDAyMSwKICAgICAgImR1cmF0aW9uIjogMi44MDAwMjEsCiAgICAgICJlbmRlZCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJ2b2ljZSI6ICI5YTljZjQ3NzAyZGE0NzZhYTQ2MjllMjUwNmQ0YTg1NyIsCiAgICAgICJzcGVha2VyIjogInJpbmEiLAogICAgICAidGV4dCI6ICJCZWZvcmUgd2Ugc3RhcnQsIEkgbmVlZCB0byBjaGVjayB0aGUgZmxvdXIuIiwKICAgICAgInVyaSI6ICIvYXVkaW8vY2FzdC9jbGlwcy85YWM5YThkYmVkZThiZGNjNjYwOWY0NzAxNDUxNDQ0MjliZTc5ZDlhZTgyMWMyODk3OTZkODQ2NTcxN2I0MzYxLndhdiIsCiAgICAgICJzdGFydCI6IDAsCiAgICAgICJ0aW1lIjogMi4zMjAwMjEsCiAgICAgICJkdXJhdGlvbiI6IDIuMzIwMDIxLAogICAgICAiZW5kZWQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAidm9pY2UiOiAiM2VkZjQxNzE2NDUxNDE4OGFhYTQ3NjVhZWE5OGMwZDYiLAogICAgICAic3BlYWtlciI6ICJib3kiLAogICAgICAidGV4dCI6ICJJIHByb21pc2VkIG15IHNpc3RlciBJ4oCZZCBrZWVwIGl0IHNhZmUu4oCdIiwKICAgICAgInVyaSI6ICIvYXVkaW8vY2FzdC9jbGlwcy8zZDc3MDBmZmMxMmZmY2EzODcyOGJkN2IzMzAwMzFlZWI0MWJjNmEyNTkxNzVjYzlmNmRiNDEwOTFjYTc4NjUwLndhdiIsCiAgICAgICJzdGFydCI6IDAsCiAgICAgICJ0aW1lIjogMS45MiwKICAgICAgImR1cmF0aW9uIjogMS45MiwKICAgICAgImVuZGVkIjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInZvaWNlIjogIjU5ZjJkNzRhOGJmNzQ0NzliMDg3MWE4OGM4NWNlYzNiIiwKICAgICAgInNwZWFrZXIiOiAiam8iLAogICAgICAidGV4dCI6ICJXZeKAmWxsIG1lZXQgaGVyZSBhZ2FpbiB3aGVuIHRoZSBhZHZlbnR1cmUgZW5kcy4iLAogICAgICAidXJpIjogIi9hdWRpby9jYXN0L2NsaXBzLzhkMmU2YjUwNzdkNjRiOWRmY2YxNmM5OTI1YzA4N2VjZmJlOTVmY2YyZWI2MmYzNTg1NTM2ZmQxNzYyYmFhMGUud2F2IiwKICAgICAgInN0YXJ0IjogMCwKICAgICAgInRpbWUiOiAyLjQ4LAogICAgICAiZHVyYXRpb24iOiAyLjQ4LAogICAgICAiZW5kZWQiOiB0cnVlCiAgICB9CiAgXSwKICAiY2xhaW0iOiAiTmF0aXZlIGluZGVwZW5kZW50IGNsaXAgZGVjb2RlLCB6ZXJvIHN0YXJ0LCBtZWRpYS1jbG9jayBwcm9ncmVzc2lvbiBhbmQgbmF0dXJhbCBlbmRlZCBib3VuZGFyeS4gTm8gcHJvdmlkZXIgcmVxdWVzdDsgbm8gYWNvdXN0aWMgYWNjZXB0YW5jZSBjbGFpbS4iCn0="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a85bdd1c94397f2e9d60-36334675df5e6d0a38a2",
+              "file": "definition-narrator.spec.ts",
+              "line": 22,
+              "column": 2
+            },
+            {
+              "title": "Meaning button plays packaged selected narrator and Stop releases its media owner",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2433,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-19T06:12:30.964Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a85bdd1c94397f2e9d60-16c88a11b8afc21fa0d7",
+              "file": "definition-narrator.spec.ts",
+              "line": 37,
+              "column": 2
+            },
+            {
+              "title": "All eight selected saved voices start at zero and finish at their own boundary, with no provider",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 22377,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-19T06:13:05.686Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "native-selected-cast",
+                          "contentType": "application/json",
+                          "body": "ewogICJkcHIiOiAxLAogICJtYW5pZmVzdFBsYXliYWNrIjogImluZGVwZW5kZW50LXBjbS12MSIsCiAgInJlc3VsdHMiOiBbCiAgICB7CiAgICAgICJ2b2ljZSI6ICIwN2E0NGE2OTU4MzA0ZmEyOGNlZjYwYjBkNDAyM2MwNCIsCiAgICAgICJzcGVha2VyIjogIm5hcnJhdG9yIiwKICAgICAgInRleHQiOiAiV2FsayBvbnRvIHRoZSBzZWN1cmVkIGZpcnN0IHNlY3Rpb24uIiwKICAgICAgInVyaSI6ICIvYXVkaW8vY2FzdC9jbGlwcy84OGZmN2RjMTM0ODIzMTkwOWIzYWE4ZjY2ZWNjOTMwNGIyZGQwOTlkZDZjZWZlZmUwMGQ0OTMyNWQ3OGZhZjdkLndhdiIsCiAgICAgICJzdGFydCI6IDAsCiAgICAgICJ0aW1lIjogMS45MiwKICAgICAgImR1cmF0aW9uIjogMS45MiwKICAgICAgImVuZGVkIjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInZvaWNlIjogIjgyOTE4NGM2MzUzMTRjOTQ4NWU0ODY5MDExNmZmOGFkIiwKICAgICAgInNwZWFrZXIiOiAicGlwIiwKICAgICAgInRleHQiOiAiUmV2aWV3IHRoZSBnYXRoZXJpbmcgcGxhbiB3aXRoIEdyYW5kbWEiLAogICAgICAidXJpIjogIi9hdWRpby9jYXN0L2NsaXBzLzFiNWNkNDQxYjA5YjQ4MjNmYWFkODEzNWVkOGQ1NWRjMjQ4ZjdiMGZlMWIxYWY3MDYxNTU4MTg1YjU3NjQ4ZmIud2F2IiwKICAgICAgInN0YXJ0IjogMCwKICAgICAgInRpbWUiOiAyLjE2LAogICAgICAiZHVyYXRpb24iOiAyLjE2LAogICAgICAiZW5kZWQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAidm9pY2UiOiAiOWM2MzNjYTRhNDVhNGU5YmE3NGNiMzZjZmEyMWZiMDAiLAogICAgICAic3BlYWtlciI6ICJncmFuZG1hIiwKICAgICAgInRleHQiOiAiU29sIGxldCBnbyBuZXh0LiIsCiAgICAgICJ1cmkiOiAiL2F1ZGlvL2Nhc3QvY2xpcHMvMGNkNWRjYTAyYjdlMzk1MjVjM2NiMWY5MGNmNWI5MWRiMDZmNDQyMTk5ODgwMGM4OTY4ODE2NDQyOGI1YzhlZS53YXYiLAogICAgICAic3RhcnQiOiAwLAogICAgICAidGltZSI6IDEuNjAwMDIxLAogICAgICAiZHVyYXRpb24iOiAxLjYwMDAyMSwKICAgICAgImVuZGVkIjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInZvaWNlIjogIjc3YzNhMGNiMjNkMzQ1NTdiMDU3MzJiNWJkYzk3Njg4IiwKICAgICAgInNwZWFrZXIiOiAibWFyYSIsCiAgICAgICJ0ZXh0IjogIkEgd2hpc3RsZSBhbnN3ZXJlZCBmcm9tIHRoZSBiYWNrIG9mIHRoZSBib2F0LiIsCiAgICAgICJ1cmkiOiAiL2F1ZGlvL2Nhc3QvY2xpcHMvMWRhMjQ2ZjY3NWJhOTgxODlmMWNiMjcxMGZlZmUwMjE3ZWJiYmUwNDFmODZkN2I1Zjk2ZTI2ZDg3M2ExOGEzOC53YXYiLAogICAgICAic3RhcnQiOiAwLAogICAgICAidGltZSI6IDIuMDAwMDIsCiAgICAgICJkdXJhdGlvbiI6IDIuMDAwMDIsCiAgICAgICJlbmRlZCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJ2b2ljZSI6ICIxNjU4ZDc3NzI0MDc0MTEyYTA0ZjVhYTlkMDNjYzU5MSIsCiAgICAgICJzcGVha2VyIjogInNvbCIsCiAgICAgICJ0ZXh0IjogIlNoZSBicm91Z2h0IGEgbG9hZiBvZiBicmVhZCBhbmQgcHV0IGl0IGludG8gbXkgaGFuZHMuIiwKICAgICAgInVyaSI6ICIvYXVkaW8vY2FzdC9jbGlwcy9lYjlkNDAwZjRmYjFiNjBjOTU2Nzg3ZmYyNWM2NDU4ZmI4YjgzZDFlM2U2OTI5YmY3MTViMzdjZjU5MGMxMTk0LndhdiIsCiAgICAgICJzdGFydCI6IDAsCiAgICAgICJ0aW1lIjogMi44MDAwMjEsCiAgICAgICJkdXJhdGlvbiI6IDIuODAwMDIxLAogICAgICAiZW5kZWQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAidm9pY2UiOiAiOWE5Y2Y0NzcwMmRhNDc2YWE0NjI5ZTI1MDZkNGE4NTciLAogICAgICAic3BlYWtlciI6ICJyaW5hIiwKICAgICAgInRleHQiOiAiQmVmb3JlIHdlIHN0YXJ0LCBJIG5lZWQgdG8gY2hlY2sgdGhlIGZsb3VyLiIsCiAgICAgICJ1cmkiOiAiL2F1ZGlvL2Nhc3QvY2xpcHMvOWFjOWE4ZGJlZGU4YmRjYzY2MDlmNDcwMTQ1MTQ0NDI5YmU3OWQ5YWU4MjFjMjg5Nzk2ZDg0NjU3MTdiNDM2MS53YXYiLAogICAgICAic3RhcnQiOiAwLAogICAgICAidGltZSI6IDIuMzIwMDIxLAogICAgICAiZHVyYXRpb24iOiAyLjMyMDAyMSwKICAgICAgImVuZGVkIjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInZvaWNlIjogIjNlZGY0MTcxNjQ1MTQxODhhYWE0NzY1YWVhOThjMGQ2IiwKICAgICAgInNwZWFrZXIiOiAiYm95IiwKICAgICAgInRleHQiOiAiSSBwcm9taXNlZCBteSBzaXN0ZXIgSeKAmWQga2VlcCBpdCBzYWZlLuKAnSIsCiAgICAgICJ1cmkiOiAiL2F1ZGlvL2Nhc3QvY2xpcHMvM2Q3NzAwZmZjMTJmZmNhMzg3MjhiZDdiMzMwMDMxZWViNDFiYzZhMjU5MTc1Y2M5ZjZkYjQxMDkxY2E3ODY1MC53YXYiLAogICAgICAic3RhcnQiOiAwLAogICAgICAidGltZSI6IDEuOTIsCiAgICAgICJkdXJhdGlvbiI6IDEuOTIsCiAgICAgICJlbmRlZCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJ2b2ljZSI6ICI1OWYyZDc0YThiZjc0NDc5YjA4NzFhODhjODVjZWMzYiIsCiAgICAgICJzcGVha2VyIjogImpvIiwKICAgICAgInRleHQiOiAiV2XigJlsbCBtZWV0IGhlcmUgYWdhaW4gd2hlbiB0aGUgYWR2ZW50dXJlIGVuZHMuIiwKICAgICAgInVyaSI6ICIvYXVkaW8vY2FzdC9jbGlwcy84ZDJlNmI1MDc3ZDY0YjlkZmNmMTZjOTkyNWMwODdlY2ZiZTk1ZmNmMmViNjJmMzU4NTUzNmZkMTc2MmJhYTBlLndhdiIsCiAgICAgICJzdGFydCI6IDAsCiAgICAgICJ0aW1lIjogMi40OCwKICAgICAgImR1cmF0aW9uIjogMi40OCwKICAgICAgImVuZGVkIjogdHJ1ZQogICAgfQogIF0sCiAgImNsYWltIjogIk5hdGl2ZSBpbmRlcGVuZGVudCBjbGlwIGRlY29kZSwgemVybyBzdGFydCwgbWVkaWEtY2xvY2sgcHJvZ3Jlc3Npb24gYW5kIG5hdHVyYWwgZW5kZWQgYm91bmRhcnkuIE5vIHByb3ZpZGVyIHJlcXVlc3Q7IG5vIGFjb3VzdGljIGFjY2VwdGFuY2UgY2xhaW0uIgp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a85bdd1c94397f2e9d60-dfa04d3db5d286fe4f06",
+              "file": "definition-narrator.spec.ts",
+              "line": 22,
+              "column": 2
+            },
+            {
+              "title": "Meaning button plays packaged selected narrator and Stop releases its media owner",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3986,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-19T06:13:28.074Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a85bdd1c94397f2e9d60-e7f218184e9476f991ae",
+              "file": "definition-narrator.spec.ts",
+              "line": 37,
+              "column": 2
+            },
+            {
+              "title": "All eight selected saved voices start at zero and finish at their own boundary, with no provider",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 24276,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-19T06:14:05.422Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "native-selected-cast",
+                          "contentType": "application/json",
+                          "body": "ewogICJkcHIiOiAxLAogICJtYW5pZmVzdFBsYXliYWNrIjogImluZGVwZW5kZW50LXBjbS12MSIsCiAgInJlc3VsdHMiOiBbCiAgICB7CiAgICAgICJ2b2ljZSI6ICIwN2E0NGE2OTU4MzA0ZmEyOGNlZjYwYjBkNDAyM2MwNCIsCiAgICAgICJzcGVha2VyIjogIm5hcnJhdG9yIiwKICAgICAgInRleHQiOiAiV2FsayBvbnRvIHRoZSBzZWN1cmVkIGZpcnN0IHNlY3Rpb24uIiwKICAgICAgInVyaSI6ICIvYXVkaW8vY2FzdC9jbGlwcy84OGZmN2RjMTM0ODIzMTkwOWIzYWE4ZjY2ZWNjOTMwNGIyZGQwOTlkZDZjZWZlZmUwMGQ0OTMyNWQ3OGZhZjdkLndhdiIsCiAgICAgICJzdGFydCI6IDAsCiAgICAgICJ0aW1lIjogMS45MiwKICAgICAgImR1cmF0aW9uIjogMS45MiwKICAgICAgImVuZGVkIjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInZvaWNlIjogIjgyOTE4NGM2MzUzMTRjOTQ4NWU0ODY5MDExNmZmOGFkIiwKICAgICAgInNwZWFrZXIiOiAicGlwIiwKICAgICAgInRleHQiOiAiUmV2aWV3IHRoZSBnYXRoZXJpbmcgcGxhbiB3aXRoIEdyYW5kbWEiLAogICAgICAidXJpIjogIi9hdWRpby9jYXN0L2NsaXBzLzFiNWNkNDQxYjA5YjQ4MjNmYWFkODEzNWVkOGQ1NWRjMjQ4ZjdiMGZlMWIxYWY3MDYxNTU4MTg1YjU3NjQ4ZmIud2F2IiwKICAgICAgInN0YXJ0IjogMCwKICAgICAgInRpbWUiOiAyLjE2LAogICAgICAiZHVyYXRpb24iOiAyLjE2LAogICAgICAiZW5kZWQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAidm9pY2UiOiAiOWM2MzNjYTRhNDVhNGU5YmE3NGNiMzZjZmEyMWZiMDAiLAogICAgICAic3BlYWtlciI6ICJncmFuZG1hIiwKICAgICAgInRleHQiOiAiU29sIGxldCBnbyBuZXh0LiIsCiAgICAgICJ1cmkiOiAiL2F1ZGlvL2Nhc3QvY2xpcHMvMGNkNWRjYTAyYjdlMzk1MjVjM2NiMWY5MGNmNWI5MWRiMDZmNDQyMTk5ODgwMGM4OTY4ODE2NDQyOGI1YzhlZS53YXYiLAogICAgICAic3RhcnQiOiAwLAogICAgICAidGltZSI6IDEuNjAwMDIwOCwKICAgICAgImR1cmF0aW9uIjogMS42MDAwMjA4LAogICAgICAiZW5kZWQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAidm9pY2UiOiAiNzdjM2EwY2IyM2QzNDU1N2IwNTczMmI1YmRjOTc2ODgiLAogICAgICAic3BlYWtlciI6ICJtYXJhIiwKICAgICAgInRleHQiOiAiQSB3aGlzdGxlIGFuc3dlcmVkIGZyb20gdGhlIGJhY2sgb2YgdGhlIGJvYXQuIiwKICAgICAgInVyaSI6ICIvYXVkaW8vY2FzdC9jbGlwcy8xZGEyNDZmNjc1YmE5ODE4OWYxY2IyNzEwZmVmZTAyMTdlYmJiZTA0MWY4NmQ3YjVmOTZlMjZkODczYTE4YTM4LndhdiIsCiAgICAgICJzdGFydCI6IDAsCiAgICAgICJ0aW1lIjogMi4wMDAwMjA4LAogICAgICAiZHVyYXRpb24iOiAyLjAwMDAyMDgsCiAgICAgICJlbmRlZCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJ2b2ljZSI6ICIxNjU4ZDc3NzI0MDc0MTEyYTA0ZjVhYTlkMDNjYzU5MSIsCiAgICAgICJzcGVha2VyIjogInNvbCIsCiAgICAgICJ0ZXh0IjogIlNoZSBicm91Z2h0IGEgbG9hZiBvZiBicmVhZCBhbmQgcHV0IGl0IGludG8gbXkgaGFuZHMuIiwKICAgICAgInVyaSI6ICIvYXVkaW8vY2FzdC9jbGlwcy9lYjlkNDAwZjRmYjFiNjBjOTU2Nzg3ZmYyNWM2NDU4ZmI4YjgzZDFlM2U2OTI5YmY3MTViMzdjZjU5MGMxMTk0LndhdiIsCiAgICAgICJzdGFydCI6IDAsCiAgICAgICJ0aW1lIjogMi44MDAwMjA4LAogICAgICAiZHVyYXRpb24iOiAyLjgwMDAyMDgsCiAgICAgICJlbmRlZCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJ2b2ljZSI6ICI5YTljZjQ3NzAyZGE0NzZhYTQ2MjllMjUwNmQ0YTg1NyIsCiAgICAgICJzcGVha2VyIjogInJpbmEiLAogICAgICAidGV4dCI6ICJCZWZvcmUgd2Ugc3RhcnQsIEkgbmVlZCB0byBjaGVjayB0aGUgZmxvdXIuIiwKICAgICAgInVyaSI6ICIvYXVkaW8vY2FzdC9jbGlwcy85YWM5YThkYmVkZThiZGNjNjYwOWY0NzAxNDUxNDQ0MjliZTc5ZDlhZTgyMWMyODk3OTZkODQ2NTcxN2I0MzYxLndhdiIsCiAgICAgICJzdGFydCI6IDAsCiAgICAgICJ0aW1lIjogMi4zMjAwMjA4LAogICAgICAiZHVyYXRpb24iOiAyLjMyMDAyMDgsCiAgICAgICJlbmRlZCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJ2b2ljZSI6ICIzZWRmNDE3MTY0NTE0MTg4YWFhNDc2NWFlYTk4YzBkNiIsCiAgICAgICJzcGVha2VyIjogImJveSIsCiAgICAgICJ0ZXh0IjogIkkgcHJvbWlzZWQgbXkgc2lzdGVyIEnigJlkIGtlZXAgaXQgc2FmZS7igJ0iLAogICAgICAidXJpIjogIi9hdWRpby9jYXN0L2NsaXBzLzNkNzcwMGZmYzEyZmZjYTM4NzI4YmQ3YjMzMDAzMWVlYjQxYmM2YTI1OTE3NWNjOWY2ZGI0MTA5MWNhNzg2NTAud2F2IiwKICAgICAgInN0YXJ0IjogMCwKICAgICAgInRpbWUiOiAxLjkyLAogICAgICAiZHVyYXRpb24iOiAxLjkyLAogICAgICAiZW5kZWQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAidm9pY2UiOiAiNTlmMmQ3NGE4YmY3NDQ3OWIwODcxYTg4Yzg1Y2VjM2IiLAogICAgICAic3BlYWtlciI6ICJqbyIsCiAgICAgICJ0ZXh0IjogIldl4oCZbGwgbWVldCBoZXJlIGFnYWluIHdoZW4gdGhlIGFkdmVudHVyZSBlbmRzLiIsCiAgICAgICJ1cmkiOiAiL2F1ZGlvL2Nhc3QvY2xpcHMvOGQyZTZiNTA3N2Q2NGI5ZGZjZjE2Yzk5MjVjMDg3ZWNmYmU5NWZjZjJlYjYyZjM1ODU1MzZmZDE3NjJiYWEwZS53YXYiLAogICAgICAic3RhcnQiOiAwLAogICAgICAidGltZSI6IDIuNDgsCiAgICAgICJkdXJhdGlvbiI6IDIuNDgsCiAgICAgICJlbmRlZCI6IHRydWUKICAgIH0KICBdLAogICJjbGFpbSI6ICJOYXRpdmUgaW5kZXBlbmRlbnQgY2xpcCBkZWNvZGUsIHplcm8gc3RhcnQsIG1lZGlhLWNsb2NrIHByb2dyZXNzaW9uIGFuZCBuYXR1cmFsIGVuZGVkIGJvdW5kYXJ5LiBObyBwcm92aWRlciByZXF1ZXN0OyBubyBhY291c3RpYyBhY2NlcHRhbmNlIGNsYWltLiIKfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a85bdd1c94397f2e9d60-3bf3a01795c6fcf5b613",
+              "file": "definition-narrator.spec.ts",
+              "line": 22,
+              "column": 2
+            },
+            {
+              "title": "Meaning button plays packaged selected narrator and Stop releases its media owner",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3671,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-19T06:14:29.706Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a85bdd1c94397f2e9d60-cf287ce78c167c6075ae",
+              "file": "definition-narrator.spec.ts",
+              "line": 37,
+              "column": 2
+            }
+          ]
+        },
+        {
+          "title": "Native saved cast DPR 2",
+          "file": "definition-narrator.spec.ts",
+          "line": 20,
+          "column": 29,
+          "specs": [
+            {
+              "title": "All eight selected saved voices start at zero and finish at their own boundary, with no provider",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 22499,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-19T06:12:33.408Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "native-selected-cast",
+                          "contentType": "application/json",
+                          "body": "ewogICJkcHIiOiAyLAogICJtYW5pZmVzdFBsYXliYWNrIjogImluZGVwZW5kZW50LXBjbS12MSIsCiAgInJlc3VsdHMiOiBbCiAgICB7CiAgICAgICJ2b2ljZSI6ICIwN2E0NGE2OTU4MzA0ZmEyOGNlZjYwYjBkNDAyM2MwNCIsCiAgICAgICJzcGVha2VyIjogIm5hcnJhdG9yIiwKICAgICAgInRleHQiOiAiV2FsayBvbnRvIHRoZSBzZWN1cmVkIGZpcnN0IHNlY3Rpb24uIiwKICAgICAgInVyaSI6ICIvYXVkaW8vY2FzdC9jbGlwcy84OGZmN2RjMTM0ODIzMTkwOWIzYWE4ZjY2ZWNjOTMwNGIyZGQwOTlkZDZjZWZlZmUwMGQ0OTMyNWQ3OGZhZjdkLndhdiIsCiAgICAgICJzdGFydCI6IDAsCiAgICAgICJ0aW1lIjogMS45MiwKICAgICAgImR1cmF0aW9uIjogMS45MiwKICAgICAgImVuZGVkIjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInZvaWNlIjogIjgyOTE4NGM2MzUzMTRjOTQ4NWU0ODY5MDExNmZmOGFkIiwKICAgICAgInNwZWFrZXIiOiAicGlwIiwKICAgICAgInRleHQiOiAiUmV2aWV3IHRoZSBnYXRoZXJpbmcgcGxhbiB3aXRoIEdyYW5kbWEiLAogICAgICAidXJpIjogIi9hdWRpby9jYXN0L2NsaXBzLzFiNWNkNDQxYjA5YjQ4MjNmYWFkODEzNWVkOGQ1NWRjMjQ4ZjdiMGZlMWIxYWY3MDYxNTU4MTg1YjU3NjQ4ZmIud2F2IiwKICAgICAgInN0YXJ0IjogMCwKICAgICAgInRpbWUiOiAyLjE2LAogICAgICAiZHVyYXRpb24iOiAyLjE2LAogICAgICAiZW5kZWQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAidm9pY2UiOiAiOWM2MzNjYTRhNDVhNGU5YmE3NGNiMzZjZmEyMWZiMDAiLAogICAgICAic3BlYWtlciI6ICJncmFuZG1hIiwKICAgICAgInRleHQiOiAiU29sIGxldCBnbyBuZXh0LiIsCiAgICAgICJ1cmkiOiAiL2F1ZGlvL2Nhc3QvY2xpcHMvMGNkNWRjYTAyYjdlMzk1MjVjM2NiMWY5MGNmNWI5MWRiMDZmNDQyMTk5ODgwMGM4OTY4ODE2NDQyOGI1YzhlZS53YXYiLAogICAgICAic3RhcnQiOiAwLAogICAgICAidGltZSI6IDEuNjAwMDIxLAogICAgICAiZHVyYXRpb24iOiAxLjYwMDAyMSwKICAgICAgImVuZGVkIjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInZvaWNlIjogIjc3YzNhMGNiMjNkMzQ1NTdiMDU3MzJiNWJkYzk3Njg4IiwKICAgICAgInNwZWFrZXIiOiAibWFyYSIsCiAgICAgICJ0ZXh0IjogIkEgd2hpc3RsZSBhbnN3ZXJlZCBmcm9tIHRoZSBiYWNrIG9mIHRoZSBib2F0LiIsCiAgICAgICJ1cmkiOiAiL2F1ZGlvL2Nhc3QvY2xpcHMvMWRhMjQ2ZjY3NWJhOTgxODlmMWNiMjcxMGZlZmUwMjE3ZWJiYmUwNDFmODZkN2I1Zjk2ZTI2ZDg3M2ExOGEzOC53YXYiLAogICAgICAic3RhcnQiOiAwLAogICAgICAidGltZSI6IDIuMDAwMDIxLAogICAgICAiZHVyYXRpb24iOiAyLjAwMDAyMSwKICAgICAgImVuZGVkIjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInZvaWNlIjogIjE2NThkNzc3MjQwNzQxMTJhMDRmNWFhOWQwM2NjNTkxIiwKICAgICAgInNwZWFrZXIiOiAic29sIiwKICAgICAgInRleHQiOiAiU2hlIGJyb3VnaHQgYSBsb2FmIG9mIGJyZWFkIGFuZCBwdXQgaXQgaW50byBteSBoYW5kcy4iLAogICAgICAidXJpIjogIi9hdWRpby9jYXN0L2NsaXBzL2ViOWQ0MDBmNGZiMWI2MGM5NTY3ODdmZjI1YzY0NThmYjhiODNkMWUzZTY5MjliZjcxNWIzN2NmNTkwYzExOTQud2F2IiwKICAgICAgInN0YXJ0IjogMCwKICAgICAgInRpbWUiOiAyLjgwMDAyMSwKICAgICAgImR1cmF0aW9uIjogMi44MDAwMjEsCiAgICAgICJlbmRlZCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJ2b2ljZSI6ICI5YTljZjQ3NzAyZGE0NzZhYTQ2MjllMjUwNmQ0YTg1NyIsCiAgICAgICJzcGVha2VyIjogInJpbmEiLAogICAgICAidGV4dCI6ICJCZWZvcmUgd2Ugc3RhcnQsIEkgbmVlZCB0byBjaGVjayB0aGUgZmxvdXIuIiwKICAgICAgInVyaSI6ICIvYXVkaW8vY2FzdC9jbGlwcy85YWM5YThkYmVkZThiZGNjNjYwOWY0NzAxNDUxNDQ0MjliZTc5ZDlhZTgyMWMyODk3OTZkODQ2NTcxN2I0MzYxLndhdiIsCiAgICAgICJzdGFydCI6IDAsCiAgICAgICJ0aW1lIjogMi4zMjAwMjEsCiAgICAgICJkdXJhdGlvbiI6IDIuMzIwMDIxLAogICAgICAiZW5kZWQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAidm9pY2UiOiAiM2VkZjQxNzE2NDUxNDE4OGFhYTQ3NjVhZWE5OGMwZDYiLAogICAgICAic3BlYWtlciI6ICJib3kiLAogICAgICAidGV4dCI6ICJJIHByb21pc2VkIG15IHNpc3RlciBJ4oCZZCBrZWVwIGl0IHNhZmUu4oCdIiwKICAgICAgInVyaSI6ICIvYXVkaW8vY2FzdC9jbGlwcy8zZDc3MDBmZmMxMmZmY2EzODcyOGJkN2IzMzAwMzFlZWI0MWJjNmEyNTkxNzVjYzlmNmRiNDEwOTFjYTc4NjUwLndhdiIsCiAgICAgICJzdGFydCI6IDAsCiAgICAgICJ0aW1lIjogMS45MiwKICAgICAgImR1cmF0aW9uIjogMS45MiwKICAgICAgImVuZGVkIjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInZvaWNlIjogIjU5ZjJkNzRhOGJmNzQ0NzliMDg3MWE4OGM4NWNlYzNiIiwKICAgICAgInNwZWFrZXIiOiAiam8iLAogICAgICAidGV4dCI6ICJXZeKAmWxsIG1lZXQgaGVyZSBhZ2FpbiB3aGVuIHRoZSBhZHZlbnR1cmUgZW5kcy4iLAogICAgICAidXJpIjogIi9hdWRpby9jYXN0L2NsaXBzLzhkMmU2YjUwNzdkNjRiOWRmY2YxNmM5OTI1YzA4N2VjZmJlOTVmY2YyZWI2MmYzNTg1NTM2ZmQxNzYyYmFhMGUud2F2IiwKICAgICAgInN0YXJ0IjogMCwKICAgICAgInRpbWUiOiAyLjQ4LAogICAgICAiZHVyYXRpb24iOiAyLjQ4LAogICAgICAiZW5kZWQiOiB0cnVlCiAgICB9CiAgXSwKICAiY2xhaW0iOiAiTmF0aXZlIGluZGVwZW5kZW50IGNsaXAgZGVjb2RlLCB6ZXJvIHN0YXJ0LCBtZWRpYS1jbG9jayBwcm9ncmVzc2lvbiBhbmQgbmF0dXJhbCBlbmRlZCBib3VuZGFyeS4gTm8gcHJvdmlkZXIgcmVxdWVzdDsgbm8gYWNvdXN0aWMgYWNjZXB0YW5jZSBjbGFpbS4iCn0="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a85bdd1c94397f2e9d60-d3f97531090d58dcec3a",
+              "file": "definition-narrator.spec.ts",
+              "line": 22,
+              "column": 2
+            },
+            {
+              "title": "Meaning button plays packaged selected narrator and Stop releases its media owner",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2827,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-19T06:12:55.916Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a85bdd1c94397f2e9d60-b1e548001e000b16aab9",
+              "file": "definition-narrator.spec.ts",
+              "line": 37,
+              "column": 2
+            },
+            {
+              "title": "All eight selected saved voices start at zero and finish at their own boundary, with no provider",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 22411,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-19T06:13:32.069Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "native-selected-cast",
+                          "contentType": "application/json",
+                          "body": "ewogICJkcHIiOiAyLAogICJtYW5pZmVzdFBsYXliYWNrIjogImluZGVwZW5kZW50LXBjbS12MSIsCiAgInJlc3VsdHMiOiBbCiAgICB7CiAgICAgICJ2b2ljZSI6ICIwN2E0NGE2OTU4MzA0ZmEyOGNlZjYwYjBkNDAyM2MwNCIsCiAgICAgICJzcGVha2VyIjogIm5hcnJhdG9yIiwKICAgICAgInRleHQiOiAiV2FsayBvbnRvIHRoZSBzZWN1cmVkIGZpcnN0IHNlY3Rpb24uIiwKICAgICAgInVyaSI6ICIvYXVkaW8vY2FzdC9jbGlwcy84OGZmN2RjMTM0ODIzMTkwOWIzYWE4ZjY2ZWNjOTMwNGIyZGQwOTlkZDZjZWZlZmUwMGQ0OTMyNWQ3OGZhZjdkLndhdiIsCiAgICAgICJzdGFydCI6IDAsCiAgICAgICJ0aW1lIjogMS45MiwKICAgICAgImR1cmF0aW9uIjogMS45MiwKICAgICAgImVuZGVkIjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInZvaWNlIjogIjgyOTE4NGM2MzUzMTRjOTQ4NWU0ODY5MDExNmZmOGFkIiwKICAgICAgInNwZWFrZXIiOiAicGlwIiwKICAgICAgInRleHQiOiAiUmV2aWV3IHRoZSBnYXRoZXJpbmcgcGxhbiB3aXRoIEdyYW5kbWEiLAogICAgICAidXJpIjogIi9hdWRpby9jYXN0L2NsaXBzLzFiNWNkNDQxYjA5YjQ4MjNmYWFkODEzNWVkOGQ1NWRjMjQ4ZjdiMGZlMWIxYWY3MDYxNTU4MTg1YjU3NjQ4ZmIud2F2IiwKICAgICAgInN0YXJ0IjogMCwKICAgICAgInRpbWUiOiAyLjE2LAogICAgICAiZHVyYXRpb24iOiAyLjE2LAogICAgICAiZW5kZWQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAidm9pY2UiOiAiOWM2MzNjYTRhNDVhNGU5YmE3NGNiMzZjZmEyMWZiMDAiLAogICAgICAic3BlYWtlciI6ICJncmFuZG1hIiwKICAgICAgInRleHQiOiAiU29sIGxldCBnbyBuZXh0LiIsCiAgICAgICJ1cmkiOiAiL2F1ZGlvL2Nhc3QvY2xpcHMvMGNkNWRjYTAyYjdlMzk1MjVjM2NiMWY5MGNmNWI5MWRiMDZmNDQyMTk5ODgwMGM4OTY4ODE2NDQyOGI1YzhlZS53YXYiLAogICAgICAic3RhcnQiOiAwLAogICAgICAidGltZSI6IDEuNjAwMDIxLAogICAgICAiZHVyYXRpb24iOiAxLjYwMDAyMSwKICAgICAgImVuZGVkIjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInZvaWNlIjogIjc3YzNhMGNiMjNkMzQ1NTdiMDU3MzJiNWJkYzk3Njg4IiwKICAgICAgInNwZWFrZXIiOiAibWFyYSIsCiAgICAgICJ0ZXh0IjogIkEgd2hpc3RsZSBhbnN3ZXJlZCBmcm9tIHRoZSBiYWNrIG9mIHRoZSBib2F0LiIsCiAgICAgICJ1cmkiOiAiL2F1ZGlvL2Nhc3QvY2xpcHMvMWRhMjQ2ZjY3NWJhOTgxODlmMWNiMjcxMGZlZmUwMjE3ZWJiYmUwNDFmODZkN2I1Zjk2ZTI2ZDg3M2ExOGEzOC53YXYiLAogICAgICAic3RhcnQiOiAwLAogICAgICAidGltZSI6IDIuMDAwMDIsCiAgICAgICJkdXJhdGlvbiI6IDIuMDAwMDIsCiAgICAgICJlbmRlZCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJ2b2ljZSI6ICIxNjU4ZDc3NzI0MDc0MTEyYTA0ZjVhYTlkMDNjYzU5MSIsCiAgICAgICJzcGVha2VyIjogInNvbCIsCiAgICAgICJ0ZXh0IjogIlNoZSBicm91Z2h0IGEgbG9hZiBvZiBicmVhZCBhbmQgcHV0IGl0IGludG8gbXkgaGFuZHMuIiwKICAgICAgInVyaSI6ICIvYXVkaW8vY2FzdC9jbGlwcy9lYjlkNDAwZjRmYjFiNjBjOTU2Nzg3ZmYyNWM2NDU4ZmI4YjgzZDFlM2U2OTI5YmY3MTViMzdjZjU5MGMxMTk0LndhdiIsCiAgICAgICJzdGFydCI6IDAsCiAgICAgICJ0aW1lIjogMi44MDAwMjEsCiAgICAgICJkdXJhdGlvbiI6IDIuODAwMDIxLAogICAgICAiZW5kZWQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAidm9pY2UiOiAiOWE5Y2Y0NzcwMmRhNDc2YWE0NjI5ZTI1MDZkNGE4NTciLAogICAgICAic3BlYWtlciI6ICJyaW5hIiwKICAgICAgInRleHQiOiAiQmVmb3JlIHdlIHN0YXJ0LCBJIG5lZWQgdG8gY2hlY2sgdGhlIGZsb3VyLiIsCiAgICAgICJ1cmkiOiAiL2F1ZGlvL2Nhc3QvY2xpcHMvOWFjOWE4ZGJlZGU4YmRjYzY2MDlmNDcwMTQ1MTQ0NDI5YmU3OWQ5YWU4MjFjMjg5Nzk2ZDg0NjU3MTdiNDM2MS53YXYiLAogICAgICAic3RhcnQiOiAwLAogICAgICAidGltZSI6IDIuMzIwMDIxLAogICAgICAiZHVyYXRpb24iOiAyLjMyMDAyMSwKICAgICAgImVuZGVkIjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInZvaWNlIjogIjNlZGY0MTcxNjQ1MTQxODhhYWE0NzY1YWVhOThjMGQ2IiwKICAgICAgInNwZWFrZXIiOiAiYm95IiwKICAgICAgInRleHQiOiAiSSBwcm9taXNlZCBteSBzaXN0ZXIgSeKAmWQga2VlcCBpdCBzYWZlLuKAnSIsCiAgICAgICJ1cmkiOiAiL2F1ZGlvL2Nhc3QvY2xpcHMvM2Q3NzAwZmZjMTJmZmNhMzg3MjhiZDdiMzMwMDMxZWViNDFiYzZhMjU5MTc1Y2M5ZjZkYjQxMDkxY2E3ODY1MC53YXYiLAogICAgICAic3RhcnQiOiAwLAogICAgICAidGltZSI6IDEuOTIsCiAgICAgICJkdXJhdGlvbiI6IDEuOTIsCiAgICAgICJlbmRlZCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJ2b2ljZSI6ICI1OWYyZDc0YThiZjc0NDc5YjA4NzFhODhjODVjZWMzYiIsCiAgICAgICJzcGVha2VyIjogImpvIiwKICAgICAgInRleHQiOiAiV2XigJlsbCBtZWV0IGhlcmUgYWdhaW4gd2hlbiB0aGUgYWR2ZW50dXJlIGVuZHMuIiwKICAgICAgInVyaSI6ICIvYXVkaW8vY2FzdC9jbGlwcy84ZDJlNmI1MDc3ZDY0YjlkZmNmMTZjOTkyNWMwODdlY2ZiZTk1ZmNmMmViNjJmMzU4NTUzNmZkMTc2MmJhYTBlLndhdiIsCiAgICAgICJzdGFydCI6IDAsCiAgICAgICJ0aW1lIjogMi40OCwKICAgICAgImR1cmF0aW9uIjogMi40OCwKICAgICAgImVuZGVkIjogdHJ1ZQogICAgfQogIF0sCiAgImNsYWltIjogIk5hdGl2ZSBpbmRlcGVuZGVudCBjbGlwIGRlY29kZSwgemVybyBzdGFydCwgbWVkaWEtY2xvY2sgcHJvZ3Jlc3Npb24gYW5kIG5hdHVyYWwgZW5kZWQgYm91bmRhcnkuIE5vIHByb3ZpZGVyIHJlcXVlc3Q7IG5vIGFjb3VzdGljIGFjY2VwdGFuY2UgY2xhaW0uIgp9"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a85bdd1c94397f2e9d60-b893dfc3b2cbb3b01852",
+              "file": "definition-narrator.spec.ts",
+              "line": 22,
+              "column": 2
+            },
+            {
+              "title": "Meaning button plays packaged selected narrator and Stop releases its media owner",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3421,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-19T06:13:54.494Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a85bdd1c94397f2e9d60-ff9dda775092539471fa",
+              "file": "definition-narrator.spec.ts",
+              "line": 37,
+              "column": 2
+            },
+            {
+              "title": "All eight selected saved voices start at zero and finish at their own boundary, with no provider",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 25652,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-19T06:14:33.384Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "native-selected-cast",
+                          "contentType": "application/json",
+                          "body": "ewogICJkcHIiOiAyLAogICJtYW5pZmVzdFBsYXliYWNrIjogImluZGVwZW5kZW50LXBjbS12MSIsCiAgInJlc3VsdHMiOiBbCiAgICB7CiAgICAgICJ2b2ljZSI6ICIwN2E0NGE2OTU4MzA0ZmEyOGNlZjYwYjBkNDAyM2MwNCIsCiAgICAgICJzcGVha2VyIjogIm5hcnJhdG9yIiwKICAgICAgInRleHQiOiAiV2FsayBvbnRvIHRoZSBzZWN1cmVkIGZpcnN0IHNlY3Rpb24uIiwKICAgICAgInVyaSI6ICIvYXVkaW8vY2FzdC9jbGlwcy84OGZmN2RjMTM0ODIzMTkwOWIzYWE4ZjY2ZWNjOTMwNGIyZGQwOTlkZDZjZWZlZmUwMGQ0OTMyNWQ3OGZhZjdkLndhdiIsCiAgICAgICJzdGFydCI6IDAsCiAgICAgICJ0aW1lIjogMS45MiwKICAgICAgImR1cmF0aW9uIjogMS45MiwKICAgICAgImVuZGVkIjogdHJ1ZQogICAgfSwKICAgIHsKICAgICAgInZvaWNlIjogIjgyOTE4NGM2MzUzMTRjOTQ4NWU0ODY5MDExNmZmOGFkIiwKICAgICAgInNwZWFrZXIiOiAicGlwIiwKICAgICAgInRleHQiOiAiUmV2aWV3IHRoZSBnYXRoZXJpbmcgcGxhbiB3aXRoIEdyYW5kbWEiLAogICAgICAidXJpIjogIi9hdWRpby9jYXN0L2NsaXBzLzFiNWNkNDQxYjA5YjQ4MjNmYWFkODEzNWVkOGQ1NWRjMjQ4ZjdiMGZlMWIxYWY3MDYxNTU4MTg1YjU3NjQ4ZmIud2F2IiwKICAgICAgInN0YXJ0IjogMCwKICAgICAgInRpbWUiOiAyLjE2LAogICAgICAiZHVyYXRpb24iOiAyLjE2LAogICAgICAiZW5kZWQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAidm9pY2UiOiAiOWM2MzNjYTRhNDVhNGU5YmE3NGNiMzZjZmEyMWZiMDAiLAogICAgICAic3BlYWtlciI6ICJncmFuZG1hIiwKICAgICAgInRleHQiOiAiU29sIGxldCBnbyBuZXh0LiIsCiAgICAgICJ1cmkiOiAiL2F1ZGlvL2Nhc3QvY2xpcHMvMGNkNWRjYTAyYjdlMzk1MjVjM2NiMWY5MGNmNWI5MWRiMDZmNDQyMTk5ODgwMGM4OTY4ODE2NDQyOGI1YzhlZS53YXYiLAogICAgICAic3RhcnQiOiAwLAogICAgICAidGltZSI6IDEuNjAwMDIwOCwKICAgICAgImR1cmF0aW9uIjogMS42MDAwMjA4LAogICAgICAiZW5kZWQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAidm9pY2UiOiAiNzdjM2EwY2IyM2QzNDU1N2IwNTczMmI1YmRjOTc2ODgiLAogICAgICAic3BlYWtlciI6ICJtYXJhIiwKICAgICAgInRleHQiOiAiQSB3aGlzdGxlIGFuc3dlcmVkIGZyb20gdGhlIGJhY2sgb2YgdGhlIGJvYXQuIiwKICAgICAgInVyaSI6ICIvYXVkaW8vY2FzdC9jbGlwcy8xZGEyNDZmNjc1YmE5ODE4OWYxY2IyNzEwZmVmZTAyMTdlYmJiZTA0MWY4NmQ3YjVmOTZlMjZkODczYTE4YTM4LndhdiIsCiAgICAgICJzdGFydCI6IDAsCiAgICAgICJ0aW1lIjogMi4wMDAwMjA4LAogICAgICAiZHVyYXRpb24iOiAyLjAwMDAyMDgsCiAgICAgICJlbmRlZCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJ2b2ljZSI6ICIxNjU4ZDc3NzI0MDc0MTEyYTA0ZjVhYTlkMDNjYzU5MSIsCiAgICAgICJzcGVha2VyIjogInNvbCIsCiAgICAgICJ0ZXh0IjogIlNoZSBicm91Z2h0IGEgbG9hZiBvZiBicmVhZCBhbmQgcHV0IGl0IGludG8gbXkgaGFuZHMuIiwKICAgICAgInVyaSI6ICIvYXVkaW8vY2FzdC9jbGlwcy9lYjlkNDAwZjRmYjFiNjBjOTU2Nzg3ZmYyNWM2NDU4ZmI4YjgzZDFlM2U2OTI5YmY3MTViMzdjZjU5MGMxMTk0LndhdiIsCiAgICAgICJzdGFydCI6IDAsCiAgICAgICJ0aW1lIjogMi44MDAwMjA4LAogICAgICAiZHVyYXRpb24iOiAyLjgwMDAyMDgsCiAgICAgICJlbmRlZCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJ2b2ljZSI6ICI5YTljZjQ3NzAyZGE0NzZhYTQ2MjllMjUwNmQ0YTg1NyIsCiAgICAgICJzcGVha2VyIjogInJpbmEiLAogICAgICAidGV4dCI6ICJCZWZvcmUgd2Ugc3RhcnQsIEkgbmVlZCB0byBjaGVjayB0aGUgZmxvdXIuIiwKICAgICAgInVyaSI6ICIvYXVkaW8vY2FzdC9jbGlwcy85YWM5YThkYmVkZThiZGNjNjYwOWY0NzAxNDUxNDQ0MjliZTc5ZDlhZTgyMWMyODk3OTZkODQ2NTcxN2I0MzYxLndhdiIsCiAgICAgICJzdGFydCI6IDAsCiAgICAgICJ0aW1lIjogMi4zMjAwMjA4LAogICAgICAiZHVyYXRpb24iOiAyLjMyMDAyMDgsCiAgICAgICJlbmRlZCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJ2b2ljZSI6ICIzZWRmNDE3MTY0NTE0MTg4YWFhNDc2NWFlYTk4YzBkNiIsCiAgICAgICJzcGVha2VyIjogImJveSIsCiAgICAgICJ0ZXh0IjogIkkgcHJvbWlzZWQgbXkgc2lzdGVyIEnigJlkIGtlZXAgaXQgc2FmZS7igJ0iLAogICAgICAidXJpIjogIi9hdWRpby9jYXN0L2NsaXBzLzNkNzcwMGZmYzEyZmZjYTM4NzI4YmQ3YjMzMDAzMWVlYjQxYmM2YTI1OTE3NWNjOWY2ZGI0MTA5MWNhNzg2NTAud2F2IiwKICAgICAgInN0YXJ0IjogMCwKICAgICAgInRpbWUiOiAxLjkyLAogICAgICAiZHVyYXRpb24iOiAxLjkyLAogICAgICAiZW5kZWQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAidm9pY2UiOiAiNTlmMmQ3NGE4YmY3NDQ3OWIwODcxYTg4Yzg1Y2VjM2IiLAogICAgICAic3BlYWtlciI6ICJqbyIsCiAgICAgICJ0ZXh0IjogIldl4oCZbGwgbWVldCBoZXJlIGFnYWluIHdoZW4gdGhlIGFkdmVudHVyZSBlbmRzLiIsCiAgICAgICJ1cmkiOiAiL2F1ZGlvL2Nhc3QvY2xpcHMvOGQyZTZiNTA3N2Q2NGI5ZGZjZjE2Yzk5MjVjMDg3ZWNmYmU5NWZjZjJlYjYyZjM1ODU1MzZmZDE3NjJiYWEwZS53YXYiLAogICAgICAic3RhcnQiOiAwLAogICAgICAidGltZSI6IDIuNDgsCiAgICAgICJkdXJhdGlvbiI6IDIuNDgsCiAgICAgICJlbmRlZCI6IHRydWUKICAgIH0KICBdLAogICJjbGFpbSI6ICJOYXRpdmUgaW5kZXBlbmRlbnQgY2xpcCBkZWNvZGUsIHplcm8gc3RhcnQsIG1lZGlhLWNsb2NrIHByb2dyZXNzaW9uIGFuZCBuYXR1cmFsIGVuZGVkIGJvdW5kYXJ5LiBObyBwcm92aWRlciByZXF1ZXN0OyBubyBhY291c3RpYyBhY2NlcHRhbmNlIGNsYWltLiIKfQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a85bdd1c94397f2e9d60-7dc506b0b5d5c79ec4a1",
+              "file": "definition-narrator.spec.ts",
+              "line": 22,
+              "column": 2
+            },
+            {
+              "title": "Meaning button plays packaged selected narrator and Stop releases its media owner",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6118,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-09-19T06:14:59.047Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a85bdd1c94397f2e9d60-e1f8a32fa341822e6cf8",
+              "file": "definition-narrator.spec.ts",
+              "line": 37,
+              "column": 2
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-19T06:12:02.766Z",
+    "duration": 182861.942,
+    "expected": 18,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
