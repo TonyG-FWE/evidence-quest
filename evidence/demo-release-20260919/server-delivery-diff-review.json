@@ -1,0 +1,235 @@
+{
+  "schema": "evidence-quest.server-delivery-diff-review.v1",
+  "at": "2026-09-19T06:14:39.212Z",
+  "baseCommit": "7cc938a10bb52226a7a13493b64828eccf9c53d2be58d3a",
+  "status": "REVIEW_COMPLETE_WITH_LEGACY_LIMITATION",
+  "reviewedFiles": [
+    {
+      "file": ".gitattributes",
+      "bytes": 442,
+      "sha256": "27b232fc089f65e44f58d618e164e82d89354c893e7f86e0eff9c7f1ed3ec072"
+    },
+    {
+      "file": "checks/cast-audio.test.ts",
+      "bytes": 5155,
+      "sha256": "e33e63bcf6fae99559b9eccd1e499f8a91801744aa2c4dd8276030d56062ca0c"
+    },
+    {
+      "file": "checks/garden-media-range.test.ts",
+      "bytes": 2145,
+      "sha256": "e9172231d8e2cfc7e4cd57b12055a0c6a4ef1f0d0f9f98e0c86a34422c1365a2"
+    },
+    {
+      "file": "checks/garden-recording-demo.test.ts",
+      "bytes": 11130,
+      "sha256": "4b6a465bac101ec543623d770e43e155da9946cec55cb6518cba157e3f8a6037"
+    },
+    {
+      "file": "package.json",
+      "bytes": 2966,
+      "sha256": "dcc5edee445fd60bf07eca88938f4cb198dbde94c626fd8e5c77db67426d0827"
+    },
+    {
+      "file": "scripts/bootstrap.ps1",
+      "bytes": 1293,
+      "sha256": "660cfbfcf659efe07e1efe11e0efa7daf5e10c0032f16f4647d738982d07c580"
+    },
+    {
+      "file": "scripts/build-demo-client.mjs",
+      "bytes": 543,
+      "sha256": "872506c764a83987542a05be3508a957280c259875c5c413499a37c0d97a92f1"
+    },
+    {
+      "file": "scripts/build-demo-server.mjs",
+      "bytes": 1344,
+      "sha256": "6ed04f89c109b5b56bb710c641d3cf8e24cac5bec11577e7a39a007fb81bc826"
+    },
+    {
+      "file": "scripts/demo-assets.mjs",
+      "bytes": 6292,
+      "sha256": "f7a8ba8ee483b1153540ab67231208786a9911329b503a399d5b4ecbbe7fa6c1"
+    },
+    {
+      "file": "scripts/demo-build-receipt.mjs",
+      "bytes": 3976,
+      "sha256": "d5bdc807b36b345d2f8ec6019742efe615750cd1e451529e04e192466cde5e34"
+    },
+    {
+      "file": "scripts/demo-inputs.mjs",
+      "bytes": 7636,
+      "sha256": "90e13577f2367cd3f08e4c76b23c9a35311fb4483790117d799ad8a2a25ee490"
+    },
+    {
+      "file": "scripts/demo-ledgers.mjs",
+      "bytes": 2900,
+      "sha256": "a9bd18f4570a543c464f4c971409f6bafd84268feeb434e2e581e6693c147955"
+    },
+    {
+      "file": "scripts/demo-profile.mjs",
+      "bytes": 2832,
+      "sha256": "0d1a88b2d1117e20df2a1d0857ce585df87f2c6baa5fe1d03510e540a6a9e212"
+    },
+    {
+      "file": "scripts/demo-public.mjs",
+      "bytes": 629,
+      "sha256": "bdc22d4a755368a1f9f25211335abf98a15056c2579f5b287c7b07aa206b3237"
+    },
+    {
+      "file": "scripts/export-garden-assets.mjs",
+      "bytes": 12348,
+      "sha256": "d8f64089aaa915799a6fa7c417d7c2e4c94562ba3687ab4487c1f769c0bd67cb"
+    },
+    {
+      "file": "scripts/npm.cmd",
+      "bytes": 217,
+      "sha256": "d729ace5e495ffe9e62c3be7efd50644bedd126f2014369be7a49bdca61f9cf3"
+    },
+    {
+      "file": "scripts/prepare-client.mjs",
+      "bytes": 1616,
+      "sha256": "9b966e890cc122ef5e285d05e89a884ce7c6df0f03e9ed7fd9cf5a0d6b69c5c9"
+    },
+    {
+      "file": "scripts/verify-demo-audio.mjs",
+      "bytes": 7576,
+      "sha256": "9ad08b454d533741c35737c901dff877873cbd7ba77dbc71eb72d3e10cd08811"
+    },
+    {
+      "file": "server/castNarrator.ts",
+      "bytes": 4386,
+      "sha256": "980f13289b3ca7b720b7509a0cb5aef6ef0c0924d5b545bf2ce62432c55e6c7f"
+    },
+    {
+      "file": "server/definitionNarrator.ts",
+      "bytes": 3601,
+      "sha256": "00645afb4fa06c53e4165f475914e8c3b4717d8941b7d3fb4abbae1f8d7aacd2"
+    },
+    {
+      "file": "server/garden.ts",
+      "bytes": 8629,
+      "sha256": "ba7b3b4da21e81e7013d905367ac198d876a9c02176781da4527ed8390328142"
+    },
+    {
+      "file": "server/gardenDemo.ts",
+      "bytes": 4668,
+      "sha256": "dc9a03dff48af7d3781603f030360ccfef6782a2dce3cbd4d2e1831a0adc3431"
+    },
+    {
+      "file": "server/gardenRecordingDemo.ts",
+      "bytes": 9523,
+      "sha256": "98bb2ea53d2c3d06032c3751a4ef9e0900a966fc93c749e787b9107db48a6cb1"
+    },
+    {
+      "file": "server/gardenSpeech.ts",
+      "bytes": 7922,
+      "sha256": "734a9c938c1bc9763c90dbe17caab4ede766f662eaae85833a812380389e6130"
+    },
+    {
+      "file": "server/gardenWords.ts",
+      "bytes": 7453,
+      "sha256": "7f3566f4f1f895aa033a47a99915275191f4925bae0a90e882fbc3aea3b6cb5c"
+    },
+    {
+      "file": "server/index.ts",
+      "bytes": 12195,
+      "sha256": "4c2eb6d44129edbf848c0568bb988d13e828917ef03b7d5fd8c82b8326924aa5"
+    },
+    {
+      "file": "server/mediaRange.ts",
+      "bytes": 2648,
+      "sha256": "585ffbb68256985e387db2249f70cb7860edea87b101fc5bcc07f89ea632ab81"
+    },
+    {
+      "file": "src/garden/DefinitionNarration.tsx",
+      "bytes": 1206,
+      "sha256": "858211e114165ddc002f75b530df26f8a7e83b7757853681c9cd87ae76ad7a94"
+    },
+    {
+      "file": "src/garden/castSpeech.ts",
+      "bytes": 9467,
+      "sha256": "d9027e1fff27ff3fd453347f12d6eaa61e8f155202481c5a0b629cbebfeae97b"
+    },
+    {
+      "file": "src/garden/voiceTypes.ts",
+      "bytes": 2340,
+      "sha256": "f32f5ceba20958b2b0ebac222a74f355cbdfbe0616080f833ee6f224f5805de7"
+    },
+    {
+      "file": "vite.config.ts",
+      "bytes": 4562,
+      "sha256": "838c61cc294a4a3f3a55742701cba7cb9031eec662b69aca9e5b37f7ea003ce9"
+    }
+  ],
+  "reviewedFilesSha256": "fb067b18537251a81a7d8f2be203dbb381d164bdbb8f81550b27bcab1f543604",
+  "method": "Read changed tracked diff against baseline plus complete relevant new server/build files; read related contracts. A subsequently authorized recording-floor repair changed exactly two source/test files and was checked in an isolated generated directory.",
+  "findings": [
+    {
+      "id": "DELIVERY-REVIEW-001",
+      "state": "FIXED_FOCUSED_CONTRACTS_PASS",
+      "file": "server/gardenRecordingDemo.ts",
+      "line": 42,
+      "problem": "Immutable minimum prefixes alone allowed a running recording session to accept ledger rollback to a valid older baseline after later reservations.",
+      "repair": "Retain full observed prefix floors for both ledgers; validate before advancing; bind every own durable append before transmission; reject stale reads, truncation and same-length rewrites; keep reservations after provider/cancellation errors. Existing baseline validation, lock and $10 accounting remain.",
+      "validation": "Eight recording contracts pass, including three added history-floor cases; all provider responses synthetic."
+    },
+    {
+      "id": "DELIVERY-REVIEW-002",
+      "state": "LEGACY_PROFILE_LIMITATION_RETAINED",
+      "file": "server/gardenDemo.ts",
+      "line": 16,
+      "problem": "The older two-attempt smoke profile still returns an empty ledger on ENOENT. If that separately selected profile is enabled and its ledger disappears after startup, it can treat prior attempts as absent.",
+      "scope": "Not the recording session selected by EQ_GARDEN_AI_SESSION=recording; not active in authored qualification. start:demo baseline checks protect startup, but no running-instance history floor exists in the legacy service.",
+      "recommendation": "Keep legacy profile disabled or apply equivalent history-preserving admission before using it. No legacy source edits or provider requests in this review."
+    }
+  ],
+  "reviewConclusions": [
+    {
+      "area": "Audio byte ranges and ephemeral capabilities",
+      "result": "No concrete blocker found in bounded code review. Inclusive ranges, suffixes, 416, HEAD, random capability URLs, TTL, memory ceiling and revocation are present; mutating endpoints check origin/content type and capability media is no-store."
+    },
+    {
+      "area": "Custom speech revisions and privacy",
+      "result": "Exact text, approved voice, origin, revision, model and format determine private cache identity. Explicit Listen/cache-only gates and abort handling remain. Client owns each capability, cancels stale requests and deletes completed/stopped capabilities. Generated feedback keeps distinct origin."
+    },
+    {
+      "area": "Production approval boundaries",
+      "result": "Production export logic remains source-hash/approval bound. Pending assets enter only explicit review profile; Vite review copy logic is gated by that profile. No production approval granted by packaging."
+    },
+    {
+      "area": "Build and startup reproduction",
+      "result": "Pinned bootstrap download hash, local runtime wrapper, explicit hydrated assets/public selection, fresh compiled server tree, exact source/output inventories, baseline and build-time ledger floors retained. Original audio masters stay source-bound and runtime delivery selects only independent clips. Clean-checkout execution remains separate, not established by this review."
+    }
+  ],
+  "focusedValidation": {
+    "compile": {
+      "command": "Node24 tsc isolated root checks/garden-recording-demo.test.ts with repository strict options to .cache/recording-cap-check",
+      "exit": 0
+    },
+    "test": {
+      "command": "node --test .cache/recording-cap-check/checks/garden-recording-demo.test.js",
+      "passed": 8,
+      "failed": 0,
+      "durationMs": 435.8431
+    },
+    "sharedCompileAttempt": {
+      "command": "node node_modules/typescript/bin/tsc -p tsconfig.checks.json",
+      "exit": 1,
+      "unrelatedErrors": [
+        "checks/garden-memory-landscape.test.ts:40:92 TS18046 texture.image unknown",
+        "checks/garden-memory-landscape.test.ts:40:138 TS18046 texture.image unknown"
+      ],
+      "scope": "Reported to root; no edits to the other owner test."
+    }
+  },
+  "changes": [
+    "server/gardenRecordingDemo.ts",
+    "checks/garden-recording-demo.test.ts"
+  ],
+  "limits": [
+    "No browser, network, live-provider or Git mutation performed.",
+    "No all-source/media rehash or clean bootstrap/build executed in this review.",
+    "Existing media and cast contracts were inspected, not reexecuted here.",
+    "Full qualification must bind the successor after these two authorized changes; earlier repair-r2 was stopped by root.",
+    "Observed floors protect the lifetime of each recording service instance; immutable and build-receipt prefixes continue to protect startup."
+  ]
+}

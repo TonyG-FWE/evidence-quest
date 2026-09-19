@@ -1,0 +1,10 @@
+import fs from 'node:fs/promises';
+import * as T from 'three';
+import {loadPilotGeometry} from './pilot-glb.mjs';
+import {ReviewScene} from '../evidence/hands-on-20260916/pilot/articulated-library-20260917/review-scenes.js';
+import {ReviewActor} from '../evidence/hands-on-20260916/pilot/articulated-library-20260917/review-actor.js';
+const base='evidence/hands-on-20260916/pilot/articulated-library-20260917',manifest=JSON.parse(await fs.readFile(base+'/manifest.json'));
+const library={async acquire(d){const g=await loadPilotGeometry(base+'/'+d.uri);return {root:g.scene,animations:g.animations,release(){}};}};
+const model=manifest.assets.find(a=>a.id===(process.argv[2]??'pip')).model,actor=new ReviewActor(await library.acquire(model),model),scene=new T.Scene();scene.add(actor.root);
+actor.sync({clip:'cup',paused:true});actor.seek(1.2);const review=new ReviewScene(library,manifest,scene);await review.demonstration(actor,process.argv[3]??'boat');review.update(1,false);scene.updateMatrixWorld(true);
+console.log('CONTACT',review.contact.toArray());for(const entry of review.entries)console.log(entry.id,entry.root.position.toArray(),new T.Box3().setFromObject(entry.root).min.toArray(),new T.Box3().setFromObject(entry.root).max.toArray());

@@ -7,7 +7,7 @@ import {wordContext,validWordReply,wordRequestBody,type WordRequest} from '../se
 import {readingPages} from '../src/garden/readingPages.js';
 import {initialGarden,gardenReduce} from '../src/garden/model.js';
 import {completeStory} from '../src/garden/storyReading.js';
-import {sources} from '../src/garden/content.js';
+import {sources,sourcesFor} from '../src/garden/content.js';
 import {cancelLocalSpeech,localSpeechVersion,onLocalSpeechCanceled} from '../src/garden/audio.js';
 
 test('Reading references bind the exact displayed text without claiming canonical source identity',async()=>{
@@ -46,7 +46,7 @@ test('Read-screen inspection preserves an unplaced choice and cannot perform it'
  s=gardenReduce(s,{type:'CLOSE'},'return');assert.equal(s.panel,null);assert.deepEqual(s.preview,preview);assert.deepEqual(s.chapter.sections,chapter.sections);assert.equal(s.chapter.joined,false);assert.deepEqual(s.chapter.exposed,[]);
 });
 test('Complete-story reading preserves source order and uses the performed ending instead of later edits',()=>{
- const c=initialGarden('synthetic-story-reading').chapter;
+ const c=initialGarden('synthetic-story-reading').chapter,sources=sourcesFor(c);
  for(const id of ['story','empty','picnic','duet'] as const)assert.equal(completeStory(c,id)!.text,sources[id].paragraphs.join('\n\n'));
  const chosen={origin:'child' as const,text:'Rina brought me bread to thank me.',scene:'thanks' as const,revision:4};
  c.story.solChoice='prepared';c.story.solEnding=chosen;
