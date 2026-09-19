@@ -1,7 +1,11 @@
 import {conversationReady} from './conversation.js';
+import {anchors,BAKERY_WORK,regionAt,navigable,riverCenter} from './worldLayout.js';
+import {localReview} from './assets/profile.js';
 import type {Action,Chapter,GardenState,Point} from './model.js';
 
-export const BAKERY={x:8.25,z:-2.15},BAKERY_APPROACH={x:7.05,z:-.55},BAKERY_SOL={x:7.05,z:-1.5},TILE_SHELF={x:9.15,z:-.4},RINA_HOME={x:8.5,z:-.7},WORKSHOP_DOOR={x:4.5,z:-2.15};
+export const BAKERY=anchors.bakery.building,BAKERY_APPROACH=anchors.bakery.approach,BAKERY_SOL=anchors.bakery.sol,TILE_SHELF=anchors.bakery.shelf,RINA_HOME=anchors.bakery.person,WORKSHOP_DOOR=anchors.workshop.person;
+export const TILE_APPROACH=BAKERY_WORK.tileApproach;
+export const THANK_RINA={x:WORKSHOP_DOOR.x+.73,z:WORKSHOP_DOOR.z+.08};
 export const BAKERY_STAGES=['arrival','needed','carried','delivered','gap','misplaced','sealed','checked','mixed','shaped','baked','escorting','done'] as const;
 export type BakeryStage=typeof BAKERY_STAGES[number]|'historical';
 export interface BakeryState {
@@ -17,9 +21,9 @@ export const bakeryReady=(c:Chapter)=>['done','historical'].includes(c.bakery.st
 export const bakeryRank=(c:Chapter)=>BAKERY_STAGES.indexOf(c.bakery.stage as typeof BAKERY_STAGES[number]);
 export const solAtWorkshop=(c:Chapter)=>c.bakery.stage==='historical'||bakeryRank(c)>=7;
 export const near=(a:Point,b:Point,r=.95)=>Math.hypot(a.x-b.x,a.z-b.z)<=r;
-export const nearBakery=(c:Chapter)=>c.pip.x>6.4&&c.pip.z<.7&&c.pip.z>-3;
+export const nearBakery=(c:Chapter)=>regionAt(c.pip)==='bakery';
 export const bakeryAction=(kind:string):kind is BakeryAction=>kind in bakeryDurations;
-export const bakeryDurations:Record<BakeryAction,number>={bakeryWelcome:2300,tilePickup:1000,tileDelivery:1200,tileRemoval:2600,tilePlacement:1700,flourCheck:6500,mixDough:2300,shapeLoaves:2100,bakeBread:5000,bakeUnshaped:5000,takeLoaf:1500,thankSol:2400};
+export const bakeryDurations:Record<BakeryAction,number>={bakeryWelcome:6500,tilePickup:1000,tileDelivery:1200,tileRemoval:6500,tilePlacement:4000,flourCheck:12000,mixDough:3400,shapeLoaves:3200,bakeBread:15000,bakeUnshaped:8000,takeLoaf:4000,thankSol:localReview?4200:2400};
 export const bakeryActionText:Record<BakeryAction,string>={bakeryWelcome:'Rina moves her flour sacks away from the water dripping through the roof.',tilePickup:'Pip takes Rina’s intact spare tile from the shelf.',tileDelivery:'Pip hands the spare tile to Sol beside his ladder.',tileRemoval:'Sol climbs his ladder, removes the cracked tile and sets it aside.',tilePlacement:'Sol places the same spare tile where you directed him.',flourCheck:'Rina checks that the flour is dry. Sol packs his tools and walks back to his workshop.',mixDough:'Pip helps Rina mix the ingredients. Rina kneads the dough. Some time passes while it rests and rises. Sol writes at his workshop.',shapeLoaves:'Pip helps divide the dough. Rina shapes three similar-sized loaves.',bakeUnshaped:'Rina puts the whole lump in the oven for the recipe’s baking time. The outside browns, but the middle is still doughy. She sets this batch aside.',bakeBread:'A short time passes while the loaves bake. The gathering has not begun; Mara’s last boat is still due later.',takeLoaf:'Rina takes one baked loaf to thank Sol. The other bread stays for the people she promised.',thankSol:'Pip watches Rina hand Sol the loaf. “Thank you for fixing the roof,” she says. Sol finishes the last line of his draft.'};
 export function bakeryInstruction(s:GardenState){const b=s.chapter.bakery;switch(b.stage){
  case 'arrival':return 'Visit Rina at the bakery. Water is dripping through a cracked roof tile.';
@@ -71,7 +75,7 @@ export function settleBakery(s:GardenState,a:Action){const b=s.chapter.bakery;sw
  case 'bakeUnshaped':b.stage='checked';b.unshapedBatches=Math.min(100,(b.unshapedBatches??0)+1);break;
  case 'bakeBread':b.stage='baked';b.loaf='oven';break;
  case 'takeLoaf':b.stage='escorting';b.loaf='rina';break;
- case 'thankSol':b.stage='done';b.loaf='sol';break;
+ case 'thankSol':b.stage='done';b.loaf='sol';if(localReview)b.rina={...THANK_RINA};break;
  }s.bakeryPreview=null;s.notice=a.kind==='bakeryWelcome'?'Rina says: “I promised to have everyone’s bread ready today. If those sacks get wet, I won’t be able to bake.”':bakeryInstruction(s);
 }
 export function validBakery(c:Chapter){
@@ -82,5 +86,7 @@ export function validBakery(c:Chapter){
  const tile=n<=1?'shelf':n===2?'pip':n<=4?'sol':n===5?'beside':'roof',cracked=n<4?'roof':'set-aside',loaf=n<10?'none':n===10?'oven':n===11?'rina':'sol';
  if(b.tile!==tile||b.cracked!==cracked||b.loaf!==loaf)return false;
  if(n<11&&!near(b.rina,RINA_HOME,.001))return false;
- return b.rina.x>=3&&b.rina.x<=9.5&&b.rina.z>=-2.4&&b.rina.z<=.7&&(n!==12||near(b.rina,WORKSHOP_DOOR,1.8));
+ // The escort can follow a detour through the expanded village and garden.
+ // Validate its actual east-bank navigation surface rather than the retired room rectangle.
+ return b.rina.x>riverCenter(b.rina.z)&&navigable(b.rina)&&(n!==12||near(b.rina,WORKSHOP_DOOR,1.8));
 }

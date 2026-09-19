@@ -1,0 +1,34 @@
+{
+  "schema": "eq.operational-ledger-baseline.v1",
+  "ledgers": [
+    {
+      "file": "evidence/voice-ai-demo-20260918/openai-attempts.jsonl",
+      "mode": "append-only",
+      "bytes": 1228,
+      "sha256": "0c6ed03e64b11f6b5138956d85ee753dfdbc67cafb0aeb619bfcf90e7472867b",
+      "records": 6
+    },
+    {
+      "file": "evidence/demo-ai-20260919/openai-attempts.jsonl",
+      "mode": "append-only",
+      "bytes": 7469,
+      "sha256": "bf505475a6c01d2ea9993afeb85d3a748ae4074edafc74fae15212f915088516",
+      "records": 28
+    },
+    {
+      "file": "evidence/cast-audio-20260919/attempts.jsonl",
+      "mode": "append-only",
+      "bytes": 92752,
+      "sha256": "a575515a391eee49d4da97455f4b81bb6a0f44791408842244713fa2e93e414b",
+      "records": 339
+    },
+    {
+      "file": "evidence/er13/live-evaluation/attempts.jsonl",
+      "mode": "exact",
+      "bytes": 549,
+      "sha256": "17a4a6a57b5e1d54192320717e09f2c631a3eb052d1c1e62bc74c866bc877653",
+      "records": 3
+    }
+  ],
+  "scope": "Immutable minimum original accounting history. Preserve each append-only byte prefix; historical TASK11.19 remains exact. This file never authorizes new requests or resets an allowance."
+}
