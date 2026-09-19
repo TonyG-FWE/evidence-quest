@@ -1,8 +1,16 @@
 import * as T from 'three';
 import {PaperArt,makeLantern,makeSeedBoat} from './art.js';
-export const STORY_FLOWERS=[{x:4.8,z:4.9},{x:2.85,z:4.75},{x:5.45,z:3.65},{x:5.55,z:2.9},{x:3.35,z:4.65}] as const;
+import {WORLD_WORKBENCH as WORKBENCH} from './worldLayout.js';
+export function makeWorkbenchTable(a:PaperArt){
+ const root=new T.Group();
+ a.box(root,WORKBENCH.x,WORKBENCH.y-.04,WORKBENCH.z,WORKBENCH.width,.08,WORKBENCH.depth,'#bd9563');
+ for(const x of [-.99,.99])for(const z of [-.56,.56])a.box(root,WORKBENCH.x+x,.49,WORKBENCH.z+z,.10,.8,.10,'#896948');
+ for(const z of [-.48,-.16,.16,.48])a.box(root,WORKBENCH.x,WORKBENCH.y+.004,WORKBENCH.z+z,WORKBENCH.width,.002,.009,'#a27f53');
+ a.mergeStatic(root);return root;
+}
+export const STORY_FLOWERS=[{x:7.8,z:12.9},{x:5.85,z:12.75},{x:8.45,z:11.65},{x:8.55,z:10.9},{x:6.35,z:12.65}] as const;
 export function makeWorkshop(a:PaperArt){
- const root=new T.Group();root.position.set(4.3,.08,-3.65);
+ const root=new T.Group();root.position.set(9.3,.08,-11.65);
  a.box(root,0,.67,0,1.8,1.34,1.3,'#c7b883');const roof=a.shape(root,[[-1.06,0],[0,.65],[1.06,0]],1.54,'#588579');roof.position.set(0,1.34,-.77);
  a.box(root,-.42,.44,.675,.42,.88,.035,'#765941');a.box(root,-.42,.50,.70,.34,.68,.016,'#c6a26e');a.ball(root,-.28,.44,.73,.022,'#e1be76');
  a.box(root,.45,.87,.675,.55,.40,.035,'#547d72');a.box(root,.45,.87,.706,.028,.42,.016,'#e8d3a2');

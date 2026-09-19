@@ -105,7 +105,7 @@ export function paintWorld(ctx:CanvasRenderingContext2D,s:State,a:Assets){
  // The docked projector owns its existing story poses through the Stage visit.
  // Preparing them before a rehearsal avoids new pose decoding inside cues;
  // leaving the Stage releases this ownership through the ordinary pool rules.
- if(room==='SC.ST'&&['docked','projecting'].includes(p.loop.mode)){a.prepareGroup('puppet',1);if((devicePixelRatio||1)>=1.5)a.prepareGroup('puppet',2);}
+ if(room==='SC.ST'&&['docked','projecting'].includes(p.loop.mode))a.prepareGroup('puppet',(devicePixelRatio||1)>=1.5?2:1);
  const operation=s.runtime.intent?.stage==='operating'?s.runtime.intent:null,elapsed=s.runtime.operationElapsedMs,animate=s.preferences.motion!=='reduced',progress=(end=350)=>animate?Math.min(1,Math.max(0,elapsed/end)):1;
  ctx.fillStyle='#EEC69D';ctx.fillRect(0,0,120,80);
  const scenery=(ctx:CanvasRenderingContext2D)=>{
