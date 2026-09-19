@@ -1,8 +1,11 @@
-import {sources} from './content.js';
+import {anchors} from './worldLayout.js';
+import {GRANDMA_CUSHION_MS} from './grandmaTravel.js';
+import {narrativeLine} from './narrativeDialogue.js';
+import {sourcesFor,preparedEndingsFor} from './content.js';
 // Implementation draft; moved into src/garden only after the bounded Group5 receipt.
 import type {Chapter,GardenState,Point} from './model.js';
 import type {Contribution,GatheringTime,Reader,StoryEvent} from './chapter.js';
-import {chapterSources,preparedEndings} from './chapterContent.js';
+
 
 export type ArrivalCheckpoint='not-started'|'boat-moored'|'passengers-ashore'|'sol-arrived'|'ready'|'historical';
 export type GatheringAction='finalBoat'|'finalPassengers'|'solArrival'|'maraArrival'|'bringCushions'|'finishGrandmaPage';
@@ -18,7 +21,7 @@ export type SpokenLine={origin?:'child-draft'|'authored-display';who:'Pip'|'Mara
 export const freshGathering=():GatheringState=>({edition:'connected-20260915',reported:null,arrival:'not-started',welcome:false,solPerformed:null,solDisclosed:false,cushions:false,pageComplete:false,grandmaPerformed:false,turn:null});
 export const earlierGathering=(c:Chapter):GatheringState=>c.story.phase==='planning'?freshGathering():{...freshGathering(),edition:'earlier-chapter',arrival:'historical'};
 export const gatheringAction=(v:string):v is GatheringAction=>['finalBoat','finalPassengers','solArrival','maraArrival','bringCushions','finishGrandmaPage'].includes(v);
-export const gatheringDurations:Record<GatheringAction,number>={finalBoat:4500,finalPassengers:4200,solArrival:4400,maraArrival:6500,bringCushions:4500,finishGrandmaPage:2400};
+export const gatheringDurations:Record<GatheringAction,number>={finalBoat:4500,finalPassengers:5500,solArrival:11000,maraArrival:18000,bringCushions:GRANDMA_CUSHION_MS,finishGrandmaPage:2400};
 export const gatheringActionText:Record<GatheringAction,string>={finalBoat:'The last boat returns. Its operator brings it alongside the passenger dock.',finalPassengers:'Mara helps the last passengers safely ashore. Her work finishes when everyone is off the boat.',solArrival:'Sol brings his actual manuscript from the workshop to the garden.',maraArrival:'Mara has finished work. She walks across the secured footbridge to join the gathering.',bringCushions:'Grandma opens the storage beside her bench and brings out the spare cushions.',finishGrandmaPage:'Grandma adds what she has learned today to the end of her waiting story.'};
 export function reportedPlan(c:Chapter){const p=c.story.plan,r=c.gathering.reported;return !!p&&!!r&&p.time===r.time&&p.reader===r.reader;}
 export const connectedGathering=(c:Chapter)=>c.gathering.edition==='connected-20260915';
@@ -39,16 +42,20 @@ export function arrivedMara(c:Chapter){return c.story.plan?.time==='later'&&(con
 export function welcomeWords(c:Chapter){const p=c.story.plan;return !p?'':p.time==='usual'?"Welcome back to the garden. Mara is working at the dock, so she asked me to share The Torn Wing for her. Sol has brought A Small Repair.":p.reader==='mara'?"Welcome back to the garden. We postponed the gathering so Mara could finish her work and join us. Mara will tell The Torn Wing, and Sol will share A Small Repair.":"Welcome back to the garden. We postponed the gathering so Mara could finish her work and join us. I'll read The Torn Wing for her, and Sol will share A Small Repair.";}
 const childCredit='Your suggested ending, shared by Sol. The picture follows the event you chose; your words have not been checked against his account.';
 const preparedCredit='Prepared ending from Sol’s account.';
-const sourceLines=(id:'sol'|'empty',who:SpokenLine['who']):SpokenLine[]=>chapterSources[id].paragraphs.map((text,paragraph)=>({who,text,source:id,paragraph}));
+const sourceLines=(c:Chapter,id:'sol'|'empty',who:SpokenLine['who']):SpokenLine[]=>sourcesFor(c)[id].paragraphs.map((text,paragraph)=>({who,text,source:id,paragraph}));
 export const witnessedQuestion={bread:'Would you tell everyone how the repair helped Rina bake the bread?',thanks:'Would you tell everyone about Rina’s thank-you visit?'} as const;
 export const witnessedReply={bread:'The repaired roof kept the flour dry. Rina used it to bake the bread she had promised.',thanks:'Rina came to my workshop with a loaf of bread. She brought it to thank me for the repair.'} as const;
 export function turnLines(c:Chapter,turn:WorldTurn=c.gathering.turn!):SpokenLine[]{
+ return originalTurnLines(c,turn).map(line=>line.source||line.origin==='child-draft'?line:{...line,text:narrativeLine(c,line.text)});
+}
+function originalTurnLines(c:Chapter,turn:WorldTurn):SpokenLine[]{
  if(!turn)return [];
+ const sources=sourcesFor(c);
  const contribution=turn.contribution,ending:SpokenLine[]=contribution?[{who:'Sol',text:contribution.text,origin:contribution.origin==='child'?'child-draft':'authored-display',attribution:contribution.origin==='child'?childCredit:preparedCredit,...(contribution.origin==='prepared'?{source:contribution.scene==='thanks'?'thanksEnding':'breadEnding',paragraph:0}:{})}]:[];
  switch(turn.kind){
  case 'mara':return sources.story.paragraphs.map((text,paragraph)=>({who:c.story.plan?.reader==='mara'?'Mara':'Pip',text,source:'story',paragraph}));
  case 'welcome':return [{who:'Pip',text:welcomeWords(c)}];
- case 'sol':return [{who:'Pip',text:contribution?"Sol has brought A Small Repair and the ending we chose together.":"Sol has brought a draft of his story. After he reads it, we can tell him what we'd like to hear more about."},...sourceLines('sol','Sol'),...ending,...(contribution?[{who:'Grandma' as const,text:contribution.scene==='bread'?"The repair helped Rina keep her bread promise. I'm glad you told us about it.":contribution.scene==='thanks'?"Rina's visit shows that your help mattered to her.":"Your repair helped Rina bake, and her visit showed you how much she appreciated it."}]:[{who:'Sol' as const,text:"That's as far as I've written. What would you like to hear about next?"}])];
+ case 'sol':return [{who:'Pip',text:contribution?"Sol has brought A Small Repair and the ending we chose together.":"Sol has brought a draft of his story. After he reads it, we can tell him what we'd like to hear more about."},...sourceLines(c,'sol','Sol'),...ending,...(contribution?[{who:'Grandma' as const,text:contribution.scene==='bread'?"The repair helped Rina keep her bread promise. I'm glad you told us about it.":contribution.scene==='thanks'?"Rina's visit shows that your help mattered to her.":"Your repair helped Rina bake, and her visit showed you how much she appreciated it."}]:[{who:'Sol' as const,text:"That's as far as I've written. What would you like to hear about next?"}])];
  case 'question':return [{who:'Pip',text:witnessedQuestion[turn.question!]},{who:'Sol',text:witnessedReply[turn.question!]}];
  case 'add-ending':return [{who:'Sol',text:"I'll add this part to the page and share it with everyone."},...ending,{who:'Grandma',text:turn.question==='thanks'?"Rina's visit shows that your help mattered to her.":"That repair helped her keep the bread promise."}];
  case 'keep-draft':return [{who:'Sol',text:c.story.questions.length?'That gives me something to add when I work on the ending. Thank you for listening.':'Thank you for listening. I’ll keep working on the ending.'}];
@@ -56,7 +63,7 @@ export function turnLines(c:Chapter,turn:WorldTurn=c.gathering.turn!):SpokenLine
  case 'copy-offer':return [{who:'Grandma',text:'Mara sent us a story. Please take her this copy of mine.'}];
  case 'receipt':return [{who:'Mara',text:'Thank you. I’ll read it after the last boat returns. It’s good to have a story from her again.'}];
  case 'disclosure':return [{who:'Grandma',text:'What kept you from bringing stories before today?'},{who:'Sol',text:"I didn't think anyone would want to hear about the ordinary things I make and fix."},{who:'Grandma',text:"I'm glad you shared your story with us."}];
- case 'grandma':return [...sourceLines('empty','Grandma'),{who:'Sol',text:"I'm glad there's a place for my stories here."},...(c.story.plan?.time==='later'?[{who:'Mara' as const,text:"I'm glad we found a time when I can listen, too."}]:[]),{who:'Grandma',text:'You kept your promise, Pip. We planted the seed together. Which part of today would you like its lantern to show?'}];
+ case 'grandma':return [...sourceLines(c,'empty','Grandma'),{who:'Sol',text:"I'm glad there's a place for my stories here."},...(c.story.plan?.time==='later'?[{who:'Mara' as const,text:"I'm glad we found a time when I can listen, too."}]:[]),{who:'Grandma',text:'You kept your promise, Pip. We planted the seed together. Which part of today would you like its lantern to show?'}];
  }
 }
 export function startTurn(s:GardenState,kind:TurnKind,contribution:Contribution|null=null,question:'bread'|'thanks'|null=null){
@@ -91,9 +98,10 @@ export function settleGathering(s:GardenState,kind:GatheringAction){
  s.notice=kind==='finalBoat'?'The last boat is alongside. Mara still needs to help the passengers ashore.':kind==='finalPassengers'?'All the passengers are ashore. Mara has finished work.':kind==='solArrival'&&c.story.plan?.time==='later'?'Sol has arrived with his manuscript. Mara can now cross to the garden.':kind==='bringCushions'?'The cushions are on the bench. Grandma can now finish the story of why she put them away.':kind==='finishGrandmaPage'?'Grandma has finished The Empty Bench. She is ready to share it.':'The invited guests have arrived. Pip can welcome them.';
 }
 export function gatheringEvent(s:GardenState,event:StoryEvent):{handled:boolean;action:GatheringAction|null}{
+ const preparedEndings=preparedEndingsFor(s.chapter);
  const c=s.chapter,f=c.story,g=c.gathering,no={handled:false,action:null},yes={handled:true,action:null};
  if(!connectedGathering(c))return no;
- const atGrandma=Math.hypot(c.pip.x-4.4,c.pip.z-3.6)<1.5;
+ const atGrandma=Math.hypot(c.pip.x-anchors.garden.person.x,c.pip.z-anchors.garden.person.z)<1.5;
  if(event.kind==='REPORT_ARRANGEMENTS'){
   if(f.phase==='planning'&&atGrandma&&f.plan&&f.solReported&&f.maraReported&&f.solInvitation===f.plan.time&&f.maraInvitation?.time===f.plan.time&&f.maraInvitation.reader===f.plan.reader&&(f.plan.reader==='mara'||c.page!=='mara')){g.reported={time:f.plan.time,reader:f.plan.reader};s.notice='Grandma says: “Everyone has agreed. Begin when you are ready.”';}return yes;
  }
@@ -125,6 +133,7 @@ export function gatheringEvent(s:GardenState,event:StoryEvent):{handled:boolean;
  return no;
 }
 export function validGathering(c:Chapter){
+ const preparedEndings=preparedEndingsFor(c);
  const g=c.gathering,f=c.story;if(!g||!['connected-20260915','earlier-chapter'].includes(g.edition))return false;
  if(!['not-started','boat-moored','passengers-ashore','sol-arrived','ready','historical'].includes(g.arrival)||![g.welcome,g.solDisclosed,g.cushions,g.pageComplete,g.grandmaPerformed].every(x=>typeof x==='boolean'))return false;
  if(g.reported!==null&&(!g.reported||!['usual','later'].includes(g.reported.time)||!['pip','mara'].includes(g.reported.reader)||g.reported.time==='usual'&&g.reported.reader==='mara'))return false;
@@ -142,7 +151,7 @@ export function validGathering(c:Chapter){
  if(g.grandmaPerformed!==['moment','closing','closed'].includes(f.phase))return false;
  const t=g.turn;if(t!==null){
   if(!t||!['mara','welcome','sol','question','add-ending','keep-draft','disclosure','grandma','closing','copy-offer','receipt'].includes(t.kind)||!Number.isSafeInteger(t.index)||t.index<0||![null,'bread','thanks'].includes(t.question))return false;
-  if(t.kind==='receipt'?Math.hypot(c.pip.x+3.5,c.pip.z+4)>=1.5:Math.hypot(c.pip.x-4.4,c.pip.z-3.6)>=1.5)return false;
+  if(t.kind==='receipt'?Math.hypot(c.pip.x-anchors.dock.person.x,c.pip.z-anchors.dock.person.z)>=1.5:Math.hypot(c.pip.x-anchors.garden.person.x,c.pip.z-anchors.garden.person.z)>=1.5)return false;
   const expected=t.kind==='mara'?'mara':t.kind==='welcome'?'welcome':t.kind==='sol'?'sol':['question','add-ending','keep-draft'].includes(t.kind)?'discussion':['closing','copy-offer'].includes(t.kind)?'closing':t.kind==='receipt'?'closed':'grandma';if(f.phase!==expected)return false;
   if(t.kind==='closing'&&(f.plan?.time!=='later'||f.closingDone)||t.kind==='copy-offer'&&(f.plan?.time!=='usual'||f.grandmaCopy!=='none')||t.kind==='receipt'&&(f.plan?.time!=='usual'||f.grandmaCopy!=='mara'||f.closingDone))return false;
   if(t.kind==='sol'&&JSON.stringify(t.contribution)!==JSON.stringify(f.solChoice==='prepared'?f.solEnding:null))return false;
