@@ -2,7 +2,7 @@
   "schema": "eq.nerdy-demo.task.v1",
   "task": 6,
   "at": "2026-09-25T09:30:11.418Z",
-  "status": "VERIFIED_SCOPE_DELIVERY_PENDING",
+  "status": "VERIFIED_FOR_DEMO_AND_DELIVERED",
   "fix": "FIX11.NERDY06",
   "check": "CHECK11.NERDY06",
   "candidate": {
@@ -70,5 +70,13 @@
     "record": "preexisting-preservation.json",
     "exactFilesPreserved": 10
   },
-  "remainingQualification": "Original required-browser failures, resource budgets, maintainer-profile checks, excluded saved-state assertion, artwork approval and wider device qualification remain open. This is bounded demo readiness, not full product qualification."
+  "remainingQualification": "Original required-browser failures, resource budgets, maintainer-profile checks, excluded saved-state assertion, artwork approval and wider device qualification remain open. This is bounded demo readiness, not full product qualification.",
+  "completedAt": "2026-09-25T09:41:52.307Z",
+  "delivery": {
+    "sourceCommit": "69ad38fcb65f18c3d718945d67940e9d6dd0de4f",
+    "privatePullRequest": "https://github.com/TonyG-FWE/evidence-quest/pull/3",
+    "base": "main",
+    "branch": "codex/nerdy-demo-polish",
+    "merged": false
+  }
 }

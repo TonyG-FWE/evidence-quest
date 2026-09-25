@@ -20,6 +20,7 @@
     "evidence/nerdy-demo-20260924/cleanup-files.json",
     "evidence/nerdy-demo-20260924/cleanup-result.json",
     "evidence/nerdy-demo-20260924/contract-recheck.json",
+    "evidence/nerdy-demo-20260924/delivery.json",
     "evidence/nerdy-demo-20260924/fallback-capture-replay.json",
     "evidence/nerdy-demo-20260924/fallback-capture.json",
     "evidence/nerdy-demo-20260924/fallback-review.json",
@@ -63,9 +64,9 @@
     "evidence/nerdy-demo-20260924/word-timestamp-overruns.json",
     "evidence/reader-repair-20260919/RESULTS.md"
   ],
-  "filesSha256": "4aad65fd6eb51c67b38b4f30e4994402cae1a95bbe7ed6d48415944cae916cd8",
-  "fileCount": 15906,
-  "bytes": 3150234326,
+  "filesSha256": "c7075f905f7d9a75548cf333a173f77162ff48e0484cadc7b447c2c8cded6621",
+  "fileCount": 15907,
+  "bytes": 3150238192,
   "files": [
     {
       "file": ".env.example",
@@ -89,8 +90,8 @@
     },
     {
       "file": "BUILD-STATUS.md",
-      "bytes": 148508,
-      "sha256": "4e0720a58e607bf6b4f157354c032af9d3e8de4c8ed5689608f5136312e84611"
+      "bytes": 148898,
+      "sha256": "603fbeb1c43cc3cf6225cdd9acbf7c43a0fda8f382cd5a6bf8e89cd5de61976c"
     },
     {
       "file": "README.md",
@@ -4179,8 +4180,8 @@
     },
     {
       "file": "docs/game-review/NERDY-DEMO-20260924.md",
-      "bytes": 17250,
-      "sha256": "bc0df79a93f561cd9bb50160cd9335ad767a6a2f769f7d1390fdd68db8cea5fe"
+      "bytes": 17810,
+      "sha256": "d54f6e87d91fb1734753d1acc5897619dc0e225820bbf281e5ee414c7c313d7a"
     },
     {
       "file": "docs/game-review/NERDY-DEMO-RUN-OF-SHOW-20260925.md",
@@ -23578,6 +23579,11 @@
       "sha256": "37926c0a7af3d89fa70a1e61305ff6b01a4159530740394b844fa2b7d727fb44"
     },
     {
+      "file": "evidence/nerdy-demo-20260924/delivery.json",
+      "bytes": 2625,
+      "sha256": "b3c72df527317ae3dc96e9dd9621415ba902e1b368f3610a82439cfbe1f123eb"
+    },
+    {
       "file": "evidence/nerdy-demo-20260924/fallback-capture-replay.json",
       "bytes": 2017,
       "sha256": "b3022c56b25e311edd6f29529703c82f7813f2ce19488131f2eb2d0c8192c102"
@@ -23744,8 +23750,8 @@
     },
     {
       "file": "evidence/nerdy-demo-20260924/task6-rehearsal.json",
-      "bytes": 2376,
-      "sha256": "61acd2a21edbdc15eac07ceb082bbb5dbfc2bc02c9346f20d607dba9ad766bac"
+      "bytes": 2667,
+      "sha256": "5068107f3978a2d41086a385417fe15e3ce1bd6c52c6aa57d3f88fc026394130"
     },
     {
       "file": "evidence/nerdy-demo-20260924/test-repair-notes.json",

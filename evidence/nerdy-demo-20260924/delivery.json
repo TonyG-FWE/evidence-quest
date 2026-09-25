@@ -1,0 +1,59 @@
+{
+  "schema": "eq.nerdy-demo.delivery.v1",
+  "at": "2026-09-25T09:41:52.308Z",
+  "status": "DELIVERED_PRIVATE_PR_OPEN",
+  "repository": "TonyG-FWE/evidence-quest",
+  "repositoryPrivate": true,
+  "baseMain": "112e80cd4d1e11fae1fbf81b4324026e2fbef7e5",
+  "branch": "codex/nerdy-demo-polish",
+  "sourceCommit": "69ad38fcb65f18c3d718945d67940e9d6dd0de4f",
+  "privatePullRequest": "https://github.com/TonyG-FWE/evidence-quest/pull/3",
+  "pullRequestState": "OPEN",
+  "verifiedRemoteHeadAtCreation": "69ad38fcb65f18c3d718945d67940e9d6dd0de4f",
+  "implementationIndexAudit": {
+    "at": "2026-09-25T09:35:50.226Z",
+    "branch": "codex/nerdy-demo-polish",
+    "parent": "112e80cd4d1e11fae1fbf81b4324026e2fbef7e5",
+    "releaseManifestSha256": "4aad65fd6eb51c67b38b4f30e4994402cae1a95bbe7ed6d48415944cae916cd8",
+    "exactIndexFileMatches": 15907,
+    "changedStagedFiles": 9264,
+    "unselectedStagedFiles": 0,
+    "trackedDeletions": 0,
+    "earlierDirtyFilesExcludedAndPreserved": 10,
+    "whitespaceCheck": "PASS",
+    "indexTree": "6ad37605048121af2ff5df4cbd84a106a5af241b"
+  },
+  "lineEndingOnlyIndexReconciliation": [
+    "docs/game-review/GROUP-1-AUDIT-CROSSWALK.json",
+    "docs/game-review/remaining-contracts.json",
+    "docs/game-review/specification-verification.json",
+    "src/garden/ConversationControls.tsx"
+  ],
+  "candidate": {
+    "inputSha256": "9b0cb81ada1f13552606265ff73915df0bc7cc6bdd1654ec9d36a91cadcf5a64",
+    "outputSha256": "bde7cb5fdecaf9b04ffd09949f2e86a696be6453552941bc9461370b954a3e5f"
+  },
+  "game": {
+    "url": "http://127.0.0.1:4495/garden",
+    "browser": "Codex interactive browser",
+    "checkpoint": "What Pip found at Rina’s bakery; first conversation page. Reached through ordinary fresh bridge and planting play.",
+    "viewport": {
+      "width": 1422,
+      "height": 800
+    },
+    "visibleInspection": "PASS; artwork, primary controls, listening/practice and fullscreen visible."
+  },
+  "fallback": {
+    "record": "fallback-visual-review.json",
+    "result": "VERIFIED",
+    "file": "output/nerdy-demo-fallback-20260925/Evidence-Quest-Nerdy-demo.webm",
+    "sha256": "51c0031f019e9044f56621d9a8a7dd07b9e645989901ed2a4ac298b17516c372",
+    "originalLiveCaptureRetained": true
+  },
+  "earlierEvidencePreserved": "preexisting-preservation.json",
+  "liveProviderRequestsAfterSingleVerification": 0,
+  "TASK11_19": "HALTED_1_OF_75",
+  "merged": false,
+  "deployed": false,
+  "scope": "Bounded demo readiness and authorized private PR delivery. Required-suite failures and wider qualification gaps remain recorded. This receipt is committed in a following documentation-only update."
+}

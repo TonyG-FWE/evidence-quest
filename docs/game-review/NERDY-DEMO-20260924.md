@@ -11,7 +11,7 @@ Only one task may be ACTIVE. A task needs focused verification, a visible compil
 | 3. Camera framing and consequences | VERIFIED | Legible planting, repairs, baking, handoffs and ending preview; bounded composition without lowering asset detail or changing gameplay geometry. |
 | 4. Demo presentation | VERIFIED | Clean demo mode independent of artwork approval; accessible fullscreen and visible primary controls; current Codex, 1366×768 and 1920×1080 checkpoints. |
 | 5. Verified cleanup | VERIFIED | Classify and delete only unused untracked files, beginning with model local-history; record exact paths/bytes, preserve dependencies and rebuild. |
-| 6. Final qualification and rehearsal | ACTIVE | Required commands and compiled delivery verification; complete fresh journey/finale; one bounded live Sol-feedback check; timed route and fallback capture; focused private PR. |
+| 6. Final qualification and rehearsal | VERIFIED FOR DEMO; DELIVERED | Required commands and compiled delivery verification; complete fresh journey/finale; one bounded live Sol-feedback check; timed route and fallback capture; focused private PR. |
 
 ## Demo route and provider boundary
 
@@ -69,7 +69,7 @@ VERIFIED. Deleted 1355 verified unused, untracked backups: 16,989,082,423 bytes 
 
 ### Task 6 — FIX11.NERDY06 / CHECK11.NERDY06
 
-ACTIVE. All eight required commands finished with an unchanged lockfile. Six commands passed; the contract command initially found an obsolete synthetic-word fixture, and its corrected demo-profile recheck passes 245/245. The complete browser result is **184 passed / 31 failed / one intentionally skipped native rehearsal**, with zero flaky tests. [Exact required results](../../evidence/nerdy-demo-20260924/required-commands.json), [browser cases](../../evidence/nerdy-demo-20260924/required-browser.json), [repair notes](../../evidence/nerdy-demo-20260924/test-repair-notes.json).
+VERIFIED FOR THE DEMO. All eight required commands finished with an unchanged lockfile. Six commands passed; the contract command initially found an obsolete synthetic-word fixture, and its corrected demo-profile recheck passes 245/245. The complete browser result is **184 passed / 31 failed / one intentionally skipped native rehearsal**, with zero flaky tests. [Exact required results](../../evidence/nerdy-demo-20260924/required-commands.json), [browser cases](../../evidence/nerdy-demo-20260924/required-browser.json), [repair notes](../../evidence/nerdy-demo-20260924/test-repair-notes.json).
 
 The final successor includes the bakery listening correction. It passes 20 delivery/audio checks, 245 contracts, package/input/output verification, runtime assets and all 143 original-asset hashes. The focused follow-ups and earlier failures remain in the linked records. The full browser suite is not green; resource budgets, maintainer-profile checks and the excluded saved-state assertion remain open.
 
@@ -83,4 +83,4 @@ The game is visibly ready in Codex at **http://127.0.0.1:4495/garden**, at the b
 
 ### Delivery
 
-PENDING. Preserve compact, exact verification and record exclusions; do not attribute earlier checkpoints to the new build. Commit focused changes and open a private PR after qualification. Leave the verified compiled game running in Codex.
+DELIVERED. Implementation commit [`69ad38fcb65f18c3d718945d67940e9d6dd0de4f`](https://github.com/TonyG-FWE/evidence-quest/commit/69ad38fcb65f18c3d718945d67940e9d6dd0de4f) is pushed on `codex/nerdy-demo-polish`. [Private PR #3](https://github.com/TonyG-FWE/evidence-quest/pull/3) is open against main; no merge or deployment occurred. The index audit matches all 15,907 reviewed files exactly and excludes all ten earlier modifications. Four previously cached index entries differed only in line endings; the commit preserves the verified working bytes without changing their text. Raw play recordings, traces and credentials remain local. The verified game remains open at the bakery in Codex. [Delivery receipt](../../evidence/nerdy-demo-20260924/delivery.json).
