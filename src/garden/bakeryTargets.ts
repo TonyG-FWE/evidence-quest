@@ -1,7 +1,7 @@
 import * as T from 'three';
 import type {GardenState} from './model.js';
 import {bakeryHands,type BakeryObject} from './bakeryInteraction.js';
-import {handDefinitions} from './hands.js';
+import {handDefinitions,KNEADING_DISTANCE,kneadingDough} from './hands.js';
 
 /** The cue encloses the artwork the child can see. Its small screen-space
  * margin is also the pointer tolerance; it does not execute an action. */
@@ -15,7 +15,8 @@ export function makeBakeryTargets(element:HTMLElement,objects:Record<Exclude<Bak
   if(!enabled||s.panel||s.action)return;
   const ids=[...new Set(bakeryHands(s,false).map(id=>id==='dough-cut'?'dough':id))];
   const b=s.chapter.bakery,drop=b.stage==='needed'?'pip':b.stage==='carried'?'sol':['gap','misplaced'].includes(b.stage)?'opening':b.stage==='checked'&&!s.chapter.hands.flourInBowl?'bowl':b.stage==='shaped'?'oven':b.stage==='baked'?'rina':b.stage==='escorting'?'sol':null;
-  const cues:{id:string;object:T.Object3D;label:string;drop:boolean}[]=s.gesture?[]:ids.map(id=>({id,object:objects[id],label:handDefinitions[id].label,drop:false}));
+  const kneading=kneadingDough(s);
+  const cues:{id:string;object:T.Object3D;label:string;drop:boolean}[]=s.gesture&&!kneading?[]:ids.map(id=>({id,object:id==='dough'&&kneading?destinations.bowl:objects[id],label:id==='dough'&&kneading?`Knead in the bowl · ${Math.round((s.kneading??0)/KNEADING_DISTANCE*100)}%`:handDefinitions[id].label,drop:false}));
   if(drop)cues.push({id:drop,object:destinations[drop],label:({pip:'Pip',sol:'Sol',rina:'Rina',bowl:'Bowl',oven:'Oven',opening:'Roof opening'})[drop],drop:true});
   for(const cue of cues){
    const {id,object}=cue;let visible=true;for(let p:T.Object3D|null=object;p;p=p.parent)if(!p.visible)visible=false;
@@ -38,6 +39,9 @@ export function makeBakeryTargets(element:HTMLElement,objects:Record<Exclude<Bak
    const cx=(left+right)/2,cy=(top+bottom)/2,w=Math.max(44,right-left+12),h=Math.max(44,bottom-top+12);left=cx-w/2;right=cx+w/2;top=cy-h/2;bottom=cy+h/2;
    if(right<0||left>width||bottom<0||top>height)continue;
    let el=nodes.get(id);if(!el){el=document.createElement('span');el.className='garden-bakery-target';el.dataset[cue.drop?'bakeryDrop':'bakeryObject']=id;const label=document.createElement('span');label.textContent=cue.label;el.append(label);nodes.set(id,el);layer.append(el);}
+   el.firstElementChild!.textContent=cue.label;
+   el.classList.toggle('is-selected',!cue.drop&&s.bakerySelection?.object===id);
+   el.classList.toggle('is-recipient',cue.drop&&!!s.bakerySelection);
    el.hidden=false;el.style.transform=`translate(${left}px,${top}px)`;el.style.width=w+'px';el.style.height=h+'px';picks.push({object,left,right,top,bottom,drop:cue.drop});
   }
  }

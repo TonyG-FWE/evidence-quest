@@ -15,6 +15,18 @@ Only one task may be ACTIVE. A task needs focused verification, a visible compil
 
 ## Bakery cursor repair — 2026-09-25
 
+### Progression acceptance reopened
+
+Tony approved the narrow progression repair after short strokes and imperfect releases exposed a kneading blocker. The previous successful scripted route is insufficient acceptance of ordinary cursor interaction.
+
+| Correction | Status | Browser checkpoint |
+| --- | --- | --- |
+| Shelter visibility | CHECKPOINT PASSED | Enter, stop, read, approach and leave before bakery work; opacity follows Pip's footprint. |
+| Bowl kneading | CHECKPOINT PASSED | Visible contained dough, accumulated short strokes, imperfect releases, one mixing sequence, adjustable cuts. |
+| Giving and receiving | FOCUSED CHECKS PASSED | Click source then destination and dragging; approach, cancellation, wrong targets, ownership and actual loaf handoff. |
+
+Only one correction is active. Verify visible-object fresh play at current Codex and reported Chrome sizes, 1366×768 and 1920×1080. Reuse serialized handlers with transient interaction state only. Preserve unrelated failures and modifications. No audio overhaul, finale work, new recording, providers, saved-game work or TASK11.19 resume. 251 contracts and both fresh cursor routes passed. Final targeted checks cover all four sizes and cancellation. Roof cutaway now waits until Sol descends. Final full-route repeat stopped for the user ten-minute deadline; earlier broad failures remain unsuperseded. [Exact results](../../evidence/nerdy-demo-20260924/bakery-progression-results.json).
+
 Tony approved this sequential correction after rejecting the bakery's movement, direct roof repair, rain, character motion, reading coverage and repeated loading notification. Earlier button-assisted and calculated-coordinate tests are retained as limited evidence, not cursor-route acceptance. Original task IDs and FIX11/CHECK11 bindings remain unchanged. The earlier task results are historical for their stated scope. The completed fresh cursor acceptance and private delivery below supersede the button-assisted bakery checkpoint.
 
 | Correction | Status | Visible completion boundary |

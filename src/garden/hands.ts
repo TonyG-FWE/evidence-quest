@@ -3,12 +3,14 @@ import {anchors,BAKERY_REPAIR,BAKERY_WORK,BRIDGE_LEVELS,BRIDGE_GEOMETRY,PLANTING
 import {snapSections,ropeCount,sectionAtEnd} from './river.js';
 import {nearBird,nearOffice} from './mara.js';
 import {near,nearBakery,BAKERY_SOL,TILE_SHELF,WORKSHOP_DOOR} from './bakery.js';
-import {bakeryHands} from './bakeryInteraction.js';
+import {bakeryHands,bakeryPointerHint} from './bakeryInteraction.js';
 import {bridgePosts,ropeSides,firstPart,constructionOf,sectionSecured,postPoint,postStoragePoint,sectionPlacementTargets,ropeTarget,canInstallPost,canTieRope,installPost,tieRope,bridgeStatus,type BridgePostId,type RopeSide} from './bridgeConstruction.js';
 
 export type HandObject=`post:${BridgePostId}`|'rope:north'|'rope:south'|'section:a'|'section:b'|'rope-box'|'rope:west'|'rope:east'|'seed'|'soil'|'spareTile'|'crackedTile'|'flour'|'dough'|'dough-cut'|'loaf'|'wing'|'tape'|'tape-roll'|'memory';
 export type HandCommand={type:'HAND_BEGIN';object:HandObject;point?:Point}|{type:'HAND_MOVE';point:Point}|{type:'HAND_ROTATE';direction:1|-1}|{type:'HAND_RELEASE'}|{type:'HAND_CANCEL'};
-export interface HandGesture {object:HandObject;origin:Point;point:Point;rotation:number;travel:number;minZ:number;maxZ:number;}
+export interface HandGesture {object:HandObject;origin:Point;point:Point;rotation:number;travel:number;minZ:number;maxZ:number;pointer?:Point;}
+export const KNEADING_DISTANCE=.9;
+export const kneadingDough=(s:GardenState)=>s.chapter.bakery.stage==='checked'&&!!s.chapter.hands.flourInBowl;
 export interface HandsProgress {version:1;cuts:number[];flourInBowl?:boolean;}
 export const freshHands=():HandsProgress=>({version:1,cuts:[],flourInBowl:false});
 export function validHands(value:unknown):value is HandsProgress{const v=value as HandsProgress;return !!v&&v.version===1&&(v.flourInBowl===undefined||typeof v.flourInBowl==='boolean')&&Array.isArray(v.cuts)&&v.cuts.length<=2&&v.cuts.every(n=>Number.isFinite(n)&&Math.abs(n)<=.30)&&new Set(v.cuts).size===v.cuts.length;}
@@ -106,15 +108,17 @@ const bakeryStep=(step:Extract<Command,{type:'BAKERY_STEP'}>['step']):Command=>(
 /** Only the serialized reducer calls this function. Preview movement never establishes a story fact. */
 export function applyHand(s:GardenState,command:HandCommand):Command[]{
  const c=s.chapter;
- if(command.type==='HAND_CANCEL'){s.gesture=null;s.preview=null;s.bakeryPreview=null;if(s.mode==='arrange')s.mode='walk';return [];}
+ if(command.type==='HAND_CANCEL'){const selected=!!s.bakerySelection;if(selected)s.route=[];delete s.bakerySelection;s.gesture=null;s.preview=null;s.bakeryPreview=null;if(s.mode==='arrange')s.mode='walk';if(selected)s.notice=bakeryPointerHint(s);return [];}
  if(s.panel||s.action||s.background||s.viewLost||s.activity||!s.ready)return [];
  if(command.type==='HAND_BEGIN'){
   if(s.gesture)return [];
   if(!availableHands(s).includes(command.object))return [];
   const point=command.point??handAnchor(s,command.object);if(!finite(point))return [];
   const anchor=handAnchor(s,command.object);if(distance(point,anchor)>1.3)return [];
+  delete s.bakerySelection;
   delete s.bridgeWork;s.route=[];s.keys=[];s.gesture={object:command.object,origin:{...point},point:{...point},rotation:command.object.startsWith('section:')?c.sections[command.object==='section:a'?'a':'b'].rotation:command.object==='wing'?-.48:0,travel:0,minZ:point.z,maxZ:point.z};
-  s.notice=handDefinitions[command.object].instruction;
+  if(command.object==='dough'&&kneadingDough(s)){s.gesture.point={...anchor};s.gesture.pointer={...point};s.notice='Press and move the dough in the bowl. Short strokes count; release whenever you like.';}
+  else s.notice=handDefinitions[command.object].instruction;
   if(command.object.startsWith('section:')){s.mode='arrange';s.selection=command.object==='section:a'?'a':'b';s.preview=structuredClone(c.sections);}
   if(command.object==='crackedTile'||command.object==='spareTile'&&['gap','misplaced'].includes(c.bakery.stage))s.mode='bakery-repair';
   return [];
@@ -127,6 +131,15 @@ export function applyHand(s:GardenState,command:HandCommand):Command[]{
  }
  if(command.type==='HAND_MOVE'){
   if(!finite(command.point))return [];
+  if(gesture.object==='dough'&&kneadingDough(s)){
+   // Relative motion makes an off-centre grab behave like a centre grab.
+   // Only motion of dough inside the bowl counts, never the initial pickup.
+   const previous=gesture.pointer??gesture.origin;
+   const next={x:gesture.point.x+(command.point.x-previous.x),z:gesture.point.z+(command.point.z-previous.z)};
+   const radius=.14,delta=distance(next,mixing),point=delta>radius?{x:mixing.x+(next.x-mixing.x)*radius/delta,z:mixing.z+(next.z-mixing.z)*radius/delta}:next;
+   const moved=distance(gesture.point,point);gesture.travel+=moved;gesture.point=point;gesture.pointer={...command.point};
+   s.kneading=Math.min(KNEADING_DISTANCE,(s.kneading??0)+moved);return [];
+  }
   const id=gesture.object,anchor=handAnchor(s,id),limit=id.startsWith('section:')||id.startsWith('rope:')||id.startsWith('post:')?9:id==='dough'||id==='loaf'?Math.max(2.6,distance(dough,BAKERY_WORK.ovenTarget)+.6):2.6;
   const delta=distance(command.point,anchor),point=delta>limit?{x:anchor.x+(command.point.x-anchor.x)/delta*limit,z:anchor.z+(command.point.z-anchor.z)/delta*limit}:{...command.point};
   gesture.travel+=distance(gesture.point,point);gesture.point=point;gesture.minZ=Math.min(gesture.minZ,point.z);gesture.maxZ=Math.max(gesture.maxZ,point.z);
@@ -178,7 +191,10 @@ export function applyHand(s:GardenState,command:HandCommand):Command[]{
   if(c.bakery.stage==='sealed'&&gesture.travel>.2)commands.push(bakeryStep('CHECK'));
   else if(c.bakery.stage==='checked'&&distance(point,mixing)<.5){c.hands.flourInBowl=true;s.notice='The flour is in the bowl. Work the dough back and forth with Rina.';}
  }else if(id==='dough'){
-  if(c.bakery.stage==='checked'&&c.hands.flourInBowl&&gesture.travel>.9&&distance(point,mixing)<.7)commands.push(bakeryStep('MIX'));
+  if(kneadingDough(s)){
+   if((s.kneading??0)>=KNEADING_DISTANCE-.0001){s.kneading=0;commands.push(bakeryStep('MIX'));}
+   else s.notice='Keep pressing and moving the dough in the bowl. Your short strokes add up.';
+  }
   else if(c.bakery.stage==='mixed'&&distance(point,BAKERY_WORK.ovenTarget)<.5){c.hands.cuts=[];c.hands.flourInBowl=false;commands.push(bakeryStep('BAKE_UNSHAPED'));}
  }else if(id==='dough-cut'){
   // Select the cut where the stroke starts on the visible dough. The preview

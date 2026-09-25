@@ -87,9 +87,9 @@
     "evidence/nerdy-demo-20260924/word-timestamp-overruns.json",
     "evidence/reader-repair-20260919/RESULTS.md"
   ],
-  "filesSha256": "32aa543f8121724a6257b3e7f54badecc84d32c20f67033f8710aaf31ce13876",
-  "fileCount": 15903,
-  "bytes": 3142717736,
+  "filesSha256": "28f9ac106662917cad81552b1cd7257912b25cc713794dec4a0cbbd517fb191d",
+  "fileCount": 15905,
+  "bytes": 3142743674,
   "files": [
     {
       "file": ".env.example",
@@ -113,8 +113,8 @@
     },
     {
       "file": "BUILD-STATUS.md",
-      "bytes": 152030,
-      "sha256": "459c3cc2a60c0d497e03f7462246f00f25b7fe2c6691a3cc2e72c215501e4fd4"
+      "bytes": 153422,
+      "sha256": "e6872d6d3be0270aef87b71ab417af7c63116027557a63c66c2563565a4f73f4"
     },
     {
       "file": "README.md",
@@ -943,8 +943,8 @@
     },
     {
       "file": "browser-tests/bakery-cursor-actions.ts",
-      "bytes": 5685,
-      "sha256": "b7b06c54539c35063b72164ee46344fda1de22f87b8ca037f170ff46ec270a68"
+      "bytes": 6501,
+      "sha256": "c049356e633fa3fdf155a1cc989c3ed9ba5d19224f990621f69f0cd2c6146a8f"
     },
     {
       "file": "browser-tests/cadence-diagnostic.spec.ts",
@@ -1028,13 +1028,18 @@
     },
     {
       "file": "browser-tests/garden-bakery-cursor.spec.ts",
-      "bytes": 19692,
-      "sha256": "62a5e0699ae4ede0e14fe1481a0aea0779c934f8d922b05a59fb3ff4fe437db1"
+      "bytes": 23572,
+      "sha256": "d6f13ab176af78fc933397e9da81315945415674b2e8d0002addb44ee90bc09a"
     },
     {
       "file": "browser-tests/garden-bakery-pointer-repair.spec.ts",
       "bytes": 10562,
       "sha256": "ab855e5f55187cf0a861c2347a337b760a256bd59145e05117ca5cb3cfb7ccb5"
+    },
+    {
+      "file": "browser-tests/garden-bakery-progression.spec.ts",
+      "bytes": 686,
+      "sha256": "04a08cb0c74f221f55440d76b2839c4a466fd31b785781bfb5af18f87d1354dd"
     },
     {
       "file": "browser-tests/garden-bakery.spec.ts",
@@ -1103,8 +1108,8 @@
     },
     {
       "file": "browser-tests/garden-demo-route.ts",
-      "bytes": 2097,
-      "sha256": "73e4969ad84cd09d08bef61856ee0de2bd8946a3533861868850cf9ceaa669d2"
+      "bytes": 2150,
+      "sha256": "050a0fffe29012dba3deb2334b9c3f71c2930aab88884ff2a7949607fd2739f6"
     },
     {
       "file": "browser-tests/garden-edition-help.spec.ts",
@@ -1433,8 +1438,13 @@
     },
     {
       "file": "checks/bakery-motion-weather.test.ts",
-      "bytes": 1757,
-      "sha256": "3a7cb3f135863759ef9f95ca3b41aef7d8df3a0940ce89bc65b62295cd47c615"
+      "bytes": 2418,
+      "sha256": "b516fa975e3c41bd4bd557d070e5d0acb38e041e57de0487b948d2b166e4c011"
+    },
+    {
+      "file": "checks/bakery-progression.test.ts",
+      "bytes": 7152,
+      "sha256": "c1ee6a35e122617ad122f1673f9f91944ed98ae3a3a75f2acb9b53f447d1fb3d"
     },
     {
       "file": "checks/cast-audio.test.ts",
@@ -4218,8 +4228,8 @@
     },
     {
       "file": "docs/game-review/NERDY-DEMO-20260924.md",
-      "bytes": 23143,
-      "sha256": "613641fa913fdb825e6ca09cd7c524b400029efd03ea5ad651e564927da29d8f"
+      "bytes": 24607,
+      "sha256": "91a58c47e1ac50f1870324f99f04e08ed50ca5152176b4a44f14fc7644e929f7"
     },
     {
       "file": "docs/game-review/NERDY-DEMO-RUN-OF-SHOW-20260925.md",
@@ -76329,7 +76339,7 @@
     {
       "file": "public/audio/cast/manifest.json",
       "bytes": 11735706,
-      "sha256": "7c7e31dddc59e04dd1d1097a7bbf7c042d9439b43a7b02e58b852d1090697fda"
+      "sha256": "cb64d0f4955c12055934078c741dfdacca552e0e96bbcaa759e6ba9973d26246"
     },
     {
       "file": "public/garden-recorder.js",
@@ -78848,13 +78858,13 @@
     },
     {
       "file": "src/garden/GardenApp.tsx",
-      "bytes": 57650,
-      "sha256": "3ee2d68bf79e62e944582966001c14ae36d138dd08e6ebe6de7a437a6fab6b30"
+      "bytes": 57687,
+      "sha256": "6217030a42814c97441d497c631398c01d402a3b99f2d7596d8c422f9ed1cc5f"
     },
     {
       "file": "src/garden/GardenScene.tsx",
-      "bytes": 111180,
-      "sha256": "1f6ce5e72f9051c9d748d0a737ac1d71d24353d4849a4c41f00cf3349f5b20dc"
+      "bytes": 114067,
+      "sha256": "12091b635e32fe1fc8b54dac1c55fecae2e0f8f6ff75da412c4489dfde4d0272"
     },
     {
       "file": "src/garden/GatheringPanels.tsx",
@@ -79093,8 +79103,8 @@
     },
     {
       "file": "src/garden/bakeryInteraction.ts",
-      "bytes": 4041,
-      "sha256": "6f409a9bbcf6a7cd15a53446c15881e3ea7cb7406f56eed0b409ec2b31250ce9"
+      "bytes": 6008,
+      "sha256": "78e8cd17f6ffc9817991d9b7140cd2f594ef5098b0d9d6fb02c9cae56aca9152"
     },
     {
       "file": "src/garden/bakeryMotion.ts",
@@ -79103,18 +79113,18 @@
     },
     {
       "file": "src/garden/bakeryTargets.ts",
-      "bytes": 4276,
-      "sha256": "39e4bc8abfb975e5f6398b8edded7a327298d15c3763c462c8dfb7ba69b306f3"
+      "bytes": 4694,
+      "sha256": "425da9d9fa540623f3320a7cb13988e7e256f9b9844111a36988ca41dcbf77cf"
     },
     {
       "file": "src/garden/bakeryWeather.ts",
-      "bytes": 4547,
-      "sha256": "09c29f6952417b357fb863648f14e681d6719921c881ba7359eca979e1c0e3fd"
+      "bytes": 4652,
+      "sha256": "47596d0b4aa5b63d082c0ec767e46f4e5fb4d9e2e728c651c511303a166cc17f"
     },
     {
       "file": "src/garden/bakeryWorld.ts",
-      "bytes": 23017,
-      "sha256": "b7f03918a544125b44ba405a00bc771bf1b9a1ec7ad20bb8ab26129a54dd3c0f"
+      "bytes": 23346,
+      "sha256": "c12bfdbc4050dd1fc4a996a0bca8d5d9455a4f2dbcec100de161ef70c901cd51"
     },
     {
       "file": "src/garden/bridgeConstruction.ts",
@@ -79203,8 +79213,8 @@
     },
     {
       "file": "src/garden/garden.css",
-      "bytes": 57030,
-      "sha256": "c194a7ada3b38758128f8c9dd477f57deff8d5b90de865150b8da901312f8319"
+      "bytes": 57214,
+      "sha256": "8d33166225ea398a9968987f6e0f4d94ddef205c60d70ab96fe799f17d4bb455"
     },
     {
       "file": "src/garden/gathering.ts",
@@ -79228,8 +79238,8 @@
     },
     {
       "file": "src/garden/hands.ts",
-      "bytes": 20270,
-      "sha256": "56a49f110e94c7dbeb9a1465f9ac893b6b2a7b87051a264e67948314161a5b70"
+      "bytes": 21622,
+      "sha256": "8c19da67ffaa8de7ca495f243e698069ab3fad933e093984e887acae7e6e26b2"
     },
     {
       "file": "src/garden/interaction.ts",
@@ -79288,8 +79298,8 @@
     },
     {
       "file": "src/garden/model.ts",
-      "bytes": 57322,
-      "sha256": "be4a30596edbcb8fb0b07a8fe75863aed7e3b84c1727580e8441b5570056763d"
+      "bytes": 59877,
+      "sha256": "1d74e42a16e4629e5c7f0654352237398514a60140741a98e5bbcdafa4cc7720"
     },
     {
       "file": "src/garden/narrativeDialogue.ts",

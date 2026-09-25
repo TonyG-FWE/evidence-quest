@@ -9,7 +9,7 @@ import {savedChapter} from './garden-save-fixture.js';
 import {reviewProfile} from './garden-asset-profile.js';
 import {completeConversation as completeBrowserConversation} from './garden-actions.js';
 import {installPlaybackVoice,automaticVoice,spokenSegments} from './garden-playback-voice.js';
-import {bakeryCue,bakeryStage,cutBakeryDough,holdBakeryObject,dropBakeryObject} from './bakery-cursor-actions.js';
+import {bakeryCue,bakeryStage,cutBakeryDough,holdBakeryObject,dropBakeryObject,clickBakeryCue,settleBakeryView} from './bakery-cursor-actions.js';
 
 test.skip(!reviewProfile,'Supplied-model bakery diagnostics require the review artifact.');
 test.setTimeout(120000);
@@ -167,4 +167,32 @@ test('fixture cursor recovery: misplaced roof tile returns to the visible openin
  await page.mouse.move(opening.cx-opening.width*.85,opening.cy+opening.height*.35,{steps:15});console.log('Roof visual input diagnostic',await page.locator('.garden-scene').getAttribute('data-hand-gesture'));await page.screenshot({path:info.outputPath('beside-roof-preview.png')});await page.mouse.up();await expect(page.locator('.garden-scene')).toHaveAttribute('data-action-kind','tilePlacement',{timeout:5000});await bakeryStage(page,'misplaced');await page.screenshot({path:info.outputPath('misplaced-roof-tile.png')});
  await holdBakeryObject(page,'spareTile');await page.keyboard.press('Escape');await page.mouse.up();await bakeryStage(page,'misplaced');
  await dropBakeryObject(page,'spareTile','opening');await bakeryStage(page,'sealed');const data=JSON.parse((await page.locator('.garden-scene').getAttribute('data-bakery'))!);expect(data.leakOpen).toBe(false);expect(data.rain).toBe(true);await page.screenshot({path:info.outputPath('roof-recovered.png')});
+});
+
+for(const size of [{width:1098,height:1105},{width:2048,height:938},{width:1366,height:768},{width:1920,height:1080}])test(`progression fixture: short bowl strokes and selection cancellation at ${size.width}x${size.height}`,async({page},info)=>{
+ await page.setViewportSize(size);await load(page,checkpoint('checked'));await settleBakeryView(page);
+ const scene=page.locator('.garden-scene');
+ await clickBakeryCue(page,'flour');await expect(scene).toHaveAttribute('data-bakery-selection',/flour/);
+ await page.keyboard.press('Escape');await expect(scene).toHaveAttribute('data-bakery-selection','');await expect(page.getByRole('heading',{name:'Pause',exact:true})).toHaveCount(0);
+ await clickBakeryCue(page,'flour');await page.getByRole('button',{name:'Talk to Rina',exact:true}).click();await expect(scene).toHaveAttribute('data-bakery-selection','');await page.getByRole('button',{name:'Continue to the game',exact:true}).click();await settleBakeryView(page);
+ await clickBakeryCue(page,'flour');await clickBakeryCue(page,'bowl',true);await clickBakeryCue(page,'dough');
+ let previous=0;
+ for(let stroke=0;stroke<10;stroke++){
+  const bowl=await bakeryCue(page,'dough'),direction=stroke%2?1:-1;
+  const canvas=(await page.locator('.garden-scene canvas').boundingBox())!;
+  expect(bowl.x).toBeGreaterThanOrEqual(canvas.x);expect(bowl.y).toBeGreaterThanOrEqual(canvas.y);expect(bowl.x+bowl.width).toBeLessThanOrEqual(canvas.x+canvas.width);expect(bowl.y+bowl.height).toBeLessThanOrEqual(canvas.y+canvas.height);
+  await page.mouse.move(bowl.cx+direction*5,bowl.cy);await page.mouse.down();await page.mouse.move(bowl.cx+direction*5+direction*bowl.width*.22,bowl.cy+direction*8,{steps:8});await page.mouse.up();
+  if(await scene.getAttribute('data-action-kind')==='mixDough')break;
+  const label=(await page.locator('[data-bakery-object="dough"]').textContent())!;const progress=Number(label.match(/(\d+)%/)?.[1]);expect(progress).toBeGreaterThan(previous);previous=progress;
+  if(stroke===0){await page.screenshot({path:info.outputPath(`bowl-short-stroke-${size.width}.png`)});await page.mouse.move(bowl.cx,bowl.cy);await page.mouse.down();await page.mouse.move(bowl.cx+8,bowl.cy,{steps:3});await page.keyboard.press('Escape');await page.mouse.up();await expect(scene).toHaveAttribute('data-hand-gesture','');}
+ }
+ await bakeryStage(page,'mixed');await clickBakeryCue(page,'dough');await page.screenshot({path:info.outputPath(`cutting-ready-${size.width}.png`)});
+ const dough=await bakeryCue(page,'dough');await cutBakeryDough(page,dough,[.38,.45],info,'first');await cutBakeryDough(page,dough,[.62,.45],info,'second');await bakeryStage(page,'shaped');await page.screenshot({path:info.outputPath(`shaped-oven-${size.width}.png`)});
+ await info.attach('scope',{body:'Injected earlier chapter fixture; actual mouse selection, conversation and Escape cancellation, accumulated short strokes, native release and two cuts. This is viewport and edge-case evidence, not fresh-journey acceptance.',contentType:'text/plain'});
+});
+
+test('progression fixture: walking interrupts a distant drag without a delayed handoff',async({page},info)=>{
+ await load(page,checkpoint('needed'));await settleBakeryView(page);await holdBakeryObject(page,'spareTile');
+ const scene=page.locator('.garden-scene');await expect(scene).toHaveAttribute('data-bakery-selection',/spareTile/);await page.keyboard.press('ArrowRight');await expect(scene).toHaveAttribute('data-bakery-selection','');await expect(scene).toHaveAttribute('data-bakery-drag','');
+ const pip=await bakeryCue(page,'pip',true);await page.mouse.move(pip.cx,pip.cy,{steps:8});await page.mouse.up();await page.waitForTimeout(1200);await bakeryStage(page,'needed');await expect(scene).toHaveAttribute('data-bakery-selection','');await page.screenshot({path:info.outputPath('canceled-distant-drag.png')});
 });

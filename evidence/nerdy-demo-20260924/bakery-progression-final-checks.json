@@ -1,0 +1,29 @@
+{
+  "at": "2026-09-25T19:26:25.931Z",
+  "scope": "Access retry and final compiled bakery progression validation. The earlier broad browser failures remain unsuperseded. Providers disabled.",
+  "commands": [
+    {
+      "command": "npm run validate:content",
+      "exitCode": 0,
+      "durationMs": 494,
+      "log": "output/bakery-progression-20260925/final/1.log",
+      "sha256": "fbdd56002743439058fc2ec337ebc5bf6a473a9c3aae464e665bd738c7ec30d9"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "durationMs": 86252,
+      "log": "output/bakery-progression-20260925/final/2.log",
+      "sha256": "da00bc54f6b26912079de166038b901d1b84576aee8b21406f37e4c1593b16ca"
+    },
+    {
+      "command": "npm run build:demo",
+      "exitCode": 1,
+      "durationMs": 258,
+      "log": "output/bakery-progression-20260925/final/3.log",
+      "sha256": "3aa5649061de4eaaf110110dc85d118785f239f7e592cf97b03f316db1e347f1"
+    }
+  ],
+  "complete": false,
+  "allPassed": false
+}

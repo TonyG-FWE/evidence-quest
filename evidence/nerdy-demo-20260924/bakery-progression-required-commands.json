@@ -1,0 +1,74 @@
+{
+  "schema": "eq.nerdy-demo.required.v1",
+  "at": "2026-09-25T19:24:17.376Z",
+  "scope": "Bakery progression correction; browser validation is restricted to this repair and its fresh cursor routes; the earlier broad 210 pass / 31 fail / 1 skip result remains unsuperseded",
+  "node": "v24.21.0",
+  "profile": {
+    "art": "review",
+    "personalGrass": true,
+    "demoPresentation": true,
+    "coach": "authored",
+    "providerFlags": false
+  },
+  "lockfileBefore": "77489290e92294ed9c69416248cb6f7ffe436360a3f6ba4c9ac31fe593970f4e",
+  "commands": [
+    {
+      "command": "npm ci",
+      "exitCode": 0,
+      "durationMs": 20464,
+      "log": "output/bakery-progression-20260925/required/1.log",
+      "logSha256": "d8a1a15c9c557335108e520c60f774eebac97d04759b419f71fb39a63b1584fb",
+      "finishedAt": "2026-09-25T19:24:37.849Z"
+    },
+    {
+      "command": "npm run validate:content",
+      "exitCode": 1,
+      "durationMs": 535,
+      "log": "output/bakery-progression-20260925/required/2.log",
+      "logSha256": "14ef3e994528d4f3d77a0f53e0633fb418afc646b7038466569e0e51df60ac7d",
+      "finishedAt": "2026-09-25T19:24:38.390Z"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "durationMs": 19019,
+      "log": "output/bakery-progression-20260925/required/3.log",
+      "logSha256": "02aa2cc530ecafb4b2579ac71ee347e8a2325d508c6c5a2f15a9034ac3b6c734",
+      "finishedAt": "2026-09-25T19:24:57.417Z"
+    },
+    {
+      "command": "npm run build:server",
+      "exitCode": 0,
+      "durationMs": 2076,
+      "log": "output/bakery-progression-20260925/required/4.log",
+      "logSha256": "62be7ff8cf68ab9f40a60f009ad85ba3c8ddd3fc60b086ad95bf1aa1794d0cd4",
+      "finishedAt": "2026-09-25T19:24:59.502Z"
+    },
+    {
+      "command": "npm run test:contracts",
+      "exitCode": 0,
+      "durationMs": 14016,
+      "log": "output/bakery-progression-20260925/required/5.log",
+      "logSha256": "f4257e4db769f075c40a0038e81374bec0ecce7cdce00d1c626096ab9ba9e629",
+      "finishedAt": "2026-09-25T19:25:13.525Z"
+    },
+    {
+      "command": "npm run eval:coach -- --mode authored",
+      "exitCode": 0,
+      "durationMs": 3163,
+      "log": "output/bakery-progression-20260925/required/6.log",
+      "logSha256": "a9b1abad87e26fc66eb069b09caaf4ca7bc89d02da1921de8bf9239bcd8f6452",
+      "finishedAt": "2026-09-25T19:25:16.691Z"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 1,
+      "durationMs": 5037,
+      "log": "output/bakery-progression-20260925/required/7.log",
+      "logSha256": "677896239134c720caebd40b6ee96e66178c655bdd4e5fa9f302f884402737df",
+      "finishedAt": "2026-09-25T19:25:21.736Z"
+    }
+  ],
+  "complete": false,
+  "interruption": "Stopped after build filesystem error to avoid qualifying stale candidate; access retry passed."
+}

@@ -1,5 +1,11 @@
 # Evidence Quest build status
 
+## Bakery progression repair — reopened 2026-09-25
+
+**IMPLEMENTED; FOCUSED CHECKS PASS.** TASK11.ART02–07 → TASK11.20 → TASK11.21 / FIX11.NERDY02–03,06. Pip keeps the shelter translucent whenever underneath. Dough stays inside the bowl and accumulates short strokes across releases, with progress shown. Click object then recipient and dragging both use the existing transfers and automatic approach; cancellation retains materials. The bakery roof remains visible until Sol climbs down.
+
+251 contracts,23 authored checks and both fresh cursor routes passed. Six final targeted cases cover roof descent, short strokes and cancellation at1098×1105,2048×938,1366×768,1920×1080 and distant drag interruption. The1366case initially clicked during camera movement; adding the existing camera-settle wait passed. Build, package, runtime assets and original assets pass. All eight required commands were invoked, with browser checks scoped to bakery; filesystem failures passed access retry. The final full-route repeat was stopped at Tony’s ten-minute deadline. Earlier broad210pass31fail1skip remains unsuperseded. No provider calls, recordings, saved-game or finale work. TASK11.19 remains HALTED1/75. [Exact results](evidence/nerdy-demo-20260924/bakery-progression-results.json). The corrected game is running at http://127.0.0.1:4496/garden; private PR #3 carries the changes.
+
 ## Bakery cursor repair — 2026-09-25
 
 **VERIFIED FOR THE DEMO; DELIVERED: TASK11.ART02–07 → TASK11.20 → TASK11.21 / FIX11.NERDY01–04,06.** The revised bakery passes a fresh visit using visible scene targets, without physical-action buttons, injected progress or hidden-state pointer coordinates. Tile carrying, directed roof removal/placement, flour inspection, kneading, adjustable cuts, oven placement, walking with Rina and the actual loaf handoff are connected. Walking/contact phases, exterior rain and sheltered preparation are repaired; bakery narration and dialogue have consistent listening/practice support, and the routine loading card is removed. [Final correction evidence](evidence/nerdy-demo-20260924/bakery-cursor-correction5.json).

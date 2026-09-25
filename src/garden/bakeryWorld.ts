@@ -4,7 +4,7 @@ import {legacyActor,type SceneActor} from './assets/actor.js';
 import {BAKERY,BAKERY_SOL,TILE_SHELF,RINA_HOME,WORKSHOP_DOOR,THANK_RINA,bakeryRank,nearBakery} from './bakery.js';
 import {findRoute,BAKERY_REPAIR,BAKERY_WORK,bakeryOvenPoint,bakerySourceContact} from './worldLayout.js';
 import {makeDoughPortions,doughIntervals} from './doughPresentation.js';
-import {makeBakeryWeather} from './bakeryWeather.js';
+import {makeBakeryWeather,underBakeryShelter} from './bakeryWeather.js';
 import type {GardenState,Point} from './model.js';
 
 type PropPoint=Readonly<Point&{y:number}>;
@@ -228,7 +228,7 @@ export function makeBakery(a:PaperArt,character:()=>SceneActor=()=>legacyActor(a
   });
   const leakOpen=!legacy&&n<6&&!(k==='tilePlacement'&&action?.placement==='gap'&&t>.8);
   leak.visible=leakOpen;puddle.visible=leakOpen;counterWater.visible=leakOpen;rain.visible=!legacy&&!suppliedModels;
-  weather?.update(time,c.reducedMotion,nearBakery(c)&&(k==='bakeryWelcome'||n>=6),!legacy);
+  weather?.update(time,c.reducedMotion,underBakeryShelter(c.pip),!legacy);
   leak.position.y=c.reducedMotion?0:-((time*1.7)%1)*.13;rain.position.y=c.reducedMotion?0:-((time*.9)%1)*.2;
   ladder.visible=!legacy;ladder.rotation.set(0,0,0);
   ladder.position.set(n>=7?WORKSHOP_DOOR.x-1.10:suppliedModels?BAKERY_REPAIR.ladder.x:BAKERY_SOL.x,0,n>=7?WORKSHOP_DOOR.z-.75:suppliedModels?BAKERY_REPAIR.ladder.z:BAKERY_SOL.z);
@@ -256,6 +256,14 @@ export function makeBakery(a:PaperArt,character:()=>SceneActor=()=>legacyActor(a
   const doughScale=k==='mixDough'?.4+.6*t:k==='shapeLoaves'?Math.max(.05,1-t):1;
   const prepared=n>=8?1:k==='mixDough'?Math.max(0,Math.min(1,(t-.62)/.18)):0;
   dough.position.copy(vector(mixing)).lerp(vector(preparation),prepared);dough.rotation.set(0,0,0);dough.scale.setScalar(doughScale);
+  if(n===7&&k!=='mixDough'){
+   dough.scale.setScalar(.5);
+   if(s.gesture?.object==='dough'){
+    const point=s.gesture.point;dough.position.x=point.x;dough.position.z=point.z;
+    const press=Math.min(1,Math.hypot(point.x-mixing.x,point.z-mixing.z)/.14);
+    dough.scale.set(.5+press*.05,.5-press*.08,.5+press*.03);
+   }
+  }
   wholeDough.scale.set(1.8,.55,1.15);wholeDough.visible=!c.hands.cuts.length||n!==8;
   const divided=n===8&&c.hands.cuts.length>0,intervals=doughIntervals(c.hands.cuts),spread=k==='shapeLoaves'?1+t*2:1;
   portions.root.visible=!suppliedModels&&divided; if(portions.root.visible)portions.sync(c.hands.cuts,spread);

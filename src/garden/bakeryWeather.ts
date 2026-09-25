@@ -2,11 +2,15 @@ import * as T from 'three';
 import type {PaperArt} from './art.js';
 import {BAKERY_SHELTER as shelter,VILLAGE_BUILDINGS,pointInPolygon} from './worldLayout.js';
 
+export function underBakeryShelter(p:{x:number;z:number}){
+ return p.x>=shelter.left&&p.x<=shelter.right&&p.z>=shelter.back&&p.z<=shelter.front;
+}
+
 /** Local rain respects the same solid roofs shown in the scene. The repaired
  * indoor leak is separate, so outdoor weather continues after the repair. */
 export function bakeryRainFloor(x:number,z:number){
  if(pointInPolygon({x,z},VILLAGE_BUILDINGS.bakery.footprint))return 5.8;
- if(x>=shelter.left&&x<=shelter.right&&z>=shelter.back&&z<=shelter.front)return shelter.backY+(shelter.frontY-shelter.backY)*(z-shelter.back)/(shelter.front-shelter.back);
+ if(underBakeryShelter({x,z}))return shelter.backY+(shelter.frontY-shelter.backY)*(z-shelter.back)/(shelter.front-shelter.back);
  return .16;
 }
 

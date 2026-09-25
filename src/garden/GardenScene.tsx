@@ -4,7 +4,7 @@ import {makeWorkbench} from './workbenchWorld.js';
 import {makeBridgeWorld} from './bridgeWorld.js';
 import {makeBridgeHandles} from './bridgeHandles.js';
 import {makeBakeryTargets} from './bakeryTargets.js';
-import {bakeryHands,bakeryObjectApproach,bakeryPointerHint,isBakeryObject} from './bakeryInteraction.js';
+import {bakeryHands,bakeryObjectApproach,bakeryPointerHint,bakeryTransfer,isBakeryObject,type BakerySelection} from './bakeryInteraction.js';
 import {bakeryMotion} from './bakeryMotion.js';
 import {sectionSecured,safeBridgeRetreat,firstPart,sectionsMeet,sectionPlacementTargets,sectionRootHeight,bridgeWalkingHeight,bridgeSurfaces} from './bridgeConstruction.js';
 import {WORKBENCH} from './workbench.js';
@@ -150,7 +150,9 @@ export function GardenScene({store,onError,onStatus,reviewControls}:{store:Garde
   if(review){
    workshop.position.fromArray(VILLAGE_BUILDINGS.workshop.position);workshop.rotation.y=VILLAGE_BUILDINGS.workshop.rotation;
    review.attach('workshop-clear-porch',workshop,{scale:Array(3).fill(VILLAGE_BUILDINGS.workshop.scale) as [number,number,number]});
-   const bakeryCutaway=(s:ReturnType<GardenStore['getSnapshot']>)=>nearBakery(s.chapter)&&(s.action?.kind==='bakeryWelcome'||['sealed','checked','mixed','shaped','baked','escorting','done'].includes(s.chapter.bakery.stage));
+   // Keep the repaired roof visible until Sol has climbed down. Sealing the
+   // tile is not the end of his roof work; the flour inspection starts descent.
+   const bakeryCutaway=(s:ReturnType<GardenStore['getSnapshot']>)=>nearBakery(s.chapter)&&(s.action?.kind==='bakeryWelcome'||s.action?.kind==='flourCheck'&&s.action.elapsed/s.action.duration>=.28||['checked','mixed','shaped','baked','escorting','done'].includes(s.chapter.bakery.stage));
    // Downward surface probes bind the supplied roof opening to the existing repair anchor.
    bakeryVisual=review.attach('bakery',bakery.shell,{position:[VILLAGE_BUILDINGS.bakery.position[0]-BAKERY.x,.13,VILLAGE_BUILDINGS.bakery.position[2]-BAKERY.z],rotation:[0,VILLAGE_BUILDINGS.bakery.rotation,0],scale:Array(3).fill(VILLAGE_BUILDINGS.bakery.scale) as [number,number,number],cutaway:bakeryCutaway});
    review.attach('oven',bakery.oven,{position:[0,.13,0]});
@@ -163,7 +165,7 @@ export function GardenScene({store,onError,onStatus,reviewControls}:{store:Garde
    review.place('bench',adventure,[TILE_SHELF.x,.13,TILE_SHELF.z],Math.PI/2,false,[.55,.595,.50]);
    review.attach('ladder',bakery.ladder,{position:[0,.13,0],rotation:[0,BAKERY_REPAIR.ladder.yaw,0],scale:Array(3).fill(BAKERY_REPAIR.ladder.scale) as [number,number,number]});
    review.attach('seed',seed,{position:[0,-.04,0]});
-   review.attach('bowl',bakery.bowl,{position:[0,-.06,0]});
+   review.attach('bowl',bakery.bowl,{position:[0,-.06,0],scale:[2,2,2]});
    review.attach('dough-kneaded',bakery.wholeDough,{position:[0,-.15/.55,0],scale:[1.56/1.8,1.56/.55,1.56/1.15]});
    for(const holder of bakery.portionHolders)review.attach('dough',holder,{preload:s=>nearBakery(s.chapter)&&['checked','mixed'].includes(s.chapter.bakery.stage)});
    review.attach('loaf-3',bakery.uneven,{position:[0,-.06,0]});
@@ -233,6 +235,10 @@ export function GardenScene({store,onError,onStatus,reviewControls}:{store:Garde
    if(target==='a'||target==='b'){if(s.mode==='arrange')store.send({type:'SELECT',section:target});else interact('sections');}
   }
   function approachBakeryObject(target:unknown){
+   const state=store.getSnapshot(),transfer=bakeryTransfer(state);
+   if(typeof target==='string'&&transfer&&(target===transfer.object||state.bakerySelection)){
+    store.send({type:'BAKERY_POINTER',target});return true;
+   }
    if(target==='oven'){const s=store.getSnapshot();store.send({type:'GO',point:bakeryObjectApproach(s,'loaf'),target:'Rina’s oven'});return true;}
    if(!isBakeryObject(target))return false;
    const s=store.getSnapshot(),available=bakeryHands(s,false);
@@ -357,11 +363,12 @@ export function GardenScene({store,onError,onStatus,reviewControls}:{store:Garde
   function hover(target:unknown){const name=typeof target==='string'?target:'';hoveredLabel=({rina:'bakery','rope-box':'materials',sprout:'lanterns',a:'a',b:'b'} as Record<string,string>)[name]??(name.startsWith('lantern:')?'lanterns':labels.has(name)?name:null);}
   function leave(){hoveredLabel=null;}
   let pendingSection:{id:number;object:HandObject;height:number;point:Point;anchor:Point;x:number;y:number}|null=null;
-  let pendingBakery:{id:number;object:HandObject;height:number;point:Point;x:number;y:number}|null=null;
+  let pendingBakery:{id:number;object:HandObject;height:number;point:Point;x:number;y:number;selected:boolean}|null=null;
+  let distantTransfer:{id:number;object:BakerySelection['object']}|null=null;
   let cardPointer:number|null=null;const releasedPointers=new Set<number>();
   function down(e:PointerEvent){
    releasedPointers.delete(e.pointerId);
-   const s=store.getSnapshot();if(reviewStudio||e.button!==0||cardPointer!==null||drag||pendingSection||pendingBakery||steering!==null||s.panel||s.action||!s.chapter.started)return;canvas.focus();pressed=hit(e);metadata['pointerTarget']=String(pressed?.userData['target']??'ground');
+   const s=store.getSnapshot();if(reviewStudio||e.button!==0||cardPointer!==null||drag||pendingSection||pendingBakery||distantTransfer||steering!==null||s.panel||s.action||!s.chapter.started)return;canvas.focus();pressed=hit(e);metadata['pointerTarget']=String(pressed?.userData['target']??'ground');
    hover(pressed?.userData['target']);if(cameraControls.inspecting){inspectionClick={id:e.pointerId,point:groundPoint(e)};cameraHeld=true;cameraControls.follow();}
    if(s.mode==='workbench'){
     const target=pressed?.userData['target'];if(typeof target==='string'&&target.startsWith('picture:')){store.send({type:'CARD_PICK',id:target.slice(8) as ObservationId});if(store.getSnapshot().cardGesture){cardPointer=e.pointerId;canvas.setPointerCapture(e.pointerId);e.preventDefault();}}return;
@@ -372,12 +379,18 @@ export function GardenScene({store,onError,onStatus,reviewControls}:{store:Garde
    // A native-keyboard preview can also be abandoned with the pointer. It
    // must never make a later click drag the previously selected material.
    if(s.gesture&&s.gesture.object!==object)store.send({type:'HAND_CANCEL'});
-   if(!object||!availableHands(s).includes(object))return;
+   if(!object)return;
+   if(!availableHands(s).includes(object)){
+    if(bakeryTransfer(s)?.object===object){
+     pendingBakery={id:e.pointerId,object,height:handPlane(s,object),point:handAnchor(s,object),x:e.clientX,y:e.clientY,selected:!!s.bakerySelection};cameraHeld=true;canvas.setPointerCapture(e.pointerId);e.preventDefault();
+    }
+    return;
+   }
    const height=object==='loaf'?bakery.loaves[0]!.position.y+.06:handPlane(s,object),p=handPoint(e,s,object,height);if(!p)return;const anchor=handAnchor(s,object),cut=object==='dough-cut',large=object.startsWith('section:'),preserveOffset=!grip&&(large||object.startsWith('post:'));
    // A click walks onto a deck. A deliberate drag lifts it. Without this
    // distinction an unsecured section could never be tested by walking.
    if(large){pendingSection={id:e.pointerId,object,height,point:p,anchor:grip?p:anchor,x:e.clientX,y:e.clientY};canvas.setPointerCapture(e.pointerId);e.preventDefault();return;}
-   if(isBakeryObject(object)){pendingBakery={id:e.pointerId,object,height,point:p,x:e.clientX,y:e.clientY};cameraHeld=true;canvas.setPointerCapture(e.pointerId);e.preventDefault();return;}
+   if(isBakeryObject(object)){pendingBakery={id:e.pointerId,object,height,point:p,x:e.clientX,y:e.clientY,selected:!!s.bakerySelection};cameraHeld=true;canvas.setPointerCapture(e.pointerId);e.preventDefault();return;}
    store.send({type:'HAND_BEGIN',object,...(cut?{point:p}:{})});
    if(!store.getSnapshot().gesture)return;
    drag={id:e.pointerId,object,height,offset:preserveOffset?{x:anchor.x-p.x,z:anchor.z-p.z}:{x:0,z:0}};
@@ -387,7 +400,11 @@ export function GardenScene({store,onError,onStatus,reviewControls}:{store:Garde
    if(!drag&&!pendingSection&&!pendingBakery&&steering===null&&cardPointer===null&&e.pointerType!=='touch'){const target=hit(e)?.userData['target'];hover(target);canvas.style.cursor=isBakeryObject(target)?'grab':['rina','sol','mara','grandma'].includes(String(target))?'pointer':'default';}
    if(pendingBakery?.id===e.pointerId){
     const pending=pendingBakery;if(Math.hypot(e.clientX-pending.x,e.clientY-pending.y)<5)return;pendingBakery=null;
-    store.send({type:'HAND_BEGIN',object:pending.object,...(pending.object==='dough-cut'?{point:pending.point}:{})});
+    const transfer=bakeryTransfer(store.getSnapshot());
+    if(transfer?.object===pending.object&&!availableHands(store.getSnapshot()).includes(pending.object)){
+     distantTransfer={id:e.pointerId,object:transfer.object};store.send({type:'BAKERY_POINTER',target:transfer.object});return;
+    }
+    store.send({type:'HAND_BEGIN',object:pending.object,...(pending.object==='dough-cut'||pending.object==='dough'&&store.getSnapshot().chapter.bakery.stage==='checked'?{point:pending.point}:{})});
     if(!store.getSnapshot().gesture)return;drag={id:e.pointerId,object:pending.object,height:pending.height,offset:{x:0,z:0}};canvas.style.cursor='grabbing';
    }
    if(pendingSection?.id===e.pointerId){
@@ -404,7 +421,18 @@ export function GardenScene({store,onError,onStatus,reviewControls}:{store:Garde
    if(releasedPointers.delete(e.pointerId))return;
    const inspectedPoint=inspectionClick?.id===e.pointerId?inspectionClick.point:null;inspectionClick=null;cameraHeld=false;
    const s=store.getSnapshot();
-   if(pendingBakery){if(pendingBakery.id!==e.pointerId)return;const object=pendingBakery.object;pendingBakery=null;pressed=null;if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);approachBakeryObject(object);return;}
+   if(distantTransfer){
+    if(distantTransfer.id!==e.pointerId)return;
+    const held=distantTransfer.object,root=held==='spareTile'?bakery.tile:held==='flour'?bakery.flour:bakery.loaves[0]!;
+    const target=String(hit(e,root)?.userData['target']??'ground');distantTransfer=null;pressed=null;
+    store.send({type:'BAKERY_POINTER',target,object:held});if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);return;
+   }
+   if(pendingBakery){
+    if(pendingBakery.id!==e.pointerId)return;const {object,selected}=pendingBakery;
+    const rect=canvas.getBoundingClientRect(),recipient=selected?bakeryTargets.pick(e.clientX-rect.left,e.clientY-rect.top,true):null;
+    pendingBakery=null;pressed=null;if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);
+    approachBakeryObject(recipient?.userData['target']??object);return;
+   }
    if(pendingSection){if(pendingSection.id!==e.pointerId)return;pendingSection=null;const p=groundPoint(e,BRIDGE_LEVELS.deck);pressed=null;if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);if(p)store.send({type:'GO',point:p});return;}
    if(cardPointer!==null){if(cardPointer!==e.pointerId)return;move(e);store.send({type:'CARD_PLACE'});cardPointer=null;pressed=null;if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);return;}
    if(s.mode==='workbench')return;
@@ -415,6 +443,12 @@ export function GardenScene({store,onError,onStatus,reviewControls}:{store:Garde
     // A visible character or receiving vessel is a drop target, including its
     // height. Do not project a hand or an oven mouth down onto unrelated ground.
     const held=drag.object,root=held==='spareTile'?bakery.tile:held==='loaf'?bakery.loaves[0]:held==='flour'?bakery.flour:held==='dough'?bakery.dough:undefined;
+    const transfer=bakeryTransfer(s);
+    if(transfer?.object===held&&root){
+     const target=String(hit(e,root)?.userData['target']??'ground');drag=null;pressed=null;
+     store.send({type:'HAND_CANCEL'});store.send({type:'BAKERY_POINTER',target,object:transfer.object});
+     if(canvas.hasPointerCapture(e.pointerId))canvas.releasePointerCapture(e.pointerId);return;
+    }
     if(root){const target=hit(e,root)?.userData['target'];let point:Point|undefined;
      if(held==='spareTile'&&s.chapter.bakery.stage==='needed'&&target==='pip')point=s.chapter.pip;
      if(held==='spareTile'&&s.chapter.bakery.stage==='carried'&&target==='sol')point=BAKERY_SOL;
@@ -440,13 +474,15 @@ export function GardenScene({store,onError,onStatus,reviewControls}:{store:Garde
    // synchronously and must not cancel a subsequent native selection.
    if(pendingSection?.id===id)pendingSection=null;if(drag?.id===id){drag=null;cameraHeld=false;}
    if(pendingBakery?.id===id){pendingBakery=null;cameraHeld=false;}
+   if(distantTransfer?.id===id){distantTransfer=null;cameraHeld=false;}
    if(cardPointer===id)cardPointer=null;if(steering===id)steering=null;if(inspectionClick?.id===id){inspectionClick=null;cameraHeld=false;}pressed=null;
    if(canvas.hasPointerCapture(id))canvas.releasePointerCapture(id);
   }
-  function releaseAllPointers(){for(const id of new Set([pendingSection?.id,pendingBakery?.id,drag?.id,cardPointer,steering]))if(id!==undefined&&id!==null)releaseLocalPointer(id);}
+  function releaseAllPointers(){for(const id of new Set([pendingSection?.id,pendingBakery?.id,distantTransfer?.id,drag?.id,cardPointer,steering]))if(id!==undefined&&id!==null)releaseLocalPointer(id);}
   const unsubscribePointer=store.subscribe(()=>{
    const s=store.getSnapshot();
    if(s.background||s.viewLost||s.panel||s.action||!s.chapter.started){releaseAllPointers();return;}
+   if(distantTransfer&&s.bakerySelection?.object!==distantTransfer.object)releaseLocalPointer(distantTransfer.id);
    if(drag&&s.gesture?.object!==drag.object)releaseLocalPointer(drag.id);
    if(cardPointer!==null&&!s.cardGesture)releaseLocalPointer(cardPointer);
    if(steering!==null&&s.mode!=='boat')releaseLocalPointer(steering);
@@ -461,7 +497,7 @@ export function GardenScene({store,onError,onStatus,reviewControls}:{store:Garde
   }
   partialCleanup.push(unsubscribePointer,releaseAllPointers);
   window.addEventListener('keydown',cancelPendingKey,true);partialCleanup.push(()=>window.removeEventListener('keydown',cancelPendingKey,true));
-  function cancel(e:PointerEvent){if(e.type==='lostpointercapture'&&canvas.hasPointerCapture(e.pointerId))return;if(pendingSection?.id===e.pointerId||pendingBakery?.id===e.pointerId){releaseLocalPointer(e.pointerId);return;}if(cardPointer!==null){if(cardPointer!==e.pointerId)return;releaseLocalPointer(e.pointerId);store.send({type:'CARD_CANCEL'});return;}if(!drag&&steering===null)return;if(drag&&drag.id!==e.pointerId||steering!==null&&steering!==e.pointerId)return;releaseLocalPointer(e.pointerId);store.send({type:'HAND_CANCEL'});store.send({type:'CANCEL'});}
+  function cancel(e:PointerEvent){if(distantTransfer?.id===e.pointerId){releaseLocalPointer(e.pointerId);store.send({type:'HAND_CANCEL'});return;}if(e.type==='lostpointercapture'&&canvas.hasPointerCapture(e.pointerId))return;if(pendingSection?.id===e.pointerId||pendingBakery?.id===e.pointerId){releaseLocalPointer(e.pointerId);return;}if(cardPointer!==null){if(cardPointer!==e.pointerId)return;releaseLocalPointer(e.pointerId);store.send({type:'CARD_CANCEL'});return;}if(!drag&&steering===null)return;if(drag&&drag.id!==e.pointerId||steering!==null&&steering!==e.pointerId)return;releaseLocalPointer(e.pointerId);store.send({type:'HAND_CANCEL'});store.send({type:'CANCEL'});}
   canvas.addEventListener('pointerdown',down);canvas.addEventListener('pointermove',move);canvas.addEventListener('pointerleave',leave);canvas.addEventListener('pointerup',up);canvas.addEventListener('pointercancel',cancel);canvas.addEventListener('lostpointercapture',cancel);partialCleanup.push(()=>{canvas.removeEventListener('pointerdown',down);canvas.removeEventListener('pointermove',move);canvas.removeEventListener('pointerleave',leave);canvas.removeEventListener('pointerup',up);canvas.removeEventListener('pointercancel',cancel);canvas.removeEventListener('lostpointercapture',cancel);});
   function lost(e:Event){e.preventDefault();gpuTimer?.reset();status({phase:'recovering',location:reviewStudio?'studio':'village',cause:'WebGL context was lost'});store.send({type:'VIEW_LOST',lost:true});}canvas.addEventListener('webglcontextlost',lost);
   function restored(){try{readAdapterIdentity();gpuTimer?.reset();metadata['contextRecoveries']=String(Number(metadata['contextRecoveries']??0)+1);store.send({type:'VIEW_LOST',lost:false});lastDrawState=null;resize();}catch(error){fail(error);}}canvas.addEventListener('webglcontextrestored',restored);partialCleanup.push(()=>{canvas.removeEventListener('webglcontextlost',lost);canvas.removeEventListener('webglcontextrestored',restored);});
@@ -585,7 +621,7 @@ export function GardenScene({store,onError,onStatus,reviewControls}:{store:Garde
    landscape.frameWorkshop(atWorkshop(s));landscape.frameGathering(gatheringView(s)==='garden');const bakeryView=bakery.render(s,sol,time),solHead=sol.rig.localToWorld(new T.Vector3(0,1.04,0)).project(camera),solFeet=sol.rig.localToWorld(new T.Vector3(0,0,0)).project(camera);const gatheringData=gathering.render(s,{pip,mara,sol,grandma,passengers,operator,boat:passengerBoat,gangway,solPage,cushions},time);metadata['gathering']=JSON.stringify(gatheringData);const line=c.gathering.turn?turnLines(c)[c.gathering.turn.index]:null,teller=line?({Pip:pip,Mara:mara,Sol:sol,Grandma:grandma})[line.who]:null;setLabel('speaker',teller?{x:teller.rig.position.x,z:teller.rig.position.z}:c.pip,1.65,!!line&&!s.panel);labels.get('speaker')!.textContent=line?.who??'';
    gestureLine.visible=s.gesture?.object==='dough-cut';
    if(s.gesture){const g=s.gesture,previewObjects:Partial<Record<HandObject,T.Object3D>>={spareTile:bakery.tile,crackedTile:bakery.cracked,flour:bakery.flour,dough:bakery.dough,loaf:bakery.loaves[0]!},object=previewObjects[g.object];
-    if(object){
+    if(object&&!(g.object==='dough'&&c.bakery.stage==='checked')){
      object.position.set(g.point.x,(drag?.object===g.object?drag.height:handPlane(s,g.object))-(g.object==='flour'?.38:0),g.point.z);object.rotation.y=g.rotation;
      if(localReview&&s.mode==='bakery-repair'&&(g.object==='spareTile'||g.object==='crackedTile')){
       const target=roofDropTarget(g.point),support=bakeryVisual?.supportHeight(object.position);
@@ -595,6 +631,8 @@ export function GardenScene({store,onError,onStatus,reviewControls}:{store:Garde
     if(gestureLine.visible){const x=BAKERY_WORK.preparation.x+Math.max(-.30,Math.min(.30,g.origin.x-BAKERY_WORK.preparation.x)),start={x,z:BAKERY_WORK.preparation.z-.24},end={x,z:BAKERY_WORK.preparation.z+.24},delta=new T.Vector3(0,0,end.z-start.z);gestureLine.position.set(start.x,BAKERY_WORK.preparation.y+.12,start.z);gestureLine.scale.set(1,delta.length()/.1,1);gestureLine.quaternion.setFromUnitVectors(new T.Vector3(0,1,0),delta.normalize());}
    }
    metadata['handGesture']=s.gesture?JSON.stringify({object:s.gesture.object,point:s.gesture.point,rotation:s.gesture.rotation}):'';
+   metadata['bakerySelection']=s.bakerySelection?JSON.stringify(s.bakerySelection):'';
+   metadata['bakeryDrag']=distantTransfer?.object??(drag&&isBakeryObject(drag.object)?drag.object:'');
    const pageFrom=c.page==='mara'?new T.Vector3(mara.rig.position.x+.18,.8,mara.rig.position.z+.13):c.page==='pip'?new T.Vector3(c.pip.x+.15,.55,c.pip.z+.15):new T.Vector3(grandma.rig.position.x-.2,.76,grandma.rig.position.z+.15);
    if(action?.kind==='page')pageFrom.lerp(new T.Vector3(c.pip.x+.15,.55,c.pip.z+.15),smooth(t));
    if(action?.kind==='report')pageFrom.lerp(new T.Vector3(grandma.rig.position.x-.2,.76,grandma.rig.position.z+.15),smooth(t));
