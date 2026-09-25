@@ -12,7 +12,7 @@
     "FIX11.NERDY04",
     "FIX11.NERDY06"
   ],
-  "status": "VERIFIED FOR DEMO; PRIVATE DELIVERY PENDING",
+  "status": "VERIFIED FOR DEMO; DELIVERED",
   "candidate": {
     "inputSha256": "11d95109a8553db747568400d91d1a9f6629d80e0ef00b69dcba48621ec0562f",
     "outputSha256": "405958761d185b579144cd04905c1f2024f16d57a1b3fc4d296a125f431c542f",
@@ -130,6 +130,8 @@
   "delivery": {
     "branch": "codex/nerdy-demo-polish",
     "privatePR": "https://github.com/TonyG-FWE/evidence-quest/pull/3",
-    "status": "PENDING focused commit and private PR update"
+    "status": "DELIVERED",
+    "implementationCommit": "01ca1a7e526724e4fd4a15cc55c63f0cab9b9260",
+    "receipt": "bakery-delivery.json"
   }
 }

@@ -23,6 +23,7 @@
     "evidence/nerdy-demo-20260924/bakery-cursor-correction3.json",
     "evidence/nerdy-demo-20260924/bakery-cursor-correction4.json",
     "evidence/nerdy-demo-20260924/bakery-cursor-correction5.json",
+    "evidence/nerdy-demo-20260924/bakery-delivery.json",
     "evidence/nerdy-demo-20260924/bakery-fallback-capture.json",
     "evidence/nerdy-demo-20260924/bakery-fallback-review.json",
     "evidence/nerdy-demo-20260924/bakery-fallback-visual-review.json",
@@ -86,9 +87,9 @@
     "evidence/nerdy-demo-20260924/word-timestamp-overruns.json",
     "evidence/reader-repair-20260919/RESULTS.md"
   ],
-  "filesSha256": "08473b612f51a9c5da33b77ba7a454b34e5952f6017c12d3b0b3b9803f7f38c4",
-  "fileCount": 15902,
-  "bytes": 3142714122,
+  "filesSha256": "32aa543f8121724a6257b3e7f54badecc84d32c20f67033f8710aaf31ce13876",
+  "fileCount": 15903,
+  "bytes": 3142717736,
   "files": [
     {
       "file": ".env.example",
@@ -112,8 +113,8 @@
     },
     {
       "file": "BUILD-STATUS.md",
-      "bytes": 151628,
-      "sha256": "fa54492cda54b67227dd57055562a724c16a5f2577dbf3bbfcb7dbc3313c9a04"
+      "bytes": 152030,
+      "sha256": "459c3cc2a60c0d497e03f7462246f00f25b7fe2c6691a3cc2e72c215501e4fd4"
     },
     {
       "file": "README.md",
@@ -4217,8 +4218,8 @@
     },
     {
       "file": "docs/game-review/NERDY-DEMO-20260924.md",
-      "bytes": 22664,
-      "sha256": "106b04a399dadbf357b1e3b098ce9355737cf5502fd41706f1b919d0282febd2"
+      "bytes": 23143,
+      "sha256": "613641fa913fdb825e6ca09cd7c524b400029efd03ea5ad651e564927da29d8f"
     },
     {
       "file": "docs/game-review/NERDY-DEMO-RUN-OF-SHOW-20260925.md",
@@ -23627,8 +23628,13 @@
     },
     {
       "file": "evidence/nerdy-demo-20260924/bakery-cursor-correction5.json",
-      "bytes": 5391,
-      "sha256": "9338c408f91679996863934f15f24378ce6fd76d86309bd4d1b51220bf7136b3"
+      "bytes": 5452,
+      "sha256": "ff8008b9eb31644c2cfd8bf013bb50d3208844b4aa7e4b9cc9519cdd18636e95"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-delivery.json",
+      "bytes": 2672,
+      "sha256": "965a6ae3a5b715eed772993d70733f253a8bb5a6d28be75d1c34fb5e5e8e3184"
     },
     {
       "file": "evidence/nerdy-demo-20260924/bakery-fallback-capture.json",
