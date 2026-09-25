@@ -51,4 +51,6 @@ Optional live feedback and custom-text voices use separately configured services
 
 The [12-minute run of show](docs/game-review/NERDY-DEMO-RUN-OF-SHOW-20260925.md) starts at Rina’s bakery, reached by ordinary fresh play before the call. It covers reading support, roof repair and baking, then writing and previewing Sol’s ending. Fullscreen is available in the main toolbar. Share computer audio so the audience can hear the game.
 
+At the bakery, click a highlighted object to approach it, then drag it to work: carry the tile, direct the roof repair, pour flour, knead and cut dough, bake, and hand over the loaf. The current instruction follows each step. Keyboard alternatives remain available under the precise controls. The run of show includes the complete cursor route and a clearly labeled recording of the verified feedback response; this repair makes no further provider requests.
+
 The [demo checklist and evidence](docs/game-review/NERDY-DEMO-20260924.md) distinguish completed demo checks from remaining production-art and performance qualifications. The clean demo presentation does not change artwork approval status.

@@ -210,7 +210,7 @@ export function App(){
 
     </>}
    </div>
-   {c.started&&!s.activity&&s.mode!=='mara-story'&&sceneStatus.phase!=='ready'&&<aside className={'garden-scene-status '+(sceneStatus.phase==='failed'||sceneStatus.phase==='recovering'?'is-failed':'')} role={sceneStatus.phase==='failed'?'alert':'status'} aria-live="polite"><strong>{sceneStatus.phase==='failed'?'The garden view needs to reload.':sceneStatus.phase==='recovering'?'Restoring the garden…':'Loading the '+sceneStatus.location+'…'}</strong><p>{sceneStatus.phase==='failed'?'Your adventure and writing are kept. Restore the graphics to continue.':'Pip and the scenery are being prepared. You can read while they load.'}</p>{(sceneStatus.phase==='failed'||sceneStatus.phase==='recovering')&&<><button className="g-primary" onClick={restoreScene}>Restore view</button><details><summary>View details</summary><p>{sceneStatus.cause}</p></details></>}</aside>}
+   {c.started&&!s.activity&&s.mode!=='mara-story'&&(sceneStatus.phase==='failed'||sceneStatus.phase==='recovering')&&<aside className="garden-scene-status is-failed" role={sceneStatus.phase==='failed'?'alert':'status'} aria-live="polite"><strong>{sceneStatus.phase==='failed'?'The garden view needs to reload.':'Restoring the garden…'}</strong><p>Your adventure and writing are kept. Restore the graphics to continue.</p><button className="g-primary" onClick={restoreScene}>Restore view</button><details><summary>View details</summary><p>{sceneStatus.cause}</p></details></aside>}
    {gatheringActive&&<GatheringControls s={s} store={store} open={open}/>}
    {c.started&&!s.panel&&<HandControls s={s} store={store}/>}
   {bakeryActive&&<details name="garden-physical-controls" className="garden-alternate-controls"><summary>Bakery directions and other controls</summary><BakeryControls s={s} store={store}/></details>}
@@ -231,7 +231,7 @@ export function App(){
      <GroupedReadingContext.Provider value={true}><ConversationReadingTools root={scroll}/>
      {(s.panel==='journal'||s.panel==='storyboard')&&<Journal chapter={c} journal={c.journal} readOnly={s.save==='conflict'} mode={s.panel==='storyboard'?'storyboard':'journal'} onChange={command=>store.send({type:'JOURNAL',command})} onReadSource={id=>open(id)} onClose={close}/>}
      {s.panel==='sol'&&canUseWorkbench(s)&&<button className="g-secondary" onClick={()=>store.send({type:'WORKBENCH'})}>Arrange witnessed moments on Sol’s workbench</button>}
-     {source&&<><ReadingParagraph className="g-reading-tip"><Icon kind="book"/> Click a word for its meaning and pronunciation.</ReadingParagraph>
+     {source&&<><p className="g-reading-tip" data-reading-command="true"><Icon kind="book"/> Click a word for its meaning and pronunciation.</p>
       {sourceNarration[source.id]&&<ReadingParagraph className="g-source-context">{sourceNarration[source.id]}</ReadingParagraph>}
       {focusedStory?<PagedSource key={sourcePrefix(source.id,c)} store={store} id={sourcePrefix(source.id,c)} paragraphs={shownParagraphs} render={(text,index)=>paragraph(text,index,source.id)}/>:<div className="garden-passage">{shownParagraphs.map(({text,index})=>paragraph(text,index,source.id))}</div>}
       {s.panel==='mara'&&conversation&&!conversationPending&&<ReadingParagraph className="g-small">Mara’s page is called <em>The Torn Wing</em>. {c.page==='pip'?'Pip is carrying her copy.':c.page==='grandma'?'Grandma has her copy.':''}</ReadingParagraph>}

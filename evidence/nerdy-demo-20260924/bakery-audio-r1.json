@@ -1,0 +1,83 @@
+{
+  "at": "2026-09-25T14:07:29.524Z",
+  "scope": "Offline refresh of source bindings and local clips after bakery source changes; no recording generation or provider requests",
+  "commands": [
+    {
+      "command": "node scripts/prepare-cast-audio.mjs",
+      "exitCode": 0,
+      "durationMs": 1104,
+      "log": "output/bakery-cursor-20260925/audio-r1/1.log",
+      "sha256": "0b11515aee0c714c653b868ab29336e0c447ba1ded144d94fe1a1ff61f63cf9b"
+    },
+    {
+      "command": "node scripts/repair-cast-bindings.mjs --write",
+      "exitCode": 0,
+      "durationMs": 22207,
+      "log": "output/bakery-cursor-20260925/audio-r1/2.log",
+      "sha256": "18acb9c792e57e29b6c2ec5993c2f63fcea6230002d68dc309ceb8414e34c68b"
+    },
+    {
+      "command": "node scripts/derive-cast-clips.mjs",
+      "exitCode": 0,
+      "durationMs": 8100,
+      "log": "output/bakery-cursor-20260925/audio-r1/3.log",
+      "sha256": "6b037c9963ec84c561920ddff25aee8b082874a33c92b8f97a57fce76023a71c"
+    },
+    {
+      "command": "node scripts/verify-demo-audio.mjs public",
+      "exitCode": 0,
+      "durationMs": 7075,
+      "log": "output/bakery-cursor-20260925/audio-r1/4.log",
+      "sha256": "62dc39abafb74d0efd60f4c0bafd4456f80f7c84ecfdbf8016fc07fd857cf1db"
+    }
+  ],
+  "complete": true,
+  "verification": {
+    "status": "COMPLETE_EXACT_PCM_VERIFIED",
+    "entries": 6037,
+    "roles": [
+      "boy",
+      "grandma",
+      "jo",
+      "mara",
+      "narrator",
+      "pip",
+      "rina",
+      "sol"
+    ],
+    "manifestSha256": "7c7e31dddc59e04dd1d1097a7bbf7c042d9439b43a7b02e58b852d1090697fda",
+    "runtimeFiles": 5481,
+    "runtimeBytes": 1118217400
+  },
+  "operationalLedgersUnchanged": true,
+  "ledgers": [
+    {
+      "file": "evidence/voice-ai-demo-20260918/openai-attempts.jsonl",
+      "mode": "append-only",
+      "bytes": 1228,
+      "sha256": "0c6ed03e64b11f6b5138956d85ee753dfdbc67cafb0aeb619bfcf90e7472867b",
+      "records": 6
+    },
+    {
+      "file": "evidence/demo-ai-20260919/openai-attempts.jsonl",
+      "mode": "append-only",
+      "bytes": 8321,
+      "sha256": "a93a947bb71554b0103a02d6dd620336a8d4a804b9789da9fd18a77d75ac46cd",
+      "records": 31
+    },
+    {
+      "file": "evidence/cast-audio-20260919/attempts.jsonl",
+      "mode": "append-only",
+      "bytes": 1400530,
+      "sha256": "f38f33bfcb78c35d3c9cc43438d81020404a6f51f8f31514eb871638acca9ddd",
+      "records": 3985
+    },
+    {
+      "file": "evidence/er13/live-evaluation/attempts.jsonl",
+      "mode": "exact",
+      "bytes": 549,
+      "sha256": "17a4a6a57b5e1d54192320717e09f2c631a3eb052d1c1e62bc74c866bc877653",
+      "records": 3
+    }
+  ]
+}

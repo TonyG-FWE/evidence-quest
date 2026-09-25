@@ -47,7 +47,9 @@ for(const [id,source]of Object.entries(sourceData)){
 }
 for(const [id,text]of Object.entries(definitionCatalogue))add(text,'narrator','definition:'+id,false);
 const friendly=isSpokenText;
-const files=(await fs.readdir('src/garden')).filter(file=>/\.(tsx|ts)$/.test(file)&&!/(?:Glossary|Catalogue|^content\.|^chapterContent\.|narrativeDialogue|literaryContent|sourceVoiceRouting|voiceTypes|castSpeech|assets|^World\.|Scene|worldLayout|landscape|scenery|hands|locomotion|materialFade)/i.test(file));
+// Cursor hints, target labels and rendering phases are interface instructions;
+// BakeryConversation remains included in full as authored reading content.
+const files=(await fs.readdir('src/garden')).filter(file=>/\.(tsx|ts)$/.test(file)&&!/(?:Glossary|Catalogue|^content\.|^chapterContent\.|narrativeDialogue|literaryContent|sourceVoiceRouting|voiceTypes|castSpeech|assets|^World\.|Scene|worldLayout|landscape|scenery|hands|locomotion|materialFade|^bakery(?:Interaction|Targets|Motion|Weather)\.)/i.test(file));
 const authored=new Map();
 function enclosingSpeaker(node){for(let p=node;p;p=p.parent){if(ts.isFunctionDeclaration(p)&&p.name?.text==='welcomeWords')return 'pip';if(ts.isJsxElement(p)){const tag=p.openingElement.tagName.getText();if(tag==='Choices'){const label=p.openingElement.attributes.properties.find(a=>ts.isJsxAttribute(a)&&a.name.text==='label');return /speaking as Mara/.test(label?.getText()??'')?'mara':'pip';}const who=p.openingElement.attributes.properties.find(a=>ts.isJsxAttribute(a)&&['who','speaker'].includes(a.name.text));if(who?.initializer&&ts.isStringLiteral(who.initializer)){const s=who.initializer.text.toLowerCase();if(selectedCast[s])return s;}}if(ts.isObjectLiteralExpression(p)){const who=p.properties.find(q=>ts.isPropertyAssignment(q)&&q.name.getText()==='who'),value=who&&ts.isAsExpression(who.initializer)?who.initializer.expression:who?.initializer;if(value&&ts.isStringLiteral(value)){const s=value.text.toLowerCase();if(selectedCast[s])return s;}}}return 'narrator';}
 function visibleStrings(node){

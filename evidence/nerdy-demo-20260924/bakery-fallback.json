@@ -1,0 +1,22 @@
+{
+  "schema": "eq.nerdy-demo.fallback.v1",
+  "at": "2026-09-25T17:37:27.845Z",
+  "file": "output/nerdy-demo-bakery-fallback-20260925/Evidence-Quest-Nerdy-demo.webm",
+  "bytes": 60890032,
+  "sha256": "a37ea509ae01fcfca78b511677319f971d647e94a892ad62462f13922a73715c",
+  "candidate": {
+    "inputSha256": "11d95109a8553db747568400d91d1a9f6629d80e0ef00b69dcba48621ec0562f",
+    "outputSha256": "405958761d185b579144cd04905c1f2024f16d57a1b3fc4d296a125f431c542f"
+  },
+  "feedbackMode": "explicitly-labeled-replay-of-verified-live-response",
+  "originalRequestId": "80f68546-dc86-4a00-84c6-9c3d7965a3b2",
+  "sound": "Native game output captured from the browser audio graph. No microphone, replacement narration or artificial completion.",
+  "synchronization": {
+    "audioOffsetSeconds": 0.114,
+    "method": "Measured capture-start wall clocks. Frame transport and encoding add small unmeasured latency."
+  },
+  "sourceCapture": "bakery-fallback-capture.json",
+  "reencoding": false,
+  "muxExitCode": 0,
+  "log": "output/nerdy-demo-bakery-fallback-20260925/mux.log"
+}

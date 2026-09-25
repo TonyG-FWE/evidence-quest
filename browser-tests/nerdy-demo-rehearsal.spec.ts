@@ -2,7 +2,7 @@ import {test,expect,type Page} from '@playwright/test';
 import fs from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 import {playDemoRoute} from './garden-demo-route.js';
-import {completeConversation,deliverMaraReport,playArrivals,openStoryDirections,placeMemory,resumeGathering} from './garden-actions.js';
+import {completeConversation,deliverMaraReport,playArrivals,openStoryDirections,placeMemory,resumeGathering,inspectBirdConversation} from './garden-actions.js';
 import {prepareDemoCapture,startDemoCapture,finishDemoCapture} from './nerdy-demo-capture.js';
 
 test.describe.configure({retries:0});
@@ -35,7 +35,7 @@ async function nativePlayback(page:Page,until:()=>Promise<boolean>,captionChoice
  throw Error('Native whole-story playback did not finish in five minutes.');
 }
 async function nativeBird(page:Page,turn:()=>Promise<void>){
- await openStoryDirections(page);await button(page,'Speak to the boy').click();await button(page,'Would you like some help?').click();await openStoryDirections(page);
+ await openStoryDirections(page);await button(page,'Speak to the boy').click();await inspectBirdConversation(page);await button(page,'Would you like some help?').click();await openStoryDirections(page);
  for(const action of ['Walk to the dock office','Pick up the tape','Return to the boy','Line up the torn wing','Tape across the tear','Place the strip','Let the boy carry his bird','Return to Grandma’s garden'])await button(page,action).click();
  await expect(page.locator('.g-mara-scene')).toHaveCount(0);await expect.poll(async()=>await page.locator('.garden-gathering-controls').isVisible()||await page.locator('.garden-reader').isVisible()).toBe(true);
  if(await page.locator('.garden-gathering-controls').isVisible())await turn();await expect(page.locator('.garden-reader')).toBeVisible();
@@ -44,8 +44,18 @@ async function nativeBird(page:Page,turn:()=>Promise<void>){
 test('Nerdy rehearsal: ordinary fresh journey, real recorded voices, ending and complete finale',async({page},info)=>{
  test.skip(process.env['EQ_NERDY_REHEARSAL']!=='1','Explicit, separately recorded final rehearsal.');test.setTimeout(1800000);
  const started=Date.now(),cues:{name:string;ms:number}[]=[],captionChoices:string[]=[],errors:string[]=[],feedbackPosts:string[]=[],feedbackSources:{requestId:string;exposed:string[]}[]=[];
- const measurements:{name:string;metrics:unknown}[]=[];
+ const measurements:{name:string;metrics:unknown}[]=[],presenterPauses:{name:string;targetSeconds:number;durationMs:number}[]=[];
  const cue=(name:string)=>{const ms=Date.now()-started;cues.push({name,ms});console.log('[Nerdy rehearsal] '+name+' '+Math.round(ms/1000)+'s');};page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(r.method()==='POST'&&r.url().endsWith('/api/garden/feedback')){const q=r.postDataJSON();feedbackPosts.push(q.requestId);feedbackSources.push({requestId:q.requestId,exposed:q.exposed});}});
+ // Presenter pauses follow the run-of-show. They do not alter the game clock,
+ // animation, audio loading or commands, and contain no replacement narration.
+ const pacedCore=process.env['EQ_NERDY_PACED_CORE']==='1';
+ const pace=async(name:string,targetSeconds:number)=>{
+  if(!pacedCore)return;
+  const coreStart=cues.find(c=>c.name==='core-bakery-begins');if(!coreStart)throw Error('Core pacing began before capture');
+  const durationMs=Math.max(0,targetSeconds*1000-(Date.now()-started-coreStart.ms));
+  presenterPauses.push({name,targetSeconds,durationMs});console.log('[Nerdy rehearsal] presenter pause '+name+' '+Math.round(durationMs/1000)+'s');
+  if(durationMs)await page.waitForTimeout(durationMs);
+ };
  let nativeTurn=0;const turn=async()=>{const turnId=++nativeTurn;await expect(page.locator('.garden-reader')).toHaveCount(0);cue('story-turn-'+turnId+'-begins');await nativePlayback(page,()=>page.locator('.garden-reader').isVisible(),captionChoices);cue('story-turn-'+turnId+'-complete');};
  const replay=process.env['EQ_NERDY_REPLAY_FEEDBACK']==='1';let originalRequestId:string|undefined,recordedReplayCount=0;
  if(replay){
@@ -75,7 +85,7 @@ test('Nerdy rehearsal: ordinary fresh journey, real recorded voices, ending and 
  }
  await prepareDemoCapture(page);let captureStart:Awaited<ReturnType<typeof startDemoCapture>>|undefined,captureEnd:Awaited<ReturnType<typeof finishDemoCapture>>|undefined;
  cue('fresh-opening');
- await playDemoRoute(page,info,async kind=>{cue(kind);measurements.push({name:kind,metrics:JSON.parse(await page.locator('.garden-scene').getAttribute('data-metrics')??'null')});},{
+ await playDemoRoute(page,info,async kind=>{cue(kind);measurements.push({name:kind,metrics:JSON.parse(await page.locator('.garden-scene').getAttribute('data-metrics')??'null')});if(kind==='roof')await pace('roof consequence',240);if(kind==='dough')await pace('preparing the promised bread',330);if(kind==='handoff')await pace('the thank-you visit',450);},{
   opening:async()=>{
    await button(page,'promised').click();await button(page,'Listen to the sentence').click();const stop=page.locator('.garden-word-card').getByRole('button',{name:'Stop listening',exact:true});await expect(stop).toBeVisible();await expect(stop).toBeHidden({timeout:45000});await expect(page.locator('.g-audio-notice')).toHaveCount(0);await button(page,'Close word help').click();
    await button(page,'Practise reading this page').click();await expect(page.locator('.g-mic-off')).toContainText('Your microphone is off');await page.waitForTimeout(1500);await page.locator('.g-practice-overlay').getByRole('button',{name:'Back to the story',exact:true}).click();
@@ -90,6 +100,7 @@ test('Nerdy rehearsal: ordinary fresh journey, real recorded voices, ending and 
    await page.locator('.garden-passage').getByRole('button',{name:'intact',exact:true}).click();await expect(page.locator('.garden-word-card')).toContainText('Whole and undamaged');
    for(const name of ['Listen to the word','Listen to the sentence']){await button(page,name).click();const stop=page.locator('.garden-word-card').getByRole('button',{name:'Stop listening',exact:true});await expect(stop).toBeVisible();await expect(stop).toBeHidden({timeout:45000});await expect(page.locator('.g-audio-notice')).toHaveCount(0);}
    await page.waitForTimeout(2000);await button(page,'Close word help').click();await button(page,'Practise reading the conversation').click();await expect(page.locator('.g-mic-off')).toContainText('Your microphone is off');await page.waitForTimeout(3000);await page.locator('.g-practice-overlay').getByRole('button',{name:'Back to the story',exact:true}).click();
+   await pace('premise, reading and oral practice',180);
   },
  });
  await button(page,'Talk to Sol').click();await completeConversation(page);await button(page,'Let’s finish the ending together.').click();cue('writing');
@@ -107,6 +118,7 @@ test('Nerdy rehearsal: ordinary fresh journey, real recorded voices, ending and 
   expect(reachedEnd).toBe(true);cue('source-viewed: '+source);
  }
  await page.getByLabel('Your ending for Sol’s story',{exact:true}).fill(draft);await button(page,'Baking, then the visit').click();
+ await pace('writing from the witnessed events',600);
  if(process.env['EQ_NERDY_LIVE']==='1'||replay){
   if(!replay){const config=await (await page.request.get('/api/garden/config')).json();expect(config.textFeedback).toBe(true);expect(config.textFeedbackActivities).toEqual(['sol-ending']);}
   await page.getByText('Support for my ending',{exact:true}).click();
@@ -120,10 +132,13 @@ test('Nerdy rehearsal: ordinary fresh journey, real recorded voices, ending and 
   const visible=await page.locator('.g-meaning-activity').innerText();await fs.writeFile(replay?info.outputPath('recorded-feedback-replay.json'):'evidence/nerdy-demo-20260924/live-feedback.json',JSON.stringify({at:new Date().toISOString(),requestCount:feedbackPosts.length,requestId:result?.requestId??feedbackPosts[0],sourceContext:replay?{requestId:replayedCall.request.requestId,exposed:replayedCall.request.exposed}:feedbackSources[0],result,visible,automaticRetries:0,replayed:replay,recordedReplayCount,originalRequestId},null,2)+'\n');await page.screenshot({path:info.outputPath('live-feedback.png')});await page.waitForTimeout(6500);
   await page.getByText('Support for my ending',{exact:true}).click();
  }
- await button(page,'Try my ending').click();await expect(page.locator('.garden-world-activity>.g-story-stage')).toHaveAttribute('aria-busy','false',{timeout:60000});cue('ending-preview');await page.screenshot({path:info.outputPath('demo-ending.png')});await page.waitForTimeout(6500);await button(page,'Use this ending').click();cue('core-ending-confirmed');await page.waitForTimeout(2000);captureEnd=await finishDemoCapture(page,info.outputPath('demo-core-audio.webm'));expect(captureEnd.peak).toBeGreaterThan(.01);expect(captureEnd.plays).toBeGreaterThan(0);
+ await pace('review the recorded feedback',630);
+ await button(page,'Try my ending').click();await expect(page.locator('.garden-world-activity>.g-story-stage')).toHaveAttribute('aria-busy','false',{timeout:60000});cue('ending-preview');await page.screenshot({path:info.outputPath('demo-ending.png')});await page.waitForTimeout(6500);await pace('preview and confirm the ending',720);await button(page,'Use this ending').click();cue('core-ending-confirmed');await page.waitForTimeout(2000);captureEnd=await finishDemoCapture(page,info.outputPath('demo-core-audio.webm'));expect(captureEnd.peak).toBeGreaterThan(.01);expect(captureEnd.plays).toBeGreaterThan(0);
  const candidate={inputSha256:process.env['EQ_NERDY_CANDIDATE_INPUT_SHA'],outputSha256:process.env['EQ_NERDY_CANDIDATE_OUTPUT_SHA']};
  const captureRecord=JSON.stringify({at:new Date().toISOString(),scope:'Native recorded gameplay audio and screen capture from this rehearsal. No microphone recording or synthetic audio.',candidate,cues:cues.map(row=>({...row})),coreDurationMs:cues.find(row=>row.name==='core-ending-confirmed')!.ms-cues.find(row=>row.name==='core-bakery-begins')!.ms,liveFeedbackRequests:replay?0:feedbackPosts.length,recordedFeedbackReplays:recordedReplayCount,originalRequestId,feedbackMode:replay?'explicitly-labeled-replay-of-verified-live-response':'live-verification',...captureStart,...captureEnd},null,2)+'\n';
- await fs.writeFile(info.outputPath('fallback-capture.json'),captureRecord);
+ const timedCapture=JSON.parse(captureRecord);Object.assign(timedCapture,{pacedCore,presenterPauses,pacingScope:'Pauses for presenter explanation; no presenter voice was recorded.'});
+ if(pacedCore){expect(timedCapture.coreDurationMs).toBeGreaterThanOrEqual(10*60*1000);expect(timedCapture.coreDurationMs).toBeLessThanOrEqual(15*60*1000);}
+ await fs.writeFile(info.outputPath('fallback-capture.json'),JSON.stringify(timedCapture,null,2)+'\n');
  // Keep the first completed core capture, including its one live response, if a
  // later finale assertion requires a separate provider-free rehearsal.
  await fs.writeFile('evidence/nerdy-demo-20260924/'+(replay?'fallback-capture-replay.json':'fallback-capture.json'),captureRecord,{flag:'wx'}).catch(error=>{if(error.code!=='EEXIST')throw error;});
@@ -134,5 +149,6 @@ test('Nerdy rehearsal: ordinary fresh journey, real recorded voices, ending and 
  await button(page,'Sharing our stories').click();await placeMemory(page);await resumeGathering(page);await button(page,'Hear Grandma’s offer for Mara').click();await turn();await button(page,'Take a copy for Mara').click();await expect(page.locator('.garden-reading-scroll')).toContainText('The copy is in Pip’s backpack.');cue('copy-handed-to-pip');await walk(page,'Mara');await button(page,'Give Grandma’s story').click();await turn();await button(page,'Finish the chapter').click();cue('finale');await button(page,'Watch the ending').click();await expect(page.locator('[data-world-activity="ending-presentation"]')).toBeVisible();await nativePlayback(page,async()=>!await page.locator('[data-world-activity="ending-presentation"]').count(),captionChoices);await button(page,'Read the garden’s stories').click();await expect(page.locator('.g-lantern-library article')).toHaveCount(6);cue('complete');await page.screenshot({path:info.outputPath('complete-finale.png')});
  expect(errors).toEqual([]);const coreStart=cues.find(c=>c.name==='core-bakery-begins')!.ms,coreEnd=cues.find(c=>c.name==='core-ending-confirmed')!.ms;
  const evidence={at:new Date().toISOString(),scope:'Ordinary fresh UI journey. Native approved recorded audio; explicit captions for unpublished player words. No synthetic audio or state injection. Core fallback captures the rendered game sound and screen; no microphone audio.',candidate,feedbackMode:replay?'explicitly-labeled-replay-of-verified-live-response':'live-verification',liveProviderRequests:replay?0:feedbackPosts.length,recordedFeedbackReplays:recordedReplayCount,originalRequestId,viewport:{width:1366,height:768},durationMs:Date.now()-started,coreDurationMs:coreEnd-coreStart,cues,measurements,measurementLimits:'DOM renderer metrics during native rehearsal with capture active. RAF proxies and conservative allocations; not quiet-system or physical-display qualification.',captionChoices,feedbackPosts,pageErrors:errors,capture:{...captureStart,...captureEnd}};
- await fs.writeFile('evidence/nerdy-demo-20260924/rehearsal.json',JSON.stringify(evidence,null,2)+'\n');await info.attach('rehearsal',{body:JSON.stringify(evidence,null,2),contentType:'application/json'});
+ const timedEvidence={...evidence,pacedCore,presenterPauses,pacingScope:pacedCore?'Measured 12-minute run-of-show with presenter pauses; no presenter voice was recorded.':'Unpaced native journey; no presenter voice was recorded.'};
+ await fs.writeFile('evidence/nerdy-demo-20260924/bakery-rehearsal.json',JSON.stringify(timedEvidence,null,2)+'\n');await info.attach('rehearsal',{body:JSON.stringify(timedEvidence,null,2),contentType:'application/json'});
 });

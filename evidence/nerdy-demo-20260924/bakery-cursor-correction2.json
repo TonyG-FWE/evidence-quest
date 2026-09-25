@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-25",
+  "tasks": ["TASK11.ART02–07", "TASK11.20", "TASK11.21"],
+  "scope": "Second sequential correction checkpoint, not final candidate acceptance",
+  "checks": {"clientTypes": "PASS", "reviewProfileHands": "8 passed, 0 failed", "compiledClient": "PASS"},
+  "nativeCheckpoint": {
+    "browser": "Codex in-app tab 4",
+    "url": "http://127.0.0.1:4495/garden",
+    "viewport": [1098, 1105],
+    "method": "Fresh ordinary play; bakery input used visible artwork/screen coordinates only. No bakery physical-action buttons, progress injection or coordinates calculated from internal state.",
+    "passed": ["Shelf to Pip to Sol; automatic roof framing", "Escape cancels cracked-tile drag", "Remove cracked tile, deliberately misplace spare tile, recover into opening", "Approach and inspect flour on sack; pour into bowl", "Continuous back-and-forth kneading", "Held cut preview visible; two complete strokes form three similar loaves", "Drag bread to oven; click baked loaf to approach; drag to Rina", "Follow visible ground to Sol; drag carried loaf to Sol; actual handoff and thank-you conversation"],
+    "correctionsDuringPlay": ["Oven lip intercepted the promised loaf hit area", "Carried cue was positioned before final hand attachment", "Post-repair camera omitted flour", "Cut preview was occluded by uneven dough; preview now renders visibly over the surface"],
+    "shortStroke": "A stroke stopping inside dough was rejected with an instruction; a complete visible stroke succeeded. Handler tests also cover unequal cuts and adjustment."
+  },
+  "limitations": ["Interim compiled reloads during diagnosis; final frozen fresh rehearsal remains required", "First-placement success, native cut adjustment and three-size verification remain in final acceptance", "Motion/weather and narration coverage remain active/pending corrections"],
+  "providers": "Disabled; zero new requests"
+}

@@ -15,7 +15,29 @@
     "evidence/demo-release-20260919/server-delivery-diff-review.json",
     "evidence/demo-release-20260919/server-delivery-start-guard.json",
     "evidence/demo-release-20260919/successor-build.json",
+    "evidence/nerdy-demo-20260924/bakery-audio-r1.json",
+    "evidence/nerdy-demo-20260924/bakery-audio-refresh-delta.json",
+    "evidence/nerdy-demo-20260924/bakery-codex-checkpoint.json",
+    "evidence/nerdy-demo-20260924/bakery-cursor-correction1.json",
+    "evidence/nerdy-demo-20260924/bakery-cursor-correction2.json",
+    "evidence/nerdy-demo-20260924/bakery-cursor-correction3.json",
+    "evidence/nerdy-demo-20260924/bakery-cursor-correction4.json",
+    "evidence/nerdy-demo-20260924/bakery-cursor-correction5.json",
+    "evidence/nerdy-demo-20260924/bakery-fallback-capture.json",
+    "evidence/nerdy-demo-20260924/bakery-fallback-review.json",
+    "evidence/nerdy-demo-20260924/bakery-fallback-visual-review.json",
+    "evidence/nerdy-demo-20260924/bakery-fallback.json",
+    "evidence/nerdy-demo-20260924/bakery-final-browser-r1.json",
+    "evidence/nerdy-demo-20260924/bakery-final-checks-r1.json",
+    "evidence/nerdy-demo-20260924/bakery-final-visual-review.json",
     "evidence/nerdy-demo-20260924/bakery-no-trace-r1.json",
+    "evidence/nerdy-demo-20260924/bakery-package-checks.json",
+    "evidence/nerdy-demo-20260924/bakery-preexisting-preservation.json",
+    "evidence/nerdy-demo-20260924/bakery-rehearsal.json",
+    "evidence/nerdy-demo-20260924/bakery-required-browser.json",
+    "evidence/nerdy-demo-20260924/bakery-required-commands.json",
+    "evidence/nerdy-demo-20260924/bakery-required-scope.json",
+    "evidence/nerdy-demo-20260924/bakery-required-teardown.json",
     "evidence/nerdy-demo-20260924/baseline.json",
     "evidence/nerdy-demo-20260924/cleanup-files.json",
     "evidence/nerdy-demo-20260924/cleanup-result.json",
@@ -64,9 +86,9 @@
     "evidence/nerdy-demo-20260924/word-timestamp-overruns.json",
     "evidence/reader-repair-20260919/RESULTS.md"
   ],
-  "filesSha256": "c7075f905f7d9a75548cf333a173f77162ff48e0484cadc7b447c2c8cded6621",
-  "fileCount": 15907,
-  "bytes": 3150238192,
+  "filesSha256": "08473b612f51a9c5da33b77ba7a454b34e5952f6017c12d3b0b3b9803f7f38c4",
+  "fileCount": 15902,
+  "bytes": 3142714122,
   "files": [
     {
       "file": ".env.example",
@@ -90,13 +112,13 @@
     },
     {
       "file": "BUILD-STATUS.md",
-      "bytes": 148898,
-      "sha256": "603fbeb1c43cc3cf6225cdd9acbf7c43a0fda8f382cd5a6bf8e89cd5de61976c"
+      "bytes": 151628,
+      "sha256": "fa54492cda54b67227dd57055562a724c16a5f2577dbf3bbfcb7dbc3313c9a04"
     },
     {
       "file": "README.md",
-      "bytes": 3540,
-      "sha256": "f1ceb4503edb758c5b59f380f5a888dfc31cf91ee2911cef1df884f20ef6b2e7"
+      "bytes": 4000,
+      "sha256": "d059b3c0837e347a43d109d0ec06ea3ff7347acd6172bfbf01e0670eeeef41db"
     },
     {
       "file": "assets/demo/README.md",
@@ -919,6 +941,11 @@
       "sha256": "95805e21d56ea384ff22e1607fb5f2ad8cb3913451cf683c4fe5bae83c5f39b5"
     },
     {
+      "file": "browser-tests/bakery-cursor-actions.ts",
+      "bytes": 5685,
+      "sha256": "b7b06c54539c35063b72164ee46344fda1de22f87b8ca037f170ff46ec270a68"
+    },
+    {
       "file": "browser-tests/cadence-diagnostic.spec.ts",
       "bytes": 2808,
       "sha256": "2b880b584ff55982084c0c2479c8b7a0234d140466e5bb03d9c578a3457bf1ed"
@@ -975,8 +1002,8 @@
     },
     {
       "file": "browser-tests/garden-actions.ts",
-      "bytes": 22173,
-      "sha256": "c7276b294efb2992b3a664f6ab223755aae98ef60040459652ce58b887fea098"
+      "bytes": 23303,
+      "sha256": "423bd8fc6099c95717269d9d483fe4d648b287fdd340e6e6543eba3ef252fc56"
     },
     {
       "file": "browser-tests/garden-adaptive-reader.spec.ts",
@@ -999,14 +1026,19 @@
       "sha256": "2b27d70af62c85e4879074d9aa0e32bb76b5de56870d1b43221f4a937aab06a8"
     },
     {
+      "file": "browser-tests/garden-bakery-cursor.spec.ts",
+      "bytes": 19692,
+      "sha256": "62a5e0699ae4ede0e14fe1481a0aea0779c934f8d922b05a59fb3ff4fe437db1"
+    },
+    {
       "file": "browser-tests/garden-bakery-pointer-repair.spec.ts",
-      "bytes": 10393,
-      "sha256": "6aa1e800292ff65be7ac8e8d5eff7bd698600d56f29612178463fb67744439c2"
+      "bytes": 10562,
+      "sha256": "ab855e5f55187cf0a861c2347a337b760a256bd59145e05117ca5cb3cfb7ccb5"
     },
     {
       "file": "browser-tests/garden-bakery.spec.ts",
-      "bytes": 11693,
-      "sha256": "724d0761b39ffcaaa41ad8dfbc8e55a8da1b3ddbaa7720eec432361f9c8ed573"
+      "bytes": 11816,
+      "sha256": "48224312b117bf162950ade781c9ed8e4196f2754609f94642571378632f6b99"
     },
     {
       "file": "browser-tests/garden-blank-canvas-diagnostic.spec.ts",
@@ -1060,8 +1092,8 @@
     },
     {
       "file": "browser-tests/garden-demo-framing.spec.ts",
-      "bytes": 3608,
-      "sha256": "b4859a58f07e17f3b0cc8f974526ac3c093b4b466847edfd155baef602554c09"
+      "bytes": 3803,
+      "sha256": "190a190dfc89d886a624297a64f03a3a3c941f1cfca2f5173c54d106345f8c8e"
     },
     {
       "file": "browser-tests/garden-demo-presentation.spec.ts",
@@ -1070,8 +1102,8 @@
     },
     {
       "file": "browser-tests/garden-demo-route.ts",
-      "bytes": 3295,
-      "sha256": "67225df82207abd5dbc2ab8e312dc62b1d100107474fc8077ddde0506b0f9bde"
+      "bytes": 2097,
+      "sha256": "73e4969ad84cd09d08bef61856ee0de2bd8946a3533861868850cf9ceaa669d2"
     },
     {
       "file": "browser-tests/garden-edition-help.spec.ts",
@@ -1085,8 +1117,8 @@
     },
     {
       "file": "browser-tests/garden-final-contacts.spec.ts",
-      "bytes": 13158,
-      "sha256": "69868e48efa6befd6d0c8db4e4a43ba3ef249d58ca60f3ab456979f10e5455d3"
+      "bytes": 13206,
+      "sha256": "80f94f5953801dc1875abf625def35738377ca77cc1bd7c5d70439456964825d"
     },
     {
       "file": "browser-tests/garden-finale.spec.ts",
@@ -1105,8 +1137,8 @@
     },
     {
       "file": "browser-tests/garden-hands.spec.ts",
-      "bytes": 27712,
-      "sha256": "82e34275cbf04efe3c228d431980de062aa1161afef5ab8fc2f2fe015f09f525"
+      "bytes": 22312,
+      "sha256": "9fab77dd49210f904d7560dca74e0908d50f20429997d4ba43ead59442ff33f5"
     },
     {
       "file": "browser-tests/garden-interaction.spec.ts",
@@ -1265,8 +1297,8 @@
     },
     {
       "file": "browser-tests/nerdy-demo-rehearsal.spec.ts",
-      "bytes": 19283,
-      "sha256": "6695faccd33daa739304d91c8cedefe46b10a7cd85f51b5991cae864f53d8d52"
+      "bytes": 21130,
+      "sha256": "6e1bb20b9a650bc32ea7eccf965a694eeaac07b3ffba6dc809960b1a93fe0050"
     },
     {
       "file": "browser-tests/nerdy-feedback-failure.spec.ts",
@@ -1330,8 +1362,8 @@
     },
     {
       "file": "browser-tests/run-nerdy-rehearsal.mjs",
-      "bytes": 2395,
-      "sha256": "7984849a6e035907a1e7e4dac67da3b020df1af54795c96ad6353bd45226f347"
+      "bytes": 2484,
+      "sha256": "adda008841942135cd3d8b160e54798b830debac3f2b9644704949ebe2d8363b"
     },
     {
       "file": "browser-tests/save-faults.spec.ts",
@@ -1397,6 +1429,11 @@
       "file": "checks/asset-work-queue.test.ts",
       "bytes": 1226,
       "sha256": "61cfda798725ad372952077090206c4d62a639fd05e37b886dc858937a55583a"
+    },
+    {
+      "file": "checks/bakery-motion-weather.test.ts",
+      "bytes": 1757,
+      "sha256": "3a7cb3f135863759ef9f95ca3b41aef7d8df3a0940ce89bc65b62295cd47c615"
     },
     {
       "file": "checks/cast-audio.test.ts",
@@ -1510,8 +1547,8 @@
     },
     {
       "file": "checks/garden-hands.test.ts",
-      "bytes": 9272,
-      "sha256": "541406c2feedc21343372391ea417da87533f3606507fdab94ae84c4bfe1ef0c"
+      "bytes": 11213,
+      "sha256": "626c54d0defc2ae3223a16abf9360dae66f359e87d9de476b815a09a55b7d7fc"
     },
     {
       "file": "checks/garden-interaction.test.ts",
@@ -4180,13 +4217,13 @@
     },
     {
       "file": "docs/game-review/NERDY-DEMO-20260924.md",
-      "bytes": 17810,
-      "sha256": "d54f6e87d91fb1734753d1acc5897619dc0e225820bbf281e5ee414c7c313d7a"
+      "bytes": 22664,
+      "sha256": "106b04a399dadbf357b1e3b098ce9355737cf5502fd41706f1b919d0282febd2"
     },
     {
       "file": "docs/game-review/NERDY-DEMO-RUN-OF-SHOW-20260925.md",
-      "bytes": 5128,
-      "sha256": "9bf045ec8478b044f354aa9d8e3a274cf8876088151fdde4777d4f2e5c3ab51d"
+      "bytes": 7112,
+      "sha256": "52a11b15ea93828bb71c75aa8550b21cff258343a44d041f547da5b75b8b915f"
     },
     {
       "file": "docs/game-review/PIP-TRIPO-RESTART-20260917.md",
@@ -23470,13 +23507,13 @@
     },
     {
       "file": "evidence/cast-audio-20260919/independent-clips.json",
-      "bytes": 2023681,
-      "sha256": "1eed1ece6c17ca9ae741124665e2aacb87760c537fd74ce2ac5c1454767949cb"
+      "bytes": 2013622,
+      "sha256": "202fc662f5d4222c41faef13d9fa750e67e77252404817b5815e1b391c89db74"
     },
     {
       "file": "evidence/cast-audio-20260919/semantic-repair.json",
-      "bytes": 847127,
-      "sha256": "a3bc4fbc386719203f9f8ccd0493c0d91cff1d096d11297f91bf809659a7ad95"
+      "bytes": 855750,
+      "sha256": "0ebf63b2beb7d1b8eab558689e55292e951eb320e49c59c3afebaf64c88eb035"
     },
     {
       "file": "evidence/demo-ai-20260919/openai-attempts.jsonl",
@@ -23554,9 +23591,119 @@
       "sha256": "850a5856336b3bf83d153c81d68885bb2330b2e6bd77f29bdabcb4ea29472b42"
     },
     {
+      "file": "evidence/nerdy-demo-20260924/bakery-audio-r1.json",
+      "bytes": 2628,
+      "sha256": "e1b61dfeeafb2a411ddcc664c3d2f9c35e4daa1394c22ce5f2ecdc71233f255a"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-audio-refresh-delta.json",
+      "bytes": 8307,
+      "sha256": "ef772e5e6e7157ea8c3892c8222f97a2dd37a5c51aaddbfc3daadb4627d47792"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-codex-checkpoint.json",
+      "bytes": 1190,
+      "sha256": "24b92f1c2428704dc6e3329db2ef1d226bee20f533acbd3d21f41ff338dff5d6"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-cursor-correction1.json",
+      "bytes": 1252,
+      "sha256": "f74b29263e99882ded7ee4a0aea89897a02c3ef3277bbbacd6f0dacc79ee0a4d"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-cursor-correction2.json",
+      "bytes": 1911,
+      "sha256": "a990559d021dfd00384d3839cca0c56e2e7e3f410576c200a79ce8c4eac8f310"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-cursor-correction3.json",
+      "bytes": 2342,
+      "sha256": "e295bb933a533473214fe6a1441f2c452e32bf5ec4b7b994f5cbbb5aa00d3dce"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-cursor-correction4.json",
+      "bytes": 2480,
+      "sha256": "7d02fd3b5c680bf259751dfc3bf48f8acf92cd50cf373b7fe609eb2980ee6e42"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-cursor-correction5.json",
+      "bytes": 5391,
+      "sha256": "9338c408f91679996863934f15f24378ce6fd76d86309bd4d1b51220bf7136b3"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-fallback-capture.json",
+      "bytes": 2950,
+      "sha256": "947c35fe4a163af89c267132f0e46280a982ad243d5e805da31f9974d0a1dfbb"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-fallback-review.json",
+      "bytes": 1970,
+      "sha256": "fdfd598f0db92740416f05a3255cbb84089b86c092f06968096dbaffc0020560"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-fallback-visual-review.json",
+      "bytes": 5875,
+      "sha256": "98d8542239fcfcaef5fbfc241c2aa2f7fda719e70d986ffd597dee30c566a743"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-fallback.json",
+      "bytes": 1064,
+      "sha256": "7a05cc2eb2bd50459571967d9a87df480f160c5e6a646b176c336004af904cfe"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-final-browser-r1.json",
+      "bytes": 66075,
+      "sha256": "08937919c7c30af7b35d8dd0d5be26f00cd3d2fb263d3a098fd5d8b4ab07a521"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-final-checks-r1.json",
+      "bytes": 971,
+      "sha256": "11465c1dbe1b9d2738ee0299aaa173510ae11cc8233c99be83d7be95abcc76f7"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-final-visual-review.json",
+      "bytes": 7417,
+      "sha256": "034fd169c520842d5841e25d1be0bbe8ceb2224c1c6f549ccba0d0d16f3f32ff"
+    },
+    {
       "file": "evidence/nerdy-demo-20260924/bakery-no-trace-r1.json",
       "bytes": 22632,
       "sha256": "485781be7a13a9b0ff1b15aa9aca957a8f894662e264f625acc6354ad27a25e0"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-package-checks.json",
+      "bytes": 1803,
+      "sha256": "1a081f63b22e2fec345ffc3c4389c8dd53f748680630d4906e20d4735cb796bc"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-preexisting-preservation.json",
+      "bytes": 4366,
+      "sha256": "a4c5400c7b81faae774e0a7172872f03a40a4c1947268196f5cd3dfcd147ccbc"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-rehearsal.json",
+      "bytes": 14497,
+      "sha256": "ba1f9314e49419a0989b176f7c107f2b0cabf103366d0b41f7feec5fd8b98e36"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-required-browser.json",
+      "bytes": 572423,
+      "sha256": "284384e9ee95a4fd357c5602ebb58aa2afe79864e8eee0adac4cce82dd5f71de"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-required-commands.json",
+      "bytes": 2964,
+      "sha256": "6e11e9828571f1fe31e29b5a040406bac6ef04f2a10bc2fe0628c35c6e44509f"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-required-scope.json",
+      "bytes": 4882,
+      "sha256": "482c714d621b1c80068f6e5d266e3f56e75f06d51a527140fb07c247eb880beb"
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/bakery-required-teardown.json",
+      "bytes": 693,
+      "sha256": "139fa4ff77ac2d6016ed6989f7e0b81c0c98544075531f71c79ef4a6f6b1e233"
     },
     {
       "file": "evidence/nerdy-demo-20260924/baseline.json",
@@ -46019,11 +46166,6 @@
       "sha256": "07a42a6a1e3485bad10fb1bd14dc5e1ede17c1c87fddb37a7f176bc6f228eef0"
     },
     {
-      "file": "public/audio/cast/clips/07c0815f7fcf4add3fbbf42f97ac6c38117e4dd69b7df62924ab0b380111c981.wav",
-      "bytes": 67752,
-      "sha256": "07c0815f7fcf4add3fbbf42f97ac6c38117e4dd69b7df62924ab0b380111c981"
-    },
-    {
       "file": "public/audio/cast/clips/07ef57922155c865efdecda78d5d3661e42305ca20cb975b6eeb5ac3fc417a1a.wav",
       "bytes": 368686,
       "sha256": "07ef57922155c865efdecda78d5d3661e42305ca20cb975b6eeb5ac3fc417a1a"
@@ -47004,11 +47146,6 @@
       "sha256": "10b3cde9763eda70ed2629ad31d77ead72cd8c31c8c7f26fa864c7a489764e9c"
     },
     {
-      "file": "public/audio/cast/clips/10b6b06f22bc5c6e3287a604fb6c871840c1fb6861ffd93012498e3e3aa6e237.wav",
-      "bytes": 770184,
-      "sha256": "10b6b06f22bc5c6e3287a604fb6c871840c1fb6861ffd93012498e3e3aa6e237"
-    },
-    {
       "file": "public/audio/cast/clips/10b9fe46bea7600bfc976b4adb26edb65582abad33fafcb0b965dd64d9b9b217.wav",
       "bytes": 291886,
       "sha256": "10b9fe46bea7600bfc976b4adb26edb65582abad33fafcb0b965dd64d9b9b217"
@@ -47077,11 +47214,6 @@
       "file": "public/audio/cast/clips/1157af8c54a7aa300196ecedf3d59ae366712b4b7ca6b0afd2eb8b73246f4b1e.wav",
       "bytes": 65244,
       "sha256": "1157af8c54a7aa300196ecedf3d59ae366712b4b7ca6b0afd2eb8b73246f4b1e"
-    },
-    {
-      "file": "public/audio/cast/clips/115c36cbafaef41dd129ba5a018c9b5866ca2c7f5e7082e74821099d7d7f93eb.wav",
-      "bytes": 215086,
-      "sha256": "115c36cbafaef41dd129ba5a018c9b5866ca2c7f5e7082e74821099d7d7f93eb"
     },
     {
       "file": "public/audio/cast/clips/11612a5efcedd51deb6e1a7d26113ac3265b30f687928637bb77c076df191a21.wav",
@@ -47534,9 +47666,9 @@
       "sha256": "14e2e10dbbdcd0dae5f56f362d92840747c0a9a6ab2fe1a3c009e777239613ce"
     },
     {
-      "file": "public/audio/cast/clips/14fdae3d277af29d0b00b0780c842096d18e510db4ae0679c29803da992f6b7f.wav",
-      "bytes": 115246,
-      "sha256": "14fdae3d277af29d0b00b0780c842096d18e510db4ae0679c29803da992f6b7f"
+      "file": "public/audio/cast/clips/15037ffe6acecb4e1c4b4b34129ed6ad22c60895bd7bcfb240b3e08913c7ee10.wav",
+      "bytes": 107566,
+      "sha256": "15037ffe6acecb4e1c4b4b34129ed6ad22c60895bd7bcfb240b3e08913c7ee10"
     },
     {
       "file": "public/audio/cast/clips/150435e25569984232db366fb4815bcbd56f6ac9d4df62603521153a95d3e50d.wav",
@@ -48342,11 +48474,6 @@
       "file": "public/audio/cast/clips/1d46f36708514c0073dbee3036ba04b51d8d0eaca5717bd1ff6dac11dd72b275.wav",
       "bytes": 230446,
       "sha256": "1d46f36708514c0073dbee3036ba04b51d8d0eaca5717bd1ff6dac11dd72b275"
-    },
-    {
-      "file": "public/audio/cast/clips/1d4fc5d5253bdddb5148fb94d11de3ccf1c928d8a69dff25d34237ab2ce1fc14.wav",
-      "bytes": 99886,
-      "sha256": "1d4fc5d5253bdddb5148fb94d11de3ccf1c928d8a69dff25d34237ab2ce1fc14"
     },
     {
       "file": "public/audio/cast/clips/1d5968b8b16468033fab66bf671ad433fb09d66037cfe7ba24cad2df9f62ee61.wav",
@@ -50969,11 +51096,6 @@
       "sha256": "34a3118b9f843a6a72cbb517b07e2609834834e49b92e3650f517edb7fd7da02"
     },
     {
-      "file": "public/audio/cast/clips/34a53e21d7c100bc435c5ac9b6c6f423bdfc16724d05811b23e75ffd59371abc.wav",
-      "bytes": 46126,
-      "sha256": "34a53e21d7c100bc435c5ac9b6c6f423bdfc16724d05811b23e75ffd59371abc"
-    },
-    {
       "file": "public/audio/cast/clips/34b1e27d23dc560d99efd7ab4837ca50fd57cd3a7158d8a0c969291d16385e48.wav",
       "bytes": 130606,
       "sha256": "34b1e27d23dc560d99efd7ab4837ca50fd57cd3a7158d8a0c969291d16385e48"
@@ -52509,11 +52631,6 @@
       "sha256": "438724be05eae49eda50bdc06cf935a9668dff054e5d32d229b290075dbe04bb"
     },
     {
-      "file": "public/audio/cast/clips/43984b4d1a49007a0e1fca7a62444a8dcded1b792cbfe4ed6c1872ba385b7bc1.wav",
-      "bytes": 169006,
-      "sha256": "43984b4d1a49007a0e1fca7a62444a8dcded1b792cbfe4ed6c1872ba385b7bc1"
-    },
-    {
       "file": "public/audio/cast/clips/43d4fe4c9b662000de537a883f5b80ab6e5630e43d7bfec216156e8a19de4eb5.wav",
       "bytes": 65244,
       "sha256": "43d4fe4c9b662000de537a883f5b80ab6e5630e43d7bfec216156e8a19de4eb5"
@@ -53057,11 +53174,6 @@
       "file": "public/audio/cast/clips/499de2ae712d93378229f58f7deee1788764e1ee08bc6349f9b0def1f7c4d5a2.wav",
       "bytes": 122926,
       "sha256": "499de2ae712d93378229f58f7deee1788764e1ee08bc6349f9b0def1f7c4d5a2"
-    },
-    {
-      "file": "public/audio/cast/clips/49a5667bd0c14136f3c282a14e0778bfa169614a8a0a5fc715189b859172b973.wav",
-      "bytes": 199726,
-      "sha256": "49a5667bd0c14136f3c282a14e0778bfa169614a8a0a5fc715189b859172b973"
     },
     {
       "file": "public/audio/cast/clips/49a6bfbf0937634de4bde5e643dfcb26ecc9fe1aac6a3d09268ea64403620472.wav",
@@ -55819,11 +55931,6 @@
       "sha256": "6132c064e55c152bcd8175ed0e156103f1156f1c01eaa8c32ec4c81730e60325"
     },
     {
-      "file": "public/audio/cast/clips/6138924fbdac8889b65d1f079f6d65da6a9d95c16854538df4e35098bdb94059.wav",
-      "bytes": 67752,
-      "sha256": "6138924fbdac8889b65d1f079f6d65da6a9d95c16854538df4e35098bdb94059"
-    },
-    {
       "file": "public/audio/cast/clips/613a725debe296e5162a8130a91555e0d518c9765dc70ea88f41d660049bf9a2.wav",
       "bytes": 107566,
       "sha256": "613a725debe296e5162a8130a91555e0d518c9765dc70ea88f41d660049bf9a2"
@@ -55967,11 +56074,6 @@
       "file": "public/audio/cast/clips/62aaed5d9bd59f1e3908befe98b3a01340df911bb3ca637496e50e0b1d3d741d.wav",
       "bytes": 199726,
       "sha256": "62aaed5d9bd59f1e3908befe98b3a01340df911bb3ca637496e50e0b1d3d741d"
-    },
-    {
-      "file": "public/audio/cast/clips/62acd4cd44baac094cc8d120ff8fe83ff82bc59cbba41b442c3a6a40bd020281.wav",
-      "bytes": 763416,
-      "sha256": "62acd4cd44baac094cc8d120ff8fe83ff82bc59cbba41b442c3a6a40bd020281"
     },
     {
       "file": "public/audio/cast/clips/62bcc75c52afb5ae2e478de35f0b7f4ceff1420665f66cbed39639c1c3e71af3.wav",
@@ -56554,11 +56656,6 @@
       "sha256": "689c032e259b1a2b92a6b02ee536f32792dd1e23d894f53ba06a06c431137405"
     },
     {
-      "file": "public/audio/cast/clips/689fad190ed7484f1d836f72a4c12e339a44eb27fca95ca4a54e8a7817a1a6cb.wav",
-      "bytes": 76844,
-      "sha256": "689fad190ed7484f1d836f72a4c12e339a44eb27fca95ca4a54e8a7817a1a6cb"
-    },
-    {
       "file": "public/audio/cast/clips/68ab2b090dc102c1bafe39111d270ebe47ece8a522f2ccd3cf6b25760b3f59c7.wav",
       "bytes": 230444,
       "sha256": "68ab2b090dc102c1bafe39111d270ebe47ece8a522f2ccd3cf6b25760b3f59c7"
@@ -57077,11 +57174,6 @@
       "file": "public/audio/cast/clips/6d68310be409965b9957653a7b393b1bbe00397c3309bc2c25000a1fc7765d91.wav",
       "bytes": 122926,
       "sha256": "6d68310be409965b9957653a7b393b1bbe00397c3309bc2c25000a1fc7765d91"
-    },
-    {
-      "file": "public/audio/cast/clips/6d7d831646faddd9d250bc7fcb3db935fea286dc545952770c350fc2a20288b5.wav",
-      "bytes": 84526,
-      "sha256": "6d7d831646faddd9d250bc7fcb3db935fea286dc545952770c350fc2a20288b5"
     },
     {
       "file": "public/audio/cast/clips/6d7e1c6723b7f12eab2211630349e6948d824979d97c76c50c2163eb69932a17.wav",
@@ -58464,11 +58556,6 @@
       "sha256": "7a6195243fcb4106def12fae22a2ac9cfda23f7b7d0b43de59631fc842a1a10b"
     },
     {
-      "file": "public/audio/cast/clips/7a67c9ffefcaf2aff030540940082640fa036480cbc15056a2558c0883b9f96c.wav",
-      "bytes": 314926,
-      "sha256": "7a67c9ffefcaf2aff030540940082640fa036480cbc15056a2558c0883b9f96c"
-    },
-    {
       "file": "public/audio/cast/clips/7a6f5b46e56ec9f69686ba320f05c00192ba265c4c72bf708ab56683ec655181.wav",
       "bytes": 299564,
       "sha256": "7a6f5b46e56ec9f69686ba320f05c00192ba265c4c72bf708ab56683ec655181"
@@ -59112,11 +59199,6 @@
       "file": "public/audio/cast/clips/80c12110bc7b66f3acf2afea9cae7fc4b06f6260d529476577511b53f35baf4f.wav",
       "bytes": 50198,
       "sha256": "80c12110bc7b66f3acf2afea9cae7fc4b06f6260d529476577511b53f35baf4f"
-    },
-    {
-      "file": "public/audio/cast/clips/80c182e9dfc5ff511ebbb1654e19b382ac489c32d3429241f1c9b43ee99c7217.wav",
-      "bytes": 222766,
-      "sha256": "80c182e9dfc5ff511ebbb1654e19b382ac489c32d3429241f1c9b43ee99c7217"
     },
     {
       "file": "public/audio/cast/clips/80d47db550223a50d1b9d3f9b97b47870e76d463b826a09704035c4e3fe5b80a.wav",
@@ -59947,11 +60029,6 @@
       "file": "public/audio/cast/clips/88c75fb8c4cad3c2c012eb13d599a161074cc20052230ddb4c168bc88ba1d4e2.wav",
       "bytes": 161326,
       "sha256": "88c75fb8c4cad3c2c012eb13d599a161074cc20052230ddb4c168bc88ba1d4e2"
-    },
-    {
-      "file": "public/audio/cast/clips/88c7cdf6d8e309ecd7a7c16cc68826f82e2f949cc87a5a4ef5ed17ed95f99fa1.wav",
-      "bytes": 261166,
-      "sha256": "88c7cdf6d8e309ecd7a7c16cc68826f82e2f949cc87a5a4ef5ed17ed95f99fa1"
     },
     {
       "file": "public/audio/cast/clips/88c9728086a572a90a495b412ffed27fef24a1d2e1acc2f6cf2f49bbeca0bfcf.wav",
@@ -61017,11 +61094,6 @@
       "file": "public/audio/cast/clips/92df3944e1638e181d0945f28698215fceede2130f2f0bf0958aadfda8a7f06e.wav",
       "bytes": 72768,
       "sha256": "92df3944e1638e181d0945f28698215fceede2130f2f0bf0958aadfda8a7f06e"
-    },
-    {
-      "file": "public/audio/cast/clips/92e07f7223af1264a9a7741311db41064ebc096f9fedd25d15eec30290a33f80.wav",
-      "bytes": 82798,
-      "sha256": "92e07f7223af1264a9a7741311db41064ebc096f9fedd25d15eec30290a33f80"
     },
     {
       "file": "public/audio/cast/clips/92e3da5ee1aefb498fb463334e3933ec095cfd3ddbf837f783e25f597e5a5b70.wav",
@@ -62324,11 +62396,6 @@
       "sha256": "9e1597852280ea34d2c7bf88a294b315f98fd8716739ab30bdfd3fd51d5baa4e"
     },
     {
-      "file": "public/audio/cast/clips/9e1b30234f84c956311768a1c7745da86a212d509a7dd1634169476fb6065164.wav",
-      "bytes": 238126,
-      "sha256": "9e1b30234f84c956311768a1c7745da86a212d509a7dd1634169476fb6065164"
-    },
-    {
       "file": "public/audio/cast/clips/9e2760bc4939af9b3873779e0579870e3da43d78fb6e2ec74b6a6551138bb229.wav",
       "bytes": 76846,
       "sha256": "9e2760bc4939af9b3873779e0579870e3da43d78fb6e2ec74b6a6551138bb229"
@@ -62597,11 +62664,6 @@
       "file": "public/audio/cast/clips/a096f0217b9a8f5c2f6d4ccb82841ed9eaea1f890809bc3ca4c272764ef4d390.wav",
       "bytes": 169006,
       "sha256": "a096f0217b9a8f5c2f6d4ccb82841ed9eaea1f890809bc3ca4c272764ef4d390"
-    },
-    {
-      "file": "public/audio/cast/clips/a0c0bdfdcc7e11791b00ec04dfd94e32e5ed2f1d07b09c9065eaf1490f7928dc.wav",
-      "bytes": 422446,
-      "sha256": "a0c0bdfdcc7e11791b00ec04dfd94e32e5ed2f1d07b09c9065eaf1490f7928dc"
     },
     {
       "file": "public/audio/cast/clips/a0c672fa711d8d068aef72bf0fef6d4ed71688b0c7e1218f814fb3b8fcbc5b67.wav",
@@ -64194,11 +64256,6 @@
       "sha256": "ae6dde63736bcedef4e27bf09bc917788866673140e17c6e3f6b7da9f239843d"
     },
     {
-      "file": "public/audio/cast/clips/ae70edd844a0085b93a9270a20cfdfe5abebe6650ffc091a148fd225b31fc0a0.wav",
-      "bytes": 50198,
-      "sha256": "ae70edd844a0085b93a9270a20cfdfe5abebe6650ffc091a148fd225b31fc0a0"
-    },
-    {
       "file": "public/audio/cast/clips/ae76e973272d0e9c62f088139fb42892a47be8c688e9173e9d21083906784e14.wav",
       "bytes": 50198,
       "sha256": "ae76e973272d0e9c62f088139fb42892a47be8c688e9173e9d21083906784e14"
@@ -64522,11 +64579,6 @@
       "file": "public/audio/cast/clips/b237d6fe1304f6e19bca86c1a56f9152bcd7d82ddd2c76a2c447d950d258a4ae.wav",
       "bytes": 192046,
       "sha256": "b237d6fe1304f6e19bca86c1a56f9152bcd7d82ddd2c76a2c447d950d258a4ae"
-    },
-    {
-      "file": "public/audio/cast/clips/b238995d3551697b6b62c78325c5a2ccbd19e201fc4176a1d8f4ca11fd58b077.wav",
-      "bytes": 161326,
-      "sha256": "b238995d3551697b6b62c78325c5a2ccbd19e201fc4176a1d8f4ca11fd58b077"
     },
     {
       "file": "public/audio/cast/clips/b23cba0bb82fa7cd59cb50aa317531394845afb7e3c9b4bae5378d96bf0055d7.wav",
@@ -65164,11 +65216,6 @@
       "sha256": "b8aada7c12476e058fb1d8560bab45c9c0f0438de727b422388d95033678ef64"
     },
     {
-      "file": "public/audio/cast/clips/b8ace4c0f7f7baf978eabfd70ae9a7fd1c90a54d7e26a818a50a28f8002ab2e1.wav",
-      "bytes": 102860,
-      "sha256": "b8ace4c0f7f7baf978eabfd70ae9a7fd1c90a54d7e26a818a50a28f8002ab2e1"
-    },
-    {
       "file": "public/audio/cast/clips/b8adf9c0753091f07ff18a6c5ce27639d0b2d65d23b397313917dd5372f8a2f3.wav",
       "bytes": 330286,
       "sha256": "b8adf9c0753091f07ff18a6c5ce27639d0b2d65d23b397313917dd5372f8a2f3"
@@ -65704,11 +65751,6 @@
       "sha256": "bd3a8b8de0cedaf2e03f324b530d7b55568ceb5c8dba485dde5955c0ae70ac85"
     },
     {
-      "file": "public/audio/cast/clips/bd40c18384db75b0834e301e23c044c7118a685a2520a578fca5f58fa05ec126.wav",
-      "bytes": 115246,
-      "sha256": "bd40c18384db75b0834e301e23c044c7118a685a2520a578fca5f58fa05ec126"
-    },
-    {
       "file": "public/audio/cast/clips/bd4b1b30d63c64f04f251caf6279f501f1f79ebe452b4c995366c88da2a1792b.wav",
       "bytes": 92830,
       "sha256": "bd4b1b30d63c64f04f251caf6279f501f1f79ebe452b4c995366c88da2a1792b"
@@ -65802,11 +65844,6 @@
       "file": "public/audio/cast/clips/be676e92990bb82120b2a99f9c51d9eb29287abf815fbf0512ada144b61a76c6.wav",
       "bytes": 222764,
       "sha256": "be676e92990bb82120b2a99f9c51d9eb29287abf815fbf0512ada144b61a76c6"
-    },
-    {
-      "file": "public/audio/cast/clips/be6843b02b81fb29a37d8325c9b2f21ffaa2d08210e1c4a733c088d1926e038e.wav",
-      "bytes": 153646,
-      "sha256": "be6843b02b81fb29a37d8325c9b2f21ffaa2d08210e1c4a733c088d1926e038e"
     },
     {
       "file": "public/audio/cast/clips/be73081e8ee8d1ac283c808e323a43592f1109691dd9b666dc4ce4d9beac6d3f.wav",
@@ -66102,11 +66139,6 @@
       "file": "public/audio/cast/clips/c0ba667ed2eaee743323c0fbe69ef1647cdc886bf2a5ad47c1387bf58e76f15e.wav",
       "bytes": 82798,
       "sha256": "c0ba667ed2eaee743323c0fbe69ef1647cdc886bf2a5ad47c1387bf58e76f15e"
-    },
-    {
-      "file": "public/audio/cast/clips/c0bc14061057140fecdf240cb667996016eaea0656ee5ca6a22d33c436012df4.wav",
-      "bytes": 169006,
-      "sha256": "c0bc14061057140fecdf240cb667996016eaea0656ee5ca6a22d33c436012df4"
     },
     {
       "file": "public/audio/cast/clips/c0c4d89aa0e33fb0e9923af9eaca031171a2d5f586a4125a299959255b7c96b0.wav",
@@ -67259,11 +67291,6 @@
       "sha256": "cb39ab8a682fec747c4722dbfec49eefba1a95e55154f751f25b9bd1d72c2fbf"
     },
     {
-      "file": "public/audio/cast/clips/cb3b4e8b103fd36edbd0d2da793d52e58b25826a8c7aa402eb2c90545d616b09.wav",
-      "bytes": 245806,
-      "sha256": "cb3b4e8b103fd36edbd0d2da793d52e58b25826a8c7aa402eb2c90545d616b09"
-    },
-    {
       "file": "public/audio/cast/clips/cb3e4a664d2794895a1971e426de19d5b6bb6b9062b272f58b1e125c52c0bd5b.wav",
       "bytes": 112892,
       "sha256": "cb3e4a664d2794895a1971e426de19d5b6bb6b9062b272f58b1e125c52c0bd5b"
@@ -67569,11 +67596,6 @@
       "sha256": "ce0c0a1e76f0bbfeb0cfd05922c259e13cba386497c6cafe59a573209ac415e2"
     },
     {
-      "file": "public/audio/cast/clips/ce0f6fde163cfa78ca1ad2ed6156e02372bed1ac57335059a09ab9248ab763f4.wav",
-      "bytes": 199726,
-      "sha256": "ce0f6fde163cfa78ca1ad2ed6156e02372bed1ac57335059a09ab9248ab763f4"
-    },
-    {
       "file": "public/audio/cast/clips/ce10d266685c5bbd22e3fb0b4122923cd4761efd8216eec1041c8bda6e737c93.wav",
       "bytes": 230446,
       "sha256": "ce10d266685c5bbd22e3fb0b4122923cd4761efd8216eec1041c8bda6e737c93"
@@ -67672,11 +67694,6 @@
       "file": "public/audio/cast/clips/cf46af161c72b4c036d62d7fbd17864df73819398bde40490f607efa112a9bf6.wav",
       "bytes": 107566,
       "sha256": "cf46af161c72b4c036d62d7fbd17864df73819398bde40490f607efa112a9bf6"
-    },
-    {
-      "file": "public/audio/cast/clips/cf7ceae50afc87b0cbc67f68008634a269f69e99fda4a017cfde8efa1544095e.wav",
-      "bytes": 65244,
-      "sha256": "cf7ceae50afc87b0cbc67f68008634a269f69e99fda4a017cfde8efa1544095e"
     },
     {
       "file": "public/audio/cast/clips/cf80d770fd2e3d5bb624857cc0d28897ccf060402ddaf570817460d771cb973e.wav",
@@ -68149,11 +68166,6 @@
       "sha256": "d4166970f421a53c6ebbd74f37ba6d41bbf3e6ba15d9e139f8b3b3d7ca181749"
     },
     {
-      "file": "public/audio/cast/clips/d441a6aa77bd28bbff5c38f09e24a3729c2d5c97059d4d5fd6da7407ec0e4575.wav",
-      "bytes": 222766,
-      "sha256": "d441a6aa77bd28bbff5c38f09e24a3729c2d5c97059d4d5fd6da7407ec0e4575"
-    },
-    {
       "file": "public/audio/cast/clips/d444ee4203c4111ec3c4e976686a669142566794b3f59058d2a7dcb289252978.wav",
       "bytes": 192046,
       "sha256": "d444ee4203c4111ec3c4e976686a669142566794b3f59058d2a7dcb289252978"
@@ -68287,11 +68299,6 @@
       "file": "public/audio/cast/clips/d5012cfe3fdc61340d1744e855fdab11828a6c67000ba3a9f6901a2cfed1861f.wav",
       "bytes": 314924,
       "sha256": "d5012cfe3fdc61340d1744e855fdab11828a6c67000ba3a9f6901a2cfed1861f"
-    },
-    {
-      "file": "public/audio/cast/clips/d50c3404d375058adfacee33580150490caebea3c0b76a86f68d632a9ef28232.wav",
-      "bytes": 453166,
-      "sha256": "d50c3404d375058adfacee33580150490caebea3c0b76a86f68d632a9ef28232"
     },
     {
       "file": "public/audio/cast/clips/d50c750dd9f80baa319c5d2a90ce2db589959f3d4e482fb79f426147fd2f21ab.wav",
@@ -70439,11 +70446,6 @@
       "sha256": "eaf183867c5681894f85a8b5d6602ae8b8f87c70d42d62427a3dfc2155c06397"
     },
     {
-      "file": "public/audio/cast/clips/eaf33148fdf27577353cec7d999a98060330cfbe29c820be6363ebd424f960ef.wav",
-      "bytes": 138286,
-      "sha256": "eaf33148fdf27577353cec7d999a98060330cfbe29c820be6363ebd424f960ef"
-    },
-    {
       "file": "public/audio/cast/clips/eaf3d0761a461aa0e69e5e4f224c3001f970291bd184d143be95de2bc8b87e7e.wav",
       "bytes": 82798,
       "sha256": "eaf3d0761a461aa0e69e5e4f224c3001f970291bd184d143be95de2bc8b87e7e"
@@ -71404,11 +71406,6 @@
       "sha256": "f307f177c4d3c5f44b4068587ff606098badb5cbe8da18ac0bd7cc2097a1fdca"
     },
     {
-      "file": "public/audio/cast/clips/f31f3e89d9a6f5325402b4cce12fa41f1f73d7cba3165e79e8c7dcc293a81331.wav",
-      "bytes": 138286,
-      "sha256": "f31f3e89d9a6f5325402b4cce12fa41f1f73d7cba3165e79e8c7dcc293a81331"
-    },
-    {
       "file": "public/audio/cast/clips/f339b0ddf137507b97a5b1ef627d113a1f1d4d8393e5f5913bb4a72d09f54ba3.wav",
       "bytes": 82798,
       "sha256": "f339b0ddf137507b97a5b1ef627d113a1f1d4d8393e5f5913bb4a72d09f54ba3"
@@ -71514,11 +71511,6 @@
       "sha256": "f4279101e6f468c79f0f6db05300726cef9607dc2491f8eb492fce6cd1a9669a"
     },
     {
-      "file": "public/audio/cast/clips/f42e9cb2d88561d2572a9ba08cbe2d0210831a364dafbad19f9a1c8f098d2e6d.wav",
-      "bytes": 887104,
-      "sha256": "f42e9cb2d88561d2572a9ba08cbe2d0210831a364dafbad19f9a1c8f098d2e6d"
-    },
-    {
       "file": "public/audio/cast/clips/f43c3498a8da92ea136fafd40384046b6d2573a9d35d6b17c42b23d08973a02c.wav",
       "bytes": 50198,
       "sha256": "f43c3498a8da92ea136fafd40384046b6d2573a9d35d6b17c42b23d08973a02c"
@@ -71597,11 +71589,6 @@
       "file": "public/audio/cast/clips/f507bcb317f1f535fb941d03d3effb30f3fc3bcfad3eb5e956e7a37b676e7e74.wav",
       "bytes": 138286,
       "sha256": "f507bcb317f1f535fb941d03d3effb30f3fc3bcfad3eb5e956e7a37b676e7e74"
-    },
-    {
-      "file": "public/audio/cast/clips/f5287cd7c4d2d3962fb8e7805c902ef4c8b2428ed6d25c2c8bf330bd82475d29.wav",
-      "bytes": 130606,
-      "sha256": "f5287cd7c4d2d3962fb8e7805c902ef4c8b2428ed6d25c2c8bf330bd82475d29"
     },
     {
       "file": "public/audio/cast/clips/f5307fb377f2146ba4e4535c4611dd818f320df0315d4ececab11df55f1aab38.wav",
@@ -71999,11 +71986,6 @@
       "sha256": "f83422c2f47fb31b185d28917317d1eca4da90ceec4267bebb76264ed68dbf63"
     },
     {
-      "file": "public/audio/cast/clips/f83ee309ac1356f4b7e98dd6f742f174a585a7907f878a41a22413ae7bb4714c.wav",
-      "bytes": 122926,
-      "sha256": "f83ee309ac1356f4b7e98dd6f742f174a585a7907f878a41a22413ae7bb4714c"
-    },
-    {
       "file": "public/audio/cast/clips/f846255830f4edcf23d5551f6e115293545c4275081ef6873aace1ba07c06a98.wav",
       "bytes": 77784,
       "sha256": "f846255830f4edcf23d5551f6e115293545c4275081ef6873aace1ba07c06a98"
@@ -72357,11 +72339,6 @@
       "file": "public/audio/cast/clips/fbb164f9926baef653ecbf59ac0ca7129382663aeffa18d87cc4d62ff1ae27f1.wav",
       "bytes": 82798,
       "sha256": "fbb164f9926baef653ecbf59ac0ca7129382663aeffa18d87cc4d62ff1ae27f1"
-    },
-    {
-      "file": "public/audio/cast/clips/fbb91ebe0fb9964807684159b299d136b0523f2224e1239ee8b9e77d25a7b63f.wav",
-      "bytes": 760366,
-      "sha256": "fbb91ebe0fb9964807684159b299d136b0523f2224e1239ee8b9e77d25a7b63f"
     },
     {
       "file": "public/audio/cast/clips/fbbd8ca3d4b0e1a8a541398f162292b95e81e0311c262ce0838737261ed6faa4.wav",
@@ -76345,8 +76322,8 @@
     },
     {
       "file": "public/audio/cast/manifest.json",
-      "bytes": 11805964,
-      "sha256": "1180c359c8259fa74683c6a6341eb10890a74becfbd29d04e4f1e5e23bc33751"
+      "bytes": 11735706,
+      "sha256": "7c7e31dddc59e04dd1d1097a7bbf7c042d9439b43a7b02e58b852d1090697fda"
     },
     {
       "file": "public/garden-recorder.js",
@@ -78285,8 +78262,8 @@
     },
     {
       "file": "scripts/prepare-cast-audio.mjs",
-      "bytes": 10397,
-      "sha256": "3d0c1259456080427d15336c61aae80d1b8c3156ae6b4bde318da6b16c158fe6"
+      "bytes": 10601,
+      "sha256": "13e355255846ecccf36dc6eec8cb0314046afbb59a54072df16dc5fb486e1f5e"
     },
     {
       "file": "scripts/prepare-checks.mjs",
@@ -78805,13 +78782,13 @@
     },
     {
       "file": "src/garden/BakeryControls.tsx",
-      "bytes": 5252,
-      "sha256": "6a1ccdfa336addf14aff4e75ef67d5853b28388fad991cde87f5772889317e19"
+      "bytes": 5698,
+      "sha256": "81aa211794d16b71496fbfdf073cf8897c8be68a0eceeb06c7aa66234d0e8161"
     },
     {
       "file": "src/garden/BakeryConversation.tsx",
-      "bytes": 8982,
-      "sha256": "f0559e422d4bc2d49165b5995b8da7ac1c6721caf768bf65809a70c431e9d6ea"
+      "bytes": 8786,
+      "sha256": "264caf559d27dbdb08e9f6276ea9183be3f649e82cf461fef18d80674fc9eee7"
     },
     {
       "file": "src/garden/BoatControls.tsx",
@@ -78865,13 +78842,13 @@
     },
     {
       "file": "src/garden/GardenApp.tsx",
-      "bytes": 57941,
-      "sha256": "12c7a6af1dca4f1a4903ac4ab6e1aff05eb9e29376cd699d01d23ac26b58d381"
+      "bytes": 57650,
+      "sha256": "3ee2d68bf79e62e944582966001c14ae36d138dd08e6ebe6de7a437a6fab6b30"
     },
     {
       "file": "src/garden/GardenScene.tsx",
-      "bytes": 103953,
-      "sha256": "53cb1ae7c14236bfe2f438a05999a697f9e84379a89384083f407f5020f3c83f"
+      "bytes": 111180,
+      "sha256": "1f6ce5e72f9051c9d748d0a737ac1d71d24353d4849a4c41f00cf3349f5b20dc"
     },
     {
       "file": "src/garden/GatheringPanels.tsx",
@@ -78880,8 +78857,8 @@
     },
     {
       "file": "src/garden/HandControls.tsx",
-      "bytes": 4069,
-      "sha256": "c32dc13c73a49961a0ab2841621b22e71320380da41c676c18a17b845394d850"
+      "bytes": 4382,
+      "sha256": "2897210f6aca15dd320a6ef0cdaf6a355b49641f7481d7145fe78cebb91ba417"
     },
     {
       "file": "src/garden/MaraMessage.tsx",
@@ -78915,8 +78892,8 @@
     },
     {
       "file": "src/garden/Reading.tsx",
-      "bytes": 7886,
-      "sha256": "f41f6129862ef1511e283990864a6bd91b2e077914221143bed53533c0ae1305"
+      "bytes": 7898,
+      "sha256": "f45ca69cc2b78d8aceef31c9bb3228e6d4b82727bba4213d9618cbd4f5373413"
     },
     {
       "file": "src/garden/ReadingDetails.tsx",
@@ -78960,8 +78937,8 @@
     },
     {
       "file": "src/garden/assets/actor.ts",
-      "bytes": 4788,
-      "sha256": "d361b81c57208807095f6b59b9edc5de0ee85a388b8703216578024f6ac60b3e"
+      "bytes": 5065,
+      "sha256": "aa1235e885cc060c09156de547814fb715aea86d573ade707463d07b89bed074"
     },
     {
       "file": "src/garden/assets/naturalBoundary.ts",
@@ -79055,8 +79032,8 @@
     },
     {
       "file": "src/garden/assets/reviewWorld.ts",
-      "bytes": 11288,
-      "sha256": "79ef488d5420f795c1cee0a32d955211d15d1222145bf32c39ec7c3a49a6db37"
+      "bytes": 11443,
+      "sha256": "c444035e2802f5d3edd79c819e013d4431123cfbdf42e7a8eacdda3646b81dae"
     },
     {
       "file": "src/garden/assets/runtimeFinish.ts",
@@ -79090,8 +79067,8 @@
     },
     {
       "file": "src/garden/assets/visualAsset.ts",
-      "bytes": 16802,
-      "sha256": "d77e2222c3e3e7d55489ef62f8b5e288d3fe5cf4f1ae3ab382d56892757e6141"
+      "bytes": 16994,
+      "sha256": "2fe111bec0db889950338ee03479e42f59bb5aa7cef98fc21fa60cb7595f1f0e"
     },
     {
       "file": "src/garden/assets/workQueue.ts",
@@ -79105,13 +79082,33 @@
     },
     {
       "file": "src/garden/bakery.ts",
-      "bytes": 10300,
-      "sha256": "95c25c8cf2d5af04e4faa8d69a3a7cebe56047e1b649ea48296d1168e66e17b6"
+      "bytes": 10571,
+      "sha256": "e181365a0b8177dfea2169061f81b5fb81ceb0c4f563ddd19e149d4772c36b3f"
+    },
+    {
+      "file": "src/garden/bakeryInteraction.ts",
+      "bytes": 4041,
+      "sha256": "6f409a9bbcf6a7cd15a53446c15881e3ea7cb7406f56eed0b409ec2b31250ce9"
+    },
+    {
+      "file": "src/garden/bakeryMotion.ts",
+      "bytes": 1623,
+      "sha256": "54399b51044d81da716cb1e4afbe4649906e397b688073d536ec26f546441147"
+    },
+    {
+      "file": "src/garden/bakeryTargets.ts",
+      "bytes": 4276,
+      "sha256": "39e4bc8abfb975e5f6398b8edded7a327298d15c3763c462c8dfb7ba69b306f3"
+    },
+    {
+      "file": "src/garden/bakeryWeather.ts",
+      "bytes": 4547,
+      "sha256": "09c29f6952417b357fb863648f14e681d6719921c881ba7359eca979e1c0e3fd"
     },
     {
       "file": "src/garden/bakeryWorld.ts",
-      "bytes": 22705,
-      "sha256": "3f60fd1f5b5d6eec2e4dc02fe55518a898ef4efb86db8ad5bd9d9fb3752b9ceb"
+      "bytes": 23017,
+      "sha256": "b7f03918a544125b44ba405a00bc771bf1b9a1ec7ad20bb8ab26129a54dd3c0f"
     },
     {
       "file": "src/garden/bridgeConstruction.ts",
@@ -79200,8 +79197,8 @@
     },
     {
       "file": "src/garden/garden.css",
-      "bytes": 56480,
-      "sha256": "2da60c2fede965312e2e2830643dbd97fb2fcc5ec0a6150c570258b1886b1f55"
+      "bytes": 57030,
+      "sha256": "c194a7ada3b38758128f8c9dd477f57deff8d5b90de865150b8da901312f8319"
     },
     {
       "file": "src/garden/gathering.ts",
@@ -79225,8 +79222,8 @@
     },
     {
       "file": "src/garden/hands.ts",
-      "bytes": 20522,
-      "sha256": "cbcf360c7ad9d76bf149fb5d3fbcd250cb2707824fc238b1fe632669591e86b3"
+      "bytes": 20270,
+      "sha256": "56a49f110e94c7dbeb9a1465f9ac893b6b2a7b87051a264e67948314161a5b70"
     },
     {
       "file": "src/garden/interaction.ts",
@@ -79285,8 +79282,8 @@
     },
     {
       "file": "src/garden/model.ts",
-      "bytes": 57261,
-      "sha256": "99ef515737d4efc294544336b8acc535785d9f5e87b2e6a33e580c6c65551da7"
+      "bytes": 57322,
+      "sha256": "be4a30596edbcb8fb0b07a8fe75863aed7e3b84c1727580e8441b5570056763d"
     },
     {
       "file": "src/garden/narrativeDialogue.ts",
@@ -79390,8 +79387,8 @@
     },
     {
       "file": "src/garden/worldLayout.ts",
-      "bytes": 26646,
-      "sha256": "f724b75ab8fdf7d7b8b9956c9319a3df042dcc441db31d4cac57fe4b0b5a915e"
+      "bytes": 27721,
+      "sha256": "824a82642ab0db14fe8d22e7c99db8c18cdd10abe9ccf914243f14b778989dbd"
     },
     {
       "file": "src/main.tsx",

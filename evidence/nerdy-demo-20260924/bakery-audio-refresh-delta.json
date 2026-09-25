@@ -1,0 +1,181 @@
+{
+  "at": "2026-09-25T14:11:05.923Z",
+  "scope": "Offline source catalogue refresh during the interim broad run. The compiled client is unchanged. Synthetic speech fixtures in later cases read the source catalogue; all 6009 common entries remain exactly identical. Final native checks use the rebuilt 6037-entry candidate.",
+  "compiledFile": "dist/personal-review-client/audio/cast/manifest.json",
+  "compiledSha256": "d9a0573ef0beead0560bb144b6242604d6605228f74b2f35769685661f3371b3",
+  "sourceFile": "public/audio/cast/manifest.json",
+  "sourceSha256": "7c7e31dddc59e04dd1d1097a7bbf7c042d9439b43a7b02e58b852d1090697fda",
+  "compiledEntries": 6009,
+  "sourceEntries": 6037,
+  "changedCommonEntries": [],
+  "added": [
+    {
+      "id": "0dae0d3b1648fdd98c1c96a4f38ae2c67e9ac6842bafdd0b48cf30eb7ea43e3e",
+      "text": "Escape cancels.",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/15037ffe6acecb4e1c4b4b34129ed6ad22c60895bd7bcfb240b3e08913c7ee10.wav"
+    },
+    {
+      "id": "0e59e99486405fda9a44f8917c520fdc5cd9d1249c30f90f5baad16d355bd80c",
+      "text": "R",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/812eba054e93be05cad9ade32d0b6cd1b6e050ea91ce544fb5bff61b538df935.wav"
+    },
+    {
+      "id": "1fc19cf9714f380f70e1a339226b518b2eae0eefd2beb9b7d25899e69ffe97f9",
+      "text": "Move held object nearer",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/d086fc4ff1c5ba9bb32028fab0e7ccc91939a3cc9497a9d31b179ae36466fcc5.wav"
+    },
+    {
+      "id": "2b90bcba2bfaf8fb43d2bad2214c302c839cba77ddd9233e6c169d6b1a43b369",
+      "text": "Release object",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/f0935d0a186522ddd020e14bcc0a8d4366bdb4e94c5660d0da8d6f73b662085e.wav"
+    },
+    {
+      "id": "2f9da9647f1b4e1da7daa0546cf89efc8a997c9bd04fa2b302caa2cc44f09f6c",
+      "text": "Choose an object and its destination, or move it with the arrow keys. Hold Shift for smaller moves. Q and R turn it. Enter releases it. Escape cancels.",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/8ed899ce3dde0c7bc9694e9771d056a7ba78f2bc717da7dfc772b1f82b6bfc47.wav"
+    },
+    {
+      "id": "3d180bf965eb11cf5731eec5247c7fe62dfe88f182078594f5df3f240b9f1e31",
+      "text": "releases",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/3b9bc0cb333f17329d60a7d6cd1835d961359791e6f06ef9ee51d8cc5057eac7.wav"
+    },
+    {
+      "id": "4c2a1bdfabb79ff52ee408d6d49855ef1d4943ad051ae76be07d2ce32f47df88",
+      "text": "Handle",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/d02fd077cfa80023a4d949aa8403f0d299e42ad0dfaa4efc2c38b4247503572b.wav"
+    },
+    {
+      "id": "4db8e9b72d04359a4cf002a92b5fe37a7de015d139e7004860a9c7310dcd2e81",
+      "text": "Keyboard and precise controls",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/087061eb4811db7612c41498767b336e5f432e3be90d181c97884b43f035a6e7.wav"
+    },
+    {
+      "id": "4fe856c365eb4800bbad10792d4120e49a10587c85ee2c61f6ee64548b03d611",
+      "text": "Click a deck or the ground to walk.",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/b9eeb29b54767e02f9f9962dcc7c014d7f8035fe765e5822d295ed090ade0c2d.wav"
+    },
+    {
+      "id": "5f76eecf39b2b30cd39cdecbe2d130fb26d963819df65b7e1d599946fcf19f2f",
+      "text": "Turn left",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/5f664f1dcef31654c41a5d308a1ed3ef7aa8acec0e4ad9de8390d645066e839f.wav"
+    },
+    {
+      "id": "62f85af6a11c428750a03b8011e4e588e26c5df251f5bbb5f77d434ca143abbc",
+      "text": "You can leave a repair unfinished.",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/297a419ee52d83d417ee307bf86d1ef78910583658f0edbfb533040e829674b5.wav"
+    },
+    {
+      "id": "7cad2f02b5f19b0ea4d8035be3467adc14b227dff4bf34ae8c23250114942ac4",
+      "text": "Move held object",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/e60b0eb78916ce3b4bf67fa304f4df431369a7ffe1c5a1f7bfce5359c8924d80.wav"
+    },
+    {
+      "id": "8047e63e08370bfce3b2d38268ebc5959be29172846ff7b10e0579014502e259",
+      "text": "Cancel gesture",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/2e91524212eceed53997f6029ae4c7e75c98419f15ae70e8d951171665fbf5d9.wav"
+    },
+    {
+      "id": "866e0da871419b54da5b557d5c8f2bc0292286f457971a32ebce05c85a7e469f",
+      "text": "destination",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/e5c3be6d5a3deba97980fa4d48f11139ac48f0b756dc3105f44d87d2ba8ec235.wav"
+    },
+    {
+      "id": "89e2e34bd81dd7417410e54fd0c82723e5cb3068315cf9e4908e9a503915438c",
+      "text": "Q and R turn it.",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/287b3ba66ffebc9b72af8015eb228c8a9c158a54e230e7d40a3918d536ed5972.wav"
+    },
+    {
+      "id": "8e72fb1de75cfaa3aeaafb75550e8e6a393db0b043360e3f1b4e3ee4f7b14ece",
+      "text": "nearer",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/61953b9ba04d91975a0febaaa0a513d81e63e2929318853ccae5c9cc1c1f422f.wav"
+    },
+    {
+      "id": "9791f26ba945e34d58cb100e9e0320f4090029a99d165f67d041aca77397a7d9",
+      "text": "Enter releases it.",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/2bc73ed0c7e45634d9fe57feb82214561317cf105604c0b272b95493eabd96d1.wav"
+    },
+    {
+      "id": "9b05105fac368adf4cbf0a53f03b082940e121b709007bd25d38b98699343faa",
+      "text": "Place held bridge material",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/63e8d9785d6237970716fa65efbc3a9e540f7a6739f51c067930419eb6466103.wav"
+    },
+    {
+      "id": "9cf20e1976b238af46028e2cf36ee8c062c82ba3aee45b72d74c7b88f982f04a",
+      "text": "Q",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/50fbed5607b40f5de42c2a49b974eb046d76ce78683af6b831b8494ddd3780cd.wav"
+    },
+    {
+      "id": "9f95f76aa8aa25f880f7baa0d841484cc5662199519b6a5acc0715f5b125f7ff",
+      "text": "Drag an object, then release to place it. Click a deck or the ground to walk. You can leave a repair unfinished.",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/da9bef44fb64a584082b4d36f0c422d96e14c9ef6b48f7a726c9cbec873f8384.wav"
+    },
+    {
+      "id": "b527ec3586898851d40a1a39b1fe8638aa1cf914065b4d32de7d8f91936effe5",
+      "text": "Handle nearby objects",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/a7a979bf874ff81e6faa5c576449c34aa76982a2957d14487008b9b20112c117.wav"
+    },
+    {
+      "id": "c2b55729bef35990477d7692fed3e53a617ccbb6f983f30ae878672b6b3c7d4b",
+      "text": "Turn right",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/47224e774b8858e660c26460d5c84424f36516b48dc199a566ec7d50641c78ef.wav"
+    },
+    {
+      "id": "c452780db22d5221c9f763f404073be2340940f1a6e0e9b25cde20765820b400",
+      "text": "Move held object right",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/39b85e6441987a86899e63c9d44c21c90a34cb1d27310d3e8f73a590b12aeada.wav"
+    },
+    {
+      "id": "d64a1a2d488651834ec3a40cf5eb9df7280f077fd3e7efe626899853fd203d9a",
+      "text": "Move held object left",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/472e0a8cfbbe08c9dd043834a26b674de1c8f1d7e212e9cb5c09c2d99f91f669.wav"
+    },
+    {
+      "id": "d988e7b593a86f680afca3f2ba72f9403c93a704fe3e804bd34f496a252f066e",
+      "text": "Drag an object, then release to place it.",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/717190d2ed248f5789ff27a9a6d6dfa2906cee5fa3982141aef492a7a2de2487.wav"
+    },
+    {
+      "id": "d9b991ee555d6285aeecf48044b8368f9d896369469797cd8bc20b35436b68d7",
+      "text": "Move held object away",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/bf86f02155ebe3841bbd04f7ff3c2dd9f0a5c2e4e6794d418596e55aa78175bc.wav"
+    },
+    {
+      "id": "e30a9a568ad41b00398c86151e513119b005daaa93e2c2ec3356ef9710148e7e",
+      "text": "Hold Shift for smaller moves.",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/041ecb10fd0296dba31628b45c1da51b4e704c8efb2a5aacf3d8ac1a171b4a72.wav"
+    },
+    {
+      "id": "fb74b137c0e6c6dafe94660715709bae319d52f04df9c3b41a5764e52a3d2bab",
+      "text": "Choose an object and its destination, or move it with the arrow keys.",
+      "speaker": "narrator",
+      "clip": "/audio/cast/clips/d14c42aa60f9d19c39eddb0bb78469b37a96d91b488e863c317053a00f261879.wav"
+    }
+  ]
+}

@@ -1,0 +1,481 @@
+{
+  "at": "2026-09-25T17:43:57.532Z",
+  "scope": "Ordinary fresh UI journey. Native approved recorded audio; explicit captions for unpublished player words. No synthetic audio or state injection. Core fallback captures the rendered game sound and screen; no microphone audio.",
+  "candidate": {
+    "inputSha256": "11d95109a8553db747568400d91d1a9f6629d80e0ef00b69dcba48621ec0562f",
+    "outputSha256": "405958761d185b579144cd04905c1f2024f16d57a1b3fc4d296a125f431c542f"
+  },
+  "feedbackMode": "explicitly-labeled-replay-of-verified-live-response",
+  "liveProviderRequests": 0,
+  "recordedFeedbackReplays": 1,
+  "originalRequestId": "80f68546-dc86-4a00-84c6-9c3d7965a3b2",
+  "viewport": {
+    "width": 1366,
+    "height": 768
+  },
+  "durationMs": 1448348,
+  "coreDurationMs": 720348,
+  "cues": [
+    {
+      "name": "fresh-opening",
+      "ms": 18
+    },
+    {
+      "name": "planting",
+      "ms": 26125
+    },
+    {
+      "name": "core-bakery-begins",
+      "ms": 40634
+    },
+    {
+      "name": "roof",
+      "ms": 235491
+    },
+    {
+      "name": "dough",
+      "ms": 310968
+    },
+    {
+      "name": "handoff",
+      "ms": 425780
+    },
+    {
+      "name": "writing",
+      "ms": 490860
+    },
+    {
+      "name": "source-viewed: His draft",
+      "ms": 495452
+    },
+    {
+      "name": "source-viewed: What happened next",
+      "ms": 496699
+    },
+    {
+      "name": "live-feedback",
+      "ms": 640683
+    },
+    {
+      "name": "ending-preview",
+      "ms": 672229
+    },
+    {
+      "name": "core-ending-confirmed",
+      "ms": 760982
+    },
+    {
+      "name": "gathering",
+      "ms": 871820
+    },
+    {
+      "name": "story-turn-1-begins",
+      "ms": 882883
+    },
+    {
+      "name": "story-turn-1-complete",
+      "ms": 892766
+    },
+    {
+      "name": "story-turn-2-begins",
+      "ms": 910144
+    },
+    {
+      "name": "story-turn-2-complete",
+      "ms": 1030768
+    },
+    {
+      "name": "story-turn-3-begins",
+      "ms": 1030903
+    },
+    {
+      "name": "story-turn-3-complete",
+      "ms": 1145145
+    },
+    {
+      "name": "story-turn-4-begins",
+      "ms": 1145192
+    },
+    {
+      "name": "story-turn-4-complete",
+      "ms": 1171973
+    },
+    {
+      "name": "story-turn-5-begins",
+      "ms": 1203174
+    },
+    {
+      "name": "story-turn-5-complete",
+      "ms": 1355368
+    },
+    {
+      "name": "story-turn-6-begins",
+      "ms": 1357898
+    },
+    {
+      "name": "story-turn-6-complete",
+      "ms": 1368608
+    },
+    {
+      "name": "copy-handed-to-pip",
+      "ms": 1369968
+    },
+    {
+      "name": "story-turn-7-begins",
+      "ms": 1387855
+    },
+    {
+      "name": "story-turn-7-complete",
+      "ms": 1399886
+    },
+    {
+      "name": "finale",
+      "ms": 1399933
+    },
+    {
+      "name": "complete",
+      "ms": 1447471
+    }
+  ],
+  "measurements": [
+    {
+      "name": "planting",
+      "metrics": {
+        "diagnostic": "normal",
+        "frames": 1170,
+        "gpuElapsed": {
+          "available": false,
+          "status": "PROFILING_DISABLED"
+        },
+        "cadenceRoom": "village",
+        "cadenceStartedAt": 529.9000000022352,
+        "cadenceFrameStart": 0,
+        "framesSinceCadenceStart": 1170,
+        "drawCalls": 179,
+        "triangles": 3873696,
+        "geometries": 243,
+        "textures": 75,
+        "activeSamples": 600,
+        "median": 16.700000000000728,
+        "p95": 16.799999999999272,
+        "p99": 33.29999999999927,
+        "cadenceSampleCount": 600,
+        "cadenceWindowLimit": 600,
+        "cadenceKind": "active",
+        "stallCounts": {
+          "over50ms": 3,
+          "over100ms": 1,
+          "over250ms": 0
+        },
+        "lastRenderMs": 2.800000000745058,
+        "frameCpuMs": 8.399999998509884,
+        "dpr": 1,
+        "width": 1366,
+        "height": 545,
+        "geometryCpuBytes": 6889640,
+        "local": {
+          "geometryBytes": 6921672,
+          "textureBytes": 181405552,
+          "decodedBytes": 188327224
+        },
+        "imported": {
+          "geometryBytes": 20243028,
+          "textureBytes": 1196776210,
+          "animationBytes": 9601060,
+          "skeletonBytes": 44416,
+          "decodedBytes": 1226664714,
+          "sources": 39
+        },
+        "scenery": {
+          "placements": 137,
+          "loaded": 76,
+          "pending": 0,
+          "instanceBytes": 25600,
+          "cullingCpuBytes": 0,
+          "instanceAllocationBytes": 51200,
+          "visibleGrassInstances": 0,
+          "retiredMeshes": 206,
+          "visibleRetiredMeshes": 0
+        },
+        "instanceAllocationBytes": 51200,
+        "decodedSceneBytes": 1431652506,
+        "decodedCacheBytes": 1493638244,
+        "encodedCacheBytes": 11845985,
+        "canvasColorBytes": 2977880,
+        "shadowDepthAllocationBytes": 9437184,
+        "sectionTextureBytes": 131072,
+        "gpuTotalMemory": "NOT_MEASURABLE",
+        "allocationScope": "Decoded local/imported assets including animation/skeletons and CPU/GPU instance matrices; scene adds color backing, shadow and 4 MiB reserve; cache adds two encoded copies, four backings and 32 MiB reserve. Browser/driver total is not measurable",
+        "adapter": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      }
+    },
+    {
+      "name": "roof",
+      "metrics": {
+        "diagnostic": "normal",
+        "frames": 3150,
+        "gpuElapsed": {
+          "available": false,
+          "status": "PROFILING_DISABLED"
+        },
+        "cadenceRoom": "village",
+        "cadenceStartedAt": 529.9000000022352,
+        "cadenceFrameStart": 0,
+        "framesSinceCadenceStart": 3150,
+        "drawCalls": 85,
+        "triangles": 2638849,
+        "geometries": 255,
+        "textures": 42,
+        "activeSamples": 600,
+        "median": 16.699999999982538,
+        "p95": 16.79999999998836,
+        "p99": 16.800000000017462,
+        "cadenceSampleCount": 600,
+        "cadenceWindowLimit": 600,
+        "cadenceKind": "active",
+        "stallCounts": {
+          "over50ms": 0,
+          "over100ms": 0,
+          "over250ms": 0
+        },
+        "lastRenderMs": 1.5,
+        "frameCpuMs": 5.300000000745058,
+        "dpr": 1,
+        "width": 1366,
+        "height": 545,
+        "geometryCpuBytes": 6889640,
+        "local": {
+          "geometryBytes": 6921672,
+          "textureBytes": 180967695,
+          "decodedBytes": 187889367
+        },
+        "imported": {
+          "geometryBytes": 14180770,
+          "textureBytes": 631942736,
+          "animationBytes": 4891664,
+          "skeletonBytes": 20160,
+          "decodedBytes": 651035330,
+          "sources": 23
+        },
+        "scenery": {
+          "placements": 137,
+          "loaded": 58,
+          "pending": 0,
+          "instanceBytes": 25600,
+          "cullingCpuBytes": 0,
+          "instanceAllocationBytes": 51200,
+          "visibleGrassInstances": 0,
+          "retiredMeshes": 206,
+          "visibleRetiredMeshes": 0
+        },
+        "instanceAllocationBytes": 51200,
+        "decodedSceneBytes": 855585265,
+        "decodedCacheBytes": 918227161,
+        "encodedCacheBytes": 12174064,
+        "canvasColorBytes": 2977880,
+        "shadowDepthAllocationBytes": 9437184,
+        "sectionTextureBytes": 131072,
+        "gpuTotalMemory": "NOT_MEASURABLE",
+        "allocationScope": "Decoded local/imported assets including animation/skeletons and CPU/GPU instance matrices; scene adds color backing, shadow and 4 MiB reserve; cache adds two encoded copies, four backings and 32 MiB reserve. Browser/driver total is not measurable",
+        "adapter": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      }
+    },
+    {
+      "name": "dough",
+      "metrics": {
+        "diagnostic": "normal",
+        "frames": 5820,
+        "gpuElapsed": {
+          "available": false,
+          "status": "PROFILING_DISABLED"
+        },
+        "cadenceRoom": "village",
+        "cadenceStartedAt": 529.9000000022352,
+        "cadenceFrameStart": 0,
+        "framesSinceCadenceStart": 5820,
+        "drawCalls": 72,
+        "triangles": 2037032,
+        "geometries": 245,
+        "textures": 36,
+        "activeSamples": 600,
+        "median": 16.70000000001164,
+        "p95": 16.79999999998836,
+        "p99": 16.800000000046566,
+        "cadenceSampleCount": 600,
+        "cadenceWindowLimit": 600,
+        "cadenceKind": "active",
+        "stallCounts": {
+          "over50ms": 0,
+          "over100ms": 0,
+          "over250ms": 0
+        },
+        "lastRenderMs": 1.7999999970197678,
+        "frameCpuMs": 4.799999997019768,
+        "dpr": 1,
+        "width": 1366,
+        "height": 545,
+        "geometryCpuBytes": 6889640,
+        "local": {
+          "geometryBytes": 6921672,
+          "textureBytes": 180967695,
+          "decodedBytes": 187889367
+        },
+        "imported": {
+          "geometryBytes": 9746330,
+          "textureBytes": 480947552,
+          "animationBytes": 3112188,
+          "skeletonBytes": 13440,
+          "decodedBytes": 493819510,
+          "sources": 19
+        },
+        "scenery": {
+          "placements": 137,
+          "loaded": 56,
+          "pending": 0,
+          "instanceBytes": 25600,
+          "cullingCpuBytes": 0,
+          "instanceAllocationBytes": 51200,
+          "visibleGrassInstances": 0,
+          "retiredMeshes": 206,
+          "visibleRetiredMeshes": 0
+        },
+        "instanceAllocationBytes": 51200,
+        "decodedSceneBytes": 698369445,
+        "decodedCacheBytes": 759875581,
+        "encodedCacheBytes": 11606184,
+        "canvasColorBytes": 2977880,
+        "shadowDepthAllocationBytes": 9437184,
+        "sectionTextureBytes": 131072,
+        "gpuTotalMemory": "NOT_MEASURABLE",
+        "allocationScope": "Decoded local/imported assets including animation/skeletons and CPU/GPU instance matrices; scene adds color backing, shadow and 4 MiB reserve; cache adds two encoded copies, four backings and 32 MiB reserve. Browser/driver total is not measurable",
+        "adapter": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      }
+    },
+    {
+      "name": "handoff",
+      "metrics": {
+        "diagnostic": "normal",
+        "frames": 10260,
+        "gpuElapsed": {
+          "available": false,
+          "status": "PROFILING_DISABLED"
+        },
+        "cadenceRoom": "village",
+        "cadenceStartedAt": 529.9000000022352,
+        "cadenceFrameStart": 0,
+        "framesSinceCadenceStart": 10260,
+        "drawCalls": 61,
+        "triangles": 2120220,
+        "geometries": 295,
+        "textures": 44,
+        "activeSamples": 600,
+        "median": 16.70000000001164,
+        "p95": 16.79999999998836,
+        "p99": 16.800000000046566,
+        "cadenceSampleCount": 600,
+        "cadenceWindowLimit": 600,
+        "cadenceKind": "active",
+        "stallCounts": {
+          "over50ms": 0,
+          "over100ms": 0,
+          "over250ms": 0
+        },
+        "lastRenderMs": 1.300000000745058,
+        "frameCpuMs": 4.899999998509884,
+        "dpr": 1,
+        "width": 1366,
+        "height": 545,
+        "geometryCpuBytes": 6889640,
+        "local": {
+          "geometryBytes": 6921672,
+          "textureBytes": 180967695,
+          "decodedBytes": 187889367
+        },
+        "imported": {
+          "geometryBytes": 12943290,
+          "textureBytes": 564833792,
+          "animationBytes": 4891664,
+          "skeletonBytes": 20160,
+          "decodedBytes": 582688906,
+          "sources": 20
+        },
+        "scenery": {
+          "placements": 137,
+          "loaded": 53,
+          "pending": 0,
+          "instanceBytes": 25600,
+          "cullingCpuBytes": 0,
+          "instanceAllocationBytes": 51200,
+          "visibleGrassInstances": 0,
+          "retiredMeshes": 206,
+          "visibleRetiredMeshes": 0
+        },
+        "instanceAllocationBytes": 51200,
+        "decodedSceneBytes": 787238841,
+        "decodedCacheBytes": 849312467,
+        "encodedCacheBytes": 11889929,
+        "canvasColorBytes": 2977880,
+        "shadowDepthAllocationBytes": 9437184,
+        "sectionTextureBytes": 131072,
+        "gpuTotalMemory": "NOT_MEASURABLE",
+        "allocationScope": "Decoded local/imported assets including animation/skeletons and CPU/GPU instance matrices; scene adds color backing, shadow and 4 MiB reserve; cache adds two encoded copies, four backings and 32 MiB reserve. Browser/driver total is not measurable",
+        "adapter": "ANGLE (NVIDIA, NVIDIA GeForce RTX 3070 Ti (0x00002482) Direct3D11 vs_5_0 ps_5_0, D3D11)"
+      }
+    }
+  ],
+  "measurementLimits": "DOM renderer metrics during native rehearsal with capture active. RAF proxies and conservative allocations; not quiet-system or physical-display qualification.",
+  "captionChoices": [
+    "Listen to my words as Sol"
+  ],
+  "feedbackPosts": [],
+  "pageErrors": [],
+  "capture": {
+    "video": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\nerdy-demo-rehearsal-bakery-r1\\raw\\nerdy-demo-rehearsal-Nerdy-fdd9e--ending-and-complete-finale-chromium\\demo-core-video.webm",
+    "videoStartedAt": 1790356829818,
+    "audioStartedAt": 1790356829932,
+    "audio": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\nerdy-demo-rehearsal-bakery-r1\\raw\\nerdy-demo-rehearsal-Nerdy-fdd9e--ending-and-complete-finale-chromium\\demo-core-audio.webm",
+    "startedAt": 1790356829932,
+    "stoppedAt": 1790357552170,
+    "peak": 0.790124237537384,
+    "plays": 10
+  },
+  "pacedCore": true,
+  "presenterPauses": [
+    {
+      "name": "premise, reading and oral practice",
+      "targetSeconds": 180,
+      "durationMs": 106359
+    },
+    {
+      "name": "roof consequence",
+      "targetSeconds": 240,
+      "durationMs": 45138
+    },
+    {
+      "name": "preparing the promised bread",
+      "targetSeconds": 330,
+      "durationMs": 59662
+    },
+    {
+      "name": "the thank-you visit",
+      "targetSeconds": 450,
+      "durationMs": 64851
+    },
+    {
+      "name": "writing from the witnessed events",
+      "targetSeconds": 600,
+      "durationMs": 143883
+    },
+    {
+      "name": "review the recorded feedback",
+      "targetSeconds": 630,
+      "durationMs": 23231
+    },
+    {
+      "name": "preview and confirm the ending",
+      "targetSeconds": 720,
+      "durationMs": 81810
+    }
+  ],
+  "pacingScope": "Measured 12-minute run-of-show with presenter pauses; no presenter voice was recorded."
+}

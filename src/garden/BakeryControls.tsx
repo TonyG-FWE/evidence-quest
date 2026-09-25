@@ -1,11 +1,12 @@
 import type {GardenState,GardenStore,Point} from './model.js';
 import {anchors} from './worldLayout.js';
 import {BAKERY_APPROACH,BAKERY_SOL,TILE_SHELF,TILE_APPROACH,WORKSHOP_DOOR,bakeryInstruction,near,type BakeryStep} from './bakery.js';
-export function BakeryActions({s,store}:{s:GardenState;store:GardenStore}){
+export function BakeryActions({s,store,physical=false}:{s:GardenState;store:GardenStore;physical?:boolean}){
  const c=s.chapter,b=c.bakery,busy=!!s.action||s.background||s.viewLost;
  const step=(step:BakeryStep)=>store.send({type:'BAKERY_STEP',step});
  const go=(point:Point,target:string)=>store.send({type:'GO',point,target});
  const talk=()=>store.send({type:'TALK',who:'rina'});
+ if(!physical)return <div className="g-bakery-current">{s.mode==='bakery-repair'?<button className="g-secondary" disabled={busy} onClick={()=>step('BACK')}>Back to Pip</button>:<button className="g-secondary" disabled={busy} onClick={()=>b.stage==='done'?store.send({type:'TALK',who:'sol'}):talk()}>{b.stage==='done'?'Talk to Sol':'Talk to Rina'}</button>}</div>;
  return <div className="g-bakery-current">
   {b.stage==='arrival'&&<button className="g-primary" disabled={busy} onClick={talk}>Talk to Rina</button>}
   {b.stage==='needed'&&(near(c.pip,TILE_SHELF)?<button className="g-primary" disabled={busy} onClick={()=>step('PICKUP')}>Take the spare tile</button>:<button className="g-primary" disabled={busy} onClick={()=>go(TILE_APPROACH,'Rina’s tile shelf')}>Go to the tile shelf</button>)}
@@ -26,6 +27,7 @@ export function BakeryControls({s,store}:{s:GardenState;store:GardenStore}){
  return <aside className="garden-bakery-controls" aria-label="Help at Rina’s bakery" tabIndex={-1}>
   <p className="g-kicker">{s.mode==='bakery-repair'?'DIRECT SOL’S REPAIR':'PIP’S VISIT TODAY'}</p><h2>{b.stage==='escorting'?'Walk with Rina':'Rina’s bakery'}</h2><p>{bakeryInstruction(s)}</p>
   <div className="g-bakery-actions">
+   <BakeryActions s={s} store={store} physical/>
    {b.stage==='mixed'&&near(c.pip,b.rina,1.65)&&<button className="g-alternative" disabled={busy} onClick={()=>store.send({type:'BAKERY_STEP',step:'BAKE_UNSHAPED'})}>Try baking the whole lump</button>}
    {b.met&&b.stage!=='arrival'&&s.mode==='walk'&&<button className="g-secondary" disabled={busy} onClick={()=>store.send({type:'TALK',who:'rina'})}>Talk with Rina about what happens next</button>}
    {b.met&&<button className="g-secondary" disabled={busy} onClick={()=>store.send({type:'OPEN',panel:'bakery'})}>Read the bakery account</button>}

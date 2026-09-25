@@ -4,14 +4,15 @@ import path from 'node:path';
 import {spawn} from 'node:child_process';
 import {authoredEnvironment} from '../scripts/demo-inputs.mjs';
 import {verifyDemoReceipt} from '../scripts/demo-build-receipt.mjs';
-const replay=process.argv.includes('--replay-feedback'),live=process.argv.includes('--live'),label=process.argv.find(x=>x.startsWith('--label='))?.slice(8);
+const replay=process.argv.includes('--replay-feedback'),live=process.argv.includes('--live'),paced=process.argv.includes('--paced-core'),label=process.argv.find(x=>x.startsWith('--label='))?.slice(8);
 if(replay&&live)throw Error('Recorded response replay must never enable a provider.');
 if(!label||!/^[a-z0-9-]+$/.test(label))throw Error('Unique rehearsal label required');
 const output='output/nerdy-demo-rehearsal-'+label;
-await fs.mkdir(output,{recursive:true});await fs.writeFile(output+'/started.json',JSON.stringify({at:new Date().toISOString(),live,replay},null,2),{flag:'wx'});
+await fs.mkdir(output,{recursive:true});await fs.writeFile(output+'/started.json',JSON.stringify({at:new Date().toISOString(),live,replay,paced},null,2),{flag:'wx'});
 const receipt=await verifyDemoReceipt();
 const env={...authoredEnvironment(),PATH:path.dirname(process.execPath)+';'+process.env.PATH,EQ_DEMO_PRESENTATION:'1',EQ_NERDY_REHEARSAL:'1',EQ_NERDY_LIVE:live?'1':'0',EQ_NERDY_REPLAY_FEEDBACK:replay?'1':'0',EQ_TEST_PORT:'4409',EQ_BROWSER_OUTPUT_DIR:output+'/raw',PLAYWRIGHT_JSON_OUTPUT_NAME:output+'/results.json'};
 env.EQ_NERDY_CANDIDATE_INPUT_SHA=receipt.inputs.sha256;env.EQ_NERDY_CANDIDATE_OUTPUT_SHA=receipt.outputs.sha256;
+env.EQ_NERDY_PACED_CORE=paced?'1':'0';
 if(live){
  try{await fs.access('evidence/nerdy-demo-20260924/live-request-attempt.json');throw Error('A live request was already reserved; no second provider attempt is authorized.');}catch(error){if(error.code!=='ENOENT')throw error;}
  process.loadEnvFile('.env.server.local');if(!process.env.OPENAI_API_KEY)throw Error('Local OpenAI key is unavailable');

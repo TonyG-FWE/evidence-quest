@@ -193,12 +193,27 @@ export async function playGrandmaTelling(p:Page){
 export async function playBakery(p:Page,wrong=false){
  for(let i=0;i<20&&await p.locator('.garden-reader').count();i++)await p.locator('.g-reader-top .g-close').click();
  if(!await p.locator('.garden-bakery-controls').count())await button(p,'Go to Rina’s bakery').click();
- await openDirections(p,'Bakery');await button(p,'Talk to Rina').click();await completeConversation(p);await button(p,'I can bring the spare tile to Sol.').click();await button(p,'Back to Pip').click();await openDirections(p,'Bakery');if(await button(p,'Go to the tile shelf').isVisible())await button(p,'Go to the tile shelf').click();await button(p,'Take the spare tile').click();await button(p,'Bring the tile to Sol').click();await button(p,'Give the tile to Sol').click();await button(p,'Direct Sol’s roof repair').click();await button(p,'Remove the cracked tile').click();
+ await openDirections(p,'Bakery');await p.locator('.garden-action-bar').getByRole('button',{name:'Talk to Rina',exact:true}).click();await completeConversation(p);await button(p,'I can bring the spare tile to Sol.').click();await button(p,'Back to Pip').click();await openDirections(p,'Bakery');if(await button(p,'Go to the tile shelf').isVisible())await button(p,'Go to the tile shelf').click();await button(p,'Take the spare tile').click();await button(p,'Bring the tile to Sol').click();await button(p,'Give the tile to Sol').click();if(await button(p,'Direct Sol’s roof repair').isVisible())await button(p,'Direct Sol’s roof repair').click();await button(p,'Remove the cracked tile').click();
  if(wrong){await button(p,'Beside the opening').click();await button(p,'Place the tile').click();await expect(p.locator('.garden-feedback')).toContainText('Water still comes through');}
  await button(p,'Over the opening').click();await button(p,'Place the tile').click();await button(p,'Let Rina check the flour').click();if(await button(p,'Go to Rina').isVisible())await button(p,'Go to Rina').click();await button(p,'Make the dough with Rina').click();await button(p,'Shape the loaves').click();await button(p,'Bake the bread').click();await expect(button(p,'Take a loaf to thank Sol')).toBeEnabled({timeout:25000});await button(p,'Take a loaf to thank Sol').click();await button(p,'Walk with Rina to the workshop').click();await button(p,'Let Rina give Sol the loaf').click();await expect(p.locator('.garden-bakery-controls')).toHaveCount(0);await expect(button(p,'Talk to Sol')).toBeVisible();
 }
+export async function inspectBirdConversation(p:Page){
+ const expectedSpeakers=(await savedChapter(p)).narrativeEdition==='literary-20260916'?['Mara narrates','Mara narrates','Mara narrates','Mara narrates']:['Mara narrates','Mara','Mara narrates','The boy','Mara narrates','Mara narrates'];
+ // Story pages show two paragraphs at a time. Inspect every page through the
+ // visible controls instead of requiring the entire story on one screen.
+ const passage=p.locator('.garden-passage'),previous=button(p,'Previous page'),next=button(p,'Next page');
+ for(let i=0;i<6&&await previous.isVisible()&&await previous.isEnabled();i++){const before=await passage.getAttribute('data-reader-scroll');await previous.click();await expect(passage).not.toHaveAttribute('data-reader-scroll',before!);}
+ const speakers:string[]=[];
+ for(let i=0;i<6;i++){
+  await expect(passage.locator('.g-source-voice').first()).toBeVisible();speakers.push(...await passage.locator('.g-source-voice').allTextContents());
+  if(!await next.isVisible()||!await next.isEnabled())break;
+  const before=await passage.getAttribute('data-reader-scroll');await next.click();await expect(passage).not.toHaveAttribute('data-reader-scroll',before!);
+ }
+ expect(speakers).toEqual(expectedSpeakers);
+}
 export async function playBird(p:Page,wrong=false){
- await openStoryDirections(p);await button(p,'Speak to the boy').click();await expect(p.locator('.garden-passage .g-source-voice')).toHaveText((await savedChapter(p)).narrativeEdition==='literary-20260916'?['Mara narrates','Mara narrates','Mara narrates','Mara narrates']:['Mara narrates','Mara','Mara narrates','The boy','Mara narrates','Mara narrates']);await expect(p.getByRole('group',{name:'You are speaking as Mara. Choose your response.'})).toBeVisible();await button(p,'Would you like some help?').click();await openStoryDirections(p);
+ await openStoryDirections(p);await button(p,'Speak to the boy').click();await inspectBirdConversation(p);
+ await expect(p.getByRole('group',{name:'You are speaking as Mara. Choose your response.'})).toBeVisible();await button(p,'Would you like some help?').click();await openStoryDirections(p);
  await button(p,'Walk to the dock office').click();await button(p,'Pick up the tape').click();await button(p,'Return to the boy').click();await button(p,'Line up the torn wing').click();
  if(wrong){await button(p,'Tape beside the tear').click();await button(p,'Place the strip').click();await expect(p.locator('.g-mara-scene')).toHaveAttribute('data-strip','beside');await expect(p.locator('.garden-feedback')).toContainText('wing is still loose');}
  await button(p,'Tape across the tear').click();await button(p,'Place the strip').click();await button(p,'Let the boy carry his bird').click();await button(p,'Return to Grandma’s garden').click();await expect(p.locator('.g-mara-scene')).toHaveCount(0);

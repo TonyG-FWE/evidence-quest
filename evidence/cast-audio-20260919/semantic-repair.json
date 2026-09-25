@@ -1,10 +1,319 @@
 {
   "schema": "eq.cast-semantic-repair.v1",
-  "at": "2026-09-25T06:55:22.508Z",
+  "at": "2026-09-25T14:07:52.741Z",
   "providerRequests": 0,
-  "entries": 6073,
-  "exactBound": 6073,
-  "changed": [],
+  "entries": 6037,
+  "exactBound": 6037,
+  "changed": [
+    {
+      "id": "0dae0d3b1648fdd98c1c96a4f38ae2c67e9ac6842bafdd0b48cf30eb7ea43e3e",
+      "text": "Escape cancels.",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "131cb9f402d7cf94dcc44e4c50906fa6ecc841ad73dff2919a4881d0dd6c2dbf",
+        "start": 82.57936507936509,
+        "end": 83.69936507936508
+      }
+    },
+    {
+      "id": "0e59e99486405fda9a44f8917c520fdc5cd9d1249c30f90f5baad16d355bd80c",
+      "text": "R",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "89e55e506e1aadd7855728577bde010ba096ed57da9b386893e24f74c3a3fc32",
+        "start": 0,
+        "end": 0.5224375
+      }
+    },
+    {
+      "id": "1fc19cf9714f380f70e1a339226b518b2eae0eefd2beb9b7d25899e69ffe97f9",
+      "text": "Move held object nearer",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "7d901d75fcb056d838a81952edf0658b3f67e3be433b2d0851285a718070c728",
+        "start": 88.93058956916099,
+        "end": 90.450589569161
+      }
+    },
+    {
+      "id": "2b90bcba2bfaf8fb43d2bad2214c302c839cba77ddd9233e6c169d6b1a43b369",
+      "text": "Release object",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "b68c6143f322edcc26ef914c50958e280e1777357b7e998b95a16bd372f1bb78",
+        "start": 69.98532879818595,
+        "end": 70.94532879818594
+      }
+    },
+    {
+      "id": "2f9da9647f1b4e1da7daa0546cf89efc8a997c9bd04fa2b302caa2cc44f09f6c",
+      "text": "Choose an object and its destination, or move it with the arrow keys. Hold Shift for smaller moves. Q and R turn it. Enter releases it. Escape cancels.",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "131cb9f402d7cf94dcc44e4c50906fa6ecc841ad73dff2919a4881d0dd6c2dbf",
+        "start": 73.71879818594104,
+        "end": 83.69936507936508
+      }
+    },
+    {
+      "id": "3d180bf965eb11cf5731eec5247c7fe62dfe88f182078594f5df3f240b9f1e31",
+      "text": "releases",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "274da1abe7eaf9179d87f34b60a2cfc8dcd77c3b2342a98781f887b5b4ded779",
+        "start": 0,
+        "end": 0.8097916666666667
+      }
+    },
+    {
+      "id": "4c2a1bdfabb79ff52ee408d6d49855ef1d4943ad051ae76be07d2ce32f47df88",
+      "text": "Handle",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "1ca30fd508bef19e78cc322e71395567ac0b13556beb8cce36f4a0d06aa67907",
+        "start": 0,
+        "end": 0.8620208333333333
+      }
+    },
+    {
+      "id": "4db8e9b72d04359a4cf002a92b5fe37a7de015d139e7004860a9c7310dcd2e81",
+      "text": "Keyboard and precise controls",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "83a91a25ad477f985fedb23fc6cec79e9e01819c4b7c6e2d7d38b70c2b1fe1b8",
+        "start": 21.57517006802721,
+        "end": 23.09517006802721
+      }
+    },
+    {
+      "id": "4fe856c365eb4800bbad10792d4120e49a10587c85ee2c61f6ee64548b03d611",
+      "text": "Click a deck or the ground to walk.",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "430ca1a5ae7d3057cf7cef39a2d4d3e94b234213371cfa988ba03853f708a600",
+        "start": 15.892925170068027,
+        "end": 17.572925170068025
+      }
+    },
+    {
+      "id": "5f76eecf39b2b30cd39cdecbe2d130fb26d963819df65b7e1d599946fcf19f2f",
+      "text": "Turn left",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "b6f06d41b865b666864308c6dfc05698e114e9eb45f5f8acd1883d24f344f4f4",
+        "start": 59.20417233560091,
+        "end": 59.84417233560091
+      }
+    },
+    {
+      "id": "62f85af6a11c428750a03b8011e4e588e26c5df251f5bbb5f77d434ca143abbc",
+      "text": "You can leave a repair unfinished.",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "430ca1a5ae7d3057cf7cef39a2d4d3e94b234213371cfa988ba03853f708a600",
+        "start": 17.892925170068025,
+        "end": 19.572925170068025
+      }
+    },
+    {
+      "id": "7cad2f02b5f19b0ea4d8035be3467adc14b227dff4bf34ae8c23250114942ac4",
+      "text": "Move held object",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "7d901d75fcb056d838a81952edf0658b3f67e3be433b2d0851285a718070c728",
+        "start": 88.93058956916099,
+        "end": 89.97058956916099
+      }
+    },
+    {
+      "id": "8047e63e08370bfce3b2d38268ebc5959be29172846ff7b10e0579014502e259",
+      "text": "Cancel gesture",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "b68c6143f322edcc26ef914c50958e280e1777357b7e998b95a16bd372f1bb78",
+        "start": 84.06532879818594,
+        "end": 85.02532879818594
+      }
+    },
+    {
+      "id": "866e0da871419b54da5b557d5c8f2bc0292286f457971a32ebce05c85a7e469f",
+      "text": "destination",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "4b66407cf852d6031fe25d636d9390a157b72174a48e96e7573c38857ac207a1",
+        "start": 0,
+        "end": 1.071
+      }
+    },
+    {
+      "id": "89e2e34bd81dd7417410e54fd0c82723e5cb3068315cf9e4908e9a503915438c",
+      "text": "Q and R turn it.",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "131cb9f402d7cf94dcc44e4c50906fa6ecc841ad73dff2919a4881d0dd6c2dbf",
+        "start": 79.79879818594105,
+        "end": 80.83879818594104
+      }
+    },
+    {
+      "id": "8e72fb1de75cfaa3aeaafb75550e8e6a393db0b043360e3f1b4e3ee4f7b14ece",
+      "text": "nearer",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "658150ba332734104ef430353f840f11fbd83ce6178a267a288497f9b906c375",
+        "start": 0,
+        "end": 0.8620208333333333
+      }
+    },
+    {
+      "id": "9791f26ba945e34d58cb100e9e0320f4090029a99d165f67d041aca77397a7d9",
+      "text": "Enter releases it.",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "131cb9f402d7cf94dcc44e4c50906fa6ecc841ad73dff2919a4881d0dd6c2dbf",
+        "start": 81.15879818594105,
+        "end": 82.03879818594105
+      }
+    },
+    {
+      "id": "9b05105fac368adf4cbf0a53f03b082940e121b709007bd25d38b98699343faa",
+      "text": "Place held bridge material",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "0c1eeff7133114d66eaad3743e4df8e3a91eb422b04273091bcbc43948f63204",
+        "start": 155.25637188208617,
+        "end": 156.85637188208617
+      }
+    },
+    {
+      "id": "9cf20e1976b238af46028e2cf36ee8c062c82ba3aee45b72d74c7b88f982f04a",
+      "text": "Q",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "78365c35c2e1b2ca0af9ad57ccf8d1d0dc679524d5ae2ba3987f983868ca6c6c",
+        "start": 0,
+        "end": 0.6791666666666667
+      }
+    },
+    {
+      "id": "9f95f76aa8aa25f880f7baa0d841484cc5662199519b6a5acc0715f5b125f7ff",
+      "text": "Drag an object, then release to place it. Click a deck or the ground to walk. You can leave a repair unfinished.",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "430ca1a5ae7d3057cf7cef39a2d4d3e94b234213371cfa988ba03853f708a600",
+        "start": 13.12,
+        "end": 19.572925170068025
+      }
+    },
+    {
+      "id": "b527ec3586898851d40a1a39b1fe8638aa1cf914065b4d32de7d8f91936effe5",
+      "text": "Handle nearby objects",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "1a5e21260162bf0aceed9cdf51110a8844cd8c28d42b1d8799f618272c59a94a",
+        "start": 130.29104308390023,
+        "end": 131.57104308390024
+      }
+    },
+    {
+      "id": "c2b55729bef35990477d7692fed3e53a617ccbb6f983f30ae878672b6b3c7d4b",
+      "text": "Turn right",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "b6f06d41b865b666864308c6dfc05698e114e9eb45f5f8acd1883d24f344f4f4",
+        "start": 49.76417233560091,
+        "end": 50.40417233560091
+      }
+    },
+    {
+      "id": "c452780db22d5221c9f763f404073be2340940f1a6e0e9b25cde20765820b400",
+      "text": "Move held object right",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "1a5e21260162bf0aceed9cdf51110a8844cd8c28d42b1d8799f618272c59a94a",
+        "start": 49.600589569161,
+        "end": 50.960589569161
+      }
+    },
+    {
+      "id": "d64a1a2d488651834ec3a40cf5eb9df7280f077fd3e7efe626899853fd203d9a",
+      "text": "Move held object left",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "f5145f9ffe5899aab998660a0d234c3ed2c3623572596d5e028bb56d1e2e70a9",
+        "start": 13.28,
+        "end": 14.8
+      }
+    },
+    {
+      "id": "d988e7b593a86f680afca3f2ba72f9403c93a704fe3e804bd34f496a252f066e",
+      "text": "Drag an object, then release to place it.",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "430ca1a5ae7d3057cf7cef39a2d4d3e94b234213371cfa988ba03853f708a600",
+        "start": 13.12,
+        "end": 15.44
+      }
+    },
+    {
+      "id": "d9b991ee555d6285aeecf48044b8368f9d896369469797cd8bc20b35436b68d7",
+      "text": "Move held object away",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "f5145f9ffe5899aab998660a0d234c3ed2c3623572596d5e028bb56d1e2e70a9",
+        "start": 15.04,
+        "end": 16.48
+      }
+    },
+    {
+      "id": "e30a9a568ad41b00398c86151e513119b005daaa93e2c2ec3356ef9710148e7e",
+      "text": "Hold Shift for smaller moves.",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "131cb9f402d7cf94dcc44e4c50906fa6ecc841ad73dff2919a4881d0dd6c2dbf",
+        "start": 77.79879818594105,
+        "end": 79.55879818594104
+      }
+    },
+    {
+      "id": "fb74b137c0e6c6dafe94660715709bae319d52f04df9c3b41a5764e52a3d2bab",
+      "text": "Choose an object and its destination, or move it with the arrow keys.",
+      "speaker": "narrator",
+      "from": {},
+      "to": {
+        "sha256": "131cb9f402d7cf94dcc44e4c50906fa6ecc841ad73dff2919a4881d0dd6c2dbf",
+        "start": 73.71879818594104,
+        "end": 77.55879818594104
+      }
+    }
+  ],
   "missing": [],
   "inputs": [
     {
@@ -7724,10 +8033,6 @@
       "sha256": "a6a9d65995066193e8e1cd0cc1df51673ee5f4aa40306a59b67423d99ba0885e"
     },
     {
-      "file": "evidence/cast-audio-20260919/batches/469d6c185fbc1d503b427cc78483c46777ac00b39a9c044904e0dae4c7da9cf1.wav.json",
-      "sha256": "b1442b81ab328f120448386149f24bc5958d35191f5bf336f281b6fc02e316d5"
-    },
-    {
       "file": "evidence/cast-audio-20260919/batches/5f166c8d39b556fc6dda2969ac46feffa44b2b6e34b2fb36f96ffdf55741f548.wav.json",
       "sha256": "ca07da9f8eee9b6f6940716959444fd8f715c26f1c16115ca23d76d36ba3c153"
     },
@@ -8490,10 +8795,6 @@
     {
       "file": "evidence/cast-audio-20260919/batches/001371cc5b574df1b31525de0cc9a556f82c3e177f7f6b57c40bb546288612e3.wav.json",
       "sha256": "fe0ac60eaeaac48e0039cab0d3b789951da7cedb38ad2c96ff1e0c40ee2e2c40"
-    },
-    {
-      "file": "evidence/cast-audio-20260919/batches/13f31d53c49f493c3344843eb7a2585e79c3fc9c0d0eee57792db6676c56d980.wav.json",
-      "sha256": "3d546bb2595df49ab4570ea6f57dfd87525060d7beb04338b70038d4d554fc99"
     },
     {
       "file": "evidence/cast-audio-20260919/batches/8d0c0c91c05e29cd87d9960a9bd08f5f915d32b7a85fc51b4dce34adb186a1d0.wav.json",
@@ -9560,10 +9861,6 @@
       "sha256": "09eec85cc903e2de6d31602b3cd185a99e952fad9e5792235f6eaa49f115d373"
     },
     {
-      "file": "evidence/cast-audio-20260919/batches/39d5d4cb0e457327e388bdc032b8a723c7043f59b200f28d23fad18bc76fe677.wav.json",
-      "sha256": "849e3e5074e7d41ae80e4f3d55b3096e0d7bf2d8cd4f82d7234e793099f02946"
-    },
-    {
       "file": "evidence/cast-audio-20260919/batches/5e3d2cd4c8a3903a8b3c30149f84edd0c750a36f6cf45ca76c68f63599f43b6e.wav.json",
       "sha256": "b968f7a0b4f9e462c3ff0ff9a5e218054e04e441d01ae634a0f524f4e9e43448"
     },
@@ -10418,10 +10715,6 @@
     {
       "file": "evidence/cast-audio-20260919/batches/ece6f76f29446967211ad28b5ffcba83cc2b926c68830b375b5fc70e42bd09ec.wav.json",
       "sha256": "6e32d355cd83a04b5e29d66cf5b57294b6072cb7d911bc3b9d7fff6560bcabee"
-    },
-    {
-      "file": "evidence/cast-audio-20260919/batches/d44045bf2301901e181ad7e851a3a235246fabb89b06318358d86e2b92d27bb7.wav.json",
-      "sha256": "b789f9dca54c258e788091b46a42c4dcf3d570bf88ef115820b838b4e9714a77"
     },
     {
       "file": "evidence/cast-audio-20260919/batches/d3175f33bd2e9a9b24b2566de9219d216f0babe67a6f930bcd518c2c2bd5906f.wav.json",
@@ -11766,10 +12059,6 @@
     {
       "file": "evidence/cast-audio-20260919/batches/72799b514ce6b91f104075661c6374e54029718eec51a79051d067a3d6167b15.wav.json",
       "sha256": "a61fcee82837e17dcdaea184eca8f27a55c22de8cdc6e44185473672bcbd2f28"
-    },
-    {
-      "file": "evidence/cast-audio-20260919/batches/d27331ff1701d6e586fc107b1bc49f78984501a775138e04bbe412cfdfffbdc6.wav.json",
-      "sha256": "6b002fe85afa520cf4598769143631d699f3d5e410bae702c25ee2f8cc3be509"
     },
     {
       "file": "evidence/cast-audio-20260919/batches/32079a130d20f1327a4624022b11e32074d8bcabe33b90023ff02859b2d055b2.wav.json",
@@ -13288,6 +13577,10 @@
       "sha256": "c49ba11ddc3ec0e55ba0c3bcb0d2fdc65686498f055d20fc80fb3a13d5bff9be"
     },
     {
+      "file": "evidence/cast-audio-20260919/batches/39d5d4cb0e457327e388bdc032b8a723c7043f59b200f28d23fad18bc76fe677.wav.json",
+      "sha256": "849e3e5074e7d41ae80e4f3d55b3096e0d7bf2d8cd4f82d7234e793099f02946"
+    },
+    {
       "file": "evidence/cast-audio-20260919/batches/a98ac3bbff2e1e46c08678d73d3f7be70f2b18077cbafd5e672873192d668ad9.wav.json",
       "sha256": "de1c02cf9a76dcff30b2efa3d691ccd23a14c477780ff7f8dfc43cfa60a4c4e7"
     },
@@ -13816,10 +14109,6 @@
       "sha256": "0f153e1b00f10f81d6d6759eff3a36161624c1cfd6d285a33aed497b33801fa1"
     },
     {
-      "file": "evidence/cast-audio-20260919/batches/496dfb9727e19360678309927cae1372bb2dc9474fcf1742588ae96e594708ae.wav.json",
-      "sha256": "e86905be43eff9f37c3291d30ba1c34c3c6f8d8aa91d7c701c55b50c7161c0b8"
-    },
-    {
       "file": "evidence/cast-audio-20260919/batches/745887c29bfcd2efa58022ffaf7cf1815b70f2f6836972f7beda7c79c039f4d6.wav.json",
       "sha256": "fc428925cea20e829a2c6952aafb93e9a54eb11bd9c8c49dbfea21ab6c8b038c"
     },
@@ -14030,10 +14319,6 @@
     {
       "file": "evidence/cast-audio-20260919/batches/418c73dbe066918e1d5c04ae710942baffee34bfe6612690fba03048cf26620b.wav.json",
       "sha256": "3ce4decb8c277b40fc9479528870d0fb0a4c7bc349d9fe662a2346b4d48820da"
-    },
-    {
-      "file": "evidence/cast-audio-20260919/batches/cf31ad56c15975e4f92831ddcd6911a40579f4fb575925af0d30166ad3549d12.wav.json",
-      "sha256": "bbfe5931b54e13f4818315bbbd58b5d7007851dc62d057fb5d1e81ab5c49b4db"
     },
     {
       "file": "evidence/cast-audio-20260919/batches/3e8854bd2d59a9d5ceaed9c4b92de4655b88e1325112cd8a0f6dcfa974f9453d.wav.json",

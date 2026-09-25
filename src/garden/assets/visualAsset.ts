@@ -225,6 +225,7 @@ export class CharacterVisual {
   }
   if(state.reducedMotion)for(const action of this.actions.values())action.time=0;
  }
+ get animation(){return {clip:this.target,time:this.target?this.actions.get(this.target)?.time??0:0,motion:this.state.motion,carrying:this.state.carrying,work:this.state.action?.kind??null};}
  /** Deterministic review scrubbing; never changes gameplay state. */
  seek(seconds:number):void{
   if(this.released)return;

@@ -13,11 +13,31 @@ Only one task may be ACTIVE. A task needs focused verification, a visible compil
 | 5. Verified cleanup | VERIFIED | Classify and delete only unused untracked files, beginning with model local-history; record exact paths/bytes, preserve dependencies and rebuild. |
 | 6. Final qualification and rehearsal | VERIFIED FOR DEMO; DELIVERED | Required commands and compiled delivery verification; complete fresh journey/finale; one bounded live Sol-feedback check; timed route and fallback capture; focused private PR. |
 
+## Bakery cursor repair — 2026-09-25
+
+Tony approved this sequential correction after rejecting the bakery's movement, direct roof repair, rain, character motion, reading coverage and repeated loading notification. Earlier button-assisted and calculated-coordinate tests are retained as limited evidence, not cursor-route acceptance. Original task IDs and FIX11/CHECK11 bindings remain unchanged. The earlier task results are historical for their stated scope. The final fresh cursor acceptance below supersedes the button-assisted bakery checkpoint; private delivery remains the last active step.
+
+| Correction | Status | Visible completion boundary |
+| --- | --- | --- |
+| 1. Movement and object selection | CHECKPOINT PASSED | Eight handler checks and compiled Codex checkpoint: visible target cue, distant-click approach, workstation reach and inactive-object instructions. Full route remains below. |
+| 2. World interactions | CHECKPOINT PASSED | Compiled Codex route through tile, roof, flour, dough, oven, ground-click escort and actual handoff; roof cancellation and misplaced recovery. Eight handler checks include adjustable cuts. Interim reloads are recorded; final single-candidate rehearsal remains below. |
+| 3. Movement and weather | CHECKPOINT PASSED | Ten local checks and four compiled fixture diagnostics; walking/carrying/contact/climbing, exterior rain and shelter, three sizes. Codex cutaway inspected; final fresh acceptance remains below. Added procedural shelter is not independently approved production artwork. |
+| 4. Reading and loading presentation | CHECKPOINT PASSED | 16 reading/loading cases, two graphics-recovery cases and visible Codex narrator/dialogue checkpoint. Optional notes use explicitly attributed existing narrator recordings; Rina keeps her voice. Click access follows Rina after handoff. |
+| 5. Rehearsal and delivery | VERIFICATION PASSED; DELIVERY ACTIVE | Fresh cursor route, complete ending/gathering/finale, 12-minute core and revised fallback pass. Focused commit and private PR update remain. |
+
+Only one correction is ACTIVE. Each ends with focused checks, a visible compiled browser checkpoint and a results update before the next starts. Cursor acceptance uses visible targets without physical-action buttons, injected progress or coordinates calculated from game state. Diagnostic fixture checks remain separately labeled. Verify current Codex size, 1366×768 and 1920×1080. No additional provider requests; use the labeled recorded response. Existing short-word limitations, prior failures, unrelated changes and TASK11.19 HALTED 1/75 remain preserved. Saved-game work is excluded.
+
+**Correction 5 verification passes.** The sealed successor has **247 passing contracts and 37 passing focused browser cases**, including all fourteen bakery reading states, optional narration, cancellation, tile recovery, interrupted drags, reachable outlines, adjustable cuts and the fresh cursor-only route through actual handoff. Twenty inspected frames cover four viewports. The complete native journey passes through the gathering and finale in **24 minutes 8 seconds**, with zero page errors, zero live requests and one clearly labeled replay. The core includes presentation pauses and lasts **12 minutes 0 seconds**. The **12 minutes 2 seconds fallback** has checked native picture/audio playback and seven inspected frames; its original live recording remains intact. [Final correction](../../evidence/nerdy-demo-20260924/bakery-cursor-correction5.json), [rehearsal](../../evidence/nerdy-demo-20260924/bakery-rehearsal.json), [fallback](../../evidence/nerdy-demo-20260924/bakery-fallback-visual-review.json).
+
+The eight required commands all ran. The broad interim browser result is **210 passed / 31 failed / one intentional skip**. Its build-access failure passed on retry. The final focused checks resolve the demonstrated bakery route and compressed-delivery check; the original failures remain recorded. Resource budgets and older non-bakery fixtures remain open, and all nine full chapter variants are not claimed rerun. [Exact scope](../../evidence/nerdy-demo-20260924/bakery-required-scope.json). The final catalogue contains **6,037 exact approved entries**; the offline refresh restores 28 existing control recordings for explicit Read screen. No new provider calls occurred. All four accounting ledgers are unchanged. The procedural shelter is still pending independent production-art approval, and the accepted short-word limitations remain.
+
+The game is visibly prepared at Rina’s opening page in Codex at **http://127.0.0.1:4496/garden**, reached through ordinary fresh play. The [run of show](NERDY-DEMO-RUN-OF-SHOW-20260925.md) describes the cursor route and recorded-feedback chapter jump. Only the focused commit and private PR update remain active.
+
 ## Demo route and provider boundary
 
-Prepare the bakery through ordinary fresh play before the call. The 12-minute core excerpt introduces the premise and reading support, plays the bakery repair and its consequences, writes an ending from those events, requests live Sol feedback, then previews and confirms the ending. Reserve three minutes for explanation and latency. Verify the earlier adventure and gathering/finale separately.
+Prepare the bakery through ordinary fresh play before the call. The 12-minute core excerpt introduces the premise and reading support, plays the bakery repair and its consequences, writes an ending from those events, shows the clearly labeled recorded Sol feedback, then previews and confirms the ending. Reserve three minutes of margin. Verify the earlier adventure and gathering/finale separately.
 
-One live Sol-feedback verification request is authorized within the existing $10 total cap, with no automatic retries. Provider-free verification is the default. TASK11.19 stays HALTED 1/75; no new art generation or unrelated provider requests are included.
+The one authorized live Sol-feedback request has already succeeded within the existing $10 total cap. This correction authorizes no further provider requests or retries. Verification and delivery keep providers disabled. TASK11.19 stays HALTED 1/75; no new art generation is included.
 
 ## Results
 

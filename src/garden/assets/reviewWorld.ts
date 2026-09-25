@@ -9,13 +9,13 @@ import {personalGrass} from './profile.js';
 
 /** Artwork follows the existing authoritative objects. It never owns an interaction. */
 export class ReviewWorld {
- private entries:{prop:ModelProp|SceneryBatch;host:T.Object3D;studio:boolean;resident?:boolean;when?: (s:GardenState)=>boolean;occlusion:boolean;cutaway?:(s:GardenState)=>boolean;opacity:number;blocked:boolean;bounds:T.Sphere;measured:boolean;lastWanted:number;wanted:boolean}[]=[];
+ private entries:{prop:ModelProp|SceneryBatch;host:T.Object3D;studio:boolean;resident?:boolean;preload?:(s:GardenState)=>boolean;when?: (s:GardenState)=>boolean;occlusion:boolean;cutaway?:(s:GardenState)=>boolean;opacity:number;blocked:boolean;bounds:T.Sphere;measured:boolean;lastWanted:number;wanted:boolean}[]=[];
  private materials:T.Material[]=[];
  private retired=new Set<T.Mesh>();
  private frustum=new T.Frustum();private projection=new T.Matrix4();private worldBounds=new T.Sphere();
  private lastProbe=0;private ray=new T.Raycaster();private roofCut=[new T.Plane(new T.Vector3(0,-1,0),1.28)];
  constructor(private library:VisualAssetLibrary){}
- attach(id:string,host:T.Object3D,options:{studio?:boolean;replace?:boolean;position?:readonly[number,number,number];rotation?:readonly[number,number,number];scale?:readonly[number,number,number];when?:(s:GardenState)=>boolean;occlusion?:boolean;cutaway?:(s:GardenState)=>boolean}={}){
+ attach(id:string,host:T.Object3D,options:{studio?:boolean;replace?:boolean;position?:readonly[number,number,number];rotation?:readonly[number,number,number];scale?:readonly[number,number,number];when?:(s:GardenState)=>boolean;preload?:(s:GardenState)=>boolean;occlusion?:boolean;cutaway?:(s:GardenState)=>boolean}={}){
   const sourceDefinition=reviewAssets[id];if(!sourceDefinition)throw Error('Missing review object: '+id);
   // Personal shore working copies remove embedded water, retaining every kept
   // source vertex, UV, texture and transform. Originals remain unchanged.
@@ -32,7 +32,7 @@ export class ReviewWorld {
   // Supplied objects have unit source bounds. Use a conservative envelope until
   // the first lease gives us its exact bounds, including overhangs and branches.
   const span=Math.max(...(definition.normalization?.scale??[2,2,2]));
-  host.add(prop.root);this.entries.push({prop,host,studio:options.studio??false,resident:false,occlusion:options.occlusion??false,opacity:1,blocked:false,bounds:new T.Sphere(new T.Vector3(0,span*.5,0),span),measured:false,lastWanted:-Infinity,wanted:false,...(options.when?{when:options.when}:{}),...(options.cutaway?{cutaway:options.cutaway}:{})});return prop;
+  host.add(prop.root);this.entries.push({prop,host,studio:options.studio??false,resident:false,occlusion:options.occlusion??false,opacity:1,blocked:false,bounds:new T.Sphere(new T.Vector3(0,span*.5,0),span),measured:false,lastWanted:-Infinity,wanted:false,...(options.when?{when:options.when}:{}),...(options.preload?{preload:options.preload}:{}),...(options.cutaway?{cutaway:options.cutaway}:{})});return prop;
  }
  /** Retire appearance at assembly time, retaining the original pick/contact mesh.
   * Loading, unloading and action visibility must never expose the old artwork. */
@@ -92,7 +92,7 @@ export class ReviewWorld {
    entry.prop.root.visible=entry.when?.(s)??true;
    const active=visible&&entry.prop.root.visible&&(entry.studio?!inAdventure:inAdventure);
    if(active&&near)entry.lastWanted=now;
-   entry.wanted=active&&(near||now-entry.lastWanted<1800);entry.prop.demand(entry.wanted);
+   entry.wanted=(active||inAdventure&&!!entry.preload?.(s))&&(near||now-entry.lastWanted<1800);entry.prop.demand(entry.wanted);
    if(camera&&entry.prop.ready&&(entry.occlusion||entry.cutaway)){
     const architecture=['bakery','cottage','cottage-1'].includes(entry.prop.definition.id);
     if(architecture)entry.blocked=false;

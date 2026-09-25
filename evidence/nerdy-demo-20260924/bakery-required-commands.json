@@ -1,0 +1,83 @@
+{
+  "schema": "eq.nerdy-demo.required.v1",
+  "at": "2026-09-25T12:42:12.697Z",
+  "scope": "Bakery cursor correction; earlier failed required commands remain in their original records",
+  "node": "v24.21.0",
+  "profile": {
+    "art": "review",
+    "personalGrass": true,
+    "demoPresentation": true,
+    "coach": "authored",
+    "providerFlags": false
+  },
+  "lockfileBefore": "77489290e92294ed9c69416248cb6f7ffe436360a3f6ba4c9ac31fe593970f4e",
+  "commands": [
+    {
+      "command": "npm ci",
+      "exitCode": 0,
+      "durationMs": 21882,
+      "log": "output/bakery-cursor-20260925/required/1.log",
+      "logSha256": "41d6be84efdfb4f535f1b662b20eb9e5ff69bc7db78f89ff0d4191b9ece9f308",
+      "finishedAt": "2026-09-25T12:42:34.595Z"
+    },
+    {
+      "command": "npm run validate:content",
+      "exitCode": 0,
+      "durationMs": 589,
+      "log": "output/bakery-cursor-20260925/required/2.log",
+      "logSha256": "fbdd56002743439058fc2ec337ebc5bf6a473a9c3aae464e665bd738c7ec30d9",
+      "finishedAt": "2026-09-25T12:42:35.193Z"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "durationMs": 15769,
+      "log": "output/bakery-cursor-20260925/required/3.log",
+      "logSha256": "02aa2cc530ecafb4b2579ac71ee347e8a2325d508c6c5a2f15a9034ac3b6c734",
+      "finishedAt": "2026-09-25T12:42:50.969Z"
+    },
+    {
+      "command": "npm run build:server",
+      "exitCode": 0,
+      "durationMs": 2039,
+      "log": "output/bakery-cursor-20260925/required/4.log",
+      "logSha256": "62be7ff8cf68ab9f40a60f009ad85ba3c8ddd3fc60b086ad95bf1aa1794d0cd4",
+      "finishedAt": "2026-09-25T12:42:53.013Z"
+    },
+    {
+      "command": "npm run test:contracts",
+      "exitCode": 0,
+      "durationMs": 12334,
+      "log": "output/bakery-cursor-20260925/required/5.log",
+      "logSha256": "ceaf551cb9928274ccdb8c128e9d79c7e05c8590d7c66129a3a1533393d04fcc",
+      "finishedAt": "2026-09-25T12:43:05.352Z"
+    },
+    {
+      "command": "npm run eval:coach -- --mode authored",
+      "exitCode": 0,
+      "durationMs": 3196,
+      "log": "output/bakery-cursor-20260925/required/6.log",
+      "logSha256": "a9b1abad87e26fc66eb069b09caaf4ca7bc89d02da1921de8bf9239bcd8f6452",
+      "finishedAt": "2026-09-25T12:43:08.554Z"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 1,
+      "durationMs": 18266,
+      "log": "output/bakery-cursor-20260925/required/7.log",
+      "logSha256": "986401f7a7c1d93f5b2c74c6c4f70fc2aa75066721c385cec21385a710fb0df2",
+      "finishedAt": "2026-09-25T12:43:26.825Z"
+    },
+    {
+      "command": "npm run test:browser",
+      "exitCode": 1,
+      "durationMs": 8492110,
+      "log": "output/bakery-cursor-20260925/required/8.log",
+      "logSha256": "4fdf9606bd21aa7f92f3c60023564eb1dd1a560bc71834e2f4f9bf2573afc937",
+      "finishedAt": "2026-09-25T15:04:58.942Z"
+    }
+  ],
+  "complete": true,
+  "lockfileAfter": "77489290e92294ed9c69416248cb6f7ffe436360a3f6ba4c9ac31fe593970f4e",
+  "allPassed": false
+}

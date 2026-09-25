@@ -1,0 +1,522 @@
+{
+  "at": "2026-09-25T17:19:58.122Z",
+  "report": "output/bakery-cursor-20260925/final-r1/browser.json",
+  "reportSha256": "f71bf99035ddbbdb17596beafdcd4ec183a46ab101919b120d4c6f5dfcd533cd",
+  "stats": {
+    "startTime": "2026-09-25T15:09:16.030Z",
+    "duration": 865011.269,
+    "expected": 37,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "globalErrors": [],
+  "cases": [
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture diagnostic: Rina walks, carries and reaches during the flour rescue",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 9736,
+      "retries": 0,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "scope",
+          "body": "eyJmaXh0dXJlIjp0cnVlLCJ3YWxrIjp7ImNsaXAiOiJmaW5hbDpyaW5hOmNhcnJ5LXdhbGsiLCJ0aW1lIjoxLjgzNjg0NTg5MDI3Njk2MDcsIm1vdGlvbiI6IndhbGsiLCJjYXJyeWluZyI6dHJ1ZSwid29yayI6bnVsbH0sImNhcnJ5Ijp7ImNsaXAiOiJmaW5hbDpyaW5hOmNhcnJ5LXdhbGsiLCJ0aW1lIjowLjY4MzEwNTUyMTIyNTY3OTQsIm1vdGlvbiI6IndhbGsiLCJjYXJyeWluZyI6dHJ1ZSwid29yayI6bnVsbH0sImZyZXNoSm91cm5leUFjY2VwdGFuY2UiOmZhbHNlfQ=="
+        }
+      ]
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture diagnostic: Sol climbs down and walks home while Rina checks dry flour",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 12483,
+      "retries": 0,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "scope",
+          "body": "eyJmaXh0dXJlIjp0cnVlLCJyZXR1cm5pbmciOnsiY2xpcCI6ImZpbmFsOnNvbDpjYXJyeS13YWxrIiwidGltZSI6MS44MjMzMTYxMzY0ODU5NjA3LCJtb3Rpb24iOiJ3YWxrIiwiY2FycnlpbmciOnRydWUsIndvcmsiOm51bGx9LCJmcmVzaEpvdXJuZXlBY2NlcHRhbmNlIjpmYWxzZX0="
+        }
+      ]
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture diagnostic: sheltered preparation remains visible at the demo sizes",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 4930,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture diagnostic: visible baked loaf selects Rina, with walk and contact phases",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 7793,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture reading coverage: bakery arrival",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 15436,
+      "retries": 0,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "reading-coverage",
+          "body": "eyJzdGFnZSI6ImFycml2YWwiLCJmaXh0dXJlIjp0cnVlLCJtZWRpYSI6InN5bnRoZXRpYyBjb21wbGV0aW9uOyByZWFsIHJvdXRpbmcgYW5kIGV4aXN0aW5nIGNhdGFsb2d1ZSIsImV4cGVjdGVkIjpbeyJ0ZXh0IjoiU29sIGhhZCBicm91Z2h0IGhpcyB0b29scyBhbmQgYSBsYWRkZXIuIEhlIHdhcyBsb29raW5nIHVwIGF0IHRoZSByb29mLiBBbiBpbnRhY3Qgc3BhcmUgdGlsZSByZXN0ZWQgb24gYSBzaGVsZiBiZXNpZGUgdGhlIGJha2VyeS4iLCJzcGVha2VyIjoibmFycmF0b3IifSx7InRleHQiOiJBcmUgeW91IG1ha2luZyBicmVhZCBmb3IgdGhlIGdhdGhlcmluZz8iLCJzcGVha2VyIjoicGlwIn0seyJ0ZXh0IjoiVGhlc2UgbG9hdmVzIGFyZSBmb3IgcGVvcGxlIHdobyBvcmRlcmVkIHRoZW0gZWFybGllci4gVGhleeKAmXJlIGNvdW50aW5nIG9uIG1lLiBJ4oCZdmUgbW92ZWQgdGhlIGZsb3VyIG91dCBvZiB0aGUgcHVkZGxlLCBidXQgSSBjYW7igJl0IHNwZW5kIHRoZSBkYXkgY2hhc2luZyBzYWNrcyBhY3Jvc3MgdGhlIGZsb29yLiBJIG5lZWQgdG8gc3RhcnQgYmFraW5nLiIsInNwZWFrZXIiOiJyaW5hIn0seyJ0ZXh0IjoiSeKAmXZlIGZvdW5kIHRoZSBjcmFja2VkIHRpbGUuIFJpbmEgaGFzIGFuIGludGFjdCBzcGFyZSBvbiB0aGF0IHNoZWxmLiBJ4oCZbGwgZG8gdGhlIHdvcmsgb24gdGhlIGxhZGRlci4gUGlwLCBjb3VsZCB5b3UgYnJpbmcgbWUgdGhlIHNwYXJlPyIsInNwZWFrZXIiOiJzb2wifV0sInBsYXllZCI6W3sidGV4dCI6IlNvbCBoYWQgYnJvdWdodCBoaXMgdG9vbHMgYW5kIGEgbGFkZGVyLiBIZSB3YXMgbG9va2luZyB1cCBhdCB0aGUgcm9vZi4gQW4gaW50YWN0IHNwYXJlIHRpbGUgcmVzdGVkIG9uIGEgc2hlbGYgYmVzaWRlIHRoZSBiYWtlcnkuIiwic3BlYWtlciI6Im5hcnJhdG9yIiwidm9pY2VJZCI6IjA3YTQ0YTY5NTgzMDRmYTI4Y2VmNjBiMGQ0MDIzYzA0Iiwib3JpZ2luIjoiYXV0aG9yZWQtZGlzcGxheSIsInVyaSI6Ii9hdWRpby9jYXN0L2NsaXBzL2E4YjY2MmI3NWMxOGQ1ODllM2Q4MjcxZjczMjNkMWViY2U1MDE3MDU3Y2Q4MzAxMDU4NzEzMWYxMjg5ZThlM2Iud2F2In0seyJ0ZXh0IjoiQXJlIHlvdSBtYWtpbmcgYnJlYWQgZm9yIHRoZSBnYXRoZXJpbmc/Iiwic3BlYWtlciI6InBpcCIsInZvaWNlSWQiOiI4MjkxODRjNjM1MzE0Yzk0ODVlNDg2OTAxMTZmZjhhZCIsIm9yaWdpbiI6ImF1dGhvcmVkLWRpc3BsYXkiLCJ1cmkiOiIvYXVkaW8vY2FzdC9jbGlwcy84NGQ4N2MzZTBlNThiZTY1NDZlYzQ5ZWEzMTdlMGM1MDllMmE5ZWE0OTZiMjFiNWM1ZDhjMzZmYWRjMGE4YzMzLndhdiJ9LHsidGV4dCI6IlRoZXNlIGxvYXZlcyBhcmUgZm9yIHBlb3BsZSB3aG8gb3JkZXJlZCB0aGVtIGVhcmxpZXIuIFRoZXnigJlyZSBjb3VudGluZyBvbiBtZS4gSeKAmXZlIG1vdmVkIHRoZSBmbG91ciBvdXQgb2YgdGhlIHB1ZGRsZSwgYnV0IEkgY2Fu4oCZdCBzcGVuZCB0aGUgZGF5IGNoYXNpbmcgc2Fja3MgYWNyb3NzIHRoZSBmbG9vci4gSSBuZWVkIHRvIHN0YXJ0IGJha2luZy4iLCJzcGVha2VyIjoicmluYSIsInZvaWNlSWQiOiI5YTljZjQ3NzAyZGE0NzZhYTQ2MjllMjUwNmQ0YTg1NyIsIm9yaWdpbiI6ImF1dGhvcmVkLWRpc3BsYXkiLCJ1cmkiOiIvYXVkaW8vY2FzdC9jbGlwcy9jMjg2ZjcwYzYyZDY1ZTg4NzkwMTRlNmY1NWM2MmNmMzdmODExZjNmMGJkZDMxZDdmNmM4OTEzYjA5YTA5MWM3LndhdiJ9LHsidGV4dCI6IknigJl2ZSBmb3VuZCB0aGUgY3JhY2tlZCB0aWxlLiBSaW5hIGhhcyBhbiBpbnRhY3Qgc3BhcmUgb24gdGhhdCBzaGVsZi4gSeKAmWxsIGRvIHRoZSB3b3JrIG9uIHRoZSBsYWRkZXIuIFBpcCwgY291bGQgeW91IGJyaW5nIG1lIHRoZSBzcGFyZT8iLCJzcGVha2VyIjoic29sIiwidm9pY2VJZCI6IjE2NThkNzc3MjQwNzQxMTJhMDRmNWFhOWQwM2NjNTkxIiwib3JpZ2luIjoiYXV0aG9yZWQtZGlzcGxheSIsInVyaSI6Ii9hdWRpby9jYXN0L2NsaXBzL2Q0MGZkZjViNzJkMmM5YjkwYTY0ZTEyYjcyMzI1YjU3ZjAwYjJhZjQxNDJlNGZkNTcxMmMzMjllOGJkODA5YTkud2F2In1dLCJ3b3JkVGV4dCI6IkFyZSIsInByb3ZpZGVyUmVxdWVzdHMiOjB9"
+        }
+      ]
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture reading coverage: bakery needed",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 6915,
+      "retries": 0,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "reading-coverage",
+          "body": "eyJzdGFnZSI6Im5lZWRlZCIsImZpeHR1cmUiOnRydWUsIm1lZGlhIjoic3ludGhldGljIGNvbXBsZXRpb247IHJlYWwgcm91dGluZyBhbmQgZXhpc3RpbmcgY2F0YWxvZ3VlIiwiZXhwZWN0ZWQiOlt7InRleHQiOiJZZXMuIFlvdSBtYXkgdGFrZSB0aGUgc3BhcmUgdGlsZSBmcm9tIHRoYXQgc2hlbGYuIEJyaW5nIGl0IHRvIFNvbCBzbyBoZSBjYW4gcmVwbGFjZSB0aGUgY3JhY2tlZCBvbmUuIiwic3BlYWtlciI6InJpbmEifSx7InRleHQiOiJNb3ZpbmcgdGhlIHNhY2tzIGtlZXBzIHRoZW0gZHJ5IGZvciBub3csIGJ1dCB0aGUgcm9vZiB3aWxsIGtlZXAgbGVha2luZyB1bnRpbCB0aGUgY3JhY2tlZCB0aWxlIGlzIHJlcGxhY2VkLiIsInNwZWFrZXIiOiJuYXJyYXRvciJ9XSwicGxheWVkIjpbeyJ0ZXh0IjoiWWVzLiBZb3UgbWF5IHRha2UgdGhlIHNwYXJlIHRpbGUgZnJvbSB0aGF0IHNoZWxmLiBCcmluZyBpdCB0byBTb2wgc28gaGUgY2FuIHJlcGxhY2UgdGhlIGNyYWNrZWQgb25lLiIsInNwZWFrZXIiOiJyaW5hIiwidm9pY2VJZCI6IjlhOWNmNDc3MDJkYTQ3NmFhNDYyOWUyNTA2ZDRhODU3Iiwib3JpZ2luIjoiYXV0aG9yZWQtZGlzcGxheSIsInVyaSI6Ii9hdWRpby9jYXN0L2NsaXBzL2MzMTk2ZTU5NWM1OTk4NTVhMDUwNjIyMjc1NTc5Y2ZjZjJlZTM0MTU1ZTJlMWIxYWVmOWU5YmY4OGY0YzM4MDAud2F2In0seyJ0ZXh0IjoiTW92aW5nIHRoZSBzYWNrcyBrZWVwcyB0aGVtIGRyeSBmb3Igbm93LCBidXQgdGhlIHJvb2Ygd2lsbCBrZWVwIGxlYWtpbmcgdW50aWwgdGhlIGNyYWNrZWQgdGlsZSBpcyByZXBsYWNlZC4iLCJzcGVha2VyIjoibmFycmF0b3IiLCJ2b2ljZUlkIjoiMDdhNDRhNjk1ODMwNGZhMjhjZWY2MGIwZDQwMjNjMDQiLCJvcmlnaW4iOiJhdXRob3JlZC1kaXNwbGF5IiwidXJpIjoiL2F1ZGlvL2Nhc3QvY2xpcHMvZTcwMGUwM2JhMjM5NjlkNmU4ZTc5OGZhNmVjNWY4NmQxMjYxNjBhMGMzMTU3MGU1NTg0YmYyZTIwZTg3ZDYxYS53YXYifV0sIndvcmRUZXh0IjoiWWVzIiwicHJvdmlkZXJSZXF1ZXN0cyI6MH0="
+        }
+      ]
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture reading coverage: bakery carried",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 7362,
+      "retries": 0,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "reading-coverage",
+          "body": "eyJzdGFnZSI6ImNhcnJpZWQiLCJmaXh0dXJlIjp0cnVlLCJtZWRpYSI6InN5bnRoZXRpYyBjb21wbGV0aW9uOyByZWFsIHJvdXRpbmcgYW5kIGV4aXN0aW5nIGNhdGFsb2d1ZSIsImV4cGVjdGVkIjpbeyJ0ZXh0IjoiWW91IGhhdmUgdGhlIHNwYXJlIHRpbGUuIFNvbCBpcyB3YWl0aW5nIGJlc2lkZSB0aGUgbGFkZGVyLiBJ4oCZbGwga2VlcCB0aGVzZSBzYWNrcyBhd2F5IGZyb20gdGhlIHB1ZGRsZS4iLCJzcGVha2VyIjoicmluYSJ9LHsidGV4dCI6Ik1vdmluZyB0aGUgc2Fja3Mga2VlcHMgdGhlbSBkcnkgZm9yIG5vdywgYnV0IHRoZSByb29mIHdpbGwga2VlcCBsZWFraW5nIHVudGlsIHRoZSBjcmFja2VkIHRpbGUgaXMgcmVwbGFjZWQuIiwic3BlYWtlciI6Im5hcnJhdG9yIn1dLCJwbGF5ZWQiOlt7InRleHQiOiJZb3UgaGF2ZSB0aGUgc3BhcmUgdGlsZS4gU29sIGlzIHdhaXRpbmcgYmVzaWRlIHRoZSBsYWRkZXIuIEnigJlsbCBrZWVwIHRoZXNlIHNhY2tzIGF3YXkgZnJvbSB0aGUgcHVkZGxlLiIsInNwZWFrZXIiOiJyaW5hIiwidm9pY2VJZCI6IjlhOWNmNDc3MDJkYTQ3NmFhNDYyOWUyNTA2ZDRhODU3Iiwib3JpZ2luIjoiYXV0aG9yZWQtZGlzcGxheSIsInVyaSI6Ii9hdWRpby9jYXN0L2NsaXBzLzM3ZmMzMmIyODZlMjY4ODQ3OTUzMzBkYTY3Y2U2YmNkNDYzZGFkYzQ5ZWI4NDRlZGM1ZGFiZTcxN2M5NzA1MjQud2F2In0seyJ0ZXh0IjoiTW92aW5nIHRoZSBzYWNrcyBrZWVwcyB0aGVtIGRyeSBmb3Igbm93LCBidXQgdGhlIHJvb2Ygd2lsbCBrZWVwIGxlYWtpbmcgdW50aWwgdGhlIGNyYWNrZWQgdGlsZSBpcyByZXBsYWNlZC4iLCJzcGVha2VyIjoibmFycmF0b3IiLCJ2b2ljZUlkIjoiMDdhNDRhNjk1ODMwNGZhMjhjZWY2MGIwZDQwMjNjMDQiLCJvcmlnaW4iOiJhdXRob3JlZC1kaXNwbGF5IiwidXJpIjoiL2F1ZGlvL2Nhc3QvY2xpcHMvZTcwMGUwM2JhMjM5NjlkNmU4ZTc5OGZhNmVjNWY4NmQxMjYxNjBhMGMzMTU3MGU1NTg0YmYyZTIwZTg3ZDYxYS53YXYifV0sIndvcmRUZXh0IjoiWW91IiwicHJvdmlkZXJSZXF1ZXN0cyI6MH0="
+        }
+      ]
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture reading coverage: bakery delivered",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 7304,
+      "retries": 0,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "reading-coverage",
+          "body": "eyJzdGFnZSI6ImRlbGl2ZXJlZCIsImZpeHR1cmUiOnRydWUsIm1lZGlhIjoic3ludGhldGljIGNvbXBsZXRpb247IHJlYWwgcm91dGluZyBhbmQgZXhpc3RpbmcgY2F0YWxvZ3VlIiwiZXhwZWN0ZWQiOlt7InRleHQiOiJUaGFuayB5b3UuIEnigJlsbCB0YWtlIG91dCB0aGUgY3JhY2tlZCB0aWxlIGZpcnN0LiBUaGVuIGRpcmVjdCBtZSB0byBwdXQgdGhlIHNwYXJlIG92ZXIgdGhlIG9wZW5pbmcgc28gdGhlIHJhaW4gc3RheXMgb3V0c2lkZS4iLCJzcGVha2VyIjoic29sIn0seyJ0ZXh0IjoiSeKAmWxsIHdhdGNoIGZyb20gYmVsb3cuIFdoZW4gdGhlIG9wZW5pbmcgaXMgY292ZXJlZCwgdGhlIGRyb3BzIHNob3VsZCBzdG9wIGZhbGxpbmcgaW5zaWRlLiIsInNwZWFrZXIiOiJyaW5hIn1dLCJwbGF5ZWQiOlt7InRleHQiOiJUaGFuayB5b3UuIEnigJlsbCB0YWtlIG91dCB0aGUgY3JhY2tlZCB0aWxlIGZpcnN0LiBUaGVuIGRpcmVjdCBtZSB0byBwdXQgdGhlIHNwYXJlIG92ZXIgdGhlIG9wZW5pbmcgc28gdGhlIHJhaW4gc3RheXMgb3V0c2lkZS4iLCJzcGVha2VyIjoic29sIiwidm9pY2VJZCI6IjE2NThkNzc3MjQwNzQxMTJhMDRmNWFhOWQwM2NjNTkxIiwib3JpZ2luIjoiYXV0aG9yZWQtZGlzcGxheSIsInVyaSI6Ii9hdWRpby9jYXN0L2NsaXBzL2Q1MmUwMGYyNWE2ZjI4NDc1MmUwNmMzZmUwMGE5ZWI1NjQ2Njg1NzBmZmIzOTAxNWU4NjIxMjI1YzU0NjI5Y2Yud2F2In0seyJ0ZXh0IjoiSeKAmWxsIHdhdGNoIGZyb20gYmVsb3cuIFdoZW4gdGhlIG9wZW5pbmcgaXMgY292ZXJlZCwgdGhlIGRyb3BzIHNob3VsZCBzdG9wIGZhbGxpbmcgaW5zaWRlLiIsInNwZWFrZXIiOiJyaW5hIiwidm9pY2VJZCI6IjlhOWNmNDc3MDJkYTQ3NmFhNDYyOWUyNTA2ZDRhODU3Iiwib3JpZ2luIjoiYXV0aG9yZWQtZGlzcGxheSIsInVyaSI6Ii9hdWRpby9jYXN0L2NsaXBzL2M5ZjBmMDc1NjViZDIxOTkzNmU5NmIwNWQ5MzE1YWQwY2JiZWI2NDViYjRlZDlkNTk2N2IyNGI4ZDMxMDQzOTcud2F2In1dLCJ3b3JkVGV4dCI6IlRoYW5rIiwicHJvdmlkZXJSZXF1ZXN0cyI6MH0="
+        }
+      ]
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture reading coverage: bakery gap",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 7408,
+      "retries": 0,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "reading-coverage",
+          "body": "eyJzdGFnZSI6ImdhcCIsImZpeHR1cmUiOnRydWUsIm1lZGlhIjoic3ludGhldGljIGNvbXBsZXRpb247IHJlYWwgcm91dGluZyBhbmQgZXhpc3RpbmcgY2F0YWxvZ3VlIiwiZXhwZWN0ZWQiOlt7InRleHQiOiJUaGUgY3JhY2tlZCB0aWxlIGlzIGRvd24gaGVyZSBiZXNpZGUgdGhlIGxhZGRlci4gVGhlIG9wZW5pbmcgaXQgbGVmdCBpcyBzdGlsbCBsZXR0aW5nIHdhdGVyIGluLiBTaG93IG1lIHdoZXJlIHRoZSBzcGFyZSBzaG91bGQgZ28uIiwic3BlYWtlciI6InNvbCJ9LHsidGV4dCI6IknigJlsbCB3YXRjaCBmcm9tIGJlbG93LiBXaGVuIHRoZSBvcGVuaW5nIGlzIGNvdmVyZWQsIHRoZSBkcm9wcyBzaG91bGQgc3RvcCBmYWxsaW5nIGluc2lkZS4iLCJzcGVha2VyIjoicmluYSJ9XSwicGxheWVkIjpbeyJ0ZXh0IjoiVGhlIGNyYWNrZWQgdGlsZSBpcyBkb3duIGhlcmUgYmVzaWRlIHRoZSBsYWRkZXIuIFRoZSBvcGVuaW5nIGl0IGxlZnQgaXMgc3RpbGwgbGV0dGluZyB3YXRlciBpbi4gU2hvdyBtZSB3aGVyZSB0aGUgc3BhcmUgc2hvdWxkIGdvLiIsInNwZWFrZXIiOiJzb2wiLCJ2b2ljZUlkIjoiMTY1OGQ3NzcyNDA3NDExMmEwNGY1YWE5ZDAzY2M1OTEiLCJvcmlnaW4iOiJhdXRob3JlZC1kaXNwbGF5IiwidXJpIjoiL2F1ZGlvL2Nhc3QvY2xpcHMvNDcwNGUwY2I4NmJkMTA1YTBmZWVlZTNjODJkYmY1YTNiNzVkNWUzZGQ2NWIyZTQ4OWU3NDE5ZWJhYzg3MGM4Ny53YXYifSx7InRleHQiOiJJ4oCZbGwgd2F0Y2ggZnJvbSBiZWxvdy4gV2hlbiB0aGUgb3BlbmluZyBpcyBjb3ZlcmVkLCB0aGUgZHJvcHMgc2hvdWxkIHN0b3AgZmFsbGluZyBpbnNpZGUuIiwic3BlYWtlciI6InJpbmEiLCJ2b2ljZUlkIjoiOWE5Y2Y0NzcwMmRhNDc2YWE0NjI5ZTI1MDZkNGE4NTciLCJvcmlnaW4iOiJhdXRob3JlZC1kaXNwbGF5IiwidXJpIjoiL2F1ZGlvL2Nhc3QvY2xpcHMvYzlmMGYwNzU2NWJkMjE5OTM2ZTk2YjA1ZDkzMTVhZDBjYmJlYjY0NWJiNGVkOWQ1OTY3YjI0YjhkMzEwNDM5Ny53YXYifV0sIndvcmRUZXh0IjoiVGhlIiwicHJvdmlkZXJSZXF1ZXN0cyI6MH0="
+        }
+      ]
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture reading coverage: bakery misplaced",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 7364,
+      "retries": 0,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "reading-coverage",
+          "body": "eyJzdGFnZSI6Im1pc3BsYWNlZCIsImZpeHR1cmUiOnRydWUsIm1lZGlhIjoic3ludGhldGljIGNvbXBsZXRpb247IHJlYWwgcm91dGluZyBhbmQgZXhpc3RpbmcgY2F0YWxvZ3VlIiwiZXhwZWN0ZWQiOlt7InRleHQiOiJUaGUgc3BhcmUgaXMgYmVzaWRlIHRoZSBvcGVuaW5nLCBzbyB0aGUgcmFpbiBjYW4gc3RpbGwgZ2V0IHRocm91Z2guIEkgY2FuIGxpZnQgdGhhdCBzYW1lIHRpbGUgYW5kIG1vdmUgaXQuIFdlIGRvIG5vdCBuZWVkIGFub3RoZXIgb25lLiIsInNwZWFrZXIiOiJzb2wifSx7InRleHQiOiJJIGNhbiBzdGlsbCBzZWUgZHJvcHMgZmFsbGluZyBuZWFyIHRoZSBzYWNrcy4gVGhlIG9wZW5pbmcgbmVlZHMgdG8gYmUgY292ZXJlZCBiZWZvcmUgSSBjYW4gYnJpbmcgbXkgZmxvdXIgYmFjay4iLCJzcGVha2VyIjoicmluYSJ9XSwicGxheWVkIjpbeyJ0ZXh0IjoiVGhlIHNwYXJlIGlzIGJlc2lkZSB0aGUgb3BlbmluZywgc28gdGhlIHJhaW4gY2FuIHN0aWxsIGdldCB0aHJvdWdoLiBJIGNhbiBsaWZ0IHRoYXQgc2FtZSB0aWxlIGFuZCBtb3ZlIGl0LiBXZSBkbyBub3QgbmVlZCBhbm90aGVyIG9uZS4iLCJzcGVha2VyIjoic29sIiwidm9pY2VJZCI6IjE2NThkNzc3MjQwNzQxMTJhMDRmNWFhOWQwM2NjNTkxIiwib3JpZ2luIjoiYXV0aG9yZWQtZGlzcGxheSIsInVyaSI6Ii9hdWRpby9jYXN0L2NsaXBzLzRjZjJmMGFjMmJiZjQ1MWI3ZTNiODliMmIzNTYxYWYzNzk2MzQ0NDQ1Mzc0Y2FhYTUyZDlkN2RmYzkwMTVhMWMud2F2In0seyJ0ZXh0IjoiSSBjYW4gc3RpbGwgc2VlIGRyb3BzIGZhbGxpbmcgbmVhciB0aGUgc2Fja3MuIFRoZSBvcGVuaW5nIG5lZWRzIHRvIGJlIGNvdmVyZWQgYmVmb3JlIEkgY2FuIGJyaW5nIG15IGZsb3VyIGJhY2suIiwic3BlYWtlciI6InJpbmEiLCJ2b2ljZUlkIjoiOWE5Y2Y0NzcwMmRhNDc2YWE0NjI5ZTI1MDZkNGE4NTciLCJvcmlnaW4iOiJhdXRob3JlZC1kaXNwbGF5IiwidXJpIjoiL2F1ZGlvL2Nhc3QvY2xpcHMvNTU5ZWM0ZDY5MWY5N2RjNTE3MGRmZGQ4Njc2ZDA1M2U1ZDA3ZDY0YWZmMjJmYzNiZjc3ZTY2OTQ0NzgyMmE0OS53YXYifV0sIndvcmRUZXh0IjoiVGhlIiwicHJvdmlkZXJSZXF1ZXN0cyI6MH0="
+        }
+      ]
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture reading coverage: bakery sealed",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 9477,
+      "retries": 0,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "reading-coverage",
+          "body": "eyJzdGFnZSI6InNlYWxlZCIsImZpeHR1cmUiOnRydWUsIm1lZGlhIjoic3ludGhldGljIGNvbXBsZXRpb247IHJlYWwgcm91dGluZyBhbmQgZXhpc3RpbmcgY2F0YWxvZ3VlIiwiZXhwZWN0ZWQiOlt7InRleHQiOiJUaGUgbGFzdCBkcm9wcyBmZWxsIGludG8gdGhlIHB1ZGRsZS4gT3V0c2lkZSwgcmFpbiBzdGlsbCB0YXBwZWQgb24gdGhlIHJvb2YuIFJpbmEgbG9va2VkIHVwLCB0aGVuIHB1dCBhIGhhbmQgb24gb25lIG9mIHRoZSBmbG91ciBzYWNrcy4iLCJzcGVha2VyIjoibmFycmF0b3IifSx7InRleHQiOiJMaXN0ZW4uIFJhaW4gb24gdGhlIHJvb2YsIGJ1dCBubyBkcm9wcyBpbiBoZXJlLiBCZWZvcmUgd2Ugc3RhcnQsIEkgbmVlZCB0byBjaGVjayB0aGUgZmxvdXIuIFdpbGwgeW91IGxvb2sgd2l0aCBtZT8iLCJzcGVha2VyIjoicmluYSJ9LHsidGV4dCI6IkkgY2FuIHN0aWxsIGhlYXIgdGhlIHJhaW4gb3V0c2lkZS4gSXQgc291bmRzIGRpZmZlcmVudCB3aGVuIHlvdSBhcmVu4oCZdCB0cnlpbmcgdG8gY2F0Y2ggaXQuIiwic3BlYWtlciI6InBpcCJ9LHsidGV4dCI6IlJhaW53YXRlciBjYW4gY2FycnkgZGlydCB0aHJvdWdoIHRoZSByb29mLiIsInNwZWFrZXIiOiJuYXJyYXRvciJ9LHsidGV4dCI6Ik9uY2Ugd2Uga25vdyB0aGlzIGZsb3VyIHN0YXllZCBkcnksIHdlIGNhbiBtZWFzdXJlIGl0IGFuZCBhZGQgY2xlYW4gd2F0ZXIgZm9yIHRoZSBkb3VnaC4iLCJzcGVha2VyIjoibmFycmF0b3IifV0sInBsYXllZCI6W3sidGV4dCI6IlRoZSBsYXN0IGRyb3BzIGZlbGwgaW50byB0aGUgcHVkZGxlLiBPdXRzaWRlLCByYWluIHN0aWxsIHRhcHBlZCBvbiB0aGUgcm9vZi4gUmluYSBsb29rZWQgdXAsIHRoZW4gcHV0IGEgaGFuZCBvbiBvbmUgb2YgdGhlIGZsb3VyIHNhY2tzLiIsInNwZWFrZXIiOiJuYXJyYXRvciIsInZvaWNlSWQiOiIwN2E0NGE2OTU4MzA0ZmEyOGNlZjYwYjBkNDAyM2MwNCIsIm9yaWdpbiI6ImF1dGhvcmVkLWRpc3BsYXkiLCJ1cmkiOiIvYXVkaW8vY2FzdC9jbGlwcy80YmMwMTY4MzM3MjIwMTRlMmI4NDIxNjMxZjU5Y2I0YzRjODg3MTdmYjUzOTM5M2RmM2M3ZmZkMzQ4ZDBhNjJlLndhdiJ9LHsidGV4dCI6Ikxpc3Rlbi4gUmFpbiBvbiB0aGUgcm9vZiwgYnV0IG5vIGRyb3BzIGluIGhlcmUuIEJlZm9yZSB3ZSBzdGFydCwgSSBuZWVkIHRvIGNoZWNrIHRoZSBmbG91ci4gV2lsbCB5b3UgbG9vayB3aXRoIG1lPyIsInNwZWFrZXIiOiJyaW5hIiwidm9pY2VJZCI6IjlhOWNmNDc3MDJkYTQ3NmFhNDYyOWUyNTA2ZDRhODU3Iiwib3JpZ2luIjoiYXV0aG9yZWQtZGlzcGxheSIsInVyaSI6Ii9hdWRpby9jYXN0L2NsaXBzL2Y0YmNiODJkM2VhM2NhOTIxZTA2NmRlMmVkMjk4MWJiNTg1ODFlODU0NGNmNWU0OTcyMzIyNzQ1OWM5MGQ4MWIud2F2In0seyJ0ZXh0IjoiSSBjYW4gc3RpbGwgaGVhciB0aGUgcmFpbiBvdXRzaWRlLiBJdCBzb3VuZHMgZGlmZmVyZW50IHdoZW4geW91IGFyZW7igJl0IHRyeWluZyB0byBjYXRjaCBpdC4iLCJzcGVha2VyIjoicGlwIiwidm9pY2VJZCI6IjgyOTE4NGM2MzUzMTRjOTQ4NWU0ODY5MDExNmZmOGFkIiwib3JpZ2luIjoiYXV0aG9yZWQtZGlzcGxheSIsInVyaSI6Ii9hdWRpby9jYXN0L2NsaXBzLzIwMjUwYmUyOTU1ZTVjN2Y3ZWU4ZjU4NjI0ZjVlMDM5MjY2NmE5YjhjNDI5NDc3YjA2NWY0ZWIzNTU0MDhmMWYud2F2In0seyJ0ZXh0IjoiUmFpbndhdGVyIGNhbiBjYXJyeSBkaXJ0IHRocm91Z2ggdGhlIHJvb2YuIiwic3BlYWtlciI6Im5hcnJhdG9yIiwidm9pY2VJZCI6IjA3YTQ0YTY5NTgzMDRmYTI4Y2VmNjBiMGQ0MDIzYzA0Iiwib3JpZ2luIjoiYXV0aG9yZWQtZGlzcGxheSIsInVyaSI6Ii9hdWRpby9jYXN0L2NsaXBzLzFmNmZkMmQ3ZTFlY2MyODk2NWZkYTZiN2Q0NzUxNmI5NGRhOTIwY2IwMzQ3ZWYyN2VmMzkwNmVhOGUwNGM3MzAud2F2In0seyJ0ZXh0IjoiT25jZSB3ZSBrbm93IHRoaXMgZmxvdXIgc3RheWVkIGRyeSwgd2UgY2FuIG1lYXN1cmUgaXQgYW5kIGFkZCBjbGVhbiB3YXRlciBmb3IgdGhlIGRvdWdoLiIsInNwZWFrZXIiOiJuYXJyYXRvciIsInZvaWNlSWQiOiIwN2E0NGE2OTU4MzA0ZmEyOGNlZjYwYjBkNDAyM2MwNCIsIm9yaWdpbiI6ImF1dGhvcmVkLWRpc3BsYXkiLCJ1cmkiOiIvYXVkaW8vY2FzdC9jbGlwcy8yMThhZTkyMDFmZTVjMDY1NjVlMDc2MTE5YWUzNDE1OTIzNWY0NGUwYzJlZWM1NTAzNGI3NGQxNjQ3NGNiMTJkLndhdiJ9XSwid29yZFRleHQiOiJUaGUiLCJwcm92aWRlclJlcXVlc3RzIjowfQ=="
+        }
+      ]
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture reading coverage: bakery checked",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 8583,
+      "retries": 0,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "reading-coverage",
+          "body": "eyJzdGFnZSI6ImNoZWNrZWQiLCJmaXh0dXJlIjp0cnVlLCJtZWRpYSI6InN5bnRoZXRpYyBjb21wbGV0aW9uOyByZWFsIHJvdXRpbmcgYW5kIGV4aXN0aW5nIGNhdGFsb2d1ZSIsImV4cGVjdGVkIjpbeyJ0ZXh0IjoiUmluYSBvcGVuZWQgdGhlIHNhY2tzLiBUaGUgZmxvdXIgd2FzIGRyeS4gU29sIHBhY2tlZCBoaXMgdG9vbHMgYW5kIHJldHVybmVkIHRvIGhpcyB3b3Jrc2hvcCwgbGVhdmluZyBQaXAgYmVzaWRlIHRoZSBtaXhpbmcgYm93bC4iLCJzcGVha2VyIjoibmFycmF0b3IifSx7InRleHQiOiJUaGUgZmxvdXIgaXMgZHJ5ISBTb2zigJlzIHJlcGFpciBtZWFucyBJIGNhbiBrZWVwIG15IHByb21pc2UuIEZpcnN0IHdl4oCZbGwgbWl4IHRoZSBkb3VnaC4gVGhlbiB3ZeKAmWxsIGRpdmlkZSBhbmQgc2hhcGUgaXQgaW50byBzaW1pbGFyLXNpemVkIGxvYXZlcyBzbyB0aGV5IGJha2UgZXZlbmx5LiIsInNwZWFrZXIiOiJyaW5hIn0seyJ0ZXh0IjoiSSBjYW4gaGVscCB5b3UgZ2V0IHRoZSBicmVhZCByZWFkeS4iLCJzcGVha2VyIjoicGlwIn0seyJ0ZXh0IjoiV2UgbWVhc3VyZSBmbG91ciwgY2xlYW4gd2F0ZXIsIHllYXN0IGFuZCBhIGxpdHRsZSBzYWx0LCB0aGVuIG1peCBhbmQga25lYWQgdGhlbS4gS25lYWRpbmcgbWVhbnMgcHJlc3NpbmcgYW5kIGZvbGRpbmcgdGhlIGRvdWdoIHVudGlsIGl0IGhvbGRzIHRvZ2V0aGVyIGFuZCBmZWVscyBzdHJldGNoeS4iLCJzcGVha2VyIjoibmFycmF0b3IifV0sInBsYXllZCI6W3sidGV4dCI6IlJpbmEgb3BlbmVkIHRoZSBzYWNrcy4gVGhlIGZsb3VyIHdhcyBkcnkuIFNvbCBwYWNrZWQgaGlzIHRvb2xzIGFuZCByZXR1cm5lZCB0byBoaXMgd29ya3Nob3AsIGxlYXZpbmcgUGlwIGJlc2lkZSB0aGUgbWl4aW5nIGJvd2wuIiwic3BlYWtlciI6Im5hcnJhdG9yIiwidm9pY2VJZCI6IjA3YTQ0YTY5NTgzMDRmYTI4Y2VmNjBiMGQ0MDIzYzA0Iiwib3JpZ2luIjoiYXV0aG9yZWQtZGlzcGxheSIsInVyaSI6Ii9hdWRpby9jYXN0L2NsaXBzLzYyZDNmOTIzNzIxZTBmMmVmMWYwZGI4YjMzYzkzZjc1NTk1NTJiYzkzMDI0OGRmZWRhYzY2YmEwODVhNmNjNDIud2F2In0seyJ0ZXh0IjoiVGhlIGZsb3VyIGlzIGRyeSEgU29s4oCZcyByZXBhaXIgbWVhbnMgSSBjYW4ga2VlcCBteSBwcm9taXNlLiBGaXJzdCB3ZeKAmWxsIG1peCB0aGUgZG91Z2guIFRoZW4gd2XigJlsbCBkaXZpZGUgYW5kIHNoYXBlIGl0IGludG8gc2ltaWxhci1zaXplZCBsb2F2ZXMgc28gdGhleSBiYWtlIGV2ZW5seS4iLCJzcGVha2VyIjoicmluYSIsInZvaWNlSWQiOiI5YTljZjQ3NzAyZGE0NzZhYTQ2MjllMjUwNmQ0YTg1NyIsIm9yaWdpbiI6ImF1dGhvcmVkLWRpc3BsYXkiLCJ1cmkiOiIvYXVkaW8vY2FzdC9jbGlwcy9kNWExNmMwYTM3ZGJkZGY5ZGJhZjk4N2YxMTlmMTE5MTc0MmI1NGE0YjdlZDgzZDIyYjU0NTcxMjg1ODg1MWNjLndhdiJ9LHsidGV4dCI6IkkgY2FuIGhlbHAgeW91IGdldCB0aGUgYnJlYWQgcmVhZHkuIiwic3BlYWtlciI6InBpcCIsInZvaWNlSWQiOiI4MjkxODRjNjM1MzE0Yzk0ODVlNDg2OTAxMTZmZjhhZCIsIm9yaWdpbiI6ImF1dGhvcmVkLWRpc3BsYXkiLCJ1cmkiOiIvYXVkaW8vY2FzdC9jbGlwcy83MzlkNTA3OGFjMmYyNzc4ODNmYmUzYjk1OGJjN2RhZjQxNGNlNWRhZDI0NmRmNDE5ZDMwODU2OWZmMmQ0OTU5LndhdiJ9LHsidGV4dCI6IldlIG1lYXN1cmUgZmxvdXIsIGNsZWFuIHdhdGVyLCB5ZWFzdCBhbmQgYSBsaXR0bGUgc2FsdCwgdGhlbiBtaXggYW5kIGtuZWFkIHRoZW0uIEtuZWFkaW5nIG1lYW5zIHByZXNzaW5nIGFuZCBmb2xkaW5nIHRoZSBkb3VnaCB1bnRpbCBpdCBob2xkcyB0b2dldGhlciBhbmQgZmVlbHMgc3RyZXRjaHkuIiwic3BlYWtlciI6Im5hcnJhdG9yIiwidm9pY2VJZCI6IjA3YTQ0YTY5NTgzMDRmYTI4Y2VmNjBiMGQ0MDIzYzA0Iiwib3JpZ2luIjoiYXV0aG9yZWQtZGlzcGxheSIsInVyaSI6Ii9hdWRpby9jYXN0L2NsaXBzLzRkYmYxZTk0YjU1MzEzZmVhOGY5OWYxZmI0ZDg0OGZlYmI2MjRkOWZiYTBmODM2NGViMDczZWYyMDIzMzQ1ZTEud2F2In1dLCJ3b3JkVGV4dCI6IlJpbmEiLCJwcm92aWRlclJlcXVlc3RzIjowfQ=="
+        }
+      ]
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture reading coverage: bakery unshaped",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 8545,
+      "retries": 0,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "reading-coverage",
+          "body": "eyJzdGFnZSI6InVuc2hhcGVkIiwiZml4dHVyZSI6dHJ1ZSwibWVkaWEiOiJzeW50aGV0aWMgY29tcGxldGlvbjsgcmVhbCByb3V0aW5nIGFuZCBleGlzdGluZyBjYXRhbG9ndWUiLCJleHBlY3RlZCI6W3sidGV4dCI6IlJpbmEgc2V0IHRoZSB1bmV2ZW5seSBiYWtlZCBsdW1wIGFzaWRlLiBUaGUgbWlkZGxlIHdhcyBzdGlsbCBkb3VnaHkuIFNoZSBvcGVuZWQgYW5vdGhlciBkcnkgc2FjayBhbmQgYnJvdWdodCBhIGNsZWFuIGJvd2wgdG8gdGhlIGNvdW50ZXIuIiwic3BlYWtlciI6Im5hcnJhdG9yIn0seyJ0ZXh0IjoiVGhhdCBsdW1wIHdhcyB0b28gbGFyZ2UgdG8gYmFrZSBldmVubHkuIFdlIHN0aWxsIGhhdmUgZHJ5IGZsb3VyIGZvciBhIG5ldyBiYXRjaC4gVGhpcyB0aW1lLCB3ZSBjYW4gZGl2aWRlIGFuZCBzaGFwZSB0aGUgZG91Z2ggYmVmb3JlIGl0IGdvZXMgaW50byB0aGUgb3Zlbi4iLCJzcGVha2VyIjoicmluYSJ9LHsidGV4dCI6IkkgY2FuIGhlbHAgeW91IGdldCB0aGUgYnJlYWQgcmVhZHkuIiwic3BlYWtlciI6InBpcCJ9LHsidGV4dCI6IldlIG1lYXN1cmUgZmxvdXIsIGNsZWFuIHdhdGVyLCB5ZWFzdCBhbmQgYSBsaXR0bGUgc2FsdCwgdGhlbiBtaXggYW5kIGtuZWFkIHRoZW0uIEtuZWFkaW5nIG1lYW5zIHByZXNzaW5nIGFuZCBmb2xkaW5nIHRoZSBkb3VnaCB1bnRpbCBpdCBob2xkcyB0b2dldGhlciBhbmQgZmVlbHMgc3RyZXRjaHkuIiwic3BlYWtlciI6Im5hcnJhdG9yIn1dLCJwbGF5ZWQiOlt7InRleHQiOiJSaW5hIHNldCB0aGUgdW5ldmVubHkgYmFrZWQgbHVtcCBhc2lkZS4gVGhlIG1pZGRsZSB3YXMgc3RpbGwgZG91Z2h5LiBTaGUgb3BlbmVkIGFub3RoZXIgZHJ5IHNhY2sgYW5kIGJyb3VnaHQgYSBjbGVhbiBib3dsIHRvIHRoZSBjb3VudGVyLiIsInNwZWFrZXIiOiJuYXJyYXRvciIsInZvaWNlSWQiOiIwN2E0NGE2OTU4MzA0ZmEyOGNlZjYwYjBkNDAyM2MwNCIsIm9yaWdpbiI6ImF1dGhvcmVkLWRpc3BsYXkiLCJ1cmkiOiIvYXVkaW8vY2FzdC9jbGlwcy8yODM2YjY1NmI3MmU2MTViNzRmMjI3YzUzMTU3ZTEzZWJiMjY1ZDZhNzI3OTc0OThhOGJjYjU0YWJhNzAwNGFkLndhdiJ9LHsidGV4dCI6IlRoYXQgbHVtcCB3YXMgdG9vIGxhcmdlIHRvIGJha2UgZXZlbmx5LiBXZSBzdGlsbCBoYXZlIGRyeSBmbG91ciBmb3IgYSBuZXcgYmF0Y2guIFRoaXMgdGltZSwgd2UgY2FuIGRpdmlkZSBhbmQgc2hhcGUgdGhlIGRvdWdoIGJlZm9yZSBpdCBnb2VzIGludG8gdGhlIG92ZW4uIiwic3BlYWtlciI6InJpbmEiLCJ2b2ljZUlkIjoiOWE5Y2Y0NzcwMmRhNDc2YWE0NjI5ZTI1MDZkNGE4NTciLCJvcmlnaW4iOiJhdXRob3JlZC1kaXNwbGF5IiwidXJpIjoiL2F1ZGlvL2Nhc3QvY2xpcHMvMDZlZTZkYzA4YWMxNmMwOTcwOTEyZjc0MzZmODYxYTE5MjA0MmZhYjhiNGYyNzYxMWI4M2FhZmVhOWJiOWQwNy53YXYifSx7InRleHQiOiJJIGNhbiBoZWxwIHlvdSBnZXQgdGhlIGJyZWFkIHJlYWR5LiIsInNwZWFrZXIiOiJwaXAiLCJ2b2ljZUlkIjoiODI5MTg0YzYzNTMxNGM5NDg1ZTQ4NjkwMTE2ZmY4YWQiLCJvcmlnaW4iOiJhdXRob3JlZC1kaXNwbGF5IiwidXJpIjoiL2F1ZGlvL2Nhc3QvY2xpcHMvNzM5ZDUwNzhhYzJmMjc3ODgzZmJlM2I5NThiYzdkYWY0MTRjZTVkYWQyNDZkZjQxOWQzMDg1NjlmZjJkNDk1OS53YXYifSx7InRleHQiOiJXZSBtZWFzdXJlIGZsb3VyLCBjbGVhbiB3YXRlciwgeWVhc3QgYW5kIGEgbGl0dGxlIHNhbHQsIHRoZW4gbWl4IGFuZCBrbmVhZCB0aGVtLiBLbmVhZGluZyBtZWFucyBwcmVzc2luZyBhbmQgZm9sZGluZyB0aGUgZG91Z2ggdW50aWwgaXQgaG9sZHMgdG9nZXRoZXIgYW5kIGZlZWxzIHN0cmV0Y2h5LiIsInNwZWFrZXIiOiJuYXJyYXRvciIsInZvaWNlSWQiOiIwN2E0NGE2OTU4MzA0ZmEyOGNlZjYwYjBkNDAyM2MwNCIsIm9yaWdpbiI6ImF1dGhvcmVkLWRpc3BsYXkiLCJ1cmkiOiIvYXVkaW8vY2FzdC9jbGlwcy80ZGJmMWU5NGI1NTMxM2ZlYThmOTlmMWZiNGQ4NDhmZWJiNjI0ZDlmYmEwZjgzNjRlYjA3M2VmMjAyMzM0NWUxLndhdiJ9XSwid29yZFRleHQiOiJSaW5hIiwicHJvdmlkZXJSZXF1ZXN0cyI6MH0="
+        }
+      ]
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture reading coverage: bakery mixed",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 7474,
+      "retries": 0,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "reading-coverage",
+          "body": "eyJzdGFnZSI6Im1peGVkIiwiZml4dHVyZSI6dHJ1ZSwibWVkaWEiOiJzeW50aGV0aWMgY29tcGxldGlvbjsgcmVhbCByb3V0aW5nIGFuZCBleGlzdGluZyBjYXRhbG9ndWUiLCJleHBlY3RlZCI6W3sidGV4dCI6IlJpbmEgbWVhc3VyZWQgdGhlIGluZ3JlZGllbnRzLiBQaXAgaGVscGVkIG1peCB0aGVtLCBhbmQgUmluYSBwcmVzc2VkIGFuZCBmb2xkZWQgdGhlIGRvdWdoLiBBZnRlciBpdCBoYWQgcmVzdGVkIGFuZCByaXNlbiwgb25lIGxhcmdlIGx1bXAgZmlsbGVkIHRoZSBib3dsLiIsInNwZWFrZXIiOiJuYXJyYXRvciJ9LHsidGV4dCI6IlRoZSBkb3VnaCBpcyByZWFkeSB0byBzaGFwZS4gU2ltaWxhci1zaXplZCBsb2F2ZXMgd2lsbCBiYWtlIGV2ZW5seS4gQSBzaW5nbGUgbGFyZ2UgbHVtcCB3b3VsZCB0YWtlIGxvbmdlciBpbiB0aGUgbWlkZGxlIHRoYW4gb3VyIHJlY2lwZSBhbGxvd3MuIiwic3BlYWtlciI6InJpbmEifSx7InRleHQiOiJTbWFsbCBwaWVjZXMgYW5kIGxhcmdlIHBpZWNlcyBkbyBub3QgYmFrZSBhdCB0aGUgc2FtZSBzcGVlZC4gV2hlbiB0aGUgbG9hdmVzIGFyZSBzaW1pbGFyIHNpemVzLCB0aGV5IGNhbiBhbGwgYmUgcmVhZHkgdG9nZXRoZXIuIiwic3BlYWtlciI6Im5hcnJhdG9yIn1dLCJwbGF5ZWQiOlt7InRleHQiOiJSaW5hIG1lYXN1cmVkIHRoZSBpbmdyZWRpZW50cy4gUGlwIGhlbHBlZCBtaXggdGhlbSwgYW5kIFJpbmEgcHJlc3NlZCBhbmQgZm9sZGVkIHRoZSBkb3VnaC4gQWZ0ZXIgaXQgaGFkIHJlc3RlZCBhbmQgcmlzZW4sIG9uZSBsYXJnZSBsdW1wIGZpbGxlZCB0aGUgYm93bC4iLCJzcGVha2VyIjoibmFycmF0b3IiLCJ2b2ljZUlkIjoiMDdhNDRhNjk1ODMwNGZhMjhjZWY2MGIwZDQwMjNjMDQiLCJvcmlnaW4iOiJhdXRob3JlZC1kaXNwbGF5IiwidXJpIjoiL2F1ZGlvL2Nhc3QvY2xpcHMvNDc0NWRjNzI0ZDQ1MTcxOWM0ZDUyNGEwOTQ4MmY4MDAxOTgxZDllZjdkMTQ2OWEyMjgyZjcyNzQxYzIxOTFiMi53YXYifSx7InRleHQiOiJUaGUgZG91Z2ggaXMgcmVhZHkgdG8gc2hhcGUuIFNpbWlsYXItc2l6ZWQgbG9hdmVzIHdpbGwgYmFrZSBldmVubHkuIEEgc2luZ2xlIGxhcmdlIGx1bXAgd291bGQgdGFrZSBsb25nZXIgaW4gdGhlIG1pZGRsZSB0aGFuIG91ciByZWNpcGUgYWxsb3dzLiIsInNwZWFrZXIiOiJyaW5hIiwidm9pY2VJZCI6IjlhOWNmNDc3MDJkYTQ3NmFhNDYyOWUyNTA2ZDRhODU3Iiwib3JpZ2luIjoiYXV0aG9yZWQtZGlzcGxheSIsInVyaSI6Ii9hdWRpby9jYXN0L2NsaXBzLzAyOTNmOTI4ZjQ0Y2NlYmEwMjViODY3YzUxNjk3ODlhNWY3YmQ3NTAzNDk1YzcxZmJkOWY2MWJhOTIyZGVmNTAud2F2In0seyJ0ZXh0IjoiU21hbGwgcGllY2VzIGFuZCBsYXJnZSBwaWVjZXMgZG8gbm90IGJha2UgYXQgdGhlIHNhbWUgc3BlZWQuIFdoZW4gdGhlIGxvYXZlcyBhcmUgc2ltaWxhciBzaXplcywgdGhleSBjYW4gYWxsIGJlIHJlYWR5IHRvZ2V0aGVyLiIsInNwZWFrZXIiOiJuYXJyYXRvciIsInZvaWNlSWQiOiIwN2E0NGE2OTU4MzA0ZmEyOGNlZjYwYjBkNDAyM2MwNCIsIm9yaWdpbiI6ImF1dGhvcmVkLWRpc3BsYXkiLCJ1cmkiOiIvYXVkaW8vY2FzdC9jbGlwcy80MTVkNTM3MDFjZTUzNDE3OGU4MjNiZDIzNDFhN2UyYjY0MWU0YTZkOWM0NmEyNWIzMWY1ZTRiYmM3MmEyN2ZiLndhdiJ9XSwid29yZFRleHQiOiJSaW5hIiwicHJvdmlkZXJSZXF1ZXN0cyI6MH0="
+        }
+      ]
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture reading coverage: bakery shaped",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 8811,
+      "retries": 0,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "reading-coverage",
+          "body": "eyJzdGFnZSI6InNoYXBlZCIsImZpeHR1cmUiOnRydWUsIm1lZGlhIjoic3ludGhldGljIGNvbXBsZXRpb247IHJlYWwgcm91dGluZyBhbmQgZXhpc3RpbmcgY2F0YWxvZ3VlIiwiZXhwZWN0ZWQiOlt7InRleHQiOiJQaXAgaGVscGVkIGRpdmlkZSB0aGUgZG91Z2guIFJpbmEgc2hhcGVkIHRoZSBwaWVjZXMgaW50byB0aHJlZSBsb2F2ZXMgYW5kIGFycmFuZ2VkIHRoZW0gd2l0aCBzcGFjZSBiZXR3ZWVuIHRoZW0uIiwic3BlYWtlciI6Im5hcnJhdG9yIn0seyJ0ZXh0IjoiUmVhZHkgZm9yIHRoZSBvdmVuLiBJ4oCZbGwgaGFuZGxlIHRoZSBob3QgdHJheS4gQSBsaXR0bGUgd2hpbGUgYWdvIEkgd2FzIG1vdmluZyBmbG91ciBzYWNrczsgbm93IHdlIGhhdmUgbG9hdmVzIHRvIGJha2UuIiwic3BlYWtlciI6InJpbmEifSx7InRleHQiOiJSYWlud2F0ZXIgY2FuIGNhcnJ5IGRpcnQgdGhyb3VnaCB0aGUgcm9vZi4iLCJzcGVha2VyIjoibmFycmF0b3IifSx7InRleHQiOiJUaGUgcmVwYWlyZWQgcm9vZiBrZXB0IHRoZSBmbG91ciBkcnkuIFJpbmEgdXNlZCBpdCB0byBiYWtlIHRoZSBicmVhZCBzaGUgaGFkIHByb21pc2VkLiIsInNwZWFrZXIiOiJuYXJyYXRvciJ9XSwicGxheWVkIjpbeyJ0ZXh0IjoiUGlwIGhlbHBlZCBkaXZpZGUgdGhlIGRvdWdoLiBSaW5hIHNoYXBlZCB0aGUgcGllY2VzIGludG8gdGhyZWUgbG9hdmVzIGFuZCBhcnJhbmdlZCB0aGVtIHdpdGggc3BhY2UgYmV0d2VlbiB0aGVtLiIsInNwZWFrZXIiOiJuYXJyYXRvciIsInZvaWNlSWQiOiIwN2E0NGE2OTU4MzA0ZmEyOGNlZjYwYjBkNDAyM2MwNCIsIm9yaWdpbiI6ImF1dGhvcmVkLWRpc3BsYXkiLCJ1cmkiOiIvYXVkaW8vY2FzdC9jbGlwcy8xZmViMDAwM2YwNjU1ZTEwOThlMzkyY2MzOWQ4NmMzNDk4Y2ZlOGEyOTg4OGE5MTE2MTRhMTE5ZTRlYTY3ODgzLndhdiJ9LHsidGV4dCI6IlJlYWR5IGZvciB0aGUgb3Zlbi4gSeKAmWxsIGhhbmRsZSB0aGUgaG90IHRyYXkuIEEgbGl0dGxlIHdoaWxlIGFnbyBJIHdhcyBtb3ZpbmcgZmxvdXIgc2Fja3M7IG5vdyB3ZSBoYXZlIGxvYXZlcyB0byBiYWtlLiIsInNwZWFrZXIiOiJyaW5hIiwidm9pY2VJZCI6IjlhOWNmNDc3MDJkYTQ3NmFhNDYyOWUyNTA2ZDRhODU3Iiwib3JpZ2luIjoiYXV0aG9yZWQtZGlzcGxheSIsInVyaSI6Ii9hdWRpby9jYXN0L2NsaXBzLzUxOGMyZDQyZDFhOTM2MGM3YTY4YThmNDZiM2Q5NjY3YTBjYTk3MTU3NDJjMWUzZDMyM2M3MTQxY2U2YmE2YmIud2F2In0seyJ0ZXh0IjoiUmFpbndhdGVyIGNhbiBjYXJyeSBkaXJ0IHRocm91Z2ggdGhlIHJvb2YuIiwic3BlYWtlciI6Im5hcnJhdG9yIiwidm9pY2VJZCI6IjA3YTQ0YTY5NTgzMDRmYTI4Y2VmNjBiMGQ0MDIzYzA0Iiwib3JpZ2luIjoiYXV0aG9yZWQtZGlzcGxheSIsInVyaSI6Ii9hdWRpby9jYXN0L2NsaXBzLzFmNmZkMmQ3ZTFlY2MyODk2NWZkYTZiN2Q0NzUxNmI5NGRhOTIwY2IwMzQ3ZWYyN2VmMzkwNmVhOGUwNGM3MzAud2F2In0seyJ0ZXh0IjoiVGhlIHJlcGFpcmVkIHJvb2Yga2VwdCB0aGUgZmxvdXIgZHJ5LiBSaW5hIHVzZWQgaXQgdG8gYmFrZSB0aGUgYnJlYWQgc2hlIGhhZCBwcm9taXNlZC4iLCJzcGVha2VyIjoibmFycmF0b3IiLCJ2b2ljZUlkIjoiMDdhNDRhNjk1ODMwNGZhMjhjZWY2MGIwZDQwMjNjMDQiLCJvcmlnaW4iOiJhdXRob3JlZC1kaXNwbGF5IiwidXJpIjoiL2F1ZGlvL2Nhc3QvY2xpcHMvNzBkMWZjNmY3NWNhNWU2YWE5NjQyOWE4OTliMTYyZTRiY2VkZDZjMTUxY2YwOTVmZTkzMDk2OWEwNTAwYzIxYi53YXYifV0sIndvcmRUZXh0IjoiUGlwIiwicHJvdmlkZXJSZXF1ZXN0cyI6MH0="
+        }
+      ]
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture reading coverage: bakery baked",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 8563,
+      "retries": 0,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "reading-coverage",
+          "body": "eyJzdGFnZSI6ImJha2VkIiwiZml4dHVyZSI6dHJ1ZSwibWVkaWEiOiJzeW50aGV0aWMgY29tcGxldGlvbjsgcmVhbCByb3V0aW5nIGFuZCBleGlzdGluZyBjYXRhbG9ndWUiLCJleHBlY3RlZCI6W3sidGV4dCI6IkEgbGl0dGxlIGxhdGVyLCBSaW5hIGxpZnRlZCB0aGUgZ29sZGVuIGxvYXZlcyBmcm9tIHRoZSBvdmVuLiBTaGUgc2V0IHRoZW0gYXNpZGUgdG8gY29vbCwgdGhlbiBjaG9zZSBvbmUgZm9yIFNvbC4iLCJzcGVha2VyIjoibmFycmF0b3IifSx7InRleHQiOiJUaGVyZeKAmXMgdGhlIGJyZWFkIEkgcHJvbWlzZWQuIEnigJlkIGxpa2UgU29sIHRvIGhhdmUgb25lIGxvYWYgYXMgYSB0aGFuay15b3UuIEhlIHRoaW5rcyBmaXhpbmcgYSB0aWxlIHdhcyBvbmx5IGEgbGl0dGxlIGpvYiwgYnV0IGl0IG1hZGUgYWxsIHRoaXMgcG9zc2libGUuIiwic3BlYWtlciI6InJpbmEifSx7InRleHQiOiJMZXTigJlzIGdvIGFuZCBzaG93IGhpbS4iLCJzcGVha2VyIjoicGlwIn0seyJ0ZXh0IjoiUmluYSB0YWtlcyBvbmUgYmFrZWQgbG9hZiB0byB0aGFuayBTb2wuIFRoZSBvdGhlciBicmVhZCBzdGF5cyBmb3IgdGhlIHBlb3BsZSBzaGUgcHJvbWlzZWQuIiwic3BlYWtlciI6Im5hcnJhdG9yIn1dLCJwbGF5ZWQiOlt7InRleHQiOiJBIGxpdHRsZSBsYXRlciwgUmluYSBsaWZ0ZWQgdGhlIGdvbGRlbiBsb2F2ZXMgZnJvbSB0aGUgb3Zlbi4gU2hlIHNldCB0aGVtIGFzaWRlIHRvIGNvb2wsIHRoZW4gY2hvc2Ugb25lIGZvciBTb2wuIiwic3BlYWtlciI6Im5hcnJhdG9yIiwidm9pY2VJZCI6IjA3YTQ0YTY5NTgzMDRmYTI4Y2VmNjBiMGQ0MDIzYzA0Iiwib3JpZ2luIjoiYXV0aG9yZWQtZGlzcGxheSIsInVyaSI6Ii9hdWRpby9jYXN0L2NsaXBzLzMwNDI0ODlmYjEyNWU3ZTEyNjIyYWNjMmMyZDIzZWU4MGM5NTM1NTViZDU2NzI2ZTc0OGJiYzczOTgyYzYxMzgud2F2In0seyJ0ZXh0IjoiVGhlcmXigJlzIHRoZSBicmVhZCBJIHByb21pc2VkLiBJ4oCZZCBsaWtlIFNvbCB0byBoYXZlIG9uZSBsb2FmIGFzIGEgdGhhbmsteW91LiBIZSB0aGlua3MgZml4aW5nIGEgdGlsZSB3YXMgb25seSBhIGxpdHRsZSBqb2IsIGJ1dCBpdCBtYWRlIGFsbCB0aGlzIHBvc3NpYmxlLiIsInNwZWFrZXIiOiJyaW5hIiwidm9pY2VJZCI6IjlhOWNmNDc3MDJkYTQ3NmFhNDYyOWUyNTA2ZDRhODU3Iiwib3JpZ2luIjoiYXV0aG9yZWQtZGlzcGxheSIsInVyaSI6Ii9hdWRpby9jYXN0L2NsaXBzL2MxOWYyYWNiODUzYmRjZTM0MjU1NzI4MjA5ODIwZjk3ZDIxZGFhY2U5MzdkODY1MGViZTc1N2Y3MjFjNTFhMzYud2F2In0seyJ0ZXh0IjoiTGV04oCZcyBnbyBhbmQgc2hvdyBoaW0uIiwic3BlYWtlciI6InBpcCIsInZvaWNlSWQiOiI4MjkxODRjNjM1MzE0Yzk0ODVlNDg2OTAxMTZmZjhhZCIsIm9yaWdpbiI6ImF1dGhvcmVkLWRpc3BsYXkiLCJ1cmkiOiIvYXVkaW8vY2FzdC9jbGlwcy9iOGQ1MmI0NmUzMjRjNjFjYmMzZDhlMTA3OTRjYmM4YmY3YTc1MWNhZmFiZTUyOTYzYTY1MjlhNmViN2ZlODExLndhdiJ9LHsidGV4dCI6IlJpbmEgdGFrZXMgb25lIGJha2VkIGxvYWYgdG8gdGhhbmsgU29sLiBUaGUgb3RoZXIgYnJlYWQgc3RheXMgZm9yIHRoZSBwZW9wbGUgc2hlIHByb21pc2VkLiIsInNwZWFrZXIiOiJuYXJyYXRvciIsInZvaWNlSWQiOiIwN2E0NGE2OTU4MzA0ZmEyOGNlZjYwYjBkNDAyM2MwNCIsIm9yaWdpbiI6ImF1dGhvcmVkLWRpc3BsYXkiLCJ1cmkiOiIvYXVkaW8vY2FzdC9jbGlwcy9mZDU0ZmUxNWNhM2RmMWVjZTZlYzI0NDU5MmUxZGUwZGZjNjdlYTE4MGRmZjQxMmM2NzlhN2I5Y2ZmOTM0NTU0LndhdiJ9XSwid29yZFRleHQiOiJBIiwicHJvdmlkZXJSZXF1ZXN0cyI6MH0="
+        }
+      ]
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture reading coverage: bakery escorting",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 6099,
+      "retries": 0,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "reading-coverage",
+          "body": "eyJzdGFnZSI6ImVzY29ydGluZyIsImZpeHR1cmUiOnRydWUsIm1lZGlhIjoic3ludGhldGljIGNvbXBsZXRpb247IHJlYWwgcm91dGluZyBhbmQgZXhpc3RpbmcgY2F0YWxvZ3VlIiwiZXhwZWN0ZWQiOlt7InRleHQiOiJJIGhhdmUgU29s4oCZcyBsb2FmLiBXYWxrIHdpdGggbWUgYWxvbmcgdGhlIHBhdGggdG8gaGlzIHdvcmtzaG9wLiBJZiB5b3UgbmVlZCB0byBsb29rIGF0IHNvbWV0aGluZywgSeKAmWxsIHdhaXQgZm9yIHlvdS4iLCJzcGVha2VyIjoicmluYSJ9XSwicGxheWVkIjpbeyJ0ZXh0IjoiSSBoYXZlIFNvbOKAmXMgbG9hZi4gV2FsayB3aXRoIG1lIGFsb25nIHRoZSBwYXRoIHRvIGhpcyB3b3Jrc2hvcC4gSWYgeW91IG5lZWQgdG8gbG9vayBhdCBzb21ldGhpbmcsIEnigJlsbCB3YWl0IGZvciB5b3UuIiwic3BlYWtlciI6InJpbmEiLCJ2b2ljZUlkIjoiOWE5Y2Y0NzcwMmRhNDc2YWE0NjI5ZTI1MDZkNGE4NTciLCJvcmlnaW4iOiJhdXRob3JlZC1kaXNwbGF5IiwidXJpIjoiL2F1ZGlvL2Nhc3QvY2xpcHMvMTZiZTBlOTI1ODU1Njg5ZTZkMDZlNDFhMGFiMjhhNTViYWY1ODNkMDE2OTJkOWRlYmEzODc5MjNhZWJmMjE0YS53YXYifV0sIndvcmRUZXh0IjoiSSIsInByb3ZpZGVyUmVxdWVzdHMiOjB9"
+        }
+      ]
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture reading coverage: bakery handoff",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 13679,
+      "retries": 0,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "reading-coverage",
+          "body": "eyJzdGFnZSI6ImhhbmRvZmYiLCJmaXh0dXJlIjp0cnVlLCJtZWRpYSI6InN5bnRoZXRpYyBjb21wbGV0aW9uOyByZWFsIHJvdXRpbmcgYW5kIGV4aXN0aW5nIGNhdGFsb2d1ZSIsImV4cGVjdGVkIjpbeyJ0ZXh0IjoiU29sLCB5b3VyIHJlcGFpciBrZXB0IHRoZSBmbG91ciBkcnkuIFRoZSBicmVhZCBpcyByZWFkeSBmb3IgbXkgY3VzdG9tZXJzLCBhbmQgSeKAmXZlIGJyb3VnaHQgdGhpcyBsb2FmIGZvciB5b3UuIFRoYW5rIHlvdS4iLCJzcGVha2VyIjoicmluYSJ9LHsidGV4dCI6IkZvciBtZT8gSSBvbmx5IHJlcGxhY2VkIG9uZSB0aWxlLiBZb3XigJl2ZSBkb25lIGFsbCB0aGUgYmFraW5nLiIsInNwZWFrZXIiOiJzb2wifSx7InRleHQiOiJXZSBjaGVja2VkIHRoZSBmbG91ciBhZnRlciB5b3UgbGVmdC4gSXQgd2FzIGRyeS4gVGhlbiB3ZSBtYWRlIGRvdWdoIGZyb20gaXQuIFlvdXIgcGFnZSBzdG9wcyBiZWZvcmUgdGhhdCBwYXJ0LiIsInNwZWFrZXIiOiJwaXAifSx7InRleHQiOiJQaXAgY2FuIHRlbGwgeW91IHdoYXQgaGFwcGVuZWQgaW4gdGhlIGJha2VyeS4gSeKAmWQgYmV0dGVyIGdldCBiYWNrIGJlZm9yZSBteSBjdXN0b21lcnMgdGhpbmsgSeKAmXZlIGVhdGVuIHRoZWlyIGJyZWFkLiIsInNwZWFrZXIiOiJyaW5hIn0seyJ0ZXh0IjoiU29sIGxvb2tlZCBmcm9tIHRoZSBsb2FmIHRvIHRoZSBwYWdlIG9uIGhpcyB3b3JrYmVuY2guIEhlIGhhZCBzdGFydGVkIHdyaXRpbmcgYWJvdXQgdGhlIHJlcGFpciwgYnV0IGhpcyBkcmFmdCBzdG9wcGVkIGJlZm9yZSB0aGUgYmFraW5nIGFuZCBSaW5h4oCZcyB2aXNpdC4iLCJzcGVha2VyIjoibmFycmF0b3IifV0sInBsYXllZCI6W3sidGV4dCI6IlNvbCwgeW91ciByZXBhaXIga2VwdCB0aGUgZmxvdXIgZHJ5LiBUaGUgYnJlYWQgaXMgcmVhZHkgZm9yIG15IGN1c3RvbWVycywgYW5kIEnigJl2ZSBicm91Z2h0IHRoaXMgbG9hZiBmb3IgeW91LiBUaGFuayB5b3UuIiwic3BlYWtlciI6InJpbmEiLCJ2b2ljZUlkIjoiOWE5Y2Y0NzcwMmRhNDc2YWE0NjI5ZTI1MDZkNGE4NTciLCJvcmlnaW4iOiJhdXRob3JlZC1kaXNwbGF5IiwidXJpIjoiL2F1ZGlvL2Nhc3QvY2xpcHMvNzZhZDU5OTNiZjJjZWRlODA3ODE5OGQ5YWU3OTkwNWIyNmNmZjQ4NzYyZTM2MTY2MmI2ZGNjMDM1Mzc3MjRmYi53YXYifSx7InRleHQiOiJGb3IgbWU/IEkgb25seSByZXBsYWNlZCBvbmUgdGlsZS4gWW914oCZdmUgZG9uZSBhbGwgdGhlIGJha2luZy4iLCJzcGVha2VyIjoic29sIiwidm9pY2VJZCI6IjE2NThkNzc3MjQwNzQxMTJhMDRmNWFhOWQwM2NjNTkxIiwib3JpZ2luIjoiYXV0aG9yZWQtZGlzcGxheSIsInVyaSI6Ii9hdWRpby9jYXN0L2NsaXBzL2UwNzliMmEzMzI5MjkxYjZmMjIzMWJkMTAwZWY0MGRiMDY1MDY2ZGNiYWQ3YzhmOGZmMGVhMjFmNmM3M2Q2ZjUud2F2In0seyJ0ZXh0IjoiV2UgY2hlY2tlZCB0aGUgZmxvdXIgYWZ0ZXIgeW91IGxlZnQuIEl0IHdhcyBkcnkuIFRoZW4gd2UgbWFkZSBkb3VnaCBmcm9tIGl0LiBZb3VyIHBhZ2Ugc3RvcHMgYmVmb3JlIHRoYXQgcGFydC4iLCJzcGVha2VyIjoicGlwIiwidm9pY2VJZCI6IjgyOTE4NGM2MzUzMTRjOTQ4NWU0ODY5MDExNmZmOGFkIiwib3JpZ2luIjoiYXV0aG9yZWQtZGlzcGxheSIsInVyaSI6Ii9hdWRpby9jYXN0L2NsaXBzLzg4NzlmZDYwOGE3ZDc5ZGY0MmE5YmFhYzVjODE0OGFkMjg0Yjg2MjA5OGNlNDUwNTJiYTY1NWY0YmE5N2U0OTkud2F2In0seyJ0ZXh0IjoiUGlwIGNhbiB0ZWxsIHlvdSB3aGF0IGhhcHBlbmVkIGluIHRoZSBiYWtlcnkuIEnigJlkIGJldHRlciBnZXQgYmFjayBiZWZvcmUgbXkgY3VzdG9tZXJzIHRoaW5rIEnigJl2ZSBlYXRlbiB0aGVpciBicmVhZC4iLCJzcGVha2VyIjoicmluYSIsInZvaWNlSWQiOiI5YTljZjQ3NzAyZGE0NzZhYTQ2MjllMjUwNmQ0YTg1NyIsIm9yaWdpbiI6ImF1dGhvcmVkLWRpc3BsYXkiLCJ1cmkiOiIvYXVkaW8vY2FzdC9jbGlwcy85ZjQ1NTA1Mzg5NjNjZDliZjE0NWE5Yjg2N2I3MGM0MjY4Y2M5YzZjMDYxZjdlNDM4MWUxYzc3NDdjNWFlZDIxLndhdiJ9LHsidGV4dCI6IlNvbCBsb29rZWQgZnJvbSB0aGUgbG9hZiB0byB0aGUgcGFnZSBvbiBoaXMgd29ya2JlbmNoLiBIZSBoYWQgc3RhcnRlZCB3cml0aW5nIGFib3V0IHRoZSByZXBhaXIsIGJ1dCBoaXMgZHJhZnQgc3RvcHBlZCBiZWZvcmUgdGhlIGJha2luZyBhbmQgUmluYeKAmXMgdmlzaXQuIiwic3BlYWtlciI6Im5hcnJhdG9yIiwidm9pY2VJZCI6IjA3YTQ0YTY5NTgzMDRmYTI4Y2VmNjBiMGQ0MDIzYzA0Iiwib3JpZ2luIjoiYXV0aG9yZWQtZGlzcGxheSIsInVyaSI6Ii9hdWRpby9jYXN0L2NsaXBzLzhkMjljOWZkZGE5YjEzOTJkYjljN2M1ZTA2ZGI4NTU0ZGMyNzE1M2RhNjkzODg2OWVkYmU1YzZkYmY0OTFjYWUud2F2In1dLCJ3b3JkVGV4dCI6IlNvbCIsInByb3ZpZGVyUmVxdWVzdHMiOjB9"
+        }
+      ]
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "native bakery narration plays the existing recording and can be canceled",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 13667,
+      "retries": 0,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "native-audio",
+          "body": "W3sidXJpIjoiaHR0cDovLzEyNy4wLjAuMTo0NDA4L2F1ZGlvL2Nhc3QvY2xpcHMvODEyM2U4ZWQyYTQ1MDRiMDhkY2NkN2Q5MTAxYWE2YzA4NGRhNDY3NGYzMzI5Y2FkNWUzZWMyZGVjOGM3OGE3NC53YXYiLCJlbmRlZCI6dHJ1ZSwiZHVyYXRpb24iOjguNDgsInRpbWUiOjguNDh9XQ=="
+        }
+      ]
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "routine cold loading has no interrupting card or loading announcement",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 4470,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture cursor diagnostic: cuts follow the visible dough",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 10192,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture cursor diagnostic: the visible recipient outline supports approach and tile delivery",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 8521,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture cursor recovery: adjust unequal dough at 1098",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 10540,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture cursor recovery: adjust unequal dough at 1422",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 10407,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture cursor recovery: adjust unequal dough at 1366",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 10420,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture cursor recovery: adjust unequal dough at 1920",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 10853,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-bakery-cursor.spec.ts",
+      "title": "fixture cursor recovery: misplaced roof tile returns to the visible opening",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 16882,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-bakery-pointer-repair.spec.ts",
+      "title": "visible loaf handoff is selectable beside Rina and persists through reload",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 13360,
+      "retries": 0,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "pointer-hit",
+          "body": "eyJ0YXJnZXQiOiJsb2FmIiwibG9hZiI6eyJ4Ijo5LjgwMDM0MjQyMzEzNTAyMywieSI6MC45Nzk2MzAyODI5ODAwNzgzLCJ6IjotOS45OTUyMTUwNTg0MDIxMjR9LCJzdGFydCI6eyJ4Ijo3NDkuNzI4ODI1MTk3MzEsInkiOjQ4Mi45MzcwMzk4MDg3OTl9fQ=="
+        }
+      ]
+    },
+    {
+      "file": "garden-bakery-pointer-repair.spec.ts",
+      "title": "bakery keyboard tile placement cancels, resumes beside the opening and recovers the same tile",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 17361,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-bakery-pointer-repair.spec.ts",
+      "title": "Chromium native bakery touch cancels and then places the visible tile on the actual roof",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 12057,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-bakery.spec.ts",
+      "title": "Bakery: connected repair, wrong placement, compact recovery, baking, accompanied thanks and exact draft excerpt",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 136652,
+      "retries": 0,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "native-selection-trace",
+          "body": "W3sia2V5IjoiQ29udHJvbCtIb21lIiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6MH0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6MX0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6Mn0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6M30seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6NH0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6NX0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6Nn0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6N30seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6OH0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6OX0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6MTB9XQ=="
+        },
+        {
+          "name": "bakery-result",
+          "body": "ewogICJuYXJyYXRpdmVFZGl0aW9uIjogImxpdGVyYXJ5LTIwMjYwOTE2IiwKICAicmV2aWV3TGF5b3V0UmV2aXNpb24iOiAxLAogICJoYW5kcyI6IHsKICAgICJ2ZXJzaW9uIjogMSwKICAgICJjdXRzIjogW10sCiAgICAiZmxvdXJJbkJvd2wiOiBmYWxzZQogIH0sCiAgImpvdXJuYWwiOiB7CiAgICAidmVyc2lvbiI6IDEsCiAgICAibm90ZXMiOiAiIiwKICAgICJzdG9yeWJvYXJkIjogW10KICB9LAogICJsYXlvdXRWZXJzaW9uIjogMiwKICAidmVyc2lvbiI6IDMsCiAgImNvbnRlbnQiOiAiZ2FyZGVuLWNoYXB0ZXItMyIsCiAgInN0b3J5IjogewogICAgIm1ldFNvbCI6IGZhbHNlLAogICAgInNvbENob2ljZSI6ICJub25lIiwKICAgICJzb2xEcmFmdCI6IHsKICAgICAgInRleHQiOiAiIiwKICAgICAgInJldmlzaW9uIjogMAogICAgfSwKICAgICJzb2xFbmRpbmciOiBudWxsLAogICAgIm1hcmFQaWN0dXJlIjogInJlcGFpciIsCiAgICAibGF0ZXJLbm93biI6IGZhbHNlLAogICAgInF1ZXN0aW9ucyI6IFtdLAogICAgInNvbFJlcG9ydGVkIjogZmFsc2UsCiAgICAibWFyYVJlcG9ydGVkIjogZmFsc2UsCiAgICAidGltZUFncmVlZCI6IG51bGwsCiAgICAicGxhbiI6IG51bGwsCiAgICAic29sSW52aXRhdGlvbiI6IG51bGwsCiAgICAibWFyYUludml0YXRpb24iOiBudWxsLAogICAgInBoYXNlIjogInBsYW5uaW5nIiwKICAgICJzb2xPdXRjb21lIjogbnVsbCwKICAgICJyZWNvcmRzIjogewogICAgICAibWFyYSI6IG51bGwsCiAgICAgICJzb2wiOiBudWxsLAogICAgICAiZ3JhbmRtYSI6IGZhbHNlLAogICAgICAicGlwIjogbnVsbAogICAgfSwKICAgICJncmFuZG1hQ29weSI6ICJub25lIiwKICAgICJjbG9zaW5nRG9uZSI6IGZhbHNlLAogICAgImVuZGluZyI6IG51bGwsCiAgICAicHJlc2VudGF0aW9uIjogewogICAgICAicGFnZSI6IDAsCiAgICAgICJmaW5pc2hlZCI6IGZhbHNlCiAgICB9LAogICAgImFuc3dlcnMiOiB7fSwKICAgICJicmlkZ2VGYWlsdXJlcyI6IDAKICB9LAogICJyaXZlciI6IHsKICAgICJjb25zdHJ1Y3Rpb24iOiB7CiAgICAgICJ2ZXJzaW9uIjogMSwKICAgICAgImZpcnN0IjogImEiLAogICAgICAicG9zdHMiOiB7CiAgICAgICAgIndlc3Qtbm9ydGgiOiB0cnVlLAogICAgICAgICJ3ZXN0LXNvdXRoIjogdHJ1ZSwKICAgICAgICAiY2VudGVyLW5vcnRoIjogdHJ1ZSwKICAgICAgICAiY2VudGVyLXNvdXRoIjogdHJ1ZSwKICAgICAgICAiZWFzdC1ub3J0aCI6IHRydWUsCiAgICAgICAgImVhc3Qtc291dGgiOiB0cnVlCiAgICAgIH0sCiAgICAgICJyb3BlcyI6IHsKICAgICAgICAibm9ydGgiOiB7CiAgICAgICAgICAid2VzdCI6IHRydWUsCiAgICAgICAgICAiY2VudGVyIjogdHJ1ZSwKICAgICAgICAgICJlYXN0IjogdHJ1ZQogICAgICAgIH0sCiAgICAgICAgInNvdXRoIjogewogICAgICAgICAgIndlc3QiOiB0cnVlLAogICAgICAgICAgImNlbnRlciI6IHRydWUsCiAgICAgICAgICAiZWFzdCI6IHRydWUKICAgICAgICB9CiAgICAgIH0KICAgIH0sCiAgICAiam91cm5leVZlcnNpb24iOiAxLAogICAgImNvbGxlY3Rpb24iOiBudWxsLAogICAgImVkaXRpb24iOiAiY29ubmVjdGVkLTIwMjYwOTE1IiwKICAgICJyb3Blc0NvbGxlY3RlZCI6IHRydWUsCiAgICAic29pbFByZXBhcmVkIjogZmFsc2UsCiAgICAiYXR0YWNobWVudHMiOiB7CiAgICAgICJ3ZXN0IjogImEiLAogICAgICAiZWFzdCI6ICJiIgogICAgfSwKICAgICJyb3BlTG9jYXRpb25zIjogewogICAgICAid2VzdCI6ICJhdHRhY2hlZCIsCiAgICAgICJlYXN0IjogImF0dGFjaGVkIgogICAgfSwKICAgICJib2F0IjogewogICAgICAicG9zaXRpb24iOiB7CiAgICAgICAgIngiOiAtMS40LAogICAgICAgICJ6IjogMC44CiAgICAgIH0sCiAgICAgICJwaGFzZSI6ICJtb29yZWQiCiAgICB9CiAgfSwKICAibWFyYSI6IHsKICAgICJlZGl0aW9uIjogImNvbm5lY3RlZC0yMDI2MDkxNSIsCiAgICAiYXNraW5nIjogIm5vbmUiLAogICAgInJldHVybk9mZmVyZWQiOiBmYWxzZSwKICAgICJwZXJtaXNzaW9uIjogZmFsc2UsCiAgICAic2VydmljZSI6ICJ3YWl0aW5nIiwKICAgICJwYXJ0aWNpcGF0ZWQiOiBmYWxzZSwKICAgICJzaGFyZWRBdCI6ICJub25lIiwKICAgICJzY2VuZSI6IG51bGwKICB9LAogICJiYWtlcnkiOiB7CiAgICAiZWRpdGlvbiI6ICJjb25uZWN0ZWQtMjAyNjA5MTUiLAogICAgInN0YWdlIjogImRvbmUiLAogICAgIm1ldCI6IHRydWUsCiAgICAicGVybWlzc2lvbiI6IHRydWUsCiAgICAidGlsZSI6ICJyb29mIiwKICAgICJjcmFja2VkIjogInNldC1hc2lkZSIsCiAgICAibG9hZiI6ICJzb2wiLAogICAgInJpbmEiOiB7CiAgICAgICJ4IjogMTAuMjMsCiAgICAgICJ6IjogLTEwLjA3CiAgICB9LAogICAgInVuc2hhcGVkQmF0Y2hlcyI6IDEKICB9LAogICJnYXRoZXJpbmciOiB7CiAgICAiZWRpdGlvbiI6ICJjb25uZWN0ZWQtMjAyNjA5MTUiLAogICAgInJlcG9ydGVkIjogbnVsbCwKICAgICJhcnJpdmFsIjogIm5vdC1zdGFydGVkIiwKICAgICJ3ZWxjb21lIjogZmFsc2UsCiAgICAic29sUGVyZm9ybWVkIjogbnVsbCwKICAgICJzb2xEaXNjbG9zZWQiOiBmYWxzZSwKICAgICJjdXNoaW9ucyI6IGZhbHNlLAogICAgInBhZ2VDb21wbGV0ZSI6IGZhbHNlLAogICAgImdyYW5kbWFQZXJmb3JtZWQiOiBmYWxzZSwKICAgICJ0dXJuIjogbnVsbAogIH0sCiAgImNvbnZlcnNhdGlvbnMiOiB7CiAgICAibWFyYSI6IHsKICAgICAgInBhcnQiOiAwLAogICAgICAiY29tcGxldGUiOiBmYWxzZQogICAgfSwKICAgICJiYWtlcnkiOiB7CiAgICAgICJwYXJ0IjogMiwKICAgICAgImNvbXBsZXRlIjogdHJ1ZQogICAgfSwKICAgICJzb2wiOiB7CiAgICAgICJwYXJ0IjogMCwKICAgICAgImNvbXBsZXRlIjogZmFsc2UKICAgIH0KICB9LAogICJydW5JZCI6ICIwODNhNjcwZS00MDE1LTQ0Y2MtYTBmOS1mMWFmZTg5MDZmMDkiLAogICJyZXZpc2lvbiI6IDE3NjAsCiAgInN0YXJ0ZWQiOiB0cnVlLAogICJwaXAiOiB7CiAgICAieCI6IDkuNjUsCiAgICAieiI6IC05LjI1CiAgfSwKICAic2VjdGlvbnMiOiB7CiAgICAiYSI6IHsKICAgICAgIngiOiAtMC43NzUsCiAgICAgICJ6IjogMywKICAgICAgInJvdGF0aW9uIjogMAogICAgfSwKICAgICJiIjogewogICAgICAieCI6IDAuNzc1LAogICAgICAieiI6IDMsCiAgICAgICJyb3RhdGlvbiI6IDAKICAgIH0KICB9LAogICJmZXJyeVNpZGUiOiAid2VzdCIsCiAgImpvaW5lZCI6IHRydWUsCiAgIndlc3QiOiB0cnVlLAogICJlYXN0IjogdHJ1ZSwKICAiY3Jvc3NlZCI6IHRydWUsCiAgInNlZWQiOiAicGlwIiwKICAiYmxvb21lZCI6IGZhbHNlLAogICJtYXJhSGVhcmQiOiBmYWxzZSwKICAicGFnZSI6ICJtYXJhIiwKICAiZ3JhbmRtYUhlYXJkIjogZmFsc2UsCiAgImV4cG9zZWQiOiBbCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlcxIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTZMLjEuVzIiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNkwuMS5XMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlc0IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTZMLjEuVzUiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNkwuMS5XNiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlc3IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTZMLjEuVzgiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNkwuMS5XOSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlcxMCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlcxMSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlcxMiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlcxMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlcxNCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlcxNSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlcxNiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlcxNyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlcxOCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlcxOSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlcyMCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlcyMSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlcyMiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlcyMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlcyNCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlcyNSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlcyNiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlcyNyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlcyOCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlcyOSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlczMCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlczMSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlczMiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlczMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlczNCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlczNSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xLlczNiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlcxIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTZMLjIuVzIiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNkwuMi5XMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlc0IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTZMLjIuVzUiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNkwuMi5XNiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlc3IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTZMLjIuVzgiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNkwuMi5XOSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlcxMCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlcxMSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlcxMiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlcxMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlcxNCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlcxNSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlcxNiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlcxNyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlcxOCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlcxOSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlcyMCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlcyMSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlcyMiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlcyMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlcyNCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlcyNSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlcyNiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlcyNyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlcyOCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlcyOSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlczMCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlczMSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlczMiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlczMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlczNCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlczNSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlczNiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlczNyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlczOCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlczOSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlc0MCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlc0MSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlc0MiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlc0MyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlc0NCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlc0NSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlc0NiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4yLlc0NyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlcxIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTZMLjMuVzIiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNkwuMy5XMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlc0IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTZMLjMuVzUiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNkwuMy5XNiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlc3IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTZMLjMuVzgiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNkwuMy5XOSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlcxMCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlcxMSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlcxMiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlcxMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlcxNCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlcxNSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlcxNiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlcxNyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlcxOCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlcxOSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlcyMCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlcyMSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlcyMiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlcyMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlcyNCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlcyNSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlcyNiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlcyNyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlcyOCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlcyOSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlczMCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlczMSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlczMiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlczMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlczNCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlczNSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlczNiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlczNyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlczOCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlczOSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlc0MCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlc0MSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlc0MiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlc0MyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlc0NCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlc0NSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlc0NiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlc0NyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlc0OCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4zLlc0OSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlcxIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTZMLjQuVzIiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNkwuNC5XMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40Llc0IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTZMLjQuVzUiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNkwuNC5XNiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40Llc3IiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTZMLjQuVzgiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNkwuNC5XOSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlcxMCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlcxMSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlcxMiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlcxMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlcxNCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlcxNSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlcxNiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlcxNyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlcxOCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlcxOSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlcyMCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlcyMSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlcyMiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlcyMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlcyNCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlcyNSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlcyNiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlcyNyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlcyOCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlcyOSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlczMCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlczMSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlczMiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlczMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlczNCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlczNSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlczNiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlczNyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlczOCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40LlczOSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40Llc0MCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40Llc0MSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40Llc0MiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40Llc0MyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40Llc0NCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40Llc0NSIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40Llc0NiIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40Llc0NyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40Llc0OCIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC4xIiwKICAgICJHQS5TUkMuT1BFTklORy5SMjAyNjA5MTZMLjIiLAogICAgIkdBLlNSQy5PUEVOSU5HLlIyMDI2MDkxNkwuMyIsCiAgICAiR0EuU1JDLk9QRU5JTkcuUjIwMjYwOTE2TC40IiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMS5XMSIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjEuVzIiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4xLlczIiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMS5XNCIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjEuVzUiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4xLlc2IiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMS5XNyIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjEuVzgiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4xLlc5IiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMS5XMTAiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4xLlcxMSIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjEuVzEyIiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMS5XMTMiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4xLlcxNCIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjEuVzE1IiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMS5XMTYiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4xLlcxNyIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjEuVzE4IiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMS5XMTkiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4xLlcyMCIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjEuVzIxIiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMS5XMjIiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4xLlcyMyIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjEuVzI0IiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMS5XMjUiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4xLlcyNiIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjEuVzI3IiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMS5XMjgiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4xLlcyOSIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjEuVzMwIiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMS5XMzEiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4xLlczMiIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjEuVzMzIiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMS5XMzQiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4xLlczNSIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjEuVzM2IiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMS5XMzciLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4xLlczOCIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjEuVzM5IiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMi5XMSIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjIuVzIiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4yLlczIiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMi5XNCIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjIuVzUiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4yLlc2IiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMi5XNyIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjIuVzgiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4yLlc5IiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMi5XMTAiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4yLlcxMSIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjIuVzEyIiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMi5XMTMiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4yLlcxNCIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjIuVzE1IiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMi5XMTYiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4yLlcxNyIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjIuVzE4IiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMi5XMTkiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4yLlcyMCIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjIuVzIxIiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMi5XMjIiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4yLlcyMyIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjIuVzI0IiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMi5XMjUiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4yLlcyNiIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjIuVzI3IiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMi5XMjgiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4yLlcyOSIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjIuVzMwIiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMi5XMzEiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4yLlczMiIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjIuVzMzIiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMi5XMzQiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4yLlczNSIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjIuVzM2IiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMi5XMzciLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4yLlczOCIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjEiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4yIiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMy5XMSIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjMuVzIiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4zLlczIiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMy5XNCIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjMuVzUiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4zLlc2IiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMy5XNyIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjMuVzgiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4zLlc5IiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMy5XMTAiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4zLlcxMSIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjMuVzEyIiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMy5XMTMiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4zLlcxNCIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjMuVzE1IiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMy5XMTYiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4zLlcxNyIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjMuVzE4IiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMy5XMTkiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4zLlcyMCIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjMuVzIxIiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMy5XMjIiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4zLlcyMyIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjMuVzI0IiwKICAgICJHQS5TUkMuQkFLRVJZLlIyMDI2MDkxNkwuMy5XMjUiLAogICAgIkdBLlNSQy5CQUtFUlkuUjIwMjYwOTE2TC4zLlcyNiIsCiAgICAiR0EuU1JDLkJBS0VSWS5SMjAyNjA5MTZMLjMiCiAgXSwKICAiYXNzaXN0YW5jZSI6IFsKICAgICJ3b3JkOmJha2VyeTppbnRhY3QiCiAgXSwKICAiaGlzdG9yeSI6IFsKICAgICIwNTgzYzIxMC04MTdlLTQxNTUtODgyNS1hZTdlYTBhM2E0NDYiLAogICAgIkIiLAogICAgIjEyZTQzMWRlLWQxODAtNGM2OC1hZWZiLTUwMTg2NzUzMzQ5MSIsCiAgICAiNGNmODljNzgtNTZjZi00OWViLTgwYTYtMmMxOWY4MDI2ODUwIiwKICAgICIwZWVhZGYyMy0zNjBmLTQyYjMtOGEzMy1kNTliNDBkN2FhODIiLAogICAgIjkwODZhOWVkLTUwZjItNDAyYy05MGNiLTZhNTQ4NWNiNDEyNyIsCiAgICAiZmMzOWVlMjEtM2Y1Yy00NzhlLWE4OGYtMGZkMDFmYzRlYWYwIiwKICAgICJlZjhjMTk0NC02MTdjLTRkNWUtOTk2NC1mZWY3NWU5N2FlZTUiLAogICAgImFkOTUxNzcwLWNhMmMtNDc0Yy1iZTJhLTBmNzY2MzhlMTM2NyIsCiAgICAiYjQxYmE1MWItYjBhOS00MzUyLThmYmItYzc0ODNlOTc5N2UwIiwKICAgICIyZWQ5ZTc0ZC1kMjlkLTRhOGYtOTc3OS00ZGZlMmQwMTY0ZDIiLAogICAgImJlOWU2MTg2LTUzYTUtNDE3Zi1iZmIxLWJiODFkNmVlZGI0ZSIsCiAgICAiMGQ0ZmU2M2QtYTI2MS00M2E4LTlmMjMtYmMyYzhjM2RjOTMzIiwKICAgICI3NmNhZTM2NC00MjM2LTQ5NWQtYTEyNC03MWE5ZmJmYzg5NmIiLAogICAgIjA4MjBkNDVjLTVjODItNGU3My1iNTNhLTVhYTMzNzlmNDhhZCIsCiAgICAiYmVjODhkNDItMGI5Zi00NzEwLTliYWUtYTUyZGYxMTlkMThmIgogIF0sCiAgInJlYWRpbmciOiB7CiAgICAiYmFrZXJ5IjogMAogIH0sCiAgInJlZHVjZWRNb3Rpb24iOiBmYWxzZSwKICAibGFyZ2VUZXh0IjogZmFsc2UKfQ=="
+        }
+      ]
+    },
+    {
+      "file": "garden-demo-actions.spec.ts",
+      "title": "fresh planting and bakery actions stay visible with directions collapsed",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 148585,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-demo-framing.spec.ts",
+      "title": "fresh demo actions and ending preview remain legible at sharing resolutions",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 154604,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-final-contacts.spec.ts",
+      "title": "fixture tile continuation: original tile follows the carrying palms, climb and current save",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 13426,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-hands.spec.ts",
+      "title": "roof and dough use real pointer gestures; journal writing stays available during repair",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 99777,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-reading-support.spec.ts",
+      "title": "Reading support: exact world controls can be inspected without placing a bridge section",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 7372,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "production.spec.ts",
+      "title": "production compressed text and immutable images retain authored-only config",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 27,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    }
+  ]
+}

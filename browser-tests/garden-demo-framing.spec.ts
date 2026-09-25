@@ -5,7 +5,7 @@ import {anchors} from '../src/garden/worldLayout.js';
 
 test('fresh demo actions and ending preview remain legible at sharing resolutions',async({page},info)=>{
  test.setTimeout(360000);const errors:string[]=[];page.on('pageerror',error=>errors.push(error.message));
- const sizes=[{width:1422,height:800},{width:1366,height:768},{width:1920,height:1080}],scene=page.locator('.garden-scene');
+ const sizes=[{width:1098,height:1105},{width:1422,height:800},{width:1366,height:768},{width:1920,height:1080}],scene=page.locator('.garden-scene');
  await playDemoRoute(page,info,async kind=>{
   if(kind==='handoff')await expect(page.getByRole('heading',{name:'Rina’s thank-you visit',exact:true})).toBeVisible();
   for(const size of sizes){
@@ -28,6 +28,8 @@ test('fresh demo actions and ending preview remain legible at sharing resolution
  for(const size of sizes){await page.setViewportSize(size);await expect(page.getByLabel('Your ending for Sol’s story',{exact:true})).toBeInViewport();await expect(page.getByRole('button',{name:'Baking, then the visit',exact:true})).toBeInViewport({ratio:1});await expect(page.getByRole('button',{name:'Try my ending',exact:true})).toBeInViewport();await expect(page.getByRole('button',{name:'Full screen',exact:true})).toBeInViewport();await page.screenshot({path:info.outputPath('writing-'+size.width+'.png')});}
  await page.getByRole('button',{name:'Baking, then the visit',exact:true}).click();await page.getByRole('button',{name:'Try my ending',exact:true}).click();
  const stage=page.locator('.garden-world-activity>.g-story-stage');await expect(stage).toHaveAttribute('aria-busy','false',{timeout:60000});
- for(const size of sizes){await page.setViewportSize(size);const box=(await stage.boundingBox())!;expect(box.width).toBeGreaterThan(700);expect(box.height).toBeGreaterThanOrEqual(320);await expect(page.getByRole('button',{name:'Use this ending',exact:true})).toBeInViewport();await page.screenshot({path:info.outputPath('ending-preview-'+size.width+'.png')});}
+ // The added narrow Codex viewport keeps at least 60% of its width for the
+ // picture. Wider sharing views retain the existing 700 px minimum.
+ for(const size of sizes){await page.setViewportSize(size);const box=(await stage.boundingBox())!;expect(box.width).toBeGreaterThan(Math.min(700,size.width*.60));expect(box.height).toBeGreaterThanOrEqual(320);await expect(page.getByRole('button',{name:'Use this ending',exact:true})).toBeInViewport();await page.screenshot({path:info.outputPath('ending-preview-'+size.width+'.png')});}
  expect(errors).toEqual([]);await info.attach('scope',{body:'Ordinary fresh bridge/planting/bakery route, followed by an unassessed authored-input rehearsal. No state injection or provider calls. Screenshots retain the supplied assets at native DPR.',contentType:'text/plain'});
 });

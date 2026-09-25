@@ -29,6 +29,10 @@
 .garden-scene{position:absolute;inset:0;overflow:hidden;contain:layout style}
 .garden-scene canvas{display:block;width:100%;height:100%;touch-action:none;outline-offset:-4px}
 .garden-scene .garden-marker{left:0;top:0;will-change:transform}
+.garden-bakery-targets{position:absolute;inset:0;pointer-events:none;overflow:hidden;z-index:1}
+.garden-bakery-target{position:absolute;left:0;top:0;box-sizing:border-box;border:2px solid #e1b95acc;border-radius:12px;box-shadow:0 0 0 2px #fff8df50}
+.garden-bakery-target>span{position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);white-space:nowrap;border-radius:14px;padding:4px 9px;background:#fff9e8ed;color:#2e5444;font-size:12px;line-height:1.2}
+.garden-bakery-targets[hidden],.garden-bakery-target[hidden]{display:none}
 .garden-app .garden-marker{position:absolute;transform:translate(-50%,-50%);min-height:30px;min-width:0;line-height:1.1;padding:7px 12px;background:#fff9e8e8;border:1px solid #fff9e880;box-shadow:0 3px 10px #36513f18;border-radius:30px;font-size:12px;letter-spacing:.25px;color:#2e5444}
 .garden-app .garden-marker.is-selected{background:#f3d084;border-color:#b8803f;box-shadow:0 2px 9px #5c713221}
 .garden-app .garden-section-label{pointer-events:none;min-height:0;box-shadow:none;border:none;border-radius:5px}

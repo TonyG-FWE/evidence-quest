@@ -29,6 +29,7 @@ export class ModelActor implements SceneActor {
   this.pickProxy=proxy;proxy.position.y=.64;proxy.userData['target']=definition.id;this.rig.add(proxy);
  }
  get ready(){return !!this.visual;}
+ get animation(){return this.visual?.animation??null;}
  get hand(){return this.visual?.hand??null;}
  get facingYaw(){return this.positioned?this.heading:this.rig.rotation.y;}
  swing(_walking:boolean,_time:number){/* Movement is derived from the final authoritative actor pose. */}
@@ -54,7 +55,10 @@ export class ModelActor implements SceneActor {
   const target=this.rig.rotation.y;
   if(!this.positioned)this.heading=target;
   else{const angle=Math.atan2(Math.sin(target-this.heading),Math.cos(target-this.heading));this.heading+=angle*Math.min(1,dt*14);}
-  visual.sync({position:[0,0,0],yaw:this.heading-target,motion:speed>.02?(options.gait??'walk'):'idle',speed,carrying:options.carrying||this.gestureCarry,paused:options.paused,reducedMotion:options.reducedMotion,...(options.action?{action:options.action}:{})});
+  // A work pose must not freeze the legs while the authoritative actor travels.
+  // Climbing is the one authored motion that intentionally moves the whole rig.
+  const action=speed>.02&&options.action?.kind!=='climb'?undefined:options.action;
+  visual.sync({position:[0,0,0],yaw:this.heading-target,motion:speed>.02?(options.gait??'walk'):'idle',speed,carrying:options.carrying||this.gestureCarry,paused:options.paused,reducedMotion:options.reducedMotion,...(action?{action}:{})});
   visual.update(dt);this.previous.copy(this.rig.position);this.positioned=true;this.gestureCarry=false;
  }
  handPoint(target=new T.Vector3(),lift=0){

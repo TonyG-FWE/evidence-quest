@@ -26,7 +26,7 @@ test('visible loaf handoff is selectable beside Rina and persists through reload
  const scene=page.locator('.garden-scene');await expect.poll(async()=>{const a=JSON.parse(await scene.getAttribute('data-character-assets')??'{}');return a.objects?.includes('loaf')&&a.cast?.some((c:{id:string;ready:boolean})=>c.id==='rina'&&c.ready);},{timeout:60000}).toBe(true);
  let previous='',stable=0;await expect.poll(async()=>{const matrix=await scene.getAttribute('data-camera-projection')??'';stable=previous===matrix?stable+1:0;previous=matrix;return stable;},{intervals:[100]}).toBeGreaterThan(3);
  const loaf=JSON.parse((await scene.getAttribute('data-bakery'))!).loaves[0];await page.screenshot({path:info.outputPath('loaf-before-handoff.png')});
- const start=await screenPoint(page,{...loaf,y:loaf.y+.05});await page.mouse.move(start.x,start.y);await page.mouse.down();
+ const start=await screenPoint(page,{...loaf,y:loaf.y+.05});await page.mouse.move(start.x,start.y);await page.mouse.down();await page.mouse.move(start.x+8,start.y+8,{steps:3});
  await info.attach('pointer-hit',{body:JSON.stringify({target:await scene.getAttribute('data-pointer-target'),loaf,start}),contentType:'application/json'});
  await expect(scene).toHaveAttribute('data-hand-gesture',/loaf/);const end=await screenPoint(page,{...WORKSHOP_DOOR,y:.85});await page.mouse.move(end.x,end.y,{steps:12});await page.mouse.up();await expect.poll(async()=>(await savedChapter(page)).bakery.stage).toBe('done');await page.screenshot({path:info.outputPath('loaf-handed-to-sol.png')});const after=(await savedChapter(page)).bakery;await page.reload();expect((await savedChapter(page)).bakery).toEqual(after);
 });
@@ -62,7 +62,7 @@ test('Chromium native bakery touch cancels and then places the visible tile on t
  async function touchTile(cancel:boolean){
   let previous:{x:number;y:number;z:number}|null=null,stable=0;await expect.poll(async()=>{const p=JSON.parse((await scene.getAttribute('data-bakery'))!).tile;stable=previous&&Math.hypot(p.x-previous.x,p.y-previous.y,p.z-previous.z)<.001?stable+1:0;previous=p;return stable;},{intervals:[100]}).toBeGreaterThan(3);
   const tile=JSON.parse((await scene.getAttribute('data-bakery'))!).tile,start=await screenPoint(page,{x:tile.x+.10,y:tile.y+.09,z:tile.z+.18}),end=await screenPoint(page,{...BAKERY_REPAIR.gap,y:BAKERY_REPAIR.openingY+.025});
-  const finger={id:1,x:start.x,y:start.y,radiusX:2,radiusY:2,force:1};await session.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[finger]});await expect(scene).toHaveAttribute('data-hand-gesture',/spareTile/);
+  const finger={id:1,x:start.x,y:start.y,radiusX:2,radiusY:2,force:1};await session.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[finger]});await session.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{...finger,x:start.x+8,y:start.y+8}]});await expect(scene).toHaveAttribute('data-hand-gesture',/spareTile/);
   for(let i=1;i<=12;i++)await session.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{...finger,x:start.x+(end.x-start.x)*i/12,y:start.y+(end.y-start.y)*i/12}]});
   await session.send('Input.dispatchTouchEvent',{type:cancel?'touchCancel':'touchEnd',touchPoints:[]});
  }

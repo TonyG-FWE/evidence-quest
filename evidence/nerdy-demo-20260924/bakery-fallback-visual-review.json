@@ -1,0 +1,130 @@
+{
+  "at": "2026-09-25T17:39:56.394Z",
+  "status": "PASS",
+  "candidate": {
+    "inputSha256": "11d95109a8553db747568400d91d1a9f6629d80e0ef00b69dcba48621ec0562f",
+    "outputSha256": "405958761d185b579144cd04905c1f2024f16d57a1b3fc4d296a125f431c542f"
+  },
+  "video": "output/nerdy-demo-bakery-fallback-20260925/Evidence-Quest-Nerdy-demo.webm",
+  "sha256": "a37ea509ae01fcfca78b511677319f971d647e94a892ad62462f13922a73715c",
+  "durationSeconds": 722.32,
+  "scope": "Agent visual inspection of seven native-decoded frames from the exact packaged player, combined with the native playback/audio-signal check. No new human pronunciation or receiving-device test is claimed.",
+  "observations": [
+    "Narrator and Rina text, optional listening and practice are visible.",
+    "Roof opening and spare tile are separate visible drag targets beside Sol.",
+    "Dough and current cut instructions are visible under the transparent shelter cutaway.",
+    "The handoff shows Rina, Sol, Pip and the loaf at the workshop.",
+    "Writing source tabs and the draft area are readable.",
+    "The complete feedback paragraph is visible, with the explicit recorded-response label.",
+    "Ending animation, chosen text and confirmation are visible; the long draft has its own scroll area."
+  ],
+  "nativePlayback": {
+    "peak": 0.2137649655342102,
+    "progressSeconds": 3.250667
+  },
+  "chapterNavigation": {
+    "count": 7,
+    "feedbackSeconds": 600.049,
+    "confirmed": true
+  },
+  "originals": [
+    {
+      "file": "evidence/nerdy-demo-20260924/fallback.json",
+      "sha256": "8993064e3bcdcdb568eb0226123cc68c2f9ac7fd224053cc6881ba1160236952",
+      "matchesPriorCommit": true
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/fallback-capture.json",
+      "sha256": "67b09b01c9991244d21b596acecc3d9d3333a285e06dc3ad0f24db61f1ed7a49",
+      "matchesPriorCommit": true
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/fallback-capture-replay.json",
+      "sha256": "b3022c56b25e311edd6f29529703c82f7813f2ce19488131f2eb2d0c8192c102",
+      "matchesPriorCommit": true
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/live-feedback.json",
+      "sha256": "97bbc59f79d3f410bea14e66f980e735c0e4b6396b90a1774485d4576555033b",
+      "matchesPriorCommit": true
+    },
+    {
+      "file": "evidence/nerdy-demo-20260924/live-accounting.json",
+      "sha256": "7969341595fbca5c0e238bb3f6431424a786bdf3208344572b76d8151b3743f4",
+      "matchesPriorCommit": true
+    },
+    {
+      "file": "output/nerdy-demo-fallback-20260925/Evidence-Quest-Nerdy-demo.webm",
+      "sha256": "51c0031f019e9044f56621d9a8a7dd07b9e645989901ed2a4ac298b17516c372",
+      "matchesPriorRecordedHash": true
+    },
+    {
+      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\nerdy-demo-rehearsal-r1\\raw\\nerdy-demo-rehearsal-Nerdy-fdd9e--ending-and-complete-finale-chromium\\demo-core-video.webm",
+      "bytes": 16707583,
+      "sha256": "0d9c0e9b24b69e332791992c0a1a1252740f4730bba6f929a3f0f3bd4a18fd3c",
+      "scope": "Original live capture still present; retained separately. This is its current hash, not a newly asserted historical byte comparison."
+    },
+    {
+      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\nerdy-demo-rehearsal-r1\\raw\\nerdy-demo-rehearsal-Nerdy-fdd9e--ending-and-complete-finale-chromium\\demo-core-audio.webm",
+      "bytes": 998889,
+      "sha256": "fb74e37b39e3560bd791f540985926e2a5f7a6d27ce9180f31ed742cbfa934de",
+      "scope": "Original live capture still present; retained separately. This is its current hash, not a newly asserted historical byte comparison."
+    }
+  ],
+  "frames": [
+    {
+      "name": "bakery-reading",
+      "seconds": 8,
+      "image": "output/nerdy-demo-bakery-fallback-20260925/review/bakery-reading.png",
+      "sha256": "619fbfba32cf365229dab6f9db327a081fc2a28248feba2cb25ca72790d66543",
+      "visuallyInspected": true
+    },
+    {
+      "name": "roof",
+      "seconds": 195.857,
+      "image": "output/nerdy-demo-bakery-fallback-20260925/review/roof.png",
+      "sha256": "9cd41204ba0120d1e2a26f854a87c4151de46b765d4055f2e960dae9aa9b90bd",
+      "visuallyInspected": true
+    },
+    {
+      "name": "dough",
+      "seconds": 271.334,
+      "image": "output/nerdy-demo-bakery-fallback-20260925/review/dough.png",
+      "sha256": "348f42dbc7af3d22e6c3a7f6d62ae6b9b312eb5241a67946f61ca13cefa11f73",
+      "visuallyInspected": true
+    },
+    {
+      "name": "writing",
+      "seconds": 452.226,
+      "image": "output/nerdy-demo-bakery-fallback-20260925/review/writing.png",
+      "sha256": "1e18b24d8ead390268beb70f007d459d6a30a90643e741f95a3a519749a3ac35",
+      "visuallyInspected": true
+    },
+    {
+      "name": "live-feedback",
+      "seconds": 602.049,
+      "image": "output/nerdy-demo-bakery-fallback-20260925/review/live-feedback.png",
+      "sha256": "5aa23cd03ad716ab2d0145e79c48c9f9f4ee1d726f95f138251dcbcf70e61883",
+      "visuallyInspected": true
+    },
+    {
+      "name": "ending-preview",
+      "seconds": 633.595,
+      "image": "output/nerdy-demo-bakery-fallback-20260925/review/ending-preview.png",
+      "sha256": "2925bb2be298725101139d4986925cb2348b273c42f0821d08b84b2f6bd96bdb",
+      "visuallyInspected": true
+    },
+    {
+      "name": "handoff",
+      "seconds": 383.646,
+      "image": "output/nerdy-demo-bakery-fallback-20260925/review/handoff.png",
+      "sha256": "9957b9754b4a7e73cde8df64dc7ab408b32c26078e874403c0c0d88dd5d29211",
+      "visuallyInspected": true
+    }
+  ],
+  "limitations": [
+    "Presenter pauses are included, but no presenter voice was recorded.",
+    "Built-in video controls overlay the bottom of the picture while the pointer is active.",
+    "The prior accepted short-word limitations remain; this is not a complete human listening review."
+  ]
+}

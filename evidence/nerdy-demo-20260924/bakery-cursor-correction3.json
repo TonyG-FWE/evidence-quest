@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-25",
+  "tasks": ["TASK11.ART02–07", "TASK11.20", "TASK11.21"],
+  "scope": "Third sequential correction checkpoint; final fresh acceptance remains pending",
+  "changes": ["Work clips apply only during contact; movement selects existing walk/carry-walk clips, retaining explicit climbing", "Rina follows a clear route around the table when inspecting flour", "Sol carries the ladder about its measured middle rung; Rina holds the loaf in front of her", "Escort approach finishes after Pip stops", "Exterior rain respects the building and a separate striped preparation canopy; repaired indoor leak remains off", "Preparation canopy uses a cutaway during work and has four aligned collision posts"],
+  "checks": {"clientTypes": "PASS", "checkTypes": "PASS", "focusedHandlerAndWeather": "10 passed", "compiledClient": "PASS", "nativeFixtureDiagnostics": "4 passed in 34.1 seconds"},
+  "visualReview": {"sizes": [[1098,1105],[1366,768],[1920,1080]], "inspected": ["Rina walking to flour, lifting and carrying the sack", "Sol climbing down and carrying his ladder on departure", "Rina approaching the flour without crossing the table", "Visible dough and controls under shelter at all three sizes", "Rina collecting and walking with a visible loaf"], "codex": "Compiled canopy, rain and work-area cutaway visibly inspected in tab 4 at 1098x1105", "artifacts": "output/bakery-cursor-20260925/diagnostics"},
+  "intermediateFindings": ["One post blocked the oven approach; moved and all approach/handler checks passed", "Initial viewport intersection assertion returned 0.9999997 for a fully visible target; replaced with direct bounds-inside-canvas assertions", "Initial diagnostic launch omitted the existing project browser cache; rerun through scripts/test-browser.mjs", "Visual review corrected a table-crossing flour-check route, foreground post obstruction and a floating ladder carry pivot"],
+  "limits": ["Fixture diagnostics explicitly use prepared chapters, not fresh-journey acceptance", "Original supplied asset files/detail unchanged; added procedural shelter has not received independent production artwork approval", "Resource-budget and broader qualification limitations remain open", "Final single-candidate cursor rehearsal and fallback remain pending"],
+  "providers": "Disabled; zero additional requests"
+}

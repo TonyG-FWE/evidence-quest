@@ -59,7 +59,7 @@ export function ReadingBlock({children,label='this passage',className}:{children
 /** Read narrative passages and spoken replies only. Instructions and unselected choices stay separate. */
 export function ConversationReadingTools({root}:{root:RefObject<HTMLElement|null>}){
  const support=useContext(ReadingContext),[available,setAvailable]=useState(false);
- function passages(){return Array.from(root.current?.querySelectorAll<HTMLElement>('[data-source-component],.g-dialogue-response [data-readable-text],[data-narration="true"] [data-readable-text]')??[]).filter(node=>node.getClientRects().length&&!node.closest('details')&&!node.parentElement?.closest('[data-readable-text], [data-source-component]'));}
+ function passages(){return Array.from(root.current?.querySelectorAll<HTMLElement>('[data-source-component],.g-dialogue-response [data-readable-text],[data-narration="true"] [data-readable-text]')??[]).filter(node=>node.getClientRects().length&&!node.closest('details:not([open])')&&!node.parentElement?.closest('[data-readable-text], [data-source-component]'));}
  useEffect(()=>{const element=root.current;if(!element)return;const update=()=>setAvailable(!Array.from(element.querySelectorAll('.g-story-reading,.g-reading-actions,.g-adaptive-writing')).some(node=>node.getClientRects().length)&&passages().length>0);update();const observer=new MutationObserver(update);observer.observe(element,{childList:true,subtree:true});return()=>observer.disconnect();},[root]);
  if(!support||!available)return null;
  function document(){return speechDocument(passages().map(node=>speechFromElement(node,node.textContent??'')));}

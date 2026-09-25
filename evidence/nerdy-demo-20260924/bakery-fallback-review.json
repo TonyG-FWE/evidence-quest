@@ -1,0 +1,63 @@
+{
+  "at": "2026-09-25T17:37:51.128Z",
+  "scope": "Native Chromium decoding, playback and actual audio signal in the exact packaged fallback player. Captured frames require separate visual inspection. Not a new provider request or human pronunciation check.",
+  "file": "output/nerdy-demo-bakery-fallback-20260925/Evidence-Quest-Nerdy-demo.webm",
+  "sha256": "a37ea509ae01fcfca78b511677319f971d647e94a892ad62462f13922a73715c",
+  "candidate": {
+    "inputSha256": "11d95109a8553db747568400d91d1a9f6629d80e0ef00b69dcba48621ec0562f",
+    "outputSha256": "405958761d185b579144cd04905c1f2024f16d57a1b3fc4d296a125f431c542f"
+  },
+  "metadata": {
+    "duration": 722.32,
+    "width": 1366,
+    "height": 768,
+    "error": null
+  },
+  "sound": {
+    "peak": 0.2137649655342102,
+    "progressSeconds": 3.250667
+  },
+  "chapterNavigation": {
+    "count": 7,
+    "feedbackSeconds": 600.049,
+    "confirmed": true
+  },
+  "samples": [
+    {
+      "name": "bakery-reading",
+      "seconds": 8,
+      "image": "output/nerdy-demo-bakery-fallback-20260925/review/bakery-reading.png"
+    },
+    {
+      "name": "roof",
+      "seconds": 195.857,
+      "image": "output/nerdy-demo-bakery-fallback-20260925/review/roof.png"
+    },
+    {
+      "name": "dough",
+      "seconds": 271.334,
+      "image": "output/nerdy-demo-bakery-fallback-20260925/review/dough.png"
+    },
+    {
+      "name": "writing",
+      "seconds": 452.226,
+      "image": "output/nerdy-demo-bakery-fallback-20260925/review/writing.png"
+    },
+    {
+      "name": "live-feedback",
+      "seconds": 602.049,
+      "image": "output/nerdy-demo-bakery-fallback-20260925/review/live-feedback.png"
+    },
+    {
+      "name": "ending-preview",
+      "seconds": 633.595,
+      "image": "output/nerdy-demo-bakery-fallback-20260925/review/ending-preview.png"
+    },
+    {
+      "name": "handoff",
+      "seconds": 383.646,
+      "image": "output/nerdy-demo-bakery-fallback-20260925/review/handoff.png"
+    }
+  ],
+  "pageErrors": []
+}

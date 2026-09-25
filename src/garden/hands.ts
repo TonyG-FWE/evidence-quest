@@ -3,6 +3,7 @@ import {anchors,BAKERY_REPAIR,BAKERY_WORK,BRIDGE_LEVELS,BRIDGE_GEOMETRY,PLANTING
 import {snapSections,ropeCount,sectionAtEnd} from './river.js';
 import {nearBird,nearOffice} from './mara.js';
 import {near,nearBakery,BAKERY_SOL,TILE_SHELF,WORKSHOP_DOOR} from './bakery.js';
+import {bakeryHands} from './bakeryInteraction.js';
 import {bridgePosts,ropeSides,firstPart,constructionOf,sectionSecured,postPoint,postStoragePoint,sectionPlacementTargets,ropeTarget,canInstallPost,canTieRope,installPost,tieRope,bridgeStatus,type BridgePostId,type RopeSide} from './bridgeConstruction.js';
 
 export type HandObject=`post:${BridgePostId}`|'rope:north'|'rope:south'|'section:a'|'section:b'|'rope-box'|'rope:west'|'rope:east'|'seed'|'soil'|'spareTile'|'crackedTile'|'flour'|'dough'|'dough-cut'|'loaf'|'wing'|'tape'|'tape-roll'|'memory';
@@ -45,6 +46,7 @@ export function handPlane(s:GardenState,id:HandObject):number{
  if(id==='rope:north'||id==='rope:south')return BRIDGE_LEVELS.deck+BRIDGE_LEVELS.ropeAboveDeck;
  if(id==='spareTile'&&['needed','carried'].includes(s.chapter.bakery.stage))return .90;
  if(id==='loaf'&&s.chapter.bakery.stage==='shaped')return .85;
+ if(id==='dough-cut')return BAKERY_WORK.tableTop+.09;
  return handDefinitions[id].plane;
 }
 export function handAnchor(s:GardenState,id:HandObject):Point{
@@ -98,16 +100,7 @@ export function availableHands(s:GardenState):HandObject[]{
   if(c.seed==='pip'||c.seed==='grandma'&&!c.river.collection)items.push('seed');
   if(c.story.phase==='moment'&&(c.gathering.grandmaPerformed||c.gathering.edition==='earlier-chapter')&&c.bloomed)items.push('memory');
  }
- if(c.crossed&&c.story.phase==='planning'&&b.edition==='connected-20260915'){
-  if(b.stage==='needed'&&near(c.pip,TILE_SHELF)||b.stage==='carried'||['gap','misplaced'].includes(b.stage)&&near(c.pip,BAKERY_SOL))items.push('spareTile');
-  if(b.stage==='delivered'&&near(c.pip,BAKERY_SOL))items.push('crackedTile');
-  if(b.stage==='sealed'&&nearBakery(c))items.push('flour');
-  if(near(c.pip,b.rina,1.65)){
-   if(b.stage==='checked')items.push(c.hands.flourInBowl?'dough':'flour');
-   if(b.stage==='mixed')items.push('dough','dough-cut');
-   if(['shaped','baked','escorting'].includes(b.stage))items.push('loaf');
-  }
- }return items;
+ items.push(...bakeryHands(s));return items;
 }
 const bakeryStep=(step:Extract<Command,{type:'BAKERY_STEP'}>['step']):Command=>({type:'BAKERY_STEP',step});
 /** Only the serialized reducer calls this function. Preview movement never establishes a story fact. */
@@ -188,8 +181,10 @@ export function applyHand(s:GardenState,command:HandCommand):Command[]{
   if(c.bakery.stage==='checked'&&c.hands.flourInBowl&&gesture.travel>.9&&distance(point,mixing)<.7)commands.push(bakeryStep('MIX'));
   else if(c.bakery.stage==='mixed'&&distance(point,BAKERY_WORK.ovenTarget)<.5){c.hands.cuts=[];c.hands.flourInBowl=false;commands.push(bakeryStep('BAKE_UNSHAPED'));}
  }else if(id==='dough-cut'){
-  const cut=point.x-dough.x;
-  if(Math.abs(cut)<=.30&&gesture.minZ<=dough.z-.18&&gesture.maxZ>=dough.z+.18){
+  // Select the cut where the stroke starts on the visible dough. The preview
+  // spans the dough at that position; a child need not trace a hidden world axis.
+  const cut=Math.max(-.30,Math.min(.30,gesture.origin.x-dough.x));
+  if(Math.abs(gesture.origin.x-dough.x)<=.43&&Math.abs(gesture.origin.z-dough.z)<=.38&&gesture.travel>=.18){
    const cuts=[...c.hands.cuts],closest=cuts.reduce((index,n,i)=>index<0||Math.abs(n-cut)<Math.abs(cuts[index]!-cut)?i:index,-1);
    if(closest>=0&&(cuts.length===2||Math.abs(cuts[closest]!-cut)<.07))cuts[closest]=cut;else cuts.push(cut);
    cuts.sort((a,b)=>a-b);c.hands.cuts=cuts;
