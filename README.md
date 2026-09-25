@@ -156,7 +156,3 @@ Writing activities let you try an ending before choosing to use it. Optional rea
 Optional live feedback and custom-text voices use separately configured services. The authored adventure can be played without them; configuration examples are in `.env.example`.
 
 ## Nerdy demo
-
-
-
-The [demo checklist and evidence](docs/game-review/NERDY-DEMO-20260924.md) distinguish completed demo checks from remaining production-art and performance qualifications. The clean demo presentation does not change artwork approval status.
