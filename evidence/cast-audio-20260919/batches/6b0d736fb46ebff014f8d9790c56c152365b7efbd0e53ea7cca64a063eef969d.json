@@ -1,0 +1,42 @@
+{
+  "id": "6b0d736fb46ebff014f8d9790c56c152365b7efbd0e53ea7cca64a063eef969d",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11638,
+      "sha256": "f0f97d8ccb30824352cc2f0e337d583a95aee25e3a3bec5c49e1e6913b2dd688"
+    },
+    {
+      "bytes": 833,
+      "sha256": "9a2e7384b2c07eb8afcc33712d9b6f66443de1ea88a708ad0764b8e213351af2"
+    },
+    {
+      "bytes": 1320,
+      "sha256": "130345c15c97c867bc6b875d4c410ac284ae1ecc2da79981811ce6bef7f9a511"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "evening.",
+  "textSha256": "4463d525df031eaae38898831d03c03e3e1f6f4b9d2f0bec65d001c850418294",
+  "sha256": "0213fbdefe6aea43760afb8fe3bae28f20531f7db9b909569719c0cc6118d6f3",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "evening",
+      "start": 0.16,
+      "end": 0.72
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

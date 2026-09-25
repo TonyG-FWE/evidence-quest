@@ -2,6 +2,7 @@ import {cancelLocalSpeech,localSpeechVersion,onLocalSpeechCanceled} from './audi
 import {normalizeSpeech,selectedCast,type CastAudioManifest,type CastClip,type SpeechHandlers,type SpeechInput,type SpeechRequest} from './voiceTypes.js';
 import {routeAuthoredText} from './sourceVoiceRouting.js';
 import {readingPages} from './readingPages.js';
+import {readingPause} from './speechTiming.js';
 
 const LOAD_DEADLINE=12000;
 let savedManifest:{manifest:CastAudioManifest;index:Map<string,CastClip>}|undefined;
@@ -67,9 +68,19 @@ export function playCastSpeech(input:SpeechInput,handlers:SpeechHandlers={}):()=
   });
   audio.pause();audio.removeAttribute('src');audio.load();if(media===audio)media=null;
  }
+ async function pause(milliseconds:number){
+  if(!valid())return;
+  await new Promise<void>(resolve=>{
+   const finish=()=>{clearTimeout(timer);controller.signal.removeEventListener('abort',finish);resolve();};
+   const timer=setTimeout(finish,milliseconds);controller.signal.addEventListener('abort',finish,{once:true});
+   if(!valid())finish();
+  });
+ }
  void (async()=>{
+  let previous:SpeechRequest|undefined;
   for(const part of parts(request)){
    if(!valid())return;if(!part.text.trim())continue;handlers.onState?.('loading');
+   if(previous)await pause(readingPause(previous,part));if(!valid())return;
    if(part.origin==='mixed-display')throw Error('Choose an authored passage or your own words to hear the matching voice.');
    if(part.origin==='child-draft'||part.origin==='generated-feedback'){
     const revision=typeof part.revision==='string'&&part.revision.length>200?Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(part.revision)))).map(byte=>byte.toString(16).padStart(2,'0')).join(''):part.revision??0;if(!valid())return;
@@ -81,8 +92,10 @@ export function playCastSpeech(input:SpeechInput,handlers:SpeechHandlers={}):()=
     const sentences=text.match(/[^.!?]+[.!?]+[”"’']?|[^.!?]+$/g)??[text];
     const clips=exact?[exact]:sentences.map(sentence=>index.get(key(speaker,sentence)));
     if(clips.some(clip=>!clip))throw Error('This exact reading is not in the saved '+speaker+' voice library yet. You can keep reading.');
-    for(const entry of clips){if(!valid())return;const clip=entry!.clip!;await play(clip.uri,clip.duration);}
+    if(speaker==='narrator'&&/^[A-Za-z]+(?:['’][A-Za-z]+)?$/.test(text)&&exact?.clip?.boundaryMethod!=='complete-word-recording-v1')throw Error('This word’s recording is being repaired. You can listen to its sentence.');
+    for(const [i,entry] of clips.entries()){if(i)await pause(readingPause({...part,text:clips[i-1]!.text},part));if(!valid())return;const clip=entry!.clip!;await play(clip.uri,clip.duration);}
    }
+   previous=part;
   }
   if(valid()){cleanup();handlers.onDone?.();}else stop();
  })().catch(error=>{if(valid()){cleanup();handlers.onError?.(error instanceof Error?error.message:'The selected voice is unavailable. You can keep reading.');}else stop();});

@@ -1,0 +1,42 @@
+{
+  "id": "382cd825c80258e43f504b4d279afe6aab22fe247ff971b062ce63e7cbe1cc47",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 13059,
+      "sha256": "71563d12bd19897595e74e3f27d5720ca3467b727a0cb88758e91c5da746be1e"
+    },
+    {
+      "bytes": 1211,
+      "sha256": "78e7c41975e86a2fa778177c9995562c4cfb990bbf8e4dfb918d0ea1744fb12c"
+    },
+    {
+      "bytes": 1193,
+      "sha256": "b17752db7ae3c99322b8ec32ffb781b2ec6e9f4a79c1c11ab1a347201b471114"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "outdoors.",
+  "textSha256": "65a1f482771ba2c4bbf8d2f0c526f26eff0a6f4f8b58baee00029a564240f7ad",
+  "sha256": "7e47046aab9535d83f9c4c6c75f76d5d5a9471f40a3f56122d981f322044eee0",
+  "bytes": 15463,
+  "alignment": [
+    {
+      "text": "outdoors",
+      "start": 0.16,
+      "end": 0.88
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8998866213151927
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

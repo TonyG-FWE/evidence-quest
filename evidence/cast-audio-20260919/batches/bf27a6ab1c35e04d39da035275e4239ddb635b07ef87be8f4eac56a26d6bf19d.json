@@ -1,0 +1,42 @@
+{
+  "id": "bf27a6ab1c35e04d39da035275e4239ddb635b07ef87be8f4eac56a26d6bf19d",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11668,
+      "sha256": "0379171545173ac987b5e9ba87b5b7b5a25c91fa424aa38ad81593d8ca990f5a"
+    },
+    {
+      "bytes": 786,
+      "sha256": "efe940379637acbcc754c67fbc94dd3720cc3f7c22613ed0c0b4a93f95d777f6"
+    },
+    {
+      "bytes": 1337,
+      "sha256": "5c8e1f1555227caa1a3ae21c03334956c1008d9fcacec23a8614850dbc674c5a"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "banks.",
+  "textSha256": "8b47f40c2f5e605fe5ddcf54e1dfd7c849b85c1c80bb1dc55ca97d10613a97d8",
+  "sha256": "c4d6ea8383b2e6d183f40fe5dfa150bfc55062e20a873893a64960995a5e42b9",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "banks",
+      "start": 0.24,
+      "end": 0.8
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

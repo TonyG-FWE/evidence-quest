@@ -1,0 +1,42 @@
+{
+  "id": "4139d212e8cb4e5e7ef7bedda0777a2db1923c863b8a6f576b7595e36d96119e",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11636,
+      "sha256": "14c3ad13302af2e8b0231e829c48b5425b75b975b9613e2a83613e826b105b63"
+    },
+    {
+      "bytes": 799,
+      "sha256": "e50d91c32d9b805c343a6dbeee2c3437d69aead45addc9c225ae137f3e907234"
+    },
+    {
+      "bytes": 1356,
+      "sha256": "5f99cd854b11c05fe62c507c0f450dc47611d71ade3e5e412dc0add7768192b4"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "became.",
+  "textSha256": "e84a049b675622a2d580b32499926e7b3cfe29b660f91f8e1a97524185271d38",
+  "sha256": "cdf874eb21ec74ef8c784d7ba7a010f6fa590263d408153ebae9f29180b0a39c",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "became",
+      "start": 0.24,
+      "end": 0.72
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "a33ca1a0cc63be81dbf2c16ef46de4d1789f0a30b4dd674e62b6419b950e7bc4",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 8261,
+      "sha256": "0a78d9a533431048345fb21338b120c1333c0fa415d9151e4db3bb80adab8764"
+    },
+    {
+      "bytes": 837,
+      "sha256": "e88c2a5df6ff663587499a54f40b585efb086e98a2d32fa8482f09ef5572f0de"
+    },
+    {
+      "bytes": 1768,
+      "sha256": "33119b39ca875f84857e9e0844a44c06173ea2b6a86174ad8bc0b025b04c21ee"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "dough.",
+  "textSha256": "e3efa1fe42bd661566fe453234664239c67d865b0045976189701b931943eb72",
+  "sha256": "cf87a3cd50bb8f3ef8422673163c9dba7943b2ebe8070b398f1069ff212060a1",
+  "bytes": 10866,
+  "alignment": [
+    {
+      "text": "dough",
+      "start": 0.16,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6034467120181406
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

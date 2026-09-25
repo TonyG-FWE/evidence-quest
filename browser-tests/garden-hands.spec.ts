@@ -4,16 +4,16 @@ import {openDirections} from './garden-actions.js';
 import {Matrix4,Vector3} from 'three';
 import {checksum,validChapter} from '../src/garden/persistence.js';
 import {GardenStore,initialGarden,CROSSING,GRANDMA_APPROACH,type Chapter} from '../src/garden/model.js';
-import {anchors,BAKERY_REPAIR,BAKERY_WORK,BRIDGE_LEVELS,terrainHeight} from '../src/garden/worldLayout.js';
+import {anchors,BRIDGE_LEVELS,terrainHeight} from '../src/garden/worldLayout.js';
 import {advance,completeConversation} from '../checks/garden-play-actions.js';
 import {buildBridge} from '../checks/garden-bridge-actions.js';
 import {postPoint,sectionRootHeight} from '../src/garden/bridgeConstruction.js';
-import {BAKERY_APPROACH,TILE_SHELF,TILE_APPROACH,WORKSHOP_DOOR} from '../src/garden/bakery.js';
+import {BAKERY_APPROACH,TILE_SHELF,TILE_APPROACH} from '../src/garden/bakery.js';
 import {BIRD_BOY,DOCK_OFFICE} from '../src/garden/mara.js';
 import {savedChapter} from './garden-save-fixture.js';
 import {storyboardFor} from '../src/garden/journal.js';
 import {cardSlot,WORKBENCH} from '../src/garden/workbench.js';
-import {roofTileContact} from '../src/garden/bakeryWorld.js';
+import {repairBakeryWithCursor} from './bakery-cursor-actions.js';
 import {localReview} from '../src/garden/assets/profile.js';
 
 test.setTimeout(150000);
@@ -143,38 +143,11 @@ test('Chromium native touch protocol keeps a gesture with its owning finger and 
 });
 
 test('roof and dough use real pointer gestures; journal writing stays available during repair',async({page},info)=>{
- await loadCheckpoint(page,bakeryCheckpoint());await button(page,'Observation journal').click();await page.getByRole('textbox',{name:'Personal notes (optional)'}).fill('The flour needs a dry place.');await page.locator('.g-reader-top .g-close').click();expect((await savedChapter(page)).journal.notes).toBe('The flour needs a dry place.');
- // The supplied tile's visible centre follows its roof-contact transform.
- // Wait for the actual camera after closing the reader before projecting it.
- let previousCamera='',stableCamera=0;await expect.poll(async()=>{const current=await page.locator('.garden-scene').getAttribute('data-camera-projection')??'';stableCamera=current===previousCamera?stableCamera+1:0;previousCamera=current;return stableCamera;},{intervals:[100]}).toBeGreaterThanOrEqual(3);
- const roofPick=localReview?roofTileContact(BAKERY_REPAIR.gap).add(new Vector3(0,.20,0)):new Vector3(BAKERY_REPAIR.gap.x,BAKERY_REPAIR.gap.y+.05,BAKERY_REPAIR.gap.z);
- await drag(page,'crackedTile',roofPick,point(BAKERY_REPAIR.gap.x-.8,BAKERY_REPAIR.gap.z),roofPick.y,BAKERY_REPAIR.gap.y+.05);await expect.poll(async()=>(await savedChapter(page)).bakery.stage).toBe('gap');
- // Pick the visible tile after its action-to-carry blend settles. Its rendered
- // hand attachment, rather than the old fixture coordinate, is authoritative.
- let previousTile:{x:number;y:number;z:number}|null=null,stableTileSamples=0;
- await expect.poll(async()=>{const current=JSON.parse((await page.locator('.garden-scene').getAttribute('data-bakery'))!).tile,previous=previousTile;previousTile=current;stableTileSamples=previous&&Math.hypot(current.x-previous.x,current.y-previous.y,current.z-previous.z)<.001?stableTileSamples+1:0;return stableTileSamples;},{intervals:[100]}).toBeGreaterThanOrEqual(4);
- const tile=JSON.parse((await page.locator('.garden-scene').getAttribute('data-bakery'))!).tile;
- // Sol stands behind the tile's center. Pick its visible front corner; an
- // interaction must not select a hidden object through his body.
- await page.screenshot({path:info.outputPath('roof-before-drop.png')});
- await drag(page,'spareTile',point(tile.x+.10,tile.z+.18),BAKERY_REPAIR.gap,tile.y+.09,localReview?BAKERY_REPAIR.openingY+.025:BAKERY_REPAIR.gap.y+.05);await expect.poll(async()=>(await savedChapter(page)).bakery.stage).toBe('sealed');await page.screenshot({path:info.outputPath('roof-direct.png')});
- await drag(page,'flour',BAKERY_WORK.dryFlour,BAKERY_WORK.mixing,BAKERY_WORK.dryFlour.y+.30,BAKERY_WORK.mixing.y);await expect.poll(async()=>(await savedChapter(page)).bakery.stage,{timeout:20000}).toBe('checked');
- await drag(page,'flour',BAKERY_WORK.dryFlour,BAKERY_WORK.mixing,BAKERY_WORK.dryFlour.y+.30,BAKERY_WORK.mixing.y);expect((await savedChapter(page)).hands.flourInBowl).toBe(true);
- const start=await worldPoint(page,BAKERY_WORK.mixing.x,BAKERY_WORK.mixing.y+.02,BAKERY_WORK.mixing.z);await page.mouse.move(start.x,start.y);await page.mouse.down();await expect(page.locator('.garden-scene')).toHaveAttribute('data-hand-gesture',/"dough"/);
- for(const x of [BAKERY_WORK.mixing.x+.30,BAKERY_WORK.mixing.x-.35,BAKERY_WORK.mixing.x+.30,BAKERY_WORK.mixing.x]){const p=await worldPoint(page,x,BAKERY_WORK.mixing.y+.02,BAKERY_WORK.mixing.z);await page.mouse.move(p.x,p.y,{steps:6});}await page.mouse.up();await expect.poll(async()=>(await savedChapter(page)).bakery.stage).toBe('mixed');
- // Begin on the visible dough, then draw fully through both edges. After the
- // first cut the supplied portions have rounded ends, not the old rectangular pick area.
- for(const [i,x] of [BAKERY_WORK.preparation.x-.12,BAKERY_WORK.preparation.x+.12].entries()){const middle=await worldPoint(page,x,localReview&&i>0?.82:.92,BAKERY_WORK.preparation.z);await page.mouse.move(middle.x,middle.y);await page.mouse.down();await expect(page.locator('.garden-scene')).toHaveAttribute('data-hand-gesture',/dough-cut/);for(const z of [BAKERY_WORK.preparation.z-.19,BAKERY_WORK.preparation.z+.20]){const edge=await worldPoint(page,x,.92,z);await page.mouse.move(edge.x,edge.y,{steps:8});}await page.mouse.up();}
- await expect.poll(async()=>(await savedChapter(page)).bakery.stage).toBe('shaped');await page.screenshot({path:info.outputPath('bread-portions.png')});
- const renderedLoaf=async()=>JSON.parse((await page.locator('.garden-scene').getAttribute('data-bakery'))!).loaves[0] as {x:number;y:number;z:number};
- let loaf=await renderedLoaf();await drag(page,'loaf',loaf,BAKERY_WORK.ovenTarget,loaf.y+.07,.85);
- await expect.poll(async()=>(await savedChapter(page)).bakery.stage,{timeout:22000}).toBe('baked');await page.screenshot({path:info.outputPath('bread-in-oven.png')});
- loaf=await renderedLoaf();await drag(page,'loaf',loaf,(await savedChapter(page)).bakery.rina,loaf.y+.06,.85);
- await expect.poll(async()=>(await savedChapter(page)).bakery.stage).toBe('escorting');
- await openDirections(page,'Bakery');await button(page,'Walk with Rina to the workshop').click();
- await expect(button(page,'Let Rina give Sol the loaf')).toBeVisible({timeout:45000});await page.locator('.garden-bakery-controls').locator('xpath=ancestor::details').locator('summary').click();
- loaf=await renderedLoaf();await drag(page,'loaf',loaf,WORKSHOP_DOOR,loaf.y+.05,.85);
- await expect.poll(async()=>(await savedChapter(page)).bakery.stage).toBe('done');await page.screenshot({path:info.outputPath('bread-delivered-to-sol.png')});
+ await loadCheckpoint(page,bakeryCheckpoint());await openDirections(page,'Bakery');
+ const direct=button(page,'Direct Sol’s roof repair');if(await direct.isVisible())await direct.click();
+ await page.locator('.garden-bakery-controls').locator('xpath=ancestor::details').locator('summary').click();
+ await button(page,'Observation journal').click();await page.getByRole('textbox',{name:'Personal notes (optional)'}).fill('The flour needs a dry place.');await page.locator('.g-reader-top .g-close').click();expect((await savedChapter(page)).journal.notes).toBe('The flour needs a dry place.');
+ await repairBakeryWithCursor(page,info);
  const finished=(await savedChapter(page)).bakery;await page.reload();expect((await savedChapter(page)).bakery).toEqual(finished);
- await info.attach('scope',{body:'Real-command fixture ends at tile delivery. Cracked-tile removal, repaired-roof drop, flour handling, kneading, division, baking, loaf pickup and final handoff all use visible canvas pointer gestures. The ordinary walking control brings Pip and Rina to the workshop. This is a focused continuation, not a fresh complete chapter.',contentType:'text/plain'});
+ await info.attach('scope',{body:'Explicit command-driven fixture starts after tile delivery. The roof view is opened before the journal check. Repair, flour inspection, pouring, kneading, adjustable cuts, oven placement, collection, walking and the final handoff then use the visible scene targets. No calculated world-coordinate input or physical-action buttons. Fixture continuation and retained reload assertion are separate from fresh-route acceptance.',contentType:'text/plain'});
 });

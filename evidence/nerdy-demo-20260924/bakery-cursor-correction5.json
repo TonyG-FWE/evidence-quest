@@ -1,0 +1,137 @@
+{
+  "at": "2026-09-25T17:44:17.746Z",
+  "tasks": [
+    "TASK11.ART02–07",
+    "TASK11.20",
+    "TASK11.21"
+  ],
+  "fixes": [
+    "FIX11.NERDY01",
+    "FIX11.NERDY02",
+    "FIX11.NERDY03",
+    "FIX11.NERDY04",
+    "FIX11.NERDY06"
+  ],
+  "status": "VERIFIED FOR DEMO; DELIVERED",
+  "candidate": {
+    "inputSha256": "11d95109a8553db747568400d91d1a9f6629d80e0ef00b69dcba48621ec0562f",
+    "outputSha256": "405958761d185b579144cd04905c1f2024f16d57a1b3fc4d296a125f431c542f",
+    "inputs": 15464,
+    "outputs": 7374
+  },
+  "scope": "Final bakery cursor acceptance, full native journey, timed core and fallback. Earlier interim checkpoints and failed required checks remain distinct.",
+  "cursorAcceptance": {
+    "freshVisit": true,
+    "physicalActionButtonsUsed": false,
+    "injectedProgress": false,
+    "coordinatesFromHiddenState": false,
+    "inputMethod": "Visible rendered object outlines and ordinary native pointer input; diagnostics used only for assertions.",
+    "completeThrough": "Actual loaf handoff at Sol’s workshop",
+    "separateFixtureChecks": [
+      "Successful first placement",
+      "Misplaced tile recovery",
+      "Interrupted drag cancellation",
+      "Full visible recipient outline",
+      "Adjustable dough cuts",
+      "Keyboard and touch alternatives",
+      "Walking, carrying, working contact and Sol climbing/return motion"
+    ]
+  },
+  "checks": {
+    "required": "bakery-required-commands.json",
+    "requiredBrowser": {
+      "passed": 210,
+      "failed": 31,
+      "intentionallySkipped": 1,
+      "scope": "Interim compiled client; all failures retained"
+    },
+    "requiredScope": "bakery-required-scope.json",
+    "finalContracts": 247,
+    "finalBrowser": {
+      "passed": 37,
+      "failed": 0,
+      "skipped": 0,
+      "record": "bakery-final-browser-r1.json"
+    },
+    "package": "bakery-package-checks.json",
+    "audio": "bakery-audio-r1.json",
+    "viewports": "bakery-final-visual-review.json",
+    "codex": "bakery-codex-checkpoint.json"
+  },
+  "nativeRehearsal": {
+    "record": "bakery-rehearsal.json",
+    "report": "output/nerdy-demo-rehearsal-bakery-r1/results.json",
+    "reportSha256": "ba8849ab36a98020f843be772fa050d7642d35f4dcb8b1db7ac913912e91478d",
+    "passed": 1,
+    "failed": 0,
+    "fullDurationMs": 1448348,
+    "coreDurationMs": 720348,
+    "pace": "Presenter pauses included; no presenter voice recorded",
+    "completeThrough": "Gathering, final copy handoff, complete ending presentation and six-story library",
+    "nativeApprovedAudio": true,
+    "pageErrors": 0,
+    "liveProviderRequests": 0,
+    "recordedFeedbackReplays": 1
+  },
+  "fallback": {
+    "record": "bakery-fallback.json",
+    "review": "bakery-fallback-visual-review.json",
+    "durationSeconds": 722.32,
+    "pictureAndNativePlayback": "PASS",
+    "originalLiveCapturePreserved": true
+  },
+  "ledgers": [
+    {
+      "file": "evidence/voice-ai-demo-20260918/openai-attempts.jsonl",
+      "bytes": 1228,
+      "sha256": "0c6ed03e64b11f6b5138956d85ee753dfdbc67cafb0aeb619bfcf90e7472867b",
+      "unchanged": true
+    },
+    {
+      "file": "evidence/demo-ai-20260919/openai-attempts.jsonl",
+      "bytes": 8321,
+      "sha256": "a93a947bb71554b0103a02d6dd620336a8d4a804b9789da9fd18a77d75ac46cd",
+      "unchanged": true
+    },
+    {
+      "file": "evidence/cast-audio-20260919/attempts.jsonl",
+      "bytes": 1400530,
+      "sha256": "f38f33bfcb78c35d3c9cc43438d81020404a6f51f8f31514eb871638acca9ddd",
+      "unchanged": true
+    },
+    {
+      "file": "evidence/er13/live-evaluation/attempts.jsonl",
+      "bytes": 549,
+      "sha256": "17a4a6a57b5e1d54192320717e09f2c631a3eb052d1c1e62bc74c866bc877653",
+      "unchanged": true
+    }
+  ],
+  "limitations": [
+    "Two retired-asset fixtures hold a required startup asset and attempt Start playing while it remains disabled.",
+    "Two studio cases require the maintainer Inspect studio control hidden by demo presentation.",
+    "Cold-start, compressed-model, decoded-memory and DPR2 transfer budgets remain open. No thresholds or source artwork quality were changed.",
+    "The draft-word case fails its saved reading-position assertion; saved-game work remains excluded.",
+    "An older encounter test rejects the local read-only /api/garden/config requests.",
+    "Two legacy chunk-recovery cases expect a Continue button not present in their current state.",
+    "All nine broad chapter variants were not rerun; their shared two-page speaker assertion passes in the final complete native rehearsal.",
+    "The new procedural shelter still lacks independent production-art approval.",
+    "Have remains unclear and some short words remain abrupt, as accepted for this demo.",
+    "Agent and native automated acceptance is not a new child playtest or Tony visual/listening acceptance.",
+    "Actual microphone replay and receiving-device paragraph playback rely on Tony’s prior confirmations; the new fallback adds native audio-signal verification."
+  ],
+  "boundaries": {
+    "savedGameWork": "EXCLUDED",
+    "additionalProviderRequests": 0,
+    "TASK11_19": "HALTED 1/75",
+    "publicApiChanges": false,
+    "artworkDetailPreserved": true,
+    "priorFailuresRetained": true
+  },
+  "delivery": {
+    "branch": "codex/nerdy-demo-polish",
+    "privatePR": "https://github.com/TonyG-FWE/evidence-quest/pull/3",
+    "status": "DELIVERED",
+    "implementationCommit": "01ca1a7e526724e4fd4a15cc55c63f0cab9b9260",
+    "receipt": "bakery-delivery.json"
+  }
+}

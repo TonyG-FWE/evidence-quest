@@ -1,9 +1,10 @@
 import * as T from 'three';
 import {PaperArt} from './art.js';
 import {legacyActor,type SceneActor} from './assets/actor.js';
-import {BAKERY,BAKERY_SOL,TILE_SHELF,RINA_HOME,WORKSHOP_DOOR,THANK_RINA,bakeryRank} from './bakery.js';
+import {BAKERY,BAKERY_SOL,TILE_SHELF,RINA_HOME,WORKSHOP_DOOR,THANK_RINA,bakeryRank,nearBakery} from './bakery.js';
 import {findRoute,BAKERY_REPAIR,BAKERY_WORK,bakeryOvenPoint,bakerySourceContact} from './worldLayout.js';
 import {makeDoughPortions,doughIntervals} from './doughPresentation.js';
+import {makeBakeryWeather,underBakeryShelter} from './bakeryWeather.js';
 import type {GardenState,Point} from './model.js';
 
 type PropPoint=Readonly<Point&{y:number}>;
@@ -40,6 +41,7 @@ export function makeBakery(a:PaperArt,character:()=>SceneActor=()=>legacyActor(a
  const threatenedFlour=suppliedModels?BAKERY_WORK.threatenedFlour:wetFlour;
  const flourPickup={x:threatenedFlour.x,y:.13,z:threatenedFlour.z+.67},flourSetdown=BAKERY_WORK.flourSetdown;
  const flourExit={x:flourPickup.x,z:.2},flourCarryRoute=[flourPickup,flourExit,...findRoute(flourExit,flourSetdown)];
+ const flourCheckRoute=[RINA_HOME,...findRoute(RINA_HOME,flourReach)];
  const root=new T.Group(),fixed=new T.Group();root.add(fixed);
  // Only static architecture uses a local frame. Animated/pickable props remain in world coordinates.
  // The shared landscape owns the bank and village paths; this building has no separate terrain platform.
@@ -111,6 +113,7 @@ export function makeBakery(a:PaperArt,character:()=>SceneActor=()=>legacyActor(a
   a.line(rain,[new T.Vector3(x,1.4+(i%3)*.22,z),new T.Vector3(x-.06,1.16+(i%3)*.22,z+.04)],'#91bec4',.008);
  }
  a.mergeStatic(rain);
+ const weather=suppliedModels?makeBakeryWeather(a,root):null;
  const bowl=a.cylinder(root,mixing.x,suppliedModels?BAKERY_WORK.tableTop+.06:.80,mixing.z,.24,.16,.18,'#dcbd91',16);
  const dough=new T.Group();root.add(dough);dough.position.set(mixing.x,mixing.y,mixing.z);
  const wholeDough=a.ball(dough,0,0,0,.20,'#f0d4a4',[1,.55,1]),portions=makeDoughPortions(a);dough.add(portions.root);
@@ -159,9 +162,9 @@ export function makeBakery(a:PaperArt,character:()=>SceneActor=()=>legacyActor(a
    }
   }
   if(k==='flourCheck'){
-   const reach=Math.sin(Math.min(1,t/.3)*Math.PI);
-   rina.rig.position.set(lerp(RINA_HOME.x,flourReach.x,reach),.13,lerp(RINA_HOME.z,flourReach.z,reach));
-   rina.rig.rotation.y=Math.atan2(dryFlour.x-rina.rig.position.x,dryFlour.z-rina.rig.position.z);
+   const reach=t<.22?t/.22:t<.48?1:Math.max(0,1-(t-.48)/.27),pose=pathAt(flourCheckRoute,reach);
+   rina.rig.position.set(pose.x,.13,pose.z);
+   rina.rig.rotation.y=t<.22?pose.angle:t>=.48&&t<.75?pose.angle+Math.PI:Math.atan2(dryFlour.x-pose.x,dryFlour.z-pose.z);
    rina.lean(reach*.3);rina.gesture(0,-reach*.65);rina.gesture(1,-reach*.65);
   }else rina.lean(0);
   if(suppliedModels&&(k==='thankSol'||b.stage==='done'&&c.story.phase==='planning')){
@@ -224,7 +227,8 @@ export function makeBakery(a:PaperArt,character:()=>SceneActor=()=>legacyActor(a
    (target.material as T.MeshStandardMaterial).opacity=s.bakeryPreview===(i?'beside':'gap')?.8:.28;
   });
   const leakOpen=!legacy&&n<6&&!(k==='tilePlacement'&&action?.placement==='gap'&&t>.8);
-  leak.visible=leakOpen;puddle.visible=leakOpen;counterWater.visible=leakOpen;rain.visible=!legacy;
+  leak.visible=leakOpen;puddle.visible=leakOpen;counterWater.visible=leakOpen;rain.visible=!legacy&&!suppliedModels;
+  weather?.update(time,c.reducedMotion,underBakeryShelter(c.pip),!legacy);
   leak.position.y=c.reducedMotion?0:-((time*1.7)%1)*.13;rain.position.y=c.reducedMotion?0:-((time*.9)%1)*.2;
   ladder.visible=!legacy;ladder.rotation.set(0,0,0);
   ladder.position.set(n>=7?WORKSHOP_DOOR.x-1.10:suppliedModels?BAKERY_REPAIR.ladder.x:BAKERY_SOL.x,0,n>=7?WORKSHOP_DOOR.z-.75:suppliedModels?BAKERY_REPAIR.ladder.z:BAKERY_SOL.z);
@@ -252,6 +256,14 @@ export function makeBakery(a:PaperArt,character:()=>SceneActor=()=>legacyActor(a
   const doughScale=k==='mixDough'?.4+.6*t:k==='shapeLoaves'?Math.max(.05,1-t):1;
   const prepared=n>=8?1:k==='mixDough'?Math.max(0,Math.min(1,(t-.62)/.18)):0;
   dough.position.copy(vector(mixing)).lerp(vector(preparation),prepared);dough.rotation.set(0,0,0);dough.scale.setScalar(doughScale);
+  if(n===7&&k!=='mixDough'){
+   dough.scale.setScalar(.5);
+   if(s.gesture?.object==='dough'){
+    const point=s.gesture.point;dough.position.x=point.x;dough.position.z=point.z;
+    const press=Math.min(1,Math.hypot(point.x-mixing.x,point.z-mixing.z)/.14);
+    dough.scale.set(.5+press*.05,.5-press*.08,.5+press*.03);
+   }
+  }
   wholeDough.scale.set(1.8,.55,1.15);wholeDough.visible=!c.hands.cuts.length||n!==8;
   const divided=n===8&&c.hands.cuts.length>0,intervals=doughIntervals(c.hands.cuts),spread=k==='shapeLoaves'?1+t*2:1;
   portions.root.visible=!suppliedModels&&divided; if(portions.root.visible)portions.sync(c.hands.cuts,spread);
@@ -275,7 +287,7 @@ export function makeBakery(a:PaperArt,character:()=>SceneActor=()=>legacyActor(a
     if(k==='thankSol')loaf.position.lerp(new T.Vector3(WORKSHOP_DOOR.x-.15,.88,WORKSHOP_DOOR.z+.15),t);
    }
   });
-  return {stage:b.stage,unshapedBatches:b.unshapedBatches??0,unevenBatchVisible:uneven.visible,leakOpen,rain:rain.visible,workProgress:k==='bakeryWelcome'?t:null,tile:{x:tile.position.x,y:tile.position.y,z:tile.position.z},rina:{x:rina.rig.position.x,z:rina.rig.position.z},loaf:b.loaf,handling:{carriedLoaf,carriedUneven,tripProgress,bakeTrip}};
+  return {stage:b.stage,unshapedBatches:b.unshapedBatches??0,unevenBatchVisible:uneven.visible,leakOpen,rain:!legacy,workProgress:k==='bakeryWelcome'?t:null,tile:{x:tile.position.x,y:tile.position.y,z:tile.position.z},rina:{x:rina.rig.position.x,z:rina.rig.position.z},loaf:b.loaf,handling:{carriedLoaf,carriedUneven,tripProgress,bakeTrip}};
  }
  return {root,shell:fixed,rina,tile,targets,cracked,bowl,dough,wholeDough,portionHolders,flourScoop,loaves,flour,oven,uneven,ladder,toolkit,writingPage,roofGap,roofBeside,threatenedFlour,returnRoute,render};
 }

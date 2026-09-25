@@ -1,0 +1,44 @@
+{
+  "schema": "eq.nerdy-demo.task.v1",
+  "task": 5,
+  "status": "VERIFIED",
+  "at": "2026-09-25T01:37:35.788Z",
+  "fix": "FIX11.NERDY05",
+  "check": "CHECK11.NERDY05",
+  "deleted": {
+    "schema": "eq.nerdy-demo.cleanup-result.v1",
+    "at": "2026-09-25T01:32:54.5264503Z",
+    "manifest": "evidence/nerdy-demo-20260924/cleanup-files.json",
+    "manifestSha256": "b54ab07b8485ae073503e202998362ef608f593d9fabc4225274e52b225d5c5f",
+    "deletedCount": 1355,
+    "deletedBytes": 16989082423,
+    "deletedGiB": 15.822315982542932,
+    "driveFreeBytesBefore": 327874465792,
+    "driveFreeBytesAfter": 344866205696,
+    "remainingCandidates": 0,
+    "protectedFilesRetained": 5,
+    "recursiveDeletion": false
+  },
+  "verification": {
+    "originals": {
+      "status": "ALL_143_ORIGINAL_HASHES_MATCH",
+      "verified": 143,
+      "bytes": 1003867652,
+      "inventorySha256": "86264c539ad2ac57402781967e86f20ad6df354827b6032081b2b294eb0f2a72"
+    },
+    "runtimePackage": {
+      "packageFiles": 154,
+      "matchedTargets": 155,
+      "missing": 0
+    },
+    "build": {
+      "exitCode": 0,
+      "log": ".cache/nerdy-demo-task5-build.log",
+      "inputs": "c66b0f9a08cdc6ce5885ab4be239cee9589aeddc83c3cbf25ee2f38cde79b1d1",
+      "outputs": "b1ce3eb6fbb011549930bdcaa1d910f87b8aaf1668d472b0529c9ad38f5dc01b"
+    },
+    "visibleCheckpoint": "Rebuilt compiled game refreshed in Codex at http://127.0.0.1:4494/garden.",
+    "providerRequests": 0
+  },
+  "retention": "The five-file Pip weight-provenance snapshot, all current editable models, original sources and retained test/build inputs remain. Ambiguous review material was not deleted."
+}

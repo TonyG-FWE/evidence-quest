@@ -1,0 +1,96 @@
+{
+  "at": "2026-09-25T09:20:44.299Z",
+  "scope": "Restored the exact ten earlier uncommitted evidence files after retaining the new generated results locally. No original user work discarded.",
+  "files": [
+    {
+      "file": "evidence/authored-evaluation.json",
+      "generatedCopy": "output/nerdy-demo-generated-evidence-20260925/evidence/authored-evaluation.json",
+      "generatedSha256": "be289e6b2c12af78fc0c2f3fa104ef81db382acc6b75e93aed6dfb30f06b9a35",
+      "restoredSha256": "820020e133d0f673e70a16305d694a7191917ce2770d286b27f8e5494234a2eb",
+      "bytes": 240,
+      "outsideCandidateInputs": true,
+      "outsideReleaseSelection": true
+    },
+    {
+      "file": "evidence/er13/cold-chunk-retry-abort-chromium.json",
+      "generatedCopy": "output/nerdy-demo-generated-evidence-20260925/evidence/er13/cold-chunk-retry-abort-chromium.json",
+      "generatedSha256": "e95817174cccb9b01c7bf355be4cab04406fb2edbccae7f6ed0408843e6d9eaa",
+      "restoredSha256": "2c57753ce2de9ecfa114c3407d470e55ee28c4b4263ebc77489f68e8f8da1c20",
+      "bytes": 510,
+      "outsideCandidateInputs": true,
+      "outsideReleaseSelection": true
+    },
+    {
+      "file": "evidence/er13/cold-chunk-retry-http503-chromium.json",
+      "generatedCopy": "output/nerdy-demo-generated-evidence-20260925/evidence/er13/cold-chunk-retry-http503-chromium.json",
+      "generatedSha256": "7e18c000e27693ebc0cc9df685e2b323872adcbedcea817e16343f125676dab4",
+      "restoredSha256": "7c1b4ec67ce653caa62acb9566e69581884445c0706327bb999446419ef808bd",
+      "bytes": 607,
+      "outsideCandidateInputs": true,
+      "outsideReleaseSelection": true
+    },
+    {
+      "file": "evidence/er13/content-validation.json",
+      "generatedCopy": "output/nerdy-demo-generated-evidence-20260925/evidence/er13/content-validation.json",
+      "generatedSha256": "e68370451a7221e95e24b31a18fc31e4b593a20487f09170b6f0465a73833d40",
+      "restoredSha256": "e71630a80d536f7ef6a249bb3cf240166fef5b1bf2df9d5530a9ea75d5f0bdc7",
+      "bytes": 742,
+      "outsideCandidateInputs": true,
+      "outsideReleaseSelection": true
+    },
+    {
+      "file": "evidence/er13/home-png-chromium.json",
+      "generatedCopy": "output/nerdy-demo-generated-evidence-20260925/evidence/er13/home-png-chromium.json",
+      "generatedSha256": "f376fbdda0a1c7197b9edfb2e61a372bc0072bc6b5462a4ecb29e50b7269d771",
+      "restoredSha256": "1a3b2000e4da00521c1c8489e34fdae692ce72f30be3e01e1340a203fb641754",
+      "bytes": 10591,
+      "outsideCandidateInputs": true,
+      "outsideReleaseSelection": true
+    },
+    {
+      "file": "evidence/er13/production-art-exports.json",
+      "generatedCopy": "output/nerdy-demo-generated-evidence-20260925/evidence/er13/production-art-exports.json",
+      "generatedSha256": "3a60a14c3006e460507ae5d9179548f900dfd82861be22c5945c6f882325e71b",
+      "restoredSha256": "648dc8ad97e43a82a6e994ec77be47a8dadfa8276d6501703e1093e62577ef6e",
+      "bytes": 299391,
+      "outsideCandidateInputs": true,
+      "outsideReleaseSelection": true
+    },
+    {
+      "file": "evidence/er13/render-resize-chromium.json",
+      "generatedCopy": "output/nerdy-demo-generated-evidence-20260925/evidence/er13/render-resize-chromium.json",
+      "generatedSha256": "556ab04cf5e9e9cb66f7e560ce4df8a2d078642f8355cbc16eeb426be51c4b97",
+      "restoredSha256": "f1d4c3ceac16656eb988fac61f2f779139d51e66f9842f60006191c798609a40",
+      "bytes": 22650,
+      "outsideCandidateInputs": true,
+      "outsideReleaseSelection": true
+    },
+    {
+      "file": "evidence/group-7-finale-20260915/content-manifest.json",
+      "generatedCopy": "output/nerdy-demo-generated-evidence-20260925/evidence/group-7-finale-20260915/content-manifest.json",
+      "generatedSha256": "d7d916a2ca624e2065a7a52071f42587e302a9abc11bf520b4f408bcaf7594d5",
+      "restoredSha256": "d7d916a2ca624e2065a7a52071f42587e302a9abc11bf520b4f408bcaf7594d5",
+      "bytes": 348879,
+      "outsideCandidateInputs": true,
+      "outsideReleaseSelection": true
+    },
+    {
+      "file": "evidence/scale-20260912/chromium-1469x1105-route.json",
+      "generatedCopy": "output/nerdy-demo-generated-evidence-20260925/evidence/scale-20260912/chromium-1469x1105-route.json",
+      "generatedSha256": "51abf0f6875857d0dd4508a6575b8dc04a6ba775122c39b1acf01eb9870af40f",
+      "restoredSha256": "7d74d6cfc570f6c84a782978b1c219c791dec9da0b8e961e61dc518433bda004",
+      "bytes": 14934,
+      "outsideCandidateInputs": true,
+      "outsideReleaseSelection": true
+    },
+    {
+      "file": "evidence/scale-20260912/chromium-compact-route.json",
+      "generatedCopy": "output/nerdy-demo-generated-evidence-20260925/evidence/scale-20260912/chromium-compact-route.json",
+      "generatedSha256": "53536f834204215fccefd8b93a9074677ec4a311a82928254439d4713c9f4434",
+      "restoredSha256": "8ce2789b3290027c043fed37d5042086796028faf51297570798c1ea91c78c11",
+      "bytes": 14976,
+      "outsideCandidateInputs": true,
+      "outsideReleaseSelection": true
+    }
+  ]
+}

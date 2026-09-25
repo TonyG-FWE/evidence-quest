@@ -1,0 +1,42 @@
+{
+  "id": "c5b272d9723f89db25521930ac87945f03497bed9d5cd12e6be50d84aa1a6496",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 12884,
+      "sha256": "635f20a0743641cf6a0b4018eb5a2ca0829b939116a673b22e31e14f61843030"
+    },
+    {
+      "bytes": 1251,
+      "sha256": "91d8af1906bb3a2946dac081f0390c127506ce31d7c3688367d426b3381cfca8"
+    },
+    {
+      "bytes": 1328,
+      "sha256": "69350228ab36c5de5053c1bd0ba1ae01766c12f221d46366a293e6c1cb350d11"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "storm.",
+  "textSha256": "1613447bb517f386fe2cfbe34c24783d746d38c85260cd4586ae7a9e946e49e6",
+  "sha256": "51419f81636f7a0ac22fe6875f818d6e363d061200e49a551c7561740e271499",
+  "bytes": 15463,
+  "alignment": [
+    {
+      "text": "storm",
+      "start": 0.16,
+      "end": 0.72
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8998866213151927
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

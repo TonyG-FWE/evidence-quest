@@ -1,0 +1,77 @@
+{
+  "at": "2026-09-25T09:20:42.869Z",
+  "scope": "Read-only accounting check after the single explicit UI verification request. No provider execution by this script.",
+  "requestId": "80f68546-dc86-4a00-84c6-9c3d7965a3b2",
+  "browserRequests": 1,
+  "newProviderReservations": 1,
+  "appended": [
+    {
+      "at": "2026-09-25T07:35:58.245Z",
+      "event": "reserved",
+      "requestId": "80f68546-dc86-4a00-84c6-9c3d7965a3b2",
+      "model": "gpt-5.6-luna",
+      "inputBytes": 5225,
+      "reservedUSD": 0.00317025,
+      "draftSha256": "d6ef8307e2f94673463397cbb1a53f57e5007e670a2f2d4ce56824d54356ced5"
+    },
+    {
+      "at": "2026-09-25T07:36:01.882Z",
+      "event": "response",
+      "requestId": "80f68546-dc86-4a00-84c6-9c3d7965a3b2",
+      "httpStatus": 200,
+      "durationMs": 3635,
+      "usageKnown": true,
+      "inputTokens": 1161,
+      "outputTokens": 91,
+      "costUSD": 0.00034140000000000006,
+      "diagnostic": {
+        "responseStatus": "completed",
+        "model": "gpt-5.6-luna",
+        "messageCount": 1,
+        "contentType": "output_text",
+        "incompleteReason": null,
+        "feedbackCharacters": 199,
+        "feedbackStatus": "supported",
+        "scene": "both",
+        "refsAllExposed": true,
+        "contractValid": true
+      }
+    },
+    {
+      "at": "2026-09-25T07:36:01.896Z",
+      "event": "validated",
+      "requestId": "80f68546-dc86-4a00-84c6-9c3d7965a3b2",
+      "status": "supported"
+    }
+  ],
+  "ledgerAfter": {
+    "bytes": 8321,
+    "sha256": "a93a947bb71554b0103a02d6dd620336a8d4a804b9789da9fd18a77d75ac46cd"
+  },
+  "budget": {
+    "enabled": false,
+    "model": "gpt-5.6-luna",
+    "ceilingUSD": 10,
+    "attempts": 11,
+    "priorReservedUSD": 0.00495,
+    "reservedUSD": 0.038318500000000005,
+    "remainingUSD": 9.9616815,
+    "reportedCostUSD": 0.003568
+  },
+  "preserved": [
+    {
+      "file": "evidence/voice-ai-demo-20260918/openai-attempts.jsonl",
+      "bytes": 1228,
+      "sha256": "0c6ed03e64b11f6b5138956d85ee753dfdbc67cafb0aeb619bfcf90e7472867b",
+      "unchanged": true
+    },
+    {
+      "file": "evidence/er13/live-evaluation/attempts.jsonl",
+      "bytes": 549,
+      "sha256": "17a4a6a57b5e1d54192320717e09f2c631a3eb052d1c1e62bc74c866bc877653",
+      "unchanged": true
+    }
+  ],
+  "voiceLedgerUnchangedSinceWholeWordRepair": true,
+  "verifiedLedgerCount": 4
+}

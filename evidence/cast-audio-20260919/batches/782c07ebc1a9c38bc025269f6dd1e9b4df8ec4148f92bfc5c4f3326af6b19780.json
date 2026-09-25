@@ -1,0 +1,42 @@
+{
+  "id": "782c07ebc1a9c38bc025269f6dd1e9b4df8ec4148f92bfc5c4f3326af6b19780",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11615,
+      "sha256": "b1af3ad156408b643ef23561a0e4f3968c98aecf57e7a4f1e4fa048a02ccbb33"
+    },
+    {
+      "bytes": 840,
+      "sha256": "ea632fc041561c2c1b7f1cb3d7ef2a7f52205b865f32a39457ec895b7f5ccf5c"
+    },
+    {
+      "bytes": 1336,
+      "sha256": "0b31bd712faaaf9e00baba5037c729d0c016d97444cbed749c7cd5abbb260588"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "gave.",
+  "textSha256": "5a3fea0283b9ac995e4584752832cfe897344a23d31b7608ed91b2c6a4678775",
+  "sha256": "4c3bddd526e62ec176028a47eb007c7bf1aabed1a1a158209edab34a957d76e3",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "gave",
+      "start": 0.24,
+      "end": 0.72
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

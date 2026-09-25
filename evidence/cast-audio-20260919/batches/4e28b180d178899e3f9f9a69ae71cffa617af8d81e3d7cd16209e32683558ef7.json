@@ -1,0 +1,42 @@
+{
+  "id": "4e28b180d178899e3f9f9a69ae71cffa617af8d81e3d7cd16209e32683558ef7",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 8264,
+      "sha256": "426af5560e05a099100a2b0fa7265ebaa2eb8b4253fd1f28314b18c003ffd693"
+    },
+    {
+      "bytes": 854,
+      "sha256": "c0e51cc7a39b8c38e5d3dd0fddc46b2838dd18a4764a2e1e8307df00ef8d4f88"
+    },
+    {
+      "bytes": 1748,
+      "sha256": "f7070c1e55931d9c0247da8bb3637426177e4066585e7cfcfb255cc5b6f0552f"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "glad.",
+  "textSha256": "4cdfb62f3d37dae5009e5aa0f549367fa2db5f8482966450557b5aa6c27256a7",
+  "sha256": "1be1210c414b43269e261da26e4ea2ab2c98cf15025f382f5bab12441e8f2352",
+  "bytes": 10866,
+  "alignment": [
+    {
+      "text": "glad",
+      "start": 0.08,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6034467120181406
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

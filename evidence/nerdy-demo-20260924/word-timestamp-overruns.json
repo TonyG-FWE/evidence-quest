@@ -1,0 +1,52 @@
+{
+  "at": "2026-09-25T04:25:09.665Z",
+  "failure": "First post-generation binding stopped: PCM interval exceeds master. Build did not start.",
+  "correction": "Whole-word identity uses exact one-word request; interval is the complete native-decoded PCM from sample zero to the true file end. Provider timestamps are retained as provenance but do not cut pronunciation.",
+  "affected": [
+    {
+      "word": "edit",
+      "alignedEnd": 0.48,
+      "actualDuration": 0.4179583333333333
+    },
+    {
+      "word": "effort",
+      "alignedEnd": 0.56,
+      "actualDuration": 0.5224375
+    },
+    {
+      "word": "except",
+      "alignedEnd": 0.56,
+      "actualDuration": 0.5224375
+    },
+    {
+      "word": "foot",
+      "alignedEnd": 0.48,
+      "actualDuration": 0.4701875
+    },
+    {
+      "word": "grip",
+      "alignedEnd": 0.56,
+      "actualDuration": 0.5224375
+    },
+    {
+      "word": "short",
+      "alignedEnd": 0.56,
+      "actualDuration": 0.5224375
+    },
+    {
+      "word": "strip",
+      "alignedEnd": 0.56,
+      "actualDuration": 0.5224375
+    },
+    {
+      "word": "took",
+      "alignedEnd": 0.56,
+      "actualDuration": 0.36570833333333336
+    },
+    {
+      "word": "type",
+      "alignedEnd": 0.56,
+      "actualDuration": 0.36570833333333336
+    }
+  ]
+}

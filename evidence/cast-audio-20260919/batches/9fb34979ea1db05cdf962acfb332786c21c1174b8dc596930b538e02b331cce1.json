@@ -1,0 +1,42 @@
+{
+  "id": "9fb34979ea1db05cdf962acfb332786c21c1174b8dc596930b538e02b331cce1",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 8283,
+      "sha256": "ddd3834bb63630218b240cfbaf03b763c505d7ab26d89d1b62b0b7ff15ec9139"
+    },
+    {
+      "bytes": 843,
+      "sha256": "f40579b54f44e6a50d213bc91bfd638b433d9672e21e3f85f98227253d401ce7"
+    },
+    {
+      "bytes": 1740,
+      "sha256": "5b74439b876338c969104d752e15d024f86db0d0b01e30cba1e3a11e38229542"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "meal.",
+  "textSha256": "ad0e5f054ed9c388bda5832919a4db6a404c87e3938d75cfa7b6705bc4fd7aa6",
+  "sha256": "5d01967e1b03503f464f10bc6959420c5ffcf1e2e92b7b3bcb3abd8de7536b06",
+  "bytes": 10866,
+  "alignment": [
+    {
+      "text": "meal",
+      "start": 0.16,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6034467120181406
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

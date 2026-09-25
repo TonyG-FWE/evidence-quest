@@ -1,0 +1,42 @@
+{
+  "id": "49e0b9ad98a4e6d1a4003d8d305ae157ab47d9cd8c775cc2ef7bf7943ecf96fd",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 12456,
+      "sha256": "bb019b940e4a7a3d5e392bd46fe8c1fb50036d927267ed02d5d33936604b8b2e"
+    },
+    {
+      "bytes": 855,
+      "sha256": "d0b4f9b33f4d1277986807d74b2dcaf4da75fe12376c57408620d94b74e5cc08"
+    },
+    {
+      "bytes": 1316,
+      "sha256": "0a17dc9c67b74991e05da025acbf352121a5559d6586ecd55266261e3b1fecb9"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "chasing.",
+  "textSha256": "bfb1e0e4c6dfd9f58ebd1efd08a49cd3bb474025c3640fff23e1a5008dd8c5d5",
+  "sha256": "2dd19a2821df1ff1d44ab93077eadd203cd39d59e3194300ddbfd03ca5047515",
+  "bytes": 14627,
+  "alignment": [
+    {
+      "text": "chasing",
+      "start": 0.16,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8504761904761905
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

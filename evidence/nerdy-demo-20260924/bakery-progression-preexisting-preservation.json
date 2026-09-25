@@ -1,0 +1,76 @@
+{
+  "at": "2026-09-25T19:35:17.952Z",
+  "scope": "Preserve the exact ten pre-existing dirty files after retaining this repair’s generated versions separately",
+  "files": [
+    {
+      "file": "evidence/authored-evaluation.json",
+      "generatedCopy": "output/bakery-progression-20260925/generated-evidence/evidence/authored-evaluation.json",
+      "generatedSha256": "9dc0a7b5ccd10372cf82f0b63b5de1fa6b7c435cbd97f63841708fae4cd9f5ab",
+      "restoredSha256": "820020e133d0f673e70a16305d694a7191917ce2770d286b27f8e5494234a2eb",
+      "outsideCandidateInputs": true
+    },
+    {
+      "file": "evidence/er13/cold-chunk-retry-abort-chromium.json",
+      "generatedCopy": "output/bakery-progression-20260925/generated-evidence/evidence/er13/cold-chunk-retry-abort-chromium.json",
+      "generatedSha256": "2c57753ce2de9ecfa114c3407d470e55ee28c4b4263ebc77489f68e8f8da1c20",
+      "restoredSha256": "2c57753ce2de9ecfa114c3407d470e55ee28c4b4263ebc77489f68e8f8da1c20",
+      "outsideCandidateInputs": true
+    },
+    {
+      "file": "evidence/er13/cold-chunk-retry-http503-chromium.json",
+      "generatedCopy": "output/bakery-progression-20260925/generated-evidence/evidence/er13/cold-chunk-retry-http503-chromium.json",
+      "generatedSha256": "7c1b4ec67ce653caa62acb9566e69581884445c0706327bb999446419ef808bd",
+      "restoredSha256": "7c1b4ec67ce653caa62acb9566e69581884445c0706327bb999446419ef808bd",
+      "outsideCandidateInputs": true
+    },
+    {
+      "file": "evidence/er13/content-validation.json",
+      "generatedCopy": "output/bakery-progression-20260925/generated-evidence/evidence/er13/content-validation.json",
+      "generatedSha256": "08c54a5fc2f408c9b9ef88dd3b6f560e79c3cdb202bcdfc68894d8579fbde5ce",
+      "restoredSha256": "e71630a80d536f7ef6a249bb3cf240166fef5b1bf2df9d5530a9ea75d5f0bdc7",
+      "outsideCandidateInputs": true
+    },
+    {
+      "file": "evidence/er13/home-png-chromium.json",
+      "generatedCopy": "output/bakery-progression-20260925/generated-evidence/evidence/er13/home-png-chromium.json",
+      "generatedSha256": "1a3b2000e4da00521c1c8489e34fdae692ce72f30be3e01e1340a203fb641754",
+      "restoredSha256": "1a3b2000e4da00521c1c8489e34fdae692ce72f30be3e01e1340a203fb641754",
+      "outsideCandidateInputs": true
+    },
+    {
+      "file": "evidence/er13/production-art-exports.json",
+      "generatedCopy": "output/bakery-progression-20260925/generated-evidence/evidence/er13/production-art-exports.json",
+      "generatedSha256": "76a96e8e2646c0ad06edaacaa22202a4d3522bbb3686bb78a736a35dd555e57a",
+      "restoredSha256": "648dc8ad97e43a82a6e994ec77be47a8dadfa8276d6501703e1093e62577ef6e",
+      "outsideCandidateInputs": true
+    },
+    {
+      "file": "evidence/er13/render-resize-chromium.json",
+      "generatedCopy": "output/bakery-progression-20260925/generated-evidence/evidence/er13/render-resize-chromium.json",
+      "generatedSha256": "f1d4c3ceac16656eb988fac61f2f779139d51e66f9842f60006191c798609a40",
+      "restoredSha256": "f1d4c3ceac16656eb988fac61f2f779139d51e66f9842f60006191c798609a40",
+      "outsideCandidateInputs": true
+    },
+    {
+      "file": "evidence/group-7-finale-20260915/content-manifest.json",
+      "generatedCopy": "output/bakery-progression-20260925/generated-evidence/evidence/group-7-finale-20260915/content-manifest.json",
+      "generatedSha256": "d7d916a2ca624e2065a7a52071f42587e302a9abc11bf520b4f408bcaf7594d5",
+      "restoredSha256": "d7d916a2ca624e2065a7a52071f42587e302a9abc11bf520b4f408bcaf7594d5",
+      "outsideCandidateInputs": true
+    },
+    {
+      "file": "evidence/scale-20260912/chromium-1469x1105-route.json",
+      "generatedCopy": "output/bakery-progression-20260925/generated-evidence/evidence/scale-20260912/chromium-1469x1105-route.json",
+      "generatedSha256": "7d74d6cfc570f6c84a782978b1c219c791dec9da0b8e961e61dc518433bda004",
+      "restoredSha256": "7d74d6cfc570f6c84a782978b1c219c791dec9da0b8e961e61dc518433bda004",
+      "outsideCandidateInputs": true
+    },
+    {
+      "file": "evidence/scale-20260912/chromium-compact-route.json",
+      "generatedCopy": "output/bakery-progression-20260925/generated-evidence/evidence/scale-20260912/chromium-compact-route.json",
+      "generatedSha256": "8ce2789b3290027c043fed37d5042086796028faf51297570798c1ea91c78c11",
+      "restoredSha256": "8ce2789b3290027c043fed37d5042086796028faf51297570798c1ea91c78c11",
+      "outsideCandidateInputs": true
+    }
+  ]
+}

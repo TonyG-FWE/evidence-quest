@@ -1,0 +1,42 @@
+{
+  "id": "40a0516f5e5b11a6b11c88f758440f08d8df51c8fc7a1c9ad18c7d22f5ad5b5b",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 8275,
+      "sha256": "e0673577284e8b61a032dd6c98f34444bebb3d739ca5c2b2bd723326b25af700"
+    },
+    {
+      "bytes": 1150,
+      "sha256": "7ec18cc1fa971e1582de5460056ac7b9722c1e0e9e7a1c047a97448679f45283"
+    },
+    {
+      "bytes": 1441,
+      "sha256": "05fc78c47f2624d0aeb804947d15d8165deec194c7a604891e992e5153d1473c"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "rock.",
+  "textSha256": "c37e70ab895172dbf541157f827b904a0e5f98686ee7ead6f896584491c41657",
+  "sha256": "94a9fb76e3c585916d6db3950cd41843905ce4ec384b42b52c67983526231a32",
+  "bytes": 10866,
+  "alignment": [
+    {
+      "text": "rock",
+      "start": 0.16,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6034467120181406
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

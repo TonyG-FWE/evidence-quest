@@ -1,0 +1,45 @@
+{
+  "at": "2026-09-25T19:39:39.432Z",
+  "status": "IMPLEMENTED; FOCUSED CHECKS PASS; FINAL FULL ROUTE REPEAT INTERRUPTED AT USER DEADLINE",
+  "candidate": {
+    "inputs": "6ad5ba0cc1fc095874ae21ec92e8ff7e8cf5adac44e382231162b9aa8efd5761",
+    "outputs": "79c7a1975255f05979c0a0d415ed7c1b5b1315d71991f68ccc740f6c0d8d7fe3"
+  },
+  "contracts": 251,
+  "authoredChecks": 23,
+  "freshCursorRoutes": {
+    "startTime": "2026-09-25T19:18:38.357Z",
+    "duration": 302987.402,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "finalTargeted": {
+    "passed": 6,
+    "sizes": [
+      "1098x1105",
+      "2048x938",
+      "1366x768",
+      "1920x1080"
+    ],
+    "scope": "Roof visible through descent; accumulated short bowl strokes, Escape/conversation cancellation, cuts; distant drag canceled by movement. Initial1366test clicked before return camera settled; corrected test waits for camera and passed.",
+    "originalRun": "output/bakery-progression-20260925/final-r3/5.log",
+    "compactRerun": {
+      "startTime": "2026-09-25T19:37:55.034Z",
+      "duration": 25763.767,
+      "expected": 1,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "native": "Codex roof directly inspected visible beneath Sol after rebuild. Tarp entry/idle/journal/exit checked. Actual Chrome blocked bowl progressed with seven short strokes, imperfect release, adjusted cuts, oven, Rina and Sol handoffs.",
+  "limitations": "Fresh click+drag routes passed before final cancellation/roof guards. Final complete repeat stopped at the user ten-minute deadline. Prior broad210pass31fail1skip remains unsuperseded. Earlier fallback and finale not requalified.",
+  "providers": 0,
+  "recordings": 0,
+  "savedGameWork": false,
+  "task1119": "HALTED1/75",
+  "audio": "Only three gameplay source hashes refreshed;6037entries and recordings unchanged.",
+  "privatePR": "https://github.com/TonyG-FWE/evidence-quest/pull/3"
+}

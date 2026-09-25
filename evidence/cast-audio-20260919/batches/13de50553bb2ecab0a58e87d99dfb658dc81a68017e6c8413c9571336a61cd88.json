@@ -1,0 +1,42 @@
+{
+  "id": "13de50553bb2ecab0a58e87d99dfb658dc81a68017e6c8413c9571336a61cd88",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11027,
+      "sha256": "5ec4c3f16e17a6da164e8b342e27b79b2566afcbd254d4ee76444387c65f03f5"
+    },
+    {
+      "bytes": 887,
+      "sha256": "2138d58dfd2da265588df632a58f07a0ab2934c249789e755e2b3f5eb9f7a168"
+    },
+    {
+      "bytes": 1041,
+      "sha256": "83828ece3b7338e9bba2d1e9cf44dfe814a64a9df2bdd7e3d28ee47c25d5f20e"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "stones.",
+  "textSha256": "188d4f9cfeb38a53f46d5ad56606e6ba1b9ee0e1d8db3f34b042c781593c12bb",
+  "sha256": "3c8cfece61550202615c92be452807b66e23e9ee1e1453884537fe88b4d19d28",
+  "bytes": 12955,
+  "alignment": [
+    {
+      "text": "stones",
+      "start": 0.16,
+      "end": 0.8
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.7516780045351474
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

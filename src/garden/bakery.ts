@@ -22,6 +22,7 @@ export const bakeryRank=(c:Chapter)=>BAKERY_STAGES.indexOf(c.bakery.stage as typ
 export const solAtWorkshop=(c:Chapter)=>c.bakery.stage==='historical'||bakeryRank(c)>=7;
 export const near=(a:Point,b:Point,r=.95)=>Math.hypot(a.x-b.x,a.z-b.z)<=r;
 export const nearBakery=(c:Chapter)=>regionAt(c.pip)==='bakery';
+export const nearBakeryWork=(c:Chapter,station:'mixing'|'preparation'|'oven'|'dryFlour')=>near(c.pip,BAKERY_WORK[station],1.85);
 export const bakeryAction=(kind:string):kind is BakeryAction=>kind in bakeryDurations;
 export const bakeryDurations:Record<BakeryAction,number>={bakeryWelcome:6500,tilePickup:1000,tileDelivery:1200,tileRemoval:6500,tilePlacement:4000,flourCheck:12000,mixDough:3400,shapeLoaves:3200,bakeBread:15000,bakeUnshaped:8000,takeLoaf:4000,thankSol:localReview?4200:2400};
 export const bakeryActionText:Record<BakeryAction,string>={bakeryWelcome:'Rina moves her flour sacks away from the water dripping through the roof.',tilePickup:'Pip takes Rina’s intact spare tile from the shelf.',tileDelivery:'Pip hands the spare tile to Sol beside his ladder.',tileRemoval:'Sol climbs his ladder, removes the cracked tile and sets it aside.',tilePlacement:'Sol places the same spare tile where you directed him.',flourCheck:'Rina checks that the flour is dry. Sol packs his tools and walks back to his workshop.',mixDough:'Pip helps Rina mix the ingredients. Rina kneads the dough. Some time passes while it rests and rises. Sol writes at his workshop.',shapeLoaves:'Pip helps divide the dough. Rina shapes three similar-sized loaves.',bakeUnshaped:'Rina puts the whole lump in the oven for the recipe’s baking time. The outside browns, but the middle is still doughy. She sets this batch aside.',bakeBread:'A short time passes while the loaves bake. The gathering has not begun; Mara’s last boat is still due later.',takeLoaf:'Rina takes one baked loaf to thank Sol. The other bread stays for the people she promised.',thankSol:'Pip watches Rina hand Sol the loaf. “Thank you for fixing the roof,” she says. Sol finishes the last line of his draft.'};
@@ -54,7 +55,8 @@ export function applyBakery(s:GardenState,step:BakeryStep):BakeryAction|null{
  if(step==='REMOVE'&&s.mode==='bakery-repair'&&b.stage==='delivered')return 'tileRemoval';
  if(step==='PLACE'&&s.mode==='bakery-repair'&&['gap','misplaced'].includes(b.stage)&&s.bakeryPreview)return 'tilePlacement';
  if(step==='CHECK'&&b.stage==='sealed'&&nearBakery(c))return 'flourCheck';
- if(!near(c.pip,b.rina,1.65))return null;
+ const atWork=near(c.pip,b.rina,1.65)||nearBakeryWork(c,step==='TAKE_LOAF'?'oven':step==='MIX'?'mixing':'preparation');
+ if(!atWork&&step!=='THANK')return null;
  if(step==='MIX'&&b.stage==='checked')return 'mixDough';
  if(step==='SHAPE'&&b.stage==='mixed')return 'shapeLoaves';
  if(step==='BAKE_UNSHAPED'&&b.stage==='mixed')return 'bakeUnshaped';
@@ -66,7 +68,7 @@ export function applyBakery(s:GardenState,step:BakeryStep):BakeryAction|null{
 export function settleBakery(s:GardenState,a:Action){const b=s.chapter.bakery;switch(a.kind){
  case 'bakeryWelcome':b.met=true;break;
  case 'tilePickup':b.stage='carried';b.tile='pip';break;
- case 'tileDelivery':b.stage='delivered';b.tile='sol';break;
+ case 'tileDelivery':b.stage='delivered';b.tile='sol';s.mode='bakery-repair';break;
  case 'tileRemoval':b.stage='gap';b.cracked='set-aside';break;
  case 'tilePlacement':b.tile=a.placement==='gap'?'roof':'beside';b.stage=a.placement==='gap'?'sealed':'misplaced';if(b.stage==='sealed')s.mode='walk';break;
  case 'flourCheck':b.stage='checked';s.mode='walk';break;

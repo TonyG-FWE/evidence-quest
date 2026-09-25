@@ -1,0 +1,42 @@
+{
+  "id": "128187f4b8005f0c163aa5522ee87d0db5b5264892bdcc6c54d1e39f7c4c639e",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11119,
+      "sha256": "ac3b6c98261d6c4f3f870fd1d320185a98d4548aaed3f503f61105969cf8ab85"
+    },
+    {
+      "bytes": 717,
+      "sha256": "d952dec3e31676994af18db3aa2c10453d5fc38ae3b80d065a45cfaa860216de"
+    },
+    {
+      "bytes": 1119,
+      "sha256": "32e71926ebab044def4aef1860ec431cf994e3174313a695d834c512c3d1f360"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "sister's.",
+  "textSha256": "d0d32ff4f4cf8fce06d4b54cd21ea63506d1f8dde7f460501bd7229df615c257",
+  "sha256": "18d6623c733bf43d136381b00358000035407d9b78c7688ce8c870ce3220670e",
+  "bytes": 12955,
+  "alignment": [
+    {
+      "text": "sister's",
+      "start": 0.16,
+      "end": 0.72
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.7516780045351474
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

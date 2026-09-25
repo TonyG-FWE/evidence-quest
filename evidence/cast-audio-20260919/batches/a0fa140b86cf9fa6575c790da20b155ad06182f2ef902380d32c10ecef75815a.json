@@ -1,0 +1,42 @@
+{
+  "id": "a0fa140b86cf9fa6575c790da20b155ad06182f2ef902380d32c10ecef75815a",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11629,
+      "sha256": "8b69558ec68bb6665d5d8d5b949892fff2296709b4788b6799c512c4803698dc"
+    },
+    {
+      "bytes": 834,
+      "sha256": "df70b263a18fe3c0a7102a24d46ce07f05292ec978f517a207eff0a10883da30"
+    },
+    {
+      "bytes": 1328,
+      "sha256": "828b9b32df760d5930f2614dfe84550f0b6f00b53c11a36a7ff521e29941c365"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "adventure.",
+  "textSha256": "d0b701e029f479c18093f701825e3f762aeec9d1c8b60b50482fa0c2aef0c8ff",
+  "sha256": "8380cef1b20933e4eab51a0b2907d9e7ab1639acb011e5744367c23a8f3c6d3d",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "adventure",
+      "start": 0.16,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

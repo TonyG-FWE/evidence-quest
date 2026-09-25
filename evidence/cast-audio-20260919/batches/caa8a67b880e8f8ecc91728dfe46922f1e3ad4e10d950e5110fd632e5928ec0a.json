@@ -1,0 +1,42 @@
+{
+  "id": "caa8a67b880e8f8ecc91728dfe46922f1e3ad4e10d950e5110fd632e5928ec0a",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 9260,
+      "sha256": "4b282bc445df6d295eb0224a76756625f1c50266581596ca173b34f2dff347f7"
+    },
+    {
+      "bytes": 809,
+      "sha256": "b0070af27d187b6431136f590f63573ed9957c579fbfb3bfd57b1425a49bc829"
+    },
+    {
+      "bytes": 1214,
+      "sha256": "c01840175b1f1725df104eba389c0355ef6039894e76c441c72abf25a36c62d6"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "puddles.",
+  "textSha256": "de1d4fc5c868a3290da2ddd9ecb58ff8a7d371812a5cfac75539310c34576573",
+  "sha256": "67e81e9d9a907305d1d17cbddbf3fbaace2a66b6d24832c044f9ca4b7c024939",
+  "bytes": 11283,
+  "alignment": [
+    {
+      "text": "puddles",
+      "start": 0.16,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6528571428571428
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

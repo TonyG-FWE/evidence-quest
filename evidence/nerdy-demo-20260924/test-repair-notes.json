@@ -1,0 +1,142 @@
+{
+  "scope": "Repairs discovered by the complete required-command run, followed by separately recorded checks against the rebuilt successor. Original failures are retained; source edits alone are not passing results.",
+  "status": "DEMONSTRATED_ROUTE_PASS_WITH_RETAINED_QUALIFICATION_GAPS",
+  "repairs": [
+    {
+      "file": "checks/garden-cast-playback.test.ts",
+      "cause": "The synthetic ill entry lacked the required complete-word boundary marker.",
+      "change": "Mark the fixture as a complete-word recording; retain actual playback rejection checks.",
+      "verification": "contract-recheck.json: 245 passed, zero failed or skipped in the demo profile."
+    },
+    {
+      "file": "browser-tests/garden-adaptive-reader.spec.ts",
+      "cause": "The notebook test used the retired Hear label.",
+      "change": "Use the current Listen to my notebook notes accessible name."
+    },
+    {
+      "file": "browser-tests/garden-bakery.spec.ts",
+      "cause": "Shorter-excerpt support was inside the collapsed ending-support section.",
+      "change": "Open Support for my ending through its visible control. Update the preview assertion to the actual player-owned wording: These words stay labeled as your suggested ending."
+    },
+    {
+      "file": "browser-tests/garden-continuity.spec.ts",
+      "cause": "The choice layout now contains distinct listening and selection buttons.",
+      "change": "Assert the actual selection controls and their separate listening/help controls."
+    },
+    {
+      "file": "browser-tests/garden-hands.spec.ts",
+      "cause": "The flour was hidden behind the bakery while the closer repair camera framed the roof.",
+      "change": "Use the visible flour-inspection action, wait for its camera, then retain actual canvas mixing, shaping, baking and handoff gestures."
+    },
+    {
+      "file": "browser-tests/garden-literacy.spec.ts",
+      "cause": "The microphone test counted a read-only feature-configuration GET as a data submission.",
+      "change": "Count every garden API POST, retaining zero submissions during local recording/replay and exactly one after explicit Get feedback. Preserve the synthetic-device qualification boundary. Advertise reading feedback with a labeled synthetic configuration only for this explicit-request/unavailable-response case; the actual demo keeps that speech service disabled.",
+      "verification": "repaired-controls-r1.json: passed with synthetic microphone and capability advertisement, actual capture/replay/discard and unavailable server response; zero live speech-provider requests."
+    },
+    {
+      "file": "browser-tests/garden-mara.spec.ts",
+      "cause": "A non-exact choice locator also matched its listening button.",
+      "change": "Use the existing exact selection helper. Require exact Read The Torn Wing selection to distinguish Listen to choice.",
+      "verification": "repaired-controls-r1.json: passed."
+    },
+    {
+      "file": "browser-tests/garden.spec.ts",
+      "cause": "The same non-exact choice locator could match its listening button.",
+      "change": "Require the exact choice name. Apply the same exact Read The Torn Wing selection. The last carried-seed failure is retained; this test was not repeated solely for its saved-state assertions."
+    },
+    {
+      "file": "browser-tests/garden-render-recovery.spec.ts",
+      "cause": "Recovery succeeded, but the assertion compared innerText with textContent whitespace.",
+      "change": "Compare rendered innerText before and after recovery."
+    },
+    {
+      "file": "browser-tests/garden-rendering.spec.ts",
+      "cause": "The expected asset list named retired cottage/platform models.",
+      "change": "Require the current workshop and both fitted bridge spans. Preserve the 96 MiB scene and 192 MiB cache limits."
+    },
+    {
+      "file": "browser-tests/garden-sequence.spec.ts",
+      "cause": "Choice text assertions depended on retired direct-child buttons.",
+      "change": "Read the visible selection text within the current choice controls."
+    },
+    {
+      "file": "browser-tests/garden-stage-actors.spec.ts",
+      "cause": "A delayed-loading test expected all models to begin while the bounded loader's first requests were held.",
+      "change": "Require a real pending actor request and a busy stage, then retain disposal, re-entry and readiness checks. Release the held requests in finally."
+    },
+    {
+      "file": "browser-tests/garden-word-jobs.spec.ts",
+      "cause": "The draft test used a retired practice label and requested feedback behind collapsed support.",
+      "change": "Use Practise reading my ending and open Support for my ending. Allow four minutes for its ordinary bakery journey and connected draft operations; no resource or rendering threshold changed."
+    },
+    {
+      "file": "browser-tests/garden-chapter.spec.ts",
+      "cause": "Sol wants to come matched both Listen to choice and the choice itself.",
+      "change": "Anchor the choice name at its beginning. Apply the same correction to the native rehearsal. The running required command keeps its originally loaded test code."
+    },
+    {
+      "file": "browser-tests/garden-demo-audio.spec.ts",
+      "cause": "The new bakery-listening check initially omitted the bridge journey required to reach the bakery.",
+      "change": "Reach the bakery through the ordinary bridge and Grandma route.",
+      "verification": "repaired-controls-r1.json: narrator, Pip, Rina and Sol text/speaker routing passes with a single listening/practice pair. Media completion is synthetic; native rehearsal remains separate."
+    }
+  ],
+  "runtimeCorrection": {
+    "file": "src/garden/GardenApp.tsx",
+    "cause": "At the completed opening bakery conversation, the page toolbar read only the narrator paragraph and suppressed the grouped toolbar despite three visible character replies.",
+    "change": "Give the grouped conversation toolbar ownership of this state, retaining narrator, Pip, Rina and Sol metadata and a single Listen/Practise pair.",
+    "verification": "Compiled successor; repaired-controls-r1.json passes exact text/speaker ownership. Native bakery page/conversation/word/sentence playback completes in the original live rehearsal and the provider-free r4 core."
+  },
+  "retainedQualificationGaps": [
+    "Maintainer studio inspections are hidden by the intentional demo presentation profile; those maintainer tests do not qualify in this profile.",
+    "Recorded scene and transfer budget failures remain failures. Original artwork detail and all resource thresholds are preserved.",
+    "Native recording completion does not establish universal pronunciation quality; Tony's have and short-word limitations remain.",
+    "The draft-word test reaches reading/editing and explicit synthetic feedback, then fails an unchanged reading-position persistence assertion. Saved-game work is explicitly excluded."
+  ],
+  "rechecks": [
+    "focused-browser-r2.json",
+    "repaired-controls-r1.json",
+    "bakery-no-trace-r1.json"
+  ],
+  "resourceFailure": {
+    "report": "repaired-controls-r1.json",
+    "case": "Bakery: connected repair, wrong placement, compact recovery, baking, accompanied thanks and exact draft excerpt",
+    "trace": "output/nerdy-demo-focused-repaired-controls-r1/raw/garden-bakery-Bakery-conne-36bb2-nks-and-exact-draft-excerpt-chromium/trace.zip",
+    "evidence": "Native browser resource request for /review-assets/bowl-08aa74859578-ktx.glb failed with net::ERR_NO_BUFFER_SPACE after repeated viewport changes. The game exposed Restore view and disabled actions. No missing package asset or WebGL context-loss event was established.",
+    "next": "Stable-size complete native rehearsal passed; the original resource failure and unchanged thresholds remain recorded.",
+    "verification": "bakery-no-trace-r1.json: the same connected bakery case passes in 140193 ms without diagnostic network-body tracing. The original ERR_NO_BUFFER_SPACE failure is retained; causality is not established."
+  },
+  "rehearsalAttempts": [
+    {
+      "attempt": "r1",
+      "record": "rehearsal-r1-incomplete.json",
+      "result": "Core and one live feedback request passed; later test moved before Mara’s page handoff acknowledgment. Wait for the visible acknowledgment added."
+    },
+    {
+      "attempt": "r2",
+      "record": "rehearsal-r2-interrupted.json",
+      "result": "Replay harness checked the real server through APIRequestContext instead of its page-only capability fixture. No live provider request. Owned test processes were stopped after capture teardown stalled; capture cleanup added."
+    },
+    {
+      "attempt": "r3",
+      "record": "rehearsal-r3-incomplete.json",
+      "result": "Native bakery audio timed out. Page routing disabled HTTP cache globally. Replaced the replay fixture with feedback/config fetch-only handling; no runtime audio change or proven causal attribution."
+    },
+    {
+      "attempt": "r4",
+      "record": "rehearsal-r4-incomplete.json",
+      "result": "Fresh core and native gathering stories completed. Test moved during the one-second final copy handoff; its completion reopened the acknowledgment reader. Wait for the visible copy-in-backpack text added. Runtime candidate unchanged."
+    },
+    {
+      "attempt": "r5",
+      "result": "Core passed; browser closed during native Mara narration. Tony confirms closing or restarting Chrome at that time. Retained as an interrupted run with browser/Windows evidence; no runtime change or additional provider request.",
+      "record": "rehearsal-r5-incomplete.json"
+    },
+    {
+      "attempt": "r6",
+      "result": "PASS: fresh native journey through the complete gathering, copy handoff, ending presentation and six-story library in 884951 ms. Zero browser errors, zero live requests, one explicitly labeled response replay. Counter corrections retain normal media fetching and cache behavior.",
+      "record": "rehearsal.json"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "37207cf848fd405d5bffb62c13bb45aff4f0fdfac4ea8691e565a6cb05578622",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 9119,
+      "sha256": "00b6e2300d7fc64bd02145c49819753d7ffce4354b6aea88391b78e9bbcb433b"
+    },
+    {
+      "bytes": 1098,
+      "sha256": "19fcb2000c49973df630d696aaffd8e367b4f108746cec3d085c7292a6dd4505"
+    },
+    {
+      "bytes": 1066,
+      "sha256": "9e2de0a544e2e0def00088fbbc7b4d1c027734a7673f16a42fa12b2f2bda3e41"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "rope.",
+  "textSha256": "bb6a069b1013fe2d8f164d751e683351d5d03394bb7adffe45a84a37367d0fc5",
+  "sha256": "fe9f99fcba77803d45370037f64e58d0a09a7fcb7be895a4e815f6ed1e7e70af",
+  "bytes": 11283,
+  "alignment": [
+    {
+      "text": "rope",
+      "start": 0.16,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6528571428571428
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

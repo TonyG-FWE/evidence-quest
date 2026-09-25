@@ -1,0 +1,42 @@
+{
+  "id": "13d8856c9ad1f8efb1d83b2f2c7b607dce6760f054776938c10ad68c583e8aed",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 19786,
+      "sha256": "94f725f8b22aacec2f0cc32c6a1831b7336ce976ec41b0a5a39668ff3905635c"
+    },
+    {
+      "bytes": 1055,
+      "sha256": "4b0d2547a41903a00abe00dc90d5255014baccd6c8c6131b8c015b10aadf6ef1"
+    },
+    {
+      "bytes": 891,
+      "sha256": "61ea918f73219019bf2c81635de288ce00c5e2f34ef6e07e1d4f45d095b51e70"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "cake.",
+  "textSha256": "0d4e76c75910359fcfc68bdaea79534f5b61d0dd9e60fb5730a8193a02c03046",
+  "sha256": "b08105dbabdd19374406a05c13b1b2ea6338ef3ab304a23516c316ce60e6c4a4",
+  "bytes": 21732,
+  "alignment": [
+    {
+      "text": "cake",
+      "start": 0.16,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 1.295124716553288
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

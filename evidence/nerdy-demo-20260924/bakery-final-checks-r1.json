@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-25T15:09:05.790Z",
+  "scope": "Final compiled bakery rechecks after the broad required run; fixture diagnostics remain distinct from fresh cursor acceptance",
+  "providersDisabled": true,
+  "candidate": {
+    "inputSha256": "11d95109a8553db747568400d91d1a9f6629d80e0ef00b69dcba48621ec0562f",
+    "outputSha256": "405958761d185b579144cd04905c1f2024f16d57a1b3fc4d296a125f431c542f"
+  },
+  "commands": [
+    {
+      "name": "contracts",
+      "exitCode": 0,
+      "durationMs": 9861,
+      "log": "output/bakery-cursor-20260925/final-r1/contracts.log",
+      "sha256": "6ecd4305ab745f84d3be3d5863b43776a2521093e3565d2a0100de31ffcc114d"
+    },
+    {
+      "name": "browser",
+      "exitCode": 0,
+      "durationMs": 865404,
+      "log": "output/bakery-cursor-20260925/final-r1/browser.log",
+      "sha256": "d6510b211133ec96e7846a49970c1d9837f364a20b3d858c7d5cea14b460a495"
+    }
+  ],
+  "complete": true,
+  "candidateUnchanged": true,
+  "allPassed": true
+}

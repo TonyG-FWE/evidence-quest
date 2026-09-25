@@ -13,7 +13,7 @@ export type SpeechInput=string|SpeechRequest;
 export type SpeechSpeak=(request:SpeechInput,onDone?:()=>void)=>void;
 export type SpeechState='loading'|'playing'|'idle';
 export type SpeechHandlers={onDone?:()=>void;onError?:(message:string)=>void;onState?:(state:SpeechState)=>void;isCurrent?:()=>boolean};
-export type IndependentCastClip={uri:string;sha256:string;bytes:number;duration:number;sourceSha256:string;sourceWavSha256:string;startSample:number;endSample:number;sampleRate:number;channels:number};
+export type IndependentCastClip={uri:string;sha256:string;bytes:number;duration:number;sourceSha256:string;sourceWavSha256:string;startSample:number;endSample:number;sampleRate:number;channels:number;leadingSilenceSamples?:number;trailingSilenceSamples?:number;boundaryMethod?:'alignment-v1'|'bounded-word-energy-v1'|'complete-word-recording-v1'};
 export type CastClip={id:string;text:string;speaker:VoiceSpeaker;voiceId:string;sha256?:string;uri?:string;bytes?:number;duration?:number;batchDuration?:number;start?:number;end?:number;wavUri?:string;wavSha256?:string;wavBytes?:number;sources:string[];clip?:IndependentCastClip};
 export type CastAudioManifest={schema:'eq.cast-audio.v1';playback?:'independent-pcm-v1';model:'s2.1-pro-free';speed:number;cast:typeof selectedCast;entries:CastClip[];recordings?:Record<string,{text:string;start:number;end:number}[]>};
 export const normalizeSpeech=(text:string)=>text.replace(/\s+/g,' ').trim();

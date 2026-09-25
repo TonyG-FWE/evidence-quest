@@ -1,0 +1,42 @@
+{
+  "id": "3efed9c2c233fefd17b6240b8a38a0e99ff04f7e24f64f24b6bc0918c2ee1ca5",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11648,
+      "sha256": "05096ca1d1af956b963f27116a375e641bdf881da3d2c0ab1197fce34c5d9d64"
+    },
+    {
+      "bytes": 990,
+      "sha256": "3a85e1ac413a892b40bff66b34861507b566d177c0adf2864b3ed7ad9b822b26"
+    },
+    {
+      "bytes": 1153,
+      "sha256": "0fb404cb85e91a58fc5cc91a1bc42b6b35b85b5c296be2f1c125f88da2b834fd"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "rested.",
+  "textSha256": "0ae2bd11455391eadd0e5d264644a1def6668d26f434f4787adcb83f1a96e953",
+  "sha256": "b60bc7b79ba7a2f8ca798501fbfa7282af1681c75f63d3c2614073bea68c0496",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "rested",
+      "start": 0.16,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "c25fe359123c134508c0e17e686f55406ed29db67d78917cdf84a52df1761a5f",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 13746,
+      "sha256": "f3bbe50063df0e9275ca25e996f8857ea88d9b487b39d52dd3386f19c372bc48"
+    },
+    {
+      "bytes": 1227,
+      "sha256": "aacc8ee23fb802f877b3d553c40d35d29eff2abf63207db37d6421d9e9ad507d"
+    },
+    {
+      "bytes": 1326,
+      "sha256": "76bc4e63ede3e942ca6290e13a8d195ef9ac3b105010655886a3953d1726fdd0"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "footbridge.",
+  "textSha256": "d78c80c6e7ce8302526bc497faf6972609cf69cb3f90481e80fa886228746083",
+  "sha256": "2a4d34627e064460468284ceaa995642792680aa100724cc69480f94b56869c0",
+  "bytes": 16299,
+  "alignment": [
+    {
+      "text": "footbridge",
+      "start": 0.16,
+      "end": 0.88
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.949297052154195
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

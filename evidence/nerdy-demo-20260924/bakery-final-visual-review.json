@@ -1,0 +1,143 @@
+{
+  "at": "2026-09-25T17:35:46.563Z",
+  "candidate": {
+    "inputSha256": "11d95109a8553db747568400d91d1a9f6629d80e0ef00b69dcba48621ec0562f",
+    "outputSha256": "405958761d185b579144cd04905c1f2024f16d57a1b3fc4d296a125f431c542f"
+  },
+  "status": "PASS within the demo scope",
+  "scope": "Visual inspection of all twenty final framing screenshots, captured during the connected fresh route. Motion fixture screenshots and their assertions remain separate from fresh acceptance.",
+  "viewports": [
+    {
+      "width": 1098,
+      "height": 1105
+    },
+    {
+      "width": 1366,
+      "height": 768
+    },
+    {
+      "width": 1422,
+      "height": 800
+    },
+    {
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "observations": [
+    "Roof targets and Sol are framed together; spare tile and opening have distinct visible cues.",
+    "Preparation cutaway makes dough and cut guides visible; the outdoor rain continues after the indoor leak stops.",
+    "The actual loaf handoff frames the three characters and loaf at the workshop.",
+    "Writing sources and draft remain legible with internal scrolling and an accessible Try my ending action.",
+    "Ending preview, chosen text and confirmation fit the four reviewed viewports.",
+    "At short viewport heights, long conversation choices require scrolling within the reading panel; its Continue to the game control remains available."
+  ],
+  "limitations": [
+    "Some exterior foreground rain can project across the shelter silhouette; this is not a claim of zero screen-space overlap.",
+    "The added procedural shelter has no independent production-art approval.",
+    "Sol is outside the flour-check screenshot named sol-walks-home.png; that still image is not visual proof of his return. The native motion assertion and earlier motion checkpoint provide that separate evidence.",
+    "Automated and agent visual checks do not substitute for Tony accepting the revised experience."
+  ],
+  "files": [
+    {
+      "file": "output/bakery-cursor-20260925/final-r1/browser/garden-demo-framing-fresh--c7531-ible-at-sharing-resolutions-chromium/roof-1098.png",
+      "sha256": "0f48628a939d6241a11c76c0a14a34868d4772173c8329145984be004b686132",
+      "inspected": true
+    },
+    {
+      "file": "output/bakery-cursor-20260925/final-r1/browser/garden-demo-framing-fresh--c7531-ible-at-sharing-resolutions-chromium/dough-1098.png",
+      "sha256": "c2b319fce6d03c8ea24fa1cd8b3b8adaa3f0050a6712440c9cbe09de3f05a46d",
+      "inspected": true
+    },
+    {
+      "file": "output/bakery-cursor-20260925/final-r1/browser/garden-demo-framing-fresh--c7531-ible-at-sharing-resolutions-chromium/handoff-1098.png",
+      "sha256": "5431260bad687da3309722b4a502e9b8f5cb0c781ee8a235f58a09129c9d77ac",
+      "inspected": true
+    },
+    {
+      "file": "output/bakery-cursor-20260925/final-r1/browser/garden-demo-framing-fresh--c7531-ible-at-sharing-resolutions-chromium/writing-1098.png",
+      "sha256": "76c864ea4588c2b39b9468cb245f6f1f02c9991d544534e195f90ef909981a94",
+      "inspected": true
+    },
+    {
+      "file": "output/bakery-cursor-20260925/final-r1/browser/garden-demo-framing-fresh--c7531-ible-at-sharing-resolutions-chromium/ending-preview-1098.png",
+      "sha256": "6b8c4a656334510e0c108a06f2d5240cdd5bd4c47673738d9b38d41c3a8dd17a",
+      "inspected": true
+    },
+    {
+      "file": "output/bakery-cursor-20260925/final-r1/browser/garden-demo-framing-fresh--c7531-ible-at-sharing-resolutions-chromium/roof-1366.png",
+      "sha256": "9043371ee5e5a4c03e5516dfcb356f05ce5b1713a719789a896213cd9bc08991",
+      "inspected": true
+    },
+    {
+      "file": "output/bakery-cursor-20260925/final-r1/browser/garden-demo-framing-fresh--c7531-ible-at-sharing-resolutions-chromium/dough-1366.png",
+      "sha256": "8d2aa1d0b6f168bcf04be1caebb65577772bfd3f14c9e381a28e5834c5d0f020",
+      "inspected": true
+    },
+    {
+      "file": "output/bakery-cursor-20260925/final-r1/browser/garden-demo-framing-fresh--c7531-ible-at-sharing-resolutions-chromium/handoff-1366.png",
+      "sha256": "d43b3178465073daf0e8383dddaaba7342389a78ad203c72571aca01ccb113c5",
+      "inspected": true
+    },
+    {
+      "file": "output/bakery-cursor-20260925/final-r1/browser/garden-demo-framing-fresh--c7531-ible-at-sharing-resolutions-chromium/writing-1366.png",
+      "sha256": "af4fc12c4dd93d2fc721e53efafe0ebfe26eb5dd021544e55e302785de03ea18",
+      "inspected": true
+    },
+    {
+      "file": "output/bakery-cursor-20260925/final-r1/browser/garden-demo-framing-fresh--c7531-ible-at-sharing-resolutions-chromium/ending-preview-1366.png",
+      "sha256": "b96f7a1b9a735ebf1fd3f84c65f2b252c5877a8401bf53aec4e3582ff2b378c3",
+      "inspected": true
+    },
+    {
+      "file": "output/bakery-cursor-20260925/final-r1/browser/garden-demo-framing-fresh--c7531-ible-at-sharing-resolutions-chromium/roof-1422.png",
+      "sha256": "c2e66bacf5f6a1cf3e2b27ab866e60270fe84cb7553f7b8e71fe242c97c6e758",
+      "inspected": true
+    },
+    {
+      "file": "output/bakery-cursor-20260925/final-r1/browser/garden-demo-framing-fresh--c7531-ible-at-sharing-resolutions-chromium/dough-1422.png",
+      "sha256": "f512f1b924a8f94bfbe78239164ee94c38163edcf1ff08b6344fa9d729ecf4b1",
+      "inspected": true
+    },
+    {
+      "file": "output/bakery-cursor-20260925/final-r1/browser/garden-demo-framing-fresh--c7531-ible-at-sharing-resolutions-chromium/handoff-1422.png",
+      "sha256": "4b8016e8397855b1a0086bbb6b0930a8b77a946b9a71b44efbb18f623c803ac5",
+      "inspected": true
+    },
+    {
+      "file": "output/bakery-cursor-20260925/final-r1/browser/garden-demo-framing-fresh--c7531-ible-at-sharing-resolutions-chromium/writing-1422.png",
+      "sha256": "43fdf7f50729f763191a9a90f9e13fbcc4d9e0e3da70716078a4e203b1b07c55",
+      "inspected": true
+    },
+    {
+      "file": "output/bakery-cursor-20260925/final-r1/browser/garden-demo-framing-fresh--c7531-ible-at-sharing-resolutions-chromium/ending-preview-1422.png",
+      "sha256": "63010a4683088f41860c47748b6f56be2011199309ee49014b6d3a703794efc0",
+      "inspected": true
+    },
+    {
+      "file": "output/bakery-cursor-20260925/final-r1/browser/garden-demo-framing-fresh--c7531-ible-at-sharing-resolutions-chromium/roof-1920.png",
+      "sha256": "854575729c5b0e3d056e80cd97c554eaf50981ce4b99529bdc03f2911dca5006",
+      "inspected": true
+    },
+    {
+      "file": "output/bakery-cursor-20260925/final-r1/browser/garden-demo-framing-fresh--c7531-ible-at-sharing-resolutions-chromium/dough-1920.png",
+      "sha256": "a6569541c55eb52dbbd29f6d65b50bd92ae464bd0e724525c604a5371de26c76",
+      "inspected": true
+    },
+    {
+      "file": "output/bakery-cursor-20260925/final-r1/browser/garden-demo-framing-fresh--c7531-ible-at-sharing-resolutions-chromium/handoff-1920.png",
+      "sha256": "61cec78f57cda7afc5981f16a5aea154e7531a429619f19e5cab711421694fe6",
+      "inspected": true
+    },
+    {
+      "file": "output/bakery-cursor-20260925/final-r1/browser/garden-demo-framing-fresh--c7531-ible-at-sharing-resolutions-chromium/writing-1920.png",
+      "sha256": "69f38b46a0c3c1181e51658b8bcb3e6d8c7bfd9c43b3403775e6e86b0380f7c8",
+      "inspected": true
+    },
+    {
+      "file": "output/bakery-cursor-20260925/final-r1/browser/garden-demo-framing-fresh--c7531-ible-at-sharing-resolutions-chromium/ending-preview-1920.png",
+      "sha256": "d279a8efd877f6ff18fa731f2113982ec121323ded8c2e180ee60c68b6d05574",
+      "inspected": true
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "6e0a6f300280bd7d40a93234ceb0360096a45a38f51dd9dc14e9811d02b10712",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 13705,
+      "sha256": "0d54593953c53f6d575cc524314a88d8d9ba6266090e919cd0f19941ccbc1060"
+    },
+    {
+      "bytes": 1265,
+      "sha256": "6c354ad6100618512e8a488a37eb05cee97a60c0b30847ab010f0e5701ad92e7"
+    },
+    {
+      "bytes": 1329,
+      "sha256": "dcbe4109e3a0207eef23565c2db7d85e27b18d20673d720769e999e0caaa0d04"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "camera.",
+  "textSha256": "52cfe6522d5a3138589d4dc7a2c8ebaf945c75b21c1701dd60af04a95a848d14",
+  "sha256": "510e5c5b7bbbe14a377f4ddf9e4a478fed12fd0d852a95e7a5e7f9cc2d4dd0d6",
+  "bytes": 16299,
+  "alignment": [
+    {
+      "text": "camera",
+      "start": 0.24,
+      "end": 0.8
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.949297052154195
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

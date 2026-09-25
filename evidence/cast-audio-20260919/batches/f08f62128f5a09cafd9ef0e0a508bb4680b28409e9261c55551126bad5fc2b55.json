@@ -1,0 +1,42 @@
+{
+  "id": "f08f62128f5a09cafd9ef0e0a508bb4680b28409e9261c55551126bad5fc2b55",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 6010,
+      "sha256": "ce1a12e1bc379f1b68998689af8855f828a3d5b0b27e6351928aa3b139bc8f0d"
+    },
+    {
+      "bytes": 1019,
+      "sha256": "496c46bc42cb596d63a1c56424d3c6780d5506236e84e4784b63c3165c7a59bb"
+    },
+    {
+      "bytes": 1329,
+      "sha256": "2e5f3fb6efe9b61dc801b4d8ca4415f35da5ecf52aeca63c22f00dc45b8a4f58"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "grip.",
+  "textSha256": "433918d156818a4fa5df387c688a1f1ed9101bed13034d4c9681a243069da353",
+  "sha256": "873b0c3297539a90b9d5bf27d228ff90bed3f158ecb36a0d7fb9418a9fdd84d0",
+  "bytes": 8358,
+  "alignment": [
+    {
+      "text": "grip",
+      "start": 0.16,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.4552380952380952
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

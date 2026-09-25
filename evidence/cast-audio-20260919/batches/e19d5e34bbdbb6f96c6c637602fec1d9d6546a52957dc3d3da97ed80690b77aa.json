@@ -1,0 +1,42 @@
+{
+  "id": "e19d5e34bbdbb6f96c6c637602fec1d9d6546a52957dc3d3da97ed80690b77aa",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11620,
+      "sha256": "616e86fafabf984d703f2cd659e3f2c3dedac766f2ab0ecff7f446f3fff89719"
+    },
+    {
+      "bytes": 873,
+      "sha256": "fd6f252c1cbc8c185b8fa9a7978b0c909fac0c431defa892f189d0b67e9663b9"
+    },
+    {
+      "bytes": 1298,
+      "sha256": "898410794e05f47139e1788f0f867ebc79fdae42da8286caf7911df954d1da3c"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "soil.",
+  "textSha256": "49a3fab4e402dd73eed7dd77379b7ee313be3c68d10b10e386fcdf0df8eb71ce",
+  "sha256": "2e981ec5cce69c930276ac336addf110f9497338f32820c814626e0c1709553e",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "soil",
+      "start": 0.08,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

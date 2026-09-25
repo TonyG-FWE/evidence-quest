@@ -1,0 +1,91 @@
+{
+  "schema": "eq.nerdy-demo.task.v1",
+  "task": 2,
+  "status": "VERIFIED",
+  "at": "2026-09-25T00:39:07.365Z",
+  "fix": "FIX11.NERDY02",
+  "check": "CHECK11.NERDY02",
+  "changes": [
+    "Current bakery actions appear once in the visible action bar; secondary choices remain available in directions.",
+    "Bridge guidance follows posts, side ropes, standing on the first span, second-section posts and extended ropes.",
+    "Planting exposes prepare, seed-drop and cover gestures through the same HAND handlers as pointer dragging.",
+    "Bakery destination uses its actual label; first-span role no longer claims Pip waits on the bank."
+  ],
+  "verification": {
+    "contracts": {
+      "passed": 10,
+      "failed": 0,
+      "files": [
+        "checks/garden-demo-actions.test.ts",
+        "checks/garden-hands.test.ts"
+      ]
+    },
+    "compiledBrowser": {
+      "passed": 1,
+      "failed": 0,
+      "skipped": 0,
+      "durationMs": 117917.517,
+      "report": "output/nerdy-demo-task2-final/results.json",
+      "scope": "Fresh normal bridge, keyboard/pointer planting, bakery repair, baking and loaf handoff with directions collapsed."
+    },
+    "browserHarnessCorrections": [
+      "Initial route assumed a walk-to-shelf step even when the player was already beside the shelf.",
+      "Second route assumed a walk-to-Rina step even when she was already within reach. Neither failure required a runtime change."
+    ],
+    "build": {
+      "exitCode": 0,
+      "log": ".cache/nerdy-demo-task2-build.log",
+      "inputs": 8262,
+      "outputs": 7473
+    },
+    "visibleCheckpoint": {
+      "url": "http://127.0.0.1:4494/garden",
+      "observed": "Ordinary bridge construction in Codex, changing posts/rope/second-span guidance, completed crossing and visible planting controls."
+    },
+    "audio": {
+      "entries": 6156,
+      "exactBound": 6156,
+      "missing": 0,
+      "providerRequests": 0,
+      "note": "New short placement labels derive exact intervals from the unchanged approved recordings."
+    }
+  },
+  "source": [
+    {
+      "file": "src/garden/BakeryControls.tsx",
+      "sha256": "6a1ccdfa336addf14aff4e75ef67d5853b28388fad991cde87f5772889317e19"
+    },
+    {
+      "file": "src/garden/HandControls.tsx",
+      "sha256": "c32dc13c73a49961a0ab2841621b22e71320380da41c676c18a17b845394d850"
+    },
+    {
+      "file": "src/garden/plantingControls.ts",
+      "sha256": "06f8f1fda48e0e39a36a9a063c1c9ec3caaf25d9ad3e451a9ed3d2484dbb0bcd"
+    },
+    {
+      "file": "src/garden/GardenApp.tsx",
+      "sha256": "4a84b3040f493861bf4142e873b5fa95e7b603db191094abc0550c44627ddf4e"
+    },
+    {
+      "file": "src/garden/bridgeConstruction.ts",
+      "sha256": "7fa1bc9530189200078a8b118f8927e2678ea447b098c642729f3ceac95577ee"
+    },
+    {
+      "file": "src/garden/model.ts",
+      "sha256": "99ef515737d4efc294544336b8acc535785d9f5e87b2e6a33e580c6c65551da7"
+    },
+    {
+      "file": "src/garden/interaction.ts",
+      "sha256": "7bd09ac0c888a85b336c20ce2e1e1f1c9020003219ce221e0cb96f7df4da161c"
+    },
+    {
+      "file": "src/garden/garden.css",
+      "sha256": "42279cfdd9f68009d94792d13248d8ac378c35a4f580dc146b801f07d1f81188"
+    }
+  ],
+  "limitations": [
+    "Final full-suite, view-size and fresh-finale qualification remain Task 6.",
+    "Task 2 test-harness corrections followed the compiled build; final delivery receipt will be rebuilt and rebound in Task 6."
+  ]
+}

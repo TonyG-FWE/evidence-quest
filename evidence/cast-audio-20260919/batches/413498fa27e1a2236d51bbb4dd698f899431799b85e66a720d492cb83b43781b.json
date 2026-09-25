@@ -1,0 +1,42 @@
+{
+  "id": "413498fa27e1a2236d51bbb4dd698f899431799b85e66a720d492cb83b43781b",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 16222,
+      "sha256": "ddbb79cf8d578af21fa6f1ebb4ba3b3768df96c25cedee06ef7a845ab4ac9b8e"
+    },
+    {
+      "bytes": 820,
+      "sha256": "e4e006bd2b6762ed038feb752baa590421f0f9d6cc05681d7eb619d1572004da"
+    },
+    {
+      "bytes": 1765,
+      "sha256": "d7c59a326d0b955a100d741b1a1b81c03d940e3d89552a1019f65ff66f929fb0"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "rainwater.",
+  "textSha256": "c708d4aab9facb579fade24a01eec581b856dcb754d2381422a3b95fed6b05b3",
+  "sha256": "54b1d2251cae2ffb85da1b9526225f44fb2fc2167259f9c5c33d5afaa65a9019",
+  "bytes": 18807,
+  "alignment": [
+    {
+      "text": "rainwater",
+      "start": 0.16,
+      "end": 0.88
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 1.0975056689342404
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

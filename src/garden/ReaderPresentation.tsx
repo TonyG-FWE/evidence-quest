@@ -36,7 +36,7 @@ export function AdaptiveWriting({store,source,draft,later,onHear,action}:{store:
   <div className={'g-writing-workspace g-writing-show-'+compactTab}>
    <section className="g-writing-sources" aria-label="Sol’s words"><h3>Sol’s words</h3><div className="g-writing-source-tabs" role="group" aria-label="Choose Sol’s account"><button className="g-secondary" aria-pressed={sourceTab==='draft'} onClick={()=>chooseSource('draft')}>His draft</button><button className="g-secondary" aria-pressed={sourceTab==='later'} onClick={()=>chooseSource('later')}>What happened next</button></div>
     <div className="g-writing-source-scroll" data-reader-scroll={'sol-source-'+sourceTab} key={sourceTab} onScroll={event=>store.send({type:'READ_POSITION',id:prefix+sourceTab+'-scroll',position:event.currentTarget.scrollTop})} ref={node=>{if(node)node.scrollTop=store.getSnapshot().chapter.reading[prefix+sourceTab+'-scroll']??0;}}>{sourceTab==='draft'?source:later}</div>
-    <button className="g-secondary" onClick={()=>onHear(sourceTab)}>Hear Sol’s {sourceTab==='draft'?'draft':'account'}</button>
+    <button data-reading-command="true" className="g-secondary" onClick={()=>onHear(sourceTab)}>Listen to Sol’s {sourceTab==='draft'?'draft':'account'}</button>
    </section>
    <section className="g-writing-desk" aria-label="My ending" data-reader-scroll="sol-draft">{draft}</section>
   </div><div className="g-writing-primary">{action}</div>

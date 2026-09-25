@@ -1,0 +1,42 @@
+{
+  "id": "5b776f2f28ae59da071e088cdf7d442c5e43736fe02b3e1944682152a0ce8fd4",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 12875,
+      "sha256": "34d788613ad38f286a1e85c0e0e8c2e6f07468aa20f87bd97f3807fe0d594a14"
+    },
+    {
+      "bytes": 1232,
+      "sha256": "1c7db6be5bf9891bc149177adcc19b60cc5c977d4c84b54bd8d12b9d2fc2312a"
+    },
+    {
+      "bytes": 1356,
+      "sha256": "e3e5559572f9d06270b530dca55f54a6cbe409eb0f094b9d0bd57c72bbbc63ff"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "midnight.",
+  "textSha256": "2b9267a19246cf33038a1e2b7ca3cb2b3ce47476b1b6994ddc7fcc974d0994a3",
+  "sha256": "3414a231a54d60ca2229390713bd249938e1d8a213c6e807ea5ab4e5dad2ed24",
+  "bytes": 15463,
+  "alignment": [
+    {
+      "text": "midnight",
+      "start": 0.08,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8998866213151927
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

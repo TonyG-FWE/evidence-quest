@@ -1,0 +1,42 @@
+{
+  "id": "ab03c46ef2e4b870bb75d8dc65c23bacaa8c68dbdd7eed1eed73f0035d6b6263",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11781,
+      "sha256": "4100a9be3d1b5fe99501237b325bbc754802e0df544df1a86b898df17dca3a0c"
+    },
+    {
+      "bytes": 740,
+      "sha256": "6cb1a568371657a8a39a3a50ae4c48152900b67f882b6367c5fb3f12924c077f"
+    },
+    {
+      "bytes": 1270,
+      "sha256": "73f0288ba8f533bc8ddde3f10a9a7d34e8e4a473603df0b75fcdf07d22ca1738"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "falls.",
+  "textSha256": "52505ad310f400ef42e07face9ca23576fe02adc6d70d16c014c869b7f4fb271",
+  "sha256": "40b2543bbf4c0dc834d48b889ac2fe537d321570cc4f4646e5f344a373eeb0b3",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "falls",
+      "start": 0.16,
+      "end": 0.72
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

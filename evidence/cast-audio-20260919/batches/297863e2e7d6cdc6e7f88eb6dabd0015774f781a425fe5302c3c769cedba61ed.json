@@ -1,0 +1,42 @@
+{
+  "id": "297863e2e7d6cdc6e7f88eb6dabd0015774f781a425fe5302c3c769cedba61ed",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 9973,
+      "sha256": "c631f8c43b8bf03996c93ca48d8563adf7b90abee178a01ef750906099ec5d6a"
+    },
+    {
+      "bytes": 815,
+      "sha256": "1b53821c50ee9a1502cfb59c8117f1a075e7006008ee879f4dea09ed307e06ff"
+    },
+    {
+      "bytes": 1331,
+      "sha256": "d05fc87b8f9d5093a3f6e347c4331a9f6a34fd75e854319e5d5c27e4ebeb8491"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "hair.",
+  "textSha256": "3eb5798083d27a0a3967550c023d2e508ad66008542f6c350e291dd2e49a1934",
+  "sha256": "6dc9826831d60ccd9537c223bc55b8de56cd3bea0176f094d61b3dea78889f01",
+  "bytes": 12119,
+  "alignment": [
+    {
+      "text": "hair",
+      "start": 0.16,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.7022675736961451
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

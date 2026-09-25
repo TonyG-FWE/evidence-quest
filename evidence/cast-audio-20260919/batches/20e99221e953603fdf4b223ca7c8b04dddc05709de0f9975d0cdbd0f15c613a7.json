@@ -1,0 +1,42 @@
+{
+  "id": "20e99221e953603fdf4b223ca7c8b04dddc05709de0f9975d0cdbd0f15c613a7",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 8303,
+      "sha256": "8fecc63ead9f281228cb0aa0af46748b8b24e999774920975ed327936b750cd0"
+    },
+    {
+      "bytes": 916,
+      "sha256": "1746fe4363be59140e4a8755a23217db1d70e8550d59b76ce7a49910ecc2ffdc"
+    },
+    {
+      "bytes": 1647,
+      "sha256": "0adbf29db49bb7f930af1c36bae607d4696b7f7c355e8be8e69d39a6c6fada0f"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "hammer.",
+  "textSha256": "f7a0b211afafd4afa4b754d1e51c9a19940b91084978eb346099f0cb3c4fb0cf",
+  "sha256": "a19f020f6a81ef5b70069f92d2e57d7ae128384bf086ac8a90704d00f7f8d949",
+  "bytes": 10866,
+  "alignment": [
+    {
+      "text": "hammer",
+      "start": 0.08,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6034467120181406
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

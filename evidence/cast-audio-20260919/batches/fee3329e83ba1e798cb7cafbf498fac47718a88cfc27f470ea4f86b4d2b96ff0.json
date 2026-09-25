@@ -1,0 +1,42 @@
+{
+  "id": "fee3329e83ba1e798cb7cafbf498fac47718a88cfc27f470ea4f86b4d2b96ff0",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 15401,
+      "sha256": "29b904f206063e6a4e81a20b519d67b7b90a836fdb51451f6751c59ca0329811"
+    },
+    {
+      "bytes": 828,
+      "sha256": "1390355becfbe478c4b6ebbb9235c68c61b16d5f50146b1e072796b3fc3d27f5"
+    },
+    {
+      "bytes": 1742,
+      "sha256": "09db630d21560d4988e47e0d3fb747500c994fd7d40e404732bd184bbba5f625"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "rain.",
+  "textSha256": "76db93a047bb8eeb275c5ff0c2ba59015c58fe15379376143aed80a72e05165b",
+  "sha256": "df3dabdf434c0c28960699fc4938fad23ee32fbb1f70be8c12a0e16c34f77eab",
+  "bytes": 17971,
+  "alignment": [
+    {
+      "text": "rain",
+      "start": 0.16,
+      "end": 0.72
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 1.0480952380952382
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

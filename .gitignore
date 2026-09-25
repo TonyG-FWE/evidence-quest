@@ -58,6 +58,9 @@ evidence/er13/preview-*-stderr.txt
 !/evidence/hands-on-20260916/pilot/**
 /.tripo/
 /evidence/hands-on-20260916/pilot/**/*.blend1
+# Disposable revisions produced by the two local model archive writers.
+# The provenance-linked Pip snapshot is retained on disk; see Nerdy cleanup evidence.
+/evidence/hands-on-20260916/pilot/articulated-library-20260917/local-history/**
 
 # Generated work areas and exact hydrated copies. Required demo bytes are tracked
 # in the finite assets/demo manifest; ignoring a path never deletes an original.

@@ -90,11 +90,15 @@ export function StoryStage({scene:kind,animate=false,compact=false,time,active=t
    const now=performance.now();if(now-reported>250||dirty){report();reported=now;}
   }
   const framePicture=()=>{const aspect=element.clientWidth/element.clientHeight;if(!Number.isFinite(aspect)||aspect<=0)return;
-   // Fit the supplied picture to the actual viewport, including portrait reading
-   // layouts. The frame is stable during animation and changes only on load/resize.
-   pose(previous<0?0:previous);camera.updateMatrixWorld();const bounds=storyBounds(set,camera.matrixWorldInverse);if(bounds.isEmpty())return;
+   // Frame the tellers and handled objects, retaining all background artwork.
+   // Both ends of the authored motion are included so the frame stays still.
+   camera.updateMatrixWorld();const bounds=new T.Box3(),at=previous<0?0:previous;
+   const subjects=supplied?[...actors.map(ch=>ch.rig),...supplied.props.filter(prop=>!['bakery','tile'].includes(prop.definition.id)).map(prop=>prop.root)]:[set];
+   for(const time of [0,6]){pose(time);for(const subject of subjects)bounds.union(storyBounds(subject,camera.matrixWorldInverse));}pose(at);
+   if(bounds.isEmpty())return;
    const center=bounds.getCenter(new T.Vector3()),size=bounds.getSize(new T.Vector3()),half=Math.max(size.y*.54,size.x*.54/aspect,1.25);
-   camera.left=center.x-half*aspect;camera.right=center.x+half*aspect;camera.top=center.y+half;camera.bottom=center.y-half;camera.updateProjectionMatrix();};
+   camera.left=center.x-half*aspect;camera.right=center.x+half*aspect;camera.top=center.y+half;camera.bottom=center.y-half;camera.updateProjectionMatrix();
+   element.dataset['stageFraming']=JSON.stringify({subjectSize:size.toArray(),half,aspect});};
   const resize=()=>{const w=element.clientWidth,h=element.clientHeight;if(!w||!h||closed)return;renderer.setPixelRatio(devicePixelRatio);renderer.setSize(w,h,false);framePicture();dirty=true;};const observer=new ResizeObserver(resize);observer.observe(element);window.addEventListener('resize',resize);resize();
   const lost=(event:Event)=>{event.preventDefault();if(closed)return;contextLost=true;setFailure(true);element.dataset['stageContext']='lost';};
   const restored=()=>{if(closed)return;contextLost=false;dirty=true;lastAssets='';element.dataset['stageContext']='restored';if(!errorShown)setFailure(false);resize();};

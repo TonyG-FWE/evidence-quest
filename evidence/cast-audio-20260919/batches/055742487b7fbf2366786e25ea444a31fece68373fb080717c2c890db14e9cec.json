@@ -1,0 +1,42 @@
+{
+  "id": "055742487b7fbf2366786e25ea444a31fece68373fb080717c2c890db14e9cec",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11893,
+      "sha256": "765defb2fba87787e022e7ed4d004f7fc233ead39cad844550a035e3f5f92913"
+    },
+    {
+      "bytes": 804,
+      "sha256": "9421c8f19878cd6791f0a12624de4b4f91b2a3003c897580a24c6535686e43ec"
+    },
+    {
+      "bytes": 1094,
+      "sha256": "55af4e734441f3126f40f462f385b2f036151a652ad3e47183e13ea4df8890e2"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "snatched.",
+  "textSha256": "8f7d89ceca69710bf7ad3a66401621bd5deb7708227010decfcc435558ae3536",
+  "sha256": "0e1c6ad481294c2a7a599f50ad25683badbbde38688678ef4a873eae43dc84a9",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "snatched",
+      "start": 0.08,
+      "end": 0.8
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

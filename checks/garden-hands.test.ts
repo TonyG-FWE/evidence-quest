@@ -3,13 +3,14 @@ import {postPoint,constructionOf,sectionSecured} from '../src/garden/bridgeConst
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {GardenStore,initialGarden,CROSSING,bridgeReady,GRANDMA_APPROACH} from '../src/garden/model.js';
-import {anchors,BAKERY_REPAIR,BAKERY_WORK} from '../src/garden/worldLayout.js';
+import {anchors,BAKERY_REPAIR,BAKERY_WORK,BAKERY_APPROACHES} from '../src/garden/worldLayout.js';
 import {advance,completeConversation} from './garden-play-actions.js';
 import type {HandObject} from '../src/garden/hands.js';
 import {handAnchor} from '../src/garden/hands.js';
-import {BAKERY_APPROACH,TILE_SHELF,TILE_APPROACH,BAKERY_SOL} from '../src/garden/bakery.js';
+import {BAKERY_APPROACH,TILE_SHELF,TILE_APPROACH,BAKERY_SOL,WORKSHOP_DOOR} from '../src/garden/bakery.js';
 import {BIRD_BOY,DOCK_OFFICE} from '../src/garden/mara.js';
 import {validChapter} from '../src/garden/persistence.js';
+import {localReview} from '../src/garden/assets/profile.js';
 
 function game(){const s=new GardenStore(initialGarden('hands'));s.send({type:'BOOT'});s.send({type:'BEGIN'});s.send({type:'START_PLAY'});s.send({type:'GO',point:CROSSING});advance(s);return s;}
 function drag(s:GardenStore,object:HandObject,from:{x:number;z:number},to:{x:number;z:number}){s.send({type:'HAND_BEGIN',object,point:from});assert.equal(s.getSnapshot().gesture?.object,object,'The physical object is reachable and permitted');s.send({type:'HAND_MOVE',point:to});s.send({type:'HAND_RELEASE'});}
@@ -25,16 +26,27 @@ test('direct bridge: post drops and two side ropes support each half separately'
 test('direct bakery: permission, physical handoffs, repair, kneading, adjusted portions and optional recovery',()=>{
  const s=game();bridge(s);go(s,BAKERY_APPROACH);s.send({type:'TALK',who:'rina'});advance(s);completeConversation(s);s.send({type:'BAKERY_STEP',step:'PERMISSION'});go(s,TILE_APPROACH);
  drag(s,'spareTile',TILE_SHELF,s.getSnapshot().chapter.pip);advance(s);go(s,BAKERY_APPROACH);
- drag(s,'spareTile',s.getSnapshot().chapter.pip,BAKERY_SOL);advance(s);assert.equal(s.getSnapshot().chapter.bakery.tile,'sol');
+ drag(s,'spareTile',s.getSnapshot().chapter.pip,BAKERY_SOL);advance(s);assert.equal(s.getSnapshot().chapter.bakery.tile,'sol');assert.equal(s.getSnapshot().mode,'bakery-repair','Delivery immediately frames the roof without an action shortcut');
+ s.send({type:'HAND_BEGIN',object:'crackedTile'});s.send({type:'HAND_MOVE',point:{x:17.8,z:-.7}});s.send({type:'HAND_CANCEL'});assert.equal(s.getSnapshot().chapter.bakery.cracked,'roof');
  drag(s,'crackedTile',handAnchor(s.getSnapshot(),'crackedTile'),{x:17.8,z:-.7});advance(s);
  drag(s,'spareTile',handAnchor(s.getSnapshot(),'spareTile'),BAKERY_REPAIR.beside);advance(s);assert.equal(s.getSnapshot().chapter.bakery.stage,'misplaced');
+ if(localReview){
+  // Recorded from a native cursor drop on the visible adjoining sloped roof row.
+  drag(s,'spareTile',handAnchor(s.getSnapshot(),'spareTile'),{x:18.444397132137,z:-1.448752507173404});advance(s);
+  assert.equal(s.getSnapshot().chapter.bakery.stage,'misplaced','An adjoining roof row stays recoverable and cannot seal the opening');
+ }
  drag(s,'spareTile',handAnchor(s.getSnapshot(),'spareTile'),BAKERY_REPAIR.gap);advance(s);assert.equal(s.getSnapshot().chapter.bakery.stage,'sealed');assert.equal(s.getSnapshot().panel,null);
- drag(s,'flour',handAnchor(s.getSnapshot(),'flour'),BAKERY_WORK.mixing);advance(s);go(s,anchors.bakery.person);
- const prepare=()=>{drag(s,'flour',handAnchor(s.getSnapshot(),'flour'),BAKERY_WORK.mixing);assert.equal(s.getSnapshot().chapter.hands.flourInBowl,true);s.send({type:'HAND_BEGIN',object:'dough'});for(const x of [BAKERY_WORK.mixing.x+.35,BAKERY_WORK.mixing.x-.35,BAKERY_WORK.mixing.x+.35,BAKERY_WORK.mixing.x])s.send({type:'HAND_MOVE',point:{x,z:BAKERY_WORK.mixing.z}});s.send({type:'HAND_RELEASE'});advance(s);assert.equal(s.getSnapshot().chapter.bakery.stage,'mixed');};prepare();
+ go(s,BAKERY_APPROACHES.flour);drag(s,'flour',handAnchor(s.getSnapshot(),'flour'),BAKERY_WORK.mixing);advance(s);
+ const prepare=()=>{go(s,BAKERY_APPROACHES.flour);drag(s,'flour',handAnchor(s.getSnapshot(),'flour'),BAKERY_WORK.mixing);assert.equal(s.getSnapshot().chapter.hands.flourInBowl,true);go(s,BAKERY_APPROACHES.mixing);s.send({type:'HAND_BEGIN',object:'dough'});for(const x of [BAKERY_WORK.mixing.x+.35,BAKERY_WORK.mixing.x-.35,BAKERY_WORK.mixing.x+.35,BAKERY_WORK.mixing.x])s.send({type:'HAND_MOVE',point:{x,z:BAKERY_WORK.mixing.z}});s.send({type:'HAND_RELEASE'});advance(s);assert.equal(s.getSnapshot().chapter.bakery.stage,'mixed');go(s,BAKERY_APPROACHES.preparation);};prepare();
  drag(s,'dough',handAnchor(s.getSnapshot(),'dough'),BAKERY_WORK.ovenTarget);advance(s);assert.equal(s.getSnapshot().chapter.bakery.unshapedBatches,1);assert.equal(s.getSnapshot().chapter.bakery.loaf,'none');prepare();
- const cut=(x:number)=>drag(s,'dough-cut',{x:BAKERY_WORK.preparation.x+x,z:BAKERY_WORK.preparation.z-.25},{x:BAKERY_WORK.preparation.x+x,z:BAKERY_WORK.preparation.z+.25});
+ // Deliberate diagonal strokes through the visible surface need not trace the
+ // old hidden +/-0.18 world-Z endpoints. A click alone does not cut.
+ drag(s,'dough-cut',BAKERY_WORK.preparation,{x:BAKERY_WORK.preparation.x+.03,z:BAKERY_WORK.preparation.z});assert.deepEqual(s.getSnapshot().chapter.hands.cuts,[]);
+ const cut=(x:number)=>drag(s,'dough-cut',{x:BAKERY_WORK.preparation.x+x,z:BAKERY_WORK.preparation.z-.10},{x:BAKERY_WORK.preparation.x+x+.20,z:BAKERY_WORK.preparation.z+.10});
  cut(-.28);cut(.1);assert.equal(s.getSnapshot().chapter.bakery.stage,'mixed','Different portions remain adjustable');cut(-.12);advance(s);assert.equal(s.getSnapshot().chapter.bakery.stage,'shaped');
  drag(s,'loaf',handAnchor(s.getSnapshot(),'loaf'),BAKERY_WORK.ovenTarget);advance(s);assert.equal(s.getSnapshot().chapter.bakery.stage,'baked');assert.ok(validChapter(s.getSnapshot().chapter));
+ go(s,BAKERY_APPROACHES.oven);s.send({type:'HAND_BEGIN',object:'loaf'});assert.equal(s.getSnapshot().gesture?.object,'loaf','The baked loaf is reachable at the oven independently of Rina');s.send({type:'HAND_CANCEL'});assert.equal(s.getSnapshot().chapter.bakery.loaf,'oven','An interrupted pickup retains the loaf in the oven');
+ drag(s,'loaf',handAnchor(s.getSnapshot(),'loaf'),s.getSnapshot().chapter.bakery.rina);advance(s);go(s,{x:WORKSHOP_DOOR.x+.15,z:WORKSHOP_DOOR.z+.9});drag(s,'loaf',handAnchor(s.getSnapshot(),'loaf'),WORKSHOP_DOOR);advance(s);assert.equal(s.getSnapshot().chapter.bakery.stage,'done');close(s);s.send({type:'TALK',who:'rina'});assert.equal(s.getSnapshot().panel,'bakery','Rina remains readable at her actual workshop position after the handoff');
 });
 test('Mara repair: consent precedes pickup; wing rotation and strip orientation determine contact',()=>{
  const s=game();go(s,anchors.dock.approach);s.send({type:'TALK',who:'mara'});completeConversation(s);s.send({type:'TAKE_PAGE'});advance(s);close(s);bridge(s);s.send({type:'TALK',who:'grandma'});s.send({type:'REPORT'});advance(s);s.send({type:'STORY',event:{kind:'REPORT_MARA'}});close(s);s.send({type:'STORY',event:{kind:'SHARE_MARA'}});advance(s);

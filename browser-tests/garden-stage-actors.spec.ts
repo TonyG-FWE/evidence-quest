@@ -31,6 +31,12 @@ test('Ending uses profile-bound actors, real DPR and hand contact; pause, hidden
 test('Leaving an ending while models load cancels the old owner and a fresh view recovers',async({page})=>{
  const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));await ending(page);let release=()=>{};const hold=new Promise<void>(resolve=>{release=resolve;}),requests=new Set<string>();
  await page.route(modelAssetPattern,async route=>{requests.add(route.request().url());await hold;await route.continue().catch(()=>{});});
- await button(page,'Watch the ending').click();await expect.poll(()=>requests.size).toBe(endingActorIds.length+plantingObjectIds.length);const stage=page.locator('.garden-world-activity>.g-story-stage');await stage.evaluate(e=>{(window as any).__interruptedStageElement=e;});await button(page,'Pause · Back to studio').click();release();await page.unroute(modelAssetPattern);expect(await page.evaluate(()=>(window as any).__interruptedStageElement.dataset.stageDisposed)).toBe('true');
- await button(page,'Watch the ending').click();await ready(page);await expect(page.getByRole('button',{name:'Restore story view',exact:true})).toHaveCount(0);expect(errors).toEqual([]);
+ try{
+  await button(page,'Watch the ending').click();
+  // The bounded loader cannot start every model while its first requests are held.
+  await expect.poll(()=>requests.size).toBeGreaterThan(0);const stage=page.locator('.garden-world-activity>.g-story-stage');await expect(stage).toHaveAttribute('aria-busy','true');
+  const definitions=reviewProfile?reviewAssets:runtimeAssets;expect([...requests].some(url=>endingActorIds.some(id=>url.endsWith(definitions[id as keyof typeof definitions]!.uri)))).toBe(true);
+  await stage.evaluate(e=>{(window as any).__interruptedStageElement=e;});await button(page,'Pause · Back to studio').click();release();await page.unroute(modelAssetPattern);expect(await page.evaluate(()=>(window as any).__interruptedStageElement.dataset.stageDisposed)).toBe('true');
+  await button(page,'Watch the ending').click();await ready(page);await expect(page.getByRole('button',{name:'Restore story view',exact:true})).toHaveCount(0);expect(errors).toEqual([]);
+ }finally{release();await page.unroute(modelAssetPattern);}
 });

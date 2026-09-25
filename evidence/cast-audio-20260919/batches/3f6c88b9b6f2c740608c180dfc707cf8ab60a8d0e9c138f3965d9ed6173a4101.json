@@ -1,0 +1,42 @@
+{
+  "id": "3f6c88b9b6f2c740608c180dfc707cf8ab60a8d0e9c138f3965d9ed6173a4101",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 6031,
+      "sha256": "128b3d847484ce5c41be35a8103b804be307b5847cf6c4e2158a533f56df2a37"
+    },
+    {
+      "bytes": 1009,
+      "sha256": "f9c5413324b9881567b180b9654f7de6c0e5bc23bf633ed9c7b8c3ad2ded1a8c"
+    },
+    {
+      "bytes": 1318,
+      "sha256": "a271c5d2acaae1c4eeb65fe850e7b9b13f32edb096c2b8c5f2e3144c7ea6f916"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "sick.",
+  "textSha256": "0e8af4520e9cf34b7f3731107fe356c2d15c95f0f77968e90dbac07abd9b7378",
+  "sha256": "39eb4a2246945e89a56c4cf8334c5f741ea2028ee8927d33fc95f28678faff3c",
+  "bytes": 8358,
+  "alignment": [
+    {
+      "text": "sick",
+      "start": 0.08,
+      "end": 0.48
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.4552380952380952
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

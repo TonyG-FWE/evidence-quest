@@ -1,0 +1,42 @@
+{
+  "id": "46e6bf03fbed7d26842a3c3195a3d612cfcc058f63eeae5987798c19e919beea",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 8304,
+      "sha256": "c0cfe68c6460b69bfdc9f7f6fdea4d0e4431c046fcaea100bb6a62a5e9e5e8ed"
+    },
+    {
+      "bytes": 875,
+      "sha256": "1ad48ab2f3095d6862076b20ba0cd7586a1502fdf5750915165714f12a726612"
+    },
+    {
+      "bytes": 1687,
+      "sha256": "043616fbe2087a07166fffb3d7de3cd3d4488caa1cdd7b487218655ddbbb1096"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "there's.",
+  "textSha256": "a2eea58dd4c60429a892b9a55aec1a044139f24c2b1ed302bbaaf63216df2f15",
+  "sha256": "72799b514ce6b91f104075661c6374e54029718eec51a79051d067a3d6167b15",
+  "bytes": 10866,
+  "alignment": [
+    {
+      "text": "there's",
+      "start": 0.16,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6034467120181406
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

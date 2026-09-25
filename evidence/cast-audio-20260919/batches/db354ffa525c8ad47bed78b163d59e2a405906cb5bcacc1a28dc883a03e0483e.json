@@ -1,0 +1,42 @@
+{
+  "id": "db354ffa525c8ad47bed78b163d59e2a405906cb5bcacc1a28dc883a03e0483e",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 13712,
+      "sha256": "699404d238514825680413a9755d4b377c3ce0a5866dfc55fef920342382a7fe"
+    },
+    {
+      "bytes": 1253,
+      "sha256": "b62887c4885bb500c3d438c46bb90e5ec4fbe72872a1177fabc30dbac9deb9fa"
+    },
+    {
+      "bytes": 1334,
+      "sha256": "ad611e2fca5c1ac9ce7a94c08bc1ab6241d62f3f012a29db7199ec9383e7c324"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "settled.",
+  "textSha256": "b06b9cb1a162f944834f4e493e51863aabd21b4a06cc6df034a774dd9e5ccfd7",
+  "sha256": "11a3b65ba6a6be33ab91652682bbb9c8e522cfb327fef2dcf0c10431fccd3fb8",
+  "bytes": 16299,
+  "alignment": [
+    {
+      "text": "settled",
+      "start": 0.16,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.949297052154195
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

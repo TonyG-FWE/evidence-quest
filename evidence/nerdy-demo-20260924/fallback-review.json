@@ -1,0 +1,58 @@
+{
+  "at": "2026-09-25T09:19:29.342Z",
+  "scope": "Native Chromium decoding, playback and actual audio signal from the exact packaged fallback. Captured frames require separate visual inspection. Not a new provider request or human pronunciation check.",
+  "file": "output/nerdy-demo-fallback-20260925/Evidence-Quest-Nerdy-demo.webm",
+  "sha256": "51c0031f019e9044f56621d9a8a7dd07b9e645989901ed2a4ac298b17516c372",
+  "candidate": {
+    "inputSha256": "9b0cb81ada1f13552606265ff73915df0bc7cc6bdd1654ec9d36a91cadcf5a64",
+    "outputSha256": "bde7cb5fdecaf9b04ffd09949f2e86a696be6453552941bc9461370b954a3e5f"
+  },
+  "metadata": {
+    "duration": 166.24,
+    "width": 1366,
+    "height": 768,
+    "error": null
+  },
+  "sound": {
+    "peak": 0.20915521681308746,
+    "progressSeconds": 3.279331000000001
+  },
+  "samples": [
+    {
+      "name": "bakery-reading",
+      "seconds": 8,
+      "image": "output/nerdy-demo-fallback-20260925/review/bakery-reading.png"
+    },
+    {
+      "name": "roof",
+      "seconds": 85.814,
+      "image": "output/nerdy-demo-fallback-20260925/review/roof.png"
+    },
+    {
+      "name": "dough",
+      "seconds": 103.267,
+      "image": "output/nerdy-demo-fallback-20260925/review/dough.png"
+    },
+    {
+      "name": "writing",
+      "seconds": 145.135,
+      "image": "output/nerdy-demo-fallback-20260925/review/writing.png"
+    },
+    {
+      "name": "live-feedback",
+      "seconds": 151.153,
+      "image": "output/nerdy-demo-fallback-20260925/review/live-feedback.png"
+    },
+    {
+      "name": "ending-preview",
+      "seconds": 159.37,
+      "image": "output/nerdy-demo-fallback-20260925/review/ending-preview.png"
+    },
+    {
+      "name": "handoff",
+      "seconds": 141.444,
+      "image": "output/nerdy-demo-fallback-20260925/review/handoff.png"
+    }
+  ],
+  "pageErrors": []
+}

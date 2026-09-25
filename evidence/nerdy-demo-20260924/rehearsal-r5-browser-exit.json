@@ -1,0 +1,33 @@
+{
+  "at": "2026-09-25T09:00:21.938Z",
+  "rehearsal": "r5",
+  "result": "BROWSER_CLOSED_DURING_NATIVE_MARA_TURN",
+  "report": "rehearsal-r5-incomplete.json",
+  "browserPid": 34540,
+  "browserLogTimeLocal": "2026-09-25 04:57:38",
+  "log": "Network service crashed or was terminated, restarting service; target page/context/browser closed.",
+  "postFailureHostSnapshot": {
+    "totalPhysicalKiB": 66921240,
+    "freePhysicalKiB": 48816436,
+    "totalVirtualKiB": 71115544,
+    "freeVirtualKiB": 49933968
+  },
+  "eventReview": {
+    "minutes": 15,
+    "systemMemoryExhaustionEvent2004": "No matching events",
+    "applicationBrowserEvents1000_1001_1002": "No matching events"
+  },
+  "otherChromeObserved": {
+    "createdLocal": "2026-09-25T04:58:46.570723-04:00",
+    "path": "C:/Program Files/Google/Chrome/Application/chrome.exe"
+  },
+  "attribution": "User-confirmed Chrome close/restart at the time of browser termination. Preserve the interrupted run and native browser log; no game-code defect is established by this interruption.",
+  "providerRequestsByThisRehearsal": 0,
+  "coreCompleted": true,
+  "originalLiveRecordingPreserved": true,
+  "userConfirmation": {
+    "at": "2026-09-25T09:07:53.844Z",
+    "question": "Did you close or restart Chrome around 4:57 a.m.?",
+    "answer": "Yes—I closed or restarted Chrome"
+  }
+}

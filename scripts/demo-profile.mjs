@@ -22,7 +22,7 @@ async function main(){
 const operation=process.argv[2];if(!['build','start'].includes(operation)||process.argv.length!==3)throw Error('Expected build or start');
 const feedback=guardDemoFeedbackEnvironment(operation==='build'?authoredEnvironment():process.env);
 if(feedback.notice)console.log(feedback.notice);
-const env={...feedback.env,EQ_ASSET_PROFILE:'review',EQ_PERSONAL_GRASS:'1',COACH_MODE:'authored',HOST:'127.0.0.1',PORT:'4364',PUBLIC_ORIGIN:'http://127.0.0.1:4364',EQ_GARDEN_AI_DEMO:feedback.env.EQ_GARDEN_AI_DEMO??'0',EQ_CAST_DYNAMIC_VOICE:feedback.env.EQ_CAST_DYNAMIC_VOICE??'0'};
+const env={...feedback.env,EQ_ASSET_PROFILE:'review',EQ_PERSONAL_GRASS:'1',EQ_DEMO_PRESENTATION:'1',COACH_MODE:'authored',HOST:'127.0.0.1',PORT:'4364',PUBLIC_ORIGIN:'http://127.0.0.1:4364',EQ_GARDEN_AI_DEMO:feedback.env.EQ_GARDEN_AI_DEMO??'0',EQ_CAST_DYNAMIC_VOICE:feedback.env.EQ_CAST_DYNAMIC_VOICE??'0'};
 delete env.EQ_REVIEW_CLIENT_DIRECTORY;
 const run=args=>new Promise((resolve,reject)=>{const child=spawn(process.execPath,args,{env,stdio:'inherit',windowsHide:true});child.on('error',reject);child.on('exit',(code,signal)=>code===0?resolve():reject(Error('Demo command failed ('+(signal??code)+'): node '+args.join(' '))));});
 const npm=process.env.npm_execpath??path.join(path.dirname(process.execPath),'node_modules/npm/bin/npm-cli.js');

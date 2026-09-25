@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-25T15:04:14.0615091Z",
+  "scope": "All 242 cases had reported results and test workers had exited. The owned loopback web server remained alive during teardown; stop only that server so the runner can finish its report.",
+  "serverPid": 26500,
+  "serverParentPid": 27184,
+  "runnerPid": 32876,
+  "listener": "127.0.0.1:4397",
+  "serverStartedAt": "2026-09-25T08:43:27.750692-04:00",
+  "gameServersTouched": false,
+  "testCasesInterrupted": 0,
+  "recovery": "Stop-Process returned an internal NullReference error and left the process alive. Win32_Process.Terminate returned 0; the test runner then exited with its full JSON report.",
+  "reportRecovered": true
+}

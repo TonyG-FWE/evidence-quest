@@ -1,0 +1,42 @@
+{
+  "id": "7e56cdacc4be14871b6a793fd4e38ced74bea4631c0b7cb1223a4cb83e76f542",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 12877,
+      "sha256": "bfb7857b94495673fb809555873bf409864bacdf709b08ef41bb4f2370002115"
+    },
+    {
+      "bytes": 1273,
+      "sha256": "81397eaa198e955386409baab286fb882bc63e467895bee428a9c467a09cbf62"
+    },
+    {
+      "bytes": 1313,
+      "sha256": "851b8148e5ab088f165a10a25010960b4e94de660c1ab1001f41e77247bec29d"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "grandma's.",
+  "textSha256": "5f2aef6eb33e1a69d9338b639a11c1180552ada6013f3917cdbb3848d98ad9ed",
+  "sha256": "8c1f838669456e8da0e1b1dc102507954c32e461494d89e8429d2e8501dae030",
+  "bytes": 15463,
+  "alignment": [
+    {
+      "text": "grandma's",
+      "start": 0.16,
+      "end": 0.88
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8998866213151927
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

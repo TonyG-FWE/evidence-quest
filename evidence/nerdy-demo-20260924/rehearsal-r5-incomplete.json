@@ -1,0 +1,29 @@
+{
+  "at": "2026-09-25T08:59:51.138Z",
+  "report": "output/nerdy-demo-rehearsal-r5/results.json",
+  "reportSha256": "6b86d9a7ef03b0921ebe27361cb8729917c7ddc73a44e7e5798c9841b5ccf39f",
+  "stats": {
+    "startTime": "2026-09-25T08:50:01.009Z",
+    "duration": 457534.901,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "globalErrors": [],
+  "cases": [
+    {
+      "file": "nerdy-demo-rehearsal.spec.ts",
+      "title": "Nerdy rehearsal: ordinary fresh journey, real recorded voices, ending and complete finale",
+      "project": "chromium",
+      "outcome": "unexpected",
+      "status": "failed",
+      "durationMs": 456089,
+      "retries": 0,
+      "errors": [
+        "Error: locator.isVisible: Target page, context or browser has been closed\nBrowser logs:\n\n<launching> C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\.cache\\browsers\\chromium-1228\\chrome-win64\\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --headless --hide-scrollbars --mute-audio --blink-settings=primaryHoverType=2,availableHoverTypes=2,primaryPointerType=4,availablePointerTypes=4 --no-sandbox --user-data-dir=C:\\Users\\TONYGU~1\\AppData\\Local\\Temp\\playwright_chromiumdev_profile-V4Haun --remote-debugging-pipe --no-startup-window\n<launched> pid=34540\n[pid=34540][err] [34540:20336:0925/045012.183:ERROR:components\\device_event_log\\device_event_log_impl.cc:200] [04:50:12.183] USB: usb_service_win.cc:108 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Element not found. (0x490)\n[pid=34540][err] [34540:12140:0925/045012.707:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT\n[pid=34540][err] [34540:12140:0925/045035.376:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT\n[pid=34540][err] [34540:12140:0925/045127.950:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT\n[pid=34540][err] [34540:12140:0925/045312.790:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT\n[pid=34540][err] [34540:12140:0925/045700.857:ERROR:google_apis\\gcm\\engine\\registration_request.cc:291] Registration response error message: DEPRECATED_ENDPOINT\n[pid=34540][err] [34540:12140:0925/045738.146:ERROR:google_apis\\gcm\\engine\\connection_factory_impl.cc:484] ConnectionHandler failed with net error: -2\n[pid=34540][err] [34540:20336:0925/045738.147:ERROR:content\\browser\\network_service_instance_impl.cc:722] Network service crashed or was terminated, restarting service.\nCall log:\n    - checking visibility of locator('.garden-reader')\n\n\n  47 |  const measurements:{name:string;metrics:unknown}[]=[];\n  48 |  const cue=(name:string)=>{const ms=Date.now()-started;cues.push({name,ms});console.log('[Nerdy rehearsal] '+name+' '+Math.round(ms/1000)+'s');};page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>{if(r.method()==='POST'&&r.url().endsWith('/api/garden/feedback')){const q=r.postDataJSON();feedbackPosts.push(q.requestId);feedbackSources.push({requestId:q.requestId,exposed:q.exposed});}});\n> 49 |  let nativeTurn=0;const turn=async()=>{const turnId=++nativeTurn;await expect(page.locator('.garden-reader')).toHaveCount(0);cue('story-t"
+      ],
+      "attachments": []
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "e0e55bdc64bc0b786200170904c51335ccb176899c62cc2ddad86a7dcb90f4c5",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11817,
+      "sha256": "39e14987a3673c1f89ae26497d2a4cb588d8eacc379254a24534fd709a1c5b31"
+    },
+    {
+      "bytes": 666,
+      "sha256": "2d44d3e93c7e87a125ba7149e5704c119e477763455138eca8575a87288d8a51"
+    },
+    {
+      "bytes": 1308,
+      "sha256": "f848fead5d01fb86db4e2d9769acd05a54cf73b532258c64fe5fb6adca518bef"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "notebook.",
+  "textSha256": "775c146ac47ca33f9de06794cb1ddf7d8d9753a1aa5cf00d780ca3f6c6b25632",
+  "sha256": "07749dadc05b92b512fab7779023543bf46e587d03e35242bbe71f925d7c8d66",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "notebook",
+      "start": 0.16,
+      "end": 0.72
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

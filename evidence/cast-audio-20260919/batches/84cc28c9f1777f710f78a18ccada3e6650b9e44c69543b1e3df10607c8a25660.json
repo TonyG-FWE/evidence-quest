@@ -1,0 +1,42 @@
+{
+  "id": "84cc28c9f1777f710f78a18ccada3e6650b9e44c69543b1e3df10607c8a25660",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11612,
+      "sha256": "2bd6761574504577075d29495e2187ed9cf4c810c7207b403ecab6b22dd965aa"
+    },
+    {
+      "bytes": 856,
+      "sha256": "a674e48642b8fdbdedf7284f5174a91277b642fb1a52bcb02672b3f28ce79551"
+    },
+    {
+      "bytes": 1323,
+      "sha256": "da1b39f16e86a9e492ecf14c4be794dd97ce296897488fbbd9d3601a79ee13d8"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "boy.",
+  "textSha256": "655b71a31e76c6fa4ca9e227cba95e50fac84f22283503a1d82fb6bc4c37f2d3",
+  "sha256": "190806351c03f572120f9b5ae62c64fcdf2e004eea5a9fb8334712fa1c7d774f",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "boy",
+      "start": 0.16,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

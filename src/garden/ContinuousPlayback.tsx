@@ -12,15 +12,15 @@ export function ContinuousPlayback({s,store}:{s:GardenState;store:GardenStore}){
  const [notice,setNotice]=useState(''),[consent,setConsent]=useState<string|null>(null),ownKey=text+'\0'+revision;
  useEffect(()=>{
   if(!key||paused||blocked||!text||!request||mode==='captions')return;
-  let alive=true;
+  let alive=true,advanceTimer:ReturnType<typeof setTimeout>|undefined;
   const current=()=>{const state=store.getSnapshot(),p=state.playback,currentLine=playbackLines(state)[index];return alive&&p?.key===key&&!p.paused&&p.mode===mode&&playbackIndex(state)===index&&!!currentLine&&JSON.stringify(continuousSpeech(state,currentLine,index))===identity&&!state.panel&&!state.background&&!state.viewLost;};
   const send=(action:'speech'|'pause'|'advance')=>{if(current())store.send({type:'PLAYBACK',key,index,action});};
   if(mode==='awaiting'){send('speech');return;}
   if(mode!=='speech')return;
   setNotice('');
-  const stop=playCastSpeech({...request,cacheOnly:origin==='child-draft'&&consent!==ownKey},{isCurrent:current,onDone:()=>send('advance'),onError:message=>{if(current()){setNotice(message);send('pause');}}});
+  const stop=playCastSpeech({...request,cacheOnly:origin==='child-draft'&&consent!==ownKey},{isCurrent:current,onDone:()=>{advanceTimer=setTimeout(()=>send('advance'),650);},onError:message=>{if(current()){setNotice(message);send('pause');}}});
   const unsubscribe=onLocalSpeechCanceled(()=>send('pause'));
-  return()=>{alive=false;unsubscribe();stop();};
+  return()=>{alive=false;if(advanceTimer!==undefined)clearTimeout(advanceTimer);unsubscribe();stop();};
  },[key,index,text,identity,origin,revision,paused,blocked,mode,store,consent,ownKey]);
  if(!playback)return null;
  return <div className="g-continuous-playback" role="group" aria-label="Whole story playback" data-playback-state={paused||blocked?'paused':'playing'} data-playback-mode={mode}>

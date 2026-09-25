@@ -8,7 +8,7 @@ import {narrativeDialogue} from '../src/garden/narrativeDialogue.js';
  * It does not establish native decoding, speaker quality or audible output. */
 export async function installPlaybackVoice(page:Page,{legacySources=false}:{legacySources?:boolean}={}){
  const manifest=JSON.parse(await readFile('public/audio/cast/manifest.json','utf8'));
- const synthetic=(entry:any)=>{const sha256=createHash('sha256').update(entry.speaker+'\0'+entry.text.replace(/\s+/g,' ').trim()).digest('hex');return {...entry,clip:{uri:'/audio/cast/clips/'+sha256+'.wav',sha256,bytes:32044,duration:1,sourceSha256:sha256,sourceWavSha256:sha256,startSample:0,endSample:16000,sampleRate:16000,channels:1}};};
+ const synthetic=(entry:any)=>{const sha256=createHash('sha256').update(entry.speaker+'\0'+entry.text.replace(/\s+/g,' ').trim()).digest('hex');return {...entry,clip:{uri:'/audio/cast/clips/'+sha256+'.wav',sha256,bytes:32044,duration:1,sourceSha256:sha256,sourceWavSha256:sha256,startSample:0,endSample:16000,sampleRate:16000,channels:1,boundaryMethod:entry.clip?.boundaryMethod}};};
  const entries=manifest.entries.map(synthetic);
  // Historical fixture sources remain test data, never added to the production voice library.
  const legacy=legacySources?[...Object.values(sources).flatMap(s=>s.paragraphs),...Object.keys(narrativeDialogue)]:[];

@@ -1,0 +1,42 @@
+{
+  "id": "5e861e66a23323b345b5504920d5ac3949dd4ebf397c0c38e0966408ff7e9903",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11627,
+      "sha256": "3a6a20d3e3e0633c224626bd4e68b50c56a3214b2c8513ce0ad3f21ff51698b2"
+    },
+    {
+      "bytes": 838,
+      "sha256": "c29832662c0a3a64cbda5a7c946787c881e4955cc7b0c504f29a1e7a51f85ed2"
+    },
+    {
+      "bytes": 1326,
+      "sha256": "88c11702dcbf600423b3b75087d5d11fd9f6f49e4e66dd2ef76b0e65e0ca6723"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "liquid.",
+  "textSha256": "a2880f9df3857e117dc367dce9102a17f3d4c537a810f393b271609a03bda731",
+  "sha256": "ea6e4773d0f94746488041a54e518e772446fec7656f2b622f712bbc4d4d0b88",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "liquid",
+      "start": 0.16,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

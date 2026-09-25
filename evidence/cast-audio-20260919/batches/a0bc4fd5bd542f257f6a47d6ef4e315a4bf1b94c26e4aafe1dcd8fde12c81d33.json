@@ -1,0 +1,42 @@
+{
+  "id": "a0bc4fd5bd542f257f6a47d6ef4e315a4bf1b94c26e4aafe1dcd8fde12c81d33",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 15386,
+      "sha256": "440366b9954462b67ce980e5a5ee1b9540a93556320739280fb1df91fa6459df"
+    },
+    {
+      "bytes": 837,
+      "sha256": "4e511f60f0b5f68cfa9ac7a49addd8d5cd7b14b5aef223777fa302c045f0e147"
+    },
+    {
+      "bytes": 1748,
+      "sha256": "1c70119f31e1e1568bf257051f1acf74e0a878f504565ab17b93ccc1a258f425"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "projector.",
+  "textSha256": "08193555a6ee2358dda1c853455b6252919ca8730709b2bc2db648a8ac378ccc",
+  "sha256": "8e7bfd46ea0921b69d05a7d42dab009b15a191af534288e4a02c0e7bcf10a7e9",
+  "bytes": 17971,
+  "alignment": [
+    {
+      "text": "projector",
+      "start": 0.08,
+      "end": 0.8
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 1.0480952380952382
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

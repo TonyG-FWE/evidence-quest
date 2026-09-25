@@ -1,0 +1,42 @@
+{
+  "id": "e8cd24317b0991c372c3d25b3af05c8c85d861f9fa1e9d07466496f8a690f4c7",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11615,
+      "sha256": "9f190d5bf3215b097d770fc7cfe1d72e62ddddca86862d32e0cd592d3f119a22"
+    },
+    {
+      "bytes": 843,
+      "sha256": "a3be6723648679bce429a32a46d17fb0503d4b78253d321f0874f8ffaf794b2e"
+    },
+    {
+      "bytes": 1333,
+      "sha256": "d8d048c54a58f682e684d8b68e777bccb9ed09beca396993a3399e9bffde63a7"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "temperature.",
+  "textSha256": "93c932202bfe3486ab4f18ce2c70fd98f108eefe780adf9ab5d8f021e303d4f6",
+  "sha256": "83884fd2cb8c629334539e1f84cc341930cb4325a6068ad9ce4171b5793b666d",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "temperature",
+      "start": 0.08,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

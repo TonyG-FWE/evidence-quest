@@ -2,6 +2,7 @@ import {bridgeSurfaces,sectionSecured,unstableSectionAt,placementChanged,firstPa
 import {anchors,navigable,findRoute,riverHalfWidth,WALK_SPEED,WORLD,BRIDGE_GEOMETRY} from './worldLayout.js';
 import {advanceGrandma} from './grandmaTravel.js';
 import {pipLocomotion} from './locomotion.js';
+import {bakeryTransfer,bakeryTransferReady,bakeryPointerHint,bakeryHands,bakeryObjectApproach,type BakerySelection} from './bakeryInteraction.js';
 import {applyHand,isHandCommand,freshHands,type HandsProgress,type HandGesture,type HandCommand} from './hands.js';
 import {freshJournal,updateJournal,type JournalState,type JournalCommand} from './journal.js';
 import {applyCard,canUseWorkbench,type CardGesture,type WorkbenchCommand} from './workbench.js';
@@ -13,6 +14,7 @@ import {lanternIds,lanternRecord,type LanternId} from './lanterns.js';
 import {freshBakery,applyBakery,settleBakery,bakeryReady,bakeryAction,bakeryDurations,bakeryActionText,bakeryInstruction,nearBakery,near as bakeryNear,BAKERY_SOL,TILE_SHELF,WORKSHOP_DOOR,THANK_RINA,type BakeryState,type BakeryAction,type BakeryStep} from './bakery.js';
 import {SerializedQueue} from '../core/serialized.js';
 import {localReview} from './assets/profile.js';
+import type {SpeechRequest} from './voiceTypes.js';
 import {sourcesFor,sourceIdsFor,sourcePrefix,preparedEndingsFor,endingLinesFor} from './content.js';
 import type {NarrativeEdition} from './narrativeEdition.js';
 import {freshStory,applyStory,SOL,solPosition,maraAtGarden,GATHER_MARA,type StoryState,type StoryEvent} from './chapter.js';
@@ -36,12 +38,14 @@ export interface Chapter {
 }
 export type Action={id:string;moment?:'planting'|'gathering';placement?:'gap'|'beside';kind:GatheringAction|BakeryAction|'keepMemory'|'birdIntro'|'dockService'|'maraTell'|'birdConsent'|'tapePickup'|'birdDeparture'|'maraReturn'|'ferry'|'loadSeed'|'unloadSeed'|'receiveSeed'|'ropes'|'plant'|'bloom'|'page'|'report'|'collapse'|'arrival'|'copy'|'delivery';elapsed:number;duration:number;from:Point;hasSeed:boolean};
 export interface GardenState {
+ kneading?:number;
+ bakerySelection?:BakerySelection;
  bridgeWork?:{kind:'post'|'tie';object:string;point:Point;elapsed:number;duration:number};
  boatSpeed?:number;
  cardGesture:CardGesture|null;
  gesture:HandGesture|null;
  playback:PlaybackState|null;
- readingInspection?:{text:string[];depth:number;preview:GardenState['preview'];bakeryPreview:GardenState['bakeryPreview'];birdPreview:NonNullable<Chapter['mara']['scene']>['preview']};
+ readingInspection?:{text:string[];speech?:SpeechRequest[];depth:number;preview:GardenState['preview'];bakeryPreview:GardenState['bakeryPreview'];birdPreview:NonNullable<Chapter['mara']['scene']>['preview']};
  bakeryPreview:'gap'|'beside'|null;maraTarget:Point|null;maraParent:ReturnFrame|null;
  panelTrail:ReturnFrame[];restoreFocus:FocusAnchor|null;activity:WorldActivity|null;actionParent:ReturnFrame|null;
  viewDrafts:{memoryMoment:'planting'|'gathering';endingScene:import('./chapter.js').EndingScene;plan:{time:import('./chapter.js').GatheringTime;reader:import('./chapter.js').Reader}|null;disclosures:Record<string,boolean>};
@@ -50,7 +54,8 @@ export interface GardenState {
  save:'loading'|'saved'|'saving'|'failed'|'conflict'|'damaged'|'version';savedRevision:number;background:boolean;viewLost:boolean;
 }
 export type Command=PlaybackCommand|HandCommand|WorkbenchCommand|{type:'JOURNAL';command:JournalCommand}
- |{type:'INSPECT_TEXT';text:string[];focus?:FocusAnchor|null}
+ |{type:'BAKERY_POINTER';target:string;object?:BakerySelection['object']}
+ |{type:'INSPECT_TEXT';text:string[];speech?:SpeechRequest[];focus?:FocusAnchor|null}
  |{type:'CONVERSATION';direction:'next'|'previous'}
  |{type:'BAKERY_STEP';step:BakeryStep}|{type:'TILE_PREVIEW';position:'gap'|'beside'}
  |{type:'MARA_GO';point:Point}|{type:'MARA_STEP';step:'ASK'|'TAPE'|'ALIGN'|'PLACE'|'DEPART'|'RETURN'}|{type:'TAPE_PREVIEW';position:'beside'|'across'}
@@ -106,7 +111,7 @@ function settled(s:GardenState,_continueGrowth:boolean,id:string){
   c.history.push(a.id);
   if(bakeryAction(a.kind))settleBakery(s,a);if(gatheringAction(a.kind))settleGathering(s,a.kind);
   if(a.kind==='ferry'){c.history.push('F');s.notice='The empty seed boat stays at its mooring. The seed remains where you left it.';}
-  if(a.kind==='ropes'){const count=ropeCount(c,'box');c.river.ropesCollected=true;for(const end of ['west','east'] as const)if(c.river.ropeLocations[end]==='box')c.river.ropeLocations[end]='pip';s.notice=count===1?'Pip takes the remaining repair rope. The other rope stays where you left it.':'Pip takes Grandma’s two repair ropes. Fasten one end of the footbridge to each bank.';}
+  if(a.kind==='ropes'){const count=ropeCount(c,'box');c.river.ropesCollected=true;for(const end of ['west','east'] as const)if(c.river.ropeLocations[end]==='box')c.river.ropeLocations[end]='pip';s.notice=count===1?'Pip takes the remaining repair rope. The other rope stays where you left it.':'Pip takes Grandma’s two repair ropes.';}
   if(a.kind==='loadSeed'){c.seed='boat';c.river.boat.phase='steering';c.river.collection={phase:'outbound',distance:c.river.collection?.distance??0};s.mode='boat';s.notice='The seed is aboard. Steer through the channel to Grandma’s blue landing.';}
   if(a.kind==='unloadSeed'){c.seed='pip';c.river.boat={...c.river.boat,phase:'moored',position:{...LAUNCH}};if(c.river.collection)c.river.collection.phase='return';s.mode='walk';s.notice='Pip takes the same seed out of the boat. You can carry it across the bridge instead.';}
   if(a.kind==='receiveSeed'){c.seed='grandma';c.river.boat={...c.river.boat,phase:'moored',position:{...LANDING}};c.ferrySide='east';if(c.river.collection)c.river.collection.phase='return';c.history.push('F');s.mode='walk';s.notice='Grandma holds the seed and walks back to the planting spot. Pip can keep exploring.';}
@@ -134,7 +139,7 @@ function settled(s:GardenState,_continueGrowth:boolean,id:string){
  // Covering commits planting only. Growth begins with the player's explicit BLOOM command.
  // The rooted boundary is durable in chapter.seed/bloomed, including after interrupted gestures.
 }
-function stop(s:GardenState,id:string){s.boatSpeed=0;delete s.bridgeWork;s.cardGesture=null;s.gesture=null;s.route=[];s.keys=[];s.boatTarget=null;s.maraTarget=null;s.bakeryPreview=null;if(s.chapter.mara.scene)s.chapter.mara.scene.preview=null;s.preview=null;settled(s,false,id);}
+function stop(s:GardenState,id:string){delete s.bakerySelection;s.boatSpeed=0;delete s.bridgeWork;s.cardGesture=null;s.gesture=null;s.route=[];s.keys=[];s.boatTarget=null;s.maraTarget=null;s.bakeryPreview=null;if(s.chapter.mara.scene)s.chapter.mara.scene.preview=null;s.preview=null;settled(s,false,id);}
 function start(s:GardenState,kind:Action['kind'],id:string,placement?:'gap'|'beside',moment?:'planting'|'gathering'){
  if(s.action)return;stop(s,id);s.action={id,kind,...(placement?{placement}:{}),...(moment?{moment}:{}),elapsed:0,duration:gatheringAction(kind)?gatheringDurations[kind]:bakeryAction(kind)?bakeryDurations[kind]:kind==='keepMemory'?1800:kind==='dockService'?7000:kind==='maraTell'||kind==='maraReturn'?2000:kind==='birdDeparture'?2500:kind==='birdConsent'?1500:kind==='arrival'?10000:kind==='collapse'?3000:kind==='receiveSeed'?1100:kind==='ferry'?1200:kind==='plant'?3000:kind==='bloom'?1800:1000,from:{...(kind==='collapse'||kind==='keepMemory'||bakeryAction(kind)?s.chapter.pip:ferryPosition(s.chapter))},hasSeed:kind==='loadSeed'||kind==='receiveSeed'||kind==='unloadSeed'};
  if(s.panel==='birdTalk')leaveReader(s);
@@ -169,6 +174,20 @@ function commitPlacement(s:GardenState){
  if(Object.values(sections).some(blocksFerryLane)){s.notice='Leave this stretch of water clear for the seed boat. Place the bridge sections farther along the river.';s.preview=null;return;}
  const old=s.chapter.sections;if((['a','b'] as const).some(part=>sectionSecured(s.chapter,part)&&(distance(old[part],sections[part])>.001||old[part].rotation!==sections[part].rotation))){s.preview=null;s.notice='The secured section stays in place.';return;}s.chapter.sections=sections;if(!sectionsMeet(s.chapter))s.chapter.joined=false;placementChanged(s.chapter,old);s.preview=null;s.notice=bridgeStatus(s.chapter);
 }
+function finishBakeryTransfer(s:GardenState,id:string){
+ const selected=s.bakerySelection,transfer=bakeryTransfer(s);
+ if(!selected)return;
+ if(!transfer||selected.stage!==s.chapter.bakery.stage||selected.object!==transfer.object){delete s.bakerySelection;return;}
+ if(!selected.destination||s.route.length||!bakeryTransferReady(s))return;
+ delete s.bakerySelection;
+ // Both cursor methods finish through the same hand and bakery handlers.
+ applyHand(s,{type:'HAND_BEGIN',object:transfer.object});
+ applyHand(s,{type:'HAND_MOVE',point:transfer.point});
+ for(const command of applyHand(s,{type:'HAND_RELEASE'}))if(command.type==='BAKERY_STEP'){
+  const kind=applyBakery(s,command.step);if(kind)start(s,kind,id);
+ }
+}
+
 export function gardenReduce(state:GardenState,command:Command,id:string):GardenState{
  // A conflicting writer owns the durable checkpoint. Keep reading/recovery
  // available, but do not allow new unsaved actions or edits to accumulate.
@@ -191,6 +210,23 @@ export function gardenReduce(state:GardenState,command:Command,id:string):Garden
  if(!state.chapter.started&&['GO','KEY','TALK','TAKE_PAGE','REPORT','ARRANGE','FERRY','PLANT','BLOOM','STORY','TRY_CROSS'].includes(command.type))return state;
  const s=structuredClone(state),c=s.chapter,sources=sourcesFor(c),preparedEndings=preparedEndingsFor(c),endingLines=endingLinesFor(c),sourceIds=sourceIdsFor(c);let changed=true;
  switch(command.type){
+ case 'BAKERY_POINTER':{
+  if(!s.ready||s.panel||s.action||s.background||s.viewLost||s.activity||s.mode!=='walk')break;
+  const transfer=bakeryTransfer(s);if(!transfer)break;
+  if(command.object&&command.object!==transfer.object)break;
+  if(command.object||command.target===transfer.object)s.bakerySelection={object:transfer.object,stage:c.bakery.stage};
+  if(!s.bakerySelection)break;
+  if(command.target!==transfer.object&&command.target!==transfer.target){delete s.bakerySelection.destination;s.route=[];s.notice=`The ${transfer.object==='spareTile'?'tile':transfer.object==='flour'?'flour':'bread'} stays where it is. Choose ${transfer.label} to continue.`;break;}
+  if(command.target===transfer.target)s.bakerySelection.destination=transfer.target;
+  s.keys=[];s.route=[];
+  const delivering=!!s.bakerySelection.destination,ready=delivering||c.bakery.stage==='needed'?bakeryTransferReady(s):bakeryHands(s).includes(transfer.object);
+  const approach=delivering?transfer.approach:bakeryObjectApproach(s,transfer.object);
+  if(!ready&&distance(c.pip,approach)>.05){
+   s.route=routeTo(c,approach);s.requested=delivering?transfer.label:'the selected object';
+   if(!s.route.length){delete s.bakerySelection;s.notice='That path is blocked. The material stays where it is.';break;}
+  }
+  s.notice=(s.route.length?`Walking to ${s.requested}. `:'')+bakeryPointerHint(s);finishBakeryTransfer(s,id);break;
+ }
  case 'WORKBENCH':if(canUseWorkbench(s)){stop(s,id);resetViews(s);s.panel=null;if(distance(c.pip,WORKBENCH_APPROACH)>.2){s.route=routeTo(c,WORKBENCH_APPROACH);s.mode='walk';s.requested='Sol’s workbench';s.notice='Pip walks to the outdoor worktable.';}else{s.mode='workbench';s.notice='Arrange pictures of moments you took part in. Any order is welcome; this never changes what happened.';}}break;
  case 'CARD_PICK':case 'CARD_MOVE':case 'CARD_PLACE':case 'CARD_CANCEL':applyCard(s,command);break;
  case 'JOURNAL':if(s.panel==='journal'||s.panel==='storyboard')c.journal=updateJournal(c.journal,command.command,c);break;
@@ -200,9 +236,10 @@ export function gardenReduce(state:GardenState,command:Command,id:string):Garden
  case 'START_PLAY':resetViews(s);s.panel=null;s.notice='Move Pip with the arrow keys or WASD. Talk to Mara at the dock.';break;
  case 'CONVERSATION':moveConversation(s,command.direction);break;
  case 'INSPECT_TEXT':if(s.panelTrail.length<20&&s.panel!=='help'&&!s.action&&!s.readingInspection&&command.text.length&&command.text.length<=200&&command.text.every(t=>typeof t==='string'&&t.length<=100000)){
-   const inspection={text:command.text,depth:s.panelTrail.length+1,preview:s.preview,bakeryPreview:s.bakeryPreview,birdPreview:c.mara.scene?.preview??null};
+   const speech=command.speech?.length===command.text.length&&command.speech.every((part,index)=>part.text===command.text[index])?command.speech:undefined;
+   const inspection={text:command.text,...(speech?{speech}:{}),depth:s.panelTrail.length+1,preview:s.preview,bakeryPreview:s.bakeryPreview,birdPreview:c.mara.scene?.preview??null};
    if(s.gesture){s.gesture=null;s.preview=null;s.bakeryPreview=null;inspection.preview=null;inspection.bakeryPreview=null;}
-   s.route=[];s.keys=[];s.boatTarget=null;s.maraTarget=null;enterReader(s,'help',command.focus);s.readingInspection=inspection;s.notice='';
+   delete s.bakerySelection;s.route=[];s.keys=[];s.boatTarget=null;s.maraTarget=null;enterReader(s,'help',command.focus);s.readingInspection=inspection;s.notice='';
   }break;
  case 'OPEN':if(command.panel==='planner'&&!c.story.maraReported)break;if(command.panel==='writing'&&(c.story.phase!=='planning'||!c.story.laterKnown))break;if(command.panel==='bakery'&&!c.bakery.met)break;if(command.panel==='sol'&&!bakeryReady(c))break;if(s.mode==='bakery-repair'&&!['festival','help','backpack','journal','pause',...Object.keys(sources)].includes(command.panel??''))break;if(command.panel==='birdTalk'&&(s.mode!=='mara-story'||c.mara.scene?.stage!=='ask'||!nearBird(c.mara.scene.position)))break;if(s.mode==='mara-story'&&!['festival','birdTalk','help','backpack','journal','pause',...Object.keys(sources)].includes(command.panel??''))break;if(command.panel==='complete'){if(c.story.ending&&!s.activity){stop(s,id);enterReader(s,'studio',command.focus);s.notice='';}break;}if(command.panel==='endingWords'&&!c.story.ending)break;if(s.activity&&!['festival','help','pause','backpack',...(s.panel?Object.keys(sources):[]),...(s.activity.kind==='ending-presentation'?['endingWords']:s.activity.kind==='lantern-inspect'?[lanternRecord(c,s.activity.lantern).page].filter(Boolean):[])].includes(command.panel??''))break;if(['finale','breadEnding','thanksEnding','notice'].includes(command.panel??'')||command.panel==='story'&&c.page==='mara'&&!c.story.records.mara&&c.story.phase!=='mara'||command.panel==='mara'&&!c.maraHeard||command.panel==='report'&&!conversationReady(c,'mara')||command.panel==='sol'&&!c.story.metSol||command.panel==='later'&&!c.story.laterKnown||command.panel==='empty'&&!(c.story.records.grandma||c.gathering.pageComplete)||command.panel==='studio'&&!c.story.ending||['picnic','duet','lanterns'].includes(command.panel??'')&&!c.crossed)break;stop(s,id);s.notice='';enterReader(s,command.panel,command.focus);break;
  case 'CLOSE':{const inspection=s.readingInspection,returning=inspection&&s.panelTrail.length===inspection.depth;stop(s,id);leaveReader(s);if(returning){s.preview=inspection.preview;s.bakeryPreview=inspection.bakeryPreview;if(c.mara.scene)c.mara.scene.preview=inspection.birdPreview;delete s.readingInspection;}}break;
@@ -248,8 +285,8 @@ export function gardenReduce(state:GardenState,command:Command,id:string):Garden
  }
  case 'BAKERY_STEP':{const placement=s.bakeryPreview,kind=applyBakery(s,command.step);if(kind)start(s,kind,id,placement??undefined);break;}
  case 'TILE_PREVIEW':if(s.mode==='bakery-repair'&&!s.panel&&!s.action&&!s.background&&!s.viewLost&&['gap','misplaced'].includes(c.bakery.stage))s.bakeryPreview=command.position;break;
- case 'GO':delete s.bridgeWork;if(s.mode==='arrange'&&!s.gesture){s.mode='walk';s.preview=null;}if(s.panel||s.mode!=='walk'||s.action||s.background||s.viewLost)break;s.keys=[];s.route=routeTo(c,command.point);s.requested=command.target??null;s.notice=s.route.length?(command.target?'Walking to '+command.target+'.':''):(Math.sign(command.point.x)!==Math.sign(c.pip.x)?(c.joined?LOOSE:"Pip can't cross the river yet. The bridge pieces may help."):"Pip can't reach that place from here.");break;
- case 'KEY':if(command.down)delete s.bridgeWork;if(s.mode==='arrange'&&!s.gesture){s.mode='walk';s.preview=null;}if(command.down){if(s.panel||(s.mode==='arrange'||s.mode==='bakery-repair'||s.mode==='workbench')||s.action||s.background||s.viewLost||s.mode==='boat'&&c.river.boat.phase!=='steering'||s.mode==='mara-story'&&c.mara.scene&&!['ask','fetch'].includes(c.mara.scene.stage))break;s.route=[];s.boatTarget=null;s.maraTarget=null;if(!s.keys.includes(command.key))s.keys.push(command.key);}else s.keys=s.keys.filter(k=>k!==command.key);break;
+ case 'GO':delete s.bakerySelection;delete s.bridgeWork;if(s.mode==='arrange'&&!s.gesture){s.mode='walk';s.preview=null;}if(s.panel||s.mode!=='walk'||s.action||s.background||s.viewLost)break;s.keys=[];s.route=routeTo(c,command.point);s.requested=command.target??null;s.notice=s.route.length?(command.target?'Walking to '+command.target+'.':''):(Math.sign(command.point.x)!==Math.sign(c.pip.x)?(c.joined?LOOSE:"Pip can't cross the river yet. The bridge pieces may help."):"Pip can't reach that place from here.");break;
+ case 'KEY':if(command.down){delete s.bakerySelection;delete s.bridgeWork;}if(s.mode==='arrange'&&!s.gesture){s.mode='walk';s.preview=null;}if(command.down){if(s.panel||(s.mode==='arrange'||s.mode==='bakery-repair'||s.mode==='workbench')||s.action||s.background||s.viewLost||s.mode==='boat'&&c.river.boat.phase!=='steering'||s.mode==='mara-story'&&c.mara.scene&&!['ask','fetch'].includes(c.mara.scene.stage))break;s.route=[];s.boatTarget=null;s.maraTarget=null;if(!s.keys.includes(command.key))s.keys.push(command.key);}else s.keys=s.keys.filter(k=>k!==command.key);break;
  case 'TICK':{
   if(s.background||s.viewLost)break;const dt=Math.min(80,Math.max(0,command.ms));if(s.bridgeWork){s.bridgeWork.elapsed+=dt;if(s.bridgeWork.elapsed>=s.bridgeWork.duration)delete s.bridgeWork;}
   if(!s.panel){advanceGrandma(c,dt/1000);if(!s.action&&c.river.boat.phase==='waiting'&&c.river.collection?.phase==='waiting')start(s,'receiveSeed',id);}
@@ -280,7 +317,7 @@ export function gardenReduce(state:GardenState,command:Command,id:string):Garden
   const h=Number(s.keys.some(k=>k==='d'||k==='arrowright'))-Number(s.keys.some(k=>k==='a'||k==='arrowleft')),v=Number(s.keys.some(k=>k==='s'||k==='arrowdown'))-Number(s.keys.some(k=>k==='w'||k==='arrowup'));
   const pace=pipLocomotion(c.pip).speed;
   if(h||v){const mag=Math.hypot(h,v),step=dt*pace/1000;next={x:next.x+(h*.93+v*.37)/mag*step,z:next.z+(-h*.37+v*.93)/mag*step};if(walkable(c,next))c.pip=next;else s.notice=c.joined&&!bridgeReady(c)?LOOSE:'The water is too deep to walk through. Stay on the bank or the finished crossing.';}
-  else if(s.route.length){const p=s.route[0]!,d=distance(c.pip,p),step=dt*pace/1000;if(d<=step){c.pip={...p};s.route.shift();if(!s.route.length){if(s.requested==='Sol’s workbench'&&distance(c.pip,WORKBENCH_APPROACH)<.2){s.mode='workbench';s.notice='Arrange pictures of moments you took part in. Any order is welcome; this never changes what happened.';}else s.notice=s.requested?'Pip is here. Choose the nearby action.':'';}}else{next={x:c.pip.x+(p.x-c.pip.x)/d*step,z:c.pip.z+(p.z-c.pip.z)/d*step};if(walkable(c,next))c.pip=next;else{s.route=[];s.notice='That path is blocked.';}}}
+  else if(s.route.length){const p=s.route[0]!,d=distance(c.pip,p),step=dt*pace/1000;if(d<=step){c.pip={...p};s.route.shift();if(!s.route.length){if(s.requested==='Sol’s workbench'&&distance(c.pip,WORKBENCH_APPROACH)<.2){s.mode='workbench';s.notice='Arrange pictures of moments you took part in. Any order is welcome; this never changes what happened.';}else s.notice=s.requested?'Pip is here. Choose the nearby action.':'';}}else{next={x:c.pip.x+(p.x-c.pip.x)/d*step,z:c.pip.z+(p.z-c.pip.z)/d*step};if(walkable(c,next))c.pip=next;else{s.route=[];delete s.bakerySelection;s.notice='That path is blocked.';}}}
   if(c.bakery.stage==='escorting'&&c.pip.x>3){
    // Finish the approach beside Sol even after Pip stops. The carrier's
    // authoritative position keeps the loaf clear of Pip's body and backpack.
@@ -288,6 +325,7 @@ export function gardenReduce(state:GardenState,command:Command,id:string):Garden
    const destination=visiting?THANK_RINA:c.pip,remaining=distance(c.bakery.rina,destination),clearance=visiting?0:.8;
    if((visiting||distance(before,c.pip)>.0001)&&remaining>clearance+.002){const path=routeTo({...c,pip:c.bakery.rina},destination),target=path[0];if(target){const d=distance(c.bakery.rina,target),step=Math.min(d,remaining-clearance,dt*(WALK_SPEED+.2)/1000);c.bakery.rina={x:c.bakery.rina.x+(target.x-c.bakery.rina.x)/(d||1)*step,z:c.bakery.rina.z+(target.z-c.bakery.rina.z)/(d||1)*step};}}
   }
+  finishBakeryTransfer(s,id);
   if(!c.crossed&&unstableSectionAt(c,c.pip)){start(s,'collapse',id);break;}
   if(!c.crossed&&before.x<1.58&&c.pip.x>=1.58&&bridgeReady(c)){c.crossed=true;c.history.push('B');s.notice='The crossing is ready for everyone to use.';}break;}
  case 'TRY_CROSS':if(s.panel||s.mode!=='walk'||s.action||!bridgeAttemptable(c))break;s.route=routeTo(c,GRANDMA_APPROACH);s.keys=[];s.requested='Grandma';break;
@@ -303,7 +341,7 @@ export function gardenReduce(state:GardenState,command:Command,id:string):Garden
   if(command.step==='RETURN'&&b.stage==='done'){s.mode='walk';start(s,'maraReturn',id);}break;
  }
  case 'STORY':{const parent=rememberView(s,command.focus),cue=applyStory(s,command.event);if(s.panel&&s.panel!==parent.panel)s.panelTrail.push(parent);if(cue){if(cue==='maraTell')s.maraParent=parent;start(s,cue,id,undefined,command.event.kind==='MOMENT'?command.event.moment:undefined);}break;}
- case 'TALK':if(command.who==='grandma'&&c.river.collection){s.notice='Grandma is collecting the seed. You can meet her at the planting spot when she returns.';break;}if(s.action||s.mode!=='walk'||s.background||s.viewLost)break;if(command.who==='rina'||command.who==='sol'&&!bakeryReady(c)){if(!c.crossed||!nearBakery(c)||c.bakery.edition==='earlier-chapter')break;stop(s,id);enterReader(s,'bakery',command.focus);if(!c.bakery.met)start(s,'bakeryWelcome',id);else s.notice=bakeryInstruction(s);break;}if(distance(c.pip,command.who==='mara'?(maraAtGarden(c)?GATHER_MARA:MARA):command.who==='sol'?solPosition(c):GRANDMA)>1.5){s.notice='Move closer to '+(command.who==='mara'?'Mara':command.who==='sol'?'Sol':'Grandma')+' first.';break;}stop(s,id);s.notice='';enterReader(s,command.who,command.focus);if(command.who==='mara')rememberConversation(c,'mara');if(command.who==='sol')c.story.metSol=true;break;
+ case 'TALK':if(command.who==='grandma'&&c.river.collection){s.notice='Grandma is collecting the seed. You can meet her at the planting spot when she returns.';break;}if(s.action||s.mode!=='walk'||s.background||s.viewLost)break;if(command.who==='rina'||command.who==='sol'&&!bakeryReady(c)){if(!c.crossed||!(nearBakery(c)||command.who==='rina'&&distance(c.pip,c.bakery.rina)<=1.65)||c.bakery.edition==='earlier-chapter')break;stop(s,id);enterReader(s,'bakery',command.focus);if(!c.bakery.met)start(s,'bakeryWelcome',id);else s.notice=bakeryInstruction(s);break;}if(distance(c.pip,command.who==='mara'?(maraAtGarden(c)?GATHER_MARA:MARA):command.who==='sol'?solPosition(c):GRANDMA)>1.5){s.notice='Move closer to '+(command.who==='mara'?'Mara':command.who==='sol'?'Sol':'Grandma')+' first.';break;}stop(s,id);s.notice='';enterReader(s,command.who,command.focus);if(command.who==='mara')rememberConversation(c,'mara');if(command.who==='sol')c.story.metSol=true;break;
  case 'TAKE_PAGE':if(s.panel==='mara'&&conversationReady(c,'mara')&&!s.action&&c.page==='mara'&&distance(c.pip,maraAtGarden(c)?GATHER_MARA:MARA)<=1.5)start(s,'page',id);break;
  case 'REPORT':if(s.panel==='grandma'&&distance(c.pip,GRANDMA)<=1.5&&c.page==='pip')start(s,'report',id);break;
  case 'NOTICE':s.notice=command.text;break;
@@ -317,7 +355,7 @@ export function gardenReduce(state:GardenState,command:Command,id:string):Garden
  case 'CANCEL':if(s.mode==='arrange')s.mode='walk';s.cardGesture=null;s.gesture=null;s.bakeryPreview=null;s.maraTarget=null;if(c.mara.scene)c.mara.scene.preview=null;s.preview=null;s.route=[];s.keys=[];s.boatTarget=null;break;
  case 'NUDGE':{const p=(s.preview??c.sections)[s.selection];previewAt(s,{x:p.x+command.x,z:p.z+command.z},false);s.notice='Move the selected section, then press Enter or choose Place section. Escape cancels this move.';break;}
  case 'ROTATE':if(s.mode==='arrange'&&!c.crossed&&!c.joined){if((['west','east'] as const).some(end=>c[end]&&sectionAtEnd(c,end)===s.selection)){s.notice='Release that section’s rope before turning it.';break;}const turned={...c.sections[s.selection],rotation:(c.sections[s.selection].rotation+command.direction*Math.PI/2+Math.PI*2)%(Math.PI*2)};if(blocksFerryLane(turned)){s.notice='Move this section away from the seed boat’s route before turning it.';break;}c.sections[s.selection]=turned;s.notice='Section turned. Its short end should meet the other section.';}break;
- case 'JOIN':{if(s.mode!=='arrange'||c.joined)break;const a=c.sections.a,b=c.sections.b;if(Math.abs(a.z-b.z)>.17||Math.abs(Math.abs(a.x-b.x)-BRIDGE_GEOMETRY.length)>.17||Math.abs(Math.sin(a.rotation))>.01||Math.abs(Math.sin(b.rotation))>.01||Math.abs(a.rotation-b.rotation)>.01){s.notice='Bring the short ends of the bridge sections together. Turn the loose section to face the same way as the other section.';break;}const heldB=c.river.attachments.west==='b'||c.river.attachments.east==='b',key=heldB?'a':'b',origin=heldB?b:a,other=heldB?a:b,joinedPart={x:origin.x+(other.x>origin.x?BRIDGE_GEOMETRY.length:-BRIDGE_GEOMETRY.length),z:origin.z,rotation:origin.rotation};if(Math.abs(joinedPart.x)>5||blocksFerryLane(joinedPart)){s.notice='Move the sections farther from the seed boat’s route before joining them.';break;}if((c.river.attachments.west===key||c.river.attachments.east===key)&&distance(joinedPart,other)>.001){s.notice='Release an attachment before adjusting this section.';break;}c.sections[key]=joinedPart;c.joined=true;s.notice='The sections are joined. Does the crossing reach both banks?';break;}
+ case 'JOIN':{if(s.mode!=='arrange'||c.joined)break;const a=c.sections.a,b=c.sections.b;if(Math.abs(a.z-b.z)>.17||Math.abs(Math.abs(a.x-b.x)-BRIDGE_GEOMETRY.length)>.17||Math.abs(Math.sin(a.rotation))>.01||Math.abs(Math.sin(b.rotation))>.01||Math.abs(a.rotation-b.rotation)>.01){s.notice='Bring the short ends of the bridge sections together. Turn the loose section to face the same way as the other section.';break;}const heldB=c.river.attachments.west==='b'||c.river.attachments.east==='b',key=heldB?'a':'b',origin=heldB?b:a,other=heldB?a:b,joinedPart={x:origin.x+(other.x>origin.x?BRIDGE_GEOMETRY.length:-BRIDGE_GEOMETRY.length),z:origin.z,rotation:origin.rotation};if(Math.abs(joinedPart.x)>5||blocksFerryLane(joinedPart)){s.notice='Move the sections farther from the seed boat’s route before joining them.';break;}if((c.river.attachments.west===key||c.river.attachments.east===key)&&distance(joinedPart,other)>.001){s.notice='Release an attachment before adjusting this section.';break;}c.sections[key]=joinedPart;c.joined=true;s.notice=bridgeStatus(c);break;}
  case 'FASTEN':if(c.river.construction){s.notice='Install the posts, then draw each rope to the next post. The two sides are fastened separately.';break;}if(s.mode!=='arrange'||c.crossed)break;if(c.river.ropeLocations[command.end]!=='pip'){s.notice='Take the repair rope from Grandma’s maintenance box first.';break;}if(!reaches(c,command.end)||(command.atZ!==undefined&&Math.abs(bridgeCenter(c).z-command.atZ)>.22)){s.notice=GAP;break;}c.river.attachments[command.end]=sectionAtEnd(c,command.end);c[command.end]=true;c.river.ropeLocations[command.end]='attached';s.notice=bridgeReady(c)?'Both ends are secure. Return to Pip, then walk across.':LOOSE;break;
  case 'ADJUST':if(s.mode==='arrange'&&!c.crossed){if(!navigable(c.pip)){s.notice='Step onto the bank before releasing a supporting rope.';break;}if(c.river.construction){const b=ensureConstruction(c);for(const side of ['north','south'] as const)b.ropes[side]={west:false,center:false,east:false};syncConstruction(c);}for(const end of ['west','east'] as const)if(c[end])c.river.ropeLocations[end]='pip';c.west=false;c.east=false;c.river.attachments={west:null,east:null};s.notice='The ropes are released into Pip’s backpack. Move the sections, then fasten them again.';}break;
  case 'FERRY':if(c.seed==='boat'||s.action||s.panel||s.background||s.viewLost)break;if(c.seed==='pip'&&!c.crossed){if(c.ferrySide!=='west'||distance(c.pip,CROSSING)>1.6){s.notice='Bring Pip beside the seed boat to load the seed.';break;}start(s,'loadSeed',id);break;}if(distance(c.pip,CROSSING)>1.6&&distance(c.pip,GRANDMA)>1.6){s.notice='Return to the riverbank or Grandma to watch the seed boat.';break;}start(s,'ferry',id);break;

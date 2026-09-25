@@ -1,0 +1,42 @@
+{
+  "id": "fa53b50037a57de2481ab91a1021864b713e48ffc18c3e9eb0ec4f3a5cc6f56f",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 5947,
+      "sha256": "3f24a8354bd660ad26bef570f0e5b4b3743e29afee02b167b27e736e668b10b4"
+    },
+    {
+      "bytes": 1057,
+      "sha256": "d74a279fdd20a320829219e93bffd42b6bebb640301f0dfdf33966ed40d80d12"
+    },
+    {
+      "bytes": 1354,
+      "sha256": "5d335dd3b3886dad92147a9fb197822d937013624578f5bfdc9be2411a8f4590"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "oven.",
+  "textSha256": "50fe26476a358cdc50b3070ddc2242dbf963cc2fb2cff3d48c15fea496bbc3b1",
+  "sha256": "86c6519144148db26e8838e1bb0afa80393bcf210396bd10b7c531bf332942d2",
+  "bytes": 8358,
+  "alignment": [
+    {
+      "text": "oven",
+      "start": 0.16,
+      "end": 0.48
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.4552380952380952
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

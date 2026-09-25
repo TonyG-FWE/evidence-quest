@@ -1,0 +1,68 @@
+{
+  "at": "2026-09-25T17:49:14.835Z",
+  "status": "DELIVERED",
+  "implementationCommit": "01ca1a7e526724e4fd4a15cc55c63f0cab9b9260",
+  "implementationTree": "71cb990e600e85437fff076c9465a88c84ab77ce",
+  "parent": "53ac43277b61bc64c001fdab2cdb32c1506ab19d",
+  "branch": "codex/nerdy-demo-polish",
+  "privatePR": {
+    "baseRefName": "main",
+    "headRefName": "codex/nerdy-demo-polish",
+    "headRefOid": "01ca1a7e526724e4fd4a15cc55c63f0cab9b9260",
+    "number": 3,
+    "state": "OPEN",
+    "title": "Polish the Nerdy demo and repair bakery cursor gameplay",
+    "url": "https://github.com/TonyG-FWE/evidence-quest/pull/3"
+  },
+  "repositoryPrivate": true,
+  "indexAudit": {
+    "at": "2026-09-25T17:46:25.159Z",
+    "branch": "codex/nerdy-demo-polish",
+    "parent": "53ac43277b61bc64c001fdab2cdb32c1506ab19d",
+    "releaseManifestSha256": "08473b612f51a9c5da33b77ba7a454b34e5952f6017c12d3b0b3b9803f7f38c4",
+    "exactIndexFileMatches": 15903,
+    "changedStagedFiles": 64,
+    "unselectedStagedFiles": 0,
+    "trackedDeletions": 0,
+    "earlierDirtyFilesExcludedAndPreserved": 10,
+    "whitespaceCheck": "PASS",
+    "indexTree": "71cb990e600e85437fff076c9465a88c84ab77ce"
+  },
+  "candidate": {
+    "inputSha256": "11d95109a8553db747568400d91d1a9f6629d80e0ef00b69dcba48621ec0562f",
+    "outputSha256": "405958761d185b579144cd04905c1f2024f16d57a1b3fc4d296a125f431c542f",
+    "inputs": 15464,
+    "outputs": 7374
+  },
+  "preservation": "bakery-preexisting-preservation.json",
+  "earlierDirtyFilesPreservedAndExcluded": 10,
+  "verification": "bakery-cursor-correction5.json",
+  "game": {
+    "url": "http://127.0.0.1:4496/garden",
+    "checkpoint": "bakery-codex-checkpoint.json",
+    "config": {
+      "content": "garden-chapter-3",
+      "textFeedback": false,
+      "textFeedbackActivities": [],
+      "readingFeedback": false,
+      "transcription": false
+    }
+  },
+  "fallback": {
+    "url": "http://127.0.0.1:4497/PLAY-DEMO.html",
+    "httpStatus": 200,
+    "record": "bakery-fallback-visual-review.json"
+  },
+  "gitLockRecovery": {
+    "At": "2026-09-25T17:46:13.0600677Z",
+    "Path": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\.git\\index.lock",
+    "Length": 0,
+    "LastWriteTimeUtc": "2026-09-25T15:05:23.4703012Z",
+    "ActiveGitProcesses": 0,
+    "Action": "Removed stale empty index lock before authorized staging"
+  },
+  "merge": false,
+  "deployment": false,
+  "publicPublication": false,
+  "scope": "Verified implementation commit is pushed and private PR updated. This receipt and the final status text are delivered in the following documentation commit; their own commit hash is not self-embedded."
+}

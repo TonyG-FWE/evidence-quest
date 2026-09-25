@@ -1,0 +1,42 @@
+{
+  "id": "8425c25bbfd0994e462c30e94deda4a48b0643185a462855da99302637075435",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 8288,
+      "sha256": "f135bee52d55b5b15fb215f5031ee42d2485179109e02364fbc2d68ce8babe30"
+    },
+    {
+      "bytes": 855,
+      "sha256": "7bbbd5d2f4107ec94d63badceac7a04b585310c7b353ec1dd34e3097499460e9"
+    },
+    {
+      "bytes": 1723,
+      "sha256": "ce96556d0f3a68c8a372321a9682337a997c6592429b7b6f51e79da061de1a93"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "love.",
+  "textSha256": "6df8f8daebfd1df0ad34bd307da9f1b13134b2de81b120985be581cb786f651b",
+  "sha256": "9c309549f746f630c9d145505b8e3053a07c1d329f69a3661aa51abaa0962ba7",
+  "bytes": 10866,
+  "alignment": [
+    {
+      "text": "love",
+      "start": 0.16,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6034467120181406
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

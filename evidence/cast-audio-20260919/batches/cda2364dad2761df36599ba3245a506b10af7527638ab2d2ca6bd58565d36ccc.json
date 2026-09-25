@@ -1,0 +1,42 @@
+{
+  "id": "cda2364dad2761df36599ba3245a506b10af7527638ab2d2ca6bd58565d36ccc",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 8270,
+      "sha256": "5ec93117efabb8ec93796be4514374dad04550f0d6759e31fc04c8090636e2f6"
+    },
+    {
+      "bytes": 884,
+      "sha256": "921138e7544c2b05a0386ef075a1adaacbc844226208d5eaf2862c4d3c965896"
+    },
+    {
+      "bytes": 1712,
+      "sha256": "3955566d8582b798409f09d969f4a71dc857b8dc42f5156255d5a30f72c520b8"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "hung.",
+  "textSha256": "3d4c0208c294154b8819eac73d82f19ad2f28b40e24fa1b2f0dd3a141e80fc33",
+  "sha256": "6c6288bbbbfac0404b5273915cf53e4690960a62af107b90370456c46b450c96",
+  "bytes": 10866,
+  "alignment": [
+    {
+      "text": "hung",
+      "start": 0.16,
+      "end": 0.48
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6034467120181406
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

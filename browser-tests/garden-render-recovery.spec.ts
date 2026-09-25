@@ -58,7 +58,7 @@ test('a failed opening landscape exposes recovery and retries without losing the
  const text=await page.locator('.garden-passage').innerText();
  await page.getByRole('button',{name:'Restore view',exact:true}).click();
  await expect(page.locator('.garden-scene')).toHaveAttribute('data-scene-phase','ready',{timeout:90000});
- await expect(page.locator('.garden-passage')).toHaveText(text);await expect(start).toBeEnabled();
+ await expect.poll(()=>page.locator('.garden-passage').innerText()).toBe(text);await expect(start).toBeEnabled();
  await page.screenshot({path:info.outputPath('landscape-recovered.png')});await start.click();
  const scene=page.locator('.garden-scene'),before=await scene.getAttribute('data-pip-z');
  await page.keyboard.down('ArrowUp');await page.waitForTimeout(400);await page.keyboard.up('ArrowUp');

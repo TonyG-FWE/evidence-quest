@@ -1,0 +1,42 @@
+{
+  "id": "13d79cc25e8b9ae040cd70a4ac4aab7a02f8045fe734a21edcf09e127a6ba39a",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 8277,
+      "sha256": "512427a0575f6c5f3777c2ee592766293b68c2bdcb84b60161caa8527f294d77"
+    },
+    {
+      "bytes": 874,
+      "sha256": "1675177b2307469d113ce89258dbbbcfcadd648051f6921eac1f1d335cce8559"
+    },
+    {
+      "bytes": 1715,
+      "sha256": "8a167722720f22ec3e3968c3eb8a48188fe08e6da7457356e8b9e14739d02578"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "game.",
+  "textSha256": "4d5da5299dc045d5a593c034c34e6cc53ff4920fb1bf741e8ea993eea91a4603",
+  "sha256": "3e8d3fdb7d0840233b09f0e3bf1c5a949851db05e34a1900939080c9d19c33c5",
+  "bytes": 10866,
+  "alignment": [
+    {
+      "text": "game",
+      "start": 0.16,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6034467120181406
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

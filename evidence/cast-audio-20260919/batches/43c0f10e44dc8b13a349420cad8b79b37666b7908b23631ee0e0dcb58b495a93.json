@@ -1,0 +1,42 @@
+{
+  "id": "43c0f10e44dc8b13a349420cad8b79b37666b7908b23631ee0e0dcb58b495a93",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 8289,
+      "sha256": "46e9983d4df0f3c8924611b412c3bcb01fbff7933ef3d65f5fcffe1c1ead7612"
+    },
+    {
+      "bytes": 1050,
+      "sha256": "c3837413ad38fb177138af79b9231bde3d794e493432a055b6f113a1c0e4e7d4"
+    },
+    {
+      "bytes": 1527,
+      "sha256": "9b7945bf727cd0787e696cf3b7c5b08f4fbfbfde135e5d37385cb88f02ce857d"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "salt.",
+  "textSha256": "f48705191bf30ab27766fb1456385d1fc05e795d3c09a45b0b1411ebc4927dc0",
+  "sha256": "beec57ebbf7ad13a3329e90cfb18015977c1ec9a89350cbab2de47a936e47b2c",
+  "bytes": 10866,
+  "alignment": [
+    {
+      "text": "salt",
+      "start": 0.08,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6034467120181406
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

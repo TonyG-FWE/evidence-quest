@@ -60,3 +60,7 @@ Historical game gaps remain separate: WebKit DPR2 cadence and studio transfer fa
 ## Next dependency
 
 All new model Form and movement approvals are **PENDING** against the exact hashes in `review-submission.json`. Existing reference-image approvals remain valid and are not reopened. The requested Build 3D Game Rooms workflow says “Record explicit human Form approval.” Production export and gameplay integration follow that separate model decision. The review GLBs are inspection derivatives, not production exports or additions to the live game.
+
+## 2026-09-24 — authorized disposable-backup cleanup
+
+The historical local-history statement above describes the September 17 checkpoint. Tony later authorized deletion of unused untracked backups for the Nerdy demo preparation. The exact [deletion list](../../evidence/nerdy-demo-20260924/cleanup-files.json) and [result](../../evidence/nerdy-demo-20260924/cleanup-result.json) record the removed model revisions and paired Blender automatic backups. The complete Pip snapshot at `local-history/pip/20260917T120102835323Z/` remains because the weight-provenance and fit records name its editable source. Current models, original provider sources, fit/provenance records, review manifests and retained test/build dependencies remain intact. This cleanup changes no artwork approval or provider accounting.

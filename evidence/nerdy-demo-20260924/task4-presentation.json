@@ -1,0 +1,83 @@
+{
+  "schema": "eq.nerdy-demo.task.v1",
+  "task": 4,
+  "status": "VERIFIED",
+  "at": "2026-09-25T01:28:40.348Z",
+  "fix": "FIX11.NERDY04",
+  "check": "CHECK11.NERDY04",
+  "changes": [
+    "Explicit demo presentation hides maintainer controls independently of artwork approval.",
+    "Fullscreen in the main toolbar during welcome, play and reading; accessible label preserved at narrow widths.",
+    "Welcome primary and help buttons visible; writing choices fit at sharing sizes and preview text has adequate space.",
+    "Workshop handoff heading names Rina’s thank-you visit."
+  ],
+  "verification": {
+    "build": {
+      "exitCode": 0,
+      "log": ".cache/nerdy-demo-task4-build-r5.log",
+      "inputs": "c66b0f9a08cdc6ce5885ab4be239cee9589aeddc83c3cbf25ee2f38cde79b1d1",
+      "outputs": "b1ce3eb6fbb011549930bdcaa1d910f87b8aaf1668d472b0529c9ad38f5dc01b"
+    },
+    "finalPresentation": {
+      "report": "output/nerdy-demo-task4-presentation-final/results.json",
+      "startTime": "2026-09-25T01:27:15.357Z",
+      "duration": 15827.737000000001,
+      "expected": 3,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "desktopRouteAndWriting": {
+      "report": "output/nerdy-demo-task4-final/results.json",
+      "passed": 2,
+      "scope": "Fresh bridge/planting/bakery/writing/preview at 1422x800, 1366x768, 1920x1080, plus existing compact-reader continuation. These passed before the final below-600px toolbar and accessible-label-only correction."
+    },
+    "resolvedFailure": "The same earlier run failed the new 320px fullscreen accessible-name assertion; the CSS icon entered the name. Explicit aria-label fixes this. Final presentation rerun passes all three cases.",
+    "earlierBuilds": "Initial sandbox evidence-write error resolved using the authorized native Node 24 build. One intermediate build was deliberately interrupted to finish label spacing; no acceptance is attributed to it.",
+    "visibleCheckpoint": {
+      "url": "http://127.0.0.1:4494/garden",
+      "observed": "Clean toolbar in Codex; actual enter/exit fullscreen; final compiled game refreshed."
+    },
+    "audio": {
+      "entries": 6157,
+      "exactBound": 6157,
+      "missing": 0,
+      "providerRequests": 0
+    },
+    "artworkApproval": "pending-review"
+  },
+  "source": [
+    {
+      "file": "src/garden/GardenApp.tsx",
+      "sha256": "2f597f73df00edb61583008f0e2eea87a5fdbbccb34a1da63aee291a367a896b"
+    },
+    {
+      "file": "src/garden/GardenScene.tsx",
+      "sha256": "53cb1ae7c14236bfe2f438a05999a697f9e84379a89384083f407f5020f3c83f"
+    },
+    {
+      "file": "src/garden/FestivalWelcome.tsx",
+      "sha256": "436e14cd0de482bec3340fdba9ed31f5926030c3b10476e9907f7650eb34c77d"
+    },
+    {
+      "file": "src/garden/festivalWelcome.css",
+      "sha256": "d0e54c8e07e7fbcb01c7cf44078a17598b0e113bf19815facdaabfcb97bbad2b"
+    },
+    {
+      "file": "src/garden/garden.css",
+      "sha256": "2da60c2fede965312e2e2830643dbd97fb2fcc5ec0a6150c570258b1886b1f55"
+    },
+    {
+      "file": "src/garden/assets/profile.ts",
+      "sha256": "61a50e95c05ee0e29871ef16a53fcb74f6ff2459e1a877e37087664fa2d26b4b"
+    },
+    {
+      "file": "vite.config.ts",
+      "sha256": "6a0bbed9f4ae2b0aae786f4b13e0a395ba9500401a34ce1916c807dfd88658d8"
+    },
+    {
+      "file": "scripts/demo-profile.mjs",
+      "sha256": "2813746a1db9e0df5f0b6a1b45fc94f96ef5b452ae01cc50d1ad9be482c0e3c5"
+    }
+  ]
+}

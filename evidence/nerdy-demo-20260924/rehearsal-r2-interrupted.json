@@ -1,0 +1,23 @@
+{
+  "at": "2026-09-25T07:49:29.7510250Z",
+  "status": "FAILED_AND_CAPTURE_TEARDOWN_INTERRUPTED",
+  "scope": "Provider-free replay of the already verified live response; no additional provider request.",
+  "cause": "The test used APIRequestContext to check the real disabled service instead of the synthetic browser capability used by replay. The capability assertion failed before any feedback request. Manual screencast teardown then stalled.",
+  "correction": "Keep the live-service assertion only for live verification; replay verifies its intercepted response against the recorded draft and source IDs. Always close manual capture in afterEach. Wait for the reader to close before native narration, and for the page handoff acknowledgment before walking.",
+  "errorContext": "output/nerdy-demo-rehearsal-r2/raw/nerdy-demo-rehearsal-Nerdy-fdd9e--ending-and-complete-finale-chromium/error-context.md",
+  "errorSha256": "ad54e344c139bfec3206d4c38f77d5bb43e106ca96b218dcebc2a94db55e25fd",
+  "stoppedOwnedRoot": 84188,
+  "stoppedOwnedProcessIds": [
+    84188,
+    74612,
+    61732,
+    86548,
+    32112,
+    87156,
+    82628,
+    65512,
+    87832,
+    70832
+  ],
+  "originalLiveResultPreserved": "live-feedback.json"
+}

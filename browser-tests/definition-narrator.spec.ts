@@ -3,18 +3,18 @@ import {readFile} from 'node:fs/promises';
 async function openMeaning(page:Page){
  await page.goto('/garden');await page.getByRole('button',{name:'Begin Pip’s adventure',exact:true}).click();
  const token=page.locator('.garden-reader .g-word').filter({hasText:/^lantern$/i}).first();
- await token.click();await expect(page.getByRole('button',{name:'Hear the meaning',exact:true})).toBeVisible();return token;
+ await token.click();await expect(page.getByRole('button',{name:'Listen to the meaning',exact:true})).toBeVisible();return token;
 }
 test('Definition narrator: Escape cancels a pending local catalogue load and restores its word',async({page})=>{
  let release:(()=>void)|undefined,requests=0;
  await page.route('**/audio/cast/manifest.json',async route=>{requests++;await new Promise<void>(resolve=>{release=resolve;});await route.fulfill({status:503,body:'Unavailable'}).catch(()=>{});});
- const word=await openMeaning(page);await page.getByRole('button',{name:'Hear the meaning',exact:true}).click();await expect(page.getByRole('button',{name:'Cancel reading',exact:true})).toBeVisible();
+ const word=await openMeaning(page);await page.getByRole('button',{name:'Listen to the meaning',exact:true}).click();await expect(page.getByRole('button',{name:'Stop listening',exact:true})).toBeVisible();
  await page.keyboard.press('Escape');release?.();await expect(page.locator('.garden-word-card')).toHaveCount(0);await expect(word).toBeFocused();expect(requests).toBe(1);
 });
 test('Definition narrator: unavailable local audio preserves the meaning without device speech',async({page})=>{
  await page.addInitScript(()=>{Object.defineProperty(window,'speechSynthesis',{configurable:true,value:{cancel(){},speak(){document.documentElement.dataset['unexpectedDefinitionSpeech']='true';}}});});
  await page.route('**/audio/cast/manifest.json',route=>route.fulfill({status:503,body:'Unavailable'}));
- await openMeaning(page);const text=await page.locator('.garden-word-card>p').first().innerText();await page.getByRole('button',{name:'Hear the meaning',exact:true}).click();
+ await openMeaning(page);const text=await page.locator('.garden-word-card>p').first().innerText();await page.getByRole('button',{name:'Listen to the meaning',exact:true}).click();
  await expect(page.locator('.g-definition-narration [role=status]')).toHaveText('Voice library unavailable. Try again, or keep reading.');await expect(page.locator('.garden-word-card>p').first()).toHaveText(text);await expect(page.locator('html')).not.toHaveAttribute('data-unexpected-definition-speech','true');
 });
 for(const dpr of [1,2])test.describe('Native saved cast DPR '+dpr,()=>{
@@ -37,7 +37,7 @@ for(const dpr of [1,2])test.describe('Native saved cast DPR '+dpr,()=>{
  test('Meaning button plays packaged selected narrator and Stop releases its media owner',async({page})=>{
   await page.addInitScript(()=>{const NativeAudio=window.Audio;(window as any).__nativeAudio=[];window.Audio=class extends NativeAudio{constructor(){super();(window as any).__nativeAudio.push(this);}};});
   let providerRequests=0;await page.route('**/api/garden/*audio',route=>{providerRequests++;return route.abort();});
-  await openMeaning(page);await page.getByRole('button',{name:'Hear the meaning',exact:true}).click();await expect(page.getByRole('button',{name:'Stop listening',exact:true})).toBeVisible();
+  await openMeaning(page);await page.getByRole('button',{name:'Listen to the meaning',exact:true}).click();await expect(page.getByRole('button',{name:'Stop listening',exact:true})).toBeVisible();
   await expect.poll(()=>page.evaluate(()=>(window as any).__nativeAudio.some((audio:HTMLAudioElement)=>!audio.paused&&audio.currentTime>0))).toBe(true);
   await page.getByRole('button',{name:'Stop listening',exact:true}).click();await expect.poll(()=>page.evaluate(()=>(window as any).__nativeAudio.every((audio:HTMLAudioElement)=>audio.paused&&!audio.getAttribute('src')))).toBe(true);expect(providerRequests).toBe(0);
  });

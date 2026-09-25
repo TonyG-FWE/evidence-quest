@@ -1,0 +1,42 @@
+{
+  "id": "c3f787a9f765e2b5e83f3d68a0d07cc6a38b3a378f8e92defaa09169380a9251",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 8288,
+      "sha256": "7d49b577a4c0607233d98013737db334a1e0d0240effbd0bb2bf06384cfdcf43"
+    },
+    {
+      "bytes": 1025,
+      "sha256": "e2b51a9d0255dd8156c0ef109f45b381f0de3b21155cccf03069eb8aecdab7a9"
+    },
+    {
+      "bytes": 1553,
+      "sha256": "f9fee9b2282b8dac12deadacf232e53fc426d4a42a1e445de6b9667260fcf5af"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "roof.",
+  "textSha256": "fbdad0cdb224c8fb937334c1f1d096e339d9aeae385067ab0b38e51ad6a52da1",
+  "sha256": "1c7b41c96e0715ad276124042af6667ed144fe48f0449b685003d439eb1e2125",
+  "bytes": 10866,
+  "alignment": [
+    {
+      "text": "roof",
+      "start": 0.16,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6034467120181406
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

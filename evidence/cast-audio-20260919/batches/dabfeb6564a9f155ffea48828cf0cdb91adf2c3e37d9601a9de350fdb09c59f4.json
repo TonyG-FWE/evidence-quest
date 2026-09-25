@@ -1,0 +1,42 @@
+{
+  "id": "dabfeb6564a9f155ffea48828cf0cdb91adf2c3e37d9601a9de350fdb09c59f4",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 10785,
+      "sha256": "a660b36ae6b5c1f90174bc6ce94809085b752bcff04108407c2eacc324b7843a"
+    },
+    {
+      "bytes": 828,
+      "sha256": "c73940eff23b5163c2e9036bf391f9876905b016e536830c278ddd51b226b5a3"
+    },
+    {
+      "bytes": 1342,
+      "sha256": "2dae63506b22424780799307421b002219d946bf8e2d61bfa35000a1bcaf5a95"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "flour.",
+  "textSha256": "870a4b94692f43aedd13ebb4522b833180e38cf139c49ad9cb7eee41a44cece4",
+  "sha256": "cac1830e7b9a8fad0a81ee5347308a13c8ad622a318a261810dea86f7d03c9c5",
+  "bytes": 12955,
+  "alignment": [
+    {
+      "text": "flour",
+      "start": 0.16,
+      "end": 0.72
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.7516780045351474
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

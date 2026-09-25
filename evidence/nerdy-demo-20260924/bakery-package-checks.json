@@ -1,0 +1,49 @@
+{
+  "at": "2026-09-25T15:05:18.193Z",
+  "scope": "General-build access retry followed by sealed demo build and package checks; earlier failures retained",
+  "providersDisabled": true,
+  "commands": [
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "durationMs": 66617,
+      "log": "output/bakery-cursor-20260925/delivery-checks/build.log",
+      "sha256": "cd3dc1a39b18d8b27f2ccb54ab032d3dbc95a29257ab3ca18599c3fe8b39d16a"
+    },
+    {
+      "command": "npm run build:demo",
+      "exitCode": 0,
+      "durationMs": 112891,
+      "log": "output/bakery-cursor-20260925/delivery-checks/build-demo.log",
+      "sha256": "2e92d344c28a310b2d671764141c89be34f46d99898c8f77b50f48f7e29f8816"
+    },
+    {
+      "command": "npm run verify:demo-build",
+      "exitCode": 0,
+      "durationMs": 8088,
+      "log": "output/bakery-cursor-20260925/delivery-checks/verify-demo-build.log",
+      "sha256": "3ea4db28d6a824eef4bad0597d2a33b810c9896e82386148ed323af281a5dfac"
+    },
+    {
+      "command": "npm run verify:demo-assets",
+      "exitCode": 0,
+      "durationMs": 1218,
+      "log": "output/bakery-cursor-20260925/delivery-checks/verify-demo-assets.log",
+      "sha256": "42f18cab6e33a36fdce976eaf2576f2c8e7b4e9d191c880b93caddefccc2d8bf"
+    },
+    {
+      "command": "npm run verify:demo-originals",
+      "exitCode": 0,
+      "durationMs": 3035,
+      "log": "output/bakery-cursor-20260925/delivery-checks/verify-demo-originals.log",
+      "sha256": "1c24abe0cc4f736e6f76bd5ad7bafbb39a26f5d3751265f0a33b7b919887397b"
+    }
+  ],
+  "complete": true,
+  "candidate": {
+    "inputSha256": "11d95109a8553db747568400d91d1a9f6629d80e0ef00b69dcba48621ec0562f",
+    "outputSha256": "405958761d185b579144cd04905c1f2024f16d57a1b3fc4d296a125f431c542f",
+    "inputs": 15464,
+    "outputs": 7374
+  }
+}

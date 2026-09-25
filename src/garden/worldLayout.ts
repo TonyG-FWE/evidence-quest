@@ -70,7 +70,9 @@ export const REVIEW_BAKERY_REPAIR={
 } as const;
 export const BAKERY_REPAIR:{gap:{x:number;y:number;z:number};beside:{x:number;y:number;z:number};tileScale:number;rotation:readonly[number,number,number];openingY:number;dropHalf:{x:number;z:number};ladder:typeof REVIEW_BAKERY_REPAIR.ladder;ladderFoot:typeof REVIEW_BAKERY_REPAIR.ladderFoot;ladderTop:typeof REVIEW_BAKERY_REPAIR.ladderTop;solTop:typeof REVIEW_BAKERY_REPAIR.solTop}=localReview?REVIEW_BAKERY_REPAIR:{...REVIEW_BAKERY_REPAIR,gap:{x:18.45,y:1.92,z:-.70},beside:{x:19.16,y:1.92,z:-.70},tileScale:1,rotation:[0,0,0],openingY:1.92,dropHalf:{x:.27,z:.27}};
 export function roofDropTarget(point:WorldPoint):'gap'|'beside'|null{
- for(const name of ['gap','beside'] as const){const target=BAKERY_REPAIR[name];if(Math.abs(point.x-target.x)<=BAKERY_REPAIR.dropHalf.x&&Math.abs(point.z-target.z)<=BAKERY_REPAIR.dropHalf.z)return name;}
+ // Adjacent rows on the supplied sloped roof are recoverable misplaced drops.
+ // Only the unchanged, tighter opening area can seal the leak.
+ for(const name of ['gap','beside'] as const){const target=BAKERY_REPAIR[name],depth=localReview&&name==='beside'?.9:BAKERY_REPAIR.dropHalf.z;if(Math.abs(point.x-target.x)<=BAKERY_REPAIR.dropHalf.x&&Math.abs(point.z-target.z)<=depth)return name;}
  return null;
 }
 const priorBuildings=[
@@ -109,6 +111,18 @@ export const BAKERY_WORK=localReview?{
  threatenedFlour:bakerySourceContact(18.85,1.115,-1.13),
  mixingActor:{x:19.5,z:1.3},preparationActor:{x:19.5,z:1.3},ovenActor:{x:19.5,z:1.3},toolkit:{x:18.25,y:.26,z:1},tileApproach:anchors.bakery.shelf,
 };
+/** Child standing places are on the clear side of each working surface, never
+ * at its centre or inside the adult's body. Rendering and input share them. */
+export const BAKERY_APPROACHES={
+ flour:localReview?{x:21,z:4.65}:anchors.bakery.approach,
+ mixing:localReview?{x:18.55,z:4.25}:anchors.bakery.approach,
+ preparation:localReview?{x:19.65,z:4.25}:anchors.bakery.approach,
+ oven:localReview?{x:22,z:1.65}:anchors.bakery.approach,
+};
+/** The preparation canopy covers the table, flour and the child's working side.
+ * Its four posts are real navigation obstacles, outside all work approaches. */
+export const BAKERY_SHELTER={left:17.45,right:21.95,back:1.60,front:5.05,backY:3.0,frontY:2.60,
+ posts:[{x:17.60,z:1.75},{x:21.65,z:1.75},{x:17.60,z:4.90},{x:21.80,z:4.90}]} as const;
 /** The oven's authored mouth faces +X before this shared outer yaw. */
 export function bakeryOvenPoint(forward:number,lateral:number,y:number){const o=BAKERY_WORK.oven,c=Math.cos(o.yaw),s=Math.sin(o.yaw);return {x:o.x+forward*c+lateral*s,y,z:o.z-forward*s+lateral*c};}
 const rect=(center:WorldPoint,halfX:number,halfZ:number):Polygon=>polygon([[center.x-halfX,center.z-halfZ],[center.x+halfX,center.z-halfZ],[center.x+halfX,center.z+halfZ],[center.x-halfX,center.z+halfZ]]);
@@ -144,6 +158,7 @@ export const BAKERY_OBSTACLES=localReview?[
  {id:'bakery-oven',polygon:rect(BAKERY_WORK.oven,.76,.70)},
  {id:'bakery-preparation',polygon:rect(BAKERY_WORK.table,1.34,.73)},
  {id:'bakery-tile-shelf',polygon:rect(anchors.bakery.shelf,.57,.39)},
+ ...BAKERY_SHELTER.posts.map((point,i)=>({id:`bakery-canopy-post-${i}`,polygon:rect(point,.20,.20)})),
 ]:[];
 
 /** Straight through both construction sites; bends belong to the stretches beyond them. */

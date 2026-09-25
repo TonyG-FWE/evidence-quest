@@ -1,0 +1,81 @@
+{
+  "at": "2026-09-25T15:08:24.948Z",
+  "scope": "The broad required run used an interim compiled client, not the final sealed successor. Its original failures remain authoritative for that run.",
+  "report": "bakery-required-browser.json",
+  "stats": {
+    "startTime": "2026-09-25T12:43:27.730Z",
+    "duration": 8491158.666,
+    "expected": 210,
+    "skipped": 1,
+    "unexpected": 31,
+    "flaky": 0
+  },
+  "compiledBinding": {
+    "at": "2026-09-25T12:49:49.447Z",
+    "scope": "Runtime bundles and exact clip entries served during the required browser run after the general build was denied config access. Compare with the sealed successor; this is not a sealed receipt.",
+    "bundles": [
+      {
+        "file": "assets/App-CvfCOyJg.css",
+        "sha256": "0e968f90c15700b38c0a0bbc3379546041046e29c2db3ba1c048a009b4be488c"
+      },
+      {
+        "file": "assets/App-Cw4rR1oG.js",
+        "sha256": "ba1242e17ed5152b35b71b3e88caa63b8f8ef4b0000ed3cc28fe62e90e3d12d0"
+      },
+      {
+        "file": "assets/GardenApp-BRa2TGan.js",
+        "sha256": "a569a0debe8ec7856e4a6fb103bf239fdd90523df80534ec9f7e201344a40a71"
+      },
+      {
+        "file": "assets/GardenApp-DxWvLHZR.css",
+        "sha256": "b5588f5ee21739db1b09c181dbd29a1c068d1de3dbf6afe1b140fd5ee80d4f69"
+      },
+      {
+        "file": "assets/basis_transcoder-o4Hde_L7.js",
+        "sha256": "8478b5b6d6b74e7d3082b89f6417321d8d1dc0307f2b30d4484bb11b441696a1"
+      },
+      {
+        "file": "assets/index-D7U2vX1x.css",
+        "sha256": "e57e791c5fdcecf3f5546f1bf865fe6b4277f670cc02656b51feb159a1f5601d"
+      },
+      {
+        "file": "assets/index-HZX258A-.js",
+        "sha256": "bdc720c9c560a05a841c053fa8b2af8c1549157e1c0ebca6270de80ce4b715b6"
+      },
+      {
+        "file": "assets/serialized-AKKBhD_x.js",
+        "sha256": "0cc190023b6a43708287682ef43eef52866a533144bca37c153373ee915ab6a4"
+      }
+    ],
+    "audioManifestSha256": "d9a0573ef0beead0560bb144b6242604d6605228f74b2f35769685661f3371b3",
+    "audioEntries": 6009,
+    "audioEntriesSha256": "d28e128f833f01c1140a64ba735b6353d866a160e9b9ed358e92217da1af97ff",
+    "sourceEntriesSha256": "d28e128f833f01c1140a64ba735b6353d866a160e9b9ed358e92217da1af97ff"
+  },
+  "sourceCatalogueRefresh": "bakery-audio-refresh-delta.json",
+  "catalogueLimit": "Later synthetic speech fixtures read the refreshed source catalogue. All 6009 common entries are byte-identical; 28 existing approved control recordings were restored. Final native checks use the rebuilt 6037-entry catalogue.",
+  "laterRuntimeCorrections": [
+    "Keep Sol and the flour framed after roof placement and during the beginning of his descent.",
+    "Include visible object controls in explicit Read screen, while conversation selection still excludes interface instructions.",
+    "Use the complete visible recipient outline for approach and delivery.",
+    "Hide covered rain columns during the transparent work-area cutaway so they do not appear to fall onto the dough."
+  ],
+  "laterTestCorrections": [
+    "Pointer/touch fixtures cross the existing five-pixel drag threshold before asserting a gesture.",
+    "Automatic roof direction does not require a removed primary action button.",
+    "Roof/dough fixture uses visible cues rather than calculated game-state coordinates.",
+    "At the narrow 1098-pixel layout, preview width must exceed 60 percent of viewport width; larger layouts retain the 700-pixel minimum. Visual inspection is required.",
+    "Read both visible pages of the bird conversation and preserve the complete expected speaker order. The final native rehearsal exercises this shared assertion; all nine full chapter variants are not claimed as passing."
+  ],
+  "retainedNonBakeryFailures": [
+    "Two retired-asset fixtures hold a required startup asset and attempt Start playing while it remains disabled.",
+    "Two studio cases require the maintainer Inspect studio control hidden by demo presentation.",
+    "Cold-start, compressed-model, decoded-memory and DPR2 transfer budgets remain open. No thresholds or source artwork quality were changed.",
+    "The draft-word case fails its saved reading-position assertion; saved-game work remains excluded.",
+    "An older encounter test rejects the local read-only /api/garden/config requests.",
+    "Two legacy chunk-recovery cases expect a Continue button not present in their current state."
+  ],
+  "deliveryRecheck": "PASS on the sealed successor; the original interim missing-gzip failure is retained. See bakery-final-browser-r1.json.",
+  "teardown": "bakery-required-teardown.json",
+  "finalAcceptance": "PASS on the sealed successor: 247 contracts, 37 focused browser cases, complete native fresh cursor rehearsal and finale, timed core and reviewed fallback. See bakery-cursor-correction5.json. This does not change the original 210/31/1 result or claim all full chapter variants were rerun."
+}

@@ -1,0 +1,42 @@
+{
+  "id": "974175b64e324a6adbaa9bf2d3264c8dca1845e42b61440bc96edfb0648092f2",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 8283,
+      "sha256": "0b2a7e4c7679f69c0bbe84ca50fde62b182bac02a7d232032ab7a82c23e06726"
+    },
+    {
+      "bytes": 842,
+      "sha256": "639f34fd0763dceb35e984e8dcb2fe2bcb4abf3f093ca7f2f45b618232c3f365"
+    },
+    {
+      "bytes": 1741,
+      "sha256": "47ecfde069b6bbd2821deb80247a7b6c8792134569cddefe4a8b8ed496ea49d9"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "travel.",
+  "textSha256": "7054c3f75fe3c785b8df220a3640f7b4924861073cb2873d3101b424aed8bfc7",
+  "sha256": "e0028e3497fe900f012f002c0aab60bcf0e6c938effc907dc16cf954d44d528e",
+  "bytes": 10866,
+  "alignment": [
+    {
+      "text": "travel",
+      "start": 0.16,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6034467120181406
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

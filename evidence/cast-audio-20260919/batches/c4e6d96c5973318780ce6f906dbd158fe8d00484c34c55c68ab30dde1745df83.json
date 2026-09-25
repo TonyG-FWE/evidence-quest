@@ -1,0 +1,42 @@
+{
+  "id": "c4e6d96c5973318780ce6f906dbd158fe8d00484c34c55c68ab30dde1745df83",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 8274,
+      "sha256": "1f5c70abb1ffd2ffd952f3d357f33da52909d097962eeb4000124ab23940ed04"
+    },
+    {
+      "bytes": 897,
+      "sha256": "54703f7e79bf98f4a3cf82334c1c853e7e0dec6180adea49a644bf7189c1943d"
+    },
+    {
+      "bytes": 1695,
+      "sha256": "4225f795d9bcacfe2a3886861726ad7e11e68ae342c8686f1fb87fc28037d469"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "eaten.",
+  "textSha256": "7cb07754961c160e5e5a3e8cc8999bb471bb709b4cecdf5d888db5c74f5a8444",
+  "sha256": "11ba1961d7d32d7d57bea1fca28b5c6d41036b1c55700386094f7b84f7eda009",
+  "bytes": 10866,
+  "alignment": [
+    {
+      "text": "eaten",
+      "start": 0.16,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6034467120181406
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

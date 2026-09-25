@@ -1,0 +1,75 @@
+{
+  "schema": "eq.nerdy-demo.required.v1",
+  "at": "2026-09-25T01:39:25.42Z",
+  "node": "v24.21.0",
+  "profile": {
+    "art": "review",
+    "personalGrass": true,
+    "demoPresentation": true,
+    "coach": "authored",
+    "providerFlags": false
+  },
+  "lockfileBefore": "77489290e92294ed9c69416248cb6f7ffe436360a3f6ba4c9ac31fe593970f4e",
+  "commands": [
+    {
+      "command": "npm ci",
+      "exitCode": 0,
+      "durationMs": 23395,
+      "log": ".cache/nerdy-required-1.log",
+      "finishedAt": "2026-09-25T01:39:48.818Z"
+    },
+    {
+      "command": "npm run validate:content",
+      "exitCode": 0,
+      "durationMs": 651,
+      "log": ".cache/nerdy-required-2.log",
+      "finishedAt": "2026-09-25T01:39:49.47Z"
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0,
+      "durationMs": 20911,
+      "log": ".cache/nerdy-required-3.log",
+      "finishedAt": "2026-09-25T01:40:10.382Z"
+    },
+    {
+      "command": "npm run build:server",
+      "exitCode": 0,
+      "durationMs": 2469,
+      "log": ".cache/nerdy-required-4.log",
+      "finishedAt": "2026-09-25T01:40:12.851Z"
+    },
+    {
+      "command": "npm run test:contracts",
+      "exitCode": 0,
+      "durationMs": 13537,
+      "log": ".cache/nerdy-required-5.log",
+      "finishedAt": "2026-09-25T01:40:26.389Z"
+    },
+    {
+      "command": "npm run eval:coach -- --mode authored",
+      "exitCode": 0,
+      "durationMs": 3781,
+      "log": ".cache/nerdy-required-6.log",
+      "finishedAt": "2026-09-25T01:40:30.17Z"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "durationMs": 79722,
+      "log": ".cache/nerdy-required-7.log",
+      "finishedAt": "2026-09-25T01:41:49.893Z"
+    }
+  ],
+  "status": "INTERRUPTED_FOR_AUDIO_REVIEW",
+  "interruption": {
+    "observedFailures": 0,
+    "collected": 210,
+    "reason": "Stopped for reported word clipping, helper instruction leakage, speaker pacing and duplicate audio controls.",
+    "observedPasses": 27,
+    "log": ".cache/nerdy-required-8.log",
+    "complete": false,
+    "command": "npm run test:browser"
+  },
+  "lockfileAfter": "77489290e92294ed9c69416248cb6f7ffe436360a3f6ba4c9ac31fe593970f4e"
+}

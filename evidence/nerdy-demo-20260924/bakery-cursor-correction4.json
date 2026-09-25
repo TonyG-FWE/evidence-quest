@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-25",
+  "tasks": ["TASK11.ART02–07", "TASK11.20", "TASK11.21"],
+  "scope": "Fourth sequential correction checkpoint; final fresh acceptance remains pending",
+  "changes": [
+    "Bakery narrative paragraphs join the existing conversation Listen/Practise controls in displayed order",
+    "Expanded optional notes use clearly attributed narrator passages already recorded; Rina dialogue retains her approved voice",
+    "Story playback excludes cursor instructions and interface tips",
+    "Routine loading card and announcement removed; real graphics-failure recovery retained",
+    "Rina can be approached and her conversation reopened at her actual position after the handoff"
+  ],
+  "checks": {
+    "readingMatrix": "14 bakery states passed with synthetic media completion and real application routing, word/sentence help, optional notes, practice, speaker order and cancellation",
+    "nativeRecording": "Existing bakery narration decoded, completed and canceled normally",
+    "routineLoading": "Delayed native scene load shows no routine loading card",
+    "browserTotal": "16 passed in 2.5 minutes",
+    "graphicsRecovery": "2 passed in 20.9 seconds; native context loss and synthetic HTTP503 retain Restore view",
+    "handlerAndWeather": "10 passed, including reopening Rina at the workshop after the actual command-driven handoff",
+    "compiledClient": "PASS",
+    "sourceAudio": "6009 exact existing bindings; 5455 independent PCM files; zero missing and zero provider requests"
+  },
+  "codexCheckpoint": "Compiled thank-you visit opened by clicking Rina in the world; visible narrator paragraph and one conversation Listen/Practise pair; native Listen started with no loading card",
+  "retainedFailures": "First reading run: 11 passed, 5 test failures. Three omitted Back to Pip in roof mode; one raced a 20 ms synthetic clip; one read native duration after source cleanup. Corrected test sequencing and capture-phase observation; original results retained in output/bakery-cursor-20260925/correction4-browser-r1.*",
+  "artifacts": "output/bakery-cursor-20260925/correction4*",
+  "limits": ["Prepared reading fixtures are not fresh-player acceptance", "Automated routing/native completion is not universal human pronunciation acceptance", "Accepted short-word and resource-budget limitations remain open", "Final compiled cursor rehearsal and fallback pending"],
+  "providers": "Disabled; no additional requests; TASK11.19 remains HALTED 1/75"
+}

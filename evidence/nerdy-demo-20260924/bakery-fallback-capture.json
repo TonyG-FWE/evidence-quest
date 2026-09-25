@@ -1,0 +1,110 @@
+{
+  "at": "2026-09-25T17:32:38.935Z",
+  "scope": "Native recorded gameplay audio and screen capture from this rehearsal. No microphone recording or synthetic audio.",
+  "candidate": {
+    "inputSha256": "11d95109a8553db747568400d91d1a9f6629d80e0ef00b69dcba48621ec0562f",
+    "outputSha256": "405958761d185b579144cd04905c1f2024f16d57a1b3fc4d296a125f431c542f"
+  },
+  "cues": [
+    {
+      "name": "fresh-opening",
+      "ms": 18
+    },
+    {
+      "name": "planting",
+      "ms": 26125
+    },
+    {
+      "name": "core-bakery-begins",
+      "ms": 40634
+    },
+    {
+      "name": "roof",
+      "ms": 235491
+    },
+    {
+      "name": "dough",
+      "ms": 310968
+    },
+    {
+      "name": "handoff",
+      "ms": 425780
+    },
+    {
+      "name": "writing",
+      "ms": 490860
+    },
+    {
+      "name": "source-viewed: His draft",
+      "ms": 495452
+    },
+    {
+      "name": "source-viewed: What happened next",
+      "ms": 496699
+    },
+    {
+      "name": "live-feedback",
+      "ms": 640683
+    },
+    {
+      "name": "ending-preview",
+      "ms": 672229
+    },
+    {
+      "name": "core-ending-confirmed",
+      "ms": 760982
+    }
+  ],
+  "coreDurationMs": 720348,
+  "liveFeedbackRequests": 0,
+  "recordedFeedbackReplays": 1,
+  "originalRequestId": "80f68546-dc86-4a00-84c6-9c3d7965a3b2",
+  "feedbackMode": "explicitly-labeled-replay-of-verified-live-response",
+  "video": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\nerdy-demo-rehearsal-bakery-r1\\raw\\nerdy-demo-rehearsal-Nerdy-fdd9e--ending-and-complete-finale-chromium\\demo-core-video.webm",
+  "videoStartedAt": 1790356829818,
+  "audioStartedAt": 1790356829932,
+  "audio": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\nerdy-demo-rehearsal-bakery-r1\\raw\\nerdy-demo-rehearsal-Nerdy-fdd9e--ending-and-complete-finale-chromium\\demo-core-audio.webm",
+  "startedAt": 1790356829932,
+  "stoppedAt": 1790357552170,
+  "peak": 0.790124237537384,
+  "plays": 10,
+  "pacedCore": true,
+  "presenterPauses": [
+    {
+      "name": "premise, reading and oral practice",
+      "targetSeconds": 180,
+      "durationMs": 106359
+    },
+    {
+      "name": "roof consequence",
+      "targetSeconds": 240,
+      "durationMs": 45138
+    },
+    {
+      "name": "preparing the promised bread",
+      "targetSeconds": 330,
+      "durationMs": 59662
+    },
+    {
+      "name": "the thank-you visit",
+      "targetSeconds": 450,
+      "durationMs": 64851
+    },
+    {
+      "name": "writing from the witnessed events",
+      "targetSeconds": 600,
+      "durationMs": 143883
+    },
+    {
+      "name": "review the recorded feedback",
+      "targetSeconds": 630,
+      "durationMs": 23231
+    },
+    {
+      "name": "preview and confirm the ending",
+      "targetSeconds": 720,
+      "durationMs": 81810
+    }
+  ],
+  "pacingScope": "Pauses for presenter explanation; no presenter voice was recorded."
+}

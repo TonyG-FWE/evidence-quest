@@ -15,6 +15,7 @@ async function fixture(t){
  for(const folder of ['src','server','scripts','contracts','content','docs/design','public/art','public/temp','public/audio/cast'])await fs.mkdir(path.join(root,folder),{recursive:true});
  for(const file of ['package.json','package-lock.json','index.html','vite.config.ts','tsconfig.base.json','tsconfig.client.json','tsconfig.server.json','tsconfig.checks.json','.gitattributes','docs/game-review/D022-opening.md','docs/game-review/NARRATIVE-REVISION-20260916.md'])await put(file);
  await put('src/garden/content.ts',"export const source={authority:['STAGED-BRIDGE-NOTE-20260916']};\n");await put('src/garden/chapterContent.ts');await put('docs/game-review/STAGED-BRIDGE-NOTE-20260916.md');
+ await put('public/garden-recorder.js');
  await put('assets/demo/manifest.json',JSON.stringify({files:[{file:'assets/demo/decoder.js',targets:['public/garden-assets/basis/texture-worker.js']}]}));await put('assets/demo/decoder.js');await put('public/audio/cast/manifest.json','{"entries":[]}');
  for(const ledger of OPERATIONAL_LEDGERS)await put(ledger.file,'{"event":"fixture-reservation"}\n');
  await put(LEDGER_BASELINE,JSON.stringify({schema:'eq.operational-ledger-baseline.v1',ledgers:await Promise.all(OPERATIONAL_LEDGERS.map(item=>readLedgerPrefix(root,item)))}));
@@ -33,6 +34,17 @@ test('receipt rejects changed source, changed compiled bytes and stale extra out
 test('unexpected compressed receipt is also a changed output',async t=>{
  const {root,put}=await fixture(t),inputs=await captureDemoInputs(root);await writeDemoReceipt({root,inputs,hydrated:{},audio:{}});
  await put('dist/personal-review-client/demo-package.json.gz');await assert.rejects(verifyDemoReceipt(root),/Compiled demo changed/);
+});
+
+test('the recording worklet is delivered and bound as a required input',async t=>{
+ const {root,put}=await fixture(t);
+ assert.ok((await demoPublicFiles(root)).some(entry=>entry.target==='garden-recorder.js'&&entry.file==='public/garden-recorder.js'));
+ const inputs=await captureDemoInputs(root);
+ await writeDemoReceipt({root,inputs,hydrated:{},audio:{}});
+ await put('public/garden-recorder.js','changed processor');
+ await assert.rejects(verifyDemoReceipt(root),/Demo source changed.*garden-recorder/);
+ await fs.unlink(path.join(root,'public/garden-recorder.js'));
+ await assert.rejects(captureDemoInputs(root),/ENOENT/);
 });
 test('changed build inputs prevent issuance of a receipt',async t=>{
  const {root,put}=await fixture(t),inputs=await captureDemoInputs(root);await put('scripts/new-script.mjs');

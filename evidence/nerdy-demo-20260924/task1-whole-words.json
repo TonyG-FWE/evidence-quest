@@ -1,0 +1,136 @@
+{
+  "schema": "eq.nerdy-demo-task1-whole-words.v1",
+  "at": "2026-09-25T04:37:20.477Z",
+  "taskIds": [
+    "TASK11.ART02-07",
+    "TASK11.20",
+    "TASK11.21"
+  ],
+  "fix": "FIX11.NERDY01",
+  "check": "CHECK11.NERDY01",
+  "status": "VERIFIED_FOR_DEMO_WITH_EXPLICIT_PRONUNCIATION_LIMITATIONS",
+  "changes": [
+    "Removed SVG/CSS/possessive-fragment contamination from authored extraction.",
+    "Replaced 2333 vocabulary/case entries with 1823 full single-word recordings in the approved narrator.",
+    "Whole-word playback uses the entire native PCM file, never alignment cuts.",
+    "Runtime and delivery guards reject sentence-derived pronunciation.",
+    "Retained consistent Listen/Practise controls, narrative-only screen reading, speaker pauses, cancellation and microphone repairs."
+  ],
+  "recordings": {
+    "schema": "eq.word-recordings-completion.v1",
+    "at": "2026-09-25T04:26:22.022Z",
+    "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d",
+    "words": 1823,
+    "entries": 2333,
+    "counts": {
+      "reserved": 1823,
+      "completed": 1823,
+      "failed": 0
+    },
+    "model": "s2.1-pro-free",
+    "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+    "expectedChargeUSD": 0,
+    "automaticRetries": 0,
+    "decoded": 1823,
+    "accounting": [
+      {
+        "file": "evidence/voice-ai-demo-20260918/openai-attempts.jsonl",
+        "sha256": "0c6ed03e64b11f6b5138956d85ee753dfdbc67cafb0aeb619bfcf90e7472867b",
+        "bytes": 1228,
+        "records": 6
+      },
+      {
+        "file": "evidence/demo-ai-20260919/openai-attempts.jsonl",
+        "sha256": "bf505475a6c01d2ea9993afeb85d3a748ae4074edafc74fae15212f915088516",
+        "bytes": 7469,
+        "records": 28
+      },
+      {
+        "file": "evidence/cast-audio-20260919/attempts.jsonl",
+        "sha256": "f38f33bfcb78c35d3c9cc43438d81020404a6f51f8f31514eb871638acca9ddd",
+        "bytes": 1400530,
+        "records": 3985
+      },
+      {
+        "file": "evidence/er13/live-evaluation/attempts.jsonl",
+        "sha256": "17a4a6a57b5e1d54192320717e09f2c631a3eb052d1c1e62bc74c866bc877653",
+        "bytes": 549,
+        "records": 3
+      }
+    ],
+    "scope": "Completed explicitly authorized full-word recording job and native decode, not universal pronunciation acceptance. Have remains unclear and short-word endings abrupt in the reviewed pilot; Tony deprioritized these for the demo.",
+    "accountingComparisonToDemoBaseline": [
+      {
+        "file": "evidence/voice-ai-demo-20260918/openai-attempts.jsonl",
+        "beforeSha256": "0c6ed03e64b11f6b5138956d85ee753dfdbc67cafb0aeb619bfcf90e7472867b",
+        "afterSha256": "0c6ed03e64b11f6b5138956d85ee753dfdbc67cafb0aeb619bfcf90e7472867b",
+        "unchanged": true
+      },
+      {
+        "file": "evidence/demo-ai-20260919/openai-attempts.jsonl",
+        "beforeSha256": "bf505475a6c01d2ea9993afeb85d3a748ae4074edafc74fae15212f915088516",
+        "afterSha256": "bf505475a6c01d2ea9993afeb85d3a748ae4074edafc74fae15212f915088516",
+        "unchanged": true
+      },
+      {
+        "file": "evidence/cast-audio-20260919/attempts.jsonl",
+        "beforeSha256": "a575515a391eee49d4da97455f4b81bb6a0f44791408842244713fa2e93e414b",
+        "afterSha256": "f38f33bfcb78c35d3c9cc43438d81020404a6f51f8f31514eb871638acca9ddd",
+        "unchanged": false
+      },
+      {
+        "file": "evidence/er13/live-evaluation/attempts.jsonl",
+        "beforeSha256": "17a4a6a57b5e1d54192320717e09f2c631a3eb052d1c1e62bc74c866bc877653",
+        "afterSha256": "17a4a6a57b5e1d54192320717e09f2c631a3eb052d1c1e62bc74c866bc877653",
+        "unchanged": true
+      }
+    ]
+  },
+  "browser": {
+    "command": "node scripts/test-browser.mjs browser-tests/garden-demo-audio.spec.ts browser-tests/definition-narrator.spec.ts browser-tests/garden-reading-support.spec.ts browser-tests/garden-edition-help.spec.ts browser-tests/garden-whole-reading.spec.ts --project=chromium",
+    "stats": {
+      "startTime": "2026-09-25T04:30:46.644Z",
+      "duration": 317093.07,
+      "expected": 21,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "report": "output/nerdy-whole-word-audio/results.json",
+    "log": ".cache/nerdy-whole-word-audio-browser.log"
+  },
+  "localChecks": {
+    "clientTypes": "PASS; also rerun by compiled build",
+    "focused": 20,
+    "afterBindingCorrection": 7,
+    "scope": "Delivery, exact PCM and catalogue regression checks. Native decoding also checked all 1823 recordings."
+  },
+  "compiled": {
+    "command": "node scripts/demo-profile.mjs build",
+    "status": "PASS",
+    "receiptSha256": "de1c038fd1604400b24544e6096c22ec3ecb296fc0a284590c9e0475d3e2adfd",
+    "inputSha256": "b6562241230a785f818603501b6d6ad11ba47bd504f3be2e9e03382465949163",
+    "inputs": 15494,
+    "outputSha256": "c3c67f98e090517487260f4602b2f950689f347f10ec0d7b98778b811bec4787",
+    "outputs": 7407,
+    "manifestSha256": "15ba149a4f83b01809ddde2a6df8a428541a8e2fb9f2d30e1568b8132144701a",
+    "log": ".cache/nerdy-word-recordings-build.log"
+  },
+  "visibleCheckpoint": {
+    "url": "http://127.0.0.1:4494/garden",
+    "word": "promised",
+    "location": "Bakery; backpack word helper",
+    "result": "New Listen to the word action started and returned idle without a notice; game art and controls visible in Codex."
+  },
+  "human": {
+    "microphone": "Tony confirmed actual recording/replay clearly.",
+    "screenSharing": "Tony confirmed receiving shared paragraph audio.",
+    "wordPilot": "Larger words clear without extra words. Have remains unclear; small words end abruptly. Tony says this is less of an issue for now for the demo."
+  },
+  "limits": [
+    "No claim of universal human pronunciation acceptance. Retain unclear have and abrupt short-word endings.",
+    "Nine provider word timestamps exceeded decoded file length; use whole PCM duration. First integration failure retained in word-timestamp-overruns.json.",
+    "One Sol verification call remains unused; final required suite/rehearsal/fallback/PR still pending.",
+    "TASK11.19 remains HALTED 1/75; broader artwork/performance qualifications remain open."
+  ]
+}

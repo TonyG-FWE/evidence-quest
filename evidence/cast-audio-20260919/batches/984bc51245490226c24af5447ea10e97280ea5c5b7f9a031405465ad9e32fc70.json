@@ -1,0 +1,42 @@
+{
+  "id": "984bc51245490226c24af5447ea10e97280ea5c5b7f9a031405465ad9e32fc70",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 10020,
+      "sha256": "5def58fdd0b5c752d261b1860703577372eac8b7f89c53ff8b5940a04137a70d"
+    },
+    {
+      "bytes": 785,
+      "sha256": "1b057e49eed2460ad0e7d7448094544061ecb10098eec2dd5fb4e1dcabddd62c"
+    },
+    {
+      "bytes": 1314,
+      "sha256": "b58a3209e352e23b4e63dc28734ab27b8d8de6dbd882bfe3e995938ad91c1420"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "backpack.",
+  "textSha256": "5b95b7cb47caf66520695481e6b6b7d833049e71699b920d8bb20d2f6096b735",
+  "sha256": "9b5a205602a5fd0c505eb7a9d8ffd19da99409b484dfb6284222e6a24dc9dff7",
+  "bytes": 12119,
+  "alignment": [
+    {
+      "text": "backpack",
+      "start": 0.16,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.7022675736961451
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

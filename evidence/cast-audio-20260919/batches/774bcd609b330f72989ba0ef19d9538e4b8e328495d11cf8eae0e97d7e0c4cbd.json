@@ -1,0 +1,42 @@
+{
+  "id": "774bcd609b330f72989ba0ef19d9538e4b8e328495d11cf8eae0e97d7e0c4cbd",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11623,
+      "sha256": "5d3475837ebabf589ed0af34c6e1f42f0226f4d5b950d5cf8a1af0d68c0eae5d"
+    },
+    {
+      "bytes": 854,
+      "sha256": "c7878b7d0fe6e2be6c8abb179442cce8917a2418cccd30b4b1f56d3eeca2a9b6"
+    },
+    {
+      "bytes": 1314,
+      "sha256": "9e10e4d83b234b7a0f775986d9d047497cc7f973d5292273ff701c79e1ce372a"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "eyes.",
+  "textSha256": "efce09e4bdda25c76c95c3be52143197be87ff8cfccb0ab8d8212b0c2e29a96b",
+  "sha256": "f7d97e0e2898cad074b93ecd4986c79185d01a9a4a14c90b880dfe18801478f4",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "eyes",
+      "start": 0.08,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}
