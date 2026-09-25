@@ -1,0 +1,42 @@
+{
+  "id": "cbabbac6f366afaa73f6e866d9ed99d95fc3ce88865425817be119a01ab91959",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 10097,
+      "sha256": "e7085685e45e54454f83d0b03839f1f883a0b1902e39eb5028a2e8bcfce1cc37"
+    },
+    {
+      "bytes": 669,
+      "sha256": "455ea46cfafaf7fc158bdcb2b6983caabb2de02a13545f2ed3eef4104a62b0a7"
+    },
+    {
+      "bytes": 1353,
+      "sha256": "cd78258dc80bac47dac7446640851fc673b9877ad3b84c286e2e44eebdb1a428"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "craft.",
+  "textSha256": "ba5245ccdf991a01aa373ea048c95b97d2757a9758e8f79b12bd6c2b68ed799c",
+  "sha256": "59d8fb4d8085fc692498258a009f08926e159769d9726228c672fa35e76ebba3",
+  "bytes": 12119,
+  "alignment": [
+    {
+      "text": "craft",
+      "start": 0.08,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.7022675736961451
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

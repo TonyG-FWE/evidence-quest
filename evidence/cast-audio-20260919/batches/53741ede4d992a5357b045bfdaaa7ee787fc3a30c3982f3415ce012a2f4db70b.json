@@ -1,0 +1,42 @@
+{
+  "id": "53741ede4d992a5357b045bfdaaa7ee787fc3a30c3982f3415ce012a2f4db70b",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11621,
+      "sha256": "45435f68fc21d3e75a2e0ccc40ea5f771d65aa195abc4f2c62a8b5b147db5ed3"
+    },
+    {
+      "bytes": 835,
+      "sha256": "b3792d3a870ca42a073b200fce4302a1fd47367f76b1ec9ed72e08e8403ae990"
+    },
+    {
+      "bytes": 1335,
+      "sha256": "c64e910dc79a6d5fa00b7330d4d8a16550c70da91a00f50181df2118fe706a80"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "girl.",
+  "textSha256": "d9eddb1fa60165c6685eb585d2377e17835026e8c067624e2d9d65da708c67bb",
+  "sha256": "289dcc14e885235e0073e1c161c0bc3855a58519eeb710d95acd6eb5e6926b9f",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "girl",
+      "start": 0.16,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "d3be372756959a5fdf0dfd4d12ec44d5c623c064dfc5e5a27d153dd4cc1e5cde",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 9113,
+      "sha256": "b00bc01ac12b7f0ede6946ed56e463f49fa1143b1fc59c90aa1ac0d64ee204e1"
+    },
+    {
+      "bytes": 1087,
+      "sha256": "5b98b1d5f00b4ebcc22f2774a3d510f4e96482a831e9bcd457d39f99c539a7c3"
+    },
+    {
+      "bytes": 1083,
+      "sha256": "ed666115218f64839462f9c835473963527591bcb0a0c57fdab3a4eb693aa282"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "land.",
+  "textSha256": "b7afebc2ca23c9ae6171b46b485b44b0265c487edee65716b0a8ab1714b47371",
+  "sha256": "58f53404ac7ea13a26626bbf9c0e471f6b05b055ee53bcb6e4d9740e42ec8d89",
+  "bytes": 11283,
+  "alignment": [
+    {
+      "text": "land",
+      "start": 0.16,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6528571428571428
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

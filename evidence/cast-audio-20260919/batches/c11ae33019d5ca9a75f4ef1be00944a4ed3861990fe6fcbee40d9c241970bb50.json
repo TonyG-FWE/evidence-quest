@@ -1,0 +1,42 @@
+{
+  "id": "c11ae33019d5ca9a75f4ef1be00944a4ed3861990fe6fcbee40d9c241970bb50",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 8289,
+      "sha256": "3f28678f7e84348c443f68c3d280d8dc6fa7682724a43dfce4d88923c66efb6d"
+    },
+    {
+      "bytes": 1046,
+      "sha256": "b43507628979ad941611347b88e95accff1ab00e3b4761291635ff663325abd3"
+    },
+    {
+      "bytes": 1531,
+      "sha256": "d9aa43189dae6c287478efbbcc3e412b9e6931a7cfe6a5ac79d435986ec976e5"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "think.",
+  "textSha256": "c2fbe36a164f6eedc5ed9017bdd58a0fd8c774024647fc572791174436cd5574",
+  "sha256": "7edb078c14653d5478e256f459fbc7d23f01a38395bd8be25332fb585fd5afd6",
+  "bytes": 10866,
+  "alignment": [
+    {
+      "text": "think",
+      "start": 0.16,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6034467120181406
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

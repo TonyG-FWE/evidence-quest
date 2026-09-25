@@ -1,0 +1,42 @@
+{
+  "id": "2fa7b0a29f449b7f003639218b3668e33350df8afd68e596db953a023955ab13",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11611,
+      "sha256": "29cd7042661d1ac0906fa08a62d77dcba55dab67f436015c3efd8a22707ad32f"
+    },
+    {
+      "bytes": 849,
+      "sha256": "7294cd0ba219a011cf71bf8737f4a7a9faf73ffcbbb6ee2fefe31f1a7a3f8e43"
+    },
+    {
+      "bytes": 1331,
+      "sha256": "fcca99ff94dcbea55261655943e4af92c288aa847242d4081dd1ffcddfae2851"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "yesterday.",
+  "textSha256": "7400ce91cef80da19cfdfd8182661580cae3f18a92b279cbb2f13665e51e0a53",
+  "sha256": "d85f69a8bfbbb7f4fb393a28bc3f77aec1dc26adfb08aa71cee1319a08a03521",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "yesterday",
+      "start": 0.16,
+      "end": 0.72
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "826b7dd0eded78ff29ebfbbfe21d251266f3a164e26d22365e3c87ccb274ddcf",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 17912,
+      "sha256": "cc97836632fbd361570bb5d7745aac2ff084164178406599e5d6c8e59f78f680"
+    },
+    {
+      "bytes": 824,
+      "sha256": "f4e2e8888f46f9933d4b369bac9645c8b3d48948fd0f028f02b7685c0df8d108"
+    },
+    {
+      "bytes": 1325,
+      "sha256": "6d3d2423416963121fac22c3908cc63025a33775cf9587ed987e5e6a78446355"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "gpu.",
+  "textSha256": "5ded6ca4b01d4de948edc11f1f06c6878826016abc11057d735a54cd7d663138",
+  "sha256": "d315014ed07668fab71fb68e0fe81415652a6a983d196031105b84e354947b41",
+  "bytes": 20061,
+  "alignment": [
+    {
+      "text": "gpu",
+      "start": 0.16,
+      "end": 1.04
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 1.1963038548752833
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

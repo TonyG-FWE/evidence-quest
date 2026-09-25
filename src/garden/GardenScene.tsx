@@ -27,7 +27,7 @@ import {createRuntimeLibrary} from './assets/runtimeLibrary.js';
 import {resourceAllocation} from './assets/resourceBudget.js';
 import {runtimeAssets as approvedAssets} from './assets/runtimeManifest.js';
 import {reviewAssets} from './assets/reviewManifest.js';
-import {localReview} from './assets/profile.js';
+import {localReview,demoPresentation} from './assets/profile.js';
 import {ReviewWorld} from './assets/reviewWorld.js';
 import {attachReviewLandscape} from './assets/reviewLandscape.js';
 import {ReviewBridge} from './assets/reviewBridge.js';
@@ -249,29 +249,31 @@ export function GardenScene({store,onError,onStatus,reviewControls}:{store:Garde
   const viewFrustum=new T.Frustum(),viewProjection=new T.Matrix4(),viewBounds=new T.Sphere();
   function inCamera(point:Point,radius=2){return viewFrustum.intersectsSphere(viewBounds.set(new T.Vector3(point.x,.7,point.z),radius));}
   let reviewStudio=false;
-  const studioReviewButton=localReview?document.createElement('button'):null;
+  const studioReviewButton=localReview&&!demoPresentation?document.createElement('button'):null;
   if(studioReviewButton){studioReviewButton.className='garden-studio-review';studioReviewButton.textContent='Inspect studio';studioReviewButton.setAttribute('aria-pressed','false');studioReviewButton.onclick=()=>{reviewStudio=!reviewStudio;cameraControls.follow();studioReviewButton.textContent=reviewStudio?'Return to village':'Inspect studio';studioReviewButton.setAttribute('aria-pressed',String(reviewStudio));for(const key of store.getSnapshot().keys)store.send({type:'KEY',key,down:false});resize();};controls.append(studioReviewButton);}
   function bridgeFocus(s:ReturnType<GardenStore['getSnapshot']>){return !s.chapter.crossed&&!s.panel&&!s.action&&s.mode!=='boat'&&distance(s.chapter.pip,{x:-1.5,z:2.4})<3.8;}
   function updateCamera(s:ReturnType<GardenStore['getSnapshot']>,immediate=false,dt=1/60){
    if((s.gesture||s.cardGesture||cameraHeld)&&!immediate)return;
    const c=s.chapter,aspect=Math.max(.4,viewportWidth/Math.max(1,viewportHeight)),construct=s.mode==='arrange',boatFocus=s.mode==='boat',roof=s.mode==='bakery-repair',bakeryFocus=nearBakery(c),gview=gatheringView(s);
-   const loafVisit=c.bakery.stage==='escorting'&&distance(c.pip,SOL)<2;
+   const loafVisit=['escorting','done'].includes(c.bakery.stage)&&!gatheringStarted(c)&&distance(c.pip,SOL)<2.5;
+   const planting=c.crossed&&!gatheringStarted(c)&&distance(c.pip,anchors.garden.plant)<2.8;
    const bakeryWorking=bakeryFocus&&(s.action?.kind==='bakeryWelcome'||['checked','mixed','shaped','baked','escorting','done'].includes(c.bakery.stage));
    let target=c.pip,half=localReview?4.2:5.7,focus=regionAt(c.pip);
    if(s.mode==='workbench'){target=WORKBENCH;half=2.1;focus='workshop';}
-   else if(loafVisit){target={x:(SOL.x+c.bakery.rina.x)/2,z:(SOL.z+c.bakery.rina.z)/2};half=2.8;focus='workshop';}
+   else if(loafVisit){target={x:(SOL.x+c.bakery.rina.x+c.pip.x)/3,z:(SOL.z+c.bakery.rina.z+c.pip.z)/3};half=2.05;focus='workshop';}
    else if(construct||bridgeFocus(s)){target={x:-1.55,z:2.7};half=4.3;}
    else if(boatFocus){target=c.river.boat.position;half=3.6;}
-   else if(roof){target=BAKERY_REPAIR.gap;half=4.1;}
-   else if(bakeryFocus){target=bakeryWorking?{x:20.15,z:2.1}:{x:18.5,z:-.3};half=bakeryWorking?3.8:5.0;}
+   else if(roof){target={x:BAKERY_REPAIR.gap.x,z:(BAKERY_REPAIR.gap.z+BAKERY_REPAIR.ladderFoot.z)/2};half=3.15;}
+   else if(bakeryFocus){const welcome=s.action?.kind==='bakeryWelcome';target=bakeryWorking?{x:20.15,z:2.1}:{x:18.35,z:.6};half=welcome?3.35:bakeryWorking?2.55:3.6;}
    else if(gview==='dock'){target={x:-7.7,z:-15.1};half=6.1;}
    else if(gview==='travel'){const traveller=s.action?.kind==='maraArrival'?mara:sol;target={x:traveller.rig.position.x,z:traveller.rig.position.z};half=4.5;}
    else if(gview==='garden'){target={x:7.2,z:10.1};half=4.1;}
+   else if(planting){target={x:(anchors.garden.plant.x+anchors.garden.person.x+c.pip.x)/3,z:(anchors.garden.plant.z+anchors.garden.person.z+c.pip.z)/3};half=2.15;focus='garden';}
    else if(atWorkshop(s)||focus==='workshop'){target={x:9,z:-13.3};half=5.6;}
    else if(focus==='dock'){target={x:-7.7,z:-15.1};half=6.1;}
    const inStudio=!c.started||s.panel==='studio'||reviewStudio;
    if(inStudio){target={x:1,z:0};half=3.2;}
-   cameraDesired.set(target.x,inStudio?.5:s.mode==='workbench'?.85:loafVisit?.9:roof?3.4:bakeryFocus?(bakeryWorking?.9:2.55):gview==='dock'?2.7:(atWorkshop(s)||focus==='workshop')&&!overview?2.7:focus==='dock'?2.7:.5+(overview?0:terrainHeight(target)-.13),target.z);
+   cameraDesired.set(target.x,inStudio?.5:s.mode==='workbench'?.85:loafVisit?.8:roof?2.65:bakeryFocus?(bakeryWorking?.85:2):gview==='dock'?2.7:(atWorkshop(s)||focus==='workshop')&&!overview?2.7:focus==='dock'?2.7:.5+(overview?0:terrainHeight(target)-.13),target.z);
    const pose=cameraControls.resolve({target:cameraDesired,half,offset:!inStudio&&s.mode==='workbench'?new T.Vector3(0,18,9):!inStudio&&loafVisit?new T.Vector3(12,14,6):!inStudio&&bakeryFocus&&!roof?new T.Vector3(14,16,10):new T.Vector3(7.5,13,19)},dt);
    overview=cameraControls.overview;const blend=immediate||c.reducedMotion?1:1-Math.exp(-8*Math.min(.1,dt)),orbit=new T.Spherical().setFromVector3(pose.offset);
    cameraLook.lerp(pose.target,blend);cameraHalf+=(Math.max(pose.half,pose.half*.95/aspect)-cameraHalf)*blend;

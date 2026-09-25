@@ -1,0 +1,42 @@
+{
+  "id": "fc98cbc78f85fefffede9facde7375dc197b2fd903b1a2b5b965f530b39ee0e2",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 6081,
+      "sha256": "29ecd39b95e65234f5569a40576dbe7ca367266caa1bec0ccd3f516552c1866e"
+    },
+    {
+      "bytes": 998,
+      "sha256": "119462e46293ce1b42e3de0c301bf4cb5fd020e8e7acfab0fb7fb7d69310809d"
+    },
+    {
+      "bytes": 1279,
+      "sha256": "57345ef55c78738712561865ef902d053a4c7e3497a782827427616c910617b2"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "night.",
+  "textSha256": "07b717cb0d0ace96ca3ec9a9fe038562a179276595b1e576117017a042c4074e",
+  "sha256": "f0a3ad025c69e2aeb2f2144370e9fbe86186ee3a1b744ad88bf502a587fbeb70",
+  "bytes": 8358,
+  "alignment": [
+    {
+      "text": "night",
+      "start": 0.08,
+      "end": 0.48
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.4552380952380952
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

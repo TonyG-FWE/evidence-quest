@@ -1,0 +1,493 @@
+{
+  "schema": "eq.pronunciation-systemic-audit.v1",
+  "at": "2026-09-25T04:10:04.161Z",
+  "status": "REPLACEMENT_COMPLETE_WITH_RECORDED_HUMAN_LIMITATIONS",
+  "humanFinding": "Promised includes adjacent speech; many short words remain wrong; have plays SVG code and Short for we have.",
+  "supersededManifestSha256": "e7c26aa5cef30350e548fbe55873127ecc1296d2e23a45cbb818aa2660779db6",
+  "rootCauses": [
+    "Source extraction admitted SVG paths and CSS selectors stored outside JSX attributes.",
+    "Word bindings were reused from connected speech without independently recorded pronunciations.",
+    "Provider alignment assigned have a 3.92-second interval from a contaminated mixed batch; added margins made the clip 4.264 seconds.",
+    "Completion/hash tests proved complete playback of the wrong clip, not correct pronunciation."
+  ],
+  "examples": [
+    {
+      "text": "have",
+      "clip": {
+        "uri": "/audio/cast/clips/0c17638063aaf6a1d7e0affa53e75e662d36b1e3915d6ff18c4417f01a37d1a4.wav",
+        "sha256": "0c17638063aaf6a1d7e0affa53e75e662d36b1e3915d6ff18c4417f01a37d1a4",
+        "bytes": 409388,
+        "duration": 4.264,
+        "sourceSha256": "618ee2edbacf9cb8c102a7a7ff3883a0db4df26cccfcc756152c0a8e6967dbc0",
+        "sourceWavSha256": "5c56b8ba7077bc48bd97d97362fe54030bae4a9ee48eb813f54a7f17b4daa083",
+        "startSample": 2440070,
+        "endSample": 2631302,
+        "leadingSilenceSamples": 4800,
+        "trailingSilenceSamples": 8640,
+        "boundaryMethod": "bounded-word-energy-v1",
+        "sampleRate": 48000,
+        "channels": 1
+      },
+      "binding": {
+        "receiptPath": "evidence/cast-audio-20260919/batches/86c88f6caffee75e94ac6e39c919c4812fc6c4e3275007f4b25049d198a32210.json",
+        "receiptSha256": "87a2f1ac7a5d590b38eeed95d4db54fdfe717bf28e8ae129ec5b2e5bdd3000cc",
+        "wordStart": 90,
+        "wordEnd": 91,
+        "textSha256": "193c45b5281908d2d9c814ba73be696dd3f252052c230f925d797f373f318d03"
+      },
+      "recordedContext": "ate(25 180 157)\n\nAlso; in addition.\n\nM41 174v-32h47v32Z\n\nThen step forward.\n\nM24 142h303v17H24Z\n\nM-58 7h116v12H-58Z\n\nShort for we have.\n\nBy a small amount.\n\nMara has her page.\n\nCame or went back.\n\nWas on their feet.\n\nShort f"
+    },
+    {
+      "text": "promised",
+      "clip": {
+        "uri": "/audio/cast/clips/c77f52d29c68b84be0616ad227c198b5be51cdfaa7fc5ebad7e2c9c12dda88b1.wav",
+        "sha256": "c77f52d29c68b84be0616ad227c198b5be51cdfaa7fc5ebad7e2c9c12dda88b1",
+        "bytes": 86060,
+        "duration": 0.896,
+        "sourceSha256": "a044ace9a863b4001b738f02bb4bbf32a420fca849f46af8eb7960e4d8fd2d78",
+        "sourceWavSha256": "69f39b3b19207c98e580c95a412fbed63132d4ccf6ba8d10e878b16f2b9c2a9b",
+        "startSample": 2969504,
+        "endSample": 2999072,
+        "leadingSilenceSamples": 4800,
+        "trailingSilenceSamples": 8640,
+        "boundaryMethod": "bounded-word-energy-v1",
+        "sampleRate": 48000,
+        "channels": 1
+      },
+      "binding": {
+        "receiptPath": "evidence/cast-audio-20260919/batches/d8ecc5295f4c803940ff1dd9b7f6605465313ed1d26efce53525a1159b201df8.json",
+        "receiptSha256": "8c99bb00b3723e35670cd4f7d180d7bd98d4a19e674083aeb4d081e7cb9a371c",
+        "wordStart": 191,
+        "wordEnd": 192,
+        "textSha256": "1e0222143c6f7f6f2ed8f92325e6b614e7223a6ab25edf03612096e4b0a92f61"
+      },
+      "recordedContext": "ill loose. Move the same strip across the tear.\n\nRina takes one baked loaf to thank Sol. The other bread stays for the people she promised.\n\nWater has stopped entering the bakery. Rain still falls outside. Let Rina check her flo"
+    }
+  ],
+  "removedCatalogueEntries": [
+    {
+      "id": "02ae5d8be31bdcff55ed33db25bdbebce44b52cb42c3d533e4baedefcf59a5b1",
+      "text": "sans",
+      "sources": [
+        "authored word"
+      ]
+    },
+    {
+      "id": "1b742f170312d4a4a8f1684e145d1605050ee048e4b9955d3b8376bcb70f5ca7",
+      "text": "m",
+      "sources": [
+        "authored word"
+      ]
+    },
+    {
+      "id": "1d638659ce5f0db174d60865414a8c8e126e4edeb52cc49c2d8f460aecc2a159",
+      "text": "Georgia",
+      "sources": [
+        "authored word"
+      ]
+    },
+    {
+      "id": "275e3b4bebc59d34c4b1790299512d68374d821276c535caa8c0f38fd9b1377f",
+      "text": "primary",
+      "sources": [
+        "authored word"
+      ]
+    },
+    {
+      "id": "299f07a19675d6800aa1f347c7eb6ebd9371c9117ee8667465c646aec297ed1d",
+      "text": "M8 5v14M16 5v14",
+      "sources": [
+        "src/garden/GardenApp.tsx:50"
+      ]
+    },
+    {
+      "id": "29a838a0be5872425c09ba04a8009b41040c9f11476227ec11dee81e887f4ed1",
+      "text": "C",
+      "sources": [
+        "authored word"
+      ]
+    },
+    {
+      "id": "329b17d28819673414935561605cff95c86e1333da7296ff8665f65a77d01371",
+      "text": "bold",
+      "sources": [
+        "authored word"
+      ]
+    },
+    {
+      "id": "3494b98497d66ca84d8b4303b546f4f535e431e6056d9f8881f4fb7c72618f36",
+      "text": "1M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0",
+      "sources": [
+        "src/garden/GardenApp.tsx:50"
+      ]
+    },
+    {
+      "id": "370bc281673364e1653c07e11181a7ce72137bbd336ae20a8b34756f1282e067",
+      "text": "c",
+      "sources": [
+        "authored word"
+      ]
+    },
+    {
+      "id": "38623ac40ef34ca5df14ec483afe279810242cd5bf670f61a31afd9afd5ddc38",
+      "text": "bold 72px Georgia",
+      "sources": [
+        "src/garden/art.ts:100"
+      ]
+    },
+    {
+      "id": "3ca3a1af2181a6c9472702dca5fbf58eb3db1088cece9b77f0985a3c6d5d1f7a",
+      "text": "l",
+      "sources": [
+        "authored word"
+      ]
+    },
+    {
+      "id": "425d6d8d0bd50c1d79373d9bfdbf728e61d5e2fde939417a5634071a18fe902c",
+      "text": "g-practice-heading .",
+      "sources": [
+        "src/garden/ReadingPractice.tsx:32"
+      ]
+    },
+    {
+      "id": "45e0d3cf1395e7491dbe25aa3df71ea85cd17a331fe36e9b1622a7af7692a80e",
+      "text": "Z",
+      "sources": [
+        "authored word"
+      ]
+    },
+    {
+      "id": "47f8bd8bf70a3057b1afe6cf3f50c64fc551382584a52d0453b7c6f8b4b04921",
+      "text": "M9 8a3 3 0 1 1 5 2c-2 1-2 2-2 4m0 3v.",
+      "sources": [
+        "src/garden/GardenApp.tsx:50"
+      ]
+    },
+    {
+      "id": "4966cd78a8f42110e3ea040845622b517923cc7ab641ddc920a4dcc13fc02e48",
+      "text": "M7 7V5a5 5 0 0 1 10 0v2M5 7h14l1 14H4L5 7Zm3 6h8v5H8v-5",
+      "sources": [
+        "src/garden/GardenApp.tsx:50"
+      ]
+    },
+    {
+      "id": "4bd277a010717f025d20ad70f1b735a32e27ea47381c66e3e78a5ae1048e0395",
+      "text": "M-13-56 13-56 23-16-23-16Z",
+      "sources": [
+        "src/garden/ObservationPicture.tsx:18"
+      ]
+    },
+    {
+      "id": "4d21693a19e59d5fab4b9d30de8a13539d62d862dd39873f08fd6e1907794ff0",
+      "text": "g",
+      "sources": [
+        "authored word"
+      ]
+    },
+    {
+      "id": "521a12dc6e30154d53c568c98da512cc6d1c382b585a4310c258e63e8dceeba6",
+      "text": "V",
+      "sources": [
+        "authored word"
+      ]
+    },
+    {
+      "id": "53a0b4b537799c19295786accb59ce671e8e3b9ef904e7b9dad49b3d7bf0d02a",
+      "text": ".garden-word-card .g-close",
+      "sources": [
+        "src/garden/GardenApp.tsx:134"
+      ]
+    },
+    {
+      "id": "544dccd92ec6e3c4d53186b4dbeebe1495e86c2898d7d6f78fbb2a6496ce93c6",
+      "text": "H",
+      "sources": [
+        "authored word"
+      ]
+    },
+    {
+      "id": "56968de12f5a40e2a5d1753a90d184a8fe5e9e87673dae4bdef2ba554381e137",
+      "text": "M",
+      "sources": [
+        "authored word"
+      ]
+    },
+    {
+      "id": "604e21057fa131232099adda2ded3a13609c4aab1495e87fdf41732c27358a55",
+      "text": "20px sans-serif",
+      "sources": [
+        "src/garden/workbenchWorld.tsx:33"
+      ]
+    },
+    {
+      "id": "6cecaea713b2bb7e630491d6a87c813b32c516f0d3eee66da854b2fdf2f94493",
+      "text": "ZM",
+      "sources": [
+        "authored word"
+      ]
+    },
+    {
+      "id": "772629b7818940c3fcae6965cadd6cc2fc23c9e0abc8cef6f4e1bdde4e004cc4",
+      "text": "serif",
+      "sources": [
+        "authored word"
+      ]
+    },
+    {
+      "id": "788b93d6ce8ff698db1f793262d4795fe6acdbceb3ae78b63fbf353427300ee0",
+      "text": "m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5L12 2",
+      "sources": [
+        "src/garden/GardenApp.tsx:50"
+      ]
+    },
+    {
+      "id": "7efec04e235fcf7f9ede108e71b554425ae21e1bcc8576cc0c497b8398a2095f",
+      "text": "Zm",
+      "sources": [
+        "authored word"
+      ]
+    },
+    {
+      "id": "7fb7c2589eaca7079b24f9e2c93de29aebd4db1d6acd6a15940d7bcf905c10cb",
+      "text": ".g-practice-heading .g-primary",
+      "sources": [
+        "src/garden/ReadingPractice.tsx:32"
+      ]
+    },
+    {
+      "id": "83a3dfba190380292d4af2f994b56f95263041a5e5f9ab5bcedace7d93f55963",
+      "text": "px",
+      "sources": [
+        "authored word"
+      ]
+    },
+    {
+      "id": "83aefc414a446a7575591e344a59609b596c399dffc4432fb49b5815fa8f2f5f",
+      "text": "5L12 22l-2.",
+      "sources": [
+        "src/garden/GardenApp.tsx:50"
+      ]
+    },
+    {
+      "id": "83e567bc44df9290f5ea25523c414aba2f0f7ff26a0ae29b7f76e2751dbcadc5",
+      "text": "m12 2 2.",
+      "sources": [
+        "src/garden/GardenApp.tsx:50"
+      ]
+    },
+    {
+      "id": "8a62327cb6f05037895d6b1f593c682cd41e4b0f69cd54671c57e1c927a63795",
+      "text": "g-close",
+      "sources": [
+        "src/garden/GardenApp.tsx:134"
+      ]
+    },
+    {
+      "id": "90f283761bb54ebae6365f585b6dc7bffff06a709e816e07769fb9519c1a5e88",
+      "text": "M19 4C8 2 3 8 5 15s14 3 14-11ZM5 19 15 9",
+      "sources": [
+        "src/garden/GardenApp.tsx:50"
+      ]
+    },
+    {
+      "id": "972b14bcf86a71d28acfd49fdeb9aa0008e95d5e25573c5a033eb7a6bb42a232",
+      "text": "garden-word-card .",
+      "sources": [
+        "src/garden/GardenApp.tsx:134"
+      ]
+    },
+    {
+      "id": "9a0fe50ad3e92bb9f8c3921535f8dcf3359ace8d2b65c44ed946164a53911a06",
+      "text": "v",
+      "sources": [
+        "authored word"
+      ]
+    },
+    {
+      "id": "9ca87476a72ad0b56e98d72569feaa76412e5fc7238e5f641eae23bf6112f7df",
+      "text": "M4 12h15m-6-6 6 6-6 6",
+      "sources": [
+        "src/garden/GardenApp.tsx:50"
+      ]
+    },
+    {
+      "id": "9fc9d3d1eef37d25e75b0c672f0411c1d53034a78da13942f438631dd59fc5ec",
+      "text": "’s reply",
+      "sources": [
+        "src/garden/Dialogue.tsx:7"
+      ]
+    },
+    {
+      "id": "a4b5a378d9c4232ba7e5bdbfa9ab0960486ed04d11f1e5284789509bfafb9112",
+      "text": "M9 8a3 3 0 1 1 5 2c-2 1-2 2-2 4m0 3v.1M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0",
+      "sources": [
+        "src/garden/GardenApp.tsx:50"
+      ]
+    },
+    {
+      "id": "a5683d0cbd0ffefc2a1e7b40681f1f1323253b1ce9328dfff2cce6c5ee754d09",
+      "text": "’s feedback",
+      "sources": [
+        "src/garden/FeedbackActivity.tsx:53"
+      ]
+    },
+    {
+      "id": "abb516c66c7f00282c7c8ee88c4b1bcfe20d0340463a7a669bf6d3a352655e33",
+      "text": "M-13-50-19-28m32-22 9 23",
+      "sources": [
+        "src/garden/ObservationPicture.tsx:21"
+      ]
+    },
+    {
+      "id": "b573ac0fafdd8e93112d72d7d9d80afc648dc7cb268dec9dc5470563a345fbb3",
+      "text": "heading",
+      "sources": [
+        "authored word"
+      ]
+    },
+    {
+      "id": "ba08d234994662b418348de7c204c2593414c6d9b36537ce25962b11411feff0",
+      "text": "5L2 12l7.",
+      "sources": [
+        "src/garden/GardenApp.tsx:50"
+      ]
+    },
+    {
+      "id": "bd7471fd826cb4d888b326260c0d0ab930c1e6db1e10a676db42fdb6e766b5fe",
+      "text": "g-primary",
+      "sources": [
+        "src/garden/ReadingPractice.tsx:32"
+      ]
+    },
+    {
+      "id": "c2abaa6394921312e1983da5a73680c198ed998a0d661849436aa28cad2c488d",
+      "text": "m5 12 4 4L19 6",
+      "sources": [
+        "src/garden/GardenApp.tsx:50"
+      ]
+    },
+    {
+      "id": "c5c64055de8f14f7047f67c3ca6f636d20fb53968e08d2ceae11653dd4ae0549",
+      "text": "s",
+      "sources": [
+        "authored word"
+      ]
+    },
+    {
+      "id": "c5e5ed25a40c1770096b9ebf1e70c77660778f598f1813f9991217fb21a57876",
+      "text": "M4 9h4l5-4v14l-5-4H4V9Zm12-2a7 7 0 0 1 0 10m3-13a11 11 0 0 1 0 16",
+      "sources": [
+        "src/garden/GardenApp.tsx:50"
+      ]
+    },
+    {
+      "id": "d0bfd23433396c3e4f0c31e7c10009b2c5bc88aab516d3978828fe08ad330f69",
+      "text": "L",
+      "sources": [
+        "authored word"
+      ]
+    },
+    {
+      "id": "d48415c84769e9d8823ab8d2e2f13b3ca625f07adf71daad4e2d6411ffcbdf9c",
+      "text": "M-13-50-23-32m36-18 21 6",
+      "sources": [
+        "src/garden/ObservationPicture.tsx:21"
+      ]
+    },
+    {
+      "id": "db90b749546ffcfbcf78e580694851c4b88f6118ea13ce069e6d357c2da0a022",
+      "text": "5L22 12l-7.",
+      "sources": [
+        "src/garden/GardenApp.tsx:50"
+      ]
+    },
+    {
+      "id": "dca372036803a5f39df06b0148862cd667a15833aa348ff9a13e61c4890c146a",
+      "text": "5L12 2",
+      "sources": [
+        "src/garden/GardenApp.tsx:50"
+      ]
+    },
+    {
+      "id": "ebda5e56cefc3f0b75396b985894ea01c941c82ba43abbaba2c09d3ca233af29",
+      "text": "M-14-56 14-56 18-22-18-22Z",
+      "sources": [
+        "src/garden/ObservationPicture.tsx:18"
+      ]
+    },
+    {
+      "id": "f69a5b51067e8411431f1ae74a5f2e165ce7cfd3bd5f6608ff7b547e6f9e8607",
+      "text": "M3 5c4-2 7-1 9 1 2-2 5-3 9-1v14c-4-2-7-1-9 1-2-2-5-3-9-1V5Zm9 1v14",
+      "sources": [
+        "src/garden/GardenApp.tsx:50"
+      ]
+    },
+    {
+      "id": "f713cfc2b1da6ef401b3c83442cd7bb6d52e7c4fa137091149b7501831bfbc6c",
+      "text": "h",
+      "sources": [
+        "authored word"
+      ]
+    }
+  ],
+  "replacement": {
+    "approvedMaximumRequests": 1826,
+    "cleanVocabularyWords": 1823,
+    "caseAndTypographyAliases": 2333,
+    "model": "s2.1-pro-free",
+    "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+    "completedPilot": 10,
+    "expectedChargeUSD": 0,
+    "automaticRetries": 0,
+    "sample": {
+      "file": ".cache/nerdy-isolated-word-sample.wav",
+      "sha256": "532e4d0c5ba68e04d43e5b5adb625ca21a5a251d5917644fa9d472354910ea47",
+      "order": [
+        "have",
+        "promised",
+        "the",
+        "a",
+        "and",
+        "to",
+        "of",
+        "we",
+        "obligation",
+        "hesitated"
+      ],
+      "duration": 13.810458333333333
+    },
+    "completeSet": "IN_PROGRESS_AFTER_HUMAN_PILOT_REVIEW",
+    "runningGame": "Previous 4494 candidate; pronunciation replacement not installed"
+  },
+  "approvalReview": {
+    "initialAction": "Ten free Fish word recordings",
+    "initialResult": "REJECTED_BEFORE_EXECUTION",
+    "reason": "Current approved demo plan specified reuse of existing recordings.",
+    "subsequentUserAuthorization": "Approve the sample and full replacement",
+    "credentialPreflightFailure": "Server env contained only OpenAI key. No provider call; subsequent execution used existing Fish-specific env file."
+  },
+  "limits": [
+    "This is human pronunciation repair, not child-live or learning-outcome evidence.",
+    "Tasks 2-5 remain verified; Task 6 paused.",
+    "One live Sol verification request remains unused. TASK11.19 remains HALTED 1/75."
+  ],
+  "humanPilotReview": {
+    "at": "2026-09-25T04:15:06.693Z",
+    "response": "Most sounds good, the first word I cannot really understand; smaller words end abruptly but that is less of an issue for now for the demo. Bigger words are understandable and do not seem to add anything extra.",
+    "firstWord": "have",
+    "demoAcceptance": "Proceed with whole-word replacement; retain unclear have and abrupt short words as known limitations, not full pronunciation acceptance."
+  },
+  "focusedChecks": {
+    "clientTypeCheck": "PASS",
+    "tests": 20,
+    "failed": 0,
+    "scope": "Catalogue contamination, complete-word PCM and delivery protections. No human or full-catalogue pronunciation claim."
+  },
+  "completedAt": "2026-09-25T04:56:35.590Z",
+  "result": "task1-whole-words.json",
+  "limitations": [
+    "Have was unclear in the pilot.",
+    "Some short-word endings remain abrupt.",
+    "Tony accepted these as a lower demo priority; full-catalogue human pronunciation acceptance is not claimed."
+  ]
+}

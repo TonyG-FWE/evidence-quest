@@ -1,0 +1,42 @@
+{
+  "id": "b9decfdc4792e167bac383827352ef183f59dae4e627405382bfe443b281e29d",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 13287,
+      "sha256": "a762d1006f7f5e2c745a8d21ed548775e0e38858c8f3666b3bece5e887818032"
+    },
+    {
+      "bytes": 1075,
+      "sha256": "34df93defe34a6621fcd51ae5a8bb19e28ab63f194e10e358de6ce80ecbc1ca9"
+    },
+    {
+      "bytes": 1101,
+      "sha256": "75cdf9f0a8c3bb83ffed24b99948e4438c929e587dc6313ff6de285299283c18"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "clouds.",
+  "textSha256": "73cd7768144ba888c7730d9182dc20eb9ee7da0cb7ebef417a3fdf8211186d68",
+  "sha256": "cfeaa87981d48fc1258468abce52565eb7edf74442dc60563847343d5ca6f401",
+  "bytes": 15463,
+  "alignment": [
+    {
+      "text": "clouds",
+      "start": 0.08,
+      "end": 0.88
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8998866213151927
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

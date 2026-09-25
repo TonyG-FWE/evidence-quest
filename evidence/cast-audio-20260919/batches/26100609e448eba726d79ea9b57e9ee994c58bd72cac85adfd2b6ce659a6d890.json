@@ -1,0 +1,42 @@
+{
+  "id": "26100609e448eba726d79ea9b57e9ee994c58bd72cac85adfd2b6ce659a6d890",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 16385,
+      "sha256": "43e8f2d3567be1d3541550f3ab061473816ec56239dffe260ca8feba4b24adfd"
+    },
+    {
+      "bytes": 645,
+      "sha256": "1427f634cc6244f7ee8dccb4e1ca252420ea5990eca075594e3209d9ac0ff35e"
+    },
+    {
+      "bytes": 1777,
+      "sha256": "1ccca261a4517964d579ff6ee18692e915a7ad762937949abdd5d0f996cdcf1c"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "workshop.",
+  "textSha256": "48feb32b29bf29776350a2b4a50fb837a86b9a671c00bf2841148dcbb05c0da0",
+  "sha256": "534f4033b047ccfeafe4ac68a49cd13ed267a60e1d43b4bd148faee284e501c1",
+  "bytes": 18807,
+  "alignment": [
+    {
+      "text": "workshop",
+      "start": 0.16,
+      "end": 0.88
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 1.0975056689342404
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

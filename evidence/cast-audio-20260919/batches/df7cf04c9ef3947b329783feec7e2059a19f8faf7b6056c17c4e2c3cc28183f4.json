@@ -1,0 +1,42 @@
+{
+  "id": "df7cf04c9ef3947b329783feec7e2059a19f8faf7b6056c17c4e2c3cc28183f4",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 12473,
+      "sha256": "9c706ad356cf0ffa9afd90def11dc70dac51d899a92edab0262ce8d38d87f4ba"
+    },
+    {
+      "bytes": 793,
+      "sha256": "64fd7ef4210d43d182b0c287125656dedc67b874705226c0d7c5ea49edfdbc80"
+    },
+    {
+      "bytes": 1361,
+      "sha256": "0a4b9a3f58fdeadb0f08c0fc0a951be02ac231e0c0283612d6c2a80fac2f258f"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "blowing.",
+  "textSha256": "d68378feba3fa82c09b1dfc750db4f14da6914d05d8e6ffa71bf7723327cbc76",
+  "sha256": "1283ef6f4c86683f1f09b8e78103f0e297375ce8cea5d78bb6ba7eee4059be19",
+  "bytes": 14627,
+  "alignment": [
+    {
+      "text": "blowing",
+      "start": 0.16,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8504761904761905
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

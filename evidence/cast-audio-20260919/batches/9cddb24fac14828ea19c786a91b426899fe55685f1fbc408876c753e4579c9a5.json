@@ -1,0 +1,42 @@
+{
+  "id": "9cddb24fac14828ea19c786a91b426899fe55685f1fbc408876c753e4579c9a5",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 8282,
+      "sha256": "4a98085986acb29c6356521fecebee97a8f964512610001dfab15c0eeed1bfe2"
+    },
+    {
+      "bytes": 1214,
+      "sha256": "ddcf4552e789afee7295acbbaa8b389a6f22afee3fcd3d888e779aa31f27160f"
+    },
+    {
+      "bytes": 1370,
+      "sha256": "9eed248f7ee902e8c8759477ae9d41143fb7191c8a6d4c02e060e80ae186578a"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "bridge.",
+  "textSha256": "a593097c377973cd504070f2207d6558b4e6296d8e7ba3ead0a0fdeee2b90e15",
+  "sha256": "2f22898f6b1226bf08b5734ef7beeaab8c2289d79c04b2fa02258015720dd4a2",
+  "bytes": 10866,
+  "alignment": [
+    {
+      "text": "bridge",
+      "start": 0.16,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6034467120181406
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

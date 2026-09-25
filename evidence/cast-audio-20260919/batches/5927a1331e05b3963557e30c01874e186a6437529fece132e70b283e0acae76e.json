@@ -1,0 +1,42 @@
+{
+  "id": "5927a1331e05b3963557e30c01874e186a6437529fece132e70b283e0acae76e",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 10789,
+      "sha256": "26ccb34eb45560bea0759ef08eb8fbc6bc78a69e54aa8a23c878af1879571897"
+    },
+    {
+      "bytes": 826,
+      "sha256": "6d6d47287ca5fdb5fb71c929752ecfde0daf359c4cd9c5478bd76d2e1e32951e"
+    },
+    {
+      "bytes": 1340,
+      "sha256": "b03efd41a256f75e4ad06b6c4c585c79fe65adb98a1df9f133f40b7c8f5625bb"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "flower.",
+  "textSha256": "f796ddd53d1a10fe1965222a8b2ed997fbb83d90f69f66a978ef04ed55eda203",
+  "sha256": "4fa5ff890522f4dbef7f0bf3b4bbf5f7f22e36e753abcea92f43bbb8af432f61",
+  "bytes": 12955,
+  "alignment": [
+    {
+      "text": "flower",
+      "start": 0.16,
+      "end": 0.72
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.7516780045351474
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

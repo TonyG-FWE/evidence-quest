@@ -1,0 +1,42 @@
+{
+  "id": "3124b04b45057bc8df2729c4c9cacb76d9a2f42651cecd36d8b2c9509f9c970d",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 17062,
+      "sha256": "d36341362b8cb66619a43aa11bd228dea6172908687164410c4284ee12a8f89f"
+    },
+    {
+      "bytes": 830,
+      "sha256": "4fe5118c9119906fbf57219c3fefcf4cc2fccb8316b04c805bff95053a274159"
+    },
+    {
+      "bytes": 1333,
+      "sha256": "661b0b44772f2f1deed4924e04ce1453823f58cc2f786750aea8fdeb84648dd2"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "picnic.",
+  "textSha256": "e7079ebd0c8e40e6b934badd416a98d03beb4493e1aa957da7e3ceb803f98068",
+  "sha256": "a8b3ce822020a78fefbb2b01aa15b91c90537fc85ed96c259c0aef1e3b6812a8",
+  "bytes": 19225,
+  "alignment": [
+    {
+      "text": "picnic",
+      "start": 0.16,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 1.1468934240362811
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

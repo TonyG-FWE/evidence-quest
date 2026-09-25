@@ -38,7 +38,7 @@ test('exact audio deadlines, retry, natural completion and retired owners',async
  globals['Audio']=FakeAudio;
  const state=initialGarden('performed-reading');state.playback={key:'telling-1',owner:'gathering',mode:'speech',paused:false,elapsed:0};
  const performed=continuousSpeech(state,{text:sourcesFor(state.chapter).story.paragraphs[2]!,who:'Pip',source:'story',paragraph:2},2);
- const hash='a'.repeat(64),performerHash='b'.repeat(64),manifest={schema:'eq.cast-audio.v1',playback:'independent-pcm-v1',cast:selectedCast,entries:[{id:hash,text:'ill',speaker:'narrator',voiceId:selectedCast.narrator,clip:{uri:'/audio/cast/clips/'+hash+'.wav',duration:1,sha256:hash}},{id:performerHash,text:performed.text,speaker:'pip',voiceId:selectedCast.pip,clip:{uri:'/audio/cast/clips/'+performerHash+'.wav',duration:1,sha256:performerHash}}]};
+ const hash='a'.repeat(64),performerHash='b'.repeat(64),manifest={schema:'eq.cast-audio.v1',playback:'independent-pcm-v1',cast:selectedCast,entries:[{id:hash,text:'ill',speaker:'narrator',voiceId:selectedCast.narrator,clip:{uri:'/audio/cast/clips/'+hash+'.wav',duration:1,sha256:hash,boundaryMethod:'complete-word-recording-v1'}},{id:performerHash,text:performed.text,speaker:'pip',voiceId:selectedCast.pip,clip:{uri:'/audio/cast/clips/'+performerHash+'.wav',duration:1,sha256:performerHash}}]};
  let fetches=0,aborts=0,done=0,error='';
  globals['fetch']=(_uri:string,options?:RequestInit)=>{fetches++;return new Promise<Response>((_resolve,reject)=>options?.signal?.addEventListener('abort',()=>{aborts++;reject(options.signal?.reason);},{once:true}));};
  try{

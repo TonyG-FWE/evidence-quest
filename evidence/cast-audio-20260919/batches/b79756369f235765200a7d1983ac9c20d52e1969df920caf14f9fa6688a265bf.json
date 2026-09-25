@@ -1,0 +1,42 @@
+{
+  "id": "b79756369f235765200a7d1983ac9c20d52e1969df920caf14f9fa6688a265bf",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11634,
+      "sha256": "593ab0c8003cd130599b07c59e30fe5c36c893ea64fa56d4dec3ed282e158847"
+    },
+    {
+      "bytes": 821,
+      "sha256": "6631803e96406af17c5c40f5e83e493ef3169181204b05ba23dafaf75e2958e0"
+    },
+    {
+      "bytes": 1336,
+      "sha256": "28d16f28a8b67e18a428d68c0fc4d5ada69a84def404a6f70f7a25ab72571c4f"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "belief.",
+  "textSha256": "b175c79c4ab20a8ac0140654f1fe252e38d8636bfa0d0752d96dc74642cd810f",
+  "sha256": "c5c10fef6a8c5e211c1e6e27dee2668cf06534dae525ca953a6ab068811a5284",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "belief",
+      "start": 0.24,
+      "end": 0.8
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

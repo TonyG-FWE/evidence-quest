@@ -1,0 +1,42 @@
+{
+  "id": "0a80a653ee2b91503384085fc10e8dc1a494daf75ec97303e860cf51b2be1722",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11646,
+      "sha256": "dd8863fb693c269f0b0a4d8fdf94194f7713b7f5c3ab7b3044b97799987f85af"
+    },
+    {
+      "bytes": 831,
+      "sha256": "97d89f259bffb68ae424c9d827d04fcd37b24810e819937d98f291f50bcea1ea"
+    },
+    {
+      "bytes": 1314,
+      "sha256": "e8abf1480271e3ab5f53bb93f1af9485813b44a2b4b9146ab2becfda6be6a5de"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "enjoy.",
+  "textSha256": "f9944c975110ebf4f92a3c7aa3301c8bfc79160671b4f64ea69374951c0874d6",
+  "sha256": "d61e655a58933c7f9a2856b5810a65e8c35b53815cab95db4458e3489d981057",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "enjoy",
+      "start": 0.16,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

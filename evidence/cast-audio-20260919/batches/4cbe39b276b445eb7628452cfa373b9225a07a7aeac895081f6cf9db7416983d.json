@@ -1,0 +1,42 @@
+{
+  "id": "4cbe39b276b445eb7628452cfa373b9225a07a7aeac895081f6cf9db7416983d",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 10789,
+      "sha256": "6ad60fa1c7f03e7768078e56218f0dcbb7d8e8eea967d68dd733b5e342e4e7cb"
+    },
+    {
+      "bytes": 826,
+      "sha256": "765a8e8a9e5c52cc2943787cab7ff3921d5565668a69f68dc585f4890b9015f2"
+    },
+    {
+      "bytes": 1340,
+      "sha256": "765657f936714ff531bfae35e1812c751ea0bc6bed904f524d07681bf9d80691"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "rivers.",
+  "textSha256": "e5af74801db3f45c26a82b3e3dd063fc8c0db7c6b46674129d85faeea2040476",
+  "sha256": "e182e720b895aae96852d8b5e77f4742465f81f048d5c03acc2907c89723656c",
+  "bytes": 12955,
+  "alignment": [
+    {
+      "text": "rivers",
+      "start": 0.16,
+      "end": 0.8
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.7516780045351474
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

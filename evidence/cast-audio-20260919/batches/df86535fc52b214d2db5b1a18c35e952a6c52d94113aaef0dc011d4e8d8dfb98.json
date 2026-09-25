@@ -1,0 +1,42 @@
+{
+  "id": "df86535fc52b214d2db5b1a18c35e952a6c52d94113aaef0dc011d4e8d8dfb98",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11638,
+      "sha256": "a199fa96227581f171104e19caec326adf738e4e5d830399eff10638665eacde"
+    },
+    {
+      "bytes": 878,
+      "sha256": "4b35494205414ef8e8323aa5dcfcc890e334aaec9eb5a13023deeb58a3d2f393"
+    },
+    {
+      "bytes": 1275,
+      "sha256": "00e92e54f85b767235815b1c8fef117ab2f018aae445adf05e97762c0d944e63"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "mooring.",
+  "textSha256": "af75fb481a017fd84ef2dae800f1070301491c4f92c67730441b4492053b73c8",
+  "sha256": "347da24c658d2623cee1f47a9cfc44ca18fa4b2982cf31542bebb76a9605d991",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "mooring",
+      "start": 0,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

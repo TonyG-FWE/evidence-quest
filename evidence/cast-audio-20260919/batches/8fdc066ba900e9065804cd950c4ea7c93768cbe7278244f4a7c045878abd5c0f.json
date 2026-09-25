@@ -1,0 +1,42 @@
+{
+  "id": "8fdc066ba900e9065804cd950c4ea7c93768cbe7278244f4a7c045878abd5c0f",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 9148,
+      "sha256": "635985398a44a7e8dc06828f0db04da4c3870fafd89cf3f486af3d261aeefd6d"
+    },
+    {
+      "bytes": 806,
+      "sha256": "7dbfa8e6bfe29befad5791645c2966e4102d02a3c051d452c2caf71f979dc5b8"
+    },
+    {
+      "bytes": 1329,
+      "sha256": "c42f2763e06ebf33aae2dce58bacb8d3935d114ff9aa241009716e7bc1e684ac"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "hill.",
+  "textSha256": "93e4b2ca5982aa9be46c6568ac33323e5b3db6f10e20ae7f674ec5e187f64108",
+  "sha256": "b341353cae89b6724b292824a55214971990dee5ba11a98da53f7a529f4c85d5",
+  "bytes": 11283,
+  "alignment": [
+    {
+      "text": "hill",
+      "start": 0.16,
+      "end": 0.48
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6528571428571428
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

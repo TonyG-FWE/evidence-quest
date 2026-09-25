@@ -1,0 +1,98 @@
+{
+  "at": "2026-09-25T09:22:19.571Z",
+  "status": "VERIFIED",
+  "candidate": {
+    "inputSha256": "9b0cb81ada1f13552606265ff73915df0bc7cc6bdd1654ec9d36a91cadcf5a64",
+    "outputSha256": "bde7cb5fdecaf9b04ffd09949f2e86a696be6453552941bc9461370b954a3e5f"
+  },
+  "file": "output/nerdy-demo-fallback-20260925/Evidence-Quest-Nerdy-demo.webm",
+  "sha256": "51c0031f019e9044f56621d9a8a7dd07b9e645989901ed2a4ac298b17516c372",
+  "inspectedFrames": [
+    {
+      "name": "bakery-reading",
+      "seconds": 8,
+      "image": "output/nerdy-demo-fallback-20260925/review/bakery-reading.png"
+    },
+    {
+      "name": "roof",
+      "seconds": 85.814,
+      "image": "output/nerdy-demo-fallback-20260925/review/roof.png"
+    },
+    {
+      "name": "dough",
+      "seconds": 103.267,
+      "image": "output/nerdy-demo-fallback-20260925/review/dough.png"
+    },
+    {
+      "name": "writing",
+      "seconds": 145.135,
+      "image": "output/nerdy-demo-fallback-20260925/review/writing.png"
+    },
+    {
+      "name": "live-feedback",
+      "seconds": 151.153,
+      "image": "output/nerdy-demo-fallback-20260925/review/live-feedback.png"
+    },
+    {
+      "name": "ending-preview",
+      "seconds": 159.37,
+      "image": "output/nerdy-demo-fallback-20260925/review/ending-preview.png"
+    },
+    {
+      "name": "handoff",
+      "seconds": 141.444,
+      "image": "output/nerdy-demo-fallback-20260925/review/handoff.png"
+    }
+  ],
+  "observations": [
+    "Bakery text and listening controls are readable beside the characters and building.",
+    "Roof repair, dough preparation and the loaf handoff are visible at the captured sharing size.",
+    "Writing shows the source tabs and draft area. The recorded feedback text is visible in full.",
+    "Ending preview shows Rina, Sol and the loaf at useful scale, with the suggested ending and confirmation controls. Long draft text scrolls.",
+    "The feedback replay label is visible throughout the captured core."
+  ],
+  "audio": {
+    "nativeDecoder": "PASS",
+    "peak": 0.20915521681308746,
+    "progressSeconds": 3.279331000000001,
+    "qualification": "Actual packaged audio signal and playback progression; not a new human pronunciation review."
+  },
+  "originalCapturesPreserved": [
+    {
+      "capture": "fallback-capture.json",
+      "kind": "video",
+      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\nerdy-demo-rehearsal-r1\\raw\\nerdy-demo-rehearsal-Nerdy-fdd9e--ending-and-complete-finale-chromium\\demo-core-video.webm",
+      "bytes": 16707583,
+      "sha256": "0d9c0e9b24b69e332791992c0a1a1252740f4730bba6f929a3f0f3bd4a18fd3c"
+    },
+    {
+      "capture": "fallback-capture.json",
+      "kind": "audio",
+      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\nerdy-demo-rehearsal-r1\\raw\\nerdy-demo-rehearsal-Nerdy-fdd9e--ending-and-complete-finale-chromium\\demo-core-audio.webm",
+      "bytes": 998889,
+      "sha256": "fb74e37b39e3560bd791f540985926e2a5f7a6d27ce9180f31ed742cbfa934de"
+    },
+    {
+      "capture": "fallback-capture-replay.json",
+      "kind": "video",
+      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\nerdy-demo-rehearsal-r4\\raw\\nerdy-demo-rehearsal-Nerdy-fdd9e--ending-and-complete-finale-chromium\\demo-core-video.webm",
+      "bytes": 16540043,
+      "sha256": "0e9e319b664a4c8a0e549191634a728e7d1f8b9f164b20693c6bfc3d79618022"
+    },
+    {
+      "capture": "fallback-capture-replay.json",
+      "kind": "audio",
+      "file": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\output\\nerdy-demo-rehearsal-r4\\raw\\nerdy-demo-rehearsal-Nerdy-fdd9e--ending-and-complete-finale-chromium\\demo-core-audio.webm",
+      "bytes": 996488,
+      "sha256": "c60b7e633e40a14801fa89291c083f1070a6ff50d298d801f0ca807657a56d88"
+    }
+  ],
+  "initialReviewFailure": {
+    "result": "FAILED",
+    "message": "page.waitForFunction: Timeout 30000ms exceeded while seeking the first inspection frame.",
+    "location": ".cache/nerdy-fallback-review.mjs:38",
+    "correction": "Support HTTP byte ranges in the review transport. The identical packaged video then passed native playback and all seven seeks.",
+    "runtimeOrVideoBytesChanged": false
+  },
+  "finaleObservation": "The six-story library is visible in the final native screenshot. Its background village is reloading immediately after the ending presentation; this screenshot is not a settled-world rendering measurement."
+}

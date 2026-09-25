@@ -1,0 +1,42 @@
+{
+  "id": "43b0814413ac7b38d4438e78bd96ffae6a0e299fec9fb1cdbdf93d98a0b24ab3",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11723,
+      "sha256": "07949bffcc530cf60341f961c82b6996e1c1e84b24e1b8118342728d4d6d8012"
+    },
+    {
+      "bytes": 737,
+      "sha256": "d7755acefb6ba37b5d180bb6396f1967ea6404fce6bff03645ba574a4709bd72"
+    },
+    {
+      "bytes": 1331,
+      "sha256": "ad33c2a08823ccf94e97d0d19e986583fe336db55355ee128b9b113eec5e85f7"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "lungs.",
+  "textSha256": "38a7a64dd5c78091e4f08a91df1823d0a5c4d42c988181cfd74f9d58afc186d6",
+  "sha256": "97aee8afd0253cfef74cc028e679d8dce508780f6e556790e50a9ee4d0b0daf4",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "lungs",
+      "start": 0.16,
+      "end": 0.72
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

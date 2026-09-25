@@ -1,0 +1,29 @@
+{
+  "at": "2026-09-25T08:48:44.133Z",
+  "report": "output/nerdy-demo-rehearsal-r4/results.json",
+  "reportSha256": "f193e9e8bee7f617bd8111794f2e6dbecd0d05229acb350657b5a9666c899221",
+  "stats": {
+    "startTime": "2026-09-25T08:32:35.001Z",
+    "duration": 898728.4310000001,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "globalErrors": [],
+  "cases": [
+    {
+      "file": "nerdy-demo-rehearsal.spec.ts",
+      "title": "Nerdy rehearsal: ordinary fresh journey, real recorded voices, ending and complete finale",
+      "project": "chromium",
+      "outcome": "unexpected",
+      "status": "failed",
+      "durationMs": 896489,
+      "retries": 0,
+      "errors": [
+        "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('button', { name: 'Talk to Mara E', exact: true })\nExpected: visible\nTimeout: 90000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 90000ms\n  - waiting for getByRole('button', { name: 'Talk to Mara E', exact: true })\n\n\n  18 |  await close(page);const talk=button(page,who==='Sol'?'Talk to Sol':'Talk to '+who+' E');\n  19 |  if(!await talk.isVisible()){const places=page.locator('.garden-access');if(await places.getAttribute('open')===null)await places.locator(':scope>summary').click();await places.getByRole('button',{name:'Go to '+who,exact:true}).click();await places.locator(':scope>summary').click();}\n> 20 |  await expect(talk).toBeVisible({timeout:90000});await talk.click();if(who!=='Grandma')await completeConversation(page);\n     |                     ^\n  21 | }\n  22 | // No synthetic Audio, source injection, state injection, clock acceleration or provider retry.\n  23 | async function nativePlayback(page:Page,until:()=>Promise<boolean>,captionChoices:string[]){\n    at walk (C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\nerdy-demo-rehearsal.spec.ts:20:21)\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\nerdy-demo-rehearsal.spec.ts:134:225"
+      ],
+      "attachments": []
+    }
+  ]
+}

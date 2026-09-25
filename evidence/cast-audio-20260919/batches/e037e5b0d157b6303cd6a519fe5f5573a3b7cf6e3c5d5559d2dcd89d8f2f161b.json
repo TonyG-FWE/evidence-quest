@@ -1,0 +1,42 @@
+{
+  "id": "e037e5b0d157b6303cd6a519fe5f5573a3b7cf6e3c5d5559d2dcd89d8f2f161b",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 13701,
+      "sha256": "2b36793ac701e80555e477f3553411cc5422e3a289553603817f4ac148ff5554"
+    },
+    {
+      "bytes": 1246,
+      "sha256": "41c8ef1b0945b357b7b868d6e443db82779fadfad7faf173586baca7615cdc0f"
+    },
+    {
+      "bytes": 1352,
+      "sha256": "d8c3946e46419a35c872864b3b4b0987b20594276b2294ed8dfb76319ed42587"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "teller.",
+  "textSha256": "d77044d008a6dc0ff38f2eb2026ca42c42ccb7575468cd7f258a7d0aa9192e9d",
+  "sha256": "1ac34d37531b8396adfebf1180058f601634521dbb67356d60a5b4222d7d0753",
+  "bytes": 16299,
+  "alignment": [
+    {
+      "text": "teller",
+      "start": 0.08,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.949297052154195
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

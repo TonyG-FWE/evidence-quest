@@ -1,0 +1,30 @@
+{
+  "at": "2026-09-25T07:29:48.854Z",
+  "scope": "Sequential checks. Trace-disabled bakery recheck investigates the retained ERR_NO_BUFFER_SPACE resource failure; no asset quality or budget change. One native rehearsal invocation, with no automatic provider retries.",
+  "steps": [
+    {
+      "name": "Bakery without diagnostic network trace",
+      "args": [
+        ".cache/nerdy-run-focused.mjs",
+        "bakery-no-trace-r1",
+        "browser-tests/garden-bakery.spec.ts",
+        "--trace=off"
+      ],
+      "log": ".cache/nerdy-bakery-no-trace-r1.log",
+      "exitCode": 0,
+      "durationMs": 158983
+    },
+    {
+      "name": "Native fresh rehearsal and one explicit live request",
+      "args": [
+        ".cache/nerdy-rehearsal-run.mjs",
+        "--label=r1",
+        "--live"
+      ],
+      "log": ".cache/nerdy-native-rehearsal-r1.log",
+      "exitCode": 1,
+      "durationMs": 353527
+    }
+  ],
+  "complete": false
+}

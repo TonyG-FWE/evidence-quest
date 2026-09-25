@@ -1,0 +1,70 @@
+{
+  "schema": "eq.word-recordings-completion.v1",
+  "at": "2026-09-25T04:26:22.022Z",
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d",
+  "words": 1823,
+  "entries": 2333,
+  "counts": {
+    "reserved": 1823,
+    "completed": 1823,
+    "failed": 0
+  },
+  "model": "s2.1-pro-free",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "expectedChargeUSD": 0,
+  "automaticRetries": 0,
+  "decoded": 1823,
+  "accounting": [
+    {
+      "file": "evidence/voice-ai-demo-20260918/openai-attempts.jsonl",
+      "sha256": "0c6ed03e64b11f6b5138956d85ee753dfdbc67cafb0aeb619bfcf90e7472867b",
+      "bytes": 1228,
+      "records": 6
+    },
+    {
+      "file": "evidence/demo-ai-20260919/openai-attempts.jsonl",
+      "sha256": "bf505475a6c01d2ea9993afeb85d3a748ae4074edafc74fae15212f915088516",
+      "bytes": 7469,
+      "records": 28
+    },
+    {
+      "file": "evidence/cast-audio-20260919/attempts.jsonl",
+      "sha256": "f38f33bfcb78c35d3c9cc43438d81020404a6f51f8f31514eb871638acca9ddd",
+      "bytes": 1400530,
+      "records": 3985
+    },
+    {
+      "file": "evidence/er13/live-evaluation/attempts.jsonl",
+      "sha256": "17a4a6a57b5e1d54192320717e09f2c631a3eb052d1c1e62bc74c866bc877653",
+      "bytes": 549,
+      "records": 3
+    }
+  ],
+  "scope": "Completed explicitly authorized full-word recording job and native decode, not universal pronunciation acceptance. Have remains unclear and short-word endings abrupt in the reviewed pilot; Tony deprioritized these for the demo.",
+  "accountingComparisonToDemoBaseline": [
+    {
+      "file": "evidence/voice-ai-demo-20260918/openai-attempts.jsonl",
+      "beforeSha256": "0c6ed03e64b11f6b5138956d85ee753dfdbc67cafb0aeb619bfcf90e7472867b",
+      "afterSha256": "0c6ed03e64b11f6b5138956d85ee753dfdbc67cafb0aeb619bfcf90e7472867b",
+      "unchanged": true
+    },
+    {
+      "file": "evidence/demo-ai-20260919/openai-attempts.jsonl",
+      "beforeSha256": "bf505475a6c01d2ea9993afeb85d3a748ae4074edafc74fae15212f915088516",
+      "afterSha256": "bf505475a6c01d2ea9993afeb85d3a748ae4074edafc74fae15212f915088516",
+      "unchanged": true
+    },
+    {
+      "file": "evidence/cast-audio-20260919/attempts.jsonl",
+      "beforeSha256": "a575515a391eee49d4da97455f4b81bb6a0f44791408842244713fa2e93e414b",
+      "afterSha256": "f38f33bfcb78c35d3c9cc43438d81020404a6f51f8f31514eb871638acca9ddd",
+      "unchanged": false
+    },
+    {
+      "file": "evidence/er13/live-evaluation/attempts.jsonl",
+      "beforeSha256": "17a4a6a57b5e1d54192320717e09f2c631a3eb052d1c1e62bc74c866bc877653",
+      "afterSha256": "17a4a6a57b5e1d54192320717e09f2c631a3eb052d1c1e62bc74c866bc877653",
+      "unchanged": true
+    }
+  ]
+}

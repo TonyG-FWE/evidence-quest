@@ -1,0 +1,74 @@
+{
+  "schema": "evidence-quest.nerdy-demo-task1.v1",
+  "at": "2026-09-25T00:16:59.343Z",
+  "status": "VERIFIED",
+  "checks": {
+    "deliveryContracts": 13,
+    "speechContracts": 6,
+    "compiledChromium": {
+      "startTime": "2026-09-25T00:14:36.235Z",
+      "duration": 29943.867,
+      "expected": 5,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "compiledBuild": "PASS",
+    "workletHttpStatus": 200,
+    "castEntries": 6167,
+    "changedClips": 0,
+    "providerRequests": 0,
+    "ledgersUnchanged": true
+  },
+  "candidate": {
+    "inputSha256": "39f64b2944e23632e69c9d79828162d65df6daec06287caf476593fec6c78e14",
+    "outputSha256": "4961c6a37b57cc538db950706e96307486da79c6b3845381354711eed4a5ae59",
+    "audioManifestSha256": "1f9155db1a883c043df23897a9d9fe0f386f9fd994dd9f561e4ecb9043ff26bb",
+    "sources": [
+      {
+        "file": "scripts/demo-inputs.mjs",
+        "sha256": "ec5b97e024b71d8ee16540327e1d820df3d1573ad8325a9fc52c593beb2337ea"
+      },
+      {
+        "file": "src/garden/readingSpeech.ts",
+        "sha256": "7d7b0c79e15b7b5d1b474cf3b88e24f7337f02961a3d90b7ae4447c35cd7e84d"
+      },
+      {
+        "file": "src/garden/Reading.tsx",
+        "sha256": "1e96a4d527db143348bb4eef282204ede1adff058c925c2f380e3621a2c041a2"
+      },
+      {
+        "file": "src/garden/Dialogue.tsx",
+        "sha256": "1267f1521aef9c8d8fa66d73643c0405b38df7eac63e6a66cc55ccb95682609b"
+      },
+      {
+        "file": "src/garden/GardenApp.tsx",
+        "sha256": "ecaee35a279baaaebc703e96a8773456beb76f0d48774a221567339606a0535b"
+      },
+      {
+        "file": "src/garden/model.ts",
+        "sha256": "a0c0f5da26be8d233d5090cdd4943928dca050ed69f94084861ec8b1dc0cfb32"
+      },
+      {
+        "file": "public/garden-recorder.js",
+        "sha256": "b63cbd801b49119c8fb648fc75de681a73c6b50fe5c3c7993f9b053bbf237d3b"
+      }
+    ]
+  },
+  "browserCheckpoint": "http://127.0.0.1:4494/garden",
+  "limitations": [
+    "Automated capture input, permission denial and cancellation cases are labeled synthetic.",
+    "Tony separately confirmed actual microphone recording and audible replay. Screen-sharing audio remains Task 6."
+  ],
+  "testCorrection": "The first run had a strict-selector collision between two Stop listening buttons; the corrected five-case native Chromium run passed. The first sandbox run was interrupted during delayed teardown.",
+  "logs": {
+    "build": ".cache/nerdy-demo-task1-build.log",
+    "browser": ".cache/nerdy-demo-task1-final.log",
+    "report": "output/nerdy-demo-task1-final/results.json"
+  },
+  "humanMicrophone": {
+    "at": "2026-09-25T00:17:55.670Z",
+    "source": "Tony replied to the native microphone check",
+    "response": "My voice records and replays clearly"
+  }
+}

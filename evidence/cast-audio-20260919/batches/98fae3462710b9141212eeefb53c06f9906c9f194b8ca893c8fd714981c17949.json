@@ -1,0 +1,42 @@
+{
+  "id": "98fae3462710b9141212eeefb53c06f9906c9f194b8ca893c8fd714981c17949",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11644,
+      "sha256": "2b351da77c55131b5b0ca9bab816c28a2bda290b18252c8a9e56a53dc3ba6f77"
+    },
+    {
+      "bytes": 822,
+      "sha256": "565b6710293cb31d0a7bc2ac061c50eba3fc8a1ea5867fea63f268bff666a900"
+    },
+    {
+      "bytes": 1325,
+      "sha256": "11e7bc3d5e2fd40becf08a40945d1e8a6007d7bec22605f73b0fed1ce404c575"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "steering.",
+  "textSha256": "73fe6a662224537c2defa28e655729403eb98bf5eedb8bbba2a142ad72b723ee",
+  "sha256": "6901883df4b63c6f94f6e16541ac80c5991d2e4bd0a4c323c1a77ee809f8a452",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "steering",
+      "start": 0.08,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

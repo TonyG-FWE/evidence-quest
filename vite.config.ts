@@ -39,7 +39,7 @@ export default defineConfig({
    if(personalGrass){const original=await readPersonalGrassSource();await writeFile(resolve(destination,personalGrassFile),original.bytes);await writeFile(resolve(clientOutput,'personal-grass-source.json'),JSON.stringify(original.receipt,null,2)+'\n');}
    if(personalGrass){const landscape=await readPersonalLandscapeAssets();for(const asset of landscape.files){const group=asset.relative.split('/')[0]!;await mkdir(resolve(clientOutput,'personal-landscape',group),{recursive:true});await writeFile(resolve(clientOutput,'personal-landscape',asset.relative),asset.bytes);}await writeFile(resolve(clientOutput,'personal-landscape-source.json'),JSON.stringify(landscape.receipt,null,2)+'\n');}
   }}]:[])],
-  define: {__EQ_REVIEW__: JSON.stringify(review),__EQ_PERSONAL_GRASS__:JSON.stringify(personalGrass)},
+  define: {__EQ_REVIEW__: JSON.stringify(review),__EQ_PERSONAL_GRASS__:JSON.stringify(personalGrass),__EQ_DEMO_PRESENTATION__:JSON.stringify(process.env['EQ_DEMO_PRESENTATION']==='1')},
   // Evidence contains many standalone review pages; only the application is a dependency entry.
   optimizeDeps: { entries: ['index.html'] },
   // Explicit permissive CSS path; see docs/PRODUCTION-TOOLCHAIN.md.

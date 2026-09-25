@@ -1,0 +1,62 @@
+{
+  "schema": "eq.nerdy-demo.task.v1",
+  "task": 3,
+  "status": "VERIFIED",
+  "at": "2026-09-25T00:55:35.209Z",
+  "fix": "FIX11.NERDY03",
+  "check": "CHECK11.NERDY03",
+  "changes": [
+    "Closer action cameras for planting, roof repair, bakery preparation and the loaf handoff.",
+    "Ending preview gives picture and writing separate desktop columns.",
+    "Story camera frames actors and handled objects over the complete motion envelope; all background artwork remains rendered.",
+    "Manual camera range uses the existing world bounds. No asset detail or gameplay geometry changed."
+  ],
+  "verification": {
+    "build": {
+      "exitCode": 0,
+      "log": ".cache/nerdy-demo-task3-build.log",
+      "inputs": 8262,
+      "outputs": 7473
+    },
+    "compiledBrowser": {
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0,
+      "durationMs": 158877.796,
+      "report": "output/nerdy-demo-task3/results.json",
+      "scope": "One complete fresh bridge/planting/bakery/ending-preview route at 1422x800, 1366x768 and 1920x1080; three labeled native fixture continuations for mouse loaf selection, keyboard roof placement/cancel, and touch roof placement/cancel."
+    },
+    "visibleCheckpoint": {
+      "url": "http://127.0.0.1:4494/garden",
+      "observed": "Closer planting view in Codex and actual covering/sprout consequence; inspected roof, dough, handoff and enlarged ending-preview screenshots."
+    },
+    "providerRequests": 0
+  },
+  "source": [
+    {
+      "file": "src/garden/GardenScene.tsx",
+      "sha256": "a0ebadba8b53701b77105202249e42f75179eb5734626de1eae8668930cc4ca7"
+    },
+    {
+      "file": "src/garden/StoryStage.tsx",
+      "sha256": "3e06605e4d167422fec0766650402e4f1ff6b15eca334d02f6388f870a1a227d"
+    },
+    {
+      "file": "src/garden/cameraInspection.ts",
+      "sha256": "fad6aa7fc14e30339a8af2bbeef0e69964b1ffca665b235439933c36f36e577e"
+    },
+    {
+      "file": "src/garden/garden.css",
+      "sha256": "16583e1ade01d3285d90fd7d7fab50c02dd3f7886058c6df7c1888f2ed340e42"
+    }
+  ],
+  "evidence": [
+    "planting-1366.png",
+    "roof-1366.png",
+    "ending-preview-1366.png"
+  ],
+  "limitations": [
+    "Artwork approval and existing resource-budget qualifications remain open.",
+    "Maintainer chrome and the thank-you conversation heading will be handled in Task 4."
+  ]
+}

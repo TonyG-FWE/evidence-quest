@@ -1,0 +1,42 @@
+{
+  "id": "ced561cb8b3c0290c5233931f6586eea45f39410b5480b4e5e4dadf57fbb08c3",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 9122,
+      "sha256": "138349d70ba93f8fd7646eab3a5b72ca888e29833efae5ffa6b919e4068c61cf"
+    },
+    {
+      "bytes": 871,
+      "sha256": "fba3ab3cc5456d009bc7d689f9f36e2fe6d375a597e005d232ba5d79edb04dae"
+    },
+    {
+      "bytes": 1290,
+      "sha256": "18536db4edc876f7702108f063b33e70d2ac008fb3f52c54071cb9f3ab7a26f7"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "days.",
+  "textSha256": "4deca289f6d1830bd7fbb69bfb0f32415ce47cef206a671d0b7bb322c43495f5",
+  "sha256": "8273c1ae6edd19e22511f4e2c257dcdcb8fdb25c3025d4c5f064c36b16b2070a",
+  "bytes": 11283,
+  "alignment": [
+    {
+      "text": "days",
+      "start": 0.16,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6528571428571428
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

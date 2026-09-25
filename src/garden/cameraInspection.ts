@@ -1,4 +1,5 @@
 import * as T from 'three';
+import {WORLD} from './worldLayout.js';
 
 type Pose={target:T.Vector3;offset:T.Vector3;half:number};
 type Motion='left'|'right'|'up'|'down'|'turnLeft'|'turnRight'|'tiltUp'|'tiltDown'|'closer'|'farther';
@@ -56,8 +57,8 @@ export class CameraInspection {
   if(motion==='up'||motion==='down'){const sign=motion==='up'?-1:1;this.target.x+=Math.sin(theta)*pan*sign;this.target.z+=Math.cos(theta)*pan*sign;}
   if(motion==='turnLeft'||motion==='turnRight')this.orbit.theta+=(motion==='turnLeft'?-1:1)*turn;
   if(motion==='tiltUp'||motion==='tiltDown')this.orbit.phi=T.MathUtils.clamp(this.orbit.phi+(motion==='tiltUp'?-1:1)*turn,.16,1.32);
-  if(motion==='closer'||motion==='farther')this.half=T.MathUtils.clamp(this.half*Math.exp((motion==='closer'?-1:1)*dt),1.7,27);
-  this.target.x=T.MathUtils.clamp(this.target.x,-20,28);this.target.z=T.MathUtils.clamp(this.target.z,-24,26);
+  if(motion==='closer'||motion==='farther')this.half=T.MathUtils.clamp(this.half*Math.exp((motion==='closer'?-1:1)*dt),1.7,23);
+  this.target.x=T.MathUtils.clamp(this.target.x,WORLD.bounds.minX+2,WORLD.bounds.maxX-2);this.target.z=T.MathUtils.clamp(this.target.z,WORLD.bounds.minZ+2,WORLD.bounds.maxZ-2);
  }
  get inspecting(){return this.active;}
  get overview(){return this.active&&this.half>15;}

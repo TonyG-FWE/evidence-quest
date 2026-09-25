@@ -1,0 +1,29 @@
+{
+  "at": "2026-09-25T08:32:09.846Z",
+  "report": "output/nerdy-demo-rehearsal-r3/results.json",
+  "reportSha256": "440396927198400dc12f745882c1833f6ee6b273aaa6f81c17e6a2852edbb60e",
+  "stats": {
+    "startTime": "2026-09-25T07:49:44.669Z",
+    "duration": 460999.754,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "globalErrors": [],
+  "cases": [
+    {
+      "file": "nerdy-demo-rehearsal.spec.ts",
+      "title": "Nerdy rehearsal: ordinary fresh journey, real recorded voices, ending and complete finale",
+      "project": "chromium",
+      "outcome": "unexpected",
+      "status": "failed",
+      "durationMs": 147537,
+      "retries": 0,
+      "errors": [
+        "Error: expect(locator).toHaveCount(expected) failed\n\nLocator:  locator('.g-audio-notice')\nExpected: 0\nReceived: 1\nTimeout:  15000ms\n\nCall log:\n  - Expect \"toHaveCount\" with timeout 15000ms\n  - waiting for locator('.g-audio-notice')\n    - locator resolved to 1 element\n    - unexpected value \"1\"\n\n\n  70 |    if(replay)await page.evaluate(()=>{const label=document.createElement('div');label.textContent='Recorded rehearsal · feedback replayed from the verified live response';Object.assign(label.style,{position:'fixed',top:'65px',right:'12px',zIndex:'2147483647',padding:'4px 8px',background:'#183e35',color:'white',font:'11px system-ui',borderRadius:'4px',pointerEvents:'none'});document.body.append(label);});\n  71 |    cue('core-bakery-begins');captureStart=await startDemoCapture(page,info.outputPath('demo-core-video.webm'));await page.waitForTimeout(3000);\n> 72 |    await button(page,'Listen to this page').click();await expect(button(page,'Stop listening')).toBeVisible();await expect(button(page,'Stop listening')).toBeHidden({timeout:90000});await expect(page.locator('.g-audio-notice')).toHaveCount(0);\n     |                                                                                                                                                                                                                                     ^\n  73 |   },\n  74 |   bakeryReady:async()=>{\n  75 |    await button(page,'Listen to the conversation').click();await expect(button(page,'Stop listening')).toBeVisible();await expect(button(page,'Stop listening')).toBeHidden({timeout:90000});await expect(page.locator('.g-audio-notice')).toHaveCount(0);\n    at Object.bakery (C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\nerdy-demo-rehearsal.spec.ts:72:229)\n    at playDemoRoute (C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-demo-route.ts:13:166)\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\nerdy-demo-rehearsal.spec.ts:64:2"
+      ],
+      "attachments": []
+    }
+  ]
+}

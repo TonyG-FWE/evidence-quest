@@ -158,7 +158,11 @@ test('roof and dough use real pointer gestures; journal writing stays available 
  // interaction must not select a hidden object through his body.
  await page.screenshot({path:info.outputPath('roof-before-drop.png')});
  await drag(page,'spareTile',point(tile.x+.10,tile.z+.18),BAKERY_REPAIR.gap,tile.y+.09,localReview?BAKERY_REPAIR.openingY+.025:BAKERY_REPAIR.gap.y+.05);await expect.poll(async()=>(await savedChapter(page)).bakery.stage).toBe('sealed');await page.screenshot({path:info.outputPath('roof-direct.png')});
- await drag(page,'flour',BAKERY_WORK.dryFlour,BAKERY_WORK.mixing,BAKERY_WORK.dryFlour.y+.30,BAKERY_WORK.mixing.y);await expect.poll(async()=>(await savedChapter(page)).bakery.stage,{timeout:20000}).toBe('checked');
+ // The closer repair view does not show the flour behind the bakery. Follow
+ // its visible inspection action before testing the baking workspace gestures.
+ await button(page,'Let Rina check the flour').click();await expect.poll(async()=>(await savedChapter(page)).bakery.stage,{timeout:20000}).toBe('checked');
+ if(await button(page,'Go to Rina').isVisible())await button(page,'Go to Rina').click();await expect(button(page,'Make the dough with Rina')).toBeVisible();
+ previousCamera='';stableCamera=0;await expect.poll(async()=>{const current=await page.locator('.garden-scene').getAttribute('data-camera-projection')??'';stableCamera=current===previousCamera?stableCamera+1:0;previousCamera=current;return stableCamera;},{intervals:[100]}).toBeGreaterThanOrEqual(3);
  await drag(page,'flour',BAKERY_WORK.dryFlour,BAKERY_WORK.mixing,BAKERY_WORK.dryFlour.y+.30,BAKERY_WORK.mixing.y);expect((await savedChapter(page)).hands.flourInBowl).toBe(true);
  const start=await worldPoint(page,BAKERY_WORK.mixing.x,BAKERY_WORK.mixing.y+.02,BAKERY_WORK.mixing.z);await page.mouse.move(start.x,start.y);await page.mouse.down();await expect(page.locator('.garden-scene')).toHaveAttribute('data-hand-gesture',/"dough"/);
  for(const x of [BAKERY_WORK.mixing.x+.30,BAKERY_WORK.mixing.x-.35,BAKERY_WORK.mixing.x+.30,BAKERY_WORK.mixing.x]){const p=await worldPoint(page,x,BAKERY_WORK.mixing.y+.02,BAKERY_WORK.mixing.z);await page.mouse.move(p.x,p.y,{steps:6});}await page.mouse.up();await expect.poll(async()=>(await savedChapter(page)).bakery.stage).toBe('mixed');
@@ -176,5 +180,5 @@ test('roof and dough use real pointer gestures; journal writing stays available 
  loaf=await renderedLoaf();await drag(page,'loaf',loaf,WORKSHOP_DOOR,loaf.y+.05,.85);
  await expect.poll(async()=>(await savedChapter(page)).bakery.stage).toBe('done');await page.screenshot({path:info.outputPath('bread-delivered-to-sol.png')});
  const finished=(await savedChapter(page)).bakery;await page.reload();expect((await savedChapter(page)).bakery).toEqual(finished);
- await info.attach('scope',{body:'Real-command fixture ends at tile delivery. Cracked-tile removal, repaired-roof drop, flour handling, kneading, division, baking, loaf pickup and final handoff all use visible canvas pointer gestures. The ordinary walking control brings Pip and Rina to the workshop. This is a focused continuation, not a fresh complete chapter.',contentType:'text/plain'});
+ await info.attach('scope',{body:'Real-command fixture ends at tile delivery. Cracked-tile removal and repaired-roof drop use visible canvas pointer gestures. The visible action bar starts Rina’s flour inspection and frames the baking workspace. Flour mixing, kneading, division, baking, loaf pickup and final handoff use canvas pointer gestures. The ordinary walking control brings Pip and Rina to the workshop. This is a focused continuation, not a fresh complete chapter or an all-drag inspection route.',contentType:'text/plain'});
 });

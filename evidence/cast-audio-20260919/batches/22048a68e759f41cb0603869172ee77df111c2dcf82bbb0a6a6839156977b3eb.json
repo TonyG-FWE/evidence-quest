@@ -1,0 +1,42 @@
+{
+  "id": "22048a68e759f41cb0603869172ee77df111c2dcf82bbb0a6a6839156977b3eb",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 9942,
+      "sha256": "e2cba0ab9eef0d3741e001ca06e930d259679b3996ceb85ecb8ea67c2f7ffab5"
+    },
+    {
+      "bytes": 847,
+      "sha256": "ebba929d8eed8d2f5397fd7ef93f0c5c817f33a7ec8bc96a205513a8626d2347"
+    },
+    {
+      "bytes": 1330,
+      "sha256": "ff3295fb056032626064b2714a2bfb72d0cb723f9144d6c085f6812dffec76e0"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "rehearsal.",
+  "textSha256": "13d6588ce7f4e1f31c16817521d8da4d43c15f839064a9dde36ebe52fd2e5666",
+  "sha256": "8f2cb061970aa4ae8846ffec5e31fa22b290a8b7e8160c567f19742ce0203bfd",
+  "bytes": 12119,
+  "alignment": [
+    {
+      "text": "rehearsal",
+      "start": 0.08,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.7022675736961451
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "708686fe58e6b275225f4a51d95e97e1ba5429cbc573fdf1c67919b2ac03848c",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 6164,
+      "sha256": "95e55b30dbbdc79189183af04ead08b1f7cdb3626d97c1ed06417c5b743418ee"
+    },
+    {
+      "bytes": 1037,
+      "sha256": "4362b4caa7685df4c17b05055e7af227d68dad8d52d93c5cef165f69cd10c3c0"
+    },
+    {
+      "bytes": 1157,
+      "sha256": "404a416b60a9d0661fbd9776951f372bcf4105f08e9885120dd0caaa20983daf"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "rina.",
+  "textSha256": "f2e67d535786bfb20afb416d870f218c54af6f31548c9aacdfb11b77f0bdbf42",
+  "sha256": "64dc347acd04d44a26e93d9d5a60f02cd7dea59232b9446534163088475fa334",
+  "bytes": 8358,
+  "alignment": [
+    {
+      "text": "rina",
+      "start": 0.08,
+      "end": 0.48
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.4552380952380952
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

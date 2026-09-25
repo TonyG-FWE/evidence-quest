@@ -1,0 +1,42 @@
+{
+  "id": "02ef64f69347012135d43df5e57fa31045979e603fafec341dada33dd7b37ca1",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 14671,
+      "sha256": "e7ae9a0d0ea793bf87f4481434791435e671c783076e1b06c3e418fb97ad9938"
+    },
+    {
+      "bytes": 1135,
+      "sha256": "12acb68ec3d13bbe6e6bcc510e0b9cdeee1e42c27c9422dbe5d71e2085430da6"
+    },
+    {
+      "bytes": 1329,
+      "sha256": "380e823411611a858b6564adf94b92ab9084925180e3a89a9b6aa58f9537a994"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "sparkfest.",
+  "textSha256": "2fe29aee279744803fbd09fdf5eda1a12ae80612b4e62dd3219380a1f5978ed2",
+  "sha256": "29b8ff21da8e85ad14ed402b93e760c28a6903f807bff1cae65718c989c6c338",
+  "bytes": 17135,
+  "alignment": [
+    {
+      "text": "sparkfest",
+      "start": 0.16,
+      "end": 0.96
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.9986848072562359
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

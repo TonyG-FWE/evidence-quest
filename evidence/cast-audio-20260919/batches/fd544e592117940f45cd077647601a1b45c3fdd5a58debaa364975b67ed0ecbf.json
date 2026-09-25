@@ -1,0 +1,42 @@
+{
+  "id": "fd544e592117940f45cd077647601a1b45c3fdd5a58debaa364975b67ed0ecbf",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11644,
+      "sha256": "d04cadda526c3fb6b4d648ed7aec5ae1b79ed757f874d949b7ec263c7582daac"
+    },
+    {
+      "bytes": 820,
+      "sha256": "6588b100c8d2fd809755b586fff634d010826a518d78982f7471225bb68b1a65"
+    },
+    {
+      "bytes": 1327,
+      "sha256": "1b99e4029c53c1c8af67f24dce8e016d54d399d46d43ea1d538bb40ecb35e801"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "wheels.",
+  "textSha256": "cacb8abfe35d8d582f899b9c8c33e960f83d9ef8e4736428f2e6a5389c6055d5",
+  "sha256": "a8867165726863108c7ba6f3cf3e77ea467345c9df81fa602757d6e3e4767495",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "wheels",
+      "start": 0.16,
+      "end": 0.8
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

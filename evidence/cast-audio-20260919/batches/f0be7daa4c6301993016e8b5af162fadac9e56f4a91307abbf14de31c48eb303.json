@@ -1,0 +1,42 @@
+{
+  "id": "f0be7daa4c6301993016e8b5af162fadac9e56f4a91307abbf14de31c48eb303",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 13710,
+      "sha256": "f8b20349d9b7c964460dd2bddf6677b788961b0c62b6a594aba3f54a09255770"
+    },
+    {
+      "bytes": 1245,
+      "sha256": "51005670c4bb3b935300c43e3a8643b75f404c7b4eac2dbed56901f3a5a2a5cc"
+    },
+    {
+      "bytes": 1344,
+      "sha256": "56714fca86fe82b76ba551568f322946d762a1abf56997f27f56edd0ab99b0e4"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "mara.",
+  "textSha256": "aced5c3786a88d67502f3e85de6e6074070990849d357c5d3624e4d7e5eb2e03",
+  "sha256": "d80849a561d2fc635e5eac1dc7fb4705d0874b5a62079329cdab8be5c039e2bb",
+  "bytes": 16299,
+  "alignment": [
+    {
+      "text": "mara",
+      "start": 0.16,
+      "end": 0.8
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.949297052154195
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

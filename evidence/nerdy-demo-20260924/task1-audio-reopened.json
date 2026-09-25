@@ -1,0 +1,102 @@
+{
+  "schema": "eq.nerdy-demo.audio-review.v1",
+  "at": "2026-09-25T02:23:09.311Z",
+  "task": "FIX11.NERDY01 / CHECK11.NERDY01",
+  "status": "IMPLEMENTED_AND_AUTOMATED_VERIFIED_AWAITING_PRONUNCIATION_REVIEW",
+  "reported": [
+    "Words clipped or including adjacent words",
+    "Instructions in narrative playback",
+    "No pause between speakers",
+    "Duplicate and inconsistent controls"
+  ],
+  "changes": [
+    "Prefer separated or phrase-ending occurrences in the same approved voice; bounded quiet PCM cuts and 100/180 ms surrounding silence",
+    "Select narrative passages and spoken replies, excluding instructions and unselected choices",
+    "420 ms between sentences, 500 ms between paragraphs, 650 ms between speakers and performed turns; abortable waits",
+    "One primary Listen / Practise reading pair per reading panel; separate choice and opened-help controls; consistent word, meaning, sentence and draft labels"
+  ],
+  "checks": {
+    "compiledBuild": "PASS",
+    "deliveryAndPcmContracts": 16,
+    "speechContracts": 4,
+    "compiledBrowser": {
+      "startTime": "2026-09-25T02:16:31.325Z",
+      "duration": 303298.196,
+      "expected": 22,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "catalogueEntries": 6125,
+    "independentClips": 5561,
+    "wordEntries": 2359,
+    "changedWordEntries": 2359,
+    "missingRecordedEntries": 0,
+    "providerRequests": 0,
+    "ledgers": [
+      {
+        "file": "evidence/voice-ai-demo-20260918/openai-attempts.jsonl",
+        "unchanged": true
+      },
+      {
+        "file": "evidence/demo-ai-20260919/openai-attempts.jsonl",
+        "unchanged": true
+      },
+      {
+        "file": "evidence/cast-audio-20260919/attempts.jsonl",
+        "unchanged": true
+      },
+      {
+        "file": "evidence/er13/live-evaluation/attempts.jsonl",
+        "unchanged": true
+      }
+    ],
+    "deliveryReceipt": {
+      "status": "EXACT_INPUTS_AND_OUTPUTS_MATCH",
+      "inputSha256": "794cf5c87af9bf250802384f34ba5959a33780e707265677a9ba93d111f28c3d",
+      "outputSha256": "c11472195e09653fb2b7b6ec98fe411ed08dc547a1aa646206bb9629a88ce276",
+      "inputFiles": 8243,
+      "outputFiles": 7453
+    }
+  },
+  "candidate": {
+    "inputSha256": "794cf5c87af9bf250802384f34ba5959a33780e707265677a9ba93d111f28c3d",
+    "outputSha256": "c11472195e09653fb2b7b6ec98fe411ed08dc547a1aa646206bb9629a88ce276",
+    "audioManifestSha256": "e7c26aa5cef30350e548fbe55873127ecc1296d2e23a45cbb818aa2660779db6"
+  },
+  "browserCheckpoint": "http://127.0.0.1:4494/garden",
+  "manual": {
+    "microphoneRecordingReplay": "CONFIRMED_BY_TONY",
+    "screenShareParagraphAudibility": "CONFIRMED_BY_TONY",
+    "revisedWordPronunciation": "AWAITING_TONY_LISTENING_CHECK",
+    "audition": {
+      "file": ".cache/nerdy-word-listening-check.wav",
+      "words": [
+        "promised",
+        "obligation",
+        "secure",
+        "hesitated",
+        "mended"
+      ],
+      "sha256": "1f9978a17ba3aa393efe21c9ad315cdfc29eaffe2dee316edb927eb1ef053700",
+      "scope": "Exact current game PCM clips joined with silence; no synthesis."
+    }
+  },
+  "limitations": [
+    "Native decoder completion and sample identity do not establish intelligibility or pronunciation quality.",
+    "Synthetic queue and microphone cases are explicitly labeled.",
+    "Final required suite, full rehearsal, live Sol request and PR remain pending."
+  ],
+  "corrections": [
+    {
+      "run": "output/nerdy-audio-reopened/results.json",
+      "result": "4 passed, 2 failed",
+      "details": "Fixed conversation observer setup after parent DOM ref attachment. Native audio test now captures ended before application clears the media source."
+    }
+  ],
+  "logs": {
+    "build": ".cache/nerdy-audio-reopened-build-r2.log",
+    "browser": ".cache/nerdy-audio-reopened-browser-r2.log",
+    "report": "output/nerdy-audio-reopened-r2/results.json"
+  }
+}

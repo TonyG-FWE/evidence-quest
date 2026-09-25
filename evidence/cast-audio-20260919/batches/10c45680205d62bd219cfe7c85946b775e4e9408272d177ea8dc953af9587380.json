@@ -1,0 +1,42 @@
+{
+  "id": "10c45680205d62bd219cfe7c85946b775e4e9408272d177ea8dc953af9587380",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 10949,
+      "sha256": "48014b857d54be0c4beaba191f30c6f71678ab3f00824ac1711143a3b3a692fc"
+    },
+    {
+      "bytes": 658,
+      "sha256": "9c2bc261d2bc2f24a66e8cafebd757e3bb081bbba9a43a8c9be6f243908c3c7c"
+    },
+    {
+      "bytes": 1348,
+      "sha256": "eb2d56595db2a2361ca922c88030ee51b9f0f4fb4e3109971036ec66995501c9"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "satchel.",
+  "textSha256": "7688117483fb9f0eee3b6346625d4c11e8abf0052b1cec42d35528aa08aef9db",
+  "sha256": "3157f4f818a71f14031e289c24736f05a5d92420a48774154d5c49332418abb8",
+  "bytes": 12955,
+  "alignment": [
+    {
+      "text": "satchel",
+      "start": 0.16,
+      "end": 0.72
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.7516780045351474
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

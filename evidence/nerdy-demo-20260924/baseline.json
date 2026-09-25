@@ -1,0 +1,88 @@
+{
+  "at": "2026-09-25T00:03:58.007Z",
+  "head": "112e80cd4d1e11fae1fbf81b4324026e2fbef7e5",
+  "preexistingEvidence": [
+    {
+      "file": "evidence/authored-evaluation.json",
+      "bytes": 240,
+      "sha256": "820020e133d0f673e70a16305d694a7191917ce2770d286b27f8e5494234a2eb",
+      "backup": ".cache/nerdy-demo-baseline/evidence/authored-evaluation.json"
+    },
+    {
+      "file": "evidence/er13/cold-chunk-retry-abort-chromium.json",
+      "bytes": 510,
+      "sha256": "2c57753ce2de9ecfa114c3407d470e55ee28c4b4263ebc77489f68e8f8da1c20",
+      "backup": ".cache/nerdy-demo-baseline/evidence/er13/cold-chunk-retry-abort-chromium.json"
+    },
+    {
+      "file": "evidence/er13/cold-chunk-retry-http503-chromium.json",
+      "bytes": 607,
+      "sha256": "7c1b4ec67ce653caa62acb9566e69581884445c0706327bb999446419ef808bd",
+      "backup": ".cache/nerdy-demo-baseline/evidence/er13/cold-chunk-retry-http503-chromium.json"
+    },
+    {
+      "file": "evidence/er13/content-validation.json",
+      "bytes": 742,
+      "sha256": "e71630a80d536f7ef6a249bb3cf240166fef5b1bf2df9d5530a9ea75d5f0bdc7",
+      "backup": ".cache/nerdy-demo-baseline/evidence/er13/content-validation.json"
+    },
+    {
+      "file": "evidence/er13/home-png-chromium.json",
+      "bytes": 10591,
+      "sha256": "1a3b2000e4da00521c1c8489e34fdae692ce72f30be3e01e1340a203fb641754",
+      "backup": ".cache/nerdy-demo-baseline/evidence/er13/home-png-chromium.json"
+    },
+    {
+      "file": "evidence/er13/production-art-exports.json",
+      "bytes": 299391,
+      "sha256": "648dc8ad97e43a82a6e994ec77be47a8dadfa8276d6501703e1093e62577ef6e",
+      "backup": ".cache/nerdy-demo-baseline/evidence/er13/production-art-exports.json"
+    },
+    {
+      "file": "evidence/er13/render-resize-chromium.json",
+      "bytes": 22650,
+      "sha256": "f1d4c3ceac16656eb988fac61f2f779139d51e66f9842f60006191c798609a40",
+      "backup": ".cache/nerdy-demo-baseline/evidence/er13/render-resize-chromium.json"
+    },
+    {
+      "file": "evidence/group-7-finale-20260915/content-manifest.json",
+      "bytes": 348879,
+      "sha256": "d7d916a2ca624e2065a7a52071f42587e302a9abc11bf520b4f408bcaf7594d5",
+      "backup": ".cache/nerdy-demo-baseline/evidence/group-7-finale-20260915/content-manifest.json"
+    },
+    {
+      "file": "evidence/scale-20260912/chromium-1469x1105-route.json",
+      "bytes": 14934,
+      "sha256": "7d74d6cfc570f6c84a782978b1c219c791dec9da0b8e961e61dc518433bda004",
+      "backup": ".cache/nerdy-demo-baseline/evidence/scale-20260912/chromium-1469x1105-route.json"
+    },
+    {
+      "file": "evidence/scale-20260912/chromium-compact-route.json",
+      "bytes": 14976,
+      "sha256": "8ce2789b3290027c043fed37d5042086796028faf51297570798c1ea91c78c11",
+      "backup": ".cache/nerdy-demo-baseline/evidence/scale-20260912/chromium-compact-route.json"
+    }
+  ],
+  "ledgers": [
+    {
+      "file": "evidence/voice-ai-demo-20260918/openai-attempts.jsonl",
+      "bytes": 1228,
+      "sha256": "0c6ed03e64b11f6b5138956d85ee753dfdbc67cafb0aeb619bfcf90e7472867b"
+    },
+    {
+      "file": "evidence/demo-ai-20260919/openai-attempts.jsonl",
+      "bytes": 7469,
+      "sha256": "bf505475a6c01d2ea9993afeb85d3a748ae4074edafc74fae15212f915088516"
+    },
+    {
+      "file": "evidence/cast-audio-20260919/attempts.jsonl",
+      "bytes": 92752,
+      "sha256": "a575515a391eee49d4da97455f4b81bb6a0f44791408842244713fa2e93e414b"
+    },
+    {
+      "file": "evidence/er13/live-evaluation/attempts.jsonl",
+      "bytes": 549,
+      "sha256": "17a4a6a57b5e1d54192320717e09f2c631a3eb052d1c1e62bc74c866bc877653"
+    }
+  ]
+}

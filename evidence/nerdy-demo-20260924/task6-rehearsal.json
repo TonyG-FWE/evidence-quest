@@ -1,0 +1,74 @@
+{
+  "schema": "eq.nerdy-demo.task.v1",
+  "task": 6,
+  "at": "2026-09-25T09:30:11.418Z",
+  "status": "VERIFIED_SCOPE_DELIVERY_PENDING",
+  "fix": "FIX11.NERDY06",
+  "check": "CHECK11.NERDY06",
+  "candidate": {
+    "inputSha256": "9b0cb81ada1f13552606265ff73915df0bc7cc6bdd1654ec9d36a91cadcf5a64",
+    "outputSha256": "bde7cb5fdecaf9b04ffd09949f2e86a696be6453552941bc9461370b954a3e5f"
+  },
+  "requiredCommands": {
+    "record": "required-commands.json",
+    "complete": true,
+    "allPassed": false,
+    "browser": {
+      "passed": 184,
+      "failed": 31,
+      "skipped": 1,
+      "flaky": 0
+    },
+    "contractRecheck": {
+      "passed": 245,
+      "failed": 0
+    }
+  },
+  "successor": {
+    "record": "final-checks.json",
+    "deliveryAudioTestsPassed": 20,
+    "contractsPassed": 245,
+    "packageVerified": true,
+    "originalAssetHashesMatched": 143
+  },
+  "rehearsal": {
+    "record": "rehearsal.json",
+    "attempt": "r6",
+    "result": "PASS",
+    "durationMs": 884951,
+    "coreDurationMs": 163806,
+    "liveProviderRequests": 0,
+    "recordedFeedbackReplays": 1,
+    "pageErrors": []
+  },
+  "fallback": {
+    "record": "fallback-visual-review.json",
+    "result": "VERIFIED",
+    "file": "output/nerdy-demo-fallback-20260925/Evidence-Quest-Nerdy-demo.webm",
+    "sha256": "51c0031f019e9044f56621d9a8a7dd07b9e645989901ed2a4ac298b17516c372",
+    "originalLiveCaptureRetained": true
+  },
+  "humanAudio": {
+    "microphoneRecordingReplay": "CONFIRMED_BY_TONY",
+    "receivingDeviceParagraphAudio": "CONFIRMED_BY_TONY",
+    "haveAndShortWords": "KNOWN_ACCEPTED_DEMO_LIMITATION"
+  },
+  "spending": {
+    "record": "live-accounting.json",
+    "newLiveRequests": 1,
+    "automaticRetries": 0,
+    "totalReservedUSD": 0.0383185,
+    "ceilingUSD": 10,
+    "TASK11_19": "HALTED_1_OF_75"
+  },
+  "browserCheckpoint": {
+    "url": "http://127.0.0.1:4495/garden",
+    "application": "Codex interactive browser",
+    "prepared": "Bakery opening after ordinary fresh bridge and planting controls"
+  },
+  "preexistingEvidence": {
+    "record": "preexisting-preservation.json",
+    "exactFilesPreserved": 10
+  },
+  "remainingQualification": "Original required-browser failures, resource budgets, maintainer-profile checks, excluded saved-state assertion, artwork approval and wider device qualification remain open. This is bounded demo readiness, not full product qualification."
+}

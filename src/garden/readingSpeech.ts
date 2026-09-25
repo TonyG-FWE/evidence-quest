@@ -1,6 +1,18 @@
 import type {SpeechRequest,SpeechSource,VoiceSpeaker,ReadingOrigin} from './voiceTypes.js';
 import {voiceSpeaker} from './voiceTypes.js';
 
+/** Closing quotation marks belong to the sentence they close, never the next speaker. */
+export function sentenceAt(text:string,offset:number){
+ for(const match of text.matchAll(/[^.!?]+(?:[.!?]+["”’']*|$)/g)){
+  const end=match.index+match[0].length;
+  if(offset>=end)continue;
+  const start=match.index+match[0].length-match[0].trimStart().length;
+  const value=match[0].trim();
+  return {text:value,start,end:start+value.length};
+ }
+ return {text,start:0,end:text.length};
+}
+
 /** Occurrence offsets belong to this document; source offsets belong to its canonical paragraph. */
 export function speechDocument(parts:readonly SpeechRequest[],separator='\n\n'):SpeechRequest{
  let text='';
@@ -36,6 +48,23 @@ export function speechAttributes(speech:SpeechRequest|undefined){return speech?{
  'data-speech-owner':speech.owner,
  'data-speech-source':speech.source?JSON.stringify(speech.source):undefined,
 }:{};}
+
+/** Capture visible nested passages without flattening their source or speaker identity. */
+export function speechFromBlock(node:HTMLElement):SpeechRequest{
+ if(node.matches('button'))return speechFromElement(node,node.getAttribute('aria-label')??node.textContent??'');
+ const parts:SpeechRequest[]=[];
+ function collect(current:Node){
+  if(current.nodeType===3){if(current.textContent)parts.push(speechFromElement(current.parentElement!,current.textContent));return;}
+  if(current.nodeType!==1)return;
+  const element=current as HTMLElement;
+  if(element.matches('.g-reading-tools,[aria-hidden="true"]'))return;
+  if(element.matches('[data-readable-text],[data-source-component]')){parts.push(speechFromElement(element,element.textContent??''));return;}
+  element.childNodes.forEach(collect);
+ }
+ collect(node);
+ const request=speechDocument(parts,''),start=request.text.length-request.text.trimStart().length;
+ return sliceSpeech(request,start,request.text.trimEnd().length);
+}
 /** Semantic metadata takes precedence over display labels such as “Sol’s feedback”. */
 export function speechFromElement(node:HTMLElement,text:string,occurrence?:{start:number;end:number}):SpeechRequest{
  const attr=(name:string)=>node.closest<HTMLElement>('[data-speech-'+name+']')?.getAttribute('data-speech-'+name)??undefined;

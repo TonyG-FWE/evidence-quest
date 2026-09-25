@@ -1,0 +1,42 @@
+{
+  "id": "1aa355f40dab8b8ef49ff258ac594fe57ffd3983e9e20ad4609f6cf208283865",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 10859,
+      "sha256": "624b25848e0967a4e6d506b2e22ac8db9ff21c4ecc113b46a1d5e932b015fe94"
+    },
+    {
+      "bytes": 940,
+      "sha256": "891d423766c36ee3a7416df1e6a3801ddcf14f9c13f579850887cd4d76687941"
+    },
+    {
+      "bytes": 1156,
+      "sha256": "eb78f92cccc8938477df18fdcafa210bd684db86b4b833d686398256f95026c7"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "bag.",
+  "textSha256": "7f6494afc34f8f05ee5d09c13930b410aee3cf000b7d96b9c0eea2bcdb1b6253",
+  "sha256": "59d5264e03f674bc175a5195c9fc9fd6c413e3fc3d24046a0a2b433a358d9801",
+  "bytes": 12955,
+  "alignment": [
+    {
+      "text": "bag",
+      "start": 0.24,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.7516780045351474
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

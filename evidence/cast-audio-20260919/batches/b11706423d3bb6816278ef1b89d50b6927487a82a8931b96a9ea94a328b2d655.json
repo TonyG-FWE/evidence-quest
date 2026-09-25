@@ -1,0 +1,42 @@
+{
+  "id": "b11706423d3bb6816278ef1b89d50b6927487a82a8931b96a9ea94a328b2d655",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11617,
+      "sha256": "b25d2170713b0b0bb88c6b4a579099d80b8cb1fc99916d3218e69b5b90e6fdf3"
+    },
+    {
+      "bytes": 831,
+      "sha256": "7d64ac632508cdf90b7646d78dba420e52ed8d9a4dbe40eacc19317284d454be"
+    },
+    {
+      "bytes": 1343,
+      "sha256": "0421afcda1ac930ecd55c2717533efe0772598d0c4a1dc840d9595cf211d8c4f"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "earth.",
+  "textSha256": "df53bc9cf81cd30211c94db16ac38f52e98fc76db305a440285247b3e71d0fef",
+  "sha256": "6d7c08b492b63f8b45f1d268086c80d4a2165c1eb8da89576f8d44d8016a315b",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "earth",
+      "start": 0.24,
+      "end": 0.72
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

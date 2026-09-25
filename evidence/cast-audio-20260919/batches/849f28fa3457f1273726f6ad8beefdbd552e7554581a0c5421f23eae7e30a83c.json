@@ -1,0 +1,42 @@
+{
+  "id": "849f28fa3457f1273726f6ad8beefdbd552e7554581a0c5421f23eae7e30a83c",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11587,
+      "sha256": "4c0ea78a98dc285e88c31e4bb5a00327159be4b9f5be6b1cd5e88e34f0ff7aba"
+    },
+    {
+      "bytes": 1110,
+      "sha256": "44e56a9966391d60aed97658f421f80902c8019c6e35aee0a19130e3798ac65d"
+    },
+    {
+      "bytes": 1094,
+      "sha256": "572ce5582b246006220df824d0e14af8742c20c5349392cfcee5d4b44a50ff0b"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "inventions.",
+  "textSha256": "c6fd7dfb7b8b4dd919b435211168a95001e05e9ddcf9d12b730a0281048c08ee",
+  "sha256": "b2a7e10623853a9bc9ce474b940a6f054490012bfe7c090fedcb0f919a83a1a5",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "inventions",
+      "start": 0.16,
+      "end": 0.72
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

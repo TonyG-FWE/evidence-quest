@@ -124,9 +124,15 @@ export function safeBridgeRetreat(c:Chapter,from:Point):Point{
 }
 export function bridgeStatus(c:Chapter){
  if(c.crossed)return 'The crossing is ready for everyone to use.';
- if(sectionSecured(c,firstPart(c)))return sectionSecured(c,secondPart(c))&&sectionsMeet(c)?'Both sections are secure. Walk across to Grandma.':'The first section is secure. Walk onto it, then place and secure the second section.';
- if(sectionAtBank(c,firstPart(c),'west'))return 'The first section is placed. Put up its four posts and tie a rope along each side before stepping onto it.';
- return 'Place a section against the bank where the two sections can reach across.';
+ const b=constructionOf(c),first=firstPart(c);
+ if(!sectionAtBank(c,first,'west'))return 'Place a section against the bank where the two sections can reach across.';
+ if(!sectionSecured(c,first))return bridgePosts.some(id=>!id.startsWith('east')&&!b.posts[id])?'Seat its two near corner posts and its two center posts in their marked sockets.':'Secure a rope along each side of the first section, from a near corner post to a center post.';
+ if(sectionSecured(c,secondPart(c))&&sectionsMeet(c))return 'Both sections are secure. Walk across to Grandma.';
+ if(!canWorkSecond(c))return 'Walk onto the secured first section.';
+ if(!sectionsMeet(c))return 'Connect to the first section';
+ if(!sectionAtBank(c,secondPart(c),'east'))return "The sections won't reach across here. Look along the river for a place where the banks are closer together.";
+ if(bridgePosts.some(id=>id.startsWith('east')&&!b.posts[id]))return 'Seat the two far corner posts.';
+ return 'Extend each rope from its center post to the matching far corner post, then wrap, tighten and tie it.';
 }
 export function placementChanged(c:Chapter,old:Chapter['sections']){
  const b=ensureConstruction(c),changed=(id:BridgePart)=>apart(old[id],c.sections[id])>.001||Math.abs(old[id].rotation-c.sections[id].rotation)>.001;

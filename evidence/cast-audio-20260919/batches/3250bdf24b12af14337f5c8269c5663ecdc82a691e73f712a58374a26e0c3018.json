@@ -1,0 +1,42 @@
+{
+  "id": "3250bdf24b12af14337f5c8269c5663ecdc82a691e73f712a58374a26e0c3018",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11647,
+      "sha256": "d402353a47e81685340ab89f8df0a06318286047d1218eb6824f07854164135e"
+    },
+    {
+      "bytes": 818,
+      "sha256": "61a1d245827c4562f0d4f52d4b754d525aba563ed5ef7f0b2f6872b900fef1bf"
+    },
+    {
+      "bytes": 1326,
+      "sha256": "77e1734aeaa18216e2f5bedd32fb4af5262c76b4b86b874a66bbc986cf826229"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "building.",
+  "textSha256": "5ec405a81b3fa49dcbc186dc7d2750e606fb65df09cdadef652cac6d6566e66c",
+  "sha256": "aa8f2ef78a770eeadf92162f7e737ca78ce5fddd4848da99da703fabd1f3c395",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "building",
+      "start": 0.24,
+      "end": 0.72
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

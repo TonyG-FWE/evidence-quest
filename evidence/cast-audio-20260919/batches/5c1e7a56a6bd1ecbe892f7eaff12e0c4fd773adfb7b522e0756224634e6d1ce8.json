@@ -1,0 +1,42 @@
+{
+  "id": "5c1e7a56a6bd1ecbe892f7eaff12e0c4fd773adfb7b522e0756224634e6d1ce8",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 5987,
+      "sha256": "a1d8b7e1788e9b5a178ec3b5637005aca0818b098ad63eb26732febaf52d2fe2"
+    },
+    {
+      "bytes": 1042,
+      "sha256": "35df1204b981a4142b35bbc578bd640bb59d3ead7902c8a3f721d18b1973aee8"
+    },
+    {
+      "bytes": 1329,
+      "sha256": "1a57d5bc0d19ac1eff913286135a4a4e3bba78ffe442d6102bea9358ba0455d7"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "kite.",
+  "textSha256": "55ad585721f5c7bf82906875595c233ebb594c473ae3381b37d50a0fbc4b7fae",
+  "sha256": "b38c0510c1f4d394304c207dad5dcf8bc394996de72c9c555381e67612a10ccf",
+  "bytes": 8358,
+  "alignment": [
+    {
+      "text": "kite",
+      "start": 0.16,
+      "end": 0.48
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.4552380952380952
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

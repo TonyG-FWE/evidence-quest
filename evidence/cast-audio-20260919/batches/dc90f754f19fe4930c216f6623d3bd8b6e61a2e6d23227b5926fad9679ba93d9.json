@@ -1,0 +1,42 @@
+{
+  "id": "dc90f754f19fe4930c216f6623d3bd8b6e61a2e6d23227b5926fad9679ba93d9",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 9947,
+      "sha256": "448d41e81a5a08612ee55e01a1afee13d69148c13f20c5b1956ee40de4b83af2"
+    },
+    {
+      "bytes": 845,
+      "sha256": "2ca8443caa91fd61b4535a9aefce2f08fe4e1ebfc8e6cd491d1e857cece3a9b1"
+    },
+    {
+      "bytes": 1327,
+      "sha256": "689286a5a29c086234ee5ed2c79c739be4948a3406de6670c52c1ddcdc67967c"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "drinking.",
+  "textSha256": "c5b1db671575b8736f592ea33f408279bae9f931d9a2a09501457329dac9a98f",
+  "sha256": "683202cd42903361bd199ed6f1bb17a2c70ab9c3d9d70baf7efd081690f00115",
+  "bytes": 12119,
+  "alignment": [
+    {
+      "text": "drinking",
+      "start": 0.24,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.7022675736961451
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

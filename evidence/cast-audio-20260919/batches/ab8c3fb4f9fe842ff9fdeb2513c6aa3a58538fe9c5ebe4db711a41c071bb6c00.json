@@ -1,0 +1,42 @@
+{
+  "id": "ab8c3fb4f9fe842ff9fdeb2513c6aa3a58538fe9c5ebe4db711a41c071bb6c00",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 8269,
+      "sha256": "8af2969035839d0555245a448547f8828cca1dbb7cd15d67918769509a195c38"
+    },
+    {
+      "bytes": 858,
+      "sha256": "d4b45330e1cee0f0e1154955b45e5918bc29fbd433e586c8adc978eeba6ba885"
+    },
+    {
+      "bytes": 1739,
+      "sha256": "19ac26b3652cc71ecc663a161d20ce9fe9c68b8c0b25e17300e7dd7e1bd82232"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "weather.",
+  "textSha256": "158eeaf6e9e761b570a8e049d75b141db0a691b28433c511d803d3148c5f4915",
+  "sha256": "732ce2dbd801880ba4caedfd3da0cce5fe832108617d20059de15f9ee694f6d7",
+  "bytes": 10866,
+  "alignment": [
+    {
+      "text": "weather",
+      "start": 0.08,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6034467120181406
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

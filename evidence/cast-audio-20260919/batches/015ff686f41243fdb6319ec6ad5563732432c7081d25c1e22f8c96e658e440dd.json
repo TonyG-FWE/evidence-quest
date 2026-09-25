@@ -1,0 +1,42 @@
+{
+  "id": "015ff686f41243fdb6319ec6ad5563732432c7081d25c1e22f8c96e658e440dd",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 9991,
+      "sha256": "271635d85b5555c8e590fab038d03a477354218ac89c29e7ebafd5deb54b2fa5"
+    },
+    {
+      "bytes": 993,
+      "sha256": "fefeb01f4f24e7e38656117e9a4525d8d73d435f56fe06ed2257f62f56dfa521"
+    },
+    {
+      "bytes": 1135,
+      "sha256": "b1bbc8db0f7358408730404a25db4b3047e6886554515ca194871f52db002100"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "rattled.",
+  "textSha256": "4f880bda1a7d74d27c0634765fc321fcf1787fdd1bcd1422d90dd1e13b52effe",
+  "sha256": "a2cc5d912e3aef44b5df1e7f2f7805251bb08a3110a4fae145256e50aa9a00f4",
+  "bytes": 12119,
+  "alignment": [
+    {
+      "text": "rattled",
+      "start": 0.16,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.7022675736961451
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "7aa151fcb9c69e420ed0e6c0ea951d8428f8af49bf1315b2859c4ae4feacfba6",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 13157,
+      "sha256": "7c0fd98e49cff4605af5ce2331ed8f789b3c3dfdea11b6634d1348a3896eec5e"
+    },
+    {
+      "bytes": 1087,
+      "sha256": "35db5439f3f28a22a9348758ee9bd9ad8c67860b1119f0d20f123cbfdc3f8abd"
+    },
+    {
+      "bytes": 1219,
+      "sha256": "c8cc4a1507ced194c89a03701f0206c64a6fa3538dc3a9e824860301310c0d4f"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "wings.",
+  "textSha256": "2349013c25d55634b7ae571402aa00a3f4a582d4258ce7366f20e3d40d6fe620",
+  "sha256": "d200bd1d265b9816c603397a5eee63981a5d1f87b02bfad71d61b316b2c5eb90",
+  "bytes": 15463,
+  "alignment": [
+    {
+      "text": "wings",
+      "start": 0.16,
+      "end": 0.88
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8998866213151927
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

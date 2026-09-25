@@ -1,0 +1,42 @@
+{
+  "id": "4f2b66c68e2dd547cb0d9cef8b0647f192feece47081700c8cdb1270dff9ec50",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 9970,
+      "sha256": "057d424b303ab5e274eb02def80d420879147aa9140d112100465d4b09655185"
+    },
+    {
+      "bytes": 939,
+      "sha256": "b49f04a2cdac21a31538a2a18407cc9bc0b42904fed52c97253f1f7afa289d52"
+    },
+    {
+      "bytes": 1210,
+      "sha256": "60e00c6dbccb2004b9a509bf840859d8d88695468b11f8bab4a746f6dedd9aa2"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "repairs.",
+  "textSha256": "46c0196ac0c4e6b52e1298319f42572b39e6137a24944f9f1c7477f025eb1ab6",
+  "sha256": "ecdfbdb40cbab7ab3a698b02f1b2a0e89e9e25ce68bbdfc758fa8601994e04d8",
+  "bytes": 12119,
+  "alignment": [
+    {
+      "text": "repairs",
+      "start": 0.16,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.7022675736961451
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

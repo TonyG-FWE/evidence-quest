@@ -1,0 +1,42 @@
+{
+  "id": "1b8d21447c5c9392cd14777e65c8d7c5e374615f152d5d8f4e98bf02b599879c",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11695,
+      "sha256": "79dee8e98324b7d051dff5164142a36e04b1c396ed6044ea591bc0c76c8a0d48"
+    },
+    {
+      "bytes": 763,
+      "sha256": "ddc103413f9d9978649e9c5fe6a1be8b383431ebf9856b07c51ff3b3c915cf57"
+    },
+    {
+      "bytes": 1333,
+      "sha256": "75b4e81d062cb7bc898fa9dd39dab60e954a713697bc94d8b9b25082981ce7c5"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "lifted.",
+  "textSha256": "cd8b0b3ff430260264cd09f16c691ecec59c48b8f8816931b99f9a29451a4b80",
+  "sha256": "eb3a4625d3e307838f356793ce46b5d6094182b4e59d217414e39b169eefebbe",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "lifted",
+      "start": 0.16,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

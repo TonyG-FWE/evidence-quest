@@ -13,6 +13,7 @@ import {lanternIds,lanternRecord,type LanternId} from './lanterns.js';
 import {freshBakery,applyBakery,settleBakery,bakeryReady,bakeryAction,bakeryDurations,bakeryActionText,bakeryInstruction,nearBakery,near as bakeryNear,BAKERY_SOL,TILE_SHELF,WORKSHOP_DOOR,THANK_RINA,type BakeryState,type BakeryAction,type BakeryStep} from './bakery.js';
 import {SerializedQueue} from '../core/serialized.js';
 import {localReview} from './assets/profile.js';
+import type {SpeechRequest} from './voiceTypes.js';
 import {sourcesFor,sourceIdsFor,sourcePrefix,preparedEndingsFor,endingLinesFor} from './content.js';
 import type {NarrativeEdition} from './narrativeEdition.js';
 import {freshStory,applyStory,SOL,solPosition,maraAtGarden,GATHER_MARA,type StoryState,type StoryEvent} from './chapter.js';
@@ -41,7 +42,7 @@ export interface GardenState {
  cardGesture:CardGesture|null;
  gesture:HandGesture|null;
  playback:PlaybackState|null;
- readingInspection?:{text:string[];depth:number;preview:GardenState['preview'];bakeryPreview:GardenState['bakeryPreview'];birdPreview:NonNullable<Chapter['mara']['scene']>['preview']};
+ readingInspection?:{text:string[];speech?:SpeechRequest[];depth:number;preview:GardenState['preview'];bakeryPreview:GardenState['bakeryPreview'];birdPreview:NonNullable<Chapter['mara']['scene']>['preview']};
  bakeryPreview:'gap'|'beside'|null;maraTarget:Point|null;maraParent:ReturnFrame|null;
  panelTrail:ReturnFrame[];restoreFocus:FocusAnchor|null;activity:WorldActivity|null;actionParent:ReturnFrame|null;
  viewDrafts:{memoryMoment:'planting'|'gathering';endingScene:import('./chapter.js').EndingScene;plan:{time:import('./chapter.js').GatheringTime;reader:import('./chapter.js').Reader}|null;disclosures:Record<string,boolean>};
@@ -50,7 +51,7 @@ export interface GardenState {
  save:'loading'|'saved'|'saving'|'failed'|'conflict'|'damaged'|'version';savedRevision:number;background:boolean;viewLost:boolean;
 }
 export type Command=PlaybackCommand|HandCommand|WorkbenchCommand|{type:'JOURNAL';command:JournalCommand}
- |{type:'INSPECT_TEXT';text:string[];focus?:FocusAnchor|null}
+ |{type:'INSPECT_TEXT';text:string[];speech?:SpeechRequest[];focus?:FocusAnchor|null}
  |{type:'CONVERSATION';direction:'next'|'previous'}
  |{type:'BAKERY_STEP';step:BakeryStep}|{type:'TILE_PREVIEW';position:'gap'|'beside'}
  |{type:'MARA_GO';point:Point}|{type:'MARA_STEP';step:'ASK'|'TAPE'|'ALIGN'|'PLACE'|'DEPART'|'RETURN'}|{type:'TAPE_PREVIEW';position:'beside'|'across'}
@@ -106,7 +107,7 @@ function settled(s:GardenState,_continueGrowth:boolean,id:string){
   c.history.push(a.id);
   if(bakeryAction(a.kind))settleBakery(s,a);if(gatheringAction(a.kind))settleGathering(s,a.kind);
   if(a.kind==='ferry'){c.history.push('F');s.notice='The empty seed boat stays at its mooring. The seed remains where you left it.';}
-  if(a.kind==='ropes'){const count=ropeCount(c,'box');c.river.ropesCollected=true;for(const end of ['west','east'] as const)if(c.river.ropeLocations[end]==='box')c.river.ropeLocations[end]='pip';s.notice=count===1?'Pip takes the remaining repair rope. The other rope stays where you left it.':'Pip takes Grandma’s two repair ropes. Fasten one end of the footbridge to each bank.';}
+  if(a.kind==='ropes'){const count=ropeCount(c,'box');c.river.ropesCollected=true;for(const end of ['west','east'] as const)if(c.river.ropeLocations[end]==='box')c.river.ropeLocations[end]='pip';s.notice=count===1?'Pip takes the remaining repair rope. The other rope stays where you left it.':'Pip takes Grandma’s two repair ropes.';}
   if(a.kind==='loadSeed'){c.seed='boat';c.river.boat.phase='steering';c.river.collection={phase:'outbound',distance:c.river.collection?.distance??0};s.mode='boat';s.notice='The seed is aboard. Steer through the channel to Grandma’s blue landing.';}
   if(a.kind==='unloadSeed'){c.seed='pip';c.river.boat={...c.river.boat,phase:'moored',position:{...LAUNCH}};if(c.river.collection)c.river.collection.phase='return';s.mode='walk';s.notice='Pip takes the same seed out of the boat. You can carry it across the bridge instead.';}
   if(a.kind==='receiveSeed'){c.seed='grandma';c.river.boat={...c.river.boat,phase:'moored',position:{...LANDING}};c.ferrySide='east';if(c.river.collection)c.river.collection.phase='return';c.history.push('F');s.mode='walk';s.notice='Grandma holds the seed and walks back to the planting spot. Pip can keep exploring.';}
@@ -200,7 +201,8 @@ export function gardenReduce(state:GardenState,command:Command,id:string):Garden
  case 'START_PLAY':resetViews(s);s.panel=null;s.notice='Move Pip with the arrow keys or WASD. Talk to Mara at the dock.';break;
  case 'CONVERSATION':moveConversation(s,command.direction);break;
  case 'INSPECT_TEXT':if(s.panelTrail.length<20&&s.panel!=='help'&&!s.action&&!s.readingInspection&&command.text.length&&command.text.length<=200&&command.text.every(t=>typeof t==='string'&&t.length<=100000)){
-   const inspection={text:command.text,depth:s.panelTrail.length+1,preview:s.preview,bakeryPreview:s.bakeryPreview,birdPreview:c.mara.scene?.preview??null};
+   const speech=command.speech?.length===command.text.length&&command.speech.every((part,index)=>part.text===command.text[index])?command.speech:undefined;
+   const inspection={text:command.text,...(speech?{speech}:{}),depth:s.panelTrail.length+1,preview:s.preview,bakeryPreview:s.bakeryPreview,birdPreview:c.mara.scene?.preview??null};
    if(s.gesture){s.gesture=null;s.preview=null;s.bakeryPreview=null;inspection.preview=null;inspection.bakeryPreview=null;}
    s.route=[];s.keys=[];s.boatTarget=null;s.maraTarget=null;enterReader(s,'help',command.focus);s.readingInspection=inspection;s.notice='';
   }break;
@@ -317,7 +319,7 @@ export function gardenReduce(state:GardenState,command:Command,id:string):Garden
  case 'CANCEL':if(s.mode==='arrange')s.mode='walk';s.cardGesture=null;s.gesture=null;s.bakeryPreview=null;s.maraTarget=null;if(c.mara.scene)c.mara.scene.preview=null;s.preview=null;s.route=[];s.keys=[];s.boatTarget=null;break;
  case 'NUDGE':{const p=(s.preview??c.sections)[s.selection];previewAt(s,{x:p.x+command.x,z:p.z+command.z},false);s.notice='Move the selected section, then press Enter or choose Place section. Escape cancels this move.';break;}
  case 'ROTATE':if(s.mode==='arrange'&&!c.crossed&&!c.joined){if((['west','east'] as const).some(end=>c[end]&&sectionAtEnd(c,end)===s.selection)){s.notice='Release that section’s rope before turning it.';break;}const turned={...c.sections[s.selection],rotation:(c.sections[s.selection].rotation+command.direction*Math.PI/2+Math.PI*2)%(Math.PI*2)};if(blocksFerryLane(turned)){s.notice='Move this section away from the seed boat’s route before turning it.';break;}c.sections[s.selection]=turned;s.notice='Section turned. Its short end should meet the other section.';}break;
- case 'JOIN':{if(s.mode!=='arrange'||c.joined)break;const a=c.sections.a,b=c.sections.b;if(Math.abs(a.z-b.z)>.17||Math.abs(Math.abs(a.x-b.x)-BRIDGE_GEOMETRY.length)>.17||Math.abs(Math.sin(a.rotation))>.01||Math.abs(Math.sin(b.rotation))>.01||Math.abs(a.rotation-b.rotation)>.01){s.notice='Bring the short ends of the bridge sections together. Turn the loose section to face the same way as the other section.';break;}const heldB=c.river.attachments.west==='b'||c.river.attachments.east==='b',key=heldB?'a':'b',origin=heldB?b:a,other=heldB?a:b,joinedPart={x:origin.x+(other.x>origin.x?BRIDGE_GEOMETRY.length:-BRIDGE_GEOMETRY.length),z:origin.z,rotation:origin.rotation};if(Math.abs(joinedPart.x)>5||blocksFerryLane(joinedPart)){s.notice='Move the sections farther from the seed boat’s route before joining them.';break;}if((c.river.attachments.west===key||c.river.attachments.east===key)&&distance(joinedPart,other)>.001){s.notice='Release an attachment before adjusting this section.';break;}c.sections[key]=joinedPart;c.joined=true;s.notice='The sections are joined. Does the crossing reach both banks?';break;}
+ case 'JOIN':{if(s.mode!=='arrange'||c.joined)break;const a=c.sections.a,b=c.sections.b;if(Math.abs(a.z-b.z)>.17||Math.abs(Math.abs(a.x-b.x)-BRIDGE_GEOMETRY.length)>.17||Math.abs(Math.sin(a.rotation))>.01||Math.abs(Math.sin(b.rotation))>.01||Math.abs(a.rotation-b.rotation)>.01){s.notice='Bring the short ends of the bridge sections together. Turn the loose section to face the same way as the other section.';break;}const heldB=c.river.attachments.west==='b'||c.river.attachments.east==='b',key=heldB?'a':'b',origin=heldB?b:a,other=heldB?a:b,joinedPart={x:origin.x+(other.x>origin.x?BRIDGE_GEOMETRY.length:-BRIDGE_GEOMETRY.length),z:origin.z,rotation:origin.rotation};if(Math.abs(joinedPart.x)>5||blocksFerryLane(joinedPart)){s.notice='Move the sections farther from the seed boat’s route before joining them.';break;}if((c.river.attachments.west===key||c.river.attachments.east===key)&&distance(joinedPart,other)>.001){s.notice='Release an attachment before adjusting this section.';break;}c.sections[key]=joinedPart;c.joined=true;s.notice=bridgeStatus(c);break;}
  case 'FASTEN':if(c.river.construction){s.notice='Install the posts, then draw each rope to the next post. The two sides are fastened separately.';break;}if(s.mode!=='arrange'||c.crossed)break;if(c.river.ropeLocations[command.end]!=='pip'){s.notice='Take the repair rope from Grandma’s maintenance box first.';break;}if(!reaches(c,command.end)||(command.atZ!==undefined&&Math.abs(bridgeCenter(c).z-command.atZ)>.22)){s.notice=GAP;break;}c.river.attachments[command.end]=sectionAtEnd(c,command.end);c[command.end]=true;c.river.ropeLocations[command.end]='attached';s.notice=bridgeReady(c)?'Both ends are secure. Return to Pip, then walk across.':LOOSE;break;
  case 'ADJUST':if(s.mode==='arrange'&&!c.crossed){if(!navigable(c.pip)){s.notice='Step onto the bank before releasing a supporting rope.';break;}if(c.river.construction){const b=ensureConstruction(c);for(const side of ['north','south'] as const)b.ropes[side]={west:false,center:false,east:false};syncConstruction(c);}for(const end of ['west','east'] as const)if(c[end])c.river.ropeLocations[end]='pip';c.west=false;c.east=false;c.river.attachments={west:null,east:null};s.notice='The ropes are released into Pip’s backpack. Move the sections, then fasten them again.';}break;
  case 'FERRY':if(c.seed==='boat'||s.action||s.panel||s.background||s.viewLost)break;if(c.seed==='pip'&&!c.crossed){if(c.ferrySide!=='west'||distance(c.pip,CROSSING)>1.6){s.notice='Bring Pip beside the seed boat to load the seed.';break;}start(s,'loadSeed',id);break;}if(distance(c.pip,CROSSING)>1.6&&distance(c.pip,GRANDMA)>1.6){s.notice='Return to the riverbank or Grandma to watch the seed boat.';break;}start(s,'ferry',id);break;

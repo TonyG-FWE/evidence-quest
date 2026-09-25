@@ -1,0 +1,42 @@
+{
+  "id": "7e2afb335a2edf175f4767bc34a0bda7fed1ccbb6c4b29ddadba846559a73752",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11853,
+      "sha256": "8d762ef0c0e61ae0b12cc8e98895f9d53b36d3280d7553cb30be02894232c206"
+    },
+    {
+      "bytes": 849,
+      "sha256": "df13c7558bd694201857907876992f0b79fbf30587f4ed1153ea8ffc74b07e24"
+    },
+    {
+      "bytes": 1089,
+      "sha256": "61363096941062df901364538849939835a9b872c3bbd84513d3ab8560a5c0e8"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "whistles.",
+  "textSha256": "b3670e1d8dee807de22d41c4f84d9be31ac68298f881194449228eed170595a7",
+  "sha256": "e7784dc4843f2f3eae3c47215b07af33bf4b7578133ac0dfd427e686a44445e8",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "whistles",
+      "start": 0.16,
+      "end": 0.72
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

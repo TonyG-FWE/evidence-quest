@@ -1,0 +1,42 @@
+{
+  "id": "93b1d601d469b7b78ad3caee3310af9da0692f458a1e59ec6a21ef9ddfe4cbf5",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 9115,
+      "sha256": "d3c087a1d944d4d439bd24e48ce970cba6b54fe8cb46b4c658a40e44cf31ba82"
+    },
+    {
+      "bytes": 840,
+      "sha256": "301a881442bc055e23052cdfe797fbb291e5211b7f0272dfdadf1fd3ff5592ee"
+    },
+    {
+      "bytes": 1328,
+      "sha256": "600c89bed110c9dc595ec5f3796c7e0433da4cafb3f56361fcc1157cc97c46e1"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "walkway.",
+  "textSha256": "de530d1488c6058692316c4ff756423afcc3e11d344a51a4714ecdc109f9fb2c",
+  "sha256": "4fdbfaf73a406f260426f8e2d59e60e5e799c668aface7167fb85827c157295c",
+  "bytes": 11283,
+  "alignment": [
+    {
+      "text": "walkway",
+      "start": 0.16,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6528571428571428
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

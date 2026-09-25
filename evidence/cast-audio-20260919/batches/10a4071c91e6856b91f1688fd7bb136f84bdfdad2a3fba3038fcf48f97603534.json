@@ -1,0 +1,42 @@
+{
+  "id": "10a4071c91e6856b91f1688fd7bb136f84bdfdad2a3fba3038fcf48f97603534",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11688,
+      "sha256": "ed06bbc5eed670930119ded899c81888212a9eba5d64e4f80af577d74c5a4397"
+    },
+    {
+      "bytes": 785,
+      "sha256": "4f7ef37749258a1458521246fc320b22c9761be1af329d789740489eb54ebaec"
+    },
+    {
+      "bytes": 1318,
+      "sha256": "079ced518f272ab3538b7b759c538536513c9ba98f1ac0c2c4ac3e22dfd4db5f"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "recipe's.",
+  "textSha256": "4cb65ac29d44e92117e3a88938d8fbc2d2356e3d8b810333d892436dc7be2b77",
+  "sha256": "ce67cf57aa0ddf8f3678f7c3e5bc107fb1ea7237f0ef62dd31231a6d68650d99",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "recipe's",
+      "start": 0.16,
+      "end": 0.8
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

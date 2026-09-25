@@ -41,17 +41,17 @@ export function FestivalWelcome({onBegin,onReadHelp,disabled=false}:{onBegin:()=
  return <section className="festival-welcome" aria-labelledby="festival-welcome-title">
   <div className="festival-illustrations">
    <CastIllustration/>
-  </div>
-  <div className="festival-welcome-content">
-   <header><p className="festival-eyebrow">STORIES & INVENTIONS MADE BY CHILDREN</p><h1 id="festival-welcome-title">Welcome to<br/><em>SparkFest</em></h1></header>
-   <div className="festival-loop-portrait"><img src="/art/er13/loop-awake-v1.lossless.webp" width="1125" height="1379" alt="Loop, the cream and teal rolling projector beside the story screen."/><span>Meet Loop<br/><small>Your rolling projector</small></span></div>
-   <FestivalCopy/>
    <div className="festival-welcome-actions">
     <p className="festival-adventure-name">The Garden Adventure</p>
     <p>Help Pip bring new stories to Grandma’s garden.</p>
     <button className="g-primary" onClick={onBegin} disabled={disabled}>Begin Pip’s adventure</button>
     <button className="g-secondary" onClick={event=>onReadHelp(event.currentTarget)}>Read the welcome with help</button>
    </div>
+  </div>
+  <div className="festival-welcome-content">
+   <header><p className="festival-eyebrow">STORIES & INVENTIONS MADE BY CHILDREN</p><h1 id="festival-welcome-title">Welcome to<br/><em>SparkFest</em></h1></header>
+   <div className="festival-loop-portrait"><img src="/art/er13/loop-awake-v1.lossless.webp" width="1125" height="1379" alt="Loop, the cream and teal rolling projector beside the story screen."/><span>Meet Loop<br/><small>Your rolling projector</small></span></div>
+   <FestivalCopy/>
   </div>
  </section>;
 }

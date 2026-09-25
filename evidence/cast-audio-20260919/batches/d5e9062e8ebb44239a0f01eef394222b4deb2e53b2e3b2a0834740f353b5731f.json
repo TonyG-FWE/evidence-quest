@@ -1,0 +1,42 @@
+{
+  "id": "d5e9062e8ebb44239a0f01eef394222b4deb2e53b2e3b2a0834740f353b5731f",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11624,
+      "sha256": "1bdada5f9b3509104e53d3af5d743432b0957aa2b3d4cb918ae8bbd91a0037ca"
+    },
+    {
+      "bytes": 908,
+      "sha256": "240b347ebff6f9ae8c6aa3a3b20a925b7d191a32fd70a488299af2461aa0ea69"
+    },
+    {
+      "bytes": 1259,
+      "sha256": "adfa4fb7b29e1023a8f4125866fba7d107eb163af42ef7891d6d44fd71e31e35"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "riverbank.",
+  "textSha256": "27764abcdeded3cfef12b4d785b88bcd44196976a6d9ffea662432431010f130",
+  "sha256": "9a4657175ad9c293ba2cd060101469fc08bf92a9e10936f7a4005b19423ed48a",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "riverbank",
+      "start": 0.08,
+      "end": 0.72
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

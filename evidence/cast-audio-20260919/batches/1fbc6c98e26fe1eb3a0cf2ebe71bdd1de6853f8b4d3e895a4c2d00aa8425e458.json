@@ -1,0 +1,42 @@
+{
+  "id": "1fbc6c98e26fe1eb3a0cf2ebe71bdd1de6853f8b4d3e895a4c2d00aa8425e458",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 6059,
+      "sha256": "7cb590da510651a9f5e190f6b682eee1d4ffa733f066edb6ff541ea7cdb25c6c"
+    },
+    {
+      "bytes": 960,
+      "sha256": "53622d7ddc8a41982a9113d1aed838fe35acd7f270565e7bd24cd00ce04256d1"
+    },
+    {
+      "bytes": 1339,
+      "sha256": "1cb51dd43bb4fa66223816a5a4012f0b6514de5ccf845dd0a1359d8fde0ab031"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "went.",
+  "textSha256": "dbec44cfdaeb5bbcb9ffff87017714175579baf723eb2571c7d97ece2dd11f27",
+  "sha256": "28413776aa41187feb59d9a84cf48060d4d349ce1a3ebff27afd31d33f48bbc8",
+  "bytes": 8358,
+  "alignment": [
+    {
+      "text": "went",
+      "start": 0.16,
+      "end": 0.48
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.4552380952380952
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

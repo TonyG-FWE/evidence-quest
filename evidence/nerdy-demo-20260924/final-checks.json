@@ -1,0 +1,118 @@
+{
+  "at": "2026-09-25T06:57:56.340Z",
+  "scope": "Continuation after the local manifest write failed in final-checks-generation-failure.json. Exact catalogue refresh and 6073 bindings already passed; resume PCM derivation, then verify the rebuilt successor and corrected tests. Provider-free; unchanged recordings.",
+  "commands": [
+    {
+      "command": "Verify and derive exact PCM",
+      "args": [
+        "scripts/derive-cast-clips.mjs"
+      ],
+      "exitCode": 0,
+      "durationMs": 10715,
+      "log": ".cache/nerdy-final-check-r2-3.log",
+      "logSha256": "e5d1b759edf51854695c72bee01fcac781fbceafe5899e5470d99c9b6d7464f5"
+    },
+    {
+      "command": "Delivery and audio contracts",
+      "args": [
+        "--test",
+        "scripts/demo-delivery.test.mjs",
+        "scripts/cast-audio-identity.test.mjs",
+        "scripts/cast-catalogue-text.test.mjs"
+      ],
+      "exitCode": 0,
+      "durationMs": 2548,
+      "log": ".cache/nerdy-final-check-r2-4.log",
+      "logSha256": "76f21c5bd4d8acb6b476812a114a9f476b9fe27131bed2663773e506d94708e9"
+    },
+    {
+      "command": "npm run test:contracts",
+      "args": [
+        "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\.tools\\node-v24.21.0-win-x64\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "test:contracts"
+      ],
+      "exitCode": 0,
+      "durationMs": 42085,
+      "log": ".cache/nerdy-final-check-r2-5.log",
+      "logSha256": "317c307e2065aa46aa3e2bfa555cc042e158bb1f1c4d8ef22836d51f2bbe8393"
+    },
+    {
+      "command": "npm run build:demo",
+      "args": [
+        "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\.tools\\node-v24.21.0-win-x64\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "build:demo"
+      ],
+      "exitCode": 0,
+      "durationMs": 305470,
+      "log": ".cache/nerdy-final-check-r2-6.log",
+      "logSha256": "529407f4d0d28250f4de997bf25490989e6ac4f8465c9e10e7b4997f12f473b3"
+    },
+    {
+      "command": "npm run verify:demo-build",
+      "args": [
+        "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\.tools\\node-v24.21.0-win-x64\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "verify:demo-build"
+      ],
+      "exitCode": 0,
+      "durationMs": 16742,
+      "log": ".cache/nerdy-final-check-r2-7.log",
+      "logSha256": "0801307f766e6f908de3ff5e4c90e8b8637107ea533c7382ba7f3ee5cc239c93"
+    },
+    {
+      "command": "npm run verify:demo-assets",
+      "args": [
+        "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\.tools\\node-v24.21.0-win-x64\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "verify:demo-assets"
+      ],
+      "exitCode": 0,
+      "durationMs": 2203,
+      "log": ".cache/nerdy-final-check-r2-8.log",
+      "logSha256": "42f18cab6e33a36fdce976eaf2576f2c8e7b4e9d191c880b93caddefccc2d8bf"
+    },
+    {
+      "command": "npm run verify:demo-originals",
+      "args": [
+        "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\.tools\\node-v24.21.0-win-x64\\node_modules\\npm\\bin\\npm-cli.js",
+        "run",
+        "verify:demo-originals"
+      ],
+      "exitCode": 0,
+      "durationMs": 5011,
+      "log": ".cache/nerdy-final-check-r2-9.log",
+      "logSha256": "1c24abe0cc4f736e6f76bd5ad7bafbb39a26f5d3751265f0a33b7b919887397b"
+    },
+    {
+      "command": "Focused compiled browser checks",
+      "args": [
+        "scripts/test-browser.mjs",
+        "browser-tests/garden-demo-audio.spec.ts",
+        "browser-tests/garden-adaptive-reader.spec.ts",
+        "browser-tests/garden-bakery.spec.ts",
+        "browser-tests/garden-continuity.spec.ts",
+        "browser-tests/garden-hands.spec.ts",
+        "browser-tests/garden-mara.spec.ts",
+        "browser-tests/garden-render-recovery.spec.ts",
+        "browser-tests/garden-rendering.spec.ts",
+        "browser-tests/garden-sequence.spec.ts",
+        "browser-tests/garden-stage-actors.spec.ts",
+        "browser-tests/garden-word-jobs.spec.ts",
+        "browser-tests/garden.spec.ts",
+        "browser-tests/garden-literacy.spec.ts",
+        "--grep",
+        "one primary|bakery listening|Stop during|isolated word|long personal notes|Bakery: connected|Continuity: passengers|roof and dough|G4 ordinary early telling|failed opening landscape|profile-bound painted|Conversation sequence: (prepared|own)|Leaving an ending while models load|Actual draft word view|carried-seed route|Synthetic microphone device",
+        "--workers=1",
+        "--retries=0"
+      ],
+      "exitCode": 1,
+      "durationMs": 1108635,
+      "log": ".cache/nerdy-final-check-r2-10.log",
+      "logSha256": "d2b14470a832a9472d5ce853ce2ad02a858ad5bcee34f7f2798d76d293bcdfe2"
+    }
+  ],
+  "complete": true,
+  "allPassed": false
+}

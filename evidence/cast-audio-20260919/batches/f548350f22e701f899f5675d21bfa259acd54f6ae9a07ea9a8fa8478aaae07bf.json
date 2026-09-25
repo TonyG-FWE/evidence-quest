@@ -1,0 +1,42 @@
+{
+  "id": "f548350f22e701f899f5675d21bfa259acd54f6ae9a07ea9a8fa8478aaae07bf",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 5845,
+      "sha256": "100b526d147c638443e144cc4233b546a6fab55ca78e5d644af44cfd5b6f710b"
+    },
+    {
+      "bytes": 1176,
+      "sha256": "4866f729198ec9b5d1d58c64896639a6257f5b8e45c6f0f81cb18a06f9522289"
+    },
+    {
+      "bytes": 1337,
+      "sha256": "3e22e28e05c58f20652550dfcdc00c91e03cbf40e618a6ab83d109dd778cccc2"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "hurt.",
+  "textSha256": "e0c13c02bb8b28972af44f283a9e49b408d238f9dfe133a2d15b15795a4e4a7a",
+  "sha256": "9285457831cc86c5968d2b16c70171188687fd0149170052a6c0053e31b9e7d3",
+  "bytes": 8358,
+  "alignment": [
+    {
+      "text": "hurt",
+      "start": 0.16,
+      "end": 0.48
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.4552380952380952
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

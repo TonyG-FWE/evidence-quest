@@ -1,0 +1,42 @@
+{
+  "id": "ae59fb6e1d325bbb22ccd3d4df26eeeace00adfa6e03abc4872773ff67123e44",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 8268,
+      "sha256": "e6502b0dd0a79803a1e73365765060990884ba9c235e0c4399d3ed35dc53a910"
+    },
+    {
+      "bytes": 861,
+      "sha256": "a60f9250af23e0fe15348fde083145c0415b7044e0db147e86ac0e7dfdcff005"
+    },
+    {
+      "bytes": 1737,
+      "sha256": "75e4e08c175d95dd0b91c659024a1f62ebb062a24839e8eca89da10ca3b8251a"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "because.",
+  "textSha256": "cc07239f87ffe8827f0e7b3a3ff83486d12f3313721dcd040eae9be409b54395",
+  "sha256": "a24048f9c945c7478e8358b8d60915e8bc625a1f1d7933749ca0c707b632edf4",
+  "bytes": 10866,
+  "alignment": [
+    {
+      "text": "because",
+      "start": 0.16,
+      "end": 0.48
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6034467120181406
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

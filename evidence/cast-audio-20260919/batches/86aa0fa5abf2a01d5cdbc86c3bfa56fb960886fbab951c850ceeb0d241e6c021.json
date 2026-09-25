@@ -1,0 +1,42 @@
+{
+  "id": "86aa0fa5abf2a01d5cdbc86c3bfa56fb960886fbab951c850ceeb0d241e6c021",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11615,
+      "sha256": "59b19d0de0aea4a8c5c0578c3b4b663941c66409ee0117a78cd5b21affed0668"
+    },
+    {
+      "bytes": 818,
+      "sha256": "c00ff0a2f1e92de65e9de9956660ffd247c30d83f59ebd3d47f28b82ff9d0ee2"
+    },
+    {
+      "bytes": 1358,
+      "sha256": "b1f3c842698423bc0ae2153436f8ceafdda88c4d8de9ee9183079c59678284d8"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "furniture.",
+  "textSha256": "4ed28830d2f4df500ef860a1cd961d63bea847005998f8ad6cfbc09bf68155b0",
+  "sha256": "be39eb7b87b8d4d5ad68cbaaedae1b2a3cb37d79cb7d8d39a9feb3801afc1149",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "furniture",
+      "start": 0.16,
+      "end": 0.72
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

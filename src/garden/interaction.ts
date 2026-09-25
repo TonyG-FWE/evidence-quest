@@ -1,6 +1,7 @@
 import type {GardenState, Panel} from './model.js';
 import type {Contribution, GatheringTime, Reader} from './chapter.js';
 import type {LanternId} from './lanterns.js';
+import {firstPart,onSection} from './bridgeConstruction.js';
 
 /** View context is temporary; it never supplies story facts or possession. */
 export type FocusAnchor = {label:string;tag:string;index:number;id?:string};
@@ -40,5 +41,6 @@ export function roleText(s:GardenState){
  if(s.activity)return s.activity.kind==='ending-rehearsal'?'Rehearsing Sol’s ending · Pip waits at the workshop':s.activity.kind==='lantern-inspect'?'A memory kept in the garden · Pip stays where you left him':s.activity.kind==='ending-presentation'?(s.activity.mode==='watch'?'Watching Loop’s picture show':'Narrating with Loop'):'Trying a gathering plan · Previewing does not send invitations';
  if(s.action?.kind==='keepMemory')return 'Pip puts his chosen memory in the flower he grew with Grandma';
  if(s.action?.kind==='bringCushions'||s.action?.kind==='finishGrandmaPage')return 'Grandma prepares to share her own story';
+ if(s.mode==='arrange'&&onSection(s.chapter.sections[firstPart(s.chapter)],s.chapter.pip))return 'You direct the repair.';
  return s.mode==='workbench'?'At Sol’s workbench · Arrange witnessed moments in your own telling':s.mode==='bakery-repair'?'You direct Sol’s roof repair · Pip is the material helper':s.mode==='mara-story'?'You guide Mara in her earlier story · Pip waits in the garden':s.mode==='boat'?'You steer the seed boat · Pip waits on the bank':s.mode==='arrange'?'You direct the bridge repair · Pip waits on the bank':'You are Pip · Explore, talk and help';
 }

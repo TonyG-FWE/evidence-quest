@@ -1,0 +1,42 @@
+{
+  "id": "b033b44cdba253f9eb900fa2e0ed78e01510f2199a29d4e2980262e3d1fc5404",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11226,
+      "sha256": "81537d0b7b9c924ec90629a23de5a6893b340cae6ed5a577efe02528cdb8f35c"
+    },
+    {
+      "bytes": 840,
+      "sha256": "335ddf781c41bc1a2eb212108632dc702478debb9ecd4d77932763001673692b"
+    },
+    {
+      "bytes": 889,
+      "sha256": "3dcd9c1566befc0209608242866d37eb943072d866c551d546278d5fb63a5a1a"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "bird's.",
+  "textSha256": "42adb059304b8a1abadf8dbd53a9884395c6b8c633eab51efb49ea98774e85ea",
+  "sha256": "644f8531844254a36d5fc2c4e1bb2c787d5923a1413bf676932b0e117df549f8",
+  "bytes": 12955,
+  "alignment": [
+    {
+      "text": "bird's",
+      "start": 0.24,
+      "end": 0.72
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.7516780045351474
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

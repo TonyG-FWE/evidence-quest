@@ -1,0 +1,42 @@
+{
+  "id": "bac50b7fdb0064d44364c68a077cd9cdce8e7ea1ffdeaba9224d1fdbfc7e779c",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11141,
+      "sha256": "f8539320642c4fd2d455916db82f49cb50db38d93ecd8ba995585072341a8269"
+    },
+    {
+      "bytes": 834,
+      "sha256": "ba21a7d3e296fe8f198bd8f0a103591d89348a5cce1b8a339e6292ec3be390dc"
+    },
+    {
+      "bytes": 980,
+      "sha256": "c86cf654e24b5b5990dc4e9158a95e2fcd7452d28a2f6a4e1f4c905ab1edc36a"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "bakes.",
+  "textSha256": "d76f9178a558c7d9025eee0b30ae8140e5205a53f3d7c413fec9b8a25bd7bcd5",
+  "sha256": "fb777ad719f692f22618e021a099ef6409257ace4e48e795065dc0d863d198f8",
+  "bytes": 12955,
+  "alignment": [
+    {
+      "text": "bakes",
+      "start": 0.24,
+      "end": 0.8
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.7516780045351474
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

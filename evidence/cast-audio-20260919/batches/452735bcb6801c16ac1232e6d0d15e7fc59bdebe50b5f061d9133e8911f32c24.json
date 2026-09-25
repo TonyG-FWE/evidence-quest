@@ -1,0 +1,42 @@
+{
+  "id": "452735bcb6801c16ac1232e6d0d15e7fc59bdebe50b5f061d9133e8911f32c24",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 8281,
+      "sha256": "a2447bf37c1d80d0e058f606c2b5bf25263d37ee0bc26079c17b20fc73daf4fa"
+    },
+    {
+      "bytes": 972,
+      "sha256": "bc1d2e204f965fd7ef7f20057e4fca0567117a99fc747e533de2469338439ffc"
+    },
+    {
+      "bytes": 1613,
+      "sha256": "c19ece2548866feeb34c0bae747484c2c560810f4ff9d807a3a560d7f3fba6a9"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "wood.",
+  "textSha256": "2b38497a0c392190f069dcedf2648c3f5fdb69ee6549b7990cf6557bd484c445",
+  "sha256": "bfee88068008c010644b970a5a411c4294e161cd1c2b9cabad6d122a921668f8",
+  "bytes": 10866,
+  "alignment": [
+    {
+      "text": "wood",
+      "start": 0.16,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6034467120181406
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "f6d0ba992fc05a2ba4c07e80510d310cb73d4dfd91627649c6ae35d478fc8894",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 9118,
+      "sha256": "36531c70dd8fa2734d6e4b8e0a95dccf0ebaa2265c67bf8a8cee12634e184c90"
+    },
+    {
+      "bytes": 829,
+      "sha256": "6d34f3b10570c1378fba341687b8947b0ed070ee5c3b5c00c7b54a8135e8a96e"
+    },
+    {
+      "bytes": 1336,
+      "sha256": "ff8e109a94be9f039c3807490be63d51338b5da230165503f96561fb7e8f2e7b"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "daylight.",
+  "textSha256": "090f2c5b326f135e1f263856097062d4e85b72288c372b456577fc66c3af3fac",
+  "sha256": "ac6a627019c81f6f0169b8abad7ed9feb19799ba86c939a794c29ba232177116",
+  "bytes": 11283,
+  "alignment": [
+    {
+      "text": "daylight",
+      "start": 0.24,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6528571428571428
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

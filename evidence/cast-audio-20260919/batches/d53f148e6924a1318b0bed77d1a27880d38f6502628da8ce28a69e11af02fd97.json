@@ -1,0 +1,42 @@
+{
+  "id": "d53f148e6924a1318b0bed77d1a27880d38f6502628da8ce28a69e11af02fd97",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11748,
+      "sha256": "fd4553651ae45b497b8db204ded182470783190166b7b003dd626536df452a40"
+    },
+    {
+      "bytes": 712,
+      "sha256": "5a1790e467503d2406afd6e90bfd7c3d461741b35db714d6a5dcc9158e2b5352"
+    },
+    {
+      "bytes": 1331,
+      "sha256": "a2b753120148717585dcb16cb633ad261c8aced108070b2aaddb91617bd38f90"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "knead.",
+  "textSha256": "67a86542e2af875bcd272887a6c70f83331b3c59f040c833869eb93920d7e192",
+  "sha256": "ec0e8155a66ddbf3ab38a8b9afb7f0b0fe1e44c7a18adee1024c3fce49216400",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "knead",
+      "start": 0.08,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

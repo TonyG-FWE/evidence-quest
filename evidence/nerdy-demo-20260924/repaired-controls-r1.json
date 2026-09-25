@@ -1,0 +1,62 @@
+{
+  "at": "2026-09-25T07:30:11.593Z",
+  "report": "output/nerdy-demo-focused-repaired-controls-r1/results.json",
+  "reportSha256": "8fbd6ad03914a1127a5b9d6fe913234d1779c5a876b6f9b29b4702808d13273e",
+  "stats": {
+    "startTime": "2026-09-25T07:23:40.969Z",
+    "duration": 329693.156,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  },
+  "globalErrors": [],
+  "cases": [
+    {
+      "file": "garden-bakery.spec.ts",
+      "title": "Bakery: connected repair, wrong placement, compact recovery, baking, accompanied thanks and exact draft excerpt",
+      "project": "chromium",
+      "outcome": "unexpected",
+      "status": "failed",
+      "durationMs": 128914,
+      "retries": 0,
+      "errors": [
+        "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Make the dough with Rina', exact: true })\n    - locator resolved to <button disabled class=\"g-primary\">Make the dough with Rina</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is not enabled\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is not enabled\n    - retrying click action\n      - waiting 100ms\n    28 × waiting for element to be visible, enabled and stable\n       - element is not enabled\n     - retrying click action\n       - waiting 500ms\n\n\n  15 |  const prior=await saved(page);expect(prior.bakery.tile).toBe('shelf');await openDirections(page,'Bakery');if(await button(page,'Go to the tile shelf').isVisible())await button(page,'Go to the tile shelf').click();await button(page,'Take the spare tile').click();await expect.poll(async()=>(await saved(page)).bakery.tile).toBe('pip');await button(page,'Backpack').click();await expect(page.getByText('Rina’s spare roof tile',{exact:true})).toBeVisible();await button(page,'Back to Pip').click();await openDirections(page,'Bakery');await button(page,'Bring the tile to Sol').click();await button(page,'Give the tile to Sol').click();await button(page,'Direct Sol’s roof repair').click();await button(page,'Remove the cracked tile').click();await page.setViewportSize({width:1422,height:800});await button(page,'Beside the opening').click();await button(page,'Place the tile').click();await expect.poll(async()=>(await data(page)).stage).toBe('misplaced');expect((await data(page)).leakOpen).toBe(true);const directed=(await data(page)).solScreen;expect(directed.head.y).toBeLessThan(.95);expect(directed.feet.y).toBeGreaterThan(-.95);expect(Math.abs(directed.head.x)).toBeLessThan(.95);await page.screenshot({path:info.outputPath('misplaced-tile-leak.png')});\n  16 |  await page.setViewportSize({width:320,height:568});await button(page,'Over the opening').click();await page.keyboard.press('Escape');await expect(button(page,'Over the opening')).toHaveAttribute('aria-pressed','false');await button(page,'Over the opening').click();await button(page,'Help').click();await expect(page.getByText(/Help and Pause stop travel and cancel unplaced tile previews/)).toBeVisible();await button(page,'Back to the roof repair').click();await openDirections(page,'Bakery');await expect(button(page,'Over the opening')).toHaveAttribute('aria-pressed','false');await page.reload();await expect.poll(async()=>(await data(page)).stage).toBe('misplaced');await openDirections(page,'Bakery');const box=await page.locator('.garden-scene canvas').boundingBox();expect(box?.height).toBeGreaterThanOrEqual(145);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:info.outputPath('roof-compact-recovery.png')});\n> 17 |  await button(page,'Over the opening').click();await button(page,'Place the tile').click();await expect.poll(async()=>(await data(page)).stage).toBe('sealed');expect((await data(page)).leakOpen).toBe(false);expect((await data(page)).rain).toBe(true);await page.setViewportSize({width:1422,height:800});const settled=(await data(page)).solScreen;expect(settled.head.y).toBeLessThan(.95);expect(settled.feet.y).toBeGreaterThan(-.95);await page.screenshot({path:info.outputPath('roof-laptop-fully-framed.png')});await button(page,'Let Rina check the flour').click();await expect.poll(async()=>(await data(page)).stage).toBe('checked');await page.setViewportSize({width:1440,height:1000});if(await button(page,'Go to Rina').isVisible())await button(page,'Go to Rina').click();await button(page,'Make the dough with Rina').click();await expect.poll(async()=>(await data(page)).stage).toBe('mixed');await expect(page.locator('.garden-reader')).toHaveCount(0);await button(page,'Talk with Rina about what happens next').click("
+      ],
+      "attachments": []
+    },
+    {
+      "file": "garden-demo-audio.spec.ts",
+      "title": "bakery listening includes the visible narrator and all three replies once",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 54964,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-literacy.spec.ts",
+      "title": "Synthetic microphone device: local capture, replay, explicit feedback, discard and leave cleanup",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 27780,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-mara.spec.ts",
+      "title": "G4 ordinary early telling: actual duty, no source shortcut, compact repair, pause/reload and same present-day facts",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 86162,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    }
+  ]
+}

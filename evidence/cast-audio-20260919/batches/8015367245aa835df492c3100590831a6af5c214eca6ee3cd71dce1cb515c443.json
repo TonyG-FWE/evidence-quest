@@ -1,0 +1,42 @@
+{
+  "id": "8015367245aa835df492c3100590831a6af5c214eca6ee3cd71dce1cb515c443",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 11619,
+      "sha256": "f2d68e620eff9f32309dbf739b5d816bb94561f49f7b88850d69343fe7898915"
+    },
+    {
+      "bytes": 810,
+      "sha256": "dd8a31c26d6805fe8f61b5f4b92f7f3d7a70fa29b21c11cfaed2f915c2fed0db"
+    },
+    {
+      "bytes": 1362,
+      "sha256": "c1ed94bde9f5ac195941bc0ac0df43cda27ad3a3fae995a7093f4c0501925a4e"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "water.",
+  "textSha256": "a1e90e671dd1eed710e2e74a4388b06ce77b6c9c479643732b8494c28202ac8a",
+  "sha256": "454ed64efeed9ae359b2a8d2ea397f25a441babfb494ac30141a36956667f605",
+  "bytes": 13791,
+  "alignment": [
+    {
+      "text": "water",
+      "start": 0.08,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.8010657596371882
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

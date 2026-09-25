@@ -1,0 +1,42 @@
+{
+  "id": "b96aedddedf06f3d1eef6912f1c66f94ebdf1f8a5a916ccf1d1428fb4edc97d2",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 9949,
+      "sha256": "74ad7f1616fb02554a8f8170f51657809de5e8e5473cd214fe6611698b5588d4"
+    },
+    {
+      "bytes": 812,
+      "sha256": "5f1d7665cbe506e597843e95d654f14d60bf666233d0e07de39977ed41c73cdf"
+    },
+    {
+      "bytes": 1358,
+      "sha256": "2aa961931e032b7eb87db0de3ac632bcd21dd60bc809978b23695ab0fc14826c"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "knocking.",
+  "textSha256": "c57a0a58a66edf4d11cffc45baefbd945acc39d46f079673613b4b86f3da2eae",
+  "sha256": "f90ef5d63999c2a01e14bd7a515a6c7904fe28d065b963c1bb61cc13a915cfce",
+  "bytes": 12119,
+  "alignment": [
+    {
+      "text": "knocking",
+      "start": 0.16,
+      "end": 0.64
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.7022675736961451
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

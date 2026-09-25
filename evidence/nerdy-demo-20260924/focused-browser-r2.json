@@ -1,0 +1,233 @@
+{
+  "at": "2026-09-25T07:23:13.050Z",
+  "report": "output/nerdy-demo-final-focused-r2/results.json",
+  "reportSha256": "0d2cddfc703da2edc051812b938a70e767ca628730f915c941a1b220dca0476d",
+  "stats": {
+    "startTime": "2026-09-25T07:04:21.831Z",
+    "duration": 1107941.134,
+    "expected": 10,
+    "skipped": 0,
+    "unexpected": 7,
+    "flaky": 0
+  },
+  "globalErrors": [],
+  "cases": [
+    {
+      "file": "garden-adaptive-reader.spec.ts",
+      "title": "long personal notes send a compact exact-text revision only after explicit listening",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 6603,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-bakery.spec.ts",
+      "title": "Bakery: connected repair, wrong placement, compact recovery, baking, accompanied thanks and exact draft excerpt",
+      "project": "chromium",
+      "outcome": "unexpected",
+      "status": "failed",
+      "durationMs": 201747,
+      "retries": 0,
+      "errors": [
+        "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('.g-world-activity-caption')\nExpected substring: \"these words have not been checked\"\nReceived string:    \"Your suggested ending for SolThe picture shows the event you chose. These words stay labeled as your suggested ending.The rain turned into chocolate.Choose Use this ending to select these exact words, or return to your draft.Use this endingBack to my ending\"\nTimeout: 15000ms\n\nCall log:\n  - Expect \"toContainText\" with timeout 15000ms\n  - waiting for locator('.g-world-activity-caption')\n    33 × locator resolved to <div class=\"g-world-activity-caption\">…</div>\n       - unexpected value \"Your suggested ending for SolThe picture shows the event you chose. These words stay labeled as your suggested ending.The rain turned into chocolate.Choose Use this ending to select these exact words, or return to your draft.Use this endingBack to my ending\"\n\n\n  16 |  await page.setViewportSize({width:320,height:568});await button(page,'Over the opening').click();await page.keyboard.press('Escape');await expect(button(page,'Over the opening')).toHaveAttribute('aria-pressed','false');await button(page,'Over the opening').click();await button(page,'Help').click();await expect(page.getByText(/Help and Pause stop travel and cancel unplaced tile previews/)).toBeVisible();await button(page,'Back to the roof repair').click();await openDirections(page,'Bakery');await expect(button(page,'Over the opening')).toHaveAttribute('aria-pressed','false');await page.reload();await expect.poll(async()=>(await data(page)).stage).toBe('misplaced');await openDirections(page,'Bakery');const box=await page.locator('.garden-scene canvas').boundingBox();expect(box?.height).toBeGreaterThanOrEqual(145);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);await page.screenshot({path:info.outputPath('roof-compact-recovery.png')});\n  17 |  await button(page,'Over the opening').click();await button(page,'Place the tile').click();await expect.poll(async()=>(await data(page)).stage).toBe('sealed');expect((await data(page)).leakOpen).toBe(false);expect((await data(page)).rain).toBe(true);await page.setViewportSize({width:1422,height:800});const settled=(await data(page)).solScreen;expect(settled.head.y).toBeLessThan(.95);expect(settled.feet.y).toBeGreaterThan(-.95);await page.screenshot({path:info.outputPath('roof-laptop-fully-framed.png')});await button(page,'Let Rina check the flour').click();await expect.poll(async()=>(await data(page)).stage).toBe('checked');await page.setViewportSize({width:1440,height:1000});if(await button(page,'Go to Rina').isVisible())await button(page,'Go to Rina').click();await button(page,'Make the dough with Rina').click();await expect.poll(async()=>(await data(page)).stage).toBe('mixed');await expect(page.locator('.garden-reader')).toHaveCount(0);await button(page,'Talk with Rina about what happens next').click();await expect(page.locator('.garden-reading-scroll')).toContainText('Similar-sized loaves will bake evenly');await button(page,'Back to Pip').click();await openDirections(page,'Bakery');await button(page,'Try baking the whole lump').click();await expect(page.locator('.garden-scene')).toHaveAttribute('data-action-kind','bakeUnshaped');await expect(page.locator('.garden-reader')).toHaveCount(0);await expect.poll(async()=>(await data(page)).stage).toBe('checked');await expect(page.locator('.garden-reader')).toHaveCount(0);await button(page,'Talk with Rina about what happens next').click();await expect(page.locator('.garden-reading-scroll')).toContainText('The middle was still doughy');await button(page,'Back to Pip').click();await openDirections(page,'Bakery');expect((await data(page)).unevenBatchVisible).toBe(true);expect((await saved(page)).bakery.loaf).toBe('none');await page.reload();await openDirections(page,'Bakery');await button(page,'Make the dough with Rina').click();await button(page,'Shape the loaves').click();await butt"
+      ],
+      "attachments": [
+        {
+          "name": "native-selection-trace",
+          "body": "W3sia2V5IjoiQ29udHJvbCtIb21lIiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6MH0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6MX0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6Mn0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6M30seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6NH0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6NX0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6Nn0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6N30seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6OH0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6OX0seyJrZXkiOiJTaGlmdCtBcnJvd1JpZ2h0IiwiYWN0aXZlIjoiZmVlZGJhY2stZXhjZXJwdC1zb2wtZW5kaW5nIiwic3RhcnQiOjAsImVuZCI6MTB9XQ=="
+        }
+      ]
+    },
+    {
+      "file": "garden-continuity.spec.ts",
+      "title": "Continuity: passengers first, attributed dialogue in order, resume, accessible choices and read-only source returns",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 36066,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-demo-audio.spec.ts",
+      "title": "one primary reading pair excludes helper instructions and unselected choices",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 25345,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-demo-audio.spec.ts",
+      "title": "bakery listening includes the visible narrator and all three replies once",
+      "project": "chromium",
+      "outcome": "unexpected",
+      "status": "failed",
+      "durationMs": 26994,
+      "retries": 0,
+      "errors": [
+        "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n  - waiting for getByRole('button', { name: 'Go to Rina’s bakery', exact: true })\n\n\n  26 |  // Synthetic media completion proves text/routing; the native rehearsal checks real playback separately.\n  27 |  await installPlaybackVoice(page);await page.goto('/garden');const button=(name:string)=>page.getByRole('button',{name,exact:true});\n> 28 |  test.setTimeout(180000);await button('Begin Pip’s adventure').click();await button('Start playing').click();await buildStagedBridge(page);await button('Go to Grandma').click();await expect(button('Talk to Grandma E')).toBeVisible();await button('Go to Rina’s bakery').click();await button('Talk to Rina').click();await completeConversation(page);\n     |                                                                                                                          ^\n  29 |  await expect(button('Listen to the conversation')).toHaveCount(1);await expect(button('Listen to this page')).toHaveCount(0);\n  30 |  await expect(button('Practise reading the conversation')).toHaveCount(1);await expect(button('Practise reading this page')).toHaveCount(0);\n  31 |  const expected=(await page.locator('[data-source-component],.g-dialogue-response [data-readable-text]').allTextContents()).join(' ').replace(/\\s+/g,' ').trim();\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-demo-audio.spec.ts:28:122"
+      ],
+      "attachments": []
+    },
+    {
+      "file": "garden-demo-audio.spec.ts",
+      "title": "Stop during the speaker pause prevents the next queued recording",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 5419,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-demo-audio.spec.ts",
+      "title": "an isolated word plays its complete independent WAV once through native audio",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 5183,
+      "retries": 0,
+      "errors": [],
+      "attachments": [
+        {
+          "name": "native-word",
+          "body": "eyJ3b3JkIjoicHJvbWlzZWQiLCJjbGlwIjp7InVyaSI6Ii9hdWRpby9jYXN0L2NsaXBzLzRhN2MzYzBmMWU2OGJmZDM3NTYxNzI3Yzc1MjRmMzU4ODUyZDYzNzY1MTA0OGE5ZmRjNjZjMjUwYTZkOTBmOGEud2F2Iiwic2hhMjU2IjoiNGE3YzNjMGYxZTY4YmZkMzc1NjE3MjdjNzUyNGYzNTg4NTJkNjM3NjUxMDQ4YTlmZGM2NmMyNTBhNmQ5MGY4YSIsImJ5dGVzIjo2NTI0NCwiZHVyYXRpb24iOjAuNjc5MTY2NjY2NjY2NjY2Nywic291cmNlU2hhMjU2IjoiYWVhYTEwZmM3NzEwODA4NDBkZjUzNjkwNTQyNTZjZDZiMjViOGM3NjVmYzlmNjk5NTNhN2Q0Zjg1OTg5OThhMCIsInNvdXJjZVdhdlNoYTI1NiI6IjRhN2MzYzBmMWU2OGJmZDM3NTYxNzI3Yzc1MjRmMzU4ODUyZDYzNzY1MTA0OGE5ZmRjNjZjMjUwYTZkOTBmOGEiLCJzdGFydFNhbXBsZSI6MCwiZW5kU2FtcGxlIjozMjYwMCwibGVhZGluZ1NpbGVuY2VTYW1wbGVzIjowLCJ0cmFpbGluZ1NpbGVuY2VTYW1wbGVzIjowLCJib3VuZGFyeU1ldGhvZCI6ImNvbXBsZXRlLXdvcmQtcmVjb3JkaW5nLXYxIiwic2FtcGxlUmF0ZSI6NDgwMDAsImNoYW5uZWxzIjoxfSwicmVjb3JkaW5ncyI6W3sidXJpIjoiaHR0cDovLzEyNy4wLjAuMTo0NDA3L2F1ZGlvL2Nhc3QvY2xpcHMvNGE3YzNjMGYxZTY4YmZkMzc1NjE3MjdjNzUyNGYzNTg4NTJkNjM3NjUxMDQ4YTlmZGM2NmMyNTBhNmQ5MGY4YS53YXYiLCJkdXJhdGlvbiI6MC42NzkxNjcsImVuZGVkIjp0cnVlLCJlbmQiOjAuNjc5MTY3fV0sImxpbWl0YXRpb24iOiJOYXRpdmUgZGVjb2RpbmcgYW5kIGNvbXBsZXRlIHBsYXliYWNrLiBIdW1hbiBwcm9udW5jaWF0aW9uIHF1YWxpdHkgcmVtYWlucyBhIHNlcGFyYXRlIGxpc3RlbmluZyBjaGVjay4ifQ=="
+        }
+      ]
+    },
+    {
+      "file": "garden-hands.spec.ts",
+      "title": "roof and dough use real pointer gestures; journal writing stays available during repair",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 88113,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-literacy.spec.ts",
+      "title": "Synthetic microphone device: local capture, replay, explicit feedback, discard and leave cleanup",
+      "project": "chromium",
+      "outcome": "unexpected",
+      "status": "failed",
+      "durationMs": 47623,
+      "retries": 0,
+      "errors": [
+        "TimeoutError: locator.click: Timeout 15000ms exceeded.\nCall log:\n  - waiting for locator('.g-practice-overlay').getByRole('button', { name: 'Get feedback', exact: true })\n\n\n  32 |  const requests:string[]=[];page.on('request',r=>{if(r.method()==='POST'&&r.url().includes('/api/garden/'))requests.push(r.url());});await mara(page);await button(page,'Practise reading this page').click();await expect(page.locator('.g-mic-off')).toContainText('Your microphone is off');const box=await record(page);expect(requests).toEqual([]);\n  33 |  const localURL=await box.locator('audio').getAttribute('src');expect(localURL).toMatch(/^blob:/);await box.locator('audio').evaluate((audio:HTMLAudioElement)=>audio.play());await expect.poll(()=>box.locator('audio').evaluate((a:HTMLAudioElement)=>a.currentTime)).toBeGreaterThan(0);\n> 34 |  await box.getByRole('button',{name:'Get feedback',exact:true}).click();await expect(box).toContainText(\"Reading feedback isn't available right now\");expect(requests).toHaveLength(1);await page.screenshot({path:info.outputPath('temporary-reading-review.png')});\n     |                                                                 ^\n  35 |  await box.getByRole('button',{name:'Discard recording'}).click();await expect(box).toHaveAttribute('data-local-audio-bytes','0');await expect(box.locator('audio')).toHaveCount(0);expect(await page.evaluate(async url=>{try{await fetch(url!);return false;}catch{return true;}},localURL)).toBe(true);\n  36 |  await record(page);await box.getByRole('button',{name:'Back to the story',exact:true}).click();await expect(page.locator('.g-practice-overlay')).toHaveCount(0);await expect(button(page,'Practise reading this page')).toBeFocused();\n  37 |  if(browserName!=='chromium')expect(await page.evaluate(()=>(window as unknown as {__syntheticTracks:MediaStreamTrack[]}).__syntheticTracks.every(track=>track.readyState==='ended'))).toBe(true);\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-literacy.spec.ts:34:65"
+      ],
+      "attachments": []
+    },
+    {
+      "file": "garden-mara.spec.ts",
+      "title": "G4 ordinary early telling: actual duty, no source shortcut, compact repair, pause/reload and same present-day facts",
+      "project": "chromium",
+      "outcome": "unexpected",
+      "status": "failed",
+      "durationMs": 77694,
+      "retries": 0,
+      "errors": [
+        "Error: locator.click: Error: strict mode violation: getByRole('button', { name: 'Read The Torn Wing' }) resolved to 2 elements:\n    1) <button type=\"button\" class=\"g-choice-listen\" data-reading-command=\"true\" aria-label=\"Listen to choice: Read The Torn Wing\">Listen</button> aka getByRole('button', { name: 'Listen to choice: Read The' })\n    2) <button data-speech-speaker=\"pip\" aria-label=\"Read The Torn Wing\" class=\"g-alternative g-choice-select\" data-speech-origin=\"authored-display\">…</button> aka getByRole('button', { name: 'Read The Torn Wing', exact: true })\n\nCall log:\n  - waiting for getByRole('button', { name: 'Read The Torn Wing' })\n\n\n  11 |  await expect.poll(async()=>{const assets=JSON.parse((await page.locator('.garden-scene').getAttribute('data-character-assets'))!);return assets.profile!=='local-review'||['boy','passenger','operator'].every(id=>assets.cast.some((a:{id:string;ready:boolean})=>a.id===id&&a.ready))&&assets.objects.includes('boat-2');}).toBe(true);\n  12 |  await button(page,'Watch Mara help these passengers').click();await expect(page.locator('.garden-feedback')).toContainText('operator');await expect.poll(async()=>JSON.parse((await page.locator('.garden-scene').getAttribute('data-passenger-boat'))!).z,{intervals:[30]}).toBeLessThan(-14.3);await page.screenshot({path:info.outputPath('dock-service.png')});await expect(page.locator('.garden-scene')).toHaveAttribute('data-dock-service','served');await completeConversation(page);await button(page,'I can read your story to Grandma.').click();await expect(page.locator('.garden-reading-scroll')).toContainText('Pip is carrying her copy.');await button(page,'I can bring you a story if you’re still working.').click();expect((await saved(page)).mara.returnOffered).toBe(true);await button(page,'Back to Pip').click();\n> 13 |  await buildStagedBridge(page);await button(page,'Go to Grandma').click();await button(page,'Talk to Grandma E').click();await button(page,'Give Grandma Mara’s page').click();await deliverMaraReport(page);await page.getByRole('button',{name:'Read The Torn Wing'}).click();const before=await saved(page);expect(before.story.records.mara).toBe(null);\n     |                                                                                                                                                                                                                                                                         ^\n  14 |  await page.locator('.g-reader-top .g-close').click();expect((await saved(page)).story.records.mara).toBe(null);await page.getByRole('button',{name:'Read The Torn Wing'}).click();await button(page,'Share The Torn Wing with Grandma').click();await expect(page.locator('.g-mara-scene')).toHaveAttribute('data-bird-stage','ask');\n  15 |  await page.setViewportSize({width:320,height:568});await page.screenshot({path:info.outputPath('earlier-dock-compact.png')});const box=await page.locator('.g-mara-scene canvas').boundingBox();expect(box?.width).toBeGreaterThan(200);expect(box?.height).toBeGreaterThanOrEqual(145);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);\n  16 |  await openStoryDirections(page);await button(page,'Speak to the boy').click();await button(page,'Would you like some help?').click();await openStoryDirections(page);await button(page,'Walk to the dock office').click();await button(page,'Pick up the tape').click();await expect(page.locator('.g-mara-scene')).toHaveAttribute('data-tape','mara');await button(page,'Pause').click();await button(page,'Back to Mara’s earlier story').click();await openStoryDirections(page);await page.reload();await expect(page.locator('.g-mara-scene')).toHaveAttribute('data-tape','mara');await openStoryDirections(page);await button(page,'Return to the boy').click();await button(page,'Line up the torn wing').click();await button(page,'Tape beside the tear').click();await expect.poll(async()=>{const visual=JSON.parse(await page.locator('.g-mara-scene')."
+      ],
+      "attachments": []
+    },
+    {
+      "file": "garden-render-recovery.spec.ts",
+      "title": "a failed opening landscape exposes recovery and retries without losing the introduction",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 10225,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-rendering.spec.ts",
+      "title": "profile-bound painted characters render through the texture worker at actual density",
+      "project": "chromium",
+      "outcome": "unexpected",
+      "status": "failed",
+      "durationMs": 28512,
+      "retries": 0,
+      "errors": [
+        "Error: expect(received).toBeLessThanOrEqual(expected)\n\nExpected: <= 100663296\nReceived:    1676846914\n\n   9 |  await expect.poll(async()=>JSON.parse(await scene.getAttribute('data-character-assets')??'{}').grandma).toBe(expectedAssetStatus);await expect.poll(async()=>JSON.parse(await scene.getAttribute('data-character-assets')??'{}').pending,{timeout:90000}).toBe(0);\n  10 |  const loaded=JSON.parse(await scene.getAttribute('data-character-assets')??'{}');if(reviewProfile){expect(loaded.profile).toBe('local-review');expect(loaded.objects).toEqual(expect.arrayContaining(['bakery','cottage','workshop-clear-porch','tree-1','platform-bridge-fitted']));expect(loaded.objects.filter((id:string)=>id==='platform-bridge-fitted')).toHaveLength(2);expect(loaded.cast.filter((a:{ready:boolean})=>a.ready).map((a:{id:string})=>a.id)).toEqual(expect.arrayContaining(['rina','sol','mara']));}else expect(loaded.sources).toHaveLength(2);\n> 11 |  const metrics=JSON.parse((await scene.getAttribute('data-metrics'))!);expect(metrics.dpr).toBe(info.project.use.deviceScaleFactor??1);expect(metrics.imported.textureBytes).toBeGreaterThan(0);expect.soft(metrics.decodedSceneBytes).toBeLessThanOrEqual(96*1024*1024);expect.soft(metrics.decodedCacheBytes).toBeLessThanOrEqual(192*1024*1024);expect(errors).toEqual([]);\n     |                                                                                                                                                                                                                                        ^\n  12 |  await page.screenshot({path:info.outputPath('painted-characters-overview.png')});await info.attach('rendered-artwork',{body:JSON.stringify({metrics,errors,profile:reviewProfile?'local-review-pending-approval':'production',scope:'Asset loading, textured render and conservative resource checks; this case does not qualify frame timing or human visual acceptance.'}),contentType:'application/json'});\n  13 | });\n  14 |\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-rendering.spec.ts:11:232",
+        "Error: expect(received).toBeLessThanOrEqual(expected)\n\nExpected: <= 201326592\nReceived:    1743910258\n\n   9 |  await expect.poll(async()=>JSON.parse(await scene.getAttribute('data-character-assets')??'{}').grandma).toBe(expectedAssetStatus);await expect.poll(async()=>JSON.parse(await scene.getAttribute('data-character-assets')??'{}').pending,{timeout:90000}).toBe(0);\n  10 |  const loaded=JSON.parse(await scene.getAttribute('data-character-assets')??'{}');if(reviewProfile){expect(loaded.profile).toBe('local-review');expect(loaded.objects).toEqual(expect.arrayContaining(['bakery','cottage','workshop-clear-porch','tree-1','platform-bridge-fitted']));expect(loaded.objects.filter((id:string)=>id==='platform-bridge-fitted')).toHaveLength(2);expect(loaded.cast.filter((a:{ready:boolean})=>a.ready).map((a:{id:string})=>a.id)).toEqual(expect.arrayContaining(['rina','sol','mara']));}else expect(loaded.sources).toHaveLength(2);\n> 11 |  const metrics=JSON.parse((await scene.getAttribute('data-metrics'))!);expect(metrics.dpr).toBe(info.project.use.deviceScaleFactor??1);expect(metrics.imported.textureBytes).toBeGreaterThan(0);expect.soft(metrics.decodedSceneBytes).toBeLessThanOrEqual(96*1024*1024);expect.soft(metrics.decodedCacheBytes).toBeLessThanOrEqual(192*1024*1024);expect(errors).toEqual([]);\n     |                                                                                                                                                                                                                                                                                                                 ^\n  12 |  await page.screenshot({path:info.outputPath('painted-characters-overview.png')});await info.attach('rendered-artwork',{body:JSON.stringify({metrics,errors,profile:reviewProfile?'local-review-pending-approval':'production',scope:'Asset loading, textured render and conservative resource checks; this case does not qualify frame timing or human visual acceptance.'}),contentType:'application/json'});\n  13 | });\n  14 |\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-rendering.spec.ts:11:305"
+      ],
+      "attachments": [
+        {
+          "name": "rendered-artwork",
+          "body": "eyJtZXRyaWNzIjp7ImRpYWdub3N0aWMiOiJub3JtYWwiLCJmcmFtZXMiOjMwMCwiZ3B1RWxhcHNlZCI6eyJhdmFpbGFibGUiOmZhbHNlLCJzdGF0dXMiOiJQUk9GSUxJTkdfRElTQUJMRUQifSwiY2FkZW5jZVJvb20iOiJ2aWxsYWdlIiwiY2FkZW5jZVN0YXJ0ZWRBdCI6NzE3LjEwMDAwMDAyMzg0MTksImNhZGVuY2VGcmFtZVN0YXJ0IjowLCJmcmFtZXNTaW5jZUNhZGVuY2VTdGFydCI6MzAwLCJkcmF3Q2FsbHMiOjI1NSwidHJpYW5nbGVzIjo3Mjc2MDE4LCJnZW9tZXRyaWVzIjoyNTYsInRleHR1cmVzIjo2OSwiYWN0aXZlU2FtcGxlcyI6MjU2LCJtZWRpYW4iOjE2LjcwMDAwMDAwMDAwMDcyOCwicDk1Ijo2Ni44MDAwMDAwMDAwMDEwOSwicDk5IjoxODMuMzk5OTk5OTk5OTk5NjQsImNhZGVuY2VTYW1wbGVDb3VudCI6MjU2LCJjYWRlbmNlV2luZG93TGltaXQiOjYwMCwiY2FkZW5jZUtpbmQiOiJhY3RpdmUiLCJzdGFsbENvdW50cyI6eyJvdmVyNTBtcyI6MzAsIm92ZXIxMDBtcyI6Niwib3ZlcjI1MG1zIjoyfSwibGFzdFJlbmRlck1zIjoxMC4yOTk5OTk5NTIzMTYyODQsImZyYW1lQ3B1TXMiOjIxLjYwMDAwMDAyMzg0MTg1OCwiZHByIjoxLCJ3aWR0aCI6MTQ0MCwiaGVpZ2h0Ijo3NzcsImdlb21ldHJ5Q3B1Qnl0ZXMiOjY1NzA1NjgsImxvY2FsIjp7Imdlb21ldHJ5Qnl0ZXMiOjY2MDI2MDAsInRleHR1cmVCeXRlcyI6MTgxNDA1NTUyLCJkZWNvZGVkQnl0ZXMiOjE4ODAwODE1Mn0sImltcG9ydGVkIjp7Imdlb21ldHJ5Qnl0ZXMiOjI0NTM1MjE2LCJ0ZXh0dXJlQnl0ZXMiOjE0NDI4NDIwOTgsImFuaW1hdGlvbkJ5dGVzIjozMjg3NDMyLCJza2VsZXRvbkJ5dGVzIjoxNjA2NCwiZGVjb2RlZEJ5dGVzIjoxNDcwNjgwODEwLCJzb3VyY2VzIjo1MX0sInNjZW5lcnkiOnsicGxhY2VtZW50cyI6MTM4LCJsb2FkZWQiOjk4LCJwZW5kaW5nIjowLCJpbnN0YW5jZUJ5dGVzIjoyNTQ3MiwiY3VsbGluZ0NwdUJ5dGVzIjowLCJpbnN0YW5jZUFsbG9jYXRpb25CeXRlcyI6NTA5NDQsInZpc2libGVHcmFzc0luc3RhbmNlcyI6MCwicmV0aXJlZE1lc2hlcyI6MjA2LCJ2aXNpYmxlUmV0aXJlZE1lc2hlcyI6MH0sImluc3RhbmNlQWxsb2NhdGlvbkJ5dGVzIjo1MDk0NCwiZGVjb2RlZFNjZW5lQnl0ZXMiOjE2NzY4NDY5MTQsImRlY29kZWRDYWNoZUJ5dGVzIjoxNzQzOTEwMjU4LCJlbmNvZGVkQ2FjaGVCeXRlcyI6MTIxMzgzMjgsImNhbnZhc0NvbG9yQnl0ZXMiOjQ0NzU1MjAsInNoYWRvd0RlcHRoQWxsb2NhdGlvbkJ5dGVzIjo5NDM3MTg0LCJzZWN0aW9uVGV4dHVyZUJ5dGVzIjoxMzEwNzIsImdwdVRvdGFsTWVtb3J5IjoiTk9UX01FQVNVUkFCTEUiLCJhbGxvY2F0aW9uU2NvcGUiOiJEZWNvZGVkIGxvY2FsL2ltcG9ydGVkIGFzc2V0cyBpbmNsdWRpbmcgYW5pbWF0aW9uL3NrZWxldG9ucyBhbmQgQ1BVL0dQVSBpbnN0YW5jZSBtYXRyaWNlczsgc2NlbmUgYWRkcyBjb2xvciBiYWNraW5nLCBzaGFkb3cgYW5kIDQgTWlCIHJlc2VydmU7IGNhY2hlIGFkZHMgdHdvIGVuY29kZWQgY29waWVzLCBmb3VyIGJhY2tpbmdzIGFuZCAzMiBNaUIgcmVzZXJ2ZS4gQnJvd3Nlci9kcml2ZXIgdG90YWwgaXMgbm90IG1lYXN1cmFibGUiLCJhZGFwdGVyIjoiQU5HTEUgKE5WSURJQSwgTlZJRElBIEdlRm9yY2UgUlRYIDMwNzAgVGkgKDB4MDAwMDI0ODIpIERpcmVjdDNEMTEgdnNfNV8wIHBzXzVfMCwgRDNEMTEpIn0sImVycm9ycyI6W10sInByb2ZpbGUiOiJsb2NhbC1yZXZpZXctcGVuZGluZy1hcHByb3ZhbCIsInNjb3BlIjoiQXNzZXQgbG9hZGluZywgdGV4dHVyZWQgcmVuZGVyIGFuZCBjb25zZXJ2YXRpdmUgcmVzb3VyY2UgY2hlY2tzOyB0aGlzIGNhc2UgZG9lcyBub3QgcXVhbGlmeSBmcmFtZSB0aW1pbmcgb3IgaHVtYW4gdmlzdWFsIGFjY2VwdGFuY2UuIn0="
+        }
+      ]
+    },
+    {
+      "file": "garden-sequence.spec.ts",
+      "title": "Conversation sequence: prepared relay advances, persists, and is delivered at Grandma",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 60471,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-sequence.spec.ts",
+      "title": "Conversation sequence: own relay advances, persists, and is delivered at Grandma",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 62934,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-stage-actors.spec.ts",
+      "title": "Leaving an ending while models load cancels the old owner and a fresh view recovers",
+      "project": "chromium",
+      "outcome": "expected",
+      "status": "passed",
+      "durationMs": 7038,
+      "retries": 0,
+      "errors": [],
+      "attachments": []
+    },
+    {
+      "file": "garden-word-jobs.spec.ts",
+      "title": "Actual draft word view: local unavailable help, synthetic spelling suggestion, selected-occurrence edit and undo",
+      "project": "chromium",
+      "outcome": "unexpected",
+      "status": "failed",
+      "durationMs": 157660,
+      "retries": 0,
+      "errors": [
+        "Error: expect(received).not.toBe(expected) // Object.is equality\n\nExpected: not \"{\\\"bakery\\\":0,\\\"sol\\\":0,\\\"sol:step:[1,\\\\\\\"none\\\\\\\",null,null]\\\":914,\\\"writing:step:[\\\\\\\"none\\\\\\\",true]\\\":0}\"\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n\n  16 |  await page.getByText('Support for my ending',{exact:true}).click();const activity=page.getByRole('region',{name:'Would you like help with your ending?'});await activity.getByRole('button',{name:'Ask for feedback'}).click();await activity.getByRole('button',{name:'Check that feedback'}).click();await expect(activity).not.toContainText('SYNTHETIC DISPUTED CLAIM');await expect(activity).toContainText(\"I couldn't check that feedback reliably. You can keep your ending or change it after rereading Sol's story.\");expect(calls).toBe(2);await expect(page.getByLabel('Your ending for Sol’s story',{exact:true})).toHaveValue('My repair helped Rina bake the bread she had promised.');\n  17 |  const scrollChanges:unknown[]=[];\n> 18 |  async function scrollUnchangedDraft(){const before=await savedChapter(page);await page.locator('.garden-reading-scroll').hover();await page.mouse.wheel(0,-500);await expect.poll(async()=>JSON.stringify((await savedChapter(page)).reading)).not.toBe(JSON.stringify(before.reading));const after=await savedChapter(page);expect(after.revision).toBeGreaterThan(before.revision);expect(after.story.solDraft).toEqual(before.story.solDraft);scrollChanges.push({before:before.revision,after:after.revision,draftRevision:after.story.solDraft.revision});}\n     |                                                                                                                                                                                                                                                     ^\n  19 |  suggest=true;await b(page,'Rina thanks Sol').click();replyGate=new Promise<void>(resolve=>releaseReply=resolve);await activity.getByRole('button',{name:'Ask for feedback'}).click();await expect.poll(()=>calls).toBe(3);await scrollUnchangedDraft();releaseReply();replyGate=null;\n  20 |  await expect(activity.getByRole('button',{name:'Use suggested picture'})).toBeVisible();await expect(b(page,'Rina thanks Sol')).toHaveAttribute('aria-pressed','true');await activity.getByRole('button',{name:'Keep my picture'}).click();await expect(b(page,'Rina thanks Sol')).toHaveAttribute('aria-pressed','true');\n  21 |  await activity.getByRole('button',{name:'Ask for feedback'}).click();await expect(activity.getByRole('button',{name:'Use suggested picture'})).toBeVisible();await scrollUnchangedDraft();await activity.getByRole('button',{name:'Use suggested picture'}).click();await expect(b(page,'Rina bakes the bread')).toHaveAttribute('aria-pressed','true');expect(calls).toBe(4);\n    at scrollUnchangedDraft (C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-word-jobs.spec.ts:18:245)\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-word-jobs.spec.ts:19:220"
+      ],
+      "attachments": []
+    },
+    {
+      "file": "garden.spec.ts",
+      "title": "carried-seed route: real placement, reading, page/report, return and legacy-save isolation",
+      "project": "chromium",
+      "outcome": "unexpected",
+      "status": "failed",
+      "durationMs": 105223,
+      "retries": 0,
+      "errors": [
+        "Error: locator.click: Error: strict mode violation: getByRole('button', { name: 'Read The Torn Wing' }) resolved to 2 elements:\n    1) <button type=\"button\" class=\"g-choice-listen\" data-reading-command=\"true\" aria-label=\"Listen to choice: Read The Torn Wing\">Listen</button> aka getByRole('button', { name: 'Listen to choice: Read The' })\n    2) <button data-speech-speaker=\"pip\" aria-label=\"Read The Torn Wing\" class=\"g-alternative g-choice-select\" data-speech-origin=\"authored-display\">…</button> aka getByRole('button', { name: 'Read The Torn Wing', exact: true })\n\nCall log:\n  - waiting for getByRole('button', { name: 'Read The Torn Wing' })\n\n\n  20 |  async function fasten(page:Page){await secureSpan(page,'west');await walkBridgePoint(page,-.775,3);await secureSpan(page,'east');await expect(page.locator('.garden-scene')).toHaveAttribute('data-bridge-ready','true');}\n  21 |  async function steerDelivery(page:Page){await expect(page.locator('.garden-scene')).toHaveAttribute('data-ferry-phase','steering');await expect(page.getByRole('button',{name:'Launch the seed boat',exact:true})).toHaveCount(0);await page.getByRole('button',{name:'Upstream ↑',exact:true}).click();await expect(page.locator('.garden-scene')).toHaveAttribute('data-seed-boat-z','0.250');await waitForBoatStop(page);for(const x of [-.85,-.3,.25,.8,1.35]){await page.getByRole('button',{name:'Garden side →',exact:true}).click();await expect(page.locator('.garden-scene')).toHaveAttribute('data-seed-boat-x',x.toFixed(3));await waitForBoatStop(page);}await page.getByRole('button',{name:'Downstream ↓',exact:true}).click();await expect(page.locator('.garden-scene')).toHaveAttribute('data-seed-boat-z','0.800');await waitForBoatStop(page);}\n> 22 |  async function finish(page:Page){await page.getByRole('button',{name:'Go to Grandma',exact:true}).click();await page.getByRole('button',{name:'Talk to Grandma E',exact:true}).click();await plantWithGrandma(page);await expect(page.locator('.garden-status')).toContainText('kept his promise');await page.getByRole('button',{name:'Talk to Grandma E',exact:true}).click();await page.getByRole('button',{name:'Give Grandma Mara’s page',exact:true}).click();await expect(page.getByRole('heading',{name:'Tell Grandma what you learned',exact:true})).toBeVisible();await deliverMaraReport(page);await page.getByRole('button',{name:'Read The Torn Wing',exact:false}).click();await expect(page.getByRole('heading',{name:'The Torn Wing',exact:true})).toBeVisible();}\n     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^\n  23 |  test('carried-seed route: real placement, reading, page/report, return and legacy-save isolation',async({page},info)=>{\n  24 |   const errors:string[]=[],requests:string[]=[];page.on('pageerror',e=>errors.push(e.message));page.on('request',r=>requests.push(r.url()));\n  25 |   await page.goto('/garden');\n    at finish (C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden.spec.ts:22:659)\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden.spec.ts:38:151"
+      ],
+      "attachments": []
+    }
+  ]
+}

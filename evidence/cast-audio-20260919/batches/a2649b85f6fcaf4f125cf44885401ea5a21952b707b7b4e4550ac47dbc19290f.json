@@ -1,0 +1,42 @@
+{
+  "id": "a2649b85f6fcaf4f125cf44885401ea5a21952b707b7b4e4550ac47dbc19290f",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 8275,
+      "sha256": "50906e610a2131bb2d9fd58f60c49455f85b0d07163b6876e71f5447fb014941"
+    },
+    {
+      "bytes": 841,
+      "sha256": "10021536ce214fcfeea7b21ebdc0ee9e3e374a63d237f2f714fcca85d6727e4a"
+    },
+    {
+      "bytes": 1750,
+      "sha256": "be2b9ae9689d84d6ae8ec734c9348e5ba9bf8eb62eeb8aeb25843e7b34a3a981"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "bumped.",
+  "textSha256": "158f6c13435846b4c92fcdcd1dd2071d26c91f46857426f5a4448435ec79b411",
+  "sha256": "0fb9e23d2470b7471910372621e4f7085bdfa09753d22aaad6a66373bb77a5dc",
+  "bytes": 10866,
+  "alignment": [
+    {
+      "text": "bumped",
+      "start": 0.16,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6034467120181406
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}

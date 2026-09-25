@@ -1,0 +1,39 @@
+{
+  "at": "2026-09-25T06:53:41.867Z",
+  "scope": "Final successor after bakery listening correction and repaired test selectors. Provider-free; unchanged recorded media. Original complete required run retained separately.",
+  "commands": [
+    {
+      "command": "Refresh exact catalogue",
+      "args": [
+        "scripts/prepare-cast-audio.mjs"
+      ],
+      "exitCode": 0,
+      "durationMs": 1572,
+      "log": ".cache/nerdy-final-check-1.log",
+      "logSha256": "cbb687275b1466657f0ff027169d82819c78cdabc2131a97f4858493f573e0c7"
+    },
+    {
+      "command": "Bind existing recordings",
+      "args": [
+        "scripts/repair-cast-bindings.mjs",
+        "--write"
+      ],
+      "exitCode": 0,
+      "durationMs": 99234,
+      "log": ".cache/nerdy-final-check-2.log",
+      "logSha256": "a4dd116fbdbd76eeb613634b6fd9a0b6b05975df3e11a4e966b8442de258f5c6"
+    },
+    {
+      "command": "Verify and derive exact PCM",
+      "args": [
+        "scripts/derive-cast-clips.mjs"
+      ],
+      "exitCode": 1,
+      "durationMs": 54926,
+      "log": ".cache/nerdy-final-check-3.log",
+      "logSha256": "a59e6f89a8ecffbcd057e3788de8323abd5552cbdfa6661df2bb3949e9e87478"
+    }
+  ],
+  "complete": false,
+  "allPassed": false
+}

@@ -54,6 +54,7 @@ export async function authoredAudioFiles(root=process.cwd()){
  * Approved garden binaries/decoders come from the finite packet, never leftovers. */
 export async function demoPublicFiles(root=process.cwd()){
  const copies=new Map();
+ copies.set('garden-recorder.js','public/garden-recorder.js');
  for(const directory of ['public/art','public/temp'])for(const file of await listFiles(root,directory))copies.set(file.slice(7),file);
  for(const file of (await authoredAudioFiles(root)).runtime)copies.set(file.slice(7),file);
  const manifest=JSON.parse(await fs.readFile(path.join(root,DEMO_MANIFEST),'utf8'));

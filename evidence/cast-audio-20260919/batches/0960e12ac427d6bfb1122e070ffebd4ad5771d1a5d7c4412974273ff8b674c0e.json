@@ -1,0 +1,42 @@
+{
+  "id": "0960e12ac427d6bfb1122e070ffebd4ad5771d1a5d7c4412974273ff8b674c0e",
+  "purpose": "isolated-word-v1",
+  "streamAssembly": "all-audio-deltas-v2",
+  "audioDeltas": [
+    {
+      "bytes": 8273,
+      "sha256": "d080b9fa4b09534408088c72772d0b8633d715b377099d861af495af8f982ced"
+    },
+    {
+      "bytes": 849,
+      "sha256": "7cfe8ee568edc13a7e93942e1f133555f44beb65d55191e95eefacaa8ee40d60"
+    },
+    {
+      "bytes": 1744,
+      "sha256": "09f02245f2f487899391f8d7018c5416975a91016c685b3dc7b4ba7f5c9f2a7a"
+    }
+  ],
+  "speaker": "narrator",
+  "voiceId": "07a44a6958304fa28cef60b0d4023c04",
+  "model": "s2.1-pro-free",
+  "text": "door.",
+  "textSha256": "e89c59109159347487aaa17d5cb3e8d6d1c5496ff0e908641b0e00f7c29e9307",
+  "sha256": "9c432d32da0f2a30d2d8252f1f9eb9024994ccb21468d9d2446f0f54bc45d7fd",
+  "bytes": 10866,
+  "alignment": [
+    {
+      "text": "door",
+      "start": 0.16,
+      "end": 0.56
+    }
+  ],
+  "chunks": [
+    {
+      "seq": 0,
+      "offset": 0,
+      "duration": 0.6034467120181406
+    }
+  ],
+  "expectedChargeUSD": 0,
+  "planSha256": "d65cb86d6c045d994df6f77bccf8c444eff7ba00213d4cd021d18bd2c54e9a1d"
+}
