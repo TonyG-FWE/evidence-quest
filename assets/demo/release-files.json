@@ -16,7 +16,11 @@
     "evidence/demo-release-20260919/server-delivery-start-guard.json",
     "evidence/demo-release-20260919/successor-build.json",
     "evidence/disk-cleanup-20260926/summary.json",
+    "evidence/distribution-20260926/fixture-comparison.json",
+    "evidence/distribution-20260926/main-client-comparison.json",
+    "evidence/distribution-20260926/preservation.json",
     "evidence/distribution-20260926/removed-files.json",
+    "evidence/distribution-20260926/windows-portable.json",
     "evidence/lean-development-20260926/local-only-originals.json",
     "evidence/lean-development-20260926/summary.json",
     "evidence/nerdy-demo-20260924/bakery-audio-r1.json",
@@ -91,9 +95,9 @@
     "evidence/nerdy-demo-20260924/word-timestamp-overruns.json",
     "evidence/reader-repair-20260919/RESULTS.md"
   ],
-  "filesSha256": "54313395b01fa07c7f0569db1832807ccd001c513e24ad1204b85b2845d9ebe2",
-  "fileCount": 15911,
-  "bytes": 3143497419,
+  "filesSha256": "df649c64a43f866d831e571b74e639eb9a6d91c28c8a16a8bdd11c7b516862d6",
+  "fileCount": 15915,
+  "bytes": 3143515915,
   "files": [
     {
       "file": ".env.example",
@@ -107,8 +111,8 @@
     },
     {
       "file": ".github/workflows/portable-demo.yml",
-      "bytes": 4086,
-      "sha256": "054f9ebf9e7fb9babc09ca2a9e8f523c9598c8280df6db4dccd2565ebf8f8d14"
+      "bytes": 4071,
+      "sha256": "79b10390f910dcbf1cee0c4b6390dc6839a1092dd8f9882f4581be532bb17823"
     },
     {
       "file": ".gitignore",
@@ -1342,8 +1346,8 @@
     },
     {
       "file": "browser-tests/portable-journey.spec.ts",
-      "bytes": 7375,
-      "sha256": "2f9ebb6929062819f7b25bb7e7f3c975c06fb16f4ddca624609f3e2118ee4d0c"
+      "bytes": 7785,
+      "sha256": "e91ba5c7b71eb3923c873f72bedceba9d08eedcbfd26cb7ddb7ba6f003179757"
     },
     {
       "file": "browser-tests/production-formats.spec.ts",
@@ -1817,8 +1821,8 @@
     },
     {
       "file": "docs/PORTABLE-DEMO.md",
-      "bytes": 4640,
-      "sha256": "9572bc73cdae8eac97a98d2f621272aef1dd23679583dfa998435a96e138f249"
+      "bytes": 5574,
+      "sha256": "3a97f8f14dea50b4d080ac37dbee30dfb3c50a0c1a0cd1dff1ed108dce546f01"
     },
     {
       "file": "docs/PRODUCTION-TOOLCHAIN.md",
@@ -23641,9 +23645,29 @@
       "sha256": "0a7308555e1953e7126315bb9f09def954f7edb4f8b0c4c11dc58381f2261fa5"
     },
     {
+      "file": "evidence/distribution-20260926/fixture-comparison.json",
+      "bytes": 5420,
+      "sha256": "a2f65a0aa424aced9c92b2239dc468f8a31c89ae9f0c7df539b01672d16a2f22"
+    },
+    {
+      "file": "evidence/distribution-20260926/main-client-comparison.json",
+      "bytes": 406,
+      "sha256": "2dfa666324cd5f266ba71142100bd507b927499bfab8185259f81e4729212d2e"
+    },
+    {
+      "file": "evidence/distribution-20260926/preservation.json",
+      "bytes": 3287,
+      "sha256": "f2c2ef6f3f66024d908a1bf78d4a1974da9ba3473f18b86fdbe08921c229f0e0"
+    },
+    {
       "file": "evidence/distribution-20260926/removed-files.json",
       "bytes": 678416,
       "sha256": "7ed73fd4d6783926ff3f26b42199920b85ca4da972f526de8d5b8923a275f5a1"
+    },
+    {
+      "file": "evidence/distribution-20260926/windows-portable.json",
+      "bytes": 8054,
+      "sha256": "b758bc89047453a33d3ff0128bfdb6e9fa34a3a3b2ce30c3685ffa0e313183f6"
     },
     {
       "file": "evidence/er13/live-evaluation/attempts.jsonl",
