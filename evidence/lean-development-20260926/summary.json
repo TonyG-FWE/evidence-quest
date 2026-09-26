@@ -1,0 +1,307 @@
+{
+  "at": "2026-09-26T05:35:39.011Z",
+  "scope": "Keep game and continued-development material; owner explicitly declined local demo recordings. YouTube untouched.",
+  "deletedFiles": 47958,
+  "deletedBytes": 18567775279,
+  "deletedGB": 18.567775279,
+  "groups": {
+    "superseded-source-or-compiled-snapshot": {
+      "files": 7197,
+      "bytes": 3965800883
+    },
+    "obsolete-review-capture-or-generated-page": {
+      "files": 16602,
+      "bytes": 9418972217
+    },
+    "regeneratable-experiment-or-test-cache": {
+      "files": 19159,
+      "bytes": 2657928487
+    },
+    "reinstallable-package-download-cache": {
+      "files": 2399,
+      "bytes": 333474477
+    },
+    "unselected-review-derivative-cache": {
+      "files": 536,
+      "bytes": 1684446391
+    },
+    "owner-declined-demo-player": {
+      "files": 4,
+      "bytes": 9177
+    },
+    "owner-declined-demo-or-review-video": {
+      "files": 42,
+      "bytes": 346769435
+    },
+    "unselected-untracked-audio-clip": {
+      "files": 1844,
+      "bytes": 142720336
+    },
+    "obsolete-temporary-work-file": {
+      "files": 103,
+      "bytes": 16822208
+    },
+    "obsolete-local-capture-or-log": {
+      "files": 72,
+      "bytes": 831668
+    }
+  },
+  "skipped": [],
+  "workspace": {
+    "bytes": 18995199804,
+    "GB": 18.995199804,
+    "roots": [
+      {
+        "path": ".git",
+        "bytes": 5539731241,
+        "files": 831,
+        "GB": 5.539731241
+      },
+      {
+        "path": "dist",
+        "bytes": 2802188342,
+        "files": 7375,
+        "GB": 2.802188342
+      },
+      {
+        "path": "public",
+        "bytes": 2540964951,
+        "files": 12628,
+        "GB": 2.540964951
+      },
+      {
+        "path": "evidence",
+        "bytes": 2238400230,
+        "files": 15565,
+        "GB": 2.23840023
+      },
+      {
+        "path": ".cache",
+        "bytes": 1746487206,
+        "files": 1478,
+        "GB": 1.746487206
+      },
+      {
+        "path": "output",
+        "bytes": 1730466823,
+        "files": 1516,
+        "GB": 1.730466823
+      },
+      {
+        "path": ".tools",
+        "bytes": 1524144116,
+        "files": 8752,
+        "GB": 1.524144116
+      },
+      {
+        "path": "assets",
+        "bytes": 592356329,
+        "files": 163,
+        "GB": 0.592356329
+      },
+      {
+        "path": "node_modules",
+        "bytes": 174304232,
+        "files": 12366,
+        "GB": 0.174304232
+      },
+      {
+        "path": "docs",
+        "bytes": 99515014,
+        "files": 536,
+        "GB": 0.099515014
+      },
+      {
+        "path": "src",
+        "bytes": 1741780,
+        "files": 174,
+        "GB": 0.00174178
+      },
+      {
+        "path": "scripts",
+        "bytes": 1443187,
+        "files": 221,
+        "GB": 0.001443187
+      },
+      {
+        "path": "content",
+        "bytes": 1190527,
+        "files": 9,
+        "GB": 0.001190527
+      },
+      {
+        "path": "contracts",
+        "bytes": 728710,
+        "files": 4,
+        "GB": 0.00072871
+      },
+      {
+        "path": "browser-tests",
+        "bytes": 694408,
+        "files": 98,
+        "GB": 0.000694408
+      },
+      {
+        "path": "checks",
+        "bytes": 334968,
+        "files": 57,
+        "GB": 0.000334968
+      },
+      {
+        "path": "server",
+        "bytes": 71394,
+        "files": 10,
+        "GB": 0.000071394
+      },
+      {
+        "path": "evaluation",
+        "bytes": 19181,
+        "files": 5,
+        "GB": 0.000019181
+      },
+      {
+        "path": "character-browser-tests",
+        "bytes": 5283,
+        "files": 1,
+        "GB": 0.000005283
+      },
+      {
+        "path": "pilot-browser-tests",
+        "bytes": 4188,
+        "files": 1,
+        "GB": 0.000004188
+      },
+      {
+        "path": "checkpoint-review-browser-tests",
+        "bytes": 2011,
+        "files": 1,
+        "GB": 0.000002011
+      },
+      {
+        "path": ".tripo",
+        "bytes": 61,
+        "files": 1,
+        "GB": 6.1e-8
+      },
+      {
+        "path": ".tmp",
+        "bytes": 0,
+        "files": 0,
+        "GB": 0
+      }
+    ]
+  },
+  "disk": {
+    "freeBefore": 439356936192,
+    "freeAfter": 458033291264,
+    "measuredFreeIncreaseBytes": 18676355072
+  },
+  "preservation": {
+    "at": "2026-09-26T05:32:31.408Z",
+    "files": 23305,
+    "changed": []
+  },
+  "compiled": {
+    "at": "2026-09-26T05:32:09.411Z",
+    "restoredEarlierModifications": [
+      "evidence/authored-evaluation.json",
+      "evidence/er13/content-validation.json"
+    ],
+    "compiledChanges": []
+  },
+  "validation": {
+    "providerRequests": 0,
+    "results": [
+      {
+        "name": "build-demo",
+        "started": "2026-09-26T05:29:55.152Z",
+        "finished": "2026-09-26T05:31:44.192Z",
+        "exitCode": 0,
+        "log": "evidence/lean-development-20260926/build-demo.log"
+      },
+      {
+        "name": "contracts",
+        "started": "2026-09-26T05:31:44.193Z",
+        "finished": "2026-09-26T05:31:56.553Z",
+        "exitCode": 0,
+        "log": "evidence/lean-development-20260926/contracts.log"
+      },
+      {
+        "name": "authored",
+        "started": "2026-09-26T05:31:56.555Z",
+        "finished": "2026-09-26T05:31:59.684Z",
+        "exitCode": 0,
+        "log": "evidence/lean-development-20260926/authored.log"
+      },
+      {
+        "name": "assets",
+        "started": "2026-09-26T05:31:59.685Z",
+        "finished": "2026-09-26T05:32:00.763Z",
+        "exitCode": 0,
+        "log": "evidence/lean-development-20260926/assets.log"
+      },
+      {
+        "name": "originals",
+        "started": "2026-09-26T05:32:00.764Z",
+        "finished": "2026-09-26T05:32:01.598Z",
+        "exitCode": 0,
+        "log": "evidence/lean-development-20260926/originals.log"
+      },
+      {
+        "name": "build-receipt",
+        "started": "2026-09-26T05:32:01.599Z",
+        "finished": "2026-09-26T05:32:09.298Z",
+        "exitCode": 0,
+        "log": "evidence/lean-development-20260926/build-receipt.log"
+      }
+    ]
+  },
+  "browser": {
+    "at": "2026-09-26T05:32:23.297Z",
+    "scope": "Fresh compiled startup through normal welcome and Start playing controls, no injected state or provider calls.",
+    "errors": [],
+    "failed": [],
+    "external": [],
+    "image": "output/playwright/lean-development-20260926/game.png",
+    "title": "The Garden Adventure · Evidence Quest",
+    "status": "PASS"
+  },
+  "remainingLocalDemoVideoFiles": [],
+  "localOnlyOriginals": {
+    "file": "evidence/lean-development-20260926/local-only-originals.json",
+    "files": 4334,
+    "bytes": 3573902845,
+    "remoteBackup": false
+  },
+  "git": "No tracked files deleted; no Git-history mutation. Cleanup scripts/docs remain local and uncommitted.",
+  "retained": [
+    "source and product/design authority",
+    "current game art and all approved voice source/runtime files",
+    "editable art and all 143 supplied models",
+    "provider ledgers and approval/provenance records",
+    "test source, required tools and installed dependencies",
+    "active compiled game and original Git history"
+  ],
+  "limits": [
+    "Broad gameplay/performance matrix not rerun or superseded",
+    "Historical raw captures, demo recordings, obsolete compiled/source snapshots are unavailable after authorized removal",
+    "Intentional documentation and release-manifest updates occurred after the protected-file hash check"
+  ],
+  "housekeeping": {
+    "at": "2026-09-26T05:34:52.659Z",
+    "generatedServerCopiesRemoved": 50,
+    "bytes": 1687122,
+    "archives": [
+      {
+        "file": "evidence/lean-development-20260926/inventory.json.gz",
+        "uncompressedBytes": 13350311,
+        "uncompressedSha256": "3d1230f72237f0cd62fcdd1d9320bde4d5d78af85f3c22dea27cb480d1622219"
+      },
+      {
+        "file": "evidence/lean-development-20260926/deleted.jsonl.gz",
+        "uncompressedBytes": 8123263,
+        "uncompressedSha256": "4be18d97a2d7f515373c28856a74fbce1cc4df5241ce67e27554e8c54783520b"
+      }
+    ]
+  }
+}

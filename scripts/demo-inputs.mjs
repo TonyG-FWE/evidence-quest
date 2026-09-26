@@ -35,15 +35,15 @@ async function exists(root,file){try{await fs.access(path.join(root,file));retur
 
 /** Original recordings stay source-bound; only selected independent clips ship. */
 export async function authoredAudioFiles(root=process.cwd()){
- const manifestFile='public/audio/cast/manifest.json',all=await listFiles(root,'public/audio/cast'),present=new Set(all),masters=[];
+ const manifestFile='public/audio/cast/manifest.json',all=await listFiles(root,'public/audio/cast'),present=new Set(all),masters=new Set();
  for(const file of all){
   if(!/^public\/audio\/cast\/(?:manifest\.json|[a-f0-9]{64}\.(?:mp3|wav)|clips\/[a-f0-9]{64}\.wav)$/.test(file))throw Error('Undeclared file in public cast library: '+file);
-  if(/^public\/audio\/cast\/[a-f0-9]{64}\.(?:mp3|wav)$/.test(file))masters.push(file);
  }
  const manifest=JSON.parse(await fs.readFile(path.join(root,manifestFile),'utf8'));
  if(!Array.isArray(manifest.entries))throw Error('Missing authored cast entries');
  const runtime=new Set([manifestFile]);
  for(const entry of manifest.entries){
+  for(const uri of [entry.uri,entry.wavUri])if(uri!==undefined){if(!/^\/audio\/cast\/[a-f0-9]{64}\.(mp3|wav)$/.test(uri)||!present.has('public'+uri))throw Error('Missing selected audio master: '+entry.id);masters.add('public'+uri);}
   if(!/^\/audio\/cast\/clips\/[a-f0-9]{64}\.wav$/.test(entry.clip?.uri??''))throw Error('Missing selected independent audio clip: '+entry.id);
   const file='public'+entry.clip.uri;if(!present.has(file))throw Error('Missing selected independent audio file: '+file);runtime.add(file);
  }

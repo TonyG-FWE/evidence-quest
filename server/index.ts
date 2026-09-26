@@ -37,7 +37,7 @@ const definitionVoice=new DefinitionNarrator({root,host,enabled:process.env['EQ_
 const castVoice=new CastNarrator({root,host,enabled:process.env['EQ_CAST_DYNAMIC_VOICE']==='1',key:process.env['FISH_API_KEY']});
 const allowedOrigins=new Set([`http://${host}:${port}`, process.env['PUBLIC_ORIGIN']??'http://127.0.0.1:5173']);
 const mime:Record<string,string>={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp','.svg':'image/svg+xml','.woff2':'font/woff2','.wasm':'application/wasm','.glb':'model/gltf-binary','.ktx2':'image/ktx2','.mp3':'audio/mpeg','.wav':'audio/wav'};
-const server=createServer(async(req,res)=>{
+export const server=createServer(async(req,res)=>{
   res.setHeader('X-Content-Type-Options','nosniff');
   res.setHeader('Referrer-Policy','no-referrer');
   res.setHeader('Content-Security-Policy',"default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self' blob:; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob:; connect-src 'self' blob:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'");
@@ -116,5 +116,6 @@ const server=createServer(async(req,res)=>{
     res.end(req.method==='HEAD'?undefined:bytes);
   }catch(error){json((error as NodeJS.ErrnoException).code==='ENOENT'?404:500,{error:'Resource unavailable'});}
 });
-server.on('error',error=>{console.error(error.message);process.exitCode=1;});
+export let startupError:Error|undefined;
+server.on('error',error=>{startupError=error;console.error(error.message);process.exitCode=1;});
 server.listen(port,host,()=>console.log(`Evidence Quest ${mode} server http://${host}:${port}`));

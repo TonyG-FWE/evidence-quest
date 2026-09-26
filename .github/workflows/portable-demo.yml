@@ -1,0 +1,109 @@
+name: Portable demo
+on:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: Publish reviewed release (main only, after PR review and merge)
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: portable-${{ github.event.pull_request.head.ref || github.ref }}
+  cancel-in-progress: true
+jobs:
+  package:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - runner: windows-2022
+            target: win32-x64
+          - runner: macos-15-intel
+            target: darwin-x64
+          - runner: macos-15
+            target: darwin-arm64
+          - runner: ubuntu-24.04
+            target: linux-x64
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 60
+    env:
+      EQ_GARDEN_AI_DEMO: '0'
+      EQ_CAST_DYNAMIC_VOICE: '0'
+      PLAYWRIGHT_BROWSERS_PATH: ${{ github.workspace }}/.cache/browsers
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: '24.21.0'
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run build:demo
+      - run: npm run test:contracts
+        env:
+          EQ_ASSET_PROFILE: review
+          EQ_PERSONAL_GRASS: '1'
+      - run: npm run package:portable
+      - run: npm run verify:portable
+      - run: npm run test:portable
+        # Full native recorded-voice acceptance runs separately on a computer
+        # with working graphics; see docs/PORTABLE-DEMO.md. Hosted Windows and
+        # Linux runs retained their graphics/movement failures without changing
+        # game quality or test thresholds. All four archive checks remain here.
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        if: failure()
+        with:
+          name: diagnostics-portable-${{ matrix.target }}
+          path: |
+            output/portable/test-*.json
+            output/portable/journey-*.json
+            output/playwright/portable/**/error-context.md
+            output/playwright/portable/**/*.png
+          if-no-files-found: ignore
+          retention-days: 7
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: portable-${{ matrix.target }}
+          path: |
+            output/portable/*.zip
+            output/portable/*.tar.gz
+            output/portable/*.sha256
+            output/portable/test-*.json
+            output/portable/journey-*.json
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 14
+  publish:
+    needs: package
+    if: github.event_name == 'workflow_dispatch' && inputs.publish && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          pattern: portable-*
+          path: downloads
+      - name: Publish all four verified archives
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          shopt -s globstar nullglob
+          archives=(downloads/**/*.zip downloads/**/*.tar.gz)
+          test "${#archives[@]}" -eq 4
+          for checksum in downloads/**/*.sha256; do
+            (cd "$(dirname "$checksum")" && sha256sum --check "$(basename "$checksum")")
+          done
+          gh release create "demo-${GITHUB_SHA:0:12}" "${archives[@]}" downloads/**/*.sha256 downloads/**/test-*.json \
+            --repo "$GITHUB_REPOSITORY" --target "$GITHUB_SHA" \
+            --title "Evidence Quest portable demo (${GITHUB_SHA:0:12})" \
+            --notes-file docs/PORTABLE-DEMO.md

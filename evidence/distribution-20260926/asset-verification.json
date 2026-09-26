@@ -1,0 +1,50 @@
+{
+  "at": "2026-09-26T12:07:58.296Z",
+  "demoBuild": {
+    "at": "2026-09-26T11:04:14.979Z",
+    "commit": "c776bb9729d65c1ae9db4a58b404ef9236f9483a",
+    "inputFiles": 15456,
+    "outputFiles": 7374,
+    "inputSha256": "7279d47daeb33ff8263b103534811d0bc2a62e665c048c4d2809480451e76cf1",
+    "outputSha256": "3badf055d2233efdd18dcb313d5e053966cbe7764934f34ce92ef71682f21b0d",
+    "audio": {
+      "source": {
+        "status": "COMPLETE_EXACT_PCM_VERIFIED",
+        "manifestSha256": "cb64d0f4955c12055934078c741dfdacca552e0e96bbcaa759e6ba9973d26246",
+        "entries": 6037,
+        "files": 9283,
+        "bytes": 2228347044,
+        "runtimeClips": 5481,
+        "scope": "Exact source/word/speaker/master/clip bytes and sample boundaries. Native listening and browser acceptance remain separate."
+      },
+      "runtime": {
+        "status": "RUNTIME_CLIP_BYTES_VERIFIED",
+        "manifestSha256": "cb64d0f4955c12055934078c741dfdacca552e0e96bbcaa759e6ba9973d26246",
+        "entries": 6037,
+        "files": 5481,
+        "bytes": 1118217400,
+        "runtimeClips": 5481,
+        "scope": "Compiled manifest and independent clip bytes/bounds only. Source provenance must be established separately with the same manifest hash; native listening remains separate."
+      }
+    }
+  },
+  "assets": {
+    "packageFiles": 154,
+    "targets": 155,
+    "matched": 155,
+    "copied": 0,
+    "missing": 0,
+    "bytes": 588716585,
+    "manifestSha256": "f44ece40f283cea7675856809ac5bae0153f5889795f8f4138ced729481f9fa6"
+  },
+  "originals": {
+    "status": "ALL_143_ORIGINAL_HASHES_MATCH",
+    "expected": 143,
+    "verified": 143,
+    "bytes": 1003867652,
+    "missing": [],
+    "changed": [],
+    "inventorySha256": "86264c539ad2ac57402781967e86f20ad6df354827b6032081b2b294eb0f2a72"
+  },
+  "scope": "Demo build verifies authored source provenance and runtime clip bytes. Original GLB check is local preservation, not a requirement to ship every original. Native microphone and broad qualification are separate."
+}

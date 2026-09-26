@@ -3,7 +3,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {spawn,execFileSync} from 'node:child_process';
 import {hydrateDemoAssets} from './demo-assets.mjs';
-import {stageDemoPublic} from './demo-public.mjs';
+import {withDemoPublic} from './demo-public.mjs';
 import {captureDemoInputs,fileRecords,listFiles,recordsDigest,changedRecords,authoredEnvironment} from './demo-inputs.mjs';
 import {verifyLedgerHistory} from './demo-ledgers.mjs';
 const run=process.argv[2]??'candidate-1';if(!/^[a-z0-9-]+$/.test(run))throw Error('Invalid run ID');
@@ -21,12 +21,13 @@ const records=await candidateRecords(),sourceSha256=recordsDigest(records);
 const binding={at:new Date().toISOString(),profile:'personal-review-fitted-paths-and-banks',head:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),branch:execFileSync('git',['branch','--show-current'],{encoding:'utf8'}).trim(),sourceSha256,records,operationalLedgers};
 await fs.writeFile(directory+'/source-binding.json',JSON.stringify(binding,null,2)+'\n');
 const npm=path.join(path.dirname(process.execPath),'node_modules/npm/bin/npm-cli.js');
-const env={...authoredEnvironment(),PATH:path.dirname(process.execPath)+path.delimiter+process.env.PATH,EQ_TEST_PORT:'4384',EQ_BROWSER_OUTPUT_DIR:'output/playwright/demo-release/'+run,PLAYWRIGHT_JSON_OUTPUT_NAME:directory+'/browser.json',EQ_ALL_BROWSERS:'1',EQ_DEMO_PUBLIC_DIR:await stageDemoPublic()};
+await withDemoPublic(async publicDir=>{
+const env={...authoredEnvironment(),PATH:path.dirname(process.execPath)+path.delimiter+process.env.PATH,EQ_TEST_PORT:'4384',EQ_BROWSER_OUTPUT_DIR:'output/playwright/demo-release/'+run,PLAYWRIGHT_JSON_OUTPUT_NAME:directory+'/browser.json',EQ_ALL_BROWSERS:'1',EQ_DEMO_PUBLIC_DIR:publicDir};
 delete env.EQ_REVIEW_CLIENT_DIRECTORY;delete env.EQ_TEST_DEV;delete env.VITE_EQ_PROFILE;
 const commands=[['ci'],['run','validate:content'],['run','check'],['run','build:server'],['run','test:contracts'],['run','eval:coach','--','--mode','authored'],['run','build'],['run','test:browser']],results=[];
 for(const args of commands){
  const command='npm '+args.join(' '),name=args[0]==='ci'?'ci':args[1].replaceAll(':','-'),log=directory+'/'+name+'.log',output=await fs.open(log,'w'),started=new Date().toISOString();console.log('START '+command);
- const exit=await new Promise((resolve,reject)=>{const child=spawn(process.execPath,[npm,...args],{env,windowsHide:true,stdio:['ignore',output.fd,output.fd]});child.on('error',reject);child.on('exit',resolve);});await output.close();
+ let exit;try{exit=await new Promise((resolve,reject)=>{const child=spawn(process.execPath,[npm,...args],{env,windowsHide:true,stdio:['ignore',output.fd,output.fd]});child.on('error',reject);child.on('close',resolve);});}finally{await output.close();}
  const changed=changedRecords(records,await candidateRecords());
  const currentLedgers=await verifyLedgerHistory(),ledgerChanges=changedRecords(operationalLedgers.ledgers,currentLedgers.ledgers);
  results.push({command,started,finished:new Date().toISOString(),exit,log,sourceSha256,sourceChangesDuringRun:changed,operationalLedgerChanges:ledgerChanges});await fs.writeFile(directory+'/commands.json',JSON.stringify({binding:directory+'/source-binding.json',profile:binding.profile,results},null,2)+'\n');console.log('END '+command+' exit='+exit+' changed='+changed.length);
@@ -34,3 +35,4 @@ for(const args of commands){
  if(ledgerChanges.length)throw Error('Operational history changed during authored qualification; preserve this run and investigate: '+ledgerChanges.join(', '));
 }
 if(results.some(result=>result.exit!==0))process.exitCode=1;
+});
