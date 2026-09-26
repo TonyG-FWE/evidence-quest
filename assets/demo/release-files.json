@@ -91,9 +91,9 @@
     "evidence/nerdy-demo-20260924/word-timestamp-overruns.json",
     "evidence/reader-repair-20260919/RESULTS.md"
   ],
-  "filesSha256": "216083232ec0227eaf6b62de4d6cdbf1db7dbefa47e3c05eb0bc66b955f79439",
+  "filesSha256": "54313395b01fa07c7f0569db1832807ccd001c513e24ad1204b85b2845d9ebe2",
   "fileCount": 15911,
-  "bytes": 3143496350,
+  "bytes": 3143497419,
   "files": [
     {
       "file": ".env.example",
@@ -107,8 +107,8 @@
     },
     {
       "file": ".github/workflows/portable-demo.yml",
-      "bytes": 3848,
-      "sha256": "0568e9233f639b01aebb89bdd3eac8a4c6d09519db9c8bc4ea33e4a7404e7b58"
+      "bytes": 4086,
+      "sha256": "054f9ebf9e7fb9babc09ca2a9e8f523c9598c8280df6db4dccd2565ebf8f8d14"
     },
     {
       "file": ".gitignore",
@@ -962,8 +962,8 @@
     },
     {
       "file": "browser-tests/bakery-cursor-actions.ts",
-      "bytes": 6501,
-      "sha256": "c049356e633fa3fdf155a1cc989c3ed9ba5d19224f990621f69f0cd2c6146a8f"
+      "bytes": 6718,
+      "sha256": "a65b89d5dc045b4739b0bdebb09ab0c37bf9c69e9d037f5aee04ed67f58ea04f"
     },
     {
       "file": "browser-tests/cadence-diagnostic.spec.ts",
@@ -1342,8 +1342,8 @@
     },
     {
       "file": "browser-tests/portable-journey.spec.ts",
-      "bytes": 7154,
-      "sha256": "329982c4af80f6df1698180cecbc69053bdf18616114bd5926c8bdcf58ac4f9e"
+      "bytes": 7375,
+      "sha256": "2f9ebb6929062819f7b25bb7e7f3c975c06fb16f4ddca624609f3e2118ee4d0c"
     },
     {
       "file": "browser-tests/production-formats.spec.ts",
@@ -1817,8 +1817,8 @@
     },
     {
       "file": "docs/PORTABLE-DEMO.md",
-      "bytes": 4402,
-      "sha256": "d042f981c8965fe4f9040ba82a4cc51627ab1663711f615542f526143f517534"
+      "bytes": 4640,
+      "sha256": "9572bc73cdae8eac97a98d2f621272aef1dd23679583dfa998435a96e138f249"
     },
     {
       "file": "docs/PRODUCTION-TOOLCHAIN.md",
@@ -24137,8 +24137,8 @@
     },
     {
       "file": "playwright.portable.config.ts",
-      "bytes": 1070,
-      "sha256": "74fda2246c5b78432f0edd41666ffbefe94b157eb904f1f74716db0f5588fd0c"
+      "bytes": 1225,
+      "sha256": "ab99fb2cf67d2be53e7da72e50712f7d446fbb4214fc8a40e4620220415fe0cc"
     },
     {
       "file": "playwright.prepared-story.config.ts",

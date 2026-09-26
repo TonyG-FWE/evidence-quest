@@ -25,9 +25,10 @@ test('portable offline journey reaches the finale and six-story library using re
  await page.context().route('**/*',route=>{const url=route.request().url();if(url.startsWith('http://127.0.0.1:4364/'))return route.continue();external.push(url);return route.abort();});
  page.on('pageerror',error=>errors.push(error.message));page.on('request',request=>{if(request.method()==='POST'&&request.url().endsWith('/api/garden/feedback'))feedback.push(request.url());});
  const turn=async()=>{await expect(page.locator('.garden-reader')).toHaveCount(0);await playback(page,()=>page.locator('.garden-reader').isVisible());};
- await playDemoRoute(page,info,undefined,{opening:async()=>{
+ await playDemoRoute(page,info,async checkpoint=>{console.log('Portable journey: '+checkpoint);},{opening:async()=>{
   await button(page,'promised').click();await button(page,'Listen to the sentence').click();const stop=page.locator('.garden-word-card').getByRole('button',{name:'Stop listening',exact:true});await expect(stop).toBeVisible();await expect(stop).toBeHidden({timeout:45000});await button(page,'Close word help').click();
  }});
+ console.log('Portable journey: bridge, planting and bakery complete');
  await button(page,'Talk to Sol').click();await completeConversation(page);await button(page,'Let’s finish the ending together.').click();
  await page.getByLabel('Your ending for Sol’s story',{exact:true}).fill('I fixed the roof so Rina’s flour stayed dry. She baked the bread she had promised. Later, she brought me a loaf. My little repair had helped her keep her promise.');
  await button(page,'Baking, then the visit').click();await button(page,'Try my ending').click();await expect(page.locator('.garden-world-activity>.g-story-stage')).toHaveAttribute('aria-busy','false',{timeout:60000});await button(page,'Use this ending').click();
@@ -41,5 +42,5 @@ test('portable offline journey reaches the finale and six-story library using re
  await button(page,'Invite Sol to share').click();await button(page,'Let Sol share with everyone').click();await turn();await button(page,'Hear Grandma ask Sol').click();await turn();await button(page,'Let Grandma bring out the cushions').click();await expect(button(page,'Let Grandma finish her account')).toBeVisible({timeout:60000});await button(page,'Let Grandma finish her account').click();await button(page,'Let Grandma share her story').click();await turn();
  await button(page,'Sharing our stories').click();await placeMemory(page);await resumeGathering(page);await button(page,'Hear Grandma’s offer for Mara').click();await turn();await button(page,'Take a copy for Mara').click();await expect(page.locator('.garden-reading-scroll')).toContainText('The copy is in Pip’s backpack.');
  await walk(page,'Mara');await button(page,'Give Grandma’s story').click();await turn();await button(page,'Finish the chapter').click();await button(page,'Watch the ending').click();await expect(page.locator('[data-world-activity="ending-presentation"]')).toBeVisible();await playback(page,async()=>!await page.locator('[data-world-activity="ending-presentation"]').count());await button(page,'Read the garden’s stories').click();await expect(page.locator('.g-lantern-library article')).toHaveCount(6);await page.screenshot({path:info.outputPath('complete-finale.png')});
- expect(errors).toEqual([]);expect(external).toEqual([]);expect(feedback).toEqual([]);
+ expect(errors).toEqual([]);expect(external).toEqual([]);expect(feedback).toEqual([]);console.log('Portable journey: finale and six-story library complete, no external requests');
 });

@@ -46,6 +46,9 @@ export async function repairBakeryWithCursor(page:Page,info:TestInfo,checkpoint?
  for(let stroke=0;stroke<8;stroke++){
   const bowl=await bakeryCue(page,'dough'),direction=stroke%2?1:-1;
   await page.mouse.move(bowl.cx+direction*5,bowl.cy);await page.mouse.down();await page.mouse.move(bowl.cx+direction*5+direction*bowl.width*.22,bowl.cy+direction*8,{steps:8});await page.mouse.up();
+  // Release can complete kneading and remove the bowl target on the next frame.
+  // Observe that frame before deciding whether to start another stroke.
+  await expect(scene).toHaveAttribute('data-hand-gesture','');
   if(stroke===0){await expect(page.locator('[data-bakery-object="dough"]')).not.toContainText('· 0%');await page.screenshot({path:info.outputPath('short-stroke-progress.png')});}
   if(await scene.getAttribute('data-action-kind')==='mixDough')break;
  }

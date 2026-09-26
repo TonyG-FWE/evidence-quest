@@ -1,5 +1,8 @@
 import {defineConfig} from '@playwright/test';
 import path from 'node:path';
+// Imported route helpers must use the same geometry as the packaged demo.
+process.env['EQ_ASSET_PROFILE']='review';
+process.env['EQ_PERSONAL_GRASS']='1';
 const root=process.env['EQ_PORTABLE_PACKAGE_DIRECTORY'];
 if(!root)throw Error('An extracted portable package is required');
 const executable=path.join(root,'runtime',process.platform==='win32'?'node.exe':'node');

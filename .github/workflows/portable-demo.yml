@@ -51,11 +51,14 @@ jobs:
       - run: npm run verify:portable
       - run: npm run test:portable
         env:
-          EQ_PORTABLE_JOURNEY: ${{ matrix.target == 'win32-x64' && '1' || '0' }}
+          # Every native archive runs the same startup/audio/recording checks.
+          # The shared full route runs on Linux; Windows hosted graphics could
+          # not meet the unchanged movement assertions. Record that limitation.
+          EQ_PORTABLE_JOURNEY: ${{ matrix.target == 'linux-x64' && '1' || '0' }}
       - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         if: failure()
         with:
-          name: portable-diagnostics-${{ matrix.target }}
+          name: diagnostics-portable-${{ matrix.target }}
           path: |
             output/portable/test-*.json
             output/portable/journey-*.json

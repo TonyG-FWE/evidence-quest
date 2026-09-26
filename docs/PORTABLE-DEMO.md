@@ -6,6 +6,8 @@ The portable demo contains the game, recorded voices and its own Node runtime. I
 
 Download the archive for your computer from the repository's **Releases** page once the reviewed release is published. PR workflow artifacts are review candidates, not a published release. Extract the entire archive before starting.
 
+For a PR review artifact, first extract GitHub's outer ZIP, then extract the platform archive inside it. The checksum and test report sit beside that archive. Review artifacts expire after 14 days; they are not permanent download links.
+
 | Computer | Archive | Launcher |
 | --- | --- | --- |
 | Windows 10/11, Intel or AMD 64-bit | `win32-x64.zip` | Double-click **Start Evidence Quest.cmd** |
