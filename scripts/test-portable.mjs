@@ -22,22 +22,31 @@ async function stop(){if(child&&child.exitCode===null){const exited=once(child,'
 const checks=[];
 try{
  const verify=await run(node,[path.join(root,'launch.mjs'),'--verify'],{cwd:extract,env});assert.equal(verify.code,0,verify.output);checks.push('archive extraction and independent integrity check');
+ const wrapper=path.join(root,selection.launcher);
+ const launcherCheck=process.platform==='win32'?await run(path.join(env.SystemRoot,'System32/cmd.exe'),['/d','/c','call',wrapper,'--verify'],{cwd:extract,env}):await run(wrapper,['--verify'],{cwd:extract,env:{...env,PATH:'/usr/bin:/bin'}});
+ assert.equal(launcherCheck.code,0,launcherCheck.output);assert.match(launcherCheck.output,/Portable package verified/);checks.push('platform launcher executes from outside the package folder');
  await start();
  const origin='http://127.0.0.1:4364';
  assert.match(await (await fetch(origin+'/garden')).text(),/<html/i);
  const config=await (await fetch(origin+'/api/garden/config')).json();assert.equal(config.textFeedback,false);assert.equal(config.readingFeedback,false);assert.deepEqual(config.textFeedbackActivities,[]);
  assert.equal((await (await fetch(origin+'/api/config')).json()).liveAvailable,false);checks.push('authored startup with providers disabled despite inherited keys');
- const {chromium}=await import('@playwright/test');const browser=await chromium.launch({channel:'chromium',args:['--use-fake-device-for-media-stream','--use-fake-ui-for-media-stream']});
+ const {chromium,expect}=await import('@playwright/test');const browser=await chromium.launch({channel:'chromium',args:['--use-fake-device-for-media-stream','--use-fake-ui-for-media-stream']});
  try{
   const context=await browser.newContext({viewport:{width:1366,height:768},permissions:['microphone']});const external=[];const failures=[];
   await context.route('**/*',route=>{const url=route.request().url();if(url.startsWith(origin+'/'))return route.continue();external.push(url);return route.abort();});
   const page=await context.newPage();page.on('pageerror',error=>failures.push(error.message));
   await page.goto(origin+'/garden');await page.getByRole('button',{name:'Begin Pip’s adventure',exact:true}).click();
   await page.getByRole('button',{name:'Start playing',exact:true}).waitFor({timeout:60000});
+  const scene=page.locator('.garden-scene');await expect(scene).toHaveAttribute('data-scene-phase','ready',{timeout:90000});
+  await expect.poll(async()=>JSON.parse(await scene.getAttribute('data-character-assets')??'{}').pending,{timeout:90000}).toBe(0);
+  const assets=JSON.parse(await scene.getAttribute('data-character-assets')??'{}');assert.equal(assets.profile,'local-review');assert.ok(assets.pip);
   await page.screenshot({path:path.join(extract,'startup.png')});
   const audio=await page.evaluate(async()=>{const m=await (await fetch('/audio/cast/manifest.json')).json();const bytes=await (await fetch(m.entries.find(x=>x.text.length>25).clip.uri)).arrayBuffer();const context=new AudioContext();try{const buffer=await context.decodeAudioData(bytes);return {duration:buffer.duration,samples:buffer.length};}finally{await context.close();}});assert.ok(audio.duration>0);assert.ok(audio.samples>0);
-  const mic=await page.evaluate(async()=>{const stream=await navigator.mediaDevices.getUserMedia({audio:true});const recorder=new MediaRecorder(stream),chunks=[];recorder.ondataavailable=e=>chunks.push(e.data);const done=new Promise(resolve=>recorder.onstop=resolve);recorder.start();await new Promise(r=>setTimeout(r,500));recorder.stop();await done;stream.getTracks().forEach(t=>t.stop());return new Blob(chunks).size;});assert.ok(mic>0);
-  assert.deepEqual(external,[]);assert.deepEqual(failures,[]);checks.push('offline browser opening, native recorded-audio decode, synthetic microphone capture');
+  await page.getByRole('button',{name:'Practise reading this page',exact:true}).click();const practice=page.locator('.g-practice-overlay');
+  await practice.getByRole('button',{name:'Start listening',exact:true}).click();await expect(practice).toHaveAttribute('data-recording','listening');await page.waitForTimeout(750);await practice.getByRole('button',{name:'Stop',exact:true}).click();await expect(practice).toHaveAttribute('data-recording','review');assert.ok(Number(await practice.getAttribute('data-local-audio-bytes'))>44);
+  const replay=practice.getByLabel('Hear my reading');await replay.evaluate(element=>element.play());await expect.poll(()=>replay.evaluate(element=>element.currentTime)).toBeGreaterThan(0);
+  await practice.getByRole('button',{name:'Discard recording',exact:true}).click();await expect(practice).toHaveAttribute('data-local-audio-bytes','0');await practice.getByRole('button',{name:'Back to the story',exact:true}).click();
+  assert.deepEqual(external,[]);assert.deepEqual(failures,[]);checks.push('offline rendered world, native recorded-audio decode, actual game recording/replay/discard with a synthetic microphone');
  }finally{await browser.close();}
  await stop();await start();await stop();checks.push('shutdown and restart preserve fixed origin');
  const occupied=createServer((_q,r)=>r.end('unrelated server'));occupied.listen(4364,'127.0.0.1');await once(occupied,'listening');
