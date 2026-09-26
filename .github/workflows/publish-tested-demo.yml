@@ -94,7 +94,7 @@ jobs:
           const origin='http://127.0.0.1:4364';let server,output='';
           async function start(){output='';server=spawn(runtime,[path.join(root,'launch.mjs'),'--no-open'],{cwd:extraction,env,windowsHide:true,stdio:['ignore','pipe','pipe']});server.stdout.on('data',x=>output+=x);server.stderr.on('data',x=>output+=x);let spawnError;server.on('error',error=>spawnError=error);const deadline=Date.now()+90000;while(!output.includes('Ready:')){if(spawnError)throw spawnError;if(server.exitCode!==null||Date.now()>deadline)throw Error('Published package did not start: '+output);await new Promise(resolve=>setTimeout(resolve,100));}}
           async function stop(){if(server&&server.exitCode===null){const closed=once(server,'close');server.kill();await closed;}server=undefined;}
-          let browser;
+          let browser,page;
           try{
            await start();assert.equal((await fetch(origin+'/healthz')).ok,true);
            const config=await (await fetch(origin+'/api/garden/config')).json();assert.equal(config.textFeedback,false);assert.equal(config.readingFeedback,false);
@@ -102,12 +102,13 @@ jobs:
            browser=await chromium.launch({channel:'chromium'});
            const context=await browser.newContext({viewport:{width:1366,height:768},serviceWorkers:'block'});const external=[],errors=[];
            await context.route('**/*',route=>{const url=route.request().url();if(url.startsWith(origin+'/'))return route.continue();external.push(url);return route.abort();});
-           const page=await context.newPage();page.on('pageerror',error=>errors.push(error.message));
+           page=await context.newPage();page.on('pageerror',error=>errors.push(error.message));
            await page.goto(origin+'/garden');await page.getByRole('button',{name:'Begin Pip’s adventure',exact:true}).click();
            const startButton=page.getByRole('button',{name:'Start playing',exact:true});await startButton.waitFor({timeout:60000});
            const scene=page.locator('.garden-scene');await expect(scene).toHaveAttribute('data-scene-phase','ready',{timeout:90000});
            await expect.poll(async()=>JSON.parse(await scene.getAttribute('data-character-assets')??'{}').pending,{timeout:90000}).toBe(0);
-           await startButton.click();await expect(scene).toHaveAttribute('data-scene-phase','ready');
+           await startButton.click();const transitionAt=Date.now();await expect(scene).toHaveAttribute('data-scene-phase','ready',{timeout:90000});
+           await expect.poll(async()=>JSON.parse(await scene.getAttribute('data-character-assets')??'{}').pending,{timeout:90000}).toBe(0);const sceneReadyMs=Date.now()-transitionAt;
            const audio=await page.evaluate(async()=>{const manifest=await (await fetch('/audio/cast/manifest.json')).json();const bytes=await (await fetch(manifest.entries.find(x=>x.text.length>25).clip.uri)).arrayBuffer();const audio=new AudioContext();try{const decoded=await audio.decodeAudioData(bytes);return {duration:decoded.duration,samples:decoded.length};}finally{await audio.close();}});assert.ok(audio.duration>0&&audio.samples>0);
            await page.screenshot({path:path.join(directory,'published-windows-startup.png')});assert.deepEqual(external,[]);assert.deepEqual(errors,[]);
            await context.close();await stop();await start();assert.equal((await fetch(origin+'/healthz')).ok,true);await stop();
@@ -115,9 +116,9 @@ jobs:
            const releaseResponse=await releasePage.goto('https://github.com/TonyG-FWE/evidence-quest/releases/tag/demo-10b6249d3cad');assert.equal(releaseResponse.status(),200);
            await expect(releasePage.getByRole('link',{name:'Sign in',exact:true}).first()).toBeVisible();
            await releasePage.screenshot({path:path.join(directory,'signed-out-release.png'),fullPage:true});await guest.close();
-           const result={verificationHost:'Fresh windows-2022 GitHub-hosted runner',status:'PASS',at:new Date().toISOString(),archive:download.name,sha256:download.sha256,commit:manifest.commit,extraction,checks:['Fresh public release archive extracted into a path containing spaces.','Windows launcher independently verifies files using the bundled Node with no Node on PATH.','Authored server starts with no credentials on the fixed loopback origin.','Fresh Chromium renders the supplied village and enters ordinary play.','An included recorded voice decodes successfully.','All non-loopback browser network requests blocked; zero external requests or page errors.','Owned server stops and restarts successfully.','Release page returns HTTP 200 in an empty browser context and displays Sign in.'],audio,limitations:['Existing full Windows journey and four-platform native qualification records are retained; this run verifies the published download and startup.','This publication check does not add human microphone or broad device/performance acceptance.']};
+           const result={verificationHost:'Fresh windows-2022 GitHub-hosted runner',status:'PASS',at:new Date().toISOString(),archive:download.name,sha256:download.sha256,commit:manifest.commit,extraction,checks:['Fresh public release archive extracted into a path containing spaces.','Windows launcher independently verifies files using the bundled Node with no Node on PATH.','Authored server starts with no credentials on the fixed loopback origin.','Fresh Chromium renders the supplied village and enters ordinary play.','An included recorded voice decodes successfully.','All non-loopback browser network requests blocked; zero external requests or page errors.','Owned server stops and restarts successfully.','Release page returns HTTP 200 in an empty browser context and displays Sign in.'],audio,sceneReadyMs,limitations:['Existing full Windows journey and four-platform native qualification records are retained; this run verifies the published download and startup.','This publication check does not add human microphone or broad device/performance acceptance.']};
            await fs.writeFile(path.join(directory,'windows-startup.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result));
-          }catch(error){await fs.writeFile(path.join(directory,'windows-startup-failure.json'),JSON.stringify({at:new Date().toISOString(),error:error.stack,serverOutput:output},null,2)+'\n');throw error;}finally{await browser?.close();await stop();}
+          }catch(error){await page?.screenshot({path:path.join(directory,'windows-startup-failure.png')}).catch(()=>{});await fs.writeFile(path.join(directory,'windows-startup-failure.json'),JSON.stringify({at:new Date().toISOString(),error:error.stack,serverOutput:output},null,2)+'\n');throw error;}finally{await browser?.close();await stop();}
           '@ | Set-Content -LiteralPath verify-windows.mjs
           node verify-windows.mjs
           if ($LASTEXITCODE -ne 0) { throw 'Published Windows verification failed' }

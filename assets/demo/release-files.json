@@ -100,9 +100,9 @@
     "evidence/nerdy-demo-20260924/word-timestamp-overruns.json",
     "evidence/reader-repair-20260919/RESULTS.md"
   ],
-  "filesSha256": "51b281bf068300d4cf23097ba39cb7549c203ebc9cf4b4c35dc033254c7e483c",
+  "filesSha256": "781fb8336a70c7b3fa5496e7575a8003d0e1adb4adf79379bc6002343daee89a",
   "fileCount": 15921,
-  "bytes": 3143665287,
+  "bytes": 3143665624,
   "files": [
     {
       "file": ".env.example",
@@ -121,8 +121,8 @@
     },
     {
       "file": ".github/workflows/publish-tested-demo.yml",
-      "bytes": 13313,
-      "sha256": "db39e61209c718c117c484d8a3ae6c1d2cd7502c1fd2b3b7ac591e27d079fe8b"
+      "bytes": 13650,
+      "sha256": "6f95dae953450b08b43f20c49b294ba7fa23b9ec4ac6b28d7f069c733fa50237"
     },
     {
       "file": ".gitignore",
