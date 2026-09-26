@@ -6,7 +6,15 @@ Explore the village, repair a bridge, deliver a lantern seed by boat or by hand,
 
 Evidence Quest is the playable reading-adventure prototype for **SparkFest**, a broader festival setting where children prepare presentations, share stories and enter those stories. The context below describes Tony’s development process, the current implementation and the production approach he would take.
 
-[Product and technical context for judges](#product-and-technical-context-for-judges) · [Run the demo](#run-the-demo) · [Controls](#controls)
+[Download and play](#download-and-play) · [Build from source](#build-from-source) · [Controls](#controls) · [Product and technical context for judges](#product-and-technical-context-for-judges)
+
+## Download and play
+
+Portable downloads are prepared for Windows x64, Intel Mac, Apple Silicon Mac and Linux x64. They will appear on the [Releases page](https://github.com/TonyG-FWE/evidence-quest/releases) after PR review and merge; PR workflow artifacts are candidates for review until then.
+
+Download the archive for your computer, extract the whole folder, and run **Start Evidence Quest**. The game opens in your browser. The runtime is included: no Node installation, build commands or API keys are needed, and the authored adventure works offline. Keep the launcher window open while playing; Ctrl+C stops it.
+
+See [portable setup and troubleshooting](docs/PORTABLE-DEMO.md) for platform requirements, first-launch approval, controls for starting/stopping, and package verification. Portable play includes recorded voices and local microphone practice; optional live AI feedback and generated voices for new writing are unavailable.
 
 ## Product and technical context for judges
 
@@ -112,9 +120,19 @@ AI-assisted endings could give children more room to develop their own ideas. A 
 
 Language learning could grow through gradual immersion: begin mainly in the child's language, introduce individual words, then phrases, sentences, paragraphs and whole stories. “Mi abuela needs my help” could develop into “Mi abuela necesita mi ayuda,” with definitions, pronunciation and practice available along the way. With permission, selected reading or writing examples could also help a tutor guide a later session or suggest another adventure. These are directions I would develop and evaluate as the core experience becomes stronger.
 
-## Run the demo
+## Build from source
 
-From the repository folder in PowerShell:
+Download the source ZIP or clone this repository. Source builds need internet access for the initial dependency installation. Use **Node.js 24.21.0**. Git is not needed when building a source ZIP.
+
+On macOS and Linux, with that Node version installed, run from the extracted repository folder:
+
+```sh
+npm ci
+npm run build:demo
+npm run start:demo
+```
+
+On Windows, the included bootstrap installs that runtime locally. From the repository folder in PowerShell:
 
 ```powershell
 .\scripts\bootstrap.ps1

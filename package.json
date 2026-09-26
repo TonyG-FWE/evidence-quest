@@ -32,7 +32,10 @@
     "verify:demo-build": "node scripts/demo-build-receipt.mjs verify",
     "verify:demo-originals": "node scripts/demo-assets.mjs --verify-originals",
     "demo:release-files": "node scripts/demo-release-files.mjs write",
-    "verify:demo-release-files": "node scripts/demo-release-files.mjs verify"
+    "verify:demo-release-files": "node scripts/demo-release-files.mjs verify",
+    "package:portable": "node scripts/package-portable.mjs",
+    "verify:portable": "node scripts/verify-portable.mjs",
+    "test:portable": "node scripts/test-portable.mjs"
   },
   "dependencies": {
     "ajv": "8.18.0",

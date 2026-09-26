@@ -12,7 +12,8 @@ export async function releaseFileSelection(root=process.cwd(),extraFiles=[]){
  files.push(...packaging.paths,...packaging.requiredExistingBuildSources);
  for(const directory of ['checks','browser-tests','evaluation','docs/game-review'])files.push(...await listFiles(root,directory));
  for(const file of await fs.readdir(root))if(/(?:config[^/]*\.(?:ts|json))$/.test(file))files.push(file);
- files.push('README.md','BUILD-STATUS.md','AGENTS.md','.env.example','.gitignore','.gitattributes','docs/TEST-ARTIFACT-RETENTION.md','docs/PROVENANCE.md','docs/PRODUCTION-TOOLCHAIN.md','docs/BUILD-START.md','evidence/group-7-review-20260915/group-6-migration-inputs.json');
+ files.push('README.md','BUILD-STATUS.md','AGENTS.md','.env.example','.gitignore','.gitattributes','.node-version','.npmrc','docs/PORTABLE-DEMO.md','docs/TEST-ARTIFACT-RETENTION.md','docs/PROVENANCE.md','docs/PRODUCTION-TOOLCHAIN.md','docs/BUILD-START.md','evidence/design-import.json','evidence/group-7-review-20260915/group-6-migration-inputs.json');
+ files.push(...await listFiles(root,'.github/workflows'));
  files.push(...OPERATIONAL_LEDGERS.map(item=>item.file));
  files.push('evidence/integrated-checkpoint-20260916/character-form-approval.json');
  for(const file of extraFiles){

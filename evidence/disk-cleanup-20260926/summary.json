@@ -1,0 +1,142 @@
+{
+  "at": "2026-09-26T05:07:42.479Z",
+  "scope": "Evidence Quest only; no Git history changes, provider requests, new recordings or gameplay changes",
+  "mainCleanup": {
+    "deletedFiles": 463610,
+    "logicalBytes": 140359089025,
+    "logicalGiB": 130.71958816144615,
+    "groups": {
+      "abandoned-demo-public-stage": {
+        "files": 331187,
+        "bytes": 63300047144
+      },
+      "obsolete-playwright-trace": {
+        "files": 289,
+        "bytes": 48322834916
+      },
+      "per-test-browser-video": {
+        "files": 203,
+        "bytes": 2516997639
+      },
+      "obsolete-test-failure-screenshot": {
+        "files": 442,
+        "bytes": 369350986
+      },
+      "abandoned-playwright-worker-files": {
+        "files": 129004,
+        "bytes": 21470712511
+      },
+      "completed-isolated-package-fixture": {
+        "files": 462,
+        "bytes": 1758192969
+      },
+      "superseded-compiled-snapshot": {
+        "files": 2023,
+        "bytes": 2620952860
+      }
+    },
+    "skipped": []
+  },
+  "finalHousekeeping": {
+    "deletedFiles": 1041,
+    "logicalBytes": 619244961,
+    "includesNewVerificationFixture": true,
+    "skipped": []
+  },
+  "disk": {
+    "baselineFreeBytes": 297820971008,
+    "finalFreeBytes": 439396212736,
+    "measuredFreeIncreaseBytes": 141575241728,
+    "measuredFreeIncreaseGiB": 131.8522186279297,
+    "note": "Volume free-space measurements include allocation overhead and concurrent activity; logical removals are listed separately."
+  },
+  "preservation": {
+    "at": "2026-09-26T05:05:09.081Z",
+    "checked": 15654,
+    "changed": []
+  },
+  "build": {
+    "at": "2026-09-26T05:04:17.119Z",
+    "preexistingRestored": [
+      "evidence/er13/content-validation.json"
+    ],
+    "compiledChanges": [],
+    "stagingDirectories": []
+  },
+  "browser": "browser.json",
+  "browserStatus": "PASS",
+  "checks": [
+    {
+      "name": "staging-tests",
+      "command": "node --test checks/demo-public-cleanup.test.mjs",
+      "started": "2026-09-26T05:01:45.069Z",
+      "finished": "2026-09-26T05:01:45.385Z",
+      "exitCode": 0,
+      "log": "evidence/disk-cleanup-20260926/staging-tests.log"
+    },
+    {
+      "name": "build-demo",
+      "command": "node scripts/demo-profile.mjs build",
+      "started": "2026-09-26T05:01:45.385Z",
+      "finished": "2026-09-26T05:04:00.507Z",
+      "exitCode": 0,
+      "log": "evidence/disk-cleanup-20260926/build-demo.log"
+    },
+    {
+      "name": "verify-assets",
+      "command": "node scripts/demo-assets.mjs --verify",
+      "started": "2026-09-26T05:04:00.508Z",
+      "finished": "2026-09-26T05:04:01.650Z",
+      "exitCode": 0,
+      "log": "evidence/disk-cleanup-20260926/verify-assets.log"
+    },
+    {
+      "name": "verify-originals",
+      "command": "node scripts/demo-assets.mjs --verify-originals",
+      "started": "2026-09-26T05:04:01.651Z",
+      "finished": "2026-09-26T05:04:02.724Z",
+      "exitCode": 0,
+      "log": "evidence/disk-cleanup-20260926/verify-originals.log"
+    },
+    {
+      "name": "verify-build",
+      "command": "node scripts/demo-build-receipt.mjs verify",
+      "started": "2026-09-26T05:04:02.725Z",
+      "finished": "2026-09-26T05:04:11.907Z",
+      "exitCode": 0,
+      "log": "evidence/disk-cleanup-20260926/verify-build.log"
+    },
+    {
+      "name": "verify-package",
+      "command": "node scripts/verify-demo-package.mjs",
+      "started": "2026-09-26T05:04:11.908Z",
+      "finished": "2026-09-26T05:04:17.022Z",
+      "exitCode": 0,
+      "log": "evidence/disk-cleanup-20260926/verify-package.log"
+    }
+  ],
+  "limitations": [
+    "Broad gameplay/performance matrix not rerun or superseded",
+    "Existing first smoke-check selector failure retained; corrected rerun passes",
+    "Historical raw captures and obsolete compiled snapshot are no longer available; dated summaries retained",
+    "Git changes are local and uncommitted"
+  ],
+  "inventoryArchives": "inventory-archives.json",
+  "retained": "Original art/audio, 143 model originals, all provider ledgers, ten pre-existing modifications, original live audio/video, both fallback packages, current compiled delivery, installed dependencies and Git history",
+  "releaseVerification": {
+    "status": "RELEASE_FILES_MATCH",
+    "files": 15906,
+    "filesSha256": "7cc0ba3790f4b6d5e440ea943ef5e8d5957a12751c04529ebf19e99ccaaa3732"
+  },
+  "codexBrowser": {
+    "verifiedAt": "2026-09-26T05:08:50.162Z",
+    "url": "http://127.0.0.1:4496/garden",
+    "existingTab": "8",
+    "status": "Game scene and named controls visible; existing progress untouched"
+  },
+  "visualInspection": {
+    "game": "Pip, river, path and controls render in the fresh compiled candidate.",
+    "fallback": "Native video frame and recorded-response label visible; fallback bytes unchanged."
+  },
+  "diffWhitespaceCheck": "PASS"
+}
