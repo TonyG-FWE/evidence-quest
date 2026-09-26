@@ -14,6 +14,14 @@ Portable downloads are prepared for Windows x64, Intel Mac, Apple Silicon Mac an
 
 Download the archive for your computer, extract the whole folder, and run **Start Evidence Quest**. The game opens in your browser. The runtime is included: no Node installation, build commands or API keys are needed, and the authored adventure works offline. Keep the launcher window open while playing; Ctrl+C stops it.
 
+| Computer | Download | Start after extracting |
+| --- | --- | --- |
+| Windows x64 | `win32-x64.zip` | Double-click **Start Evidence Quest.cmd**. |
+| Intel Mac / Apple Silicon Mac | `darwin-x64.tar.gz` / `darwin-arm64.tar.gz` | Double-click **Start Evidence Quest.command**. |
+| Linux x64 | `linux-x64.tar.gz` | Run **Start Evidence Quest.sh**, or use `./'Start Evidence Quest.sh'` in a terminal. |
+
+Archive names include the source commit before the extension. PR artifacts contain an outer ZIP: extract it, then extract the platform archive inside.
+
 See [portable setup and troubleshooting](docs/PORTABLE-DEMO.md) for platform requirements, first-launch approval, controls for starting/stopping, and package verification. Portable play includes recorded voices and local microphone practice; optional live AI feedback and generated voices for new writing are unavailable.
 
 ## Product and technical context for judges

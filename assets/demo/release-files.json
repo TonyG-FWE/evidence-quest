@@ -16,10 +16,15 @@
     "evidence/demo-release-20260919/server-delivery-start-guard.json",
     "evidence/demo-release-20260919/successor-build.json",
     "evidence/disk-cleanup-20260926/summary.json",
+    "evidence/distribution-20260926/asset-verification.json",
     "evidence/distribution-20260926/fixture-comparison.json",
+    "evidence/distribution-20260926/ignore-verification.json",
     "evidence/distribution-20260926/main-client-comparison.json",
+    "evidence/distribution-20260926/native-packages.json",
     "evidence/distribution-20260926/preservation.json",
     "evidence/distribution-20260926/removed-files.json",
+    "evidence/distribution-20260926/source-verification.json",
+    "evidence/distribution-20260926/summary.json",
     "evidence/distribution-20260926/windows-portable.json",
     "evidence/lean-development-20260926/local-only-originals.json",
     "evidence/lean-development-20260926/summary.json",
@@ -95,9 +100,9 @@
     "evidence/nerdy-demo-20260924/word-timestamp-overruns.json",
     "evidence/reader-repair-20260919/RESULTS.md"
   ],
-  "filesSha256": "df649c64a43f866d831e571b74e639eb9a6d91c28c8a16a8bdd11c7b516862d6",
-  "fileCount": 15915,
-  "bytes": 3143515915,
+  "filesSha256": "37183e8e394bcafc0b7747662c5aa0c74489ed9a552e48f72bf9bc8ea46cb3a6",
+  "fileCount": 15920,
+  "bytes": 3143651974,
   "files": [
     {
       "file": ".env.example",
@@ -136,13 +141,13 @@
     },
     {
       "file": "BUILD-STATUS.md",
-      "bytes": 157918,
-      "sha256": "93998a7d64be2a332f8c4dcd91018d34b64fd27be30376c62628493975bab490"
+      "bytes": 159755,
+      "sha256": "254349a66a0a0f304eeebec6a59463ce1034f0db04370d8abd88ae162ac944e9"
     },
     {
       "file": "README.md",
-      "bytes": 18940,
-      "sha256": "a62314bc4f6e33a302abd0a435fddaa720c159c89bc25ba5b5077dfd3642587c"
+      "bytes": 19492,
+      "sha256": "388d73af2bf7fc92550df2dbcf1d99632c3080dcc6948247536363aab5c15565"
     },
     {
       "file": "assets/demo/README.md",
@@ -1821,8 +1826,8 @@
     },
     {
       "file": "docs/PORTABLE-DEMO.md",
-      "bytes": 5574,
-      "sha256": "3a97f8f14dea50b4d080ac37dbee30dfb3c50a0c1a0cd1dff1ed108dce546f01"
+      "bytes": 6451,
+      "sha256": "86bde35be754384f8aa9a98bec366cd1c2abab417660f4b0b4b912e7d58a927c"
     },
     {
       "file": "docs/PRODUCTION-TOOLCHAIN.md",
@@ -23645,9 +23650,19 @@
       "sha256": "0a7308555e1953e7126315bb9f09def954f7edb4f8b0c4c11dc58381f2261fa5"
     },
     {
+      "file": "evidence/distribution-20260926/asset-verification.json",
+      "bytes": 2011,
+      "sha256": "873202ebc560995fa8901b1e9b4553fd223fc8976bc497fdc64431c68a65638f"
+    },
+    {
       "file": "evidence/distribution-20260926/fixture-comparison.json",
-      "bytes": 5420,
-      "sha256": "a2f65a0aa424aced9c92b2239dc468f8a31c89ae9f0c7df539b01672d16a2f22"
+      "bytes": 22220,
+      "sha256": "fc1877f248e9fbfc377f7750c942ac398284600f979b7d20decdf83c5d070026"
+    },
+    {
+      "file": "evidence/distribution-20260926/ignore-verification.json",
+      "bytes": 209,
+      "sha256": "5f01f2c1dbfdd7034c664e7308ebee3055a3c23167edc61dfc74fd9a847a5723"
     },
     {
       "file": "evidence/distribution-20260926/main-client-comparison.json",
@@ -23655,9 +23670,14 @@
       "sha256": "2dfa666324cd5f266ba71142100bd507b927499bfab8185259f81e4729212d2e"
     },
     {
+      "file": "evidence/distribution-20260926/native-packages.json",
+      "bytes": 10685,
+      "sha256": "57356e5914293e61c86c3dfc8839bb3f815810a52fd58bc4c21c9115bcaaab76"
+    },
+    {
       "file": "evidence/distribution-20260926/preservation.json",
-      "bytes": 3287,
-      "sha256": "f2c2ef6f3f66024d908a1bf78d4a1974da9ba3473f18b86fdbe08921c229f0e0"
+      "bytes": 3559,
+      "sha256": "069a2ac2a415eddd4815041468d4c49da6ad9387f3414a5e8caa2f53aff61772"
     },
     {
       "file": "evidence/distribution-20260926/removed-files.json",
@@ -23665,9 +23685,19 @@
       "sha256": "7ed73fd4d6783926ff3f26b42199920b85ca4da972f526de8d5b8923a275f5a1"
     },
     {
+      "file": "evidence/distribution-20260926/source-verification.json",
+      "bytes": 99949,
+      "sha256": "4def8f8bd10097c8e9f0d34c75e702e259ab5fdea38af813112f8a22c1f002b0"
+    },
+    {
+      "file": "evidence/distribution-20260926/summary.json",
+      "bytes": 2612,
+      "sha256": "2d7f7689817e4b2165a062e3399207df00a8258a6d7cab81c150a91fecfdea81"
+    },
+    {
       "file": "evidence/distribution-20260926/windows-portable.json",
-      "bytes": 8054,
-      "sha256": "b758bc89047453a33d3ff0128bfdb6e9fa34a3a3b2ce30c3685ffa0e313183f6"
+      "bytes": 8309,
+      "sha256": "db73be90554b422d62d471c0348bf481f41ef177bcc8444bec01b8ddaa39b8dd"
     },
     {
       "file": "evidence/er13/live-evaluation/attempts.jsonl",

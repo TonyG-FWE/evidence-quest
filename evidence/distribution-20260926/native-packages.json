@@ -1,0 +1,262 @@
+{
+  "at": "2026-09-26T12:22:13.701Z",
+  "status": "PASS",
+  "commit": "69d6828da43e3277bfdaa4a8f63c73737a03bfce",
+  "run": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36240765030",
+  "node": "24.21.0",
+  "packages": [
+    {
+      "target": "win32-x64",
+      "file": "evidence-quest-win32-x64-69d6828da43e.zip",
+      "bytes": 1645122126,
+      "sha256": "67d52d6256ac60d2859a211bf9585691c323d2240c5ff535248ddf3c470d8448",
+      "jobId": 108400697239,
+      "jobUrl": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36240765030/job/108400697239",
+      "runner": "windows-2022",
+      "result": "PASS",
+      "checks": [
+        "archive extraction and independent integrity check",
+        "platform launcher executes from outside the package folder",
+        "authored startup with providers disabled despite inherited keys",
+        "offline rendered world, native recorded-audio decode, actual game recording/replay/discard with a synthetic microphone",
+        "shutdown and restart preserve fixed origin",
+        "occupied port leaves unrelated server intact",
+        "tampered archive payload rejected",
+        "missing archive payload rejected"
+      ],
+      "limits": [
+        "Microphone uses a synthetic browser device, not human microphone acceptance.",
+        "Full journey not run on this platform.",
+        "Browser checks do not qualify GPU performance or every supported OS version."
+      ],
+      "artifact": {
+        "id": 10904604942,
+        "name": "portable-win32-x64",
+        "url": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36240765030/artifacts/10904604942",
+        "bytes": 1645123823,
+        "digest": "sha256:ae6f9b2242a1da82ff92e13d87fa77008117d5b7afe0d1d4ff2b15f0c9062a8b",
+        "expiresAt": "2026-10-10T12:10:55Z"
+      },
+      "commands": [
+        {
+          "command": "npm ci",
+          "result": "success"
+        },
+        {
+          "command": "npm run build:demo",
+          "result": "success"
+        },
+        {
+          "command": "npm run test:contracts",
+          "result": "success"
+        },
+        {
+          "command": "npm run package:portable",
+          "result": "success"
+        },
+        {
+          "command": "npm run verify:portable",
+          "result": "success"
+        },
+        {
+          "command": "npm run test:portable",
+          "result": "success"
+        }
+      ]
+    },
+    {
+      "target": "darwin-x64",
+      "file": "evidence-quest-darwin-x64-69d6828da43e.tar.gz",
+      "bytes": 1646147393,
+      "sha256": "3cf93b20a881cc755f98c3d66b486a297bde58b8b8311f4294b96b4e423f13ee",
+      "jobId": 108400697219,
+      "jobUrl": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36240765030/job/108400697219",
+      "runner": "macos-15-intel",
+      "result": "PASS",
+      "checks": [
+        "archive extraction and independent integrity check",
+        "platform launcher executes from outside the package folder",
+        "authored startup with providers disabled despite inherited keys",
+        "offline rendered world, native recorded-audio decode, actual game recording/replay/discard with a synthetic microphone",
+        "shutdown and restart preserve fixed origin",
+        "occupied port leaves unrelated server intact",
+        "tampered archive payload rejected",
+        "missing archive payload rejected"
+      ],
+      "limits": [
+        "Microphone uses a synthetic browser device, not human microphone acceptance.",
+        "Full journey not run on this platform.",
+        "Browser checks do not qualify GPU performance or every supported OS version."
+      ],
+      "artifact": {
+        "id": 10905847362,
+        "name": "portable-darwin-x64",
+        "url": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36240765030/artifacts/10905847362",
+        "bytes": 1646149122,
+        "digest": "sha256:9be87aba3a519090c78405d48c064ac428248f8d088df36187a170fa6748264e",
+        "expiresAt": "2026-10-10T12:20:08Z"
+      },
+      "commands": [
+        {
+          "command": "npm ci",
+          "result": "success"
+        },
+        {
+          "command": "npm run build:demo",
+          "result": "success"
+        },
+        {
+          "command": "npm run test:contracts",
+          "result": "success"
+        },
+        {
+          "command": "npm run package:portable",
+          "result": "success"
+        },
+        {
+          "command": "npm run verify:portable",
+          "result": "success"
+        },
+        {
+          "command": "npm run test:portable",
+          "result": "success"
+        }
+      ]
+    },
+    {
+      "target": "darwin-arm64",
+      "file": "evidence-quest-darwin-arm64-69d6828da43e.tar.gz",
+      "bytes": 1644825702,
+      "sha256": "e1292df5135e01d48acb4aadb4111515b66813aa987c70186bbefd0211c8afae",
+      "jobId": 108400697228,
+      "jobUrl": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36240765030/job/108400697228",
+      "runner": "macos-15",
+      "result": "PASS",
+      "checks": [
+        "archive extraction and independent integrity check",
+        "platform launcher executes from outside the package folder",
+        "authored startup with providers disabled despite inherited keys",
+        "offline rendered world, native recorded-audio decode, actual game recording/replay/discard with a synthetic microphone",
+        "shutdown and restart preserve fixed origin",
+        "occupied port leaves unrelated server intact",
+        "tampered archive payload rejected",
+        "missing archive payload rejected"
+      ],
+      "limits": [
+        "Microphone uses a synthetic browser device, not human microphone acceptance.",
+        "Full journey not run on this platform.",
+        "Browser checks do not qualify GPU performance or every supported OS version."
+      ],
+      "artifact": {
+        "id": 10905479904,
+        "name": "portable-darwin-arm64",
+        "url": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36240765030/artifacts/10905479904",
+        "bytes": 1644827447,
+        "digest": "sha256:fd33e1552b0a4f557192c155ebd521699a89244bb6e905c1e35e5f7555c607ac",
+        "expiresAt": "2026-10-10T12:13:01Z"
+      },
+      "commands": [
+        {
+          "command": "npm ci",
+          "result": "success"
+        },
+        {
+          "command": "npm run build:demo",
+          "result": "success"
+        },
+        {
+          "command": "npm run test:contracts",
+          "result": "success"
+        },
+        {
+          "command": "npm run package:portable",
+          "result": "success"
+        },
+        {
+          "command": "npm run verify:portable",
+          "result": "success"
+        },
+        {
+          "command": "npm run test:portable",
+          "result": "success"
+        }
+      ]
+    },
+    {
+      "target": "linux-x64",
+      "file": "evidence-quest-linux-x64-69d6828da43e.tar.gz",
+      "bytes": 1653634715,
+      "sha256": "b5df00fdfd2b12ccdb3d6bcc3af063852a1dc67e09ea96f722b728932397cf98",
+      "jobId": 108400697130,
+      "jobUrl": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36240765030/job/108400697130",
+      "runner": "ubuntu-24.04",
+      "result": "PASS",
+      "checks": [
+        "archive extraction and independent integrity check",
+        "platform launcher executes from outside the package folder",
+        "authored startup with providers disabled despite inherited keys",
+        "offline rendered world, native recorded-audio decode, actual game recording/replay/discard with a synthetic microphone",
+        "shutdown and restart preserve fixed origin",
+        "occupied port leaves unrelated server intact",
+        "tampered archive payload rejected",
+        "missing archive payload rejected"
+      ],
+      "limits": [
+        "Microphone uses a synthetic browser device, not human microphone acceptance.",
+        "Full journey not run on this platform.",
+        "Browser checks do not qualify GPU performance or every supported OS version."
+      ],
+      "artifact": {
+        "id": 10904799703,
+        "name": "portable-linux-x64",
+        "url": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36240765030/artifacts/10904799703",
+        "bytes": 1653636435,
+        "digest": "sha256:c30869a57bd512ff670dfc768b5e1dc92bd921350f06ad892dbbfab9af8e025c",
+        "expiresAt": "2026-10-10T12:11:27Z"
+      },
+      "commands": [
+        {
+          "command": "npm ci",
+          "result": "success"
+        },
+        {
+          "command": "npm run build:demo",
+          "result": "success"
+        },
+        {
+          "command": "npm run test:contracts",
+          "result": "success"
+        },
+        {
+          "command": "npm run package:portable",
+          "result": "success"
+        },
+        {
+          "command": "npm run verify:portable",
+          "result": "success"
+        },
+        {
+          "command": "npm run test:portable",
+          "result": "success"
+        }
+      ]
+    }
+  ],
+  "scope": "Each native runner builds from the committed source, verifies the official runtime checksum, archives and extracts the package, then tests using its bundled Node runtime with no Node on PATH. Native launcher execution checks Unix executable permissions. All eight package checks and nine portable/staging unit cases pass; 251 contracts pass on every runner. Network routes outside loopback are blocked during browser checks.",
+  "journey": "The complete recorded-voice journey passes on local Windows; see windows-portable.json. Full native gameplay and performance acceptance on all four hosted platforms is not claimed.",
+  "priorAttempts": [
+    {
+      "run": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36238195076",
+      "finding": "Intel Mac microphone initialization exceeded the former five-second test wait; thirty-second initialization wait passes on subsequent runs. Windows full journey stalled the existing movement assertion."
+    },
+    {
+      "run": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36239107191",
+      "finding": "All eight Windows archive checks passed; the additional full journey stalled movement. Linux and both Macs passed the archive checks."
+    },
+    {
+      "run": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36239919130",
+      "finding": "Windows and both Macs passed. Linux full journey stalled movement; captured browser showed graphics recovery. Archive checks passed before that optional full journey. No game quality, watchdog or assertion threshold was changed."
+    }
+  ],
+  "release": "Candidate workflow artifacts only, retained 14 days. No GitHub release, automatic merge or history rewrite."
+}

@@ -1,0 +1,51 @@
+{
+  "at": "2026-09-26T13:38:39.096Z",
+  "status": "COMPLETE_FOR_DISTRIBUTION_SCOPE_WITH_EXISTING_QUALIFICATION_GAPS",
+  "tasks": [
+    "TASK11.20",
+    "TASK11.21"
+  ],
+  "fix": "FIX11.DISTRIBUTION01",
+  "check": "CHECK11.DISTRIBUTION01",
+  "baseCommit": "7a1272bb7d486eea1ab1900dc6ead689a60538f8",
+  "verifiedImplementationCommit": "69d6828da43e3277bfdaa4a8f63c73737a03bfce",
+  "pr": "https://github.com/TonyG-FWE/evidence-quest/pull/4",
+  "removedFromGit": {
+    "files": 2092,
+    "bytes": 105225703,
+    "localBytesPreserved": true,
+    "historyRewritten": false,
+    "manifest": "evidence/distribution-20260926/removed-files.json"
+  },
+  "includedLocalFixes": [
+    "scripts/demo-public.mjs: release only owned stages after success/failure",
+    "scripts/build-demo-client.mjs: scoped staging lifetime",
+    "scripts/verify-demo-release.mjs: wait for child/log closure before cleanup",
+    "checks/demo-public-cleanup.test.mjs: four lifecycle regression cases"
+  ],
+  "preservation": {
+    "initialDirtyFiles": 16,
+    "generatedEvidenceFilesPreservedAndExcluded": 10,
+    "unchangedProviderLedgers": 4,
+    "selectedClientFilesByteIdenticalToMain": 7018,
+    "report": "evidence/distribution-20260926/preservation.json"
+  },
+  "verification": {
+    "source": "evidence/distribution-20260926/source-verification.json",
+    "browserResult": "230 passed / 20 failed / 2 skipped",
+    "contracts": 251,
+    "authoredChecks": 23,
+    "portableAndStagingUnitChecks": 9,
+    "nativePackages": "evidence/distribution-20260926/native-packages.json",
+    "offlineWindowsJourney": "evidence/distribution-20260926/windows-portable.json",
+    "assetAndAudio": "evidence/distribution-20260926/asset-verification.json",
+    "ignoredRetiredFiles": "evidence/distribution-20260926/ignore-verification.json"
+  },
+  "limits": [
+    "The broad source browser command remains nonzero; failures are retained and compared with the prior baseline or untouched main. No new cleanup/packaging regression was found.",
+    "Native archive checks pass on Windows x64, Intel Mac, Apple Silicon Mac and Linux x64. Complete recorded-voice gameplay passes locally on Windows; hosted Windows/Linux full-journey movement/graphics failures remain recorded.",
+    "Microphone recording/replay/discard uses a synthetic browser microphone; no new human microphone acceptance is claimed.",
+    "TASK11.19 remains HALTED 1/75; no provider calls, gameplay expansion, automatic merge, public release or history rewrite.",
+    "PR artifacts expire after 14 days. Publication requires review, merge and an explicit manual workflow run on main."
+  ]
+}

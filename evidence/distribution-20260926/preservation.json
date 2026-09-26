@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-26T11:24:58.075Z",
+  "at": "2026-09-26T12:21:29.764Z",
   "base": "7a1272bb7d486eea1ab1900dc6ead689a60538f8",
   "status": "PASS",
   "preservedDirtyEvidence": [
@@ -90,5 +90,11 @@
     "browser-tests/garden-bakery-cursor.spec.ts"
   ],
   "protectedSourceChanges": [],
-  "scope": "Ten original generated-evidence modifications restored byte-for-byte from the pre-edit inventory and excluded from this PR. Removed Git files remain intact locally. Provider ledgers unchanged. No game content, selected asset bytes or gameplay implementation edits."
+  "scope": "Ten original generated-evidence modifications restored byte-for-byte from the pre-edit inventory and excluded from this PR. Removed Git files remain intact locally. Provider ledgers unchanged. No game content, selected asset bytes or gameplay implementation edits.",
+  "judgesReadmeContext": {
+    "status": "UNCHANGED",
+    "base": "7a1272bb7d486eea1ab1900dc6ead689a60538f8",
+    "heading": "## Product and technical context for judges",
+    "normalizedTextSha256": "34d8b8de38e92959fd742995a31d28e82f62d2d68f081b715a458f74eb19fb67"
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "at": "2026-09-26T11:59:31.154Z",
+  "at": "2026-09-26T12:20:35.371Z",
   "archive": {
     "file": "evidence-quest-win32-x64-c776bb9729d6.zip",
     "bytes": 1644799917,
@@ -12,7 +12,7 @@
     "commit": "c776bb9729d65c1ae9db4a58b404ef9236f9483a",
     "target": "win32-x64",
     "archiveSha256": "7ef7adea188cda4d63176df6547dfb2397e92e43ad09baf39b584249b0fe8f02",
-    "extract": "C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\.tmp\\Portable demo with spaces hyJAwq",
+    "extract": "<workspace>\\.tmp\\Portable demo with spaces hyJAwq",
     "checks": [
       "archive extraction and independent integrity check",
       "platform launcher executes from outside the package folder",
@@ -31,10 +31,10 @@
   },
   "journey": {
     "report": "output/portable/journey-win32-x64.json",
-    "reportSha256": "2c79cb094cc642ef6e662fb1e285033fe67f2e3ff2265c01bf3667947aa1ea77",
+    "reportSha256": "97761ddf75dc52551603ce89424cf81f149807b00a5b64ebea8e5370c5957c1c",
     "stats": {
-      "startTime": "2026-09-26T11:43:56.411Z",
-      "duration": 832440.382,
+      "startTime": "2026-09-26T12:01:13.138Z",
+      "duration": 836957.614,
       "expected": 1,
       "skipped": 0,
       "unexpected": 0,
@@ -48,7 +48,7 @@
         "project": "",
         "outcome": "expected",
         "status": "passed",
-        "durationMs": 827289,
+        "durationMs": 830791,
         "errors": []
       }
     ]
@@ -76,7 +76,7 @@
           "status": "failed",
           "durationMs": 23057,
           "errors": [
-            "Error: expect(received).toBeLessThan(expected)\n\nExpected: < 0.06\nReceived:   1.3256915176616313\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n\n   at garden-actions.ts:67\n\n  65 |  // seven centimetres away by using the draggable object's height everywhere.\n  66 |  const chapter=await savedChapter(p),height=navigable({x,z})?terrainHeight({x,z})-.015:bridgeWalkingHeight(chapter,{x,z}),target=await worldPoint(p,x,z,height);await p.mouse.click(target.x,target.y);\n> 67 |  await expect.poll(async()=>{const scene=p.locator('.garden-scene');return Math.hypot(Number(await scene.getAttribute('data-pip-x'))-x,Number(await scene.getAttribute('data-pip-z'))-z);},{timeout:15000}).toBeLessThan(.06);\n     |                                                                                                                                                                                                             ^\n  68 | }\n  69 | export async function installBridgePost(p:Page,id:BridgePostId){if((await savedChapter(p)).river.construction?.posts[id])return;await chooseHandObject(p,'post:'+id);await button(p,'Set post in its socket').click();await expect.poll(async()=>(await savedChapter(p)).river.construction?.posts[id]).toBe(true);}\n  70 | export async function secureSpan(p:Page,end:'west'|'east'){\n    at walkBridgePoint (C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-actions.ts:67:205)\n    at secureSpan (C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-actions.ts:71:63)\n    at buildStagedBridge (C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-actions.ts:82:13)\n    at playDemoRoute (C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-demo-route.ts:8:142)\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\portable-journey.spec.ts:28:2"
+            "Error: expect(received).toBeLessThan(expected)\n\nExpected: < 0.06\nReceived:   1.3256915176616313\n\nCall Log:\n- Timeout 15000ms exceeded while waiting on the predicate\n\n   at garden-actions.ts:67\n\n  65 |  // seven centimetres away by using the draggable object's height everywhere.\n  66 |  const chapter=await savedChapter(p),height=navigable({x,z})?terrainHeight({x,z})-.015:bridgeWalkingHeight(chapter,{x,z}),target=await worldPoint(p,x,z,height);await p.mouse.click(target.x,target.y);\n> 67 |  await expect.poll(async()=>{const scene=p.locator('.garden-scene');return Math.hypot(Number(await scene.getAttribute('data-pip-x'))-x,Number(await scene.getAttribute('data-pip-z'))-z);},{timeout:15000}).toBeLessThan(.06);\n     |                                                                                                                                                                                                             ^\n  68 | }\n  69 | export async function installBridgePost(p:Page,id:BridgePostId){if((await savedChapter(p)).river.construction?.posts[id])return;await chooseHandObject(p,'post:'+id);await button(p,'Set post in its socket').click();await expect.poll(async()=>(await savedChapter(p)).river.construction?.posts[id]).toBe(true);}\n  70 | export async function secureSpan(p:Page,end:'west'|'east'){\n    at walkBridgePoint (<workspace>\\browser-tests\\garden-actions.ts:67:205)\n    at secureSpan (<workspace>\\browser-tests\\garden-actions.ts:71:63)\n    at buildStagedBridge (<workspace>\\browser-tests\\garden-actions.ts:82:13)\n    at playDemoRoute (<workspace>\\browser-tests\\garden-demo-route.ts:8:142)\n    at <workspace>\\browser-tests\\portable-journey.spec.ts:28:2"
           ]
         }
       ]
@@ -103,11 +103,43 @@
           "status": "failed",
           "durationMs": 87125,
           "errors": [
-            "Error: expect(received).not.toBeNull()\n\nReceived: null\n\n   at bakery-cursor-actions.ts:7\n\n   5 | export async function bakeryCue(page:Page,id:string,drop=false){\n   6 |  const target=page.locator(`[data-bakery-${drop?'drop':'object'}=\"${id}\"]`);await expect(target).toBeVisible();\n>  7 |  const box=await target.boundingBox();expect(box).not.toBeNull();return {...box!,cx:box!.x+box!.width/2,cy:box!.y+box!.height/2};\n     |                                                       ^\n   8 | }\n   9 | export async function bakeryStage(page:Page,stage:string){await expect.poll(async()=>JSON.parse((await page.locator('.garden-scene').getAttribute('data-bakery'))!).stage,{timeout:30000}).toBe(stage);await expect(page.locator('.garden-scene')).toHaveAttribute('data-action-kind','none');}\n  10 | export async function settleBakeryView(page:Page){\n    at bakeryCue (C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\bakery-cursor-actions.ts:7:55)\n    at repairBakeryWithCursor (C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\bakery-cursor-actions.ts:47:14)\n    at playCursorBakery (C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\bakery-cursor-actions.ts:33:2)\n    at playDemoRoute (C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\garden-demo-route.ts:15:2)\n    at C:\\Users\\TonyGuillaro\\OneDrive - Summit Gov Solutions\\Documents\\ChatGPT\\Evidence quest\\browser-tests\\portable-journey.spec.ts:28:2"
+            "Error: expect(received).not.toBeNull()\n\nReceived: null\n\n   at bakery-cursor-actions.ts:7\n\n   5 | export async function bakeryCue(page:Page,id:string,drop=false){\n   6 |  const target=page.locator(`[data-bakery-${drop?'drop':'object'}=\"${id}\"]`);await expect(target).toBeVisible();\n>  7 |  const box=await target.boundingBox();expect(box).not.toBeNull();return {...box!,cx:box!.x+box!.width/2,cy:box!.y+box!.height/2};\n     |                                                       ^\n   8 | }\n   9 | export async function bakeryStage(page:Page,stage:string){await expect.poll(async()=>JSON.parse((await page.locator('.garden-scene').getAttribute('data-bakery'))!).stage,{timeout:30000}).toBe(stage);await expect(page.locator('.garden-scene')).toHaveAttribute('data-action-kind','none');}\n  10 | export async function settleBakeryView(page:Page){\n    at bakeryCue (<workspace>\\browser-tests\\bakery-cursor-actions.ts:7:55)\n    at repairBakeryWithCursor (<workspace>\\browser-tests\\bakery-cursor-actions.ts:47:14)\n    at playCursorBakery (<workspace>\\browser-tests\\bakery-cursor-actions.ts:33:2)\n    at playDemoRoute (<workspace>\\browser-tests\\garden-demo-route.ts:15:2)\n    at <workspace>\\browser-tests\\portable-journey.spec.ts:28:2"
           ]
         }
       ]
     }
   ],
-  "scope": "Actual extracted Windows archive, bundled Node runtime, no external browser requests, real recorded voices and ordinary controls through finale and six-story library. Microphone uses a synthetic browser device; no new human acceptance. Game content and assets unchanged."
+  "scope": "Actual extracted Windows archive, bundled Node runtime, no external browser requests, real recorded voices and ordinary controls through finale and six-story library. Microphone uses a synthetic browser device; no new human acceptance. Game content and assets unchanged.",
+  "previousPassingJourney": {
+    "report": "output/portable/journey-win32-x64.json",
+    "reportSha256": "2c79cb094cc642ef6e662fb1e285033fe67f2e3ff2265c01bf3667947aa1ea77",
+    "stats": {
+      "startTime": "2026-09-26T11:43:56.411Z",
+      "duration": 832440.382,
+      "expected": 1,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "globalErrors": [],
+    "cases": [
+      {
+        "file": "portable-journey.spec.ts",
+        "title": "portable offline journey reaches the finale and six-story library using real recorded voices",
+        "project": "",
+        "outcome": "expected",
+        "status": "passed",
+        "durationMs": 827289,
+        "errors": []
+      }
+    ]
+  },
+  "finalSceneReview": {
+    "file": {
+      "file": "output/playwright/portable/portable-journey-portable--ee546--using-real-recorded-voices/complete-finale-ready.png",
+      "bytes": 705760,
+      "sha256": "35c1cbd169254707f153fe63b022f56dc83a296fd5fc4067b639272d07cfed1f"
+    },
+    "result": "PASS: visually inspected fully loaded riverside world and story library after scene ready and pending character assets reached zero."
+  }
 }

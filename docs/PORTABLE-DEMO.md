@@ -15,7 +15,13 @@ For a PR review artifact, first extract GitHub's outer ZIP, then extract the pla
 | Intel Mac, macOS 13.5+ | `darwin-x64.tar.gz` | Double-click **Start Evidence Quest.command** |
 | Linux x64 with glibc 2.28+, a desktop and a current browser | `linux-x64.tar.gz` | Run **Start Evidence Quest.sh**; file managers may call this **Run as a program** |
 
-Archive names also contain the source commit. macOS and Linux archives preserve executable permissions. Linux terminal fallback: `./'Start Evidence Quest.sh'` from the extracted folder. These are portable launchers, not signed app installers. macOS or Windows may ask you to approve a downloaded launcher; follow the operating system's normal per-file approval controls, without disabling system protections.
+Archive names also contain the source commit. macOS and Linux archives preserve executable permissions. Linux terminal fallback: `./'Start Evidence Quest.sh'` from the extracted folder. These are portable launchers, not signed app installers.
+
+For the first launch, use the download from this repository and approve only the expected launcher/runtime:
+
+- **Windows:** an unrecognized-download prompt may offer **Run anyway**. Use that option only after confirming the source. Some managed-computer policies prevent continuation. [Microsoft's explanation](https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation).
+- **macOS:** if the launcher or bundled `node` is blocked as an unknown developer, try opening it once, then go to **System Settings → Privacy & Security → Open Anyway** for that file and confirm **Open**. [Apple's instructions](https://support.apple.com/en-us/102445).
+- **Approval unavailable:** use a permitted computer or ask its administrator. Windows Smart App Control has no per-app exception; these launch instructions do not require disabling it or other system protections. [Microsoft's explanation](https://support.microsoft.com/en-us/windows/security/threat-malware-protection/smart-app-control-frequently-asked-questions).
 
 The launcher checks the package, starts its local server and opens **http://127.0.0.1:4364/garden**. Choose **Begin Pip’s adventure**, then **Start playing**. Keep the launcher window open. Press **Ctrl+C** there to stop; closing the browser alone does not stop the server. The game is served only on your own computer.
 
