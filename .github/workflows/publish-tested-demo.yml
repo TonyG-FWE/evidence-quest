@@ -1,0 +1,99 @@
+name: Publish tested demo
+on:
+  workflow_dispatch:
+    inputs:
+      verified_run_id:
+        description: Successful Portable demo run for a merged source commit
+        type: string
+        required: true
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: publish-tested-demo
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+      VERIFIED_RUN_ID: ${{ inputs.verified_run_id }}
+    steps:
+      - name: Require successful verification and merged, unchanged game inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$VERIFIED_RUN_ID" =~ ^[0-9]+$ ]]
+          gh api "repos/$GITHUB_REPOSITORY/actions/runs/$VERIFIED_RUN_ID" > verified-run.json
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          const run=JSON.parse(fs.readFileSync('verified-run.json','utf8'));
+          assert.equal(run.conclusion,'success');
+          assert.equal(run.repository.full_name,process.env.GITHUB_REPOSITORY);
+          assert.equal(run.path,'.github/workflows/portable-demo.yml');
+          assert.match(run.head_sha,/^[a-f0-9]{40}$/);
+          NODE
+          source_sha=$(jq -r '.head_sha' verified-run.json)
+          gh api "repos/$GITHUB_REPOSITORY/compare/$source_sha...$GITHUB_SHA" > source-comparison.json
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import assert from 'node:assert/strict';
+          const run=JSON.parse(fs.readFileSync('verified-run.json','utf8'));
+          const comparison=JSON.parse(fs.readFileSync('source-comparison.json','utf8'));
+          assert.equal(comparison.merge_base_commit.sha,run.head_sha,'Verified source must be merged into this main commit');
+          assert.ok(['ahead','identical'].includes(comparison.status));
+          const allowed=new Set(['README.md','BUILD-STATUS.md','docs/PORTABLE-DEMO.md','assets/demo/release-files.json','evidence/distribution-20260926/publication.json','.github/workflows/publish-tested-demo.yml']);
+          assert.ok(comparison.files.every(file=>allowed.has(file.filename)&&(!file.previous_filename||allowed.has(file.previous_filename))),'Game, test or packaging inputs changed; build and verify a new package');
+          NODE
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          github-token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          run-id: ${{ inputs.verified_run_id }}
+          pattern: portable-*
+          path: downloads
+          digest-mismatch: error
+      - name: Verify all four archives and native test reports
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs/promises';
+          import {createReadStream} from 'node:fs';
+          import {createHash} from 'node:crypto';
+          import assert from 'node:assert/strict';
+          const run=JSON.parse(await fs.readFile('verified-run.json','utf8'));
+          const targets=['win32-x64','darwin-x64','darwin-arm64','linux-x64'];
+          assert.deepEqual((await fs.readdir('downloads')).sort(),targets.map(x=>'portable-'+x).sort());
+          const assets=[],records=[];
+          for(const target of targets){
+            const extension=target==='win32-x64'?'.zip':'.tar.gz';
+            const name=`evidence-quest-${target}-${run.head_sha.slice(0,12)}${extension}`,root='downloads/portable-'+target;
+            assert.deepEqual((await fs.readdir(root)).sort(),[name,name+'.sha256','test-'+target+'.json'].sort());
+            const checksum=(await fs.readFile(root+'/'+name+'.sha256','utf8')).trim().split('  ');
+            assert.equal(checksum.length,2);assert.equal(checksum[1],name);assert.match(checksum[0],/^[a-f0-9]{64}$/);
+            const hash=createHash('sha256');let bytes=0;
+            for await(const chunk of createReadStream(root+'/'+name)){hash.update(chunk);bytes+=chunk.length;}
+            const sha256=hash.digest('hex');assert.equal(sha256,checksum[0]);assert.ok(bytes>0&&bytes<2*1024**3);
+            const test=JSON.parse(await fs.readFile(root+'/test-'+target+'.json','utf8'));
+            assert.equal(test.status,'PASS');assert.equal(test.target,target);assert.equal(test.commit,run.head_sha);assert.equal(test.archiveSha256,sha256);assert.equal(test.checks.length,8);
+            assets.push(root+'/'+name,root+'/'+name+'.sha256',root+'/test-'+target+'.json');records.push({target,name,bytes,sha256});
+          }
+          await fs.writeFile('upload-assets.json',JSON.stringify(assets));
+          await fs.writeFile('publication-verification.json',JSON.stringify({sourceCommit:run.head_sha,verifiedRun:run.html_url,records},null,2)+'\n');
+          const notes=`Portable offline game packages for Windows x64, Intel Mac, Apple Silicon Mac and Linux x64. Download a platform archive under Assets, extract it completely, then run Start Evidence Quest. Keep its launcher window open; Ctrl+C stops the server. Node and the recorded voices are included.\n\nThese are the exact tested archives from merged source commit ${run.head_sha}, reused from ${run.html_url}. All four complete archive hashes match their sidecars and passing native reports. No game, test or packaging input changes are admitted during promotion. GitHub's Source code downloads require building.\n\nExisting browser, graphics/device and human microphone qualification gaps remain open. See the repository documentation and attached native test reports.\n`;
+          await fs.writeFile('release-notes.md',notes);
+          NODE
+      - name: Publish the verified archives
+        shell: bash
+        run: |
+          set -euo pipefail
+          source_sha=$(jq -r '.head_sha' verified-run.json)
+          mapfile -t assets < <(jq -r '.[]' upload-assets.json)
+          gh release create "demo-${source_sha:0:12}" "${assets[@]}" publication-verification.json \
+            --repo "$GITHUB_REPOSITORY" --target "$source_sha" --latest \
+            --title "Evidence Quest portable demo (${source_sha:0:12})" \
+            --notes-file release-notes.md
