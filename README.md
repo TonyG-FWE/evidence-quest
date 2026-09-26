@@ -10,7 +10,7 @@ Evidence Quest is the playable reading-adventure prototype for **SparkFest**, a 
 
 ## Download and play
 
-Portable downloads are prepared for Windows x64, Intel Mac, Apple Silicon Mac and Linux x64. They will appear on the [Releases page](https://github.com/TonyG-FWE/evidence-quest/releases) after PR review and merge; PR workflow artifacts are candidates for review until then.
+Portable downloads are prepared for Windows x64, Intel Mac, Apple Silicon Mac and Linux x64. They will appear on the [Releases page](https://github.com/TonyG-FWE/evidence-quest/releases)
 
 Download the archive for your computer, extract the whole folder, and run **Start Evidence Quest**. The game opens in your browser. The runtime is included: no Node installation, build commands or API keys are needed, and the authored adventure works offline. Keep the launcher window open while playing; Ctrl+C stops it.
 
