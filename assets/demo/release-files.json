@@ -91,9 +91,9 @@
     "evidence/nerdy-demo-20260924/word-timestamp-overruns.json",
     "evidence/reader-repair-20260919/RESULTS.md"
   ],
-  "filesSha256": "ba93b1169c6383325b01024464fcf9fa3af11c2554de254ceb74a6a53cc62e5c",
+  "filesSha256": "216083232ec0227eaf6b62de4d6cdbf1db7dbefa47e3c05eb0bc66b955f79439",
   "fileCount": 15911,
-  "bytes": 3143495149,
+  "bytes": 3143496350,
   "files": [
     {
       "file": ".env.example",
@@ -107,8 +107,8 @@
     },
     {
       "file": ".github/workflows/portable-demo.yml",
-      "bytes": 3394,
-      "sha256": "b0beefb6f773a1d54e808c2ba488a1faf781a681f3d0615ec644ced055832f6e"
+      "bytes": 3848,
+      "sha256": "0568e9233f639b01aebb89bdd3eac8a4c6d09519db9c8bc4ea33e4a7404e7b58"
     },
     {
       "file": ".gitignore",
@@ -24137,8 +24137,8 @@
     },
     {
       "file": "playwright.portable.config.ts",
-      "bytes": 922,
-      "sha256": "21eee1137b4f28138a28f7131d2f4823576dee22b559a8491fbb14b0810235e2"
+      "bytes": 1070,
+      "sha256": "74fda2246c5b78432f0edd41666ffbefe94b157eb904f1f74716db0f5588fd0c"
     },
     {
       "file": "playwright.prepared-story.config.ts",
@@ -78597,8 +78597,8 @@
     },
     {
       "file": "scripts/test-portable.mjs",
-      "bytes": 8597,
-      "sha256": "aae1ecde50b2e36f0284deb3c030b7e96c3d0d35fe45f15f343f6566ce59d7d3"
+      "bytes": 9196,
+      "sha256": "b2c613a5abde149711b0343423f5db966b8efd2f222e59e4aaac5e3d6c289e02"
     },
     {
       "file": "scripts/tripo-grass.mjs",
