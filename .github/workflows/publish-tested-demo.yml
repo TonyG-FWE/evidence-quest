@@ -1,27 +1,17 @@
-name: Verify published demo
+name: Transfer verified published Windows archive
 on:
   workflow_dispatch:
 permissions:
   contents: read
-concurrency:
-  group: verify-published-demo
-  cancel-in-progress: false
 jobs:
   public-downloads:
     if: github.ref == 'refs/heads/main'
     runs-on: windows-2022
-    timeout-minutes: 30
+    timeout-minutes: 15
     steps:
-      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
         with:
           node-version: '24.21.0'
-      - name: Prepare isolated browser verification
-        shell: pwsh
-        run: |
-          npm install --no-audit --no-fund --ignore-scripts --package-lock=false @playwright/test@1.61.0
-          if ($LASTEXITCODE -ne 0) { throw 'Browser dependency installation failed' }
-          npx playwright install chromium
-          if ($LASTEXITCODE -ne 0) { throw 'Browser installation failed' }
       - name: Download public archives anonymously and verify every full checksum
         shell: pwsh
         run: |
@@ -70,64 +60,55 @@ jobs:
           console.log(JSON.stringify({status:'PASS',archives:downloads.length}));
           '@ | Set-Content -LiteralPath verify-downloads.mjs
           node verify-downloads.mjs
-          if ($LASTEXITCODE -ne 0) { throw 'Public archive verification failed' }
-      - name: Verify downloaded Windows package offline and signed-out release page
+          if ($LASTEXITCODE -ne 0) { throw 'Public download verification failed' }
+      - name: Prepare exact archive transfer map for cached-byte reuse
         shell: pwsh
         run: |
           @'
           import fs from 'node:fs/promises';
+          import {createReadStream} from 'node:fs';
+          import {createHash} from 'node:crypto';
           import path from 'node:path';
-          import {spawn} from 'node:child_process';
-          import {once} from 'node:events';
           import assert from 'node:assert/strict';
-          import {chromium,expect} from '@playwright/test';
           const directory=path.resolve('.tmp/player-download-publication');
-          const download=JSON.parse(await fs.readFile(path.join(directory,'download-win32-x64.json'),'utf8'));
-          async function run(command,args,options={}){return await new Promise((resolve,reject)=>{const process=spawn(command,args,{windowsHide:true,...options});let output='';process.stdout?.on('data',data=>output+=data);process.stderr?.on('data',data=>output+=data);process.on('error',reject);process.on('close',code=>resolve({code,output}));});}
-          const extraction=await fs.mkdtemp(path.resolve('.tmp/Published game '));
-          const unpack=await run('tar',['-xf',path.join(directory,download.name),'-C',extraction]);assert.equal(unpack.code,0,unpack.output);
-          const entries=await fs.readdir(extraction);assert.equal(entries.length,1);const root=path.join(extraction,entries[0]);
-          const manifest=JSON.parse(await fs.readFile(path.join(root,'portable-manifest.json'),'utf8'));assert.equal(manifest.commit,'10b6249d3cade77798d5a2c7f233d52c35a4ad41');
-          const runtime=path.join(root,'runtime/node.exe');
-          const env={SystemRoot:process.env.SystemRoot,WINDIR:process.env.WINDIR,PATH:'',TEMP:process.env.TEMP,TMP:process.env.TMP};
-          const wrapper=await run(path.join(env.SystemRoot,'System32/cmd.exe'),['/d','/c','call',path.join(root,'Start Evidence Quest.cmd'),'--verify'],{cwd:extraction,env});assert.equal(wrapper.code,0,wrapper.output);assert.match(wrapper.output,/Portable package verified/);
-          const origin='http://127.0.0.1:4364';let server,output='';
-          async function start(){output='';server=spawn(runtime,[path.join(root,'launch.mjs'),'--no-open'],{cwd:extraction,env,windowsHide:true,stdio:['ignore','pipe','pipe']});server.stdout.on('data',x=>output+=x);server.stderr.on('data',x=>output+=x);let spawnError;server.on('error',error=>spawnError=error);const deadline=Date.now()+90000;while(!output.includes('Ready:')){if(spawnError)throw spawnError;if(server.exitCode!==null||Date.now()>deadline)throw Error('Published package did not start: '+output);await new Promise(resolve=>setTimeout(resolve,100));}}
-          async function stop(){if(server&&server.exitCode===null){const closed=once(server,'close');server.kill();await closed;}server=undefined;}
-          let browser,page;
-          try{
-           await start();assert.equal((await fetch(origin+'/healthz')).ok,true);
-           const config=await (await fetch(origin+'/api/garden/config')).json();assert.equal(config.textFeedback,false);assert.equal(config.readingFeedback,false);
-           assert.equal((await (await fetch(origin+'/api/config')).json()).liveAvailable,false);
-           browser=await chromium.launch({channel:'chromium'});
-           const context=await browser.newContext({viewport:{width:1366,height:768},serviceWorkers:'block'});const external=[],errors=[];
-           await context.route('**/*',route=>{const url=route.request().url();if(url.startsWith(origin+'/'))return route.continue();external.push(url);return route.abort();});
-           page=await context.newPage();page.on('pageerror',error=>errors.push(error.message));
-           await page.goto(origin+'/garden');await page.getByRole('button',{name:'Begin Pip’s adventure',exact:true}).click();
-           const startButton=page.getByRole('button',{name:'Start playing',exact:true});await startButton.waitFor({timeout:60000});
-           const scene=page.locator('.garden-scene');await expect(scene).toHaveAttribute('data-scene-phase','ready',{timeout:90000});
-           await expect.poll(async()=>JSON.parse(await scene.getAttribute('data-character-assets')??'{}').pending,{timeout:90000}).toBe(0);
-           await startButton.click();const transitionAt=Date.now();await expect(scene).toHaveAttribute('data-scene-phase','ready',{timeout:90000});
-           await expect.poll(async()=>JSON.parse(await scene.getAttribute('data-character-assets')??'{}').pending,{timeout:90000}).toBe(0);const sceneReadyMs=Date.now()-transitionAt;
-           const audio=await page.evaluate(async()=>{const manifest=await (await fetch('/audio/cast/manifest.json')).json();const bytes=await (await fetch(manifest.entries.find(x=>x.text.length>25).clip.uri)).arrayBuffer();const audio=new AudioContext();try{const decoded=await audio.decodeAudioData(bytes);return {duration:decoded.duration,samples:decoded.length};}finally{await audio.close();}});assert.ok(audio.duration>0&&audio.samples>0);
-           await page.screenshot({path:path.join(directory,'published-windows-startup.png')});assert.deepEqual(external,[]);assert.deepEqual(errors,[]);
-           await context.close();await stop();await start();assert.equal((await fetch(origin+'/healthz')).ok,true);await stop();
-           const guest=await browser.newContext();assert.deepEqual(await guest.cookies(),[]);const releasePage=await guest.newPage();
-           const releaseResponse=await releasePage.goto('https://github.com/TonyG-FWE/evidence-quest/releases/tag/demo-10b6249d3cad');assert.equal(releaseResponse.status(),200);
-           await expect(releasePage.getByRole('link',{name:'Sign in',exact:true}).first()).toBeVisible();
-           await releasePage.screenshot({path:path.join(directory,'signed-out-release.png'),fullPage:true});await guest.close();
-           const result={verificationHost:'Fresh windows-2022 GitHub-hosted runner',status:'PASS',at:new Date().toISOString(),archive:download.name,sha256:download.sha256,commit:manifest.commit,extraction,checks:['Fresh public release archive extracted into a path containing spaces.','Windows launcher independently verifies files using the bundled Node with no Node on PATH.','Authored server starts with no credentials on the fixed loopback origin.','Fresh Chromium renders the supplied village and enters ordinary play.','An included recorded voice decodes successfully.','All non-loopback browser network requests blocked; zero external requests or page errors.','Owned server stops and restarts successfully.','Release page returns HTTP 200 in an empty browser context and displays Sign in.'],audio,sceneReadyMs,limitations:['Existing full Windows journey and four-platform native qualification records are retained; this run verifies the published download and startup.','This publication check does not add human microphone or broad device/performance acceptance.']};
-           await fs.writeFile(path.join(directory,'windows-startup.json'),JSON.stringify(result,null,2)+'\n');console.log(JSON.stringify(result));
-          }catch(error){await page?.screenshot({path:path.join(directory,'windows-startup-failure.png')}).catch(()=>{});await fs.writeFile(path.join(directory,'windows-startup-failure.json'),JSON.stringify({at:new Date().toISOString(),error:error.stack,serverOutput:output},null,2)+'\n');throw error;}finally{await browser?.close();await stop();}
-          '@ | Set-Content -LiteralPath verify-windows.mjs
-          node verify-windows.mjs
-          if ($LASTEXITCODE -ne 0) { throw 'Published Windows verification failed' }
-      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
-        if: always()
+          const record=JSON.parse(await fs.readFile(path.join(directory,'download-win32-x64.json'),'utf8'));
+          const archive=path.join(directory,record.name),handle=await fs.open(archive,'r');
+          const read=async (offset,length)=>{const buffer=Buffer.alloc(length);const result=await handle.read(buffer,0,length,offset);assert.equal(result.bytesRead,length);return buffer;};
+          const tail=await read(record.bytes-Math.min(record.bytes,65557),Math.min(record.bytes,65557));
+          let eocd=-1;
+          for(let n=tail.length-22;n>=0;n--)if(tail.readUInt32LE(n)===0x06054b50&&n+22+tail.readUInt16LE(n+20)===tail.length){eocd=n;break;}
+          assert.ok(eocd>=0);assert.equal(tail.readUInt16LE(eocd+4),0);assert.equal(tail.readUInt16LE(eocd+6),0);
+          const count=tail.readUInt16LE(eocd+10),centralLength=tail.readUInt32LE(eocd+12),centralOffset=tail.readUInt32LE(eocd+16);
+          assert.notEqual(count,65535);assert.notEqual(centralOffset,0xffffffff);
+          const central=await read(centralOffset,centralLength),payloads=[];let position=0;
+          for(let i=0;i<count;i++){
+           assert.equal(central.readUInt32LE(position),0x02014b50);
+           const compressedBytes=central.readUInt32LE(position+20),nameLength=central.readUInt16LE(position+28),extraLength=central.readUInt16LE(position+30),commentLength=central.readUInt16LE(position+32),offset=central.readUInt32LE(position+42);
+           assert.notEqual(compressedBytes,0xffffffff);assert.notEqual(offset,0xffffffff);
+           const name=central.subarray(position+46,position+46+nameLength).toString('utf8');
+           const header=await read(offset,30);assert.equal(header.readUInt32LE(0),0x04034b50);
+           const start=offset+30+header.readUInt16LE(26)+header.readUInt16LE(28);
+           if(compressedBytes){const hash=createHash('sha256');for await(const chunk of createReadStream(archive,{start,end:start+compressedBytes-1}))hash.update(chunk);payloads.push({name,start,bytes:compressedBytes,sha256:hash.digest('hex')});}
+           position+=46+nameLength+extraLength+commentLength;
+          }
+          assert.equal(position,centralLength);payloads.sort((a,b)=>a.start-b.start);
+          const skeleton=await fs.open(path.join(directory,'windows-zip-structure.bin'),'wx'),gaps=[];let cursor=0,skeletonOffset=0;
+          for(const part of [...payloads,{start:record.bytes,bytes:0}]){
+           assert.ok(part.start>=cursor);
+           if(part.start>cursor){const bytes=part.start-cursor,buffer=await read(cursor,bytes);await skeleton.write(buffer);gaps.push({start:cursor,bytes,skeletonOffset});skeletonOffset+=bytes;}
+           cursor=part.start+part.bytes;
+          }
+          await skeleton.close();await handle.close();
+          const map={archive:record.name,archiveBytes:record.bytes,archiveSha256:record.sha256,url:record.url,payloads,gaps,skeletonBytes:skeletonOffset};
+          await fs.writeFile(path.join(directory,'windows-zip-transfer-map.json'),JSON.stringify(map)+'\n');
+          console.log(JSON.stringify({status:'PASS',entries:count,payloads:payloads.length,skeletonBytes:skeletonOffset,archiveSha256:record.sha256}));
+          '@ | Set-Content -LiteralPath zip-transfer-map.mjs
+          node zip-transfer-map.mjs
+          if ($LASTEXITCODE -ne 0) { throw 'Transfer map failed' }
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
         with:
-          name: published-download-verification
-          if-no-files-found: error
+          name: published-archive-transfer-map
           path: |
             .tmp/player-download-publication/*.json
+            .tmp/player-download-publication/*.bin
             .tmp/player-download-publication/*.sha256
-            .tmp/player-download-publication/*.png
