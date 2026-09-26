@@ -22,6 +22,7 @@
     "evidence/distribution-20260926/main-client-comparison.json",
     "evidence/distribution-20260926/native-packages.json",
     "evidence/distribution-20260926/preservation.json",
+    "evidence/distribution-20260926/publication.json",
     "evidence/distribution-20260926/removed-files.json",
     "evidence/distribution-20260926/source-verification.json",
     "evidence/distribution-20260926/summary.json",
@@ -100,9 +101,9 @@
     "evidence/nerdy-demo-20260924/word-timestamp-overruns.json",
     "evidence/reader-repair-20260919/RESULTS.md"
   ],
-  "filesSha256": "00cdd530a65e280b4be477d0f2ebd085aafe7007620b7ca7184fdcef602ff796",
+  "filesSha256": "923dae7f48afa461121def448a6ef835085efe07f32b711186977b5e66c1c78b",
   "fileCount": 15921,
-  "bytes": 3143661378,
+  "bytes": 3143669650,
   "files": [
     {
       "file": ".env.example",
@@ -118,11 +119,6 @@
       "file": ".github/workflows/portable-demo.yml",
       "bytes": 4071,
       "sha256": "79b10390f910dcbf1cee0c4b6390dc6839a1092dd8f9882f4581be532bb17823"
-    },
-    {
-      "file": ".github/workflows/publish-tested-demo.yml",
-      "bytes": 9404,
-      "sha256": "afd17d32ff19cbf9e0dfade814b9affeb090806e05da733a22e39e2827259837"
     },
     {
       "file": ".gitignore",
@@ -146,13 +142,13 @@
     },
     {
       "file": "BUILD-STATUS.md",
-      "bytes": 159755,
-      "sha256": "254349a66a0a0f304eeebec6a59463ce1034f0db04370d8abd88ae162ac944e9"
+      "bytes": 162245,
+      "sha256": "d5ce3cf521900a29da6cd0ab38b75de2c6c6f96a023b455b27329701638de31b"
     },
     {
       "file": "README.md",
-      "bytes": 19492,
-      "sha256": "388d73af2bf7fc92550df2dbcf1d99632c3080dcc6948247536363aab5c15565"
+      "bytes": 20222,
+      "sha256": "7eb88c32bcf2f96700d13d5827327e4259b24b27d480f1acd97943222a319e14"
     },
     {
       "file": "assets/demo/README.md",
@@ -1831,8 +1827,8 @@
     },
     {
       "file": "docs/PORTABLE-DEMO.md",
-      "bytes": 6451,
-      "sha256": "86bde35be754384f8aa9a98bec366cd1c2abab417660f4b0b4b912e7d58a927c"
+      "bytes": 7707,
+      "sha256": "ad72e097742ce319adafa18f9a94fc94c41ffe454e9eb127f8bac11c394e9292"
     },
     {
       "file": "docs/PRODUCTION-TOOLCHAIN.md",
@@ -23683,6 +23679,11 @@
       "file": "evidence/distribution-20260926/preservation.json",
       "bytes": 3559,
       "sha256": "069a2ac2a415eddd4815041468d4c49da6ad9387f3414a5e8caa2f53aff61772"
+    },
+    {
+      "file": "evidence/distribution-20260926/publication.json",
+      "bytes": 13200,
+      "sha256": "64dbf31b23475919a540ec06e9879e903756e6e919b6ed9e6fb8ce7a3498a7a2"
     },
     {
       "file": "evidence/distribution-20260926/removed-files.json",

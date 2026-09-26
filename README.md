@@ -10,17 +10,23 @@ Evidence Quest is the playable reading-adventure prototype for **SparkFest**, a 
 
 ## Download and play
 
-Portable downloads are prepared for Windows x64, Intel Mac, Apple Silicon Mac and Linux x64. They will appear on the [Releases page](https://github.com/TonyG-FWE/evidence-quest/releases)
-
-Download the archive for your computer, extract the whole folder, and run **Start Evidence Quest**. The game opens in your browser. The runtime is included: no Node installation, build commands or API keys are needed, and the authored adventure works offline. Keep the launcher window open while playing; Ctrl+C stops it.
+Download the portable demo for your computer below. The runtime is included: no Node installation, build commands, API keys or GitHub account are needed. The authored adventure works offline after download and extraction.
 
 | Computer | Download | Start after extracting |
 | --- | --- | --- |
-| Windows x64 | `win32-x64.zip` | Double-click **Start Evidence Quest.cmd**. |
-| Intel Mac / Apple Silicon Mac | `darwin-x64.tar.gz` / `darwin-arm64.tar.gz` | Double-click **Start Evidence Quest.command**. |
-| Linux x64 | `linux-x64.tar.gz` | Run **Start Evidence Quest.sh**, or use `./'Start Evidence Quest.sh'` in a terminal. |
+| Windows x64 | [Download Windows ZIP](https://github.com/TonyG-FWE/evidence-quest/releases/download/demo-10b6249d3cad/evidence-quest-win32-x64-10b6249d3cad.zip) | Double-click **Start Evidence Quest.cmd**. |
+| Intel Mac | [Download Intel Mac archive](https://github.com/TonyG-FWE/evidence-quest/releases/download/demo-10b6249d3cad/evidence-quest-darwin-x64-10b6249d3cad.tar.gz) | Double-click **Start Evidence Quest.command**. |
+| Apple Silicon Mac (M1 or newer) | [Download Apple Silicon archive](https://github.com/TonyG-FWE/evidence-quest/releases/download/demo-10b6249d3cad/evidence-quest-darwin-arm64-10b6249d3cad.tar.gz) | Double-click **Start Evidence Quest.command**. |
+| Linux x64 | [Download Linux archive](https://github.com/TonyG-FWE/evidence-quest/releases/download/demo-10b6249d3cad/evidence-quest-linux-x64-10b6249d3cad.tar.gz) | Run **Start Evidence Quest.sh**, or use `./'Start Evidence Quest.sh'` in a terminal. |
 
-Archive names include the source commit before the extension. PR artifacts contain an outer ZIP: extract it, then extract the platform archive inside.
+1. Download the archive for your computer using one of the links above (about 1.65 GB).
+2. Extract the entire archive to a folder before starting.
+3. Run the **Start Evidence Quest** launcher shown for your computer.
+4. Play in the browser and keep the launcher window open. Press **Ctrl+C** in that window to stop the game.
+
+Choose a **portable archive** to play. GitHub's automatically listed **Source code (zip)** and **Source code (tar.gz)** downloads require [building from source](#build-from-source).
+
+[Release notes and SHA-256 checksums](https://github.com/TonyG-FWE/evidence-quest/releases/tag/demo-10b6249d3cad) identify this published demo.
 
 See [portable setup and troubleshooting](docs/PORTABLE-DEMO.md) for platform requirements, first-launch approval, controls for starting/stopping, and package verification. Portable play includes recorded voices and local microphone practice; optional live AI feedback and generated voices for new writing are unavailable.
 

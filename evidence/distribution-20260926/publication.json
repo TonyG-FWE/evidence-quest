@@ -1,0 +1,249 @@
+{
+  "at": "2026-09-26T22:18:26.510Z",
+  "status": "PUBLISHED_AND_VERIFIED",
+  "tasks": [
+    "TASK11.20",
+    "TASK11.21"
+  ],
+  "fix": "FIX11.DISTRIBUTION01",
+  "check": "CHECK11.DISTRIBUTION01",
+  "release": "https://github.com/TonyG-FWE/evidence-quest/releases/tag/demo-10b6249d3cad",
+  "tag": "demo-10b6249d3cad",
+  "sourceCommit": "10b6249d3cade77798d5a2c7f233d52c35a4ad41",
+  "requestedMainSource": "c0a47964e2f4ff8921f6d68a63d66c0786756b8d",
+  "publication": {
+    "method": "Exact tested archives from reviewed, merged PR #4, with original filenames and hashes; no rebuild or relabeling.",
+    "workflow": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36274240360",
+    "commit": "164c98a0fc9c402b642d61a922bde1d64e00567d",
+    "result": "success",
+    "temporaryWorkflowRemoved": true
+  },
+  "sourceComparison": {
+    "publishedCommitIsAncestorOfMain": true,
+    "requestedMainChanges": [
+      "README.md"
+    ],
+    "promotionChanges": [
+      ".github/workflows/publish-tested-demo.yml",
+      "README.md",
+      "assets/demo/release-files.json"
+    ],
+    "gameAndPackagingCodeChanges": 0
+  },
+  "nativeVerification": {
+    "url": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36245936067",
+    "result": "success",
+    "jobs": [
+      {
+        "name": "package (macos-15-intel, darwin-x64)",
+        "result": "success",
+        "url": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36245936067/job/108418600281"
+      },
+      {
+        "name": "package (windows-2022, win32-x64)",
+        "result": "success",
+        "url": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36245936067/job/108418600775"
+      },
+      {
+        "name": "package (macos-15, darwin-arm64)",
+        "result": "success",
+        "url": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36245936067/job/108418601303"
+      },
+      {
+        "name": "package (ubuntu-24.04, linux-x64)",
+        "result": "success",
+        "url": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36245936067/job/108418625934"
+      }
+    ],
+    "earlierIntelAttempt": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36245936067/attempts/1"
+  },
+  "failedMainAttempts": [
+    {
+      "url": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36270358749/attempts/1",
+      "commit": "c0a47964e2f4ff8921f6d68a63d66c0786756b8d",
+      "result": "failure",
+      "failure": "Intel Mac scene readiness failed; publish job skipped. Existing game code and project test thresholds unchanged."
+    },
+    {
+      "url": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36270358749/attempts/2",
+      "commit": "c0a47964e2f4ff8921f6d68a63d66c0786756b8d",
+      "result": "failure",
+      "failure": "Intel Mac scene readiness failed; publish job skipped. Existing game code and project test thresholds unchanged."
+    }
+  ],
+  "hostedWindowsAttempts": [
+    {
+      "url": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36274688426",
+      "commit": "ec6efd81b639473a718424a8f33540043ad3ad70",
+      "result": "failure",
+      "archiveChecks": "All four complete public archive hashes passed.",
+      "failure": "New post-intro check stopped at its default five-second wait while loading; corrected to the existing 90-second scene-loading allowance."
+    },
+    {
+      "url": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36274943569",
+      "commit": "d660b2885eb6cf1edc77e8a1bccc24b329c0b765",
+      "result": "failure",
+      "archiveChecks": "All four complete public archive hashes passed.",
+      "failure": "Hosted Chromium entered graphics recovery after Start playing, with scene phase failed. Screenshot inspected; retained as hosted graphics limitation."
+    }
+  ],
+  "publicDownloadVerification": {
+    "url": "https://github.com/TonyG-FWE/evidence-quest/actions/runs/36275416808",
+    "commit": "d1af082bbd0d3a159e4bf60ac6a250d4bbb1e23a",
+    "result": "success",
+    "host": "Fresh windows-2022 GitHub-hosted runner; complete public archive bodies streamed and hashed, Windows archive retained for extraction.",
+    "authentication": "No cookies, Authorization header, GitHub token or browser session supplied to any release-page, archive, checksum or test-report request.",
+    "archives": [
+      {
+        "target": "win32-x64",
+        "name": "evidence-quest-win32-x64-10b6249d3cad.zip",
+        "url": "https://github.com/TonyG-FWE/evidence-quest/releases/download/demo-10b6249d3cad/evidence-quest-win32-x64-10b6249d3cad.zip",
+        "bytes": 1645122503,
+        "sha256": "d2abf6f3cc7d5d09eb64efac3ff4b1ddc1684087ff5fb35f29d48f80e1bbce97",
+        "githubDigest": "sha256:d2abf6f3cc7d5d09eb64efac3ff4b1ddc1684087ff5fb35f29d48f80e1bbce97",
+        "checksumUrl": "https://github.com/TonyG-FWE/evidence-quest/releases/download/demo-10b6249d3cad/evidence-quest-win32-x64-10b6249d3cad.zip.sha256",
+        "signedOutDownload": true,
+        "nativeChecks": [
+          "archive extraction and independent integrity check",
+          "platform launcher executes from outside the package folder",
+          "authored startup with providers disabled despite inherited keys",
+          "offline rendered world, native recorded-audio decode, actual game recording/replay/discard with a synthetic microphone",
+          "shutdown and restart preserve fixed origin",
+          "occupied port leaves unrelated server intact",
+          "tampered archive payload rejected",
+          "missing archive payload rejected"
+        ],
+        "limits": [
+          "Microphone uses a synthetic browser device, not human microphone acceptance.",
+          "Full journey not run on this platform.",
+          "Browser checks do not qualify GPU performance or every supported OS version."
+        ]
+      },
+      {
+        "target": "darwin-x64",
+        "name": "evidence-quest-darwin-x64-10b6249d3cad.tar.gz",
+        "url": "https://github.com/TonyG-FWE/evidence-quest/releases/download/demo-10b6249d3cad/evidence-quest-darwin-x64-10b6249d3cad.tar.gz",
+        "bytes": 1646155010,
+        "sha256": "e19f0b0d64e391956cdaffd43f55551332d0353a484df4b2fdcccf55f35ffba3",
+        "githubDigest": "sha256:e19f0b0d64e391956cdaffd43f55551332d0353a484df4b2fdcccf55f35ffba3",
+        "checksumUrl": "https://github.com/TonyG-FWE/evidence-quest/releases/download/demo-10b6249d3cad/evidence-quest-darwin-x64-10b6249d3cad.tar.gz.sha256",
+        "signedOutDownload": true,
+        "nativeChecks": [
+          "archive extraction and independent integrity check",
+          "platform launcher executes from outside the package folder",
+          "authored startup with providers disabled despite inherited keys",
+          "offline rendered world, native recorded-audio decode, actual game recording/replay/discard with a synthetic microphone",
+          "shutdown and restart preserve fixed origin",
+          "occupied port leaves unrelated server intact",
+          "tampered archive payload rejected",
+          "missing archive payload rejected"
+        ],
+        "limits": [
+          "Microphone uses a synthetic browser device, not human microphone acceptance.",
+          "Full journey not run on this platform.",
+          "Browser checks do not qualify GPU performance or every supported OS version."
+        ]
+      },
+      {
+        "target": "darwin-arm64",
+        "name": "evidence-quest-darwin-arm64-10b6249d3cad.tar.gz",
+        "url": "https://github.com/TonyG-FWE/evidence-quest/releases/download/demo-10b6249d3cad/evidence-quest-darwin-arm64-10b6249d3cad.tar.gz",
+        "bytes": 1644836494,
+        "sha256": "3e1dafd5fe49466c79cb9e1b38b8771294f88e079414c2d492ffb7093514a42b",
+        "githubDigest": "sha256:3e1dafd5fe49466c79cb9e1b38b8771294f88e079414c2d492ffb7093514a42b",
+        "checksumUrl": "https://github.com/TonyG-FWE/evidence-quest/releases/download/demo-10b6249d3cad/evidence-quest-darwin-arm64-10b6249d3cad.tar.gz.sha256",
+        "signedOutDownload": true,
+        "nativeChecks": [
+          "archive extraction and independent integrity check",
+          "platform launcher executes from outside the package folder",
+          "authored startup with providers disabled despite inherited keys",
+          "offline rendered world, native recorded-audio decode, actual game recording/replay/discard with a synthetic microphone",
+          "shutdown and restart preserve fixed origin",
+          "occupied port leaves unrelated server intact",
+          "tampered archive payload rejected",
+          "missing archive payload rejected"
+        ],
+        "limits": [
+          "Microphone uses a synthetic browser device, not human microphone acceptance.",
+          "Full journey not run on this platform.",
+          "Browser checks do not qualify GPU performance or every supported OS version."
+        ]
+      },
+      {
+        "target": "linux-x64",
+        "name": "evidence-quest-linux-x64-10b6249d3cad.tar.gz",
+        "url": "https://github.com/TonyG-FWE/evidence-quest/releases/download/demo-10b6249d3cad/evidence-quest-linux-x64-10b6249d3cad.tar.gz",
+        "bytes": 1653657145,
+        "sha256": "15b923e15753c945c17c5b5425943e34116e5d786435ce1c0139f48f56b35252",
+        "githubDigest": "sha256:15b923e15753c945c17c5b5425943e34116e5d786435ce1c0139f48f56b35252",
+        "checksumUrl": "https://github.com/TonyG-FWE/evidence-quest/releases/download/demo-10b6249d3cad/evidence-quest-linux-x64-10b6249d3cad.tar.gz.sha256",
+        "signedOutDownload": true,
+        "nativeChecks": [
+          "archive extraction and independent integrity check",
+          "platform launcher executes from outside the package folder",
+          "authored startup with providers disabled despite inherited keys",
+          "offline rendered world, native recorded-audio decode, actual game recording/replay/discard with a synthetic microphone",
+          "shutdown and restart preserve fixed origin",
+          "occupied port leaves unrelated server intact",
+          "tampered archive payload rejected",
+          "missing archive payload rejected"
+        ],
+        "limits": [
+          "Microphone uses a synthetic browser device, not human microphone acceptance.",
+          "Full journey not run on this platform.",
+          "Browser checks do not qualify GPU performance or every supported OS version."
+        ]
+      }
+    ]
+  },
+  "localWindows": {
+    "host": "Local Windows computer",
+    "archive": "evidence-quest-win32-x64-10b6249d3cad.zip",
+    "archiveSha256": "d2abf6f3cc7d5d09eb64efac3ff4b1ddc1684087ff5fb35f29d48f80e1bbce97",
+    "checks": [
+      "Exact published package files verified against its downloaded manifest and materialized in a path containing spaces; cached files reused only on an exact SHA-256 match.",
+      "Windows launcher independently verifies files using the bundled Node with no Node on PATH.",
+      "Authored server starts with no credentials on the fixed loopback origin.",
+      "Fresh Chromium renders the supplied village and enters ordinary play.",
+      "An included recorded voice decodes successfully.",
+      "All non-loopback browser network requests blocked; zero external requests or page errors.",
+      "Owned server stops and restarts successfully.",
+      "Release page returns HTTP 200 in an empty browser context and displays Sign in."
+    ],
+    "audio": {
+      "duration": 1.92,
+      "samples": 92160
+    },
+    "sceneReadyMs": 4,
+    "visualReview": "Rendered village, Pip and ordinary play controls inspected; no graphics-recovery overlay. Signed-out release page and four download links inspected.",
+    "transfer": {
+      "method": "Exact extracted contents of the published ZIP: full public ZIP downloaded and hashed on GitHub; its manifest and changed members fetched anonymously by HTTP range, compressed bytes verified against the downloaded ZIP transfer map; identical cached files reused only after matching the published manifest SHA-256. Every resulting file is verified again by the bundled launcher.",
+      "verifiedFiles": 11494,
+      "cachedFiles": 11492,
+      "cachedBytes": 1988006876,
+      "downloadedBytes": 550884,
+      "fetchedFiles": [
+        "START-HERE.md",
+        "licenses/README.txt"
+      ],
+      "manifestSha256": "94e89c30a4aa7d0d9a323ee4b4921a7d00dbbafad4600acd98791eed9ed09feb"
+    },
+    "limitations": [
+      "Existing full Windows journey and four-platform native qualification records are retained; this run verifies the published download and startup.",
+      "This publication check does not add human microphone or broad device/performance acceptance."
+    ]
+  },
+  "preservation": {
+    "judgesAndRemainingReadmeSections": "Byte-identical to prior main.",
+    "originalLocalEvidenceEdits": 10,
+    "unchangedProviderLedgers": 4,
+    "gameplayChanges": false
+  },
+  "priorQualification": {
+    "source": "evidence/distribution-20260926/source-verification.json",
+    "browser": "230 passed / 20 failed / 2 skipped; existing gaps remain open.",
+    "completeWindowsJourney": "evidence/distribution-20260926/windows-portable.json",
+    "nativePackages": "evidence/distribution-20260926/native-packages.json",
+    "task1119": "HALTED 1/75; no new provider requests."
+  }
+}

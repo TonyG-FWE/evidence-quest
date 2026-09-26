@@ -4,7 +4,7 @@ The portable demo contains the game, recorded voices and its own Node runtime. I
 
 ## Start
 
-Download the archive for your computer from the repository's **Releases** page once the reviewed release is published. PR workflow artifacts are review candidates, not a published release. Extract the entire archive before starting.
+Download the archive for your computer from the [published demo release](https://github.com/TonyG-FWE/evidence-quest/releases/tag/demo-10b6249d3cad), or use the four direct links under [Download and play](../README.md#download-and-play). Choose a portable archive: GitHub's **Source code** ZIP and tarball require building. Extract the entire portable archive before starting.
 
 For a PR review artifact, first extract GitHub's outer ZIP, then extract the platform archive inside it. The checksum and test report sit beside that archive. Review artifacts expire after 14 days; they are not permanent download links.
 
@@ -47,8 +47,12 @@ Current pronunciation limitations and development qualification gaps remain docu
 
 `portable-manifest.json` records the source commit, platform, bundled runtime and file hashes. The adjacent `.sha256` download identifies the whole archive. Node notices are in `runtime/LICENSE`, other dependency notices remain in `licenses/`, the bundled frontend notices and `node_modules/`.
 
-Maintainers publish only after PR review and merge, using the manual **Portable demo** workflow on `main` with **Publish reviewed release** enabled. That run rebuilds and tests every platform at the selected main commit before creating the release. It does not merge a PR. Standard PR runs upload candidate archives, checksums and test results only.
+For future changed builds, maintainers publish after PR review and merge using the manual **Portable demo** workflow on `main` with **Publish reviewed release** enabled. That run rebuilds and tests every platform at the selected main commit before creating the release. It does not merge a PR. Standard PR runs upload candidate archives, checksums and test results only.
 
 The native runner matrix checks extraction, launchers, offline rendered startup, audio, simulated microphone recording/replay, restart, occupied ports and file integrity. Full recorded-voice journey acceptance is a separate check on a computer with working graphics. Before publishing a changed game, run `test:portable` with `EQ_PORTABLE_JOURNEY=1` and retain its archive hash and journey report for review. In PowerShell, set `$env:EQ_PORTABLE_JOURNEY='1'` before `npm run test:portable`; in a POSIX shell, run `EQ_PORTABLE_JOURNEY=1 npm run test:portable`.
 
 The September 26 Windows package completed that full offline journey locally. Hosted Windows and Linux full-journey attempts failed the existing movement checks; the Linux capture showed the graphics-recovery screen. These failures remain recorded as runner/graphics qualification gaps. The matrix does not claim full gameplay or performance acceptance on every platform.
+
+The first public release uses the exact tested archives from merged PR #4. A fresh publication run on main failed Intel Mac scene readiness twice; the only source difference was a README edit. The original four-platform verification passes, including its recorded Intel retry. An explicitly approved [temporary publication workflow](https://github.com/TonyG-FWE/evidence-quest/actions/runs/36274240360) checked the merged ancestry, unchanged game inputs, passing native reports and full archive hashes before publication, then was removed. The release notes retain the failures and identify the archives' original source commit and checksums.
+
+Published-download verification also encountered graphics recovery after the introduction on a hosted Windows runner. The exact published Windows package files passed offline rendered play locally, including recorded audio, shutdown and restart. All four public archive checksums passed without credentials. These checks and retained runner failures are recorded in the [publication evidence](../evidence/distribution-20260926/publication.json).

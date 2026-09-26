@@ -1,5 +1,16 @@
 # Evidence Quest build status
 
+## Published portable downloads — 2026-09-26
+
+**PUBLISHED AND VERIFIED: TASK11.20 / TASK11.21 maintenance, FIX11.DISTRIBUTION01 / CHECK11.DISTRIBUTION01 follow-up.** The [public release](https://github.com/TonyG-FWE/evidence-quest/releases/tag/demo-10b6249d3cad) contains four portable archives, checksums and native test reports. README now links directly to Windows, Intel Mac, Apple Silicon Mac and Linux downloads, with extraction, launch and shutdown steps and a clear source-code distinction. The judges' context and remaining README sections are byte-identical to prior main.
+
+The requested main release run failed Intel scene readiness twice. Tony explicitly approved a guarded temporary workflow to publish the exact tested archives from reviewed, merged PR #4, source `10b6249d3cade77798d5a2c7f233d52c35a4ad41`. That source is merged into main; its only difference from the requested main build is a README edit. The [publication workflow](https://github.com/TonyG-FWE/evidence-quest/actions/runs/36274240360) verified ancestry, unchanged game inputs and all native reports/hashes. The temporary workflow was removed after publication and verification. The failed main attempts and prior native results remain recorded.
+
+[Anonymous public downloads](https://github.com/TonyG-FWE/evidence-quest/actions/runs/36275416808) verified all four complete archive hashes against sidecars and GitHub asset digests. Hosted Windows reached graphics recovery after the introduction; that limitation is retained. The exact published Windows files then passed locally: bundled-runtime integrity and startup with no Node on PATH or credentials, rendered ordinary play with external requests blocked, recorded-audio decode, shutdown/restart and signed-out release-page access. Every local file matched the downloaded package manifest; identical cached files avoided a slow full local transfer. Both final screens were inspected. [Complete publication evidence](evidence/distribution-20260926/publication.json) records transfer provenance and the initial new check's corrected five-second wait.
+
+All ten original local evidence edits and four provider ledgers remain unchanged. No game code, content or runtime assets changed. Earlier full Windows journey and four-platform native checks remain available; browser, graphics/device and human microphone qualification gaps remain open. **TASK11.19 remains HALTED 1/75; no provider calls.** Earlier no-publication statements below are historical.
+
+
 ## Source cleanup and portable distribution — 2026-09-26
 
 **COMPLETE FOR THE APPROVED DISTRIBUTION SCOPE: TASK11.20 / TASK11.21 maintenance, FIX11.DISTRIBUTION01 / CHECK11.DISTRIBUTION01.** [PR #4](https://github.com/TonyG-FWE/evidence-quest/pull/4) starts from GitHub main `7a1272bb`, preserving the newer README and judges' context. Implementation commits `c776bb97` through `69d6828d` include the three pending staging lifecycle fixes, their four regression cases, repository cleanup, offline packaging and native verification. Sixteen initial modifications were inventoried; the ten generated-evidence edits remain byte-for-byte intact and excluded. All four provider ledgers are unchanged.
