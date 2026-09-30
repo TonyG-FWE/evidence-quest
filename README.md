@@ -4,7 +4,7 @@ A story-driven reading adventure for ages 9–12. Guide Pip through a riverside 
 
 Explore the village, repair a bridge, deliver a lantern seed by boat or by hand, help at Rina’s bakery, revisit Mara’s paper-bird story, and prepare a story to share in Jo and Loop’s studio. Reading, writing and choices connect to actions in the world.
 
-Evidence Quest is the playable reading-adventure prototype for **SparkFest**, a broader festival setting where children prepare presentations, share stories and enter those stories. The context below describes Tony’s development process, the current implementation and the production approach he would take.
+Evidence Quest is the playable reading-adventure prototype for **SparkFest**, a broader festival setting where children prepare presentations, share stories and enter those stories. The context below describes the development process, the current implementation and the production approach I would take.
 
 [Download and play](#download-and-play) · [Build from source](#build-from-source) · [Controls](#controls) · [Product and technical context for judges](#product-and-technical-context-for-judges)
 
